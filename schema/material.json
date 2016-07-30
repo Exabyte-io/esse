@@ -1,0 +1,87 @@
+{
+    "$schema": "http://json-schema.org/draft-04/schema#",
+    "title": "material schema",
+    "properties": {
+        "name": {
+            "description": "Human-readable name. Max length is 300 symbols.",
+            "type": "string"
+        },
+        "formula": {
+            "description": "reduced chemical formula",
+            "type": "string"
+        },
+        "unitCellFormula": {
+            "description": "chemical formula based on the number of atoms of each element in the supercell",
+            "type": "string"
+        },
+        "basis": {
+            "description": "object containing an array of elements and coordinates in the supercell",
+            "$ref": "file:material/structure/basis.json"
+        },
+        "lattice": {
+            "description": "object defining the lattice cell size and shape",
+            "$ref": "file:material/structure/lattice.json"
+        },
+        "derivedProperties": {
+            "description": "object defining the lattice cell size and shape",
+            "$ref": "file:material/derived_properties.json"
+        },
+        "external": {
+            "description": "information about external sources of this material",
+            "type": "array",
+            "items": {
+                "$ref": "file:security/database_source.json"
+            }
+        },
+        "_id": {
+            "description": "Identity of the material",
+            "type": "string"
+        },
+        "exabyteId": {
+            "description": "Identity of the material inside exabyte materials bank",
+            "type": "string"
+        },
+        "createdAt": {
+            "description": "Material creation datetime.",
+            "type": "string"
+        },
+        "owners": {
+            "type": "array",
+            "items": {
+                "description": "owners of this material",
+                "$ref": "file:security/owner.json"
+            }
+        },
+        "access": {
+            "description": "Access level of the material.",
+            "$ref": "file:security/access.json"
+        },
+        "fileSource": {
+            "description": "File information if material was exported from POSCAR, XYZ or UPF file.",
+            "$ref": "file:security/file_source.json"
+        },
+        "editable": {
+            "description": "Identifies when material editing is allowed. If value is `true`, then descriptive properties of the material editable.",
+            "type": "boolean"
+        },
+        "removed": {
+            "description": "Identifies whether this material was removed",
+            "type": "boolean"
+        },
+        "removedAt": {
+            "description": "Removing datetime.",
+            "type": "string"
+        },
+        "hash": {
+            "description": "Hash string which is calculated based on material's descriptive properties (lattice, basis). Used to identify equal materials.",
+            "type": "string"
+        }
+    },
+    "required": [
+        "_id",
+        "name",
+        "exabyteId",
+        "basis",
+        "lattice"
+    ]
+}

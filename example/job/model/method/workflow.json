@@ -1,0 +1,9 @@
+{
+    "units": [
+        {
+            "...": "include(workflow/unit.json)"
+        }
+    ],
+    "app": "espresso",
+    "name": "Bandstructure"
+}

@@ -1,0 +1,233 @@
+{
+    "name": "K point convergence",
+    "app": "espresso",
+    "units": [
+        {
+            "type": "assignment",
+            "name": "initialize_previous_energy",
+            "flowchartId": "initialize_previous_energy",
+            "status": "idle",
+            "app": {},
+            "next": "initialize_N_K_x",
+            "head": true,
+            "assignment": {
+                "name": "previous_total_E",
+                "value": "0"
+            }
+        },
+        {
+            "type": "assignment",
+            "name": "initialize_N_K_x",
+            "flowchartId": "initialize_N_K_x",
+            "status": "idle",
+            "app": {},
+            "next": "initialize_N_K_y",
+            "assignment": {
+                "name": "N_K_x",
+                "value": "1"
+            }
+        },
+        {
+            "type": "assignment",
+            "name": "initialize_N_K_y",
+            "flowchartId": "initialize_N_K_y",
+            "status": "idle",
+            "app": {},
+            "next": "initialize_N_K_z",
+            "assignment": {
+                "name": "N_K_y",
+                "value": "1"
+            }
+        },
+        {
+            "type": "assignment",
+            "name": "initialize_N_K_z",
+            "flowchartId": "initialize_N_K_z",
+            "status": "idle",
+            "app": {},
+            "next": "run_scf_calculation",
+            "assignment": {
+                "name": "N_K_z",
+                "value": "1"
+            }
+        },
+        {
+            "status": "idle",
+            "flowchartId": "run_scf_calculation",
+            "name": "run_scf_calculation",
+            "type": "compute",
+            "next": "check_for_convergence",
+            "app": {
+                "flavor": "pw_scf",
+                "version": "5.1.1",
+                "name": "espresso",
+                "exec": "pw.x",
+                "summary": "Quantum Espresso"
+            },
+            "results": [
+                {
+                    "name": "total_energy"
+                }
+            ],
+            "monitors": [
+                {
+                    "name": "scf_accuracy"
+                },
+                {
+                    "name": "standard_output"
+                }
+            ],
+            "preProcessors": [],
+            "postProcessors": [],
+            "input": [
+                {
+                    "content": "&CONTROL\ncalculation='scf'\n    title=''\n    verbosity='low'\n    restart_mode='from_scratch'\n    wf_collect=.true.\n    tstress=.true.\n    tprnfor=.true.\n    outdir='$OUTPUT_DIR/'\n    wfcdir='$OUTPUT_DIR/'\n    prefix='__prefix__'\n    pseudo_dir='$PSEUDO_DIR'\n/\n&SYSTEM\n    ibrav=2\n    nat=2\n    ntyp=1\n    ecutwfc=40\n    ecutrho=200\n    occupations='smearing'\n    degauss=0.005\n    celldm(1)=9.448580823160363\n/\n&ELECTRONS\n    diagonalization='david'\n    diago_david_ndim=4\n    diago_full_acc=.true.\n    mixing_beta=0.3\n/\n&IONS\n/\n&CELL\n/\nATOMIC_SPECIES\nSi 28.0855 si_pbe_gbrv_1.0.upf\nATOMIC_POSITIONS crystal\nSi 0 0 0\nSi 0.25 0.25 0.25\nK_POINTS automatic\n{{N_K_x | default('1')}} {{N_K_y | default('1')}} {{N_K_z | default('1')}} 0 0 0",
+                    "name": "pw_scf.in"
+                }
+            ]
+        },
+        {
+            "flowchartId": "check_for_convergence",
+            "type": "condition",
+            "name": "check_for_convergence",
+            "status": "idle",
+            "app": {},
+            "condition": {
+                "input": [
+                    {
+                        "scope": "global",
+                        "name": "previous_total_E"
+                    },
+                    {
+                        "scope": "run_scf_calculation",
+                        "name": "total_energy"
+                    }
+                ],
+                "statement": "abs(previous_total_E-total_energy) < 1e-5",
+                "then": "convergence_is_reached",
+                "else": "assign_total_energy_to_previous_total_E",
+                "maxOccurences": 100
+            }
+        },
+        {
+            "flowchartId": "assign_total_energy_to_previous_total_E",
+            "type": "assignment",
+            "name": "assign_total_energy_to_previous_total_E",
+            "status": "idle",
+            "next": "increase_N_K_x_by_1",
+            "app": {},
+            "assignment": {
+                "input": [
+                    {
+                        "scope": "run_scf_calculation",
+                        "name": "total_energy"
+                    }
+                ],
+                "name": "previous_total_E",
+                "value": "total_energy"
+            }
+        },
+        {
+            "flowchartId": "increase_N_K_x_by_1",
+            "type": "assignment",
+            "name": "increase_N_K_x_by_1",
+            "status": "idle",
+            "next": "increase_N_K_y_by_1",
+            "app": {},
+            "assignment": {
+                "input": [
+                    {
+                        "scope": "global",
+                        "name": "N_K_x"
+                    }
+                ],
+                "name": "N_K_x",
+                "value": "N_K_x+1"
+            }
+        },
+        {
+            "flowchartId": "increase_N_K_y_by_1",
+            "type": "assignment",
+            "name": "increase_N_K_y_by_1",
+            "status": "idle",
+            "next": "increase_N_K_z_by_1",
+            "app": {},
+            "assignment": {
+                "input": [
+                    {
+                        "scope": "global",
+                        "name": "N_K_y"
+                    }
+                ],
+                "name": "N_K_y",
+                "value": "N_K_y+1"
+            }
+        },
+        {
+            "flowchartId": "increase_N_K_z_by_1",
+            "type": "assignment",
+            "name": "increase_N_K_z_by_1",
+            "status": "idle",
+            "next": "run_scf_calculation",
+            "app": {},
+            "assignment": {
+                "input": [
+                    {
+                        "scope": "global",
+                        "name": "N_K_z"
+                    }
+                ],
+                "name": "N_K_z",
+                "value": "N_K_z+1"
+            }
+        },
+        {
+            "status": "idle",
+            "flowchartId": "run_band_structure",
+            "name": "run_band_structure",
+            "type": "compute",
+            "next": "done_with_convergence_plus_band_structure",
+            "app": {
+                "flavor": "pw_scf",
+                "version": "5.1.1",
+                "name": "espresso",
+                "exec": "pw.x",
+                "summary": "Quantum Espresso"
+            },
+            "results": [
+                {
+                    "name": "density_of_states"
+                },
+                {
+                    "name": "band_structure"
+                },
+                {
+                    "name": "band_gap"
+                },
+                {
+                    "name": "total_energy"
+                }
+            ],
+            "monitors": [
+                {
+                    "name": "scf_accuracy"
+                },
+                {
+                    "name": "standard_output"
+                }
+            ],
+            "preProcessors": [],
+            "postProcessors": []
+        },
+        {
+            "flowchartId": "done_with_convergence_plus_band_structure",
+            "type": "exit",
+            "name": "exit",
+            "status": "idle",
+            "app": {},
+            "exit": {
+                "throwException": true
+            }
+        }
+    ]
+}

@@ -1,0 +1,25 @@
+{
+    "$schema": "http://json-schema.org/draft-04/schema#",
+    "title": "basis schema",
+    "type": "object",
+    "properties": {
+        "elements": {
+            "$ref": "file:atomic_elements.json"
+        },
+        "coordinates": {
+            "$ref": "file:atomic_coordinates.json"
+        },
+        "units": {
+            "enum": [
+                "angstrom",
+                "bohr",
+                "fractional",
+                "crystal"
+            ]
+        }
+    },
+    "required": [
+        "elements",
+        "coordinates"
+    ]
+}

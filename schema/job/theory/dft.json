@@ -1,0 +1,77 @@
+{
+    "schema": "http://json-schema.org/draft-04/schema#",
+    "title": "density function theory schema",
+    "description": "density function theory schema",
+    "properties": {
+        "type": {
+            "enum": [
+                "dft"
+            ]
+        },
+        "subtype": {
+            "enum": [
+                "gga",
+                "lda",
+                "mgga",
+                "ldau"
+            ]
+        },
+        "functional": {
+            "oneOf": [
+                {
+                    "$ref": "#/definitions/functionals/lda"
+                },
+                {
+                    "$ref": "#/definitions/functionals/gga"
+                },
+                {
+                    "enum": [
+                        "ldau",
+                        "bp",
+                        "lyp",
+                        "b3lyp",
+                        "pbesol",
+                        "hse",
+                        "am05",
+                        "rtpss",
+                        "tpss",
+                        "m06l",
+                        "mbj",
+                        "vdwd3",
+                        "fci"
+                    ]
+                }
+            ]
+        },
+        "method": {
+            "oneOf": [
+                {
+                    "$ref": "file:dft/pseudopotential.json"
+                },
+                {
+                    "$ref": "file:dft/local-orbital.json"
+                }
+            ]
+        }
+    },
+    "definitions": {
+        "functionals": {
+            "lda": {
+                "enum": [
+                    "pz",
+                    "pw",
+                    "cp",
+                    "vwn"
+                ]
+            },
+            "gga": {
+                "enum": [
+                    "pbe",
+                    "pbe0",
+                    "pw91",
+                    "rpbe"
+                ]
+            }
+        }
+    }
+}

@@ -1,0 +1,82 @@
+{
+    "$schema": "http://json-schema.org/draft-04/schema#",
+    "title": "band structure schema",
+    "type": "object",
+    "allOf": [
+        {
+            "$ref": "file:../../primitive/2d_plot.json"
+        }
+    ],
+    "properties": {
+        "xAxis": {
+            "properties": {
+                "label": {
+                    "enum": [
+                        "energy"
+                    ]
+                },
+                "units": {
+                    "enum": [
+                        "eV",
+                        "hartree",
+                        "rydberg"
+                    ]
+                }
+            }
+        },
+        "yAxis": {
+            "properties": {
+                "label": {
+                    "enum": [
+                        "density of states"
+                    ]
+                },
+                "units": {
+                    "enum": [
+                        "states/unit cell"
+                    ]
+                }
+            }
+        },
+        "legend": {
+            "items": {
+                "type": "object",
+                "properties": {
+                    "element": {
+                        "type": "array",
+                        "items": {
+                            "type": "string"
+                        }
+                    },
+                    "index": {
+                        "type": "array",
+                        "items": {
+                            "description": "index inside sub-array of atoms of the same element type",
+                            "type": "integer",
+                            "minimum": 1
+                        }
+                    },
+                    "electronicState": {
+                        "type": "array",
+                        "items": {
+                            "description": "electronic character and shell of PDOS, such as `1s` or `s`, or `total`",
+                            "type": "string",
+                            "pattern": "^([1-5]{1})?(s|p|d|f|g)(.*)?$"
+                        }
+                    },
+                    "spin": {
+                        "type": "array",
+                        "items": {
+                            "description": "spin of the electronic state",
+                            "type": "number",
+                            "enum": [
+                                0.5,
+                                -0.5
+                            ]
+                        }
+                    }
+                }
+            }
+        }
+    }
+}

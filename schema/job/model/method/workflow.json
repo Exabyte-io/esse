@@ -1,0 +1,21 @@
+{
+    "$schema": "http://json-schema.org/draft-04/schema#",
+    "title": "workflow schema",
+    "type": "object",
+    "properties": {
+        "name": {
+            "description": "Human-readable name of the workflow. e.g. Total-energy",
+            "type": "string"
+        },
+        "units": {
+            "description": "Contains the Units of the Workflow",
+            "type": "array",
+            "items": {
+                "$ref": "file:workflow/unit.json"
+            }
+        }
+    },
+    "required": [
+        "name"
+    ]
+}

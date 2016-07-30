@@ -1,0 +1,29 @@
+{
+    "$schema": "http://json-schema.org/draft-04/schema#",
+    "title": "method schema",
+    "properties": {
+        "type": {
+            "description": "general type of this method, eg. `pseudopotential`",
+            "type": "string"
+        },
+        "subtype": {
+            "description": "general subtype of this method, eg. `ultra-soft`",
+            "type": "string"
+        },
+        "precision": {
+            "$ref": "file:method/precision.json"
+        },
+        "workflow": {
+            "description": "simulation workflow used inside this method.",
+            "type": "object"
+        },
+        "data": {
+            "description": "additional data specific to method, eg. array of pseudopotentials",
+            "type": "object"
+        }
+    },
+    "required": [
+        "type",
+        "precision"
+    ]
+}

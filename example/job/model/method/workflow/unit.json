@@ -1,0 +1,40 @@
+{
+    "status": "idle",
+    "head": true,
+    "flowchartId": "pw-scf",
+    "name": "pw_scf",
+    "execution": {
+        "...": "include(unit/execution.json)"
+    },
+    "results": [
+        {
+            "name": "harris_foulkes_estimate"
+        },
+        {
+            "name": "total energy",
+            "value": -123.43573079,
+            "units": "eV"
+        },
+        {
+            "name": "density_of_states",
+            "kwargs": [
+                {
+                    "key": "combined",
+                    "value": true
+                }
+            ]
+        }
+    ],
+    "next": "pw-bands",
+    "postProcessors": [],
+    "preProcessors": [],
+    "type": "execution",
+    "monitors": [
+        {
+            "name": "scf_accuracy"
+        },
+        {
+            "name": "standard_output"
+        }
+    ]
+}

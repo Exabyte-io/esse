@@ -1,0 +1,27 @@
+{
+    "$schema": "http://json-schema.org/draft-04/schema#",
+    "title": "lattice schema",
+    "type": "object",
+    "anyOf": [
+        {
+            "properties": {
+                "vectors": {
+                    "$ref": "file:lattice_vectors.json"
+                }
+            },
+            "required": [
+                "vectors"
+            ]
+        },
+        {
+            "$ref": "file:lattice_bravais.json"
+        }
+    ],
+    "properties": {
+        "name": {
+            "enum": [
+                "lattice"
+            ]
+        }
+    }
+}

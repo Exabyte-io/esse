@@ -1,0 +1,24 @@
+{
+    "$schema": "http://json-schema.org/draft-04/schema#",
+    "title": "job's material schema",
+    "type": "object",
+    "properties": {
+        "_id": {
+            "description": "Identity of the material",
+            "type": "string"
+        },
+        "name": {
+            "description": "Human-readable name of the embedded material.",
+            "type": "string"
+        },
+        "exabyteId": {
+            "description": "Corresponding Materials Bank identity",
+            "type": "string"
+        }
+    },
+    "required": [
+        "_id",
+        "name",
+        "exabyteId"
+    ]
+}

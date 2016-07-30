@@ -1,0 +1,27 @@
+{
+    "$schema": "http://json-schema.org/draft-04/schema#",
+    "title": "energy cutoff schema",
+    "energyCutoff": {
+        "type": "object",
+        "description": "Highest energy of plane wave energies",
+        "properties": {
+            "max": {
+                "value": {
+                    "type": "number"
+                }
+            },
+            "min": {
+                "value": {
+                    "type": "number"
+                }
+            },
+            "units": {
+                "enum": [
+                    "eV",
+                    "rydberg",
+                    "hartree"
+                ]
+            }
+        }
+    }
+}

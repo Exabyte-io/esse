@@ -1,0 +1,44 @@
+{
+    "name": "total energy contributions",
+    "alphaZ": {
+        "name": "alphaZ",
+        "value": 1056.91493097
+    },
+    "ewald": {
+        "name": "ewald",
+        "value": 128376.45871064
+    },
+    "hartree": {
+        "name": "hartree",
+        "value": -145344.66902862
+    },
+    "exchange": {
+        "name": "exchange",
+        "value": 0
+    },
+    "PAWDoubleCounting2": {
+        "name": "PAW double-counting correction 2",
+        "value": 12658.30538857
+    },
+    "PAWDoubleCounting3": {
+        "name": "PAW double-counting correction 3",
+        "value": -12074.85364512
+    },
+    "exchangeCorrelation": {
+        "name": "exchange correlation",
+        "value": 41.63693035
+    },
+    "temperatureEntropy": {
+        "name": "temperature entropy",
+        "value": -0.00032545
+    },
+    "eigenvalues": {
+        "name": "eigenvalues",
+        "value": -577.80127102
+    },
+    "atomicEnergy": {
+        "name": "atomic energy",
+        "value": 15740.5725788
+    },
+    "units": "eV"
+}

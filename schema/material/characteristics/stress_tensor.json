@@ -1,0 +1,20 @@
+{
+    "$schema": "http://json-schema.org/draft-04/schema#",
+    "title": "stress tensor schema",
+    "properties": {
+        "value": {
+            "$ref": "file:../../primitive/3d_tensor.json"
+        },
+        "name": {
+            "enum": [
+                "stress tensor"
+            ]
+        },
+        "units": {
+            "enum": [
+                "kbar",
+                "pa"
+            ]
+        }
+    }
+}

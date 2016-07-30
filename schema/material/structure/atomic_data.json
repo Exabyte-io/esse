@@ -1,0 +1,70 @@
+{
+    "$schema": "http://json-schema.org/draft-04/schema#",
+    "title": "atomic properties",
+    "description": "properties of atoms in arrays indexed by ids",
+    "type": "object",
+    "properties": {
+        "valenceElectrons": {
+            "description": "number of valence electrons",
+            "properties": {
+                "value": {
+                    "$ref": "file:atomic_masses.json"
+                },
+                "name": {
+                    "enum": [
+                        "valence electrons"
+                    ]
+                }
+            }
+        },
+        "charges": {
+            "description": "difference between total and valence electrons on atom",
+            "properties": {
+                "value": {
+                    "$ref": "file:atomic_masses.json"
+                },
+                "name": {
+                    "enum": [
+                        "charges"
+                    ]
+                },
+                "units": {
+                    "enum": [
+                        "electron charge"
+                    ]
+                }
+            }
+        },
+        "radicals": {
+            "description": "number of unpaired electrons",
+            "properties": {
+                "value": {
+                    "$ref": "file:atomic_masses.json"
+                },
+                "name": {
+                    "enum": [
+                        "radicals"
+                    ]
+                }
+            }
+        },
+        "forces": {
+            "description": "forces on atoms",
+            "properties": {
+                "value": {
+                    "$ref": "file:atomic_coordinates.json"
+                },
+                "name": {
+                    "enum": [
+                        "atomic forces"
+                    ]
+                },
+                "units": {
+                    "enum": [
+                        "eV/a.u."
+                    ]
+                }
+            }
+        }
+    }
+}

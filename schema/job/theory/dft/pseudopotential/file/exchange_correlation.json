@@ -1,0 +1,20 @@
+{
+    "$schema": "http://json-schema.org/draft-04/schema#",
+    "title": "exchange correlation schema",
+    "type": "object",
+    "description": "details on the type of formalism used",
+    "properties": {
+        "functional": {
+            "type": "string",
+            "enum": [
+                "pbe",
+                "pw",
+                "lm",
+                "pw91",
+                "rpbe",
+                "b3lyp",
+                "lyp"
+            ]
+        }
+    }
+}

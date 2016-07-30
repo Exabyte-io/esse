@@ -1,0 +1,10 @@
+{
+    "$schema": "http://json-schema.org/draft-04/schema#",
+    "title": "3d tensor schema",
+    "type": "array",
+    "items": {
+        "$ref": "file:vector.json"
+    },
+    "minItems": 3,
+    "maxItems": 3
+}

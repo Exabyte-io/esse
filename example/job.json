@@ -1,0 +1,28 @@
+{
+    "status": "pre-submission",
+    "reuseMode": "material",
+    "_material": {
+        "...": "include(job/_material.json)"
+    },
+    "compute": {
+        "...": "include(job/compute.json)"
+    },
+    "title": "two",
+    "titleSlug": "two",
+    "createdAt": "Sun Jul 24 2016 16:28:33 GMT+0200 (CEST)",
+    "owner": {
+        "...": "include(security/owner.json)"
+    },
+    "model": {
+        "...": "include(job/model.json)"
+    },
+    "version": "0.2.0",
+    "_id": "FPjAaKfuYAL7tiHbm",
+    "creator": {
+        "_id": "HtxACY2wX4b2hS8Rv",
+        "name": "demo"
+    },
+    "_project": {
+        "...": "include(job/_project.json)"
+    }
+}

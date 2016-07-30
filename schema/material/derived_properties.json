@@ -1,0 +1,53 @@
+{
+    "$schema": "http://json-schema.org/draft-04/schema#",
+    "title": "derived properties schema",
+    "properties": {
+        "volume": {
+            "description": "unit cell volume",
+            "$ref": "file:../primitive/scalar.json",
+            "properties": {
+                "units": {
+                    "enum": [
+                        "angstrom^3"
+                    ]
+                }
+            }
+        },
+        "density": {
+            "$ref": "file:../primitive/scalar.json",
+            "properties": {
+                "units": {
+                    "enum": [
+                        "g/cm^3"
+                    ]
+                }
+            }
+        },
+        "symmetry": {
+            "type": "object",
+            "description": "contains information about the material symmetry",
+            "properties": {
+                "spaceGroup": {
+                    "description": "space group in Hermann–Mauguin notation",
+                    "type": "integer"
+                },
+                "tolerance": {
+                    "description": "tolerance used for symmetry calculation, angstroms",
+                    "$ref": "file:../primitive/scalar.json",
+                    "properties": {
+                        "units": {
+                            "enum": [
+                                "angstrom"
+                            ]
+                        }
+                    }
+                }
+            }
+        }
+    },
+    "required": [
+        "volume",
+        "density",
+        "symmetry"
+    ]
+}

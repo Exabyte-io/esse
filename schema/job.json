@@ -1,0 +1,125 @@
+{
+    "$schema": "http://json-schema.org/draft-04/schema#",
+    "title": "job schema",
+    "properties": {
+        "_id": {
+            "description": "job identifier",
+            "type": "string"
+        },
+        "mode": {
+            "description": "job execution mode.",
+            "type": "string",
+            "default": "normal",
+            "enum": [
+                "normal",
+                "parse-only"
+            ]
+        },
+        "cliId": {
+            "description": "Identity used to track jobs originated from command-line (CLI).",
+            "type": "string"
+        },
+        "status": {
+            "description": "job identifier.",
+            "enum": [
+                "pre-submission",
+                "submitted",
+                "active",
+                "finished",
+                "terminate_queued",
+                "terminated",
+                "error",
+                "deleted",
+                "timeout"
+            ]
+        },
+        "createdAt": {
+            "description": "job's creation time",
+            "type": "string"
+        },
+        "startTime": {
+            "description": "Approximate start time of the job. e.g. within 10 min",
+            "type": "string"
+        },
+        "removedAt": {
+            "description": "Timestamp of the moment when job was removed",
+            "type": "string"
+        },
+        "removed": {
+            "description": "Identifies that job was removed",
+            "type": "boolean"
+        },
+        "title": {
+            "description": "Human-readable title of the job",
+            "type": "string",
+            "maxLength": 300
+        },
+        "titleSlug": {
+            "description": "Slugified title of the job",
+            "type": "string"
+        },
+        "workDir": {
+            "description": "The path to the working directory of this job, when the job originates from CLI.",
+            "type": "string"
+        },
+        "compute": {
+            "description": "Job's compute parameters",
+            "$ref": "file:job/compute.json"
+        },
+        "model": {
+            "$ref": "file:job/model.json"
+        },
+        "_project": {
+            "description": "Subset of the full information about the project that this job belongs to. Included for quick access in search.",
+            "$ref": "file:job/_project.json"
+        },
+        "_material": {
+            "description": "Subset of the full information about the materials used inside this job.",
+            "$ref": "file:job/_material.json"
+        },
+        "version": {
+            "description": "Job's schema version. Used to distinct between different schemas.",
+            "type": "string"
+        },
+        "owner": {
+            "description": "Summary about user/company who owns this job.",
+            "$ref": "file:security/owner.json"
+        },
+        "creator": {
+            "description": "User that created this job. Always a user. Different from job owner. Owner could be user or organization.",
+            "$ref": "file:security/creator.json"
+        },
+        "parent": {
+            "description": "Parent job for the job. Only a job from the same project can be assigned as a parent one.",
+            "type": "object",
+            "properties": {
+                "_id": {
+                    "description": "Parent job identifier.",
+                    "type": "string"
+                },
+                "title": {
+                    "description": "Parent job title.",
+                    "type": "string",
+                    "maxLength": 300
+                }
+            },
+            "required": [
+                "_id",
+                "title"
+            ]
+        }
+    },
+    "required": [
+        "_id",
+        "status",
+        "createdAt",
+        "title",
+        "titleSlug",
+        "version",
+        "compute",
+        "model",
+        "_project",
+        "creator",
+        "owner"
+    ]
+}

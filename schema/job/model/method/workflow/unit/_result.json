@@ -1,0 +1,41 @@
+{
+    "$schema": "http://json-schema.org/draft-04/schema#",
+    "title": "result schema",
+    "type": "object",
+    "properties": {
+        "name": {
+            "description": "The name of this result property. e.g. scf_accuracy",
+            "type": "string"
+        },
+        "kwargs": {
+            "description": "Specific arguments for the required result.",
+            "type": "array",
+            "items": {
+                "type": "object",
+                "properties": {
+                    "key": {
+                        "description": "Name of the argument.",
+                        "type": "string"
+                    },
+                    "value": {
+                        "description": "Value of the argument."
+                    }
+                },
+                "required": [
+                    "key",
+                    "value"
+                ]
+            }
+        },
+        "units": {
+            "description": "Unit of the value.",
+            "type": "string"
+        },
+        "value": {
+            "description": "Value of the result."
+        }
+    },
+    "required": [
+        "name"
+    ]
+}

@@ -1,0 +1,58 @@
+{
+    "$schema": "http://json-schema.org/draft-04/schema#",
+    "title": "band structure schema",
+    "allOf": [
+        {
+            "$ref": "file:../../primitive/2d_plot.json"
+        }
+    ],
+    "properties": {
+        "xAxis": {
+            "properties": {
+                "label": {
+                    "enum": [
+                        "kpoints"
+                    ]
+                },
+                "units": {
+                    "enum": [
+                        "crystal",
+                        "cartesian"
+                    ]
+                }
+            }
+        },
+        "yAxis": {
+            "properties": {
+                "label": {
+                    "enum": [
+                        "energy"
+                    ]
+                },
+                "units": {
+                    "enum": [
+                        "eV",
+                        "rydberg",
+                        "hartree"
+                    ]
+                }
+            }
+        },
+        "name": {
+            "enum": [
+                "band structure"
+            ]
+        },
+        "spin": {
+            "description": "spin of each band",
+            "type": "array",
+            "items": {
+                "type": "number",
+                "enum": [
+                    0.5,
+                    -0.5
+                ]
+            }
+        }
+    }
+}

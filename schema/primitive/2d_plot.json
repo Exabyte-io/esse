@@ -1,0 +1,24 @@
+{
+    "$schema": "http://json-schema.org/draft-04/schema#",
+    "title": "2 dimension plot schema",
+    "$ref": "file:2d_data.json",
+    "properties": {
+        "xAxis": {
+            "description": "x Axis object",
+            "$ref": "file:axis.json"
+        },
+        "yAxis": {
+            "description": "y Axis object",
+            "$ref": "file:axis.json"
+        },
+        "legend": {
+            "description": "Legend of y Axis data series",
+            "minItems": 1,
+            "type": "array"
+        }
+    },
+    "required": [
+        "xAxis",
+        "yAxis"
+    ]
+}

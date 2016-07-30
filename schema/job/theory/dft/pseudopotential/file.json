@@ -1,0 +1,88 @@
+{
+    "$schema": "http://json-schema.org/draft-04/schema#",
+    "title": "pseudopotential file schema",
+    "properties": {
+        "element": {
+            "type": "string",
+            "description": "chemical element"
+        },
+        "textHeading": {
+            "type": "string",
+            "description": "text of pseudopotential file header"
+        },
+        "type": {
+            "type": "string",
+            "description": "type of pseudization",
+            "enum": [
+                "paw",
+                "us",
+                "nc"
+            ]
+        },
+        "title": {
+            "type": "string"
+        },
+        "generationDate": {
+            "type": "string"
+        },
+        "source": {
+            "type": "string",
+            "description": "explains where this came from"
+        },
+        "valenceElectrons": {
+            "type": "integer"
+        },
+        "coreStates": {
+            "type": "string",
+            "enum": [
+                "all",
+                "none",
+                "partial"
+            ]
+        },
+        "energyCutoff": {
+            "$ref": "file:file/energy_cutoff.json"
+        },
+        "electronicConfiguration": {
+            "type": "string"
+        },
+        "exchangeCorrelation": {
+            "$ref": "file:file/exchange_correlation.json"
+        },
+        "mass": {
+            "type": "number",
+            "description": "atomic mass in amu"
+        },
+        "radii": {
+            "$ref": "file:file/radii.json"
+        },
+        "screening": {
+            "type": "string",
+            "enum": [
+                "linear",
+                "non_linear",
+                "none"
+            ]
+        },
+        "characteristics": {
+            "type": "array",
+            "description": "array of characteristic properties"
+        },
+        "path": {
+            "type": "string",
+            "description": "location of the pseudopotential file on filesystem"
+        },
+        "apps": {
+            "type": "array",
+            "description": "simulation engines that can use this pseudopotential"
+        }
+    },
+    "required": [
+        "element",
+        "type",
+        "exchangeCorrelation",
+        "source",
+        "path",
+        "apps"
+    ]
+}
