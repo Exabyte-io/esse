@@ -1,26 +1,18 @@
 {
     "$schema": "http://json-schema.org/draft-04/schema#",
     "title": "convergence criteria schema",
-    "properties": {
-        "oneOf": [
-            {
-                "electronic": {
-                    "description": "electronic minimization for self-consistency for a single job",
-                    "$ref": "file:../convergence/electronic.json"
-                }
-            },
-            {
-                "ionic": {
-                    "description": "ionic minimization for atomic position relaxation for a single job",
-                    "$ref": "file:../convergence/ionic.json"
-                }
-            },
-            {
-                "kpoint": {
-                    "description": "used for a kpoint convergence study on a material same material",
-                    "$ref": "file:../convergence/kpoint_convergence.json"
-                }
-            }
-        ]
-    }
+    "oneOf": [
+        {
+            "description": "electronic minimization for self-consistency for a single job",
+            "$ref": "file:convergence/electronic.json"
+        },
+        {
+            "description": "ionic minimization for atomic position relaxation for a single job",
+            "$ref": "file:convergence/ionic.json"
+        },
+        {
+            "description": "used for a kpoint convergence study on a material same material",
+            "$ref": "file:convergence/kpoint_convergence.json"
+        }
+    ]
 }

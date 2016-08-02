@@ -17,11 +17,16 @@
         },
         "forceCriteria": {
             "description": "criteria",
-            "$ref": "file:../primitive/scalar.json"
+            "$ref": "file:../../primitive/scalar.json"
         },
         "finalEnergy": {
             "description": "final total energy of the converged system",
             "$ref": "file:../characteristics/total_energy.json"
         }
-    }
+    },
+    "required": [
+        "electronicConvergences",
+        "iterations",
+        "finalEnergy"
+    ]
 }

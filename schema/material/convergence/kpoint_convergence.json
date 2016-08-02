@@ -9,11 +9,11 @@
                 "$ref": "file:electronic.json"
             }
         },
-        "kpoints": {
+        "parameter": {
             "description": "name of the input parameter that is adjusted within the job to find the converged total energy",
-            "type": "string"
+            "name": "string"
         },
-        "energies": {
+        "property": {
             "description": "name of the property that is monited to determine convergence",
             "type": "string"
         },
@@ -25,7 +25,7 @@
             "description": "equation in python to evaluate whether the convergence criteria is reached",
             "type": "string"
         },
-        "energy": {
+        "energies": {
             "description": "energy at the end of each job",
             "items": {
                 "allOf": [
@@ -38,5 +38,13 @@
                 ]
             }
         }
-    }
+    },
+    "required": [
+        "electronic",
+        "parameter",
+        "property",
+        "criteria",
+        "formula",
+        "energies"
+    ]
 }
