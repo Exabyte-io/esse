@@ -1,0 +1,27 @@
+{
+    "cellSize": true,
+    "cellShape": true,
+    "atomicPositions": true,
+    "atomicConstraints": {
+        "atoms": [
+            {
+                "id": 1
+            },
+            {
+                "id": 2
+            }
+        ],
+        "unitCell": [
+            {
+                "x": "T",
+                "y": "T",
+                "z": "T"
+            },
+            {
+                "x": "T",
+                "y": "T",
+                "z": "T"
+            }
+        ]
+    }
+}
