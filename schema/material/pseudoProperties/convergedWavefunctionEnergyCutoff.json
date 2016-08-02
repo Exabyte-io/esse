@@ -1,0 +1,14 @@
+{
+    "$schema": "http://json-schema.org/draft-04/schema#",
+    "title": "converged wave function energy schema",
+    "allOf": [
+        {
+            "$ref": "file:../../primitive/scalar.json"
+        }
+    ],
+    "properties": {
+        "enum": [
+            "convergedWavefunctionEnergyCutoff"
+        ]
+    }
+}

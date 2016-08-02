@@ -1,0 +1,14 @@
+{
+    "$schema": "http://json-schema.org/draft-04/schema#",
+    "title": "conduction band energy reference delta schema",
+    "allOf": [
+        {
+            "$ref": "file:../../primitive/scalar.json"
+        }
+    ],
+    "properties": {
+        "enum": [
+            "conductionBandEnergyReferenceDelta"
+        ]
+    }
+}

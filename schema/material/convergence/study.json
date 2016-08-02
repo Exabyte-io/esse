@@ -1,0 +1,52 @@
+{
+    "$schema": "http://json-schema.org/draft-04/schema#",
+    "title": "ionic convergence schema",
+    "properties": {
+        "electronic": {
+            "description": "array of the individual electronic convergences that happen as part for each ionic step",
+            "type": "array",
+            "items": {
+                "$ref": "file:electronic.json"
+            }
+        },
+        "structure": {
+            "description": "array of changing structures as the ionic relaxation proceeds",
+            "type": "array",
+            "item": {
+                "allOf": [
+                    {
+                        "$ref": "file:basis.json"
+                    },
+                    {
+                        "$ref": "file:lattice.json"
+                    }
+                ]
+            }
+        },
+        "iterations": {
+            "description": "number of total iterations of both the electronic and ionic steps",
+            "type": "number"
+        },
+        "constraints": {
+            "description": "information about the type of constaints placed on the ionic relaxtion for cell size, shape, and atomic displacments",
+            "$ref": "file:constraints.json"
+        },
+        "convergenceCriteria": {
+            "description": "criteria of the delta in total force before convergence is reached",
+            "$ref": "file:../primitive/scalar.json"
+        },
+        "energy": {
+            "description": "energy at the end of each ionic relaxation",
+            "item": {
+                "allOf": [
+                    {
+                        "$ref": "file:../characteristics/total_energy.json"
+                    },
+                    {
+                        "$ref": "file:../characteristics/total_energy_contributions.json"
+                    }
+                ]
+            }
+        }
+    }
+}

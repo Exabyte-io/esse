@@ -1,0 +1,23 @@
+{
+    "$schema": "http://json-schema.org/draft-04/schema#",
+    "title": "hybrid screened exchange convergence schema",
+    "properties": {
+        "electronicGroundstateConvergence": {
+            "$ref": "file:electronic.json"
+        },
+        "polarizedGroundstateIterations": {
+            "$ref": "file:electronic.json"
+        },
+        "energy": {
+            "description": "final total energy of the converged system",
+            "anyOf": [
+                {
+                    "$ref": "file:../characteristics/total_energy.json"
+                },
+                {
+                    "$ref": "file:../characteristics/total_energy_contributions.json"
+                }
+            ]
+        }
+    }
+}

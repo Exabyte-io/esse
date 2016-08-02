@@ -1,0 +1,14 @@
+{
+    "$schema": "http://json-schema.org/draft-04/schema#",
+    "title": "fermi reference energy delta schema",
+    "allOf": [
+        {
+            "$ref": "file:../../primitive/scalar.json"
+        }
+    ],
+    "properties": {
+        "enum": [
+            "fermiReferenceEnergyDelta"
+        ]
+    }
+}

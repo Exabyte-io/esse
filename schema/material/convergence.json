@@ -1,0 +1,26 @@
+{
+    "$schema": "http://json-schema.org/draft-04/schema#",
+    "title": "convergence criteria schema",
+    "properties": {
+        "oneOf": [
+            {
+                "electronic": {
+                    "description": "electronic minimization for self-consistency for a single job",
+                    "$ref": "file:../convergence/electronic.json"
+                }
+            },
+            {
+                "ionic": {
+                    "description": "ionic minimization for atomic position relaxation for a single job",
+                    "$ref": "file:../convergence/ionic.json"
+                }
+            },
+            {
+                "study": {
+                    "description": "used for a convergence study with multiple jobs for the same material",
+                    "$ref": "file:../convergence/study.json"
+                }
+            }
+        ]
+    }
+}

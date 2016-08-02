@@ -1,0 +1,16 @@
+{
+    "$schema": "http://json-schema.org/draft-04/schema#",
+    "title": "dynamical convergence schema",
+    "properties": {
+        "type": "array",
+        "items": {
+            "$ref": "file:degrees_of_freedom.json",
+            "degreesOfFreedom": {
+                "type": "object",
+                "items": {
+                    "$ref": "file:displacements.json"
+                }
+            }
+        }
+    }
+}

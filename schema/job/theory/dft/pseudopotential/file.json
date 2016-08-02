@@ -66,7 +66,38 @@
         },
         "characteristics": {
             "type": "array",
-            "description": "array of characteristic properties"
+            "description": "array of characteristic properties",
+            "items": {
+                "anyOf": [
+                    {
+                        "$ref": "file:../../material/pseudoProperties/convergedKPointDensity.json"
+                    },
+                    {
+                        "$ref": "file:../../material/pseudoProperties/convergedEnergyCutoff.json"
+                    },
+                    {
+                        "$ref": "file:../../material/pseudoProperties/convergedWavefunctionEnergyCutoff.json"
+                    },
+                    {
+                        "$ref": "file:../../material/pseudoProperties/atomizationEnergy.json"
+                    },
+                    {
+                        "$ref": "file:../../material/pseudoProperties/valenceBandReferenceEnergyDelta.json"
+                    },
+                    {
+                        "$ref": "file:../../material/pseudoProperties/conductionBandReferenceEnergyDelta.json"
+                    },
+                    {
+                        "$ref": "file:../../material/pseudoProperties/fermiReferenceEnergyDelta.json"
+                    },
+                    {
+                        "$ref": "file:../../material/pseudoProperties/bulkElementEnergy.json"
+                    },
+                    {
+                        "$ref": "file:../../material/pseudoProperties/zeroPointEnergy.json"
+                    },
+                ]
+            }
         },
         "path": {
             "type": "string",
