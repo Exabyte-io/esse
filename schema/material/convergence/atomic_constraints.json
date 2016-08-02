@@ -1,18 +1,17 @@
 {
     "$schema": "http://json-schema.org/draft-04/schema#",
-    "title": "convergence supercell constraints schema",
+    "title": "convergence supercell atomic constraints schema",
+    "allOf": [
+        {
+            "$ref": "file:../../../primitive/_array_of_ids.json"
+        }
+    ],
     "properties": {
-        "cellSize": "boolean",
-        "cellShape": "boolean",
-        "atomicPositions": "boolean",
-        "atomicConstraints": {
-            "description": "object containing the ids of all atoms and whether particular atom is allowed to relax in all 3 supercell directions",
-            "$ref": "file:../../../primitive/_array_of_ids",
-            "items": {
-                "x": "boolean",
-                "y": "boolean",
-                "z": "boolean"
-            }
+        "description": "object describing is the  atom is allowed to relax in all 3 supercell directions",
+        "items": {
+            "x": "boolean",
+            "y": "boolean",
+            "z": "boolean"
         }
     }
 }

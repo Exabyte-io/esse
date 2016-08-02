@@ -1,0 +1,42 @@
+{
+    "$schema": "http://json-schema.org/draft-04/schema#",
+    "title": "k point convergence study schema",
+    "properties": {
+        "electronic": {
+            "description": "array of the individual electronic convergences that happen as part for each step in the convergence study",
+            "type": "array",
+            "items": {
+                "$ref": "file:electronic.json"
+            }
+        },
+        "kpoints": {
+            "description": "name of the input parameter that is adjusted within the job to find the converged total energy",
+            "type": "string"
+        },
+        "energies": {
+            "description": "name of the property that is monited to determine convergence",
+            "type": "string"
+        },
+        "criteria": {
+            "description": "convergence criteria to be applied to the property being monitored for convergence",
+            "type": "number"
+        },
+        "formula": {
+            "description": "equation in python to evaluate whether the convergence criteria is reached",
+            "type": "string"
+        },
+        "energy": {
+            "description": "energy at the end of each job",
+            "items": {
+                "allOf": [
+                    {
+                        "$ref": "file:../characteristics/total_energy.json"
+                    },
+                    {
+                        "$ref": "file:../characteristics/total_energy_contributions.json"
+                    }
+                ]
+            }
+        }
+    }
+}

@@ -6,13 +6,7 @@
         "cellShape": "boolean",
         "atomicPositions": "boolean",
         "atomicConstraints": {
-            "description": "object containing the ids of all atoms and whether particular atom is allowed to relax in all 3 supercell directions",
-            "$ref": "file:../../../primitive/_array_of_ids",
-            "items": {
-                "x": "boolean",
-                "y": "boolean",
-                "z": "boolean"
-            }
+            "$ref": "file:atomic_constrains.json"
         }
     }
 }

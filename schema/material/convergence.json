@@ -16,9 +16,9 @@
                 }
             },
             {
-                "study": {
-                    "description": "used for a convergence study with multiple jobs for the same material",
-                    "$ref": "file:../convergence/study.json"
+                "kpoint": {
+                    "description": "used for a kpoint convergence study on a material same material",
+                    "$ref": "file:../convergence/kpoint_convergence.json"
                 }
             }
         ]
