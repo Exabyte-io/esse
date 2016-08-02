@@ -1,6 +1,6 @@
 {
     "status": "pre-submission",
-    "reuseMode": "material",
+    "mode": "normal",
     "_material": {
         "...": "include(job/_material.json)"
     },
