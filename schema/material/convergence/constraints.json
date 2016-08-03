@@ -14,10 +14,12 @@
             "description": "notes positions of the atoms within the cell are allowed to relax",
             "type": "boolean"
         },
-        "atomicConstraints": {
-            "description": "object containing the various directional constraints placed on atom relaxations",
-            "$ref": "file:atomic_constraints.json"
-        }
+        "allOf": [
+            {
+                "description": "electronic minimization for self-consistency for a single job",
+                "$ref": "file:atomic_constraints.json"
+            }
+        ]
     },
     "required": [
         "cellShape",
