@@ -1,5 +1,5 @@
 {
-    "electronic": [
+    "electronics": [
         {
             "...": "include(electronic.json)"
         },

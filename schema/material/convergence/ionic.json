@@ -2,7 +2,7 @@
     "$schema": "http://json-schema.org/draft-04/schema#",
     "title": "ionic convergence schema",
     "properties": {
-        "electronicConvergences": {
+        "electronics": {
             "type": "array",
             "items": {
                 "$ref": "file:electronic.json"
@@ -34,7 +34,7 @@
         }
     },
     "required": [
-        "electronicConvergences",
+        "electronics",
         "iterations"
     ]
 }
