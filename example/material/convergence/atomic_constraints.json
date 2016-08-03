@@ -1,7 +1,12 @@
 {
-    "atoms": {
-        "...": "include(../../primitive/_array_of_ids.json)"
-    },
+    "atoms": [
+        {
+            "id": 1
+        },
+        {
+            "id": 2
+        }
+    ],
     "unitCell": [
         {
             "x": "T",
