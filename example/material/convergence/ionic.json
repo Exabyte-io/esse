@@ -2,12 +2,6 @@
     "electronics": [
         {
             "...": "include(electronic.json)"
-        },
-        {
-            "...": "include(electronic.json)"
-        },
-        {
-            "...": "include(electronic.json)"
         }
     ],
     "constraints": {
