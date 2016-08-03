@@ -2,60 +2,26 @@
     "electronic": [
         {
             "iterations": 15,
-            "energyCriteria": {
-                "value": 0.001
-            },
-            "forceCriteria": {
-                "value": 0.01
-            },
-            "finalEnergy": {
-                "name": "total energy",
-                "value": -123.43573079,
-                "units": "eV"
-            }
-        },
-        {
-            "iterations": 10,
-            "energyCriteria": {
-                "value": 0.001
-            },
-            "forceCriteria": {
-                "value": 0.01
-            },
-            "finalEnergy": {
-                "name": "total energy",
-                "value": -124.43573079,
-                "units": "eV"
-            }
-        },
-        {
-            "iterations": 3,
-            "energyCriteria": {
-                "value": 0.001
-            },
-            "forceCriteria": {
-                "value": 0.01
-            },
-            "finalEnergy": {
-                "name": "total energy",
-                "value": -124.44573079,
-                "units": "eV"
-            }
+            "energyCriteria": 0.01,
+            "forceCriteria": 0.1,
+            "results": [
+                {
+                    "name": "total energy",
+                    "value": -123.43573079,
+                    "units": "eV"
+                }
+            ]
         }
     ],
     "parameter": "kpoints",
     "property": "total_energy",
     "criteria": 0.02,
     "formula": "abs(previous_total_E-total_energy) <",
-    "energies": [
+    "results": [
         {
-            "value": -123.43573079
-        },
-        {
-            "value": -124.43573079
-        },
-        {
-            "value": -124.44573079
+            "name": "total energy",
+            "value": -123.43573079,
+            "units": "eV"
         }
     ]
 }

@@ -3,31 +3,38 @@
     "title": "electronic self consistency convergence schema",
     "properties": {
         "iterations": {
-            "description": "criteria",
+            "description": "number of iterations during electronic self-consistency convergence",
             "type": "number"
         },
         "energyCriteria": {
-            "description": "criteria",
-            "$ref": "file:../../primitive/scalar.json"
+            "description": "criteria for energy convergence",
+            "type": "number",
+            "units": {
+                "enum": [
+                    "eV",
+                    "rydberg",
+                    "hartree"
+                ]
+            }
         },
         "forceCriteria": {
-            "description": "criteria",
-            "$ref": "file:../../primitive/scalar.json"
+            "description": "criteria for force convergence",
+            "type": "number",
+            "units": {
+                "enum": [
+                    "eV/a.u."
+                ]
+            }
         },
-        "finalEnergy": {
-            "description": "final total energy of the converged system",
-            "anyOf": [
-                {
-                    "$ref": "file:../characteristics/total_energy.json"
-                },
-                {
-                    "$ref": "file:../characteristics/total_energy_contributions.json"
-                }
-            ]
+        "results": {
+            "description": "Resulting properties extracted from the unit, besides the textual output.",
+            "type": "array",
+            "items": {
+                "$ref": "file:../../job/model/method/workflow/unit/_result.json"
+            }
         }
     },
     "required": [
-        "iterations",
-        "finalEnergy"
+        "iterations"
     ]
 }

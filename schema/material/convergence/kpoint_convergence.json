@@ -25,17 +25,11 @@
             "description": "equation in python to evaluate whether the convergence criteria is reached",
             "type": "string"
         },
-        "energies": {
-            "description": "energy at the end of each job",
+        "results": {
+            "description": "Resulting properties extracted from the unit, besides the textual output.",
+            "type": "array",
             "items": {
-                "allOf": [
-                    {
-                        "$ref": "file:../characteristics/total_energy.json"
-                    },
-                    {
-                        "$ref": "file:../characteristics/total_energy_contributions.json"
-                    }
-                ]
+                "$ref": "file:../../job/model/method/workflow/unit/_result.json"
             }
         }
     },
@@ -45,6 +39,6 @@
         "property",
         "criteria",
         "formula",
-        "energies"
+        "results"
     ]
 }
