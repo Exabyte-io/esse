@@ -34,7 +34,7 @@
         }
     },
     "required": [
-        "electronic",
+        "electronics",
         "parameter",
         "property",
         "criteria",
