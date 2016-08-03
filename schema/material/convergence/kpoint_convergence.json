@@ -2,7 +2,7 @@
     "$schema": "http://json-schema.org/draft-04/schema#",
     "title": "k point convergence study schema",
     "properties": {
-        "electronic": {
+        "electronics": {
             "description": "array of the individual electronic convergences that happen as part for each step in the convergence study",
             "type": "array",
             "items": {
