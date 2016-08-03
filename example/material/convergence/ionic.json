@@ -1,44 +1,17 @@
 {
-    "electronicConvergences": [
+    "electronics": [
         {
-            "iterations": 15,
-            "energyCriteria": 0.01,
-            "forceCriteria": 0.1,
-            "results": [
-                {
-                    "name": "total energy",
-                    "value": -123.43573079,
-                    "units": "eV"
-                }
-            ]
+            "...": "include(electronic.json)"
+        },
+        {
+            "...": "include(electronic.json)"
+        },
+        {
+            "...": "include(electronic.json)"
         }
     ],
     "constraints": {
-        "cellSize": true,
-        "cellShape": true,
-        "atomicPositions": true,
-        "atomicConstraints": {
-            "atoms": [
-                {
-                    "id": 1
-                },
-                {
-                    "id": 2
-                }
-            ],
-            "unitCell": [
-                {
-                    "x": "T",
-                    "y": "T",
-                    "z": "T"
-                },
-                {
-                    "x": "T",
-                    "y": "T",
-                    "z": "T"
-                }
-            ]
-        }
+        "...": "include(constraints.json)"
     },
     "iterations": 28,
     "forceCriteria": 0.1,

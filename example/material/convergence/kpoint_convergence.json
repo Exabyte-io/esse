@@ -1,16 +1,13 @@
 {
     "electronic": [
         {
-            "iterations": 15,
-            "energyCriteria": 0.01,
-            "forceCriteria": 0.1,
-            "results": [
-                {
-                    "name": "total energy",
-                    "value": -123.43573079,
-                    "units": "eV"
-                }
-            ]
+            "...": "include(electronic.json)"
+        },
+        {
+            "...": "include(electronic.json)"
+        },
+        {
+            "...": "include(electronic.json)"
         }
     ],
     "parameter": "kpoints",
