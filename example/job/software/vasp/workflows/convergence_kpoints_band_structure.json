@@ -53,7 +53,7 @@
         },
         {
             "status": "idle",
-            "flowchartId": "test_vasp_1",
+            "flowchartId": "run_scf_calculation",
             "name": "run_scf_calculation",
             "type": "compute",
             "next": "check_for_convergence",
@@ -117,7 +117,7 @@
                         "name": "total_energy"
                     }
                 ],
-                "statement": "abs(previous_total_E-total_energy) < 1e-5",
+                "statement": "abs(previous_total_E-total_energy) < 1e-3",
                 "then": "convergence_is_reached",
                 "else": "assign_total_energy_to_previous_total_E",
                 "maxOccurences": 100
@@ -255,34 +255,37 @@
             "name": "run_band_structure",
             "type": "compute",
             "next": "done_with_convergence_plus_band_structure",
+            "head": true,
             "app": {
                 "flavor": "vasp",
-                "exec": "vasp"
+                "exec": "vasp",
+                "name": "vasp"
             },
             "results": [
                 {
                     "name": "density_of_states"
                 },
                 {
-                    "name": "band_structure"
-                },
-                {
                     "name": "band_gap"
                 },
                 {
                     "name": "total_energy"
-                }
+                },
+                {
+                    "name": "band_structure"
+                },
             ],
             "monitors": [
                 {
-                    "name": "scf_accuracy"
+                    "name": "standard_output"
                 },
                 {
-                    "name": "standard_output"
+                    "name": "delta_energy"
+                },
+                {
+                    "name": "total_energy"
                 }
-            ],
-            "preProcessors": [],
-            "postProcessors": []
+            ]
         },
         {
             "flowchartId": "done_with_convergence_plus_band_structure",
