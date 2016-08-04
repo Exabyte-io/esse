@@ -3,13 +3,7 @@
     "units": "eV/a.u.",
     "data": [
         {
-            "energy": "-123.45678",
-            "electronic": {
-                "...": "include(electronic.json)"
-            }
-        },
-        {
-            "energy": "-123.45679",
+            "energy": -123.45678,
             "electronic": {
                 "...": "include(electronic.json)"
             }

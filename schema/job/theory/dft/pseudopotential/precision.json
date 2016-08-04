@@ -28,6 +28,6 @@
     "required": [
         "ecutwfc",
         "ecutrho",
-        "grid"
+        "kgrid"
     ]
 }
