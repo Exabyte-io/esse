@@ -1,7 +1,7 @@
 {
     "$schema": "http://json-schema.org/draft-04/schema#",
     "title": "formation energy schema",
-    "type": "object",
+    "description": "energy of the relative stability of a system relative to the constituents",
     "allOf": [
         {
             "$ref": "file:../../primitive/2d_plot.json"

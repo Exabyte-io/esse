@@ -1,6 +1,7 @@
 {
     "$schema": "http://json-schema.org/draft-04/schema#",
     "title": "atomization energy schema",
+    "description": "energy of a free atom or diatom in the case of O, F, Br, I, H, & Cl",
     "allOf": [
         {
             "$ref": "file:../../primitive/scalar.json"
