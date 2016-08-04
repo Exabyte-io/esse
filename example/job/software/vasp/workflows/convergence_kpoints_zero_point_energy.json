@@ -1,0 +1,306 @@
+{
+    "name": "vasp gamma point kpoint convergence plus band structure",
+    "app": "vasp",
+    "units": [
+        {
+            "type": "assignment",
+            "name": "initialize_previous_energy",
+            "flowchartId": "initialize_previous_energy",
+            "status": "idle",
+            "app": {},
+            "next": "initialize_N_K_x",
+            "head": true,
+            "assignment": {
+                "name": "previous_total_E",
+                "value": "0"
+            }
+        },
+        {
+            "type": "assignment",
+            "name": "initialize_N_K_x",
+            "flowchartId": "initialize_N_K_x",
+            "status": "idle",
+            "app": {},
+            "next": "initialize_N_K_y",
+            "assignment": {
+                "name": "N_K_x",
+                "value": "1"
+            }
+        },
+        {
+            "type": "assignment",
+            "name": "initialize_N_K_y",
+            "flowchartId": "initialize_N_K_y",
+            "status": "idle",
+            "app": {},
+            "next": "initialize_N_K_z",
+            "assignment": {
+                "name": "N_K_y",
+                "value": "1"
+            }
+        },
+        {
+            "type": "assignment",
+            "name": "initialize_N_K_z",
+            "flowchartId": "initialize_N_K_z",
+            "status": "idle",
+            "app": {},
+            "next": "run_scf_calculation",
+            "assignment": {
+                "name": "N_K_z",
+                "value": "1"
+            }
+        },
+        {
+            "status": "idle",
+            "flowchartId": "test_vasp_1",
+            "name": "run_scf_calculation",
+            "type": "compute",
+            "next": "check_for_convergence",
+            "head": true,
+            "app": {
+                "name": "vasp",
+                "exec": "vasp"
+            },
+            "monitors": [
+                {
+                    "name": "standard_output"
+                },
+                {
+                    "name": "delta_energy"
+                },
+                {
+                    "name": "total_energy"
+                }
+            ],
+            "postProcessors": [],
+            "input": [
+                {
+                    "name": "INCAR",
+                    "content": "SYSTEM =  SiGe-FCC\n LWAVE  = .FALSE.\n LCHARG = .FALSE.\n ISMEAR =    1\n SIGMA  = 0.1"
+                },
+                {
+                    "name": "KPOINTS",
+                    "content": "Automatic mesh\n0\nGamma\n  {{N_K_x | default('1')}} {{N_K_y | default('1')}} {{N_K_z | default('1')}}\n  0.  0.  0.\n"
+                },
+                {
+                    "name": "POSCAR",
+                    "content": "SiGe\n 5.0\n 0.500000000 0.500000000 0.000000000\n 0.000000000 0.500000000 0.500000000\n 0.500000000 0.000000000 0.500000000\n Si Ge\n 1 1\n direct\n 0.000000000 0.000000000 0.000000000 Si\n 0.250000000 0.250000000 0.250000000 Ge"
+                }
+            ],
+            "results": [
+                {
+                    "name": "total_energy"
+                },
+                {
+                    "name": "band_gap"
+                },
+                {
+                    "name": "bandstructure"
+                }
+            ]
+        },
+        {
+            "flowchartId": "check_for_convergence",
+            "type": "condition",
+            "name": "check_for_convergence",
+            "status": "idle",
+            "app": {},
+            "condition": {
+                "input": [
+                    {
+                        "scope": "global",
+                        "name": "previous_total_E"
+                    },
+                    {
+                        "scope": "run_scf_calculation",
+                        "name": "total_energy"
+                    }
+                ],
+                "statement": "abs(previous_total_E-total_energy) < 1e-5",
+                "then": "convergence_is_reached",
+                "else": "assign_total_energy_to_previous_total_E",
+                "maxOccurences": 100
+            }
+        },
+        {
+            "flowchartId": "assign_total_energy_to_previous_total_E",
+            "type": "assignment",
+            "name": "assign_total_energy_to_previous_total_E",
+            "status": "idle",
+            "next": "increase_N_K_x_by_1",
+            "app": {},
+            "assignment": {
+                "input": [
+                    {
+                        "scope": "run_scf_calculation",
+                        "name": "total_energy"
+                    }
+                ],
+                "name": "previous_total_E",
+                "value": "total_energy"
+            }
+        },
+        {
+            "flowchartId": "increase_N_K_x_by_1",
+            "type": "assignment",
+            "name": "increase_N_K_x_by_1",
+            "status": "idle",
+            "next": "increase_N_K_y_by_1",
+            "app": {},
+            "assignment": {
+                "input": [
+                    {
+                        "scope": "global",
+                        "name": "N_K_x"
+                    }
+                ],
+                "name": "N_K_x",
+                "value": "N_K_x+1"
+            }
+        },
+        {
+            "flowchartId": "increase_N_K_y_by_1",
+            "type": "assignment",
+            "name": "increase_N_K_y_by_1",
+            "status": "idle",
+            "next": "increase_N_K_z_by_1",
+            "app": {},
+            "assignment": {
+                "input": [
+                    {
+                        "scope": "global",
+                        "name": "N_K_y"
+                    }
+                ],
+                "name": "N_K_y",
+                "value": "N_K_y+1"
+            }
+        },
+        {
+            "flowchartId": "increase_N_K_z_by_1",
+            "type": "assignment",
+            "name": "increase_N_K_z_by_1",
+            "status": "idle",
+            "next": "run_scf_calculation",
+            "app": {},
+            "assignment": {
+                "input": [
+                    {
+                        "scope": "global",
+                        "name": "N_K_z"
+                    }
+                ],
+                "name": "N_K_z",
+                "value": "N_K_z+1"
+            }
+        },
+        {
+            "flowchartId": "convergence_is_reached",
+            "type": "assignment",
+            "name": "convergence_is_reached",
+            "status": "idle",
+            "next": "decrease_N_K_y_by_1",
+            "app": {},
+            "assignment": {
+                "input": [
+                    {
+                        "scope": "global",
+                        "name": "N_K_x"
+                    }
+                ],
+                "name": "N_K_x",
+                "value": "N_K_x-1"
+            }
+        },
+        {
+            "flowchartId": "decrease_N_K_y_by_1",
+            "type": "assignment",
+            "name": "decrease_N_K_y_by_1",
+            "status": "idle",
+            "next": "decrease_N_K_z_by_1",
+            "app": {},
+            "assignment": {
+                "input": [
+                    {
+                        "scope": "global",
+                        "name": "N_K_y"
+                    }
+                ],
+                "name": "N_K_y",
+                "value": "N_K_y-1"
+            }
+        },
+        {
+            "flowchartId": "decrease_N_K_z_by_1",
+            "type": "assignment",
+            "name": "decrease_N_K_z_by_1",
+            "status": "idle",
+            "next": "run_band_structure",
+            "app": {},
+            "assignment": {
+                "input": [
+                    {
+                        "scope": "global",
+                        "name": "N_K_z"
+                    }
+                ],
+                "name": "N_K_z",
+                "value": "N_K_z-1"
+            }
+        },
+        {
+            "status": "idle",
+            "flowchartId": "run_zero_point_energy",
+            "name": "run_zero_point_energy",
+            "type": "compute",
+            "next": "done_with_convergence_plus_zero_point_energy",
+            "app": {
+                "flavor": "vasp",
+                "exec": "vasp"
+            },
+            "input": [
+                {
+                    "name": "INCAR",
+                    "content": "SYSTEM =  SiGe-FCC\n LWAVE  = .FALSE.\n LCHARG = .FALSE.\n ISMEAR =    1\n SIGMA  = 0.1"
+                },
+                {
+                    "name": "KPOINTS",
+                    "content": "Automatic mesh\n0\nGamma\n  {{N_K_x | default('1')}} {{N_K_y | default('1')}} {{N_K_z | default('1')}}\n  0.  0.  0.\n"
+                },
+                {
+                    "name": "POSCAR",
+                    "content": "SiGe\n 5.0\n 0.500000000 0.500000000 0.000000000\n 0.000000000 0.500000000 0.500000000\n 0.500000000 0.000000000 0.500000000\n Si Ge\n 1 1\n direct\n 0.000000000 0.000000000 0.000000000 Si\n 0.250000000 0.250000000 0.250000000 Ge"
+                }
+            ],
+            "results": [
+                {
+                    "name": "total_energy"
+                },
+                {
+                    "name": "zero_point_energy"
+                }
+            ],
+            "monitors": [
+                {
+                    "name": "scf_accuracy"
+                },
+                {
+                    "name": "standard_output"
+                }
+            ],
+            "preProcessors": [],
+            "postProcessors": []
+        },
+        {
+            "flowchartId": "done_with_convergence_plus_zero_point_energy",
+            "type": "exit",
+            "name": "exit",
+            "status": "idle",
+            "app": {},
+            "exit": {
+                "throwException": true
+            }
+        }
+    ]
+}
