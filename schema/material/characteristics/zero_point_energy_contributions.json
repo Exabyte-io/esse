@@ -1,0 +1,29 @@
+{
+    "$schema": "http://json-schema.org/draft-04/schema#",
+    "title": "zero point energy contributions schema",
+    "type": "object",
+    "properties": {
+        "zeroPointEnergy": {
+            "description": "contribution to the total free energy due to atomic flucation on 0K",
+            "allOf": [
+                {
+                    "$ref": "file:1d_data_series.json"
+                }
+            ],
+            "properties": {
+                "name": {
+                    "enum": [
+                        "zero point energy contributions"
+                    ]
+                }
+            }
+        },
+        "units": {
+            "enum": [
+                "eV",
+                "rydberg",
+                "hartree"
+            ]
+        }
+    }
+}

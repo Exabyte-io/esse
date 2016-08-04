@@ -1,6 +1,6 @@
 {
     "$schema": "http://json-schema.org/draft-04/schema#",
-    "title": "band structure schema",
+    "title": "density of states schema",
     "type": "object",
     "allOf": [
         {
