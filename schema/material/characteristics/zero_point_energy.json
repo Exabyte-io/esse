@@ -1,0 +1,24 @@
+{
+    "$schema": "http://json-schema.org/draft-04/schema#",
+    "title": "zero point energy schema",
+    "allOf": [
+        {
+            "$ref": "file:../../primitive/scalar.json"
+        }
+    ],
+    "properties": {
+        "description": "contribution to the total free energy due to atomic flucation on 0K",
+        "name": {
+            "enum": [
+                "zero point energy"
+            ]
+        },
+        "units": {
+            "enum": [
+                "eV",
+                "rydberg",
+                "hartree"
+            ]
+        }
+    }
+}

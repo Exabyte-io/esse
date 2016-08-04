@@ -1,0 +1,47 @@
+{
+    "$schema": "http://json-schema.org/draft-04/schema#",
+    "title": "formation energy schema",
+    "type": "object",
+    "allOf": [
+        {
+            "$ref": "file:../../primitive/2d_plot.json"
+        }
+    ],
+    "properties": {
+        "xAxis": {
+            "properties": {
+                "label": {
+                    "enum": [
+                        "temperature"
+                    ]
+                },
+                "units": {
+                    "enum": [
+                        "degree"
+                    ]
+                }
+            }
+        },
+        "yAxis": {
+            "properties": {
+                "label": {
+                    "enum": [
+                        "formation energy"
+                    ]
+                },
+                "units": {
+                    "enum": [
+                        "eV",
+                        "hartree",
+                        "rydberg"
+                    ]
+                }
+            }
+        },
+        "type": {
+            "enum": [
+                "enthalpy"
+            ]
+        }
+    }
+}
