@@ -7,7 +7,6 @@
         }
     ],
     "properties": {
-        "description": "energy of a free atom or diatom in the case of O, F, Br, I, H, & Cl",
         "name": {
             "enum": [
                 "atomization energy"

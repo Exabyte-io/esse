@@ -7,7 +7,6 @@
         }
     ],
     "properties": {
-        "description": "contribution to the total free energy due to atomic flucation on 0K",
         "name": {
             "enum": [
                 "zero point energy"
