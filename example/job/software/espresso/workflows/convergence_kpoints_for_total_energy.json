@@ -1,6 +1,7 @@
 {
-    "name": "k point convergence for total energy",
+    "name": "Total Energy",
     "app": "espresso",
+    "title": "k point convergence for total energy",
     "units": [
         {
             "type": "assignment",
@@ -103,7 +104,7 @@
                         "name": "total_energy"
                     }
                 ],
-                "statement": "abs(previous_total_E-total_energy) < 1e-5",
+                "statement": "abs(previous_total_E-total_energy) < 1e-2",
                 "then": "decrement_kpoint_density",
                 "else": "assign_total_energy_to_previous_total_E",
                 "maxOccurences": 100
@@ -245,7 +246,7 @@
             "assignment": {
                 "input": [
                     {
-                        "scope": "run_scf_calculation",
+                        "scope": "global",
                         "name": "previous_total_E"
                     }
                 ],
