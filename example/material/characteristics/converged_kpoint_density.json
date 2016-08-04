@@ -51,7 +51,20 @@
                         "flowchartId": "pw-scf",
                         "name": "pw_scf",
                         "execution": {
-                            "...": "include(unit/execution.json)"
+                            "app": {
+                                "name": "espresso",
+                                "version": "5.1.1",
+                                "summary": "Quantum Espresso",
+                                "exec": "pw.x",
+                                "flavor": "pw_scf"
+                            },
+                            "computeArgs": null,
+                            "input": [
+                                {
+                                    "content": "K_POINTS automatic\n2 2 2 0 0 0",
+                                    "name": "pw_scf.in"
+                                }
+                            ]
                         },
                         "results": [
                             {
