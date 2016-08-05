@@ -42,16 +42,6 @@
                     ]
                 }
             ]
-        },
-        "method": {
-            "oneOf": [
-                {
-                    "$ref": "file:dft/pseudopotential.json"
-                },
-                {
-                    "$ref": "file:dft/local-orbital.json"
-                }
-            ]
         }
     },
     "definitions": {

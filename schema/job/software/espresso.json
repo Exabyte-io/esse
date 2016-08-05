@@ -1,1 +1,37 @@
-{}
+{
+    "$schema": "http://json-schema.org/draft-04/schema#",
+    "title": "espresso app schema",
+    "type": "object",
+    "properties": {
+        "name": {
+            "enum": [
+                "espresso"
+            ]
+        },
+        "summary": {
+            "enum": [
+                "Quantum Espresso"
+            ]
+        },
+        "flavor": {
+            "enum": [
+                "pw_scf",
+                "pw_bands",
+                "pp"
+            ]
+        },
+        "version": {
+            "enum": [
+                "5.3.5"
+            ]
+        },
+        "exec": {
+            "enum": [
+                "pw.x",
+                "bands.x",
+                "pp.x",
+                "dos.x"
+            ]
+        }
+    }
+}

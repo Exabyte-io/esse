@@ -22,8 +22,17 @@
             "type": "object"
         }
     },
+    "oneOf": [
+        {
+            "$ref": "file:../theory/dft/pseudopotential.json"
+        },
+        {
+            "$ref": "file:../theory/dft/local-orbital.json"
+        }
+    ],
     "required": [
         "type",
-        "precision"
+        "precision",
+        "workflow"
     ]
 }
