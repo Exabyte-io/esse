@@ -19,10 +19,10 @@
         "functional": {
             "oneOf": [
                 {
-                    "$ref": "#/definitions/functionals/lda"
+                    "$ref": "#/definitions/lda"
                 },
                 {
-                    "$ref": "#/definitions/functionals/gga"
+                    "$ref": "#/definitions/gga"
                 },
                 {
                     "enum": [
@@ -55,23 +55,22 @@
         }
     },
     "definitions": {
-        "functionals": {
-            "lda": {
-                "enum": [
-                    "pz",
-                    "pw",
-                    "cp",
-                    "vwn"
-                ]
-            },
-            "gga": {
-                "enum": [
-                    "pbe",
-                    "pbe0",
-                    "pw91",
-                    "rpbe"
-                ]
-            }
+        "lda": {
+            "type": "string",
+            "enum": [
+                "pz",
+                "pw",
+                "cp",
+                "vwn"
+            ]
+        },
+        "gga": {
+            "enum": [
+                "pbe",
+                "pbe0",
+                "pw91",
+                "rpbe"
+            ]
         }
     }
 }

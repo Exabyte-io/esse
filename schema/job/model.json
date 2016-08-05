@@ -17,7 +17,7 @@
                     "$ref": "file:model/accuracy.json"
                 },
                 "method": {
-                    "type": "object"
+                    "$ref": "file:model/method.json"
                 },
                 "references": {
                     "type": "array",

@@ -18,7 +18,8 @@
                         "type": "string"
                     },
                     "value": {
-                        "description": "Value of the argument."
+                        "description": "Value of the argument.",
+                        "type": ["string", "array", "object", "number", "boolean"]
                     }
                 },
                 "required": [
@@ -32,7 +33,8 @@
             "type": "string"
         },
         "value": {
-            "description": "Value of the result."
+            "description": "Value of the result.",
+            "type": "object"
         }
     },
     "required": [
