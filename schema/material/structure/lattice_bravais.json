@@ -1,11 +1,7 @@
 {
     "$schema": "http://json-schema.org/draft-04/schema#",
     "title": "lattice implicit schema",
-    "allOf": [
-        {
-            "$ref": "file:../../primitive/3d_lattice.json"
-        }
-    ],
+    "$ref": "file:../../primitive/3d_lattice.json",
     "properties": {
         "type": {
             "description": "Bravais lattice type in short notation",

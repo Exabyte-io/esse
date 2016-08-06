@@ -1,11 +1,7 @@
 {
     "$schema": "http://json-schema.org/draft-04/schema#",
     "title": "band gap schema",
-    "allOf": [
-        {
-            "$ref": "file:../../primitive/scalar.json"
-        }
-    ],
+    "$ref": "file:../../primitive/scalar.json",
     "properties": {
         "kpointConduction": {
             "description": "kpoint inside conduction band",
