@@ -2,19 +2,7 @@
     "type": "pseudopotential",
     "subtype": "us",
     "precision": {
-        "ecutwfc": 40,
-        "ecutrho": 200,
-        "kpoints": [
-            2,
-            2,
-            2
-        ],
-        "ibz": -1,
-        "shift": [
-            0,
-            0,
-            0
-        ]
+        "...": "include(../theory/dft/pseudopotential/precision.json)"
     },
     "workflow": {
         "...": "include(method/workflow.json)"

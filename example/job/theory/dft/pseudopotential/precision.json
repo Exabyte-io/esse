@@ -1,0 +1,16 @@
+{
+    "ecutrho": 40,
+    "ecutwfc": 200,
+    "kgrid": {
+        "dimensions": [
+            2,
+            2,
+            2
+        ],
+        "shifts": [
+            0,
+            0,
+            0
+        ]
+    }
+}
