@@ -53,7 +53,7 @@
                 },
                 "timestamp": {
                     "description": "Timestamp of the message.",
-                    "type": "integer"
+                    "type": "number"
                 }
             },
             "required": [
