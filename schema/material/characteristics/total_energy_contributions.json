@@ -1,6 +1,6 @@
 {
     "$schema": "http://json-schema.org/draft-04/schema#",
-    "title": "total energy schema",
+    "title": "total energy contributions schema",
     "type": "object",
     "properties": {
         "temperatureEntropy": {
