@@ -40,32 +40,16 @@
     ],
     "legend": [
         {
-            "element": [
-                "C"
-            ],
-            "index": [
-                1
-            ],
-            "electronicState": [
-                "2s"
-            ],
-            "spin": [
-                0.5
-            ]
+            "element": "C",
+            "index": 1,
+            "electronicState": "2s",
+            "spin": 0.5
         },
         {
-            "element": [
-                "C"
-            ],
-            "index": [
-                2
-            ],
-            "electronicState": [
-                "2p"
-            ],
-            "spin": [
-                0.5
-            ]
+            "element": "C",
+            "index": 2,
+            "electronicState": "2p",
+            "spin": 0.5
         }
     ]
 }
