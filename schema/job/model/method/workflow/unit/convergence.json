@@ -1,0 +1,20 @@
+{
+    "$schema": "http://json-schema.org/draft-04/schema#",
+    "title": "convergence schema",
+    "properties": {
+        "tolerance": {
+            "description": "criterion for convergence",
+            "type": "number"
+        },
+        "units": {
+            "type": "string"
+        },
+        "data": {
+            "description": "values at each iteration",
+            "type": "array"
+        }
+    },
+    "required": [
+        "data"
+    ]
+}
