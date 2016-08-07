@@ -1,19 +1,19 @@
 {
-    "name": "exabyte-materials-data",
+    "name": "exabyte-materials-json",
     "version": "0.1.0",
-    "description": "Exabyte.io Materials Data Documentation",
+    "description": "Exabyte.io Materials JSON",
     "scripts": {
         "test": "mocha --compilers js:babel-core/register ./tests/**/*.spec.js"
     },
     "repository": {
         "type": "git",
-        "url": "git+https://github.com/Exabyte-io/exabyte-materials-data.git"
+        "url": "git+https://github.com/Exabyte-io/exabyte-materials-json.git"
     },
     "author": "Exabyte Inc.",
     "bugs": {
-        "url": "https://github.com/Exabyte-io/exabyte-materials-data/issues"
+        "url": "https://github.com/Exabyte-io/exabyte-materials-json/issues"
     },
-    "homepage": "https://github.com/Exabyte-io/exabyte-materials-data#readme",
+    "homepage": "https://github.com/Exabyte-io/exabyte-materials-json#readme",
     "devDependencies": {
         "ajv": "^4.1.7",
         "babel-cli": "^6.6.5",
