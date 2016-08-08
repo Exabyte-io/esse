@@ -5,43 +5,50 @@
     "allOf": [
         {
             "$ref": "file:../../primitive/2d_plot.json"
-        }
-    ],
-    "properties": {
-        "xAxis": {
-            "properties": {
-                "label": {
-                    "enum": [
-                        "temperature"
-                    ]
-                },
-                "units": {
-                    "enum": [
-                        "degree"
-                    ]
-                }
-            }
         },
-        "yAxis": {
+        {
             "properties": {
-                "label": {
+                "xAxis": {
+                    "properties": {
+                        "label": {
+                            "enum": [
+                                "temperature"
+                            ]
+                        },
+                        "units": {
+                            "enum": [
+                                "degree"
+                            ]
+                        }
+                    }
+                },
+                "yAxis": {
+                    "properties": {
+                        "label": {
+                            "enum": [
+                                "formation energy"
+                            ]
+                        },
+                        "units": {
+                            "enum": [
+                                "eV",
+                                "hartree",
+                                "rydberg"
+                            ]
+                        }
+                    }
+                },
+                "name": {
                     "enum": [
                         "formation energy"
                     ]
                 },
-                "units": {
+                "type": {
                     "enum": [
-                        "eV",
-                        "hartree",
-                        "rydberg"
+                        "enthalpy"
                     ]
                 }
             }
-        },
-        "type": {
-            "enum": [
-                "enthalpy"
-            ]
         }
-    }
+    ]
 }

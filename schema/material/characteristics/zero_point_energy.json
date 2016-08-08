@@ -5,20 +5,22 @@
     "allOf": [
         {
             "$ref": "file:../../primitive/scalar.json"
-        }
-    ],
-    "properties": {
-        "name": {
-            "enum": [
-                "zero point energy"
-            ]
         },
-        "units": {
-            "enum": [
-                "eV",
-                "rydberg",
-                "hartree"
-            ]
+        {
+            "properties": {
+                "name": {
+                    "enum": [
+                        "zero point energy"
+                    ]
+                },
+                "units": {
+                    "enum": [
+                        "eV",
+                        "rydberg",
+                        "hartree"
+                    ]
+                }
+            }
         }
-    }
+    ]
 }
