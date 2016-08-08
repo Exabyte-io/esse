@@ -1,6 +1,6 @@
 {
     "$schema": "http://json-schema.org/draft-04/schema#",
-    "title": "3d tensor schema",
+    "title": "3 dimensional tensor schema",
     "type": "array",
     "items": {
         "$ref": "file:vector.json"

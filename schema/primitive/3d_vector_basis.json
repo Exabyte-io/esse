@@ -1,19 +1,31 @@
 {
     "$schema": "http://json-schema.org/draft-04/schema#",
-    "title": "3d vector basis",
+    "title": "3 dimensional vector basis",
     "type": "object",
     "properties": {
         "a": {
             "description": "first vector",
-            "$ref": "file:vector.json"
+            "allOf": [
+                {
+                    "$ref": "file:vector.json"
+                }
+            ]
         },
         "b": {
             "description": "second vector",
-            "$ref": "file:vector.json"
+            "allOf": [
+                {
+                    "$ref": "file:vector.json"
+                }
+            ]
         },
         "c": {
             "description": "third vector",
-            "$ref": "file:vector.json"
+            "allOf": [
+                {
+                    "$ref": "file:vector.json"
+                }
+            ]
         }
     },
     "required": [

@@ -1,19 +1,25 @@
 {
     "$schema": "http://json-schema.org/draft-04/schema#",
     "title": "fermi energy schema",
-    "$ref": "file:../../primitive/scalar.json",
-    "properties": {
-        "name": {
-            "enum": [
-                "fermi energy"
-            ]
+    "allOf": [
+        {
+            "$ref": "file:../../primitive/scalar.json"
         },
-        "units": {
-            "enum": [
-                "eV",
-                "rydberg",
-                "hartree"
-            ]
+        {
+            "properties": {
+                "name": {
+                    "enum": [
+                        "fermi energy"
+                    ]
+                },
+                "units": {
+                    "enum": [
+                        "eV",
+                        "rydberg",
+                        "hartree"
+                    ]
+                }
+            }
         }
-    }
+    ]
 }

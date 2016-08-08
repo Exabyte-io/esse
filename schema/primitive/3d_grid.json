@@ -1,12 +1,20 @@
 {
     "$schema": "http://json-schema.org/draft-04/schema#",
-    "title": "schema for 3d grid",
+    "title": "3 dimensional grid schema",
     "properties": {
         "dimensions": {
-            "$ref": "file:point.json"
+            "allOf": [
+                {
+                    "$ref": "file:point.json"
+                }
+            ]
         },
         "shifts": {
-            "$ref": "file:point.json"
+            "allOf": [
+                {
+                    "$ref": "file:point.json"
+                }
+            ]
         }
     },
     "required": [

@@ -1,21 +1,27 @@
 {
     "$schema": "http://json-schema.org/draft-04/schema#",
     "title": "lattice explicit unit",
-    "$ref": "file:../../primitive/3d_vector_basis.json",
-    "properties": {
-        "alat": {
-            "description": "lattice parameter for fractional coordinates",
-            "type": "number",
-            "default": 1.0
+    "allOf": [
+        {
+            "$ref": "file:../../primitive/3d_vector_basis.json"
         },
-        "units": {
-            "description": "units for lattice vectors",
-            "type": "string",
-            "enum": [
-                "angstrom",
-                "bohr",
-                "alat"
-            ]
+        {
+            "properties": {
+                "alat": {
+                    "description": "lattice parameter for fractional coordinates",
+                    "type": "number",
+                    "default": 1.0
+                },
+                "units": {
+                    "description": "units for lattice vectors",
+                    "type": "string",
+                    "enum": [
+                        "angstrom",
+                        "bohr",
+                        "alat"
+                    ]
+                }
+            }
         }
-    }
+    ]
 }
