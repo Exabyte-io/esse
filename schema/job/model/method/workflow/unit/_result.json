@@ -19,7 +19,13 @@
                     },
                     "value": {
                         "description": "Value of the argument.",
-                        "type": ["string", "array", "object", "number", "boolean"]
+                        "type": [
+                            "string",
+                            "array",
+                            "object",
+                            "number",
+                            "boolean"
+                        ]
                     }
                 },
                 "required": [
@@ -27,14 +33,6 @@
                     "value"
                 ]
             }
-        },
-        "units": {
-            "description": "Unit of the value.",
-            "type": "string"
-        },
-        "value": {
-            "description": "Value of the result.",
-            "type": "object"
         }
     },
     "required": [
