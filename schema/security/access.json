@@ -23,6 +23,14 @@
                 10,
                 20
             ]
+        },
+        "accounts": {
+            "description": "contains accounts that can access this entity, content can be ignored depending on the level type",
+            "type": "array",
+            "items": {
+                "description": "information about an account",
+                "$ref": "file:account.json"
+            }
         }
     },
     "required": [

@@ -1,0 +1,85 @@
+{
+    "$schema": "http://json-schema.org/draft-04/schema#",
+    "title": "entity schema",
+    "description": "contains information about possible entity types",
+    "type": "object",
+    "properties": {
+        "_id": {
+            "description": "identity of the entity inside a database",
+            "type": "string"
+        },
+        "typeString": {
+            "description": "human-readable explanation of this entity type",
+            "type": "string"
+        },
+        "type": {
+            "description": "integer representation of this entity type",
+            "type": "integer"
+        },
+        "access": {
+            "description": "accessibility of this entity",
+            "$ref": "file:access.json"
+        }
+    },
+    "oneOf": [
+        {
+            "properties": {
+                "typeString": {
+                    "enum": [
+                        "project"
+                    ]
+                },
+                "type": {
+                    "enum": [
+                        100
+                    ]
+                }
+            }
+        },
+        {
+            "properties": {
+                "typeString": {
+                    "enum": [
+                        "job"
+                    ]
+                },
+                "type": {
+                    "enum": [
+                        110
+                    ]
+                }
+            }
+        },
+        {
+            "properties": {
+                "typeString": {
+                    "enum": [
+                        "material"
+                    ]
+                },
+                "type": {
+                    "enum": [
+                        200
+                    ]
+                }
+            }
+        },
+        {
+            "properties": {
+                "typeString": {
+                    "enum": [
+                        "characteristic"
+                    ]
+                },
+                "type": {
+                    "enum": [
+                        210
+                    ]
+                }
+            }
+        }
+    ],
+    "required": [
+        "type"
+    ]
+}
