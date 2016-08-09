@@ -2,10 +2,7 @@
     "_id": "K3McGkqXh28HJ775m",
     "exabyteId": "4racJ9AgFh7fGjJ2o",
     "data": {},
-    "access": {
-        "level": 0,
-        "type": 0
-    },
+    "access": [],
     "owner": {
         "_id": "ouzYh8KpeTYKFLf3M",
         "name": "demo",
