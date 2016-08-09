@@ -1,0 +1,134 @@
+{
+    "name": "K point convergence",
+    "app": "espresso",
+    "units": [
+        {
+            "allOf": [
+                {
+                    "...": "include(unit/initialize_kpoints.json)"
+                },
+                {
+                    "units": [
+                        {
+                            "next": "initialize_previous_energy"
+                        }
+                    ]
+                }
+            ]
+        },
+        {
+            "allOf": [
+                {
+                    "...": "include(unit/initialize_previous_energy.json)"
+                },
+                {
+                    "units": [
+                        {
+                            "next": "run_scf_calculation"
+                        }
+                    ]
+                }
+            ]
+        },
+        {
+            "status": "idle",
+            "flowchartId": "run_scf_calculation",
+            "name": "run_scf_calculation",
+            "type": "compute",
+            "next": "check_for_convergence",
+            "app": {
+                "flavor": "pw_scf",
+                "version": "5.1.1",
+                "name": "espresso",
+                "exec": "pw.x",
+                "summary": "Quantum Espresso"
+            },
+            "results": [
+                {
+                    "name": "total_energy"
+                }
+            ],
+            "monitors": [
+                {
+                    "name": "scf_accuracy"
+                },
+                {
+                    "name": "standard_output"
+                }
+            ],
+            "preProcessors": [],
+            "postProcessors": [],
+            "input": [
+                {
+                    "content": "&CONTROL\ncalculation='scf'\n    title=''\n    verbosity='low'\n    restart_mode='from_scratch'\n    wf_collect=.true.\n    tstress=.true.\n    tprnfor=.true.\n    outdir='$OUTPUT_DIR/'\n    wfcdir='$OUTPUT_DIR/'\n    prefix='__prefix__'\n    pseudo_dir='$PSEUDO_DIR'\n/\n&SYSTEM\n    ibrav=2\n    nat=2\n    ntyp=1\n    ecutwfc=40\n    ecutrho=200\n    occupations='smearing'\n    degauss=0.005\n    celldm(1)=9.448580823160363\n/\n&ELECTRONS\n    diagonalization='david'\n    diago_david_ndim=4\n    diago_full_acc=.true.\n    mixing_beta=0.3\n/\n&IONS\n/\n&CELL\n/\nATOMIC_SPECIES\nSi 28.0855 si_pbe_gbrv_1.0.upf\nATOMIC_POSITIONS crystal\nSi 0 0 0\nSi 0.25 0.25 0.25\nK_POINTS automatic\n{{N_K_x | default('1')}} {{N_K_y | default('1')}} {{N_K_z | default('1')}} 0 0 0",
+                    "name": "pw_scf.in"
+                }
+            ]
+        },
+        {
+            "flowchartId": "check_for_convergence",
+            "type": "condition",
+            "name": "check_for_convergence",
+            "status": "idle",
+            "app": {},
+            "condition": {
+                "input": [
+                    {
+                        "scope": "global",
+                        "name": "previous_total_E"
+                    },
+                    {
+                        "scope": "run_scf_calculation",
+                        "name": "total_energy"
+                    }
+                ],
+                "statement": "abs(previous_total_E-total_energy) < 1e-5",
+                "then": "decrement_kpoints",
+                "else": "assign_energy_to_previous_energy",
+                "maxOccurences": 100
+            }
+        },
+        {
+            "allOf": [
+                {
+                    "...": "include(unit/assign_energy_to_previous_energy.json)"
+                },
+                {
+                    "units": [
+                        {
+                            "next": "increment_kpoints"
+                        }
+                    ]
+                }
+            ]
+        },
+        {
+            "allOf": [
+                {
+                    "...": "include(unit/increment_kpoints.json)"
+                },
+                {
+                    "units": [
+                        {
+                            "next": "run_scf_calculation"
+                        }
+                    ]
+                }
+            ]
+        },
+        {
+            "allOf": [
+                {
+                    "...": "include(unit/decrement_kpoints.json)"
+                },
+                {
+                    "units": [
+                        {
+                            "next": "after_convergence"
+                        }
+                    ]
+                }
+            ]
+        }
+    ]
+}

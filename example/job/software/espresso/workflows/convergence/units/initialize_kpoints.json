@@ -1,0 +1,39 @@
+{
+    "units": [
+        {
+            "type": "assignment",
+            "name": "initialize_N_K_x",
+            "flowchartId": "initialize_kpoints",
+            "status": "idle",
+            "app": {},
+            "next": "initialize_N_K_y",
+            "assignment": {
+                "name": "N_K_x",
+                "value": "1"
+            }
+        },
+        {
+            "type": "assignment",
+            "name": "initialize_N_K_y",
+            "flowchartId": "initialize_N_K_y",
+            "status": "idle",
+            "app": {},
+            "next": "initialize_N_K_z",
+            "assignment": {
+                "name": "N_K_y",
+                "value": "1"
+            }
+        },
+        {
+            "type": "assignment",
+            "name": "initialize_N_K_z",
+            "flowchartId": "initialize_N_K_z",
+            "status": "idle",
+            "app": {},
+            "assignment": {
+                "name": "N_K_z",
+                "value": "1"
+            }
+        }
+    ]
+}
