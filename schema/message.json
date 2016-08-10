@@ -1,6 +1,7 @@
 {
     "$schema": "http://json-schema.org/draft-04/schema#",
     "title": "message schema",
+    "description": "communication message between Rupy and web application.",
     "properties": {
         "header": {
             "type": "object",
@@ -29,7 +30,7 @@
                             ]
                         },
                         "flowchartId": {
-                            "description": "unit flowchart identifier.",
+                            "description": "unit identifier within the workflow",
                             "type": "string"
                         },
                         "probe": {

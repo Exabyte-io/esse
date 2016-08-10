@@ -1,9 +1,5 @@
 {
     "$schema": "http://json-schema.org/draft-04/schema#",
     "title": "point schema",
-    "allOf": [
-        {
-            "$ref": "file:vector.json"
-        }
-    ]
+    "$ref": "file:vector.json"
 }

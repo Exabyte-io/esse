@@ -5,146 +5,224 @@
     "properties": {
         "temperatureEntropy": {
             "description": "product of temperature and configurational entropy",
-            "$ref": "file:../../primitive/scalar.json",
-            "properties": {
-                "name": {
-                    "enum": [
-                        "temperature entropy"
-                    ]
+            "allOf": [
+                {
+                    "$ref": "file:../../primitive/scalar.json"
+                },
+                {
+                    "properties": {
+                        "name": {
+                            "enum": [
+                                "temperature entropy"
+                            ]
+                        }
+                    }
                 }
-            }
+            ]
         },
         "harrisFoulkes": {
             "description": "non self-consitent energy based on an input charge density",
-            "$ref": "file:../../primitive/scalar.json",
-            "properties": {
-                "name": {
-                    "enum": [
-                        "harris foulkes"
-                    ]
+            "allOf": [
+                {
+                    "$ref": "file:../../primitive/scalar.json"
+                },
+                {
+                    "properties": {
+                        "name": {
+                            "enum": [
+                                "harris foulkes"
+                            ]
+                        }
+                    }
                 }
-            }
+            ]
         },
         "oneElectron": {
             "description": "kinetic + pseudopotential energy",
-            "$ref": "file:../../primitive/scalar.json",
-            "properties": {
-                "name": {
-                    "enum": [
-                        "one electron"
-                    ]
+            "allOf": [
+                {
+                    "$ref": "file:../../primitive/scalar.json"
+                },
+                {
+                    "properties": {
+                        "name": {
+                            "enum": [
+                                "one electron"
+                            ]
+                        }
+                    }
                 }
-            }
+            ]
         },
         "hartree": {
             "description": "energy due to coulomb potential",
-            "$ref": "file:../../primitive/scalar.json",
-            "properties": {
-                "name": {
-                    "enum": [
-                        "hartree"
-                    ]
+            "allOf": [
+                {
+                    "$ref": "file:../../primitive/scalar.json"
+                },
+                {
+                    "properties": {
+                        "name": {
+                            "enum": [
+                                "hartree"
+                            ]
+                        }
+                    }
                 }
-            }
+            ]
         },
         "exchange": {
             "description": "exchange energy",
-            "$ref": "file:../../primitive/scalar.json",
-            "properties": {
-                "name": {
-                    "enum": [
-                        "exchange"
-                    ]
+            "allOf": [
+                {
+                    "$ref": "file:../../primitive/scalar.json"
+                },
+                {
+                    "properties": {
+                        "name": {
+                            "enum": [
+                                "exchange"
+                            ]
+                        }
+                    }
                 }
-            }
+            ]
         },
         "exchangeCorrelation": {
             "description": "exchange and correlation energy per particle",
-            "$ref": "file:../../primitive/scalar.json",
-            "properties": {
-                "name": {
-                    "enum": [
-                        "exchange correlation"
-                    ]
+            "allOf": [
+                {
+                    "$ref": "file:../../primitive/scalar.json"
+                },
+                {
+                    "properties": {
+                        "name": {
+                            "enum": [
+                                "exchange correlation"
+                            ]
+                        }
+                    }
                 }
-            }
+            ]
         },
         "ewald": {
             "description": "summation of interaction energies at long length scales due to coloumbic interactions",
-            "$ref": "file:../../primitive/scalar.json",
-            "properties": {
-                "name": {
-                    "enum": [
-                        "ewald"
-                    ]
+            "allOf": [
+                {
+                    "$ref": "file:../../primitive/scalar.json"
+                },
+                {
+                    "properties": {
+                        "name": {
+                            "enum": [
+                                "ewald"
+                            ]
+                        }
+                    }
                 }
-            }
+            ]
         },
         "alphaZ": {
             "description": "divergent electrostatic ion interaction in compensating electron gas",
-            "$ref": "file:../../primitive/scalar.json",
-            "properties": {
-                "name": {
-                    "enum": [
-                        "alphaZ"
-                    ]
+            "allOf": [
+                {
+                    "$ref": "file:../../primitive/scalar.json"
+                },
+                {
+                    "properties": {
+                        "name": {
+                            "enum": [
+                                "alphaZ"
+                            ]
+                        }
+                    }
                 }
-            }
+            ]
         },
         "atomicEnergy": {
             "description": "kinetic energy of wavefunctions in the atomic limit",
-            "$ref": "file:../../primitive/scalar.json",
-            "properties": {
-                "name": {
-                    "enum": [
-                        "atomic energy"
-                    ]
+            "allOf": [
+                {
+                    "$ref": "file:../../primitive/scalar.json"
+                },
+                {
+                    "properties": {
+                        "name": {
+                            "enum": [
+                                "atomic energy"
+                            ]
+                        }
+                    }
                 }
-            }
+            ]
         },
         "eigenvalues": {
             "description": "sum of one electron energies of kinetic, electrostatic, and exchange correlation",
-            "$ref": "file:../../primitive/scalar.json",
-            "properties": {
-                "name": {
-                    "enum": [
-                        "eigenvalues"
-                    ]
+            "allOf": [
+                {
+                    "$ref": "file:../../primitive/scalar.json"
+                },
+                {
+                    "properties": {
+                        "name": {
+                            "enum": [
+                                "eigenvalues"
+                            ]
+                        }
+                    }
                 }
-            }
+            ]
         },
         "PAWDoubleCounting2": {
             "description": "double counting correction 2",
-            "$ref": "file:../../primitive/scalar.json",
-            "properties": {
-                "name": {
-                    "enum": [
-                        "PAW double-counting correction 2"
-                    ]
+            "allOf": [
+                {
+                    "$ref": "file:../../primitive/scalar.json"
+                },
+                {
+                    "properties": {
+                        "name": {
+                            "enum": [
+                                "PAW double-counting correction 2"
+                            ]
+                        }
+                    }
                 }
-            }
+            ]
         },
         "PAWDoubleCounting3": {
             "description": "double counting correction 3",
-            "$ref": "file:../../primitive/scalar.json",
-            "properties": {
-                "name": {
-                    "enum": [
-                        "PAW double-counting correction 3"
-                    ]
+            "allOf": [
+                {
+                    "$ref": "file:../../primitive/scalar.json"
+                },
+                {
+                    "properties": {
+                        "name": {
+                            "enum": [
+                                "PAW double-counting correction 3"
+                            ]
+                        }
+                    }
                 }
-            }
+            ]
         },
         "hartreeFock": {
             "description": "hartree-fock contribution",
-            "$ref": "file:../../primitive/scalar.json",
-            "properties": {
-                "name": {
-                    "enum": [
-                        "hartree fock"
-                    ]
+            "allOf": [
+                {
+                    "$ref": "file:../../primitive/scalar.json"
+                },
+                {
+                    "properties": {
+                        "name": {
+                            "enum": [
+                                "hartree fock"
+                            ]
+                        }
+                    }
                 }
-            }
+            ]
         },
         "name": {
             "enum": [

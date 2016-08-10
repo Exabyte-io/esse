@@ -12,13 +12,19 @@
         },
         "kgrid": {
             "description": "information about kpoints grid",
-            "$ref": "file:../../../../primitive/3d_grid.json",
-            "properties": {
-                "ibz": {
-                    "description": "number of k-points inside irreducible wedge of the Brillouin zone",
-                    "type": "integer"
+            "allOf": [
+                {
+                    "$ref": "file:../../../../primitive/3d_grid.json"
+                },
+                {
+                    "properties": {
+                        "ibz": {
+                            "description": "number of k-points inside irreducible wedge of the Brillouin zone",
+                            "type": "integer"
+                        }
+                    }
                 }
-            }
+            ]
         }
     },
     "required": [
