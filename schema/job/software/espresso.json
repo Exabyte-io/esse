@@ -16,7 +16,14 @@
         "flavor": {
             "enum": [
                 "pw_scf",
+                "pw_nscf",
                 "pw_bands",
+                "pw_relax",
+                "pw_vc-relax",
+                "bands",
+                "projwfc",
+                "dos",
+                "ph",
                 "pp"
             ]
         },
@@ -31,8 +38,10 @@
             "enum": [
                 "pw.x",
                 "bands.x",
-                "pp.x",
-                "dos.x"
+                "projwfc.x",
+                "dos.x",
+                "ph.x",
+                "pp.x"
             ]
         }
     }
