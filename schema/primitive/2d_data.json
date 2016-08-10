@@ -8,11 +8,7 @@
             "type": "array"
         },
         "yDataSeries": {
-            "allOf": [
-                {
-                    "$ref": "file:1d_data_series.json"
-                }
-            ]
+            "$ref": "file:1d_data_series.json"
         }
     },
     "required": [

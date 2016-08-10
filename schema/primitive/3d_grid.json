@@ -3,18 +3,10 @@
     "title": "3 dimensional grid schema",
     "properties": {
         "dimensions": {
-            "allOf": [
-                {
-                    "$ref": "file:point.json"
-                }
-            ]
+            "$ref": "file:point.json"
         },
         "shifts": {
-            "allOf": [
-                {
-                    "$ref": "file:point.json"
-                }
-            ]
+            "$ref": "file:point.json"
         }
     },
     "required": [

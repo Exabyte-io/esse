@@ -5,27 +5,15 @@
     "properties": {
         "a": {
             "description": "first vector",
-            "allOf": [
-                {
-                    "$ref": "file:vector.json"
-                }
-            ]
+            "$ref": "file:vector.json"
         },
         "b": {
             "description": "second vector",
-            "allOf": [
-                {
-                    "$ref": "file:vector.json"
-                }
-            ]
+            "$ref": "file:vector.json"
         },
         "c": {
             "description": "third vector",
-            "allOf": [
-                {
-                    "$ref": "file:vector.json"
-                }
-            ]
+            "$ref": "file:vector.json"
         }
     },
     "required": [

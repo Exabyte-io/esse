@@ -4,14 +4,16 @@
     "allOf": [
         {
             "$ref": "file:account.json"
+        },
+        {
+            "properties": {
+                "name": {
+                    "description": "name of this owner, eg. `demo`, `exabyte`",
+                    "type": "string"
+                }
+            }
         }
     ],
-    "properties": {
-        "name": {
-            "description": "name of this owner, eg. `demo`, `exabyte`",
-            "type": "string"
-        }
-    },
     "required": [
         "name"
     ]
