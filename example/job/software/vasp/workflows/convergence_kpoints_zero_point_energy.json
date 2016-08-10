@@ -313,7 +313,7 @@
             "input": [
                 {
                     "name": "INCAR",
-                    "content": "SYSTEM =  SiGe-FCC\n IBRION=5\n LWAVE  = .FALSE.\n LCHARG = .FALSE.\n ISMEAR =    1\n SIGMA  = 0.1"
+                    "content": "SYSTEM =  Si-FCC\n IBRION=5\n LWAVE  = .FALSE.\n LCHARG = .FALSE.\n ISMEAR =    1\n SIGMA  = 0.1"
                 }
             ],
             "results": [
