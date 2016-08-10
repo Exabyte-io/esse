@@ -1,0 +1,61 @@
+{
+    "name": "K point convergence with band structure",
+    "app": "espresso",
+    "units": [
+        {
+            "allOf": [
+                {
+                    "...": "include(flows/convergence.json)"
+                },
+                {
+                    "status": "idle",
+                    "flowchartId": "after_convergence",
+                    "name": "run_band_structure",
+                    "type": "compute",
+                    "next": "done_with_convergence_plus_band_structure",
+                    "app": {
+                        "flavor": "pw_scf",
+                        "version": "5.1.1",
+                        "name": "espresso",
+                        "exec": "pw.x",
+                        "summary": "Quantum Espresso"
+                    },
+                    "results": [
+                        {
+                            "name": "density_of_states"
+                        },
+                        {
+                            "name": "band_structure"
+                        },
+                        {
+                            "name": "band_gap"
+                        },
+                        {
+                            "name": "total_energy"
+                        }
+                    ],
+                    "monitors": [
+                        {
+                            "name": "scf_accuracy"
+                        },
+                        {
+                            "name": "standard_output"
+                        }
+                    ],
+                    "preProcessors": [],
+                    "postProcessors": []
+                },
+                {
+                    "flowchartId": "done_with_convergence_plus_band_structure",
+                    "type": "exit",
+                    "name": "exit",
+                    "status": "idle",
+                    "app": {},
+                    "exit": {
+                        "throwException": true
+                    }
+                }
+            ]
+        }
+    ]
+}

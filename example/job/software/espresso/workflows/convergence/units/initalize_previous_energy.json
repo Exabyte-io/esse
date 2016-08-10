@@ -1,0 +1,15 @@
+{
+    "units": [
+        {
+            "type": "assignment",
+            "name": "initialize_previous_energy",
+            "flowchartId": "initialize_previous_energy",
+            "status": "idle",
+            "app": {},
+            "assignment": {
+                "name": "previous_total_E",
+                "value": "0"
+            }
+        }
+    ]
+}

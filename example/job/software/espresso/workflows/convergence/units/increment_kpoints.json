@@ -1,0 +1,57 @@
+{
+    "units": [
+        {
+            "flowchartId": "increase_kpoints",
+            "type": "assignment",
+            "name": "increase_N_K_x_by_1",
+            "status": "idle",
+            "next": "increase_N_K_y_by_1",
+            "app": {},
+            "assignment": {
+                "input": [
+                    {
+                        "scope": "global",
+                        "name": "N_K_x"
+                    }
+                ],
+                "name": "N_K_x",
+                "value": "N_K_x+1"
+            }
+        },
+        {
+            "flowchartId": "increase_N_K_y_by_1",
+            "type": "assignment",
+            "name": "increase_N_K_y_by_1",
+            "status": "idle",
+            "next": "increase_N_K_z_by_1",
+            "app": {},
+            "assignment": {
+                "input": [
+                    {
+                        "scope": "global",
+                        "name": "N_K_y"
+                    }
+                ],
+                "name": "N_K_y",
+                "value": "N_K_y+1"
+            }
+        },
+        {
+            "flowchartId": "increase_N_K_z_by_1",
+            "type": "assignment",
+            "name": "increase_N_K_z_by_1",
+            "status": "idle",
+            "app": {},
+            "assignment": {
+                "input": [
+                    {
+                        "scope": "global",
+                        "name": "N_K_z"
+                    }
+                ],
+                "name": "N_K_z",
+                "value": "N_K_z+1"
+            }
+        }
+    ]
+}

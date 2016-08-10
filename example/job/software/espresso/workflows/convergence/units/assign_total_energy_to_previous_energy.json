@@ -1,0 +1,21 @@
+{
+    "units": [
+        {
+            "flowchartId": "assign_total_energy_to_previous_total_E",
+            "type": "assignment",
+            "name": "assign_total_energy_to_previous_total_E",
+            "status": "idle",
+            "app": {},
+            "assignment": {
+                "input": [
+                    {
+                        "scope": "run_scf_calculation",
+                        "name": "total_energy"
+                    }
+                ],
+                "name": "previous_total_E",
+                "value": "total_energy"
+            }
+        }
+    ]
+}
