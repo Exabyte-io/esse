@@ -5,7 +5,7 @@
     "properties": {
         "energyCutoff": {
             "type": "object",
-            "description": "Highest energy of plane wave energies",
+            "description": "highest energy of plane waves included in calculation",
             "properties": {
                 "max": {
                     "type": "number"
