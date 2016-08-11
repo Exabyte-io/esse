@@ -1,5 +1,5 @@
 {
-    "name": "vasp gamma point kpoint convergence plus band structure",
+    "name": "vasp gamma kpoint convergence plus band structure",
     "app": "vasp",
     "units": [
         {
@@ -77,7 +77,7 @@
             "input": [
                 {
                     "name": "INCAR",
-                    "content": "SYSTEM =  SiGe-FCC\n LWAVE  = .FALSE.\n LCHARG = .FALSE.\n ISMEAR =    1\n SIGMA  = 0.1"
+                    "content": "SYSTEM =  Si-FCC\n LWAVE  = .FALSE.\n LCHARG = .FALSE.\n ISMEAR =    1\n SIGMA  = 0.1"
                 },
                 {
                     "name": "KPOINTS",
@@ -85,7 +85,7 @@
                 },
                 {
                     "name": "POSCAR",
-                    "content": "SiGe\n 5.0\n 0.500000000 0.500000000 0.000000000\n 0.000000000 0.500000000 0.500000000\n 0.500000000 0.000000000 0.500000000\n Si Ge\n 1 1\n direct\n 0.000000000 0.000000000 0.000000000 Si\n 0.250000000 0.250000000 0.250000000 Ge"
+                    "content": "Si\n 5.0\n 0.500000000 0.500000000 0.000000000\n 0.000000000 0.500000000 0.500000000\n 0.500000000 0.000000000 0.500000000\n Si\n 2\n direct\n 0.000000000 0.000000000 0.000000000 Si\n 0.250000000 0.250000000 0.250000000 Ge"
                 }
             ],
             "results": [
@@ -236,7 +236,7 @@
             "type": "assignment",
             "name": "decrease_N_K_z_by_1",
             "status": "idle",
-            "next": "run_zero_point_energy",
+            "next": "run_relaxation",
             "app": {},
             "assignment": {
                 "input": [
@@ -248,6 +248,56 @@
                 "name": "N_K_z",
                 "value": "N_K_z-1"
             }
+        },
+        {
+            "status": "idle",
+            "flowchartId": "run_relaxation",
+            "name": "run_relaxation",
+            "type": "compute",
+            "next": "run_zero_point_energy",
+            "head": true,
+            "app": {
+                "name": "vasp",
+                "exec": "vasp"
+            },
+            "monitors": [
+                {
+                    "name": "standard_output"
+                },
+                {
+                    "name": "delta_energy"
+                },
+                {
+                    "name": "total_energy"
+                }
+            ],
+            "postProcessors": [
+                {
+                    "type": "command",
+                    "name": "copy_file",
+                    "kwargs": {
+                        "source": "CONTCAR",
+                        "destination": "POSCAR"
+                    }
+                }
+            ],
+            "input": [
+                {
+                    "name": "INCAR",
+                    "content": "SYSTEM =  Si-FCC\n LWAVE  = .FALSE.\n LCHARG = .FALSE.\n ISMEAR =    1\n SIGMA  = 0.1\nISIF = 3\n IBRION = 2\nNSW = 300"
+                }
+            ],
+            "results": [
+                {
+                    "name": "total_energy"
+                },
+                {
+                    "name": "band_gap"
+                },
+                {
+                    "name": "bandstructure"
+                }
+            ]
         },
         {
             "status": "idle",
@@ -263,15 +313,7 @@
             "input": [
                 {
                     "name": "INCAR",
-                    "content": "SYSTEM =  SiGe-FCC\n IBRION=5\n LWAVE  = .FALSE.\n LCHARG = .FALSE.\n ISMEAR =    1\n SIGMA  = 0.1"
-                },
-                {
-                    "name": "KPOINTS",
-                    "content": "Automatic mesh\n0\nGamma\n  {{N_K_x | default('1')}} {{N_K_y | default('1')}} {{N_K_z | default('1')}}\n  0.  0.  0.\n"
-                },
-                {
-                    "name": "POSCAR",
-                    "content": "SiGe\n 5.0\n 0.500000000 0.500000000 0.000000000\n 0.000000000 0.500000000 0.500000000\n 0.500000000 0.000000000 0.500000000\n Si Ge\n 1 1\n direct\n 0.000000000 0.000000000 0.000000000 Si\n 0.250000000 0.250000000 0.250000000 Ge"
+                    "content": "SYSTEM =  Si-FCC\n IBRION=5\n LWAVE  = .FALSE.\n LCHARG = .FALSE.\n ISMEAR =    1\n SIGMA  = 0.1"
                 }
             ],
             "results": [
@@ -303,7 +345,7 @@
             "status": "idle",
             "app": {},
             "exit": {
-                "throwException": true
+                "throwException": false
             }
         }
     ]
