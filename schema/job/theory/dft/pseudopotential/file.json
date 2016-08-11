@@ -29,6 +29,10 @@
             "type": "string",
             "description": "explains where this came from"
         },
+        "version": {
+            "type": "string",
+            "description": "explains the version of where this came from"
+        },
         "valenceElectrons": {
             "type": "integer"
         },

@@ -10,27 +10,24 @@
             "description": "charge density cutoff energy in eV",
             "type": "number"
         },
-        "kpoints": {
-            "description": "kpoint grid used for calculation",
-            "type": "array",
-            "items": {
-                "type": "integer",
-                "maxItems": 3,
-                "minItems": 3
+        "kgrid": {
+            "description": "information about kpoints grid",
+            "allOf": [
+                {
+                    "$ref": "file:../../../../primitive/3d_grid.json"
+                }
+            ],
+            "properties": {
+                "ibz": {
+                    "description": "number of k-points inside irreducible wedge of the Brillouin zone",
+                    "type": "integer"
+                }
             }
-        },
-        "shift": {
-            "$ref": "#/properties/kpoints"
-        },
-        "ibz": {
-            "description": "number of k-points inside irreducible wedge of the Brillouin zone",
-            "type": "integer"
         }
     },
     "required": [
         "ecutwfc",
         "ecutrho",
-        "kpoints",
-        "shift"
+        "kgrid"
     ]
 }

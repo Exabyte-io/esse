@@ -1,29 +1,18 @@
 {
     "$schema": "http://json-schema.org/draft-04/schema#",
     "title": "owner schema",
-    "type": "object",
+    "allOf": [
+        {
+            "$ref": "file:account.json"
+        }
+    ],
     "properties": {
-        "_id": {
-            "description": "Identity of the owner.",
-            "type": "string"
-        },
         "name": {
-            "description": "Name of the owner: username for user, name for organization.",
+            "description": "name of this owner, eg. `demo`, `exabyte`",
             "type": "string"
-        },
-        "type": {
-            "description": "Type of the owner. -1: root, 0: normal users, 10: organizations",
-            "type": "integer",
-            "enum": [
-                -1,
-                0,
-                10
-            ]
         }
     },
     "required": [
-        "_id",
-        "name",
-        "type"
+        "name"
     ]
 }
