@@ -1,0 +1,40 @@
+&CONTROL
+    calculation='scf'
+    title=''
+    verbosity='low'
+    restart_mode='from_scratch'
+    wf_collect=.true.
+    tstress=.true.
+    tprnfor=.true.
+    outdir='$OUTPUT_DIR/'
+    wfcdir='$OUTPUT_DIR/'
+    prefix='__prefix__'
+    pseudo_dir='$PSEUDO_DIR'
+    /
+&SYSTEM
+    ibrav=2
+    nat=2
+    ntyp=1
+    ecutwfc=40
+    ecutrho=200
+    occupations='smearing'
+    degauss=0.005
+    celldm(1)=9.448580823160363
+    /
+&ELECTRONS
+    diagonalization='david'
+    diago_david_ndim=4
+    diago_full_acc=.true.
+    mixing_beta=0.3
+    /
+&IONS
+/
+&CELL
+/
+ATOMIC_SPECIES
+Si 28.0855 si_pbe_gbrv_1.0.upf
+ATOMIC_POSITIONS crystal
+Si 0 0 0
+Si 0.25 0.25 0.25
+K_POINTS automatic
+{{N_K_x | default('1')}} {{N_K_y | default('1')}} {{N_K_z | default('1')}} 0 0 0

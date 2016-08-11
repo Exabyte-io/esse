@@ -72,11 +72,9 @@
                     "name": "standard_output"
                 }
             ],
-            "preProcessors": [],
-            "postProcessors": [],
             "input": [
                 {
-                    "content": "&CONTROL\ncalculation='scf'\n    title=''\n    verbosity='low'\n    restart_mode='from_scratch'\n    wf_collect=.true.\n    tstress=.true.\n    tprnfor=.true.\n    outdir='$OUTPUT_DIR/'\n    wfcdir='$OUTPUT_DIR/'\n    prefix='__prefix__'\n    pseudo_dir='$PSEUDO_DIR'\n/\n&SYSTEM\n    ibrav=2\n    nat=2\n    ntyp=1\n    ecutwfc=40\n    ecutrho=200\n    occupations='smearing'\n    degauss=0.005\n    celldm(1)=9.448580823160363\n/\n&ELECTRONS\n    diagonalization='david'\n    diago_david_ndim=4\n    diago_full_acc=.true.\n    mixing_beta=0.3\n/\n&IONS\n/\n&CELL\n/\nATOMIC_SPECIES\nSi 28.0855 si_pbe_gbrv_1.0.upf\nATOMIC_POSITIONS crystal\nSi 0 0 0\nSi 0.25 0.25 0.25\nK_POINTS automatic\n{{N_K_x | default('1')}} {{N_K_y | default('1')}} {{N_K_z | default('1')}} 0 0 0",
+                    "content": "include_text(pw_scf.in)",
                     "name": "pw_scf.in"
                 }
             ]
@@ -190,9 +188,7 @@
                 {
                     "name": "standard_output"
                 }
-            ],
-            "preProcessors": [],
-            "postProcessors": []
+            ]
         },
         {
             "flowchartId": "exit",
