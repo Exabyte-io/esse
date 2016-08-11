@@ -1,5 +1,5 @@
 {
-    "name": "K point convergence",
+    "name": "K point convergence with total energy",
     "app": "espresso",
     "units": [
         {
