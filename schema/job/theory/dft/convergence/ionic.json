@@ -33,10 +33,7 @@
                                 "description": "data about electronic at this ionic step",
                                 "$ref": "file:electronic.json"
                             }
-                        },
-                        "required": [
-                            "electronic"
-                        ]
+                        }
                     }
                 }
             }
