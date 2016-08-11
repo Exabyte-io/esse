@@ -15,36 +15,18 @@
         {
             "type": "assignment",
             "flowchartId": "init_energy",
-            "next": "init_N_K_x",
+            "next": "init_N_K",
             "assignment": {
-                "name": "previous_value",
+                "name": "previous_total_E",
                 "value": "0"
             }
         },
         {
             "type": "assignment",
-            "flowchartId": "init_N_K_x",
-            "next": "init_N_K_y",
-            "assignment": {
-                "name": "N_K_x",
-                "value": "1"
-            }
-        },
-        {
-            "type": "assignment",
-            "flowchartId": "init_N_K_y",
-            "next": "init_N_K_z",
-            "assignment": {
-                "name": "N_K_y",
-                "value": "1"
-            }
-        },
-        {
-            "type": "assignment",
-            "flowchartId": "init_N_K_z",
+            "flowchartId": "init_N_K",
             "next": "run_scf_calculation",
             "assignment": {
-                "name": "N_K_z",
+                "name": "N_K",
                 "value": "1"
             }
         },
@@ -86,14 +68,14 @@
                 "input": [
                     {
                         "scope": "global",
-                        "name": "previous_value"
+                        "name": "previous_total_E"
                     },
                     {
                         "scope": "run_scf_calculation",
                         "name": "total_energy"
                     }
                 ],
-                "statement": "abs(previous_value-total_energy) < tolerance",
+                "statement": "abs(previous_total_E-total_energy) < tolerance",
                 "then": "convergence_is_reached",
                 "else": "save_previous_value",
                 "maxOccurences": 100
@@ -102,7 +84,7 @@
         {
             "flowchartId": "save_previous_value",
             "type": "assignment",
-            "next": "increase_N_K_x_by_1",
+            "next": "increase_N_K_by_1",
             "assignment": {
                 "input": [
                     {
@@ -110,85 +92,39 @@
                         "name": "total_energy"
                     }
                 ],
-                "name": "previous_value",
+                "name": "previous_total_E",
                 "value": "total_energy"
             }
         },
         {
-            "flowchartId": "increase_N_K_x_by_1",
-            "type": "assignment",
-            "next": "increase_N_K_y_by_1",
-            "assignment": {
-                "input": [
-                    {
-                        "scope": "global",
-                        "name": "N_K_x"
-                    }
-                ],
-                "name": "N_K_x",
-                "value": "N_K_x+1"
-            }
-        },
-        {
-            "flowchartId": "increase_N_K_y_by_1",
-            "type": "assignment",
-            "next": "increase_N_K_z_by_1",
-            "assignment": {
-                "input": [
-                    {
-                        "scope": "global",
-                        "name": "N_K_y"
-                    }
-                ],
-                "name": "N_K_y",
-                "value": "N_K_y+1"
-            }
-        },
-        {
-            "flowchartId": "increase_N_K_z_by_1",
+            "flowchartId": "increase_N_K_by_1",
             "type": "assignment",
             "next": "run_scf_calculation",
             "assignment": {
                 "input": [
                     {
                         "scope": "global",
-                        "name": "N_K_z"
+                        "name": "N_K"
                     }
                 ],
-                "name": "N_K_z",
-                "value": "N_K_z+1"
+                "name": "N_K",
+                "value": "N_K+1"
             }
         },
         {
             "flowchartId": "convergence_is_reached",
-            "type": "compute",
+            "type": "assignment",
             "next": "exit",
-            "app": {
-                "flavor": "pw_scf",
-                "version": "5.1.1",
-                "name": "espresso",
-                "exec": "pw.x",
-                "summary": "Quantum Espresso"
-            },
-            "results": [
-                {
-                    "name": "band_structure"
-                },
-                {
-                    "name": "band_gap"
-                },
-                {
-                    "name": "total_energy"
-                }
-            ],
-            "monitors": [
-                {
-                    "name": "scf_accuracy"
-                },
-                {
-                    "name": "standard_output"
-                }
-            ]
+            "assignment": {
+                "input": [
+                    {
+                        "scope": "global",
+                        "name": "N_K"
+                    }
+                ],
+                "name": "N_K",
+                "value": "N_K-1"
+            }
         },
         {
             "flowchartId": "exit",
