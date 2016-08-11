@@ -4,24 +4,27 @@
     "units": [
         {
             "type": "assignment",
-            "name": "initialize_previous_energy",
-            "flowchartId": "initialize_previous_energy",
-            "status": "idle",
-            "app": {},
-            "next": "initialize_N_K_x",
+            "flowchartId": "init_tolerance",
+            "next": "init_energy",
             "head": true,
             "assignment": {
-                "name": "previous_total_E",
+                "name": "tolerance",
                 "value": "0"
             }
         },
         {
             "type": "assignment",
-            "name": "initialize_N_K_x",
-            "flowchartId": "initialize_N_K_x",
-            "status": "idle",
-            "app": {},
-            "next": "initialize_N_K_y",
+            "flowchartId": "init_energy",
+            "next": "init_N_K_x",
+            "assignment": {
+                "name": "previous_value",
+                "value": "0"
+            }
+        },
+        {
+            "type": "assignment",
+            "flowchartId": "init_N_K_x",
+            "next": "init_N_K_y",
             "assignment": {
                 "name": "N_K_x",
                 "value": "1"
@@ -29,11 +32,8 @@
         },
         {
             "type": "assignment",
-            "name": "initialize_N_K_y",
-            "flowchartId": "initialize_N_K_y",
-            "status": "idle",
-            "app": {},
-            "next": "initialize_N_K_z",
+            "flowchartId": "init_N_K_y",
+            "next": "init_N_K_z",
             "assignment": {
                 "name": "N_K_y",
                 "value": "1"
@@ -41,10 +41,7 @@
         },
         {
             "type": "assignment",
-            "name": "initialize_N_K_z",
-            "flowchartId": "initialize_N_K_z",
-            "status": "idle",
-            "app": {},
+            "flowchartId": "init_N_K_z",
             "next": "run_scf_calculation",
             "assignment": {
                 "name": "N_K_z",
@@ -52,9 +49,7 @@
             }
         },
         {
-            "status": "idle",
             "flowchartId": "run_scf_calculation",
-            "name": "run_scf_calculation",
             "type": "compute",
             "next": "check_for_convergence",
             "app": {
@@ -89,33 +84,27 @@
         {
             "flowchartId": "check_for_convergence",
             "type": "condition",
-            "name": "check_for_convergence",
-            "status": "idle",
-            "app": {},
             "condition": {
                 "input": [
                     {
                         "scope": "global",
-                        "name": "previous_total_E"
+                        "name": "previous_value"
                     },
                     {
                         "scope": "run_scf_calculation",
                         "name": "total_energy"
                     }
                 ],
-                "statement": "abs(previous_total_E-total_energy) < 1e-5",
+                "statement": "abs(previous_value-total_energy) < tolerance",
                 "then": "convergence_is_reached",
-                "else": "assign_total_energy_to_previous_total_E",
+                "else": "save_previous_value",
                 "maxOccurences": 100
             }
         },
         {
-            "flowchartId": "assign_total_energy_to_previous_total_E",
+            "flowchartId": "save_previous_value",
             "type": "assignment",
-            "name": "assign_total_energy_to_previous_total_E",
-            "status": "idle",
             "next": "increase_N_K_x_by_1",
-            "app": {},
             "assignment": {
                 "input": [
                     {
@@ -123,17 +112,14 @@
                         "name": "total_energy"
                     }
                 ],
-                "name": "previous_total_E",
+                "name": "previous_value",
                 "value": "total_energy"
             }
         },
         {
             "flowchartId": "increase_N_K_x_by_1",
             "type": "assignment",
-            "name": "increase_N_K_x_by_1",
-            "status": "idle",
             "next": "increase_N_K_y_by_1",
-            "app": {},
             "assignment": {
                 "input": [
                     {
@@ -148,10 +134,7 @@
         {
             "flowchartId": "increase_N_K_y_by_1",
             "type": "assignment",
-            "name": "increase_N_K_y_by_1",
-            "status": "idle",
             "next": "increase_N_K_z_by_1",
-            "app": {},
             "assignment": {
                 "input": [
                     {
@@ -166,10 +149,7 @@
         {
             "flowchartId": "increase_N_K_z_by_1",
             "type": "assignment",
-            "name": "increase_N_K_z_by_1",
-            "status": "idle",
             "next": "run_scf_calculation",
-            "app": {},
             "assignment": {
                 "input": [
                     {
@@ -182,11 +162,9 @@
             }
         },
         {
-            "status": "idle",
-            "flowchartId": "run_band_structure",
-            "name": "run_band_structure",
+            "flowchartId": "convergence_is_reached",
             "type": "compute",
-            "next": "done_with_convergence_plus_band_structure",
+            "next": "exit",
             "app": {
                 "flavor": "pw_scf",
                 "version": "5.1.1",
@@ -195,9 +173,6 @@
                 "summary": "Quantum Espresso"
             },
             "results": [
-                {
-                    "name": "density_of_states"
-                },
                 {
                     "name": "band_structure"
                 },
@@ -220,13 +195,10 @@
             "postProcessors": []
         },
         {
-            "flowchartId": "done_with_convergence_plus_band_structure",
+            "flowchartId": "exit",
             "type": "exit",
-            "name": "exit",
-            "status": "idle",
-            "app": {},
             "exit": {
-                "throwException": true
+                "throwException": false
             }
         }
     ]
