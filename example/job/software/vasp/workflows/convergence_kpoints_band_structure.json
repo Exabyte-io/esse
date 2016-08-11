@@ -155,7 +155,7 @@
                 },
                 {
                     "name": "band_structure"
-                },
+                }
             ],
             "monitors": [
                 {
@@ -172,9 +172,6 @@
         {
             "flowchartId": "done_with_convergence_plus_band_structure",
             "type": "exit",
-            "name": "exit",
-            "status": "idle",
-            "app": {},
             "exit": {
                 "throwException": false
             }
