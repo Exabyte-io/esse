@@ -4,22 +4,24 @@
     "allOf": [
         {
             "$ref": "file:../../../model/method/workflow/unit/convergence.json"
-        }
-    ],
-    "properties": {
-        "units": {
-            "enum": [
-                "eV",
-                "rydberg",
-                "hartree"
-            ]
         },
-        "data": {
-            "items": {
-                "type": "number"
+        {
+            "properties": {
+                "units": {
+                    "enum": [
+                        "eV",
+                        "rydberg",
+                        "hartree"
+                    ]
+                },
+                "data": {
+                    "items": {
+                        "type": "number"
+                    }
+                }
             }
         }
-    },
+    ],
     "required": [
         "data"
     ]
