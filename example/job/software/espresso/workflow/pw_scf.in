@@ -37,4 +37,4 @@ ATOMIC_POSITIONS crystal
 Si 0 0 0
 Si 0.25 0.25 0.25
 K_POINTS automatic
-{{N_K | default('1')}} {{N_K | default('1')}} {{N_K | default('1')}} 0 0 0
+{{PARAMETER | default('1')}} {{PARAMETER | default('1')}} {{PARAMETER | default('1')}} 0 0 0
