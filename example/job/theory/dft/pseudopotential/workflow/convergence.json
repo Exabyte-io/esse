@@ -2,10 +2,10 @@
     "app": "espresso",
     "units": [
         {
+            "head": true,
             "type": "assignment",
             "flowchartId": "init_tolerance",
             "next": "init_increment",
-            "head": true,
             "assignment": {
                 "name": "TOLERANCE",
                 "value": "0"
@@ -15,7 +15,6 @@
             "type": "assignment",
             "flowchartId": "init_increment",
             "next": "init_scalar",
-            "head": true,
             "assignment": {
                 "name": "INCREMENT",
                 "value": "1"
@@ -23,7 +22,7 @@
         },
         {
             "type": "assignment",
-            "flowchartId": "init_scalar_value",
+            "flowchartId": "init_scalar",
             "next": "init_parameter",
             "assignment": {
                 "name": "PREVIOUS_SCALAR_VALUE",
@@ -42,27 +41,24 @@
         {
             "replace": true,
             "flowchartId": "extract_characteristic",
-            "next": "check_convergence",
-            "results": [
-                {
-                    "name": "total_energy"
-                }
-            ]
+            "status": "idle",
+            "type": "compute",
+            "next": "assign_scalar_globally"
         },
         {
             "replace": true,
             "type": "assignment",
-            "flowchartId": "assign scalar globally",
+            "flowchartId": "assign_scalar_globally",
             "next": "check_convergence",
             "assignment": {
                 "input": [
                     {
                         "scope": "extract_characteristic",
-                        "name": "total_energy"
+                        "name": "SCALAR_RESULT"
                     }
                 ],
                 "name": "SCALAR_RESULT",
-                "value": "total_energy"
+                "value": "scalar"
             }
         },
         {
@@ -75,8 +71,12 @@
                         "name": "PREVIOUS_SCALAR_VALUE"
                     },
                     {
-                        "scope": "extract_characteristic",
+                        "scope": "global",
                         "name": "SCALAR_RESULT"
+                    },
+                    {
+                        "scope": "global",
+                        "name": "TOLERANCE"
                     }
                 ],
                 "statement": "abs(PREVIOUS_SCALAR_VALUE - SCALAR_RESULT) < TOLERANCE",
@@ -88,11 +88,11 @@
         {
             "flowchartId": "save_previous_value",
             "type": "assignment",
-            "next": "increase_parameter_by_1",
+            "next": "increment_parameter",
             "assignment": {
                 "input": [
                     {
-                        "scope": "extract_characteristic",
+                        "scope": "global",
                         "name": "SCALAR_RESULT"
                     }
                 ],
@@ -101,7 +101,7 @@
             }
         },
         {
-            "flowchartId": "increase_parameter_by_1",
+            "flowchartId": "increment_parameter",
             "type": "assignment",
             "next": "extract_characteristic",
             "assignment": {
@@ -109,6 +109,10 @@
                     {
                         "scope": "global",
                         "name": "PARAMETER"
+                    },
+                    {
+                        "scope": "global",
+                        "name": "INCREMENT"
                     }
                 ],
                 "name": "PARAMETER",
@@ -116,6 +120,7 @@
             }
         },
         {
+            "replace": true,
             "flowchartId": "convergence_is_reached",
             "type": "assignment",
             "next": "exit",
@@ -124,6 +129,10 @@
                     {
                         "scope": "global",
                         "name": "PARAMETER"
+                    },
+                    {
+                        "scope": "global",
+                        "name": "INCREMENT"
                     }
                 ],
                 "name": "PARAMETER",

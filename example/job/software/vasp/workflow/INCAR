@@ -1,0 +1,5 @@
+SYSTEM =  Si-FCC
+LWAVE  = .FALSE.
+LCHARG = .FALSE.
+ISMEAR =    1
+SIGMA  = 0.1
