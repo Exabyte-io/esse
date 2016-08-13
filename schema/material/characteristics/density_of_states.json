@@ -28,7 +28,7 @@
             "properties": {
                 "label": {
                     "enum": [
-                        "density_of_states"
+                        "density of states"
                     ]
                 },
                 "units": {
@@ -37,6 +37,11 @@
                     ]
                 }
             }
+        },
+        "name": {
+            "enum": [
+                "density_of_states"
+            ]
         },
         "legend": {
             "items": {

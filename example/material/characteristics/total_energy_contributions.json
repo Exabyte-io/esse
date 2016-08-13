@@ -17,11 +17,11 @@
         "value": 0
     },
     "PAWDoubleCounting2": {
-        "name": "PAW_double-counting_correction 2",
+        "name": "PAW_double-counting_correction_2",
         "value": 12658.30538857
     },
     "PAWDoubleCounting3": {
-        "name": "PAW_double-countin_correction 3",
+        "name": "PAW_double-counting_correction_3",
         "value": -12074.85364512
     },
     "exchangeCorrelation": {
