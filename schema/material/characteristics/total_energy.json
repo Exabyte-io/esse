@@ -4,22 +4,20 @@
     "allOf": [
         {
             "$ref": "file:../../primitive/scalar.json"
-        },
-        {
-            "properties": {
-                "name": {
-                    "enum": [
-                        "total energy"
-                    ]
-                },
-                "units": {
-                    "enum": [
-                        "eV",
-                        "rydberg",
-                        "hartree"
-                    ]
-                }
-            }
         }
-    ]
+    ],
+    "properties": {
+        "name": {
+            "enum": [
+                "total energy"
+            ]
+        },
+        "units": {
+            "enum": [
+                "eV",
+                "rydberg",
+                "hartree"
+            ]
+        }
+    }
 }

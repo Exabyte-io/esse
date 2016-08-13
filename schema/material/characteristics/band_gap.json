@@ -4,40 +4,38 @@
     "allOf": [
         {
             "$ref": "file:../../primitive/scalar.json"
-        },
-        {
-            "properties": {
-                "kpointConduction": {
-                    "description": "kpoint inside conduction band",
-                    "$ref": "file:../../primitive/point.json"
-                },
-                "kpointValence": {
-                    "description": "kpoint inside valence band",
-                    "$ref": "file:../../primitive/point.json"
-                },
-                "type": {
-                    "type": "string",
-                    "default": "direct",
-                    "enum": [
-                        "direct",
-                        "indirect"
-                    ]
-                },
-                "name": {
-                    "enum": [
-                        "band gap"
-                    ]
-                },
-                "units": {
-                    "enum": [
-                        "eV",
-                        "rydberg",
-                        "hartree"
-                    ]
-                }
-            }
         }
     ],
+    "properties": {
+        "kpointConduction": {
+            "description": "kpoint inside conduction band",
+            "$ref": "file:../../primitive/point.json"
+        },
+        "kpointValence": {
+            "description": "kpoint inside valence band",
+            "$ref": "file:../../primitive/point.json"
+        },
+        "type": {
+            "type": "string",
+            "default": "direct",
+            "enum": [
+                "direct",
+                "indirect"
+            ]
+        },
+        "name": {
+            "enum": [
+                "band gap"
+            ]
+        },
+        "units": {
+            "enum": [
+                "eV",
+                "rydberg",
+                "hartree"
+            ]
+        }
+    },
     "required": [
         "type"
     ]

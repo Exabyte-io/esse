@@ -5,21 +5,19 @@
     "allOf": [
         {
             "$ref": "file:../../primitive/scalar.json"
-        },
-        {
-            "properties": {
-                    "name": {
-                        "enum": [
-                            "pressure"
-                        ]
-                    },
-                    "units": {
-                        "enum": [
-                            "kbar",
-                            "pa"
-                        ]
-                    }
-                }
         }
-    ]
+    ],
+    "properties": {
+        "name": {
+            "enum": [
+                "pressure"
+            ]
+        },
+        "units": {
+            "enum": [
+                "kbar",
+                "pa"
+            ]
+        }
+    }
 }

@@ -7,33 +7,29 @@
             "allOf": [
                 {
                     "$ref": "file:../primitive/scalar.json"
-                },
-                {
-                    "properties": {
-                        "units": {
-                            "enum": [
-                                "angstrom^3"
-                            ]
-                        }
-                    }
                 }
-            ]
+            ],
+            "properties": {
+                "units": {
+                    "enum": [
+                        "angstrom^3"
+                    ]
+                }
+            }
         },
         "density": {
             "allOf": [
                 {
                     "$ref": "file:../primitive/scalar.json"
-                },
-                {
-                    "properties": {
-                        "units": {
-                            "enum": [
-                                "g/cm^3"
-                            ]
-                        }
-                    }
                 }
-            ]
+            ],
+            "properties": {
+                "units": {
+                    "enum": [
+                        "g/cm^3"
+                    ]
+                }
+            }
         },
         "symmetry": {
             "type": "object",
@@ -48,17 +44,15 @@
                     "allOf": [
                         {
                             "$ref": "file:../primitive/scalar.json"
-                        },
-                        {
-                            "properties": {
-                                "units": {
-                                    "enum": [
-                                        "angstrom"
-                                    ]
-                                }
-                            }
                         }
-                    ]
+                    ],
+                    "properties": {
+                        "units": {
+                            "enum": [
+                                "angstrom"
+                            ]
+                        }
+                    }
                 }
             }
         }

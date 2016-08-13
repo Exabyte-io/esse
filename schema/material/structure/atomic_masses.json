@@ -5,14 +5,12 @@
     "allOf": [
         {
             "$ref": "file:../../primitive/_array_of_ids.json"
-        },
-        {
-            "properties": {
-                "value": {
-                    "description": "atomic masses",
-                    "type": "number"
-                }
-            }
         }
-    ]
+    ],
+    "properties": {
+        "value": {
+            "description": "atomic masses",
+            "type": "number"
+        }
+    }
 }

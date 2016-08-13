@@ -15,16 +15,14 @@
             "allOf": [
                 {
                     "$ref": "file:../../../../primitive/3d_grid.json"
-                },
-                {
-                    "properties": {
-                        "ibz": {
-                            "description": "number of k-points inside irreducible wedge of the Brillouin zone",
-                            "type": "integer"
-                        }
-                    }
                 }
-            ]
+            ],
+            "properties": {
+                "ibz": {
+                    "description": "number of k-points inside irreducible wedge of the Brillouin zone",
+                    "type": "integer"
+                }
+            }
         }
     },
     "required": [

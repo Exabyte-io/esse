@@ -4,41 +4,39 @@
     "allOf": [
         {
             "$ref": "file:../../../model/method/workflow/unit/convergence.json"
+        }
+    ],
+    "properties": {
+        "tolerance": {
+            "description": "for ionic convergence tolerance shows force tolerance"
         },
-        {
-            "properties": {
-                "tolerance": {
-                    "description": "for ionic convergence tolerance shows force tolerance"
-                },
-                "units": {
-                    "description": "units for force tolerance",
-                    "enum": [
-                        "eV/a.u."
-                    ]
-                },
-                "data": {
-                    "description": "energetic and structural information",
-                    "items": {
-                        "type": "object",
-                        "properties": {
-                            "energy": {
-                                "description": "converged electronic energy for this structure (last in `electronic`)",
-                                "type": "number"
-                            },
-                            "structure": {
-                                "description": "TODO: structural information at each step to be here",
-                                "type": "object"
-                            },
-                            "electronic": {
-                                "description": "data about electronic at this ionic step",
-                                "$ref": "file:electronic.json"
-                            }
-                        }
+        "units": {
+            "description": "units for force tolerance",
+            "enum": [
+                "eV/a.u."
+            ]
+        },
+        "data": {
+            "description": "energetic and structural information",
+            "items": {
+                "type": "object",
+                "properties": {
+                    "energy": {
+                        "description": "converged electronic energy for this structure (last in `electronic`)",
+                        "type": "number"
+                    },
+                    "structure": {
+                        "description": "TODO: structural information at each step to be here",
+                        "type": "object"
+                    },
+                    "electronic": {
+                        "description": "data about electronic at this ionic step",
+                        "$ref": "file:electronic.json"
                     }
                 }
             }
         }
-    ],
+    },
     "required": [
         "data"
     ]

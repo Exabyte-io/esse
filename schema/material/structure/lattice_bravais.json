@@ -4,51 +4,49 @@
     "allOf": [
         {
             "$ref": "file:../../primitive/3d_lattice.json"
+        }
+    ],
+    "properties": {
+        "type": {
+            "description": "Bravais lattice type in short notation",
+            "type": "string",
+            "enum": [
+                "CUB",
+                "BCC",
+                "FCC",
+                "TET",
+                "MCL",
+                "ORC",
+                "ORCC",
+                "ORCF",
+                "ORCI",
+                "HEX",
+                "BCT",
+                "TRI",
+                "MCLC",
+                "RHL"
+            ]
         },
-        {
+        "units": {
+            "type": "object",
             "properties": {
-                "type": {
-                    "description": "Bravais lattice type in short notation",
+                "length": {
                     "type": "string",
                     "enum": [
-                        "CUB",
-                        "BCC",
-                        "FCC",
-                        "TET",
-                        "MCL",
-                        "ORC",
-                        "ORCC",
-                        "ORCF",
-                        "ORCI",
-                        "HEX",
-                        "BCT",
-                        "TRI",
-                        "MCLC",
-                        "RHL"
+                        "angstrom",
+                        "bohr"
                     ]
                 },
-                "units": {
-                    "type": "object",
-                    "properties": {
-                        "length": {
-                            "type": "string",
-                            "enum": [
-                                "angstrom",
-                                "bohr"
-                            ]
-                        },
-                        "angle": {
-                            "type": "string",
-                            "enum": [
-                                "degree",
-                                "radian"
-                            ]
-                        }
-                    }
+                "angle": {
+                    "type": "string",
+                    "enum": [
+                        "degree",
+                        "radian"
+                    ]
                 }
             }
         }
-    ],
+    },
     "required": [
         "type"
     ]

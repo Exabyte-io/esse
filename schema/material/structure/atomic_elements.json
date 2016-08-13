@@ -5,14 +5,12 @@
     "allOf": [
         {
             "$ref": "file:../../primitive/_array_of_ids.json"
-        },
-        {
-            "properties": {
-                "value": {
-                    "description": "atomic elements (eg Si, Ge)",
-                    "type": "string"
-                }
-            }
         }
-    ]
+    ],
+    "properties": {
+        "value": {
+            "description": "atomic elements (eg Si, Ge)",
+            "type": "string"
+        }
+    }
 }
