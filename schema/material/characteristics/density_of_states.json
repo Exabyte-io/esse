@@ -28,7 +28,7 @@
             "properties": {
                 "label": {
                     "enum": [
-                        "density of states"
+                        "density_of_states"
                     ]
                 },
                 "units": {

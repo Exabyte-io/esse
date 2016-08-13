@@ -1,5 +1,5 @@
 {
-    "name": "density of states",
+    "name": "density_of_states",
     "xAxis": {
         "label": "energy",
         "units": "eV"

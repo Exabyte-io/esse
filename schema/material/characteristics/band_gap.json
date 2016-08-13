@@ -25,7 +25,7 @@
         },
         "name": {
             "enum": [
-                "band gap"
+                "band_gap"
             ]
         },
         "units": {

@@ -9,7 +9,7 @@
     "properties": {
         "name": {
             "enum": [
-                "total energy"
+                "total_energy"
             ]
         },
         "units": {

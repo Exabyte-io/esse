@@ -7,7 +7,7 @@
             "description": "The name of this result property. e.g. scf_accuracy",
             "type": "string"
         },
-        "kwargs": {
+        "args": {
             "description": "Specific arguments for the required result.",
             "type": "array",
             "items": {

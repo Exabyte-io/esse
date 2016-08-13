@@ -13,7 +13,7 @@
             "properties": {
                 "name": {
                     "enum": [
-                        "temperature entropy"
+                        "temperature_entropy"
                     ]
                 }
             }
@@ -28,7 +28,7 @@
             "properties": {
                 "name": {
                     "enum": [
-                        "harris foulkes"
+                        "harris_foulkes"
                     ]
                 }
             }
@@ -43,7 +43,7 @@
             "properties": {
                 "name": {
                     "enum": [
-                        "one electron"
+                        "one_electron"
                     ]
                 }
             }
@@ -88,7 +88,7 @@
             "properties": {
                 "name": {
                     "enum": [
-                        "exchange correlation"
+                        "exchange_correlation"
                     ]
                 }
             }
@@ -133,7 +133,7 @@
             "properties": {
                 "name": {
                     "enum": [
-                        "atomic energy"
+                        "atomic_energy"
                     ]
                 }
             }
@@ -163,7 +163,7 @@
             "properties": {
                 "name": {
                     "enum": [
-                        "PAW double-counting correction 2"
+                        "PAW_double-counting_correction_2"
                     ]
                 }
             }
@@ -178,7 +178,7 @@
             "properties": {
                 "name": {
                     "enum": [
-                        "PAW double-counting correction 3"
+                        "PAW_double-counting_correction_3"
                     ]
                 }
             }
@@ -193,14 +193,14 @@
             "properties": {
                 "name": {
                     "enum": [
-                        "hartree fock"
+                        "hartree_fock"
                     ]
                 }
             }
         },
         "name": {
             "enum": [
-                "total energy contributions"
+                "total_energy_contributions"
             ]
         },
         "units": {

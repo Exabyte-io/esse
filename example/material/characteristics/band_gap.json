@@ -1,5 +1,5 @@
 {
-    "name": "band gap",
+    "name": "band_gap",
     "type": "direct",
     "kpointConduction": [
         0,

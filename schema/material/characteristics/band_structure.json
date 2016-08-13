@@ -40,7 +40,7 @@
         },
         "name": {
             "enum": [
-                "band structure"
+                "band_structure"
             ]
         },
         "spin": {
