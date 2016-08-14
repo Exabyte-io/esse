@@ -8,11 +8,11 @@
     ],
     "properties": {
         "kpointConduction": {
-            "description": "kpoint inside conduction band",
+            "description": "kpoint inside conduction band in crystal coordinates",
             "$ref": "file:../../primitive/point.json"
         },
         "kpointValence": {
-            "description": "kpoint inside valence band",
+            "description": "kpoint inside valence band in crystal coordinates",
             "$ref": "file:../../primitive/point.json"
         },
         "type": {

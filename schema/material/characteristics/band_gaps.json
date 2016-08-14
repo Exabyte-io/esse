@@ -1,0 +1,8 @@
+{
+    "$schema": "http://json-schema.org/draft-04/schema#",
+    "title": "band gaps schema",
+    "type": "array",
+    "items": {
+        "$ref": "file:band_gap.json"
+    }
+}
