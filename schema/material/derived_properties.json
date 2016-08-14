@@ -4,7 +4,11 @@
     "properties": {
         "volume": {
             "description": "unit cell volume",
-            "$ref": "file:../primitive/scalar.json",
+            "allOf": [
+                {
+                    "$ref": "file:../primitive/scalar.json"
+                }
+            ],
             "properties": {
                 "units": {
                     "enum": [
@@ -14,7 +18,11 @@
             }
         },
         "density": {
-            "$ref": "file:../primitive/scalar.json",
+            "allOf": [
+                {
+                    "$ref": "file:../primitive/scalar.json"
+                }
+            ],
             "properties": {
                 "units": {
                     "enum": [
@@ -33,7 +41,11 @@
                 },
                 "tolerance": {
                     "description": "tolerance used for symmetry calculation, angstroms",
-                    "$ref": "file:../primitive/scalar.json",
+                    "allOf": [
+                        {
+                            "$ref": "file:../primitive/scalar.json"
+                        }
+                    ],
                     "properties": {
                         "units": {
                             "enum": [

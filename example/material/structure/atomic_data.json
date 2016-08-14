@@ -1,5 +1,5 @@
 {
-    "name": "atomic data",
+    "name": "atomic_data",
     "valenceElectrons": {
         "value": [
             {
@@ -11,7 +11,7 @@
                 "value": 4
             }
         ],
-        "name": "valence electrons"
+        "name": "valence_electrons"
     },
     "charges": {
         "value": [
@@ -46,7 +46,7 @@
                 ]
             }
         ],
-        "name": "atomic forces",
+        "name": "atomic_forces",
         "units": "eV/a.u."
     }
 }

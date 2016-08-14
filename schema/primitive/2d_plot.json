@@ -1,7 +1,11 @@
 {
     "$schema": "http://json-schema.org/draft-04/schema#",
     "title": "2 dimension plot schema",
-    "$ref": "file:2d_data.json",
+    "allOf": [
+        {
+            "$ref": "file:2d_data.json"
+        }
+    ],
     "properties": {
         "xAxis": {
             "description": "x Axis object",

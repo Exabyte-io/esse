@@ -17,7 +17,7 @@
         },
         {
             "name": "density_of_states",
-            "kwargs": [
+            "args": [
                 {
                     "key": "combined",
                     "value": true

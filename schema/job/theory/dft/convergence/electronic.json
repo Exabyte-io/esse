@@ -7,6 +7,11 @@
         }
     ],
     "properties": {
+        "name": {
+            "enum": [
+                "electronic"
+            ]
+        },
         "units": {
             "enum": [
                 "eV",
@@ -15,6 +20,7 @@
             ]
         },
         "data": {
+            "type": "array",
             "items": {
                 "type": "number"
             }

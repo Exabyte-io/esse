@@ -2,7 +2,7 @@
     "app": {
         "...": "include(../../../../app.json)"
     },
-    "computeArgs": null,
+    "compute": null,
     "input": [
         {
             "content": "K_POINTS automatic\n2 2 2 0 0 0",

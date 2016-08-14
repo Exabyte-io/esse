@@ -1,5 +1,5 @@
 {
-    "schema": "http://json-schema.org/draft-04/schema#",
+    "$schema": "http://json-schema.org/draft-04/schema#",
     "title": "density function theory schema",
     "description": "density function theory schema",
     "properties": {
@@ -42,21 +42,12 @@
                     ]
                 }
             ]
-        },
-        "method": {
-            "oneOf": [
-                {
-                    "$ref": "file:dft/pseudopotential.json"
-                },
-                {
-                    "$ref": "file:dft/local-orbital.json"
-                }
-            ]
         }
     },
     "definitions": {
         "functionals": {
             "lda": {
+                "type": "string",
                 "enum": [
                     "pz",
                     "pw",

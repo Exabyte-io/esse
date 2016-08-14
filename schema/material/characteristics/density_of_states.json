@@ -1,6 +1,6 @@
 {
     "$schema": "http://json-schema.org/draft-04/schema#",
-    "title": "band structure schema",
+    "title": "density of states schema",
     "type": "object",
     "allOf": [
         {
@@ -38,42 +38,35 @@
                 }
             }
         },
+        "name": {
+            "enum": [
+                "density_of_states"
+            ]
+        },
         "legend": {
             "items": {
                 "type": "object",
                 "properties": {
                     "element": {
-                        "type": "array",
-                        "items": {
-                            "type": "string"
-                        }
+                        "description": "chemical element",
+                        "type": "string"
                     },
                     "index": {
-                        "type": "array",
-                        "items": {
-                            "description": "index inside sub-array of atoms of the same element type",
-                            "type": "integer",
-                            "minimum": 1
-                        }
+                        "description": "index inside sub-array of atoms of the same element type",
+                        "type": "integer"
                     },
                     "electronicState": {
-                        "type": "array",
-                        "items": {
-                            "description": "electronic character and shell of PDOS, such as `1s` or `s`, or `total`",
-                            "type": "string",
-                            "pattern": "^([1-5]{1})?(s|p|d|f|g)(.*)?$"
-                        }
+                        "description": "electronic character and shell of PDOS, such as `1s` or `s`, or `total`",
+                        "type": "string",
+                        "pattern": "^([1-5]{1})?(s|p|d|f|g).*$"
                     },
                     "spin": {
-                        "type": "array",
-                        "items": {
-                            "description": "spin of the electronic state",
-                            "type": "number",
-                            "enum": [
-                                0.5,
-                                -0.5
-                            ]
-                        }
+                        "description": "spin of the electronic state",
+                        "type": "number",
+                        "enum": [
+                            0.5,
+                            -0.5
+                        ]
                     }
                 }
             }
