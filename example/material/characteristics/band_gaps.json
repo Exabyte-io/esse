@@ -1,34 +1,25 @@
-[
-    {
-        "name": "band_gap",
-        "type": "direct",
-        "kpointConduction": [
-            0,
-            0,
-            0
-        ],
-        "kpointValence": [
-            0,
-            0,
-            0
-        ],
-        "value": 0.0947,
-        "units": "rydberg"
-    },
-    {
-        "name": "band_gap",
-        "type": "indirect",
-        "kpointConduction": [
-            0.5,
-            0.5,
-            0.5
-        ],
-        "kpointValence": [
-            0,
-            0,
-            0
-        ],
-        "value": 0.07,
-        "units": "rydberg"
-    }
-]
+{
+    "name": "band_gap",
+    "values": [
+        {
+            "type": "direct",
+            "kpointConduction": [
+                0,
+                0,
+                0
+            ],
+            "kpointValence": [
+                0,
+                0,
+                0
+            ],
+            "value": 0.0947,
+            "units": "rydberg"
+        },
+        {
+            "type": "indirect",
+            "value": 0.00,
+            "units": "rydberg"
+        }
+    ]
+}
