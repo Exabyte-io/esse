@@ -202,7 +202,7 @@
                     "name": "band_structure"
                 },
                 {
-                    "name": "band_gap"
+                    "name": "band_gaps"
                 },
                 {
                     "name": "total_energy"

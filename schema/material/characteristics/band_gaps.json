@@ -5,7 +5,7 @@
     "properties": {
         "name": {
             "enum": [
-                "band_gap"
+                "band_gaps"
             ]
         },
         "values": {
