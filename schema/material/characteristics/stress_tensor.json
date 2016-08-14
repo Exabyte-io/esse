@@ -7,7 +7,7 @@
         },
         "name": {
             "enum": [
-                "stress tensor"
+                "stress_tensor"
             ]
         },
         "units": {

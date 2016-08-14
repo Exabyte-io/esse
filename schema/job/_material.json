@@ -1,6 +1,6 @@
 {
     "$schema": "http://json-schema.org/draft-04/schema#",
-    "title": "job's material schema",
+    "title": "job material schema",
     "type": "object",
     "properties": {
         "_id": {
