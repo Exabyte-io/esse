@@ -3,11 +3,19 @@
     "title": "band gaps schema",
     "description": "contains band gap values",
     "properties": {
+        "name": {
+            "enum": [
+                "band_gap"
+            ]
+        },
         "values": {
             "type": "array",
             "items": {
                 "$ref": "file:band_gap.json"
             }
         }
-    }
+    },
+    "required": [
+        "name"
+    ]
 }

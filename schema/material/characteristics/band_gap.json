@@ -23,11 +23,6 @@
                 "indirect"
             ]
         },
-        "name": {
-            "enum": [
-                "band_gap"
-            ]
-        },
         "units": {
             "enum": [
                 "eV",
