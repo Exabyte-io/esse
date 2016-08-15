@@ -46,6 +46,6 @@ def compile_json_files(dir):
 
 if __name__ == '__main__':
 
-    create_dir_tree(SCHEMA_DIR, COMPILED_DIR, 'schema')
-    create_dir_tree(EXAMPLES_DIR, COMPILED_DIR, 'examples')
+    create_dir_tree(SCHEMA_DIR, os.path.join(COMPILED_DIR, 'schema'))
+    create_dir_tree(EXAMPLES_DIR, os.path.join(COMPILED_DIR, 'examples'))
     compile_json_files(COMPILED_DIR)
