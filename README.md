@@ -1,5 +1,7 @@
 # exabyte-materials-json
 
+Contains schemas and examples for materials and simulations related data in JSON representation.
+
 ## Installation
 
 ```bash
@@ -18,3 +20,13 @@ python compile.py
 ```
 
 `-m` flag will minify json files.
+
+# Tests
+
+Run from root directory of this repository:
+
+```bash
+npm install
+npm test
+```
+>>>>>>> feature/SOF-1259

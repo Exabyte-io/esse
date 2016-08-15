@@ -1,39 +1,32 @@
 {
     "$schema": "http://json-schema.org/draft-04/schema#",
     "title": "model schema",
-    "allOf": [
-        {
-            "title": "model prototype schema",
-            "properties": {
-                "type": {
-                    "description": "general type of the model, eg. `dft`",
-                    "type": "string"
-                },
-                "subtype": {
-                    "description": "general subtype of the model, eg. `lda`",
-                    "type": "string"
-                },
-                "accuracy": {
-                    "$ref": "file:model/accuracy.json"
-                },
-                "method": {
-                    "type": "object"
-                },
-                "references": {
-                    "type": "array",
-                    "items": {
-                        "description": "literature reference, webpage etc.",
-                        "type": "string"
-                    }
-                }
-            }
+    "properties": {
+        "type": {
+            "description": "general type of the model, eg. `dft`",
+            "type": "string"
         },
+        "subtype": {
+            "description": "general subtype of the model, eg. `lda`",
+            "type": "string"
+        },
+        "method": {
+            "$ref": "file:model/method.json"
+        },
+        "accuracy": {
+            "$ref": "file:model/accuracy.json"
+        },
+        "references": {
+            "type": "array",
+            "items": {
+                "description": "literature reference, webpage etc.",
+                "type": "string"
+            }
+        }
+    },
+    "oneOf": [
         {
-            "oneOf": [
-                {
-                    "$ref": "file:theory/dft.json"
-                }
-            ]
+            "$ref": "file:theory/dft.json"
         }
     ],
     "required": [

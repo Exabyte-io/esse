@@ -1,5 +1,5 @@
 {
-    "name": "band structure",
+    "name": "band_structure",
     "xAxis": {
         "label": "kpoints",
         "units": "crystal"
