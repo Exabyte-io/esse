@@ -1,0 +1,27 @@
+{
+    "$schema": "http://json-schema.org/draft-04/schema#",
+    "title": "espresso app schema",
+    "type": "object",
+    "properties": {
+        "name": {
+            "enum": [
+                "vasp"
+            ]
+        },
+        "summary": {
+            "enum": [
+                "Vienna Ab-inito Simulation Package"
+            ]
+        },
+        "version": {
+            "enum": [
+                "5.3.5"
+            ]
+        },
+        "exec": {
+            "enum": [
+                "vasp"
+            ]
+        }
+    }
+}

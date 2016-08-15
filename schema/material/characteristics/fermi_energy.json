@@ -9,7 +9,7 @@
     "properties": {
         "name": {
             "enum": [
-                "fermi energy"
+                "fermi_energy"
             ]
         },
         "units": {

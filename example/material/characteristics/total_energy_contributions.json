@@ -1,5 +1,5 @@
 {
-    "name": "total energy contributions",
+    "name": "total_energy_contributions",
     "alphaZ": {
         "name": "alphaZ",
         "value": 1056.91493097
@@ -17,19 +17,19 @@
         "value": 0
     },
     "PAWDoubleCounting2": {
-        "name": "PAW double-counting correction 2",
+        "name": "PAW_double-counting_correction_2",
         "value": 12658.30538857
     },
     "PAWDoubleCounting3": {
-        "name": "PAW double-counting correction 3",
+        "name": "PAW_double-counting_correction_3",
         "value": -12074.85364512
     },
     "exchangeCorrelation": {
-        "name": "exchange correlation",
+        "name": "exchange_correlation",
         "value": 41.63693035
     },
     "temperatureEntropy": {
-        "name": "temperature entropy",
+        "name": "temperature_entropy",
         "value": -0.00032545
     },
     "eigenvalues": {
@@ -37,7 +37,7 @@
         "value": -577.80127102
     },
     "atomicEnergy": {
-        "name": "atomic energy",
+        "name": "atomic_energy",
         "value": 15740.5725788
     },
     "units": "eV"
