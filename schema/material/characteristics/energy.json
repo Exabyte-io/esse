@@ -1,14 +1,17 @@
 {
     "$schema": "http://json-schema.org/draft-04/schema#",
-    "title": "zero point energy contributions schema",
-    "type": "object",
+    "title": "energy schema",
+    "allOf": [
+        {
+            "$ref": "file:../../primitive/scalar.json"
+        }
+    ],
     "properties": {
-        "zeroPointEnergyContributions": {
-            "$ref": "file:../../primitive/1d_data_series.json"
-        },
         "name": {
             "enum": [
-                "zero point energy contributions"
+                "atomization energy",
+                "formation energy",
+                "zero point energy"
             ]
         },
         "units": {
