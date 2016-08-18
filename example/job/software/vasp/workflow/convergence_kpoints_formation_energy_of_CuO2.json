@@ -6,7 +6,7 @@
             "head": true,
             "type": "assignment",
             "flowchartId": "initialize_TOLERANCE",
-            "next": "initialize_previous_energy",
+            "next": "initialize_SCALAR_RESULT",
             "assignment": {
                 "scope": "global",
                 "name": "TOLERANCE",
@@ -34,6 +34,7 @@
         },
         {
             "flowchartId": "run_scf_calculation",
+            "name": "run_scf_calculation",
             "type": "execution",
             "next": "check_for_convergence",
             "monitors": [
