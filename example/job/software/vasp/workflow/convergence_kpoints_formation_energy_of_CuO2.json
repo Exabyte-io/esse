@@ -36,7 +36,6 @@
             "flowchartId": "run_scf_calculation",
             "type": "execution",
             "next": "check_for_convergence",
-            "head": true,
             "monitors": [
                 {
                     "name": "standard_output"
