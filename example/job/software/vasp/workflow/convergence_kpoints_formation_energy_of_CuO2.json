@@ -645,8 +645,8 @@
         },
         {
             "flowchartId": "convergence_is_reached_of_element2",
-            "type": "assignment",
             "next": "run_relaxation_of_element2",
+            "type": "assignment",
             "assignment": {
                 "input": [
                     {

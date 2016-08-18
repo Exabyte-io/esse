@@ -20,8 +20,8 @@
                         "_id": "56b13cbbfe45004cfb2869ee",
                         "path": "/export/share/pseudo/cu/gga/pbe/vasp/5.2/paw/default/POTCAR",
                         "filename": "POTCAR",
-                        "element": "Cu",
                         "functional": "PBE",
+                        "element": "Cu",
                         "type": "us"
                     },
                     {
