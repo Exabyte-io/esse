@@ -1,0 +1,3 @@
+[submodule "tests/exabyte-test-cases"]
+	path = tests/exabyte-test-cases
+	url = https://github.com/Exabyte-io/exabyte-test-cases
