@@ -1,0 +1,10 @@
+O2 molecule in a box
+1.0 ! universal scaling parameters
+12.0 0.0 0.0 ! lattice vector a(1)
+0.0 12.0 0.0 ! lattice vector a(2)
+0.0 0.0 12.0 ! lattice vector a(3)
+O
+2 ! number of atoms
+cart ! positions in cartesian coordinates
+0 0 0 O
+0 0 1.21 O

@@ -17,6 +17,7 @@ build/
 .vagrant
 .sass-cache
 
+POTCAR*
 # YARD artifacts
 .yardoc
 _yardoc

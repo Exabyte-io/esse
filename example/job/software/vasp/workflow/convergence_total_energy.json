@@ -1,0 +1,103 @@
+{
+    "$extend": {
+        "name": "../../../theory/dft/pseudopotential/workflow/convergence.json"
+    },
+    "$replace": [
+        {
+            "where": {
+                "key": "units",
+                "idx": 4
+            },
+            "with": "$this.units"
+        },
+        {
+            "where": {
+                "key": "units",
+                "idx": 5
+            },
+            "with": "$this.units2"
+        },
+        {
+            "where": {
+                "key": "units",
+                "idx": 0
+            },
+            "with": {
+                "head": true,
+                "type": "assignment",
+                "flowchartId": "init_tolerance",
+                "next": "init_increment",
+                "assignment": {
+                    "name": "TOLERANCE",
+                    "value": "1e-3"
+                }
+            }
+        },
+        {
+            "where": {
+                "key": "app"
+            },
+            "with": "vasp"
+        }
+    ],
+    "units": [
+        {
+            "status": "idle",
+            "flowchartId": "extract_characteristic",
+            "type": "compute",
+            "next": "assign_scalar_globally",
+            "app": {
+                "name": "vasp",
+                "exec": "vasp"
+            },
+            "monitors": [
+                {
+                    "name": "standard_output"
+                },
+                {
+                    "name": "delta_energy"
+                },
+                {
+                    "name": "total_energy"
+                }
+            ],
+            "postProcessors": [],
+            "input": [
+                {
+                    "content": "include_text(INCAR)",
+                    "name": "INCAR"
+                },
+                {
+                    "content": "include_text(KPOINTS)",
+                    "name": "KPOINTS"
+                },
+                {
+                    "content": "include_text(POSCAR)",
+                    "name": "POSCAR"
+                }
+            ],
+            "results": [
+                {
+                    "name": "total_energy"
+                }
+            ]
+        }
+    ],
+    "units2": [
+        {
+            "type": "assignment",
+            "flowchartId": "assign_scalar_globally",
+            "next": "check_convergence",
+            "assignment": {
+                "input": [
+                    {
+                        "scope": "extract_characteristic",
+                        "name": "total_energy"
+                    }
+                ],
+                "name": "SCALAR_RESULT",
+                "value": "total_energy"
+            }
+        }
+    ]
+}
