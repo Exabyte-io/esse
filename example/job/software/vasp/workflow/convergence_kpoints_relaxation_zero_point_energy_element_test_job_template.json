@@ -282,7 +282,7 @@
                 "pseudo": [
                     {
                         "_id": "56b13cbbfe45004cfb2869ee",
-                        "path": "include_text(../../../../../../tests/exabyte-test-cases/characteristics/total_energy/vasp/elements/{{ELEMENT}}/POTCAR.paths)",
+                        "path": "/export/share/pseudo/{{ELEMENT}}/",
                         "filename": "POTCAR",
                         "element": "{{ELEMENT}}",
                         "functional": "PBE",
