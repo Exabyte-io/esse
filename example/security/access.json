@@ -1,4 +1,23 @@
-{
-    "level": 0,
-    "type": 0
-}
+[
+    {
+        "type": 1,
+        "account": {
+            "_id": "*",
+            "type": 0
+        }
+    },
+    {
+        "type": 11,
+        "account": {
+            "_id": "JAfsaoreaflsdfjs",
+            "type": 1
+        }
+    },
+    {
+        "type": 0,
+        "account": {
+            "_id": "kjaowhLahfladfks",
+            "type": 10
+        }
+    }
+]
