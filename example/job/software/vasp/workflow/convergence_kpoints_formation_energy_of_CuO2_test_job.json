@@ -1,0 +1,60 @@
+{
+    "_id": "test_vasp_job",
+    "title": "test_vasp_job",
+    "compute": {
+        "nodes": 1,
+        "ppn": 1,
+        "cluster": {
+            "fqdn": "master-1-staging.exabyte.io",
+            "jid": "1234.master-1-staging.exabyte.io"
+        }
+    },
+    "model": {
+        "method": {
+            "workflow": {
+                "...": "include(convergence_kpoints_formation_energy_of_CuO2.json)"
+            },
+            "data": {
+                "pseudo": [
+                    {
+                        "_id": "56b13cbbfe45004cfb2869ee",
+                        "path": "/export/share/pseudo/cu/gga/pbe/vasp/5.2/paw/default/POTCAR",
+                        "filename": "POTCAR",
+                        "element": "Cu",
+                        "functional": "PBE",
+                        "type": "us"
+                    },
+                    {
+                        "_id": "56b13cbbfe45004cfb2869ee",
+                        "path": "/export/share/pseudo/o/gga/pbe/vasp/5.2/paw/default/POTCAR",
+                        "filename": "POTCAR",
+                        "element": "O",
+                        "functional": "PBE",
+                        "type": "us"
+                    }
+                ]
+            }
+        }
+    },
+    "_project": {
+        "_id": "56c569d7fe45004bec30b5e7",
+        "name": "Project 1",
+        "owner": {
+            "_id": "sdkucJLKbsaa2ajksh",
+            "name": "demo",
+            "type": 10
+        },
+        "slug": "project-1",
+        "goldName": "exabyte-project-1"
+    },
+    "version": "0.1.0",
+    "owner": {
+        "_id": "sdkucJLKbsaa2ajksh",
+        "name": "demo",
+        "type": 10
+    },
+    "creator": {
+        "username": "demo",
+        "_id": "aljflasj01hhsdf"
+    }
+}
