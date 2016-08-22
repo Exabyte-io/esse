@@ -39,10 +39,19 @@
                     {
                         "type": "assignment",
                         "flowchartId": "initialize_PARAMETER",
-                        "next": "run_scf_calculation",
+                        "next": "initialize_ELEMENT",
                         "assignment": {
                             "name": "PARAMETER",
                             "value": "1"
+                        }
+                    },
+                    {
+                        "type": "assignment",
+                        "flowchartId": "initialize_ELEMENT",
+                        "next": "run_scf_calculation",
+                        "assignment": {
+                            "name": "ELEMENT",
+                            "value": "Ag"
                         }
                     },
                     {
@@ -79,7 +88,7 @@
                             "input": [
                                 {
                                     "name": "INCAR",
-                                    "content": "include_text(/stack/rupy/json/example/job/software/vasp/workflow/INCAR)"
+                                    "content": "include_text(INCAR)"
                                 },
                                 {
                                     "name": "KPOINTS",
@@ -87,11 +96,7 @@
                                 },
                                 {
                                     "name": "POSCAR",
-                                    "content": "include_text(/stack/rupy/test-cases/characteristics/total_energy/POSCAR/{ELEMENT}/POSCAR)"
-                                },
-                                {
-                                    "name": "POTCAR",
-                                    "path": "include_text(/stack/rupy/test-cases/characteristics/total_energy/POSCAR/{ELEMENT}/POTCAR.paths)"
+                                    "content": "include_text(../../../../../../tests/exabyte-test-cases/characteristics/total_energy/vasp/elements/{{ELEMENT}}/POSCAR)"
                                 }
                             ]
                         },
@@ -206,7 +211,7 @@
                             "input": [
                                 {
                                     "name": "INCAR",
-                                    "content": "include_text(/stack/rupy/json/example/job/software/vasp/workflow/INCAR_rlx)"
+                                    "content": "include_text(INCAR_rlx)"
                                 }
                             ],
                             "results": [
@@ -237,7 +242,7 @@
                             "input": [
                                 {
                                     "name": "INCAR",
-                                    "content": "include_text(/stack/rupy/json/example/job/software/vasp/workflow/INCAR_zpe)"
+                                    "content": "include_text(INCAR_zpe)"
                                 }
                             ]
                         },
@@ -277,9 +282,9 @@
                 "pseudo": [
                     {
                         "_id": "56b13cbbfe45004cfb2869ee",
-                        "path": "include_text(/stack/rupy/test-cases/characteristics/total_energy/POSCAR/{ELEMENT}/POTCAR.paths)",
+                        "path": "/export/share/pseudo/{{ELEMENT}}/",
                         "filename": "POTCAR",
-                        "element": "{ELEMENT}",
+                        "element": "{{ELEMENT}}",
                         "functional": "PBE",
                         "type": "us"
                     }
