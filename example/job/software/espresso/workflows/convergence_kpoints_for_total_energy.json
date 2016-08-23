@@ -1,7 +1,7 @@
 {
-    "name": "k point convergence for band structure",
+    "name": "Total Energy",
     "app": "espresso",
-    "title": "k point convergence for band structure",
+    "title": "k point convergence for total energy",
     "units": [
         {
             "type": "assignment",
@@ -82,7 +82,7 @@
             "postProcessors": [],
             "input": [
                 {
-                    "content": "&CONTROL\n    calculation='scf'\n    title=''\n    verbosity='low'\n    restart_mode='from_scratch'\n    wf_collect=.true.\n    tstress=.true.\n    tprnfor=.true.\n    outdir='$OUTPUT_DIR/'\n    wfcdir='$OUTPUT_DIR/'\n    prefix='__prefix__'\n    pseudo_dir='$PSEUDO_DIR'\n/\n&SYSTEM\n    ibrav=2\n    nat=2\n    ntyp=1\n    ecutwfc=40\n    ecutrho=200\n    occupations='smearing'\n    degauss=0.005\n    celldm(1)=9.448580823160363\n/\n&ELECTRONS\n    diagonalization='david'\n    diago_david_ndim=4\n    diago_full_acc=.true.\n    mixing_beta=0.3\n/\n&IONS\n/\n&CELL\n/\nATOMIC_SPECIES\nSi 28.0855 si_pbe_gbrv_1.0.upf\nATOMIC_POSITIONS crystal\nSi 0 0 0\nSi 0.25 0.25 0.25\nK_POINTS automatic\n{{N_K_x | default('1')}} {{N_K_y | default('1')}} {{N_K_z | default('1')}} 0 0 0",
+                    "content": "+&control\n    calculation = 'scf'\n    verbosity='low'\n    restart_mode='from_scratch'\n    wf_collect=.true.\n    tstress=.true.\n    tprnfor=.true.\n    outdir='$OUTPUT_DIR/'\n    wfcdir='$OUTPUT_DIR/'\n    prefix='__prefix__'\n    pseudo_dir='$PSEUDO_DIR'\n/\n&system\n    ecutwfc = 40\n    ecutrho = 200\n    occupations = 'smearing'\n    smearing = 'gaussian'\n    degauss = 0.005\n    ibrav = 0\n    A = 3.61496\n    nat = 1\n    ntyp = 1\n/\n&electrons\n    mixing_beta = 0.7\n    conv_thr = 1.0d-8\n/\nCELL_PARAMETERS {alat}\n  0.500000000000000   0.500000000000000   0.000000000000000 \n  0.500000000000000   0.000000000000000   0.500000000000000 \n  0.000000000000000   0.500000000000000   0.500000000000000\n ATOMIC_SPECIES\nCu   63.54600  cu_pbe_gbrv_1.2.upf\nATOMIC_POSITIONS {crystal}\nCu   0.000000000000000   0.000000000000000   0.000000000000000\nK_POINTS automatic\n{{N_K_x | default('1')}} {{N_K_y | default('1')}} {{N_K_z | default('1')}} 1 1 1",
                     "name": "pw_scf.in"
                 }
             ]
@@ -104,7 +104,7 @@
                         "name": "total_energy"
                     }
                 ],
-                "statement": "abs(previous_total_E-total_energy) < 1e-5",
+                "statement": "abs(previous_total_E-total_energy) < 1e-2",
                 "then": "decrement_kpoint_density",
                 "else": "assign_total_energy_to_previous_total_E",
                 "maxOccurences": 100
@@ -223,7 +223,7 @@
             "type": "assignment",
             "name": "decrease_N_K_z_by_1",
             "status": "idle",
-            "next": "run_band_structure",
+            "next": "assign_previous_total_E_to_total_energy",
             "app": {},
             "assignment": {
                 "input": [
@@ -237,45 +237,25 @@
             }
         },
         {
+            "flowchartId": "assign_previous_total_E_to_total_energy",
+            "type": "assignment",
+            "name": "assign_previous_total_E_to_total_energy",
             "status": "idle",
-            "flowchartId": "run_band_structure",
-            "name": "run_band_structure",
-            "type": "compute",
-            "next": "done_with_convergence_plus_band_structure",
-            "app": {
-                "flavor": "pw_scf",
-                "version": "5.1.1",
-                "name": "espresso",
-                "exec": "pw.x",
-                "summary": "Quantum Espresso"
-            },
-            "results": [
-                {
-                    "name": "density_of_states"
-                },
-                {
-                    "name": "band_structure"
-                },
-                {
-                    "name": "band_gaps"
-                },
-                {
-                    "name": "total_energy"
-                }
-            ],
-            "monitors": [
-                {
-                    "name": "scf_accuracy"
-                },
-                {
-                    "name": "standard_output"
-                }
-            ],
-            "preProcessors": [],
-            "postProcessors": []
+            "next": "done_with_convergence_plus_total_energy",
+            "app": {},
+            "assignment": {
+                "input": [
+                    {
+                        "scope": "global",
+                        "name": "previous_total_E"
+                    }
+                ],
+                "name": "total_energy",
+                "value": "previous_total_E"
+            }
         },
         {
-            "flowchartId": "done_with_convergence_plus_band_structure",
+            "flowchartId": "done_with_convergence_plus_total_energy",
             "type": "exit",
             "name": "exit",
             "status": "idle",

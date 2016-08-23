@@ -1,0 +1,25 @@
+{
+    "$schema": "http://json-schema.org/draft-04/schema#",
+    "title": "energy schema",
+    "allOf": [
+        {
+            "$ref": "file:../../primitive/scalar.json"
+        }
+    ],
+    "properties": {
+        "name": {
+            "enum": [
+                "atomization energy",
+                "formation energy",
+                "zero point energy"
+            ]
+        },
+        "units": {
+            "enum": [
+                "eV",
+                "rydberg",
+                "hartree"
+            ]
+        }
+    }
+}
