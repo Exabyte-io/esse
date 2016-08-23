@@ -29,4 +29,3 @@ Run from root directory of this repository:
 npm install
 npm test
 ```
->>>>>>> feature/SOF-1259
