@@ -1,0 +1,306 @@
+{
+    "_id": "template_vasp_job",
+    "title": "test_vasp_job",
+    "compute": {
+        "nodes": 1,
+        "ppn": 1,
+        "cluster": {
+            "fqdn": "master-1-staging.exabyte.io",
+            "jid": "1234.master-1-staging.exabyte.io"
+        }
+    },
+    "model": {
+        "method": {
+            "workflow": {
+                "name": "vasp gamma kpoint convergence plus relaxation plus zero point energy plus zero point energy elemental constituent",
+                "app": "vasp",
+                "units": [
+                    {
+                        "head": true,
+                        "type": "assignment",
+                        "flowchartId": "initialize_TOLERANCE",
+                        "next": "initialize_SCALAR_RESULT",
+                        "assignment": {
+                            "scope": "global",
+                            "name": "TOLERANCE",
+                            "value": "1e-3"
+                        }
+                    },
+                    {
+                        "type": "assignment",
+                        "flowchartId": "initialize_SCALAR_RESULT",
+                        "next": "initialize_PARAMETER",
+                        "assignment": {
+                            "scope": "global",
+                            "name": "SCALAR_RESULT",
+                            "value": "0"
+                        }
+                    },
+                    {
+                        "type": "assignment",
+                        "flowchartId": "initialize_PARAMETER",
+                        "next": "run_scf_calculation",
+                        "assignment": {
+                            "name": "PARAMETER",
+                            "value": "1"
+                        }
+                    },
+                    {
+                        "flowchartId": "run_scf_calculation",
+                        "type": "execution",
+                        "next": "check_for_convergence",
+                        "head": true,
+                        "monitors": [
+                            {
+                                "name": "standard_output"
+                            },
+                            {
+                                "name": "delta_energy"
+                            },
+                            {
+                                "name": "total_energy"
+                            }
+                        ],
+                        "preProcessors": [
+                            {
+                                "type": "command",
+                                "name": "copy_file",
+                                "kwargs": {
+                                    "source": "KPOINTS",
+                                    "destination": "KPOINTS.convergence.save"
+                                }
+                            }
+                        ],
+                        "execution": {
+                            "app": {
+                                "name": "vasp",
+                                "exec": "vasp"
+                            },
+                            "input": [
+                                {
+                                    "name": "INCAR",
+                                    "content": "include_text(/stack/rupy/json/example/job/software/vasp/workflow/INCAR)"
+                                },
+                                {
+                                    "name": "KPOINTS",
+                                    "content": "include_text(KPOINTS)"
+                                },
+                                {
+                                    "name": "POSCAR",
+                                    "content": "include_text(/stack/rupy/test-cases/characteristics/total_energy/POSCAR/{{ELEMENT}}/POSCAR)"
+                                }
+                            ]
+                        },
+                        "results": [
+                            {
+                                "name": "total_energy"
+                            },
+                            {
+                                "name": "band_gap"
+                            },
+                            {
+                                "name": "bandstructure"
+                            }
+                        ]
+                    },
+                    {
+                        "flowchartId": "check_for_convergence",
+                        "type": "condition",
+                        "condition": {
+                            "input": [
+                                {
+                                    "scope": "global",
+                                    "name": "previous_SCALAR_RESULT"
+                                },
+                                {
+                                    "scope": "run_scf_calculation",
+                                    "name": "total_energy"
+                                }
+                            ],
+                            "statement": "abs(previous_SCALAR_RESULT-total_energy) < TOLERANCE",
+                            "then": "convergence_is_reached",
+                            "else": "assign_SCALAR_RESULT_to_previous_SCALAR_RESULT",
+                            "maxOccurences": 100
+                        }
+                    },
+                    {
+                        "flowchartId": "assign_SCALAR_RESULT_to_previous_SCALAR_RESULT",
+                        "type": "assignment",
+                        "next": "increase_PARAMETER_by_1",
+                        "assignment": {
+                            "input": [
+                                {
+                                    "scope": "run_scf_calculation",
+                                    "name": "total_energy"
+                                }
+                            ],
+                            "name": "previous_SCALAR_RESULT",
+                            "value": "total_energy"
+                        }
+                    },
+                    {
+                        "flowchartId": "increase_PARAMETER_by_1",
+                        "type": "assignment",
+                        "next": "run_scf_calculation",
+                        "assignment": {
+                            "input": [
+                                {
+                                    "scope": "global",
+                                    "name": "PARAMETER"
+                                }
+                            ],
+                            "name": "PARAMETER",
+                            "value": "PARAMETER+1"
+                        }
+                    },
+                    {
+                        "flowchartId": "convergence_is_reached",
+                        "type": "assignment",
+                        "next": "run_relaxation",
+                        "assignment": {
+                            "input": [
+                                {
+                                    "scope": "global",
+                                    "name": "PARAMETER"
+                                }
+                            ],
+                            "name": "PARAMETER",
+                            "value": "PARAMETER-1"
+                        }
+                    },
+                    {
+                        "status": "idle",
+                        "flowchartId": "run_relaxation",
+                        "type": "compute",
+                        "next": "run_zero_point_energy",
+                        "monitors": [
+                            {
+                                "name": "standard_output"
+                            },
+                            {
+                                "name": "delta_energy"
+                            },
+                            {
+                                "name": "total_energy"
+                            }
+                        ],
+                        "postProcessors": [
+                            {
+                                "type": "command",
+                                "name": "copy_file",
+                                "kwargs": {
+                                    "source": "CONTCAR",
+                                    "destination": "POSCAR"
+                                }
+                            }
+                        ],
+                        "execution": {
+                            "app": {
+                                "name": "vasp",
+                                "exec": "vasp"
+                            },
+                            "input": [
+                                {
+                                    "name": "INCAR",
+                                    "content": "include_text(/stack/rupy/json/example/job/software/vasp/workflow/INCAR_rlx)"
+                                }
+                            ],
+                            "results": [
+                                {
+                                    "name": "total_energy"
+                                },
+                                {
+                                    "name": "band_gap"
+                                },
+                                {
+                                    "name": "bandstructure"
+                                }
+                            ]
+                        }
+                    },
+                    {
+                        "status": "idle",
+                        "flowchartId": "run_zero_point_energy",
+                        "name": "run_zero_point_energy",
+                        "type": "execution",
+                        "next": "done_with_convergence_plus_zero_point_energy",
+                        "execution": {
+                            "app": {
+                                "flavor": "vasp",
+                                "exec": "vasp",
+                                "name": "vasp"
+                            },
+                            "input": [
+                                {
+                                    "name": "INCAR",
+                                    "content": "include_text(/stack/rupy/json/example/job/software/vasp/workflow/INCAR_zpe)"
+                                }
+                            ]
+                        },
+                        "results": [
+                            {
+                                "name": "total_energy"
+                            },
+                            {
+                                "name": "zero_point_energy"
+                            }
+                        ],
+                        "monitors": [
+                            {
+                                "name": "standard_output"
+                            },
+                            {
+                                "name": "delta_energy"
+                            },
+                            {
+                                "name": "total_energy"
+                            }
+                        ]
+                    },
+                    {
+                        "flowchartId": "done_with_convergence_plus_zero_point_energy",
+                        "type": "exit",
+                        "name": "exit",
+                        "status": "idle",
+                        "app": {},
+                        "exit": {
+                            "throwException": false
+                        }
+                    }
+                ]
+            },
+            "data": {
+                "pseudo": [
+                    {
+                        "_id": "56b13cbbfe45004cfb2869ee",
+                        "path": "include_text(/stack/rupy/test-cases/characteristics/total_energy/POSCAR/{{ELEMENT}}/POTCAR.paths)",
+                        "filename": "POTCAR",
+                        "functional": "PBE",
+                        "type": "us"
+                    }
+                ]
+            }
+        }
+    },
+    "_project": {
+        "_id": "56c569d7fe45004bec30b5e7",
+        "name": "Project 1",
+        "owner": {
+            "_id": "sdkucJLKbsaa2ajksh",
+            "name": "demo",
+            "type": 10
+        },
+        "slug": "project-1",
+        "goldName": "exabyte-project-1"
+    },
+    "version": "0.1.0",
+    "owner": {
+        "_id": "sdkucJLKbsaa2ajksh",
+        "name": "demo",
+        "type": 10
+    },
+    "creator": {
+        "username": "demo",
+        "_id": "aljflasj01hhsdf"
+    }
+}
