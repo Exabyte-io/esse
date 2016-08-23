@@ -51,7 +51,7 @@
                         "next": "run_scf_calculation",
                         "assignment": {
                             "name": "ELEMENT",
-                            "value": "Ag"
+                            "value": "USER_SPECIFIED_ELEMENT"
                         }
                     },
                     {
@@ -87,16 +87,8 @@
                             },
                             "input": [
                                 {
-                                    "name": "INCAR",
-                                    "content": "include_text(INCAR)"
-                                },
-                                {
-                                    "name": "KPOINTS",
-                                    "content": "include_text(KPOINTS)"
-                                },
-                                {
                                     "name": "POSCAR",
-                                    "content": "include_text(../../../../../../tests/exabyte-test-cases/characteristics/total_energy/vasp/elements/{{ELEMENT}}/POSCAR)"
+                                    "content": "include_text(../../../../../../../exabyte-test-cases/characteristics/total_energy/vasp/elements/{{ELEMENT}}/POSCAR)"
                                 }
                             ]
                         },
@@ -211,7 +203,7 @@
                             "input": [
                                 {
                                     "name": "INCAR",
-                                    "content": "include_text(INCAR_rlx)"
+                                    "content": "include_text(../../../../../exabyte-test-cases/characteristics/restart_vc_relax/vasp/elements/INCAR_rlx)"
                                 }
                             ],
                             "results": [
@@ -242,7 +234,7 @@
                             "input": [
                                 {
                                     "name": "INCAR",
-                                    "content": "include_text(INCAR_zpe)"
+                                    "content": "include_text(../../../../../exabyte-test-cases/characteristics/zero_point_energy/vasp/elements/INCAR_zpe)"
                                 }
                             ]
                         },
@@ -282,9 +274,8 @@
                 "pseudo": [
                     {
                         "_id": "56b13cbbfe45004cfb2869ee",
-                        "path": "/export/share/pseudo/{{ELEMENT}}/",
+                        "path": "include_text(../../../../../../../exabyte-test-cases/characteristics/total_energy/vasp/elements/{{ELEMENT}}/POTCAR.paths)",
                         "filename": "POTCAR",
-                        "element": "{{ELEMENT}}",
                         "functional": "PBE",
                         "type": "us"
                     }
