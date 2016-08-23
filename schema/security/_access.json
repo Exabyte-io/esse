@@ -1,0 +1,71 @@
+{
+    "$schema": "http://json-schema.org/draft-04/schema#",
+    "title": "access level schema",
+    "type": "object",
+    "properties": {
+        "type": {
+            "description": "sets up the access type via the sum of: 1 - read, 10 - comment, 100 - edit",
+            "type": "integer"
+        },
+        "account": {
+            "description": "contains account that has this access for this entity",
+            "$ref": "file:account.json"
+        }
+    },
+    "required": [
+        "type",
+        "account"
+    ],
+    "oneOf": [
+        {
+            "properties": {
+                "type": {
+                    "description": "explicitly blocked access",
+                    "enum": [
+                        0
+                    ]
+                }
+            }
+        },
+        {
+            "properties": {
+                "type": {
+                    "description": "read-only access",
+                    "enum": [
+                        1
+                    ]
+                }
+            }
+        },
+        {
+            "properties": {
+                "type": {
+                    "description": "read and comment access",
+                    "enum": [
+                        11
+                    ]
+                }
+            }
+        },
+        {
+            "properties": {
+                "type": {
+                    "description": "read and edit access",
+                    "enum": [
+                        101
+                    ]
+                }
+            }
+        },
+        {
+            "properties": {
+                "type": {
+                    "description": "read comment and edit access",
+                    "enum": [
+                        111
+                    ]
+                }
+            }
+        }
+    ]
+}

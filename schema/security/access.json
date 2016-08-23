@@ -1,40 +1,9 @@
 {
     "$schema": "http://json-schema.org/draft-04/schema#",
     "title": "access schema",
-    "type": "object",
-    "properties": {
-        "level": {
-            "description": "Flag that sets the access level for entity. 0: open publicly (for non-registered users), 10: open for registered users only, 20: open for registered users that were given explicit permission only, 30: open for all registered users from my organization only, 40: open for all registered users from my organization's team only, 50: open for all registered users from my organization's team that were given explicit permission only",
-            "type": "integer",
-            "enum": [
-                0,
-                10,
-                20,
-                30,
-                40,
-                50
-            ]
-        },
-        "type": {
-            "description": "A flag that sets up the access type. 0: read-only, 10: read + comment, 20: read + comment + edit",
-            "type": "integer",
-            "enum": [
-                0,
-                10,
-                20
-            ]
-        },
-        "accounts": {
-            "description": "contains accounts that can access this entity, content can be ignored depending on the level type",
-            "type": "array",
-            "items": {
-                "description": "information about an account",
-                "$ref": "file:account.json"
-            }
-        }
-    },
-    "required": [
-        "level",
-        "type"
-    ]
+    "description": "what accounts can access this entity with what actions; lower type always has preference",
+    "type": "array",
+    "items": {
+        "$ref": "file:_access.json"
+    }
 }
