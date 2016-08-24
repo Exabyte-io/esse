@@ -1,13 +1,14 @@
 {
     "_id": "template_vasp_job",
     "title": "test_vasp_job",
+    "titleSlug": "new-job-aug-23rd-2016-17-01-pm",
     "compute": {
-        "nodes": 1,
         "ppn": 1,
-        "cluster": {
-            "fqdn": "master-1-staging.exabyte.io",
-            "jid": "1234.master-1-staging.exabyte.io"
-        }
+        "queue": "D",
+        "timeLimit": "00:05:00",
+        "notify": "n",
+        "nodes": 1,
+        "arguments": {}
     },
     "model": {
         "method": {
@@ -39,47 +40,19 @@
                     {
                         "type": "assignment",
                         "flowchartId": "initialize_PARAMETER",
-                        "next": "initialize_ELEMENT",
+                        "next": "run_scf_calculation",
                         "assignment": {
                             "name": "PARAMETER",
                             "value": "1"
                         }
                     },
                     {
-                        "type": "assignment",
-                        "flowchartId": "initialize_ELEMENT",
-                        "next": "run_scf_calculation",
-                        "assignment": {
-                            "name": "ELEMENT",
-                            "value": "USER_SPECIFIED_ELEMENT"
-                        }
-                    },
-                    {
                         "flowchartId": "run_scf_calculation",
                         "type": "execution",
+                        "name": "run_scf_calculation",
                         "next": "check_for_convergence",
                         "head": true,
-                        "monitors": [
-                            {
-                                "name": "standard_output"
-                            },
-                            {
-                                "name": "delta_energy"
-                            },
-                            {
-                                "name": "total_energy"
-                            }
-                        ],
-                        "preProcessors": [
-                            {
-                                "type": "command",
-                                "name": "copy_file",
-                                "kwargs": {
-                                    "source": "KPOINTS",
-                                    "destination": "KPOINTS.convergence.save"
-                                }
-                            }
-                        ],
+                        "preProcessors": [],
                         "execution": {
                             "app": {
                                 "name": "vasp",
@@ -88,15 +61,15 @@
                             "input": [
                                 {
                                     "name": "INCAR",
-                                    "content": "include_text(../../../../../json/example/job/software/vasp/workflow/INCAR)"
+                                    "content": "include_text(/export/compute/software/rupy/json/example/job/software/vasp/workflow/INCAR)"
                                 },
                                 {
                                     "name": "KPOINTS",
-                                    "content": "include_text(../../../../../json/example/job/software/vasp/workflow/KPOINTS)"
+                                    "content": "include_text(/export/compute/software/rupy/json/example/job/software/vasp/workflow/KPOINTS)"
                                 },
                                 {
                                     "name": "POSCAR",
-                                    "content": "include_text(../../../total_energy/vasp/elements/{{ELEMENT}}/POSCAR)"
+                                    "content": "include_text(POSCAR)"
                                 }
                             ]
                         },
@@ -105,35 +78,40 @@
                                 "name": "total_energy"
                             },
                             {
-                                "name": "band_gap"
+                                "name": "band_gaps"
                             },
                             {
-                                "name": "bandstructure"
+                                "name": "band_structure"
                             }
                         ]
                     },
                     {
                         "flowchartId": "check_for_convergence",
                         "type": "condition",
+                        "name": "check_for_convergence",
                         "condition": {
                             "input": [
                                 {
                                     "scope": "global",
-                                    "name": "previous_SCALAR_RESULT"
+                                    "name": "SCALAR_RESULT"
+                                },
+                                {
+                                    "scope": "global",
+                                    "name": "TOLERANCE"
                                 },
                                 {
                                     "scope": "run_scf_calculation",
                                     "name": "total_energy"
                                 }
                             ],
-                            "statement": "abs(previous_SCALAR_RESULT-total_energy) < TOLERANCE",
+                            "statement": "abs(SCALAR_RESULT-total_energy) < TOLERANCE",
                             "then": "convergence_is_reached",
-                            "else": "assign_SCALAR_RESULT_to_previous_SCALAR_RESULT",
+                            "else": "SCALAR_RESULT",
                             "maxOccurences": 100
                         }
                     },
                     {
-                        "flowchartId": "assign_SCALAR_RESULT_to_previous_SCALAR_RESULT",
+                        "flowchartId": "SCALAR_RESULT",
                         "type": "assignment",
                         "next": "increase_PARAMETER_by_1",
                         "assignment": {
@@ -143,7 +121,7 @@
                                     "name": "total_energy"
                                 }
                             ],
-                            "name": "previous_SCALAR_RESULT",
+                            "name": "SCALAR_RESULT",
                             "value": "total_energy"
                         }
                     },
@@ -180,29 +158,10 @@
                     {
                         "status": "idle",
                         "flowchartId": "run_relaxation",
-                        "type": "compute",
+                        "type": "execution",
+                        "name": "run_relaxation",
                         "next": "run_zero_point_energy",
-                        "monitors": [
-                            {
-                                "name": "standard_output"
-                            },
-                            {
-                                "name": "delta_energy"
-                            },
-                            {
-                                "name": "total_energy"
-                            }
-                        ],
-                        "postProcessors": [
-                            {
-                                "type": "command",
-                                "name": "copy_file",
-                                "kwargs": {
-                                    "source": "CONTCAR",
-                                    "destination": "POSCAR"
-                                }
-                            }
-                        ],
+                        "postProcessors": [],
                         "execution": {
                             "app": {
                                 "name": "vasp",
@@ -211,7 +170,7 @@
                             "input": [
                                 {
                                     "name": "INCAR",
-                                    "content": "include_text(../../../../../json/example/job/software/vasp/workflow/INCAR_rlx)"
+                                    "content": "include_text(/export/compute/software/rupy/json/example/job/software/vasp/workflow/INCAR_rlx)"
                                 }
                             ],
                             "results": [
@@ -219,10 +178,10 @@
                                     "name": "total_energy"
                                 },
                                 {
-                                    "name": "band_gap"
+                                    "name": "band_gaps"
                                 },
                                 {
-                                    "name": "bandstructure"
+                                    "name": "band_structure"
                                 }
                             ]
                         }
@@ -242,7 +201,7 @@
                             "input": [
                                 {
                                     "name": "INCAR",
-                                    "content": "include_text(../../../../../json/example/job/software/vasp/workflow/INCAR_zpe)"
+                                    "content": "include_text(/export/compute/software/rupy/json/example/job/software/vasp/workflow/INCAR_zpe)"
                                 }
                             ]
                         },
@@ -252,17 +211,6 @@
                             },
                             {
                                 "name": "zero_point_energy"
-                            }
-                        ],
-                        "monitors": [
-                            {
-                                "name": "standard_output"
-                            },
-                            {
-                                "name": "delta_energy"
-                            },
-                            {
-                                "name": "total_energy"
                             }
                         ]
                     },
@@ -282,7 +230,7 @@
                 "pseudo": [
                     {
                         "_id": "56b13cbbfe45004cfb2869ee",
-                        "path": "include_text(../../../total_energy/vasp/elements/{{ELEMENT}}/POTCAR.paths)",
+                        "path": "/export/share/pseudo/ac/gga/pbe/vasp/5.2/paw/default/POTCAR",
                         "filename": "POTCAR",
                         "functional": "PBE",
                         "type": "us"
