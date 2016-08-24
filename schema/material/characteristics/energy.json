@@ -9,9 +9,9 @@
     "properties": {
         "name": {
             "enum": [
-                "atomization energy",
-                "formation energy",
-                "zero point energy"
+                "atomization_energy",
+                "formation_energy",
+                "zero_point_energy"
             ]
         },
         "units": {

@@ -51,8 +51,22 @@
                         "type": "execution",
                         "name": "run_scf_calculation",
                         "next": "check_for_convergence",
-                        "head": true,
-                        "preProcessors": [],
+                        "preProcessors": [
+                            {
+                                "type": "command",
+                                "name": "copy_file",
+                                "kwargs": [
+                                    {
+                                        "key": "source",
+                                        "value": "KPOINTS"
+                                    },
+                                    {
+                                        "key": "destination",
+                                        "value": "KPOINTS.convergence.save"
+                                    }
+                                ]
+                            }
+                        ],
                         "execution": {
                             "app": {
                                 "name": "vasp",
@@ -82,6 +96,14 @@
                             },
                             {
                                 "name": "band_structure"
+                            }
+                        ],
+                        "monitors": [
+                            {
+                                "name": "standard_output"
+                            },
+                            {
+                                "name": "electronic"
                             }
                         ]
                     },
@@ -156,12 +178,42 @@
                         }
                     },
                     {
-                        "status": "idle",
                         "flowchartId": "run_relaxation",
                         "type": "execution",
                         "name": "run_relaxation",
                         "next": "run_zero_point_energy",
-                        "postProcessors": [],
+                        "preProcessors": [
+                            {
+                                "type": "command",
+                                "name": "copy_file",
+                                "kwargs": [
+                                    {
+                                        "key": "source",
+                                        "value": "POSCAR"
+                                    },
+                                    {
+                                        "key": "destination",
+                                        "value": "POSCAR.pre_vc_relax"
+                                    }
+                                ]
+                            }
+                        ],
+                        "postProcessors": [
+                            {
+                                "type": "command",
+                                "name": "copy_file",
+                                "kwargs": [
+                                    {
+                                        "key": "source",
+                                        "value": "CONTCAR"
+                                    },
+                                    {
+                                        "key": "destination",
+                                        "value": "POSCAR"
+                                    }
+                                ]
+                            }
+                        ],
                         "execution": {
                             "app": {
                                 "name": "vasp",
@@ -172,29 +224,29 @@
                                     "name": "INCAR",
                                     "content": "include_text(/export/compute/software/rupy/json/example/job/software/vasp/workflow/INCAR_rlx)"
                                 }
-                            ],
-                            "results": [
-                                {
-                                    "name": "total_energy"
-                                },
-                                {
-                                    "name": "band_gaps"
-                                },
-                                {
-                                    "name": "band_structure"
-                                }
                             ]
-                        }
+                        },
+                        "results": [
+                            {
+                                "name": "total_energy"
+                            }
+                        ],
+                        "monitors": [
+                            {
+                                "name": "standard_output"
+                            },
+                            {
+                                "name": "electronic"
+                            }
+                        ]
                     },
                     {
-                        "status": "idle",
                         "flowchartId": "run_zero_point_energy",
                         "name": "run_zero_point_energy",
                         "type": "execution",
                         "next": "done_with_convergence_plus_zero_point_energy",
                         "execution": {
                             "app": {
-                                "flavor": "vasp",
                                 "exec": "vasp",
                                 "name": "vasp"
                             },
@@ -211,6 +263,14 @@
                             },
                             {
                                 "name": "zero_point_energy"
+                            }
+                        ],
+                        "monitors": [
+                            {
+                                "name": "standard_output"
+                            },
+                            {
+                                "name": "electronic"
                             }
                         ]
                     },
@@ -230,7 +290,7 @@
                 "pseudo": [
                     {
                         "_id": "56b13cbbfe45004cfb2869ee",
-                        "path": "/export/share/pseudo/ac/gga/pbe/vasp/5.2/paw/default/POTCAR",
+                        "path": "./POTCAR",
                         "filename": "POTCAR",
                         "functional": "PBE",
                         "type": "us"
