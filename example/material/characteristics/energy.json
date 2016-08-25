@@ -1,5 +1,5 @@
 {
-    "name": "zero point energy",
-    "value": -63.4,
+    "name": "zero_point_energy",
+    "value": -0.0634,
     "units": "eV"
 }
