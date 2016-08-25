@@ -1,0 +1,5 @@
+Automatic mesh
+0
+Gamma
+  {{PARAMETER | default('1')}} {{PARAMETER | default('1')}} {{PARAMETER | default('1')}}
+    0.  0.  0.

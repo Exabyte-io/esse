@@ -1,0 +1,7 @@
+LWAVE  = .FALSE.
+LCHARG = .FALSE.
+ISMEAR =    1
+SIGMA  = 0.1
+ISIF = 3
+IBRION = 2
+NSW = 300
