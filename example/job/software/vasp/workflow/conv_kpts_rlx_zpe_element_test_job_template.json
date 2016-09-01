@@ -90,7 +90,7 @@
                         "results": [
                             {
                                 "name": "total_energy"
-                            },
+                            }
                         ],
                         "monitors": [
                             {
@@ -190,7 +190,22 @@
                                         "value": "POSCAR.pre_vc_relax"
                                     }
                                 ]
+                            },
+                            {
+                                "type": "command",
+                                "name": "copy_file",
+                                "kwargs": [
+                                    {
+                                        "key": "source",
+                                        "value": "KPOINTS.convergence.save.old"
+                                    },
+                                    {
+                                        "key": "destination",
+                                        "value": "KPOINTS"
+                                    }
+                                ]
                             }
+
                         ],
                         "postProcessors": [
                             {
