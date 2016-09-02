@@ -1,7 +1,7 @@
 &CONTROL
     calculation = 'vc-relax'
     restart_mode = 'restart'
-    outdir = '$OUTPUT_DIR/'
+    outdir = './'
     prefix = '__prefix__'
     pseudo_dir = '$PSEUDO_DIR'
 /
@@ -24,7 +24,7 @@
 &CELL
 /
 ATOMIC_SPECIES
-Si 28.0855 si_pbe_gbrv_1.0.upf
+Si 28.0855 element.upf
 ATOMIC_POSITIONS crystal
 Si 0 0 0
 Si 0.25 0.25 0.25
