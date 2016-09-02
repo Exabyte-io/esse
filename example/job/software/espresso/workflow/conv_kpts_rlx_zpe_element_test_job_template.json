@@ -74,8 +74,8 @@
                             },
                             "input": [
                                 {
-                                    "name": "scf.in",
-                                    "content": "include_text(scf.in)"
+                                    "name": "pw_scf.in",
+                                    "content": "include_text(pw_scf.in)"
 				}
                             ]
                         },
@@ -191,8 +191,8 @@
                             },
                             "input": [
                                 {
-                                    "name": "vc_relax.in",
-                                    "content": "include_text(vc_relax.in)"
+                                    "name": "pw_vc_rlx.in",
+                                    "content": "include_text(pw_vc_rlx.in)"
                                 }
                             ]
                         },
@@ -222,8 +222,8 @@
                             },
                             "input": [
                                 {
-                                    "name": "zpe.in",
-                                    "content": "include_text(zpe.in)"
+                                    "name": "ph.in",
+                                    "content": "include_text(ph.in)"
                                 }
                             ]
                         },
@@ -260,8 +260,8 @@
                 "pseudo": [
                     {
                         "_id": "56b13cbbfe45004cfb2869ee",
-                        "path": "/export/share/pseudo/si/gga/pbe/gbrv/1.0/us/si_pbe_gbrv_1.0.upf",
-                        "filename": "si_pbe_gbrv_1.0.upf",
+                        "path": "{PSEUDO_DIR}/{PSEDUO_0}",
+                        "filename": "{PSEDUO_0}",
                         "type": "us"
                     }
                 ]
