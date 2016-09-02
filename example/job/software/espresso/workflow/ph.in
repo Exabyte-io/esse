@@ -1,4 +1,6 @@
 &INPUTPH
-    tr2_ph = 1.0d-12
-    asr = .true.
+    tr2_ph=1.0d-14,
+    asr=.true.,
+    wf_collect=.true.
 /
+0.0 0.0 0.0

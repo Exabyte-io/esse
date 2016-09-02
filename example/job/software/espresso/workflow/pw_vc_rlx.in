@@ -2,8 +2,7 @@
     calculation = 'vc-relax'
     restart_mode = 'restart'
     outdir = './'
-    prefix = '__prefix__'
-    pseudo_dir = '$PSEUDO_DIR'
+    pseudo_dir = './'
 /
 &SYSTEM
     ibrav = 2
