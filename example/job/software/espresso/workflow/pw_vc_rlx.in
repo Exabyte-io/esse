@@ -1,13 +1,7 @@
 &CONTROL
-    calculation = 'scf'
-    title = ''
-    verbosity = 'low'
-    restart_mode = 'from_scratch'
-    wf_collect = .true.
-    tstress = .true.
-    tprnfor = .true.
+    calculation = 'vc-relax'
+    restart_mode = 'restart'
     outdir = '$OUTPUT_DIR/'
-    wfcdir = '$OUTPUT_DIR/'
     prefix = '__prefix__'
     pseudo_dir = '$PSEUDO_DIR'
 /
@@ -21,12 +15,10 @@
     degauss = 0.005
     celldm(1) = 9.448580823160363
 /
-&ELECTRONS
-    diagonalization = 'david'
-    diago_david_ndim = 4
-    diago_full_acc = .true.
-    mixing_beta = 0.3
-/
+&electrons
+    mixing_beta = 0.7
+    conv_thr = 1.0d-8
+/   
 &IONS
 /
 &CELL
@@ -37,4 +29,4 @@ ATOMIC_POSITIONS crystal
 Si 0 0 0
 Si 0.25 0.25 0.25
 K_POINTS automatic
-1 1 1 0 0 0
+{{PARAMETER | default('1')}} {{PARAMETER | default('1')}} {{PARAMETER | default('1')}} 0 0 0
