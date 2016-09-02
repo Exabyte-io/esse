@@ -3,7 +3,7 @@
   "title": "test_espresso_job",
   "titleSlug": "template for zero point energy database generation",
   "compute": {
-    "ppn": 4,
+    "ppn": 1,
     "queue": "OR",
     "timeLimit": "24:00:00",
     "notify": "n",

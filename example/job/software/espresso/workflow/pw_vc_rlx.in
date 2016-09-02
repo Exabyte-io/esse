@@ -1,8 +1,9 @@
 &CONTROL
-    calculation = 'vc-relax'
-    restart_mode = 'restart'
-    outdir = './'
-    pseudo_dir = './'
+    calculation = 'vc-relax',
+    restart_mode = 'restart',
+    outdir = './',
+    pseudo_dir = './',
+    wf_collect=.true.
 /
 &SYSTEM
     ibrav = 2
