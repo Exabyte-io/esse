@@ -160,7 +160,7 @@
               "input": [
                 {
                   "name": "pw_vc_rlx.in",
-                  "content": "include_text(/export/compute/software/rupy/json/example/job/software/espresso/workflow/pw_vc_rlx.in)"
+                  "content": "include_text(pw_vc_rlx.in)"
                 }
               ]
             },
