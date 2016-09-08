@@ -3,9 +3,9 @@
     "title": "test_vasp_job",
     "titleSlug": "new-job-aug-23rd-2016-17-01-pm",
     "compute": {
-        "ppn": 4,
+        "ppn": 1,
         "queue": "D",
-        "timeLimit": "00:10:00",
+        "timeLimit": "00:24:00",
         "notify": "n",
         "nodes": 1,
         "arguments": {}
@@ -90,12 +90,6 @@
                         "results": [
                             {
                                 "name": "total_energy"
-                            },
-                            {
-                                "name": "band_gaps"
-                            },
-                            {
-                                "name": "band_structure"
                             }
                         ],
                         "monitors": [
@@ -196,7 +190,22 @@
                                         "value": "POSCAR.pre_vc_relax"
                                     }
                                 ]
+                            },
+                            {
+                                "type": "command",
+                                "name": "copy_file",
+                                "kwargs": [
+                                    {
+                                        "key": "source",
+                                        "value": "KPOINTS.convergence.save.old"
+                                    },
+                                    {
+                                        "key": "destination",
+                                        "value": "KPOINTS"
+                                    }
+                                ]
                             }
+
                         ],
                         "postProcessors": [
                             {
