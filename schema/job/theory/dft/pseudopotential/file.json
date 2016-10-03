@@ -79,6 +79,29 @@
         "apps": {
             "type": "array",
             "description": "simulation engines that can use this pseudopotential"
+        },
+        "storage": {
+            "type": "object",
+            "properties": {
+                "url": {
+                    "type": "string",
+                    "description": "pseudopotential file path on a cloud storage"
+                },
+                "container": {
+                    "type": "string",
+                    "description": "container name where pseudo file is uploaded"
+                },
+                "provider": {
+                    "type": "string",
+                    "description": "cloud storage provider where pseudo file is stored",
+                    "enum": [
+                        "ec2",
+                        "softlayer",
+                        "azure",
+                        "rackspace"
+                    ]
+                }
+            }
         }
     },
     "required": [
