@@ -24,8 +24,8 @@
                 "projwfc",
                 "dos",
                 "ph",
-                "ph_q2r",
-                "ph_matdyn",
+                "q2r",
+                "matdyn",
                 "pp"
             ]
         },
