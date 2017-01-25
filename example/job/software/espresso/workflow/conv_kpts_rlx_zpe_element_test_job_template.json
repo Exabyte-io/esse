@@ -1,0 +1,260 @@
+{
+  "_id": "template_espresso_job",
+  "title": "test_espresso_job",
+  "titleSlug": "template for zero point energy database generation",
+  "compute": {
+    "ppn": 1,
+    "queue": "OR",
+    "timeLimit": "24:00:00",
+    "notify": "n",
+    "nodes": 1,
+    "arguments": {}
+  },
+  "model": {
+    "method": {
+      "workflow": {
+        "name": "espresso gamma kpoint convergence plus relaxation plus zero point energy plus zero point energy elemental constituent",
+        "app": "espresso",
+        "units": [
+          {
+            "head": true,
+            "type": "assignment",
+            "flowchartId": "initialize_TOLERANCE",
+            "next": "initialize_SCALAR_RESULT",
+            "assignment": {
+              "scope": "global",
+              "name": "TOLERANCE",
+              "value": "1e-3"
+            }
+          },
+          {
+            "type": "assignment",
+            "flowchartId": "initialize_SCALAR_RESULT",
+            "next": "initialize_PARAMETER",
+            "assignment": {
+              "scope": "global",
+              "name": "SCALAR_RESULT",
+              "value": "0"
+            }
+          },
+          {
+            "type": "assignment",
+            "flowchartId": "initialize_PARAMETER",
+            "next": "run_scf_calculation",
+            "assignment": {
+              "name": "PARAMETER",
+              "value": "1"
+            }
+          },
+          {
+            "flowchartId": "run_scf_calculation",
+            "type": "execution",
+            "name": "run_scf_calculation",
+            "next": "check_for_convergence",
+            "execution": {
+              "app": {
+                "name": "espresso",
+                "exec": "pw.x"
+              },
+              "input": [
+                {
+                  "name": "pw_scf.in",
+                  "content": "include_text(pw_scf.in)"
+                }
+              ]
+            },
+            "results": [
+              {
+                "name": "total_energy"
+              }
+            ],
+            "monitors": [
+              {
+                "name": "standard_output"
+              },
+              {
+                "name": "electronic"
+              }
+            ]
+          },
+          {
+            "flowchartId": "check_for_convergence",
+            "type": "condition",
+            "name": "check_for_convergence",
+            "condition": {
+              "input": [
+                {
+                  "scope": "global",
+                  "name": "SCALAR_RESULT"
+                },
+                {
+                  "scope": "global",
+                  "name": "TOLERANCE"
+                },
+                {
+                  "scope": "run_scf_calculation",
+                  "name": "total_energy"
+                }
+              ],
+              "statement": "abs(SCALAR_RESULT-total_energy) < TOLERANCE",
+              "then": "convergence_is_reached",
+              "else": "SCALAR_RESULT",
+              "maxOccurences": 100
+            }
+          },
+          {
+            "flowchartId": "SCALAR_RESULT",
+            "type": "assignment",
+            "next": "increase_PARAMETER_by_1",
+            "assignment": {
+              "input": [
+                {
+                  "scope": "run_scf_calculation",
+                  "name": "total_energy"
+                }
+              ],
+              "name": "SCALAR_RESULT",
+              "value": "total_energy"
+            }
+          },
+          {
+            "flowchartId": "increase_PARAMETER_by_1",
+            "type": "assignment",
+            "next": "run_scf_calculation",
+            "assignment": {
+              "input": [
+                {
+                  "scope": "global",
+                  "name": "PARAMETER"
+                }
+              ],
+              "name": "PARAMETER",
+              "value": "PARAMETER+1"
+            }
+          },
+          {
+            "flowchartId": "convergence_is_reached",
+            "type": "assignment",
+            "next": "run_relaxation",
+            "assignment": {
+              "input": [
+                {
+                  "scope": "global",
+                  "name": "PARAMETER"
+                }
+              ],
+              "name": "PARAMETER",
+              "value": "PARAMETER-1"
+            }
+          },
+          {
+            "flowchartId": "run_relaxation",
+            "type": "execution",
+            "name": "run_relaxation",
+            "next": "run_zero_point_energy",
+            "execution": {
+              "app": {
+                "name": "espresso",
+                "exec": "pw.x"
+              },
+              "input": [
+                {
+                  "name": "pw_vc_rlx.in",
+                  "content": "include_text(pw_vc_rlx.in)"
+                }
+              ]
+            },
+            "results": [
+              {
+                "name": "total_energy"
+              }
+            ],
+            "monitors": [
+              {
+                "name": "standard_output"
+              },
+              {
+                "name": "electronic"
+              }
+            ]
+          },
+          {
+            "flowchartId": "run_zero_point_energy",
+            "name": "run_zero_point_energy",
+            "type": "execution",
+            "next": "done_with_convergence_plus_zero_point_energy",
+            "execution": {
+              "app": {
+                "exec": "ph.x",
+                "name": "espresso"
+              },
+              "input": [
+                {
+                  "name": "ph.in",
+                  "content": "include_text(/export/compute/software/rupy/json/example/job/software/espresso/workflow/ph.in)"
+                }
+              ]
+            },
+            "results": [
+              {
+                "name": "total_energy"
+              },
+              {
+                "name": "zero_point_energy"
+              }
+            ],
+            "monitors": [
+              {
+                "name": "standard_output"
+              },
+              {
+                "name": "electronic"
+              }
+            ]
+          },
+          {
+            "flowchartId": "done_with_convergence_plus_zero_point_energy",
+            "type": "exit",
+            "name": "exit",
+            "status": "idle",
+            "app": {},
+            "exit": {
+              "throwException": false
+            }
+          }
+        ]
+      },
+      "data": {
+        "pseudo": [
+          {
+            "_id": "56b13cbbfe45004cfb2869ee",
+            "path": "{PSEUDO_DIR}/element.upf",
+            "filename": "element.upf",
+            "type": "us"
+          }
+        ]
+      }
+    }
+  },
+  "_project": {
+    "_id": "56c569d7fe45004bec30b5e7",
+    "name": "Project 1",
+    "owner": {
+      "_id": "sdkucJLKbsaa2ajksh",
+      "name": "demo",
+      "type": 10
+    },
+    "slug": "project-1",
+    "goldName": "exabyte-project-1"
+  },
+  "version": "0.1.0",
+  "owner": {
+    "_id": "sdkucJLKbsaa2ajksh",
+    "name": "demo",
+    "type": 10
+  },
+  "creator": {
+    "username": "demo",
+    "_id": "aljflasj01hhsdf"
+  }
+}
