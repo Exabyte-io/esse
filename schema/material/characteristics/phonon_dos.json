@@ -28,7 +28,7 @@
             "properties": {
                 "label": {
                     "enum": [
-                        "Vibrational density of states"
+                        "Phonon DOS"
                     ]
                 },
                 "units": {

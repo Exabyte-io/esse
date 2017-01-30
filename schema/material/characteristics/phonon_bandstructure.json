@@ -11,7 +11,7 @@
             "properties": {
                 "label": {
                     "enum": [
-                        "kpoints"
+                        "qpoints"
                     ]
                 },
                 "units": {
