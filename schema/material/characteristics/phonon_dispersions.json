@@ -40,7 +40,7 @@
         },
         "name": {
             "enum": [
-                "phonon_bandstructure"
+                "phonon_dispersions"
             ]
         }
     }
