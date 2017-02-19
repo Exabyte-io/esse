@@ -1,22 +1,15 @@
 {
     "$schema": "http://json-schema.org/draft-04/schema#",
-    "title": "fermi energy schema",
+    "title": "qpoints schema",
     "allOf": [
         {
-            "$ref": "file:../../primitive/scalar.json"
+            "$ref": "file:../../primitive/1d_data_series.json"
         }
     ],
     "properties": {
         "name": {
             "enum": [
-                "fermi_energy"
-            ]
-        },
-        "units": {
-            "enum": [
-                "eV",
-                "rydberg",
-                "hartree"
+                "qpoints"
             ]
         }
     }
