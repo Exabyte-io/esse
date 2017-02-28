@@ -5,6 +5,6 @@
         "...": "include(regression/precision.json)"
     },
     "data":{
-        "...": "include(model_data/model_data.json)"
+        "...": "include(model_parameters/model_parameters.json)"
     }
 }
