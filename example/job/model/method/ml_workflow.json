@@ -1,0 +1,11 @@
+{
+    "units": [
+        {
+            "...": "include(workflow/ml_unit_modelfit.json)"
+        },
+        {
+            "...": "include(workflow/ml_unit_predict.json)"
+        }
+    ],
+    "name": "property-prediction"
+}

@@ -1,0 +1,8 @@
+{
+    "type": {
+        "...": "include(../theory/ml/regression.json)"
+    },
+    "workflow": {
+        "...": "include(method/ml_workflow.json)"
+    }
+}

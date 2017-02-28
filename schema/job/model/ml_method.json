@@ -1,0 +1,30 @@
+{
+    "$schema": "http://json-schema.org/draft-04/schema#",
+    "title": "ml method schema",
+    "properties": {
+        "type": {
+            "description": "general type of this method, eg. `regression`",
+            "type": "string"
+        },
+        "subtype": {
+            "description": "general subtype of this method, eg. `linear regression`",
+            "type": "string"
+        },
+        "workflow": {
+            "description": "ML workflow used inside this method.",
+            "$ref": "file:method/ml_workflow.json"
+        }
+    },
+    "oneOf": [
+        {
+            "$ref": "file:../theory/ml/regression.json"
+        },
+        {
+            "$ref": "file:../theory/ml/classification.json"
+        }
+    ],
+    "required": [
+        "type",
+        "workflow"
+    ]
+}
