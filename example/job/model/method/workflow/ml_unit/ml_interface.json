@@ -1,0 +1,8 @@
+{
+    "input": [
+        {
+            "name": "interface.input",
+            "content": "database = 'local' \n materials_specific_parameters \n chemical_system = True, elements = ['Si', 'Ge'] \n target_properties = ['band_gaps'] \n owner_id = None \n ML_specific_parameters \n preprocessing = 'stratify', train_data_size = 0.8, features_to_include = 'Si Ge lattice_volume', dropnan = 'True', fill_nan_with_zeros = 'True'\n"
+        }
+    ]
+}

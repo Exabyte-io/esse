@@ -35,16 +35,20 @@
                 "$ref": "file:ml_unit/_result.json"
             }
         },
+        "modelParameters":{
+            "description": "parameters from model fitting",
+            "$ref": "file:../../../theory/ml/model_parameters/model_parameters.json"
+        },
         "interface": {
             "description": "Contains information about the ML interface unit..",
             "$ref": "file:ml_unit/ml_interface.json"
         },
         "modelfit": {
-            "description": "Contains information about the assignment unit.",
+            "description": "Contains information about the ML modelfit unit.",
             "$ref": "file:ml_unit/ml_modelfit.json"
         },
         "predict": {
-            "description": "Contains information about the condition unit.",
+            "description": "Contains information about the ML predict unit.",
             "$ref": "file:ml_unit/ml_predict.json"
         }
     },

@@ -1,0 +1,31 @@
+{
+    "$schema": "http://json-schema.org/draft-04/schema#",
+    "title": "ML Interface unit schema",
+    "type": "object",
+    "properties": {
+        "input": {
+            "description": "Unit's input.",
+            "type": "array",
+            "items": {
+                "type": "object",
+                "properties": {
+                    "name": {
+                        "description": "Input file name",
+                        "type": "string"
+                    },
+                    "content": {
+                        "description": "Content of the input file. e.g. database='local' ...",
+                        "type": "string"
+                    }
+                },
+                "required": [
+                    "name",
+                    "content"
+                ]
+            }
+        }
+    },
+    "required": [
+        "input"
+    ]
+}

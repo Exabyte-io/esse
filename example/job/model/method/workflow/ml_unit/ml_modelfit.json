@@ -1,0 +1,12 @@
+{
+    "input": [
+        {
+            "name": "modelfit.input",
+            "content": "features = ['Si', 'Ge'] \n target_properties = ['band_gaps'] \n algorithm = 'linear_regression'\n model_specific_parameters = 'sample_weight'\n",
+            "inputData": {
+                "...": "include(../../../../theory/ml/model_parameters/input_data)"
+            }
+
+        }
+    ]
+}

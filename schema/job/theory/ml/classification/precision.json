@@ -6,8 +6,8 @@
             "description": "default: mean accuracy on the given test data and labels",
             "type": "number"
         },
-        "cv_score": {
-            "description": "Cross validation score ",
+        "cvScore": {
+            "description": "Cross validation score",
             "type": "number"
         }
     },

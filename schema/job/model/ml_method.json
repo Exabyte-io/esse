@@ -25,7 +25,7 @@
     ],
     "required": [
         "type",
-        "sub_type",
+        "subtype",
         "workflow"
     ]
 }

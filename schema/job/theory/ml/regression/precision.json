@@ -6,11 +6,11 @@
             "description": "default: variance score of the estimator",
             "type": "number"
         },
-        "cv_score": {
+        "cvScore": {
             "description": "Cross validation score ",
             "type": "number"
         },
-        "mean_squared_error":{
+        "meanSquaredError":{
             "description": "Mean squared error in regression",
             "type": "number"
         }

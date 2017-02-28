@@ -2,6 +2,9 @@
     "type": "regression",
     "subtype":"linear_regression",
     "precision":{
-        "...": "include(theory/ml/regression/precision.json)"
+        "...": "include(regression/precision.json)"
+    },
+    "data":{
+        "...": "include(model_data/model_data.json)"
     }
 }

@@ -1,9 +1,13 @@
+
 {
     "head": true,
     "flowchartId": "1",
     "name": "ml_predict",
     "type": "predict",
-    "interface": {
+    "predict": {
         "...": "include(ml_unit/ml_predict.json)"
+    },
+    "results": {
+        "...": "include(ml_unit/_result.json)"
     }
 }

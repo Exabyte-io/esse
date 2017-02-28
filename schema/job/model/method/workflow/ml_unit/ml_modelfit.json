@@ -1,0 +1,36 @@
+{
+    "$schema": "http://json-schema.org/draft-04/schema#",
+    "title": "ML Modelfit unit schema",
+    "type": "object",
+    "properties": {
+        "input": {
+            "description": "Unit's input.",
+            "type": "array",
+            "items": {
+                "type": "object",
+                "properties": {
+                    "name": {
+                        "description": "Input file name",
+                        "type": "string"
+                    },
+                    "inputData":{
+                        "description": "input data for model training. JSON formatted string of input data",
+                        "type": "string"
+                    },
+                    "content": {
+                        "description": "Content of the input file. e.g. features = \n targets = ...",
+                        "type": "string"
+                    }
+                },
+                "required": [
+                    "name",
+                    "inputData",
+                    "content"
+                ]
+            }
+        }
+    },
+    "required": [
+        "input"
+    ]
+}

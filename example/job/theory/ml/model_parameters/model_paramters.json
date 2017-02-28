@@ -1,0 +1,18 @@
+{
+    "algorithm": "linear_regression",
+    "task": "property_prediction",
+    "property": "band_gaps",
+    "modelParameters":{
+        "modelCoefficients":[
+            -3.339e-01,
+            2.555e-01,
+            -1.005e-02
+        ],
+        "intercept": 0.45,
+        "score": 0.8,
+        "modelData" : {
+            "...": "(include(input_data)"
+        }
+
+    }
+}

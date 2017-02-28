@@ -16,6 +16,9 @@
         },
         "precision": {
             "$ref": "file:classification/precision.json"
+        },
+        "data":{
+            "$ref":"file:model_parameters/model_parameters.json"
         }
     },
     "required": [
