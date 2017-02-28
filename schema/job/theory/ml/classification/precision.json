@@ -1,0 +1,17 @@
+{
+    "$schema": "http://json-schema.org/draft-04/schema#",
+    "title": "precision schema for classification",
+    "properties": {
+        "score": {
+            "description": "default: mean accuracy on the given test data and labels",
+            "type": "number"
+        },
+        "cv_score": {
+            "description": "Cross validation score ",
+            "type": "number"
+        }
+    },
+    "required": [
+        "score"
+    ]
+}

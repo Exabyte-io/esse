@@ -1,0 +1,21 @@
+{
+    "$schema": "http://json-schema.org/draft-04/schema#",
+    "title": "ml workflow schema",
+    "type": "object",
+    "properties": {
+        "name": {
+            "description": "Name of the workflow. e.g. property-prediction",
+            "type": "string"
+        },
+        "units": {
+            "description": "Contains the Units of the Workflow",
+            "type": "array",
+            "items": {
+                "$ref": "file:workflow/ml_unit.json"
+            }
+        }
+    },
+    "required": [
+        "name"
+    ]
+}

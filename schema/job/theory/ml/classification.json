@@ -1,0 +1,26 @@
+{
+    "$schema": "http://json-schema.org/draft-04/schema#",
+    "title": "classification method schema",
+    "properties": {
+        "type": {
+            "enum": [
+                "classification"
+            ]
+        },
+        "subtype": {
+            "enum": [
+                "logistic_regression",
+                "neural_network",
+                "decision_tree"
+            ]
+        },
+        "precision": {
+            "$ref": "file:classification/precision.json"
+        }
+    },
+    "required": [
+        "type",
+        "subtype",
+        "precision"
+    ]
+}

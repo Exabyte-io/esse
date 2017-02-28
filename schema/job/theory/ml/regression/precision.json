@@ -1,0 +1,21 @@
+{
+    "$schema": "http://json-schema.org/draft-04/schema#",
+    "title": "precision schema for regression",
+    "properties": {
+        "score": {
+            "description": "default: variance score of the estimator",
+            "type": "number"
+        },
+        "cv_score": {
+            "description": "Cross validation score ",
+            "type": "number"
+        },
+        "mean_squared_error":{
+            "description": "Mean squared error in regression",
+            "type": "number"
+        }
+    },
+    "required": [
+        "score"
+    ]
+}

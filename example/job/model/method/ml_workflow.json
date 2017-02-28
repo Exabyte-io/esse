@@ -1,0 +1,8 @@
+{
+    "units": [
+        {
+            "...": "include(workflow/ml_unit.json)"
+        }
+    ],
+    "name": "property-prediction"
+}

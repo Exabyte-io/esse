@@ -1,0 +1,7 @@
+{
+    "type": "regression",
+    "subtype":"linear_regression",
+    "precision":{
+        "...": "include(theory/ml/regression/precision.json)"
+    }
+}

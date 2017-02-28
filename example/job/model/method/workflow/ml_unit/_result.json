@@ -1,0 +1,31 @@
+{
+    "results": [
+        {
+            "name": "band_gaps",
+            "args": [
+                {
+                    "key": "model_coefficients",
+                    "value": [
+                        -3.339e-01,
+                        2.555e-01,
+                        -1.005e-02
+                    ]
+                },
+                {
+                    "key": "intercept",
+                    "value": 0.45
+                },
+                {
+                    "key": "score",
+                    "value": 0.8
+
+                },
+                {
+                    "key": "model_data",
+                    "value": "JSON formatted string of input data table"
+                }
+
+            ]
+        }
+    ]
+}

@@ -1,0 +1,39 @@
+{
+    "$schema": "http://json-schema.org/draft-04/schema#",
+    "title": "ml result schema",
+    "type": "object",
+    "properties": {
+        "name": {
+            "description": "Name of the output from the result",
+            "type": "string"
+        },
+        "args": {
+            "description": "Specific arguments for the required result.",
+            "type": "array",
+            "items": {
+                "type": "object",
+                "properties": {
+                    "key": {
+                        "description": "Name of the argument.",
+                        "type": "string"
+                    },
+                    "value": {
+                        "description": "Value of the argument.",
+                        "type": [
+                            "array",
+                            "number",
+                            "string"
+                        ]
+                    }
+                },
+                "required": [
+                    "key",
+                    "value"
+                ]
+            }
+        }
+    },
+    "required": [
+        "name"
+    ]
+}

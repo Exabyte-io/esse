@@ -1,0 +1,25 @@
+{
+    "$schema": "http://json-schema.org/draft-04/schema#",
+    "title": "regression method schema",
+    "properties": {
+        "type": {
+            "enum": [
+                "regression"
+            ]
+        },
+        "subtype": {
+            "enum": [
+                "linear_regression",
+                "ridge_regression"
+            ]
+        },
+        "precision": {
+            "$ref": "file:regression/precision.json"
+        }
+    },
+    "required": [
+        "type",
+        "subtype",
+        "precision"
+    ]
+}
