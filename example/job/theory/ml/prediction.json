@@ -1,0 +1,10 @@
+{
+    "type": "prediction",
+    "subtype":"linear_regression",
+    "precision":{
+        "...": "include(prediction/precision.json)"
+    },
+    "data":{
+        "...": "include(model_parameters/input_data.json)"
+    }
+}

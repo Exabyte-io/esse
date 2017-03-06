@@ -28,6 +28,12 @@
         },
         {
             "$ref": "file:../theory/dft/local-orbital.json"
+        },
+        {
+            "$ref": "file:../theory/ml/prediction.json"
+        },
+        {
+            "$ref": "file:../theory/ml/classification.json"
         }
     ],
     "required": [

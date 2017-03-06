@@ -1,0 +1,10 @@
+{
+    "compute": null,
+    "input": [
+        {
+            "targetProperties":[
+                "band_gaps"
+            ]
+        }
+    ]
+}

@@ -1,0 +1,9 @@
+{
+    "head": false,
+    "flowchartId": "3",
+    "name": "Predict",
+    "type": "predict",
+    "predict": {
+        "...": "include(unit/predict.json)"
+    }
+}

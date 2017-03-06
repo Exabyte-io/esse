@@ -12,7 +12,11 @@
                 "reduce",
                 "assignment",
                 "condition",
-                "exit"
+                "exit",
+                "interface",
+                "fit",
+                "predict",
+                "transform"
             ]
         },
         "name": {
@@ -68,6 +72,10 @@
                 "$ref": "file:unit/_result.json"
             }
         },
+        "modelParameters":{
+            "description": "parameters from Machine Learning model fitting",
+            "$ref": "file:../../../theory/ml/model_parameters/model_parameters.json"
+        },
         "execution": {
             "description": "Contains information about the execution unit..",
             "$ref": "file:unit/execution.json"
@@ -83,6 +91,22 @@
         "map": {
             "description": "Contains information about the map unit.",
             "$ref": "file:unit/map.json"
+        },
+        "interface": {
+            "description": "Contains information about the Machine Learning interface unit.",
+            "$ref": "file:unit/interface.json"
+        },
+        "fit": {
+            "description": "Contains information about the Machine Learning model fit unit.",
+            "$ref": "file:unit/fit.json"
+        },
+        "predict": {
+            "description": "Contains information about the Machine Learning property predict unit.",
+            "$ref": "file:unit/predict.json"
+        },
+        "transform": {
+            "description": "Contains information about the Machine Learning data transform unit.",
+            "$ref": "file:unit/transform.json"
         }
     },
     "required": [

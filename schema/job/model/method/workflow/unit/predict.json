@@ -1,0 +1,26 @@
+{
+    "$schema": "http://json-schema.org/draft-04/schema#",
+    "title": "ML Predict unit schema",
+    "type": "object",
+    "properties": {
+        "input": {
+            "description": "Unit's input.",
+            "type": "array",
+            "items": {
+                "type": "object",
+                "properties": {
+                    "targetProperties": {
+                        "description": "Target properties to predict",
+                        "type": "array"
+                    }
+                },
+                "required": [
+                    "targetProperties"
+                ]
+            }
+        }
+    },
+    "required": [
+        "input"
+    ]
+}

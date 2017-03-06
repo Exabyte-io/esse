@@ -1,5 +1,5 @@
 {
-    "type": "regression",
+    "type": "prediction",
     "subtype": "linear_regression",
     "workflow": {
         "...": "include(method/ml_workflow.json)"

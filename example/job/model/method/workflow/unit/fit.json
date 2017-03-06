@@ -1,0 +1,14 @@
+{
+    "compute": null,
+    "input": [
+        {
+            "algorithm": "linear_regression",
+            "fitParameters": [
+                "sample_weight"
+                ],
+            "targetProperties":[
+                "band_gaps"
+            ]
+        }
+    ]
+}

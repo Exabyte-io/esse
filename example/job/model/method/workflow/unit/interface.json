@@ -1,0 +1,27 @@
+{
+    "compute": null,
+    "input": [
+        {
+            "chemicalSystem": [
+                "Si",
+                "Ge"
+            ],
+            "superset": "false",
+            "databases": [
+                "ExabyteDB"
+                ],
+            "targetMaterials":[
+                "Si5Ge11"
+            ],
+            "features":[
+                "Si",
+                "Ge",
+                "density"
+            ],
+            "targetProperties":[
+                "band_gaps"
+            ],
+            "owner" : "paxJukXpDBiSRjfRZ"
+        }
+    ]
+}

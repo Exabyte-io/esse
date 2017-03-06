@@ -1,0 +1,35 @@
+{
+    "$schema": "http://json-schema.org/draft-04/schema#",
+    "title": "ML Fit unit schema",
+    "type": "object",
+    "properties": {
+        "input": {
+            "description": "Unit's input.",
+            "type": "array",
+            "items": {
+                "type": "object",
+                "properties": {
+                    "algorithm": {
+                        "description": "Algorithm name",
+                        "type": "string"
+                    },
+                    "fitParameters": {
+                        "description": "Additional paramaters used for model fitting",
+                        "type": "array"
+                    },
+                    "targetProperties": {
+                        "description": "Target properties to predict",
+                        "type": "array"
+                    }
+                },
+                "required": [
+                    "algorithm",
+                    "targetProperties"
+                ]
+            }
+        }
+    },
+    "required": [
+        "input"
+    ]
+}
