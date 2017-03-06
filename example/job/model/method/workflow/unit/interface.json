@@ -6,7 +6,7 @@
                 "Si",
                 "Ge"
             ],
-            "superset": "false",
+            "superset": false,
             "databases": [
                 "ExabyteDB"
                 ],

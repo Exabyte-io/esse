@@ -31,8 +31,8 @@
                     "description": "metric for accuracy of the model"
                 },
                 "modelData": {
-                    "type": "string",
-                    "description": "JSON formatted string of input data used for model fitting"
+                    "type": "object",
+                    "description": "JSON object of input data used for model fitting"
                 }
             }
         }
