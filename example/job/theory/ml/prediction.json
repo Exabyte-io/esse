@@ -5,6 +5,6 @@
         "...": "include(prediction/precision.json)"
     },
     "data":{
-        "...": "include(model_parameters/input_data.json)"
+        "...": "include(model_parameters/input_data)"
     }
 }
