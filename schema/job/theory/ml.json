@@ -5,7 +5,7 @@
     "properties": {
         "type": {
             "enum": [
-                "ml"
+                "machine_learning"
             ]
         },
         "subtype": {

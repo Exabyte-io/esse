@@ -24,16 +24,10 @@
     },
     "oneOf": [
         {
-            "$ref": "file:../theory/dft/pseudopotential.json"
+            "$ref": "file:../theory/dft/_methods.json"
         },
         {
-            "$ref": "file:../theory/dft/local-orbital.json"
-        },
-        {
-            "$ref": "file:../theory/ml/prediction.json"
-        },
-        {
-            "$ref": "file:../theory/ml/classification.json"
+            "$ref": "file:../theory/ml/_methods.json"
         }
     ],
     "required": [

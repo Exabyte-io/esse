@@ -72,10 +72,6 @@
                 "$ref": "file:unit/_result.json"
             }
         },
-        "modelParameters":{
-            "description": "parameters from Machine Learning model fitting",
-            "$ref": "file:../../../theory/ml/model_parameters/model_parameters.json"
-        },
         "execution": {
             "description": "Contains information about the execution unit..",
             "$ref": "file:unit/execution.json"

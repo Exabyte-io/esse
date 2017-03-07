@@ -1,9 +1,0 @@
-{
-    "head": true,
-    "flowchartId": "1",
-    "name": "MLInterface",
-    "type": "interface",
-    "interface": {
-        "...": "include(unit/interface.json)"
-    }
-}

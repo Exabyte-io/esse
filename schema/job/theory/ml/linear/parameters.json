@@ -1,0 +1,26 @@
+{
+    "$schema": "http://json-schema.org/draft-04/schema#",
+    "title": "regression parameters schema",
+    "properties": {
+        "property": {
+            "type": "string",
+            "description": "name of the predicted or optimized characteristic"
+        },
+        "coefficients": {
+            "type": "array",
+            "description": "weights/coefficients of the function from linear or non-linear fit"
+        },
+        "intercept": {
+            "type": "number",
+            "description": "intercept (shift) from the linear fit of data points"
+        },
+        "inputData": {
+            "$ref":"file:inputData.json"
+        }
+    },
+    "required": [
+        "property",
+        "coefficients",
+        "intercept"
+    ]
+}
