@@ -15,10 +15,14 @@
                     "description": "method subtype",
                     "type": "string"
                 }
-            }
+            },
+            "required": [
+                "type",
+                "subtype"
+            ]
         },
         "fitParameters": {
-            "description": "additional parameters used for model fitting",
+            "description": "additional parameters used for model fitting using method subtype",
             "type": "array"
         },
         "targetProperties": {
@@ -27,7 +31,6 @@
         }
     },
     "required": [
-        "algorithm",
         "targetProperties"
     ]
 }

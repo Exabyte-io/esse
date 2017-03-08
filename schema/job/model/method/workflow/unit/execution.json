@@ -12,16 +12,20 @@
             "$ref": "file:../../../../compute.json"
         },
         "input": {
-            "oneOf": [
-                {
-                    "description": "textual input (eg. for simulation engines)",
-                    "$ref": "file:execution/input.json"
-                },
-                {
-                    "description": "object input (eg. for machine learning)",
-                    "$ref": "file:../../../../input.json"
-                }
-            ]
+            "description": "Unit's input.",
+            "type": "array",
+            "items": {
+                "oneOf": [
+                    {
+                        "description": "textual input (eg. for simulation engines)",
+                        "$ref": "file:execution/input.json"
+                    },
+                    {
+                        "description": "object input (eg. for machine learning)",
+                        "$ref": "file:../../../../input.json"
+                    }
+                ]
+            }
         }
     },
     "required": [

@@ -1,10 +1,8 @@
 {
     "$schema": "http://json-schema.org/draft-04/schema#",
-    "title": "Execution unit text input schema",
-    "type": "array",
-    "items": {
-        "type": "object",
-        "properties": {
+    "title": "execution unit text input schema",
+    "type": "object",
+    "properties": {
             "name": {
                 "description": "Input file name. e.g. pw_scf.in",
                 "type": "string"
@@ -13,10 +11,9 @@
                 "description": "Content of the input file. e.g. &CONTROL    calculation='scf' ...",
                 "type": "string"
             }
-        },
-        "required": [
-            "name",
-            "content"
-        ]
-    }
+    },
+    "required": [
+        "name",
+        "content"
+    ]
 }
