@@ -1,0 +1,18 @@
+{
+    "$schema": "http://json-schema.org/draft-04/schema#",
+    "title": "precision schema for regression",
+    "properties": {
+        "trainingError": {
+            "description": "training error of the estimator",
+            "type": "number"
+        },
+        "cvError": {
+            "description": "cross validation error of the estimator",
+            "type": "number"
+        }
+    },
+    "required": [
+        "trainingError",
+        "cvError"
+    ]
+}

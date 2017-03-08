@@ -1,0 +1,18 @@
+{
+    "$schema": "http://json-schema.org/draft-04/schema#",
+    "title": "machine learning schema",
+    "description": "machine learning schema",
+    "properties": {
+        "type": {
+            "enum": [
+                "machine_learning"
+            ]
+        },
+        "subtype": {
+            "enum": [
+                "supervised",
+                "unsupervised"
+            ]
+        }
+    }
+}

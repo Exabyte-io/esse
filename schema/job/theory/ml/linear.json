@@ -1,0 +1,17 @@
+{
+    "$schema": "http://json-schema.org/draft-04/schema#",
+    "title": "linear methods schema",
+    "properties": {
+        "type": {
+            "enum": [
+                "least_squares"
+            ]
+        },
+        "precision": {
+            "$ref": "file:linear/precision.json"
+        },
+        "data":{
+            "$ref":"file:linear/parameters.json"
+        }
+    }
+}
