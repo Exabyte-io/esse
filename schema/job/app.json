@@ -30,11 +30,13 @@
         },
         {
             "$ref": "file:software/vasp.json"
+        },
+        {
+            "$ref": "file:software/ml.json"
         }
     ],
     "required": [
         "name",
-        "flavor",
         "version",
         "exec"
     ]
