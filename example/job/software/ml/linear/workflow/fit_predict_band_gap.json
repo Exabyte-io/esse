@@ -91,7 +91,7 @@
                         },
                         "results": [
                             {
-                                "name": "model_parameters"
+                                "name": "ml_method_parameters"
                             }
                         ]
                     },
@@ -129,14 +129,11 @@
                             "input": [
                                 {
                                     "scope": "1",
-                                    "name": "model_parameters"
+                                    "name": "ml_method_parameters"
                                 }
                             ]
                         },
                         "results": [
-                            {
-                                "name": "target_material"
-                            },
                             {
                                 "name": "band_gap"
                             }

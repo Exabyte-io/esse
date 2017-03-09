@@ -1,12 +1,12 @@
 {
-    "property": "band_gaps",
+    "property": "band_gap",
     "coefficients":[
         -3.339e-01,
         2.555e-01,
         -1.005e-02
     ],
     "intercept": 0.45,
-    "modelData" : {
+    "inputData" : {
             "...": "include(input_data.json)"
     }
 }
