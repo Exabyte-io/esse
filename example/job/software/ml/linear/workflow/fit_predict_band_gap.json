@@ -55,7 +55,7 @@
                                         {
                                             "key": "target_properties",
                                             "value":[
-                                                "band_gap"
+                                                "band_gaps"
                                             ]
                                         },
                                         {
@@ -84,7 +84,7 @@
                                         }
                                     ],
                                     "targetProperties":[
-                                        "band_gap"
+                                        "band_gaps"
                                     ]
                                 }
                             ]
@@ -135,7 +135,7 @@
                         },
                         "results": [
                             {
-                                "name": "band_gap"
+                                "name": "band_gaps"
                             }
                         ]
                     }

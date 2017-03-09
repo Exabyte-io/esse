@@ -8,14 +8,14 @@
         },
         "coefficients": {
             "type": "array",
-            "description": "weights/coefficients of the function from linear or non-linear fit"
+            "description": "array of weights/coefficients of the function from linear or non-linear fit for each target in property vector"
         },
         "intercept": {
-            "type": "number",
-            "description": "intercept (shift) from the linear fit of data points"
+            "type": "array",
+            "description": "list of intercepts (shift) from the linear or non-linear fit of data points"
         },
         "inputData": {
-            "$ref":"file:input_data.json"
+            "$ref": "file:input_data.json"
         }
     },
     "required": [
