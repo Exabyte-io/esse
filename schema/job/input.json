@@ -4,7 +4,12 @@
     "type": "object",
     "oneOf": [
         {
+            "description": "ml inputs with method type and fit parameters",
             "$ref": "file:theory/ml/input.json"
+        },
+        {
+            "description": "ml inputs with saved method parameters",
+            "$ref": "file:theory/ml/linear/parameters.json"
         }
     ]
 }
