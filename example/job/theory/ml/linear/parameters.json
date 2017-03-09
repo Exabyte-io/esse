@@ -7,6 +7,6 @@
     ],
     "intercept": 0.45,
     "modelData" : {
-            "...": "include(input_data)"
+            "...": "include(input_data.json)"
     }
 }

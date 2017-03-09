@@ -31,7 +31,7 @@
                             "preProcessors": [
                                 {
                                     "type": "function",
-                                    "name": "prepare_training_prediction_data",
+                                    "name": "prepare_data",
                                     "kwargs": [
                                         {
                                             "key": "chemical_system",
@@ -55,7 +55,7 @@
                                         {
                                             "key": "target_properties",
                                             "value":[
-                                                "band_gaps"
+                                                "band_gap"
                                             ]
                                         },
                                         {
@@ -84,21 +84,14 @@
                                         }
                                     ],
                                     "targetProperties":[
-                                        "band_gaps"
+                                        "band_gap"
                                     ]
                                 }
                             ]
                         },
                         "results": [
                             {
-                                "property": "band_gaps",
-                                "coefficients":[
-                                    -3.339e-01,
-                                    2.555e-01,
-                                    -1.005e-02
-                                ],
-                                "intercept": 0.45,
-                                "modelData": "include(../../../theory/ml/linear/input_data)"
+                                "name": "model_parameters"
                             }
                         ]
                     },
@@ -116,10 +109,10 @@
                             "preProcessors": [
                                 {
                                     "type": "function",
-                                    "name": "prepare_prediction_data",
+                                    "name": "prepare_data",
                                     "kwargs": [
                                         {
-                                            "key": "target_materials",
+                                            "key": "materials_names",
                                             "value":[
                                                 "Si5Ge11"
                                             ]
@@ -135,26 +128,17 @@
                             ],
                             "input": [
                                 {
-                                    "property": "band_gaps",
-                                    "coefficients":[
-                                        -3.339e-01,
-                                        2.555e-01,
-                                        -1.005e-02
-                                    ],
-                                    "intercept": 0.45,
-                                    "modelData": "include(../../../theory/ml/linear/input_data)"
+                                    "scope": "1",
+                                    "name": "model_parameters"
                                 }
                             ]
                         },
                         "results": [
                             {
-                                "name": "material",
-                                "value": "Si5Ge11"
+                                "name": "target_material"
                             },
                             {
-                                "name": "band_gaps",
-                                "value": 0.45,
-                                "units": "eV"
+                                "name": "band_gap"
                             }
                         ]
                     }
@@ -181,6 +165,6 @@
     },
     "creator": {
         "username": "demo",
-        "_id": "aljflasj01hhsdf"
+        "_id": "paxJukXpDBiSRjfRZ"
     }
 }

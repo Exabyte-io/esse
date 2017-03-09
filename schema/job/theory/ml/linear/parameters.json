@@ -15,7 +15,7 @@
             "description": "intercept (shift) from the linear fit of data points"
         },
         "inputData": {
-            "$ref":"file:inputData.json"
+            "$ref":"file:input_data.json"
         }
     },
     "required": [
