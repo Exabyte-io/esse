@@ -7,6 +7,6 @@
         "sample_weight"
     ],
     "targetProperties":[
-        "band_gap"
+        "band_gaps"
     ]
 }
