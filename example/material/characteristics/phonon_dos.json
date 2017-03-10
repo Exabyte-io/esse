@@ -2,11 +2,11 @@
     "name": "phonon_dos",
     "xAxis": {
         "label": "frequency",
-        "units": "cm-1"
+        "units": "cm^{-1}"
     },
     "yAxis": {
         "label": "Phonon DOS",
-        "units": "states/cm-1"
+        "units": "states/cm^{-1}"
     },
     "xDataArray": [
         [
