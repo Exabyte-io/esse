@@ -6,7 +6,7 @@
     },
     "yAxis": {
         "label": "frequency",
-        "units": "cm^{-1}"
+        "units": "cm-1"
     },
     "xDataArray": [
         [

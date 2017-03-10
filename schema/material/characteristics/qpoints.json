@@ -1,16 +1,14 @@
 {
     "$schema": "http://json-schema.org/draft-04/schema#",
     "title": "qpoints schema",
-    "allOf": [
-        {
-            "$ref": "file:../../primitive/1d_data_series.json"
-        }
-    ],
     "properties": {
         "name": {
             "enum": [
                 "qpoints"
             ]
+        },
+    	"value": {
+            "$ref": "file:../../primitive/1d_data_series.json"
         }
     }
 }
