@@ -1,0 +1,12 @@
+{
+    "method":{
+        "type": "linear",
+        "subtype": "least_squares"
+    },
+    "targetProperties":[
+        "band_gaps"
+    ],
+    "methodParameters":{
+        "...": "include(parameters.json)"
+    }
+}

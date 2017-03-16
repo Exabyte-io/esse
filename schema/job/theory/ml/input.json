@@ -1,36 +1,11 @@
 {
     "$schema": "http://json-schema.org/draft-04/schema#",
-    "title": "Execution unit input schema for machine learning",
+    "title": "Machine Learning input schema",
     "type": "object",
-    "properties": {
-        "method": {
-            "description": "method information",
-            "type": "object",
-            "properties": {
-                "type": {
-                    "description": "method type",
-                    "type": "string"
-                },
-                "subtype": {
-                    "description": "method subtype",
-                    "type": "string"
-                }
-            },
-            "required": [
-                "type",
-                "subtype"
-            ]
-        },
-        "fitParameters": {
-            "description": "additional parameters used for model fitting using method subtype",
-            "type": "array"
-        },
-        "targetProperties": {
-            "description": "target properties to predict",
-            "type": "array"
+    "oneOf": [
+        {
+            "description": "input schema for linear methods",
+            "$ref": "file:linear/input.json"
         }
-    },
-    "required": [
-        "targetProperties"
     ]
 }

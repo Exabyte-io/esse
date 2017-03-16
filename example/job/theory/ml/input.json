@@ -1,12 +1,3 @@
 {
-    "method":{
-        "type": "linear",
-        "subtype": "least_squares"
-    },
-    "fitParameters": [
-        "sample_weight"
-    ],
-    "targetProperties":[
-        "band_gaps"
-    ]
+    "...": "include(linear/input.json)"
 }

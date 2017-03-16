@@ -1,15 +1,11 @@
 {
     "$schema": "http://json-schema.org/draft-04/schema#",
-    "title": "application schema",
+    "title": "Execution unit object input schema",
     "type": "object",
     "oneOf": [
         {
-            "description": "ml inputs with method type and fit parameters",
+            "description": "input schema for ml methods.",
             "$ref": "file:theory/ml/input.json"
-        },
-        {
-            "description": "ml inputs with saved method parameters",
-            "$ref": "file:theory/ml/linear/parameters.json"
         }
     ]
 }
