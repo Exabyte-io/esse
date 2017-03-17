@@ -1,0 +1,13 @@
+{
+    "$schema": "http://json-schema.org/draft-04/schema#",
+    "title": "machine learning task schema",
+    "description": "machine learning task name",
+    "properties": {
+        "task": {
+            "enum": [
+                "fit",
+                "predict"
+            ]
+        }
+    }
+}

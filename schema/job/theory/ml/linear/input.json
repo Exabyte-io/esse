@@ -3,6 +3,10 @@
     "title": "Linear methods input schema",
     "type": "object",
     "properties": {
+        "task": {
+            "description": "task name. Eg: predict or fit",
+            "type": "string"
+        },
         "method": {
             "description": "method information",
             "type": "object",
@@ -33,28 +37,18 @@
             "description": "List of material ids corresponding to materials used for model fitting or property prediction",
             "type": "array"
         },
-        "ownerId": {
-            "description": "List of owner ids to filter materials created by specific user",
-            "type": "array"
-        },
-        "fitParameters": {
-            "description": "additional parameters used for model fitting using method subtype",
-            "type": "array"
-        },
-        "methodParameters": {
-            "oneOf": [
-                {
-                    "description": "ml input with saved regression method parameters",
-                    "$ref": "file:parameters.json"
-                },
-                {
-                    "description": "ml input with method parameters from workflow scope",
-                    "$ref": "file:_input.json"
-                }
-            ]
+        "parameters": {
+            "$ref": "file:../parameters.json"
         }
     },
+    "allOf": [
+        {
+            "$ref": "file:../task.json"
+        }
+    ],
     "required": [
+        "task",
+        "materialIds",
         "targetProperties"
     ]
 }

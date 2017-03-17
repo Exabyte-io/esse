@@ -31,16 +31,15 @@
                             "preProcessors": [],
                             "input": [
                                 {
+                                    "task": "fit",
                                     "method": {
                                         "type": "linear",
                                         "subtype": "least_squares"
                                     },
-                                    "fitParameters": [
-                                        {
-                                            "sample_weight": true,
-                                            "train_data_size": 0.75
-                                        }
-                                    ],
+                                    "parameters": {
+                                        "sampleWeight": true,
+                                        "trainDataSize": 0.75
+                                    },
                                     "targetProperties": [
                                         "band_gaps"
                                     ],
@@ -53,16 +52,13 @@
                                         "NdRNhkKWv4Xj8sxd8",
                                         "AWLTt3qa5x6xRG353",
                                         "cR2uFML56FL6rMf2v"
-                                    ],
-                                    "ownerId": [
-                                        "paxJukXpDBiSRjfRZ"
                                     ]
                                 }
                             ]
                         },
                         "results": [
                             {
-                                "name": "ml_method_parameters"
+                                "name": "method_parameters"
                             }
                         ]
                     },
@@ -80,6 +76,7 @@
                             "preProcessors": [],
                             "input": [
                                 {
+                                    "task": "predict",
                                     "method": {
                                         "type": "linear",
                                         "subtype": "least_squares"
@@ -90,9 +87,9 @@
                                     "targetProperties": [
                                         "band_gaps"
                                     ],
-                                    "methodParameters": {
+                                    "parameters": {
                                         "scope": "1",
-                                        "name": "ml_method_parameters"
+                                        "name": "method_parameters"
                                     }
                                 }
                             ]

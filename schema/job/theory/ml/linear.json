@@ -11,7 +11,8 @@
             "$ref": "file:linear/precision.json"
         },
         "data":{
-            "$ref":"file:linear/parameters.json"
+            "description": "object with method parameters and input data",
+            "$ref":"file:linear/predict_parameters.json"
         }
     }
 }

@@ -1,0 +1,18 @@
+{
+    "$schema": "http://json-schema.org/draft-04/schema#",
+    "title": "linear methods fit parameters schema",
+    "properties": {
+        "sampleWeight": {
+            "type": "boolean",
+            "description": "specify whether to scale the response variables"
+        },
+        "trainDataSize": {
+            "type": "number",
+            "description": "fraction of the training set used for training the model"
+        }
+    },
+    "required": [
+        "sampleWeight"
+    ]
+
+}
