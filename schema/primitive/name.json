@@ -1,0 +1,16 @@
+{
+    "$schema": "http://json-schema.org/draft-04/schema#",
+    "title": "name schema",
+    "type": "object",
+    "properties": {
+        "given": {
+            "type": "string"
+        },
+        "family": {
+            "type": "string"
+        }
+    },
+    "required": [
+        "given"
+    ]
+}
