@@ -1,11 +1,53 @@
 {
     "$schema": "http://json-schema.org/draft-04/schema#",
-    "title": "Machine Learning input schema",
+    "title": "Linear methods input schema",
     "type": "object",
-    "oneOf": [
-        {
-            "description": "input schema for linear methods",
-            "$ref": "file:linear/input.json"
+    "properties": {
+        "task": {
+            "description": "task name. Eg: predict or fit",
+            "type": "string",
+            "enum": [
+                "fit",
+                "predict"
+            ]
+        },
+        "method": {
+            "description": "method information",
+            "type": "object",
+            "properties": {
+                "type": {
+                    "description": "method type",
+                    "type": "string"
+                },
+                "subtype": {
+                    "description": "method subtype",
+                    "type": "string"
+                }
+            },
+            "required": [
+                "type",
+                "subtype"
+            ]
+        },
+        "targetProperties": {
+            "description": "target properties to predict",
+            "type": "array"
+        },
+        "features": {
+            "description": "material features used for model fitting",
+            "type": "array"
+        },
+        "materialIds": {
+            "description": "List of material ids corresponding to materials used for model fitting or property prediction",
+            "type": "array"
+        },
+        "parameters": {
+            "$ref": "file:parameters.json"
         }
+    },
+    "required": [
+        "task",
+        "materialIds",
+        "targetProperties"
     ]
 }

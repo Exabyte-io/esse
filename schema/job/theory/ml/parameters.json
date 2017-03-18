@@ -7,7 +7,7 @@
             "$ref": "file:linear/predict_parameters.json"
         },
         {
-            "description": "ml input for prediction, linear or non-linear method parameters from workflow scope",
+            "description": "ml input from workflow scope",
             "$ref": "file:../../model/method/workflow/unit/_input.json"
         },
         {
