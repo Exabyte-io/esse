@@ -1,0 +1,20 @@
+{
+    "$schema": "http://json-schema.org/draft-04/schema#",
+    "title": "linear methods schema",
+    "allOf": [
+        {
+            "$ref": "file:../linear.json"
+        },
+        {
+            "properties": {
+                "precision": {
+                    "$ref": "file:predict/precision.json"
+                },
+                "data": {
+                    "description": "object with parameters for a pre-trained method",
+                    "$ref": "file:predict/data.json"
+                }
+            }
+        }
+    ]
+}

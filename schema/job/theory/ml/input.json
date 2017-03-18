@@ -3,31 +3,20 @@
     "title": "Linear methods input schema",
     "type": "object",
     "properties": {
-        "task": {
-            "description": "task name. Eg: predict or fit",
-            "type": "string",
-            "enum": [
-                "fit",
-                "predict"
+        "predict": {
+            "oneOf": [
+                {
+                    "description": "one of the pre-trained ml methods",
+                    "$ref": "file:predict.json"
+                },
+                {
+                    "description": "method read from workflow scope",
+                    "$ref": "file:../../model/method/workflow/unit/_input.json"
+                }
             ]
         },
-        "method": {
-            "description": "method information",
-            "type": "object",
-            "properties": {
-                "type": {
-                    "description": "method type",
-                    "type": "string"
-                },
-                "subtype": {
-                    "description": "method subtype",
-                    "type": "string"
-                }
-            },
-            "required": [
-                "type",
-                "subtype"
-            ]
+        "fit": {
+            "$ref": "file:fit.json"
         },
         "targetProperties": {
             "description": "target properties to predict",
@@ -40,9 +29,6 @@
         "materialIds": {
             "description": "List of material ids corresponding to materials used for model fitting or property prediction",
             "type": "array"
-        },
-        "parameters": {
-            "$ref": "file:parameters.json"
         }
     },
     "required": [

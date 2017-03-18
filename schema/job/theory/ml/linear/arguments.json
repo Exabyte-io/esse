@@ -1,6 +1,6 @@
 {
     "$schema": "http://json-schema.org/draft-04/schema#",
-    "title": "linear methods fit parameters schema",
+    "title": "linear methods fit arguments schema",
     "properties": {
         "sampleWeight": {
             "type": "boolean",

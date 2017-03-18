@@ -34,11 +34,11 @@
                                     "task": "fit",
                                     "method": {
                                         "type": "linear",
-                                        "subtype": "least_squares"
-                                    },
-                                    "parameters": {
-                                        "sampleWeight": true,
-                                        "trainDataSize": 0.75
+                                        "subtype": "least_squares",
+                                        "parameters": {
+                                            "sampleWeight": true,
+                                            "trainDataSize": 0.75
+                                        }
                                     },
                                     "targetProperties": [
                                         "band_gaps"
@@ -78,8 +78,8 @@
                                 {
                                     "task": "predict",
                                     "method": {
-                                        "type": "linear",
-                                        "subtype": "least_squares"
+                                        "scope": "1",
+                                        "name": "method_parameters"
                                     },
                                     "materialIds": [
                                         "3qp8j2CqCgsSa6ZKj"
@@ -88,8 +88,7 @@
                                         "band_gaps"
                                     ],
                                     "parameters": {
-                                        "scope": "1",
-                                        "name": "method_parameters"
+
                                     }
                                 }
                             ]

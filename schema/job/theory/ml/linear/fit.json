@@ -1,0 +1,14 @@
+{
+    "$schema": "http://json-schema.org/draft-04/schema#",
+    "title": "List of methods",
+    "allOf": [
+        {
+            "description": "one of the pre-trained ml methods",
+            "$ref": "file:../linear.json"
+        },
+        {
+            "description": "method read from workflow scope",
+            "$ref": "file:arguments.json"
+        }
+    ]
+}
