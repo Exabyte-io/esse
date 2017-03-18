@@ -26,7 +26,8 @@
             }
         },
         "dataFrame": {
-            "$ref": "file:data_frame.json"
+            "description": "materials data used to train/fit ml method",
+            "$ref": "file:data/data_frame.json"
         }
     },
     "required": [

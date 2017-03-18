@@ -1,6 +1,6 @@
 {
     "$schema": "http://json-schema.org/draft-04/schema#",
-    "title": "Linear methods input schema",
+    "title": "ML methods input schema",
     "type": "object",
     "properties": {
         "predict": {
@@ -32,7 +32,6 @@
         }
     },
     "required": [
-        "task",
         "materialIds",
         "targetProperties"
     ]

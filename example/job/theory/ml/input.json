@@ -1,3 +1,14 @@
 {
-    "...": "include(linear/input.json)"
+    "predict": {
+        "...": "include(predict.json)"
+    },
+    "targetProperties": [
+        "band_gaps"
+    ],
+    "materialIds": [
+        "3qp8j2CqCgsSa6ZKj",
+        "NdRNhkKWv4Xj8sxd8",
+        "AWLTt3qa5x6xRG353",
+        "cR2uFML56FL6rMf2v"
+    ]
 }

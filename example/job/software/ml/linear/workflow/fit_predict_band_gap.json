@@ -31,11 +31,10 @@
                             "preProcessors": [],
                             "input": [
                                 {
-                                    "task": "fit",
-                                    "method": {
+                                    "fit": {
                                         "type": "linear",
                                         "subtype": "least_squares",
-                                        "parameters": {
+                                        "arguments": {
                                             "sampleWeight": true,
                                             "trainDataSize": 0.75
                                         }
@@ -76,8 +75,7 @@
                             "preProcessors": [],
                             "input": [
                                 {
-                                    "task": "predict",
-                                    "method": {
+                                    "predict": {
                                         "scope": "1",
                                         "name": "method_parameters"
                                     },
@@ -86,10 +84,7 @@
                                     ],
                                     "targetProperties": [
                                         "band_gaps"
-                                    ],
-                                    "parameters": {
-
-                                    }
+                                    ]
                                 }
                             ]
                         },
