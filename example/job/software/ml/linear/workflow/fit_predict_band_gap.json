@@ -46,7 +46,7 @@
                                         "elemental_composition",
                                         "density"
                                     ],
-                                    "materialIds": [
+                                    "exabyteIds": [
                                         "3qp8j2CqCgsSa6ZKj",
                                         "NdRNhkKWv4Xj8sxd8",
                                         "AWLTt3qa5x6xRG353",
@@ -57,7 +57,7 @@
                         },
                         "results": [
                             {
-                                "name": "method_parameters"
+                                "name": "predict"
                             }
                         ]
                     },
@@ -77,9 +77,9 @@
                                 {
                                     "predict": {
                                         "scope": "1",
-                                        "name": "method_parameters"
+                                        "name": "predict"
                                     },
-                                    "materialIds": [
+                                    "exabyteIds": [
                                         "3qp8j2CqCgsSa6ZKj"
                                     ],
                                     "targetProperties": [
