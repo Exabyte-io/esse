@@ -4,7 +4,7 @@ import path from "path";
 import url from "url";
 import _ from "lodash";
 import {getNormalizedSchemas} from "../src/json-schema-normalize";
-import {templateList, schemasList} from "../src/unit-schema-include";
+import {templateList, schemasList, jsonInclude} from "../src/unit-schema-include";
 import prettyjson from "prettyjson";
 
 var NAMESPACE = "https://exabyte.io/schemas/";
@@ -78,6 +78,22 @@ describe('templates', function () {
         if (tmpl.template) {
             it(`${tmpl.type} assignment should be valid`, function () {
                 const validator = ajv.getSchema("https://exabyte.io/schemas/job/model/method/workflow/unit.json");
+                const valid = validator(tmpl.template);
+                if (!valid) {
+                    console.log(prettyjson.render(validator.errors));
+                }
+                chai.expect(valid).to.be.ok;
+            });
+        }
+    });
+});
+
+describe('included unit schema', function () {
+    var ajvLocal = new Ajv({allErrors: true});
+    var validator = ajvLocal.compile(jsonInclude('job/model/method/workflow/unit.json'));
+    templateList.forEach(tmpl => {
+        if (tmpl.template) {
+            it(`${tmpl.type} assignment should be valid`, function () {
                 const valid = validator(tmpl.template);
                 if (!valid) {
                     console.log(prettyjson.render(validator.errors));

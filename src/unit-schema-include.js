@@ -133,7 +133,9 @@ function deref(schema, schemasList) {
         var regex = /[\"|\']\$ref[\'|\"]\s*\:\s*[\"|\']https\:\/schemas\/([^\"\'\s]+)[\'|\"]/g;
         str = str.replace(regex, function (match, subSchemaPath) {
             var s = _.find(schemasList, function (ss) {
-                return '/' + ss.dir + '/' + ss.filename === path.resolve(subSchemaPath);
+                var subPath = path.resolve(subSchemaPath);
+                var ssPath = ss.dir + '/' + ss.filename;
+                return subPath.endsWith(ssPath);
             });
             if (!s) {
                 throw new Error('Cannot find schema in schemas list: ' + match);
