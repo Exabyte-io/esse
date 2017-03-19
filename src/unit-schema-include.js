@@ -1,5 +1,6 @@
 var url = require("url");
 var path = require("path");
+var _ = require("lodash");
 
 var schemasList = [
     {
