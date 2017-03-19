@@ -32,7 +32,7 @@
         }
     },
     "required": [
-        "materialIds",
+        "exabyteIds",
         "targetProperties"
     ]
 }
