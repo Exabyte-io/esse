@@ -1,0 +1,38 @@
+{
+    "$schema": "http://json-schema.org/draft-04/schema#",
+    "title": "regression parameters schema",
+    "properties": {
+        "property": {
+            "type": "string",
+            "description": "name of the predicted or optimized characteristic"
+        },
+        "coefficients": {
+            "type": "array",
+            "description": "Array of arrays with weights/coefficients from the linear or non-linear fit",
+            "items": {
+                "type": "array",
+                "description": "array of weights/coefficients of the function for each target in property vector",
+                "items": {
+                    "type": "number"
+                }
+            }
+        },
+        "intercept": {
+            "type": "array",
+            "description": "list of intercepts (shift) from the linear or non-linear fit of data points",
+            "items": {
+                "type": "number",
+                "description": "intercept corresponding to the fit for each target in property vector"
+            }
+        },
+        "dataFrame": {
+            "description": "materials data used to train/fit ml method",
+            "$ref": "file:data/data_frame.json"
+        }
+    },
+    "required": [
+        "property",
+        "coefficients",
+        "intercept"
+    ]
+}

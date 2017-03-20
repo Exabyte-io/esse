@@ -15,20 +15,15 @@
             "description": "Unit's input.",
             "type": "array",
             "items": {
-                "type": "object",
-                "properties": {
-                    "name": {
-                        "description": "Input file name. e.g. pw_scf.in",
-                        "type": "string"
+                "oneOf": [
+                    {
+                        "description": "textual input (eg. for simulation engines)",
+                        "$ref": "file:execution/input.json"
                     },
-                    "content": {
-                        "description": "Content of the input file. e.g. &CONTROL    calculation='scf' ...",
-                        "type": "string"
+                    {
+                        "description": "object input (eg. for machine learning)",
+                        "$ref": "file:../../../../input.json"
                     }
-                },
-                "required": [
-                    "name",
-                    "content"
                 ]
             }
         }

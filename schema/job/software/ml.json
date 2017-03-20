@@ -1,0 +1,27 @@
+{
+    "$schema": "http://json-schema.org/draft-04/schema#",
+    "title": "default machine learning app schema",
+    "type": "object",
+    "properties": {
+        "name": {
+            "enum": [
+                "ml"
+            ]
+        },
+        "summary": {
+            "enum": [
+                "Default Machine Learning Engine"
+            ]
+        },
+        "version": {
+            "enum": [
+                "0.1.1"
+            ]
+        },
+        "exec": {
+            "enum": [
+                "rupy"
+            ]
+        }
+    }
+}
