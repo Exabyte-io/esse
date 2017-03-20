@@ -20,9 +20,6 @@
         "owner": {
             "$ref": "file:../security/owner.json"
         },
-        "reference": {
-            "$ref": "file:./reference.json"
-        },
         "source": {
             "description": "where this characteristic was obtained from, eg. `exabyte job`",
             "type": "object",
@@ -32,8 +29,7 @@
                     "type": "string"
                 },
                 "info": {
-                    "description": "additional information about this source",
-                    "type": "object"
+                    "$ref": "file:./characteristics/info.json"
                 }
             }
         }

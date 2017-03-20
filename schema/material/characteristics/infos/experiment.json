@@ -1,0 +1,42 @@
+{
+    "$schema": "http://json-schema.org/draft-04/schema#",
+    "title": "info for characteristic obtained by experiment",
+    "properties": {
+        "author": {
+            "type": "string",
+            "description": "experiment author"
+        },
+        "title": {
+            "type": "string",
+            "description": "experiment title"
+        },
+        "method": {
+            "type": "string",
+            "description": "method used in experiment"
+        },
+        "conditions": {
+            "type": "array",
+            "items": {
+                "$ref": "file:../../../primitive/condition.json"
+            }
+        },
+        "location": {
+            "$ref": "file:../../../primitive/location.json"
+        },
+        "timestamp": {
+            "description": "Timestamp of the experiment.",
+            "type": "number"
+        },
+        "note": {
+            "description": "Note about experiment",
+            "type": "string"
+        },
+        "references": {
+            "type": "array",
+            "description": "references to articles",
+            "items": {
+                "$ref": "file:../../../primitive/reference.json"
+            }
+        }
+    }
+}

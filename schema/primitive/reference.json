@@ -47,7 +47,7 @@
             "description": "Start and end pages of the work.",
             "allOf": [
                 {
-                    "$ref": "file:../primitive/pages.json"
+                    "$ref": "file:pages.json"
                 }
             ]
         },
@@ -55,14 +55,14 @@
             "type": "array",
             "description": "List of authors of the work.",
             "items": {
-                "$ref": "file:../primitive/name.json"
+                "$ref": "file:name.json"
             }
         },
         "editor": {
             "type": "array",
             "description": "List of editors of the work.",
             "items": {
-                "$ref": "file:../primitive/name.json"
+                "$ref": "file:name.json"
             }
         },
         "reference": {
