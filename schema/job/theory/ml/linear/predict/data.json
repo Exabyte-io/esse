@@ -2,9 +2,13 @@
     "$schema": "http://json-schema.org/draft-04/schema#",
     "title": "regression parameters schema",
     "properties": {
-        "property": {
-            "type": "string",
-            "description": "name of the predicted or optimized characteristic"
+        "properties": {
+            "type": "array",
+            "description": "Array of target properties",
+            "items": {
+                "type": "string",
+                "description": "name of the target property"
+            }
         },
         "coefficients": {
             "type": "array",
@@ -31,7 +35,7 @@
         }
     },
     "required": [
-        "property",
+        "properties",
         "coefficients",
         "intercept"
     ]

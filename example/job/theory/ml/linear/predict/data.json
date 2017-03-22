@@ -1,5 +1,7 @@
 {
-    "property": "band_gaps",
+    "properties": [
+        "band_gaps"
+        ],
     "coefficients": [
         [
             -3.339e-01,
