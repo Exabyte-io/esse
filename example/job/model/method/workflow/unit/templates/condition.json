@@ -1,0 +1,31 @@
+{
+    "type": "condition",
+    "name": "condition",
+    "head": false,
+    "status": "idle",
+    "flowchartId": "check_for_convergence",
+    "condition": {
+        "input": [
+            {
+                "scope": "global",
+                "name": "previous_SCALAR_RESULT"
+            },
+            {
+                "scope": "run_scf_calculation",
+                "name": "total_energy"
+            },
+            {
+                "scope": "global",
+                "name": "TOLERANCE"
+            }
+        ],
+        "statement": "abs((previous_SCALAR_RESULT-total_energy)/total_energy) < TOLERANCE",
+        "then": "convergence_is_reached",
+        "else": "assign_SCALAR_RESULT_to_previous_SCALAR_RESULT",
+        "maxOccurences": 100
+    },
+    "results": [],
+    "preProcessors": [],
+    "postProcessors": [],
+    "monitors": []
+}

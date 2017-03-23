@@ -1,6 +1,7 @@
 # exabyte-materials-json
 
-Contains schemas and examples for materials and simulations related data in JSON representation.
+Contains schemas and examples for materials and simulations related data in JSON representation. Also this repo represent npm 
+package that can be used by clients in testing, on server and in some limited browser environments.
 
 ## Installation
 
