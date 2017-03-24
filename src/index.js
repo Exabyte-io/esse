@@ -1,5 +1,5 @@
-var {jsonInclude} = require('./unit-schema-include');
-var {templateList} = require('./unit-schema-include');
+var jsonInclude = require('./unit-schema-include').jsonInclude;
+var templateList = require('./unit-schema-include').templateList;
 
 module.exports = {
     jsonInclude: jsonInclude,
