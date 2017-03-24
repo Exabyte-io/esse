@@ -32,7 +32,6 @@
         }
     },
     "required": [
-        "exabyteIds",
-        "targetProperties"
+        "exabyteIds"
     ]
 }
