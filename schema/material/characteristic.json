@@ -29,7 +29,15 @@
                     "type": "string"
                 },
                 "info": {
-                    "$ref": "file:./characteristics/info.json"
+                    "description": "additional information about this source",
+                    "oneOf": [
+                        {
+                            "$ref": "file:../infos/exabyte.json"
+                        },
+                        {
+                            "$ref": "file:../infos/experiment.json"
+                        }
+                    ]
                 }
             }
         }

@@ -3,7 +3,7 @@
     "title": "energy schema",
     "allOf": [
         {
-            "$ref": "file:../../primitive/scalar.json"
+            "$ref": "file:../../primitive/math/scalar.json"
         }
     ],
     "properties": {

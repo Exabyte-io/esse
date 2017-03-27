@@ -3,7 +3,7 @@
     "title": "band structure schema",
     "allOf": [
         {
-            "$ref": "file:../../primitive/2d_plot.json"
+            "$ref": "file:../../primitive/math/2d_plot.json"
         }
     ],
     "properties": {
