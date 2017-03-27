@@ -2,9 +2,12 @@
     "$schema": "http://json-schema.org/draft-04/schema#",
     "title": "info for characteristic obtained by experiment",
     "properties": {
-        "author": {
-            "type": "string",
-            "description": "experiment author"
+        "authors": {
+            "description": "experiment authors",
+            "type": "array",
+            "items": {
+                "$ref": "file:../../../primitive/name.json"
+            }
         },
         "title": {
             "type": "string",

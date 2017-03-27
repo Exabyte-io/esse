@@ -51,14 +51,14 @@
                 }
             ]
         },
-        "author": {
+        "authors": {
             "type": "array",
             "description": "List of authors of the work.",
             "items": {
                 "$ref": "file:name.json"
             }
         },
-        "editor": {
+        "editors": {
             "type": "array",
             "description": "List of editors of the work.",
             "items": {
