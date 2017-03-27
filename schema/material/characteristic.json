@@ -32,10 +32,10 @@
                     "description": "additional information about this source",
                     "oneOf": [
                         {
-                            "$ref": "file:../infos/exabyte.json"
+                            "$ref": "file:characteristics/sources_info/exabyte.json"
                         },
                         {
-                            "$ref": "file:../infos/experiment.json"
+                            "$ref": "file:characteristics/sources_info/experiment.json"
                         }
                     ]
                 }
