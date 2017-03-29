@@ -1,0 +1,38 @@
+{
+    "$schema": "http://json-schema.org/draft-04/schema#",
+    "title": "Shell Scripting Language Schema",
+    "type": "object",
+    "properties": {
+        "name": {
+            "enum": [
+                "shell"
+            ]
+        },
+        "flavor": {
+            "enum": [
+                "sh",
+                "bash",
+                "zsh",
+                "csh"
+            ]
+        },
+        "summary": {
+            "enum": [
+                "Shell Scripting Language"
+            ]
+        },
+        "version": {
+            "enum": [
+                "NOT SURE ABOUT THIS. MAYBE CENTOS RELEASE VERSION, 7.2.1511?"
+            ]
+        },
+        "exec": {
+            "enum": [
+                "sh",
+                "bash",
+                "zsh",
+                "csh"
+            ]
+        }
+    }
+}
