@@ -43,7 +43,7 @@
             "type": "string"
         },
         "pythonDependencies": {
-            "description": "Optional Python dependencies",
+            "description": "Optional Python dependencies, e.g. amqp==1.4.6",
             "type": "string"
         }
     },
