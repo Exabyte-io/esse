@@ -1,6 +1,6 @@
 {
     "$schema": "http://json-schema.org/draft-04/schema#",
-    "title": "espresso app schema",
+    "title": "Vienna Ab-inito Simulation Package",
     "type": "object",
     "properties": {
         "name": {
@@ -11,6 +11,11 @@
         "summary": {
             "enum": [
                 "Vienna Ab-inito Simulation Package"
+            ]
+        },
+        "flavor": {
+            "enum": [
+                "vasp"
             ]
         },
         "version": {

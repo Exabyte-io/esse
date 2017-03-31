@@ -21,15 +21,33 @@
         },
         "version": {
             "enum": [
-                "2",
-                "3"
+                "2.7.5",
+                "3.6.1"
             ]
         },
         "exec": {
             "enum": [
-                "python2",
-                "python3"
+                "python"
             ]
+        },
+        "arguments": {
+            "description": "Optional arguments passed the Python script",
+            "type": "string"
+        },
+        "environmentVariables": {
+            "description": "Optional environment variables exported before running the Python script",
+            "type": "string"
+        },
+        "pythonVirtualEnvironmentPath": {
+            "description": "Path to the virtual environment. e.g. /home/user/my-env",
+            "type": "string"
+        },
+        "pythonDependencies": {
+            "description": "Optional Python dependencies",
+            "type": "string"
         }
-    }
+    },
+    "required": [
+        "pythonVirtualEnvironmentPath"
+    ]
 }

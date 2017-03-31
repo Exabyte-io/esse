@@ -18,27 +18,11 @@
                 "type": "object",
                 "properties": {
                     "name": {
-                        "description": "Input file name (for QE and VASP) or script file name (for Shell and Python)",
+                        "description": "Input file name. e.g. pw_scf.in",
                         "type": "string"
                     },
                     "content": {
-                        "description": "Content of the input file (for QE and VASP) or content of the script file (for Shell and Python)",
-                        "type": "string"
-                    },
-                    "ShellArguments": {
-                        "description": "Optional arguments passed the Shell or Python script",
-                        "type": "string"
-                    },
-                    "EnvironmentVariables": {
-                        "description": "Optional environment variables exported before running Shell or Python script",
-                        "type": "string"
-                    },
-                    "pythonVirtualEnvironmentPath": {
-                        "description": "Optional path to the virtual environment (only for Python)",
-                        "type": "string"
-                    },
-                    "pythonDependencies": {
-                        "description": "Optional Python dependencies (only for Python)",
+                        "description": "Content of the input file. e.g. &CONTROL    calculation='scf' ...",
                         "type": "string"
                     }
                 },

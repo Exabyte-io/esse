@@ -5,7 +5,7 @@
     "type": "object",
     "oneOf": [
         {
-            "$ref": "file:espresso/arguments.json"
+            "$ref": "file:arguments/espresso.json"
         }
     ]
 }
