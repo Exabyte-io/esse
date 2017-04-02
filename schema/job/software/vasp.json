@@ -4,21 +4,25 @@
     "type": "object",
     "properties": {
         "name": {
+            "type": "string",
             "enum": [
                 "vasp"
             ]
         },
         "summary": {
+            "type": "string",
             "enum": [
                 "Vienna Ab-inito Simulation Package"
             ]
         },
         "version": {
+            "type": "string",
             "enum": [
                 "5.3.5"
             ]
         },
         "exec": {
+            "type": "string",
             "enum": [
                 "vasp"
             ]
