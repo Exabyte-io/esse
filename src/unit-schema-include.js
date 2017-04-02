@@ -77,8 +77,12 @@ var schemasList = [
 
 var templateList = [
     {
-        type: 'execution',
-        template: require('../example/job/model/method/workflow/unit/templates/execution.json')
+        type: 'execution-espresso',
+        template: require('../example/job/model/method/workflow/unit/templates/execution-espresso.json')
+    },
+    {
+        type: 'execution-vasp',
+        template: require('../example/job/model/method/workflow/unit/templates/execution-vasp.json')
     },
     {
         type: 'assignment',
