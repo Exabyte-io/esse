@@ -10,5 +10,9 @@
             "description": "location longitude",
             "type": "number"
         }
-    }
+    },
+    "required": [
+        "latitude",
+        "longitude"
+    ]
 }

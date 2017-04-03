@@ -14,5 +14,10 @@
             "description": "account type: -1 (root), 0 (users), 10 (organizations)",
             "type": "integer"
         }
-    }
+    },
+    "required": [
+        "_id",
+        "name",
+        "type"
+    ]
 }

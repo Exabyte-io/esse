@@ -41,5 +41,13 @@
                 }
             }
         }
-    }
+    },
+    "required": [
+        "_id",
+        "exabyteId",
+        "data",
+        "access",
+        "owner",
+        "source"
+    ]
 }
