@@ -31,23 +31,16 @@
             ]
         },
         "arguments": {
-            "description": "Optional arguments passed the Python script",
+            "description": "Optional arguments passed to the Python script",
             "type": "string"
         },
         "environmentVariables": {
             "description": "Optional environment variables exported before running the Python script",
-            "type": "string"
-        },
-        "pythonVirtualEnvironmentPath": {
-            "description": "Path to the virtual environment. e.g. /home/user/my-env",
-            "type": "string"
+            "type": "object"
         },
         "pythonDependencies": {
             "description": "Optional Python dependencies, e.g. amqp==1.4.6",
-            "type": "string"
+            "type": "array"
         }
-    },
-    "required": [
-        "pythonVirtualEnvironmentPath"
-    ]
+    }
 }

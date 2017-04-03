@@ -35,8 +35,12 @@
             ]
         },
         "arguments": {
-            "description": "Optional arguments passed the shell script",
+            "description": "Optional arguments passed to the Shell script",
             "type": "string"
+        },
+        "environmentVariables": {
+            "description": "Optional environment variables exported before running the Shell script",
+            "type": "object"
         }
     }
 }
