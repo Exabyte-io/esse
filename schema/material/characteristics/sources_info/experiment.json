@@ -43,6 +43,7 @@
         }
     },
     "required": [
+        "conditions",
         "authors",
         "title",
         "method",
