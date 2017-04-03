@@ -1,0 +1,18 @@
+{
+    "$schema": "http://json-schema.org/draft-04/schema#",
+    "title": "owner schema",
+    "properties": {
+        "_id": {
+            "description": "account identity",
+            "type": "string"
+        },
+        "name": {
+            "description": "name of this owner, eg. `demo`, `exabyte`",
+            "type": "string"
+        },
+        "type": {
+            "description": "account type: -1 (root), 0 (users), 10 (organizations)",
+            "type": "integer"
+        }
+    }
+}

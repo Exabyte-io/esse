@@ -1,0 +1,22 @@
+{
+    "_id": "nDAavgjrT5ezwFgod",
+    "title": "My Calculation",
+    "_project": {
+        "_id": "JjDKCcBhQurXoNA5J",
+        "name": "project1",
+        "owner": {
+            "...": "include(../../../security/owner.json)"
+        },
+        "slug": "project1",
+        "goldName": "demo-project1",
+        "access": {
+            "...": "include(../../../security/_access.json)"
+        }
+    },
+    "model": {
+        "...": "include(../../../job/model.json)"
+    },
+    "owner": {
+        "...": "include(../../../security/owner.json)"
+    }
+}

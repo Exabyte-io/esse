@@ -15,17 +15,17 @@
             "type": "object"
         },
         "access": {
-            "$ref": "file:../security/access.json"
+            "$ref": "file:../security/_access.json"
         },
         "owner": {
-            "$ref": "file:../security/owner.json"
+            "$ref": "file:../security/_owner.json"
         },
         "source": {
             "description": "where this characteristic was obtained from, eg. `exabyte job`",
             "type": "object",
             "properties": {
-                "name": {
-                    "description": "name of the source of this characteristic, eg. `exabyte`",
+                "type": {
+                    "description": "type of the source of this characteristic, eg. `exabyte`, `experiment`",
                     "type": "string"
                 },
                 "info": {

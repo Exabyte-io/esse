@@ -1,7 +1,4 @@
 {
-    "type": 111,
-    "account": {
-        "_id": "*",
-        "type": 0
-    }
+    "type": 10,
+    "level": 10
 }

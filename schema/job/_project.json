@@ -12,7 +12,7 @@
         },
         "access": {
             "description": "Project's access level",
-            "$ref": "file:../security/access.json"
+            "$ref": "file:../security/_access.json"
         },
         "owner": {
             "description": "The owner of the project.",

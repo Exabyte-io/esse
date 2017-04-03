@@ -27,7 +27,7 @@
             "$ref": "file:../../../primitive/location.json"
         },
         "timestamp": {
-            "description": "Timestamp of the experiment.",
+            "description": "epoch time.",
             "type": "number"
         },
         "note": {
@@ -41,5 +41,11 @@
                 "$ref": "file:../../../primitive/reference.json"
             }
         }
-    }
+    },
+    "required": [
+        "authors",
+        "title",
+        "method",
+        "timestamp"
+    ]
 }

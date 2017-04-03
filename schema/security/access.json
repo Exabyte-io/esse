@@ -4,6 +4,6 @@
     "description": "what accounts can access this entity with what actions; lower type always has preference",
     "type": "array",
     "items": {
-        "$ref": "file:_access.json"
+        "$ref": "file:_access2.json"
     }
 }

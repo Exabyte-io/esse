@@ -17,11 +17,18 @@
         },
         "owner": {
             "description": "summary about user/company who owns this job.",
-            "$ref": "file:../../../security/owner.json"
+            "$ref": "file:../../../security/_owner.json"
         },
         "model": {
             "description": "subset of the full model used for calculation",
             "$ref": "file:../../../job/_model.json"
         }
-    }
+    },
+    "required": [
+        "title",
+        "_id",
+        "_project",
+        "owner",
+        "model"
+    ]
 }
