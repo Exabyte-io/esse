@@ -3,14 +3,14 @@
     "name": "assignment",
     "head": true,
     "status": "idle",
-    "flowchartId": "initialize_TOLERANCE",
+    "flowchartId": "init_VAR",
     "assignment": {
-        "name": "TOLERANCE",
+        "name": "VAR",
         "value": "1e-5"
     },
     "results": [],
     "preProcessors": [],
     "postProcessors": [],
     "monitors": [],
-    "next": "initialize_SCALAR_RESULT"
+    "next": "init_VAR_1"
 }
