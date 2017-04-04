@@ -34,11 +34,11 @@
             "description": "Optional arguments passed to the Python script",
             "type": "string"
         },
-        "environmentVariables": {
+        "environment": {
             "description": "Optional environment variables exported before running the Python script",
             "type": "object"
         },
-        "pythonDependencies": {
+        "dependencies": {
             "description": "Optional Python dependencies, e.g. amqp==1.4.6",
             "type": "array"
         }

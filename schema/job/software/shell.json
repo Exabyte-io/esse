@@ -38,7 +38,7 @@
             "description": "Optional arguments passed to the Shell script",
             "type": "string"
         },
-        "environmentVariables": {
+        "environment": {
             "description": "Optional environment variables exported before running the Shell script",
             "type": "object"
         }
