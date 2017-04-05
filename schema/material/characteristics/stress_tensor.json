@@ -3,7 +3,7 @@
     "title": "stress tensor schema",
     "properties": {
         "value": {
-            "$ref": "file:../../primitive/math/3d_tensor.json"
+            "$ref": "file:../../primitive/3d_tensor.json"
         },
         "name": {
             "enum": [

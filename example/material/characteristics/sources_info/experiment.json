@@ -10,12 +10,12 @@
     "title": "Experiment 1",
     "references": [
         {
-            "...": "include(../../../primitive/reference.json)"
+            "...": "include(../../../references/reference.json)"
         }
     ],
     "conditions": [
         {
-            "...": "include(../../../primitive/condition.json)"
+            "...": "include(../../../references/condition.json)"
         }
     ],
     "method": "DFT"

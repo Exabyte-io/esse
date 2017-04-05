@@ -7,7 +7,7 @@
             "description": "product of temperature and configurational entropy",
             "allOf": [
                 {
-                    "$ref": "file:../../primitive/math/scalar.json"
+                    "$ref": "file:../../primitive/scalar.json"
                 }
             ],
             "properties": {
@@ -22,7 +22,7 @@
             "description": "non self-consitent energy based on an input charge density",
             "allOf": [
                 {
-                    "$ref": "file:../../primitive/math/scalar.json"
+                    "$ref": "file:../../primitive/scalar.json"
                 }
             ],
             "properties": {
@@ -37,7 +37,7 @@
             "description": "kinetic + pseudopotential energy",
             "allOf": [
                 {
-                    "$ref": "file:../../primitive/math/scalar.json"
+                    "$ref": "file:../../primitive/scalar.json"
                 }
             ],
             "properties": {
@@ -52,7 +52,7 @@
             "description": "energy due to coulomb potential",
             "allOf": [
                 {
-                    "$ref": "file:../../primitive/math/scalar.json"
+                    "$ref": "file:../../primitive/scalar.json"
                 }
             ],
             "properties": {
@@ -67,7 +67,7 @@
             "description": "exchange energy",
             "allOf": [
                 {
-                    "$ref": "file:../../primitive/math/scalar.json"
+                    "$ref": "file:../../primitive/scalar.json"
                 }
             ],
             "properties": {
@@ -82,7 +82,7 @@
             "description": "exchange and correlation energy per particle",
             "allOf": [
                 {
-                    "$ref": "file:../../primitive/math/scalar.json"
+                    "$ref": "file:../../primitive/scalar.json"
                 }
             ],
             "properties": {
@@ -97,7 +97,7 @@
             "description": "summation of interaction energies at long length scales due to coloumbic interactions",
             "allOf": [
                 {
-                    "$ref": "file:../../primitive/math/scalar.json"
+                    "$ref": "file:../../primitive/scalar.json"
                 }
             ],
             "properties": {
@@ -112,7 +112,7 @@
             "description": "divergent electrostatic ion interaction in compensating electron gas",
             "allOf": [
                 {
-                    "$ref": "file:../../primitive/math/scalar.json"
+                    "$ref": "file:../../primitive/scalar.json"
                 }
             ],
             "properties": {
@@ -127,7 +127,7 @@
             "description": "kinetic energy of wavefunctions in the atomic limit",
             "allOf": [
                 {
-                    "$ref": "file:../../primitive/math/scalar.json"
+                    "$ref": "file:../../primitive/scalar.json"
                 }
             ],
             "properties": {
@@ -142,7 +142,7 @@
             "description": "sum of one electron energies of kinetic, electrostatic, and exchange correlation",
             "allOf": [
                 {
-                    "$ref": "file:../../primitive/math/scalar.json"
+                    "$ref": "file:../../primitive/scalar.json"
                 }
             ],
             "properties": {
@@ -157,7 +157,7 @@
             "description": "double counting correction 2",
             "allOf": [
                 {
-                    "$ref": "file:../../primitive/math/scalar.json"
+                    "$ref": "file:../../primitive/scalar.json"
                 }
             ],
             "properties": {
@@ -172,7 +172,7 @@
             "description": "double counting correction 3",
             "allOf": [
                 {
-                    "$ref": "file:../../primitive/math/scalar.json"
+                    "$ref": "file:../../primitive/scalar.json"
                 }
             ],
             "properties": {
@@ -187,7 +187,7 @@
             "description": "hartree-fock contribution",
             "allOf": [
                 {
-                    "$ref": "file:../../primitive/math/scalar.json"
+                    "$ref": "file:../../primitive/scalar.json"
                 }
             ],
             "properties": {

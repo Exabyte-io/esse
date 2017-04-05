@@ -3,7 +3,7 @@
     "title": "total energy schema",
     "allOf": [
         {
-            "$ref": "file:../../primitive/math/scalar.json"
+            "$ref": "file:../../primitive/scalar.json"
         }
     ],
     "properties": {

@@ -4,7 +4,7 @@
     "type": "object",
     "allOf": [
         {
-            "$ref": "file:../../primitive/math/2d_plot.json"
+            "$ref": "file:../../primitive/2d_plot.json"
         }
     ],
     "properties": {

@@ -14,7 +14,7 @@
             "description": "information about kpoints grid",
             "allOf": [
                 {
-                    "$ref": "file:../../../../primitive/math/3d_grid.json"
+                    "$ref": "file:../../../../primitive/3d_grid.json"
                 }
             ],
             "properties": {

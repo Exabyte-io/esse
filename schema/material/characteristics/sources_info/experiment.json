@@ -6,7 +6,7 @@
             "description": "experiment authors",
             "type": "array",
             "items": {
-                "$ref": "file:../../../primitive/name.json"
+                "$ref": "file:../../../references/name.json"
             }
         },
         "title": {
@@ -20,11 +20,11 @@
         "conditions": {
             "type": "array",
             "items": {
-                "$ref": "file:../../../primitive/condition.json"
+                "$ref": "file:../../../references/condition.json"
             }
         },
         "location": {
-            "$ref": "file:../../../primitive/location.json"
+            "$ref": "file:../../../references/location.json"
         },
         "timestamp": {
             "description": "epoch time.",
@@ -38,7 +38,7 @@
             "type": "array",
             "description": "references to articles",
             "items": {
-                "$ref": "file:../../../primitive/reference.json"
+                "$ref": "file:../../../references/reference.json"
             }
         }
     },
