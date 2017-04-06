@@ -10,7 +10,7 @@
         "slug": "project1",
         "goldName": "demo-project1",
         "access": {
-            "...": "include(../../../security/_access.json)"
+            "...": "include(../../../security/access_legacy.json)"
         }
     },
     "model": {

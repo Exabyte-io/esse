@@ -21,7 +21,7 @@
         },
         "model": {
             "description": "subset of the full model used for calculation",
-            "$ref": "file:../../../job/_model.json"
+            "$ref": "file:../_model.json"
         }
     },
     "required": [

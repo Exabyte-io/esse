@@ -1,0 +1,20 @@
+{
+    "$schema": "http://json-schema.org/draft-04/schema#",
+    "title": "access schema",
+    "description": "legacy access schema, will be removed",
+    "type": "object",
+    "properties": {
+        "type": {
+            "description": "Flag that sets the access level for entity. 0 - public only, 10 - registered user only",
+            "type": "integer"
+        },
+        "level": {
+            "description": "A flag that sets up the access type. 0 - read-only, 10 - read + comment, 20 - read + comment + edit",
+            "type": "integer"
+        }
+    },
+    "required": [
+        "type",
+        "level"
+    ]
+}

@@ -3,8 +3,7 @@
     "exabyteId": "4racJ9AgFh7fGjJ2o",
     "data": {},
     "access": {
-        "type": 10,
-        "level": 10
+        "...": "include(../security/access_legacy.json)"
     },
     "owner": {
         "_id": "ouzYh8KpeTYKFLf3M",
