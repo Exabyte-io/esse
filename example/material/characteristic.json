@@ -2,7 +2,9 @@
     "_id": "K3McGkqXh28HJ775m",
     "exabyteId": "4racJ9AgFh7fGjJ2o",
     "data": {},
-    "access": [],
+    "access": {
+        "...": "include(../security/access_legacy.json)"
+    },
     "owner": {
         "_id": "ouzYh8KpeTYKFLf3M",
         "name": "demo",
@@ -11,23 +13,7 @@
     "source": {
         "type": "exabyte",
         "info": {
-            "_id": "nDAavgjrT5ezwFgod",
-            "title": "My Calculation",
-            "_project": {
-                "_id": "JjDKCcBhQurXoNA5J",
-                "name": "project1",
-                "owner": {
-                    "_id": "ouzYh8KpeTYKFLf3M",
-                    "name": "demo",
-                    "type": 0
-                },
-                "slug": "project1",
-                "goldName": "demo-project1",
-                "access": {
-                    "level": 0,
-                    "type": 0
-                }
-            }
+            "...": "include(characteristics/sources_info/exabyte.json)"
         }
     }
 }
