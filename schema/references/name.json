@@ -17,6 +17,7 @@
         }
     },
     "required": [
-        "first"
+        "first",
+        "last"
     ]
 }
