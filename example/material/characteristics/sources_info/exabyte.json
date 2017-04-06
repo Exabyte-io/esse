@@ -14,7 +14,7 @@
         }
     },
     "model": {
-        "...": "include(../../../job/model.json)"
+        "...": "include(../_model.json)"
     },
     "owner": {
         "_id": "HtxACY2wX4b2hS8Rv",

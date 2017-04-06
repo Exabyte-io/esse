@@ -41,5 +41,10 @@
                 }
             }
         }
-    }
+    },
+    "required": [
+        "type",
+        "subtype",
+        "method"
+    ]
 }
