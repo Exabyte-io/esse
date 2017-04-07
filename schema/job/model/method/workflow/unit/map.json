@@ -9,12 +9,9 @@
             "items": {
                 "type": "object",
                 "properties": {
-                    "flowchartId": {
-                        "description": "Flowchart IDs of target units.",
-                        "type": "array",
-                        "items": {
-                            "type": "string"
-                        }
+                    "subworkflowName": {
+                        "description": "Name of subworkflow to run inside map",
+                        "type": "string"
                     },
                     "name": {
                         "description": "Name of the input file. e.g. pw_scf.in",
@@ -33,13 +30,12 @@
                     }
                 },
                 "required": [
-                    "flowchartId",
+                    "subworkflowName",
                     "name",
                     "target",
                     "value"
                 ]
             }
-
         }
     },
     "required": [

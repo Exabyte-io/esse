@@ -7,6 +7,11 @@
             "description": "Human-readable name of the workflow. e.g. Total-energy",
             "type": "string"
         },
+        "subworkflow": {
+            "description": "Whether this is the a subworkflow",
+            "type": "boolean",
+            "default": false
+        },
         "units": {
             "description": "Contains the Units of the Workflow",
             "type": "array",

@@ -4,9 +4,11 @@
     "precision": {
         "...": "include(../theory/dft/pseudopotential/precision.json)"
     },
-    "workflow": {
-        "...": "include(method/workflow.json)"
-    },
+    "workflows": [
+        {
+            "...": "include(method/workflow.json)"
+        }
+    ],
     "data": {
         "pseudo": []
     }

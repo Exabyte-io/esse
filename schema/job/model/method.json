@@ -13,9 +13,12 @@
         "precision": {
             "$ref": "file:method/precision.json"
         },
-        "workflow": {
-            "description": "simulation workflow used inside this method.",
-            "$ref": "file:method/workflow.json"
+        "workflows": {
+            "description": "simulation workflows used inside this method",
+            "type": "array",
+            "items": {
+                "$ref": "file:method/workflow.json"
+            }
         },
         "data": {
             "description": "additional data specific to method, eg. array of pseudopotentials",
@@ -33,6 +36,6 @@
     "required": [
         "type",
         "precision",
-        "workflow"
+        "workflows"
     ]
 }
