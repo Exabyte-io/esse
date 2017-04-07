@@ -8,7 +8,7 @@
             "type": "string"
         },
         "subworkflow": {
-            "description": "Whether this is the a subworkflow",
+            "description": "Whether this is a subworkflow",
             "type": "boolean",
             "default": false
         },
