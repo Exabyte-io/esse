@@ -4,6 +4,7 @@
             "...": "include(workflow/unit.json)"
         }
     ],
+    "subworkflows": [],
     "app": "espresso",
     "name": "Bandstructure"
 }

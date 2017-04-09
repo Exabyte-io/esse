@@ -9,7 +9,7 @@
             "items": {
                 "type": "object",
                 "properties": {
-                    "subworkflowName": {
+                    "workflow": {
                         "description": "Name of subworkflow to run inside map",
                         "type": "string"
                     },
@@ -30,7 +30,7 @@
                     }
                 },
                 "required": [
-                    "subworkflowName",
+                    "workflow",
                     "name",
                     "target",
                     "value"
