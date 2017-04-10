@@ -9,7 +9,7 @@
             "items": {
                 "type": "object",
                 "properties": {
-                    "workflow": {
+                    "subworkflow": {
                         "description": "Name of subworkflow to run inside map",
                         "type": "string"
                     },
@@ -21,7 +21,7 @@
                         "description": "Name of the target variable to substitute using the values below. e.g. K_POINTS",
                         "type": "string"
                     },
-                    "value": {
+                    "values": {
                         "description": "Sequence of values for the target Jinja variable.",
                         "type": "array",
                         "items": {
@@ -30,10 +30,10 @@
                     }
                 },
                 "required": [
-                    "workflow",
+                    "subworkflow",
                     "name",
                     "target",
-                    "value"
+                    "values"
                 ]
             }
         }
