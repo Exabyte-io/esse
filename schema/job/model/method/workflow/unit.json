@@ -83,6 +83,10 @@
         "map": {
             "description": "Contains information about the map unit.",
             "$ref": "file:unit/map.json"
+        },
+        "reduce": {
+            "description": "Contains information about the reduce unit.",
+            "$ref": "file:unit/reduce.json"
         }
     },
     "required": [
