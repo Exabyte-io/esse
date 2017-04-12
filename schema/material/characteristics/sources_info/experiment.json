@@ -24,7 +24,7 @@
             }
         },
         "location": {
-            "$ref": "file:../../../t"
+            "$ref": "file:../../../references/location.json"
         },
         "timestamp": {
             "description": "epoch time.",
