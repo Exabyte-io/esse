@@ -21,5 +21,8 @@
             "description": "human-readable name of the condition",
             "type": "string"
         }
-    }
+    },
+    "required": [
+        "name"
+    ]
 }
