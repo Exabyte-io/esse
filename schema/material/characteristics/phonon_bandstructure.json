@@ -1,0 +1,47 @@
+{
+    "$schema": "http://json-schema.org/draft-04/schema#",
+    "title": "phonon band structure schema",
+    "allOf": [
+        {
+            "$ref": "file:../../primitive/2d_plot.json"
+        }
+    ],
+    "properties": {
+        "xAxis": {
+            "properties": {
+                "label": {
+                    "enum": [
+                        "kpoints"
+                    ]
+                },
+                "units": {
+                    "enum": [
+                        "crystal",
+                        "cartesian"
+                    ]
+                }
+            }
+        },
+        "yAxis": {
+            "properties": {
+                "label": {
+                    "enum": [
+                        "frequency"
+                    ]
+                },
+                "units": {
+                    "enum": [
+                        "cm-1",
+                        "THz",
+                        "meV"
+                    ]
+                }
+            }
+        },
+        "name": {
+            "enum": [
+                "phonon_bandstructure"
+            ]
+        }
+    }
+}

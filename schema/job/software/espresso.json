@@ -24,6 +24,8 @@
                 "projwfc",
                 "dos",
                 "ph",
+                "ph_q2r",
+                "ph_matdyn",
                 "pp"
             ]
         },
@@ -41,7 +43,9 @@
                 "projwfc.x",
                 "dos.x",
                 "ph.x",
-                "pp.x"
+                "pp.x",
+                "q2r.x",
+                "matdyn.x"
             ]
         }
     }
