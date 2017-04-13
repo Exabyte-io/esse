@@ -1,8 +1,12 @@
 {
     "units": "kbar",
     "scalar": [
-        "1.2",
-        "3.3"
+        {
+            "value": "1.2"
+        },
+        {
+            "value": "3.3"
+        }
     ],
     "name": "pressure"
 }
