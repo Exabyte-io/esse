@@ -1,7 +1,7 @@
 {
+    "mapFlowchartId": "1",
     "input": [
         {
-            "mapFlowchartId": "1",
             "operation": "aggregate",
             "arguments": [
                 "band_gaps"

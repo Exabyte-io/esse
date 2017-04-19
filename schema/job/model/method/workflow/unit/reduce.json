@@ -3,16 +3,16 @@
     "title": "reduce unit schema",
     "type": "object",
     "properties": {
+        "mapFlowchartId": {
+            "description": "corresponding map unit flowchart ID",
+            "type": "string"
+        },
         "input": {
             "description": "input information for reduce unit",
             "type": "array",
             "items": {
                 "type": "object",
                 "properties": {
-                    "mapFlowchartId": {
-                        "description": "corresponding map unit flowchart ID",
-                        "type": "string"
-                    },
                     "operation": {
                         "description": "reduce operation, e.g. aggregate",
                         "type": "string"
@@ -26,7 +26,6 @@
                     }
                 },
                 "required": [
-                    "mapFlowchartId",
                     "operation",
                     "arguments"
                 ]
@@ -34,6 +33,7 @@
         }
     },
     "required": [
+        "mapFlowchartId",
         "input"
     ]
 }
