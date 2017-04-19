@@ -1,9 +1,16 @@
 {
+    "subworkflow": "subworkflow",
     "input": [
         {
-            "subworkflow": "subworkflow",
-            "name": "pw_scf.in",
-            "target": "K_POINTS",
+            "target": "MAP_K_POINTS_1",
+            "values": [
+                "2 2 2 0 0 0",
+                "3 3 3 0 0 0",
+                "4 4 4 0 0 0"
+            ]
+        },
+        {
+            "target": "MAP_K_POINTS_2",
             "values": [
                 "2 2 2 0 0 0",
                 "3 3 3 0 0 0",
