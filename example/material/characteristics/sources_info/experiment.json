@@ -1,0 +1,22 @@
+{
+    "authors": [
+        {
+            "first": "John",
+            "last": "Doe",
+            "affiliation": "Exabyte Inc."
+        }
+    ],
+    "timestamp": 141182979832,
+    "title": "Experiment 1",
+    "references": [
+        {
+            "...": "include(../../../references/reference.json)"
+        }
+    ],
+    "conditions": [
+        {
+            "...": "include(../../../references/condition.json)"
+        }
+    ],
+    "method": "DFT"
+}

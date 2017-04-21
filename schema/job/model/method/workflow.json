@@ -7,6 +7,13 @@
             "description": "Human-readable name of the workflow. e.g. Total-energy",
             "type": "string"
         },
+        "subworkflows": {
+            "description": "Array of subworkflows",
+            "type": "array",
+            "items": {
+                "$ref": "file:workflow.json"
+            }
+        },
         "units": {
             "description": "Contains the Units of the Workflow",
             "type": "array",
