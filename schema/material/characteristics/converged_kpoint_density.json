@@ -1,0 +1,27 @@
+{
+    "$schema": "http://json-schema.org/draft-04/schema#",
+    "title": "converged kpoint density schema",
+    "properties": {
+        "kpoints": {
+            "$ref": "file:../../primitive/vector.json"
+        },
+        "property": {
+            "description": "property for which the convergence study was run",
+            "enum": [
+                "total energy"
+            ]
+        },
+        "_material": {
+            "description": "Subset of the full information about the materials used inside this job.",
+            "$ref": "file:../../job/_material.json"
+        },
+        "model": {
+            "$ref": "file:../../job/model.json"
+        }
+    },
+    "required": [
+        "kpoints",
+        "property",
+        "model"
+    ]
+}

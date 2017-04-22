@@ -1,0 +1,15 @@
+{
+    "name": "converged kpoint density",
+    "kpoints": [
+        13,
+        13,
+        13
+    ],
+    "property": "total energy",
+    "material": {
+        "...": "include(../../job/_material.json)"
+    },
+    "model": {
+        "...": "include(../../job/model.json)"
+    }
+}
