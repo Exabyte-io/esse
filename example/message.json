@@ -3,7 +3,6 @@
         "entity": {
             "_id": "FPjAaKfuYAL7tiHbm",
             "name": "unit",
-            "type": "web",
             "flowchartId": "pw_scf"
         },
         "version": "0.2.0",
