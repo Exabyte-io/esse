@@ -1,0 +1,27 @@
+{
+    "$schema": "http://json-schema.org/draft-04/schema#",
+    "title": "structural descriptors schema",
+    "allOf": [
+        {
+            "$ref": "file:../structure/lattice_type.json"
+        }
+    ],
+    "properties": {
+        "representation": {
+            "description": "structure representation. Allowed values 0,1 or 2 Eg: 0 means primitive, 1 means conventional and 2 means a supercell",
+            "type": "string"
+        },
+        "equilibrium": {
+            "description": "Identifies a equilibrium structure. Values: 0 or 1 Eg: 0 means equilibrated and 1 means non-equilibrium structure",
+            "type": "string"
+        },
+        "matType": {
+            "description": "Material type. Allowed values 0,1, 2 or 3 - crystal/amorphous/polymer/molecule/. Eg: 0 means crystalline and 3 means a molecule",
+            "type": "string"
+        },
+        "vatom":{
+            "description": "Averaged volume per atom. Units: 1/Ang**3",
+            "type": "number"
+        }
+    }
+}

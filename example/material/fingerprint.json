@@ -1,0 +1,8 @@
+{
+    "primary": {
+        "...": "include(primary/primary.json)"
+    },
+    "secondary": {
+        "...": "include(characteristic.json)"
+    }
+}

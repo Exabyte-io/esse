@@ -14,6 +14,10 @@
         "exabyteId": {
             "description": "Corresponding Materials Bank identity",
             "type": "string"
+        },
+        "fingerprint": {
+            "description": "Material fingerprint with primary/secondary and tertiary descriptors",
+            "$ref": "../material/fingerprint.json"
         }
     },
     "required": [

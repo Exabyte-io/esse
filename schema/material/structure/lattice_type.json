@@ -1,0 +1,29 @@
+{
+    "$schema": "http://json-schema.org/draft-04/schema#",
+    "title": "lattice type schema",
+    "properties": {
+        "type": {
+            "description": "Bravais lattice type in short notation",
+            "type": "string",
+            "enum": [
+                "CUB",
+                "BCC",
+                "FCC",
+                "TET",
+                "MCL",
+                "ORC",
+                "ORCC",
+                "ORCF",
+                "ORCI",
+                "HEX",
+                "BCT",
+                "TRI",
+                "MCLC",
+                "RHL"
+            ]
+        }
+    },
+    "required": [
+        "type"
+    ]
+}

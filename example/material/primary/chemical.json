@@ -1,0 +1,23 @@
+{
+    "electronAffinity":[
+        [
+            1.39
+        ]
+    ],
+    "ionizationPotential":[
+        [
+            8.15
+        ]
+    ],
+    "coordNumber":[
+        [
+            0
+        ]
+    ],
+    "localEnv":[
+        [
+            5
+        ]
+
+    ]
+}

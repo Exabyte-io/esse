@@ -4,29 +4,12 @@
     "allOf": [
         {
             "$ref": "file:../../primitive/3d_lattice.json"
+        },
+        {
+            "$ref": "file:lattice_type.json"
         }
     ],
     "properties": {
-        "type": {
-            "description": "Bravais lattice type in short notation",
-            "type": "string",
-            "enum": [
-                "CUB",
-                "BCC",
-                "FCC",
-                "TET",
-                "MCL",
-                "ORC",
-                "ORCC",
-                "ORCF",
-                "ORCI",
-                "HEX",
-                "BCT",
-                "TRI",
-                "MCLC",
-                "RHL"
-            ]
-        },
         "units": {
             "type": "object",
             "properties": {
@@ -46,8 +29,5 @@
                 }
             }
         }
-    },
-    "required": [
-        "type"
-    ]
+    }
 }

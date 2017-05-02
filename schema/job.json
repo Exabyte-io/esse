@@ -73,9 +73,12 @@
             "description": "Subset of the full information about the project that this job belongs to. Included for quick access in search.",
             "$ref": "file:job/_project.json"
         },
-        "_material": {
+        "_materials": {
             "description": "Subset of the full information about the materials used inside this job.",
-            "$ref": "file:job/_material.json"
+            "type": "array",
+            "items":{
+                "$ref": "file:job/_material.json"
+            }
         },
         "version": {
             "description": "Job's schema version. Used to distinct between different schemas.",
