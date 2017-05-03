@@ -20,6 +20,10 @@
             "items": {
                 "$ref": "file:workflow/unit.json"
             }
+        },
+        "compute": {
+            "description": "Workflows's specific computational parameters. Overrides computeArgs object inside the Job entity.",
+            "$ref": "file:../../../compute.json"
         }
     },
     "required": [
