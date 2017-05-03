@@ -23,7 +23,7 @@
         },
         "compute": {
             "description": "Workflows's specific computational parameters. Overrides computeArgs object inside the Job entity.",
-            "$ref": "file:../../../compute.json"
+            "$ref": "file:../../compute.json"
         }
     },
     "required": [
