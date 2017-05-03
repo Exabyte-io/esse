@@ -1,7 +1,7 @@
 {
-    "type": "CUB",
-    "representation": "0",
-    "equilibrium": "0",
-    "matType": "0",
-    "vatom": 0.15
+    "latticeType": "CUB",
+    "representation": "primitive",
+    "equilibrium": "Yes",
+    "materialType": "crystal",
+    "volPerAtom": 0.15
 }

@@ -2,9 +2,6 @@
     "stoichiometric":{
         "...": "include(stoichiometric.json)"
     },
-    "physical": {
-        "...": "include(physical.json)"
-    },
     "structural": {
         "...": "include(structural.json)"
     },

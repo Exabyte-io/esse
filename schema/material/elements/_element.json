@@ -1,0 +1,84 @@
+{
+    "$schema": "http://json-schema.org/draft-04/schema#",
+    "title": "elemental properties schema",
+    "properties": {
+        "symbol": {
+            "description": "element symbol",
+            "type": "string"
+        },
+        "atomicNumber": {
+            "type": "number"
+        },
+        "atomicWeight": {
+            "description": "atomic mass in a.u",
+            "type": "number"
+        },
+        "density": {
+            "description": "density of elemental crystal. Units: g/cm3",
+            "type": "number"
+        },
+        "meltingPoint": {
+            "description": "melting point of elemental crystal. Units: K",
+            "type": "number"
+        },
+        "boilingPoint": {
+            "description": "boiling point of elemental crystal. Units: K",
+            "type": "number"
+        },
+        "atomicRadius": {
+            "description": "atomic radius. Units: pm",
+            "type": "number"
+        },
+        "covalentRadius": {
+            "description": "calculated atomic radius in covalently bonded crystal environments. Units: pm",
+            "type": "number"
+        },
+        "ionicRadius": {
+            "description": "measured ionic radius. Units: pm",
+            "type": "number"
+        },
+        "atomicVolume": {
+            "description": "normalized volume per atom in elemental crystal. Units: cm**3/mol",
+            "type": "number"
+        },
+        "specificHeat": {
+            "description": "specific heat at constant volume (Cv). Units: J/g/mol",
+            "type": "number"
+        },
+        "fusionHeat": {
+            "description": "Heat of Fusion. Units: kJ/mol",
+            "type": "number"
+        },
+        "evaporationHeat": {
+            "description": "Heat of Evaporation or Sublimation. Units: kJ/mol",
+            "type": "number"
+        },
+        "thermalConductivity": {
+            "description": "Thermal conductivity. Units: W/m/K at 25degC",
+            "type": "number"
+        },
+        "paulingNegativity": {
+            "description": "Pauling's electronegativity",
+            "type": "number"
+        },
+        "firstIonizationPotential": {
+            "description": "Ionization energy from 0 to +1 oxidation state. Units: kJ/mol",
+            "type": "number"
+        },
+        "oxidationStates": {
+            "description": "List of oxidation states",
+            "type": "string"
+        },
+        "electronicConfiguration": {
+            "type": "string"
+        },
+        "latticeStructure": {
+            "description": "bravais lattice type of elemental crystal",
+            "type": "string"
+        },
+        "latticeConstant": {
+            "description": "lattice constant of elemental crystal",
+            "type": "number"
+        }
+    }
+}

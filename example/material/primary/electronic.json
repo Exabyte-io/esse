@@ -1,10 +1,10 @@
 {
-    "spin":[
+    "elementSpinStates":[
         [
             0
         ]
     ],
-    "valOrbOcc":[
+    "valenceOrbitalOccupancy":[
         [
             0.5,
             0.5,
