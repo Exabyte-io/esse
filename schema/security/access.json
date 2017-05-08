@@ -2,8 +2,39 @@
     "$schema": "http://json-schema.org/draft-04/schema#",
     "title": "access schema",
     "description": "what accounts can access this entity with what actions; lower type always has preference",
-    "type": "array",
-    "items": {
-        "$ref": "file:_access.json"
-    }
+    "anyOf": [
+        {
+            "properties": {
+                "user": {
+                    "description": "Access information for this entity type",
+                    "type": "array",
+                    "items": {
+                        "$ref": "file:_access.json"
+                    }
+                }
+            }
+        },
+        {
+            "properties": {
+                "organization": {
+                    "description": "Access information for this entity type",
+                    "type": "array",
+                    "items": {
+                        "$ref": "file:_access.json"
+                    }
+                }
+            }
+        },
+        {
+            "properties": {
+                "team": {
+                    "description": "Access information for this entity type",
+                    "type": "array",
+                    "items": {
+                        "$ref": "file:_access.json"
+                    }
+                }
+            }
+        }
+    ]
 }
