@@ -1,9 +1,6 @@
 {
     "status": "pre-submission",
     "mode": "normal",
-    "_project": {
-        "...": "include(job/_project.json)"
-    },
     "_materials": [
         {
             "...": "include(job/_material.json)"
@@ -26,5 +23,8 @@
     "creator": {
         "_id": "HtxACY2wX4b2hS8Rv",
         "name": "demo"
+    },
+    "_project": {
+        "...": "include(job/_project.json)"
     }
 }
