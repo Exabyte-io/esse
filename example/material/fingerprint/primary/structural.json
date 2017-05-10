@@ -1,7 +1,7 @@
 {
-    "latticeType": "CUB",
+    "type": "CUB",
     "representation": "primitive",
     "equilibrium": "Yes",
     "materialType": "crystal",
-    "volPerAtom": 0.15
+    "averageAtomVolume": 0.15
 }

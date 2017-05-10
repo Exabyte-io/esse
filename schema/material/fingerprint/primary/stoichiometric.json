@@ -2,9 +2,9 @@
     "$schema": "http://json-schema.org/draft-04/schema#",
     "title": "stoichiometric descriptors schema",
     "properties": {
-        "pnorm": {
+        "pNorm": {
             "description": "array of values calculated using L-p norm upto p-dimensions",
-            "$ref": "file:../../primitive/1d_data_series.json"
+            "type": "object"
         }
     }
 }

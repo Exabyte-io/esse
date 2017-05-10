@@ -1,5 +1,5 @@
 {
-    "latticeType": "CUB",
+    "type": "CUB",
     "name": "lattice",
     "a": 5.00,
     "b": 5.00,

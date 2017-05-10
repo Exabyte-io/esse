@@ -1,0 +1,17 @@
+{
+    "stoichiometric": {
+        "...": "include(primary/stoichiometric.json)"
+    },
+    "structural": {
+        "...": "include(primary/structural.json)"
+    },
+    "electronic": {
+        "...": "include(primary/electronic.json)"
+    },
+    "chemical": {
+        "...": "include(primary/chemical.json)"
+    },
+    "elemental": {
+        "...": "include(../elemental/elements.json)"
+    }
+}

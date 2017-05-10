@@ -1,0 +1,18 @@
+{
+    "$schema": "http://json-schema.org/draft-04/schema#",
+    "title": "electronic descriptors schema",
+    "properties": {
+        "elementSpinStates": {
+            "description": "Spin state of each element. Spin state depends on oxidation state and electronic configuration. ",
+            "$ref": "file:../../../primitive/1d_data_series.json"
+        },
+        "valenceOrbitalOccupancy": {
+            "description": "valence orbital occupation - contribution from s, p, d, and f to valence - depends on electronic configuration. Ref:https://www.nature.com/articles/npjcompumats201628#s1",
+            "type": "array",
+            "items": {
+                "description": "array of s,p,d,f contributions for individual element ",
+                "ref": "file:../../../primitive/1d_data_series.json"
+            }
+        }
+    }
+}

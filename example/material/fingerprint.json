@@ -1,6 +1,6 @@
 {
     "primary": {
-        "...": "include(primary/primary.json)"
+        "...": "include(fingerprint/primary.json)"
     },
     "secondary": {
         "...": "include(characteristic.json)"

@@ -1,0 +1,92 @@
+{
+    "$schema": "http://json-schema.org/draft-04/schema#",
+    "title": "elemental properties schema",
+    "properties": {
+        "symbol": {
+            "description": "element symbol",
+            "type": "string"
+        },
+        "atomicNumber": {
+            "type": "string"
+        },
+        "atomicWeight": {
+            "description": "atomic mass in a.u",
+            "type": "number"
+        },
+        "electronicConfiguration": {
+            "type": "string"
+        },
+        "oxidationStates": {
+            "description": "List of oxidation states",
+            "type": "string"
+        },
+        "atomicRadius": {
+            "description": "atomic radius. Units: pm",
+            "type": "string"
+        },
+        "covalentRadius": {
+            "description": "calculated atomic radius in covalently bonded crystal environments. Units: pm",
+            "type": "string"
+        },
+        "ionicRadius": {
+            "description": "measured ionic radius. Units: pm",
+            "type": "string"
+        },
+        "paulingNegativity": {
+            "description": "Pauling's electronegativity",
+            "type": "string"
+        },
+        "firstIonizationPotential": {
+            "description": "Ionization energy from 0 to +1 oxidation state. Units: kJ/mol",
+            "type": "string"
+        },
+        "latticeStructure": {
+            "description": "bravais lattice type of elemental crystal",
+            "type": "string"
+        },
+        "latticeConstant": {
+            "description": "lattice constant of elemental crystal",
+            "type": "string"
+        },
+        "density": {
+            "description": "density of elemental crystal. Units: g/cm3",
+            "type": "string"
+        },
+        "meltingPoint": {
+            "description": "melting point of elemental crystal. Units: K",
+            "type": "string"
+        },
+        "boilingPoint": {
+            "description": "boiling point of elemental crystal. Units: K",
+            "type": "string"
+        },
+        "atomicVolume": {
+            "description": "normalized volume per atom in elemental crystal. Units: cm**3/mol",
+            "type": "string"
+        },
+        "specificHeat": {
+            "description": "specific heat at constant volume (Cv). Units: J/g/mol",
+            "type": "string"
+        },
+        "fusionHeat": {
+            "description": "Heat of Fusion. Units: kJ/mol",
+            "type": "string"
+        },
+        "evaporationHeat": {
+            "description": "Heat of Evaporation or Sublimation. Units: kJ/mol",
+            "type": "string"
+        },
+        "thermalConductivity": {
+            "description": "Thermal conductivity. Units: W/m/K at 25degC",
+            "type": "string"
+        }
+    },
+    "required": [
+        "symbol",
+        "atomicNumber",
+        "atomicWeight",
+        "electronicConfiguration",
+        "oxidationStates",
+        "atomicRadius"
+    ]
+}

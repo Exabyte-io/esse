@@ -5,30 +5,30 @@
     "properties": {
         "stoichiometric": {
             "description": "composition descriptors",
-            "$ref": "file:stoichiometric.json"
+            "$ref": "file:primary/stoichiometric.json"
         },
         "structural": {
             "description": "structural descriptors",
-            "$ref": "file:structural.json"
-        },
-        "physical": {
-            "description": "physical descriptors",
-            "$ref": "file:physical.json"
+            "$ref": "file:primary/structural.json"
         },
         "electronic": {
             "description": "electronic descriptors",
-            "$ref": "file:electronic.json"
+            "$ref": "file:primary/electronic.json"
         },
         "chemical": {
             "description": "chemical descriptors",
-            "$ref": "file:chemical.json"
+            "$ref": "file:primary/chemical.json"
+        },
+        "elemental": {
+            "description": "elemental descriptors",
+            "$ref": "file:../elemental/elements.json"
         }
     },
     "required": [
         "stoichiometric",
         "structural",
-        "physical",
         "electronic",
-        "chemical"
+        "chemical",
+        "elemental"
     ]
 }

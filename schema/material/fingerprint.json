@@ -5,7 +5,7 @@
     "properties": {
         "primary": {
             "description": "descriptors related to structure, stoichiometry and physical reference data of materials. Calculated on-the-fly ",
-            "$ref": "file:primary/primary.json"
+            "$ref": "file:fingerprint/primary.json"
         },
         "secondary": {
             "description": "descriptors related to characteristics from simulations and/or experiments",

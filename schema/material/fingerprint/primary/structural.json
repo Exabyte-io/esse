@@ -1,0 +1,42 @@
+{
+    "$schema": "http://json-schema.org/draft-04/schema#",
+    "title": "structural descriptors schema",
+    "allOf": [
+        {
+            "$ref": "file:../../structure/lattice_type.json"
+        }
+    ],
+    "properties": {
+        "representation": {
+            "description": "structure representation.",
+            "type": "string",
+            "enum": [
+                "primitive",
+                "conventional",
+                "supercell"
+            ]
+        },
+        "equilibrium": {
+            "description": "Identifies a equilibrium structure.",
+            "type": "string",
+            "enum": [
+                "Yes",
+                "No"
+            ]
+        },
+        "materialType": {
+            "description": "Material type.",
+            "type": "string",
+            "enum": [
+                "crystal",
+                "amorphous",
+                "polymer",
+                "molecule"
+            ]
+        },
+        "averageAtomVolume": {
+            "description": "Averaged volume per atom. Units: 1/Ang**3",
+            "type": "number"
+        }
+    }
+}
