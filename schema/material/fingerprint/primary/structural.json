@@ -1,11 +1,6 @@
 {
     "$schema": "http://json-schema.org/draft-04/schema#",
     "title": "structural descriptors schema",
-    "allOf": [
-        {
-            "$ref": "file:../../structure/lattice_type.json"
-        }
-    ],
     "properties": {
         "representation": {
             "description": "structure representation.",

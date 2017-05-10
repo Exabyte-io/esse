@@ -1,12 +1,8 @@
 {
     "coordinationNumber": [
-        [
-            0
-        ]
+        0
     ],
     "localEnvironment": [
-        [
-            5
-        ]
+        "X"
     ]
 }

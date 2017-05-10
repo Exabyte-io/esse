@@ -1,0 +1,19 @@
+{
+    "$schema": "http://json-schema.org/draft-04/schema#",
+    "title": "valence orbital occupancy electronic descriptor schema",
+    "description": "s,p,d,f orbital contributions to valence for individual element",
+    "properties": {
+        "s":{
+            "type" : "number"
+        },
+        "p": {
+            "type": "number"
+        },
+        "d": {
+            "type": "number"
+        },
+        "f": {
+            "type": "number"
+        }
+    }
+}

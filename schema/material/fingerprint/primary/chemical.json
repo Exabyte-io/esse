@@ -4,11 +4,24 @@
     "properties": {
         "coordinationNumber": {
             "description": "coordination numbers of all elements",
-            "$ref": "file:../../../primitive/1d_data_series.json"
+            "items": {
+                "type": "number"
+            }
         },
         "localEnvironment": {
-            "description": "Represents the atom type each element is bonded to in the list [H, O, S, F, Cl, X]. X means an element is either non-bonded or bonded to any atom other than the atoms in the list",
-            "$ref": "file:../../../primitive/1d_data_series.json"
+            "description": "Represents the atom type each element is bonded to. X means an element is either non-bonded or bonded to any atom other than the atoms in the list",
+            "type": "array",
+            "items": {
+                "type" : "string",
+                "enum": [
+                    "H",
+                    "O",
+                    "S",
+                    "F",
+                    "Cl",
+                    "X"
+                ]
+            }
         }
     }
 }

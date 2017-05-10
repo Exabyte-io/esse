@@ -76,7 +76,7 @@
         "_materials": {
             "description": "Subset of the full information about the materials used inside this job.",
             "type": "array",
-            "items":{
+            "items": {
                 "$ref": "file:job/_material.json"
             }
         },

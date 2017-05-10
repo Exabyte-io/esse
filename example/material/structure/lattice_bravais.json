@@ -1,5 +1,5 @@
 {
-    "...": "include(lattice_type.json)",
+    "type": "CUB",
     "name": "lattice_bravais",
     "a": 5.14,
     "b": 5.14,
