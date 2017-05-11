@@ -181,6 +181,7 @@ describe('example', function () {
                 const validator = ajv.getSchema(schema.id);
                 const valid = validator(schema.example);
                 if (!valid) {
+                    console.log(JSON.stringify(schema.example))
                     console.log(prettyjson.render(validator.errors));
                 }
                 chai.expect(valid).to.be.ok;

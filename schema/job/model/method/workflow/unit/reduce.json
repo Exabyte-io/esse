@@ -1,24 +1,24 @@
 {
     "$schema": "http://json-schema.org/draft-04/schema#",
-    "title": "map unit schema",
+    "title": "reduce unit schema",
     "type": "object",
     "properties": {
-        "subworkflow": {
-            "description": "Name of subworkflow to run inside map",
+        "mapFlowchartId": {
+            "description": "corresponding map unit flowchart ID",
             "type": "string"
         },
         "input": {
-            "description": "Input information for map.",
+            "description": "input information for reduce unit",
             "type": "array",
             "items": {
                 "type": "object",
                 "properties": {
-                    "target": {
-                        "description": "Name of the target variable to substitute using the values below. e.g. K_POINTS",
+                    "operation": {
+                        "description": "reduce operation, e.g. aggregate",
                         "type": "string"
                     },
-                    "values": {
-                        "description": "Sequence of values for the target Jinja variable.",
+                    "arguments": {
+                        "description": "arguments which are passed to reduce operation function",
                         "type": "array",
                         "items": {
                             "type": "string"
@@ -26,14 +26,14 @@
                     }
                 },
                 "required": [
-                    "target",
-                    "values"
+                    "operation",
+                    "arguments"
                 ]
             }
         }
     },
     "required": [
-        "input",
-        "subworkflow"
+        "mapFlowchartId",
+        "input"
     ]
 }

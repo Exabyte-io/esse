@@ -1,0 +1,34 @@
+{
+    "$schema": "http://json-schema.org/draft-04/schema#",
+    "title": "info for characteristic obtained by exabyte calculation",
+    "properties": {
+        "title": {
+            "description": "Human-readable title of the job",
+            "type": "string",
+            "maxLength": 300
+        },
+        "_id": {
+            "description": "job identifier",
+            "type": "string"
+        },
+        "_project": {
+            "description": "subset of the full information about the project that this job belongs to. Included for quick access in search.",
+            "$ref": "file:../../../job/_project.json"
+        },
+        "owner": {
+            "description": "summary about user/company who owns this job.",
+            "$ref": "file:../../../security/_owner.json"
+        },
+        "model": {
+            "description": "subset of the full model used for calculation",
+            "$ref": "file:../_model.json"
+        }
+    },
+    "required": [
+        "title",
+        "_id",
+        "_project",
+        "owner",
+        "model"
+    ]
+}

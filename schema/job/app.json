@@ -33,6 +33,12 @@
         },
         {
             "$ref": "file:software/ml.json"
+	},
+	{
+            "$ref": "file:software/shell.json"
+        },
+        {
+            "$ref": "file:software/python.json"
         }
     ],
     "required": [
