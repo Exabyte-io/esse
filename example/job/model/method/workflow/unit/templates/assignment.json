@@ -1,0 +1,16 @@
+{
+    "type": "assignment",
+    "name": "assignment",
+    "head": true,
+    "status": "idle",
+    "flowchartId": "init_VAR",
+    "assignment": {
+        "name": "VAR",
+        "value": "1e-5"
+    },
+    "results": [],
+    "preProcessors": [],
+    "postProcessors": [],
+    "monitors": [],
+    "next": "init_VAR_1"
+}

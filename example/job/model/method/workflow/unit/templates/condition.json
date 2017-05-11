@@ -1,0 +1,31 @@
+{
+    "type": "condition",
+    "name": "condition",
+    "head": false,
+    "status": "idle",
+    "flowchartId": "check_convergence",
+    "condition": {
+        "input": [
+            {
+                "scope": "global",
+                "name": "E_prev"
+            },
+            {
+                "scope": "run_scf_calculation",
+                "name": "E"
+            },
+            {
+                "scope": "global",
+                "name": "DELTA"
+            }
+        ],
+        "statement": "abs((E_prev - E) / E) < DELTA",
+        "then": "convergence_is_reached",
+        "else": "convergence_not_reached",
+        "maxOccurences": 100
+    },
+    "results": [],
+    "preProcessors": [],
+    "postProcessors": [],
+    "monitors": []
+}

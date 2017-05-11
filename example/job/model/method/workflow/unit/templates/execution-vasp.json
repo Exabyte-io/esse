@@ -1,0 +1,51 @@
+{
+    "type": "execution",
+    "name": "vasp",
+    "status": "idle",
+    "head": true,
+    "flowchartId": "vasp_chgcar",
+    "execution": {
+        "app": {
+            "name": "vasp",
+            "version": "5.3.5",
+            "summary": "VASP",
+            "exec": "vasp"
+        },
+        "input": [
+            {
+                "name": "INCAR",
+                "content": "ISMEAR = 0\nSIGMA  = 0.05"
+            },
+            {
+                "name": "KPOINTS",
+                "content": "Automatic mesh\n0\nGamma\n2 2 2\n0 0 0"
+            },
+            {
+                "name": "POSCAR",
+                "content": "Silicon FCC\n1.0\n   3.867000000\t   0.000000000\t   0.000000000\n   1.933500000\t   3.348920236\t   0.000000000\n   1.933500000\t   1.116306745\t   3.157392278\nSi\n2\ndirect\n   0.000000000    0.000000000    0.000000000 Si\n   0.250000000    0.250000000    0.250000000 Si"
+            }
+        ]
+    },
+    "monitors": [
+        {
+            "name": "standard_output"
+        },
+        {
+            "name": "electronic"
+        }
+    ],
+    "results": [
+        {
+            "name": "total_energy"
+        },
+        {
+            "name": "fermi_energy"
+        },
+        {
+            "name": "pressure"
+        }
+    ],
+    "postProcessors": [],
+    "preProcessors": [],
+    "next": "vasp_nscf"
+}
