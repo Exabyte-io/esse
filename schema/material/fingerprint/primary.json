@@ -3,32 +3,96 @@
     "title": "primary descriptors schema",
     "description": "collection of stoichiometric, structural, physical, electronic and chemical",
     "properties": {
-        "stoichiometric": {
-            "description": "composition descriptors",
-            "$ref": "file:primary/stoichiometric.json"
+        "localEnvironment": {
+            "description": "atom type each element is bonded to",
+            "$ref": "file:primary/local_environment.json"
         },
-        "structural": {
-            "description": "structural descriptors",
-            "$ref": "file:primary/structural.json"
+        "elementSpinState": {
+            "description": "Spin state of each element. Spin state depends on oxidation state and electronic configuration. ",
+            "$ref": "file:primary/element_spin_state.json"
         },
-        "electronic": {
-            "description": "electronic descriptors",
-            "$ref": "file:primary/electronic.json"
+        "valenceOrbitalOccupancy": {
+            "description": "contribution from s, p, d, and f of unique elements to total valence electrons in the material ",
+            "$ref": "file:primary/valence_orbital_occupancy.json"
         },
-        "chemical": {
-            "description": "chemical descriptors",
-            "$ref": "file:primary/chemical.json"
+        "pNorm": {
+            "description": "values calculated using L-p norm upto p-dimensions",
+            "$ref": "file:primary/p_norm.json"
         },
-        "elemental": {
-            "description": "elemental descriptors",
-            "$ref": "file:../elemental/elements.json"
+        "elementalComposition": {
+            "description": "elemental composition of the compound",
+            "$ref": "file:primary/elemental_composition.json"
+        },
+        "representation": {
+            "description": "structure representation.",
+            "allOf": [
+                {
+                    "$ref": "file:primary/_primary.json"
+                }
+            ],
+            "properties": {
+                "value": {
+                    "type": "string",
+                    "enum": [
+                        "primitive",
+                        "conventional",
+                        "supercell"
+                    ]
+                }
+            }
+        },
+        "equilibrium": {
+            "description": "Identifies a equilibrium structure.",
+            "allOf": [
+                {
+                    "$ref": "file:primary/_primary.json"
+                }
+            ],
+            "properties": {
+                "value": {
+                    "type": "string",
+                    "enum": [
+                        "Yes",
+                        "No"
+                    ]
+                }
+            }
+        },
+        "materialType": {
+            "description": "Material type.",
+            "allOf": [
+                {
+                    "$ref": "file:primary/_primary.json"
+                }
+            ],
+            "properties": {
+                "value": {
+                    "type": "string",
+                    "enum": [
+                        "crystal",
+                        "amorphous",
+                        "polymer",
+                        "molecule"
+                    ]
+                }
+            }
+        },
+        "averageAtomVolume": {
+            "allOf": [
+                {
+                    "$ref": "file:primary/_primary.json"
+                }
+            ],
+            "description": "Averaged volume per atom.",
+            "properties": {
+                "value": {
+                    "type": "number"
+                },
+                "units": {
+                    "description": "Example: 1/Ang^3",
+                    "type": "string"
+                }
+            }
         }
-    },
-    "required": [
-        "stoichiometric",
-        "structural",
-        "electronic",
-        "chemical",
-        "elemental"
-    ]
+    }
 }

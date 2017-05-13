@@ -1,0 +1,162 @@
+{
+    "$schema": "http://json-schema.org/draft-04/schema#",
+    "title": "Unique elements and elemental properties",
+    "description": "element symbols by string, unitless",
+    "properties": {
+        "element": {
+            "description": "element symbols (eg Si, Ge)",
+            "type": "string"
+        },
+        "valenceElectrons": {
+            "description": "number of valence electrons",
+            "properties": {
+                "value": {
+                    "type": "integer"
+                },
+                "name": {
+                    "enum": [
+                        "valence_electrons"
+                    ]
+                }
+            }
+        },
+        "radicals": {
+            "description": "number of unpaired electrons",
+            "properties": {
+                "value": {
+                    "type": "integer"
+                },
+                "name": {
+                    "enum": [
+                        "radicals"
+                    ]
+                }
+            }
+        },
+        "atomicRadius": {
+            "description": "atomic radius. https://en.wikipedia.org/wiki/Atomic_radius#cite_note-slater64-8",
+            "properties": {
+                "name": {
+                    "enum": [
+                        "atomic_radius"
+                    ]
+                },
+                "value": {
+                    "description": "atomic radius",
+                    "type": "number"
+                },
+                "units": {
+                    "enum": [
+                        "pm",
+                        "nm",
+                        "a.u."
+                    ]
+                }
+            }
+        },
+        "electronicConfiguration": {
+            "description": "electronic configuration. [Ne]3s1",
+            "properties": {
+                "value": {
+                    "type": "string"
+                },
+                "name": {
+                    "enum": [
+                        "electronic_configuration"
+                    ]
+                }
+            }
+        },
+        "atomicMass": {
+            "description": "atomic mass in a.u",
+            "properties": {
+                "name": {
+                    "enum": [
+                        "atomic_mass"
+                    ]
+                },
+                "value": {
+                    "description": "atomic masses",
+                    "type": "number"
+                },
+                "units": {
+                    "enum": [
+                        "a.u."
+                    ]
+                }
+            }
+        },
+        "paulingNegativity": {
+            "description": "electro negativity of an atom. Unitless. https://www.nist.gov/pml/productsservices/physical-reference-data",
+            "properties": {
+                "value": {
+                    "type": "number"
+                },
+                "name": {
+                    "enum": [
+                        "electronegativity"
+                    ]
+                },
+                "units": {
+                    "enum": [
+                        "pauling"
+                    ]
+                }
+            }
+        },
+        "firstIonizationPotential": {
+            "description": "Ionization energy from 0 to +1 oxidation state",
+            "properties": {
+                "name": {
+                    "enum": [
+                        "first_ionization_potential"
+                    ]
+                },
+                "value": {
+                    "type": "number"
+                },
+                "units": {
+                    "enum": [
+                        "eV"
+                    ]
+                }
+            }
+        },
+        "density": {
+            "description": "density of elemental crystal",
+            "properties": {
+                "name": {
+                    "enum": [
+                        "density"
+                    ]
+                },
+                "value": {
+                    "type": "number"
+                },
+                "units": {
+                    "enum": [
+                        "g/cm^3"
+                    ]
+                }
+            }
+        },
+        "cohesiveEnergy": {
+            "description": "cohesive energy of elemental crystal per atom",
+            "properties": {
+                "name": {
+                    "enum": [
+                        "cohesive_energy"
+                    ]
+                },
+                "value": {
+                    "type": "number"
+                },
+                "units": {
+                    "enum": [
+                        "eV/atom"
+                    ]
+                }
+            }
+        }
+    }
+}

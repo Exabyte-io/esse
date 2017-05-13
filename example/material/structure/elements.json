@@ -1,0 +1,45 @@
+{
+    "element": "Si",
+    "valenceElectrons": {
+        "value": 6,
+        "name": "valence_electrons"
+    },
+    "radicals": {
+        "value": 2,
+        "name": "radicals"
+    },
+    "atomicRadius": {
+        "name": "atomic_radius",
+        "value": 1.11,
+        "units": "nm"
+    },
+    "electronicConfiguration": {
+        "name": "electronic_configuration",
+        "value": "[Ne]3s23p2"
+    },
+    "atomicMass": {
+        "name": "atomic_mass",
+        "value": 28.0855,
+        "units": "a.u."
+    },
+    "paulingNegativity": {
+        "name": "electronegativity",
+        "value": 1.90,
+        "units": "pauling"
+    },
+    "firstIonizationPotential": {
+        "name": "first_ionization_potential",
+        "value": 8.1517,
+        "units": "eV"
+    },
+    "density": {
+        "name": "density",
+        "value": 2.33,
+        "units": "g/cm^3"
+    },
+    "cohesiveEnergy": {
+        "name": "cohesive_energy",
+        "value": 4.63,
+        "units": "eV/atom"
+    }
+}

@@ -1,0 +1,23 @@
+{
+    "type": "compound-specific",
+    "subtype": "electronic",
+    "variableType": "numeric",
+    "orbitals": [
+        {
+            "name": "s",
+            "value": 0.325
+        },
+        {
+            "name": "p",
+            "value": 0.625
+        },
+        {
+            "name": "d",
+            "value": 0.0
+        },
+        {
+            "name": "f",
+            "value": 0.0
+        }
+    ]
+}

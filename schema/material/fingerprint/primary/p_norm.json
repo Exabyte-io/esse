@@ -1,0 +1,19 @@
+{
+    "$schema": "http://json-schema.org/draft-04/schema#",
+    "title": "stoichiometric descriptor - pNorm schema",
+    "description": "values calculated using L-p norm upto p-dimensions",
+    "allOf": [
+        {
+            "$ref": "file:_primary.json"
+        }
+    ],
+    "properties": {
+        "dimensions": {
+            "description": "dimensional spaces in which p-norm is calculated",
+            "type": "array",
+            "items": {
+                "$ref": "file:_norm.json"
+            }
+        }
+    }
+}

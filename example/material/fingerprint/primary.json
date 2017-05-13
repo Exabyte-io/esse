@@ -1,17 +1,36 @@
 {
-    "stoichiometric": {
-        "...": "include(primary/stoichiometric.json)"
+    "localEnvironment": {
+        "...": "include(primary/local_environment.json)"
     },
-    "structural": {
-        "...": "include(primary/structural.json)"
+    "elementSpinState": {
+        "...": "include(primary/element_spin_state.json)"
     },
-    "electronic": {
-        "...": "include(primary/electronic.json)"
+    "valenceOrbitalOccupancy": {
+        "...": "include(primary/valence_orbital_occupancy.json)"
     },
-    "chemical": {
-        "...": "include(primary/chemical.json)"
+    "pNorm": {
+        "...": "include(primary/p_norm.json)"
     },
-    "elemental": {
-        "...": "include(../elemental/elements.json)"
+    "elementalComposition": {
+        "...": "include(primary/elemental_composition.json)"
+    },
+    "representation": {
+        "...": "include(primary/_primary.json)",
+        "value": "supercell"
+    },
+    "equilibrium": {
+        "...": "include(primary/_primary.json)",
+        "value": "No"
+    },
+    "materialType": {
+        "...": "include(primary/_primary.json)",
+        "value": "crystal"
+    },
+    "averageAtomVolume": {
+        "type": "compound-specific",
+        "subtype": "structural",
+        "variableType": "numeric",
+        "value": 0.039,
+        "units": "1/Ang^3"
     }
 }

@@ -1,0 +1,15 @@
+{
+    "type": "element-specific",
+    "subtype": "electronic",
+    "variableType": "nominal",
+    "elements": [
+        {
+            "name": "Si",
+            "value": "high"
+        },
+        {
+            "name": "O",
+            "value": "low"
+        }
+    ]
+}

@@ -19,6 +19,52 @@
         "oxidationState": {
             "description": "oxidation state of the element",
             "type": "integer"
+        },
+        "ionicRadius": {
+            "description": "ionic radius of the element. depends on oxidation state. https://en.wikipedia.org/wiki/Ionic_radius",
+            "properties": {
+                "value": {
+                    "type": "number"
+                },
+                "units": {
+                    "enum": [
+                        "pm",
+                        "nm",
+                        "a.u."
+                    ]
+                }
+            }
+        },
+        "charge": {
+            "description": "difference between total and valence electrons on atom",
+            "properties": {
+                "value": {
+                    "description": "atomic charge",
+                    "type": "number"
+                },
+                "units": {
+                    "enum": [
+                        "electrons"
+                    ]
+                }
+            }
+        },
+        "coordinationNumber": {
+            "description": "number of nearest neighbors",
+            "type": "number"
+        },
+        "forces": {
+            "description": "forces on atoms",
+            "properties": {
+                "value": {
+                    "$ref": "file:../../primitive/point.json"
+                },
+                "units": {
+                    "enum": [
+                        "eV/a.u."
+                    ]
+                }
+            }
         }
     }
 }

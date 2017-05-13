@@ -1,0 +1,19 @@
+{
+    "$schema": "http://json-schema.org/draft-04/schema#",
+    "title": "electronic descriptor - valence orbital occupancy schema",
+    "description": "fraction-weighted average of the number of valance electrons in each orbital divided by total valence electrons",
+    "allOf": [
+        {
+            "$ref": "file:_primary.json"
+        }
+    ],
+    "properties": {
+        "orbitals": {
+            "description": "https://www.nature.com/article-assets/npg/npjcompumats/2016/npjcompumats201628/extref/npjcompumats201628-s1.pdf",
+            "type": "array",
+            "items": {
+                "$ref": "file:_valence.json"
+            }
+        }
+    }
+}

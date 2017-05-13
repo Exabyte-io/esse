@@ -1,10 +1,48 @@
 [
     {
         "id": 1,
-        "value": "Si"
+        "value": "Si",
+        "occurrence": 1.0,
+        "oxidationState": 0,
+        "ionicRadius": {
+            "value": 1.11,
+            "units": "pm"
+        },
+        "charge": {
+            "value": 0.0,
+            "units": "electrons"
+        },
+        "coordinationNumber": 12,
+        "forces": {
+            "value": [
+                -0.00456789,
+                0.001000011,
+                -0.00100001
+            ],
+            "units": "eV/a.u."
+        }
     },
     {
         "id": 2,
-        "value": "Si"
+        "value": "Si",
+        "occurrence": 1.0,
+        "oxidationState": 0,
+        "ionicRadius": {
+            "value": 1.11,
+            "units": "nm"
+        },
+        "charge": {
+            "value": 0.0,
+            "units": "electrons"
+        },
+        "coordinationNumber": 12,
+        "forces": {
+            "value": [
+                -0.00456789,
+                0.001000011,
+                -0.00100001
+            ],
+            "units": "eV/a.u."
+        }
     }
 ]
