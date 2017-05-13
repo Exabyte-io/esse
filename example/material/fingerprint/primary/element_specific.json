@@ -1,0 +1,6 @@
+{
+    "type": "element-specific",
+    "subtype": "nominal",
+    "category": "chemical",
+    "...": "include(_element_data.json)"
+}

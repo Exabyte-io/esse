@@ -1,0 +1,51 @@
+{
+    "$schema": "http://json-schema.org/draft-04/schema#",
+    "title": "compound specific descriptors schema",
+    "description": "applicable for nominal/ordinal/numeric value types",
+    "allOf": [
+        {
+            "$ref": "file:_primary.json"
+        }
+    ],
+    "properties": {
+        "value": {
+            "oneOf": [
+                {
+                    "description": "cell representation",
+                    "type": "string",
+                    "enum": [
+                        "primitive",
+                        "supercell",
+                        "conventional"
+                    ]
+                },
+                {
+                    "description": "material type",
+                    "type": "string",
+                    "enum": [
+                        "crystal",
+                        "polymer",
+                        "molecule",
+                        "amorphous"
+                    ]
+                },
+                {
+                    "description": "Identifies equilibrium structure",
+                    "type": "string",
+                    "enum": [
+                        "Yes",
+                        "No"
+                    ]
+                },
+                {
+                    "description": "average volume per atom",
+                    "type": "number"
+                }
+            ]
+        },
+        "units": {
+            "description": "Example: 1/Ang^3",
+            "type": "string"
+        }
+    }
+}

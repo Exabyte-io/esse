@@ -1,7 +1,7 @@
 {
     "$schema": "http://json-schema.org/draft-04/schema#",
-    "title": "electronic descriptor schema",
-    "description": "spin state of each element",
+    "title": "element specific descriptors schema",
+    "description": "applicable for nominal/ordinal/numeric value types",
     "allOf": [
         {
             "$ref": "file:_primary.json"
@@ -9,10 +9,10 @@
     ],
     "properties": {
         "elements": {
-            "description": "unique elements in a material and corresponding spin states",
+            "description": "elements in a material and corresponding descriptor data",
             "type": "array",
             "items": {
-                "$ref": "file:_spin_states.json"
+                "$ref": "file:_element_data.json"
             }
         }
     }

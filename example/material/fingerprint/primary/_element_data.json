@@ -1,7 +1,4 @@
 {
-    "type": "element-specific",
-    "subtype": "chemical",
-    "variableType": "nominal",
     "elements": [
         {
             "name": "Si",

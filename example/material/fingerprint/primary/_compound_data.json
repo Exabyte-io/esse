@@ -1,8 +1,5 @@
 {
-    "type": "compound-specific",
-    "subtype": "electronic",
-    "variableType": "numeric",
-    "orbitals": [
+    "data": [
         {
             "name": "s",
             "value": 0.325

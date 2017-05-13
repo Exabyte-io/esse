@@ -1,0 +1,6 @@
+{
+    "type": "compound-specific",
+    "subtype": "numeric",
+    "category": "electronic",
+    "...": "include(_compound_data.json)"
+}

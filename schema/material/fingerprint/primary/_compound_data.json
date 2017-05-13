@@ -1,0 +1,29 @@
+{
+    "$schema": "http://json-schema.org/draft-04/schema#",
+    "title": "compound-specific descriptor array elements schema",
+    "description": "for p-norms and valence_orbital occupancy",
+    "properties": {
+        "name": {
+            "oneOf": [
+                {
+                    "description": "p-norms. Upto p99 allowed. Eg: p3",
+                    "type": "string",
+                    "pattern": "p[0-9]{2}"
+                },
+                {
+                    "description": "valence orbital occupancy - https://www.nature.com/article-assets/npg/npjcompumats/2016/npjcompumats201628/extref/npjcompumats201628-s1.pdf",
+                    "type": "string",
+                    "enum": [
+                        "s",
+                        "p",
+                        "d",
+                        "f"
+                    ]
+                }
+            ]
+        },
+        "value": {
+            "type": "number"
+        }
+    }
+}

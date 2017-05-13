@@ -1,35 +1,84 @@
 {
     "localEnvironment": {
-        "...": "include(primary/local_environment.json)"
-    },
-    "elementSpinState": {
-        "...": "include(primary/element_spin_state.json)"
-    },
-    "valenceOrbitalOccupancy": {
-        "...": "include(primary/valence_orbital_occupancy.json)"
-    },
-    "pNorm": {
-        "...": "include(primary/p_norm.json)"
-    },
-    "elementalComposition": {
-        "...": "include(primary/elemental_composition.json)"
+        "...": "include(primary/element_specific.json)"
     },
     "representation": {
-        "...": "include(primary/_primary.json)",
-        "value": "supercell"
+        "description": "structure representation.",
+        "$ref": "file:primary/compound_specific.json"
+    },
+    "valenceOrbitalOccupancy": {
+        "description": "s, p, d, and f orbital contribution to total valence electrons in the material ",
+        "$ref": "file:primary/compound_specific_array.json"
+    },
+    "elementSpinState": {
+        "type": "element-specific",
+        "subtype": "nominal",
+        "category": "electronic",
+        "elements": [
+            {
+                "name": "Si",
+                "value": "high"
+            },
+            {
+                "name": "O",
+                "value": "low"
+            }
+        ]
+    },
+    "pNorm": {
+        "type": "compound-specific",
+        "subtype": "numeric",
+        "category": "stoichiometric",
+        "data": [
+            {
+                "name": "p03",
+                "value": 0.693
+            },
+            {
+                "name": "p05",
+                "value": 0.671
+            },
+            {
+                "name": "p07",
+                "value": 0.667
+            },
+            {
+                "name": "p09",
+                "value": 0.667
+            }
+        ]
+    },
+    "elementalComposition": {
+        "type": "element-specific",
+        "subtype": "numeric",
+        "category": "stoichiometric",
+        "elements": [
+            {
+                "name": "Si",
+                "value": 0.33
+            },
+            {
+                "name": "O",
+                "value": 0.66
+            }
+        ]
     },
     "equilibrium": {
-        "...": "include(primary/_primary.json)",
+        "type": "compound-specific",
+        "subtype": "nominal",
+        "category": "structural",
         "value": "No"
     },
     "materialType": {
-        "...": "include(primary/_primary.json)",
+        "type": "compound-specific",
+        "subtype": "nominal",
+        "category": "structural",
         "value": "crystal"
     },
-    "averageAtomVolume": {
+    "avgAtomVolume": {
         "type": "compound-specific",
-        "subtype": "structural",
-        "variableType": "numeric",
+        "subtype": "numeric",
+        "category": "structural",
         "value": 0.039,
         "units": "1/Ang^3"
     }

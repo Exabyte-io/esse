@@ -1,5 +1,5 @@
 {
     "type": "compound-specific",
-    "subtype": "structural",
-    "variableType": "nominal"
+    "subtype": "nominal",
+    "category": "structural"
 }

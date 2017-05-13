@@ -1,7 +1,7 @@
 {
     "$schema": "http://json-schema.org/draft-04/schema#",
-    "title": "atomic elements",
-    "description": "elements of atoms by ids, string, unitless",
+    "title": "atomic masses",
+    "description": "masses of atoms by ids, scalar, unitless",
     "allOf": [
         {
             "$ref": "file:../../primitive/_array_of_ids.json"
@@ -9,8 +9,8 @@
     ],
     "properties": {
         "value": {
-            "description": "atomic elements (eg Si, Ge)",
-            "type": "string"
+            "description": "atomic masses",
+            "type": "number"
         }
     }
 }

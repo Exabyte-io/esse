@@ -1,0 +1,4 @@
+{
+    "...": "include(_primary.json)",
+    "value": "supercell"
+}

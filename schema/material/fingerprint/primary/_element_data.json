@@ -1,0 +1,40 @@
+{
+    "$schema": "http://json-schema.org/draft-04/schema#",
+    "title": "element-specific descriptors data schema",
+    "description": "element symbol and corresponding values.",
+    "properties": {
+        "name": {
+            "description": "element symbol. Eg: Si",
+            "type": "string"
+        },
+        "value": {
+            "oneOf": [
+                {
+                    "description": "elemental composition",
+                    "type": "number"
+                },
+                {
+                    "description": "element_spin_states. high and low spin states correspond to states with max number of unpaired electrons with same spin and maximum number of paired spins respectively.",
+                    "type": "string",
+                    "enum": [
+                        "high",
+                        "intermediate",
+                        "low"
+                    ]
+                },
+                {
+                    "description": "local environemnt. atom symbol to which element is bonded to. X means non-bonded or bonded to any atom other than the ones in the list",
+                    "type": "string",
+                    "enum": [
+                        "H",
+                        "O",
+                        "S",
+                        "F",
+                        "Cl",
+                        "X"
+                    ]
+                }
+            ]
+        }
+    }
+}
