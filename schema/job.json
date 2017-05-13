@@ -86,7 +86,7 @@
                             "description": "individual units included into this job",
                             "type": "array",
                             "items": {
-                                "description": "individual units units to facilitate the logic (no `execution`)",
+                                "description": "individual units to facilitate the logic (no `execution`)",
                                 "$ref": "file:job/model/method/workflow/unit.json"
                             }
                         }
