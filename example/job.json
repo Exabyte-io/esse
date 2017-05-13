@@ -13,8 +13,14 @@
     "owner": {
         "...": "include(security/owner.json)"
     },
-    "model": {
-        "...": "include(job/model.json)"
+    "workflow": {
+        "name": "my top-level workflow",
+        "subworkflows": [
+            {
+                "...": "include(job/model.json)"
+            }
+        ],
+        "units": []
     },
     "version": "0.2.0",
     "_id": "FPjAaKfuYAL7tiHbm",

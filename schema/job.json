@@ -49,13 +49,13 @@
             "description": "Identifies that job was removed",
             "type": "boolean"
         },
-        "title": {
-            "description": "Human-readable title of the job",
+        "name": {
+            "description": "Human-readable name of the job",
             "type": "string",
             "maxLength": 300
         },
-        "titleSlug": {
-            "description": "Slugified title of the job",
+        "slug": {
+            "description": "Slugified name of the job",
             "type": "string"
         },
         "workDir": {
@@ -66,8 +66,33 @@
             "description": "Job's compute parameters",
             "$ref": "file:job/compute.json"
         },
-        "model": {
-            "$ref": "file:job/model.json"
+        "workflow": {
+            "description": "Arch-workflow for the job",
+            "allOf": [
+                {
+                    "$ref": "file:job/model/method/workflow.json"
+                },
+                {
+                    "properties": {
+                        "subworkflows": {
+                            "description": "individual workflows included into this job",
+                            "type": "array",
+                            "items": {
+                                "description": "individual workflow with a single model",
+                                "$ref": "file:job/model.json"
+                            }
+                        },
+                        "units": {
+                            "description": "individual units included into this job",
+                            "type": "array",
+                            "items": {
+                                "description": "individual units units to facilitate the logic (no `execution`)",
+                                "$ref": "file:job/model/method/workflow/unit.json"
+                            }
+                        }
+                    }
+                }
+            ]
         },
         "_project": {
             "description": "Subset of the full information about the project that this job belongs to. Included for quick access in search.",
@@ -117,7 +142,7 @@
         "titleSlug",
         "version",
         "compute",
-        "model",
+        "workflow",
         "_project",
         "creator",
         "owner"

@@ -7,6 +7,14 @@
             "description": "Human-readable name of the workflow. e.g. Total-energy",
             "type": "string"
         },
+        "properties": {
+            "description": "Array of characteristic properties calculated by this workflow",
+            "type": "array",
+            "items": {
+                "description": "property names, eg. `band_gaps`, `band_structure`",
+                "type": "string"
+            }
+        },
         "subworkflows": {
             "description": "Array of subworkflows",
             "type": "array",
