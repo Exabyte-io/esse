@@ -28,17 +28,16 @@
                 "error"
             ]
         },
-        "head": {
-            "description": "Whether this unit is the first one to be executed.",
-            "type": "boolean"
-        },
         "flowchartId": {
             "description": "Identity of the unit in the workflow. Used to trace the execution flow of the workflow.",
             "type": "string"
         },
-        "next": {
-            "description": "Next unit's flowchartId. If empty, the current unit is the last.",
-            "type": "string"
+        "previous": {
+            "description": "Predecessor unit's flowchartIds.",
+            "type": "array",
+            "items": {
+                "type": "string"
+            }
         },
         "preProcessors": {
             "description": "Array of pre-processors.",
@@ -92,7 +91,6 @@
     "required": [
         "type",
         "name",
-        "head",
         "flowchartId"
     ]
 }
