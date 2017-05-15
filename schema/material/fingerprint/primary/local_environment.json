@@ -4,7 +4,7 @@
     "description": "local environment around each element defined by atom type each element is bonded to",
     "allOf": [
         {
-            "ref": "element_specific.json"
+            "ref": "_element_specific.json"
         }
     ],
     "properties": {

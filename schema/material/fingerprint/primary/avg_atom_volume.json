@@ -4,19 +4,20 @@
     "description": "Total volume divided by number of atoms. Units: 1/Ang**3 ",
     "allOf": [
         {
-            "ref": "compound_specific.json"
+            "ref": "_compound_specific.json"
         }
     ],
     "properties": {
         "name": {
-            "description": "variable name",
             "enum": [
                 "avg_atom_volume"
             ]
         },
         "units": {
-            "description": "Example: 1/Ang^3",
-            "type": "string"
+            "type": "string",
+            "enum": [
+                "1/angstrom^3"
+            ]
         }
     }
 }

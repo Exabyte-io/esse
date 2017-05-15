@@ -4,7 +4,7 @@
     "description": "spin state of each element in the material",
     "allOf": [
         {
-            "ref": "element_specific.json"
+            "ref": "_element_specific.json"
         }
     ],
     "properties": {

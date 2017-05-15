@@ -4,22 +4,18 @@
     "description": "Differentiates structures with similar composition but different characteristics",
     "allOf": [
         {
-            "ref": "compound_specific.json"
+            "ref": "_compound_specific.json"
         }
     ],
     "properties": {
         "name": {
-            "description": "variable name",
             "enum": [
-                "equilibrated"
+                "is_relaxed"
             ]
         },
         "value": {
             "description": "Identifies a equilibrium structure.",
-            "enum": [
-                "yes",
-                "no"
-            ]
+            "type": "boolean"
         }
     }
 }

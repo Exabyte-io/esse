@@ -6,13 +6,16 @@
         "primary": {
             "type": "array",
             "description": "descriptors related to structure, stoichiometry and physical reference data of materials. Calculated on-the-fly ",
-            "items":{
+            "items": {
                 "$ref": "file:fingerprint/primary.json"
             }
         },
         "secondary": {
-            "description": "descriptors related to characteristics from simulations and/or experiments",
-            "$ref": "file:characteristic.json"
+            "type": "array",
+            "description": "characteristic properties",
+            "items": {
+                "$ref": "file:characteristic.json"
+            }
         }
     },
     "required": [

@@ -11,7 +11,8 @@
             "description": "value of the descriptor",
             "type": [
                 "string",
-                "number"
+                "number",
+                "boolean"
             ]
         }
     }

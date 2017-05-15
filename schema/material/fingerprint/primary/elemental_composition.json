@@ -4,7 +4,7 @@
     "description": "composition of each element in the material",
     "allOf": [
         {
-            "ref": "compound_specific_array.json"
+            "ref": "_compound_specific_array.json"
         }
     ],
     "properties": {

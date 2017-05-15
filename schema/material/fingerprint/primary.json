@@ -19,7 +19,7 @@
                 "elemental_composition",
                 "crystal_cell_type",
                 "material_type",
-                "equilibrated",
+                "is_relaxed",
                 "avg_atom_volume"
             ]
         }
@@ -47,7 +47,7 @@
             "$ref": "file:primary/material_type.json"
         },
         {
-            "$ref": "file:primary/equilibrated.json"
+            "$ref": "file:primary/is_relaxed.json"
         },
         {
             "$ref": "file:primary/avg_atom_volume.json"
