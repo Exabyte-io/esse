@@ -1,0 +1,23 @@
+{
+    "$schema": "http://json-schema.org/draft-04/schema#",
+    "title": "Structural descriptor - average volume per atom schema",
+    "description": "Total volume divided by number of atoms. Units: 1/Ang**3 ",
+    "allOf": [
+        {
+            "ref": "_compound_specific.json"
+        }
+    ],
+    "properties": {
+        "name": {
+            "enum": [
+                "avg_atom_volume"
+            ]
+        },
+        "units": {
+            "type": "string",
+            "enum": [
+                "1/angstrom^3"
+            ]
+        }
+    }
+}

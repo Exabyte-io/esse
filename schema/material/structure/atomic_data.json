@@ -17,6 +17,32 @@
                 }
             }
         },
+        "occurrence": {
+            "description": "occurrence of the element for fractional occupancy",
+            "properties": {
+                "value": {
+                    "$ref": "file:atomic_masses.json"
+                },
+                "name": {
+                    "enum": [
+                        "occurrence"
+                    ]
+                }
+            }
+        },
+        "oxidationState": {
+            "description": "oxidation state of the element",
+            "properties": {
+                "value": {
+                    "$ref": "file:atomic_masses.json"
+                },
+                "name": {
+                    "enum": [
+                        "oxidation_state"
+                    ]
+                }
+            }
+        },
         "charges": {
             "description": "difference between total and valence electrons on atom",
             "properties": {
@@ -62,6 +88,111 @@
                 "units": {
                     "enum": [
                         "eV/a.u."
+                    ]
+                }
+            }
+        },
+        "atomicRadius": {
+            "description": "atomic radius. https://en.wikipedia.org/wiki/Atomic_radius#cite_note-slater64-8",
+            "properties": {
+                "value": {
+                    "$ref": "file:atomic_masses.json"
+                },
+                "name": {
+                    "enum": [
+                        "atomic_radius"
+                    ]
+                },
+                "units": {
+                    "enum": [
+                        "pm",
+                        "nm",
+                        "a.u."
+                    ]
+                }
+            }
+        },
+        "electronicConfiguration": {
+            "description": "electronic configuration. [Ne]3s1",
+            "allOf": [
+                {
+                    "$ref": "file:../../primitive/_array_of_ids.json"
+                }
+            ],
+            "properties": {
+                "value": {
+                    "type": "string"
+                },
+                "name": {
+                    "enum": [
+                        "electronic_configuration"
+                    ]
+                }
+            }
+        },
+        "paulingNegativity": {
+            "description": "electro negativity of an atom. Unitless. https://www.nist.gov/pml/productsservices/physical-reference-data",
+            "properties": {
+                "value": {
+                    "$ref": "file:atomic_masses.json"
+                },
+                "name": {
+                    "enum": [
+                        "pauling_negativity"
+                    ]
+                }
+            }
+        },
+        "firstIonizationPotential": {
+            "description": "Ionization energy from 0 to +1 oxidation state",
+            "properties": {
+                "value": {
+                    "$ref": "file:atomic_masses.json"
+                },
+                "name": {
+                    "enum": [
+                        "first_ionization_potential"
+                    ]
+                },
+                "units": {
+                    "enum": [
+                        "eV"
+                    ]
+                }
+            }
+        },
+        "density": {
+            "description": "density of elemental crystal",
+            "properties": {
+                "value": {
+                    "$ref": "file:atomic_masses.json"
+                },
+                "name": {
+                    "enum": [
+                        "density"
+                    ]
+                },
+                "units": {
+                    "enum": [
+                        "g/cm^3"
+                    ]
+                }
+            }
+        },
+        "cohesiveEnergy": {
+            "description": "cohesive energy of elemental crystal",
+            "properties": {
+                "value": {
+                    "$ref": "file:atomic_masses.json"
+                },
+                "name": {
+                    "enum": [
+                        "cohesive energy"
+                    ]
+                },
+                "units": {
+                    "enum": [
+                        "eV"
                     ]
                 }
             }

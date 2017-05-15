@@ -1,0 +1,29 @@
+{
+    "$schema": "http://json-schema.org/draft-04/schema#",
+    "title": "element spin state schema schema",
+    "description": "spin state of each element in the material",
+    "allOf": [
+        {
+            "ref": "_element_specific.json"
+        }
+    ],
+    "properties": {
+        "name": {
+            "enum": [
+                "element_spin_state"
+            ]
+        },
+        "elements": {
+            "items": {
+                "value": {
+                    "description": "high and low spin states correspond to states with max number of unpaired electrons with same spin and maximum number of paired spins respectively.",
+                    "enum": [
+                        "high",
+                        "intermediate",
+                        "low"
+                    ]
+                }
+            }
+        }
+    }
+}
