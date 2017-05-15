@@ -1,0 +1,26 @@
+{
+    "$schema": "http://json-schema.org/draft-04/schema#",
+    "title": "stoichiometric descriptor - p-norms schema",
+    "description": "values calculated using L-p norm upto p-dimensions",
+    "allOf": [
+        {
+            "ref": "compound_specific_array.json"
+        }
+    ],
+    "properties": {
+        "name": {
+            "enum": [
+                "p_norms"
+            ]
+        },
+        "data": {
+            "items": {
+                "name": {
+                    "description": "p-norms. Upto p99 allowed. Eg: p03",
+                    "type": "string",
+                    "pattern": "p[0-9]{2}"
+                }
+            }
+        }
+    }
+}

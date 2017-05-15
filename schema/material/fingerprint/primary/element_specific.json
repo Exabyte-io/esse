@@ -2,17 +2,21 @@
     "$schema": "http://json-schema.org/draft-04/schema#",
     "title": "element specific descriptors schema",
     "description": "applicable for nominal/ordinal/numeric value types",
-    "allOf": [
-        {
-            "$ref": "file:_primary.json"
-        }
-    ],
     "properties": {
         "elements": {
-            "description": "elements in a material and corresponding descriptor data",
+            "description": "elements in a material and corresponding descriptor value",
             "type": "array",
             "items": {
-                "$ref": "file:_element_data.json"
+                "properties": {
+                    "name": {
+                        "description": "element symbol. Eg: Si",
+                        "type": "string"
+                    },
+                    "value": {
+                        "description": "elemental property value",
+                        "type": "string"
+                    }
+                }
             }
         }
     }

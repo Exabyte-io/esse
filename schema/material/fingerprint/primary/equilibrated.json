@@ -1,0 +1,25 @@
+{
+    "$schema": "http://json-schema.org/draft-04/schema#",
+    "title": "Structural descriptor - identifies whether a structure is at equilibrium",
+    "description": "Differentiates structures with similar composition but different characteristics",
+    "allOf": [
+        {
+            "ref": "compound_specific.json"
+        }
+    ],
+    "properties": {
+        "name": {
+            "description": "variable name",
+            "enum": [
+                "equilibrated"
+            ]
+        },
+        "value": {
+            "description": "Identifies a equilibrium structure.",
+            "enum": [
+                "yes",
+                "no"
+            ]
+        }
+    }
+}

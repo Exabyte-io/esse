@@ -1,16 +1,21 @@
 {
     "$schema": "http://json-schema.org/draft-04/schema#",
-    "title": "compound-specific descriptor array elements schema",
-    "description": "for p-norms and valence_orbital occupancy",
+    "title": "electronic descriptor - valence orbital occupancy schema",
+    "description": "fraction-weighted average of the number of valance electrons in each orbital divided by total valence electrons",
+    "allOf": [
+        {
+            "ref": "compound_specific_array.json"
+        }
+    ],
     "properties": {
         "name": {
-            "oneOf": [
-                {
-                    "description": "p-norms. Upto p99 allowed. Eg: p3",
-                    "type": "string",
-                    "pattern": "p[0-9]{2}"
-                },
-                {
+            "enum": [
+                "valence_orbital_occupancy"
+            ]
+        },
+        "data": {
+            "items": {
+                "name": {
                     "description": "valence orbital occupancy - https://www.nature.com/article-assets/npg/npjcompumats/2016/npjcompumats201628/extref/npjcompumats201628-s1.pdf",
                     "type": "string",
                     "enum": [
@@ -20,10 +25,7 @@
                         "f"
                     ]
                 }
-            ]
-        },
-        "value": {
-            "type": "number"
+            }
         }
     }
 }

@@ -2,42 +2,55 @@
     "$schema": "http://json-schema.org/draft-04/schema#",
     "title": "primary descriptors schema",
     "description": "collection of stoichiometric, structural, physical, electronic and chemical",
-    "properties": {
-        "localEnvironment": {
-            "description": "atom type each element is bonded to",
-            "$ref": "file:primary/element_specific.json"
-        },
-        "elementSpinState": {
-            "description": "Spin state of each element. Spin state depends on oxidation state and electronic configuration. ",
-            "$ref": "file:primary/element_specific.json"
-        },
-        "valenceOrbitalOccupancy": {
-            "description": "contribution from s, p, d, and f of unique elements to total valence electrons in the material ",
-            "$ref": "file:primary/compound_specific_array.json"
-        },
-        "pNorm": {
-            "description": "values calculated using L-p norm upto p-dimensions",
-            "$ref": "file:primary/compound_specific_array.json"
-        },
-        "elementalComposition": {
-            "description": "elemental composition of the compound",
-            "$ref": "file:primary/element_specific.json"
-        },
-        "representation": {
-            "description": "structure representation.",
-            "$ref": "file:primary/compound_specific.json"
-        },
-        "equilibrium": {
-            "description": "Identifies a equilibrium structure.",
-            "$ref": "file:primary/compound_specific.json"
-        },
-        "materialType": {
-            "description": "structure representation.",
-            "$ref": "file:primary/compound_specific.json"
-        },
-        "avgAtomVolume": {
-            "description": "structure representation.",
-            "$ref": "file:primary/compound_specific.json"
+    "allOf": [
+        {
+            "$ref": "file:_primary.json"
         }
-    }
+    ],
+    "properties": {
+        "name": {
+            "description": "Name of the descriptor",
+            "type": "string",
+            "enum": [
+                "local_environment",
+                "element_spin_state",
+                "valence_orbital_occupancy",
+                "p_norms",
+                "elemental_composition",
+                "crystal_cell_type",
+                "material_type",
+                "equilibrated",
+                "avg_atom_volume"
+            ]
+        }
+    },
+    "oneOf": [
+        {
+            "$ref": "file:primary/local_environment.json"
+        },
+        {
+            "$ref": "file:primary/element_spin_state.json"
+        },
+        {
+            "$ref": "file:primary/valence_orbital_occupancy.json"
+        },
+        {
+            "$ref": "file:primary/p_norms.json"
+        },
+        {
+            "$ref": "file:primary/elemental_composition.json"
+        },
+        {
+            "$ref": "file:primary/crystal_cell_type.json"
+        },
+        {
+            "$ref": "file:primary/material_type.json"
+        },
+        {
+            "$ref": "file:primary/equilibrated.json"
+        },
+        {
+            "$ref": "file:primary/avg_atom_volume.json"
+        }
+    ]
 }

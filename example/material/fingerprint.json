@@ -1,7 +1,9 @@
 {
-    "primary": {
-        "...": "include(fingerprint/primary.json)"
-    },
+    "primary": [
+        {
+            "...": "include(fingerprint/primary.json)"
+        }
+    ],
     "secondary": {
         "...": "include(characteristic.json)"
     }

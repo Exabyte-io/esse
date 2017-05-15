@@ -4,8 +4,11 @@
     "description": "collection of descriptors with information about materials structure, composition and characteristics required for performing advanced ML tasks",
     "properties": {
         "primary": {
+            "type": "array",
             "description": "descriptors related to structure, stoichiometry and physical reference data of materials. Calculated on-the-fly ",
-            "$ref": "file:fingerprint/primary.json"
+            "items":{
+                "$ref": "file:fingerprint/primary.json"
+            }
         },
         "secondary": {
             "description": "descriptors related to characteristics from simulations and/or experiments",

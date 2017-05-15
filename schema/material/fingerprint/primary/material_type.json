@@ -1,0 +1,28 @@
+{
+    "$schema": "http://json-schema.org/draft-04/schema#",
+    "title": "Structural descriptor - type of material",
+    "description": "crystal or molecule or amorphous or polymer.",
+    "allOf": [
+        {
+            "ref": "compound_specific.json"
+        }
+    ],
+    "properties": {
+        "name": {
+            "description": "variable name",
+            "enum": [
+                "material_type"
+            ]
+        },
+        "value": {
+            "description": "material type",
+            "type": "string",
+            "enum": [
+                "crystal",
+                "polymer",
+                "molecule",
+                "amorphous"
+            ]
+        }
+    }
+}

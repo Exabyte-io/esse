@@ -1,0 +1,26 @@
+{
+    "$schema": "http://json-schema.org/draft-04/schema#",
+    "title": "Structural descriptor - representation of crsytal lattice",
+    "description": "primitive or conventional or supercell. Representation differentiates between two materials with similiar composition.",
+    "allOf": [
+        {
+            "ref": "compound_specific.json"
+        }
+    ],
+    "properties": {
+        "name": {
+            "description": "variable name",
+            "enum": [
+                "crystal_cell_type"
+            ]
+        },
+        "value": {
+            "description": "cell representation",
+            "enum": [
+                "primitive",
+                "supercell",
+                "conventional"
+            ]
+        }
+    }
+}
