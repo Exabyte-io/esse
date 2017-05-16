@@ -19,7 +19,10 @@
             "description": "Array of subworkflows. Subworkflow can be an instance of workflow to allow for nesting",
             "type": "array",
             "items": {
-                "oneOf": [
+                "anyOf": [
+                    {
+                        "$ref": "#"
+                    },
                     {
                         "$ref": "file:workflow/subworkflow.json"
                     }
