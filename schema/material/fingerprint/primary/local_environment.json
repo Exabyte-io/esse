@@ -17,14 +17,17 @@
             "items": {
                 "value": {
                     "description": "atom symbol to which element is bonded to. X means non-bonded or bonded to any atom other than the ones in the list",
-                    "enum": [
-                        "H",
-                        "O",
-                        "S",
-                        "F",
-                        "Cl",
-                        "X"
-                    ]
+                    "type": "array",
+                    "items":{
+                        "enum": [
+                            "H",
+                            "O",
+                            "S",
+                            "F",
+                            "Cl",
+                            "X"
+                        ]
+                    }
                 }
             }
         }

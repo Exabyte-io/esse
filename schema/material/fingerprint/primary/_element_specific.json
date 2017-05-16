@@ -14,7 +14,7 @@
                     },
                     "value": {
                         "description": "elemental property value",
-                        "type": "string"
+                        "type": ["string", "array"]
                     }
                 }
             }
