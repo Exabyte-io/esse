@@ -14,13 +14,7 @@
         "...": "include(security/owner.json)"
     },
     "workflow": {
-        "name": "my top-level workflow",
-        "subworkflows": [
-            {
-                "...": "include(job/model.json)"
-            }
-        ],
-        "units": []
+        "...": "include(job/workflow.json)"
     },
     "version": "0.2.0",
     "_id": "FPjAaKfuYAL7tiHbm",

@@ -8,7 +8,7 @@
             "type": "string"
         },
         "properties": {
-            "description": "Array of characteristic properties calculated by this workflow",
+            "description": "Array of characteristic properties calculated by this workflow (TODO: add enums)",
             "type": "array",
             "items": {
                 "description": "property names, eg. `band_gaps`, `band_structure`",
@@ -16,10 +16,14 @@
             }
         },
         "subworkflows": {
-            "description": "Array of subworkflows",
+            "description": "Array of subworkflows. Subworkflow can be an instance of workflow to allow for nesting",
             "type": "array",
             "items": {
-                "$ref": "file:workflow.json"
+                "oneOf": [
+                    {
+                        "$ref": "file:workflow/subworkflow.json"
+                    }
+                ]
             }
         },
         "units": {

@@ -1,0 +1,10 @@
+{
+    "name": "my top-level workflow",
+    "subworkflows": [
+        {
+            "...": "include(workflow/subworkflow.json)"
+        }
+    ],
+    "properties": ["band_structure"],
+    "units": []
+}

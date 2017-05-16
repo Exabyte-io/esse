@@ -1,0 +1,15 @@
+{
+    "units": [
+        {
+            "...": "include(unit.json)"
+        }
+    ],
+    "properties": [
+        "band_structure"
+    ],
+    "model": {
+        "...": "include(subworkflow/model.json)"
+    },
+    "app": "espresso",
+    "name": "Bandstructure"
+}
