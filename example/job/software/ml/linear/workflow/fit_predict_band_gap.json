@@ -28,70 +28,36 @@
                                 "exec": "rupy",
                                 "version": "0.1.0"
                             },
-                            "preProcessors": [
-                                {
-                                    "type": "function",
-                                    "name": "prepare_data",
-                                    "kwargs": [
-                                        {
-                                            "key": "chemical_system",
-                                            "value": [
-                                                "Si",
-                                                "Ge"
-                                            ]
-                                        },
-                                        {
-                                            "key": "superset",
-                                            "value": false
-                                        },
-                                        {
-                                            "key": "features",
-                                            "value": [
-                                                "Si",
-                                                "Ge",
-                                                "lattice_volume"
-                                            ]
-                                        },
-                                        {
-                                            "key": "target_properties",
-                                            "value":[
-                                                "band_gaps"
-                                            ]
-                                        },
-                                        {
-                                            "key": "owner_id",
-                                            "value": "paxJukXpDBiSRjfRZ"
-                                        },
-                                        {
-                                            "key": "databases",
-                                            "value": [
-                                                "ExabyteDB"
-                                            ]
-                                        }
-                                    ]
-                                }
-                            ],
+                            "preProcessors": [],
                             "input": [
                                 {
-                                    "method": {
+                                    "fit": {
                                         "type": "linear",
-                                        "subtype": "least_squares"
-                                    },
-                                    "fitParameters":[
-                                        {
-                                            "sample_weight": true,
-                                            "train_data_size": 0.75
+                                        "subtype": "least_squares",
+                                        "arguments": {
+                                            "sampleWeight": true,
+                                            "trainDataSize": 0.75
                                         }
-                                    ],
-                                    "targetProperties":[
+                                    },
+                                    "targetProperties": [
                                         "band_gaps"
+                                    ],
+                                    "features": [
+                                        "elemental_composition",
+                                        "density"
+                                    ],
+                                    "exabyteIds": [
+                                        "3qp8j2CqCgsSa6ZKj",
+                                        "NdRNhkKWv4Xj8sxd8",
+                                        "AWLTt3qa5x6xRG353",
+                                        "cR2uFML56FL6rMf2v"
                                     ]
                                 }
                             ]
                         },
                         "results": [
                             {
-                                "name": "ml_method_parameters"
+                                "name": "predict"
                             }
                         ]
                     },
@@ -106,30 +72,16 @@
                                 "exec": "rupy",
                                 "version": "0.1.0"
                             },
-                            "preProcessors": [
-                                {
-                                    "type": "function",
-                                    "name": "prepare_data",
-                                    "kwargs": [
-                                        {
-                                            "key": "materials_names",
-                                            "value":[
-                                                "Si5Ge11"
-                                            ]
-                                        },
-                                        {
-                                            "key": "databases",
-                                            "value": [
-                                                "ExabyteDB"
-                                            ]
-                                        }
-                                    ]
-                                }
-                            ],
+                            "preProcessors": [],
                             "input": [
                                 {
-                                    "scope": "1",
-                                    "name": "ml_method_parameters"
+                                    "predict": {
+                                        "scope": "1",
+                                        "name": "predict"
+                                    },
+                                    "exabyteIds": [
+                                        "3qp8j2CqCgsSa6ZKj"
+                                    ]
                                 }
                             ]
                         },

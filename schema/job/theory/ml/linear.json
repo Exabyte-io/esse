@@ -4,14 +4,14 @@
     "properties": {
         "type": {
             "enum": [
-                "least_squares"
+                "linear"
             ]
         },
-        "precision": {
-            "$ref": "file:linear/precision.json"
-        },
-        "data":{
-            "$ref":"file:linear/parameters.json"
+        "subtype": {
+            "enum": [
+                "least_squares",
+                "ridge"
+            ]
         }
     }
 }

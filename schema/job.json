@@ -107,6 +107,24 @@
                 "_id",
                 "title"
             ]
+        },
+        "api": {
+            "description": "REST API configuration",
+            "type": "object",
+            "properties": {
+                "userId": {
+                    "description": "user ID",
+                    "type": "string"
+                },
+                "authToken": {
+                    "description": "authentication token",
+                    "type": "string"
+                }
+            },
+            "required": [
+                "userId",
+                "authToken"
+            ]
         }
     },
     "required": [

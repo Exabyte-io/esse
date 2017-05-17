@@ -1,5 +1,7 @@
 {
-    "property": "band_gaps",
+    "properties": [
+        "band_gaps"
+        ],
     "coefficients": [
         [
             -3.339e-01,
@@ -16,7 +18,7 @@
         0.5,
         0.5
     ],
-    "inputData": {
-        "...": "include(input_data.json)"
+    "dataFrame": {
+        "...": "include(data/data_frame.json)"
     }
 }

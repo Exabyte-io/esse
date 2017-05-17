@@ -24,5 +24,8 @@
     },
     "_project": {
         "...": "include(job/_project.json)"
+    },
+    "api": {
+        "...": "include(job/_api.json)"
     }
 }
