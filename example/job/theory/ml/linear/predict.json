@@ -1,0 +1,10 @@
+{
+    "precision": {
+        "...": "include(predict/precision.json)"
+    },
+    "data": {
+        "...": "include(predict/data.json)"
+    },
+    "type": "linear",
+    "subtype": "least_squares"
+}

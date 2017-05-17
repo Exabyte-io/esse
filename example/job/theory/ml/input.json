@@ -1,3 +1,8 @@
 {
-    "...": "include(linear/input.json)"
+    "predict": {
+        "...": "include(predict.json)"
+    },
+    "exabyteIds": [
+        "3qp8j2CqCgsSa6ZKj"
+    ]
 }

@@ -1,0 +1,5 @@
+{
+    "type": "linear",
+    "subtype": "least_squares",
+    "arguments": "include(arguments.json)"
+}
