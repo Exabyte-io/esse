@@ -11,6 +11,8 @@
     "model": {
         "...": "include(subworkflow/model.json)"
     },
-    "app": "espresso",
+    "app": {
+        "...": "include(../app.json)"
+    },
     "name": "Bandstructure"
 }

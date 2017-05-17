@@ -11,6 +11,10 @@
             "description": "Model used inside the subworkflow",
             "$ref": "file:subworkflow/model.json"
         },
+        "app": {
+            "description": "information about the simulation engine/application.",
+            "$ref": "file:../app.json"
+        },
         "properties": {
             "description": "Array of characteristic properties calculated by this subworkflow",
             "type": "array",
