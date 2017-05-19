@@ -4,7 +4,7 @@
     "description": "fraction-weighted average of the number of valance electrons in each orbital divided by total valence electrons",
     "allOf": [
         {
-            "ref": "_compound_specific_array.json"
+            "$ref": "file:../schemas/compound_specific_array.json"
         }
     ],
     "properties": {

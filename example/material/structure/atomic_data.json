@@ -1,18 +1,5 @@
 {
     "name": "atomic_data",
-    "valenceElectrons": {
-        "value": [
-            {
-                "id": 1,
-                "value": 4
-            },
-            {
-                "id": 2,
-                "value": 4
-            }
-        ],
-        "name": "valence_electrons"
-    },
     "charges": {
         "value": [
             {

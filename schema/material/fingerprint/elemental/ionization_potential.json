@@ -1,0 +1,20 @@
+{
+    "$schema": "http://json-schema.org/draft-04/schema#",
+    "title": "ionization potential schema",
+    "description": "first ionization potential of each element in the material in eV",
+    "allOf": [
+        {
+            "$ref": "file:../schemas/element_specific.json"
+        }
+    ],
+    "properties": {
+        "name": {
+            "enum": [
+                "ionization_potential"
+            ]
+        },
+        "units": {
+            "$ref": "file:../../units.json#/definitions/energy"
+        }
+    }
+}

@@ -4,7 +4,7 @@
     "description": "Differentiates structures with similar composition but different characteristics",
     "allOf": [
         {
-            "ref": "_compound_specific.json"
+            "$ref": "file:../schemas/compound_specific.json"
         }
     ],
     "properties": {

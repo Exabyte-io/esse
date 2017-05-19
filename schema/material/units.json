@@ -1,0 +1,42 @@
+{
+    "$schema": "http://json-schema.org/draft-04/schema#",
+    "title": "units schema",
+    "definitions": {
+        "length":{
+            "enum":[
+                "km",
+                "m",
+                "pm",
+                "nm",
+                "angstrom",
+                "a.u."
+            ]
+        },
+        "energy":{
+            "enum":[
+                "kJ/mol",
+                "eV",
+                "J/mol",
+                "hartree",
+                "cm-1",
+                "eV/atom"
+            ]
+        },
+        "volume": {
+            "enum": [
+                "cm^3",
+                "angstrom^3"
+            ]
+        },
+        "numberDensity":{
+            "enum": [
+                "1/angstrom^3"
+            ]
+        },
+        "density":{
+            "enum": [
+                "g/cm^3"
+            ]
+        }
+    }
+}

@@ -1,5 +1,5 @@
 {
-    "type": "compound-specific",
+    "type": "compound-specific-array",
     "subtype": "numeric",
     "category": "stoichiometric",
     "name": "p_norms",

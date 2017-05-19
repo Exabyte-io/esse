@@ -1,3 +1,4 @@
 {
-    "...": "include(atomic_data.json)"
+    "element": "Si",
+    "...": "include(_elemental_data.json)"
 }

@@ -4,7 +4,7 @@
     "description": "values calculated using L-p norm upto p-dimensions",
     "allOf": [
         {
-            "ref": "_compound_specific_array.json"
+            "$ref": "file:../schemas/compound_specific_array.json"
         }
     ],
     "properties": {

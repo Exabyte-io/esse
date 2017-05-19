@@ -1,0 +1,20 @@
+{
+    "$schema": "http://json-schema.org/draft-04/schema#",
+    "title": "atomic radius schema",
+    "description": "atomic radius of each element in the material",
+    "allOf": [
+        {
+            "$ref": "file:../schemas/element_specific.json"
+        }
+    ],
+    "properties": {
+        "name": {
+            "enum": [
+                "atomic_radius"
+            ]
+        },
+        "units": {
+            "$ref":"file:../../units.json#/definitions/length"
+        }
+    }
+}

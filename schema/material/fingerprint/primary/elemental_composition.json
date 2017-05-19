@@ -4,7 +4,7 @@
     "description": "composition of each element in the material",
     "allOf": [
         {
-            "ref": "_compound_specific_array.json"
+            "$ref": "file:../schemas/compound_specific_array.json"
         }
     ],
     "properties": {
@@ -12,6 +12,9 @@
             "enum": [
                 "elemental_composition"
             ]
+        },
+        "value":{
+            "type": "number"
         }
     }
 }

@@ -1,0 +1,20 @@
+{
+    "$schema": "http://json-schema.org/draft-04/schema#",
+    "title": "unpaired electrons schema",
+    "description": "number of unpaired electrons in each element in the material",
+    "allOf": [
+        {
+            "$ref": "file:../schemas/element_specific.json"
+        }
+    ],
+    "properties": {
+        "name": {
+            "enum": [
+                "unpaired_electrons"
+            ]
+        },
+        "value": {
+            "type": "number"
+        }
+    }
+}

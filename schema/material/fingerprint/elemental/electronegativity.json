@@ -1,0 +1,20 @@
+{
+    "$schema": "http://json-schema.org/draft-04/schema#",
+    "title": "pauling electronegativity schema",
+    "description": "electronegativity of each element in the material on pauling scale",
+    "allOf": [
+        {
+            "$ref": "file:../schemas/element_specific.json"
+        }
+    ],
+    "properties": {
+        "name": {
+            "enum": [
+                "electronegativity"
+            ]
+        },
+        "value": {
+            "type": "number"
+        }
+    }
+}

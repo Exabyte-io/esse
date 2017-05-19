@@ -1,0 +1,38 @@
+{
+    "$schema": "http://json-schema.org/draft-04/schema#",
+    "title": "standard elemental data",
+    "description": "properties of elements",
+    "type": "object",
+    "properties": {
+        "name": {
+            "description": "name of the property",
+            "enum": [
+                "valence_electrons",
+                "unpaired_electrons",
+                "atomic_radius",
+                "electronegativity",
+                "ionization_potential",
+                "electron_configuration",
+                "cohesive_energy",
+                "density"
+            ]
+        },
+        "value": {
+            "description": "value of the property",
+            "type": ["number", "string"]
+        },
+        "units": {
+            "oneOf":[
+                {
+                    "$ref": "file:../units.json#/definitions/length"
+                },
+                {
+                    "$ref": "file:../units.json#/definitions/energy"
+                },
+                {
+                    "$ref": "file:../units.json#/definitions/density"
+                }
+            ]
+        }
+    }
+}

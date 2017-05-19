@@ -1,0 +1,20 @@
+{
+    "$schema": "http://json-schema.org/draft-04/schema#",
+    "title": "valence electrons schema",
+    "description": "valence electrons in each element in the material",
+    "allOf": [
+        {
+            "$ref": "file:../schemas/element_specific.json"
+        }
+    ],
+    "properties": {
+        "name": {
+            "enum": [
+                "valence_electrons"
+            ]
+        },
+        "value": {
+            "type": "number"
+        }
+    }
+}
