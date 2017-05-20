@@ -18,6 +18,20 @@
                 "electronegativity",
                 "unpaired_electrons"
             ]
+        },
+         "type": {
+            "type": "string",
+            "enum": [
+                "element-specific"
+            ]
+        },
+        "subtype": {
+            "description": "type of descriptor, whether it is a number or category",
+            "type": "string",
+            "enum": [
+                "numeric",
+                "nominal"
+            ]
         }
     },
     "oneOf": [
