@@ -1,9 +1,11 @@
 {
     "status": "pre-submission",
     "mode": "normal",
-    "_material": {
-        "...": "include(job/_material.json)"
-    },
+    "_materials": [
+        {
+            "...": "include(job/_material.json)"
+        }
+    ],
     "compute": {
         "...": "include(job/compute.json)"
     },

@@ -1,0 +1,7 @@
+{
+    "type": "compound-specific",
+    "subtype": "numeric",
+    "category": "stoichiometric",
+    "name": "p_norms",
+    "...": "include(primary/p_norms.json)"
+}

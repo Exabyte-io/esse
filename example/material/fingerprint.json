@@ -1,0 +1,12 @@
+{
+    "primary": [
+        {
+            "...": "include(fingerprint/primary.json)"
+        }
+    ],
+    "secondary": [
+        {
+            "...": "include(characteristic.json)"
+        }
+    ]
+}

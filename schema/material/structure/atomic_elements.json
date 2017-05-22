@@ -11,14 +11,6 @@
         "value": {
             "description": "atomic elements (eg Si, Ge)",
             "type": "string"
-        },
-        "occurrence": {
-            "description": "occurrence of the element for fractional occupancy",
-            "type": "number"
-        },
-        "oxidationState": {
-            "description": "oxidation state of the element",
-            "type": "integer"
         }
     }
 }

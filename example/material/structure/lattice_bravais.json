@@ -1,6 +1,6 @@
 {
-    "name": "lattice_bravais",
     "type": "CUB",
+    "name": "lattice_bravais",
     "a": 5.14,
     "b": 5.14,
     "c": 5.14,

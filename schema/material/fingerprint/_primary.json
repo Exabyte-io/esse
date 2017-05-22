@@ -1,0 +1,32 @@
+{
+    "$schema": "http://json-schema.org/draft-04/schema#",
+    "title": "primary descriptor category schema",
+    "description": "type/subtype each primary descriptor belongs to",
+    "properties": {
+        "type": {
+            "type": "string",
+            "enum": [
+                "element-specific",
+                "compound-specific"
+            ]
+        },
+        "subtype": {
+            "description": "type of descriptor, whether it is a number or category",
+            "type": "string",
+            "enum": [
+                "numeric",
+                "nominal",
+                "ordinal"
+            ]
+        },
+        "category": {
+            "type": "string",
+            "enum": [
+                "chemical",
+                "stoichiometric",
+                "structural",
+                "electronic"
+            ]
+        }
+    }
+}
