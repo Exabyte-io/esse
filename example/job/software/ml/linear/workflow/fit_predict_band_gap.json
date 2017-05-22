@@ -1,0 +1,119 @@
+{
+    "_id": "ML bandgap prediction",
+    "title": "SiGe alloy bandgap prediction",
+    "titleSlug": "Template for ML POC SiGe alloy bandgap prediction",
+    "compute": {
+        "ppn": 1,
+        "queue": "OR",
+        "timeLimit": "1:00:00",
+        "notify": "n",
+        "nodes": 1,
+        "arguments": {}
+    },
+    "model": {
+        "method": {
+            "workflow": {
+                "name": "sige alloy bandgap prediciton using least squares regression",
+                "app": "machine_learning",
+                "units": [
+                    {
+                        "flowchartId": "1",
+                        "head": true,
+                        "type": "execution",
+                        "name": "fit_MLmethod",
+                        "next": "2",
+                        "execution": {
+                            "app": {
+                                "name": "ml",
+                                "exec": "rupy",
+                                "version": "0.1.0"
+                            },
+                            "preProcessors": [],
+                            "input": [
+                                {
+                                    "fit": {
+                                        "type": "linear",
+                                        "subtype": "least_squares",
+                                        "arguments": {
+                                            "sampleWeight": true,
+                                            "trainDataSize": 0.75
+                                        }
+                                    },
+                                    "targetProperties": [
+                                        "band_gaps"
+                                    ],
+                                    "features": [
+                                        "elemental_composition",
+                                        "density"
+                                    ],
+                                    "exabyteIds": [
+                                        "3qp8j2CqCgsSa6ZKj",
+                                        "NdRNhkKWv4Xj8sxd8",
+                                        "AWLTt3qa5x6xRG353",
+                                        "cR2uFML56FL6rMf2v"
+                                    ]
+                                }
+                            ]
+                        },
+                        "results": [
+                            {
+                                "name": "predict"
+                            }
+                        ]
+                    },
+                    {
+                        "flowchartId": "2",
+                        "type": "execution",
+                        "name": "predict_property",
+                        "head": false,
+                        "execution": {
+                            "app": {
+                                "name": "ml",
+                                "exec": "rupy",
+                                "version": "0.1.0"
+                            },
+                            "preProcessors": [],
+                            "input": [
+                                {
+                                    "predict": {
+                                        "scope": "1",
+                                        "name": "predict"
+                                    },
+                                    "exabyteIds": [
+                                        "3qp8j2CqCgsSa6ZKj"
+                                    ]
+                                }
+                            ]
+                        },
+                        "results": [
+                            {
+                                "name": "band_gaps"
+                            }
+                        ]
+                    }
+                ]
+            }
+        }
+    },
+    "_project": {
+        "_id": "56c569d7fe45004bec30b5e7",
+        "name": "Project 1",
+        "owner": {
+            "_id": "sdkucJLKbsaa2ajksh",
+            "name": "demo",
+            "type": 10
+        },
+        "slug": "project-1",
+        "goldName": "exabyte-project-1"
+    },
+    "version": "0.1.0",
+    "owner": {
+        "_id": "paxJukXpDBiSRjfRZ",
+        "name": "demo",
+        "type": 10
+    },
+    "creator": {
+        "username": "demo",
+        "_id": "paxJukXpDBiSRjfRZ"
+    }
+}

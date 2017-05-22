@@ -1,0 +1,16 @@
+{
+    "$schema": "http://json-schema.org/draft-04/schema#",
+    "title": "linear methods fit schema",
+    "properties": {
+        "arguments": {
+            "description": "additional arguments for fit method",
+            "$ref": "file:arguments.json"
+        }
+    },
+    "allOf": [
+        {
+            "description": "linear methods schema",
+            "$ref": "file:../linear.json"
+        }
+    ]
+}

@@ -1,0 +1,9 @@
+{
+    "$schema": "http://json-schema.org/draft-04/schema#",
+    "title": "List of methods",
+    "oneOf": [
+        {
+            "$ref": "file:linear.json"
+        }
+    ]
+}

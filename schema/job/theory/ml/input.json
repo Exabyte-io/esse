@@ -1,0 +1,37 @@
+{
+    "$schema": "http://json-schema.org/draft-04/schema#",
+    "title": "ML methods input schema",
+    "type": "object",
+    "properties": {
+        "predict": {
+            "oneOf": [
+                {
+                    "description": "one of the pre-trained ml methods",
+                    "$ref": "file:predict.json"
+                },
+                {
+                    "description": "method read from workflow scope",
+                    "$ref": "file:../../model/method/workflow/unit/_input.json"
+                }
+            ]
+        },
+        "fit": {
+            "$ref": "file:fit.json"
+        },
+        "targetProperties": {
+            "description": "target properties to predict",
+            "type": "array"
+        },
+        "features": {
+            "description": "material features used for model fitting",
+            "type": "array"
+        },
+        "exabyteIds": {
+            "description": "List of material ids corresponding to materials used for model fitting or property prediction",
+            "type": "array"
+        }
+    },
+    "required": [
+        "exabyteIds"
+    ]
+}

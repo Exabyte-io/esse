@@ -21,14 +21,6 @@
                                 "unit"
                             ]
                         },
-                        "type": {
-                            "description": "job type.",
-                            "type": "string",
-                            "enum": [
-                                "web",
-                                "cli"
-                            ]
-                        },
                         "flowchartId": {
                             "description": "unit identifier within the workflow",
                             "type": "string"
@@ -44,8 +36,7 @@
                     },
                     "required": [
                         "_id",
-                        "name",
-                        "type"
+                        "name"
                     ]
                 },
                 "version": {

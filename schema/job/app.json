@@ -32,6 +32,9 @@
             "$ref": "file:software/vasp.json"
         },
         {
+            "$ref": "file:software/ml.json"
+	},
+	{
             "$ref": "file:software/shell.json"
         },
         {
@@ -40,7 +43,6 @@
     ],
     "required": [
         "name",
-        "flavor",
         "version",
         "exec"
     ]
