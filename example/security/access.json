@@ -1,23 +1,24 @@
-[
-    {
-        "type": 1,
-        "account": {
-            "_id": "*",
-            "type": 0
+{
+    "user": [
+        {
+            "_id": "nc3Sh2Gkisz47BHYY",
+            "roles": ["owner"]
+        },
+        {
+            "_id": "h2Gkisz47xsxsxBHYY",
+            "roles": ["read"]
         }
-    },
-    {
-        "type": 11,
-        "account": {
-            "_id": "JAfsaoreaflsdfjs",
-            "type": 1
+    ],
+    "organization": [
+        {
+            "_id": "nc3Sh2Gkisz47BHYY",
+            "roles": ["owner"]
         }
-    },
-    {
-        "type": 0,
-        "account": {
-            "_id": "kjaowhLahfladfks",
-            "type": 10
+    ],
+    "team": [
+        {
+            "_id": "nc3Sh2Gkisz47BHYY",
+            "roles": ["write"]
         }
-    }
-]
+    ]
+}
