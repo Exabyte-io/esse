@@ -34,5 +34,9 @@
                 }
             ]
         }
-    }
+    },
+    "required": [
+        "name",
+        "value"
+    ]
 }

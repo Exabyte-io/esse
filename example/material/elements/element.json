@@ -1,4 +1,41 @@
 {
     "element": "Si",
-    "...": "include(_elemental_data.json)"
+    "properties": [
+        {
+            "name": "valence_electrons",
+            "value": 4
+        },
+        {
+            "name": "unpaired_electrons",
+            "value": 4
+        },
+        {
+            "name": "atomic_radius",
+            "value": 111.0,
+            "units": "pm"
+        },
+        {
+            "name": "electron_configuration",
+            "value": "[Ne]3s23p2"
+        },
+        {
+            "name": "electronegativity",
+            "value": 1.90
+        },
+        {
+            "name": "ionization_potential",
+            "value": 8.15,
+            "units": "eV"
+        },
+        {
+            "name": "density",
+            "value": 2.32,
+            "units": "g/cm^3"
+        },
+        {
+            "name": "cohesive_energy",
+            "value": 4.63,
+            "units": "eV/atom"
+        }
+    ]
 }

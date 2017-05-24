@@ -45,5 +45,10 @@
         {
             "$ref": "file:elemental/atomic_radius.json"
         }
+    ],
+    "required": [
+        "name",
+        "type",
+        "subtype"
     ]
 }

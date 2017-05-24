@@ -17,5 +17,9 @@
             "description": "Identifies a equilibrium structure.",
             "type": "boolean"
         }
-    }
+    },
+    "required": [
+        "name",
+        "value"
+    ]
 }

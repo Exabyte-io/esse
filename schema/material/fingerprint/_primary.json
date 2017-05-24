@@ -29,5 +29,9 @@
                 "electronic"
             ]
         }
-    }
+    },
+    "required": [
+        "type",
+        "subtype"
+    ]
 }

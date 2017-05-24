@@ -16,5 +16,9 @@
         "units": {
             "$ref": "file:../../units.json#/definitions/energy"
         }
-    }
+    },
+    "required":[
+        "name",
+        "units"
+    ]
 }

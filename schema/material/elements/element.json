@@ -14,5 +14,9 @@
                 "$ref": "file:_elemental_data.json"
             }
         }
-    }
+    },
+    "required":[
+        "element",
+        "properties"
+    ]
 }

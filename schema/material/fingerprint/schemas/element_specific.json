@@ -19,5 +19,8 @@
                 }
             }
         }
-    }
+    },
+    "required": [
+        "elements"
+    ]
 }

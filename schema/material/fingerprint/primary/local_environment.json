@@ -31,5 +31,9 @@
                 }
             }
         }
-    }
+    },
+    "required": [
+        "name",
+        "elements"
+    ]
 }

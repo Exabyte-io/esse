@@ -23,5 +23,9 @@
                 "amorphous"
             ]
         }
-    }
+    },
+    "required": [
+        "name",
+        "value"
+    ]
 }

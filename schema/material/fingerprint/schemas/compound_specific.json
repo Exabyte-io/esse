@@ -15,5 +15,9 @@
                 "boolean"
             ]
         }
-    }
+    },
+    "required": [
+        "name",
+        "value"
+    ]
 }
