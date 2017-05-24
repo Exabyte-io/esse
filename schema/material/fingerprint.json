@@ -1,7 +1,7 @@
 {
     "$schema": "http://json-schema.org/draft-04/schema#",
     "title": "material fingerprint schema",
-    "description": "collection of atomic and material descriptors. Required for performing advanced ML tasks",
+    "description": "collection of elemental and material descriptors. Required for performing advanced ML tasks",
     "properties": {
         "elemental": {
             "type": "array",

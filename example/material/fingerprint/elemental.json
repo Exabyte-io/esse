@@ -1,7 +1,6 @@
 {
     "type": "element-specific",
     "subtype": "numeric",
-    "category": "atomic",
     "name": "ionization_potential",
     "...": "include(elemental/ionization_potential.json)"
 }

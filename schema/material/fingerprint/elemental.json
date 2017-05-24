@@ -2,11 +2,6 @@
     "$schema": "http://json-schema.org/draft-04/schema#",
     "title": "elemental descriptors schema",
     "description": "collection of standard data for elements from databases. Eg: NIST physical reference data ",
-    "allOf": [
-        {
-            "$ref": "file:_schemas.json"
-        }
-    ],
     "properties": {
         "name": {
             "description": "Name of the descriptor",
