@@ -1,7 +1,7 @@
 {
     "$schema": "http://json-schema.org/draft-04/schema#",
-    "title": "Unique elements and elemental properties",
-    "description": "element symbols by string, unitless",
+    "title": "Element symbol and elemental properties schema",
+    "description": "element symbols",
     "properties":{
         "element":{
             "description": "element symbol",
