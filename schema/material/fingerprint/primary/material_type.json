@@ -4,7 +4,7 @@
     "description": "crystal or molecule or amorphous or polymer.",
     "allOf": [
         {
-            "ref": "_compound_specific.json"
+            "$ref": "file:../schemas/compound_specific.json"
         }
     ],
     "properties": {
@@ -23,5 +23,9 @@
                 "amorphous"
             ]
         }
-    }
+    },
+    "required": [
+        "name",
+        "value"
+    ]
 }

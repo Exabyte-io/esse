@@ -4,7 +4,7 @@
     "description": "local environment around each element defined by atom type each element is bonded to",
     "allOf": [
         {
-            "ref": "_element_specific.json"
+            "$ref": "file:../schemas/element_specific.json"
         }
     ],
     "properties": {
@@ -17,16 +17,23 @@
             "items": {
                 "value": {
                     "description": "atom symbol to which element is bonded to. X means non-bonded or bonded to any atom other than the ones in the list",
-                    "enum": [
-                        "H",
-                        "O",
-                        "S",
-                        "F",
-                        "Cl",
-                        "X"
-                    ]
+                    "type": "array",
+                    "items":{
+                        "enum": [
+                            "H",
+                            "O",
+                            "S",
+                            "F",
+                            "Cl",
+                            "X"
+                        ]
+                    }
                 }
             }
         }
-    }
+    },
+    "required": [
+        "name",
+        "elements"
+    ]
 }

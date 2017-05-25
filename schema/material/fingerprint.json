@@ -1,8 +1,16 @@
 {
     "$schema": "http://json-schema.org/draft-04/schema#",
     "title": "material fingerprint schema",
-    "description": "collection of descriptors with information about materials structure, composition and characteristics required for performing advanced ML tasks",
+
+    "description": "collection of elemental and material descriptors. Required for performing advanced ML tasks",
     "properties": {
+        "elemental": {
+            "type": "array",
+            "description": "elemental descriptors. Properties of constituent elements Example: atomic_radius or ionization_potential ",
+            "items": {
+                "$ref": "file:fingerprint/elemental.json"
+            }
+        },
         "primary": {
             "type": "array",
             "description": "descriptors related to structure, stoichiometry and physical reference data of materials. Calculated on-the-fly ",
@@ -19,6 +27,7 @@
         }
     },
     "required": [
+        "elemental",
         "primary",
         "secondary"
     ]

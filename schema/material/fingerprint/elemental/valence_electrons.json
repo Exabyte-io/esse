@@ -1,19 +1,19 @@
 {
     "$schema": "http://json-schema.org/draft-04/schema#",
-    "title": "stocihiometric descriptor, elemental composition schema",
-    "description": "composition of each element in the material",
+    "title": "valence electrons schema",
+    "description": "valence electrons in each element in the material",
     "allOf": [
         {
-            "$ref": "file:../schemas/compound_specific_array.json"
+            "$ref": "file:../schemas/element_specific.json"
         }
     ],
     "properties": {
         "name": {
             "enum": [
-                "elemental_composition"
+                "valence_electrons"
             ]
         },
-        "value":{
+        "value": {
             "type": "number"
         }
     },

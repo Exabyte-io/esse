@@ -1,0 +1,5 @@
+{
+    "...": "include(../schemas/element_specific.json)",
+    "name": "ionization_potential",
+    "units": "eV"
+}

@@ -1,0 +1,22 @@
+{
+    "$schema": "http://json-schema.org/draft-04/schema#",
+    "title": "Element symbol and elemental properties schema",
+    "description": "element symbols",
+    "properties":{
+        "element":{
+            "description": "element symbol",
+            "type": "string"
+        },
+        "properties":{
+            "description": "elemental properties. standard data",
+            "type": "array",
+            "items":{
+                "$ref": "file:_elemental_data.json"
+            }
+        }
+    },
+    "required":[
+        "element",
+        "properties"
+    ]
+}

@@ -1,0 +1,54 @@
+{
+    "$schema": "http://json-schema.org/draft-04/schema#",
+    "title": "elemental descriptors schema",
+    "description": "collection of standard data for elements from databases. Eg: NIST physical reference data ",
+    "properties": {
+        "name": {
+            "description": "Name of the descriptor",
+            "type": "string",
+            "enum": [
+                "valence_electrons",
+                "ionization_potential",
+                "atomic_radius",
+                "electronegativity",
+                "unpaired_electrons"
+            ]
+        },
+         "type": {
+            "type": "string",
+            "enum": [
+                "element-specific"
+            ]
+        },
+        "subtype": {
+            "description": "type of descriptor, whether it is a number or category",
+            "type": "string",
+            "enum": [
+                "numeric",
+                "nominal"
+            ]
+        }
+    },
+    "oneOf": [
+        {
+            "$ref": "file:elemental/valence_electrons.json"
+        },
+        {
+            "$ref": "file:elemental/unpaired_electrons.json"
+        },
+        {
+            "$ref": "file:elemental/electronegativity.json"
+        },
+        {
+            "$ref": "file:elemental/ionization_potential.json"
+        },
+        {
+            "$ref": "file:elemental/atomic_radius.json"
+        }
+    ],
+    "required": [
+        "name",
+        "type",
+        "subtype"
+    ]
+}

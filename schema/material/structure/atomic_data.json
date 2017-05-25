@@ -4,19 +4,6 @@
     "description": "properties of atoms in arrays indexed by ids",
     "type": "object",
     "properties": {
-        "valenceElectrons": {
-            "description": "number of valence electrons",
-            "properties": {
-                "value": {
-                    "$ref": "file:atomic_masses.json"
-                },
-                "name": {
-                    "enum": [
-                        "valence_electrons"
-                    ]
-                }
-            }
-        },
         "occurrence": {
             "description": "occurrence of the element for fractional occupancy",
             "properties": {
@@ -57,19 +44,6 @@
                 "units": {
                     "enum": [
                         "electron charge"
-                    ]
-                }
-            }
-        },
-        "radicals": {
-            "description": "number of unpaired electrons",
-            "properties": {
-                "value": {
-                    "$ref": "file:atomic_masses.json"
-                },
-                "name": {
-                    "enum": [
-                        "radicals"
                     ]
                 }
             }

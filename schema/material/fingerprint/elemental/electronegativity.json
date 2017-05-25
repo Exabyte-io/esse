@@ -1,19 +1,19 @@
 {
     "$schema": "http://json-schema.org/draft-04/schema#",
-    "title": "stocihiometric descriptor, elemental composition schema",
-    "description": "composition of each element in the material",
+    "title": "pauling electronegativity schema",
+    "description": "electronegativity of each element in the material on pauling scale",
     "allOf": [
         {
-            "$ref": "file:../schemas/compound_specific_array.json"
+            "$ref": "file:../schemas/element_specific.json"
         }
     ],
     "properties": {
         "name": {
             "enum": [
-                "elemental_composition"
+                "electronegativity"
             ]
         },
-        "value":{
+        "value": {
             "type": "number"
         }
     },

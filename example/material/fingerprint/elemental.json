@@ -1,0 +1,6 @@
+{
+    "type": "element-specific",
+    "subtype": "numeric",
+    "name": "ionization_potential",
+    "...": "include(elemental/ionization_potential.json)"
+}

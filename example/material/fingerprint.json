@@ -1,4 +1,9 @@
 {
+    "elemental":[
+        {
+            "...": "include(fingerprint/elemental.json)"
+        }
+    ],
     "primary": [
         {
             "...": "include(fingerprint/primary.json)"
