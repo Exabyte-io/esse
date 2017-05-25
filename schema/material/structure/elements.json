@@ -1,0 +1,10 @@
+{
+    "$schema": "http://json-schema.org/draft-04/schema#",
+    "title": "Unique elements and elemental properties",
+    "description": "element symbols by string, unitless",
+    "allOf": [
+        {
+            "$ref": "file:atomic_data.json"
+        }
+    ]
+}
