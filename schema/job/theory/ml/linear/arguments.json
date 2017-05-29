@@ -6,9 +6,17 @@
             "type": "boolean",
             "description": "specify whether to scale the response variables"
         },
-        "trainDataSize": {
+        "numSplits":{
             "type": "number",
-            "description": "fraction of the training set used for training the model"
+            "description": "number of groups to split the training data set for crossvalidation"
+        },
+        "scaler":{
+            "type":"string",
+            "description": "name of the feature scaling method for scaling input features. Eg: StandardScaler"
+        },
+        "numFeatures": {
+            "type": "number",
+            "description": "number of features to select for model training"
         }
     },
     "required": [

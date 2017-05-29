@@ -1,4 +1,5 @@
 {
     "trainingError": 0.1,
-    "cvError": 0.3
+    "cvError": 0.3,
+    "score": 0.8
 }

@@ -1,0 +1,11 @@
+{
+    "$schema": "http://json-schema.org/draft-04/schema#",
+    "description": "Feature scaling parameters schema",
+    "title": "Feature scaling",
+    "type": "object",
+    "oneOf":[
+        {
+            "$ref": "standard_scaler/standard.json"
+        }
+    ]
+}

@@ -1,4 +1,6 @@
 {
     "sampleWeight": true,
-    "trainDataSize": 0.75
+    "numFeatures": 2,
+    "scaler": "StandardScaler",
+    "numSplits":3
 }
