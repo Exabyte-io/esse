@@ -1,6 +1,6 @@
 {
     "app": {
-        "...": "include(../../../../app.json)"
+        "...": "include(../../app.json)"
     },
     "compute": null,
     "input": [
