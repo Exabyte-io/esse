@@ -3,7 +3,7 @@
     "title": "ionic convergence schema",
     "allOf": [
         {
-            "$ref": "file:../../../model/method/workflow/unit/convergence.json"
+            "$ref": "file:../../../workflow/unit/convergence.json"
         }
     ],
     "properties": {

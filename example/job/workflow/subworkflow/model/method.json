@@ -1,0 +1,10 @@
+{
+    "type": "pseudopotential",
+    "subtype": "us",
+    "precision": {
+        "...": "include(../../../theory/dft/pseudopotential/precision.json)"
+    },
+    "data": {
+        "pseudo": []
+    }
+}
