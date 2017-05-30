@@ -20,10 +20,10 @@
     },
     "oneOf": [
         {
-            "$ref": "file:../theory/dft/_methods.json"
+            "$ref": "file:../../../theory/dft/_methods.json"
         },
         {
-            "$ref": "file:../theory/ml/_methods.json"
+            "$ref": "file:../../../theory/ml/_methods.json"
         }
     ],
     "required": [

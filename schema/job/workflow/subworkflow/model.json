@@ -26,10 +26,10 @@
     },
     "oneOf": [
         {
-            "$ref": "file:theory/dft.json"
+            "$ref": "file:../../theory/dft.json"
         },
         {
-            "$ref": "file:theory/ml.json"
+            "$ref": "file:../../theory/ml.json"
         }
     ],
     "required": [
