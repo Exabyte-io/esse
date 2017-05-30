@@ -22,7 +22,7 @@
                     },
                     {
                         "description": "object input (eg. for machine learning)",
-                        "$ref": "file:../../../../input.json"
+                        "$ref": "file:../../input.json"
                     }
                 ]
             }

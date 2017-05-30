@@ -11,7 +11,7 @@
                 },
                 {
                     "description": "method read from workflow scope",
-                    "$ref": "file:../../model/method/workflow/unit/_input.json"
+                    "$ref": "file:../../workflow/unit/_input.json"
                 }
             ]
         },
