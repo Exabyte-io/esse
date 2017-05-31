@@ -4,27 +4,10 @@
     "type": "object",
     "oneOf": [
         {
-            "properties": {
-                "type": {
-                    "enum": [
-                        "fit"
-                    ]
-                },
-                "allOf": [
-                    {
-                        "$ref": "file:_input_fit.json"
-                    }
-                ]
-            }
+            "$ref": "file:input/fit.json"
         },
         {
-            "properties": {
-                "type": {
-                    "enum": [
-                        "predict"
-                    ]
-                }
-            }
+            "$ref": "file:input/predict.json"
         }
     ],
     "properties": {
@@ -32,7 +15,7 @@
             "oneOf": [
                 {
                     "description": "pre-trained ml method (when predicting) or an object describing a new one to be fit",
-                    "$ref": "file:../methods.json"
+                    "$ref": "file:../_methods.json"
                 },
                 {
                     "description": "method read from workflow scope",

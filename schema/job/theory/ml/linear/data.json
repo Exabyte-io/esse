@@ -51,14 +51,14 @@
                     }
                 }
             }
-        },
-        "required": [
-            "precision",
-            "coefficients",
-            "intercept",
-            "features",
-            "scaler",
-            "scores"
-        ]
-    }
+        }
+    },
+    "required": [
+        "coefficients",
+        "intercept",
+        "features",
+        "scaler",
+        "scores"
+    ]
 }
+
