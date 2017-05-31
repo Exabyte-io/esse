@@ -1,6 +1,5 @@
 {
-    "type": "predict",
-    "method": "include(linear.json)",
+    "...": "include(input/predict.json)",
     "targetProperties": [
         "band_gaps"
     ],

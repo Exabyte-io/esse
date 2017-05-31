@@ -1,6 +1,7 @@
 {
     "$schema": "http://json-schema.org/draft-04/schema#",
-    "title": "fit schema",
+    "title": "ML methods input schema",
+    "type": "object",
     "allOf": [
         {
             "$ref": "file:../_input_fit.json"
@@ -11,6 +12,10 @@
             "enum": [
                 "fit"
             ]
+        },
+        "features": {
+            "description": "material features used for model fitting",
+            "type": "array"
         }
     }
 }
