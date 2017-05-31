@@ -1,0 +1,10 @@
+{
+    "type": "predict",
+    "method": "include(linear.json)",
+    "targetProperties": [
+        "band_gaps"
+    ],
+    "exabyteIds":[
+        "LCthJ6E2QabYCZqf3"
+    ]
+}
