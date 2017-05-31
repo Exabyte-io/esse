@@ -2,72 +2,51 @@
     "$schema": "http://json-schema.org/draft-04/schema#",
     "title": "regression parameters schema",
     "properties": {
-        "properties": {
-            "type": "array",
-            "description": "Array of target properties",
-            "items": {
-                "type": "string",
-                "description": "name of the target property"
-            }
+        "precision": {
+            "$ref": "file:data/precision.json"
         },
         "coefficients": {
             "type": "array",
-            "description": "Array of arrays with weights/coefficients from the linear or non-linear fit",
+            "description": "Array with weights/coefficients of the function for each target in property vector from the linear or non-linear fit",
             "items": {
-                "type": "array",
-                "description": "array of weights/coefficients of the function for each target in property vector",
-                "items": {
-                    "type": "number"
-                }
+                "type": "number"
             }
         },
         "intercept": {
             "type": "array",
             "description": "list of intercepts (shift) from the linear or non-linear fit of data points",
             "items": {
-                "type": "number",
-                "description": "intercept corresponding to the fit for each target in property vector"
+                "type": "number"
             }
         },
         "features": {
             "type": "array",
-            "description": "Array of arrays with subset of features used in linear or non-linear fit",
+            "description": "Array with subset of features used in linear or non-linear fit",
             "items": {
-                "type": "array",
-                "description": "array of features for each target in property vector",
-                "items": {
-                    "type": "string"
-                }
+                "type": "string"
             }
         },
         "scores": {
             "type": "array",
-            "description": "Array of arrays with pvalues of features used in linear or non-linear fit, https://en.wikipedia.org/wiki/P-value",
+            "description": "Array of pvalues of features used in linear or non-linear fit, https://en.wikipedia.org/wiki/P-value",
             "items": {
-                "type": "array",
-                "description": "array of pvalues of features for predicting each target in property vector",
-                "items": {
-                    "type": "number"
-                }
+                "type": "number"
             }
         },
         "scaler": {
             "type": "array",
             "description": "feature scaling parameters from linear/non-linear fit",
             "items": {
-                "$ref": "_scalers.json"
+                "$ref": "file:data/scaler.json"
             }
-        },
-        "dataFrame": {
-            "description": "materials data used to train/fit ml method",
-            "$ref": "file:data/data_frame.json"
         }
     },
     "required": [
-        "properties",
+        "precision",
         "coefficients",
         "intercept",
         "features",
-        "scaler"
+        "scaler",
+        "scores"
     ]
 }

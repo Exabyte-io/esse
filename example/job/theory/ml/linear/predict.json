@@ -1,10 +1,12 @@
 {
-    "precision": {
-        "...": "include(predict/precision.json)"
+    "dataFrame": {
+        "...": "include(predict/data_frame.json)"
     },
-    "data": {
-        "...": "include(predict/data.json)"
-    },
+    "parameters": [
+        {
+            "...": "include(predict/parameters.json)"
+        }
+    ],
     "type": "linear",
     "subtype": "least_squares"
 }

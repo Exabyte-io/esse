@@ -2,12 +2,16 @@
     "$schema": "http://json-schema.org/draft-04/schema#",
     "title": "linear methods predict schema",
     "properties": {
-        "precision": {
-            "$ref": "file:predict/precision.json"
+        "dataFrame": {
+            "description": "materials data used to train/fit ml method",
+            "$ref": "file:predict/data_frame.json"
         },
-        "data": {
+        "parameters":{
+            "type": "array",
             "description": "object with parameters for a pre-trained method",
-            "$ref": "file:predict/data.json"
+            "items":{
+                "$ref": "file:predict/parameters.json"
+            }
         }
     },
     "allOf": [

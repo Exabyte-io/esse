@@ -1,64 +1,29 @@
 {
-    "features": [
-        [
-            "elemental_composition",
-            "electronegativity"
-        ],
-        [
-            "elemental_composition",
-            "electronegativity"
-        ]
-    ],
-    "properties": [
-        "band_gaps"
-        ],
+    "precision": {
+        "...": "include(data/precision.json)"
+    },
     "coefficients": [
-        [
-            -3.339e-01,
-            2.555e-01
-        ],
-        [
-            -3.339e-01,
-            2.555e-01
-        ]
+        -3.339e-01,
+        2.555e-01
+    ],
+    "features": [
+        "elemental_composition",
+        "electronegativity"
     ],
     "intercept": [
-        0.5,
         0.5
+    ],
+    "scores": [
+        0.018,
+        0.513
     ],
     "scaler": [
         {
-            "mean": [
+            "name": "mean",
+            "values": [
                 0.5,
                 1.95
-            ],
-            "variance": [
-                2.0,
-                2.0
-            ]
-        },
-        {
-            "mean": [
-                0.5,
-                1.95
-            ],
-            "variance": [
-                2.0,
-                2.0
             ]
         }
-    ],
-    "scores": [
-        [
-            0.018,
-            0.513
-        ],
-        [
-            0.018,
-            0.513
-        ]
-    ],
-    "dataFrame": {
-        "...": "include(data/data_frame.json)"
-    }
+    ]
 }

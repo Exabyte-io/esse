@@ -1,0 +1,7 @@
+{
+    "property": "band_gaps",
+    "type": "direct",
+    "data": {
+        "...": "include(data.json)"
+    }
+}
