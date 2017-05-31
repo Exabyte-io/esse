@@ -1,0 +1,6 @@
+{
+    "$schema": "http://json-schema.org/draft-04/schema#",
+    "title": "data frame for linear method (TODO: define)",
+    "type": "object"
+}
+

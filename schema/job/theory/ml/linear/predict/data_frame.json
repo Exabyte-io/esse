@@ -1,6 +1,0 @@
-{
-    "$schema": "http://json-schema.org/draft-04/schema#",
-    "description": "Materials data used train/fit ml method",
-    "title": "input data schema",
-    "type": "object"
-}

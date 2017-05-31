@@ -1,9 +1,9 @@
 {
     "$schema": "http://json-schema.org/draft-04/schema#",
-    "title": "predict schema",
+    "title": "List of input fit arguments",
     "oneOf": [
         {
-            "$ref": "file:linear/predict.json"
+            "$ref": "file:linear/input_fit.json"
         }
     ]
 }

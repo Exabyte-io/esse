@@ -1,4 +1,21 @@
 {
     "type": "linear",
-    "subtype": "least_squares"
+    "subtype": "least_squares",
+    "dataFrame": {
+        "...": "include(linear/data_frame.json)"
+    },
+    "data": {
+        "perProperty": [
+            {
+                "...": "include(linear/data.json)"
+            }
+        ]
+    },
+    "precision": {
+        "perProperty": [
+            {
+                "...": "include(linear/precision.json)"
+            }
+        ]
+    }
 }

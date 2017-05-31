@@ -1,8 +1,10 @@
 {
-    "predict": {
-        "...": "include(predict.json)"
-    },
-    "exabyteIds": [
-        "3qp8j2CqCgsSa6ZKj"
+    "type": "predict",
+    "method": "include(linear.json)",
+    "targetProperties": [
+        "band_gaps"
+    ],
+    "exabyteIds":[
+        "LCthJ6E2QabYCZqf3"
     ]
 }

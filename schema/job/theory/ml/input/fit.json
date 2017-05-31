@@ -1,0 +1,16 @@
+{
+    "$schema": "http://json-schema.org/draft-04/schema#",
+    "title": "fit schema",
+    "allOf": [
+        {
+            "$ref": "file:../_input_fit.json"
+        }
+    ],
+    "properties": {
+        "type": {
+            "enum": [
+                "fit"
+            ]
+        }
+    }
+}

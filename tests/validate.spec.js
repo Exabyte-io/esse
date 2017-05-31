@@ -42,7 +42,7 @@ function parseJSONInclude(dirpath, filename, isInclude) {
         json = fs.readFileSync(filepath, 'utf8'),
         d = JSON.parse(json);
     if (isInclude) {
-        if (! isInstance(d, "Object")) {
+        if (!isInstance(d, "Object")) {
             throw "The JSON file being included should always be a dict rather than a list";
         }
     }
@@ -103,7 +103,7 @@ function walkThoughToInclude(obj, dirpath) {
  * see walkSync docs for more info.
  */
 walkSync(schemasDir, function (dirPath, dirs, files) {
-    files.forEach(f=> {
+    files.forEach(f => {
         const filePath = path.join(dirPath, f);
         const dir = _.trimStart(dirPath.replace(schemasDir, ''), '/');
 
@@ -125,7 +125,7 @@ walkSync(schemasDir, function (dirPath, dirs, files) {
 });
 
 // generate id for each schema and replace $refs values by appropriate id
-schemas.forEach(schema=> {
+schemas.forEach(schema => {
     addIdProp(schema);
     replaceRefs(schema);
 });
@@ -159,9 +159,10 @@ function addIdProp(schema) {
     schema.id = schema.content.id;
 }
 
+
 var ajv = Ajv({
     allErrors: true,
-    schemas: schemas.map(schema=> schema.content)
+    schemas: schemas.map(schema => schema.content)
 });
 
 describe('ajv', function () {
@@ -182,7 +183,7 @@ describe('example', function () {
                 const validator = ajv.getSchema(schema.id);
                 const valid = validator(schema.example);
                 if (!valid) {
-                    console.log(JSON.stringify(schema.example))
+                    console.log(JSON.stringify(schema.example));
                     console.log(prettyjson.render(validator.errors));
                 }
                 chai.expect(valid).to.be.ok;

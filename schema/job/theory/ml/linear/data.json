@@ -2,9 +2,6 @@
     "$schema": "http://json-schema.org/draft-04/schema#",
     "title": "regression parameters schema",
     "properties": {
-        "precision": {
-            "$ref": "file:data/precision.json"
-        },
         "coefficients": {
             "type": "array",
             "description": "Array with weights/coefficients of the function for each target in property vector from the linear or non-linear fit",
@@ -37,12 +34,26 @@
             "type": "array",
             "description": "feature scaling parameters from linear/non-linear fit",
             "items": {
-                "$ref": "file:data/scaler.json"
+                "properties": {
+                    "name": {
+                        "description": "name of variable",
+                        "enum": [
+                            "mean",
+                            "variance"
+                        ]
+                    },
+                    "values": {
+                        "type": "array",
+                        "description": "array of values corresponding to the variable. Example: variance in training data",
+                        "items": {
+                            "type": "number"
+                        }
+                    }
+                }
             }
         }
     },
     "required": [
-        "precision",
         "coefficients",
         "intercept",
         "features",
@@ -50,3 +61,4 @@
         "scores"
     ]
 }
+
