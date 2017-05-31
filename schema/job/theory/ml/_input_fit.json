@@ -1,13 +1,9 @@
 {
     "$schema": "http://json-schema.org/draft-04/schema#",
     "title": "List of input fit arguments",
-    "properties": {
-        "arguments":{
-            "oneOf": [
-                {
-                    "$ref": "file:linear/input_fit.json"
-                }
-            ]
+    "oneOf": [
+        {
+            "$ref": "file:linear/input_fit.json"
         }
-    }
+    ]
 }
