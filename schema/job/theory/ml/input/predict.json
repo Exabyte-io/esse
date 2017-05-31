@@ -4,12 +4,8 @@
     "properties": {
         "type": {
             "enum": [
-                "fit"
+                "predict"
             ]
-        },
-        "arguments": {
-            "description": "additional arguments for fit method",
-            "$ref": "file:arguments.json"
         }
     }
 }

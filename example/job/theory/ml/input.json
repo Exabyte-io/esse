@@ -1,6 +1,7 @@
 {
-    "predict": {
-        "...": "include(predict.json)"
+    "type": "predict",
+    "method": {
+        "...": "include(linear.json)"
     },
     "exabyteIds": [
         "3qp8j2CqCgsSa6ZKj"

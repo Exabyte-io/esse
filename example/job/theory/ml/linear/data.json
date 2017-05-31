@@ -1,7 +1,5 @@
 {
-    "precision": {
-        "...": "include(data/precision.json)"
-    },
+    "name": "band_gaps:indirect",
     "coefficients": [
         -3.339e-01,
         2.555e-01

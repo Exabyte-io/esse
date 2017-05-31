@@ -1,6 +1,40 @@
 {
     "$schema": "http://json-schema.org/draft-04/schema#",
-    "title": "List of methods",
+    "title": "List of methods for ML",
+    "properties": {
+        "dataFrame": {
+            "description": "data frame used to train ml method",
+            "type": "object"
+        },
+        "precision": {
+            "perProperty": {
+                "type": "array",
+                "items": {
+                    "type": "object",
+                    "properties": {
+                        "name": {
+                            "description": "characteristic property name in a flat format: eg. `band_gaps:indirect`",
+                            "type": "string"
+                        }
+                    }
+                }
+            }
+        },
+        "data": {
+            "perProperty": {
+                "type": "array",
+                "items": {
+                    "type": "object",
+                    "properties": {
+                        "name": {
+                            "description": "characteristic property name in a flat format: eg. `band_gaps:indirect`",
+                            "type": "string"
+                        }
+                    }
+                }
+            }
+        }
+    },
     "oneOf": [
         {
             "$ref": "file:linear.json"

@@ -12,6 +12,23 @@
                 "least_squares",
                 "ridge"
             ]
+        },
+        "dataFrame": {
+            "$ref": "file:linear/data_frame.json"
+        },
+        "precision": {
+            "perProperty": {
+                "items": {
+                    "$ref": "file:linear/precision.json"
+                }
+            }
+        },
+        "data": {
+            "perProperty": {
+                "items": {
+                    "$ref": "file:linear/data.json"
+                }
+            }
         }
     }
 }

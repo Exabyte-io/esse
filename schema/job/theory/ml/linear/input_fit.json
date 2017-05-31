@@ -8,7 +8,7 @@
         },
         "numSplits":{
             "type": "number",
-            "description": "number of groups to split the training data set for crossvalidation"
+            "description": "number of groups to split the training data set for cross-validation"
         },
         "scaler":{
             "type":"string",

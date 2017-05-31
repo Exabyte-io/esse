@@ -2,21 +2,43 @@
     "$schema": "http://json-schema.org/draft-04/schema#",
     "title": "ML methods input schema",
     "type": "object",
+    "oneOf": [
+        {
+            "properties": {
+                "type": {
+                    "enum": [
+                        "fit"
+                    ]
+                },
+                "allOf": [
+                    {
+                        "$ref": "file:_input_fit.json"
+                    }
+                ]
+            }
+        },
+        {
+            "properties": {
+                "type": {
+                    "enum": [
+                        "predict"
+                    ]
+                }
+            }
+        }
+    ],
     "properties": {
-        "predict": {
+        "method": {
             "oneOf": [
                 {
-                    "description": "one of the pre-trained ml methods",
-                    "$ref": "file:predict.json"
+                    "description": "pre-trained ml method (when predicting) or an object describing a new one to be fit",
+                    "$ref": "file:../methods.json"
                 },
                 {
                     "description": "method read from workflow scope",
                     "$ref": "file:../../workflow/unit/_input.json"
                 }
             ]
-        },
-        "fit": {
-            "$ref": "file:fit.json"
         },
         "targetProperties": {
             "description": "target properties to predict",
