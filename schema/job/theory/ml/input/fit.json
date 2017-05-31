@@ -16,6 +16,25 @@
         "features": {
             "description": "material features used for model fitting",
             "type": "array"
+        },
+        "properties": {
+            "description": "target properties to predict",
+            "type": "array"
+        },
+        "method": {
+            "properties": {
+                "type": {
+                    "type": "string"
+                },
+                "subtype": {
+                    "type": "string"
+                }
+            }
         }
-    }
+    },
+    "required": [
+        "type",
+        "features",
+        "properties"
+    ]
 }

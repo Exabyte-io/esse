@@ -30,5 +30,12 @@
                 }
             }
         }
-    }
+    },
+    "required": [
+        "type",
+        "subtype",
+        "dataFrame",
+        "precision",
+        "data"
+    ]
 }

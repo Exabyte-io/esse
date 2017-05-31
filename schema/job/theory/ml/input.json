@@ -11,16 +11,17 @@
         }
     ],
     "properties": {
-        "targetProperties": {
-            "description": "target properties to predict",
-            "type": "array"
-        },
-        "exabyteIds": {
-            "description": "List of material ids corresponding to materials used for model fitting or property prediction",
-            "type": "array"
+        "materials": {
+            "type": "object",
+            "properties": {
+                "exabyteIds": {
+                    "description": "List of material ids corresponding to materials used for model fitting or property prediction",
+                    "type": "array"
+                }
+            }
         }
     },
     "required": [
-        "exabyteIds"
+        "materials"
     ]
 }

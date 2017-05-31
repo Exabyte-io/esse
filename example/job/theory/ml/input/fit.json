@@ -1,0 +1,11 @@
+{
+    "...": "include(../_input_fit.json)",
+    "type": "fit",
+    "features": [
+        "elemental_composition",
+        "electronegativity"
+    ],
+    "properties": [
+        "band_gaps"
+    ]
+}

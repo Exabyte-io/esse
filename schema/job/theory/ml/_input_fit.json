@@ -1,9 +1,30 @@
 {
     "$schema": "http://json-schema.org/draft-04/schema#",
     "title": "List of input fit arguments",
+    "type": "object",
+    "properties": {
+        "method": {
+            "properties": {
+                "type": {
+                    "enum": [
+                        "linear"
+                    ]
+                },
+                "subtype": {
+                    "enum": [
+                        "least_squares",
+                        "ridge"
+                    ]
+                }
+            }
+        }
+    },
     "oneOf": [
         {
             "$ref": "file:linear/input_fit.json"
         }
+    ],
+    "required": [
+        "method"
     ]
 }
