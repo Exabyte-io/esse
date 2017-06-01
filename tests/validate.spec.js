@@ -37,6 +37,7 @@ function getIncludeName(value) {
  * @param filename Name of the json file to read in
  */
 function parseJSONInclude(dirpath, filename, isInclude) {
+    console.log('Reading from', dirpath, filename);
     var filepath = path.join(dirpath, filename),
         json = fs.readFileSync(filepath, 'utf8'),
         d = JSON.parse(json);

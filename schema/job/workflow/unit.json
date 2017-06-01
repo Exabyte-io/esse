@@ -12,6 +12,7 @@
                 "reduce",
                 "assignment",
                 "condition",
+                "subworkflow",
                 "exit"
             ]
         },
@@ -89,10 +90,19 @@
             "$ref": "file:unit/reduce.json"
         }
     },
-    "required": [
-        "type",
-        "name",
-        "head",
-        "flowchartId"
+    "oneOf": [
+        {
+            "required": [
+                "type",
+                "flowchartId",
+                "name"
+            ]
+        },
+        {
+            "required": [
+                "type",
+                "_id"
+            ]
+        }
     ]
 }
