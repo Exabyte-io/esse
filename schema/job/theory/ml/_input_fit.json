@@ -17,13 +17,15 @@
                     ]
                 }
             }
+        },
+        "arguments": {
+            "oneOf": [
+                {
+                    "$ref": "file:linear/input_fit.json"
+                }
+            ]
         }
     },
-    "oneOf": [
-        {
-            "$ref": "file:linear/input_fit.json"
-        }
-    ],
     "required": [
         "method"
     ]
