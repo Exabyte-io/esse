@@ -9,10 +9,13 @@
         "cvError": {
             "description": "cross validation error of the estimator",
             "type": "number"
+        },
+        "score": {
+            "description": "prediction score of the estimator. Eg: r2_score",
+            "type": "number"
         }
     },
     "required": [
-        "trainingError",
-        "cvError"
+        "trainingError"
     ]
 }

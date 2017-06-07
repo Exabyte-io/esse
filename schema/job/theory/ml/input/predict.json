@@ -1,0 +1,28 @@
+{
+    "$schema": "http://json-schema.org/draft-04/schema#",
+    "title": "predict schema",
+    "type": "object",
+    "properties": {
+        "type": {
+            "enum": [
+                "predict"
+            ]
+        },
+        "method": {
+            "oneOf": [
+                {
+                    "description": "pre-trained ml method (when predicting) or an object describing a new one to be fit",
+                    "$ref": "file:../_methods.json"
+                },
+                {
+                    "description": "method read from workflow scope",
+                    "$ref": "file:../../../workflow/unit/_input.json"
+                }
+            ]
+        }
+    },
+    "required": [
+        "type",
+        "method"
+    ]
+}

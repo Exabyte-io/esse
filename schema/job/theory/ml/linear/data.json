@@ -1,0 +1,64 @@
+{
+    "$schema": "http://json-schema.org/draft-04/schema#",
+    "title": "regression parameters schema",
+    "properties": {
+        "coefficients": {
+            "type": "array",
+            "description": "Array with weights/coefficients of the function for each target in property vector from the linear or non-linear fit",
+            "items": {
+                "type": "number"
+            }
+        },
+        "intercept": {
+            "type": "array",
+            "description": "list of intercepts (shift) from the linear or non-linear fit of data points",
+            "items": {
+                "type": "number"
+            }
+        },
+        "features": {
+            "type": "array",
+            "description": "Array with subset of features used in linear or non-linear fit",
+            "items": {
+                "type": "string"
+            }
+        },
+        "scores": {
+            "type": "array",
+            "description": "Array of pvalues of features used in linear or non-linear fit, https://en.wikipedia.org/wiki/P-value",
+            "items": {
+                "type": "number"
+            }
+        },
+        "scaler": {
+            "type": "array",
+            "description": "feature scaling parameters from linear/non-linear fit",
+            "items": {
+                "properties": {
+                    "name": {
+                        "description": "name of variable",
+                        "enum": [
+                            "mean",
+                            "variance"
+                        ]
+                    },
+                    "values": {
+                        "type": "array",
+                        "description": "array of values corresponding to the variable. Example: variance in training data",
+                        "items": {
+                            "type": "number"
+                        }
+                    }
+                }
+            }
+        }
+    },
+    "required": [
+        "coefficients",
+        "intercept",
+        "features",
+        "scaler",
+        "scores"
+    ]
+}
+

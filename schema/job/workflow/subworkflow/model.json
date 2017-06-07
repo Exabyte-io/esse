@@ -24,12 +24,9 @@
             }
         }
     },
-    "oneOf": [
+    "allOf": [
         {
-            "$ref": "file:../../theory/dft.json"
-        },
-        {
-            "$ref": "file:../../theory/ml.json"
+            "$ref": "file:../../theory/_models.json"
         }
     ],
     "required": [

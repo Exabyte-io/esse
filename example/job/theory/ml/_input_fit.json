@@ -1,0 +1,9 @@
+{
+    "arguments": {
+        "...": "include(linear/input_fit.json)"
+    },
+    "method": {
+        "type": "linear",
+        "subtype": "least_squares"
+    }
+}

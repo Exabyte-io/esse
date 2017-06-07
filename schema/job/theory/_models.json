@@ -1,0 +1,12 @@
+{
+    "$schema": "http://json-schema.org/draft-04/schema#",
+    "title": "List of supported models",
+    "oneOf": [
+        {
+            "$ref": "file:dft.json"
+        },
+        {
+            "$ref": "file:ml.json"
+        }
+    ]
+}

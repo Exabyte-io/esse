@@ -1,0 +1,40 @@
+{
+    "$schema": "http://json-schema.org/draft-04/schema#",
+    "title": "ML methods input schema",
+    "type": "object",
+    "allOf": [
+        {
+            "$ref": "file:../_input_fit.json"
+        }
+    ],
+    "properties": {
+        "type": {
+            "enum": [
+                "fit"
+            ]
+        },
+        "features": {
+            "description": "material features used for model fitting",
+            "type": "array"
+        },
+        "properties": {
+            "description": "target properties to predict",
+            "type": "array"
+        },
+        "method": {
+            "properties": {
+                "type": {
+                    "type": "string"
+                },
+                "subtype": {
+                    "type": "string"
+                }
+            }
+        }
+    },
+    "required": [
+        "type",
+        "features",
+        "properties"
+    ]
+}

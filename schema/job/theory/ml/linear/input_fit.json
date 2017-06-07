@@ -1,0 +1,25 @@
+{
+    "$schema": "http://json-schema.org/draft-04/schema#",
+    "title": "linear methods fit arguments schema",
+    "properties": {
+        "sampleWeight": {
+            "type": "boolean",
+            "description": "specify whether to scale the response variables"
+        },
+        "numSplits":{
+            "type": "number",
+            "description": "number of groups to split the training data set for cross-validation"
+        },
+        "scaler":{
+            "type":"string",
+            "description": "name of the feature scaling method for scaling input features. Eg: StandardScaler"
+        },
+        "numFeatures": {
+            "type": "number",
+            "description": "number of features to select for model training"
+        }
+    },
+    "required": [
+        "sampleWeight"
+    ]
+}

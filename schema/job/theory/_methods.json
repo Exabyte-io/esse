@@ -1,0 +1,12 @@
+{
+    "$schema": "http://json-schema.org/draft-04/schema#",
+    "title": "List of all supported methods",
+    "oneOf": [
+        {
+            "$ref": "file:dft/_methods.json"
+        },
+        {
+            "$ref": "file:ml/_methods.json"
+        }
+    ]
+}

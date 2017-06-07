@@ -1,0 +1,6 @@
+{
+    "sampleWeight": true,
+    "numFeatures": 2,
+    "scaler": "StandardScaler",
+    "numSplits":3
+}

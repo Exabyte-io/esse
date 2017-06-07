@@ -1,13 +1,13 @@
 {
     "c8zG3XcnnTybfP3QQ": {
-        "density": 2.21,
+        "electronegativity": 1.90,
         "elemental_composition": {
             "Ge": 0.3125,
             "Si": 0.6875
         }
     },
     "wWK2XCyivQrG8j34Z": {
-        "density": 2.34,
+        "electronegativity": 2.00,
         "elemental_composition": {
             "Ge": 0.1875,
             "Si": 0.8125
