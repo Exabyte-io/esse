@@ -8,7 +8,7 @@
             "properties": {
                 "approximation": {
                     "enum": [
-                        "gga"
+                        "lda"
                     ]
                 },
                 "functional": {

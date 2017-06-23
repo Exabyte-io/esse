@@ -51,14 +51,12 @@
                 "enum": [
                     "pz",
                     "pw",
-                    "cp",
                     "vwn"
                 ]
             },
             "gga": {
                 "enum": [
                     "pbe",
-                    "pbe0",
                     "pw91",
                     "rpbe"
                 ]
