@@ -57,5 +57,14 @@
                 "$ref": "file:file.json"
             }
         }
-    }
+    },
+    "required": [
+        "apps",
+        "elements",
+        "exchangeCorrelation",
+        "format",
+        "name",
+        "type",
+        "files"
+    ]
 }
