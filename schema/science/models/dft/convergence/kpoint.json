@@ -3,7 +3,7 @@
     "title": "convergence schema for converging a property wrt kpoints",
     "allOf": [
         {
-            "$ref": "file:../../../workflow/unit/convergence.json"
+            "$ref": "file:../../../../job/workflow/unit/convergence.json"
         }
     ],
     "properties": {

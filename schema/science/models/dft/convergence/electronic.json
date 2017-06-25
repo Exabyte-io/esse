@@ -3,7 +3,7 @@
     "title": "electronic self consistency convergence schema",
     "allOf": [
         {
-            "$ref": "file:../../../workflow/unit/convergence.json"
+            "$ref": "file:../../../../job/workflow/unit/convergence.json"
         }
     ],
     "properties": {
