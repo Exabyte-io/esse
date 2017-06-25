@@ -13,10 +13,10 @@
         "functional": {
             "oneOf": [
                 {
-                    "$ref": "file:../../../dft.json#/definitions/functionals/lda"
+                    "$ref": "file:../../../models/dft.json#/definitions/functionals/lda"
                 },
                 {
-                    "$ref": "file:../../../dft.json#/definitions/functionals/gga"
+                    "$ref": "file:../../../models/dft.json#/definitions/functionals/gga"
                 }
             ]
         }
