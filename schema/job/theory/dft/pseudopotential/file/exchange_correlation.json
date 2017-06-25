@@ -1,5 +1,24 @@
 {
     "$schema": "http://json-schema.org/draft-04/schema#",
     "title": "exchange correlation schema",
-    "type": "object"
+    "type": "object",
+    "description": "details on the type of formalism used",
+    "properties": {
+        "approximation": {
+            "enum": [
+                "lda",
+                "gga"
+            ]
+        },
+        "functional": {
+            "oneOf": [
+                {
+                    "$ref": "file:../../../dft.json#/definitions/functionals/lda"
+                },
+                {
+                    "$ref": "file:../../../dft.json#/definitions/functionals/gga"
+                }
+            ]
+        }
+    }
 }
