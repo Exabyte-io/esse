@@ -6,7 +6,7 @@
     },
     "data": {
         "set": {
-            "...": "include(../../../theory/dft/pseudopotential/set.json)"
+            "...": "include(../../../theory/dft/pseudopotential/dataset.json)"
         }
     }
 }
