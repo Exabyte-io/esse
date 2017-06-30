@@ -2,7 +2,11 @@ var url = require("url");
 var path = require("path");
 var _ = require("lodash");
 
-var schemasList = [
+const schemasList = [];
+
+console.log(schemasList);
+
+var schemasList1 = [
     {
         dir: 'job/model/method/workflow',
         content: require('../schema/job/model/method/workflow/unit.json'),

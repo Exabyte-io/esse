@@ -3,12 +3,19 @@ var path = require("path");
 var walkSync = require("file").walkSync;
 var fs = require("fs");
 var _ = require("lodash");
+var deref = require('json-schema-deref-sync');
+var Resolver = require('json-schema-ref-parser');
 
 var SCHEMAS_DIR = "../schema";
+var LIB_DIR = "../lib";
 var NAMESPACE = "https://exabyte.io/schemas/";
 var INCLUDE_KEY = '...';
 var INCLUDE_VALUE_PATTERN = /^include\((.+)\)$/;
 var JSON_INCLUDE_CACHE = {};
+var ALL_SCHEMAS = [];
+
+var schemasDir = path.resolve(__dirname, SCHEMAS_DIR);
+var libDir = path.resolve(__dirname, LIB_DIR);
 
 /**
  * @summary Is the object is instance of the type check.
@@ -18,7 +25,7 @@ var JSON_INCLUDE_CACHE = {};
  * @return {boolean} the result
  */
 function isInstance(object, type) {
-    return (Object.prototype.toString.call(object).slice(8, -1) === type) ? true : false;
+    return (Object.prototype.toString.call(object).slice(8, -1) === type);
 }
 
 /**
@@ -27,7 +34,7 @@ function isInstance(object, type) {
  */
 function getIncludeName(value) {
     if ((isInstance(value, "String")) &&
-        (value.search(INCLUDE_VALUE_PATTERN) != -1)) {
+        (value.search(INCLUDE_VALUE_PATTERN) !== -1)) {
         return value.match(INCLUDE_VALUE_PATTERN)[1]
     }
 }
@@ -39,8 +46,11 @@ function getIncludeName(value) {
  */
 function parseJSONInclude(dirpath, filename, isInclude) {
     var filepath = path.join(dirpath, filename),
-        json = fs.readFileSync(filepath, 'utf8'),
-        d = JSON.parse(json);
+        // either use passed list of schemas or read from disk
+        json = ALL_SCHEMAS.length ? ALL_SCHEMAS.find((el) => {
+            return el.dirpath == dirpath && el.filename == filename
+        }) : fs.readFileSync(filepath, 'utf8');
+    d = json;
     if (isInclude) {
         if (!isInstance(d, "Object")) {
             throw "The JSON file being included should always be a dict rather than a list";
@@ -92,87 +102,82 @@ function walkThoughToInclude(obj, dirpath) {
     }
 }
 
-/**
- * @summary Traverse schemas directory and build array of objects in following format:
- * ```json
- * {
- *     dir: 'primitive/', // relative folder location
- *     filename: '2d_data.json', // filename os the schema file
- *     content: {<schema definition is here>}, // schema content
- *     example: {<example for the schema, optional>}
- * }
- * ```
- * see walkSync docs for more info.
- *
- * @param withExamples if `true` add example object to the map
- */
-function getNormalizedSchemas(withExamples) {
+function replaceFileRefsWithUrl(schema) {
+    var str = JSON.stringify(schema.content).replace(new RegExp('file:', 'g'), url.resolve(NAMESPACE, schema.dirpath));
+    return Object.assign({}, schema, {content: JSON.parse(str)});
+}
 
-    var schemasDir = path.resolve(__dirname, SCHEMAS_DIR);
+function replaceFileRefsWithNone(schema) {
+    var str = JSON.stringify(schema.content).replace(new RegExp('file:', 'g'), '');
+    return Object.assign({}, schema, {content: JSON.parse(str)});
+}
+
+function addIdProperty(schema) {
+    if (!schema.content.id) {
+        schema.content.id = url.resolve(NAMESPACE, path.join(schema.dirpath, schema.filename));
+    }
+    return Object.assign({}, schema, {id: schema.content.id});
+}
+
+function getDereferencedSchemas(withExamples) {
+
     var schemas = [];
 
     walkSync(schemasDir, function (dirPath, dirs, files) {
         files.forEach(function (f) {
             var filePath = path.join(dirPath, f);
-            var dir = _.trimStart(dirPath.replace(schemasDir, ''), '/');
+            var _dir = _.trimStart(dirPath.replace(schemasDir, ''), '/');
 
             var schema = {
                 filename: f,
                 content: JSON.parse(fs.readFileSync(filePath, 'utf8')),
-                dir: dir === '' ? dir : dir + '/'
+                dirpath: _dir === '' ? _dir : _dir + '/'
             };
 
-            if (withExamples) {
-                var exampleFile = filePath.replace('schema', 'example');
-                if (fs.existsSync(exampleFile)) {
-                    JSON_INCLUDE_CACHE = {};
-                    schema.example = parseJSONInclude(path.dirname(exampleFile), path.basename(exampleFile));
-                }
-            }
-            schemas.push(schema);
-        });
-    });
+            schema = replaceFileRefsWithNone(schema)
 
-    // generate id for each schema and replace $refs values by appropriate id
-    schemas.forEach(function (schema) {
-        addIdProp(schema);
-        replaceRefs(schema);
+            schemas.push(schema);
+
+            var newDir = path.join(libDir, schema.dirpath);
+            var newFil = path.join(newDir, schema.filename);
+            if (!fs.existsSync(newDir)) {
+                fs.mkdirSync(newDir);
+            }
+            fs.writeFileSync(newFil, JSON.stringify(schema));
+        });
     });
 
     return schemas;
 }
 
-/**
- * Converts $ref values from "file:..." to "https://exabyte.io/schemas/..." (id).
- * @param schema
- */
-function replaceRefs(schema) {
-    var str = JSON.stringify(schema.content).replace(new RegExp('file:', 'g'), url.resolve(NAMESPACE, schema.dir));
-    schema.content = JSON.parse(str);
-}
+ALL_SCHEMAS = getDereferencedSchemas().slice(0, 1);
 
-/**
- * Generates id from provided dir and filename. Id is equal to concatenation of: namespace, dir and filename.
- * @param dir {String}
- * @param filename {String}
- */
-function generateId(dir, filename) {
-    return url.resolve(NAMESPACE, path.join(dir, filename));
-}
+ALL_SCHEMAS.forEach((s, i, l) => {
+    l[i] = parseJSONInclude(s.dirpath, s.filename);
+});
 
-/**
- * Adds id property to schema if it does not exists.
- * @param schema
- */
-function addIdProp(schema) {
-    if (!schema.content.id) {
-        schema.content.id = generateId(schema.dir, schema.filename);
-    }
-    schema.id = schema.content.id;
-}
+ALL_SCHEMAS.forEach((s, i, l) => {
+    l[i] = deref(s, {
+        baseFolder: libDir
+    });
+//    Resolver.dereference(s, {
+//        resolve: {
+//            file: {
+//                canRead: new RegExp(libDir, "i")
+//            }
+//        }
+//    })
+//        .then((schema) => {
+//            l[i] = schema
+//        })
+//        .catch((err) => {
+//            console.error(err)
+//        })
+});
+
+console.log(JSON.stringify(ALL_SCHEMAS, null, '\t'));
 
 module.exports = {
-    getNormalizedSchemas: getNormalizedSchemas,
+    getNormalizedSchemas: getDereferencedSchemas,
     parseJSONInclude: parseJSONInclude
 };
-
