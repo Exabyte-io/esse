@@ -105,8 +105,6 @@
         {
             "required": [
                 "type",
-                "flowchartId",
-                "name",
                 "_id"
             ]
         }
