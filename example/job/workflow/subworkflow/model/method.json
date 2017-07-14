@@ -5,6 +5,8 @@
         "...": "include(../../../theory/dft/pseudopotential/precision.json)"
     },
     "data": {
-        "pseudo": []
+        "set": {
+            "...": "include(../../../theory/dft/pseudopotential/dataset.json)"
+        }
     }
 }
