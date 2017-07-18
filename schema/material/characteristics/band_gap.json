@@ -28,7 +28,8 @@
                 "eV",
                 "rydberg",
                 "hartree"
-            ]
+            ],
+            "default": "eV"
         }
     },
     "required": [
