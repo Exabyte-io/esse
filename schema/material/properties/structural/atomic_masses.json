@@ -4,7 +4,7 @@
     "description": "masses of atoms by ids, scalar, unitless",
     "allOf": [
         {
-            "$ref": "file:../../primitive/_array_of_ids.json"
+            "$ref": "file:../../../primitive/_array_of_ids.json"
         }
     ],
     "properties": {
