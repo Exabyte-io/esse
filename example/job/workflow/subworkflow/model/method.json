@@ -5,8 +5,8 @@
         "...": "include(../../../../science/methods/pseudopotential/precision.json)"
     },
     "data": {
-        "set": {
-            "...": "include(../../../../science/methods/pseudopotential/set.json)"
+        "dataset": {
+            "...": "include(../../../../science/methods/pseudopotential/dataset.json)"
         }
     }
 }

@@ -19,8 +19,8 @@
         },
         "data": {
             "properties": {
-                "set": {
-                    "$ref": "file:pseudopotential/set.json"
+                "dateSet": {
+                    "$ref": "file:pseudopotential/dataset.json"
                 }
             }
         }
