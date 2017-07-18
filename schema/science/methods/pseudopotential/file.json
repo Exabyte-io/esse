@@ -68,7 +68,7 @@
                 "none"
             ]
         },
-        "characteristics": {
+        "properties": {
             "type": "array",
             "description": "array of characteristic properties"
         },

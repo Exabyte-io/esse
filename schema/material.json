@@ -16,11 +16,11 @@
         },
         "basis": {
             "description": "object containing an array of elements and coordinates in the supercell",
-            "$ref": "file:material/structure/basis.json"
+            "$ref": "file:material/properties/structural/basis.json"
         },
         "lattice": {
             "description": "object defining the lattice cell size and shape",
-            "$ref": "file:material/structure/lattice.json"
+            "$ref": "file:material/properties/structural/lattice.json"
         },
         "derivedProperties": {
             "description": "object defining the lattice cell size and shape",

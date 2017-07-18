@@ -170,7 +170,7 @@ describe('ajv', function () {
     });
 
     it('works on schema with external ref', function () {
-        chai.expect(ajv.getSchema('https://exabyte.io/schemas/material/structure/atomic_coordinates.json')).to.be.ok;
+        chai.expect(ajv.getSchema('https://exabyte.io/schemas/material/properties/structural/atomic_coordinates.json')).to.be.ok;
     });
 });
 
