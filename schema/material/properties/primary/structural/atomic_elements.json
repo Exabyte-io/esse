@@ -4,7 +4,7 @@
     "description": "elements of atoms by ids, string, unitless",
     "allOf": [
         {
-            "$ref": "file:../../../primitive/_array_of_ids.json"
+            "$ref": "file:../../../../primitive/_array_of_ids.json"
         }
     ],
     "properties": {

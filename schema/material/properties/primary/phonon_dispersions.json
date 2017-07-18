@@ -1,9 +1,9 @@
 {
     "$schema": "http://json-schema.org/draft-04/schema#",
-    "title": "band structure schema",
+    "title": "phonon band structure schema",
     "allOf": [
         {
-            "$ref": "file:../../primitive/2d_plot.json"
+            "$ref": "file:../../../primitive/2d_plot.json"
         }
     ],
     "properties": {
@@ -11,7 +11,7 @@
             "properties": {
                 "label": {
                     "enum": [
-                        "kpoints"
+                        "qpoints"
                     ]
                 },
                 "units": {
@@ -26,33 +26,22 @@
             "properties": {
                 "label": {
                     "enum": [
-                        "energy"
+                        "frequency"
                     ]
                 },
                 "units": {
                     "enum": [
-                        "eV",
-                        "rydberg",
-                        "hartree"
+                        "cm-1",
+                        "THz",
+                        "meV"
                     ]
                 }
             }
         },
         "name": {
             "enum": [
-                "band_structure"
+                "phonon_dispersions"
             ]
-        },
-        "spin": {
-            "description": "spin of each band",
-            "type": "array",
-            "items": {
-                "type": "number",
-                "enum": [
-                    0.5,
-                    -0.5
-                ]
-            }
         }
     }
 }

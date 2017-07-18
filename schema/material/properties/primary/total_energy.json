@@ -1,17 +1,15 @@
 {
     "$schema": "http://json-schema.org/draft-04/schema#",
-    "title": "energy schema",
+    "title": "total energy schema",
     "allOf": [
         {
-            "$ref": "file:../../primitive/scalar.json"
+            "$ref": "file:../../../primitive/scalar.json"
         }
     ],
     "properties": {
         "name": {
             "enum": [
-                "atomization_energy",
-                "formation_energy",
-                "zero_point_energy"
+                "total_energy"
             ]
         },
         "units": {
@@ -19,7 +17,8 @@
                 "eV",
                 "rydberg",
                 "hartree"
-            ]
+            ],
+            "default": "eV"
         }
     }
 }

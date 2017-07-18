@@ -1,10 +1,9 @@
 {
     "$schema": "http://json-schema.org/draft-04/schema#",
-    "title": "Phonon density of states schema",
-    "type": "object",
+    "title": "band structure schema",
     "allOf": [
         {
-            "$ref": "file:../../primitive/2d_plot.json"
+            "$ref": "file:../../../primitive/2d_plot.json"
         }
     ],
     "properties": {
@@ -12,14 +11,13 @@
             "properties": {
                 "label": {
                     "enum": [
-                        "frequency"
+                        "kpoints"
                     ]
                 },
                 "units": {
                     "enum": [
-                        "cm-1",
-                        "THz",
-                        "meV"
+                        "crystal",
+                        "cartesian"
                     ]
                 }
             }
@@ -28,22 +26,33 @@
             "properties": {
                 "label": {
                     "enum": [
-                        "Phonon DOS"
+                        "energy"
                     ]
                 },
                 "units": {
                     "enum": [
-                        "states/cm-1",
-                        "states/THz",
-                        "states/meV"
+                        "eV",
+                        "rydberg",
+                        "hartree"
                     ]
                 }
             }
         },
         "name": {
             "enum": [
-                "phonon_dos"
+                "band_structure"
             ]
+        },
+        "spin": {
+            "description": "spin of each band",
+            "type": "array",
+            "items": {
+                "type": "number",
+                "enum": [
+                    0.5,
+                    -0.5
+                ]
+            }
         }
     }
 }

@@ -1,28 +1,14 @@
 {
     "$schema": "http://json-schema.org/draft-04/schema#",
-    "title": "phonon band structure schema",
+    "title": "Phonon density of states schema",
+    "type": "object",
     "allOf": [
         {
-            "$ref": "file:../../primitive/2d_plot.json"
+            "$ref": "file:../../../primitive/2d_plot.json"
         }
     ],
     "properties": {
         "xAxis": {
-            "properties": {
-                "label": {
-                    "enum": [
-                        "qpoints"
-                    ]
-                },
-                "units": {
-                    "enum": [
-                        "crystal",
-                        "cartesian"
-                    ]
-                }
-            }
-        },
-        "yAxis": {
             "properties": {
                 "label": {
                     "enum": [
@@ -38,9 +24,25 @@
                 }
             }
         },
+        "yAxis": {
+            "properties": {
+                "label": {
+                    "enum": [
+                        "Phonon DOS"
+                    ]
+                },
+                "units": {
+                    "enum": [
+                        "states/cm-1",
+                        "states/THz",
+                        "states/meV"
+                    ]
+                }
+            }
+        },
         "name": {
             "enum": [
-                "phonon_dispersions"
+                "phonon_dos"
             ]
         }
     }
