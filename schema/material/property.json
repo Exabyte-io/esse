@@ -1,9 +1,9 @@
 {
     "$schema": "http://json-schema.org/draft-04/schema#",
-    "title": "characteristic schema",
+    "title": "property schema",
     "properties": {
         "_id": {
-            "description": "identity of this characteristic",
+            "description": "identity of this property",
             "type": "string"
         },
         "exabyteId": {
@@ -11,7 +11,7 @@
             "type": "string"
         },
         "data": {
-            "description": "container of the information, specific to each characteristic",
+            "description": "container of the information, specific to each property",
             "type": "object"
         },
         "access": {
@@ -21,21 +21,21 @@
             "$ref": "file:../security/_owner.json"
         },
         "source": {
-            "description": "where this characteristic was obtained from, eg. `exabyte job`",
+            "description": "where this property was obtained from, eg. `exabyte job`",
             "type": "object",
             "properties": {
                 "type": {
-                    "description": "type of the source of this characteristic, eg. `exabyte`, `experiment`",
+                    "description": "type of the source of this property, eg. `exabyte`, `experiment`",
                     "type": "string"
                 },
                 "info": {
                     "description": "additional information about this source",
                     "oneOf": [
                         {
-                            "$ref": "file:characteristics/sources_info/exabyte.json"
+                            "$ref": "file:propertys/sources_info/exabyte.json"
                         },
                         {
-                            "$ref": "file:characteristics/sources_info/experiment.json"
+                            "$ref": "file:propertys/sources_info/experiment.json"
                         }
                     ]
                 }
