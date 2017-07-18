@@ -13,7 +13,7 @@
     "source": {
         "type": "exabyte",
         "info": {
-            "...": "include(characteristics/sources_info/exabyte.json)"
+            "...": "include(properties/sources_info/exabyte.json)"
         }
     }
 }
