@@ -34,8 +34,10 @@ To produce json array with all dereferenced schemas (javascript):
 
 ```bash
 npm install
-DEBUG=true node src/index.js > schemas.json
+DEBUG=true npm --silent run-script run > schemas.json
 ```
+
+file `shemas.json` will contain all schemas. Without passing `DEBUG` flag schemas can be found inside `lib` directory.
 
 # Tests
 
