@@ -28,6 +28,8 @@ node_modules/
 
 # 'compiled' json files with inclusions and references resolved
 compiled/
+lib/
 
 # Virtual environment
 .virtualenv
+
