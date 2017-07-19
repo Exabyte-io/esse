@@ -1,0 +1,282 @@
+- name: physics-based
+  slug: pb
+  children:
+    # --------------------------- #
+    #     Quantum Mechanical      #
+    # --------------------------- #
+    - name: quantum-mechanical
+      slug: qm
+      children:
+        # DFT
+        - name: density functional theory
+          slug: dft
+          children:
+            ## LDA
+            - name: local density approximation
+              slug: lda
+              schema:
+                type: object
+                properties:
+                  functional:
+                    type: object
+                    enum:
+                      - name: perdew-zunger
+                        slug: pz
+                        reference:
+                          doi: https://doi.org/10.1103/PhysRevB.23.5048
+                      - name: perdew-wang
+                        slug: pw
+                        reference:
+                          doi: https://doi.org/10.1103/PhysRevB.45.13244
+                      - name: vosko-wilk-nusair
+                        slug: pw
+                        reference:
+                          doi: https://doi.org/10.1139/p80-159
+                  modifiers:
+                    type: array
+                    items:
+                      type: object
+                      enum:
+                        - name: hubbard-corrected
+                          schema:
+                            type: object
+                            properties:
+                              hubbardU:
+                                type: number
+                        - name: spin-resolved
+                          schema:
+                            type: object
+                            properties:
+                              non-collinear:
+                                type: boolean
+                required:
+                  - functional
+            ## GGA
+            - name: generalized gradient approximation
+              slug: gga
+              schema:
+                type: object
+                properties:
+                  functional:
+                    type: object
+                    enum:
+                      - name: perdew-burke-ernzerhof
+                        slug: pbe
+                        reference:
+                          doi: https://doi.org/10.1103/PhysRevLett.77.3865
+                  modifiers:
+                    type: array
+                    items:
+                      type: object
+                      enum:
+                        - name: hubbard-corrected
+                          schema:
+                          type: object
+                          properties:
+                            hubbardU:
+                              type: number
+                        - name: spin-resolved
+                          schema:
+                          type: object
+                          properties:
+                            non-collinear:
+                              type: boolean
+                required:
+                  - functional
+            ## HSE
+            - name: hybrid functionals
+              slug: hyb
+              schema:
+                type: object
+                properties:
+                  functional:
+                    type: object
+                    enum:
+                      - name: heyd-scuseria-ernzerhof-03
+                        slug: hse03
+                        reference:
+                          doi: http://dx.doi.org/10.1063/1.1564060
+                      - name: heyd-scuseria-ernzerhof-06
+                        slug: hse06
+                        reference:
+                          doi: http://dx.doi.org/10.1063/1.2404663
+                      - name: perdew-burke-ernzerhof-0
+                        slug: hse03
+                        reference:
+                          doi: http://dx.doi.org/10.1063/1.472933
+                      - name: becke-3-lee-yang-parr
+                        slug: b3lyp
+                        reference:
+                          doi: http://dx.doi.org/10.1063/1.464913
+                  modifiers:
+                    type: array
+                    items:
+                      type: object
+                      enum:
+                        - name: spin-resolved
+                          schema:
+                          type: object
+                          properties:
+                            non-collinear:
+                              type: boolean
+                required:
+                  - functional
+            ## GW
+            - name: gw approximation
+              slug: gw
+              schema:
+                type: object
+                properties:
+                  category:
+                    type: object
+                    enum:
+                      - name: one-shot g0w0
+                        slug: g0w0
+                        reference:
+                          doi: https://doi.org/10.1103/PhysRevB.34.5390
+                      - name: self-consistent gw
+                        slug: scgw
+                        reference:
+                          doi: https://doi.org/10.1103/PhysRevLett.99.246403
+                  parent:
+                    oneOf:
+                      - $ref: "#/1/children/1/children/1/children/1"  # LDA
+                      - $ref: "#/1/children/1/children/1/children/2"  # GGA
+                  modifiers:
+                    type: array
+                    items:
+                      type: object
+                      enum:
+                        - name: spin-resolved
+                          schema:
+                          type: object
+                          properties:
+                            non-collinear:
+                              type: boolean
+                required:
+                  - category
+                  - parent
+
+        # QMC
+        - name: quantum monte carlo
+          slug: qmc
+          children:
+            ## DMC
+            - name: diffusion monte carlo
+              slug: dmc
+              schema:
+                type: object
+                properties:
+                  category:
+                    type: object
+                    enum:
+                      # only one functional has to be selected
+                      - name: casino
+                        slug: csn
+                        reference:
+                          url: https://vallico.net/casinoqmc/what-is-casino/
+                  modifiers:
+                    type: array
+                    items:
+                      type: object
+                      enum:
+                required:
+                  - category
+    # --------------------------- #
+    #      Molecular modeling     #
+    # --------------------------- #
+    - name: molecular modeling
+      slug: md
+      children:
+        # CL
+        - name: classical molecular dynamics
+          slug: clmd
+          children:
+            ## LJ
+            - name: lennard-jones
+              slug: lj
+              schema:
+                type: object
+                properties:
+                  # ???: this may need to go into method
+                  category:
+                    type: object
+                    enum:
+                      - name: <name of source used for potential coefficients>
+                        slug: <slug>
+                        reference:
+                          doi: <url>
+                  modifiers:
+                    type: array
+                    items:
+                      type: object
+                      enum:
+                required:
+                  - category
+        # AB
+        - name: ab-initio molecular dynamics
+          slug: aimd
+          children:
+            ## BO
+            - name: born-oppenheimer
+              slug: bo
+              schema:
+                type: object
+                properties:
+                  # ???: this may need to go into method
+                  parents:
+                    type: array
+                    items:
+                      enum:
+                        - name: <name of source used for ab-initio calculation>
+                          slug: <slug>
+                          reference:
+                            doi: <url>
+                        - name: <name of source used for md calculation>
+                          slug: <slug>
+                          reference:
+                            doi: <url>
+                      minItems: 2
+                required:
+                  - parents
+
+            ## CP
+            - name: car-parinello
+              slug: cp
+              schema:
+                type: object
+
+- name: machine learning
+  slug: ml
+  children:
+
+    - name: classification
+      slug: cl
+      children:
+        # Linear
+        - name: linear
+          slug: lin
+          children:
+            ## Logistic
+            - name: logistic
+              slug: log
+              schema:
+                type: object
+
+    - name: regression
+      slug: re
+      children:
+        # Linear
+        - name: logistic
+          slug: log
+          children:
+            ## Least-squares
+            - name: least-squares
+              slug: lsq
+              schema:
+                type: object
+            ## Ridge
+            - name: ridge
+              slug: rid
+              schema:
+                type: object

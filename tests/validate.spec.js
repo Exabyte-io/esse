@@ -166,11 +166,11 @@ var ajv = Ajv({
 
 describe('ajv', function () {
     it('works on primitive schema', function () {
-        chai.expect(ajv.getSchema('https://exabyte.io/schemas/primitive/1d_data_series.json')).to.be.ok;
+        chai.expect(ajv.getSchema('https://exabyte.io/schemas/primitive/math/1d_data_series.json')).to.be.ok;
     });
 
     it('works on schema with external ref', function () {
-        chai.expect(ajv.getSchema('https://exabyte.io/schemas/material/structure/atomic_coordinates.json')).to.be.ok;
+        chai.expect(ajv.getSchema('https://exabyte.io/schemas/material/properties/primary/structural/atomic_coordinates.json')).to.be.ok;
     });
 });
 
