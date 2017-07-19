@@ -11,9 +11,6 @@
         "type": 0
     },
     "source": {
-        "type": "exabyte",
-        "info": {
-            "...": "include(properties/sources_info/exabyte.json)"
-        }
+        "...": "include(../primitive/reference.json)"
     }
 }

@@ -2,11 +2,16 @@
     "$schema": "http://json-schema.org/draft-04/schema#",
     "title": "info for characteristic obtained by experiment",
     "properties": {
+        "type": {
+            "enum": [
+                "experiment"
+            ]
+        },
         "authors": {
             "description": "experiment authors",
             "type": "array",
             "items": {
-                "$ref": "file:../../../references/name.json"
+                "$ref": "file:literature/name.json"
             }
         },
         "title": {
@@ -20,11 +25,11 @@
         "conditions": {
             "type": "array",
             "items": {
-                "$ref": "file:../../../references/condition.json"
+                "$ref": "file:experiment/condition.json"
             }
         },
         "location": {
-            "$ref": "file:../../../references/location.json"
+            "$ref": "file:experiment/location.json"
         },
         "timestamp": {
             "description": "epoch time.",
@@ -36,9 +41,9 @@
         },
         "references": {
             "type": "array",
-            "description": "references to articles",
+            "description": "references to literature articles",
             "items": {
-                "$ref": "file:../../../references/reference.json"
+                "$ref": "file:literature.json"
             }
         }
     },

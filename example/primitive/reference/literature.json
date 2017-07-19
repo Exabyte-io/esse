@@ -2,7 +2,7 @@
     "doi": "10.1000/xyz123",
     "authors": [
         {
-            "...": "include(name.json)"
+            "...": "include(literature/name.json)"
         }
     ]
 }

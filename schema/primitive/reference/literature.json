@@ -1,7 +1,12 @@
 {
     "$schema": "http://json-schema.org/draft-04/schema#",
-    "title": "reference schema",
+    "title": "literature reference schema",
     "properties": {
+        "type": {
+            "enum": [
+                "literature"
+            ]
+        },
         "doi": {
             "type": "string",
             "description": "Digital Object Identifier of the reference."
@@ -47,7 +52,7 @@
             "description": "Start and end pages of the work.",
             "allOf": [
                 {
-                    "$ref": "file:pages.json"
+                    "$ref": "file:literature/pages.json"
                 }
             ]
         },
@@ -55,14 +60,14 @@
             "type": "array",
             "description": "List of authors of the work.",
             "items": {
-                "$ref": "file:name.json"
+                "$ref": "file:literature/name.json"
             }
         },
         "editors": {
             "type": "array",
             "description": "List of editors of the work.",
             "items": {
-                "$ref": "file:name.json"
+                "$ref": "file:literature/name.json"
             }
         },
         "reference": {

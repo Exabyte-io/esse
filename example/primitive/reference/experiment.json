@@ -10,12 +10,12 @@
     "title": "Experiment 1",
     "references": [
         {
-            "...": "include(../../../references/reference.json)"
+            "...": "include(literature.json)"
         }
     ],
     "conditions": [
         {
-            "...": "include(../../../references/condition.json)"
+            "...": "include(experiment/condition.json)"
         }
     ],
     "method": "DFT"

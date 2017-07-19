@@ -2,6 +2,11 @@
     "$schema": "http://json-schema.org/draft-04/schema#",
     "title": "info for characteristic obtained by exabyte calculation",
     "properties": {
+        "type": {
+            "enum": [
+                "exabyte"
+            ]
+        },
         "title": {
             "description": "Human-readable title of the job",
             "type": "string",
@@ -21,7 +26,7 @@
         },
         "model": {
             "description": "subset of the full model used for calculation",
-            "$ref": "file:../_model.json"
+            "$ref": "file:_model.json"
         }
     },
     "required": [

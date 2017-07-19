@@ -4,13 +4,13 @@
     "description": "coordinates of atoms by ids, vector, unitless",
     "allOf": [
         {
-            "$ref": "file:../../../../primitive/_array_of_ids.json"
+            "$ref": "file:../../../../primitive/math/_array_of_ids.json"
         }
     ],
     "properties": {
         "value": {
             "description": "atomic coordinates",
-            "$ref": "file:../../../../primitive/point.json"
+            "$ref": "file:../../../../primitive/math/point.json"
         }
     }
 }

@@ -21,25 +21,7 @@
             "$ref": "file:../security/_owner.json"
         },
         "source": {
-            "description": "where this property was obtained from, eg. `exabyte job`",
-            "type": "object",
-            "properties": {
-                "type": {
-                    "description": "type of the source of this property, eg. `exabyte`, `experiment`",
-                    "type": "string"
-                },
-                "info": {
-                    "description": "additional information about this source",
-                    "oneOf": [
-                        {
-                            "$ref": "file:properties/sources_info/exabyte.json"
-                        },
-                        {
-                            "$ref": "file:properties/sources_info/experiment.json"
-                        }
-                    ]
-                }
-            }
+            "$ref": "file:../primitive/reference.json"
         }
     },
     "required": [
