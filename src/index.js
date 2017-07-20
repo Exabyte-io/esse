@@ -13,13 +13,12 @@ function replaceFileMentions(schema, withUrl) {
     return Object.assign({}, schema, {content: JSON.parse(str)});
 }
 
-function writeFileToLibDir(schema) {
-    const newDir = path.join(LIB_DIR, schema.dirpath),
-        newFil = path.join(newDir, schema.filename);
-    if (!fs.existsSync(newDir)) {
-        fs.mkdirSync(newDir);
+function writeFileToLibDir(content, relativePath) {
+    const newPath = path.join(LIB_DIR, relativePath);
+    if (!fs.existsSync(path.dirname(newPath))) {
+        fs.mkdirSync(path.dirname(newPath));
     }
-    fs.writeFileSync(newFil, JSON.stringify(schema.content));
+    fs.writeFileSync(newPath, JSON.stringify(content));
 }
 
 function readSchemaFromPath(p) {
@@ -37,7 +36,7 @@ function readSchemaFromPath(p) {
     return schema;
 }
 
-function getRawSchemas() {
+function getRawSchemasWithIncludeStatements() {
     const schemas = [];
     file.walkSync(SCHEMAS_DIR, function (dirPath, dirs, files) {
         files.forEach(function (f) {
@@ -48,8 +47,10 @@ function getRawSchemas() {
     return schemas;
 }
 
-const ALL_SCHEMAS = [];
-const _schemas = getRawSchemas();
+const COMPILED_SCHEMAS = [],
+    RAW_SCHEMAS = []; // raw schemas still contain `$ref` tags
+
+const _schemas = getRawSchemasWithIncludeStatements();
 
 _schemas.forEach((s, i, l) => {
     l[i] = parseIncludeStatements(s.dirpath, s.filename, false, l);
@@ -57,19 +58,29 @@ _schemas.forEach((s, i, l) => {
 
 _schemas.forEach((s, i, l) => {
     const dirname = path.dirname(path.join(LIB_DIR, s.content.id));
-    ALL_SCHEMAS.push(
+    RAW_SCHEMAS.push(s.content);
+    COMPILED_SCHEMAS.push(
         deref(s.content, {
             baseFolder: dirname
         })
     );
 });
 
-if (DEBUG) console.log(JSON.stringify(ALL_SCHEMAS, null, '\t'));
+if (DEBUG) console.log(JSON.stringify(COMPILED_SCHEMAS, null, '\t'));
 
-export const schemas = ALL_SCHEMAS;
+export const schemas = COMPILED_SCHEMAS;
+export const rawSchemas = RAW_SCHEMAS;
 
-export function getSchemaById(path) {
-    return ALL_SCHEMAS.find(function (schema) {
-        return schema.id === path;
+export function getSchemaById(id, useRaw=False) {
+    const s = raw ? RAW_SCHEMAS : COMPILED_SCHEMAS;
+    return s.find(function (schema) {
+        return schema.id === id;
+    })
+}
+
+export function getSchemaByIdBasename(subId, useRaw=false) {
+    const s = useRaw ? RAW_SCHEMAS : COMPILED_SCHEMAS;
+    return s.find(function (schema) {
+        return schema.id.split('/').reverse()[0] == subId;
     })
 }
