@@ -3,8 +3,8 @@
     "version": "0.1.0",
     "description": "Exabyte.io Materials JSON",
     "scripts": {
-        "run": "babel-node src/index.js",
-        "test": "mocha --compilers js:babel-core/register ./tests/**/*.spec.js"
+        "run": "babel-node $NODE_DEBUG_OPTION src/index.js",
+        "test": "mocha $NODE_DEBUG_OPTION --compilers js:babel-core/register ./tests/**/*.spec.js"
     },
     "repository": {
         "type": "git",
@@ -32,6 +32,7 @@
         "babel-preset-node6": "^11.0.0",
         "file": "^0.2.2",
         "file-system": "^2.2.2",
+        "fs-extra": "^4.0.0",
         "json-schema-deref-sync": "0.3.3",
         "lodash": "^4.17.4",
         "path": "^0.12.7"

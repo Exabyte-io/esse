@@ -1,4 +1,6 @@
 import path from "path";
+import fs from "fs";
+import {LIB_DIR} from "./settings"
 
 const INCLUDE_KEY = '...';
 const INCLUDE_VALUE_PATTERN = /^include\((.+)\)$/;
@@ -49,12 +51,15 @@ function _walkObjectToInclude(obj, dirpath) {
     }
 }
 
-export function parseIncludeStatements(dirpath, filename, objectOnly, schemasList) {
+export function parseIncludeStatements(dirpath, filename, objectOnly, schemasList = []) {
+    const relativeDirPath = dirpath.replace(LIB_DIR, '').replace(/example|schema|/g, '').replace(/^\/+/, '');
     const filepath = path.join(dirpath, filename),
         // either use passed list of schemas or read from disk
-        d = schemasList.length ? schemasList.find((el) => {
-            return el.dirpath === dirpath && el.filename === filename
-        }) : fs.readFileSync(filepath, 'utf8');
+        json = schemasList.length ? schemasList.find((el, i) => {
+        console.log(relativeDirPath, filename, el.dirpath, el.filename);
+            return el && el.dirpath === relativeDirPath && el.filename === filename
+        }) : JSON.parse(fs.readFileSync(filepath, 'utf8')),
+        d = json;
     if (objectOnly) {
         if (!isInstance(d, "Object")) {
             throw "The JSON file being included should always be a dict rather than a list";
