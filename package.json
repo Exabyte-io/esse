@@ -4,7 +4,7 @@
     "description": "Exabyte.io Materials JSON",
     "scripts": {
         "run": "babel-node $NODE_DEBUG_OPTION src/index.js",
-        "test": "mocha $NODE_DEBUG_OPTION --compilers js:babel-core/register ./tests/**/*.spec.js"
+        "test": "mocha $NODE_DEBUG_OPTION  --bail --compilers js:babel-core/register ./tests/**/*.spec.js"
     },
     "repository": {
         "type": "git",

@@ -4,67 +4,88 @@ import {LIB_DIR} from "./settings"
 
 const INCLUDE_KEY = '...';
 const INCLUDE_VALUE_PATTERN = /^include\((.+)\)$/;
-const JSON_INCLUDE_CACHE = {};
 
-function isInstance(object, type) {
+function _isInstance(object, type) {
     return (Object.prototype.toString.call(object).slice(8, -1) === type);
 }
 
-function getIncludeFileName(value) {
-    if ((isInstance(value, "String")) &&
-        (value.search(INCLUDE_VALUE_PATTERN) !== -1)) {
-        return value.match(INCLUDE_VALUE_PATTERN)[1]
+// make sure that text representing arrays is parsed into Arrays
+export function safeParseJSON(string) {
+    let obj = JSON.parse(string);
+    if (string[0] === "[") {
+        return Object.keys(obj).map(function (key) { return obj[key]; });
     }
+    return obj;
 }
 
-function _walkObjectToInclude(obj, dirpath) {
-    if (isInstance(obj, "Object")) {
-        var isIncludeExp = false;
-        if (INCLUDE_KEY in obj) {
-            var includeName = getIncludeFileName(obj[INCLUDE_KEY])
-            if (includeName) {
-                isIncludeExp = true
-                delete obj[INCLUDE_KEY]
-                if (!(includeName in JSON_INCLUDE_CACHE)) {
-                    var _f = path.join(dirpath, includeName);
-                    JSON_INCLUDE_CACHE[includeName] = parseIncludeStatements(path.dirname(_f), path.basename(_f), true);
-                    for (var attr in JSON_INCLUDE_CACHE[includeName]) {
-                        obj[attr] = JSON_INCLUDE_CACHE[includeName][attr];
+export class JSONSchemaResolver {
+
+    constructor() {
+        this.JSON_INCLUDE_CACHE = {};
+    }
+
+    _getIncludeFileName(value) {
+        if ((_isInstance(value, "String")) &&
+            (value.search(INCLUDE_VALUE_PATTERN) !== -1)) {
+            return value.match(INCLUDE_VALUE_PATTERN)[1]
+        }
+    }
+
+    _walkObjectToInclude(obj, dirpath) {
+        if (_isInstance(obj, "Object")) {
+            let isIncludeExp = false;
+            if (INCLUDE_KEY in obj) {
+                const includeName = this._getIncludeFileName(obj[INCLUDE_KEY])
+                if (includeName) {
+                    isIncludeExp = true;
+                    delete obj[INCLUDE_KEY];
+                    if (!(includeName in this.JSON_INCLUDE_CACHE)) {
+                        const _f = path.join(dirpath, includeName);
+                        this.JSON_INCLUDE_CACHE[includeName] = this.parseIncludeStatements(
+                            path.dirname(_f), path.basename(_f), true
+                        );
+                        for (let attr in this.JSON_INCLUDE_CACHE[includeName]) {
+                            obj[attr] = this.JSON_INCLUDE_CACHE[includeName][attr];
+                        }
                     }
                 }
             }
-        }
-        if (isIncludeExp) {
-            return;
-        }
-        for (var key in obj) {
-            if (isInstance(obj[key], "Object") || isInstance(obj[key], "Array")) {
-                _walkObjectToInclude(obj[key], dirpath);
+            if (isIncludeExp) {
+                return;
+            }
+            for (let key in obj) {
+                if (_isInstance(obj[key], "Object") || _isInstance(obj[key], "Array")) {
+                    this._walkObjectToInclude(obj[key], dirpath);
+                }
+            }
+        } else if (_isInstance(obj, "Array")) {
+            for (let i = 0; i < obj.length; i++) {
+                if (_isInstance(obj[i], "Object") || _isInstance(obj[i], "Array")) {
+                    this._walkObjectToInclude(obj[i], dirpath);
+                }
             }
         }
-    } else if (isInstance(obj, "Array")) {
-        for (var i = 0; i < obj.length; i++) {
-            if (isInstance(obj[i], "Object") || isInstance(obj[i], "Array")) {
-                _walkObjectToInclude(obj[i], dirpath);
+    }
+
+    parseIncludeStatements(dirpath, filename, objectOnly, schemasList = []) {
+        const relative = dirpath.replace(LIB_DIR, '').replace(/example|schema|/g, '').replace(/^\/+/, '');
+        const filepath = path.join(dirpath, filename);
+        let d;
+        // either use passed list of schemas or read from disk
+        if (schemasList.length) {
+            const schema = schemasList.find((e) => {return e && e.dirpath === relative && e.filename === filename});
+            d = schema.content;
+        } else {
+            const str = fs.readFileSync(filepath, 'utf8');
+            d = safeParseJSON(str);
+        }
+        if (objectOnly) {
+            if (!_isInstance(d, "Object")) {
+                throw "The JSON file being included should always be a dict rather than a list";
             }
         }
+        this._walkObjectToInclude(d, dirpath);
+        return d;
     }
 }
 
-export function parseIncludeStatements(dirpath, filename, objectOnly, schemasList = []) {
-    const relativeDirPath = dirpath.replace(LIB_DIR, '').replace(/example|schema|/g, '').replace(/^\/+/, '');
-    const filepath = path.join(dirpath, filename),
-        // either use passed list of schemas or read from disk
-        json = schemasList.length ? schemasList.find((el, i) => {
-        console.log(relativeDirPath, filename, el.dirpath, el.filename);
-            return el && el.dirpath === relativeDirPath && el.filename === filename
-        }) : JSON.parse(fs.readFileSync(filepath, 'utf8')),
-        d = json;
-    if (objectOnly) {
-        if (!isInstance(d, "Object")) {
-            throw "The JSON file being included should always be a dict rather than a list";
-        }
-    }
-    _walkObjectToInclude(d, dirpath);
-    return d;
-}
