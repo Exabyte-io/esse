@@ -18,7 +18,8 @@
                     "enum": [
                         "crystal",
                         "cartesian"
-                    ]
+                    ],
+                    "default": "crystal"
                 }
             }
         },
@@ -34,7 +35,8 @@
                         "eV",
                         "rydberg",
                         "hartree"
-                    ]
+                    ],
+                    "default": "eV"
                 }
             }
         },
