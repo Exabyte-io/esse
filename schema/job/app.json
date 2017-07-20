@@ -26,16 +26,16 @@
     },
     "oneOf": [
         {
-            "$ref": "file:software/espresso.json"
+            "$ref": "file:../software/espresso.json"
         },
         {
-            "$ref": "file:software/vasp.json"
+            "$ref": "file:../software/vasp.json"
         },
         {
-            "$ref": "file:software/shell.json"
+            "$ref": "file:../software/shell.json"
         },
         {
-            "$ref": "file:software/python.json"
+            "$ref": "file:../software/python.json"
         }
     ],
     "required": [
