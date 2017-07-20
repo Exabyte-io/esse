@@ -3,28 +3,21 @@
     "title": "map unit schema",
     "type": "object",
     "properties": {
+        "subworkflow": {
+            "description": "Name of subworkflow to run inside map",
+            "type": "string"
+        },
         "input": {
             "description": "Input information for map.",
             "type": "array",
             "items": {
                 "type": "object",
                 "properties": {
-                    "flowchartId": {
-                        "description": "Flowchart IDs of target units.",
-                        "type": "array",
-                        "items": {
-                            "type": "string"
-                        }
-                    },
-                    "name": {
-                        "description": "Name of the input file. e.g. pw_scf.in",
-                        "type": "string"
-                    },
                     "target": {
                         "description": "Name of the target variable to substitute using the values below. e.g. K_POINTS",
                         "type": "string"
                     },
-                    "value": {
+                    "values": {
                         "description": "Sequence of values for the target Jinja variable.",
                         "type": "array",
                         "items": {
@@ -33,16 +26,14 @@
                     }
                 },
                 "required": [
-                    "flowchartId",
-                    "name",
                     "target",
-                    "value"
+                    "values"
                 ]
             }
-
         }
     },
     "required": [
-        "input"
+        "input",
+        "subworkflow"
     ]
 }

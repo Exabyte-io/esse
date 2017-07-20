@@ -1,0 +1,39 @@
+{
+    "$schema": "http://json-schema.org/draft-04/schema#",
+    "title": "reduce unit schema",
+    "type": "object",
+    "properties": {
+        "mapFlowchartId": {
+            "description": "corresponding map unit flowchart ID",
+            "type": "string"
+        },
+        "input": {
+            "description": "input information for reduce unit",
+            "type": "array",
+            "items": {
+                "type": "object",
+                "properties": {
+                    "operation": {
+                        "description": "reduce operation, e.g. aggregate",
+                        "type": "string"
+                    },
+                    "arguments": {
+                        "description": "arguments which are passed to reduce operation function",
+                        "type": "array",
+                        "items": {
+                            "type": "string"
+                        }
+                    }
+                },
+                "required": [
+                    "operation",
+                    "arguments"
+                ]
+            }
+        }
+    },
+    "required": [
+        "mapFlowchartId",
+        "input"
+    ]
+}

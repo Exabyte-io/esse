@@ -12,6 +12,7 @@
                 "reduce",
                 "assignment",
                 "condition",
+                "subworkflow",
                 "exit"
             ]
         },
@@ -24,8 +25,10 @@
             "type": "string",
             "enum": [
                 "idle",
-                "running",
-                "error"
+                "active",
+                "warning",
+                "error",
+                "finished"
             ]
         },
         "head": {
@@ -83,12 +86,25 @@
         "map": {
             "description": "Contains information about the map unit.",
             "$ref": "file:unit/map.json"
+        },
+        "reduce": {
+            "description": "Contains information about the reduce unit.",
+            "$ref": "file:unit/reduce.json"
         }
     },
-    "required": [
-        "type",
-        "name",
-        "head",
-        "flowchartId"
+    "oneOf": [
+        {
+            "required": [
+                "type",
+                "flowchartId",
+                "name"
+            ]
+        },
+        {
+            "required": [
+                "type",
+                "_id"
+            ]
+        }
     ]
 }

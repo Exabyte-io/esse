@@ -90,6 +90,10 @@
                     "message"
                 ]
             }
+        },
+        "excludeFilesPattern": {
+            "description": "A Python compatible regex to exclude files from upload. e.g. ^.*.txt& excludes all files with .txt suffix" ,
+            "type": "string"
         }
     },
     "required": [

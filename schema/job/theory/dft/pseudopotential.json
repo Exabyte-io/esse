@@ -19,12 +19,8 @@
         },
         "data": {
             "properties": {
-                "pseudo": {
-                    "description": "pseudopotentials used inside this method's workflow",
-                    "type": "array",
-                    "items": {
-                        "$ref": "file:pseudopotential/file.json"
-                    }
+                "dateSet": {
+                    "$ref": "file:pseudopotential/dataset.json"
                 }
             }
         }

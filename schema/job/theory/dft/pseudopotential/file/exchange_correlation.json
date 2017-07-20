@@ -3,30 +3,22 @@
     "title": "exchange correlation schema",
     "type": "object",
     "description": "details on the type of formalism used",
-    "oneOf": [
-        {
-            "properties": {
-                "approximation": {
-                    "enum": [
-                        "gga"
-                    ]
-                },
-                "functional": {
-                    "$ref": "file:../../../dft.json#/definitions/functionals/lda"
-                }
-            }
+    "properties": {
+        "approximation": {
+            "enum": [
+                "lda",
+                "gga"
+            ]
         },
-        {
-            "properties": {
-                "approximation": {
-                    "enum": [
-                        "gga"
-                    ]
+        "functional": {
+            "oneOf": [
+                {
+                    "$ref": "file:../../../dft.json#/definitions/functionals/lda"
                 },
-                "functional": {
+                {
                     "$ref": "file:../../../dft.json#/definitions/functionals/gga"
                 }
-            }
+            ]
         }
-    ]
+    }
 }

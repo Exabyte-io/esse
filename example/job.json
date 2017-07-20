@@ -13,8 +13,8 @@
     "owner": {
         "...": "include(security/owner.json)"
     },
-    "model": {
-        "...": "include(job/model.json)"
+    "workflow": {
+        "...": "include(job/workflow.json)"
     },
     "version": "0.2.0",
     "_id": "FPjAaKfuYAL7tiHbm",

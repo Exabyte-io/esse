@@ -1,0 +1,43 @@
+{
+    "$schema": "http://json-schema.org/draft-04/schema#",
+    "title": "workflow schema",
+    "type": "object",
+    "properties": {
+        "name": {
+            "description": "Human-readable name of the workflow. e.g. Total-energy",
+            "type": "string"
+        },
+        "properties": {
+            "description": "Array of characteristic properties calculated by this workflow (TODO: add enums)",
+            "type": "array",
+            "items": {
+                "description": "property names, eg. `band_gaps`, `band_structure`",
+                "type": "string"
+            }
+        },
+        "subworkflows": {
+            "description": "Array of subworkflows. Subworkflow can be an instance of workflow to allow for nesting",
+            "type": "array",
+            "items": {
+                "anyOf": [
+                    {
+                        "$ref": "#"
+                    },
+                    {
+                        "$ref": "file:workflow/subworkflow.json"
+                    }
+                ]
+            }
+        },
+        "units": {
+            "description": "Contains the Units of the Workflow",
+            "type": "array",
+            "items": {
+                "$ref": "file:workflow/unit.json"
+            }
+        }
+    },
+    "required": [
+        "name"
+    ]
+}
