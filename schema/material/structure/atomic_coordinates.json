@@ -7,10 +7,12 @@
             "$ref": "file:../../primitive/_array_of_ids.json"
         }
     ],
-    "properties": {
-        "value": {
-            "description": "atomic coordinates",
-            "$ref": "file:../../primitive/point.json"
+    "items": {
+        "properties": {
+            "value": {
+                "description": "atomic coordinates",
+                "$ref": "file:../../primitive/point.json"
+            }
         }
     }
 }
