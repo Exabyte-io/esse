@@ -3,6 +3,7 @@
     "version": "0.1.0",
     "description": "Exabyte.io Materials JSON",
     "scripts": {
+        "postinstall": "babel-compile -p es2015 src:lib tests:.tests",
         "run": "babel-node $NODE_DEBUG_OPTION src/index.js",
         "test": "mocha $NODE_DEBUG_OPTION  --bail --compilers js:babel-core/register ./tests/**/*.js"
     },
@@ -10,7 +11,7 @@
         "type": "git",
         "url": "git+https://github.com/Exabyte-io/exabyte-materials-json.git"
     },
-    "main": "src/index.js",
+    "main": "lib/index.js",
     "author": "Exabyte Inc.",
     "bugs": {
         "url": "https://github.com/Exabyte-io/exabyte-materials-json/issues"
@@ -27,6 +28,7 @@
         "ajv": "^4.1.7",
         "babel-cli": "^6.24.1",
         "babel-core": "^6.10.4",
+        "babel-compile": "^2.0.0",
         "babel-preset-env": "^1.6.0",
         "babel-preset-es2015": "^6.24.1",
         "babel-preset-node6": "^11.0.0",
