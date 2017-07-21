@@ -62,12 +62,14 @@ export function includeAndDereferenceJSONData({list, compiledStore, rawStore=[],
     list.forEach((s, i, l) => {
         const dirname = path.dirname(path.join(LIB_DIR, prefix, example ? s.id : s.content.id));
         const IncludeResolver = new JSONSchemaResolver();
-        const parsed = IncludeResolver.parseIncludeStatements(dirname, s.filename, false, l, example);
+        const parsed = IncludeResolver.parseIncludeStatements(dirname, s.filename, false, rawStore, example);
         rawStore.push(example ? {content: parsed, id: s.id} : parsed);
     });
 
-    compiledStore && rawStore.forEach((el) => {
-        const dirname = path.dirname(path.join(LIB_DIR, prefix, el.id));
-        compiledStore.push(deref(el, {baseFolder: dirname}));
-    });
+    if (compiledStore) {
+        rawStore.forEach((el) => {
+            const dirname = path.dirname(path.join(LIB_DIR, prefix, el.id));
+            compiledStore.push(deref(el, {baseFolder: dirname}));
+        });
+    }
 }

@@ -72,8 +72,8 @@ export class JSONSchemaResolver {
         const filepath = path.join(dirpath, filename);
         let d;
         // either use passed list of schemas or read from disk
-        if (schemasList.length) {
-            const schema = schemasList.find((e) => {return e && e.dirpath === relative && e.filename === filename});
+        const schema = schemasList.find((e) => {return e && e.dirpath === relative && e.filename === filename});
+        if (schema) {
             d = schema.content;
         } else {
             const str = fs.readFileSync(filepath, 'utf8');
