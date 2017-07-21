@@ -1,5 +1,4 @@
-import fs from "fs";
-import fse from "fs-extra";
+import fs from "fs-extra";
 import url from "url";
 import path from "path";
 import file from "file";
@@ -17,7 +16,7 @@ function replaceFileMentions(schema, withUrl) {
 function writeFileToLibDir(content, relPath) {
     const fullPath = path.join(LIB_DIR, relPath);
     if (!fs.existsSync(path.dirname(fullPath))) {
-        fse.ensureDirSync(path.dirname(fullPath));
+        fs.ensureDirSync(path.dirname(fullPath));
     }
     fs.writeFileSync(fullPath, JSON.stringify(content));
 }

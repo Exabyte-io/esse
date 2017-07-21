@@ -10,6 +10,8 @@ const _schemas = getRawJSONWithIncludeStatements();
 includeAndDereferenceJSONData({list: _examples, rawStore: EXAMPLES, example: true});
 includeAndDereferenceJSONData({list: _schemas, compiledStore: COMPILED_SCHEMAS, rawStore: RAW_SCHEMAS});
 
+// if (process.env.DEBUG) console.log(JSON.stringify(COMPILED_SCHEMAS, null, '\t'));
+
 export const schemas = COMPILED_SCHEMAS;
 export const rawSchemas = RAW_SCHEMAS;
 export const examples = EXAMPLES;
