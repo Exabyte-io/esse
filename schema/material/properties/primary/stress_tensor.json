@@ -14,7 +14,8 @@
             "enum": [
                 "kbar",
                 "pa"
-            ]
+            ],
+            "default": "kbar"
         }
     }
 }
