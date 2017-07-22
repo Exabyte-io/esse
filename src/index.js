@@ -1,3 +1,4 @@
+import Ajv from "ajv";
 import {getRawJSONWithIncludeStatements,includeAndDereferenceJSONData} from "./deref";
 
 const COMPILED_SCHEMAS = [],
@@ -35,3 +36,8 @@ export function getExampleByIdBasename(subId) {
         return example && example.id && example.id.split('/').reverse()[0] === subId;
     })
 }
+
+export const ajvHandler = Ajv({
+    allErrors: true,
+    schemas: RAW_SCHEMAS
+});

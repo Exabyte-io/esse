@@ -1,13 +1,6 @@
-import Ajv from "ajv";
 import chai from "chai";
-import lodash from "lodash";
 import prettyjson from "prettyjson";
-import {rawSchemas, examples, getSchemaByIdBasename} from "../src/index";
-
-const ajv = Ajv({
-    allErrors: true,
-    schemas: rawSchemas
-});
+import {ajvHandler as ajv, examples, getSchemaByIdBasename} from "../src/index";
 
 function getSchemaAndExpectOK(basename) {
     const schema = getSchemaByIdBasename(basename);
