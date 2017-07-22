@@ -68,7 +68,12 @@ export function includeAndDereferenceJSONData({list, compiledStore, rawStore=[],
     if (compiledStore) {
         rawStore.forEach((el) => {
             const dirname = path.dirname(path.join(LIB_DIR, prefix, el.id));
-            compiledStore.push(deref(el, {baseFolder: dirname}));
+            let dereferenced = deref(el, {baseFolder: dirname});
+            // handle circular references and use non-dereferenced source
+            if ((dereferenced instanceof Error) && (dereferenced.message === "Circular self reference")) {
+                dereferenced = el;
+            }
+            compiledStore.push(dereferenced);
         });
     }
 }
