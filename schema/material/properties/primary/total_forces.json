@@ -1,6 +1,6 @@
 {
     "$schema": "http://json-schema.org/draft-04/schema#",
-    "title": "total energy schema",
+    "title": "total forces schema",
     "allOf": [
         {
             "$ref": "file:../../../primitive/math/scalar.json"
@@ -9,7 +9,7 @@
     "properties": {
         "name": {
             "enum": [
-                "total_energy"
+                "total_forces"
             ]
         },
         "units": {
