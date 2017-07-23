@@ -33,3 +33,4 @@ lib/
 # Virtual environment
 .virtualenv
 
+.test/
