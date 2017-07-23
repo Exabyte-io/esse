@@ -1,0 +1,16 @@
+{
+    "$schema": "http://json-schema.org/draft-04/schema#",
+    "title": "total force schema",
+    "allOf": [
+        {
+            "$ref": "file:../../../primitive/property/energies.json"
+        }
+    ],
+    "properties": {
+        "name": {
+            "enum": [
+                "total_force"
+            ]
+        }
+    }
+}
