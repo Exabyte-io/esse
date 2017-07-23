@@ -11,7 +11,7 @@ def read_file(file):
         text = f.read()
     return text
 
-Unit = warlock.model_factory(json.loads(read_file('compiled/schema/job/model/method/workflow/unit.json')))
+Unit = warlock.model_factory(json.loads(read_file('compiled/schema/job/model/methods/workflow/unit.json')))
 
 assignment1 = Unit(**{
     "type": "assignment",
@@ -39,7 +39,7 @@ assignment2 = Unit(**{
     }
 })
 #
-Workflow = warlock.model_factory(json.loads(read_file('compiled/schema/job/model/method/workflow.json')))
+Workflow = warlock.model_factory(json.loads(read_file('compiled/schema/job/model/methods/workflow.json')))
 
 sample_workflow = Workflow(**{
     "name": "sample_workflow",

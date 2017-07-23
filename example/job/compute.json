@@ -21,5 +21,6 @@
             "reason": "FileNotFound",
             "message": "File Not Found: /home/demo/data/project1/job-123/job-config.json"
         }
-    ]
+    ],
+    "excludeFilesPattern": "^.*.txt$"
 }

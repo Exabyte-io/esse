@@ -25,10 +25,10 @@
             "type": "string",
             "enum": [
                 "idle",
-                "complete",
                 "active",
+                "warning",
                 "error",
-                "warning"
+                "finished"
             ]
         },
         "head": {
