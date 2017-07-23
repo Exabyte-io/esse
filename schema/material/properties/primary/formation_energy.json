@@ -1,6 +1,6 @@
 {
     "$schema": "http://json-schema.org/draft-04/schema#",
-    "title": "fermi energy schema",
+    "title": "formation energy schema",
     "allOf": [
         {
             "$ref": "file:../../../primitive/property/energies.json"
@@ -9,7 +9,7 @@
     "properties": {
         "name": {
             "enum": [
-                "fermi_energy"
+                "formation_energy"
             ]
         }
     }

@@ -3,7 +3,7 @@
     "title": "total energy schema",
     "allOf": [
         {
-            "$ref": "file:../../../primitive/math/scalar.json"
+            "$ref": "file:../../../primitive/property/energies.json"
         }
     ],
     "properties": {
@@ -11,14 +11,6 @@
             "enum": [
                 "total_energy"
             ]
-        },
-        "units": {
-            "enum": [
-                "eV",
-                "rydberg",
-                "hartree"
-            ],
-            "default": "eV"
         }
     }
 }
