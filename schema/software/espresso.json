@@ -4,16 +4,19 @@
     "type": "object",
     "properties": {
         "name": {
+            "type": "string",
             "enum": [
                 "espresso"
             ]
         },
         "summary": {
+            "type": "string",
             "enum": [
                 "Quantum Espresso"
             ]
         },
         "flavor": {
+            "type": "string",
             "enum": [
                 "pw_scf",
                 "pw_nscf",
@@ -30,6 +33,7 @@
             ]
         },
         "version": {
+            "type": "string",
             "enum": [
                 "5.1.1",
                 "5.2.1",
@@ -37,6 +41,7 @@
             ]
         },
         "exec": {
+            "type": "string",
             "enum": [
                 "pw.x",
                 "bands.x",
