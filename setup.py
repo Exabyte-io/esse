@@ -11,7 +11,7 @@ setup(
     install_requires=[
         "pyyaml==3.12",
         "jsonschema==2.6.0",
-        "json_include==0.1.4"
+        "git+git://github.com/Exabyte-io/json_include.git@master#egg=json_include"
     ],
     classifiers=[
         'Programming Language :: Python',
