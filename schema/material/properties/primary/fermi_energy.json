@@ -3,7 +3,7 @@
     "title": "fermi energy schema",
     "allOf": [
         {
-            "$ref": "file:../../../primitive/property/energies.json"
+            "$ref": "file:../../../primitive/property/energy.json"
         }
     ],
     "properties": {
