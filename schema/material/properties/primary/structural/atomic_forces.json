@@ -1,26 +1,18 @@
 {
     "$schema": "http://json-schema.org/draft-04/schema#",
     "title": "atomic forces",
-    "description": "forces of atoms by ids",
+    "description": "coordinates of atoms by ids, vector, unitless",
     "properties": {
         "name": {
             "enum": [
                 "atomic_forces"
             ]
         },
-        "units": {
-            "enum": [
-                "eV",
-                "rydberg",
-                "hartree"
-            ],
-            "default": "eV"
+        "values": {
+            "$ref": "file:../../../../primitive/property/atomic_vectors.json"
         },
-        "value": {
-            "type": "array",
-            "items": {
-                "$ref": "file:../../../../primitive/math/vector.json"
-            }
+        "units": {
+            "$ref": "file:../../../../units.json#/definitions/energy"
         }
     }
 }

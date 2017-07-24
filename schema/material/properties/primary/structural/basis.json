@@ -10,12 +10,7 @@
             "$ref": "file:atomic_coordinates.json"
         },
         "units": {
-            "enum": [
-                "angstrom",
-                "bohr",
-                "fractional",
-                "crystal"
-            ]
+            "$ref": "file:../../../../units.json#/definitions/length"
         }
     },
     "required": [

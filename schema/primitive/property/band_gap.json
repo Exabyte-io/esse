@@ -17,19 +17,13 @@
         },
         "type": {
             "type": "string",
-            "default": "direct",
             "enum": [
                 "direct",
                 "indirect"
             ]
         },
         "units": {
-            "enum": [
-                "eV",
-                "rydberg",
-                "hartree"
-            ],
-            "default": "eV"
+            "$ref": "file:../../units.json#/definitions/energy"
         }
     },
     "required": [

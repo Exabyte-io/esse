@@ -14,11 +14,7 @@
             ]
         },
         "units": {
-            "enum": [
-                "kbar",
-                "pa"
-            ],
-            "default": "kbar"
+            "$ref": "file:../../../units.json#/definitions/pressure"
         }
     }
 }
