@@ -98,7 +98,7 @@
                     "description": "Parent job identifier.",
                     "type": "string"
                 },
-                "title": {
+                "name": {
                     "description": "Parent job title.",
                     "type": "string",
                     "maxLength": 300
@@ -106,7 +106,7 @@
             },
             "required": [
                 "_id",
-                "title"
+                "name"
             ]
         }
     },
@@ -114,8 +114,8 @@
         "_id",
         "status",
         "createdAt",
-        "title",
-        "titleSlug",
+        "name",
+        "slug",
         "version",
         "compute",
         "workflow",
