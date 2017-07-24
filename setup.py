@@ -11,10 +11,10 @@ setup(
     install_requires=[
         "pyyaml==3.12",
         "jsonschema==2.6.0",
-        "json_include"
+        "json_include==0.2.9"
     ],
     dependency_links=[
-        "git+ssh://git@github.com/Exabyte-io/json_include.git@master#egg=json_include"
+        "git+ssh://git@github.com/Exabyte-io/json_include.git@master#egg=json_include-0.2.9"
     ],
     classifiers=[
         'Programming Language :: Python',
