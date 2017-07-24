@@ -1,2 +1,3 @@
-git+git://github.com/timurbazhirov/json_include@master#egg=json_include
-git+git://github.com/aryamazaheri/python-jsonschema-objects@master#egg=python-jsonschema-objects
+pyyaml==3.12
+jsonschema==2.6.0
+json_include==0.1.4
