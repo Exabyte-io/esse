@@ -36,3 +36,4 @@ lib/
 
 .test/
 *.egg-info/
+*.py[cod]
