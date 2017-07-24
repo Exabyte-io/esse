@@ -11,6 +11,7 @@ setup(
     install_requires=[
         "pyyaml==3.12",
         "jsonschema==2.6.0",
+        "json_include"
     ],
     dependency_links=[
         "git+ssh://git@github.com/Exabyte-io/json_include.git@master#egg=json_include"
