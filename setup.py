@@ -11,6 +11,8 @@ setup(
     install_requires=[
         "pyyaml==3.12",
         "jsonschema==2.6.0",
+    ],
+    dependency_links=[
         "git+git://github.com/Exabyte-io/json_include.git@master#egg=json_include"
     ],
     classifiers=[
