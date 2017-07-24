@@ -14,7 +14,7 @@ setup(
         "json_include==0.2.9"
     ],
     dependency_links=[
-        "git+ssh://git@github.com/Exabyte-io/json_include.git@master#egg=json_include-0.2.9"
+        "git+https://git@github.com/Exabyte-io/json_include.git@master#egg=json_include-0.2.9"
     ],
     classifiers=[
         'Programming Language :: Python',
