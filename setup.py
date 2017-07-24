@@ -13,7 +13,7 @@ setup(
         "jsonschema==2.6.0",
     ],
     dependency_links=[
-        "git+git://github.com/Exabyte-io/json_include.git@master#egg=json_include"
+        "git+ssh://git@github.com/Exabyte-io/json_include.git@master#egg=json_include"
     ],
     classifiers=[
         'Programming Language :: Python',
