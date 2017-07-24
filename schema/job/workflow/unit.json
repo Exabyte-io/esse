@@ -76,7 +76,7 @@
             }
         },
         "execution": {
-            "description": "Contains information about the execution unit..",
+            "description": "Contains information about the execution unit.",
             "$ref": "file:unit/execution.json"
         },
         "assignment": {
