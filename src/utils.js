@@ -1,5 +1,6 @@
 import fs from "fs-extra";
 import path from "path";
+import lodash from "lodash";
 import {LIB_DIR} from "./settings"
 
 const INCLUDE_KEY = '...';
@@ -13,11 +14,12 @@ function _isInstance(object, type) {
 export function safeParseJSON(string) {
     let obj = JSON.parse(string);
     if (string[0] === "[") {
-        return Object.keys(obj).map(function (key) { return obj[key]; });
+        return Object.keys(obj).map(function (key) {
+            return obj[key];
+        });
     }
     return obj;
 }
-
 export class JSONSchemaResolver {
 
     constructor() {
@@ -31,6 +33,11 @@ export class JSONSchemaResolver {
         }
     }
 
+    /**
+     * Walks a nested object to include a reference
+     * @param {Object} obj Object to traverse
+     * @param {String} dirpath (Relative) path to included reference object
+     */
     _walkObjectToInclude(obj, dirpath) {
         if (_isInstance(obj, "Object")) {
             let isIncludeExp = false;
@@ -67,12 +74,21 @@ export class JSONSchemaResolver {
         }
     }
 
+    /**
+     * Extracts a file from a path and resolves `include` statement and `references`.
+     * @param {String} dirpath (Relative) path to included reference object
+     * @param {String} filename Basename of the included file
+     * @param {Boolean} objectOnly Whether to only include Object, not Array
+     * @param {Array} schemasList Cache of schemas to use for resolution instead of reading from filesystem
+     */
     parseIncludeStatements(dirpath, filename, objectOnly, schemasList = []) {
         const relative = dirpath.replace(LIB_DIR, '').replace(/example|schema|/g, '').replace(/^\/+/, '');
         const filepath = path.join(dirpath, filename);
         let d;
         // either use passed list of schemas or read from disk
-        const schema = schemasList.find((e) => {return e && e.dirpath === relative && e.filename === filename});
+        const schema = schemasList.find((e) => {
+            return e && e.dirpath === relative && e.filename === filename
+        });
         if (schema) {
             d = schema.content;
         } else {
