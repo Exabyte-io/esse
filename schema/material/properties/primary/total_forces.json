@@ -9,7 +9,7 @@
     "properties": {
         "name": {
             "enum": [
-                "total_forces"
+                "total_force"
             ]
         },
         "units": {
