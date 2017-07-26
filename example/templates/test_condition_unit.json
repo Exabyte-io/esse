@@ -1,0 +1,79 @@
+{
+    "name": "test condition unit",
+    "subworkflows": [
+        {
+            "_id": "LCthJ6E2QabYCZqf4",
+            "units": [
+                {
+                    "type": "assignment",
+                    "name": "assignment",
+                    "head": true,
+                    "flowchartId": "dummy_unit_1",
+                    "next": "dummy_unit_2",
+                    "status": "idle",
+                    "assignment": {
+                        "name": "x",
+                        "value": "-3"
+                    }
+                },
+                {
+                    "flowchartId": "dummy_unit_2",
+                    "type": "condition",
+                    "name": "if_else",
+                    "status": "idle",
+                    "condition": {
+                        "input": [
+                            {
+                                "scope": "global",
+                                "name": "x"
+                            }
+                        ],
+                        "statement": "x > 0",
+                        "then": "dummy_unit_4",
+                        "else": "dummy_unit_3",
+                        "maxOccurrences": 5,
+                        "throwException": true
+                    }
+                },
+                {
+                    "type": "assignment",
+                    "name": "assignment",
+                    "flowchartId": "dummy_unit_3",
+                    "status": "idle",
+                    "next": "dummy_unit_2",
+                    "assignment": {
+                        "input": [
+                            {
+                                "scope": "global",
+                                "name": "x"
+                            }
+                        ],
+                        "name": "x",
+                        "value": "x+1"
+                    }
+                },
+                {
+                    "type": "exit",
+                    "name": "exit",
+                    "flowchartId": "dummy_unit_4",
+                    "status": "idle"
+                }
+            ],
+            "properties": [],
+            "model": {
+                "...": "include(../job/workflow/subworkflow/model.json)"
+            },
+            "app": {
+                "...": "include(../job/app.json)"
+            },
+            "name": "test condition unit"
+        }
+    ],
+    "properties": [],
+    "units": [
+        {
+            "type": "subworkflow",
+            "_id": "LCthJ6E2QabYCZqf4"
+        }
+    ]
+}

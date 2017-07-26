@@ -1,0 +1,76 @@
+{
+    "name": "test assignment unit",
+    "subworkflows": [
+        {
+            "_id": "LCthJ6E2QabYCZqf4",
+            "units": [
+                {
+                    "type": "assignment",
+                    "name": "dummy_unit_2",
+                    "flowchartId": "dummy_unit_2",
+                    "next": "dummy_unit_3",
+                    "status": "idle",
+                    "assignment": {
+                        "input": [
+                            {
+                                "scope": "global",
+                                "name": "x"
+                            }
+                        ],
+                        "name": "x",
+                        "value": "2*abs(x-10)"
+                    }
+                },
+                {
+                    "type": "assignment",
+                    "name": "dummy_unit_1",
+                    "head": true,
+                    "flowchartId": "dummy_unit_1",
+                    "next": "dummy_unit_2",
+                    "status": "idle",
+                    "assignment": {
+                        "name": "x",
+                        "value": "5"
+                    }
+                },
+                {
+                    "type": "assignment",
+                    "name": "dummy_unit_3",
+                    "flowchartId": "dummy_unit_3",
+                    "next": "dummy_unit_4",
+                    "status": "idle",
+                    "assignment": {
+                        "name": "compound_SCALAR_RESULT",
+                        "value": "1.0"
+                    }
+                },
+                {
+                    "type": "assignment",
+                    "name": "dummy_unit_4",
+                    "flowchartId": "dummy_unit_4",
+                    "next": "",
+                    "status": "idle",
+                    "assignment": {
+                        "name": "MATERIAL_DATA",
+                        "value": "[{\"number\":2, \"total_energy\":1.5, \"zero_point_energy\":1.5}]"
+                    }
+                }
+            ],
+            "properties": [],
+            "model": {
+                "...": "include(../job/workflow/subworkflow/model.json)"
+            },
+            "app": {
+                "...": "include(../job/app.json)"
+            },
+            "name": "test assignment unit"
+        }
+    ],
+    "properties": [],
+    "units": [
+        {
+            "type": "subworkflow",
+            "_id": "LCthJ6E2QabYCZqf4"
+        }
+    ]
+}
