@@ -1,4 +1,4 @@
-ionic:
+convergence_ionic:
   defaults:
     units: eV/a.u.
   schema_path: schema/science/models/dft/convergence/ionic.json
@@ -28,7 +28,7 @@ fermi_energy:
     units: eV
   schema_path: schema/material/properties/primary/fermi_energy.json
 
-electronic:
+convergence_electronic:
   defaults:
     units: eV
   schema_path: schema/science/models/dft/convergence/electronic.json
