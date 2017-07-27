@@ -1,0 +1,28 @@
+{
+    "$schema": "http://json-schema.org/draft-04/schema#",
+    "title": "workflow schema",
+    "allOf": [
+        {
+            "$ref": "file:../job/workflow.json"
+        }
+    ],
+    "properties": {
+        "subworkflows": {
+            "items": {
+                "anyOf": [
+                    {
+                        "$ref": "#"
+                    },
+                    {
+                        "$ref": "file:../job/workflow/subworkflow.json"
+                    }
+                ]
+            }
+        },
+        "units": {
+            "items": {
+                "$ref": "file:../job/workflow/unit.json"
+            }
+        }
+    }
+}
