@@ -9,7 +9,7 @@
     "properties": {
         "name": {
             "enum": [
-                "ionic"
+                "convergence_ionic"
             ]
         },
         "tolerance": {

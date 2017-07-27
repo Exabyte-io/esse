@@ -1,6 +1,6 @@
 {
     "$schema": "http://json-schema.org/draft-04/schema#",
-    "title": "energy schema",
+    "title": "total forces schema",
     "allOf": [
         {
             "$ref": "file:../../../primitive/math/scalar.json"
@@ -9,9 +9,7 @@
     "properties": {
         "name": {
             "enum": [
-                "atomization_energy",
-                "formation_energy",
-                "zero_point_energy"
+                "total_force"
             ]
         },
         "units": {
@@ -19,7 +17,8 @@
                 "eV",
                 "rydberg",
                 "hartree"
-            ]
+            ],
+            "default": "eV"
         }
     }
 }

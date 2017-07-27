@@ -9,7 +9,7 @@
     "properties": {
         "name": {
             "enum": [
-                "electronic"
+                "convergence_electronic"
             ]
         },
         "units": {
@@ -17,8 +17,7 @@
                 "eV",
                 "rydberg",
                 "hartree"
-            ],
-            "default": "eV"
+            ]
         },
         "data": {
             "type": "array",

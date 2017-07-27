@@ -34,3 +34,6 @@ lib/
 # Virtual environment
 .virtualenv
 
+.test/
+*.egg-info/
+*.py[cod]
