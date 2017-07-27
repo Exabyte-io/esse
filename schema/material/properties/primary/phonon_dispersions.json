@@ -15,10 +15,7 @@
                     ]
                 },
                 "units": {
-                    "enum": [
-                        "crystal",
-                        "cartesian"
-                    ]
+                    "$ref": "file:../../../units.json#/definitions/length"
                 }
             }
         },
@@ -30,11 +27,7 @@
                     ]
                 },
                 "units": {
-                    "enum": [
-                        "cm-1",
-                        "THz",
-                        "meV"
-                    ]
+                    "$ref": "file:../../../units.json#/definitions/frequency"
                 }
             }
         },

@@ -60,9 +60,7 @@
                     ]
                 },
                 "units": {
-                    "enum": [
-                        "eV/a.u."
-                    ]
+                    "$ref": "file:../../../../units.json#/definitions/energy"
                 }
             }
         }

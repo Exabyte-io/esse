@@ -1,15 +1,18 @@
 {
     "$schema": "http://json-schema.org/draft-04/schema#",
-    "title": "atomic coordinates",
+    "title": "atomic forces",
     "description": "coordinates of atoms by ids, vector, unitless",
     "properties": {
         "name": {
             "enum": [
-                "atomic_coordinates"
+                "atomic_forces"
             ]
         },
         "values": {
             "$ref": "file:../../../../primitive/property/atomic_vectors.json"
+        },
+        "units": {
+            "$ref": "file:../../../../units.json#/definitions/energy"
         }
     }
 }

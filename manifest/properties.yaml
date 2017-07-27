@@ -1,0 +1,77 @@
+convergence_ionic:
+  defaults:
+    units: eV/a.u.
+  schema_path: schema/science/models/dft/convergence/ionic.json
+
+pressure:
+  defaults:
+    units: kbar
+  schema_path: schema/material/properties/primary/pressure.json
+
+band_gaps:
+  defaults:
+    units: eV
+  schema_path: schema/material/properties/primary/band_gaps.json
+
+total_force:
+  defaults:
+    units: eV
+  schema_path: schema/material/properties/primary/total_force.json
+
+total_energy:
+  defaults:
+    units: eV
+  schema_path: schema/material/properties/primary/total_energy.json
+
+fermi_energy:
+  defaults:
+    units: eV
+  schema_path: schema/material/properties/primary/fermi_energy.json
+
+convergence_electronic:
+  defaults:
+    units: eV
+  schema_path: schema/science/models/dft/convergence/electronic.json
+
+stress_tensor:
+  defaults:
+    units: kbar
+  schema_path: schema/material/properties/primary/stress_tensor.json
+
+band_structure:
+  defaults:
+    xAxis:
+      label: kpoints
+      units: crystal
+    yAxis:
+      label: energy
+      units: eV
+  schema_path: schema/material/properties/primary/band_structure.json
+
+basis:
+  defaults:
+    units: crystal
+  schema_path: schema/material/properties/primary/structural/basis.json
+
+density_of_states:
+  defaults:
+    xAxis:
+      label: energy
+      units: eV
+    yAxis:
+      label: density of states
+      units: states/unit cell
+  schema_path: schema/material/properties/primary/density_of_states.json
+
+lattice:
+  schema_path: schema/material/properties/primary/structural/lattice.json
+
+atomic_forces:
+  defaults:
+    units: eV
+  schema_path: schema/material/properties/primary/structural/atomic_forces.json
+
+total_energy_contributions:
+  defaults:
+    units: eV
+  schema_path: schema/material/properties/primary/total_energy_contributions.json
