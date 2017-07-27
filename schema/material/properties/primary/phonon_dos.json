@@ -16,11 +16,7 @@
                     ]
                 },
                 "units": {
-                    "enum": [
-                        "cm-1",
-                        "THz",
-                        "meV"
-                    ]
+                    "$ref": "file:../../../units.json#/definitions/frequency"
                 }
             }
         },
@@ -32,11 +28,7 @@
                     ]
                 },
                 "units": {
-                    "enum": [
-                        "states/cm-1",
-                        "states/THz",
-                        "states/meV"
-                    ]
+                    "$ref": "file:../../../units.json#/definitions/phononDos"
                 }
             }
         },

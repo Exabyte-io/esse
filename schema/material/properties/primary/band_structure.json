@@ -15,11 +15,7 @@
                     ]
                 },
                 "units": {
-                    "enum": [
-                        "crystal",
-                        "cartesian"
-                    ],
-                    "default": "crystal"
+                    "$ref": "file:../../../units.json#/definitions/length"
                 }
             }
         },
@@ -31,12 +27,7 @@
                     ]
                 },
                 "units": {
-                    "enum": [
-                        "eV",
-                        "rydberg",
-                        "hartree"
-                    ],
-                    "default": "eV"
+                    "$ref": "file:../../../units.json#/definitions/energy"
                 }
             }
         },

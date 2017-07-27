@@ -1,0 +1,69 @@
+{
+    "$schema": "http://json-schema.org/draft-04/schema#",
+    "title": "units schema",
+    "definitions": {
+        "length": {
+            "enum": [
+                "km",
+                "m",
+                "pm",
+                "nm",
+                "angstrom",
+                "a.u.",
+                "bohr",
+                "fractional",
+                "crystal",
+                "cartesian",
+                "alat"
+            ]
+        },
+        "energy": {
+            "enum": [
+                "kJ/mol",
+                "eV",
+                "J/mol",
+                "hartree",
+                "cm-1",
+                "rydberg",
+                "eV/atom",
+                "eV/a.u."
+            ]
+        },
+        "volume": {
+            "enum": [
+                "cm^3",
+                "angstrom^3"
+            ]
+        },
+        "numberDensity": {
+            "enum": [
+                "1/angstrom^3"
+            ]
+        },
+        "density": {
+            "enum": [
+                "g/cm^3"
+            ]
+        },
+        "frequency": {
+            "enum": [
+                "cm-1",
+                "THz",
+                "meV"
+            ]
+        },
+        "pressure": {
+            "enum": [
+                "kbar",
+                "pa"
+            ]
+        },
+        "phononDos": {
+            "enum": [
+                "states/cm-1",
+                "states/THz",
+                "states/meV"
+            ]
+        }
+    }
+}

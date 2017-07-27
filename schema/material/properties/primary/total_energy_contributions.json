@@ -204,11 +204,7 @@
             ]
         },
         "units": {
-            "enum": [
-                "eV",
-                "rydberg",
-                "hartree"
-            ]
+            "$ref": "file:../../../units.json#/definitions/energy"
         }
     }
 }
