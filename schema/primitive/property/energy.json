@@ -1,0 +1,21 @@
+{
+    "$schema": "http://json-schema.org/draft-04/schema#",
+    "title": "energy schema",
+    "allOf": [
+        {
+            "$ref": "file:../math/scalar.json"
+        }
+    ],
+    "properties": {
+        "name": {
+            "type": "string"
+        },
+        "units": {
+            "$ref": "file:../../units.json#/definitions/energy"
+        }
+    },
+    "required": [
+        "name",
+        "units"
+    ]
+}

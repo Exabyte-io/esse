@@ -1,0 +1,16 @@
+{
+    "name": "band_gap",
+    "type": "direct",
+    "kpointConduction": [
+        0,
+        0,
+        0
+    ],
+    "kpointValence": [
+        0,
+        0,
+        0
+    ],
+    "value": 0.0947,
+    "units": "rydberg"
+}

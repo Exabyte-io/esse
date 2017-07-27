@@ -11,7 +11,7 @@
         "values": {
             "type": "array",
             "items": {
-                "$ref": "file:band_gap.json"
+                "$ref": "file:../../../primitive/property/band_gap.json"
             }
         }
     },
