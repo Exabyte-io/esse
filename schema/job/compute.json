@@ -39,7 +39,7 @@
         },
         "arguments": {
             "description": "Optional arguments specific to using application - VASP, Quantum Espresso, etc.",
-            "$ref": "file:software/arguments.json"
+            "$ref": "file:../software/arguments.json"
         },
         "cluster": {
             "description": "Cluster where the job is executed. Optional on create. Required on job submission.",
@@ -90,6 +90,10 @@
                     "message"
                 ]
             }
+        },
+        "excludeFilesPattern": {
+            "description": "A Python compatible regex to exclude files from upload. e.g. ^.*.txt& excludes all files with .txt suffix" ,
+            "type": "string"
         }
     },
     "required": [

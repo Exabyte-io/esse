@@ -1,0 +1,57 @@
+{
+    "$schema": "http://json-schema.org/draft-04/schema#",
+    "title": "espresso app schema",
+    "type": "object",
+    "properties": {
+        "name": {
+            "type": "string",
+            "enum": [
+                "espresso"
+            ]
+        },
+        "summary": {
+            "type": "string",
+            "enum": [
+                "Quantum Espresso"
+            ]
+        },
+        "flavor": {
+            "type": "string",
+            "enum": [
+                "pw_scf",
+                "pw_nscf",
+                "pw_bands",
+                "pw_relax",
+                "pw_vc-relax",
+                "bands",
+                "projwfc",
+                "dos",
+                "ph",
+                "q2r",
+                "matdyn",
+                "pp"
+            ]
+        },
+        "version": {
+            "type": "string",
+            "enum": [
+                "5.1.1",
+                "5.2.1",
+                "5.4.0"
+            ]
+        },
+        "exec": {
+            "type": "string",
+            "enum": [
+                "pw.x",
+                "bands.x",
+                "projwfc.x",
+                "dos.x",
+                "ph.x",
+                "pp.x",
+                "q2r.x",
+                "matdyn.x"
+            ]
+        }
+    }
+}

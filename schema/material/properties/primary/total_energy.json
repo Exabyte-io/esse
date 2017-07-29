@@ -1,0 +1,24 @@
+{
+    "$schema": "http://json-schema.org/draft-04/schema#",
+    "title": "total energy schema",
+    "allOf": [
+        {
+            "$ref": "file:../../../primitive/math/scalar.json"
+        }
+    ],
+    "properties": {
+        "name": {
+            "enum": [
+                "total_energy"
+            ]
+        },
+        "units": {
+            "enum": [
+                "eV",
+                "rydberg",
+                "hartree"
+            ],
+            "default": "eV"
+        }
+    }
+}

@@ -1,5 +1,0 @@
-{
-    "name": "exchange correlation",
-    "approximation": "gga",
-    "functional": "pbe"
-}

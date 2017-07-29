@@ -1,0 +1,53 @@
+{
+    "$schema": "http://json-schema.org/draft-04/schema#",
+    "title": "lattice implicit schema",
+    "allOf": [
+        {
+            "$ref": "file:../../../../primitive/math/3d_lattice.json"
+        }
+    ],
+    "properties": {
+        "type": {
+            "description": "Bravais lattice type in short notation",
+            "type": "string",
+            "enum": [
+                "CUB",
+                "BCC",
+                "FCC",
+                "TET",
+                "MCL",
+                "ORC",
+                "ORCC",
+                "ORCF",
+                "ORCI",
+                "HEX",
+                "BCT",
+                "TRI",
+                "MCLC",
+                "RHL"
+            ]
+        },
+        "units": {
+            "type": "object",
+            "properties": {
+                "length": {
+                    "type": "string",
+                    "enum": [
+                        "angstrom",
+                        "bohr"
+                    ]
+                },
+                "angle": {
+                    "type": "string",
+                    "enum": [
+                        "degree",
+                        "radian"
+                    ]
+                }
+            }
+        }
+    },
+    "required": [
+        "type"
+    ]
+}

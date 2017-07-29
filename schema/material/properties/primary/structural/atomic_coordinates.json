@@ -1,0 +1,18 @@
+{
+    "$schema": "http://json-schema.org/draft-04/schema#",
+    "title": "atomic coordinates",
+    "description": "coordinates of atoms by ids, vector, unitless",
+    "allOf": [
+        {
+            "$ref": "file:../../../../primitive/math/_array_of_ids.json"
+        }
+    ],
+    "items": {
+        "properties": {
+            "value": {
+                "description": "atomic coordinates",
+                "$ref": "file:../../../../primitive/math/point.json"
+            }
+        }
+    }
+}

@@ -1,0 +1,3 @@
+{
+    "...": "include(../../../science/models/dft/convergence/electronic.json)"
+}

@@ -49,13 +49,13 @@
             "description": "Identifies that job was removed",
             "type": "boolean"
         },
-        "title": {
-            "description": "Human-readable title of the job",
+        "name": {
+            "description": "Human-readable name of the job",
             "type": "string",
             "maxLength": 300
         },
-        "titleSlug": {
-            "description": "Slugified title of the job",
+        "slug": {
+            "description": "Slugified name of the job",
             "type": "string"
         },
         "workDir": {
@@ -66,8 +66,9 @@
             "description": "Job's compute parameters",
             "$ref": "file:job/compute.json"
         },
-        "model": {
-            "$ref": "file:job/model.json"
+        "workflow": {
+            "description": "Arch-workflow for the job",
+            "$ref": "file:job/workflow.json"
         },
         "_project": {
             "description": "Subset of the full information about the project that this job belongs to. Included for quick access in search.",
@@ -97,7 +98,7 @@
                     "description": "Parent job identifier.",
                     "type": "string"
                 },
-                "title": {
+                "name": {
                     "description": "Parent job title.",
                     "type": "string",
                     "maxLength": 300
@@ -105,7 +106,7 @@
             },
             "required": [
                 "_id",
-                "title"
+                "name"
             ]
         }
     },
@@ -113,11 +114,11 @@
         "_id",
         "status",
         "createdAt",
-        "title",
-        "titleSlug",
+        "name",
+        "slug",
         "version",
         "compute",
-        "model",
+        "workflow",
         "_project",
         "creator",
         "owner"

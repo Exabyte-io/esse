@@ -6,7 +6,7 @@
             "description": "unit cell volume",
             "allOf": [
                 {
-                    "$ref": "file:../primitive/scalar.json"
+                    "$ref": "file:../primitive/math/scalar.json"
                 }
             ],
             "properties": {
@@ -20,7 +20,7 @@
         "density": {
             "allOf": [
                 {
-                    "$ref": "file:../primitive/scalar.json"
+                    "$ref": "file:../primitive/math/scalar.json"
                 }
             ],
             "properties": {
@@ -43,7 +43,7 @@
                     "description": "tolerance used for symmetry calculation, angstroms",
                     "allOf": [
                         {
-                            "$ref": "file:../primitive/scalar.json"
+                            "$ref": "file:../primitive/math/scalar.json"
                         }
                     ],
                     "properties": {

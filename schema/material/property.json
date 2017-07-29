@@ -1,0 +1,35 @@
+{
+    "$schema": "http://json-schema.org/draft-04/schema#",
+    "title": "property schema",
+    "properties": {
+        "_id": {
+            "description": "identity of this property",
+            "type": "string"
+        },
+        "exabyteId": {
+            "description": "identity of the corresponding material inside exabyte materials bank",
+            "type": "string"
+        },
+        "data": {
+            "description": "container of the information, specific to each property",
+            "type": "object"
+        },
+        "access": {
+            "$ref": "file:../security/access_legacy.json"
+        },
+        "owner": {
+            "$ref": "file:../security/_owner.json"
+        },
+        "source": {
+            "$ref": "file:../primitive/reference.json"
+        }
+    },
+    "required": [
+        "_id",
+        "exabyteId",
+        "data",
+        "access",
+        "owner",
+        "source"
+    ]
+}

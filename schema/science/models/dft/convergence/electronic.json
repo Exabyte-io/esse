@@ -1,0 +1,32 @@
+{
+    "$schema": "http://json-schema.org/draft-04/schema#",
+    "title": "electronic self consistency convergence schema",
+    "allOf": [
+        {
+            "$ref": "file:../../../../job/workflow/unit/convergence.json"
+        }
+    ],
+    "properties": {
+        "name": {
+            "enum": [
+                "electronic"
+            ]
+        },
+        "units": {
+            "enum": [
+                "eV",
+                "rydberg",
+                "hartree"
+            ]
+        },
+        "data": {
+            "type": "array",
+            "items": {
+                "type": "number"
+            }
+        }
+    },
+    "required": [
+        "data"
+    ]
+}

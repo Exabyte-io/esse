@@ -3,13 +3,12 @@
         "entity": {
             "_id": "FPjAaKfuYAL7tiHbm",
             "name": "unit",
-            "type": "web",
             "flowchartId": "pw_scf"
         },
         "version": "0.2.0",
         "timestamp": 1234923492.12
     },
     "payload": {
-        "...": "include(material/characteristics/total_energy.json)"
+        "...": "include(material/properties/primary/total_energy.json)"
     }
 }
