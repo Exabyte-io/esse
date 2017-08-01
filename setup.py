@@ -1,13 +1,13 @@
-from setuptools import setup, find_packages
+from setuptools import setup
 
 setup(
-    name='exabyte-materials-json',
+    name='exabyte_json_schema',
     version='0.1.0',
     description='Contains schemas and examples for materials and simulations related data in JSON representation.',
-    url='https://github.com/Exabyte-io/exabyte-materials-json',
+    url='https://github.com/Exabyte-io/exabyte-json-schema',
     author='Exabyte Inc.',
     author_email='info@exabyte.io',
-    packages=find_packages(exclude=['example', 'lib', 'tests']),
+    py_modules=["exabyte_json_schema"],
     install_requires=[
         "pyyaml==3.12",
         "jsonschema==2.6.0",
