@@ -2,31 +2,11 @@
     "name": "basis",
     "elements": [
         {
-            "id": 1,
-            "value": "Si"
-        },
-        {
-            "id": 2,
-            "value": "Si"
+            "...": "include(basis/atomic_elements.json)"
         }
     ],
-    "coordinates": [
-        {
-            "id": 1,
-            "value": [
-                0.00,
-                0.00,
-                0.00
-            ]
-        },
-        {
-            "id": 2,
-            "value": [
-                0.25,
-                0.25,
-                0.25
-            ]
-        }
-    ],
+    "coordinates": {
+        "...": "include(basis/atomic_coordinates.json)"
+    },
     "units": "crystal"
 }

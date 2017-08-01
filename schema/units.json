@@ -29,6 +29,14 @@
                 "eV/a.u."
             ]
         },
+        "force": {
+            "enum": [
+                "eV/bohr",
+                "rydberg/au",
+                "newton",
+                "kg*m/s^2"
+            ]
+        },
         "volume": {
             "enum": [
                 "cm^3",
