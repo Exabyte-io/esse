@@ -6,7 +6,7 @@
     },
     "yAxis": {
         "label": "density of states",
-        "units": "states/unit cell"
+        "units": "states/unitcell"
     },
     "xDataArray": [
         [

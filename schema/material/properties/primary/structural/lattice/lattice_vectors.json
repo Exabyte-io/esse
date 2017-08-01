@@ -13,7 +13,7 @@
             "default": 1.0
         },
         "units": {
-            "$ref": "file:../../../../../units.json#/definitions/length"
+            "$ref": "file:../../../../../units.json#/length"
         }
     }
 }
