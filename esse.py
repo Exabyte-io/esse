@@ -1,7 +1,7 @@
 import os
 import yaml
 import jsonschema
-import jsonInclude
+import json_include
 
 ESSE_ROOT_DIR = os.path.dirname(__file__)
 SCHEMA_DR = os.path.join(ESSE_ROOT_DIR, "schema")
@@ -77,4 +77,4 @@ class ESSE(object):
         """
         dirName = os.path.dirname(path)
         baseName = os.path.basename(path)
-        return jsonInclude.build_json(dirName, baseName)
+        return json_include.build_json(dirName, baseName)
