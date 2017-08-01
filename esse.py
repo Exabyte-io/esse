@@ -52,18 +52,18 @@ class ESSE(object):
         """
         return SCHEMAS_MANIFEST.keys()
 
-    def validate(self, schema, instance):
+    def validate(self, instance, schema):
         """
         Validates a given data against the schema.
 
         Args:
-            schema (dict): schema to validate istance against.
             instance (dict): instance to validate.
+            schema (dict): schema to validate istance against.
 
         Raises:
             jsonschema.exceptions.ValidationError
         """
-        jsonschema.Draft4Validator(schema).validate(instance)
+        jsonschema.validate(instance, schema)
 
     def _get_json(self, path):
         """
