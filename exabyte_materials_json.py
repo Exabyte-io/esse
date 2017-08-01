@@ -1,6 +1,6 @@
-class ExabyteJsonSchema(object):
+class ExabyteMaterialsJson(object):
     """
-    Exabyte json schema class.
+    Exabyte materials json class.
     """
 
     def __init__(self):
