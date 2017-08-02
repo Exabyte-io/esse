@@ -5,11 +5,11 @@
     "properties": {
         "app": {
             "description": "Contains information about the simulation engine/application.",
-            "$ref": "file:../../app.json"
+            "$ref": "file:../../job/app.json"
         },
         "compute": {
             "description": "Unit's specific computational parameters. Overrides computeArgs object inside the Job entity.",
-            "$ref": "file:../../compute.json"
+            "$ref": "file:../../job/compute.json"
         },
         "input": {
             "description": "Unit's input.",

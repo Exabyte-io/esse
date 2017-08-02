@@ -1,0 +1,12 @@
+{
+    "type": "pseudopotential",
+    "subtype": "us",
+    "precision": {
+        "...": "include(../../../science/methods/pseudopotential/precision.json)"
+    },
+    "data": {
+        "dataset": {
+            "...": "include(../../../science/methods/pseudopotential/dataset.json)"
+        }
+    }
+}

@@ -20,10 +20,10 @@
     },
     "oneOf": [
         {
-            "$ref": "file:../../../../science/methods/pseudopotential.json"
+            "$ref": "file:../../../science/methods/pseudopotential.json"
         },
         {
-            "$ref": "file:../../../../science/methods/local-orbital.json"
+            "$ref": "file:../../../science/methods/local-orbital.json"
         }
     ],
     "required": [
