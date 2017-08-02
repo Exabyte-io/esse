@@ -9,7 +9,10 @@
             ]
         },
         "values": {
-            "$ref": "file:../../../../primitive/property/atomic_vectors.json"
+            "$ref": "file:../../../../../primitive/property/atomic_vectors.json"
+        },
+        "units": {
+            "$ref": "file:../../../../../units.json#/length"
         }
     }
 }
