@@ -1,0 +1,16 @@
+{
+    "$schema": "http://json-schema.org/draft-04/schema#",
+    "title": "space group symbol schema",
+    "allOf": [
+        {
+            "$ref": "file:../../../../primitive/math/string.json"
+        }
+    ],
+    "properties": {
+        "name": {
+            "enum": [
+                "space_group_symbol"
+            ]
+        }
+    }
+}

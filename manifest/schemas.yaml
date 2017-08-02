@@ -89,3 +89,7 @@ total_energy_contributions:
     units: eV
   schemaPath: schema/material/properties/primary/total_energy_contributions.json
   examplePath: example/material/properties/primary/total_energy_contributions.json
+
+space_group_symbol:
+  schemaPath: schema/material/properties/primary/structural/space_group_symbol.json
+  examplePath: example/material/properties/primary/structural/space_group_symbol.json
