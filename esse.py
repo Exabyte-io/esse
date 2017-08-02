@@ -1,5 +1,6 @@
 import os
 import yaml
+import json
 import jsonschema
 import json_include
 
@@ -77,4 +78,4 @@ class ESSE(object):
         """
         dirName = os.path.dirname(path)
         baseName = os.path.basename(path)
-        return json_include.build_json(dirName, baseName)
+        return json.loads(json_include.build_json(dirName, baseName))
