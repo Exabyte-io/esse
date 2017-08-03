@@ -1,36 +1,18 @@
 {
     "$schema": "http://json-schema.org/draft-04/schema#",
-    "title": "execution unit schema",
+    "title": "execution unit schema (base)",
     "type": "object",
     "properties": {
         "app": {
             "description": "Contains information about the simulation engine/application.",
-            "$ref": "file:../../job/app.json"
+            "$ref": "file:../../software/app.json"
         },
         "compute": {
             "description": "Unit's specific computational parameters. Overrides computeArgs object inside the Job entity.",
             "$ref": "file:../../job/compute.json"
         },
         "input": {
-            "description": "Unit's input.",
-            "type": "array",
-            "items": {
-                "type": "object",
-                "properties": {
-                    "name": {
-                        "description": "Input file name. e.g. pw_scf.in",
-                        "type": "string"
-                    },
-                    "content": {
-                        "description": "Content of the input file. e.g. &CONTROL    calculation='scf' ...",
-                        "type": "string"
-                    }
-                },
-                "required": [
-                    "name",
-                    "content"
-                ]
-            }
+            "description": "unit input (type to be specified by the application's execution unit)"
         }
     },
     "required": [
