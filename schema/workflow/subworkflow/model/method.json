@@ -1,6 +1,6 @@
 {
     "$schema": "http://json-schema.org/draft-04/schema#",
-    "title": "method schema",
+    "title": "method schema (base)",
     "properties": {
         "type": {
             "description": "general type of this method, eg. `pseudopotential`",
@@ -18,14 +18,6 @@
             "type": "object"
         }
     },
-    "oneOf": [
-        {
-            "$ref": "file:../../../science/methods/pseudopotential.json"
-        },
-        {
-            "$ref": "file:../../../science/methods/local-orbital.json"
-        }
-    ],
     "required": [
         "type",
         "precision"
