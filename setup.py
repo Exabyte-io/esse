@@ -9,9 +9,10 @@ setup(
     author_email='info@exabyte.io',
     include_package_data=True,
     package_data={
-        'esse': ['../schema', '../example', '../manifest'],
+        'esse': ['schema', 'example', 'manifest'],
     },
-    packages=["esse"],
+    py_modules=["esse"],
+    package_dir={'': '.'},
     install_requires=[
         "pyyaml==3.12",
         "jsonschema==2.6.0",
