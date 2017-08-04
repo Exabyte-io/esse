@@ -1,4 +1,9 @@
+import os
+
 from setuptools import setup
+from pip.req import parse_requirements
+
+REQUIREMENTS_TXT = os.path.join(os.path.dirname(__file__), "requirements.txt")
 
 setup(
     name='esse',
@@ -8,14 +13,7 @@ setup(
     author='Exabyte Inc.',
     author_email='info@exabyte.io',
     py_modules=["esse"],
-    install_requires=[
-        "pyyaml==3.12",
-        "jsonschema==2.6.0",
-        "json_include==0.2.9"
-    ],
-    dependency_links=[
-        "git+https://git@github.com/Exabyte-io/json_include.git@452de29147df52a38fd6130590373555228486ba#egg=json_include-0.2.9"
-    ],
+    install_requires=[str(i.req) for i in parse_requirements(REQUIREMENTS_TXT)],
     classifiers=[
         'Programming Language :: Python',
         'Development Status :: 3 - Alpha',
