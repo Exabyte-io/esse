@@ -13,7 +13,7 @@ setup(
     author='Exabyte Inc.',
     author_email='info@exabyte.io',
     py_modules=["esse"],
-    install_requires=[str(i.req) for i in parse_requirements(REQUIREMENTS_TXT)],
+    install_requires=[str(i.req) for i in parse_requirements(REQUIREMENTS_TXT, session=False)],
     classifiers=[
         'Programming Language :: Python',
         'Development Status :: 3 - Alpha',
