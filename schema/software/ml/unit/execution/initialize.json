@@ -1,0 +1,19 @@
+{
+    "$schema": "http://json-schema.org/draft-04/schema#",
+    "title": "initialize unit schema",
+    "allOf": [
+        {
+            "$ref": "file:../../../../workflow/unit/execution.json"
+        }
+    ],
+    "properties": {
+        "type": {
+            "enum": [
+                "initialize"
+            ]
+        },
+        "input": {
+            "type": "object"
+        }
+    }
+}
