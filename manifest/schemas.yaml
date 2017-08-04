@@ -93,3 +93,7 @@ total_energy_contributions:
 space_group_symbol:
   schemaPath: schema/material/properties/primary/structural/space_group_symbol.json
   examplePath: example/material/properties/primary/structural/space_group_symbol.json
+
+material:
+  schemaPath: schema/material.json
+  examplePath: example/material.json
