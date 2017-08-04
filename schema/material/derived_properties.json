@@ -35,9 +35,9 @@
             "type": "object",
             "description": "contains information about the material symmetry",
             "properties": {
-                "spaceGroup": {
-                    "description": "space group in Hermann–Mauguin notation",
-                    "type": "integer"
+                "spaceGroupSymbol": {
+                    "description": "space group symbol in Hermann–Mauguin notation",
+                    "type": "string"
                 },
                 "tolerance": {
                     "description": "tolerance used for symmetry calculation, angstroms",
