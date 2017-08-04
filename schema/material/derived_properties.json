@@ -3,63 +3,46 @@
     "title": "derived properties schema",
     "properties": {
         "volume": {
-            "description": "unit cell volume",
             "allOf": [
                 {
-                    "$ref": "file:../primitive/math/scalar.json"
+                    "$ref": "file:properties/primary/structural/volume.json"
                 }
-            ],
-            "properties": {
-                "units": {
-                    "enum": [
-                        "angstrom^3"
-                    ]
-                }
-            }
+            ]
         },
         "density": {
             "allOf": [
                 {
-                    "$ref": "file:../primitive/math/scalar.json"
+                    "$ref": "file:properties/primary/structural/density.json"
                 }
-            ],
-            "properties": {
-                "units": {
-                    "enum": [
-                        "g/cm^3"
-                    ]
-                }
-            }
+            ]
         },
         "symmetry": {
-            "type": "object",
-            "description": "contains information about the material symmetry",
-            "properties": {
-                "spaceGroupSymbol": {
-                    "description": "space group symbol in Hermann–Mauguin notation",
-                    "type": "string"
-                },
-                "tolerance": {
-                    "description": "tolerance used for symmetry calculation, angstroms",
-                    "allOf": [
-                        {
-                            "$ref": "file:../primitive/math/scalar.json"
-                        }
-                    ],
-                    "properties": {
-                        "units": {
-                            "enum": [
-                                "angstrom"
-                            ]
-                        }
-                    }
+            "allOf": [
+                {
+                    "$ref": "file:properties/primary/structural/symmetry.json"
                 }
-            }
+            ]
+        },
+        "elemental_ratio": {
+            "allOf": [
+                {
+                    "$ref": "file:properties/primary/structural/elemental_ratio.json"
+                }
+            ]
+        },
+        "p-norm": {
+            "allOf": [
+                {
+                    "$ref": "file:properties/primary/structural/p-norm.json"
+                }
+            ]
         }
     },
     "required": [
         "volume",
         "density",
-        "symmetry"
+        "symmetry",
+        "elemental_ratio",
+        "p-norm"
     ]
 }
