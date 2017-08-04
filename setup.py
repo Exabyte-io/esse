@@ -8,7 +8,10 @@ setup(
     author='Exabyte Inc.',
     author_email='info@exabyte.io',
     include_package_data=True,
-    py_modules=["esse"],
+    package_data={
+        'esse': ['../schema', '../example', '../manifest'],
+    },
+    packages=["esse"],
     install_requires=[
         "pyyaml==3.12",
         "jsonschema==2.6.0",
