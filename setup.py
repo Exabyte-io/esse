@@ -7,6 +7,7 @@ setup(
     url='https://github.com/Exabyte-io/exabyte-materials-json',
     author='Exabyte Inc.',
     author_email='info@exabyte.io',
+    include_package_data=True,
     py_modules=["esse"],
     install_requires=[
         "pyyaml==3.12",
