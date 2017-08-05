@@ -3,7 +3,7 @@
     "title": "lattice explicit unit",
     "allOf": [
         {
-            "$ref": "file:../../../../primitive/math/3d_vector_basis.json"
+            "$ref": "file:../../../../../primitive/math/3d_vector_basis.json"
         }
     ],
     "properties": {
@@ -13,7 +13,7 @@
             "default": 1.0
         },
         "units": {
-            "$ref": "file:../../../../units.json#/definitions/length"
+            "$ref": "file:../../../../../units.json#/length"
         }
     }
 }
