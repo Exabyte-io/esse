@@ -76,6 +76,10 @@
             "description": "Hash string which is calculated based on material's descriptive properties (lattice, basis). Used to identify equal materials.",
             "type": "string"
         },
+        "scaledHash": {
+            "description": "Hash string for a scaled structure with lattice vector a set to 1 (eg. for materials under pressure).",
+            "type": "string"
+        },
         "icsdId": {
             "description": "Corresponding ICSD id of the material",
             "type": "integer"
