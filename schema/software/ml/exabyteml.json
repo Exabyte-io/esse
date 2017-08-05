@@ -5,7 +5,7 @@
     "properties": {
         "name": {
             "enum": [
-                "examle"
+                "exabyteml"
             ]
         },
         "summary": {
@@ -20,12 +20,12 @@
         },
         "exec": {
             "enum": [
-                "examle"
+                "exabyteml"
             ]
         },
         "flavor": {
             "enum": [
-                "examle"
+                "exabyteml"
             ]
         }
     }
