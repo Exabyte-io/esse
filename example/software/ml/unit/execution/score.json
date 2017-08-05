@@ -1,0 +1,7 @@
+{
+    "app": {
+        "...": "include(../../examle.json)"
+    },
+    "type": "score",
+    "input": {}
+}

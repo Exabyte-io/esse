@@ -1,0 +1,10 @@
+{
+    "app": {
+        "...": "include(../../../examle.json)"
+    },
+    "type": "evaluate",
+    "subtype": "cross-validate",
+    "input": {
+        "nSplits": 3
+    }
+}

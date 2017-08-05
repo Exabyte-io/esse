@@ -1,0 +1,10 @@
+{
+    "operation": "feature_selection",
+    "type": "permutation_feature_importance",
+    "input": {
+        "nFeatures": 100
+    },
+    "required": [
+        "nFeatures"
+    ]
+}

@@ -1,12 +1,10 @@
 {
-    "$schema": "http://json-schema.org/draft-04/schema#",
-    "title": "regression data",
     "oneOf": [
         {
-            "$ref": "file:data_transformation.json"
+            "$ref": "file:processing/data_transformation.json"
         },
         {
-            "$ref": "file:feature_selection.json"
+            "$ref": "file:processing/feature_selection.json"
         }
     ]
 }

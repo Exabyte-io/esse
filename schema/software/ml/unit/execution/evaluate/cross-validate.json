@@ -1,0 +1,33 @@
+{
+    "$schema": "http://json-schema.org/draft-04/schema#",
+    "title": "cross-validation unit schema",
+    "allOf": [
+        {
+            "$ref": "file:../../../../../workflow/unit/execution.json"
+        }
+    ],
+    "properties": {
+        "type": {
+            "enum": [
+                "evaluate"
+            ]
+        },
+        "subtype": {
+            "enum": [
+                "cross-validate"
+            ]
+        },
+        "input": {
+            "type": "object",
+            "properties": {
+                "nSplits": {
+                    "description": "number of groups to split the training dataset for cross-validation",
+                    "type": "number"
+                }
+            },
+            "required": [
+                "nSplits"
+            ]
+        }
+    }
+}

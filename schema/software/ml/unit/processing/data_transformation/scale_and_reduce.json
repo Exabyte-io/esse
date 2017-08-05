@@ -7,6 +7,12 @@
                 "scale"
             ]
         },
+        "type": {
+            "description": "type of scaler to utilize, by default 'Sklearn.StandardScaler' is used",
+            "enum": [
+                "standard_scaler"
+            ]
+        },
         "input": {
             "type": "array",
             "items": {

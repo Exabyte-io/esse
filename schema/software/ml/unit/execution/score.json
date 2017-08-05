@@ -1,0 +1,20 @@
+{
+    "$schema": "http://json-schema.org/draft-04/schema#",
+    "title": "train score schema",
+    "allOf": [
+        {
+            "$ref": "file:../../../../workflow/unit/execution.json"
+        }
+    ],
+    "properties": {
+        "type": {
+            "enum": [
+                "score"
+            ]
+        },
+        "input": {
+            "description": "model score unit",
+            "type": "object"
+        }
+    }
+}
