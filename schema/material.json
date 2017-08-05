@@ -77,7 +77,7 @@
             "type": "string"
         },
         "scaledHash": {
-            "description": "Hash string which is calculated based on material's descriptive properties (scaled lattice - a=1, basis).",
+            "description": "Hash string for a scaled structure with lattice vector a set to 1 (eg. for materials under pressure).",
             "type": "string"
         },
         "icsdId": {
