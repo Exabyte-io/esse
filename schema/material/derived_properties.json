@@ -1,48 +1,24 @@
 {
     "$schema": "http://json-schema.org/draft-04/schema#",
     "title": "derived properties schema",
-    "properties": {
-        "volume": {
-            "allOf": [
-                {
-                    "$ref": "file:properties/primary/structural/volume.json"
-                }
-            ]
-        },
-        "density": {
-            "allOf": [
-                {
-                    "$ref": "file:properties/primary/structural/density.json"
-                }
-            ]
-        },
-        "symmetry": {
-            "allOf": [
-                {
-                    "$ref": "file:properties/primary/structural/symmetry.json"
-                }
-            ]
-        },
-        "elemental_ratio": {
-            "allOf": [
-                {
-                    "$ref": "file:properties/primary/structural/elemental_ratio.json"
-                }
-            ]
-        },
-        "p-norm": {
-            "allOf": [
-                {
-                    "$ref": "file:properties/primary/structural/p-norm.json"
-                }
-            ]
-        }
-    },
-    "required": [
-        "volume",
-        "density",
-        "symmetry",
-        "elemental_ratio",
-        "p-norm"
-    ]
+    "type": "array",
+    "items": {
+        "anyOf": [
+            {
+                "$ref": "file:properties/primary/structural/volume.json"
+            },
+            {
+                "$ref": "file:properties/primary/structural/density.json"
+            },
+            {
+                "$ref": "file:properties/primary/structural/symmetry.json"
+            },
+            {
+                "$ref": "file:properties/primary/structural/elemental_ratio.json"
+            },
+            {
+                "$ref": "file:properties/primary/structural/p-norm.json"
+            }
+        ]
+    }
 }

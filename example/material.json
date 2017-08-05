@@ -45,18 +45,18 @@
         "beta": 90.0,
         "gamma": 90.0
     },
-    "derivedProperties": {
-        "volume": {
+    "derivedProperties": [
+        {
             "name": "volume",
             "value": 131.1,
             "units": "angstrom^3"
         },
-        "density": {
+        {
             "name": "density",
             "value": 2.33,
             "units": "g/cm^3"
         },
-        "symmetry": {
+        {
             "name": "symmetry",
             "spaceGroupSymbol": "Fd-3m",
             "tolerance": {
@@ -64,17 +64,17 @@
                 "units": "angstrom"
             }
         },
-        "p-norm": {
+        {
             "name": "p-norm",
             "degree": 10,
             "value": 0.71
         },
-        "elemental_ratio": {
+        {
             "name": "elemental_ratio",
             "element": "Si",
             "value": 0.71
         }
-    },
+    ],
     "editable": true,
     "createdAt": "2016-04-03T05:25:37.430Z",
     "hash": "4ac3fa057e3530628eb1295c77110eaa",
