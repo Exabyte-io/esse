@@ -95,27 +95,27 @@ material:
   examplePath: example/material.json
 
 p-norm:
-  schemaPath: schema/material/properties/structural/p-norm.json
-  examplePath: example/material/properties/structural/p-norm.json
+  schemaPath: schema/material/properties/primary/structural/p-norm.json
+  examplePath: example/material/properties/primary/structural/p-norm.json
 
 volume:
   defaults:
     units: angstrom^3
-  schemaPath: schema/material/properties/structural/volume.json
-  examplePath: example/material/properties/structural/volume.json
+  schemaPath: schema/material/properties/primary/structural/volume.json
+  examplePath: example/material/properties/primary/structural/volume.json
 
 symmetry:
   defaults:
     units: angstrom
-  schemaPath: schema/material/properties/structural/symmetry.json
-  examplePath: example/material/properties/structural/symmetry.json
+  schemaPath: schema/material/properties/primary/structural/symmetry.json
+  examplePath: example/material/properties/primary/structural/symmetry.json
 
 elemental_ratio:
-  schemaPath: schema/material/properties/structural/elemental_ratio.json
-  examplePath: example/material/properties/structural/elemental_ratio.json
+  schemaPath: schema/material/properties/primary/structural/elemental_ratio.json
+  examplePath: example/material/properties/primary/structural/elemental_ratio.json
 
 density:
   defaults:
     units: g/cm^3
-  schemaPath: schema/material/properties/structural/density.json
-  examplePath: example/material/properties/structural/density.json
+  schemaPath: schema/material/properties/primary/structural/density.json
+  examplePath: example/material/properties/primary/structural/density.json
