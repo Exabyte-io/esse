@@ -6,7 +6,7 @@
         {
             "properties": {
                 "vectors": {
-                    "$ref": "file:lattice_vectors.json"
+                    "$ref": "file:lattice/lattice_vectors.json"
                 }
             },
             "required": [
@@ -14,7 +14,7 @@
             ]
         },
         {
-            "$ref": "file:lattice_bravais.json"
+            "$ref": "file:lattice/lattice_bravais.json"
         }
     ],
     "properties": {

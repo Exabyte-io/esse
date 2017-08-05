@@ -1,7 +1,7 @@
 {
     "$schema": "http://json-schema.org/draft-04/schema#",
-    "title": "pressure",
-    "description": "average pressure in unit cell",
+    "title": "atomic radius",
+    "description": "atomic radius",
     "allOf": [
         {
             "$ref": "file:../../../primitive/math/scalar.json"
@@ -10,11 +10,11 @@
     "properties": {
         "name": {
             "enum": [
-                "pressure"
+                "atomic_radius"
             ]
         },
         "units": {
-            "$ref": "file:../../../units.json#/pressure"
+            "$ref": "file:../../../units.json#/length"
         }
     }
 }

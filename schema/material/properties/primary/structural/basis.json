@@ -4,13 +4,10 @@
     "type": "object",
     "properties": {
         "elements": {
-            "$ref": "file:atomic_elements.json"
+            "$ref": "file:basis/atomic_elements.json"
         },
         "coordinates": {
-            "$ref": "file:atomic_coordinates.json"
-        },
-        "units": {
-            "$ref": "file:../../../../units.json#/definitions/length"
+            "$ref": "file:basis/atomic_coordinates.json"
         }
     },
     "required": [
