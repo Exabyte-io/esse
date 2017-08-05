@@ -3,10 +3,7 @@
     "title": "regression data",
     "oneOf": [
         {
-            "$ref": "file:data_transformation.json"
-        },
-        {
-            "$ref": "file:feature_selection.json"
+            "$ref": "file:execution/evaluate.json"
         }
     ]
 }

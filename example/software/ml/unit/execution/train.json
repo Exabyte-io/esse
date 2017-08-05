@@ -1,0 +1,18 @@
+{
+    "app": {
+        "...": "include(../../exabyteml.json)"
+    },
+    "type": "train",
+    "input": {
+        "features": [
+            "elemental_ratio:Si",
+            "elemental_ratio:Ge",
+            "ionization_potential:Ge",
+            "ionization_potential:Si"
+        ],
+        "targets": [
+            "band_gaps:indirect",
+            "band_gaps:direct"
+        ]
+    }
+}

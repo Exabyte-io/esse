@@ -1,0 +1,28 @@
+{
+    "$schema": "http://json-schema.org/draft-04/schema#",
+    "title": "scale and reduce unit schema",
+    "properties": {
+        "operation": {
+            "enum": [
+                "feature_selection"
+            ]
+        },
+        "type": {
+            "enum": [
+                "permutation_feature_importance"
+            ]
+        },
+        "input": {
+            "type": "object",
+            "properties": {
+                "nFeatures": {
+                    "description": "number of features to select for model training. If equal to 0, will use all available features",
+                    "type": "number"
+                }
+            },
+            "required": [
+                "nFeatures"
+            ]
+        }
+    }
+}

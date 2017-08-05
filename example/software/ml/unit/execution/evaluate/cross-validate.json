@@ -1,0 +1,10 @@
+{
+    "app": {
+        "...": "include(../../../exabyteml.json)"
+    },
+    "type": "evaluate",
+    "subtype": "cross-validate",
+    "input": {
+        "nSplits": 3
+    }
+}

@@ -1,6 +1,6 @@
 {
     "app": {
-        "...": "include(../../software/app.json)"
+        "...": "include(../espresso.json)"
     },
     "compute": null,
     "input": [

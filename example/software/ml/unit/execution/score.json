@@ -1,0 +1,7 @@
+{
+    "app": {
+        "...": "include(../../exabyteml.json)"
+    },
+    "type": "score",
+    "input": {}
+}
