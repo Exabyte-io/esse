@@ -3,7 +3,7 @@
     "title": "regression precision",
     "oneOf": [
         {
-            "$ref": "file:linear/precision.json"
+            "$ref": "file:linear/precision_per_property.json"
         }
     ]
 }

@@ -3,7 +3,7 @@
     "type": "linear",
     "precision": {
         "perProperty": {
-            "...": "include(regression/linear/precision.json)"
+            "...": "include(regression/precision.json)"
         }
     },
     "data": {
