@@ -38,8 +38,8 @@
             "type": "integer"
         },
         "arguments": {
-            "description": "Optional arguments specific to using application - VASP, Quantum Espresso, etc.",
-            "$ref": "file:../software/arguments.json"
+            "description": "Optional arguments specific to using application - VASP, Quantum Espresso, etc. Specified elsewhere",
+            "type": "object"
         },
         "cluster": {
             "description": "Cluster where the job is executed. Optional on create. Required on job submission.",

@@ -1,6 +1,6 @@
 {
     "$schema": "http://json-schema.org/draft-04/schema#",
-    "title": "application schema",
+    "title": "application schema (base)",
     "type": "object",
     "properties": {
         "name": {
@@ -24,20 +24,6 @@
             "type": "string"
         }
     },
-    "oneOf": [
-        {
-            "$ref": "file:../software/espresso.json"
-        },
-        {
-            "$ref": "file:../software/vasp.json"
-        },
-        {
-            "$ref": "file:../software/shell.json"
-        },
-        {
-            "$ref": "file:../software/python.json"
-        }
-    ],
     "required": [
         "name",
         "flavor",

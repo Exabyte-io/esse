@@ -1,0 +1,7 @@
+{
+    "name": "vasp",
+    "version": "5.3.5",
+    "summary": "vienna ab-initio simulation package",
+    "exec": "vasp",
+    "flavor": "vasp_nscf"
+}
