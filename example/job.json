@@ -14,7 +14,7 @@
         "...": "include(security/owner.json)"
     },
     "workflow": {
-        "...": "include(job/workflow.json)"
+        "...": "include(workflow.json)"
     },
     "version": "0.2.0",
     "_id": "FPjAaKfuYAL7tiHbm",

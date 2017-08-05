@@ -1,6 +1,6 @@
 {
     "$schema": "http://json-schema.org/draft-04/schema#",
-    "title": "model schema",
+    "title": "model schema (base)",
     "properties": {
         "type": {
             "description": "general type of the model, eg. `dft`",
@@ -24,11 +24,6 @@
             }
         }
     },
-    "oneOf": [
-        {
-            "$ref": "file:../../../science/models/dft.json"
-        }
-    ],
     "required": [
         "type",
         "subtype",

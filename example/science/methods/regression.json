@@ -1,0 +1,45 @@
+{
+    "subtype": "least_squares",
+    "type": "linear",
+    "precision": {
+        "perProperty": {
+            "...": "include(regression/linear/precision.json)"
+        }
+    },
+    "data": {
+        "perProperty": [
+            {
+                "name": "band_gaps:direct",
+                "intercept": 0.363,
+                "perFeature": [
+                    {
+                        "score": 0.134,
+                        "coefficient": 0.015,
+                        "name": "atomic_radius:Ge"
+                    },
+                    {
+                        "score": 0.135,
+                        "coefficient": 0.016,
+                        "name": "atomic_radius:Si"
+                    }
+                ]
+            },
+            {
+                "name": "band_gaps:indirect",
+                "intercept": 0.364,
+                "perFeature": [
+                    {
+                        "score": 0.135,
+                        "coefficient": 0.016,
+                        "name": "atomic_radius:Ge"
+                    },
+                    {
+                        "score": 0.136,
+                        "coefficient": 0.017,
+                        "name": "atomic_radius:Si"
+                    }
+                ]
+            }
+        ]
+    }
+}
