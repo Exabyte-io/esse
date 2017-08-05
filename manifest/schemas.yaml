@@ -80,7 +80,7 @@ lattice:
 
 atomic_forces:
   defaults:
-    units: eV
+    units: eV/bohr
   schemaPath: schema/material/properties/primary/structural/atomic_forces.json
   examplePath: example/material/properties/primary/structural/atomic_forces.json
 
