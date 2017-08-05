@@ -1,7 +1,7 @@
 {
-    "name": "examle",
+    "name": "exabyteml",
     "summary": "exabyte machine learning engine",
     "version": "0.2.0",
-    "exec": "examle",
-    "flavor": "examle"
+    "exec": "exabyteml",
+    "flavor": "exabyteml"
 }

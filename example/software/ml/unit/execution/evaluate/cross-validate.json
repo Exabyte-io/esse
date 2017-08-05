@@ -1,6 +1,6 @@
 {
     "app": {
-        "...": "include(../../../examle.json)"
+        "...": "include(../../../exabyteml.json)"
     },
     "type": "evaluate",
     "subtype": "cross-validate",
