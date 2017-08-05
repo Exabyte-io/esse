@@ -42,7 +42,7 @@ class ESSE(object):
         Returns:
              dict
         """
-        return SCHEMAS_MANIFEST[schemaId]["defaults"]
+        return SCHEMAS_MANIFEST[schemaId].get("defaults", {})
 
     def get_schema_ids(self):
         """
