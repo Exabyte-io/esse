@@ -1,0 +1,33 @@
+{
+    "$schema": "http://json-schema.org/draft-04/schema#",
+    "title": "application schema (base)",
+    "type": "object",
+    "properties": {
+        "name": {
+            "description": "The name of the application. e.g. espresso",
+            "type": "string"
+        },
+        "summary": {
+            "description": "Application's short description.",
+            "type": "string"
+        },
+        "flavor": {
+            "description": "Flavor of the executable within the Application suite. e.g. pw_scf, pw_bands, pp (for Quantum ESPRESSO).",
+            "type": "string"
+        },
+        "version": {
+            "description": "Application version. e.g. 5.3.5",
+            "type": "string"
+        },
+        "exec": {
+            "description": "The name of the executable file within the Application suite. e.g. pw.x, bands.x, pp.x, dos.x (for Quantum ESPRESSO).",
+            "type": "string"
+        }
+    },
+    "required": [
+        "name",
+        "flavor",
+        "version",
+        "exec"
+    ]
+}

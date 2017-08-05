@@ -1,0 +1,17 @@
+{
+    "operation": "scale",
+    "input": [
+        {
+            "variance": 0.10,
+            "mean": 0.156,
+            "scale": 1.5,
+            "name": "atomic_radius:Ge"
+        },
+        {
+            "variance": 0.11,
+            "mean": 0.155,
+            "scale": 1.4,
+            "name": "atomic_radius:Si"
+        }
+    ]
+}

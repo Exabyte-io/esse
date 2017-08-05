@@ -1,0 +1,21 @@
+{
+    "$schema": "http://json-schema.org/draft-04/schema#",
+    "title": "processing unit schema",
+    "type": "object",
+    "properties": {
+        "operation": {
+            "description": "Contains information about the operation.",
+            "type": "string"
+        },
+        "input": {
+            "type": "array",
+            "items": {
+                "type": "object"
+            }
+        }
+    },
+    "required": [
+        "input",
+        "app"
+    ]
+}

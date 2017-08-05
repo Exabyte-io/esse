@@ -1,0 +1,59 @@
+{
+    "$schema": "http://json-schema.org/draft-04/schema#",
+    "title": "linear methods schema",
+    "properties": {
+        "type": {
+            "enum": [
+                "linear"
+            ]
+        },
+        "subtype": {
+            "enum": [
+                "least_squares",
+                "ridge"
+            ]
+        },
+        "precision": {
+            "perProperty": {
+                "items": {
+                    "type": "object",
+                    "properties": {
+                        "name": {
+                            "description": "property name in 'flattened' format",
+                            "type": "string"
+                        }
+                    },
+                    "allOf": [
+                        {
+                            "$ref": "file:regression/precision.json"
+                        }
+                    ]
+                }
+            }
+        },
+        "data": {
+            "perProperty": {
+                "items": {
+                    "type": "object",
+                    "properties": {
+                        "name": {
+                            "description": "property name in 'flattened' format",
+                            "type": "string"
+                        }
+                    },
+                    "allOf": [
+                        {
+                            "$ref": "file:regression/data.json"
+                        }
+                    ]
+                }
+            }
+        }
+    },
+    "required": [
+        "type",
+        "subtype",
+        "precision",
+        "data"
+    ]
+}

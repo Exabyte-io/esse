@@ -1,0 +1,41 @@
+{
+    "$schema": "http://json-schema.org/draft-04/schema#",
+    "title": "subworkflow schema",
+    "type": "object",
+    "properties": {
+        "name": {
+            "description": "Human-readable name of the subworkflow. e.g. Total-energy",
+            "type": "string"
+        },
+        "model": {
+            "description": "Model used inside the subworkflow",
+            "$ref": "file:subworkflow/model.json"
+        },
+        "app": {
+            "description": "information about the simulation engine/application.",
+            "$ref": "file:../software/app.json"
+        },
+        "properties": {
+            "description": "Array of characteristic properties calculated by this subworkflow",
+            "type": "array",
+            "items": {
+                "description": "property names, eg. `band_gaps`, `band_structure`",
+                "type": "string"
+            }
+        },
+        "units": {
+            "description": "Contains the Units of the subworkflow",
+            "type": "array",
+            "items": {
+                "$ref": "file:unit.json"
+            }
+        }
+    },
+    "required": [
+        "name",
+        "units",
+        "model",
+        "app",
+        "properties"
+    ]
+}

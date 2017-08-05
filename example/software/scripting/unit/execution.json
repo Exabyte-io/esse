@@ -1,0 +1,12 @@
+{
+    "app": {
+        "...": "include(../python.json)"
+    },
+    "compute": null,
+    "input": [
+        {
+            "content": "print('Hello World!')",
+            "name": "script.py"
+        }
+    ]
+}

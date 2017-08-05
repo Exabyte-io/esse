@@ -1,0 +1,10 @@
+{
+    "oneOf": [
+        {
+            "$ref": "file:processing/data_transformation.json"
+        },
+        {
+            "$ref": "file:processing/feature_selection.json"
+        }
+    ]
+}

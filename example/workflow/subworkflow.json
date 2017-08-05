@@ -1,0 +1,18 @@
+{
+    "_id": "LCthJ6E2QabYCZqf4",
+    "units": [
+        {
+            "...": "include(unit.json)"
+        }
+    ],
+    "properties": [
+        "band_structure"
+    ],
+    "model": {
+        "...": "include(subworkflow/model.json)"
+    },
+    "app": {
+        "...": "include(../software/app.json)"
+    },
+    "name": "Bandstructure"
+}
