@@ -20,6 +20,10 @@
             "description": "name of the unit. e.g. pw_scf",
             "type": "string"
         },
+        "_id": {
+            "description": "ID of subworkflow",
+            "type": "string"
+        },
         "status": {
             "description": "Status of the unit.",
             "type": "string",

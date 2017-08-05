@@ -13,13 +13,7 @@
             "default": 1.0
         },
         "units": {
-            "description": "units for lattice vectors",
-            "type": "string",
-            "enum": [
-                "angstrom",
-                "bohr",
-                "alat"
-            ]
+            "$ref": "file:../../../../units.json#/definitions/length"
         }
     }
 }
