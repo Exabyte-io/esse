@@ -1,7 +1,7 @@
 {
     "$schema": "http://json-schema.org/draft-04/schema#",
     "title": "p_norm",
-    "description": "https://en.wikipedia.org/wiki/Norm_(mathematics)#p-norm",
+    "description": "ration of this element in the compound",
     "allOf": [
         {
             "$ref": "file:../../../../primitive/math/scalar.json"
@@ -19,7 +19,7 @@
         },
         "element": {
             "type": "string",
-            "description": "element that this ratio is for"
+            "description": "the element this ratio is for"
         }
     }
 }
