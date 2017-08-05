@@ -1,65 +1,24 @@
 {
     "$schema": "http://json-schema.org/draft-04/schema#",
     "title": "derived properties schema",
-    "properties": {
-        "volume": {
-            "description": "unit cell volume",
-            "allOf": [
-                {
-                    "$ref": "file:../primitive/math/scalar.json"
-                }
-            ],
-            "properties": {
-                "units": {
-                    "enum": [
-                        "angstrom^3"
-                    ]
-                }
+    "type": "array",
+    "items": {
+        "anyOf": [
+            {
+                "$ref": "file:properties/primary/structural/volume.json"
+            },
+            {
+                "$ref": "file:properties/primary/structural/density.json"
+            },
+            {
+                "$ref": "file:properties/primary/structural/symmetry.json"
+            },
+            {
+                "$ref": "file:properties/primary/structural/elemental_ratio.json"
+            },
+            {
+                "$ref": "file:properties/primary/structural/p-norm.json"
             }
-        },
-        "density": {
-            "allOf": [
-                {
-                    "$ref": "file:../primitive/math/scalar.json"
-                }
-            ],
-            "properties": {
-                "units": {
-                    "enum": [
-                        "g/cm^3"
-                    ]
-                }
-            }
-        },
-        "symmetry": {
-            "type": "object",
-            "description": "contains information about the material symmetry",
-            "properties": {
-                "spaceGroupSymbol": {
-                    "description": "space group symbol in Hermann–Mauguin notation",
-                    "type": "string"
-                },
-                "tolerance": {
-                    "description": "tolerance used for symmetry calculation, angstroms",
-                    "allOf": [
-                        {
-                            "$ref": "file:../primitive/math/scalar.json"
-                        }
-                    ],
-                    "properties": {
-                        "units": {
-                            "enum": [
-                                "angstrom"
-                            ]
-                        }
-                    }
-                }
-            }
-        }
-    },
-    "required": [
-        "volume",
-        "density",
-        "symmetry"
-    ]
+        ]
+    }
 }
