@@ -1,0 +1,39 @@
+{
+    "$schema": "http://json-schema.org/draft-04/schema#",
+    "title": "data IO unit schema",
+    "type": "object",
+    "properties": {
+        "type": {
+            "description": "type of the unit",
+            "type": "string",
+            "enum": [
+                "dataIO"
+            ]
+        },
+        "input": {
+            "type": "array",
+            "items": {
+                "operation": {
+                    "description": "data IO operation",
+                    "type": "string",
+                    "enum": [
+                        "import",
+                        "export"
+                    ]
+                },
+                "oneOf": [
+                    {
+                        "$ref": "file:data_io/rest_api.json"
+                    }
+                ],
+                "required": [
+                    "operation"
+                ]
+            }
+        }
+    },
+    "required": [
+        "type",
+        "input"
+    ]
+}

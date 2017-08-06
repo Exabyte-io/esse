@@ -1,0 +1,14 @@
+{
+    "type": "dataIO",
+    "input": [
+        {
+            "operation": "import",
+            "sourceType": "rest_api",
+            "endpoint": "material",
+            "endpoint_options": {
+                "includeCharacteristics": true
+            },
+            "id": "KuAsBRwofzGfHPWiT"
+        }
+    ]
+}
