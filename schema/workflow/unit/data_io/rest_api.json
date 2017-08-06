@@ -3,13 +3,6 @@
     "title": "data IO rest API input schema",
     "type": "object",
     "properties": {
-        "sourceType": {
-            "description": "source of data",
-            "type": "string",
-            "enum": [
-                "rest_api"
-            ]
-        },
         "endpoint": {
             "description": "rest API endpoint",
             "type": "string"

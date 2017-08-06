@@ -7,10 +7,10 @@
     "processing": {
         "operation": "dataIO",
         "flavor": "input",
+        "color": "rest_api",
         "input": [
             {
-                "sourceType": "rest_api",
-                "endpoint": "material",
+                "endpoint": "materials-bank",
                 "endpoint_options": {
                     "includeCharacteristics": true
                 },

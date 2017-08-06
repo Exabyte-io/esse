@@ -22,6 +22,11 @@
                         "output"
                     ]
                 },
+                "color": {
+                    "enum": [
+                        "rest_api"
+                    ]
+                },
                 "input": {
                     "type": "array",
                     "items": {
