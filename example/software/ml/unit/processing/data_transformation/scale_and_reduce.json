@@ -1,5 +1,5 @@
 {
-    "type": "scale",
+    "type": "data_transportation",
     "operation": "standard_scaler",
     "input": [
         {
