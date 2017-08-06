@@ -1,11 +1,18 @@
 {
-    "mapFlowchartId": "1",
-    "input": [
-        {
-            "operation": "aggregate",
-            "arguments": [
-                "band_gaps"
-            ]
-        }
-    ]
+    "status": "idle",
+    "head": true,
+    "flowchartId": "reduce",
+    "name": "reduce",
+    "type": "reduce",
+    "reduce": {
+        "mapFlowchartId": "1",
+        "input": [
+            {
+                "operation": "aggregate",
+                "arguments": [
+                    "band_gaps"
+                ]
+            }
+        ]
+    }
 }

@@ -2,28 +2,36 @@
     "$schema": "http://json-schema.org/draft-04/schema#",
     "title": "processing unit schema",
     "type": "object",
+    "allOf": [
+        {
+            "$ref": "../unit.json"
+        }
+    ],
     "properties": {
         "type": {
-            "description": "unit type.",
-            "type": "string"
+            "enum": [
+                "processing"
+            ]
         },
-        "operation": {
-            "description": "Contains information about the type of the operation used.",
-            "type": "string"
-        },
-        "suboperation": {
-            "description": "Contains information about the subtype of the operation used.",
-            "type": "string"
-        },
-        "input": {
-            "type": "array",
-            "items": {
-                "type": "object"
-            }
+        "processing": {
+            "type": "object",
+            "properties": {
+                "operation": {
+                    "description": "Contains information about the type of the operation used.",
+                    "type": "string"
+                },
+                "flavor": {
+                    "description": "Contains information about the subtype of the operation used.",
+                    "type": "string"
+                },
+                "input": {
+                    "description": "unit input (type to be specified by the child units)"
+                }
+            },
+            "required": [
+                "operation",
+                "input"
+            ]
         }
-    },
-    "required": [
-        "input",
-        "app"
-    ]
+    }
 }

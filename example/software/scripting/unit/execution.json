@@ -1,12 +1,19 @@
 {
-    "app": {
-        "...": "include(../python.json)"
-    },
-    "compute": null,
-    "input": [
-        {
-            "content": "print('Hello World!')",
-            "name": "script.py"
-        }
-    ]
+    "status": "idle",
+    "head": true,
+    "flowchartId": "scripting",
+    "name": "scripting",
+    "type": "execution",
+    "execution": {
+        "app": {
+            "...": "include(../python.json)"
+        },
+        "compute": null,
+        "input": [
+            {
+                "content": "print('Hello World!')",
+                "name": "script.py"
+            }
+        ]
+    }
 }

@@ -1,10 +1,14 @@
 {
-    "type": "feature_selection",
-    "operation": "permutation_feature_importance",
-    "input": {
-        "nFeatures": 100
-    },
-    "required": [
-        "nFeatures"
-    ]
+    "status": "idle",
+    "head": true,
+    "flowchartId": "feature_selection",
+    "name": "feature_selection",
+    "type": "processing",
+    "processing": {
+        "operation": "feature_selection",
+        "flavor": "permutation_feature_importance",
+        "input": {
+            "nFeatures": 100
+        }
+    }
 }

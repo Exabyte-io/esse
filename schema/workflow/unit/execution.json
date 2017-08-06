@@ -2,21 +2,64 @@
     "$schema": "http://json-schema.org/draft-04/schema#",
     "title": "execution unit schema (base)",
     "type": "object",
-    "properties": {
-        "app": {
-            "description": "Contains information about the simulation engine/application.",
-            "$ref": "file:../../software/app.json"
-        },
-        "compute": {
-            "description": "Unit's specific computational parameters. Overrides computeArgs object inside the Job entity.",
-            "$ref": "file:../../job/compute.json"
-        },
-        "input": {
-            "description": "unit input (type to be specified by the application's execution unit)"
+    "allOf": [
+        {
+            "$ref": "../unit.json"
         }
-    },
-    "required": [
-        "input",
-        "app"
-    ]
+    ],
+    "properties": {
+        "type": {
+            "enum": [
+                "execution"
+            ]
+        },
+        "execution": {
+            "type": "object",
+            "properties": {
+                "app": {
+                    "description": "Contains information about the simulation engine/application.",
+                    "$ref": "file:../../software/app.json"
+                },
+                "compute": {
+                    "description": "Unit's specific computational parameters. Overrides computeArgs object inside the Job entity.",
+                    "$ref": "file:../../job/compute.json"
+                },
+                "input": {
+                    "description": "unit input (type to be specified by the application's execution unit)"
+                }
+            },
+            "required": [
+                "input",
+                "app"
+            ]
+        },
+        "preProcessors": {
+            "description": "Array of pre-processors.",
+            "type": "array",
+            "items": {
+                "type": "object"
+            }
+        },
+        "monitors": {
+            "description": "Array of monitors.",
+            "type": "array",
+            "items": {
+                "$ref": "file:_result.json"
+            }
+        },
+        "postProcessors": {
+            "description": "Array of post-processors.",
+            "type": "array",
+            "items": {
+                "type": "object"
+            }
+        },
+        "results": {
+            "description": "Resulting properties extracted from the unit, besides the textual output.",
+            "type": "array",
+            "items": {
+                "$ref": "file:_result.json"
+            }
+        }
+    }
 }

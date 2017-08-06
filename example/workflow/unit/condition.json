@@ -1,17 +1,24 @@
 {
-    "input": [
-        {
-            "scope": "global",
-            "name": "x"
-        },
-        {
-            "scope": "sample_id_2",
-            "name": "total_energy"
-        }
-    ],
-    "statement": "abs(x-total_energy) < 1e-5",
-    "then": "sample_id_4",
-    "else": "sample_id_6",
-    "maxOccurrences": 100,
-    "throwException": true
+    "status": "idle",
+    "head": true,
+    "flowchartId": "condition",
+    "name": "condition",
+    "type": "condition",
+    "condition": {
+        "input": [
+            {
+                "scope": "global",
+                "name": "x"
+            },
+            {
+                "scope": "sample_id_2",
+                "name": "total_energy"
+            }
+        ],
+        "statement": "abs(x-total_energy) < 1e-5",
+        "then": "sample_id_4",
+        "else": "sample_id_6",
+        "maxOccurrences": 100,
+        "throwException": true
+    }
 }

@@ -1,7 +1,17 @@
 {
-    "app": {
-        "...": "include(../../exabyteml.json)"
-    },
-    "type": "initialize",
-    "input": {}
+    "status": "idle",
+    "head": true,
+    "flowchartId": "initialize",
+    "name": "initialize",
+    "type": "execution",
+    "execution": {
+        "app": {
+            "name": "exabyteml",
+            "summary": "exabyte machine learning engine",
+            "version": "0.2.0",
+            "exec": "initialize",
+            "flavor": "initialize"
+        },
+        "input": {}
+    }
 }

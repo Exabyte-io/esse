@@ -1,12 +1,49 @@
 {
-    "app": {
-        "...": "include(../../software/app.json)"
+    "status": "idle",
+    "head": true,
+    "flowchartId": "execution",
+    "name": "execution",
+    "type": "execution",
+    "execution": {
+        "app": {
+            "...": "include(../../software/app.json)"
+        },
+        "compute": null,
+        "input": [
+            {
+                "content": "K_POINTS automatic\n2 2 2 0 0 0",
+                "name": "pw_scf.in"
+            }
+        ]
     },
-    "compute": null,
-    "input": [
+    "results": [
         {
-            "content": "K_POINTS automatic\n2 2 2 0 0 0",
-            "name": "pw_scf.in"
+            "name": "harris_foulkes_estimate"
+        },
+        {
+            "name": "total energy",
+            "value": -123.43573079,
+            "units": "eV"
+        },
+        {
+            "name": "density_of_states",
+            "args": [
+                {
+                    "key": "combined",
+                    "value": true
+                }
+            ]
+        }
+    ],
+    "next": "pw-bands",
+    "postProcessors": [],
+    "preProcessors": [],
+    "monitors": [
+        {
+            "name": "scf_accuracy"
+        },
+        {
+            "name": "standard_output"
         }
     ]
 }

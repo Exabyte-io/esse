@@ -7,14 +7,23 @@
         }
     ],
     "properties": {
-        "type": {
-            "enum": [
-                "score"
-            ]
-        },
-        "input": {
-            "description": "model score unit",
-            "type": "object"
+        "execution": {
+            "type": "object",
+            "properties": {
+                "app": {
+                    "exec": {
+                        "enum": [
+                            "score"
+                        ]
+                    },
+                    "flavor": {
+                        "enum": [
+                            "score"
+                        ]
+                    }
+                },
+                "input": {}
+            }
         }
     }
 }

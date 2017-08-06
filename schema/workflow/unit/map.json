@@ -2,38 +2,53 @@
     "$schema": "http://json-schema.org/draft-04/schema#",
     "title": "map unit schema",
     "type": "object",
-    "properties": {
-        "subworkflow": {
-            "description": "Name of subworkflow to run inside map",
-            "type": "string"
-        },
-        "input": {
-            "description": "Input information for map.",
-            "type": "array",
-            "items": {
-                "type": "object",
-                "properties": {
-                    "target": {
-                        "description": "Name of the target variable to substitute using the values below. e.g. K_POINTS",
-                        "type": "string"
-                    },
-                    "values": {
-                        "description": "Sequence of values for the target Jinja variable.",
-                        "type": "array",
-                        "items": {
-                            "type": "string"
-                        }
-                    }
-                },
-                "required": [
-                    "target",
-                    "values"
-                ]
-            }
+    "allOf": [
+        {
+            "$ref": "../unit.json"
         }
-    },
-    "required": [
-        "input",
-        "subworkflow"
-    ]
+    ],
+    "properties": {
+        "type": {
+            "enum": [
+                "map"
+            ]
+        },
+        "map": {
+            "type": "object",
+            "properties": {
+                "subworkflow": {
+                    "description": "Name of subworkflow to run inside map",
+                    "type": "string"
+                },
+                "input": {
+                    "description": "Input information for map.",
+                    "type": "array",
+                    "items": {
+                        "type": "object",
+                        "properties": {
+                            "target": {
+                                "description": "Name of the target variable to substitute using the values below. e.g. K_POINTS",
+                                "type": "string"
+                            },
+                            "values": {
+                                "description": "Sequence of values for the target Jinja variable.",
+                                "type": "array",
+                                "items": {
+                                    "type": "string"
+                                }
+                            }
+                        },
+                        "required": [
+                            "target",
+                            "values"
+                        ]
+                    }
+                }
+            },
+            "required": [
+                "input",
+                "subworkflow"
+            ]
+        }
+    }
 }

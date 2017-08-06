@@ -1,50 +1,63 @@
 {
     "$schema": "http://json-schema.org/draft-04/schema#",
     "title": "scale and reduce unit schema",
+    "allOf": [
+        {
+            "$ref": "file:../../../../../workflow/unit/processing.json"
+        }
+    ],
     "properties": {
-        "type": {
-            "enum": [
-                "data_transformation"
-            ]
-        },
-        "operation": {
-            "description": "data transformation operation",
-            "enum": [
-                "scale_and_reduce"
-            ]
-        },
-        "suboperation": {
-            "description": "data transformation suboperation",
-            "enum": [
-                "standard_scaler"
-            ]
-        },
-        "input": {
-            "type": "array",
-            "items": {
-                "type": "object",
-                "properties": {
-                    "variance": {
-                        "description": "variance in original training data",
-                        "type": "number"
-                    },
-                    "mean": {
-                        "description": "mean value of the original training data",
-                        "type": "number"
-                    },
-                    "scale": {
-                        "description": "scale multiplier for this feature/property",
-                        "type": "number"
-                    },
-                    "name": {
-                        "description": "feature/property name in 'flattened' format",
-                        "type": "string"
-                    }
+        "processing": {
+            "type": "object",
+            "properties": {
+                "operation": {
+                    "enum": [
+                        "data_transformation"
+                    ]
                 },
-                "required": [
-                    "name"
-                ]
-            }
+                "flavor": {
+                    "enum": [
+                        "scale_and_reduce"
+                    ]
+                },
+                "color": {
+                    "enum": [
+                        "standard_scaler"
+                    ]
+                },
+                "input": {
+                    "type": "array",
+                    "items": {
+                        "type": "object",
+                        "properties": {
+                            "variance": {
+                                "description": "variance in original training data",
+                                "type": "number"
+                            },
+                            "mean": {
+                                "description": "mean value of the original training data",
+                                "type": "number"
+                            },
+                            "scale": {
+                                "description": "scale multiplier for this feature/property",
+                                "type": "number"
+                            },
+                            "name": {
+                                "description": "feature/property name in 'flattened' format",
+                                "type": "string"
+                            }
+                        },
+                        "required": [
+                            "name"
+                        ]
+                    }
+                }
+            },
+            "required": [
+                "operation",
+                "flavor",
+                "input"
+            ]
         }
     }
 }

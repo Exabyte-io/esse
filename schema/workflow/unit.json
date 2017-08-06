@@ -4,17 +4,8 @@
     "type": "object",
     "properties": {
         "type": {
-            "description": "type of the unit.",
-            "type": "string",
-            "enum": [
-                "execution",
-                "map",
-                "reduce",
-                "assignment",
-                "condition",
-                "subworkflow",
-                "exit"
-            ]
+            "description": "type of the unit",
+            "type": "string"
         },
         "name": {
             "description": "name of the unit. e.g. pw_scf",
@@ -46,54 +37,6 @@
         "next": {
             "description": "Next unit's flowchartId. If empty, the current unit is the last.",
             "type": "string"
-        },
-        "preProcessors": {
-            "description": "Array of pre-processors.",
-            "type": "array",
-            "items": {
-                "type": "object"
-            }
-        },
-        "monitors": {
-            "description": "Array of monitors.",
-            "type": "array",
-            "items": {
-                "$ref": "file:unit/_result.json"
-            }
-        },
-        "postProcessors": {
-            "description": "Array of post-processors.",
-            "type": "array",
-            "items": {
-                "type": "object"
-            }
-        },
-        "results": {
-            "description": "Resulting properties extracted from the unit, besides the textual output.",
-            "type": "array",
-            "items": {
-                "$ref": "file:unit/_result.json"
-            }
-        },
-        "execution": {
-            "description": "Contains information about the execution unit.",
-            "$ref": "file:unit/execution.json"
-        },
-        "assignment": {
-            "description": "Contains information about the assignment unit.",
-            "$ref": "file:unit/assignment.json"
-        },
-        "condition": {
-            "description": "Contains information about the condition unit.",
-            "$ref": "file:unit/condition.json"
-        },
-        "map": {
-            "description": "Contains information about the map unit.",
-            "$ref": "file:unit/map.json"
-        },
-        "reduce": {
-            "description": "Contains information about the reduce unit.",
-            "$ref": "file:unit/reduce.json"
         }
     },
     "oneOf": [

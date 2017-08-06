@@ -1,11 +1,6 @@
 {
     "$schema": "http://json-schema.org/draft-04/schema#",
     "title": "electronic self consistency convergence schema",
-    "allOf": [
-        {
-            "$ref": "file:../../../../workflow/unit/convergence.json"
-        }
-    ],
     "properties": {
         "name": {
             "enum": [

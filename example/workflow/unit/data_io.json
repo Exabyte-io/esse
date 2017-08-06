@@ -1,14 +1,21 @@
 {
-    "type": "dataIO",
-    "input": [
-        {
-            "operation": "import",
-            "sourceType": "rest_api",
-            "endpoint": "material",
-            "endpoint_options": {
-                "includeCharacteristics": true
-            },
-            "id": "KuAsBRwofzGfHPWiT"
-        }
-    ]
+    "status": "idle",
+    "head": true,
+    "flowchartId": "processing",
+    "name": "processing",
+    "type": "processing",
+    "processing": {
+        "operation": "dataIO",
+        "flavor": "input",
+        "input": [
+            {
+                "sourceType": "rest_api",
+                "endpoint": "material",
+                "endpoint_options": {
+                    "includeCharacteristics": true
+                },
+                "id": "KuAsBRwofzGfHPWiT"
+            }
+        ]
+    }
 }

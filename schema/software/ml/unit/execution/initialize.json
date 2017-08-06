@@ -7,13 +7,23 @@
         }
     ],
     "properties": {
-        "type": {
-            "enum": [
-                "initialize"
-            ]
-        },
-        "input": {
-            "type": "object"
+        "execution": {
+            "type": "object",
+            "properties": {
+                "app": {
+                    "exec": {
+                        "enum": [
+                            "initialize"
+                        ]
+                    },
+                    "flavor": {
+                        "enum": [
+                            "initialize"
+                        ]
+                    }
+                },
+                "input": {}
+            }
         }
     }
 }

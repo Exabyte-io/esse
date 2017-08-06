@@ -1,0 +1,12 @@
+{
+    "status": "idle",
+    "head": true,
+    "flowchartId": "processing",
+    "name": "processing",
+    "type": "processing",
+    "processing": {
+        "operation": "",
+        "flavor": "",
+        "input": {}
+    }
+}

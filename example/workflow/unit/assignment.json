@@ -1,14 +1,21 @@
 {
-    "input": [
-        {
-            "scope": "global",
-            "name": "N_K_x"
-        },
-        {
-            "scope": "global",
-            "name": "N_K_y"
-        }
-    ],
-    "name": "N_K_x",
-    "value": "N_K_x+N_K_y+1"
+    "status": "idle",
+    "head": true,
+    "flowchartId": "assignment",
+    "name": "assignment",
+    "type": "assignment",
+    "assignment": {
+        "input": [
+            {
+                "scope": "global",
+                "name": "N_K_x"
+            },
+            {
+                "scope": "global",
+                "name": "N_K_y"
+            }
+        ],
+        "name": "N_K_x",
+        "value": "N_K_x+N_K_y+1"
+    }
 }

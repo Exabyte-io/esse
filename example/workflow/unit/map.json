@@ -1,21 +1,28 @@
 {
-    "subworkflow": "subworkflow",
-    "input": [
-        {
-            "target": "MAP_K_POINTS_1",
-            "values": [
-                "2 2 2 0 0 0",
-                "3 3 3 0 0 0",
-                "4 4 4 0 0 0"
-            ]
-        },
-        {
-            "target": "MAP_K_POINTS_2",
-            "values": [
-                "2 2 2 0 0 0",
-                "3 3 3 0 0 0",
-                "4 4 4 0 0 0"
-            ]
-        }
-    ]
+    "status": "idle",
+    "head": true,
+    "flowchartId": "map",
+    "name": "map",
+    "type": "map",
+    "map": {
+        "subworkflow": "subworkflow",
+        "input": [
+            {
+                "target": "MAP_K_POINTS_1",
+                "values": [
+                    "2 2 2 0 0 0",
+                    "3 3 3 0 0 0",
+                    "4 4 4 0 0 0"
+                ]
+            },
+            {
+                "target": "MAP_K_POINTS_2",
+                "values": [
+                    "2 2 2 0 0 0",
+                    "3 3 3 0 0 0",
+                    "4 4 4 0 0 0"
+                ]
+            }
+        ]
+    }
 }

@@ -7,27 +7,34 @@
         }
     ],
     "properties": {
-        "type": {
-            "enum": [
-                "evaluate"
-            ]
-        },
-        "subtype": {
-            "enum": [
-                "cross-validate"
-            ]
-        },
-        "input": {
+        "execution": {
             "type": "object",
             "properties": {
-                "nSplits": {
-                    "description": "number of groups to split the training dataset for cross-validation",
-                    "type": "number"
+                "app": {
+                    "exec": {
+                        "enum": [
+                            "evaluate"
+                        ]
+                    },
+                    "flavor": {
+                        "enum": [
+                            "cross-validate"
+                        ]
+                    }
+                },
+                "input": {
+                    "type": "object",
+                    "properties": {
+                        "nSplits": {
+                            "description": "number of groups to split the training dataset for cross-validation",
+                            "type": "number"
+                        }
+                    },
+                    "required": [
+                        "nSplits"
+                    ]
                 }
-            },
-            "required": [
-                "nSplits"
-            ]
+            }
         }
     }
 }

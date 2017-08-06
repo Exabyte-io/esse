@@ -2,39 +2,54 @@
     "$schema": "http://json-schema.org/draft-04/schema#",
     "title": "condition unit schema",
     "type": "object",
-    "properties": {
-        "input": {
-            "description": "Input information for condition.",
-            "type": "array",
-            "items": {
-                "$ref": "file:_input.json"
-            }
-        },
-        "statement": {
-            "description": "Condition statement. e.g. 'abs(x-total_energy) < 1e-5'",
-            "type": "string"
-        },
-        "then": {
-            "description": "Flowchart ID reference for `then` part of the condition.",
-            "type": "string"
-        },
-        "else": {
-            "description": "Flowchart ID reference for `else` part of the condition.",
-            "type": "string"
-        },
-        "maxOccurences": {
-            "description": "Maximum occurrence of the condition, usable for loops.",
-            "type": "integer"
-        },
-        "throwException": {
-            "description": "Throw exception on reaching to maximum occurence.",
-            "type": "boolean"
+    "allOf": [
+        {
+            "$ref": "../unit.json"
         }
-    },
-    "required": [
-        "input",
-        "statement",
-        "then",
-        "else"
-    ]
+    ],
+    "properties": {
+        "type": {
+            "enum": [
+                "condition"
+            ]
+        },
+        "condition": {
+            "type": "object",
+            "properties": {
+                "input": {
+                    "description": "Input information for condition.",
+                    "type": "array",
+                    "items": {
+                        "$ref": "file:_input.json"
+                    }
+                },
+                "statement": {
+                    "description": "Condition statement. e.g. 'abs(x-total_energy) < 1e-5'",
+                    "type": "string"
+                },
+                "then": {
+                    "description": "Flowchart ID reference for `then` part of the condition.",
+                    "type": "string"
+                },
+                "else": {
+                    "description": "Flowchart ID reference for `else` part of the condition.",
+                    "type": "string"
+                },
+                "maxOccurences": {
+                    "description": "Maximum occurrence of the condition, usable for loops.",
+                    "type": "integer"
+                },
+                "throwException": {
+                    "description": "Throw exception on reaching to maximum occurence.",
+                    "type": "boolean"
+                }
+            },
+            "required": [
+                "input",
+                "statement",
+                "then",
+                "else"
+            ]
+        }
+    }
 }

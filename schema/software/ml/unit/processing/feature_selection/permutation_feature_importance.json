@@ -1,27 +1,42 @@
 {
     "$schema": "http://json-schema.org/draft-04/schema#",
     "title": "scale and reduce unit schema",
+    "allOf": [
+        {
+            "$ref": "file:../../../../../workflow/unit/processing.json"
+        }
+    ],
     "properties": {
-        "type": {
-            "enum": [
-                "feature_selection"
-            ]
-        },
-        "operation": {
-            "enum": [
-                "permutation_feature_importance"
-            ]
-        },
-        "input": {
+        "processing": {
             "type": "object",
             "properties": {
-                "nFeatures": {
-                    "description": "number of features to select for model training. If equal to 0, will use all available features",
-                    "type": "number"
+                "operation": {
+                    "enum": [
+                        "feature_selection"
+                    ]
+                },
+                "flavor": {
+                    "enum": [
+                        "permutation_feature_importance"
+                    ]
+                },
+                "input": {
+                    "type": "object",
+                    "properties": {
+                        "nFeatures": {
+                            "description": "number of features to select for model training. If equal to 0, will use all available features",
+                            "type": "number"
+                        }
+                    },
+                    "required": [
+                        "nFeatures"
+                    ]
                 }
             },
             "required": [
-                "nFeatures"
+                "operation",
+                "flavor",
+                "input"
             ]
         }
     }
