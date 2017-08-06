@@ -3,15 +3,15 @@
     "title": "processing unit schema",
     "type": "object",
     "properties": {
-        "operation": {
-            "description": "Contains information about the operation.",
+        "type": {
+            "description": "unit type.",
             "type": "string"
         },
-        "type": {
+        "operation": {
             "description": "Contains information about the type of the operation used.",
             "type": "string"
         },
-        "subtype": {
+        "suboperation": {
             "description": "Contains information about the subtype of the operation used.",
             "type": "string"
         },
