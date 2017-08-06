@@ -22,7 +22,7 @@
                         "output"
                     ]
                 },
-                "color": {
+                "palate": {
                     "enum": [
                         "rest_api"
                     ]

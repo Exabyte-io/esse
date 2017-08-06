@@ -20,7 +20,7 @@
                         "scale_and_reduce"
                     ]
                 },
-                "color": {
+                "palate": {
                     "enum": [
                         "standard_scaler"
                     ]

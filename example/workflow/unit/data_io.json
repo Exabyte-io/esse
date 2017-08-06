@@ -7,7 +7,7 @@
     "processing": {
         "operation": "dataIO",
         "flavor": "input",
-        "color": "rest_api",
+        "palate": "rest_api",
         "input": [
             {
                 "endpoint": "materials-bank",

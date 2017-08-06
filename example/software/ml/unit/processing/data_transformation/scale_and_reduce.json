@@ -7,7 +7,7 @@
     "processing": {
         "operation": "data_transformation",
         "flavor": "scale_and_reduce",
-        "color": "standard_scaler",
+        "palate": "standard_scaler",
         "input": [
             {
                 "variance": 0.10,
