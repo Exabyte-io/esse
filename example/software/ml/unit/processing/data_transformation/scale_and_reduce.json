@@ -1,6 +1,7 @@
 {
-    "type": "data_transportation",
-    "operation": "standard_scaler",
+    "operation": "data_transformation",
+    "type": "scale_and_reduce",
+    "subtype": "standard_scaler",
     "input": [
         {
             "variance": 0.10,

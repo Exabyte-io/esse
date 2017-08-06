@@ -7,6 +7,14 @@
             "description": "Contains information about the operation.",
             "type": "string"
         },
+        "type": {
+            "description": "Contains information about the type of the operation used.",
+            "type": "string"
+        },
+        "subtype": {
+            "description": "Contains information about the subtype of the operation used.",
+            "type": "string"
+        },
         "input": {
             "type": "array",
             "items": {

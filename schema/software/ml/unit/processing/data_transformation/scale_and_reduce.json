@@ -2,12 +2,18 @@
     "$schema": "http://json-schema.org/draft-04/schema#",
     "title": "scale and reduce unit schema",
     "properties": {
-        "type": {
+        "operation": {
             "enum": [
-                "data_transportation"
+                "data_transformation"
             ]
         },
-        "operation": {
+        "type": {
+            "description": "type of data transformation used",
+            "enum": [
+                "scale_and_reduce"
+            ]
+        },
+        "subtype": {
             "description": "type of scaler to utilize, by default 'Sklearn.StandardScaler' is used",
             "enum": [
                 "standard_scaler"
