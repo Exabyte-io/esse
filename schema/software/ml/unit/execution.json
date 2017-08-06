@@ -1,9 +1,16 @@
 {
-    "$schema": "http://json-schema.org/draft-04/schema#",
-    "title": "regression data",
     "oneOf": [
         {
-            "$ref": "file:execution/evaluate.json"
+            "$ref": "file:execution/evaluate/cross-validate.json"
+        },
+        {
+            "$ref": "file:execution/train.json"
+        },
+        {
+            "$ref": "file:execution/score.json"
+        },
+        {
+            "$ref": "file:execution/initialize.json"
         }
     ]
 }

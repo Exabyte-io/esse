@@ -1,6 +1,6 @@
 {
-    "operation": "feature_selection",
-    "type": "permutation_feature_importance",
+    "type": "feature_selection",
+    "operation": "permutation_feature_importance",
     "input": {
         "nFeatures": 100
     },

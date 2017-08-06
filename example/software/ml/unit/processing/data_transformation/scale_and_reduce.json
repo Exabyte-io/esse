@@ -1,5 +1,6 @@
 {
-    "operation": "scale",
+    "type": "scale",
+    "operation": "standard_scaler",
     "input": [
         {
             "variance": 0.10,

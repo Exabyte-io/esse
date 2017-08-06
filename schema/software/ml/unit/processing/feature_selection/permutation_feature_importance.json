@@ -2,12 +2,12 @@
     "$schema": "http://json-schema.org/draft-04/schema#",
     "title": "scale and reduce unit schema",
     "properties": {
-        "operation": {
+        "type": {
             "enum": [
                 "feature_selection"
             ]
         },
-        "type": {
+        "operation": {
             "enum": [
                 "permutation_feature_importance"
             ]

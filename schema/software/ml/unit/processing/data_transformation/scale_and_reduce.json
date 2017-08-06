@@ -2,12 +2,12 @@
     "$schema": "http://json-schema.org/draft-04/schema#",
     "title": "scale and reduce unit schema",
     "properties": {
-        "operation": {
+        "type": {
             "enum": [
                 "scale"
             ]
         },
-        "type": {
+        "operation": {
             "description": "type of scaler to utilize, by default 'Sklearn.StandardScaler' is used",
             "enum": [
                 "standard_scaler"

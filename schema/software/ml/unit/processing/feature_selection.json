@@ -1,6 +1,4 @@
 {
-    "$schema": "http://json-schema.org/draft-04/schema#",
-    "title": "regression data",
     "oneOf": [
         {
             "$ref": "file:feature_selection/permutation_feature_importance.json"
