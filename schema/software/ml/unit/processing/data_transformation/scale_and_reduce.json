@@ -8,7 +8,13 @@
             ]
         },
         "operation": {
-            "description": "type of scaler to utilize, by default 'Sklearn.StandardScaler' is used",
+            "description": "data transformation operation",
+            "enum": [
+                "scale_and_reduce"
+            ]
+        },
+        "suboperation": {
+            "description": "data transformation suboperation",
             "enum": [
                 "standard_scaler"
             ]

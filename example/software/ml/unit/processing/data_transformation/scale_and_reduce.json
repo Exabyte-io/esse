@@ -1,6 +1,7 @@
 {
     "type": "data_transformation",
-    "operation": "standard_scaler",
+    "operation": "scale_and_reduce",
+    "suboperation": "standard_scaler",
     "input": [
         {
             "variance": 0.10,
