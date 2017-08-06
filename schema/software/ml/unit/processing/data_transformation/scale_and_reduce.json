@@ -4,7 +4,7 @@
     "properties": {
         "type": {
             "enum": [
-                "data_transportation"
+                "data_transformation"
             ]
         },
         "operation": {
