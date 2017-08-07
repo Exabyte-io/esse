@@ -31,11 +31,16 @@
                             "description": "whether to remove duplicate rows",
                             "type": "boolean",
                             "default": true
+                        },
+                        "replaceNoneValuesWith": {
+                            "description": "replace None values with a given value",
+                            "default": 0
                         }
                     },
                     "required": [
                         "cleanMissingData",
-                        "removeDuplicateRows"
+                        "removeDuplicateRows",
+                        "replaceNoneValuesWith"
                     ]
                 }
             },

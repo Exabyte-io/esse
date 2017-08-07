@@ -9,7 +9,8 @@
         "flavor": "manipulation",
         "input": {
             "cleanMissingData": true,
-            "removeDuplicateRows": true
+            "removeDuplicateRows": true,
+            "replaceNoneValuesWith": 0
         }
     }
 }
