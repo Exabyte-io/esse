@@ -4,27 +4,26 @@
     "type": "object",
     "allOf": [
         {
-            "$ref": "processing.json"
+            "$ref": "../unit.json"
         }
     ],
     "properties": {
-        "processing": {
+        "type": {
+            "enum": [
+                "io"
+            ]
+        },
+        "io": {
             "type": "object",
             "properties": {
-                "operation": {
+                "subtype": {
                     "enum": [
-                        "dataIO"
+                        "input"
                     ]
                 },
                 "flavor": {
                     "enum": [
-                        "input",
-                        "output"
-                    ]
-                },
-                "palate": {
-                    "enum": [
-                        "rest_api"
+                        "api"
                     ]
                 },
                 "input": {
@@ -39,7 +38,7 @@
                 }
             },
             "required": [
-                "operation",
+                "subtype",
                 "flavor",
                 "input"
             ]

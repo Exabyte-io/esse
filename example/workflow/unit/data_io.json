@@ -1,13 +1,12 @@
 {
     "status": "idle",
     "head": true,
-    "flowchartId": "processing",
-    "name": "processing",
-    "type": "processing",
-    "processing": {
-        "operation": "dataIO",
-        "flavor": "input",
-        "palate": "rest_api",
+    "flowchartId": "io",
+    "name": "io",
+    "type": "io",
+    "io": {
+        "subtype": "input",
+        "flavor": "api",
         "input": [
             {
                 "endpoint": "materials-bank",
