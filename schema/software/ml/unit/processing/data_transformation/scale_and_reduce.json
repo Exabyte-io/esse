@@ -51,11 +51,15 @@
                                     }
                                 },
                                 "required": [
-                                    "name"
+                                    "name",
+                                    "scale"
                                 ]
                             }
                         }
-                    }
+                    },
+                    "required": [
+                        "scaler"
+                    ]
                 }
             },
             "required": [

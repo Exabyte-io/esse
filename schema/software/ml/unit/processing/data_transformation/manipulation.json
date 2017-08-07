@@ -21,27 +21,29 @@
                     ]
                 },
                 "input": {
-                    "cleanMissingData": {
-                        "description": "whether to clean missing data, eg. NaN",
-                        "type": "boolean",
-                        "default": true
-                    },
-                    "removeDuplicateRows": {
-                        "description": "whether to remove duplicate rows",
-                        "type": "boolean",
-                        "default": true
+                    "properties": {
+                        "cleanMissingData": {
+                            "description": "whether to clean missing data, eg. NaN",
+                            "type": "boolean",
+                            "default": true
+                        },
+                        "removeDuplicateRows": {
+                            "description": "whether to remove duplicate rows",
+                            "type": "boolean",
+                            "default": true
+                        }
                     },
                     "required": [
                         "cleanMissingData",
                         "removeDuplicateRows"
                     ]
                 }
-            }
-        },
-        "required": [
-            "operation",
-            "flavor",
-            "input"
-        ]
+            },
+            "required": [
+                "operation",
+                "flavor",
+                "input"
+            ]
+        }
     }
 }
