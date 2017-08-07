@@ -31,7 +31,7 @@
                     "items": {
                         "anyOf": [
                             {
-                                "$ref": "file:data_io/rest_api.json"
+                                "$ref": "file:io/api.json"
                             }
                         ]
                     }

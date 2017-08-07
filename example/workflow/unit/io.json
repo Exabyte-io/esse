@@ -9,11 +9,11 @@
         "flavor": "api",
         "input": [
             {
-                "endpoint": "materials-bank",
-                "endpoint_options": {
-                    "includeCharacteristics": true
-                },
-                "id": "KuAsBRwofzGfHPWiT"
+                "endpoint": "data-frame",
+                "endpoint_options": {},
+                "ids": [
+                    "KuAsBRwofzGfHPWiT"
+                ]
             }
         ]
     }
