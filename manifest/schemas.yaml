@@ -70,7 +70,7 @@ density_of_states:
       units: eV
     yAxis:
       label: density of states
-      units: states/unit cell
+      units: states/unitcell
   schemaPath: schema/material/properties/primary/density_of_states.json
   exampleaPath: example/material/properties/primary/density_of_states.json
 
