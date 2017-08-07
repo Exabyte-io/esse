@@ -1,0 +1,9 @@
+{
+    "endpoint": "material",
+    "endpoint_options": {
+        "includeCharacteristics": true
+    },
+    "ids": [
+        "KuAsBRwofzGfHPWiT"
+    ]
+}

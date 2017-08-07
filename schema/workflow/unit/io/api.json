@@ -1,0 +1,23 @@
+{
+    "$schema": "http://json-schema.org/draft-04/schema#",
+    "title": "data IO rest API input schema",
+    "type": "object",
+    "properties": {
+        "endpoint": {
+            "description": "rest API endpoint",
+            "type": "string"
+        },
+        "endpoint_options": {
+            "description": "rest API endpoint options",
+            "type": "object"
+        },
+        "ids": {
+            "description": "IDs of item to retrieve from API",
+            "type": "array"
+        }
+    },
+    "operation": [
+        "endpoint",
+        "ids"
+    ]
+}
