@@ -23,30 +23,7 @@
                     }
                 },
                 "input": {
-                    "description": "model train unit (NOTE: information about method, eg. regression/linear is taken from (sub)workflow)",
-                    "type": "object",
-                    "properties": {
-                        "features": {
-                            "description": "material features used for model fitting",
-                            "type": "array",
-                            "items": {
-                                "description": "material features (properties) in a 'flattened' format",
-                                "type": "string"
-                            }
-                        },
-                        "targets": {
-                            "description": "target properties to predict",
-                            "type": "array",
-                            "items": {
-                                "description": "material features (properties) in a 'flattened' format",
-                                "type": "string"
-                            }
-                        }
-                    },
-                    "required": [
-                        "features",
-                        "targets"
-                    ]
+                    "$ref": "file:train/input.json"
                 }
             }
         }
