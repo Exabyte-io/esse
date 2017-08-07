@@ -12,6 +12,11 @@
             "exec": "initialize",
             "flavor": "initialize"
         },
-        "input": {}
+        "input": {
+            "targets": [
+                "band_gaps:indirect",
+                "band_gaps:direct"
+            ]
+        }
     }
 }
