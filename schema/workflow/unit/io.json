@@ -18,12 +18,14 @@
             "properties": {
                 "subtype": {
                     "enum": [
-                        "input"
+                        "input",
+                        "output"
                     ]
                 },
                 "flavor": {
                     "enum": [
-                        "api"
+                        "api",
+                        "db"
                     ]
                 },
                 "input": {
@@ -32,6 +34,9 @@
                         "anyOf": [
                             {
                                 "$ref": "file:io/api.json"
+                            },
+                            {
+                                "$ref": "file:io/db.json"
                             }
                         ]
                     }

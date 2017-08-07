@@ -16,7 +16,7 @@
             "type": "array"
         }
     },
-    "operation": [
+    "required": [
         "endpoint",
         "ids"
     ]
