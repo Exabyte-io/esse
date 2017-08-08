@@ -1,6 +1,6 @@
 {
     "$schema": "http://json-schema.org/draft-04/schema#",
-    "title": "scale and reduce unit schema",
+    "title": "filter-based feature selection unit schema",
     "allOf": [
         {
             "$ref": "file:../../../../../workflow/unit/processing.json"
@@ -17,7 +17,7 @@
                 },
                 "flavor": {
                     "enum": [
-                        "permutation_feature_importance"
+                        "filter_based"
                     ]
                 },
                 "input": {
@@ -26,10 +26,17 @@
                         "nFeatures": {
                             "description": "number of features to select for model training. If equal to 0, will use all available features",
                             "type": "number"
+                        },
+                        "algorithm": {
+                            "description": "feature selection algorithm following sklearn.feature_selection",
+                            "enum": [
+                                "f_regression"
+                            ]
                         }
                     },
                     "required": [
-                        "nFeatures"
+                        "nFeatures",
+                        "algorithm"
                     ]
                 }
             },

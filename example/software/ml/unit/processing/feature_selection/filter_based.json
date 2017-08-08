@@ -6,9 +6,10 @@
     "type": "processing",
     "processing": {
         "operation": "feature_selection",
-        "flavor": "permutation_feature_importance",
+        "flavor": "filter_based",
         "input": {
-            "nFeatures": 100
+            "nFeatures": 100,
+            "algorithm": "f_regression"
         }
     }
 }
