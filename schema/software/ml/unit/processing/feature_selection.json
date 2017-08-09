@@ -1,7 +1,7 @@
 {
     "oneOf": [
         {
-            "$ref": "file:feature_selection/permutation_feature_importance.json"
+            "$ref": "file:feature_selection/filter_based.json"
         }
     ]
 }

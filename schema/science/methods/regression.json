@@ -47,6 +47,9 @@
                         }
                     ]
                 }
+            },
+            "dataSet": {
+                "$ref": "file:regression/dataset.json"
             }
         }
     },

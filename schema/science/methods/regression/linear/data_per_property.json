@@ -20,7 +20,7 @@
                         "description": "coefficient in linear regression",
                         "type": "number"
                     },
-                    "score": {
+                    "importance": {
                         "description": "pvalue: https://en.wikipedia.org/wiki/P-value",
                         "type": "number"
                     }
