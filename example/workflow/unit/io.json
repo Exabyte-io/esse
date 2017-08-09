@@ -11,20 +11,32 @@
             {
                 "endpoint": "data-frame",
                 "endpoint_options": {
-                    "targets": [
-                        "band_gaps:indirect",
-                        "band_gaps:direct"
-                    ],
-                    "features": [
-                        "elemental_ratio:Si",
-                        "elemental_ratio:Ge",
-                        "ionization_potential:Ge",
-                        "ionization_potential:Si"
-                    ]
-                },
-                "ids": [
-                    "KuAsBRwofzGfHPWiT"
-                ]
+                    "method": "POST",
+                    "data": {
+                        "targets": [
+                            "band_gaps:indirect",
+                            "band_gaps:direct"
+                        ],
+                        "features": [
+                            "elemental_ratio:Si",
+                            "elemental_ratio:Ge",
+                            "ionization_potential:Ge",
+                            "ionization_potential:Si"
+                        ],
+                        "ids": [
+                            "KuAsBRwofzGfHPWiT"
+                        ]
+                    },
+                    "headers": {
+                        "X-Auth-Token": "",
+                        "X-User-Id": ""
+                    },
+                    "params": {
+                        "query": {
+                            "formula": "SiGe"
+                        }
+                    }
+                }
             }
         ]
     }

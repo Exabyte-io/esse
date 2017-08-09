@@ -10,14 +10,10 @@
         "endpoint_options": {
             "description": "rest API endpoint options",
             "type": "object"
-        },
-        "ids": {
-            "description": "IDs of item to retrieve from API",
-            "type": "array"
         }
     },
     "required": [
         "endpoint",
-        "ids"
+        "endpoint_options"
     ]
 }
