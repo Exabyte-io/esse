@@ -94,6 +94,10 @@ material:
   schemaPath: schema/material.json
   examplePath: example/material.json
 
+workflow:
+  schemaPath: schema/workflow.json
+  examplePath: example/workflow.json
+
 p-norm:
   schemaPath: schema/material/properties/primary/structural/p-norm.json
   examplePath: example/material/properties/primary/structural/p-norm.json
