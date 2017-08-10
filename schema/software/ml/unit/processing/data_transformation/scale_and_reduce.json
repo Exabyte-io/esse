@@ -6,26 +6,33 @@
             "$ref": "file:../../../../../workflow/unit/processing.json"
         }
     ],
+    "type": "object",
     "properties": {
         "processing": {
             "type": "object",
             "properties": {
                 "operation": {
+                    "type": "string",
                     "enum": [
                         "data_transformation"
                     ]
                 },
                 "flavor": {
+                    "type": "string",
                     "enum": [
                         "scale_and_reduce"
                     ]
                 },
                 "input": {
+                    "type": "object",
                     "properties": {
                         "scaler": {
                             "description": "type of scaler to be applied",
                             "type": "string",
-                            "default": "standard_scaler"
+                            "default": "standard_scaler",
+                            "enum": [
+                                "standard_scaler"
+                            ]
                         },
                         "perFeature": {
                             "decription": "per-feature scaling data",
