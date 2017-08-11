@@ -39,19 +39,8 @@
             "type": "string"
         }
     },
-    "oneOf": [
-        {
-            "required": [
-                "type",
-                "flowchartId",
-                "name"
-            ]
-        },
-        {
-            "required": [
-                "type",
-                "_id"
-            ]
-        }
+    "required": [
+        "type",
+        "flowchartId"
     ]
 }
