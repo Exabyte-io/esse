@@ -6,16 +6,19 @@
             "$ref": "file:../../../../../workflow/unit/processing.json"
         }
     ],
+    "type": "object",
     "properties": {
         "processing": {
             "type": "object",
             "properties": {
                 "operation": {
+                    "type": "string",
                     "enum": [
                         "feature_selection"
                     ]
                 },
                 "flavor": {
+                    "type": "string",
                     "enum": [
                         "filter_based"
                     ]
@@ -29,6 +32,7 @@
                         },
                         "algorithm": {
                             "description": "feature selection algorithm following sklearn.feature_selection",
+                            "type": "string",
                             "enum": [
                                 "f_regression"
                             ]

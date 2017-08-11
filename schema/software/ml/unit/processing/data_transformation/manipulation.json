@@ -6,21 +6,25 @@
             "$ref": "file:../../../../../workflow/unit/processing.json"
         }
     ],
+    "type": "object",
     "properties": {
         "processing": {
             "type": "object",
             "properties": {
                 "operation": {
+                    "type": "string",
                     "enum": [
                         "data_transformation"
                     ]
                 },
                 "flavor": {
+                    "type": "string",
                     "enum": [
                         "manipulation"
                     ]
                 },
                 "input": {
+                    "type": "object",
                     "properties": {
                         "cleanMissingData": {
                             "description": "whether to clean missing data, eg. NaN",
@@ -34,7 +38,8 @@
                         },
                         "replaceNoneValuesWith": {
                             "description": "replace None values with a given value",
-                            "default": 0
+                            "default": 0,
+                            "type": "number"
                         }
                     },
                     "required": [
