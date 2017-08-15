@@ -123,3 +123,7 @@ density:
     units: g/cm^3
   schemaPath: schema/material/properties/primary/structural/density.json
   examplePath: example/material/properties/primary/structural/density.json
+
+assignment:
+  schemaPath: schema/workflow/unit/assignment.json
+  examplePath: example/workflow/unit/assignment.json
