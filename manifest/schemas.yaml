@@ -127,3 +127,7 @@ density:
 assignment:
   schemaPath: schema/workflow/unit/assignment.json
   examplePath: example/workflow/unit/assignment.json
+
+condition:
+  schemaPath: schema/workflow/unit/condition.json
+  examplePath: example/workflow/unit/condition.json
