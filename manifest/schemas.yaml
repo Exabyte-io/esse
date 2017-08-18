@@ -59,7 +59,7 @@ band_structure:
 
 basis:
   defaults:
-    units: crystal
+    units: bohr
   schemaPath: schema/material/properties/primary/structural/basis.json
   examplePath: example/material/properties/primary/structural/basis.json
 

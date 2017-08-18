@@ -4,7 +4,7 @@ setup(
     name='esse',
     version='0.1.0',
     description='Example and Schema Sources for Exabyte',
-    url='https://github.com/Exabyte-io/exabyte-materials-json',
+    url='https://github.com/Exabyte-io/exabyte-esse',
     author='Exabyte Inc.',
     author_email='info@exabyte.io',
     py_modules=["esse"],
