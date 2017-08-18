@@ -1,0 +1,20 @@
+{
+    "field": "properties",
+    "children": [
+        {
+            "slug": "pressure",
+            "name": "Pressure",
+            "type": "number"
+        },
+        {
+            "slug": "band_gap:direct",
+            "name": "Band Gap (direct)",
+            "type": "number"
+        },
+        {
+            "slug": "band_gap:indirect",
+            "name": "Band Gap (indirect)",
+            "type": "number"
+        }
+    ]
+}

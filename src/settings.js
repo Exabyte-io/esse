@@ -5,6 +5,7 @@ export const NAMESPACE = "https://exabyte.io/schemas/";
 export const ROOT_DIR = path.resolve(__dirname, "../");
 export const SCHEMAS_DIR = path.resolve(__dirname, "../schema");
 export const EXAMPLES_DIR = path.resolve(__dirname, "../example");
+export const MANIFEST_DIR = path.resolve(__dirname, "../manifest");
 
 // directory with compiled schema files
 export const LIB_DIR = path.resolve(__dirname, "../lib");

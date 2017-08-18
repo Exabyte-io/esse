@@ -1,0 +1,89 @@
+{
+    "field": "type",
+    "children": [
+        {
+            "name": "density functional theory",
+            "slug": "dft",
+            "field": "subtype",
+            "children": [
+                {
+                    "name": "local density approximation",
+                    "slug": "lda",
+                    "field": "functional",
+                    "children": [
+                        {
+                            "name": "perdew-zunger",
+                            "slug": "pz",
+                            "reference": {
+                                "doi": "https://doi.org/10.1103/PhysRevB.23.5048"
+                            }
+                        },
+                        {
+                            "name": "perdew-wang",
+                            "slug": "pw",
+                            "reference": {
+                                "doi": "https://doi.org/10.1103/PhysRevB.45.13244"
+                            }
+                        },
+                        {
+                            "name": "vosko-wilk-nusair",
+                            "slug": "pw",
+                            "reference": {
+                                "doi": "https://doi.org/10.1139/p80-159"
+                            }
+                        }
+                    ]
+                },
+                {
+                    "name": "generalized gradient approximation",
+                    "slug": "gga",
+                    "field": "functional",
+                    "children": [
+                        {
+                            "name": "perdew-burke-ernzerhof",
+                            "slug": "pbe",
+                            "reference": {
+                                "doi": "https://doi.org/10.1103/PhysRevLett.77.3865"
+                            }
+                        }
+                    ]
+                },
+                {
+                    "name": "hybrid functionals",
+                    "slug": "hyb",
+                    "field": "functional",
+                    "children": [
+                        {
+                            "name": "heyd-scuseria-ernzerhof-03",
+                            "slug": "hse03",
+                            "reference": {
+                                "doi": "http://dx.doi.org/10.1063/1.1564060"
+                            }
+                        },
+                        {
+                            "name": "heyd-scuseria-ernzerhof-06",
+                            "slug": "hse06",
+                            "reference": {
+                                "doi": "http://dx.doi.org/10.1063/1.2404663"
+                            }
+                        },
+                        {
+                            "name": "perdew-burke-ernzerhof-0",
+                            "slug": "hse03",
+                            "reference": {
+                                "doi": "http://dx.doi.org/10.1063/1.472933"
+                            }
+                        },
+                        {
+                            "name": "becke-3-lee-yang-parr",
+                            "slug": "b3lyp",
+                            "reference": {
+                                "doi": "http://dx.doi.org/10.1063/1.464913"
+                            }
+                        }
+                    ]
+                }
+            ]
+        }
+    ]
+}
