@@ -1,3 +1,6 @@
+# --------------------------- #
+#      Physics Based          #
+# --------------------------- #
 - name: physics-based
   slug: pb
   children:
@@ -246,37 +249,49 @@
               schema:
                 type: object
 
-- name: machine learning
-  slug: ml
+# --------------------------- #
+#      Statistical            #
+# --------------------------- #
+- name: statistical
+  slug: st
   children:
-
-    - name: classification
-      slug: cl
+  # --------------------------- #
+  #      Deterministic          #
+  # --------------------------- #
+  - name: deterministic
+    slug: det
+    # ML
+    - name: machine learning
+      slug: ml
       children:
-        # Linear
-        - name: linear
-          slug: lin
+        ## ML Classification
+        - name: classification
+          slug: cl
           children:
-            ## Logistic
-            - name: logistic
-              slug: log
-              schema:
-                type: object
-
-    - name: regression
-      slug: re
-      children:
-        # Linear
-        - name: logistic
-          slug: log
+            # Linear
+            - name: linear
+              slug: lin
+              children:
+                ## Logistic
+                - name: logistic
+                  slug: log
+                  schema:
+                    type: object
+        ## ML Regression
+        - name: regression
+          slug: re
           children:
-            ## Least-squares
-            - name: least-squares
-              slug: lsq
-              schema:
-                type: object
-            ## Ridge
-            - name: ridge
-              slug: rid
-              schema:
-                type: object
+            # Linear
+            - name: linear
+              slug: lin
+              children:
+                ## Least-squares
+                - name: least-squares
+                  slug: lsq
+                  schema:
+                    type: object
+                ## Ridge
+                - name: ridge
+                  slug: rid
+                  schema:
+                    type: object
