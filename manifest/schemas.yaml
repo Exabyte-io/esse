@@ -5,12 +5,17 @@ convergence_ionic:
   examplePath: example/science/models/dft/convergence/ionic.json
 
 pressure:
+  characteristic: true
   defaults:
     units: kbar
   schemaPath: schema/material/properties/primary/pressure.json
   examplePath: example/material/properties/primary/pressure.json
 
 band_gaps:
+  characteristic: true
+  types:
+    - direct
+    - indirect
   defaults:
     units: eV
   schemaPath: schema/material/properties/primary/band_gaps.json
