@@ -34,6 +34,12 @@ fermi_energy:
   schemaPath: schema/material/properties/primary/fermi_energy.json
   exampleaPath: example/material/properties/primary/fermi_energy.json
 
+zero_point_energy:
+  defaults:
+    units: eV
+  schemaPath: schema/material/properties/primary/zero_point_energy.json
+  exampleaPath: example/material/properties/primary/zero_point_energy.json
+
 convergence_electronic:
   defaults:
     units: eV
