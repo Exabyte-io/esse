@@ -146,8 +146,8 @@
                           doi: https://doi.org/10.1103/PhysRevLett.99.246403
                   parent:
                     oneOf:
-                      - ref: "#/1/children/1/children/1/children/1"  # LDA
-                      - ref: "#/1/children/1/children/1/children/2"  # GGA
+                      - $ref: "#/1/children/1/children/1/children/1"  # LDA
+                      - $ref: "#/1/children/1/children/1/children/2"  # GGA
                   modifiers:
                     type: array
                     items:

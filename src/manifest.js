@@ -73,7 +73,6 @@ function characteristicToChildren(name, ch) {
 
 function characteristics(props) {
     const result = [];
-
     _.each(props, function (value, name) {
         // return only characteristic properties
         if (value.characteristic) {
@@ -85,7 +84,10 @@ function characteristics(props) {
         children: result
     };
 }
-// recursively scans nested object and omits all childred array elements with `omit` flag set to true
+/**
+ * @summary Recursively scans nested object and omits all childred array elements with `omit` flag set to true
+ * @param {Object} obj
+ */
 function _falseIfOmit(obj) {
     if (obj.omit) {
         return false;
@@ -109,6 +111,7 @@ function models(props) {
 }
 
 const MANIFESTS = [
+    // `id` key is used further to retrieve the manifest data
     {
         id: 'properties',
         basename: 'properties.yaml',
@@ -131,6 +134,7 @@ const MANIFESTS = [
         manifest.mapper(content),
         {
             id: manifest.id,
+            // relative path
             path: filePath.replace(`${MANIFEST_DIR}`, '').replace(/^\//, '')
         }
     );
