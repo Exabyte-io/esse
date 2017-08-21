@@ -4,6 +4,53 @@ import {MANIFEST_DIR} from "./settings";
 import YAML from "yamljs";
 import _ from "lodash";
 
+/**
+ * This file contains functions for converting manifest data from yaml files to tree format:
+ *       {
+ *            "name" : "statistical",
+ *            "slug" : "st",
+ *            "children" : [
+ *                {
+ *                    "name" : "deterministic",
+ *                    "slug" : "det",
+ *                    "field" : "type",
+ *                    "children" : [
+ *                        {
+ *                            "name" : "machine learning",
+ *                            "slug" : "ml",
+ *                            "field" : "subtype",
+ *                            "children" : [
+ *                                {
+ *                                    "name" : "classification",
+ *                                    "omit" : true,
+ *                                    "slug" : "cl",
+ *                                    "schema" : {
+ *                                        "type" : "object"
+ *                                    }
+ *                                },
+ *                                {
+ *                                    "name" : "regression",
+ *                                    "slug" : "re",
+ *                                    "children" : null,
+ *                                    "schema" : {
+ *                                        "type" : "object"
+ *                                    }
+ *                                }
+ *                            ]
+ *                        }
+ *                    ]
+ *                }
+ *            ]
+ *        }
+ */
+
+
+/**
+ * @summary Converts characteristic from schemas.yaml to manifest tree branch.
+ * @param name {String}
+ * @param ch {Object}
+ * @return {Array}
+ */
 function characteristicToChildren(name, ch) {
     const children = [];
     if (ch.types) {
@@ -11,14 +58,14 @@ function characteristicToChildren(name, ch) {
             children.push({
                 slug: `${name}:${type}`,
                 name: `${name}:${type}`,
-                type: 'number' // TODO: get from schema
+                type: 'number'
             })
         });
     } else {
         children.push({
             slug: name,
             name: name,
-            type: 'number' // TODO: get from schema
+            type: 'number'
         });
     }
 
@@ -40,10 +87,13 @@ function characteristics(props) {
     };
 }
 
+/**
+ * @summary Puts models array into tree structure.
+ * @param props
+ */
 function models(props) {
-    const result = props;
     return {
-        children: result
+        children: props
     };
 }
 
