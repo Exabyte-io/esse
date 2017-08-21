@@ -1,8 +1,8 @@
 import fs from "fs-extra";
 import path from "path";
-import {MANIFEST_DIR} from "./settings";
-import YAML from "yamljs";
 import _ from "lodash";
+import YAML from "yamljs";
+import {MANIFEST_DIR} from "./settings";
 
 /**
  * This file contains functions for converting manifest data from yaml files to tree format:
@@ -44,9 +44,8 @@ import _ from "lodash";
  *        }
  */
 
-
 /**
- * @summary Converts characteristic from schemas.yaml to manifest tree branch.
+ * @summary Converts characteristic from manifest representation to tree branch.
  * @param name {String}
  * @param ch {Object}
  * @return {Array}
@@ -86,27 +85,55 @@ function characteristics(props) {
         children: result
     };
 }
+// recursively scans nested object and omits all childred array elements with `omit` flag set to true
+function _falseIfOmit(obj) {
+    if (obj.omit) {
+        return false;
+    } else {
+        if (obj.children) {
+            obj.children = _.filter(obj.children, el => _falseIfOmit(el))
+        }
+    }
+    return true;
+}
 
 /**
  * @summary Puts models array into tree structure.
  * @param props
  */
 function models(props) {
+    const modelsWithoutOmitted = _.filter(props, el => _falseIfOmit(el));
     return {
-        children: props
+        children: modelsWithoutOmitted
     };
 }
 
-const MANIFEST_LIST = [
-    {file: 'schemas.yaml', mapper: characteristics},
-    {file: 'models.yaml', mapper: models}
-];
-
-export default MANIFEST_LIST.map(manifest=> {
-    const filePath = path.join(MANIFEST_DIR, manifest.file);
+const MANIFESTS = [
+    {
+        id: 'properties',
+        basename: 'properties.yaml',
+        mapper: characteristics
+    },
+    {
+        id: 'models',
+        basename: 'models.yaml',
+        mapper: models
+    },
+    {
+        id: 'apps',
+        basename: 'apps.yaml',
+        mapper: x => x
+    }
+].map(manifest => {
+    const filePath = path.join(MANIFEST_DIR, manifest.basename);
     const content = YAML.parse(fs.readFileSync(filePath).toString('utf8'));
     return Object.assign(
         manifest.mapper(content),
-        {id: manifest.file, path: filePath}
+        {
+            id: manifest.id,
+            path: filePath.replace(`${MANIFEST_DIR}`, '').replace(/^\//, '')
+        }
     );
 });
+
+export default MANIFESTS;
