@@ -1,0 +1,99 @@
+convergence_ionic:
+  defaults:
+    units: eV/a.u.
+  path: science/models/dft/convergence/ionic.json
+
+pressure:
+  defaults:
+    units: kbar
+  path: material/properties/primary/pressure.json
+
+band_gaps:
+  defaults:
+    units: eV
+  path: material/properties/primary/band_gaps.json
+
+total_force:
+  defaults:
+    units: eV
+  path: material/properties/primary/total_force.json
+
+total_energy:
+  defaults:
+    units: eV
+  path: material/properties/primary/total_energy.json
+
+fermi_energy:
+  defaults:
+    units: eV
+  path: material/properties/primary/fermi_energy.json
+
+convergence_electronic:
+  defaults:
+    units: eV
+  path: science/models/dft/convergence/electronic.json
+
+stress_tensor:
+  defaults:
+    units: kbar
+  path: material/properties/primary/stress_tensor.json
+
+band_structure:
+  defaults:
+    xAxis:
+      label: kpoints
+      units: crystal
+    yAxis:
+      label: energy
+      units: eV
+  path: material/properties/primary/band_structure.json
+
+basis:
+  defaults:
+    units: bohr
+  path: material/properties/primary/structural/basis.json
+
+density_of_states:
+  defaults:
+    xAxis:
+      label: energy
+      units: eV
+    yAxis:
+      label: density of states
+      units: states/unitcell
+  path: material/properties/primary/density_of_states.json
+
+lattice:
+  path: material/properties/primary/structural/lattice.json
+
+atomic_forces:
+  defaults:
+    units: eV/bohr
+  path: material/properties/primary/structural/atomic_forces.json
+
+total_energy_contributions:
+  defaults:
+    units: eV
+  path: material/properties/primary/total_energy_contributions.json
+  examplePath: example/material/properties/primary/total_energy_contributions.json
+
+p-norm:
+  path: material/properties/primary/structural/p-norm.json
+
+volume:
+  defaults:
+    units: angstrom^3
+  path: material/properties/primary/structural/volume.json
+
+symmetry:
+  defaults:
+    units: angstrom
+  path: material/properties/primary/structural/symmetry.json
+
+elemental_ratio:
+  path: material/properties/primary/structural/elemental_ratio.json
+
+density:
+  defaults:
+    units: g/cm^3
+  path: material/properties/primary/structural/density.json
