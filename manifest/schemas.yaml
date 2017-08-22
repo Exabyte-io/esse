@@ -59,7 +59,7 @@ band_structure:
 
 basis:
   defaults:
-    units: bohr
+    units: angstrom
   schemaPath: schema/material/properties/primary/structural/basis.json
   examplePath: example/material/properties/primary/structural/basis.json
 
@@ -75,6 +75,8 @@ density_of_states:
   exampleaPath: example/material/properties/primary/density_of_states.json
 
 lattice:
+  defaults:
+    units: angstrom
   schemaPath: schema/material/properties/primary/structural/lattice.json
   examplePath: example/material/properties/primary/structural/lattice.json
 
