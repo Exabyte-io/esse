@@ -1,0 +1,131 @@
+convergence_ionic:
+  defaults:
+    units: eV/a.u.
+  schemaPath: schema/science/models/dft/convergence/ionic.json
+  examplePath: example/science/models/dft/convergence/ionic.json
+
+pressure:
+  defaults:
+    units: kbar
+  schemaPath: schema/material/properties/primary/pressure.json
+  examplePath: example/material/properties/primary/pressure.json
+
+band_gaps:
+  defaults:
+    units: eV
+  schemaPath: schema/material/properties/primary/band_gaps.json
+  exampleath: example/material/properties/primary/band_gaps.json
+
+total_force:
+  defaults:
+    units: eV
+  schemaPath: schema/material/properties/primary/total_force.json
+  examplePath: example/material/properties/primary/total_force.json
+
+total_energy:
+  defaults:
+    units: eV
+  schemaPath: schema/material/properties/primary/total_energy.json
+  examplemaPath: example/material/properties/primary/total_energy.json
+
+fermi_energy:
+  defaults:
+    units: eV
+  schemaPath: schema/material/properties/primary/fermi_energy.json
+  exampleaPath: example/material/properties/primary/fermi_energy.json
+
+zero_point_energy:
+  defaults:
+    units: eV
+  schemaPath: schema/material/properties/primary/zero_point_energy.json
+  exampleaPath: example/material/properties/primary/zero_point_energy.json
+
+convergence_electronic:
+  defaults:
+    units: eV
+  schemaPath: schema/science/models/dft/convergence/electronic.json
+  examplePath: example/science/models/dft/convergence/electronic.json
+
+stress_tensor:
+  defaults:
+    units: kbar
+  schemaPath: schema/material/properties/primary/stress_tensor.json
+  examplePath: example/material/properties/primary/stress_tensor.json
+
+band_structure:
+  defaults:
+    xAxis:
+      label: kpoints
+      units: crystal
+    yAxis:
+      label: energy
+      units: eV
+  schemaPath: schema/material/properties/primary/band_structure.json
+  examplePath: example/material/properties/primary/band_structure.json
+
+basis:
+  defaults:
+    units: bohr
+  schemaPath: schema/material/properties/primary/structural/basis.json
+  examplePath: example/material/properties/primary/structural/basis.json
+
+density_of_states:
+  defaults:
+    xAxis:
+      label: energy
+      units: eV
+    yAxis:
+      label: density of states
+      units: states/unitcell
+  schemaPath: schema/material/properties/primary/density_of_states.json
+  exampleaPath: example/material/properties/primary/density_of_states.json
+
+lattice:
+  schemaPath: schema/material/properties/primary/structural/lattice.json
+  examplePath: example/material/properties/primary/structural/lattice.json
+
+atomic_forces:
+  defaults:
+    units: eV/bohr
+  schemaPath: schema/material/properties/primary/structural/atomic_forces.json
+  examplePath: example/material/properties/primary/structural/atomic_forces.json
+
+total_energy_contributions:
+  defaults:
+    units: eV
+  schemaPath: schema/material/properties/primary/total_energy_contributions.json
+  examplePath: example/material/properties/primary/total_energy_contributions.json
+
+material:
+  schemaPath: schema/material.json
+  examplePath: example/material.json
+
+workflow:
+  schemaPath: schema/workflow.json
+  examplePath: example/workflow.json
+
+p-norm:
+  schemaPath: schema/material/properties/primary/structural/p-norm.json
+  examplePath: example/material/properties/primary/structural/p-norm.json
+
+volume:
+  defaults:
+    units: angstrom^3
+  schemaPath: schema/material/properties/primary/structural/volume.json
+  examplePath: example/material/properties/primary/structural/volume.json
+
+symmetry:
+  defaults:
+    units: angstrom
+  schemaPath: schema/material/properties/primary/structural/symmetry.json
+  examplePath: example/material/properties/primary/structural/symmetry.json
+
+elemental_ratio:
+  schemaPath: schema/material/properties/primary/structural/elemental_ratio.json
+  examplePath: example/material/properties/primary/structural/elemental_ratio.json
+
+density:
+  defaults:
+    units: g/cm^3
+  schemaPath: schema/material/properties/primary/structural/density.json
+  examplePath: example/material/properties/primary/structural/density.json
