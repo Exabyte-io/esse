@@ -12,6 +12,11 @@
             "exec": "score",
             "flavor": "score"
         },
-        "input": {}
+        "input": {
+            "dataFrame": {
+                "scope": "data_transformation_manipulation",
+                "name": "dataFrame"
+            }
+        }
     }
 }

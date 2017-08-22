@@ -13,7 +13,11 @@
             "flavor": "cross-validate"
         },
         "input": {
-            "nSplits": 3
+            "nSplits": 3,
+            "dataFrame": {
+                "scope": "data_transformation_manipulation",
+                "name": "dataFrame"
+            }
         }
     }
 }

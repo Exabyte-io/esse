@@ -1,8 +1,8 @@
 {
     "status": "idle",
     "head": true,
-    "flowchartId": "data_transformation",
-    "name": "data_transformation",
+    "flowchartId": "data_transformation_scale_and_reduce",
+    "name": "data_transformation_scale_and_reduce",
     "type": "processing",
     "processing": {
         "operation": "data_transformation",
@@ -22,7 +22,11 @@
                     "scale": 1.4,
                     "name": "atomic_radius:Si"
                 }
-            ]
+            ],
+            "dataFrame": {
+                "scope": "data_transformation_manipulation",
+                "name": "dataFrame"
+            }
         }
     }
 }

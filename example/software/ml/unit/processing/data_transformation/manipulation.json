@@ -1,8 +1,8 @@
 {
     "status": "idle",
     "head": true,
-    "flowchartId": "data_transformation",
-    "name": "data_transformation",
+    "flowchartId": "data_transformation_manipulation",
+    "name": "data_transformation_manipulation",
     "type": "processing",
     "processing": {
         "operation": "data_transformation",
@@ -10,7 +10,11 @@
         "input": {
             "cleanMissingData": true,
             "removeDuplicateRows": true,
-            "replaceNoneValuesWith": 0
+            "replaceNoneValuesWith": 0,
+            "dataFrame": {
+                "scope": "io",
+                "name": "dataFrame"
+            }
         }
     }
 }

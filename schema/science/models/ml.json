@@ -10,13 +10,13 @@
     "properties": {
         "type": {
             "enum": [
-                "machine_learning"
+                "ml"
             ]
         },
         "subtype": {
             "enum": [
-                "supervised",
-                "unsupervised"
+                "re",
+                "cl"
             ]
         },
         "method": {

@@ -22,7 +22,11 @@
             "targets": [
                 "band_gaps:indirect",
                 "band_gaps:direct"
-            ]
+            ],
+            "dataFrame": {
+                "scope": "data_transformation_manipulation",
+                "name": "dataFrame"
+            }
         }
     }
 }

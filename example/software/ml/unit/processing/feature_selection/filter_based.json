@@ -9,7 +9,11 @@
         "flavor": "filter_based",
         "input": {
             "nFeatures": 100,
-            "algorithm": "f_regression"
+            "algorithm": "f_regression",
+            "dataFrame": {
+                "scope": "data_transformation_scale_and_reduce",
+                "name": "dataFrame"
+            }
         }
     }
 }
