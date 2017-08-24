@@ -4,7 +4,7 @@
     "type": "object",
     "allOf": [
         {
-            "$ref": "../unit.json"
+            "$ref": "file:../unit.json"
         }
     ],
     "properties": {
@@ -35,7 +35,7 @@
                     "description": "Flowchart ID reference for `else` part of the condition.",
                     "type": "string"
                 },
-                "maxOccurences": {
+                "maxOccurrences": {
                     "description": "Maximum occurrence of the condition, usable for loops.",
                     "type": "integer"
                 },
