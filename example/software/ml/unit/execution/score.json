@@ -15,8 +15,19 @@
         "input": {
             "dataFrame": {
                 "scope": "data_transformation_manipulation",
-                "name": "dataFrame"
+                "name": "cleanedDataFrame",
+                "type": "pandas.dataFrame"
+            },
+            "trainedModel": {
+                "scope": "train",
+                "name": "trainedModel",
+                "type": "trainedModel"
             }
         }
-    }
+    },
+    "results": [
+        {
+            "name": "band_gaps"
+        }
+    ]
 }

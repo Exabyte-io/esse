@@ -16,7 +16,9 @@
             "nSplits": 3,
             "dataFrame": {
                 "scope": "data_transformation_manipulation",
-                "name": "dataFrame"
+                "name": "cleanedDataFrame",
+                "type": "pandas.dataFrame",
+                "render": "unitSelector"
             }
         }
     }

@@ -12,8 +12,21 @@
             "algorithm": "f_regression",
             "dataFrame": {
                 "scope": "data_transformation_scale_and_reduce",
-                "name": "dataFrame"
+                "name": "scaledDataFrame",
+                "type": "pandas.dataFrame"
             }
         }
-    }
+    },
+    "results": [
+        {
+            "name": "filteredDataFrame",
+            "type": "pandas.dataFrame",
+            "publish": false
+        },
+        {
+            "name": "selectedFeatures",
+            "type": "list",
+            "publish": true
+        }
+    ]
 }

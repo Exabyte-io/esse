@@ -13,8 +13,16 @@
             "replaceNoneValuesWith": 0,
             "dataFrame": {
                 "scope": "io",
-                "name": "dataFrame"
+                "name": "dataFrame",
+                "type": "pandas.dataFrame"
             }
         }
-    }
+    },
+    "results": [
+        {
+            "name": "cleanedDataFrame",
+            "type": "pandas.dataFrame",
+            "publish": false
+        }
+    ]
 }
