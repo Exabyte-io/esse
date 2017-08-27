@@ -17,8 +17,7 @@
             "dataFrame": {
                 "scope": "data_transformation_manipulation",
                 "name": "cleanedDataFrame",
-                "type": "pandas.dataFrame",
-                "render": "unitSelector"
+                "type": "pandas.dataFrame"
             }
         }
     }

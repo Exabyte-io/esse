@@ -38,20 +38,7 @@
                             ]
                         },
                         "dataFrame": {
-                            "type": "object",
-                            "properties": {
-                                "scope": {
-                                    "description": "flowchartId of the unit to get dataFrame from",
-                                    "type": "string"
-                                },
-                                "name": {
-                                    "description": "name of variable inside local scope of the specified unit",
-                                    "type": "string",
-                                    "enum": [
-                                        "dataFrame"
-                                    ]
-                                }
-                            }
+                            "$ref": "file:../../../../../workflow/unit/_input.json"
                         }
                     },
                     "required": [

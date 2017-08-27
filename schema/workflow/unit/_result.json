@@ -4,8 +4,16 @@
     "type": "object",
     "properties": {
         "name": {
-            "description": "The name of this result property. e.g. scf_accuracy",
+            "description": "name of this result",
             "type": "string"
+        },
+        "type": {
+            "description": "type of this result",
+            "type": "string"
+        },
+        "publish": {
+            "description": "whether to publish this result",
+            "type": "boolean"
         },
         "args": {
             "description": "Specific arguments for the required result.",
