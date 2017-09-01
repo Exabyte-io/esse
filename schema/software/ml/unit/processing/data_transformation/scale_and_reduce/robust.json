@@ -1,0 +1,26 @@
+{
+    "description": "robust scaling data",
+    "type": "array",
+    "items": {
+        "type": "object",
+        "properties": {
+            "center": {
+                "description": "median value for each feature in the training set.",
+                "type": "number"
+            },
+            "scale": {
+                "description": "(scaled) interquartile range for each feature in the training set.",
+                "type": "number"
+            },
+            "name": {
+                "description": "feature/property name in 'flattened' format",
+                "type": "string"
+            }
+        },
+        "required": [
+            "name",
+            "center",
+            "scale"
+        ]
+    }
+}

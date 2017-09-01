@@ -1,0 +1,12 @@
+[
+    {
+        "center": 0.156,
+        "scale": 1.5,
+        "name": "atomic_radius:Ge"
+    },
+    {
+        "center": 0.155,
+        "scale": 1.4,
+        "name": "atomic_radius:Si"
+    }
+]

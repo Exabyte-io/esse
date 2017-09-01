@@ -1,0 +1,41 @@
+{
+    "description": "min_max scaling data",
+    "type": "array",
+    "items": {
+        "type": "object",
+        "properties": {
+            "min": {
+                "description": "adjustment for minimum.",
+                "type": "number"
+            },
+            "scale": {
+                "description": "relative scaling of the data.",
+                "type": "number"
+            },
+            "data_min": {
+                "description": "minimum seen in the data",
+                "type": "number"
+            },
+            "data_max": {
+                "description": "maximum seen in the data",
+                "type": "number"
+            },
+            "data_range": {
+                "description": "range (data_max - data_min) seen in the data",
+                "type": "number"
+            },
+            "name": {
+                "description": "feature/property name in 'flattened' format",
+                "type": "string"
+            }
+        },
+        "required": [
+            "name",
+            "min",
+            "scale",
+            "data_min",
+            "data_max",
+            "data_range"
+        ]
+    }
+}
