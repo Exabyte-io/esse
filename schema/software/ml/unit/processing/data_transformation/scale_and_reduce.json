@@ -31,37 +31,23 @@
                             "type": "string",
                             "default": "standard_scaler",
                             "enum": [
-                                "standard_scaler"
+                                "standard_scaler",
+                                "min_max_scaler",
+                                "robust_scaler"
                             ]
                         },
                         "perFeature": {
-                            "decription": "per-feature scaling data",
-                            "type": "array",
-                            "items": {
-                                "type": "object",
-                                "properties": {
-                                    "variance": {
-                                        "description": "variance in original training data",
-                                        "type": "number"
-                                    },
-                                    "mean": {
-                                        "description": "mean value of the original training data",
-                                        "type": "number"
-                                    },
-                                    "scale": {
-                                        "description": "scale multiplier for this feature/property",
-                                        "type": "number"
-                                    },
-                                    "name": {
-                                        "description": "feature/property name in 'flattened' format",
-                                        "type": "string"
-                                    }
+                            "oneOf": [
+                                {
+                                    "$ref": "scale_and_reduce/min_max.json"
                                 },
-                                "required": [
-                                    "name",
-                                    "scale"
-                                ]
-                            }
+                                {
+                                    "$ref": "scale_and_reduce/robust.json"
+                                },
+                                {
+                                    "$ref": "scale_and_reduce/standard.json"
+                                }
+                            ]
                         }
                     },
                     "required": [

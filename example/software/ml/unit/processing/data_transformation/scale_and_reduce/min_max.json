@@ -1,0 +1,18 @@
+[
+    {
+        "min": 0.10,
+        "scale": 1.5,
+        "data_min": 0,
+        "data_max": 1,
+        "data_range": 1,
+        "name": "atomic_radius:Ge"
+    },
+    {
+        "min": 0.10,
+        "scale": 1.5,
+        "data_min": 0,
+        "data_max": 1,
+        "data_range": 1,
+        "name": "atomic_radius:Si"
+    }
+]
