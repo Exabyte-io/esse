@@ -104,3 +104,8 @@ density:
   defaults:
     units: g/cm^3
   path: material/properties/primary/structural/density.json
+
+zero_point_energy:
+  defaults:
+    units: eV
+  path: material/properties/primary/zero_point_energy.json
