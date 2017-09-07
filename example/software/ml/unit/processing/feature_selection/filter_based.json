@@ -13,7 +13,7 @@
             "dataFrame": {
                 "scope": "data_transformation_scale_and_reduce",
                 "name": "data_frame",
-                "type": "data_framedata_frame"
+                "type": "data_frame"
             }
         }
     },
