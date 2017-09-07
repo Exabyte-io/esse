@@ -1,5 +1,6 @@
 import Ajv from "ajv";
 import {getRawJSONWithIncludeStatements, includeAndDereferenceJSONData} from "./deref";
+import MANIFESTS from "./manifest";
 
 const COMPILED_SCHEMAS = [],
     RAW_SCHEMAS = [], // raw schemas still contain `$ref` tags
@@ -16,6 +17,7 @@ if (process.env.PRINT_SCHEMAS) {
 }
 
 export const schemas = COMPILED_SCHEMAS;
+export const manifests = MANIFESTS;
 
 export const rawSchemas = RAW_SCHEMAS;
 export const examples = EXAMPLES;

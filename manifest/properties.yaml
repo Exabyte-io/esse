@@ -4,11 +4,16 @@ convergence_ionic:
   path: science/models/dft/convergence/ionic.json
 
 pressure:
+  characteristic: true
   defaults:
     units: kbar
   path: material/properties/primary/pressure.json
 
 band_gaps:
+  characteristic: true
+  types:
+    - direct
+    - indirect
   defaults:
     units: eV
   path: material/properties/primary/band_gaps.json
@@ -99,3 +104,8 @@ density:
   defaults:
     units: g/cm^3
   path: material/properties/primary/structural/density.json
+
+zero_point_energy:
+  defaults:
+    units: eV
+  path: material/properties/primary/zero_point_energy.json

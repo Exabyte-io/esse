@@ -1,3 +1,6 @@
+# --------------------------- #
+#      Physics Based          #
+# --------------------------- #
 - name: physics-based
   slug: pb
   children:
@@ -6,10 +9,12 @@
     # --------------------------- #
     - name: quantum-mechanical
       slug: qm
+      field: type
       children:
         # DFT
         - name: density functional theory
           slug: dft
+          field: subtype
           children:
             ## LDA
             - name: local density approximation
@@ -29,26 +34,26 @@
                         reference:
                           doi: https://doi.org/10.1103/PhysRevB.45.13244
                       - name: vosko-wilk-nusair
-                        slug: pw
+                        slug: vwn
                         reference:
                           doi: https://doi.org/10.1139/p80-159
-                  modifiers:
-                    type: array
-                    items:
-                      type: object
-                      enum:
-                        - name: hubbard-corrected
-                          schema:
-                            type: object
-                            properties:
-                              hubbardU:
-                                type: number
-                        - name: spin-resolved
-                          schema:
-                            type: object
-                            properties:
-                              non-collinear:
-                                type: boolean
+#                  modifiers:
+#                    type: array
+#                    items:
+#                      type: object
+#                      enum:
+#                        - name: hubbard-corrected
+#                          schema:
+#                            type: object
+#                            properties:
+#                              hubbardU:
+#                                type: number
+#                        - name: spin-resolved
+#                          schema:
+#                            type: object
+#                            properties:
+#                              non-collinear:
+#                                type: boolean
                 required:
                   - functional
             ## GGA
@@ -64,23 +69,23 @@
                         slug: pbe
                         reference:
                           doi: https://doi.org/10.1103/PhysRevLett.77.3865
-                  modifiers:
-                    type: array
-                    items:
-                      type: object
-                      enum:
-                        - name: hubbard-corrected
-                          schema:
-                          type: object
-                          properties:
-                            hubbardU:
-                              type: number
-                        - name: spin-resolved
-                          schema:
-                          type: object
-                          properties:
-                            non-collinear:
-                              type: boolean
+#                  modifiers:
+#                    type: array
+#                    items:
+#                      type: object
+#                      enum:
+#                        - name: hubbard-corrected
+#                          schema:
+#                          type: object
+#                          properties:
+#                            hubbardU:
+#                              type: number
+#                        - name: spin-resolved
+#                          schema:
+#                          type: object
+#                          properties:
+#                            non-collinear:
+#                              type: boolean
                 required:
                   - functional
             ## HSE
@@ -108,21 +113,22 @@
                         slug: b3lyp
                         reference:
                           doi: http://dx.doi.org/10.1063/1.464913
-                  modifiers:
-                    type: array
-                    items:
-                      type: object
-                      enum:
-                        - name: spin-resolved
-                          schema:
-                          type: object
-                          properties:
-                            non-collinear:
-                              type: boolean
+#                  modifiers:
+#                    type: array
+#                    items:
+#                      type: object
+#                      enum:
+#                        - name: spin-resolved
+#                          schema:
+#                          type: object
+#                          properties:
+#                            non-collinear:
+#                              type: boolean
                 required:
                   - functional
             ## GW
             - name: gw approximation
+              omit: true
               slug: gw
               schema:
                 type: object
@@ -159,6 +165,7 @@
 
         # QMC
         - name: quantum monte carlo
+          omit: true
           slug: qmc
           children:
             ## DMC
@@ -186,6 +193,7 @@
     #      Molecular modeling     #
     # --------------------------- #
     - name: molecular modeling
+      omit: true
       slug: md
       children:
         # CL
@@ -246,37 +254,33 @@
               schema:
                 type: object
 
-- name: machine learning
-  slug: ml
+# --------------------------- #
+#      Statistical            #
+# --------------------------- #
+- name: statistical
+  slug: st
   children:
-
-    - name: classification
-      slug: cl
+    # --------------------------- #
+    #      Deterministic          #
+    # --------------------------- #
+    - name: deterministic
+      slug: det
+      field: type
       children:
-        # Linear
-        - name: linear
-          slug: lin
+        # ML
+        - name: machine learning
+          slug: ml
+          field: subtype
           children:
-            ## Logistic
-            - name: logistic
-              slug: log
+            ## ML Classification
+            - name: classification
+              omit: true
+              slug: cl
               schema:
                 type: object
-
-    - name: regression
-      slug: re
-      children:
-        # Linear
-        - name: logistic
-          slug: log
-          children:
-            ## Least-squares
-            - name: least-squares
-              slug: lsq
-              schema:
-                type: object
-            ## Ridge
-            - name: ridge
-              slug: rid
+            ## ML Regression
+            - name: regression
+              slug: re
+              children:
               schema:
                 type: object
