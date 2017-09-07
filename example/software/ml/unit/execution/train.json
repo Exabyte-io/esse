@@ -25,15 +25,15 @@
             ],
             "dataFrame": {
                 "scope": "data_transformation_manipulation",
-                "name": "cleanedDataFrame",
-                "type": "pandas.dataFrame"
+                "name": "data_frame",
+                "type": "data_frame"
             }
         }
     },
     "results": [
         {
-            "name": "trainedModel",
-            "type": "trainedModel",
+            "name": "trained_model",
+            "type": "trained_model",
             "publish": true
         }
     ]

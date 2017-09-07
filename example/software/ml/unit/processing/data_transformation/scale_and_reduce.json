@@ -25,20 +25,20 @@
             ],
             "dataFrame": {
                 "scope": "data_transformation_manipulation",
-                "name": "cleanedDataFrame",
-                "type": "pandas.dataFrame"
+                "name": "data_frame",
+                "type": "data_frame"
             }
         }
     },
     "results": [
         {
-            "name": "scaledDataFrame",
-            "type": "pandas.dataFrame",
+            "name": "data_frame",
+            "type": "data_frame",
             "publish": false
         },
         {
-            "name": "scalingParameters",
-            "type": "list",
+            "name": "scaler",
+            "type": "scaler",
             "publish": true
         }
     ]

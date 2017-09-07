@@ -12,19 +12,19 @@
             "algorithm": "f_regression",
             "dataFrame": {
                 "scope": "data_transformation_scale_and_reduce",
-                "name": "scaledDataFrame",
-                "type": "pandas.dataFrame"
+                "name": "data_frame",
+                "type": "data_framedata_frame"
             }
         }
     },
     "results": [
         {
-            "name": "filteredDataFrame",
-            "type": "pandas.dataFrame",
+            "name": "data_frame",
+            "type": "data_frame",
             "publish": false
         },
         {
-            "name": "selectedFeatures",
+            "name": "features",
             "type": "list",
             "publish": true
         }
