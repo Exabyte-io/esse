@@ -1,0 +1,42 @@
+{
+    "header": {
+        "entity": {
+            "_id": "FPjAaKfuYAL7tiHbm",
+            "name": "job"
+        },
+        "version": "0.2.0",
+        "timestamp": 1234923492.12
+    },
+    "payload": {
+        "name": "cli_job",
+        "value": {
+            "status": "pre-submission",
+            "mode": "normal",
+            "_material": {
+                "...": "include(../job/_material.json)"
+            },
+            "compute": {
+                "...": "include(../job/compute.json)"
+            },
+            "name": "two",
+            "slug": "two",
+            "createdAt": "Sun Jul 24 2016 16:28:33 GMT+0200 (CEST)",
+            "owner": {
+                "...": "include(../security/owner.json)"
+            },
+            "workflow": {
+                "...": "include(../workflow.json)"
+            },
+            "version": "0.2.0",
+            "_id": "FPjAaKfuYAL7tiHbm",
+            "creator": {
+                "_id": "HtxACY2wX4b2hS8Rv",
+                "name": "demo"
+            },
+            "_project": {
+                "...": "include(../job/_project.json)"
+            }
+        },
+        "success": true
+    }
+}
