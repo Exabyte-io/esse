@@ -109,3 +109,23 @@ zero_point_energy:
   defaults:
     units: eV
   path: material/properties/primary/zero_point_energy.json
+
+phonon_dos:
+  defaults:
+    xAxis:
+      label: frequency
+      units: cm-1
+    yAxis:
+      label: Phonon DOS
+      units: states/cm-1
+  path: material/properties/primary/phonon_dos.json
+
+phonon_dispersions:
+  defaults:
+    xAxis:
+      label: qpoints
+      units: crystal
+    yAxis:
+      label: frequency
+      units: cm-1
+  path: material/properties/primary/phonon_dispersions.json
