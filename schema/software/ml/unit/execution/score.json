@@ -27,9 +27,6 @@
                     "properties": {
                         "dataFrame": {
                             "$ref": "file:../../../../workflow/unit/_input.json"
-                        },
-                        "trainedModel": {
-                            "$ref": "file:../../../../workflow/unit/_input.json"
                         }
                     },
                     "required": [
