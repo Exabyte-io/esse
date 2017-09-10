@@ -25,20 +25,17 @@
             ],
             "dataFrame": {
                 "scope": "data_transformation_manipulation",
-                "name": "data_frame",
-                "type": "data_frame"
+                "name": "data_frame"
             }
         }
     },
     "results": [
         {
             "name": "data_frame",
-            "type": "data_frame",
             "publish": false
         },
         {
             "name": "scaler",
-            "type": "scaler",
             "publish": true
         }
     ]

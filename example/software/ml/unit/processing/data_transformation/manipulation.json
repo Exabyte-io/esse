@@ -13,15 +13,13 @@
             "replaceNoneValuesWith": 0,
             "dataFrame": {
                 "scope": "io",
-                "name": "data_frame",
-                "type": "data_frame"
+                "name": "data_frame"
             }
         }
     },
     "results": [
         {
             "name": "data_frame",
-            "type": "data_frame",
             "publish": false
         }
     ]

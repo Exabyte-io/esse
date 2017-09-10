@@ -15,13 +15,11 @@
         "input": {
             "dataFrame": {
                 "scope": "data_transformation_manipulation",
-                "name": "data_frame",
-                "type": "data_frame"
+                "name": "data_frame"
             },
             "trainedModel": {
                 "scope": "train",
-                "name": "trained_model",
-                "type": "trained_model"
+                "name": "trained_model"
             }
         }
     },

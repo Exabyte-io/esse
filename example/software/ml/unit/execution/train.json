@@ -25,15 +25,13 @@
             ],
             "dataFrame": {
                 "scope": "data_transformation_manipulation",
-                "name": "data_frame",
-                "type": "data_frame"
+                "name": "data_frame"
             }
         }
     },
     "results": [
         {
             "name": "trained_model",
-            "type": "trained_model",
             "publish": true
         }
     ]

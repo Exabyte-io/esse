@@ -16,8 +16,7 @@
             "nSplits": 3,
             "dataFrame": {
                 "scope": "data_transformation_manipulation",
-                "name": "data_frame",
-                "type": "data_frame"
+                "name": "data_frame"
             }
         }
     }
