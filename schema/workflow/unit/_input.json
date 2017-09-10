@@ -10,10 +10,6 @@
         "name": {
             "description": "Name of the input data. e.g. total_energy",
             "type": "string"
-        },
-        "type": {
-            "description": "type of variable inside local scope of the specified unit",
-            "type": "string"
         }
     },
     "required": [
