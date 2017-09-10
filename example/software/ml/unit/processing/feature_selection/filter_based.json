@@ -20,10 +20,6 @@
         {
             "name": "data_frame",
             "publish": false
-        },
-        {
-            "name": "features",
-            "publish": true
         }
     ]
 }
