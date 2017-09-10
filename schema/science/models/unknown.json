@@ -14,11 +14,7 @@
             ]
         },
         "method": {
-            "oneOf": [
-                {
-                    "$ref": "../methods/unknown.json"
-                }
-            ]
+            "$ref": "../methods/unknown.json"
         }
     }
 }
