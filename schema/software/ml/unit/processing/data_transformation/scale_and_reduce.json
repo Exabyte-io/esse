@@ -34,8 +34,11 @@
                                 "standard_scaler"
                             ]
                         },
+                        "dataFrame": {
+                            "$ref": "file:../../../../../workflow/unit/_input.json"
+                        },
                         "perFeature": {
-                            "decription": "per-feature scaling data",
+                            "description": "per-feature scaling data",
                             "type": "array",
                             "items": {
                                 "type": "object",
@@ -55,9 +58,6 @@
                                     "name": {
                                         "description": "feature/property name in 'flattened' format",
                                         "type": "string"
-                                    },
-                                    "dataFrame": {
-                                        "$ref": "file:../../../../../workflow/unit/_input.json"
                                     }
                                 },
                                 "required": [
