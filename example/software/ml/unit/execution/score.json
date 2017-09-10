@@ -16,10 +16,6 @@
             "dataFrame": {
                 "scope": "data_transformation_manipulation",
                 "name": "data_frame"
-            },
-            "trainedModel": {
-                "scope": "train",
-                "name": "trained_model"
             }
         }
     },
