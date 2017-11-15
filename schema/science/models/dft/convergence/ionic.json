@@ -31,7 +31,23 @@
                     },
                     "electronic": {
                         "description": "data about electronic at this ionic step",
-                        "$ref": "file:electronic.json"
+                        "type": "object",
+                        "properties": {
+                            "units": {
+                                "description": "units for force tolerance",
+                                "enum": [
+                                    "eV",
+                                    "rydberg",
+                                    "hartree"
+                                ]
+                            },
+                            "data": {
+                                "type": "array",
+                                "items": {
+                                    "type": "number"
+                                }
+                            }
+                        }
                     }
                 }
             }
