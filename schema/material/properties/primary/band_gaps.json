@@ -13,6 +13,35 @@
             "items": {
                 "$ref": "file:../../../primitive/property/band_gap.json"
             }
+        },
+        "eigenvalues": {
+            "type": "array",
+            "items": {
+                "properties": {
+                    "kpoint": {
+                        "$ref": "file:../../../primitive/math/point.json"
+                    },
+                    "weight": {
+                        "type": "number"
+                    },
+                    "eigenvalues": {
+                        "type": "array",
+                        "items": {
+                            "properties": {
+                                "spin": {
+                                    "type": "number"
+                                },
+                                "energies": {
+                                    "type": "array"
+                                },
+                                "occupations": {
+                                    "type": "array"
+                                }
+                            }
+                        }
+                    }
+                }
+            }
         }
     },
     "required": [
