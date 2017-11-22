@@ -1,6 +1,6 @@
 convergence_ionic:
   defaults:
-    units: eV/a.u.
+    units: eV
   path: science/models/dft/convergence/ionic.json
 
 pressure:
