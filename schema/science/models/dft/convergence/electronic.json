@@ -17,14 +17,9 @@
         "data": {
             "type": "array",
             "items": {
-                "type": "object",
-                "properties": {
-                    "step": {
-                        "type": "number"
-                    },
-                    "value": {
-                        "type": "number"
-                    }
+                "type": "array",
+                "items": {
+                    "type": "number"
                 }
             }
         }
