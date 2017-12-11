@@ -16,38 +16,59 @@
         "map": {
             "type": "object",
             "properties": {
-                "subworkflow": {
-                    "description": "Name of subworkflow to run inside map",
+                "workflow": {
+                    "description": "Id of workflow to run inside map",
                     "type": "string"
                 },
                 "input": {
                     "description": "Input information for map.",
-                    "type": "array",
-                    "items": {
-                        "type": "object",
-                        "properties": {
-                            "target": {
-                                "description": "Name of the target variable to substitute using the values below. e.g. K_POINTS",
-                                "type": "string"
-                            },
-                            "values": {
-                                "description": "Sequence of values for the target Jinja variable.",
-                                "type": "array",
-                                "items": {
+                    "type": "object",
+                    "properties": {
+                        "target": {
+                            "description": "Name of the target variable to substitute using the values below. e.g. K_POINTS",
+                            "type": "string"
+                        }
+                    },
+                    "required": [
+                        "target"
+                    ],
+                    "oneOf": [
+                        {
+                            "properties": {
+                                "scope": {
+                                    "description": "Scope to retrieve `values` from, global or flowchartId. Optional if `values` is given.",
+                                    "type": "string"
+                                },
+                                "name": {
+                                    "description": "Name of the variable inside the scope to retrieve `values` from. Optional if `values` is given.",
                                     "type": "string"
                                 }
-                            }
+                            },
+                            "required": [
+                                "scope",
+                                "name"
+                            ]
                         },
-                        "required": [
-                            "target",
-                            "values"
-                        ]
-                    }
+                        {
+                            "properties": {
+                                "values": {
+                                    "description": "Sequence of values for the target Jinja variable. Optional if `scope` and `name` are given.",
+                                    "type": "array",
+                                    "items": {
+                                        "type": "string"
+                                    }
+                                }
+                            },
+                            "required": [
+                                "values"
+                            ]
+                        }
+                    ]
                 }
             },
             "required": [
                 "input",
-                "subworkflow"
+                "workflow"
             ]
         }
     }
