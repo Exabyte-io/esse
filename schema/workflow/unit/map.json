@@ -16,7 +16,7 @@
         "map": {
             "type": "object",
             "properties": {
-                "workflow": {
+                "workflowId": {
                     "description": "Id of workflow to run inside map",
                     "type": "string"
                 },
@@ -68,7 +68,7 @@
             },
             "required": [
                 "input",
-                "workflow"
+                "workflowId"
             ]
         }
     }

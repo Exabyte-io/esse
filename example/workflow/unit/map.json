@@ -5,7 +5,7 @@
     "name": "map",
     "type": "map",
     "map": {
-        "workflow": "workflow",
+        "workflowId": "zxjhEiaQvwWwvB3oM",
         "input": {
             "target": "MAP_K_POINTS_1",
             "values": [
