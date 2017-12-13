@@ -1,6 +1,6 @@
 {
     "tolerance": 0.001,
-    "units": "eV/a.u.",
+    "units": "eV",
     "data": [
         {
             "energy": -123.45678,

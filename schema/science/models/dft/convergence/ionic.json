@@ -13,7 +13,7 @@
         "units": {
             "description": "units for force tolerance",
             "enum": [
-                "eV/a.u."
+                "eV"
             ]
         },
         "data": {
