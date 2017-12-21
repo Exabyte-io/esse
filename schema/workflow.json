@@ -35,6 +35,17 @@
             "items": {
                 "$ref": "file:workflow/unit.json"
             }
+        },
+        "workflows": {
+            "description": "Array of workflows.",
+            "type": "array",
+            "items": {
+                "anyOf": [
+                    {
+                        "$ref": "#"
+                    }
+                ]
+            }
         }
     },
     "required": [
