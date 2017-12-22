@@ -21,9 +21,6 @@
             "items": {
                 "anyOf": [
                     {
-                        "$ref": "#"
-                    },
-                    {
                         "$ref": "file:workflow/subworkflow.json"
                     }
                 ]
