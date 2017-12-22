@@ -26,8 +26,6 @@
     },
     "required": [
         "name",
-        "flavor",
-        "version",
-        "exec"
+        "version"
     ]
 }
