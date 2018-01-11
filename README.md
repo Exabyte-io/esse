@@ -1,6 +1,6 @@
-# exabyte-materials-json
+# exabyte-esse
 
-Contains schemas and examples for materials and simulations related data in JSON representation. Can be used as a node
+Exabyte Source of Schemas and Examples. Contains schemas and examples for materials and simulations related data in JSON representation. Can be used as a node
 or python module on server-side.
 
 ## Installation
