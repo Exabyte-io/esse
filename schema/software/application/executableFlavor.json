@@ -1,0 +1,30 @@
+{
+    "$schema": "http://json-schema.org/draft-04/schema#",
+    "title": "executable schema",
+    "type": "object",
+    "allOf": [
+        {
+            "$ref": "file:./mixins/runtime_items.json"
+        }
+    ],
+    "properties": {
+        "executableId": {
+            "description": "_id of the executable this flavor belongs to",
+            "type": "string"
+        },
+        "input": {
+            "$ref": "file:./<PUT THE CORRECT PATH>_input.json"
+        },
+        "contextProviderNames": {
+            "type": "array",
+            "items": {
+                "description": "render context provider names",
+                "type": "string"
+            }
+        }
+    },
+    "required": [
+        "name",
+        "applicationId"
+    ]
+}
