@@ -6,7 +6,7 @@
     "type": "execution",
     "execution": {
         "app": {
-            "...": "include(../../software/app.json)"
+            "...": "include(../../software/application.json)"
         },
         "compute": null,
         "input": [
@@ -19,20 +19,6 @@
     "results": [
         {
             "name": "harris_foulkes_estimate"
-        },
-        {
-            "name": "total energy",
-            "value": -123.43573079,
-            "units": "eV"
-        },
-        {
-            "name": "density_of_states",
-            "args": [
-                {
-                    "key": "combined",
-                    "value": true
-                }
-            ]
         }
     ],
     "next": "pw-bands",

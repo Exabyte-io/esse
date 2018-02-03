@@ -13,7 +13,7 @@
         },
         "app": {
             "description": "information about the simulation engine/application.",
-            "$ref": "file:../software/app.json"
+            "$ref": "file:../software/application.json"
         },
         "properties": {
             "description": "Array of characteristic properties calculated by this subworkflow",

@@ -5,6 +5,9 @@
     "allOf": [
         {
             "$ref": "file:../unit.json"
+        },
+        {
+            "$ref": "file:../../software/application/mixins/runtime_items.json"
         }
     ],
     "properties": {
@@ -18,7 +21,7 @@
             "properties": {
                 "app": {
                     "description": "Contains information about the simulation engine/application.",
-                    "$ref": "file:../../software/app.json"
+                    "$ref": "file:../../software/application.json"
                 },
                 "compute": {
                     "description": "Unit's specific computational parameters. Overrides computeArgs object inside the Job entity.",
@@ -32,34 +35,6 @@
                 "input",
                 "app"
             ]
-        },
-        "preProcessors": {
-            "description": "Array of pre-processors.",
-            "type": "array",
-            "items": {
-                "type": "object"
-            }
-        },
-        "monitors": {
-            "description": "Array of monitors.",
-            "type": "array",
-            "items": {
-                "$ref": "file:_result.json"
-            }
-        },
-        "postProcessors": {
-            "description": "Array of post-processors.",
-            "type": "array",
-            "items": {
-                "type": "object"
-            }
-        },
-        "results": {
-            "description": "Resulting properties extracted from the unit, besides the textual output.",
-            "type": "array",
-            "items": {
-                "$ref": "file:_result.json"
-            }
         }
     }
 }
