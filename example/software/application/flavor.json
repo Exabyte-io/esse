@@ -1,0 +1,21 @@
+{
+    "name": "pw_scf",
+    "executableId": "alkjfsa129uslf",
+    "input": [
+        {
+            "content": "K_POINTS automatic\n{{nkx}} {{nky}} {{nkz}} 0 0 0",
+            "name": "pw_scf.in"
+        }
+    ],
+    "contextProviderNames": [
+        "KGridManagerMixin"
+    ],
+    "results": [
+        {
+            "name": "total_energy"
+        }
+    ],
+    "postProcessors": [],
+    "preProcessors": [],
+    "monitors": []
+}

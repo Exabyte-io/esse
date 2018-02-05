@@ -1,0 +1,16 @@
+{
+    "name": "pw.x",
+    "applicationId": "xaw1230sfas9gs",
+    "results": [
+        {
+            "name": "total_energy"
+        }
+    ],
+    "postProcessors": [],
+    "preProcessors": [],
+    "monitors": [
+        {
+            "name": "standard_output"
+        }
+    ]
+}

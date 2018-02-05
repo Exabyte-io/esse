@@ -5,15 +5,19 @@
     "allOf": [
         {
             "$ref": "file:./mixins/runtime_items.json"
+        },
+        {
+            "$ref": "file:../modeling/unit/_input.json"
         }
     ],
     "properties": {
+        "name": {
+            "description": "The name of the executable flavor. e.g. `pw_scf`",
+            "type": "string"
+        },
         "executableId": {
             "description": "_id of the executable this flavor belongs to",
             "type": "string"
-        },
-        "input": {
-            "$ref": "file:./<PUT THE CORRECT PATH>_input.json"
         },
         "contextProviderNames": {
             "type": "array",
@@ -25,6 +29,6 @@
     },
     "required": [
         "name",
-        "applicationId"
+        "executableId"
     ]
 }
