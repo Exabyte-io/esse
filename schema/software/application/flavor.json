@@ -18,13 +18,6 @@
         "executableId": {
             "description": "_id of the executable this flavor belongs to",
             "type": "string"
-        },
-        "contextProviderNames": {
-            "type": "array",
-            "items": {
-                "description": "render context provider names",
-                "type": "string"
-            }
         }
     },
     "required": [
