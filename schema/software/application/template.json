@@ -21,7 +21,7 @@
             "type": "array",
             "items": {
                 "description": "render context provider names",
-                "type": "string"
+                "$ref": "file:./mixins/_result.json"
             }
         }
     },

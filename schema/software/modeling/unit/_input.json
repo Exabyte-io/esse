@@ -7,7 +7,14 @@
             "title": "execution unit input schema",
             "type": "array",
             "items": {
-                "$ref": "file:./_inputItem.json"
+                "oneOf": [
+                    {
+                        "$ref": "file:./_inputItem.json"
+                    },
+                    {
+                        "$ref": "file:./_inputItemId.json"
+                    }
+                ]
             }
         }
     }

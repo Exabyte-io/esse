@@ -1,0 +1,13 @@
+{
+    "$schema": "http://json-schema.org/draft-04/schema#",
+    "title": "execution unit input item schema for physics-based simulation engines",
+    "type": "object",
+    "properties": {
+        "templateId": {
+            "type": "string"
+        }
+    },
+    "required": [
+        "templateId"
+    ]
+}
