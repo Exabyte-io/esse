@@ -35,7 +35,7 @@
         "name",
         "units",
         "model",
-        "app",
+        "application",
         "properties"
     ]
 }
