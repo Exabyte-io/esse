@@ -1,21 +1,6 @@
 {
     "_id": "nDAavgjrT5ezwFgod",
     "title": "My Calculation",
-    "_project": {
-        "_id": "JjDKCcBhQurXoNA5J",
-        "name": "project1",
-        "owner": {
-            "...": "include(../../../security/owner.json)"
-        },
-        "slug": "project1",
-        "goldName": "demo-project1",
-        "access": {
-            "...": "include(../../../security/access_legacy.json)"
-        }
-    },
-    "model": {
-        "...": "include(_model.json)"
-    },
     "owner": {
         "_id": "HtxACY2wX4b2hS8Rv",
         "type": 0,

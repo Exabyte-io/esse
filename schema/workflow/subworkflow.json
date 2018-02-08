@@ -11,7 +11,7 @@
             "description": "Model used inside the subworkflow",
             "$ref": "file:subworkflow/model.json"
         },
-        "app": {
+        "application": {
             "description": "information about the simulation engine/application.",
             "$ref": "file:../software/application.json"
         },
