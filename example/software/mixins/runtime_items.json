@@ -1,0 +1,26 @@
+{
+    "preProcessors": [],
+    "postProcessors": [],
+    "monitors": [
+        "standard_output",
+        "convergence_ionic",
+        "convergence_electronic"
+    ],
+    "results": [
+        "atomic_forces",
+        "band_gaps",
+        "band_structure",
+        "basis",
+        "density_of_states",
+        "fermi_energy",
+        "lattice",
+        "phonon_dispersions",
+        "phonon_dos",
+        "pressure",
+        "stress_tensor",
+        "total_energy",
+        "total_energy_contributions",
+        "total_force",
+        "zero_point_energy"
+    ]
+}

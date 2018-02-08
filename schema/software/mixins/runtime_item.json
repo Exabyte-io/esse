@@ -1,0 +1,12 @@
+{
+    "$schema": "http://json-schema.org/draft-04/schema#",
+    "title": "runtime item schema",
+    "oneOf": [
+        {
+            "$ref": "file:./_runtime_item_string.json"
+        },
+        {
+            "$ref": "file:./_runtime_item_name_object.json"
+        }
+    ]
+}

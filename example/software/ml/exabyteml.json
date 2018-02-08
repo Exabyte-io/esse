@@ -1,7 +1,0 @@
-{
-    "name": "exabyteml",
-    "summary": "exabyte machine learning engine",
-    "version": "0.2.0",
-    "exec": "exabyteml",
-    "flavor": "exabyteml"
-}

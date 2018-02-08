@@ -4,16 +4,14 @@
     "flowchartId": "modeling",
     "name": "modeling",
     "type": "execution",
-    "execution": {
-        "app": {
-            "...": "include(../espresso.json)"
-        },
-        "compute": null,
-        "input": [
-            {
-                "content": "K_POINTS automatic\n2 2 2 0 0 0",
-                "name": "pw_scf.in"
-            }
-        ]
-    }
+    "application": {
+        "...": "include(../espresso.json)"
+    },
+    "compute": null,
+    "input": [
+        {
+            "content": "K_POINTS automatic\n2 2 2 0 0 0",
+            "name": "pw_scf.in"
+        }
+    ]
 }

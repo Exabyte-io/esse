@@ -1,7 +1,5 @@
 {
     "name": "espresso",
     "version": "5.1.1",
-    "summary": "Quantum Espresso",
-    "exec": "pw.x",
-    "flavor": "pw_scf"
+    "summary": "Quantum Espresso"
 }

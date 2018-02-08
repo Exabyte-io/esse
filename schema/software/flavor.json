@@ -7,7 +7,7 @@
             "$ref": "file:./mixins/runtime_items.json"
         },
         {
-            "$ref": "file:../modeling/unit/_input.json"
+            "$ref": "file:./modeling/unit/_input.json"
         }
     ],
     "properties": {
