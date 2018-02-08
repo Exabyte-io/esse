@@ -1,0 +1,19 @@
+{
+    "status": "idle",
+    "head": true,
+    "flowchartId": "initialize",
+    "name": "initialize",
+    "type": "execution",
+    "application": {
+        "...": "include(../../exabyteml.json)"
+    },
+    "flavor": {
+        "name": "initialize"
+    },
+    "input": {
+        "targets": [
+            "band_gaps:indirect",
+            "band_gaps:direct"
+        ]
+    }
+}

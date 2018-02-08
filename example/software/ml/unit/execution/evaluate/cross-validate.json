@@ -1,0 +1,14 @@
+{
+    "status": "idle",
+    "head": true,
+    "flowchartId": "evaluate",
+    "name": "evaluate",
+    "type": "execution",
+    "application": {
+        "...": "include(../../../exabyteml.json)"
+    },
+    "flavor": {"name": "cross-validate"},
+    "input": {
+        "nSplits": 3
+    }
+}

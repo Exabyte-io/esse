@@ -1,0 +1,14 @@
+{
+    "status": "idle",
+    "head": true,
+    "flowchartId": "score",
+    "name": "score",
+    "type": "execution",
+    "application": {
+        "...": "include(../../exabyteml.json)"
+    },
+    "flavor": {
+        "name": "score"
+    },
+    "input": {}
+}

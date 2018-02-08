@@ -7,18 +7,6 @@
         }
     ],
     "properties": {
-        "application": {
-            "exec": {
-                "enum": [
-                    "score"
-                ]
-            },
-            "flavor": {
-                "enum": [
-                    "score"
-                ]
-            }
-        },
         "input": {}
     }
 }

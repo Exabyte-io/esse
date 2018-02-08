@@ -7,18 +7,6 @@
         }
     ],
     "properties": {
-        "app": {
-            "exec": {
-                "enum": [
-                    "train"
-                ]
-            },
-            "flavor": {
-                "enum": [
-                    "train"
-                ]
-            }
-        },
         "input": {
             "description": "model train unit (NOTE: info about method, eg. regression/linear is taken from (sub)workflow)",
             "type": "object",

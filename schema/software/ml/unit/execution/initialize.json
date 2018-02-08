@@ -7,18 +7,6 @@
         }
     ],
     "properties": {
-        "application": {
-            "exec": {
-                "enum": [
-                    "initialize"
-                ]
-            },
-            "flavor": {
-                "enum": [
-                    "initialize"
-                ]
-            }
-        },
         "input": {
             "description": "model init unit (NOTE: info about method, eg. regression/linear is taken from (sub)workflow)",
             "type": "object",

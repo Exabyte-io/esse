@@ -1,0 +1,15 @@
+{
+    "status": "idle",
+    "head": true,
+    "flowchartId": "feature_selection",
+    "name": "feature_selection",
+    "type": "processing",
+    "processing": {
+        "operation": "feature_selection",
+        "flavor": "filter_based",
+        "input": {
+            "nFeatures": 100,
+            "algorithm": "f_regression"
+        }
+    }
+}
