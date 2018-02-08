@@ -2,6 +2,4 @@
     "name": "exabyteml",
     "summary": "exabyte machine learning engine",
     "version": "0.2.0",
-    "exec": "evaluate",
-    "flavor": "evaluate"
 }
