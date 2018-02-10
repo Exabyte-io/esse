@@ -46,3 +46,11 @@ Run from root directory of this repository:
 ```bash
 npm test
 ```
+
+# Debugging
+
+To view all compiled schemas:
+
+```bash
+PRINT_SCHEMAS=1 ./node_modules/babel-cli/bin/babel-node.js src/index.js
+```

@@ -1,6 +1,6 @@
 {
     "$schema": "http://json-schema.org/draft-04/schema#",
-    "title": "executable schema",
+    "title": "template schema",
     "type": "object",
     "allOf": [
         {

@@ -13,8 +13,11 @@
             "type": "string"
         },
         "applicationId": {
-            "description": "_id of the application this executable belongs to",
-            "type": "string"
+            "description": "_ids of the application this executable belongs to",
+            "type": "array",
+            "items": {
+                "type": "string"
+            }
         }
     },
     "required": [
