@@ -7,19 +7,8 @@
         }
     ],
     "properties": {
-        "application": {
-            "exec": {
-                "enum": [
-                    "evaluate"
-                ]
-            },
-            "flavor": {
-                "enum": [
-                    "cross-validate"
-                ]
-            }
-        },
         "input": {
+            "description": "TODO: consider keeping executable `evaluate` and flavor `cross-validate` as before",
             "type": "object",
             "properties": {
                 "nSplits": {

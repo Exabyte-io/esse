@@ -8,5 +8,5 @@
     ],
     "applicationVersions": ["6.0"],
     "applicationName": "espresso",
-    "executableName": "pw_scf"
+    "executableName": "pw.x"
 }
