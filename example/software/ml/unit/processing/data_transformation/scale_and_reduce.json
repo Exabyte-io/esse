@@ -4,25 +4,23 @@
     "flowchartId": "data_transformation",
     "name": "data_transformation",
     "type": "processing",
-    "processing": {
-        "operation": "data_transformation",
-        "flavor": "scale_and_reduce",
-        "input": {
-            "scaler": "standard_scaler",
-            "perFeature": [
-                {
-                    "variance": 0.10,
-                    "mean": 0.156,
-                    "scale": 1.5,
-                    "name": "atomic_radius:Ge"
-                },
-                {
-                    "variance": 0.11,
-                    "mean": 0.155,
-                    "scale": 1.4,
-                    "name": "atomic_radius:Si"
-                }
-            ]
-        }
+    "operation": "data_transformation",
+    "operationType": "scale_and_reduce",
+    "inputData": {
+        "scaler": "standard_scaler",
+        "perFeature": [
+            {
+                "variance": 0.10,
+                "mean": 0.156,
+                "scale": 1.5,
+                "name": "atomic_radius:Ge"
+            },
+            {
+                "variance": 0.11,
+                "mean": 0.155,
+                "scale": 1.4,
+                "name": "atomic_radius:Si"
+            }
+        ]
     }
 }

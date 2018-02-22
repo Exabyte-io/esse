@@ -8,46 +8,36 @@
     ],
     "type": "object",
     "properties": {
-        "processing": {
+        "operation": {
+            "type": "string",
+            "enum": [
+                "feature_selection"
+            ]
+        },
+        "operationType": {
+            "type": "string",
+            "enum": [
+                "filter_based"
+            ]
+        },
+        "inputData": {
             "type": "object",
             "properties": {
-                "operation": {
+                "nFeatures": {
+                    "description": "number of features to select for model training. If equal to 0, will use all available features",
+                    "type": "number"
+                },
+                "algorithm": {
+                    "description": "feature selection algorithm following sklearn.feature_selection",
                     "type": "string",
                     "enum": [
-                        "feature_selection"
-                    ]
-                },
-                "flavor": {
-                    "type": "string",
-                    "enum": [
-                        "filter_based"
-                    ]
-                },
-                "input": {
-                    "type": "object",
-                    "properties": {
-                        "nFeatures": {
-                            "description": "number of features to select for model training. If equal to 0, will use all available features",
-                            "type": "number"
-                        },
-                        "algorithm": {
-                            "description": "feature selection algorithm following sklearn.feature_selection",
-                            "type": "string",
-                            "enum": [
-                                "f_regression"
-                            ]
-                        }
-                    },
-                    "required": [
-                        "nFeatures",
-                        "algorithm"
+                        "f_regression"
                     ]
                 }
             },
             "required": [
-                "operation",
-                "flavor",
-                "input"
+                "nFeatures",
+                "algorithm"
             ]
         }
     }

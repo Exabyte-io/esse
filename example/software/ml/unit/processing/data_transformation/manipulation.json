@@ -4,13 +4,11 @@
     "flowchartId": "data_transformation",
     "name": "data_transformation",
     "type": "processing",
-    "processing": {
-        "operation": "data_transformation",
-        "flavor": "manipulation",
-        "input": {
-            "cleanMissingData": true,
-            "removeDuplicateRows": true,
-            "replaceNoneValuesWith": 0
-        }
+    "operation": "data_transformation",
+    "operationType": "manipulation",
+    "inputData": {
+        "cleanMissingData": true,
+        "removeDuplicateRows": true,
+        "replaceNoneValuesWith": 0
     }
 }

@@ -8,51 +8,41 @@
     ],
     "type": "object",
     "properties": {
-        "processing": {
+        "operation": {
+            "type": "string",
+            "enum": [
+                "data_transformation"
+            ]
+        },
+        "operationType": {
+            "type": "string",
+            "enum": [
+                "manipulation"
+            ]
+        },
+        "inputData": {
             "type": "object",
             "properties": {
-                "operation": {
-                    "type": "string",
-                    "enum": [
-                        "data_transformation"
-                    ]
+                "cleanMissingData": {
+                    "description": "whether to clean missing data, eg. NaN",
+                    "type": "boolean",
+                    "default": true
                 },
-                "flavor": {
-                    "type": "string",
-                    "enum": [
-                        "manipulation"
-                    ]
+                "removeDuplicateRows": {
+                    "description": "whether to remove duplicate rows",
+                    "type": "boolean",
+                    "default": true
                 },
-                "input": {
-                    "type": "object",
-                    "properties": {
-                        "cleanMissingData": {
-                            "description": "whether to clean missing data, eg. NaN",
-                            "type": "boolean",
-                            "default": true
-                        },
-                        "removeDuplicateRows": {
-                            "description": "whether to remove duplicate rows",
-                            "type": "boolean",
-                            "default": true
-                        },
-                        "replaceNoneValuesWith": {
-                            "description": "replace None values with a given value",
-                            "default": 0,
-                            "type": "number"
-                        }
-                    },
-                    "required": [
-                        "cleanMissingData",
-                        "removeDuplicateRows",
-                        "replaceNoneValuesWith"
-                    ]
+                "replaceNoneValuesWith": {
+                    "description": "replace None values with a given value",
+                    "default": 0,
+                    "type": "number"
                 }
             },
             "required": [
-                "operation",
-                "flavor",
-                "input"
+                "cleanMissingData",
+                "removeDuplicateRows",
+                "replaceNoneValuesWith"
             ]
         }
     }

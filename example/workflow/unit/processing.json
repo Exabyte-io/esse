@@ -1,12 +1,13 @@
 {
     "status": "idle",
-    "head": true,
-    "flowchartId": "processing",
-    "name": "processing",
+    "flowchartId": "data_transformation_manipulation",
+    "name": "data_transformation_manipulation",
     "type": "processing",
-    "processing": {
-        "operation": "",
-        "flavor": "",
-        "input": {}
+    "operation": "data_transformation",
+    "operationType": "manipulation",
+    "inputData": {
+        "cleanMissingData": true,
+        "removeDuplicateRows": true,
+        "replaceNoneValuesWith": 0
     }
 }

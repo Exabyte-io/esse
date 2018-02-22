@@ -13,25 +13,21 @@
                 "processing"
             ]
         },
-        "processing": {
-            "type": "object",
-            "properties": {
-                "operation": {
-                    "description": "Contains information about the type of the operation used.",
-                    "type": "string"
-                },
-                "flavor": {
-                    "description": "Contains information about the subtype of the operation used.",
-                    "type": "string"
-                },
-                "input": {
-                    "description": "unit input (type to be specified by the child units)"
-                }
-            },
-            "required": [
-                "operation",
-                "input"
-            ]
+        "operation": {
+            "description": "Contains information about the operation used.",
+            "type": "string"
+        },
+        "operationType": {
+            "description": "Contains information about the specific type of the operation used.",
+            "type": "string"
+        },
+        "inputData": {
+            "description": "unit input (type to be specified by the child units)"
         }
-    }
+    },
+    "required": [
+        "operation",
+        "operationType",
+        "inputData"
+    ]
 }
