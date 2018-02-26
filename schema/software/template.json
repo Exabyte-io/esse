@@ -1,0 +1,32 @@
+{
+    "$schema": "http://json-schema.org/draft-04/schema#",
+    "title": "template schema",
+    "type": "object",
+    "allOf": [
+        {
+            "$ref": "file:./modeling/unit/_inputItem.json"
+        }
+    ],
+    "properties": {
+        "applicationName": {
+            "type": "string"
+        },
+        "applicationVersion": {
+            "type": "string"
+        },
+        "executableName": {
+            "type": "string"
+        },
+        "contextProviders": {
+            "type": "array",
+            "items": {
+                "description": "render context provider names",
+                "$ref": "file:./mixins/_runtime_item_name_object.json"
+            }
+        }
+    },
+    "required": [
+        "name",
+        "content"
+    ]
+}

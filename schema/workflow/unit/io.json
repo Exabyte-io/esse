@@ -13,40 +13,35 @@
                 "io"
             ]
         },
-        "io": {
-            "type": "object",
-            "properties": {
-                "subtype": {
-                    "enum": [
-                        "input",
-                        "output"
-                    ]
-                },
-                "flavor": {
-                    "enum": [
-                        "api",
-                        "db"
-                    ]
-                },
-                "input": {
-                    "type": "array",
-                    "items": {
-                        "anyOf": [
-                            {
-                                "$ref": "file:io/api.json"
-                            },
-                            {
-                                "$ref": "file:io/db.json"
-                            }
-                        ]
-                    }
-                }
-            },
-            "required": [
-                "subtype",
-                "flavor",
-                "input"
+        "subtype": {
+            "enum": [
+                "input",
+                "output"
             ]
+        },
+        "source": {
+            "enum": [
+                "api",
+                "db"
+            ]
+        },
+        "input": {
+            "type": "array",
+            "items": {
+                "anyOf": [
+                    {
+                        "$ref": "file:io/api.json"
+                    },
+                    {
+                        "$ref": "file:io/db.json"
+                    }
+                ]
+            }
         }
-    }
+    },
+    "required": [
+        "subtype",
+        "flavor",
+        "input"
+    ]
 }

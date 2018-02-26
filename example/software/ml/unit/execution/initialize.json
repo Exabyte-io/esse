@@ -4,19 +4,16 @@
     "flowchartId": "initialize",
     "name": "initialize",
     "type": "execution",
-    "execution": {
-        "app": {
-            "name": "exabyteml",
-            "summary": "exabyte machine learning engine",
-            "version": "0.2.0",
-            "exec": "initialize",
-            "flavor": "initialize"
-        },
-        "input": {
-            "targets": [
-                "band_gaps:indirect",
-                "band_gaps:direct"
-            ]
-        }
+    "application": {
+        "...": "include(../../exabyteml.json)"
+    },
+    "flavor": {
+        "name": "initialize"
+    },
+    "input": {
+        "targets": [
+            "band_gaps:indirect",
+            "band_gaps:direct"
+        ]
     }
 }

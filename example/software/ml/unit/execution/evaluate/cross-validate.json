@@ -4,16 +4,11 @@
     "flowchartId": "evaluate",
     "name": "evaluate",
     "type": "execution",
-    "execution": {
-        "app": {
-            "name": "exabyteml",
-            "summary": "exabyte machine learning engine",
-            "version": "0.2.0",
-            "exec": "evaluate",
-            "flavor": "cross-validate"
-        },
-        "input": {
-            "nSplits": 3
-        }
+    "application": {
+        "...": "include(../../../exabyteml.json)"
+    },
+    "flavor": {"name": "cross-validate"},
+    "input": {
+        "nSplits": 3
     }
 }

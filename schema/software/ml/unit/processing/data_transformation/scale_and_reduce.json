@@ -8,71 +8,61 @@
     ],
     "type": "object",
     "properties": {
-        "processing": {
+        "operation": {
+            "type": "string",
+            "enum": [
+                "data_transformation"
+            ]
+        },
+        "operationType": {
+            "type": "string",
+            "enum": [
+                "scale_and_reduce"
+            ]
+        },
+        "inputData": {
             "type": "object",
             "properties": {
-                "operation": {
+                "scaler": {
+                    "description": "type of scaler to be applied",
                     "type": "string",
+                    "default": "standard_scaler",
                     "enum": [
-                        "data_transformation"
+                        "standard_scaler"
                     ]
                 },
-                "flavor": {
-                    "type": "string",
-                    "enum": [
-                        "scale_and_reduce"
-                    ]
-                },
-                "input": {
-                    "type": "object",
-                    "properties": {
-                        "scaler": {
-                            "description": "type of scaler to be applied",
-                            "type": "string",
-                            "default": "standard_scaler",
-                            "enum": [
-                                "standard_scaler"
-                            ]
-                        },
-                        "perFeature": {
-                            "decription": "per-feature scaling data",
-                            "type": "array",
-                            "items": {
-                                "type": "object",
-                                "properties": {
-                                    "variance": {
-                                        "description": "variance in original training data",
-                                        "type": "number"
-                                    },
-                                    "mean": {
-                                        "description": "mean value of the original training data",
-                                        "type": "number"
-                                    },
-                                    "scale": {
-                                        "description": "scale multiplier for this feature/property",
-                                        "type": "number"
-                                    },
-                                    "name": {
-                                        "description": "feature/property name in 'flattened' format",
-                                        "type": "string"
-                                    }
-                                },
-                                "required": [
-                                    "name",
-                                    "scale"
-                                ]
+                "perFeature": {
+                    "decription": "per-feature scaling data",
+                    "type": "array",
+                    "items": {
+                        "type": "object",
+                        "properties": {
+                            "variance": {
+                                "description": "variance in original training data",
+                                "type": "number"
+                            },
+                            "mean": {
+                                "description": "mean value of the original training data",
+                                "type": "number"
+                            },
+                            "scale": {
+                                "description": "scale multiplier for this feature/property",
+                                "type": "number"
+                            },
+                            "name": {
+                                "description": "feature/property name in 'flattened' format",
+                                "type": "string"
                             }
-                        }
-                    },
-                    "required": [
-                        "scaler"
-                    ]
+                        },
+                        "required": [
+                            "name",
+                            "scale"
+                        ]
+                    }
                 }
             },
             "required": [
-                "operation",
-                "flavor",
-                "input"
+                "scaler"
             ]
         }
     }

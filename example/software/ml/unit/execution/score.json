@@ -4,14 +4,11 @@
     "flowchartId": "score",
     "name": "score",
     "type": "execution",
-    "execution": {
-        "app": {
-            "name": "exabyteml",
-            "summary": "exabyte machine learning engine",
-            "version": "0.2.0",
-            "exec": "score",
-            "flavor": "score"
-        },
-        "input": {}
-    }
+    "application": {
+        "...": "include(../../exabyteml.json)"
+    },
+    "flavor": {
+        "name": "score"
+    },
+    "input": {}
 }

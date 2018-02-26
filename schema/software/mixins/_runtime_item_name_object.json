@@ -1,0 +1,14 @@
+{
+    "$schema": "http://json-schema.org/draft-04/schema#",
+    "title": "result schema",
+    "type": "object",
+    "properties": {
+        "name": {
+            "description": "The name of this item. e.g. scf_accuracy",
+            "type": "string"
+        }
+    },
+    "required": [
+        "name"
+    ]
+}

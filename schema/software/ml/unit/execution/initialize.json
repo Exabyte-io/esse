@@ -7,39 +7,22 @@
         }
     ],
     "properties": {
-        "execution": {
+        "input": {
+            "description": "model init unit (NOTE: info about method, eg. regression/linear is taken from (sub)workflow)",
             "type": "object",
             "properties": {
-                "app": {
-                    "exec": {
-                        "enum": [
-                            "initialize"
-                        ]
-                    },
-                    "flavor": {
-                        "enum": [
-                            "initialize"
-                        ]
+                "targets": {
+                    "description": "target properties to predict (NOTE: must be a subset of targets for which training was done)",
+                    "type": "array",
+                    "items": {
+                        "description": "material features (properties) in a 'flattened' format",
+                        "type": "string"
                     }
-                },
-                "input": {
-                    "description": "model init unit (NOTE: info about method, eg. regression/linear is taken from (sub)workflow)",
-                    "type": "object",
-                    "properties": {
-                        "targets": {
-                            "description": "target properties to predict (NOTE: must be a subset of targets for which training was done)",
-                            "type": "array",
-                            "items": {
-                                "description": "material features (properties) in a 'flattened' format",
-                                "type": "string"
-                            }
-                        }
-                    },
-                    "required": [
-                        "targets"
-                    ]
                 }
-            }
+            },
+            "required": [
+                "targets"
+            ]
         }
     }
 }

@@ -11,8 +11,8 @@
     "model": {
         "...": "include(subworkflow/model.json)"
     },
-    "app": {
-        "...": "include(../software/app.json)"
+    "application": {
+        "...": "include(../software/application.json)"
     },
     "name": "Bandstructure"
 }

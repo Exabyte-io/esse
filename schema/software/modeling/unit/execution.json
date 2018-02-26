@@ -5,29 +5,9 @@
     "allOf": [
         {
             "$ref": "file:../../../workflow/unit/execution.json"
+        },
+        {
+            "$ref": "file:./_input.json"
         }
-    ],
-    "properties": {
-        "input": {
-            "title": "execution unit input schema",
-            "type": "array",
-            "items": {
-                "type": "object",
-                "properties": {
-                    "name": {
-                        "description": "Input file name. e.g. pw_scf.in",
-                        "type": "string"
-                    },
-                    "content": {
-                        "description": "Content of the input file. e.g. &CONTROL    calculation='scf' ...",
-                        "type": "string"
-                    }
-                },
-                "required": [
-                    "name",
-                    "content"
-                ]
-            }
-        }
-    }
+    ]
 }

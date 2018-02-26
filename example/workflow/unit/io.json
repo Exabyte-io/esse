@@ -4,40 +4,38 @@
     "flowchartId": "io",
     "name": "io",
     "type": "io",
-    "io": {
-        "subtype": "input",
-        "flavor": "api",
-        "input": [
-            {
-                "endpoint": "data-frame",
-                "endpoint_options": {
-                    "method": "POST",
-                    "data": {
-                        "targets": [
-                            "band_gaps:indirect",
-                            "band_gaps:direct"
-                        ],
-                        "features": [
-                            "elemental_ratio:Si",
-                            "elemental_ratio:Ge",
-                            "ionization_potential:Ge",
-                            "ionization_potential:Si"
-                        ],
-                        "ids": [
-                            "KuAsBRwofzGfHPWiT"
-                        ]
-                    },
-                    "headers": {
-                        "X-Auth-Token": "",
-                        "X-User-Id": ""
-                    },
-                    "params": {
-                        "query": {
-                            "formula": "SiGe"
-                        }
+    "subtype": "input",
+    "flavor": "api",
+    "input": [
+        {
+            "endpoint": "data-frame",
+            "endpoint_options": {
+                "method": "POST",
+                "data": {
+                    "targets": [
+                        "band_gaps:indirect",
+                        "band_gaps:direct"
+                    ],
+                    "features": [
+                        "elemental_ratio:Si",
+                        "elemental_ratio:Ge",
+                        "ionization_potential:Ge",
+                        "ionization_potential:Si"
+                    ],
+                    "ids": [
+                        "KuAsBRwofzGfHPWiT"
+                    ]
+                },
+                "headers": {
+                    "X-Auth-Token": "",
+                    "X-User-Id": ""
+                },
+                "params": {
+                    "query": {
+                        "formula": "SiGe"
                     }
                 }
             }
-        ]
-    }
+        }
+    ]
 }

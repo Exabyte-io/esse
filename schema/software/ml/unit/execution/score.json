@@ -7,23 +7,6 @@
         }
     ],
     "properties": {
-        "execution": {
-            "type": "object",
-            "properties": {
-                "app": {
-                    "exec": {
-                        "enum": [
-                            "score"
-                        ]
-                    },
-                    "flavor": {
-                        "enum": [
-                            "score"
-                        ]
-                    }
-                },
-                "input": {}
-            }
-        }
+        "input": {}
     }
 }

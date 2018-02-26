@@ -7,48 +7,31 @@
         }
     ],
     "properties": {
-        "execution": {
+        "input": {
+            "description": "model train unit (NOTE: info about method, eg. regression/linear is taken from (sub)workflow)",
             "type": "object",
             "properties": {
-                "app": {
-                    "exec": {
-                        "enum": [
-                            "train"
-                        ]
-                    },
-                    "flavor": {
-                        "enum": [
-                            "train"
-                        ]
+                "features": {
+                    "description": "material features used for model fitting",
+                    "type": "array",
+                    "items": {
+                        "description": "material features (properties) in a 'flattened' format",
+                        "type": "string"
                     }
                 },
-                "input": {
-                    "description": "model train unit (NOTE: info about method, eg. regression/linear is taken from (sub)workflow)",
-                    "type": "object",
-                    "properties": {
-                        "features": {
-                            "description": "material features used for model fitting",
-                            "type": "array",
-                            "items": {
-                                "description": "material features (properties) in a 'flattened' format",
-                                "type": "string"
-                            }
-                        },
-                        "targets": {
-                            "description": "target properties to train for",
-                            "type": "array",
-                            "items": {
-                                "description": "material features (properties) in a 'flattened' format",
-                                "type": "string"
-                            }
-                        }
-                    },
-                    "required": [
-                        "features",
-                        "targets"
-                    ]
+                "targets": {
+                    "description": "target properties to train for",
+                    "type": "array",
+                    "items": {
+                        "description": "material features (properties) in a 'flattened' format",
+                        "type": "string"
+                    }
                 }
-            }
+            },
+            "required": [
+                "features",
+                "targets"
+            ]
         }
     }
 }

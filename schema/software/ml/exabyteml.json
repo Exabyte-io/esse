@@ -17,16 +17,6 @@
             "enum": [
                 "0.2.0"
             ]
-        },
-        "exec": {
-            "enum": [
-                "exabyteml"
-            ]
-        },
-        "flavor": {
-            "enum": [
-                "exabyteml"
-            ]
         }
     }
 }

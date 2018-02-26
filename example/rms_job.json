@@ -26,15 +26,13 @@
         "subworkflows": [
             {
                 "name": "ESPRESSO-TEST",
-                "app": {
+                "application": {
                     "name": "shell",
-                    "exec": "sh",
                     "summary": "Shell Script",
                     "environment": {
                         "PWD": "/home/demo/espresso"
                     },
-                    "version": "4.2.46",
-                    "flavor": "sh"
+                    "version": "4.2.46"
                 },
                 "units": [
                     {

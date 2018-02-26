@@ -7,34 +7,18 @@
         }
     ],
     "properties": {
-        "execution": {
+        "input": {
+            "description": "TODO: consider keeping executable `evaluate` and flavor `cross-validate` as before",
             "type": "object",
             "properties": {
-                "app": {
-                    "exec": {
-                        "enum": [
-                            "evaluate"
-                        ]
-                    },
-                    "flavor": {
-                        "enum": [
-                            "cross-validate"
-                        ]
-                    }
-                },
-                "input": {
-                    "type": "object",
-                    "properties": {
-                        "nSplits": {
-                            "description": "number of groups to split the training dataset for cross-validation",
-                            "type": "number"
-                        }
-                    },
-                    "required": [
-                        "nSplits"
-                    ]
+                "nSplits": {
+                    "description": "number of groups to split the training dataset for cross-validation",
+                    "type": "number"
                 }
-            }
+            },
+            "required": [
+                "nSplits"
+            ]
         }
     }
 }
