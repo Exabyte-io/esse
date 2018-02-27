@@ -5,7 +5,7 @@
     "name": "io",
     "type": "io",
     "subtype": "input",
-    "flavor": "api",
+    "source": "api",
     "input": [
         {
             "endpoint": "data-frame",

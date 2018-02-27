@@ -41,7 +41,7 @@
     },
     "required": [
         "subtype",
-        "flavor",
+        "source",
         "input"
     ]
 }
