@@ -22,11 +22,11 @@
         },
         "executable": {
             "description": "Contains information about the simulation engine/application executable.",
-            "$ref": "file:../../software/application.json"
+            "$ref": "file:../../software/executable.json"
         },
         "flavor": {
             "description": "Contains information about the simulation engine/application flavor.",
-            "$ref": "file:../../software/application.json"
+            "$ref": "file:../../software/flavor.json"
         },
         "compute": {
             "description": "Unit's specific computational parameters. Overrides computeArgs object inside the Job entity.",

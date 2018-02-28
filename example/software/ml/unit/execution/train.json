@@ -8,7 +8,8 @@
         "...": "include(../../exabyteml.json)"
     },
     "flavor": {
-        "name": "train"
+        "name": "train",
+        "executableId": "4987JFJ3kKbwvFSG7"
     },
     "input": {
         "features": [
