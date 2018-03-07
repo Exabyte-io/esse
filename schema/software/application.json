@@ -14,6 +14,10 @@
         "version": {
             "description": "Application version. e.g. 5.3.5",
             "type": "string"
+        },
+        "build": {
+            "description": "Application build. e.g. VTST",
+            "type": "string"
         }
     },
     "required": [
