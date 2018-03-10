@@ -7,7 +7,10 @@
     "application": {
         "...": "include(../../../exabyteml.json)"
     },
-    "flavor": {"name": "cross-validate"},
+    "flavor": {
+        "name": "cross-validate",
+        "executableId": "4987JFJ3kKbwvFSG7"
+    },
     "input": {
         "nSplits": 3
     }

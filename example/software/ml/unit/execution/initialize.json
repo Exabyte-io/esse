@@ -8,7 +8,8 @@
         "...": "include(../../exabyteml.json)"
     },
     "flavor": {
-        "name": "initialize"
+        "name": "initialize",
+        "executableId": "4987JFJ3kKbwvFSG7"
     },
     "input": {
         "targets": [
