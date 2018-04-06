@@ -46,7 +46,7 @@
                 "slug"
             ]
         },
-        "version": {
+        "schemaVersion": {
             "description": "Job's schema version.",
             "type": "string"
         },
@@ -67,7 +67,7 @@
     "required": [
         "status",
         "name",
-        "version",
+        "schemaVersion",
         "compute",
         "workflow",
         "_project",
