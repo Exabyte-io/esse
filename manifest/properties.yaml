@@ -129,3 +129,8 @@ phonon_dispersions:
       label: frequency
       units: cm-1
   path: material/properties/primary/phonon_dispersions.json
+
+magnetic_moments:
+  defaults:
+    units: uB
+  path: material/properties/primary/structural/magnetic_moments.json

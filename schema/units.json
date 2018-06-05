@@ -74,5 +74,10 @@
         "enum": [
             "states/unitcell"
         ]
+    },
+    "magnetic": {
+        "enum": [
+            "uB"
+        ]
     }
 }
