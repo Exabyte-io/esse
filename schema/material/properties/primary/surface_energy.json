@@ -1,0 +1,16 @@
+{
+    "$schema": "http://json-schema.org/draft-04/schema#",
+    "title": "surface energy schema",
+    "allOf": [
+        {
+            "$ref": "file:../../../primitive/property/energy.json"
+        }
+    ],
+    "properties": {
+        "name": {
+            "enum": [
+                "surface_energy"
+            ]
+        }
+    }
+}
