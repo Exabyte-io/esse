@@ -30,7 +30,7 @@ total_energy:
 
 surface_energy:
   defaults:
-    units: eV
+    units: eV/A^2
   path: material/properties/primary/surface_energy.json
 
 fermi_energy:
