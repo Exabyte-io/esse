@@ -11,7 +11,14 @@
             "type": "string"
         },
         "units": {
-            "$ref": "file:../../units.json#/energy"
+            "oneOf": [
+                {
+                    "$ref": "file:../../units.json#/energy"
+                },
+                {
+                    "$ref": "file:../../units.json#/surface_energy"
+                }
+            ]
         }
     },
     "required": [
