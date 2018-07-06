@@ -16,7 +16,8 @@
         "subtype": {
             "enum": [
                 "input",
-                "output"
+                "output",
+                "dataFrame"
             ]
         },
         "source": {
