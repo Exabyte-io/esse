@@ -28,6 +28,11 @@ total_energy:
     units: eV
   path: material/properties/primary/total_energy.json
 
+surface_energy:
+  defaults:
+    units: eV/A^2
+  path: material/properties/primary/surface_energy.json
+
 fermi_energy:
   defaults:
     units: eV

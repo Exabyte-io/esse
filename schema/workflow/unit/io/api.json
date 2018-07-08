@@ -10,6 +10,10 @@
         "endpoint_options": {
             "description": "rest API endpoint options",
             "type": "object"
+        },
+        "name": {
+            "description": "the name of the variable in local scope to save the data under",
+            "type": "string"
         }
     },
     "required": [

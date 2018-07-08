@@ -22,16 +22,21 @@
             "hartree",
             "cm-1",
             "rydberg",
-            "eV/atom",
-            "eV/a.u."
+            "eV/atom"
+        ]
+    },
+    "surface_energy": {
+        "enum": [
+            "eV/A^2"
         ]
     },
     "force": {
         "enum": [
             "eV/bohr",
-            "rydberg/au",
+            "rydberg/a.u.",
             "newton",
-            "kg*m/s^2"
+            "kg*m/s^2",
+            "eV/a.u."
         ]
     },
     "volume": {
