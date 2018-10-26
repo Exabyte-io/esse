@@ -18,11 +18,6 @@ band_gaps:
     units: eV
   path: material/properties/primary/band_gaps.json
 
-total_force:
-  defaults:
-    units: eV
-  path: material/properties/primary/total_force.json
-
 total_energy:
   defaults:
     units: eV
@@ -80,8 +75,13 @@ lattice:
 
 atomic_forces:
   defaults:
-    units: eV/bohr
+    units: eV/angstrom
   path: material/properties/primary/structural/atomic_forces.json
+
+total_force:
+  defaults:
+    units: eV/angstrom
+  path: material/properties/primary/total_force.json
 
 total_energy_contributions:
   defaults:
