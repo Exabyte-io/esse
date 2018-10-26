@@ -13,12 +13,7 @@
             ]
         },
         "units": {
-            "enum": [
-                "eV",
-                "rydberg",
-                "hartree"
-            ],
-            "default": "eV"
+            "$ref": "file:../../../units.json#/force"
         }
     }
 }

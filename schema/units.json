@@ -33,6 +33,7 @@
     "force": {
         "enum": [
             "eV/bohr",
+            "eV/angstrom",
             "rydberg/a.u.",
             "newton",
             "kg*m/s^2",
