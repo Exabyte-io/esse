@@ -4,7 +4,7 @@
     "type": "object",
     "allOf": [
         {
-            "$ref": "../application.json"
+            "$ref": "file:../application.json"
         }
     ],
     "properties": {

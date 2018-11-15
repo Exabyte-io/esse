@@ -3,7 +3,7 @@
     "title": "regression data",
     "oneOf": [
         {
-            "$ref": "file:linear/data.json"
+            "$ref": "file:linear/data_per_property.json"
         }
     ]
 }

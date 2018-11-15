@@ -22,7 +22,7 @@
         "method": {
             "oneOf": [
                 {
-                    "$ref": "../methods/regression.json"
+                    "$ref": "file:../methods/regression.json"
                 }
             ]
         }
