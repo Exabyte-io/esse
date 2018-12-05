@@ -1,7 +1,8 @@
-import fs from "fs-extra";
-import path from "path";
 import _ from "lodash";
+import path from "path";
+import fs from "fs-extra";
 import YAML from "yamljs";
+
 import {MANIFEST_DIR} from "./settings";
 
 /**
@@ -84,6 +85,7 @@ function characteristics(props) {
         children: result
     };
 }
+
 /**
  * @summary Recursively scans nested object and omits all childred array elements with `omit` flag set to true
  * @param {Object} obj

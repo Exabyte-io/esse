@@ -1,6 +1,6 @@
-import fs from "fs-extra";
 import path from "path";
-import lodash from "lodash";
+import fs from "fs-extra";
+
 import {LIB_DIR} from "./settings"
 
 const INCLUDE_KEY = '...';
@@ -20,6 +20,7 @@ export function safeParseJSON(string) {
     }
     return obj;
 }
+
 export class JSONSchemaResolver {
 
     constructor() {
@@ -81,7 +82,7 @@ export class JSONSchemaResolver {
      * @param {Boolean} objectOnly Whether to only include Object, not Array
      * @param {Array} schemasList Cache of schemas to use for resolution instead of reading from filesystem
      */
-    parseIncludeStatements(dirpath, filename, objectOnly=false, schemasList = []) {
+    parseIncludeStatements(dirpath, filename, objectOnly = false, schemasList = []) {
         const relative = dirpath.replace(LIB_DIR, '').replace(/example|schema|/g, '').replace(/^\/+/, '');
         const filepath = path.join(dirpath, filename);
         let d;

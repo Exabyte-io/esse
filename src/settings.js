@@ -1,4 +1,5 @@
 import path from "path";
+
 export const NAMESPACE = "https://exabyte.io/schemas/";
 
 // original directory with schema files
