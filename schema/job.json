@@ -84,11 +84,11 @@
         },
         "owner": {
             "description": "Summary about user/company who owns this job.",
-            "$ref": "file:security/owner.json"
+            "$ref": "file:system/owner.json"
         },
         "creator": {
             "description": "User that created this job. Always a user. Different from job owner. Owner could be user or organization.",
-            "$ref": "file:security/creator.json"
+            "$ref": "file:system/creator.json"
         },
         "parent": {
             "description": "Parent job for the job. Only a job from the same project can be assigned as a parent one.",

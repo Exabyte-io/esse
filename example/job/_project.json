@@ -1,7 +1,7 @@
 {
     "name": "demo",
     "access": {
-        "...": "include(../security/access_legacy.json)"
+        "...": "include(../system/access_legacy.json)"
     },
     "owner": {
         "_id": "HtxACY2wX4b2hS8Rv",

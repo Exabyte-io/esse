@@ -18,7 +18,7 @@
         },
         "owner": {
             "description": "summary about user/company who owns this job.",
-            "$ref": "file:../../../security/_owner.json"
+            "$ref": "file:../../../system/_owner.json"
         }
     },
     "required": [

@@ -15,10 +15,10 @@
             "type": "object"
         },
         "access": {
-            "$ref": "file:../security/access_legacy.json"
+            "$ref": "file:../system/access_legacy.json"
         },
         "owner": {
-            "$ref": "file:../security/_owner.json"
+            "$ref": "file:../system/_owner.json"
         },
         "source": {
             "$ref": "file:../primitive/reference.json"

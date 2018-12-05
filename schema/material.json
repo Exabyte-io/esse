@@ -30,7 +30,7 @@
             "description": "information about external sources of this material",
             "type": "array",
             "items": {
-                "$ref": "file:security/database_source.json"
+                "$ref": "file:system/database_source.json"
             }
         },
         "_id": {
@@ -49,16 +49,16 @@
             "type": "array",
             "items": {
                 "description": "owners of this material",
-                "$ref": "file:security/owner.json"
+                "$ref": "file:system/owner.json"
             }
         },
         "access": {
             "description": "Access level of the material.",
-            "$ref": "file:security/access.json"
+            "$ref": "file:system/access.json"
         },
         "fileSource": {
             "description": "File information if material was exported from POSCAR, XYZ or UPF file.",
-            "$ref": "file:security/file_source.json"
+            "$ref": "file:system/file_source.json"
         },
         "editable": {
             "description": "Identifies when material editing is allowed. If value is `true`, then descriptive properties of the material editable.",
