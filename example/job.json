@@ -1,8 +1,7 @@
 {
     "status": "pre-submission",
-    "mode": "normal",
     "_material": {
-        "...": "include(job/_material.json)"
+        "...": "include(system/entity_reference.json)"
     },
     "compute": {
         "...": "include(job/compute.json)"
@@ -11,7 +10,7 @@
     "slug": "two",
     "createdAt": "Sun Jul 24 2016 16:28:33 GMT+0200 (CEST)",
     "owner": {
-        "...": "include(system/owner.json)"
+        "...": "include(system/entity_reference.json)"
     },
     "workflow": {
         "...": "include(workflow.json)"
@@ -19,10 +18,9 @@
     "schemaVersion": "0.2.0",
     "_id": "FPjAaKfuYAL7tiHbm",
     "creator": {
-        "_id": "HtxACY2wX4b2hS8Rv",
-        "name": "demo"
+        "...": "include(system/entity_reference.json)"
     },
     "_project": {
-        "...": "include(job/_project.json)"
+        "...": "include(system/entity_reference.json)"
     }
 }

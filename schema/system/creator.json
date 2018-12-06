@@ -8,7 +8,7 @@
             "description": "User identifier in a database.",
             "type": "string"
         },
-        "name": {
+        "cls": {
             "description": "Creator's username.",
             "type": "string"
         }

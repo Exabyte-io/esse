@@ -1,0 +1,17 @@
+{
+    "$schema": "http://json-schema.org/draft-04/schema#",
+    "title": "timestample entity schema",
+    "properties": {
+        "createdAt": {
+            "description": "entity creation time",
+            "type": "string"
+        },
+        "updatedAt": {
+            "description": "entity last modification time",
+            "type": "string"
+        }
+    },
+    "required": [
+        "createdAt"
+    ]
+}
