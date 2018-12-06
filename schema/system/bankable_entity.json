@@ -1,0 +1,14 @@
+{
+    "$schema": "http://json-schema.org/draft-04/schema#",
+    "title": "bankable entity schema",
+    "allOf": [
+        {
+            "description": "base entity schema",
+            "$ref": "file:base_entity.json"
+        },
+        {
+            "description": "bankable schema",
+            "$ref": "file:bankable.json"
+        }
+    ]
+}

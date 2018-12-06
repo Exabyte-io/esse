@@ -6,9 +6,9 @@
     "compute": {
         "...": "include(job/compute.json)"
     },
-    "name": "two",
-    "slug": "two",
-    "createdAt": "Sun Jul 24 2016 16:28:33 GMT+0200 (CEST)",
+    "name": "job",
+    "slug": "job",
+    "createdAt": "2018-11-19 06:41:46.877Z",
     "owner": {
         "...": "include(system/entity_reference.json)"
     },

@@ -1,5 +1,18 @@
 {
-    "name": "my top-level workflow",
+    "name": "workflow",
+    "slug": "workflow",
+    "owner": {
+        "...": "include(system/entity_reference.json)"
+    },
+    "schemaVersion": "0.2.0",
+    "_id": "FPjAaKfuYAL7tiHbm",
+    "exabyteId": "qKtTzu9utCo6ac4n7",
+    "hash": "f4fd707d2e47c15f8d786cf159040954",
+    "isDefault": true,
+    "createdAt": "2018-11-19 06:41:46.877Z",
+    "creator": {
+        "...": "include(system/entity_reference.json)"
+    },
     "subworkflows": [
         {
             "...": "include(workflow/subworkflow.json)"
@@ -14,5 +27,8 @@
             "_id": "LCthJ6E2QabYCZqf4",
             "flowchartId": "05c362dc27ff1bb98d16fd60"
         }
+    ],
+    "tags": [
+        "workflow"
     ]
 }

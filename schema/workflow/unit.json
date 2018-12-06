@@ -1,6 +1,6 @@
 {
     "$schema": "http://json-schema.org/draft-04/schema#",
-    "title": "unit schema",
+    "title": "workflow unit schema",
     "type": "object",
     "properties": {
         "type": {
@@ -9,10 +9,6 @@
         },
         "name": {
             "description": "name of the unit. e.g. pw_scf",
-            "type": "string"
-        },
-        "_id": {
-            "description": "ID of subworkflow",
             "type": "string"
         },
         "status": {

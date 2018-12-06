@@ -2,11 +2,17 @@
     "$schema": "http://json-schema.org/draft-04/schema#",
     "title": "workflow schema",
     "type": "object",
-    "properties": {
-        "name": {
-            "description": "Human-readable name of the workflow. e.g. Total-energy",
-            "type": "string"
+    "allOf": [
+        {
+            "description": "bankable entity schema",
+            "$ref": "file:system/bankable_entity.json"
         },
+        {
+            "description": "defaultable entity schema",
+            "$ref": "file:system/defaultable.json"
+        }
+    ],
+    "properties": {
         "properties": {
             "description": "Array of characteristic properties calculated by this workflow (TODO: add enums)",
             "type": "array",
@@ -46,6 +52,7 @@
         }
     },
     "required": [
-        "name"
+        "units",
+        "subworkflows"
     ]
 }

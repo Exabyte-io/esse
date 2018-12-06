@@ -14,5 +14,5 @@
     "application": {
         "...": "include(../software/application.json)"
     },
-    "name": "Bandstructure"
+    "name": "Band Structure"
 }
