@@ -4,17 +4,35 @@ import json
 from esse import ESSE, SCHEMA_DR, EXAMPLE_DR
 
 
-def sort_example_fields():
+def sort_json_fields(path_):
     """
-    Sort example fields by key.
+    Sorts JSON fields by key.
+
+    Args:
+        path_ (str): path to JSON file.
+    """
+    with open(path_, "r")as f:
+        content = json.loads(f.read())
+    with open(path_, "w+")as f:
+        f.write("".join((json.dumps(content, indent=4, sort_keys=True), "\n")))
+
+
+def sort_examples():
+    """
+    Sorts examples.
     """
     for root, dirs, files in os.walk(EXAMPLE_DR):
         for file_ in files:
-            example_path = os.path.join(root, file_)
-            with open(example_path, "r")as f:
-                content = json.loads(f.read())
-            with open(example_path, "w+")as f:
-                f.write("".join((json.dumps(content, indent=4, sort_keys=True), "\n")))
+            sort_json_fields(os.path.join(root, file_))
+
+
+def sort_schemas():
+    """
+    Sorts schemas.
+    """
+    for root, dirs, files in os.walk(SCHEMA_DR):
+        for file_ in files:
+            sort_json_fields(os.path.join(root, file_))
 
 
 def validate_examples():
@@ -36,5 +54,5 @@ def validate_examples():
 
 
 if __name__ == "__main__":
-    sort_example_fields()
+    sort_examples()
     validate_examples()
