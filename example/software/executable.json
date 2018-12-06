@@ -1,6 +1,8 @@
 {
     "name": "pw.x",
-    "applicationId": ["eaJepm4AWfqpaCw59"],
+    "applicationId": [
+        "eaJepm4AWfqpaCw59"
+    ],
     "advancedComputeOptions": true,
     "isDefault": true,
     "preProcessors": [],

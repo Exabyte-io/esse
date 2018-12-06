@@ -2,13 +2,8 @@
     "_id": "K3McGkqXh28HJ775m",
     "exabyteId": "4racJ9AgFh7fGjJ2o",
     "data": {},
-    "access": {
-        "...": "include(../system/access_legacy.json)"
-    },
     "owner": {
-        "_id": "ouzYh8KpeTYKFLf3M",
-        "name": "demo",
-        "type": 0
+        "...": "include(../system/entity_reference.json)"
     },
     "source": {
         "...": "include(../primitive/reference.json)"

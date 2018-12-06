@@ -49,12 +49,8 @@
             "type": "array",
             "items": {
                 "description": "owners of this material",
-                "$ref": "file:system/owner.json"
+                "$ref": "file:system/entity_reference.json"
             }
-        },
-        "access": {
-            "description": "Access level of the material.",
-            "$ref": "file:system/access.json"
         },
         "fileSource": {
             "description": "File information if material was exported from POSCAR, XYZ or UPF file.",

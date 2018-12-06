@@ -14,11 +14,8 @@
             "description": "container of the information, specific to each property",
             "type": "object"
         },
-        "access": {
-            "$ref": "file:../system/access_legacy.json"
-        },
         "owner": {
-            "$ref": "file:../system/_owner.json"
+            "$ref": "file:../system/entity_reference.json"
         },
         "source": {
             "$ref": "file:../primitive/reference.json"
@@ -28,7 +25,6 @@
         "_id",
         "exabyteId",
         "data",
-        "access",
         "owner",
         "source"
     ]

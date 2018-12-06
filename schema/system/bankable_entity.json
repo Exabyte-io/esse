@@ -3,8 +3,8 @@
     "title": "bankable entity schema",
     "allOf": [
         {
-            "description": "base entity schema",
-            "$ref": "file:base_entity.json"
+            "description": "entity schema",
+            "$ref": "file:entity.json"
         },
         {
             "description": "bankable schema",

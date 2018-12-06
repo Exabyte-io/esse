@@ -3,8 +3,8 @@
     "title": "job schema",
     "allOf": [
         {
-            "description": "base entity schema",
-            "$ref": "file:system/base_entity.json"
+            "description": "entity schema",
+            "$ref": "file:system/entity.json"
         }
     ],
     "properties": {
