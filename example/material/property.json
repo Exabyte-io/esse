@@ -1,10 +1,10 @@
 {
-    "_id": "K3McGkqXh28HJ775m",
-    "exabyteId": "4racJ9AgFh7fGjJ2o",
-    "data": {},
+    "_id": "K3McGkqXh28HJ775m", 
+    "data": {}, 
+    "exabyteId": "4racJ9AgFh7fGjJ2o", 
     "owner": {
         "...": "include(../system/entity_reference.json)"
-    },
+    }, 
     "source": {
         "...": "include(../primitive/reference.json)"
     }

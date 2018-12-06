@@ -1,17 +1,16 @@
 {
-    "name": "band_gaps:direct",
-    "intercept": 0.363,
+    "intercept": 0.363, 
+    "name": "band_gaps:direct", 
     "perFeature": [
         {
-            "importance": 0.134,
-            "coefficient": 0.015,
+            "coefficient": 0.015, 
+            "importance": 0.134, 
             "name": "atomic_radius:Ge"
-        },
+        }, 
         {
-            "importance": 0.135,
-            "coefficient": 0.016,
+            "coefficient": 0.016, 
+            "importance": 0.135, 
             "name": "atomic_radius:Si"
         }
     ]
 }
-

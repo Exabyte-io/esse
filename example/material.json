@@ -1,84 +1,84 @@
 {
-    "name": "Silicon FCC",
-    "formula": "Si",
-    "unitCellFormula": "Si2",
-    "_id": "LCthJ6E2QabYCZqf3",
+    "_id": "LCthJ6E2QabYCZqf3", 
     "basis": {
-        "name": "basis",
-        "elements": [
-            {
-                "id": 1,
-                "value": "Si"
-            },
-            {
-                "id": 2,
-                "value": "Si"
-            }
-        ],
         "coordinates": [
             {
-                "id": 1,
+                "id": 1, 
                 "value": [
-                    0.00,
-                    0.00,
-                    0.00
+                    0.0, 
+                    0.0, 
+                    0.0
                 ]
-            },
+            }, 
             {
-                "id": 2,
+                "id": 2, 
                 "value": [
-                    0.25,
-                    0.25,
+                    0.25, 
+                    0.25, 
                     0.25
                 ]
             }
-        ],
+        ], 
+        "elements": [
+            {
+                "id": 1, 
+                "value": "Si"
+            }, 
+            {
+                "id": 2, 
+                "value": "Si"
+            }
+        ], 
+        "name": "basis", 
         "units": "crystal"
-    },
-    "lattice": {
-        "type": "CUB",
-        "name": "lattice",
-        "a": 5.00,
-        "b": 5.00,
-        "c": 5.00,
-        "alpha": 90.0,
-        "beta": 90.0,
-        "gamma": 90.0
-    },
+    }, 
+    "createdAt": "2016-04-03T05:25:37.430Z", 
     "derivedProperties": [
         {
-            "name": "volume",
-            "value": 131.1,
-            "units": "angstrom^3"
-        },
+            "name": "volume", 
+            "units": "angstrom^3", 
+            "value": 131.1
+        }, 
         {
-            "name": "density",
-            "value": 2.33,
-            "units": "g/cm^3"
-        },
+            "name": "density", 
+            "units": "g/cm^3", 
+            "value": 2.33
+        }, 
         {
-            "name": "symmetry",
-            "spaceGroupSymbol": "Fd-3m",
+            "name": "symmetry", 
+            "spaceGroupSymbol": "Fd-3m", 
             "tolerance": {
-                "value": 0.3,
-                "units": "angstrom"
+                "units": "angstrom", 
+                "value": 0.3
             }
-        },
+        }, 
         {
-            "name": "p-norm",
-            "degree": 10,
+            "degree": 10, 
+            "name": "p-norm", 
             "value": 0.71
-        },
+        }, 
         {
-            "name": "elemental_ratio",
-            "element": "Si",
+            "element": "Si", 
+            "name": "elemental_ratio", 
             "value": 0.71
         }
-    ],
-    "editable": true,
-    "createdAt": "2016-04-03T05:25:37.430Z",
-    "hash": "4ac3fa057e3530628eb1295c77110eaa",
-    "scaledHash": "5bd4eb168e3530628eb1295d88221cbb",
-    "exabyteId": "RKiswuxHKkF3uvLyA",
+    ], 
+    "editable": true, 
+    "exabyteId": "RKiswuxHKkF3uvLyA", 
+    "formula": "Si", 
+    "hash": "4ac3fa057e3530628eb1295c77110eaa", 
+    "lattice": {
+        "a": 5.0, 
+        "alpha": 90.0, 
+        "b": 5.0, 
+        "beta": 90.0, 
+        "c": 5.0, 
+        "gamma": 90.0, 
+        "name": "lattice", 
+        "type": "CUB"
+    }, 
+    "name": "Silicon FCC", 
+    "scaledHash": "5bd4eb168e3530628eb1295d88221cbb", 
+    "unitCellFormula": "Si2", 
     "updatedAt": "2016-04-04T17:58:42.867Z"
 }

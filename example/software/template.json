@@ -1,12 +1,14 @@
 {
-    "content": "K_POINTS automatic\n{{nkx}} {{nky}} {{nkz}} 0 0 0",
-    "name": "kpoints_grid",
+    "applicationName": "espresso", 
+    "applicationVersions": [
+        "6.0"
+    ], 
+    "content": "K_POINTS automatic\n{{nkx}} {{nky}} {{nkz}} 0 0 0", 
     "contextProviders": [
         {
             "name": "KGridManagerMixin"
         }
-    ],
-    "applicationVersions": ["6.0"],
-    "applicationName": "espresso",
-    "executableName": "pw.x"
+    ], 
+    "executableName": "pw.x", 
+    "name": "kpoints_grid"
 }

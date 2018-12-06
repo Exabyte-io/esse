@@ -1,7 +1,7 @@
 {
-    "_id": "nDAavgjrT5ezwFgod",
-    "title": "My Calculation",
+    "_id": "nDAavgjrT5ezwFgod", 
     "owner": {
         "...": "include(../../../system/entity_reference.json)"
-    }
+    }, 
+    "title": "My Calculation"
 }
