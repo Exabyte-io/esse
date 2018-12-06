@@ -10,9 +10,5 @@
             "description": "entity slug",
             "type": "string"
         }
-    },
-    "required": [
-        "name",
-        "slug"
-    ]
+    }
 }
