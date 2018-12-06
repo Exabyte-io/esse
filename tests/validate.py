@@ -4,7 +4,7 @@ import json
 from esse import ESSE, SCHEMA_DR, EXAMPLE_DR
 
 
-def sort_examples():
+def sort_example_fields():
     """
     Sort example fields by key.
     """
@@ -33,5 +33,5 @@ def validate_examples():
 
 
 if __name__ == "__main__":
-    sort_examples()
+    sort_example_fields()
     validate_examples()
