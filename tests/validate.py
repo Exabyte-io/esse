@@ -18,6 +18,9 @@ def sort_example_fields():
 
 
 def validate_examples():
+    """
+    Validates examples agains their schemas.
+    """
     es = ESSE()
     for root, dirs, files in os.walk(EXAMPLE_DR):
         for file_ in files:
