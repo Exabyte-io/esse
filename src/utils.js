@@ -52,9 +52,9 @@ export class JSONSchemaResolver {
                         this.JSON_INCLUDE_CACHE[includeName] = this.parseIncludeStatements(
                             path.dirname(_f), path.basename(_f)
                         );
-                        for (let attr in this.JSON_INCLUDE_CACHE[includeName]) {
-                            obj[attr] = this.JSON_INCLUDE_CACHE[includeName][attr];
-                        }
+                    }
+                    for (let attr in this.JSON_INCLUDE_CACHE[includeName]) {
+                        obj[attr] = this.JSON_INCLUDE_CACHE[includeName][attr];
                     }
                 }
             }
