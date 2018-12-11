@@ -2,14 +2,14 @@
     "_id": "FPjAaKfuYAL7tiHbm", 
     "createdAt": "2018-11-19 06:41:46.877Z", 
     "creator": {
-        "...": "include(system/entity_reference.json)"
+        "...": "include(system/creator.json)"
     }, 
     "exabyteId": "qKtTzu9utCo6ac4n7", 
     "hash": "f4fd707d2e47c15f8d786cf159040954", 
     "isDefault": true, 
     "name": "workflow", 
     "owner": {
-        "...": "include(system/entity_reference.json)"
+        "...": "include(system/owner.json)"
     }, 
     "properties": [
         "band_structure"

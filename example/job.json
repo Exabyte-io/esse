@@ -1,21 +1,21 @@
 {
     "_id": "FPjAaKfuYAL7tiHbm", 
     "_material": {
-        "...": "include(system/entity_reference.json)"
+        "...": "include(system/_material.json)"
     }, 
     "_project": {
-        "...": "include(system/entity_reference.json)"
+        "...": "include(system/_project.json)"
     }, 
     "compute": {
         "...": "include(job/compute.json)"
     }, 
     "createdAt": "2018-11-19 06:41:46.877Z", 
     "creator": {
-        "...": "include(system/entity_reference.json)"
+        "...": "include(system/creator.json)"
     }, 
     "name": "job", 
     "owner": {
-        "...": "include(system/entity_reference.json)"
+        "...": "include(system/owner.json)"
     }, 
     "schemaVersion": "0.2.0", 
     "slug": "job", 

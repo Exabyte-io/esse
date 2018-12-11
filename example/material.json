@@ -34,7 +34,7 @@
     }, 
     "createdAt": "2016-04-03T05:25:37.430Z", 
     "creator": {
-        "...": "include(system/entity_reference.json)"
+        "...": "include(system/creator.json)"
     }, 
     "derivedProperties": [
         {
@@ -82,7 +82,7 @@
     }, 
     "name": "Silicon FCC", 
     "owner": {
-        "...": "include(system/entity_reference.json)"
+        "...": "include(system/owner.json)"
     }, 
     "scaledHash": "5bd4eb168e3530628eb1295d88221cbb", 
     "schemaVersion": "0.2.0", 

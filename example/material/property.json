@@ -2,7 +2,7 @@
     "_id": "K3McGkqXh28HJ775m", 
     "createdAt": "2018-11-19 06:41:46.877Z", 
     "creator": {
-        "...": "include(../system/entity_reference.json)"
+        "...": "include(../system/creator.json)"
     }, 
     "data": {
         "name": "pressure", 
@@ -12,7 +12,7 @@
     "exabyteId": "4racJ9AgFh7fGjJ2o", 
     "group": "qe:dft:gga:pbe", 
     "owner": {
-        "...": "include(../system/entity_reference.json)"
+        "...": "include(../system/owner.json)"
     }, 
     "schemaVersion": "0.2.0", 
     "slug": "pressure", 
