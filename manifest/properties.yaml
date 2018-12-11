@@ -56,7 +56,7 @@ band_structure:
 reaction_energy_profile:
   defaults:
     xAxis:
-      label: reaction coordinates
+      label: reaction coordinate
     yAxis:
       label: energy
       units: eV

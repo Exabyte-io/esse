@@ -11,7 +11,7 @@
             "properties": {
                 "label": {
                     "enum": [
-                        "reaction coordinates"
+                        "reaction coordinate"
                     ]
                 }
             }

@@ -1,7 +1,7 @@
 {
     "name": "reaction_energy_profile", 
     "xAxis": {
-        "label": "reaction coordinates"
+        "label": "reaction coordinate"
     }, 
     "xDataArray": [
         0.0, 
