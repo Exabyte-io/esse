@@ -1,5 +1,5 @@
 {
-    "name": "volume",
-    "value": 131.1,
-    "units": "angstrom^3"
+    "name": "volume", 
+    "units": "angstrom^3", 
+    "value": 131.1
 }

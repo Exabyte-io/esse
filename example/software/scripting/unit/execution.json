@@ -1,17 +1,17 @@
 {
-    "status": "idle",
-    "head": true,
-    "flowchartId": "scripting",
-    "name": "scripting",
-    "type": "execution",
     "application": {
         "...": "include(../python.json)"
-    },
-    "compute": null,
+    }, 
+    "compute": null, 
+    "flowchartId": "scripting", 
+    "head": true, 
     "input": [
         {
-            "content": "print('Hello World!')",
+            "content": "print('Hello World!')", 
             "name": "script.py"
         }
-    ]
+    ], 
+    "name": "scripting", 
+    "status": "idle", 
+    "type": "execution"
 }

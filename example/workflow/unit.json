@@ -1,7 +1,7 @@
 {
-    "status": "idle",
-    "head": true,
-    "flowchartId": "pw-scf",
-    "name": "pw_scf",
+    "flowchartId": "pw-scf", 
+    "head": true, 
+    "name": "pw_scf", 
+    "status": "idle", 
     "type": "execution"
 }

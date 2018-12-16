@@ -1,5 +1,5 @@
 {
-    "name": "p-norm",
-    "degree": 10,
+    "degree": 10, 
+    "name": "p-norm", 
     "value": 0.71
 }

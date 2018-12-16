@@ -1,26 +1,26 @@
 {
-    "status": "pre-submission",
+    "_id": "FPjAaKfuYAL7tiHbm", 
     "_material": {
-        "...": "include(system/entity_reference.json)"
-    },
+        "...": "include(system/_material.json)"
+    }, 
+    "_project": {
+        "...": "include(system/_project.json)"
+    }, 
     "compute": {
         "...": "include(job/compute.json)"
-    },
-    "name": "job",
-    "slug": "job",
-    "createdAt": "2018-11-19 06:41:46.877Z",
+    }, 
+    "createdAt": "2018-11-19 06:41:46.877Z", 
+    "creator": {
+        "...": "include(system/creator.json)"
+    }, 
+    "name": "job", 
     "owner": {
-        "...": "include(system/entity_reference.json)"
-    },
+        "...": "include(system/owner.json)"
+    }, 
+    "schemaVersion": "0.2.0", 
+    "slug": "job", 
+    "status": "pre-submission", 
     "workflow": {
         "...": "include(workflow.json)"
-    },
-    "schemaVersion": "0.2.0",
-    "_id": "FPjAaKfuYAL7tiHbm",
-    "creator": {
-        "...": "include(system/entity_reference.json)"
-    },
-    "_project": {
-        "...": "include(system/entity_reference.json)"
     }
 }

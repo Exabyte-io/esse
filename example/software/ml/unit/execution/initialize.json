@@ -1,20 +1,20 @@
 {
-    "status": "idle",
-    "head": true,
-    "flowchartId": "initialize",
-    "name": "initialize",
-    "type": "execution",
     "application": {
         "...": "include(../../exabyteml.json)"
-    },
+    }, 
     "flavor": {
-        "name": "initialize",
-        "executableId": "4987JFJ3kKbwvFSG7"
-    },
+        "executableId": "4987JFJ3kKbwvFSG7", 
+        "name": "initialize"
+    }, 
+    "flowchartId": "initialize", 
+    "head": true, 
     "input": {
         "targets": [
-            "band_gaps:indirect",
+            "band_gaps:indirect", 
             "band_gaps:direct"
         ]
-    }
+    }, 
+    "name": "initialize", 
+    "status": "idle", 
+    "type": "execution"
 }

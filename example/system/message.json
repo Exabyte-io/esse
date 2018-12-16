@@ -1,13 +1,13 @@
 {
     "header": {
         "entity": {
-            "_id": "FPjAaKfuYAL7tiHbm",
-            "name": "unit",
-            "flowchartId": "pw_scf"
-        },
-        "version": "0.2.0",
-        "timestamp": 1234923492.12
-    },
+            "_id": "FPjAaKfuYAL7tiHbm", 
+            "flowchartId": "pw_scf", 
+            "name": "unit"
+        }, 
+        "timestamp": 1234923492.12, 
+        "version": "0.2.0"
+    }, 
     "payload": {
         "...": "include(../material/properties/primary/total_energy.json)"
     }

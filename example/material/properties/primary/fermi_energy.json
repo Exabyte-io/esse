@@ -1,5 +1,5 @@
 {
-    "name": "fermi_energy",
-    "value": -1.2,
-    "units": "eV"
+    "name": "fermi_energy", 
+    "units": "eV", 
+    "value": -1.2
 }

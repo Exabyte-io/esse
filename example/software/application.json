@@ -1,6 +1,6 @@
 {
-    "name": "espresso",
-    "shortName": "qe",
-    "version": "5.1.1",
-    "summary": "Quantum Espresso"
+    "name": "espresso", 
+    "shortName": "qe", 
+    "summary": "Quantum Espresso", 
+    "version": "5.1.1"
 }

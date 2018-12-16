@@ -1,8 +1,8 @@
 {
-    "spaceGroupSymbol": "Fd-3m",
+    "name": "symmetry", 
+    "spaceGroupSymbol": "Fd-3m", 
     "tolerance": {
-        "value": 0.3,
-        "units": "angstrom"
-    },
-    "name": "symmetry"
+        "units": "angstrom", 
+        "value": 0.3
+    }
 }

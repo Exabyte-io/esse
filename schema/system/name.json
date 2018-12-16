@@ -1,6 +1,6 @@
 {
     "$schema": "http://json-schema.org/draft-04/schema#",
-    "title": "timestample entity schema",
+    "title": "timestampable entity schema",
     "properties": {
         "name": {
             "description": "entity name",
@@ -10,9 +10,5 @@
             "description": "entity slug",
             "type": "string"
         }
-    },
-    "required": [
-        "name",
-        "slug"
-    ]
+    }
 }
