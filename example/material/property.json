@@ -1,10 +1,21 @@
 {
     "_id": "K3McGkqXh28HJ775m", 
-    "data": {}, 
-    "exabyteId": "4racJ9AgFh7fGjJ2o", 
-    "owner": {
-        "...": "include(../system/entity_reference.json)"
+    "createdAt": "2018-11-19 06:41:46.877Z", 
+    "creator": {
+        "...": "include(../system/creator.json)"
     }, 
+    "data": {
+        "name": "pressure", 
+        "units": "kbar", 
+        "value": -149.03
+    }, 
+    "exabyteId": "4racJ9AgFh7fGjJ2o", 
+    "group": "qe:dft:gga:pbe", 
+    "owner": {
+        "...": "include(../system/owner.json)"
+    }, 
+    "schemaVersion": "0.2.0", 
+    "slug": "pressure", 
     "source": {
         "...": "include(../primitive/reference.json)"
     }

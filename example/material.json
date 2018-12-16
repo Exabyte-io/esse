@@ -33,6 +33,9 @@
         "units": "crystal"
     }, 
     "createdAt": "2016-04-03T05:25:37.430Z", 
+    "creator": {
+        "...": "include(system/creator.json)"
+    }, 
     "derivedProperties": [
         {
             "name": "volume", 
@@ -63,10 +66,10 @@
             "value": 0.71
         }
     ], 
-    "editable": true, 
     "exabyteId": "RKiswuxHKkF3uvLyA", 
     "formula": "Si", 
     "hash": "4ac3fa057e3530628eb1295c77110eaa", 
+    "isDefault": false, 
     "lattice": {
         "a": 5.0, 
         "alpha": 90.0, 
@@ -78,7 +81,12 @@
         "type": "CUB"
     }, 
     "name": "Silicon FCC", 
+    "owner": {
+        "...": "include(system/owner.json)"
+    }, 
     "scaledHash": "5bd4eb168e3530628eb1295d88221cbb", 
+    "schemaVersion": "0.2.0", 
+    "slug": "silicon-fcc", 
     "unitCellFormula": "Si2", 
     "updatedAt": "2016-04-04T17:58:42.867Z"
 }

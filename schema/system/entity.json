@@ -3,8 +3,8 @@
     "title": "entity schema",
     "allOf": [
         {
-            "description": "entity timestample schema",
-            "$ref": "file:timestample.json"
+            "description": "entity timestampable schema",
+            "$ref": "file:timestampable.json"
         },
         {
             "description": "entity removable schema",
