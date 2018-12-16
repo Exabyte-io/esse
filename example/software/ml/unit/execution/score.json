@@ -1,15 +1,15 @@
 {
-    "status": "idle",
-    "head": true,
-    "flowchartId": "score",
-    "name": "score",
-    "type": "execution",
     "application": {
         "...": "include(../../exabyteml.json)"
-    },
+    }, 
     "flavor": {
-        "name": "score",
-        "executableId": "4987JFJ3kKbwvFSG7"
-    },
-    "input": {}
+        "executableId": "4987JFJ3kKbwvFSG7", 
+        "name": "score"
+    }, 
+    "flowchartId": "score", 
+    "head": true, 
+    "input": {}, 
+    "name": "score", 
+    "status": "idle", 
+    "type": "execution"
 }

@@ -1,58 +1,58 @@
 {
-    "subtype": "least_squares",
-    "type": "linear",
-    "precision": {
-        "perProperty": {
-            "...": "include(regression/precision.json)"
-        }
-    },
     "data": {
+        "dataSet": {
+            "exabyteIds": [
+                "LCthJ6E2QabYCZqf4", 
+                "LCthJ6E2QabYCZqf5", 
+                "LCthJ6E2QabYCZqf6", 
+                "LCthJ6E2QabYCZqf7", 
+                "LCthJ6E2QabYCZqf8", 
+                "LCthJ6E2QabYCZqf9", 
+                "LCthJ6E2QabYCZq10", 
+                "LCthJ6E2QabYCZq11"
+            ], 
+            "extra": {}
+        }, 
         "perProperty": [
             {
-                "name": "band_gaps:direct",
-                "intercept": 0.363,
+                "intercept": 0.363, 
+                "name": "band_gaps:direct", 
                 "perFeature": [
                     {
-                        "importance": 0.134,
-                        "coefficient": 0.015,
+                        "coefficient": 0.015, 
+                        "importance": 0.134, 
                         "name": "atomic_radius:Ge"
-                    },
+                    }, 
                     {
-                        "importance": 0.135,
-                        "coefficient": 0.016,
+                        "coefficient": 0.016, 
+                        "importance": 0.135, 
                         "name": "atomic_radius:Si"
                     }
                 ]
-            },
+            }, 
             {
-                "name": "band_gaps:indirect",
-                "intercept": 0.364,
+                "intercept": 0.364, 
+                "name": "band_gaps:indirect", 
                 "perFeature": [
                     {
-                        "importance": 0.135,
-                        "coefficient": 0.016,
+                        "coefficient": 0.016, 
+                        "importance": 0.135, 
                         "name": "atomic_radius:Ge"
-                    },
+                    }, 
                     {
-                        "importance": 0.136,
-                        "coefficient": 0.017,
+                        "coefficient": 0.017, 
+                        "importance": 0.136, 
                         "name": "atomic_radius:Si"
                     }
                 ]
             }
-        ],
-        "dataSet": {
-            "exabyteIds": [
-                "LCthJ6E2QabYCZqf4",
-                "LCthJ6E2QabYCZqf5",
-                "LCthJ6E2QabYCZqf6",
-                "LCthJ6E2QabYCZqf7",
-                "LCthJ6E2QabYCZqf8",
-                "LCthJ6E2QabYCZqf9",
-                "LCthJ6E2QabYCZq10",
-                "LCthJ6E2QabYCZq11"
-            ],
-            "extra": {}
+        ]
+    }, 
+    "precision": {
+        "perProperty": {
+            "...": "include(regression/precision.json)"
         }
-    }
+    }, 
+    "subtype": "least_squares", 
+    "type": "linear"
 }

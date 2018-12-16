@@ -3,6 +3,10 @@
     "title": "subworkflow schema",
     "type": "object",
     "properties": {
+        "_id": {
+            "description": "subworkflow identity",
+            "type": "string"
+        },
         "name": {
             "description": "Human-readable name of the subworkflow. e.g. Total-energy",
             "type": "string"
@@ -29,9 +33,19 @@
             "items": {
                 "$ref": "file:unit.json"
             }
+        },
+        "compute": {
+            "description": "compute parameters",
+            "$ref": "file:../job/compute.json"
+        },
+        "isDraft": {
+            "description": "Defines whether to store the results/properties extracted in this unit to properties collection",
+            "type": "boolean",
+            "default": false
         }
     },
     "required": [
+        "_id",
         "name",
         "units",
         "model",

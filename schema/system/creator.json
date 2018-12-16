@@ -1,20 +1,18 @@
 {
     "$schema": "http://json-schema.org/draft-04/schema#",
-    "title": "creator schema",
-    "description": "User that created this entity. Always a user. Different from owner. Owner could be user or organization.",
-    "type": "object",
-    "properties": {
-        "_id": {
-            "description": "User identifier in a database.",
-            "type": "string"
-        },
-        "cls": {
-            "description": "Creator's username.",
-            "type": "string"
+    "title": "Creator entity reference schema",
+    "allOf": [
+        {
+            "$ref": "file:entity_reference.json"
         }
-    },
-    "required": [
-        "_id",
-        "name"
-    ]
+    ],
+    "properties": {
+        "cls": {
+            "description": "Creator class",
+            "type": "string",
+            "enum": [
+                "User"
+            ]
+        }
+    }
 }
