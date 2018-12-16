@@ -1,7 +1,8 @@
 # exabyte-esse
 
-Exabyte Source of Schemas and Examples. Contains schemas and examples for materials and simulations related data in JSON representation. Can be used as a node
-or python module on server-side.
+Exabyte Source of Schemas and Examples.
+Contains schemas and examples for materials and simulations related data in JSON representation. 
+Can be used as a node or python module on server-side.
 
 ## Installation
 
@@ -39,7 +40,7 @@ npm run-script run
 
 compiled schemas and examples can be found inside `lib` directory.
 
-# Tests
+## Tests
 
 Run from root directory of this repository:
 
@@ -47,10 +48,14 @@ Run from root directory of this repository:
 npm test
 ```
 
-# Debugging
+## Debugging
 
 To view all compiled schemas:
 
 ```bash
 PRINT_SCHEMAS=1 ./node_modules/babel-cli/bin/babel-node.js src/index.js
 ```
+
+## Notes
+
+- Do not use circular references in the schemas but instead leave the type as object and add explanation to description.

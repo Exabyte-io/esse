@@ -1,6 +1,7 @@
 import Ajv from "ajv";
-import {getRawJSONWithIncludeStatements, includeAndDereferenceJSONData} from "./deref";
+
 import MANIFESTS from "./manifest";
+import {getRawJSONWithIncludeStatements, includeAndDereferenceJSONData} from "./deref";
 
 const COMPILED_SCHEMAS = [],
     RAW_SCHEMAS = [], // raw schemas still contain `$ref` tags

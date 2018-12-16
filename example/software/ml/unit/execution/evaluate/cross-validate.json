@@ -1,17 +1,17 @@
 {
-    "status": "idle",
-    "head": true,
-    "flowchartId": "evaluate",
-    "name": "evaluate",
-    "type": "execution",
     "application": {
         "...": "include(../../../exabyteml.json)"
-    },
+    }, 
     "flavor": {
-        "name": "cross-validate",
-        "executableId": "4987JFJ3kKbwvFSG7"
-    },
+        "executableId": "4987JFJ3kKbwvFSG7", 
+        "name": "cross-validate"
+    }, 
+    "flowchartId": "evaluate", 
+    "head": true, 
     "input": {
         "nSplits": 3
-    }
+    }, 
+    "name": "evaluate", 
+    "status": "idle", 
+    "type": "execution"
 }

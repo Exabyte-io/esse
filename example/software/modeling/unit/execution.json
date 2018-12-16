@@ -1,17 +1,17 @@
 {
-    "status": "idle",
-    "head": true,
-    "flowchartId": "modeling",
-    "name": "modeling",
-    "type": "execution",
     "application": {
         "...": "include(../espresso.json)"
-    },
-    "compute": null,
+    }, 
+    "compute": null, 
+    "flowchartId": "modeling", 
+    "head": true, 
     "input": [
         {
-            "content": "K_POINTS automatic\n2 2 2 0 0 0",
+            "content": "K_POINTS automatic\n2 2 2 0 0 0", 
             "name": "pw_scf.in"
         }
-    ]
+    ], 
+    "name": "modeling", 
+    "status": "idle", 
+    "type": "execution"
 }

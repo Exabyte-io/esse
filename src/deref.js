@@ -1,11 +1,12 @@
-import fs from "fs-extra";
 import url from "url";
 import path from "path";
 import file from "file";
+import fs from "fs-extra";
 import lodash from "lodash";
 import deref from "json-schema-deref-sync";
-import {NAMESPACE, LIB_DIR, SCHEMAS_DIR, EXAMPLES_DIR, OMIT_SCHEMA_KEY, DEBUG} from "./settings";
+
 import {JSONSchemaResolver, safeParseJSON} from "./utils";
+import {NAMESPACE, LIB_DIR, SCHEMAS_DIR, EXAMPLES_DIR, OMIT_SCHEMA_KEY, DEBUG} from "./settings";
 
 /**
  * Replaces mentions of `file:` inside schema references with empty string or url from namespace
@@ -17,6 +18,7 @@ function replaceFileMentions(schema, withUrl) {
         str = JSON.stringify(schema.content).replace(new RegExp('file:', 'g'), suffix);
     return Object.assign({}, schema, {content: safeParseJSON(str)});
 }
+
 /**
  * Writes textual `content` to LIB_DIR directory using relative path `relPath`
  * @param {String} content Textual content of the file

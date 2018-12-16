@@ -17,8 +17,8 @@
             "type": "string"
         },
         "owner": {
-            "description": "summary about user/company who owns this job.",
-            "$ref": "file:../../../security/_owner.json"
+            "description": "owner entity reference",
+            "$ref": "file:../../../system/entity_reference.json"
         }
     },
     "required": [
