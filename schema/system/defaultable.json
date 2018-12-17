@@ -7,8 +7,5 @@
             "type": "boolean",
             "default": false
         }
-    },
-    "required": [
-        "isDefault"
-    ]
+    }
 }
