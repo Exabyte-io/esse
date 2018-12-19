@@ -1,12 +1,12 @@
 {
-    "name": "basis",
+    "coordinates": {
+        "...": "include(basis/atomic_coordinates.json)"
+    }, 
     "elements": [
         {
             "...": "include(basis/atomic_elements.json)"
         }
-    ],
-    "coordinates": {
-        "...": "include(basis/atomic_coordinates.json)"
-    },
+    ], 
+    "name": "basis", 
     "units": "crystal"
 }

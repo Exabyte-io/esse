@@ -1,26 +1,26 @@
 {
-    "status": "idle",
-    "head": true,
-    "flowchartId": "data_transformation",
-    "name": "data_transformation",
-    "type": "processing",
-    "operation": "data_transformation",
-    "operationType": "scale_and_reduce",
+    "flowchartId": "data_transformation", 
+    "head": true, 
     "inputData": {
-        "scaler": "standard_scaler",
         "perFeature": [
             {
-                "variance": 0.10,
-                "mean": 0.156,
-                "scale": 1.5,
-                "name": "atomic_radius:Ge"
-            },
+                "mean": 0.156, 
+                "name": "atomic_radius:Ge", 
+                "scale": 1.5, 
+                "variance": 0.1
+            }, 
             {
-                "variance": 0.11,
-                "mean": 0.155,
-                "scale": 1.4,
-                "name": "atomic_radius:Si"
+                "mean": 0.155, 
+                "name": "atomic_radius:Si", 
+                "scale": 1.4, 
+                "variance": 0.11
             }
-        ]
-    }
+        ], 
+        "scaler": "standard_scaler"
+    }, 
+    "name": "data_transformation", 
+    "operation": "data_transformation", 
+    "operationType": "scale_and_reduce", 
+    "status": "idle", 
+    "type": "processing"
 }

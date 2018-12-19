@@ -1,18 +1,34 @@
 {
-    "name": "my top-level workflow",
+    "_id": "FPjAaKfuYAL7tiHbm", 
+    "createdAt": "2018-11-19 06:41:46.877Z", 
+    "creator": {
+        "...": "include(system/creator.json)"
+    }, 
+    "exabyteId": "qKtTzu9utCo6ac4n7", 
+    "hash": "f4fd707d2e47c15f8d786cf159040954", 
+    "isDefault": true, 
+    "name": "workflow", 
+    "owner": {
+        "...": "include(system/owner.json)"
+    }, 
+    "properties": [
+        "band_structure"
+    ], 
+    "schemaVersion": "0.2.0", 
+    "slug": "workflow", 
     "subworkflows": [
         {
             "...": "include(workflow/subworkflow.json)"
         }
-    ],
-    "properties": [
-        "band_structure"
-    ],
+    ], 
+    "tags": [
+        "workflow"
+    ], 
     "units": [
         {
-            "type": "subworkflow",
-            "_id": "LCthJ6E2QabYCZqf4",
-            "flowchartId": "05c362dc27ff1bb98d16fd60"
+            "_id": "LCthJ6E2QabYCZqf4", 
+            "flowchartId": "05c362dc27ff1bb98d16fd60", 
+            "type": "subworkflow"
         }
     ]
 }

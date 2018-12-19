@@ -1,35 +1,30 @@
 {
-    "status": "idle",
-    "head": true,
-    "flowchartId": "io",
-    "name": "io",
-    "type": "io",
-    "subtype": "input",
-    "source": "api",
+    "flowchartId": "io", 
+    "head": true, 
     "input": [
         {
-            "endpoint": "data-frame",
+            "endpoint": "data-frame", 
             "endpoint_options": {
-                "method": "POST",
                 "data": {
-                    "targets": [
-                        "band_gaps:indirect",
-                        "band_gaps:direct"
-                    ],
                     "features": [
-                        "elemental_ratio:Si",
-                        "elemental_ratio:Ge",
-                        "ionization_potential:Ge",
+                        "elemental_ratio:Si", 
+                        "elemental_ratio:Ge", 
+                        "ionization_potential:Ge", 
                         "ionization_potential:Si"
-                    ],
+                    ], 
                     "ids": [
                         "KuAsBRwofzGfHPWiT"
+                    ], 
+                    "targets": [
+                        "band_gaps:indirect", 
+                        "band_gaps:direct"
                     ]
-                },
+                }, 
                 "headers": {
-                    "X-Auth-Token": "",
+                    "X-Auth-Token": "", 
                     "X-User-Id": ""
-                },
+                }, 
+                "method": "POST", 
                 "params": {
                     "query": {
                         "formula": "SiGe"
@@ -37,5 +32,10 @@
                 }
             }
         }
-    ]
+    ], 
+    "name": "io", 
+    "source": "api", 
+    "status": "idle", 
+    "subtype": "input", 
+    "type": "io"
 }

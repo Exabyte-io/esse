@@ -1,6 +1,6 @@
 {
-    "name": "vasp",
-    "shortName": "vasp",
-    "version": "5.3.5",
-    "summary": "vienna ab-initio simulation package"
+    "name": "vasp", 
+    "shortName": "vasp", 
+    "summary": "vienna ab-initio simulation package", 
+    "version": "5.3.5"
 }

@@ -1,18 +1,18 @@
 {
-    "status": "idle",
-    "head": true,
-    "flowchartId": "map",
-    "name": "map",
-    "type": "map",
+    "flowchartId": "map", 
+    "head": true, 
     "map": {
-        "workflowId": "zxjhEiaQvwWwvB3oM",
         "input": {
-            "target": "MAP_K_POINTS_1",
+            "target": "MAP_K_POINTS_1", 
             "values": [
-                "2 2 2 0 0 0",
-                "3 3 3 0 0 0",
+                "2 2 2 0 0 0", 
+                "3 3 3 0 0 0", 
                 "4 4 4 0 0 0"
             ]
-        }
-    }
+        }, 
+        "workflowId": "zxjhEiaQvwWwvB3oM"
+    }, 
+    "name": "map", 
+    "status": "idle", 
+    "type": "map"
 }
