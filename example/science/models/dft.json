@@ -2,49 +2,9 @@
     "type": "dft",
     "subtype": "gga",
     "method": {
-        "type": "pseudopotential",
-        "subtype": "us",
-        "data": {
-            "searchText": "",
-            "pseudo": [
-                {
-                    "_id": "5670a1c89abea1170bc8cfae",
-                    "textHeading": "0                   Version Number\n  Si                   Element\n   US                  Ultrasoft pseudopotential\n    T                  Nonlinear Core Correction\nSLA  PW   PBE  PBE     PBE  Exchange-Correlation functional\n    4.00000000000      Z valence\n   -9.19868380872      Total energy\n    0.00000    0.00000 Suggested cutoff for wfc and rho\n    2                  Max angular momentum component\n  899                  Number of points in mesh\n    2    6             Number of Wavefunctions, Number of Projectors\n Wavefunctions         nl  l   occ\n                       3S  0  2.00\n                       3P  1  2.00",
-                    "apps": [
-                        "espresso"
-                    ],
-                    "element": "Si",
-                    "source": "gbrv",
-                    "version": "1.0",
-                    "path": "/export/share/pseudo/si/gga/pbe/gbrv/1.0/us/si_pbe_gbrv_1.0.upf",
-                    "type": "us",
-                    "exchangeCorrelation": {
-                        "approximation": "gga",
-                        "functional": "pbe"
-                    },
-                    "characteristics": [
-                        {
-                            "units": "eV",
-                            "name": "zero_point_energy",
-                            "value": -0.04545053892
-                        },
-                        {
-                            "units": "eV",
-                            "name": "total_energy",
-                            "value": -130.568347569
-                        }
-                    ],
-                    "filename": "si_pbe_gbrv_1.0.upf",
-                    "schemaVersion": "0.2.0",
-                    "inSet": [],
-                    "tags": []
-                }
-            ]
-        }
+        "...": "include(../methods/pseudopotential.json)"
     },
-    "functional": {
-        "slug": "pbe"
-    },
+    "functional": "pbe",
     "refiners": [],
     "modifiers": []
 }
