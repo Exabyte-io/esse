@@ -53,6 +53,20 @@ band_structure:
       units: eV
   path: material/properties/primary/band_structure.json
 
+reaction_energy_profile:
+  defaults:
+    xAxis:
+      label: reaction coordinate
+    yAxis:
+      label: energy
+      units: eV
+  path: material/properties/primary/reaction_energy_profile.json
+
+reaction_energy_barrier:
+  defaults:
+    units: eV
+  path: material/properties/primary/reaction_energy_barrier.json
+
 basis:
   defaults:
     units: angstrom

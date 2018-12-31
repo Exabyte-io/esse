@@ -1,0 +1,16 @@
+{
+    "$schema": "http://json-schema.org/draft-04/schema#",
+    "title": "reaction energy barrier schema",
+    "allOf": [
+        {
+            "$ref": "file:../../../primitive/property/energy.json"
+        }
+    ],
+    "properties": {
+        "name": {
+            "enum": [
+                "reaction_energy_barrier"
+            ]
+        }
+    }
+}
