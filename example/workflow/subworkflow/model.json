@@ -5,7 +5,9 @@
             "value": 0.9
         }
     ], 
-    "functional": "pbe", 
+    "functional": {
+        "slug": "pbe"
+    }, 
     "method": {
         "...": "include(model/method.json)"
     }, 

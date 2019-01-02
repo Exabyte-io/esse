@@ -25,41 +25,86 @@
                     "$ref": "#/definitions/functionals/gga"
                 },
                 {
-                    "enum": [
-                        "ldau",
-                        "bp",
-                        "lyp",
-                        "b3lyp",
-                        "pbesol",
-                        "hse",
-                        "am05",
-                        "rtpss",
-                        "tpss",
-                        "m06l",
-                        "mbj",
-                        "vdwd3",
-                        "fci"
-                    ]
+                    "type": "object",
+                    "properties": {
+                        "slug": {
+                            "type": "string",
+                            "enum": [
+                                "ldau",
+                                "bp",
+                                "lyp",
+                                "b3lyp",
+                                "pbesol",
+                                "hse",
+                                "am05",
+                                "rtpss",
+                                "tpss",
+                                "m06l",
+                                "mbj",
+                                "vdwd3",
+                                "fci"
+                            ]
+                        }
+                    }
                 }
             ]
+        },
+        "refiners": {
+            "type": "array",
+            "items": {
+                "type": "object",
+                "properties": {
+                    "slug": {
+                        "enum": [
+                            "hse",
+                            "g0w0"
+                        ]
+                    }
+                }
+            }
+        },
+        "modifiers": {
+            "type": "array",
+            "items": {
+                "type": "object",
+                "properties": {
+                    "slug": {
+                        "enum": [
+                            "soc",
+                            "magn"
+                        ]
+                    }
+                }
+            }
         }
     },
     "definitions": {
         "functionals": {
             "lda": {
-                "type": "string",
-                "enum": [
-                    "pz",
-                    "pw",
-                    "vwn"
-                ]
+                "type": "object",
+                "properties": {
+                    "slug": {
+                        "type": "string",
+                        "enum": [
+                            "pz",
+                            "pw",
+                            "vwn"
+                        ]
+                    }
+                }
             },
             "gga": {
-                "enum": [
-                    "pbe",
-                    "pw91",
-                    "rpbe"
-                ]
+                "type": "object",
+                "properties": {
+                    "slug": {
+                        "type": "string",
+                        "enum": [
+                            "pbe",
+                            "pw91",
+                            "rpbe"
+                        ]
+                    }
+                }
             }
         }
     }
