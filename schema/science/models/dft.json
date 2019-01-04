@@ -107,5 +107,6 @@
                 }
             }
         }
-    }
+    },
+    "$id": "science-models-dft"
 }

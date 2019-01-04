@@ -10,5 +10,6 @@
             "description": "bankable schema",
             "$ref": "file:bankable.json"
         }
-    ]
+    ],
+    "$id": "system-bankable-entity"
 }

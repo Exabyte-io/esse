@@ -22,5 +22,6 @@
                 }
             }
         }
-    }
+    },
+    "$id": "science-methods-pseudopotential-file-energy-cutoff"
 }

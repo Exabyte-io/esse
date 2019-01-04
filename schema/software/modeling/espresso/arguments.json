@@ -24,5 +24,6 @@
             "type": "integer"
         }
     },
-    "additionalProperties": false
+    "additionalProperties": false,
+    "$id": "software-modeling-espresso-arguments"
 }

@@ -40,5 +40,6 @@
                 "algorithm"
             ]
         }
-    }
+    },
+    "$id": "software-ml-unit-processing-feature-selection-filter-based"
 }

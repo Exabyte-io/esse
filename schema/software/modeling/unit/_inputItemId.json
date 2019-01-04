@@ -13,5 +13,6 @@
     },
     "required": [
         "templateId"
-    ]
+    ],
+    "$id": "software-modeling-unit-inputitemid"
 }

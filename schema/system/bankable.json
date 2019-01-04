@@ -14,5 +14,6 @@
     "required": [
         "exabyteId",
         "hash"
-    ]
+    ],
+    "$id": "system-bankable"
 }

@@ -16,5 +16,6 @@
         "units": {
             "$ref": "file:../../../units.json#/pressure"
         }
-    }
+    },
+    "$id": "material-properties-primary-pressure"
 }

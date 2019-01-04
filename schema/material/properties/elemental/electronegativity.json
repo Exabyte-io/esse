@@ -13,5 +13,6 @@
                 "electronegativity"
             ]
         }
-    }
+    },
+    "$id": "material-properties-elemental-electronegativity"
 }

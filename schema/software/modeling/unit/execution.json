@@ -9,5 +9,6 @@
         {
             "$ref": "file:./_input.json"
         }
-    ]
+    ],
+    "$id": "software-modeling-unit-execution"
 }

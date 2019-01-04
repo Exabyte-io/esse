@@ -13,5 +13,6 @@
     "required": [
         "elements",
         "coordinates"
-    ]
+    ],
+    "$id": "material-properties-primary-structural-basis"
 }

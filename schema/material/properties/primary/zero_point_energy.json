@@ -12,5 +12,6 @@
                 "zero_point_energy"
             ]
         }
-    }
+    },
+    "$id": "material-properties-primary-zero-point-energy"
 }

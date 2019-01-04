@@ -14,5 +14,6 @@
     "required": [
         "xDataArray",
         "yDataSeries"
-    ]
+    ],
+    "$id": "primitive-math-2d-data"
 }

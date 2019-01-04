@@ -31,5 +31,6 @@
                 "draft"
             ]
         }
-    ]
+    ],
+    "$id": "workflow-unit-io-db"
 }

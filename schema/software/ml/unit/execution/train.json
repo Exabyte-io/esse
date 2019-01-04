@@ -33,5 +33,6 @@
                 "targets"
             ]
         }
-    }
+    },
+    "$id": "software-ml-unit-execution-train"
 }

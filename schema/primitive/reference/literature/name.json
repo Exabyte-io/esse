@@ -19,5 +19,6 @@
     "required": [
         "first",
         "last"
-    ]
+    ],
+    "$id": "primitive-reference-literature-name"
 }

@@ -10,5 +10,6 @@
             "description": "entity slug",
             "type": "string"
         }
-    }
+    },
+    "$id": "system-name"
 }

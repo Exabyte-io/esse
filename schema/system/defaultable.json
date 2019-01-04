@@ -7,5 +7,6 @@
             "type": "boolean",
             "default": false
         }
-    }
+    },
+    "$id": "system-defaultable"
 }

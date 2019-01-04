@@ -101,5 +101,6 @@
         "nodes",
         "ppn",
         "timeLimit"
-    ]
+    ],
+    "$id": "job-compute"
 }

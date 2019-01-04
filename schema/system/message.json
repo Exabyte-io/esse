@@ -62,5 +62,6 @@
     "required": [
         "header",
         "payload"
-    ]
+    ],
+    "$id": "system-message"
 }

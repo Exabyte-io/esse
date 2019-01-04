@@ -27,5 +27,6 @@
     "required": [
         "name",
         "executableId"
-    ]
+    ],
+    "$id": "software-flavor"
 }

@@ -51,5 +51,6 @@
         "model",
         "application",
         "properties"
-    ]
+    ],
+    "$id": "workflow-subworkflow"
 }

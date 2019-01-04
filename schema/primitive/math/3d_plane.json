@@ -14,5 +14,6 @@
     "required": [
         "normal",
         "origin"
-    ]
+    ],
+    "$id": "primitive-math-3d-plane"
 }

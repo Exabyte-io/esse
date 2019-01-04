@@ -16,5 +16,6 @@
         "method": {
             "$ref": "../methods/unknown.json"
         }
-    }
+    },
+    "$id": "science-models-unknown"
 }

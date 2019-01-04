@@ -50,5 +50,6 @@
                 "input"
             ]
         }
-    }
+    },
+    "$id": "workflow-unit-reduce"
 }

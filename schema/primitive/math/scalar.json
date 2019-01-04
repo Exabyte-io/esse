@@ -9,5 +9,6 @@
     },
     "required": [
         "value"
-    ]
+    ],
+    "$id": "primitive-math-scalar"
 }

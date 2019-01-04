@@ -12,5 +12,6 @@
                 "$ref": "file:../math/vector.json"
             }
         }
-    }
+    },
+    "$id": "primitive-property-atomic-vectors"
 }

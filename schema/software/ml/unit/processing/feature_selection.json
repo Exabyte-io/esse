@@ -3,5 +3,6 @@
         {
             "$ref": "file:feature_selection/filter_based.json"
         }
-    ]
+    ],
+    "$id": "software-ml-unit-processing-feature-selection"
 }

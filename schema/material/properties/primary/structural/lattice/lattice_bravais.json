@@ -49,5 +49,6 @@
     },
     "required": [
         "type"
-    ]
+    ],
+    "$id": "material-properties-primary-structural-lattice-lattice-bravais"
 }

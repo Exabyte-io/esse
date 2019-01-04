@@ -26,5 +26,6 @@
     },
     "required": [
         "data"
-    ]
+    ],
+    "$id": "science-models-dft-convergence-electronic"
 }

@@ -12,5 +12,6 @@
                 "formation_energy"
             ]
         }
-    }
+    },
+    "$id": "material-properties-primary-formation-energy"
 }

@@ -20,5 +20,6 @@
     "required": [
         "_id",
         "name"
-    ]
+    ],
+    "$id": "system-database-source"
 }

@@ -12,5 +12,6 @@
                 "$ref": "file:../math/scalar.json"
             }
         }
-    }
+    },
+    "$id": "primitive-property-atomic-scalars"
 }

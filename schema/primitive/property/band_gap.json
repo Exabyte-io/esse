@@ -28,5 +28,6 @@
     },
     "required": [
         "type"
-    ]
+    ],
+    "$id": "primitive-property-band-gap"
 }

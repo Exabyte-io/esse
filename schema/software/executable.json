@@ -23,5 +23,6 @@
     "required": [
         "name",
         "applicationId"
-    ]
+    ],
+    "$id": "software-executable"
 }

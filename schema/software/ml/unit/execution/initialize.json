@@ -24,5 +24,6 @@
                 "targets"
             ]
         }
-    }
+    },
+    "$id": "software-ml-unit-execution-initialize"
 }

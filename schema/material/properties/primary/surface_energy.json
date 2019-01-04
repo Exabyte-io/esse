@@ -12,5 +12,6 @@
                 "surface_energy"
             ]
         }
-    }
+    },
+    "$id": "material-properties-primary-surface-energy"
 }

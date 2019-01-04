@@ -17,5 +17,6 @@
                 "angstrom^3"
             ]
         }
-    }
+    },
+    "$id": "material-properties-primary-structural-volume"
 }

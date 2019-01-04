@@ -55,5 +55,6 @@
     },
     "required": [
         "data"
-    ]
+    ],
+    "$id": "science-models-dft-convergence-ionic"
 }

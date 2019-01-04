@@ -21,5 +21,6 @@
             "type": "string",
             "description": "the element this ratio is for"
         }
-    }
+    },
+    "$id": "material-properties-primary-structural-elemental-ratio"
 }

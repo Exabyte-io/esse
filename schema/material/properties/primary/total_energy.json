@@ -12,5 +12,6 @@
                 "total_energy"
             ]
         }
-    }
+    },
+    "$id": "material-properties-primary-total-energy"
 }

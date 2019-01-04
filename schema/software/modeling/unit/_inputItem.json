@@ -15,5 +15,6 @@
     "required": [
         "name",
         "content"
-    ]
+    ],
+    "$id": "software-modeling-unit-inputitem"
 }

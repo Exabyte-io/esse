@@ -77,5 +77,6 @@
             },
             "description": "References cited by the work. Reference objects can nest as deeply as needed. This is useful, for example, when tracking the history of a value referenced in a scholarly article; the top level reference would contain information about where the data was accessed while the nested reference would contain information about where it was originally published."
         }
-    }
+    },
+    "$id": "primitive-reference-literature"
 }

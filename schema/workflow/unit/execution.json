@@ -39,5 +39,6 @@
     "required": [
         "input",
         "application"
-    ]
+    ],
+    "$id": "workflow-unit-execution"
 }

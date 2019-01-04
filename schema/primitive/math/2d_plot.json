@@ -24,5 +24,6 @@
     "required": [
         "xAxis",
         "yAxis"
-    ]
+    ],
+    "$id": "primitive-math-2d-plot"
 }

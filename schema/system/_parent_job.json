@@ -14,5 +14,6 @@
                 "Job"
             ]
         }
-    }
+    },
+    "$id": "system-parent-job"
 }

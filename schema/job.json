@@ -60,5 +60,6 @@
         "compute",
         "workflow",
         "_project"
-    ]
+    ],
+    "$id": "job"
 }

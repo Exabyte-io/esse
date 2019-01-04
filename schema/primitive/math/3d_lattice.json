@@ -35,5 +35,6 @@
         "alpha",
         "beta",
         "gamma"
-    ]
+    ],
+    "$id": "primitive-math-3d-lattice"
 }

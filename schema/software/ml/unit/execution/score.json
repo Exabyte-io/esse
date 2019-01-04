@@ -8,5 +8,6 @@
     ],
     "properties": {
         "input": {}
-    }
+    },
+    "$id": "software-ml-unit-execution-score"
 }

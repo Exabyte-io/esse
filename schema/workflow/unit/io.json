@@ -44,5 +44,6 @@
         "subtype",
         "source",
         "input"
-    ]
+    ],
+    "$id": "workflow-unit-io"
 }

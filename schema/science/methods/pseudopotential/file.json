@@ -111,5 +111,6 @@
         "source",
         "path",
         "apps"
-    ]
+    ],
+    "$id": "science-methods-pseudopotential-file"
 }

@@ -16,5 +16,6 @@
     "required": [
         "type",
         "subtype"
-    ]
+    ],
+    "$id": "science-methods-unknown"
 }

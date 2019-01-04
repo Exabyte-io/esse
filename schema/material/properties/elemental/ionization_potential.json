@@ -16,5 +16,6 @@
         "units": {
             "$ref": "file:../../../units.json#/energy"
         }
-    }
+    },
+    "$id": "material-properties-elemental-ionization-potential"
 }

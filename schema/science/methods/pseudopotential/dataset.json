@@ -66,5 +66,6 @@
         "name",
         "type",
         "files"
-    ]
+    ],
+    "$id": "science-methods-pseudopotential-dataset"
 }

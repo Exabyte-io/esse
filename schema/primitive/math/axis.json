@@ -13,5 +13,6 @@
     },
     "required": [
         "label"
-    ]
+    ],
+    "$id": "primitive-math-axis"
 }

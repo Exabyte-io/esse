@@ -20,5 +20,6 @@
                 "$ref": "file:properties/primary/structural/p-norm.json"
             }
         ]
-    }
+    },
+    "$id": "material-derived-properties"
 }

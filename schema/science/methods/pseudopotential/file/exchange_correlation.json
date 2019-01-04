@@ -20,5 +20,6 @@
                 }
             ]
         }
-    }
+    },
+    "$id": "science-methods-pseudopotential-file-exchange-correlation"
 }

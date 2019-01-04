@@ -47,5 +47,6 @@
             "description": "Optional environment variables exported before running the Shell script",
             "type": "object"
         }
-    }
+    },
+    "$id": "software-scripting-shell"
 }

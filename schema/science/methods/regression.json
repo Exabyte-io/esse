@@ -58,5 +58,6 @@
         "subtype",
         "precision",
         "data"
-    ]
+    ],
+    "$id": "science-methods-regression"
 }

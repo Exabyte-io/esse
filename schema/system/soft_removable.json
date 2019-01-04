@@ -10,5 +10,6 @@
             "description": "Identifies that entity was removed",
             "type": "boolean"
         }
-    }
+    },
+    "$id": "system-soft-removable"
 }

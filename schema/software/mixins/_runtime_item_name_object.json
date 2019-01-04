@@ -10,5 +10,6 @@
     },
     "required": [
         "name"
-    ]
+    ],
+    "$id": "software-mixins-runtime-item-name-object"
 }

@@ -33,5 +33,6 @@
         "slug",
         "group",
         "source"
-    ]
+    ],
+    "$id": "material-property"
 }

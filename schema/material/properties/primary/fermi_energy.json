@@ -12,5 +12,6 @@
                 "fermi_energy"
             ]
         }
-    }
+    },
+    "$id": "material-properties-primary-fermi-energy"
 }

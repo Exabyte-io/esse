@@ -35,5 +35,6 @@
                 "vasp"
             ]
         }
-    }
+    },
+    "$id": "software-modeling-vasp"
 }

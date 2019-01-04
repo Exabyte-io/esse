@@ -31,5 +31,6 @@
                 "$ref": "file:runtime_item.json"
             }
         }
-    }
+    },
+    "$id": "software-mixins-runtime-items"
 }

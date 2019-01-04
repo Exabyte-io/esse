@@ -71,5 +71,6 @@
                 "workflowId"
             ]
         }
-    }
+    },
+    "$id": "workflow-unit-map"
 }

@@ -11,5 +11,6 @@
         "values": {
             "$ref": "file:../../../../../primitive/property/atomic_strings.json"
         }
-    }
+    },
+    "$id": "material-properties-primary-structural-basis-atomic-elements"
 }

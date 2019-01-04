@@ -6,5 +6,6 @@
         {
             "$ref": "file:processing/feature_selection.json"
         }
-    ]
+    ],
+    "$id": "software-ml-unit-processing"
 }

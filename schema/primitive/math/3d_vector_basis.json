@@ -20,5 +20,6 @@
         "a",
         "b",
         "c"
-    ]
+    ],
+    "$id": "primitive-math-3d-vector-basis"
 }

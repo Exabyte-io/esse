@@ -11,5 +11,6 @@
         {
             "$ref": "file:reference/literature.json"
         }
-    ]
+    ],
+    "$id": "primitive-reference"
 }

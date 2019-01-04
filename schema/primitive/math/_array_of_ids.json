@@ -12,5 +12,6 @@
             }
         },
         "uniqueItems": true
-    }
+    },
+    "$id": "primitive-math-array-of-ids"
 }

@@ -47,5 +47,6 @@
             "description": "Optional Python dependencies, e.g. amqp==1.4.6",
             "type": "array"
         }
-    }
+    },
+    "$id": "software-scripting-python"
 }

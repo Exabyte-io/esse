@@ -16,5 +16,6 @@
     },
     "required": [
         "exabyteIds"
-    ]
+    ],
+    "$id": "science-methods-regression-dataset"
 }

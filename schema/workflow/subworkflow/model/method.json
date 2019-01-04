@@ -21,5 +21,6 @@
     "required": [
         "type",
         "subtype"
-    ]
+    ],
+    "$id": "workflow-subworkflow-model-method"
 }

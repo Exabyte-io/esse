@@ -12,5 +12,6 @@
                 "type": "string"
             }
         }
-    }
+    },
+    "$id": "primitive-property-atomic-strings"
 }

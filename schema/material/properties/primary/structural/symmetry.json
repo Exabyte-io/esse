@@ -26,5 +26,6 @@
                 "symmetry"
             ]
         }
-    }
+    },
+    "$id": "material-properties-primary-structural-symmetry"
 }

@@ -53,5 +53,6 @@
         "title",
         "method",
         "timestamp"
-    ]
+    ],
+    "$id": "primitive-reference-experiment"
 }

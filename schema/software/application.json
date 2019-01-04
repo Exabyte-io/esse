@@ -26,5 +26,6 @@
     },
     "required": [
         "name"
-    ]
+    ],
+    "$id": "software-application"
 }

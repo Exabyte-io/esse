@@ -14,5 +14,6 @@
                 "User"
             ]
         }
-    }
+    },
+    "$id": "system-creator"
 }

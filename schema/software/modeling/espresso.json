@@ -21,5 +21,6 @@
                 "6.0.0"
             ]
         }
-    }
+    },
+    "$id": "software-modeling-espresso"
 }

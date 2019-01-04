@@ -37,5 +37,6 @@
                 "phonon_dos"
             ]
         }
-    }
+    },
+    "$id": "material-properties-primary-phonon-dos"
 }

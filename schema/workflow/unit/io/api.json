@@ -19,5 +19,6 @@
     "required": [
         "endpoint",
         "endpoint_options"
-    ]
+    ],
+    "$id": "workflow-unit-io-api"
 }

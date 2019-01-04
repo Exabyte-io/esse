@@ -29,5 +29,6 @@
         "ecutwfc",
         "ecutrho",
         "kgrid"
-    ]
+    ],
+    "$id": "science-methods-pseudopotential-precision"
 }

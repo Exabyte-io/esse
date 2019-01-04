@@ -10,5 +10,6 @@
             "description": "entity last modification time",
             "type": "string"
         }
-    }
+    },
+    "$id": "system-timestampable"
 }

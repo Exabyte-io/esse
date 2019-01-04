@@ -41,5 +41,6 @@
         "tolerance",
         "units",
         "data"
-    ]
+    ],
+    "$id": "science-models-dft-convergence-kpoint"
 }

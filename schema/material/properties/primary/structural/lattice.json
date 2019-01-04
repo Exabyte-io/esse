@@ -23,5 +23,6 @@
                 "lattice"
             ]
         }
-    }
+    },
+    "$id": "material-properties-primary-structural-lattice"
 }

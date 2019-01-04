@@ -36,5 +36,6 @@
                 "phonon_dispersions"
             ]
         }
-    }
+    },
+    "$id": "material-properties-primary-phonon-dispersions"
 }

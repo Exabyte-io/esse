@@ -14,5 +14,6 @@
                 "Account"
             ]
         }
-    }
+    },
+    "$id": "system-owner"
 }

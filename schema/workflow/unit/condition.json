@@ -51,5 +51,6 @@
                 "else"
             ]
         }
-    }
+    },
+    "$id": "workflow-unit-condition"
 }

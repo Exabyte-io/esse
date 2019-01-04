@@ -51,5 +51,6 @@
     "required": [
         "basis",
         "lattice"
-    ]
+    ],
+    "$id": "material"
 }

@@ -50,5 +50,6 @@
     "required": [
         "units",
         "subworkflows"
-    ]
+    ],
+    "$id": "workflow"
 }

@@ -14,5 +14,6 @@
                 "Material"
             ]
         }
-    }
+    },
+    "$id": "system-material"
 }

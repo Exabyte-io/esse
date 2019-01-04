@@ -13,5 +13,6 @@
     },
     "required": [
         "trainingError"
-    ]
+    ],
+    "$id": "science-methods-regression-linear-precision-per-property"
 }

@@ -15,5 +15,6 @@
     "required": [
         "scope",
         "name"
-    ]
+    ],
+    "$id": "workflow-unit-input"
 }

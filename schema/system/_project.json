@@ -14,5 +14,6 @@
                 "Project"
             ]
         }
-    }
+    },
+    "$id": "system-project"
 }

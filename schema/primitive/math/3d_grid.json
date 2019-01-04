@@ -12,5 +12,6 @@
     "required": [
         "dimensions",
         "shifts"
-    ]
+    ],
+    "$id": "primitive-math-3d-grid"
 }

@@ -15,5 +15,6 @@
         "units": {
             "$ref": "file:../../../../../units.json#/length"
         }
-    }
+    },
+    "$id": "material-properties-primary-structural-lattice-lattice-vectors"
 }

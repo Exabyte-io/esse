@@ -11,5 +11,6 @@
                 "string"
             ]
         }
-    }
+    },
+    "$id": "primitive-math-1d-data-series"
 }

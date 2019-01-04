@@ -37,5 +37,6 @@
                 "value"
             ]
         }
-    }
+    },
+    "$id": "workflow-unit-assignment"
 }

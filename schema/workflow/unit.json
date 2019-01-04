@@ -38,5 +38,6 @@
     "required": [
         "type",
         "flowchartId"
-    ]
+    ],
+    "$id": "workflow-unit"
 }

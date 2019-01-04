@@ -24,5 +24,6 @@
     },
     "required": [
         "name"
-    ]
+    ],
+    "$id": "primitive-reference-experiment-condition"
 }

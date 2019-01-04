@@ -17,5 +17,6 @@
             "type": "integer",
             "description": "degree of the dimensionality of the norm"
         }
-    }
+    },
+    "$id": "material-properties-primary-structural-p-norm"
 }

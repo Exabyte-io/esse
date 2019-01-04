@@ -47,5 +47,6 @@
                 ]
             }
         }
-    }
+    },
+    "$id": "material-properties-primary-band-structure"
 }

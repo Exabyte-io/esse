@@ -26,5 +26,6 @@
                 }
             ]
         }
-    }
+    },
+    "$id": "science-models-ml"
 }

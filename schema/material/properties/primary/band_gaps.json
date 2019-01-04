@@ -46,5 +46,6 @@
     },
     "required": [
         "name"
-    ]
+    ],
+    "$id": "material-properties-primary-band-gaps"
 }

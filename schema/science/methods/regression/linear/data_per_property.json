@@ -35,5 +35,6 @@
     "required": [
         "intercept",
         "perFeature"
-    ]
+    ],
+    "$id": "science-methods-regression-linear-data-per-property"
 }

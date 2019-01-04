@@ -14,5 +14,6 @@
         "units": {
             "$ref": "file:../../../../units.json#/force"
         }
-    }
+    },
+    "$id": "material-properties-primary-structural-atomic-forces"
 }
