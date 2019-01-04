@@ -1,4 +1,5 @@
 {
+    "$id": "software-application",
     "$schema": "http://json-schema.org/draft-04/schema#",
     "title": "application schema (base)",
     "type": "object",
@@ -26,6 +27,5 @@
     },
     "required": [
         "name"
-    ],
-    "$id": "software-application"
+    ]
 }

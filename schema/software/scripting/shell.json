@@ -1,4 +1,5 @@
 {
+    "$id": "software-scripting-shell",
     "$schema": "http://json-schema.org/draft-04/schema#",
     "title": "Shell Scripting Language Schema",
     "type": "object",
@@ -47,6 +48,5 @@
             "description": "Optional environment variables exported before running the Shell script",
             "type": "object"
         }
-    },
-    "$id": "software-scripting-shell"
+    }
 }

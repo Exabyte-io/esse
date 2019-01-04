@@ -1,4 +1,5 @@
 {
+    "$id": "software-flavor",
     "$schema": "http://json-schema.org/draft-04/schema#",
     "title": "flavor schema",
     "type": "object",
@@ -27,6 +28,5 @@
     "required": [
         "name",
         "executableId"
-    ],
-    "$id": "software-flavor"
+    ]
 }

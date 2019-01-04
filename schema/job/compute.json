@@ -1,4 +1,5 @@
 {
+    "$id": "job-compute",
     "$schema": "http://json-schema.org/draft-04/schema#",
     "title": "compute arguments schema",
     "properties": {
@@ -101,6 +102,5 @@
         "nodes",
         "ppn",
         "timeLimit"
-    ],
-    "$id": "job-compute"
+    ]
 }

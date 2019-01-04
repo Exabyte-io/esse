@@ -1,4 +1,5 @@
 {
+    "$id": "software-ml-unit-execution-initialize",
     "$schema": "http://json-schema.org/draft-04/schema#",
     "title": "initialize unit schema",
     "allOf": [
@@ -24,6 +25,5 @@
                 "targets"
             ]
         }
-    },
-    "$id": "software-ml-unit-execution-initialize"
+    }
 }

@@ -1,4 +1,5 @@
 {
+    "$id": "workflow-unit-io",
     "$schema": "http://json-schema.org/draft-04/schema#",
     "title": "data IO unit schema",
     "type": "object",
@@ -44,6 +45,5 @@
         "subtype",
         "source",
         "input"
-    ],
-    "$id": "workflow-unit-io"
+    ]
 }

@@ -1,4 +1,5 @@
 {
+    "$id": "system-parent-job",
     "$schema": "http://json-schema.org/draft-04/schema#",
     "title": "Parent job entity reference schema",
     "allOf": [
@@ -14,6 +15,5 @@
                 "Job"
             ]
         }
-    },
-    "$id": "system-parent-job"
+    }
 }

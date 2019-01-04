@@ -1,4 +1,5 @@
 {
+    "$id": "software-modeling-espresso-arguments",
     "$schema": "http://json-schema.org/draft-04/schema#",
     "title": "quantum espresso arguments schema",
     "type": "object",
@@ -24,6 +25,5 @@
             "type": "integer"
         }
     },
-    "additionalProperties": false,
-    "$id": "software-modeling-espresso-arguments"
+    "additionalProperties": false
 }

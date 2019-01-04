@@ -1,4 +1,5 @@
 {
+    "$id": "workflow-subworkflow-model-method",
     "$schema": "http://json-schema.org/draft-04/schema#",
     "title": "method schema (base)",
     "properties": {
@@ -21,6 +22,5 @@
     "required": [
         "type",
         "subtype"
-    ],
-    "$id": "workflow-subworkflow-model-method"
+    ]
 }

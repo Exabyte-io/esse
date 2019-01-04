@@ -1,4 +1,5 @@
 {
+    "$id": "primitive-math-3d-tensor",
     "$schema": "http://json-schema.org/draft-04/schema#",
     "title": "3 dimensional tensor schema",
     "type": "array",
@@ -6,6 +7,5 @@
         "$ref": "file:vector.json"
     },
     "minItems": 3,
-    "maxItems": 3,
-    "$id": "primitive-math-3d-tensor"
+    "maxItems": 3
 }

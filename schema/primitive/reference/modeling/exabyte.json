@@ -1,4 +1,5 @@
 {
+    "$id": "primitive-reference-modeling-exabyte",
     "$schema": "http://json-schema.org/draft-04/schema#",
     "title": "info for characteristic obtained by exabyte calculation",
     "properties": {
@@ -25,6 +26,5 @@
         "title",
         "_id",
         "owner"
-    ],
-    "$id": "primitive-reference-modeling-exabyte"
+    ]
 }

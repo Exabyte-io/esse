@@ -1,4 +1,5 @@
 {
+    "$id": "software-ml-unit-execution",
     "oneOf": [
         {
             "$ref": "file:execution/evaluate/cross-validate.json"
@@ -12,6 +13,5 @@
         {
             "$ref": "file:execution/initialize.json"
         }
-    ],
-    "$id": "software-ml-unit-execution"
+    ]
 }

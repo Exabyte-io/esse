@@ -1,4 +1,5 @@
 {
+    "$id": "software-ml-unit-execution-train",
     "$schema": "http://json-schema.org/draft-04/schema#",
     "title": "train unit schema",
     "allOf": [
@@ -33,6 +34,5 @@
                 "targets"
             ]
         }
-    },
-    "$id": "software-ml-unit-execution-train"
+    }
 }

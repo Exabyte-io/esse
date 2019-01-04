@@ -1,4 +1,5 @@
 {
+    "$id": "science-methods-unknown",
     "$schema": "http://json-schema.org/draft-04/schema#",
     "title": "unknown methods schema",
     "properties": {
@@ -16,6 +17,5 @@
     "required": [
         "type",
         "subtype"
-    ],
-    "$id": "science-methods-unknown"
+    ]
 }

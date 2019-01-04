@@ -1,4 +1,5 @@
 {
+    "$id": "science-models-dft-convergence-electronic",
     "$schema": "http://json-schema.org/draft-04/schema#",
     "title": "electronic self consistency convergence schema",
     "properties": {
@@ -26,6 +27,5 @@
     },
     "required": [
         "data"
-    ],
-    "$id": "science-models-dft-convergence-electronic"
+    ]
 }

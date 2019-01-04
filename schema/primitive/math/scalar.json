@@ -1,4 +1,5 @@
 {
+    "$id": "primitive-math-scalar",
     "$schema": "http://json-schema.org/draft-04/schema#",
     "title": "scalar schema",
     "type": "object",
@@ -9,6 +10,5 @@
     },
     "required": [
         "value"
-    ],
-    "$id": "primitive-math-scalar"
+    ]
 }

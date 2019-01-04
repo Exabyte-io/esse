@@ -1,4 +1,5 @@
 {
+    "$id": "material-properties-primary-structural-lattice-lattice-bravais",
     "$schema": "http://json-schema.org/draft-04/schema#",
     "title": "lattice implicit schema",
     "allOf": [
@@ -49,6 +50,5 @@
     },
     "required": [
         "type"
-    ],
-    "$id": "material-properties-primary-structural-lattice-lattice-bravais"
+    ]
 }

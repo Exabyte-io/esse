@@ -1,4 +1,5 @@
 {
+    "$id": "science-methods-local-orbital",
     "$schema": "http://json-schema.org/draft-04/schema#",
     "title": "local atomic orbitals method schema",
     "properties": {
@@ -14,6 +15,5 @@
                 "cgto"
             ]
         }
-    },
-    "$id": "science-methods-local-orbital"
+    }
 }

@@ -1,4 +1,5 @@
 {
+    "$id": "material-properties-primary-structural-basis-atomic-coordinates",
     "$schema": "http://json-schema.org/draft-04/schema#",
     "title": "atomic coordinates",
     "description": "coordinates of atoms by ids, vector, unitless",
@@ -14,6 +15,5 @@
         "units": {
             "$ref": "file:../../../../../units.json#/length"
         }
-    },
-    "$id": "material-properties-primary-structural-basis-atomic-coordinates"
+    }
 }

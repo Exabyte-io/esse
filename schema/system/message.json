@@ -1,4 +1,5 @@
 {
+    "$id": "system-message",
     "$schema": "http://json-schema.org/draft-04/schema#",
     "title": "message schema",
     "description": "communication message between Rupy and web application.",
@@ -62,6 +63,5 @@
     "required": [
         "header",
         "payload"
-    ],
-    "$id": "system-message"
+    ]
 }

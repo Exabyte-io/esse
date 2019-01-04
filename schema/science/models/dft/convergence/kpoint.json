@@ -1,4 +1,5 @@
 {
+    "$id": "science-models-dft-convergence-kpoint",
     "$schema": "http://json-schema.org/draft-04/schema#",
     "title": "convergence schema for converging a property wrt kpoints",
     "properties": {
@@ -41,6 +42,5 @@
         "tolerance",
         "units",
         "data"
-    ],
-    "$id": "science-models-dft-convergence-kpoint"
+    ]
 }

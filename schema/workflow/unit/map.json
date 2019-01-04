@@ -1,4 +1,5 @@
 {
+    "$id": "workflow-unit-map",
     "$schema": "http://json-schema.org/draft-04/schema#",
     "title": "map unit schema",
     "type": "object",
@@ -71,6 +72,5 @@
                 "workflowId"
             ]
         }
-    },
-    "$id": "workflow-unit-map"
+    }
 }

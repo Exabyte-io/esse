@@ -1,4 +1,5 @@
 {
+    "$id": "software-executable",
     "$schema": "http://json-schema.org/draft-04/schema#",
     "title": "executable schema",
     "type": "object",
@@ -23,6 +24,5 @@
     "required": [
         "name",
         "applicationId"
-    ],
-    "$id": "software-executable"
+    ]
 }

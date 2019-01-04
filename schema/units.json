@@ -1,4 +1,5 @@
 {
+    "$id": "units",
     "length": {
         "enum": [
             "km",
@@ -85,6 +86,5 @@
         "enum": [
             "uB"
         ]
-    },
-    "$id": "units"
+    }
 }

@@ -1,4 +1,5 @@
 {
+    "$id": "system-project",
     "$schema": "http://json-schema.org/draft-04/schema#",
     "title": "Project entity reference schema",
     "allOf": [
@@ -14,6 +15,5 @@
                 "Project"
             ]
         }
-    },
-    "$id": "system-project"
+    }
 }

@@ -1,4 +1,5 @@
 {
+    "$id": "material-properties-primary-stress-tensor",
     "$schema": "http://json-schema.org/draft-04/schema#",
     "title": "stress tensor schema",
     "properties": {
@@ -13,6 +14,5 @@
         "units": {
             "$ref": "file:../../../units.json#/pressure"
         }
-    },
-    "$id": "material-properties-primary-stress-tensor"
+    }
 }

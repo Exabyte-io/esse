@@ -1,4 +1,5 @@
 {
+    "$id": "system-file-source",
     "$schema": "http://json-schema.org/draft-04/schema#",
     "title": "file source schema",
     "description": "file source with the information inside",
@@ -21,6 +22,5 @@
         "extension",
         "name",
         "text"
-    ],
-    "$id": "system-file-source"
+    ]
 }

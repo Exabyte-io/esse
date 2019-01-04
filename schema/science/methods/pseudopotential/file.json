@@ -1,4 +1,5 @@
 {
+    "$id": "science-methods-pseudopotential-file",
     "$schema": "http://json-schema.org/draft-04/schema#",
     "title": "pseudopotential file schema",
     "properties": {
@@ -111,6 +112,5 @@
         "source",
         "path",
         "apps"
-    ],
-    "$id": "science-methods-pseudopotential-file"
+    ]
 }
