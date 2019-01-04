@@ -34,6 +34,7 @@ def dump_schemas():
     """
     Dumps schemas:
         - fix space and indentation
+        - preserve keys order
     """
     for root, dirs, files in os.walk(SCHEMA_DR):
         for file_ in files:
