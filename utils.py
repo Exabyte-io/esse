@@ -21,7 +21,7 @@ def dump_json_file(path_, sort_keys=True):
 
 def dump_examples():
     """
-    re-dumps examples:
+    Dumps examples:
         - fix space and indentation
         - sort keys
     """
@@ -32,7 +32,7 @@ def dump_examples():
 
 def dump_schemas():
     """
-    re-dumps schemas:
+    Dumps schemas:
         - fix space and indentation
     """
     for root, dirs, files in os.walk(SCHEMA_DR):
