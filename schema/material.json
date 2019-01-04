@@ -1,55 +1,55 @@
 {
-    "$schema": "http://json-schema.org/draft-04/schema#",
-    "title": "material schema",
+    "$schema": "http://json-schema.org/draft-04/schema#", 
+    "title": "material schema", 
     "allOf": [
         {
-            "description": "bankable entity schema",
+            "description": "bankable entity schema", 
             "$ref": "file:system/bankable_entity.json"
         }
-    ],
+    ], 
     "properties": {
         "formula": {
-            "description": "reduced chemical formula",
+            "description": "reduced chemical formula", 
             "type": "string"
-        },
+        }, 
         "unitCellFormula": {
-            "description": "chemical formula based on the number of atoms of each element in the supercell",
+            "description": "chemical formula based on the number of atoms of each element in the supercell", 
             "type": "string"
-        },
+        }, 
         "basis": {
-            "description": "object containing an array of elements and coordinates in the supercell",
+            "description": "object containing an array of elements and coordinates in the supercell", 
             "$ref": "file:material/properties/primary/structural/basis.json"
-        },
+        }, 
         "lattice": {
-            "description": "object defining the lattice cell size and shape",
+            "description": "object defining the lattice cell size and shape", 
             "$ref": "file:material/properties/primary/structural/lattice.json"
-        },
+        }, 
         "derivedProperties": {
-            "description": "object defining the lattice cell size and shape",
+            "description": "object defining the lattice cell size and shape", 
             "$ref": "file:material/derived_properties.json"
-        },
+        }, 
         "external": {
-            "description": "information about external sources of this material",
-            "type": "array",
+            "description": "information about external sources of this material", 
+            "type": "array", 
             "items": {
                 "$ref": "file:system/database_source.json"
             }
-        },
+        }, 
         "fileSource": {
-            "description": "File information if material was exported from POSCAR, XYZ or UPF file.",
+            "description": "File information if material was exported from POSCAR, XYZ or UPF file.", 
             "$ref": "file:system/file_source.json"
-        },
+        }, 
         "scaledHash": {
-            "description": "Hash string for a scaled structure with lattice vector a set to 1 (eg. for materials under pressure).",
+            "description": "Hash string for a scaled structure with lattice vector a set to 1 (eg. for materials under pressure).", 
             "type": "string"
-        },
+        }, 
         "icsdId": {
-            "description": "Corresponding ICSD id of the material",
+            "description": "Corresponding ICSD id of the material", 
             "type": "integer"
         }
-    },
+    }, 
     "required": [
-        "basis",
+        "basis", 
         "lattice"
     ]
 }

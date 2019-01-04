@@ -1,17 +1,17 @@
 {
-    "$schema": "http://json-schema.org/draft-04/schema#",
-    "title": "density schema",
+    "$schema": "http://json-schema.org/draft-04/schema#", 
+    "title": "density schema", 
     "allOf": [
         {
             "$ref": "file:../../../../primitive/math/scalar.json"
         }
-    ],
+    ], 
     "properties": {
         "name": {
             "enum": [
                 "density"
             ]
-        },
+        }, 
         "units": {
             "enum": [
                 "g/cm^3"

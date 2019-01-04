@@ -1,66 +1,66 @@
 {
-    "$schema": "http://json-schema.org/draft-04/schema#",
-    "title": "message schema",
-    "description": "communication message between Rupy and web application.",
+    "$schema": "http://json-schema.org/draft-04/schema#", 
+    "title": "message schema", 
+    "description": "communication message between Rupy and web application.", 
     "properties": {
         "header": {
-            "type": "object",
+            "type": "object", 
             "properties": {
                 "entity": {
-                    "type": "object",
+                    "type": "object", 
                     "properties": {
                         "_id": {
-                            "description": "job identifier",
+                            "description": "job identifier", 
                             "type": "string"
-                        },
+                        }, 
                         "name": {
-                            "description": "entity name.",
-                            "type": "string",
+                            "description": "entity name.", 
+                            "type": "string", 
                             "enum": [
-                                "job",
+                                "job", 
                                 "unit"
                             ]
-                        },
+                        }, 
                         "flowchartId": {
-                            "description": "unit identifier within the workflow",
+                            "description": "unit identifier within the workflow", 
                             "type": "string"
-                        },
+                        }, 
                         "probe": {
-                            "description": "source of the message.",
-                            "type": "string",
+                            "description": "source of the message.", 
+                            "type": "string", 
                             "enum": [
-                                "monitor",
+                                "monitor", 
                                 "postprocessor"
                             ]
                         }
-                    },
+                    }, 
                     "required": [
-                        "_id",
+                        "_id", 
                         "name"
                     ]
-                },
+                }, 
                 "version": {
-                    "description": "Rupy-Webapp communication schema version.",
+                    "description": "Rupy-Webapp communication schema version.", 
                     "type": "string"
-                },
+                }, 
                 "timestamp": {
-                    "description": "Timestamp of the message.",
+                    "description": "Timestamp of the message.", 
                     "type": "number"
                 }
-            },
+            }, 
             "required": [
-                "entity",
-                "version",
+                "entity", 
+                "version", 
                 "timestamp"
             ]
-        },
+        }, 
         "payload": {
-            "description": "Actual payload of the message.",
+            "description": "Actual payload of the message.", 
             "type": "object"
         }
-    },
+    }, 
     "required": [
-        "header",
+        "header", 
         "payload"
     ]
 }

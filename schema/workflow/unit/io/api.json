@@ -1,23 +1,23 @@
 {
-    "$schema": "http://json-schema.org/draft-04/schema#",
-    "title": "data IO rest API input schema",
-    "type": "object",
+    "$schema": "http://json-schema.org/draft-04/schema#", 
+    "title": "data IO rest API input schema", 
+    "type": "object", 
     "properties": {
         "endpoint": {
-            "description": "rest API endpoint",
+            "description": "rest API endpoint", 
             "type": "string"
-        },
+        }, 
         "endpoint_options": {
-            "description": "rest API endpoint options",
+            "description": "rest API endpoint options", 
             "type": "object"
-        },
+        }, 
         "name": {
-            "description": "the name of the variable in local scope to save the data under",
+            "description": "the name of the variable in local scope to save the data under", 
             "type": "string"
         }
-    },
+    }, 
     "required": [
-        "endpoint",
+        "endpoint", 
         "endpoint_options"
     ]
 }

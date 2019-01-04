@@ -1,39 +1,39 @@
 {
-    "$schema": "http://json-schema.org/draft-04/schema#",
-    "title": "band gaps schema",
-    "description": "contains band gap values",
+    "$schema": "http://json-schema.org/draft-04/schema#", 
+    "title": "band gaps schema", 
+    "description": "contains band gap values", 
     "properties": {
         "name": {
             "enum": [
                 "band_gaps"
             ]
-        },
+        }, 
         "values": {
-            "type": "array",
+            "type": "array", 
             "items": {
                 "$ref": "file:../../../primitive/property/band_gap.json"
             }
-        },
+        }, 
         "eigenvalues": {
-            "type": "array",
+            "type": "array", 
             "items": {
                 "properties": {
                     "kpoint": {
                         "$ref": "file:../../../primitive/math/point.json"
-                    },
+                    }, 
                     "weight": {
                         "type": "number"
-                    },
+                    }, 
                     "eigenvalues": {
-                        "type": "array",
+                        "type": "array", 
                         "items": {
                             "properties": {
                                 "spin": {
                                     "type": "number"
-                                },
+                                }, 
                                 "energies": {
                                     "type": "array"
-                                },
+                                }, 
                                 "occupations": {
                                     "type": "array"
                                 }
@@ -43,7 +43,7 @@
                 }
             }
         }
-    },
+    }, 
     "required": [
         "name"
     ]

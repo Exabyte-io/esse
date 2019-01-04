@@ -1,13 +1,13 @@
 {
-    "$schema": "http://json-schema.org/draft-04/schema#",
-    "title": "bankable entity schema",
+    "$schema": "http://json-schema.org/draft-04/schema#", 
+    "title": "bankable entity schema", 
     "allOf": [
         {
-            "description": "entity schema",
+            "description": "entity schema", 
             "$ref": "file:entity.json"
-        },
+        }, 
         {
-            "description": "bankable schema",
+            "description": "bankable schema", 
             "$ref": "file:bankable.json"
         }
     ]

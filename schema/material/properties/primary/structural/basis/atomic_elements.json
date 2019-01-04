@@ -1,13 +1,13 @@
 {
-    "$schema": "http://json-schema.org/draft-04/schema#",
-    "title": "atomic elements",
-    "description": "elements of atoms by ids, string, unitless",
+    "$schema": "http://json-schema.org/draft-04/schema#", 
+    "title": "atomic elements", 
+    "description": "elements of atoms by ids, string, unitless", 
     "properties": {
         "name": {
             "enum": [
                 "atomic_elements"
             ]
-        },
+        }, 
         "values": {
             "$ref": "file:../../../../../primitive/property/atomic_strings.json"
         }

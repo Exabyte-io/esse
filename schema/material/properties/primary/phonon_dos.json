@@ -1,12 +1,12 @@
 {
-    "$schema": "http://json-schema.org/draft-04/schema#",
-    "title": "Phonon density of states schema",
-    "type": "object",
+    "$schema": "http://json-schema.org/draft-04/schema#", 
+    "title": "Phonon density of states schema", 
+    "type": "object", 
     "allOf": [
         {
             "$ref": "file:../../../primitive/math/2d_plot.json"
         }
-    ],
+    ], 
     "properties": {
         "xAxis": {
             "properties": {
@@ -14,24 +14,24 @@
                     "enum": [
                         "frequency"
                     ]
-                },
+                }, 
                 "units": {
                     "$ref": "file:../../../units.json#/frequency"
                 }
             }
-        },
+        }, 
         "yAxis": {
             "properties": {
                 "label": {
                     "enum": [
                         "Phonon DOS"
                     ]
-                },
+                }, 
                 "units": {
                     "$ref": "file:../../../units.json#/phononDOS"
                 }
             }
-        },
+        }, 
         "name": {
             "enum": [
                 "phonon_dos"

@@ -1,15 +1,15 @@
 {
-    "$schema": "http://json-schema.org/draft-04/schema#",
-    "title": "Parent job entity reference schema",
+    "$schema": "http://json-schema.org/draft-04/schema#", 
+    "title": "Parent job entity reference schema", 
     "allOf": [
         {
             "$ref": "file:entity_reference.json"
         }
-    ],
+    ], 
     "properties": {
         "cls": {
-            "description": "Job class",
-            "type": "string",
+            "description": "Job class", 
+            "type": "string", 
             "enum": [
                 "Job"
             ]

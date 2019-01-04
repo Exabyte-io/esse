@@ -1,52 +1,52 @@
 {
-    "$schema": "http://json-schema.org/draft-04/schema#",
-    "title": "lattice implicit schema",
+    "$schema": "http://json-schema.org/draft-04/schema#", 
+    "title": "lattice implicit schema", 
     "allOf": [
         {
             "$ref": "file:../../../../../primitive/math/3d_lattice.json"
         }
-    ],
+    ], 
     "properties": {
         "type": {
-            "description": "Bravais lattice type in short notation",
-            "type": "string",
+            "description": "Bravais lattice type in short notation", 
+            "type": "string", 
             "enum": [
-                "CUB",
-                "BCC",
-                "FCC",
-                "TET",
-                "MCL",
-                "ORC",
-                "ORCC",
-                "ORCF",
-                "ORCI",
-                "HEX",
-                "BCT",
-                "TRI",
-                "MCLC",
+                "CUB", 
+                "BCC", 
+                "FCC", 
+                "TET", 
+                "MCL", 
+                "ORC", 
+                "ORCC", 
+                "ORCF", 
+                "ORCI", 
+                "HEX", 
+                "BCT", 
+                "TRI", 
+                "MCLC", 
                 "RHL"
             ]
-        },
+        }, 
         "units": {
-            "type": "object",
+            "type": "object", 
             "properties": {
                 "length": {
-                    "type": "string",
+                    "type": "string", 
                     "enum": [
-                        "angstrom",
+                        "angstrom", 
                         "bohr"
                     ]
-                },
+                }, 
                 "angle": {
-                    "type": "string",
+                    "type": "string", 
                     "enum": [
-                        "degree",
+                        "degree", 
                         "radian"
                     ]
                 }
             }
         }
-    },
+    }, 
     "required": [
         "type"
     ]

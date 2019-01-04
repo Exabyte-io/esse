@@ -1,15 +1,15 @@
 {
-    "$schema": "http://json-schema.org/draft-04/schema#",
-    "title": "Creator entity reference schema",
+    "$schema": "http://json-schema.org/draft-04/schema#", 
+    "title": "Creator entity reference schema", 
     "allOf": [
         {
             "$ref": "file:entity_reference.json"
         }
-    ],
+    ], 
     "properties": {
         "cls": {
-            "description": "Creator class",
-            "type": "string",
+            "description": "Creator class", 
+            "type": "string", 
             "enum": [
                 "User"
             ]

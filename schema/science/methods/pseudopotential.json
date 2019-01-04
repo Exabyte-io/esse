@@ -1,22 +1,22 @@
 {
-    "$schema": "http://json-schema.org/draft-04/schema#",
-    "title": "pseudopotential method schema",
+    "$schema": "http://json-schema.org/draft-04/schema#", 
+    "title": "pseudopotential method schema", 
     "properties": {
         "type": {
             "enum": [
                 "pseudopotential"
             ]
-        },
+        }, 
         "subtype": {
             "enum": [
-                "us",
-                "nc",
+                "us", 
+                "nc", 
                 "paw"
             ]
-        },
+        }, 
         "precision": {
             "$ref": "file:pseudopotential/precision.json"
-        },
+        }, 
         "data": {
             "properties": {
                 "dateSet": {

@@ -1,29 +1,29 @@
 {
-    "$schema": "http://json-schema.org/draft-04/schema#",
-    "title": "workflow schema",
-    "type": "object",
+    "$schema": "http://json-schema.org/draft-04/schema#", 
+    "title": "workflow schema", 
+    "type": "object", 
     "allOf": [
         {
-            "description": "bankable entity schema",
+            "description": "bankable entity schema", 
             "$ref": "file:system/bankable_entity.json"
-        },
+        }, 
         {
-            "description": "defaultable entity schema",
+            "description": "defaultable entity schema", 
             "$ref": "file:system/defaultable.json"
         }
-    ],
+    ], 
     "properties": {
         "properties": {
-            "description": "Array of characteristic properties calculated by this workflow (TODO: add enums)",
-            "type": "array",
+            "description": "Array of characteristic properties calculated by this workflow (TODO: add enums)", 
+            "type": "array", 
             "items": {
-                "description": "property names, eg. `band_gaps`, `band_structure`",
+                "description": "property names, eg. `band_gaps`, `band_structure`", 
                 "type": "string"
             }
-        },
+        }, 
         "subworkflows": {
-            "description": "Array of subworkflows. Subworkflow can be an instance of workflow to allow for nesting",
-            "type": "array",
+            "description": "Array of subworkflows. Subworkflow can be an instance of workflow to allow for nesting", 
+            "type": "array", 
             "items": {
                 "anyOf": [
                     {
@@ -31,24 +31,24 @@
                     }
                 ]
             }
-        },
+        }, 
         "units": {
-            "description": "Contains the Units of the Workflow",
-            "type": "array",
+            "description": "Contains the Units of the Workflow", 
+            "type": "array", 
             "items": {
                 "$ref": "file:workflow/unit.json"
             }
-        },
+        }, 
         "workflows": {
-            "description": "Array of workflows with the same schema as the current one.",
-            "type": "array",
+            "description": "Array of workflows with the same schema as the current one.", 
+            "type": "array", 
             "items": {
                 "type": "object"
             }
         }
-    },
+    }, 
     "required": [
-        "units",
+        "units", 
         "subworkflows"
     ]
 }

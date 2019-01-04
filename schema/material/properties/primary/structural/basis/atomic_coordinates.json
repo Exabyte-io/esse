@@ -1,16 +1,16 @@
 {
-    "$schema": "http://json-schema.org/draft-04/schema#",
-    "title": "atomic coordinates",
-    "description": "coordinates of atoms by ids, vector, unitless",
+    "$schema": "http://json-schema.org/draft-04/schema#", 
+    "title": "atomic coordinates", 
+    "description": "coordinates of atoms by ids, vector, unitless", 
     "properties": {
         "name": {
             "enum": [
                 "atomic_coordinates"
             ]
-        },
+        }, 
         "values": {
             "$ref": "file:../../../../../primitive/property/atomic_vectors.json"
-        },
+        }, 
         "units": {
             "$ref": "file:../../../../../units.json#/length"
         }

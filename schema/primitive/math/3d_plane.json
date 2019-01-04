@@ -1,18 +1,18 @@
 {
-    "$schema": "http://json-schema.org/draft-04/schema#",
-    "title": "3 dimensional plane schema",
+    "$schema": "http://json-schema.org/draft-04/schema#", 
+    "title": "3 dimensional plane schema", 
     "properties": {
         "normal": {
-            "description": "surface normal of plane",
+            "description": "surface normal of plane", 
             "$ref": "file:vector.json"
-        },
+        }, 
         "origin": {
-            "description": "origin of normal vector to the plane",
+            "description": "origin of normal vector to the plane", 
             "$ref": "file:point.json"
         }
-    },
+    }, 
     "required": [
-        "normal",
+        "normal", 
         "origin"
     ]
 }

@@ -1,10 +1,10 @@
 {
-    "$schema": "http://json-schema.org/draft-04/schema#",
-    "title": "vector schema",
-    "type": "array",
+    "$schema": "http://json-schema.org/draft-04/schema#", 
+    "title": "vector schema", 
+    "type": "array", 
     "items": {
         "type": "number"
-    },
-    "minItems": 3,
+    }, 
+    "minItems": 3, 
     "maxItems": 3
 }

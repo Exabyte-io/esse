@@ -1,13 +1,13 @@
 {
-    "$schema": "http://json-schema.org/draft-04/schema#",
-    "title": "soft removable entity schema",
+    "$schema": "http://json-schema.org/draft-04/schema#", 
+    "title": "soft removable entity schema", 
     "properties": {
         "removedAt": {
-            "description": "Timestamp of the moment when entity was removed",
+            "description": "Timestamp of the moment when entity was removed", 
             "type": "string"
-        },
+        }, 
         "removed": {
-            "description": "Identifies that entity was removed",
+            "description": "Identifies that entity was removed", 
             "type": "boolean"
         }
     }

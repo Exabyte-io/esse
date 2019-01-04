@@ -1,25 +1,25 @@
 {
-    "$schema": "http://json-schema.org/draft-04/schema#",
-    "title": "initialize unit schema",
+    "$schema": "http://json-schema.org/draft-04/schema#", 
+    "title": "initialize unit schema", 
     "allOf": [
         {
             "$ref": "file:../../../../workflow/unit/execution.json"
         }
-    ],
+    ], 
     "properties": {
         "input": {
-            "description": "model init unit (NOTE: info about method, eg. regression/linear is taken from (sub)workflow)",
-            "type": "object",
+            "description": "model init unit (NOTE: info about method, eg. regression/linear is taken from (sub)workflow)", 
+            "type": "object", 
             "properties": {
                 "targets": {
-                    "description": "target properties to predict (NOTE: must be a subset of targets for which training was done)",
-                    "type": "array",
+                    "description": "target properties to predict (NOTE: must be a subset of targets for which training was done)", 
+                    "type": "array", 
                     "items": {
-                        "description": "material features (properties) in a 'flattened' format",
+                        "description": "material features (properties) in a 'flattened' format", 
                         "type": "string"
                     }
                 }
-            },
+            }, 
             "required": [
                 "targets"
             ]

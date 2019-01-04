@@ -1,11 +1,11 @@
 {
-    "$schema": "http://json-schema.org/draft-04/schema#",
-    "title": "train score schema",
+    "$schema": "http://json-schema.org/draft-04/schema#", 
+    "title": "train score schema", 
     "allOf": [
         {
             "$ref": "file:../../../../workflow/unit/execution.json"
         }
-    ],
+    ], 
     "properties": {
         "input": {}
     }

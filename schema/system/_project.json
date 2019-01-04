@@ -1,15 +1,15 @@
 {
-    "$schema": "http://json-schema.org/draft-04/schema#",
-    "title": "Project entity reference schema",
+    "$schema": "http://json-schema.org/draft-04/schema#", 
+    "title": "Project entity reference schema", 
     "allOf": [
         {
             "$ref": "file:entity_reference.json"
         }
-    ],
+    ], 
     "properties": {
         "cls": {
-            "description": "Project class",
-            "type": "string",
+            "description": "Project class", 
+            "type": "string", 
             "enum": [
                 "Project"
             ]

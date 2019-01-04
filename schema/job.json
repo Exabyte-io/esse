@@ -1,64 +1,64 @@
 {
-    "$schema": "http://json-schema.org/draft-04/schema#",
-    "title": "job schema",
+    "$schema": "http://json-schema.org/draft-04/schema#", 
+    "title": "job schema", 
     "allOf": [
         {
-            "description": "entity schema",
+            "description": "entity schema", 
             "$ref": "file:system/entity.json"
         }
-    ],
+    ], 
     "properties": {
         "rmsId": {
-            "description": "Identity used to track jobs originated from command-line",
+            "description": "Identity used to track jobs originated from command-line", 
             "type": "string"
-        },
+        }, 
         "status": {
-            "description": "job status",
+            "description": "job status", 
             "enum": [
-                "pre-submission",
-                "submitted",
-                "active",
-                "finished",
-                "terminate_queued",
-                "terminated",
-                "error",
-                "deleted",
+                "pre-submission", 
+                "submitted", 
+                "active", 
+                "finished", 
+                "terminate_queued", 
+                "terminated", 
+                "error", 
+                "deleted", 
                 "timeout"
             ]
-        },
+        }, 
         "startTime": {
-            "description": "Approximate start time of the job. e.g. within 10 min",
+            "description": "Approximate start time of the job. e.g. within 10 min", 
             "type": "string"
-        },
+        }, 
         "workDir": {
-            "description": "The path to the working directory of this job, when the job originates from command-line",
+            "description": "The path to the working directory of this job, when the job originates from command-line", 
             "type": "string"
-        },
+        }, 
         "compute": {
-            "description": "Job's compute parameters",
+            "description": "Job's compute parameters", 
             "$ref": "file:job/compute.json"
-        },
+        }, 
         "workflow": {
-            "description": "Arch-workflow for the job",
+            "description": "Arch-workflow for the job", 
             "$ref": "file:workflow.json"
-        },
+        }, 
         "_project": {
-            "description": "Subset of the full information about the project that this job belongs to.",
+            "description": "Subset of the full information about the project that this job belongs to.", 
             "$ref": "file:system/entity_reference.json"
-        },
+        }, 
         "_material": {
-            "description": "Subset of the full information about the materials used inside this job.",
+            "description": "Subset of the full information about the materials used inside this job.", 
             "$ref": "file:system/entity_reference.json"
-        },
+        }, 
         "parent": {
-            "description": "Subset of the full information about the parent job for the job. Only a job from the same project can be assigned as a parent one.",
+            "description": "Subset of the full information about the parent job for the job. Only a job from the same project can be assigned as a parent one.", 
             "$ref": "file:system/entity_reference.json"
         }
-    },
+    }, 
     "required": [
-        "status",
-        "compute",
-        "workflow",
+        "status", 
+        "compute", 
+        "workflow", 
         "_project"
     ]
 }

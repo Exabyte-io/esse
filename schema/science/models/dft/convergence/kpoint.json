@@ -1,45 +1,45 @@
 {
-    "$schema": "http://json-schema.org/draft-04/schema#",
-    "title": "convergence schema for converging a property wrt kpoints",
+    "$schema": "http://json-schema.org/draft-04/schema#", 
+    "title": "convergence schema for converging a property wrt kpoints", 
     "properties": {
         "tolerance": {
             "description": "tolerance for the property under investigation"
-        },
+        }, 
         "units": {
-            "description": "units for the property under investigation",
+            "description": "units for the property under investigation", 
             "type": "string"
-        },
+        }, 
         "property": {
-            "description": "name of the property under investigation",
+            "description": "name of the property under investigation", 
             "type": "string"
-        },
+        }, 
         "data": {
-            "description": "kpoint grid and property information",
+            "description": "kpoint grid and property information", 
             "items": {
-                "type": "object",
+                "type": "object", 
                 "properties": {
                     "value": {
                         "description": "value of the property at this step"
-                    },
+                    }, 
                     "grid": {
-                        "description": "information about the kpoint grid",
+                        "description": "information about the kpoint grid", 
                         "type": "object"
-                    },
+                    }, 
                     "spacing": {
-                        "description": "optional kpoint spacing information",
+                        "description": "optional kpoint spacing information", 
                         "type": "number"
                     }
-                },
+                }, 
                 "required": [
-                    "value",
+                    "value", 
                     "grid"
                 ]
             }
         }
-    },
+    }, 
     "required": [
-        "tolerance",
-        "units",
+        "tolerance", 
+        "units", 
         "data"
     ]
 }

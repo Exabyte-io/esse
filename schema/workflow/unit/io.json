@@ -1,48 +1,48 @@
 {
-    "$schema": "http://json-schema.org/draft-04/schema#",
-    "title": "data IO unit schema",
-    "type": "object",
+    "$schema": "http://json-schema.org/draft-04/schema#", 
+    "title": "data IO unit schema", 
+    "type": "object", 
     "allOf": [
         {
             "$ref": "file:../unit.json"
         }
-    ],
+    ], 
     "properties": {
         "type": {
             "enum": [
                 "io"
             ]
-        },
+        }, 
         "subtype": {
             "enum": [
-                "input",
-                "output",
+                "input", 
+                "output", 
                 "dataFrame"
             ]
-        },
+        }, 
         "source": {
             "enum": [
-                "api",
+                "api", 
                 "db"
             ]
-        },
+        }, 
         "input": {
-            "type": "array",
+            "type": "array", 
             "items": {
                 "anyOf": [
                     {
                         "$ref": "file:io/api.json"
-                    },
+                    }, 
                     {
                         "$ref": "file:io/db.json"
                     }
                 ]
             }
         }
-    },
+    }, 
     "required": [
-        "subtype",
-        "source",
+        "subtype", 
+        "source", 
         "input"
     ]
 }

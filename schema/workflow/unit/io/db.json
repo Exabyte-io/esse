@@ -1,33 +1,33 @@
 {
-    "$schema": "http://json-schema.org/draft-04/schema#",
-    "title": "data IO database input/output schema",
-    "type": "object",
+    "$schema": "http://json-schema.org/draft-04/schema#", 
+    "title": "data IO database input/output schema", 
+    "type": "object", 
     "oneOf": [
         {
             "properties": {
                 "ids": {
-                    "description": "IDs of item to retrieve from db",
+                    "description": "IDs of item to retrieve from db", 
                     "type": "array"
                 }
-            },
+            }, 
             "required": [
                 "ids"
             ]
-        },
+        }, 
         {
             "properties": {
                 "collection": {
-                    "description": "db collection name",
+                    "description": "db collection name", 
                     "type": "string"
-                },
+                }, 
                 "draft": {
-                    "description": "whether the result should be saved as draft",
-                    "type": "boolean",
+                    "description": "whether the result should be saved as draft", 
+                    "type": "boolean", 
                     "default": true
                 }
-            },
+            }, 
             "required": [
-                "collection",
+                "collection", 
                 "draft"
             ]
         }

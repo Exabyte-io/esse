@@ -1,16 +1,16 @@
 {
-    "$schema": "http://json-schema.org/draft-04/schema#",
-    "title": "axis schema",
+    "$schema": "http://json-schema.org/draft-04/schema#", 
+    "title": "axis schema", 
     "properties": {
         "label": {
-            "description": "label of an axis object",
+            "description": "label of an axis object", 
             "type": "string"
-        },
+        }, 
         "units": {
-            "description": "units for an axis",
+            "description": "units for an axis", 
             "type": "string"
         }
-    },
+    }, 
     "required": [
         "label"
     ]

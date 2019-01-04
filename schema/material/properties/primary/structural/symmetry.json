@@ -1,18 +1,18 @@
 {
-    "$schema": "http://json-schema.org/draft-04/schema#",
-    "title": "symmetry schema",
+    "$schema": "http://json-schema.org/draft-04/schema#", 
+    "title": "symmetry schema", 
     "properties": {
         "spaceGroupSymbol": {
-            "description": "space group symbol in Hermann–Mauguin notation",
+            "description": "space group symbol in Hermann\u2013Mauguin notation", 
             "type": "string"
-        },
+        }, 
         "tolerance": {
-            "description": "tolerance used for symmetry calculation",
+            "description": "tolerance used for symmetry calculation", 
             "allOf": [
                 {
                     "$ref": "file:../../../../primitive/math/scalar.json"
                 }
-            ],
+            ], 
             "properties": {
                 "units": {
                     "enum": [
@@ -20,7 +20,7 @@
                     ]
                 }
             }
-        },
+        }, 
         "name": {
             "enum": [
                 "symmetry"

@@ -1,18 +1,18 @@
 {
-    "$schema": "http://json-schema.org/draft-04/schema#",
-    "title": "location schema",
+    "$schema": "http://json-schema.org/draft-04/schema#", 
+    "title": "location schema", 
     "properties": {
         "latitude": {
-            "description": "location latitude",
+            "description": "location latitude", 
             "type": "number"
-        },
+        }, 
         "longitude": {
-            "description": "location longitude",
+            "description": "location longitude", 
             "type": "number"
         }
-    },
+    }, 
     "required": [
-        "latitude",
+        "latitude", 
         "longitude"
     ]
 }

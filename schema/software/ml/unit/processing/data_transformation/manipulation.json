@@ -1,47 +1,47 @@
 {
-    "$schema": "http://json-schema.org/draft-04/schema#",
-    "title": "scale and reduce unit schema",
+    "$schema": "http://json-schema.org/draft-04/schema#", 
+    "title": "scale and reduce unit schema", 
     "allOf": [
         {
             "$ref": "file:../../../../../workflow/unit/processing.json"
         }
-    ],
-    "type": "object",
+    ], 
+    "type": "object", 
     "properties": {
         "operation": {
-            "type": "string",
+            "type": "string", 
             "enum": [
                 "data_transformation"
             ]
-        },
+        }, 
         "operationType": {
-            "type": "string",
+            "type": "string", 
             "enum": [
                 "manipulation"
             ]
-        },
+        }, 
         "inputData": {
-            "type": "object",
+            "type": "object", 
             "properties": {
                 "cleanMissingData": {
-                    "description": "whether to clean missing data, eg. NaN",
-                    "type": "boolean",
+                    "description": "whether to clean missing data, eg. NaN", 
+                    "type": "boolean", 
                     "default": true
-                },
+                }, 
                 "removeDuplicateRows": {
-                    "description": "whether to remove duplicate rows",
-                    "type": "boolean",
+                    "description": "whether to remove duplicate rows", 
+                    "type": "boolean", 
                     "default": true
-                },
+                }, 
                 "replaceNoneValuesWith": {
-                    "description": "replace None values with a given value",
-                    "default": 0,
+                    "description": "replace None values with a given value", 
+                    "default": 0, 
                     "type": "number"
                 }
-            },
+            }, 
             "required": [
-                "cleanMissingData",
-                "removeDuplicateRows",
+                "cleanMissingData", 
+                "removeDuplicateRows", 
                 "replaceNoneValuesWith"
             ]
         }
