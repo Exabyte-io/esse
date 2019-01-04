@@ -1,4 +1,5 @@
 {
+    "$id": "material-properties-primary-band-gaps",
     "$schema": "http://json-schema.org/draft-04/schema#",
     "title": "band gaps schema",
     "description": "contains band gap values",
@@ -46,6 +47,5 @@
     },
     "required": [
         "name"
-    ],
-    "$id": "material-properties-primary-band-gaps"
+    ]
 }

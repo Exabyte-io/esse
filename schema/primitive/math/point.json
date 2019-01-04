@@ -1,6 +1,6 @@
 {
+    "$id": "primitive-math-point",
     "$schema": "http://json-schema.org/draft-04/schema#",
     "title": "point schema",
-    "$ref": "file:vector.json",
-    "$id": "primitive-math-point"
+    "$ref": "file:vector.json"
 }

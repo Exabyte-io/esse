@@ -1,4 +1,5 @@
 {
+    "$id": "primitive-property-band-gap",
     "$schema": "http://json-schema.org/draft-04/schema#",
     "title": "band gap schema",
     "allOf": [
@@ -28,6 +29,5 @@
     },
     "required": [
         "type"
-    ],
-    "$id": "primitive-property-band-gap"
+    ]
 }

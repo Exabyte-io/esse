@@ -1,7 +1,7 @@
 {
+    "$id": "software-mixins-runtime-item-string",
     "$schema": "http://json-schema.org/draft-04/schema#",
     "title": "result schema",
     "description": "name of runtime item in shortened notation",
-    "type": "string",
-    "$id": "software-mixins-runtime-item-string"
+    "type": "string"
 }

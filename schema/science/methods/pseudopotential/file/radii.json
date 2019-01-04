@@ -1,4 +1,5 @@
 {
+    "$id": "science-methods-pseudopotential-file-radii",
     "$schema": "http://json-schema.org/draft-04/schema#",
     "title": "radii schema",
     "type": "object",
@@ -20,6 +21,5 @@
                 "nm"
             ]
         }
-    },
-    "$id": "science-methods-pseudopotential-file-radii"
+    }
 }

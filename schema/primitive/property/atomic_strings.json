@@ -1,4 +1,5 @@
 {
+    "$id": "primitive-property-atomic-strings",
     "$schema": "http://json-schema.org/draft-04/schema#",
     "title": "atomic vectors schema",
     "allOf": [
@@ -12,6 +13,5 @@
                 "type": "string"
             }
         }
-    },
-    "$id": "primitive-property-atomic-strings"
+    }
 }

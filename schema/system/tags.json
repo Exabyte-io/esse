@@ -1,4 +1,5 @@
 {
+    "$id": "system-tags",
     "$schema": "http://json-schema.org/draft-04/schema#",
     "title": "entity tags schema",
     "properties": {
@@ -9,6 +10,5 @@
                 "type": "string"
             }
         }
-    },
-    "$id": "system-tags"
+    }
 }

@@ -1,4 +1,5 @@
 {
+    "$id": "job",
     "$schema": "http://json-schema.org/draft-04/schema#",
     "title": "job schema",
     "allOf": [
@@ -60,6 +61,5 @@
         "compute",
         "workflow",
         "_project"
-    ],
-    "$id": "job"
+    ]
 }

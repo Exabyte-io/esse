@@ -1,4 +1,5 @@
 {
+    "$id": "system-entity",
     "$schema": "http://json-schema.org/draft-04/schema#",
     "title": "entity schema",
     "allOf": [
@@ -46,6 +47,5 @@
         "schemaVersion",
         "owner",
         "creator"
-    ],
-    "$id": "system-entity"
+    ]
 }

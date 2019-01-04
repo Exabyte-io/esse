@@ -1,4 +1,5 @@
 {
+    "$id": "system-owner",
     "$schema": "http://json-schema.org/draft-04/schema#",
     "title": "Entity owner reference schema",
     "allOf": [
@@ -14,6 +15,5 @@
                 "Account"
             ]
         }
-    },
-    "$id": "system-owner"
+    }
 }

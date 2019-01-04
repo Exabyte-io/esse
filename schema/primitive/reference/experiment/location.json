@@ -1,4 +1,5 @@
 {
+    "$id": "primitive-reference-experiment-location",
     "$schema": "http://json-schema.org/draft-04/schema#",
     "title": "location schema",
     "properties": {
@@ -14,6 +15,5 @@
     "required": [
         "latitude",
         "longitude"
-    ],
-    "$id": "primitive-reference-experiment-location"
+    ]
 }

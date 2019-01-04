@@ -1,4 +1,5 @@
 {
+    "$id": "software-template",
     "$schema": "http://json-schema.org/draft-04/schema#",
     "title": "template schema",
     "type": "object",
@@ -28,6 +29,5 @@
     "required": [
         "name",
         "content"
-    ],
-    "$id": "software-template"
+    ]
 }

@@ -1,4 +1,5 @@
 {
+    "$id": "material-derived-properties",
     "$schema": "http://json-schema.org/draft-04/schema#",
     "title": "derived properties schema",
     "type": "array",
@@ -20,6 +21,5 @@
                 "$ref": "file:properties/primary/structural/p-norm.json"
             }
         ]
-    },
-    "$id": "material-derived-properties"
+    }
 }

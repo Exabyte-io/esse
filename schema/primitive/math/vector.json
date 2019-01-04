@@ -1,4 +1,5 @@
 {
+    "$id": "primitive-math-vector",
     "$schema": "http://json-schema.org/draft-04/schema#",
     "title": "vector schema",
     "type": "array",
@@ -6,6 +7,5 @@
         "type": "number"
     },
     "minItems": 3,
-    "maxItems": 3,
-    "$id": "primitive-math-vector"
+    "maxItems": 3
 }

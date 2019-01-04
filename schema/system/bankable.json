@@ -1,4 +1,5 @@
 {
+    "$id": "system-bankable",
     "$schema": "http://json-schema.org/draft-04/schema#",
     "title": "bankable schema",
     "properties": {
@@ -14,6 +15,5 @@
     "required": [
         "exabyteId",
         "hash"
-    ],
-    "$id": "system-bankable"
+    ]
 }

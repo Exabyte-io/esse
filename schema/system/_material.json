@@ -1,4 +1,5 @@
 {
+    "$id": "system-material",
     "$schema": "http://json-schema.org/draft-04/schema#",
     "title": "Material entity reference schema",
     "allOf": [
@@ -14,6 +15,5 @@
                 "Material"
             ]
         }
-    },
-    "$id": "system-material"
+    }
 }

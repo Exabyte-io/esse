@@ -1,4 +1,5 @@
 {
+    "$id": "material-properties-primary-zero-point-energy",
     "$schema": "http://json-schema.org/draft-04/schema#",
     "title": "zero point energy schema",
     "allOf": [
@@ -12,6 +13,5 @@
                 "zero_point_energy"
             ]
         }
-    },
-    "$id": "material-properties-primary-zero-point-energy"
+    }
 }

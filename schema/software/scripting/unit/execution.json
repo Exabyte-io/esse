@@ -1,4 +1,4 @@
 {
-    "$ref": "file:../../modeling/unit/execution.json",
-    "$id": "software-scripting-unit-execution"
+    "$id": "software-scripting-unit-execution",
+    "$ref": "file:../../modeling/unit/execution.json"
 }

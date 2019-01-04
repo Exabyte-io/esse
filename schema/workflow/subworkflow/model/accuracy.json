@@ -1,4 +1,5 @@
 {
+    "$id": "workflow-subworkflow-model-accuracy",
     "$schema": "http://json-schema.org/draft-04/schema#",
     "description": "Object showing ultimate possible accuracy for a theory implementation",
     "title": "accuracy schema",
@@ -28,6 +29,5 @@
             "property",
             "value"
         ]
-    },
-    "$id": "workflow-subworkflow-model-accuracy"
+    }
 }

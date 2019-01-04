@@ -1,4 +1,5 @@
 {
+    "$id": "primitive-math-2d-plot",
     "$schema": "http://json-schema.org/draft-04/schema#",
     "title": "2 dimension plot schema",
     "allOf": [
@@ -24,6 +25,5 @@
     "required": [
         "xAxis",
         "yAxis"
-    ],
-    "$id": "primitive-math-2d-plot"
+    ]
 }
