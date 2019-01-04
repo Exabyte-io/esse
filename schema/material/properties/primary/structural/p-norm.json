@@ -1,20 +1,20 @@
 {
-    "$schema": "http://json-schema.org/draft-04/schema#", 
-    "title": "p_norm", 
-    "description": "https://en.wikipedia.org/wiki/Norm_(mathematics)#p-norm", 
+    "$schema": "http://json-schema.org/draft-04/schema#",
+    "title": "p_norm",
+    "description": "https://en.wikipedia.org/wiki/Norm_(mathematics)#p-norm",
     "allOf": [
         {
             "$ref": "file:../../../../primitive/math/scalar.json"
         }
-    ], 
+    ],
     "properties": {
         "name": {
             "enum": [
                 "p-norm"
             ]
-        }, 
+        },
         "degree": {
-            "type": "integer", 
+            "type": "integer",
             "description": "degree of the dimensionality of the norm"
         }
     }

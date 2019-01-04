@@ -1,21 +1,21 @@
 {
-    "$schema": "http://json-schema.org/draft-04/schema#", 
-    "title": "cross-validation unit schema", 
+    "$schema": "http://json-schema.org/draft-04/schema#",
+    "title": "cross-validation unit schema",
     "allOf": [
         {
             "$ref": "file:../../../../../workflow/unit/execution.json"
         }
-    ], 
+    ],
     "properties": {
         "input": {
-            "description": "TODO: consider keeping executable `evaluate` and flavor `cross-validate` as before", 
-            "type": "object", 
+            "description": "TODO: consider keeping executable `evaluate` and flavor `cross-validate` as before",
+            "type": "object",
             "properties": {
                 "nSplits": {
-                    "description": "number of groups to split the training dataset for cross-validation", 
+                    "description": "number of groups to split the training dataset for cross-validation",
                     "type": "number"
                 }
-            }, 
+            },
             "required": [
                 "nSplits"
             ]

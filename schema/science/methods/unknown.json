@@ -1,20 +1,20 @@
 {
-    "$schema": "http://json-schema.org/draft-04/schema#", 
-    "title": "unknown methods schema", 
+    "$schema": "http://json-schema.org/draft-04/schema#",
+    "title": "unknown methods schema",
     "properties": {
         "type": {
             "enum": [
                 "unknown"
             ]
-        }, 
+        },
         "subtype": {
             "enum": [
                 "unknown"
             ]
         }
-    }, 
+    },
     "required": [
-        "type", 
+        "type",
         "subtype"
     ]
 }

@@ -1,105 +1,105 @@
 {
-    "$schema": "http://json-schema.org/draft-04/schema#", 
-    "title": "compute arguments schema", 
+    "$schema": "http://json-schema.org/draft-04/schema#",
+    "title": "compute arguments schema",
     "properties": {
         "queue": {
-            "description": "Name of the submission queue inside the Resource Management System (RMS). D: debug, OR: on-demand reuglar, SR: saving reuglar, OF: on-demand fast, SF: saving fast", 
-            "type": "string", 
+            "description": "Name of the submission queue inside the Resource Management System (RMS). D: debug, OR: on-demand reuglar, SR: saving reuglar, OF: on-demand fast, SF: saving fast",
+            "type": "string",
             "enum": [
-                "D", 
-                "OR", 
-                "SR", 
-                "OF", 
+                "D",
+                "OR",
+                "SR",
+                "OF",
                 "SF"
             ]
-        }, 
+        },
         "nodes": {
-            "description": "number of nodes used for the job inside the RMS.", 
+            "description": "number of nodes used for the job inside the RMS.",
             "type": "integer"
-        }, 
+        },
         "ppn": {
-            "description": "number of CPUs used for the job inside the RMS.", 
+            "description": "number of CPUs used for the job inside the RMS.",
             "type": "integer"
-        }, 
+        },
         "timeLimit": {
-            "description": "Wallclock time limit for computing a job. Clock format: 'hh:mm:ss'", 
+            "description": "Wallclock time limit for computing a job. Clock format: 'hh:mm:ss'",
             "type": "string"
-        }, 
+        },
         "notify": {
-            "description": "Email notification for the job: n - never, a - job aborted, b - job begins, e - job ends. Last three could be combined.", 
+            "description": "Email notification for the job: n - never, a - job aborted, b - job begins, e - job ends. Last three could be combined.",
             "type": "string"
-        }, 
+        },
         "email": {
-            "description": "Email address to notify about job execution.", 
+            "description": "Email address to notify about job execution.",
             "type": "string"
-        }, 
+        },
         "maxCPU": {
-            "description": "Maximum CPU count per node. This parameter is used to let backend job submission infrastructure know that this job is to be charged for the maximum CPU per node instead of the actual ppn. For premium/fast queues where resources are provisioned on-demand and exclusively per user.", 
+            "description": "Maximum CPU count per node. This parameter is used to let backend job submission infrastructure know that this job is to be charged for the maximum CPU per node instead of the actual ppn. For premium/fast queues where resources are provisioned on-demand and exclusively per user.",
             "type": "integer"
-        }, 
+        },
         "arguments": {
-            "description": "Optional arguments specific to using application - VASP, Quantum Espresso, etc. Specified elsewhere", 
+            "description": "Optional arguments specific to using application - VASP, Quantum Espresso, etc. Specified elsewhere",
             "type": "object"
-        }, 
+        },
         "cluster": {
-            "description": "Cluster where the job is executed. Optional on create. Required on job submission.", 
-            "type": "object", 
+            "description": "Cluster where the job is executed. Optional on create. Required on job submission.",
+            "type": "object",
             "properties": {
                 "fqdn": {
-                    "description": "FQDN of the cluster. e.g. master-1-staging.exabyte.io", 
+                    "description": "FQDN of the cluster. e.g. master-1-staging.exabyte.io",
                     "type": "string"
-                }, 
+                },
                 "jid": {
-                    "description": "Job's identity in RMS. e.g. 1234.master-1-staging.exabyte.io", 
+                    "description": "Job's identity in RMS. e.g. 1234.master-1-staging.exabyte.io",
                     "type": "string"
                 }
-            }, 
+            },
             "required": [
-                "fqdn", 
+                "fqdn",
                 "jid"
             ]
-        }, 
+        },
         "errors": {
-            "description": "Computation error. Optional. Appears only if something happens on jobs execution.", 
-            "type": "array", 
+            "description": "Computation error. Optional. Appears only if something happens on jobs execution.",
+            "type": "array",
             "items": {
-                "type": "object", 
+                "type": "object",
                 "properties": {
                     "domain": {
-                        "description": "Domain of the error appearance (internal).", 
-                        "type": "string", 
+                        "description": "Domain of the error appearance (internal).",
+                        "type": "string",
                         "enum": [
-                            "rupy", 
-                            "alfred", 
-                            "celim", 
+                            "rupy",
+                            "alfred",
+                            "celim",
                             "webapp"
                         ]
-                    }, 
+                    },
                     "reason": {
-                        "description": "Should be a short, unique, machine-readable error code string. e.g. FileNotFound", 
+                        "description": "Should be a short, unique, machine-readable error code string. e.g. FileNotFound",
                         "type": "string"
-                    }, 
+                    },
                     "message": {
-                        "description": "Human-readable error message. e.g. 'File Not Found: /home/demo/data/project1/job-123/job-config.json'", 
+                        "description": "Human-readable error message. e.g. 'File Not Found: /home/demo/data/project1/job-123/job-config.json'",
                         "type": "string"
                     }
-                }, 
+                },
                 "required": [
-                    "domain", 
-                    "reason", 
+                    "domain",
+                    "reason",
                     "message"
                 ]
             }
-        }, 
+        },
         "excludeFilesPattern": {
-            "description": "A Python compatible regex to exclude files from upload. e.g. ^.*.txt& excludes all files with .txt suffix", 
+            "description": "A Python compatible regex to exclude files from upload. e.g. ^.*.txt& excludes all files with .txt suffix",
             "type": "string"
         }
-    }, 
+    },
     "required": [
-        "queue", 
-        "nodes", 
-        "ppn", 
+        "queue",
+        "nodes",
+        "ppn",
         "timeLimit"
     ]
 }

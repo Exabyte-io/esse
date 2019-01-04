@@ -1,29 +1,29 @@
 {
-    "$schema": "http://json-schema.org/draft-04/schema#", 
-    "title": "electronic self consistency convergence schema", 
+    "$schema": "http://json-schema.org/draft-04/schema#",
+    "title": "electronic self consistency convergence schema",
     "properties": {
         "name": {
             "enum": [
                 "convergence_electronic"
             ]
-        }, 
+        },
         "units": {
             "enum": [
-                "eV", 
-                "rydberg", 
+                "eV",
+                "rydberg",
                 "hartree"
             ]
-        }, 
+        },
         "data": {
-            "type": "array", 
+            "type": "array",
             "items": {
-                "type": "array", 
+                "type": "array",
                 "items": {
                     "type": "number"
                 }
             }
         }
-    }, 
+    },
     "required": [
         "data"
     ]

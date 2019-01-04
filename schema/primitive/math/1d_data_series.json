@@ -1,13 +1,13 @@
 {
-    "$schema": "http://json-schema.org/draft-04/schema#", 
-    "title": "1 dimension data series schema", 
-    "type": "array", 
+    "$schema": "http://json-schema.org/draft-04/schema#",
+    "title": "1 dimension data series schema",
+    "type": "array",
     "items": {
-        "type": "array", 
-        "minItems": 1, 
+        "type": "array",
+        "minItems": 1,
         "items": {
             "type": [
-                "number", 
+                "number",
                 "string"
             ]
         }

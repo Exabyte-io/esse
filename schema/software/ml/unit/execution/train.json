@@ -1,35 +1,35 @@
 {
-    "$schema": "http://json-schema.org/draft-04/schema#", 
-    "title": "train unit schema", 
+    "$schema": "http://json-schema.org/draft-04/schema#",
+    "title": "train unit schema",
     "allOf": [
         {
             "$ref": "file:../../../../workflow/unit/execution.json"
         }
-    ], 
+    ],
     "properties": {
         "input": {
-            "description": "model train unit (NOTE: info about method, eg. regression/linear is taken from (sub)workflow)", 
-            "type": "object", 
+            "description": "model train unit (NOTE: info about method, eg. regression/linear is taken from (sub)workflow)",
+            "type": "object",
             "properties": {
                 "features": {
-                    "description": "material features used for model fitting", 
-                    "type": "array", 
+                    "description": "material features used for model fitting",
+                    "type": "array",
                     "items": {
-                        "description": "material features (properties) in a 'flattened' format", 
+                        "description": "material features (properties) in a 'flattened' format",
                         "type": "string"
                     }
-                }, 
+                },
                 "targets": {
-                    "description": "target properties to train for", 
-                    "type": "array", 
+                    "description": "target properties to train for",
+                    "type": "array",
                     "items": {
-                        "description": "material features (properties) in a 'flattened' format", 
+                        "description": "material features (properties) in a 'flattened' format",
                         "type": "string"
                     }
                 }
-            }, 
+            },
             "required": [
-                "features", 
+                "features",
                 "targets"
             ]
         }

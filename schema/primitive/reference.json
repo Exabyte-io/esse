@@ -1,13 +1,13 @@
 {
-    "$schema": "http://json-schema.org/draft-04/schema#", 
-    "title": "reference schema (using `anyOf` instead of `oneOf` below b/c current reference schemas overlap)", 
+    "$schema": "http://json-schema.org/draft-04/schema#",
+    "title": "reference schema (using `anyOf` instead of `oneOf` below b/c current reference schemas overlap)",
     "anyOf": [
         {
             "$ref": "file:reference/modeling.json"
-        }, 
+        },
         {
             "$ref": "file:reference/experiment.json"
-        }, 
+        },
         {
             "$ref": "file:reference/literature.json"
         }

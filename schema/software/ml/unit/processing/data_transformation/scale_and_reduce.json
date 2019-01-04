@@ -1,66 +1,66 @@
 {
-    "$schema": "http://json-schema.org/draft-04/schema#", 
-    "title": "scale and reduce unit schema", 
+    "$schema": "http://json-schema.org/draft-04/schema#",
+    "title": "scale and reduce unit schema",
     "allOf": [
         {
             "$ref": "file:../../../../../workflow/unit/processing.json"
         }
-    ], 
-    "type": "object", 
+    ],
+    "type": "object",
     "properties": {
         "operation": {
-            "type": "string", 
+            "type": "string",
             "enum": [
                 "data_transformation"
             ]
-        }, 
+        },
         "operationType": {
-            "type": "string", 
+            "type": "string",
             "enum": [
                 "scale_and_reduce"
             ]
-        }, 
+        },
         "inputData": {
-            "type": "object", 
+            "type": "object",
             "properties": {
                 "scaler": {
-                    "description": "type of scaler to be applied", 
-                    "type": "string", 
-                    "default": "standard_scaler", 
+                    "description": "type of scaler to be applied",
+                    "type": "string",
+                    "default": "standard_scaler",
                     "enum": [
                         "standard_scaler"
                     ]
-                }, 
+                },
                 "perFeature": {
-                    "decription": "per-feature scaling data", 
-                    "type": "array", 
+                    "decription": "per-feature scaling data",
+                    "type": "array",
                     "items": {
-                        "type": "object", 
+                        "type": "object",
                         "properties": {
                             "variance": {
-                                "description": "variance in original training data", 
+                                "description": "variance in original training data",
                                 "type": "number"
-                            }, 
+                            },
                             "mean": {
-                                "description": "mean value of the original training data", 
+                                "description": "mean value of the original training data",
                                 "type": "number"
-                            }, 
+                            },
                             "scale": {
-                                "description": "scale multiplier for this feature/property", 
+                                "description": "scale multiplier for this feature/property",
                                 "type": "number"
-                            }, 
+                            },
                             "name": {
-                                "description": "feature/property name in 'flattened' format", 
+                                "description": "feature/property name in 'flattened' format",
                                 "type": "string"
                             }
-                        }, 
+                        },
                         "required": [
-                            "name", 
+                            "name",
                             "scale"
                         ]
                     }
                 }
-            }, 
+            },
             "required": [
                 "scaler"
             ]

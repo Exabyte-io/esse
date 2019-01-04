@@ -1,24 +1,24 @@
 {
-    "$schema": "http://json-schema.org/draft-04/schema#", 
-    "title": "machine learning model schema", 
-    "description": "machine learning model type/subtype schema", 
+    "$schema": "http://json-schema.org/draft-04/schema#",
+    "title": "machine learning model schema",
+    "description": "machine learning model type/subtype schema",
     "allOf": [
         {
             "$ref": "file:../../workflow/subworkflow/model.json"
         }
-    ], 
+    ],
     "properties": {
         "type": {
             "enum": [
                 "machine_learning"
             ]
-        }, 
+        },
         "subtype": {
             "enum": [
-                "supervised", 
+                "supervised",
                 "unsupervised"
             ]
-        }, 
+        },
         "method": {
             "oneOf": [
                 {

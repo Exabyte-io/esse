@@ -1,31 +1,31 @@
 {
-    "$schema": "http://json-schema.org/draft-04/schema#", 
-    "title": "flavor schema", 
-    "type": "object", 
+    "$schema": "http://json-schema.org/draft-04/schema#",
+    "title": "flavor schema",
+    "type": "object",
     "allOf": [
         {
             "$ref": "file:./mixins/runtime_items.json"
         }
-    ], 
+    ],
     "properties": {
         "name": {
-            "description": "The name of the executable flavor. e.g. `pw_scf`", 
+            "description": "The name of the executable flavor. e.g. `pw_scf`",
             "type": "string"
-        }, 
+        },
         "executableId": {
-            "description": "_id of the executable this flavor belongs to", 
+            "description": "_id of the executable this flavor belongs to",
             "type": "string"
-        }, 
+        },
         "input": {
-            "title": "execution unit input schema", 
-            "type": "array", 
+            "title": "execution unit input schema",
+            "type": "array",
             "items": {
                 "$ref": "file:./modeling/unit/_inputItemId.json"
             }
         }
-    }, 
+    },
     "required": [
-        "name", 
+        "name",
         "executableId"
     ]
 }

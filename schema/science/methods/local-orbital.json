@@ -1,16 +1,16 @@
 {
-    "$schema": "http://json-schema.org/draft-04/schema#", 
-    "title": "local atomic orbitals method schema", 
+    "$schema": "http://json-schema.org/draft-04/schema#",
+    "title": "local atomic orbitals method schema",
     "properties": {
         "type": {
             "enum": [
                 "local-orbital"
             ]
-        }, 
+        },
         "subtype": {
             "enum": [
-                "gto", 
-                "sto", 
+                "gto",
+                "sto",
                 "cgto"
             ]
         }

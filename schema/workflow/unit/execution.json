@@ -1,43 +1,43 @@
 {
-    "$schema": "http://json-schema.org/draft-04/schema#", 
-    "title": "execution unit schema (base)", 
-    "type": "object", 
+    "$schema": "http://json-schema.org/draft-04/schema#",
+    "title": "execution unit schema (base)",
+    "type": "object",
     "allOf": [
         {
             "$ref": "file:../unit.json"
-        }, 
+        },
         {
             "$ref": "file:../../software/mixins/runtime_items.json"
         }
-    ], 
+    ],
     "properties": {
         "type": {
             "enum": [
                 "execution"
             ]
-        }, 
+        },
         "application": {
-            "description": "Contains information about the simulation engine/application.", 
+            "description": "Contains information about the simulation engine/application.",
             "$ref": "file:../../software/application.json"
-        }, 
+        },
         "executable": {
-            "description": "Contains information about the simulation engine/application executable.", 
+            "description": "Contains information about the simulation engine/application executable.",
             "$ref": "file:../../software/executable.json"
-        }, 
+        },
         "flavor": {
-            "description": "Contains information about the simulation engine/application flavor.", 
+            "description": "Contains information about the simulation engine/application flavor.",
             "$ref": "file:../../software/flavor.json"
-        }, 
+        },
         "compute": {
-            "description": "Unit's specific computational parameters. Overrides computeArgs object inside the Job entity.", 
+            "description": "Unit's specific computational parameters. Overrides computeArgs object inside the Job entity.",
             "$ref": "file:../../job/compute.json"
-        }, 
+        },
         "input": {
             "description": "unit input (type to be specified by the application's execution unit)"
         }
-    }, 
+    },
     "required": [
-        "input", 
+        "input",
         "application"
     ]
 }

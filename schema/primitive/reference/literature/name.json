@@ -1,23 +1,23 @@
 {
-    "$schema": "http://json-schema.org/draft-04/schema#", 
-    "title": "experiment author schema", 
-    "type": "object", 
+    "$schema": "http://json-schema.org/draft-04/schema#",
+    "title": "experiment author schema",
+    "type": "object",
     "properties": {
         "first": {
             "type": "string"
-        }, 
+        },
         "middle": {
             "type": "string"
-        }, 
+        },
         "last": {
             "type": "string"
-        }, 
+        },
         "affiliation": {
             "type": "string"
         }
-    }, 
+    },
     "required": [
-        "first", 
+        "first",
         "last"
     ]
 }

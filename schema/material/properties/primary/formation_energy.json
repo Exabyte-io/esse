@@ -1,11 +1,11 @@
 {
-    "$schema": "http://json-schema.org/draft-04/schema#", 
-    "title": "formation energy schema", 
+    "$schema": "http://json-schema.org/draft-04/schema#",
+    "title": "formation energy schema",
     "allOf": [
         {
             "$ref": "file:../../../primitive/property/energy.json"
         }
-    ], 
+    ],
     "properties": {
         "name": {
             "enum": [

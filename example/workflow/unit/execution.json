@@ -1,39 +1,39 @@
 {
     "application": {
         "...": "include(../../software/application.json)"
-    }, 
-    "compute": null, 
+    },
+    "compute": null,
     "executable": {
         "...": "include(../../software/executable.json)"
-    }, 
+    },
     "flavor": {
         "...": "include(../../software/flavor.json)"
-    }, 
-    "flowchartId": "execution", 
-    "head": true, 
+    },
+    "flowchartId": "execution",
+    "head": true,
     "input": [
         {
-            "content": "K_POINTS automatic\n2 2 2 0 0 0", 
+            "content": "K_POINTS automatic\n2 2 2 0 0 0",
             "name": "pw_scf.in"
         }
-    ], 
+    ],
     "monitors": [
         {
             "name": "scf_accuracy"
-        }, 
+        },
         {
             "name": "standard_output"
         }
-    ], 
-    "name": "execution", 
-    "next": "pw-bands", 
-    "postProcessors": [], 
-    "preProcessors": [], 
+    ],
+    "name": "execution",
+    "next": "pw-bands",
+    "postProcessors": [],
+    "preProcessors": [],
     "results": [
         {
             "name": "harris_foulkes_estimate"
         }
-    ], 
-    "status": "idle", 
+    ],
+    "status": "idle",
     "type": "execution"
 }

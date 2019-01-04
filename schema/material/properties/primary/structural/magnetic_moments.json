@@ -1,16 +1,16 @@
 {
-    "$schema": "http://json-schema.org/draft-04/schema#", 
-    "title": "magnetic moments", 
-    "description": "magnetization on each ion", 
+    "$schema": "http://json-schema.org/draft-04/schema#",
+    "title": "magnetic moments",
+    "description": "magnetization on each ion",
     "properties": {
         "name": {
             "enum": [
                 "magnetic_moments"
             ]
-        }, 
+        },
         "values": {
             "$ref": "file:../../../../primitive/property/atomic_vectors.json"
-        }, 
+        },
         "units": {
             "$ref": "file:../../../../units.json#/magnetic"
         }

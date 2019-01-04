@@ -1,53 +1,53 @@
 {
-    "$schema": "http://json-schema.org/draft-04/schema#", 
-    "title": "condition unit schema", 
-    "type": "object", 
+    "$schema": "http://json-schema.org/draft-04/schema#",
+    "title": "condition unit schema",
+    "type": "object",
     "allOf": [
         {
             "$ref": "file:../unit.json"
         }
-    ], 
+    ],
     "properties": {
         "type": {
             "enum": [
                 "condition"
             ]
-        }, 
+        },
         "condition": {
-            "type": "object", 
+            "type": "object",
             "properties": {
                 "input": {
-                    "description": "Input information for condition.", 
-                    "type": "array", 
+                    "description": "Input information for condition.",
+                    "type": "array",
                     "items": {
                         "$ref": "file:_input.json"
                     }
-                }, 
+                },
                 "statement": {
-                    "description": "Condition statement. e.g. 'abs(x-total_energy) < 1e-5'", 
+                    "description": "Condition statement. e.g. 'abs(x-total_energy) < 1e-5'",
                     "type": "string"
-                }, 
+                },
                 "then": {
-                    "description": "Flowchart ID reference for `then` part of the condition.", 
+                    "description": "Flowchart ID reference for `then` part of the condition.",
                     "type": "string"
-                }, 
+                },
                 "else": {
-                    "description": "Flowchart ID reference for `else` part of the condition.", 
+                    "description": "Flowchart ID reference for `else` part of the condition.",
                     "type": "string"
-                }, 
+                },
                 "maxOccurrences": {
-                    "description": "Maximum occurrence of the condition, usable for loops.", 
+                    "description": "Maximum occurrence of the condition, usable for loops.",
                     "type": "integer"
-                }, 
+                },
                 "throwException": {
-                    "description": "Throw exception on reaching to maximum occurence.", 
+                    "description": "Throw exception on reaching to maximum occurence.",
                     "type": "boolean"
                 }
-            }, 
+            },
             "required": [
-                "input", 
-                "statement", 
-                "then", 
+                "input",
+                "statement",
+                "then",
                 "else"
             ]
         }

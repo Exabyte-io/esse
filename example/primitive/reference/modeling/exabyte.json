@@ -1,7 +1,7 @@
 {
-    "_id": "nDAavgjrT5ezwFgod", 
+    "_id": "nDAavgjrT5ezwFgod",
     "owner": {
         "...": "include(../../../system/owner.json)"
-    }, 
+    },
     "title": "My Calculation"
 }

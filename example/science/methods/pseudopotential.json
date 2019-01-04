@@ -4,9 +4,9 @@
             {
                 "...": "include(pseudopotential/dataset.json)"
             }
-        ], 
+        ],
         "searchText": ""
-    }, 
-    "subtype": "us", 
+    },
+    "subtype": "us",
     "type": "pseudopotential"
 }

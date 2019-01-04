@@ -1,18 +1,18 @@
 {
-    "$schema": "http://json-schema.org/draft-04/schema#", 
-    "title": "ionization potential", 
-    "description": "ionization potential for the element", 
+    "$schema": "http://json-schema.org/draft-04/schema#",
+    "title": "ionization potential",
+    "description": "ionization potential for the element",
     "allOf": [
         {
             "$ref": "file:../../../primitive/math/scalar.json"
         }
-    ], 
+    ],
     "properties": {
         "name": {
             "enum": [
                 "ionization_potential"
             ]
-        }, 
+        },
         "units": {
             "$ref": "file:../../../units.json#/energy"
         }

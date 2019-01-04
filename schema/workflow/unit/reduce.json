@@ -1,52 +1,52 @@
 {
-    "$schema": "http://json-schema.org/draft-04/schema#", 
-    "title": "reduce unit schema", 
-    "type": "object", 
+    "$schema": "http://json-schema.org/draft-04/schema#",
+    "title": "reduce unit schema",
+    "type": "object",
     "allOf": [
         {
             "$ref": "file:../unit.json"
         }
-    ], 
+    ],
     "properties": {
         "type": {
             "enum": [
                 "reduce"
             ]
-        }, 
+        },
         "reduce": {
-            "type": "object", 
+            "type": "object",
             "properties": {
                 "mapFlowchartId": {
-                    "description": "corresponding map unit flowchart ID", 
+                    "description": "corresponding map unit flowchart ID",
                     "type": "string"
-                }, 
+                },
                 "input": {
-                    "description": "input information for reduce unit", 
-                    "type": "array", 
+                    "description": "input information for reduce unit",
+                    "type": "array",
                     "items": {
-                        "type": "object", 
+                        "type": "object",
                         "properties": {
                             "operation": {
-                                "description": "reduce operation, e.g. aggregate", 
+                                "description": "reduce operation, e.g. aggregate",
                                 "type": "string"
-                            }, 
+                            },
                             "arguments": {
-                                "description": "arguments which are passed to reduce operation function", 
-                                "type": "array", 
+                                "description": "arguments which are passed to reduce operation function",
+                                "type": "array",
                                 "items": {
                                     "type": "string"
                                 }
                             }
-                        }, 
+                        },
                         "required": [
-                            "operation", 
+                            "operation",
                             "arguments"
                         ]
                     }
                 }
-            }, 
+            },
             "required": [
-                "mapFlowchartId", 
+                "mapFlowchartId",
                 "input"
             ]
         }

@@ -3,9 +3,9 @@
         {
             "name": "standard_output"
         }
-    ], 
-    "postProcessors": [], 
-    "preProcessors": [], 
+    ],
+    "postProcessors": [],
+    "preProcessors": [],
     "results": [
         {
             "name": "atomic_forces"

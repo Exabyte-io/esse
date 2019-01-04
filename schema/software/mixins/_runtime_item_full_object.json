@@ -1,13 +1,13 @@
 {
-    "$schema": "http://json-schema.org/draft-04/schema#", 
-    "title": "result schema", 
-    "type": "object", 
+    "$schema": "http://json-schema.org/draft-04/schema#",
+    "title": "result schema",
+    "type": "object",
     "properties": {
         "name": {
-            "description": "The name of this item. e.g. 'my_custom_property. <OTHER FIELDS TO BE ADDED>'", 
+            "description": "The name of this item. e.g. 'my_custom_property. <OTHER FIELDS TO BE ADDED>'",
             "type": "string"
         }
-    }, 
+    },
     "required": [
         "name"
     ]

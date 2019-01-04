@@ -1,31 +1,31 @@
 {
-    "$schema": "http://json-schema.org/draft-04/schema#", 
-    "description": "Object showing ultimate possible accuracy for a theory implementation", 
-    "title": "accuracy schema", 
-    "type": "array", 
+    "$schema": "http://json-schema.org/draft-04/schema#",
+    "description": "Object showing ultimate possible accuracy for a theory implementation",
+    "title": "accuracy schema",
+    "type": "array",
     "items": {
-        "type": "object", 
+        "type": "object",
         "properties": {
             "property": {
-                "type": "string", 
+                "type": "string",
                 "description": "Name of the property that is prediction is being compared against experimental values or an alternate theory or analysis."
-            }, 
+            },
             "value": {
-                "type": "number", 
-                "description": "Typical fidelity score for the property predicted: 0.99 means an error of 1%", 
-                "minimum": 0, 
+                "type": "number",
+                "description": "Typical fidelity score for the property predicted: 0.99 means an error of 1%",
+                "minimum": 0,
                 "maximum": 1
-            }, 
+            },
             "reference": {
-                "description": "Sources that describe the data used for validation.", 
-                "type": "array", 
+                "description": "Sources that describe the data used for validation.",
+                "type": "array",
                 "items": {
                     "type": "string"
                 }
             }
-        }, 
+        },
         "required": [
-            "property", 
+            "property",
             "value"
         ]
     }

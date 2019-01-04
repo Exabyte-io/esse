@@ -1,106 +1,106 @@
 {
-    "$schema": "http://json-schema.org/draft-04/schema#", 
-    "title": "density function theory schema", 
-    "description": "density function theory schema (deprecated - to be replaced with manifest)", 
+    "$schema": "http://json-schema.org/draft-04/schema#",
+    "title": "density function theory schema",
+    "description": "density function theory schema (deprecated - to be replaced with manifest)",
     "properties": {
         "type": {
             "enum": [
                 "dft"
             ]
-        }, 
+        },
         "subtype": {
             "enum": [
-                "gga", 
-                "lda", 
-                "mgga", 
+                "gga",
+                "lda",
+                "mgga",
                 "ldau"
             ]
-        }, 
+        },
         "functional": {
             "oneOf": [
                 {
                     "$ref": "#/definitions/functionals/lda"
-                }, 
+                },
                 {
                     "$ref": "#/definitions/functionals/gga"
-                }, 
+                },
                 {
-                    "type": "object", 
+                    "type": "object",
                     "properties": {
                         "slug": {
-                            "type": "string", 
+                            "type": "string",
                             "enum": [
-                                "ldau", 
-                                "bp", 
-                                "lyp", 
-                                "b3lyp", 
-                                "pbesol", 
-                                "hse", 
-                                "am05", 
-                                "rtpss", 
-                                "tpss", 
-                                "m06l", 
-                                "mbj", 
-                                "vdwd3", 
+                                "ldau",
+                                "bp",
+                                "lyp",
+                                "b3lyp",
+                                "pbesol",
+                                "hse",
+                                "am05",
+                                "rtpss",
+                                "tpss",
+                                "m06l",
+                                "mbj",
+                                "vdwd3",
                                 "fci"
                             ]
                         }
                     }
                 }
             ]
-        }, 
+        },
         "refiners": {
-            "type": "array", 
+            "type": "array",
             "items": {
-                "type": "object", 
+                "type": "object",
                 "properties": {
                     "slug": {
                         "enum": [
-                            "hse", 
+                            "hse",
                             "g0w0"
                         ]
                     }
                 }
             }
-        }, 
+        },
         "modifiers": {
-            "type": "array", 
+            "type": "array",
             "items": {
-                "type": "object", 
+                "type": "object",
                 "properties": {
                     "slug": {
                         "enum": [
-                            "soc", 
+                            "soc",
                             "magn"
                         ]
                     }
                 }
             }
         }
-    }, 
+    },
     "definitions": {
         "functionals": {
             "lda": {
-                "type": "object", 
+                "type": "object",
                 "properties": {
                     "slug": {
-                        "type": "string", 
+                        "type": "string",
                         "enum": [
-                            "pz", 
-                            "pw", 
+                            "pz",
+                            "pw",
                             "vwn"
                         ]
                     }
                 }
-            }, 
+            },
             "gga": {
-                "type": "object", 
+                "type": "object",
                 "properties": {
                     "slug": {
-                        "type": "string", 
+                        "type": "string",
                         "enum": [
-                            "pbe", 
-                            "pw91", 
+                            "pbe",
+                            "pw91",
                             "rpbe"
                         ]
                     }

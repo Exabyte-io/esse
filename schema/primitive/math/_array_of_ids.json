@@ -1,16 +1,16 @@
 {
-    "$schema": "http://json-schema.org/draft-04/schema#", 
-    "title": "atomic ids", 
-    "description": "array of objects containing integer id each", 
-    "type": "array", 
+    "$schema": "http://json-schema.org/draft-04/schema#",
+    "title": "atomic ids",
+    "description": "array of objects containing integer id each",
+    "type": "array",
     "items": {
-        "type": "object", 
+        "type": "object",
         "properties": {
             "id": {
-                "description": "integer id of this entry", 
+                "description": "integer id of this entry",
                 "type": "integer"
             }
-        }, 
+        },
         "uniqueItems": true
     }
 }

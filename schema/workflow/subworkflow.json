@@ -1,55 +1,55 @@
 {
-    "$schema": "http://json-schema.org/draft-04/schema#", 
-    "title": "subworkflow schema", 
-    "type": "object", 
+    "$schema": "http://json-schema.org/draft-04/schema#",
+    "title": "subworkflow schema",
+    "type": "object",
     "properties": {
         "_id": {
-            "description": "subworkflow identity", 
+            "description": "subworkflow identity",
             "type": "string"
-        }, 
+        },
         "name": {
-            "description": "Human-readable name of the subworkflow. e.g. Total-energy", 
+            "description": "Human-readable name of the subworkflow. e.g. Total-energy",
             "type": "string"
-        }, 
+        },
         "model": {
-            "description": "Model used inside the subworkflow", 
+            "description": "Model used inside the subworkflow",
             "$ref": "file:subworkflow/model.json"
-        }, 
+        },
         "application": {
-            "description": "information about the simulation engine/application.", 
+            "description": "information about the simulation engine/application.",
             "$ref": "file:../software/application.json"
-        }, 
+        },
         "properties": {
-            "description": "Array of characteristic properties calculated by this subworkflow", 
-            "type": "array", 
+            "description": "Array of characteristic properties calculated by this subworkflow",
+            "type": "array",
             "items": {
-                "description": "property names, eg. `band_gaps`, `band_structure`", 
+                "description": "property names, eg. `band_gaps`, `band_structure`",
                 "type": "string"
             }
-        }, 
+        },
         "units": {
-            "description": "Contains the Units of the subworkflow", 
-            "type": "array", 
+            "description": "Contains the Units of the subworkflow",
+            "type": "array",
             "items": {
                 "$ref": "file:unit.json"
             }
-        }, 
+        },
         "compute": {
-            "description": "compute parameters", 
+            "description": "compute parameters",
             "$ref": "file:../job/compute.json"
-        }, 
+        },
         "isDraft": {
-            "description": "Defines whether to store the results/properties extracted in this unit to properties collection", 
-            "type": "boolean", 
+            "description": "Defines whether to store the results/properties extracted in this unit to properties collection",
+            "type": "boolean",
             "default": false
         }
-    }, 
+    },
     "required": [
-        "_id", 
-        "name", 
-        "units", 
-        "model", 
-        "application", 
+        "_id",
+        "name",
+        "units",
+        "model",
+        "application",
         "properties"
     ]
 }

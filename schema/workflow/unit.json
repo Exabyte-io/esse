@@ -1,42 +1,42 @@
 {
-    "$schema": "http://json-schema.org/draft-04/schema#", 
-    "title": "workflow unit schema", 
-    "type": "object", 
+    "$schema": "http://json-schema.org/draft-04/schema#",
+    "title": "workflow unit schema",
+    "type": "object",
     "properties": {
         "type": {
-            "description": "type of the unit", 
+            "description": "type of the unit",
             "type": "string"
-        }, 
+        },
         "name": {
-            "description": "name of the unit. e.g. pw_scf", 
+            "description": "name of the unit. e.g. pw_scf",
             "type": "string"
-        }, 
+        },
         "status": {
-            "description": "Status of the unit.", 
-            "type": "string", 
+            "description": "Status of the unit.",
+            "type": "string",
             "enum": [
-                "idle", 
-                "active", 
-                "warning", 
-                "error", 
+                "idle",
+                "active",
+                "warning",
+                "error",
                 "finished"
             ]
-        }, 
+        },
         "head": {
-            "description": "Whether this unit is the first one to be executed.", 
+            "description": "Whether this unit is the first one to be executed.",
             "type": "boolean"
-        }, 
+        },
         "flowchartId": {
-            "description": "Identity of the unit in the workflow. Used to trace the execution flow of the workflow.", 
+            "description": "Identity of the unit in the workflow. Used to trace the execution flow of the workflow.",
             "type": "string"
-        }, 
+        },
         "next": {
-            "description": "Next unit's flowchartId. If empty, the current unit is the last.", 
+            "description": "Next unit's flowchartId. If empty, the current unit is the last.",
             "type": "string"
         }
-    }, 
+    },
     "required": [
-        "type", 
+        "type",
         "flowchartId"
     ]
 }

@@ -1,15 +1,15 @@
 {
-    "$schema": "http://json-schema.org/draft-04/schema#", 
-    "title": "Entity owner reference schema", 
+    "$schema": "http://json-schema.org/draft-04/schema#",
+    "title": "Entity owner reference schema",
     "allOf": [
         {
             "$ref": "file:entity_reference.json"
         }
-    ], 
+    ],
     "properties": {
         "cls": {
-            "description": "Entity owner class", 
-            "type": "string", 
+            "description": "Entity owner class",
+            "type": "string",
             "enum": [
                 "Account"
             ]

@@ -1,18 +1,18 @@
 {
-    "$schema": "http://json-schema.org/draft-04/schema#", 
-    "title": "pressure", 
-    "description": "average pressure in unit cell", 
+    "$schema": "http://json-schema.org/draft-04/schema#",
+    "title": "pressure",
+    "description": "average pressure in unit cell",
     "allOf": [
         {
             "$ref": "file:../../../primitive/math/scalar.json"
         }
-    ], 
+    ],
     "properties": {
         "name": {
             "enum": [
                 "pressure"
             ]
-        }, 
+        },
         "units": {
             "$ref": "file:../../../units.json#/pressure"
         }

@@ -1,15 +1,15 @@
 {
-    "$schema": "http://json-schema.org/draft-04/schema#", 
-    "title": "pages schema", 
-    "type": "object", 
+    "$schema": "http://json-schema.org/draft-04/schema#",
+    "title": "pages schema",
+    "type": "object",
     "properties": {
         "start": {
             "type": "string"
-        }, 
+        },
         "end": {
             "type": "string"
         }
-    }, 
+    },
     "required": [
         "start"
     ]

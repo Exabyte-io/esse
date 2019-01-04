@@ -1,32 +1,32 @@
 {
-    "$schema": "http://json-schema.org/draft-04/schema#", 
-    "title": "model schema (base)", 
+    "$schema": "http://json-schema.org/draft-04/schema#",
+    "title": "model schema (base)",
     "properties": {
         "type": {
-            "description": "general type of the model, eg. `dft`", 
+            "description": "general type of the model, eg. `dft`",
             "type": "string"
-        }, 
+        },
         "subtype": {
-            "description": "general subtype of the model, eg. `lda`", 
+            "description": "general subtype of the model, eg. `lda`",
             "type": "string"
-        }, 
+        },
         "method": {
             "$ref": "file:model/method.json"
-        }, 
+        },
         "accuracy": {
             "$ref": "file:model/accuracy.json"
-        }, 
+        },
         "references": {
-            "type": "array", 
+            "type": "array",
             "items": {
-                "description": "literature reference, webpage etc.", 
+                "description": "literature reference, webpage etc.",
                 "type": "string"
             }
         }
-    }, 
+    },
     "required": [
-        "type", 
-        "subtype", 
+        "type",
+        "subtype",
         "method"
     ]
 }

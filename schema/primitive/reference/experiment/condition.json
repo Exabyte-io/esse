@@ -1,14 +1,14 @@
 {
-    "$schema": "http://json-schema.org/draft-04/schema#", 
-    "title": "condition schema", 
+    "$schema": "http://json-schema.org/draft-04/schema#",
+    "title": "condition schema",
     "properties": {
         "units": {
-            "description": "condition unit", 
+            "description": "condition unit",
             "type": "string"
-        }, 
+        },
         "scalar": {
-            "description": "array of condition values", 
-            "type": "array", 
+            "description": "array of condition values",
+            "type": "array",
             "items": {
                 "properties": {
                     "value": {
@@ -16,12 +16,12 @@
                     }
                 }
             }
-        }, 
+        },
         "name": {
-            "description": "human-readable name of the condition", 
+            "description": "human-readable name of the condition",
             "type": "string"
         }
-    }, 
+    },
     "required": [
         "name"
     ]

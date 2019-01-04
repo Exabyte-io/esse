@@ -1,15 +1,15 @@
 {
-    "$schema": "http://json-schema.org/draft-04/schema#", 
-    "title": "stress tensor schema", 
+    "$schema": "http://json-schema.org/draft-04/schema#",
+    "title": "stress tensor schema",
     "properties": {
         "value": {
             "$ref": "file:../../../primitive/math/3d_tensor.json"
-        }, 
+        },
         "name": {
             "enum": [
                 "stress_tensor"
             ]
-        }, 
+        },
         "units": {
             "$ref": "file:../../../units.json#/pressure"
         }

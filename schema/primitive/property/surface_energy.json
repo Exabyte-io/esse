@@ -1,21 +1,21 @@
 {
-    "$schema": "http://json-schema.org/draft-04/schema#", 
-    "title": "surface energy schema", 
+    "$schema": "http://json-schema.org/draft-04/schema#",
+    "title": "surface energy schema",
     "allOf": [
         {
             "$ref": "file:../math/scalar.json"
         }
-    ], 
+    ],
     "properties": {
         "name": {
             "type": "string"
-        }, 
+        },
         "units": {
             "$ref": "file:../../units.json#/surface_energy"
         }
-    }, 
+    },
     "required": [
-        "name", 
+        "name",
         "units"
     ]
 }

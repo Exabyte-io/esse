@@ -1,73 +1,73 @@
 {
-    "$schema": "http://json-schema.org/draft-04/schema#", 
-    "title": "map unit schema", 
-    "type": "object", 
+    "$schema": "http://json-schema.org/draft-04/schema#",
+    "title": "map unit schema",
+    "type": "object",
     "allOf": [
         {
             "$ref": "file:../unit.json"
         }
-    ], 
+    ],
     "properties": {
         "type": {
             "enum": [
                 "map"
             ]
-        }, 
+        },
         "map": {
-            "type": "object", 
+            "type": "object",
             "properties": {
                 "workflowId": {
-                    "description": "Id of workflow to run inside map", 
+                    "description": "Id of workflow to run inside map",
                     "type": "string"
-                }, 
+                },
                 "input": {
-                    "description": "Input information for map.", 
-                    "type": "object", 
+                    "description": "Input information for map.",
+                    "type": "object",
                     "properties": {
                         "target": {
-                            "description": "Name of the target variable to substitute using the values below. e.g. K_POINTS", 
+                            "description": "Name of the target variable to substitute using the values below. e.g. K_POINTS",
                             "type": "string"
                         }
-                    }, 
+                    },
                     "required": [
                         "target"
-                    ], 
+                    ],
                     "oneOf": [
                         {
                             "properties": {
                                 "scope": {
-                                    "description": "Scope to retrieve `values` from, global or flowchartId. Optional if `values` is given.", 
+                                    "description": "Scope to retrieve `values` from, global or flowchartId. Optional if `values` is given.",
                                     "type": "string"
-                                }, 
+                                },
                                 "name": {
-                                    "description": "Name of the variable inside the scope to retrieve `values` from. Optional if `values` is given.", 
+                                    "description": "Name of the variable inside the scope to retrieve `values` from. Optional if `values` is given.",
                                     "type": "string"
                                 }
-                            }, 
+                            },
                             "required": [
-                                "scope", 
+                                "scope",
                                 "name"
                             ]
-                        }, 
+                        },
                         {
                             "properties": {
                                 "values": {
-                                    "description": "Sequence of values for the target Jinja variable. Optional if `scope` and `name` are given.", 
-                                    "type": "array", 
+                                    "description": "Sequence of values for the target Jinja variable. Optional if `scope` and `name` are given.",
+                                    "type": "array",
                                     "items": {
                                         "type": "string"
                                     }
                                 }
-                            }, 
+                            },
                             "required": [
                                 "values"
                             ]
                         }
                     ]
                 }
-            }, 
+            },
             "required": [
-                "input", 
+                "input",
                 "workflowId"
             ]
         }

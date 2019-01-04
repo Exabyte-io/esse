@@ -1,18 +1,18 @@
 {
-    "$schema": "http://json-schema.org/draft-04/schema#", 
-    "title": "atomic radius", 
-    "description": "atomic radius", 
+    "$schema": "http://json-schema.org/draft-04/schema#",
+    "title": "atomic radius",
+    "description": "atomic radius",
     "allOf": [
         {
             "$ref": "file:../../../primitive/math/scalar.json"
         }
-    ], 
+    ],
     "properties": {
         "name": {
             "enum": [
                 "atomic_radius"
             ]
-        }, 
+        },
         "units": {
             "$ref": "file:../../../units.json#/length"
         }

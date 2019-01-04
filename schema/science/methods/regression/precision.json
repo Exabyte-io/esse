@@ -1,6 +1,6 @@
 {
-    "$schema": "http://json-schema.org/draft-04/schema#", 
-    "title": "regression precision", 
+    "$schema": "http://json-schema.org/draft-04/schema#",
+    "title": "regression precision",
     "oneOf": [
         {
             "$ref": "file:linear/precision_per_property.json"
