@@ -11,7 +11,6 @@ setup(
     install_requires=[
         "pyyaml==3.12",
         "jsonschema==2.6.0",
-        "ordereddict==1.1",
     ],
     classifiers=[
         'Programming Language :: Python',

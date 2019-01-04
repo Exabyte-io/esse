@@ -1,4 +1,3 @@
 pyyaml==3.12
-ordereddict==1.1
 jsonschema==2.6.0
 git+git://github.com/Exabyte-io/json_include.git#egg=json_include
