@@ -1,0 +1,10 @@
+{
+    "type": "dft",
+    "subtype": "gga",
+    "method": {
+        "...": "include(../methods/pseudopotential.json)"
+    },
+    "functional": "pbe",
+    "refiners": [],
+    "modifiers": []
+}
