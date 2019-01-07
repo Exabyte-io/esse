@@ -1,5 +1,5 @@
 {
-    "$id": "system-creator",
+    "schemaId": "system-creator",
     "$schema": "http://json-schema.org/draft-04/schema#",
     "title": "Creator entity reference schema",
     "allOf": [

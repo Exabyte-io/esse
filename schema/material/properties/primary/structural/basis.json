@@ -1,5 +1,5 @@
 {
-    "$id": "material-properties-primary-structural-basis",
+    "schemaId": "material-properties-primary-structural-basis",
     "$schema": "http://json-schema.org/draft-04/schema#",
     "title": "basis schema",
     "type": "object",

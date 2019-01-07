@@ -1,5 +1,5 @@
 {
-    "$id": "material-properties-primary-stress-tensor",
+    "schemaId": "material-properties-primary-stress-tensor",
     "$schema": "http://json-schema.org/draft-04/schema#",
     "title": "stress tensor schema",
     "properties": {

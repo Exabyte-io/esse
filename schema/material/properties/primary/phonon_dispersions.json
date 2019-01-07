@@ -1,5 +1,5 @@
 {
-    "$id": "material-properties-primary-phonon-dispersions",
+    "schemaId": "material-properties-primary-phonon-dispersions",
     "$schema": "http://json-schema.org/draft-04/schema#",
     "title": "phonon band structure schema",
     "allOf": [

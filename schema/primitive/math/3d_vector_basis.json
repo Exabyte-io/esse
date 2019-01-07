@@ -1,5 +1,5 @@
 {
-    "$id": "primitive-math-3d-vector-basis",
+    "schemaId": "primitive-math-3d-vector-basis",
     "$schema": "http://json-schema.org/draft-04/schema#",
     "title": "3 dimensional vector basis",
     "type": "object",

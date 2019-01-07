@@ -1,5 +1,5 @@
 {
-    "$id": "primitive-property-energy",
+    "schemaId": "primitive-property-energy",
     "$schema": "http://json-schema.org/draft-04/schema#",
     "title": "energy schema",
     "allOf": [

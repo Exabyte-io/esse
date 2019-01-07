@@ -1,5 +1,5 @@
 {
-    "$id": "material-derived-properties",
+    "schemaId": "material-derived-properties",
     "$schema": "http://json-schema.org/draft-04/schema#",
     "title": "derived properties schema",
     "type": "array",

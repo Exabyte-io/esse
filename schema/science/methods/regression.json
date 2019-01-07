@@ -1,5 +1,5 @@
 {
-    "$id": "science-methods-regression",
+    "schemaId": "science-methods-regression",
     "$schema": "http://json-schema.org/draft-04/schema#",
     "title": "linear methods schema",
     "properties": {

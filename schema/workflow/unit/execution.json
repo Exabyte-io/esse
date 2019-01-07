@@ -1,5 +1,5 @@
 {
-    "$id": "workflow-unit-execution",
+    "schemaId": "workflow-unit-execution",
     "$schema": "http://json-schema.org/draft-04/schema#",
     "title": "execution unit schema (base)",
     "type": "object",

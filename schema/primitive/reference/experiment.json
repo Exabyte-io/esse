@@ -1,5 +1,5 @@
 {
-    "$id": "primitive-reference-experiment",
+    "schemaId": "primitive-reference-experiment",
     "$schema": "http://json-schema.org/draft-04/schema#",
     "title": "info for characteristic obtained by experiment",
     "properties": {

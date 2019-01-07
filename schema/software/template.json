@@ -1,5 +1,5 @@
 {
-    "$id": "software-template",
+    "schemaId": "software-template",
     "$schema": "http://json-schema.org/draft-04/schema#",
     "title": "template schema",
     "type": "object",

@@ -1,4 +1,4 @@
 {
-    "$id": "software-scripting-unit-execution",
+    "schemaId": "software-scripting-unit-execution",
     "$ref": "file:../../modeling/unit/execution.json"
 }
