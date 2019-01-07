@@ -1,5 +1,5 @@
 {
-    "$id": "material-property",
+    "schemaId": "material-property",
     "$schema": "http://json-schema.org/draft-04/schema#",
     "title": "property schema",
     "allOf": [

@@ -1,5 +1,5 @@
 {
-    "$id": "material-properties-primary-fermi-energy",
+    "schemaId": "material-properties-primary-fermi-energy",
     "$schema": "http://json-schema.org/draft-04/schema#",
     "title": "fermi energy schema",
     "allOf": [

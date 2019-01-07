@@ -1,5 +1,5 @@
 {
-    "$id": "software-modeling-unit-input",
+    "schemaId": "software-modeling-unit-input",
     "$schema": "http://json-schema.org/draft-04/schema#",
     "title": "execution unit input schema for physics-based simulation engines",
     "type": "object",

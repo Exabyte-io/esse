@@ -1,5 +1,5 @@
 {
-    "$id": "material-properties-primary-total-force",
+    "schemaId": "material-properties-primary-total-force",
     "$schema": "http://json-schema.org/draft-04/schema#",
     "title": "total forces schema",
     "allOf": [

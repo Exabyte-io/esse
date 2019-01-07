@@ -1,5 +1,5 @@
 {
-    "$id": "science-models-unknown",
+    "schemaId": "science-models-unknown",
     "$schema": "http://json-schema.org/draft-04/schema#",
     "title": "unknown model schema",
     "description": "schema for cases when model is unknown",

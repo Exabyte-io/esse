@@ -1,5 +1,5 @@
 {
-    "$id": "primitive-reference-literature",
+    "schemaId": "primitive-reference-literature",
     "$schema": "http://json-schema.org/draft-04/schema#",
     "title": "literature reference schema",
     "properties": {

@@ -1,5 +1,5 @@
 {
-    "$id": "workflow-unit-io-api",
+    "schemaId": "workflow-unit-io-api",
     "$schema": "http://json-schema.org/draft-04/schema#",
     "title": "data IO rest API input schema",
     "type": "object",

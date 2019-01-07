@@ -1,5 +1,5 @@
 {
-    "$id": "workflow-unit-condition",
+    "schemaId": "workflow-unit-condition",
     "$schema": "http://json-schema.org/draft-04/schema#",
     "title": "condition unit schema",
     "type": "object",

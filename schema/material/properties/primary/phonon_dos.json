@@ -1,5 +1,5 @@
 {
-    "$id": "material-properties-primary-phonon-dos",
+    "schemaId": "material-properties-primary-phonon-dos",
     "$schema": "http://json-schema.org/draft-04/schema#",
     "title": "Phonon density of states schema",
     "type": "object",

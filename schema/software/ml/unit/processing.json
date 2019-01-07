@@ -1,5 +1,5 @@
 {
-    "$id": "software-ml-unit-processing",
+    "schemaId": "software-ml-unit-processing",
     "oneOf": [
         {
             "$ref": "file:processing/data_transformation.json"
