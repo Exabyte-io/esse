@@ -1,5 +1,5 @@
 {
-    "$id": "material",
+    "schemaId": "material",
     "$schema": "http://json-schema.org/draft-04/schema#",
     "title": "material schema",
     "allOf": [

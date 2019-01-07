@@ -1,5 +1,5 @@
 {
-    "$id": "science-methods-pseudopotential-file-exchange-correlation",
+    "schemaId": "science-methods-pseudopotential-file-exchange-correlation",
     "$schema": "http://json-schema.org/draft-04/schema#",
     "title": "exchange correlation schema",
     "type": "object",

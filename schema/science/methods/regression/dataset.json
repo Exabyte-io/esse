@@ -1,5 +1,5 @@
 {
-    "$id": "science-methods-regression-dataset",
+    "schemaId": "science-methods-regression-dataset",
     "$schema": "http://json-schema.org/draft-04/schema#",
     "description": "dataset for ml",
     "type": "object",

@@ -1,5 +1,5 @@
 {
-    "$id": "science-methods-pseudopotential-precision",
+    "schemaId": "science-methods-pseudopotential-precision",
     "$schema": "http://json-schema.org/draft-04/schema#",
     "title": "precision schema for pseudopotential dft",
     "properties": {

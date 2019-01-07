@@ -1,5 +1,5 @@
 {
-    "$id": "material-properties-primary-total-energy-contributions",
+    "schemaId": "material-properties-primary-total-energy-contributions",
     "$schema": "http://json-schema.org/draft-04/schema#",
     "title": "total energy contributions schema",
     "type": "object",

@@ -1,5 +1,5 @@
 {
-    "$id": "material-properties-primary-structural-magnetic-moments",
+    "schemaId": "material-properties-primary-structural-magnetic-moments",
     "$schema": "http://json-schema.org/draft-04/schema#",
     "title": "magnetic moments",
     "description": "magnetization on each ion",

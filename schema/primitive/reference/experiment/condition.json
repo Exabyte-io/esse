@@ -1,5 +1,5 @@
 {
-    "$id": "primitive-reference-experiment-condition",
+    "schemaId": "primitive-reference-experiment-condition",
     "$schema": "http://json-schema.org/draft-04/schema#",
     "title": "condition schema",
     "properties": {

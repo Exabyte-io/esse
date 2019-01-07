@@ -1,5 +1,5 @@
 {
-    "$id": "primitive-math-3d-plane",
+    "schemaId": "primitive-math-3d-plane",
     "$schema": "http://json-schema.org/draft-04/schema#",
     "title": "3 dimensional plane schema",
     "properties": {

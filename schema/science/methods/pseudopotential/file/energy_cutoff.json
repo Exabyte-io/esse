@@ -1,5 +1,5 @@
 {
-    "$id": "science-methods-pseudopotential-file-energy-cutoff",
+    "schemaId": "science-methods-pseudopotential-file-energy-cutoff",
     "$schema": "http://json-schema.org/draft-04/schema#",
     "title": "energy cutoff schema",
     "type": "object",

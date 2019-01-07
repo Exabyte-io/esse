@@ -1,5 +1,5 @@
 {
-    "$id": "primitive-reference-experiment-location",
+    "schemaId": "primitive-reference-experiment-location",
     "$schema": "http://json-schema.org/draft-04/schema#",
     "title": "location schema",
     "properties": {

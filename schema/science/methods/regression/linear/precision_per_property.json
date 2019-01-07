@@ -1,5 +1,5 @@
 {
-    "$id": "science-methods-regression-linear-precision-per-property",
+    "schemaId": "science-methods-regression-linear-precision-per-property",
     "$schema": "http://json-schema.org/draft-04/schema#",
     "title": "precision schema for regression",
     "properties": {
