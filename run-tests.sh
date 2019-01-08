@@ -11,6 +11,7 @@ pip -q install -r ${DIR}/requirements.txt
 export PYTHONPATH=${DIR}:${PYTHONPATH}
 
 # javascript tests
+npm install
 npm test
 
 # python tests
