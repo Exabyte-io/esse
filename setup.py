@@ -10,7 +10,8 @@ setup(
     py_modules=["esse"],
     install_requires=[
         "pyyaml==3.12",
-        "jsonschema==2.6.0"
+        "jsonschema==2.6.0",
+        "exabyte_json_include==0.1.0"
     ],
     classifiers=[
         'Programming Language :: Python',
