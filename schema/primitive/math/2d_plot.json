@@ -4,17 +4,17 @@
     "title": "2 dimension plot schema",
     "allOf": [
         {
-            "$ref": "file:2d_data.json"
+            "$ref": "2d_data.json"
         }
     ],
     "properties": {
         "xAxis": {
             "description": "x Axis object",
-            "$ref": "file:axis.json"
+            "$ref": "axis.json"
         },
         "yAxis": {
             "description": "y Axis object",
-            "$ref": "file:axis.json"
+            "$ref": "axis.json"
         },
         "legend": {
             "description": "Legend of y Axis data series",

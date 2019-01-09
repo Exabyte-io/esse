@@ -2,10 +2,10 @@
     "schemaId": "software-ml-unit-processing",
     "oneOf": [
         {
-            "$ref": "file:processing/data_transformation.json"
+            "$ref": "processing/data_transformation.json"
         },
         {
-            "$ref": "file:processing/feature_selection.json"
+            "$ref": "processing/feature_selection.json"
         }
     ]
 }

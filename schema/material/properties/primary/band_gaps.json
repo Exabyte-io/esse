@@ -12,7 +12,7 @@
         "values": {
             "type": "array",
             "items": {
-                "$ref": "file:../../../primitive/property/band_gap.json"
+                "$ref": "../../../primitive/property/band_gap.json"
             }
         },
         "eigenvalues": {
@@ -20,7 +20,7 @@
             "items": {
                 "properties": {
                     "kpoint": {
-                        "$ref": "file:../../../primitive/math/point.json"
+                        "$ref": "../../../primitive/math/point.json"
                     },
                     "weight": {
                         "type": "number"

@@ -5,11 +5,11 @@
     "properties": {
         "normal": {
             "description": "surface normal of plane",
-            "$ref": "file:vector.json"
+            "$ref": "vector.json"
         },
         "origin": {
             "description": "origin of normal vector to the plane",
-            "$ref": "file:point.json"
+            "$ref": "point.json"
         }
     },
     "required": [

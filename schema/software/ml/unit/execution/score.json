@@ -4,7 +4,7 @@
     "title": "train score schema",
     "allOf": [
         {
-            "$ref": "file:../../../../workflow/unit/execution.json"
+            "$ref": "../../../../workflow/unit/execution.json"
         }
     ],
     "properties": {

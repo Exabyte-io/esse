@@ -4,7 +4,7 @@
     "title": "density schema",
     "allOf": [
         {
-            "$ref": "file:../../../../primitive/math/scalar.json"
+            "$ref": "../../../../primitive/math/scalar.json"
         }
     ],
     "properties": {

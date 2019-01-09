@@ -4,13 +4,13 @@
     "title": "reference schema (using `anyOf` instead of `oneOf` below b/c current reference schemas overlap)",
     "anyOf": [
         {
-            "$ref": "file:reference/modeling.json"
+            "$ref": "reference/modeling.json"
         },
         {
-            "$ref": "file:reference/experiment.json"
+            "$ref": "reference/experiment.json"
         },
         {
-            "$ref": "file:reference/literature.json"
+            "$ref": "reference/literature.json"
         }
     ]
 }

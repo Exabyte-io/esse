@@ -12,7 +12,7 @@
             "description": "experiment authors",
             "type": "array",
             "items": {
-                "$ref": "file:literature/name.json"
+                "$ref": "literature/name.json"
             }
         },
         "title": {
@@ -26,11 +26,11 @@
         "conditions": {
             "type": "array",
             "items": {
-                "$ref": "file:experiment/condition.json"
+                "$ref": "experiment/condition.json"
             }
         },
         "location": {
-            "$ref": "file:experiment/location.json"
+            "$ref": "experiment/location.json"
         },
         "timestamp": {
             "description": "epoch time.",
@@ -44,7 +44,7 @@
             "type": "array",
             "description": "references to literature articles",
             "items": {
-                "$ref": "file:literature.json"
+                "$ref": "literature.json"
             }
         }
     },

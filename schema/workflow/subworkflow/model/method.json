@@ -12,7 +12,7 @@
             "type": "string"
         },
         "precision": {
-            "$ref": "file:method/precision.json"
+            "$ref": "method/precision.json"
         },
         "data": {
             "description": "additional data specific to method, eg. array of pseudopotentials",

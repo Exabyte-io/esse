@@ -4,7 +4,7 @@
     "title": "stress tensor schema",
     "properties": {
         "value": {
-            "$ref": "file:../../../primitive/math/3d_tensor.json"
+            "$ref": "../../../primitive/math/3d_tensor.json"
         },
         "name": {
             "enum": [
@@ -12,7 +12,7 @@
             ]
         },
         "units": {
-            "$ref": "file:../../../units.json#/pressure"
+            "$ref": "../../../units.json#/pressure"
         }
     }
 }

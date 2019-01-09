@@ -4,7 +4,7 @@
     "title": "scale and reduce unit schema",
     "allOf": [
         {
-            "$ref": "file:../../../../../workflow/unit/processing.json"
+            "$ref": "../../../../../workflow/unit/processing.json"
         }
     ],
     "type": "object",

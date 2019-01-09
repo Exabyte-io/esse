@@ -5,7 +5,7 @@
     "type": "object",
     "allOf": [
         {
-            "$ref": "file:./mixins/runtime_items.json"
+            "$ref": "./mixins/runtime_items.json"
         }
     ],
     "properties": {
@@ -21,7 +21,7 @@
             "title": "execution unit input schema",
             "type": "array",
             "items": {
-                "$ref": "file:./modeling/unit/_inputItemId.json"
+                "$ref": "./modeling/unit/_inputItemId.json"
             }
         }
     },

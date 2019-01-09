@@ -46,20 +46,20 @@
             ]
         },
         "energyCutoff": {
-            "$ref": "file:file/energy_cutoff.json"
+            "$ref": "file/energy_cutoff.json"
         },
         "electronicConfiguration": {
             "type": "string"
         },
         "exchangeCorrelation": {
-            "$ref": "file:file/exchange_correlation.json"
+            "$ref": "file/exchange_correlation.json"
         },
         "mass": {
             "type": "number",
             "description": "atomic mass in amu"
         },
         "radii": {
-            "$ref": "file:file/radii.json"
+            "$ref": "file/radii.json"
         },
         "screening": {
             "type": "string",

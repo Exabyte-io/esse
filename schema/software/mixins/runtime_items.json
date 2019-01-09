@@ -8,28 +8,28 @@
             "description": "names of the pre-processors for this calculation",
             "type": "array",
             "items": {
-                "$ref": "file:runtime_item.json"
+                "$ref": "runtime_item.json"
             }
         },
         "postProcessors": {
             "description": "names of the post-processors for this calculation",
             "type": "array",
             "items": {
-                "$ref": "file:runtime_item.json"
+                "$ref": "runtime_item.json"
             }
         },
         "monitors": {
             "description": "names of the monitors for this calculation",
             "type": "array",
             "items": {
-                "$ref": "file:runtime_item.json"
+                "$ref": "runtime_item.json"
             }
         },
         "results": {
             "description": "names of the results for this calculation",
             "type": "array",
             "items": {
-                "$ref": "file:runtime_item.json"
+                "$ref": "runtime_item.json"
             }
         }
     }

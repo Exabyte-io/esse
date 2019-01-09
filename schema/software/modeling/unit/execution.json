@@ -5,10 +5,10 @@
     "type": "object",
     "allOf": [
         {
-            "$ref": "file:../../../workflow/unit/execution.json"
+            "$ref": "../../../workflow/unit/execution.json"
         },
         {
-            "$ref": "file:./_input.json"
+            "$ref": "./_input.json"
         }
     ]
 }

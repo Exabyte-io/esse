@@ -5,7 +5,7 @@
     "type": "object",
     "allOf": [
         {
-            "$ref": "file:../unit.json"
+            "$ref": "../unit.json"
         }
     ],
     "properties": {
@@ -18,7 +18,7 @@
             "description": "Input information for condition.",
             "type": "array",
             "items": {
-                "$ref": "file:_input.json"
+                "$ref": "_input.json"
             }
         },
         "statement": {

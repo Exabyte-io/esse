@@ -12,10 +12,10 @@
             "type": "string"
         },
         "method": {
-            "$ref": "file:model/method.json"
+            "$ref": "model/method.json"
         },
         "accuracy": {
-            "$ref": "file:model/accuracy.json"
+            "$ref": "model/accuracy.json"
         },
         "references": {
             "type": "array",

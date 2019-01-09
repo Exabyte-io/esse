@@ -5,7 +5,7 @@
     "description": "machine learning model type/subtype schema",
     "allOf": [
         {
-            "$ref": "file:../../workflow/subworkflow/model.json"
+            "$ref": "../../workflow/subworkflow/model.json"
         }
     ],
     "properties": {
@@ -23,7 +23,7 @@
         "method": {
             "oneOf": [
                 {
-                    "$ref": "file:../methods/regression.json"
+                    "$ref": "../methods/regression.json"
                 }
             ]
         }
