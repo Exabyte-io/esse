@@ -17,7 +17,7 @@
                     ]
                 },
                 "units": {
-                    "$ref": "../../../units.json#/frequency"
+                    "$ref": "../../../definitions/units.json#/frequency"
                 }
             }
         },
@@ -29,7 +29,7 @@
                     ]
                 },
                 "units": {
-                    "$ref": "../../../units.json#/phononDOS"
+                    "$ref": "../../../definitions/units.json#/phononDOS"
                 }
             }
         },

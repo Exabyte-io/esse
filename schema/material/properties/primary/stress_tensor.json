@@ -12,7 +12,7 @@
             ]
         },
         "units": {
-            "$ref": "../../../units.json#/pressure"
+            "$ref": "../../../definitions/units.json#/pressure"
         }
     }
 }

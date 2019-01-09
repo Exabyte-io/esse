@@ -15,7 +15,7 @@
             ]
         },
         "units": {
-            "$ref": "../../../units.json#/energy"
+            "$ref": "../../../definitions/units.json#/energy"
         }
     }
 }

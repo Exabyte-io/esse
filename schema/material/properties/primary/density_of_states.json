@@ -17,7 +17,7 @@
                     ]
                 },
                 "units": {
-                    "$ref": "../../../units.json#/energy"
+                    "$ref": "../../../definitions/units.json#/energy"
                 }
             }
         },
@@ -29,7 +29,7 @@
                     ]
                 },
                 "units": {
-                    "$ref": "../../../units.json#/electronicDOS"
+                    "$ref": "../../../definitions/units.json#/electronicDOS"
                 }
             }
         },

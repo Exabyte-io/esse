@@ -13,7 +13,7 @@
             "$ref": "../../../../primitive/property/atomic_vectors.json"
         },
         "units": {
-            "$ref": "../../../../units.json#/magnetic"
+            "$ref": "../../../../definitions/units.json#/magnetic"
         }
     }
 }

@@ -16,7 +16,7 @@
                     ]
                 },
                 "units": {
-                    "$ref": "../../../units.json#/length"
+                    "$ref": "../../../definitions/units.json#/length"
                 }
             }
         },
@@ -28,7 +28,7 @@
                     ]
                 },
                 "units": {
-                    "$ref": "../../../units.json#/frequency"
+                    "$ref": "../../../definitions/units.json#/frequency"
                 }
             }
         },

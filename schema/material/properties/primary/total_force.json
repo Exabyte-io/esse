@@ -14,7 +14,7 @@
             ]
         },
         "units": {
-            "$ref": "../../../units.json#/force"
+            "$ref": "../../../definitions/units.json#/force"
         }
     }
 }
