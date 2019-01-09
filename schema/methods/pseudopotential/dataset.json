@@ -1,5 +1,5 @@
 {
-    "schemaId": "science-methods-pseudopotential-dataset",
+    "schemaId": "methods-pseudopotential-dataset",
     "$schema": "http://json-schema.org/draft-04/schema#",
     "title": "pseudopotential dataset schema",
     "properties": {

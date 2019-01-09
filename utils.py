@@ -66,6 +66,7 @@ def set_schema_id(path_):
         path_ (str): path to JSON file.
     """
     content = read_json_file(path_)
+    if not content.get("$schema"): return  # do not add ID to non-schema files
     if content.get("schemaId"): del content["schemaId"]
     schema_id = slugify(path_.replace("{}/".format(SCHEMA_DR), '').replace(".json", ""))
     content = OrderedDict(list(OrderedDict({"schemaId": schema_id}).items()) + list(content.items()))

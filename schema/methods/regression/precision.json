@@ -1,5 +1,5 @@
 {
-    "schemaId": "science-methods-regression-precision",
+    "schemaId": "methods-regression-precision",
     "$schema": "http://json-schema.org/draft-04/schema#",
     "title": "regression precision",
     "oneOf": [

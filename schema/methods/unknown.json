@@ -1,5 +1,5 @@
 {
-    "schemaId": "science-methods-unknown",
+    "schemaId": "methods-unknown",
     "$schema": "http://json-schema.org/draft-04/schema#",
     "title": "unknown methods schema",
     "properties": {
