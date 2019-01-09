@@ -1,5 +1,24 @@
 #!/usr/bin/env bash
 
+check_args () {
+    DISABLE_NPM_INSTALL="FALSE"
+    for i in "$@"
+    do
+        case $i in
+            --disable-npm-install)
+                DISABLE_NPM_INSTALL="TRUE"
+                shift
+            ;;
+            *)
+                echo "sh run-tests.sh [--disable-npm-install]"
+                exit 1
+            ;;
+        esac
+    done
+}
+
+check_args $@
+
 SOURCE="${BASH_SOURCE[0]}"
 DIR="$( cd -P "$( dirname "$SOURCE" )" && pwd )"
 
@@ -14,7 +33,9 @@ export PYTHONPATH=${DIR}:${PYTHONPATH}
 export NVM_DIR="/root/.nvm"
 [ -s "$NVM_DIR/nvm.sh" ] && . "$NVM_DIR/nvm.sh"
 
-npm install
+if [ ${DISABLE_NPM_INSTALL} == "FALSE" ]; then
+    npm install
+fi
 npm test
 
 if [ $? -ne 0 ]; then
