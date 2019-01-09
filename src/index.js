@@ -1,49 +1,33 @@
 import Ajv from "ajv";
+import prettyjson from "prettyjson";
 
-import MANIFESTS from "./manifest";
-import {getRawJSONWithIncludeStatements, includeAndDereferenceJSONData} from "./deref";
+import {EXAMPLES_DIR, SCHEMAS_DIR} from "./settings";
+import {JSONSchemaResolver} from "./resolver/resolver";
 
-const COMPILED_SCHEMAS = [],
-    RAW_SCHEMAS = [], // raw schemas still contain `$ref` tags
-    EXAMPLES = [];
 
-const _examples = getRawJSONWithIncludeStatements(true);
-const _schemas = getRawJSONWithIncludeStatements();
+export class ESSE {
 
-includeAndDereferenceJSONData({list: _examples, rawStore: EXAMPLES, example: true});
-includeAndDereferenceJSONData({list: _schemas, compiledStore: COMPILED_SCHEMAS, rawStore: RAW_SCHEMAS});
+    constructor() {
+        const jsonResolver = new JSONSchemaResolver();
+        this.schemas = jsonResolver.resolveDir(SCHEMAS_DIR);
+        this.examples = jsonResolver.resolveDir(EXAMPLES_DIR);
+    }
 
-if (process.env.PRINT_SCHEMAS) {
-    console.log(JSON.stringify(COMPILED_SCHEMAS, null, '\t'));
+    getSchemaById(schemaId) {
+        return this.schemas.find(schema => schema.schemaId === schemaId)
+    }
+
+    /**
+     * Validates a given example against the schema.
+     * @param example {Object|Array} example to validate.
+     * @param schema {Object} schema to validate the example with.
+     * @param printErrors {boolean} whether to print errors.
+     * @returns {boolean} whether example is valid.
+     */
+    validate(example, schema, printErrors = false) {
+        const ajv = new Ajv({allErrors: true});
+        const valid = ajv.validate(schema, example);
+        if (!valid && printErrors) console.log(prettyjson.render(ajv.errors));
+        return valid;
+    }
 }
-
-export const schemas = COMPILED_SCHEMAS;
-export const manifests = MANIFESTS;
-
-export const rawSchemas = RAW_SCHEMAS;
-export const examples = EXAMPLES;
-
-export function getSchemaById(id, useRaw = false) {
-    const s = useRaw ? RAW_SCHEMAS : COMPILED_SCHEMAS;
-    return s.find(function (schema) {
-        return schema.id === id;
-    })
-}
-
-export function getSchemaByIdBasename(basename, useRaw = false) {
-    const s = useRaw ? RAW_SCHEMAS : COMPILED_SCHEMAS;
-    return s.find(function (schema) {
-        return schema && schema.id && schema.id.split('/').reverse()[0] === basename;
-    })
-}
-
-export function getExampleByIdBasename(basename) {
-    return EXAMPLES.find(function (example) {
-        return example && example.id && example.id.split('/').reverse()[0] === basename;
-    })
-}
-
-export const ajvHandler = Ajv({
-    allErrors: true,
-    schemas: RAW_SCHEMAS
-});
