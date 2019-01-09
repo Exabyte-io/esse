@@ -1,4 +1,5 @@
 {
+    "schemaId": "workflow-subworkflow-model-method-precision",
     "$schema": "http://json-schema.org/draft-04/schema#",
     "description": "Object showing the actual possible precision based on a theory and exact method of implementation",
     "title": "precision schema",

@@ -1,4 +1,5 @@
 {
+    "schemaId": "software-modeling-vasp",
     "$schema": "http://json-schema.org/draft-04/schema#",
     "title": "vienna ab-inito simulation package",
     "type": "object",

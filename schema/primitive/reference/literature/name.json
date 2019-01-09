@@ -1,4 +1,5 @@
 {
+    "schemaId": "primitive-reference-literature-name",
     "$schema": "http://json-schema.org/draft-04/schema#",
     "title": "experiment author schema",
     "type": "object",

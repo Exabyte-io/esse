@@ -1,4 +1,5 @@
 {
+    "schemaId": "software-executable",
     "$schema": "http://json-schema.org/draft-04/schema#",
     "title": "executable schema",
     "type": "object",

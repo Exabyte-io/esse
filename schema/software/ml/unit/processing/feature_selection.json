@@ -1,4 +1,5 @@
 {
+    "schemaId": "software-ml-unit-processing-feature-selection",
     "oneOf": [
         {
             "$ref": "file:feature_selection/filter_based.json"

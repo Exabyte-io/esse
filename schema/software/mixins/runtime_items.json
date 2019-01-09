@@ -1,4 +1,5 @@
 {
+    "schemaId": "software-mixins-runtime-items",
     "$schema": "http://json-schema.org/draft-04/schema#",
     "title": "runtime items schema (pre-/post-processors, monitors, results",
     "type": "object",

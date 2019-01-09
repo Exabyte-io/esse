@@ -1,4 +1,5 @@
 {
+    "schemaId": "software-ml-unit-execution-evaluate-cross-validate",
     "$schema": "http://json-schema.org/draft-04/schema#",
     "title": "cross-validation unit schema",
     "allOf": [

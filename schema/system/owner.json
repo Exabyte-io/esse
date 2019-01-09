@@ -1,4 +1,5 @@
 {
+    "schemaId": "system-owner",
     "$schema": "http://json-schema.org/draft-04/schema#",
     "title": "Entity owner reference schema",
     "allOf": [

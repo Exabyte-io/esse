@@ -1,4 +1,5 @@
 {
+    "schemaId": "primitive-math-1d-data-series",
     "$schema": "http://json-schema.org/draft-04/schema#",
     "title": "1 dimension data series schema",
     "type": "array",

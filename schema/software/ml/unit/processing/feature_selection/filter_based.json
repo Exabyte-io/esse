@@ -1,4 +1,5 @@
 {
+    "schemaId": "software-ml-unit-processing-feature-selection-filter-based",
     "$schema": "http://json-schema.org/draft-04/schema#",
     "title": "filter-based feature selection unit schema",
     "allOf": [

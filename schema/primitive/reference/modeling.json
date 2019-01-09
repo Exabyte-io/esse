@@ -1,4 +1,5 @@
 {
+    "schemaId": "primitive-reference-modeling",
     "$schema": "http://json-schema.org/draft-04/schema#",
     "title": "info for property obtained by modeling, only supports exabyte-originated data atm, but easily extendable",
     "oneOf": [
