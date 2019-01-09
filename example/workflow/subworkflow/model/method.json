@@ -3,10 +3,10 @@
         "dataset": {
             "...": "include(../../../science/methods/pseudopotential/dataset.json)"
         }
-    }, 
+    },
     "precision": {
         "...": "include(../../../science/methods/pseudopotential/precision.json)"
-    }, 
-    "subtype": "us", 
+    },
+    "subtype": "us",
     "type": "pseudopotential"
 }

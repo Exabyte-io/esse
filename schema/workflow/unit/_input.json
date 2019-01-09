@@ -1,4 +1,5 @@
 {
+    "schemaId": "workflow-unit-input",
     "$schema": "http://json-schema.org/draft-04/schema#",
     "title": "workflow unit input schema",
     "type": "object",

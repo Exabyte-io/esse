@@ -1,7 +1,7 @@
 {
     "method": {
         "...": "include(../methods/regression.json)"
-    }, 
-    "subtype": "supervised", 
+    },
+    "subtype": "supervised",
     "type": "machine_learning"
 }

@@ -1,4 +1,5 @@
 {
+    "schemaId": "workflow-subworkflow-model-method",
     "$schema": "http://json-schema.org/draft-04/schema#",
     "title": "method schema (base)",
     "properties": {

@@ -1,4 +1,5 @@
 {
+    "schemaId": "units",
     "length": {
         "enum": [
             "km",

@@ -1,4 +1,5 @@
 {
+    "schemaId": "primitive-math-vector",
     "$schema": "http://json-schema.org/draft-04/schema#",
     "title": "vector schema",
     "type": "array",

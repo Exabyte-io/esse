@@ -1,4 +1,5 @@
 {
+    "schemaId": "science-methods-pseudopotential-file-exchange-correlation",
     "$schema": "http://json-schema.org/draft-04/schema#",
     "title": "exchange correlation schema",
     "type": "object",
@@ -13,10 +14,10 @@
         "functional": {
             "oneOf": [
                 {
-                    "$ref": "file:../../../models/dft.json#/definitions/functionals/lda"
+                    "$ref": "file:../../../models/dft.json#/definitions/functionals/lda/properties/slug"
                 },
                 {
-                    "$ref": "file:../../../models/dft.json#/definitions/functionals/gga"
+                    "$ref": "file:../../../models/dft.json#/definitions/functionals/gga/properties/slug"
                 }
             ]
         }

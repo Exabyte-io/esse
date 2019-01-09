@@ -1,4 +1,5 @@
 {
+    "schemaId": "software-ml-unit-processing-data-transformation-scale-and-reduce",
     "$schema": "http://json-schema.org/draft-04/schema#",
     "title": "scale and reduce unit schema",
     "allOf": [

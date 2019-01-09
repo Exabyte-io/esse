@@ -1,10 +1,20 @@
 {
-    "type": "dft",
-    "subtype": "gga",
+    "functional": {
+        "slug": "pbe"
+    },
     "method": {
         "...": "include(../methods/pseudopotential.json)"
     },
-    "functional": "pbe",
-    "refiners": [],
-    "modifiers": []
+    "modifiers": [
+        {
+            "slug": "soc"
+        }
+    ],
+    "refiners": [
+        {
+            "slug": "hse"
+        }
+    ],
+    "subtype": "gga",
+    "type": "dft"
 }

@@ -1,4 +1,5 @@
 {
+    "schemaId": "material-properties-primary-structural-lattice",
     "$schema": "http://json-schema.org/draft-04/schema#",
     "title": "lattice schema",
     "type": "object",

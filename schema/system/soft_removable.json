@@ -1,4 +1,5 @@
 {
+    "schemaId": "system-soft-removable",
     "$schema": "http://json-schema.org/draft-04/schema#",
     "title": "soft removable entity schema",
     "properties": {

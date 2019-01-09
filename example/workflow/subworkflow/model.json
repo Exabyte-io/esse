@@ -1,18 +1,20 @@
 {
     "accuracy": [
         {
-            "property": "band gap", 
+            "property": "band gap",
             "value": 0.9
         }
-    ], 
-    "functional": "pbe", 
+    ],
+    "functional": {
+        "slug": "pbe"
+    },
     "method": {
         "...": "include(model/method.json)"
-    }, 
-    "name": "model", 
+    },
+    "name": "model",
     "references": [
         "http://journals.aps.org/prb/abstract/10.1103/PhysRevB.54.16533"
-    ], 
-    "subtype": "gga", 
+    ],
+    "subtype": "gga",
     "type": "dft"
 }

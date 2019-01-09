@@ -1,4 +1,5 @@
 {
+    "schemaId": "material-properties-primary-surface-energy",
     "$schema": "http://json-schema.org/draft-04/schema#",
     "title": "surface energy schema",
     "allOf": [

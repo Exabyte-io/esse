@@ -1,24 +1,24 @@
 {
     "condition": {
-        "else": "sample_id_6", 
+        "else": "sample_id_6",
         "input": [
             {
-                "name": "x", 
+                "name": "x",
                 "scope": "global"
-            }, 
+            },
             {
-                "name": "total_energy", 
+                "name": "total_energy",
                 "scope": "sample_id_2"
             }
-        ], 
-        "maxOccurrences": 100, 
-        "statement": "abs(x-total_energy) < 1e-5", 
-        "then": "sample_id_4", 
+        ],
+        "maxOccurrences": 100,
+        "statement": "abs(x-total_energy) < 1e-5",
+        "then": "sample_id_4",
         "throwException": true
-    }, 
-    "flowchartId": "condition", 
-    "head": true, 
-    "name": "condition", 
-    "status": "idle", 
+    },
+    "flowchartId": "condition",
+    "head": true,
+    "name": "condition",
+    "status": "idle",
     "type": "condition"
 }

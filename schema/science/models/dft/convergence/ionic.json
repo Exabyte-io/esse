@@ -1,4 +1,5 @@
 {
+    "schemaId": "science-models-dft-convergence-ionic",
     "$schema": "http://json-schema.org/draft-04/schema#",
     "title": "ionic convergence schema",
     "properties": {

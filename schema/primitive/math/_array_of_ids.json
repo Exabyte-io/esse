@@ -1,4 +1,5 @@
 {
+    "schemaId": "primitive-math-array-of-ids",
     "$schema": "http://json-schema.org/draft-04/schema#",
     "title": "atomic ids",
     "description": "array of objects containing integer id each",

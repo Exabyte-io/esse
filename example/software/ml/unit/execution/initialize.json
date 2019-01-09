@@ -1,20 +1,20 @@
 {
     "application": {
         "...": "include(../../exabyteml.json)"
-    }, 
+    },
     "flavor": {
-        "executableId": "4987JFJ3kKbwvFSG7", 
+        "executableId": "4987JFJ3kKbwvFSG7",
         "name": "initialize"
-    }, 
-    "flowchartId": "initialize", 
-    "head": true, 
+    },
+    "flowchartId": "initialize",
+    "head": true,
     "input": {
         "targets": [
-            "band_gaps:indirect", 
+            "band_gaps:indirect",
             "band_gaps:direct"
         ]
-    }, 
-    "name": "initialize", 
-    "status": "idle", 
+    },
+    "name": "initialize",
+    "status": "idle",
     "type": "execution"
 }

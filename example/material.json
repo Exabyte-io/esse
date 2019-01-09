@@ -1,92 +1,92 @@
 {
-    "_id": "LCthJ6E2QabYCZqf3", 
+    "_id": "LCthJ6E2QabYCZqf3",
     "basis": {
         "coordinates": [
             {
-                "id": 1, 
+                "id": 1,
                 "value": [
-                    0.0, 
-                    0.0, 
+                    0.0,
+                    0.0,
                     0.0
                 ]
-            }, 
+            },
             {
-                "id": 2, 
+                "id": 2,
                 "value": [
-                    0.25, 
-                    0.25, 
+                    0.25,
+                    0.25,
                     0.25
                 ]
             }
-        ], 
+        ],
         "elements": [
             {
-                "id": 1, 
+                "id": 1,
                 "value": "Si"
-            }, 
+            },
             {
-                "id": 2, 
+                "id": 2,
                 "value": "Si"
             }
-        ], 
-        "name": "basis", 
+        ],
+        "name": "basis",
         "units": "crystal"
-    }, 
-    "createdAt": "2016-04-03T05:25:37.430Z", 
+    },
+    "createdAt": "2016-04-03T05:25:37.430Z",
     "creator": {
         "...": "include(system/creator.json)"
-    }, 
+    },
     "derivedProperties": [
         {
-            "name": "volume", 
-            "units": "angstrom^3", 
+            "name": "volume",
+            "units": "angstrom^3",
             "value": 131.1
-        }, 
+        },
         {
-            "name": "density", 
-            "units": "g/cm^3", 
+            "name": "density",
+            "units": "g/cm^3",
             "value": 2.33
-        }, 
+        },
         {
-            "name": "symmetry", 
-            "spaceGroupSymbol": "Fd-3m", 
+            "name": "symmetry",
+            "spaceGroupSymbol": "Fd-3m",
             "tolerance": {
-                "units": "angstrom", 
+                "units": "angstrom",
                 "value": 0.3
             }
-        }, 
+        },
         {
-            "degree": 10, 
-            "name": "p-norm", 
+            "degree": 10,
+            "name": "p-norm",
             "value": 0.71
-        }, 
+        },
         {
-            "element": "Si", 
-            "name": "elemental_ratio", 
+            "element": "Si",
+            "name": "elemental_ratio",
             "value": 0.71
         }
-    ], 
-    "exabyteId": "RKiswuxHKkF3uvLyA", 
-    "formula": "Si", 
-    "hash": "4ac3fa057e3530628eb1295c77110eaa", 
-    "isDefault": false, 
+    ],
+    "exabyteId": "RKiswuxHKkF3uvLyA",
+    "formula": "Si",
+    "hash": "4ac3fa057e3530628eb1295c77110eaa",
+    "isDefault": false,
     "lattice": {
-        "a": 5.0, 
-        "alpha": 90.0, 
-        "b": 5.0, 
-        "beta": 90.0, 
-        "c": 5.0, 
-        "gamma": 90.0, 
-        "name": "lattice", 
+        "a": 5.0,
+        "alpha": 90.0,
+        "b": 5.0,
+        "beta": 90.0,
+        "c": 5.0,
+        "gamma": 90.0,
+        "name": "lattice",
         "type": "CUB"
-    }, 
-    "name": "Silicon FCC", 
+    },
+    "name": "Silicon FCC",
     "owner": {
         "...": "include(system/owner.json)"
-    }, 
-    "scaledHash": "5bd4eb168e3530628eb1295d88221cbb", 
-    "schemaVersion": "0.2.0", 
-    "slug": "silicon-fcc", 
-    "unitCellFormula": "Si2", 
+    },
+    "scaledHash": "5bd4eb168e3530628eb1295d88221cbb",
+    "schemaVersion": "0.2.0",
+    "slug": "silicon-fcc",
+    "unitCellFormula": "Si2",
     "updatedAt": "2016-04-04T17:58:42.867Z"
 }

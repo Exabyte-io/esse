@@ -1,4 +1,5 @@
 {
+    "schemaId": "workflow-unit-processing",
     "$schema": "http://json-schema.org/draft-04/schema#",
     "title": "processing unit schema",
     "type": "object",

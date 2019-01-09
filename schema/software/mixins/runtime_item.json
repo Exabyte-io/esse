@@ -1,4 +1,5 @@
 {
+    "schemaId": "software-mixins-runtime-item",
     "$schema": "http://json-schema.org/draft-04/schema#",
     "title": "runtime item schema",
     "description": "currently using named onlject only b/c of problems using oneOf, but can be any on _runtime_item*",
