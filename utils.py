@@ -17,7 +17,7 @@ def read_json_file(path_):
     Returns:
         OrderedDict
     """
-    with open(path_, "r")as f:
+    with open(path_, "r") as f:
         return json.loads(f.read(), object_pairs_hook=OrderedDict)
 
 
@@ -30,7 +30,7 @@ def dump_json_file(path_, content, sort_keys=True):
         content (dict): JSON file content.
         sort_keys (bool): whether to sort keys. Defaults to True.
     """
-    with open(path_, "w+")as f:
+    with open(path_, "w+") as f:
         f.write("".join((json.dumps(content, separators=(',', ': '), indent=4, sort_keys=sort_keys), "\n")))
 
 
