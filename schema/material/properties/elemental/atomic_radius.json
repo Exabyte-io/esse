@@ -1,4 +1,5 @@
 {
+    "schemaId": "material-properties-elemental-atomic-radius",
     "$schema": "http://json-schema.org/draft-04/schema#",
     "title": "atomic radius",
     "description": "atomic radius",

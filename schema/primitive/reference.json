@@ -1,4 +1,5 @@
 {
+    "schemaId": "primitive-reference",
     "$schema": "http://json-schema.org/draft-04/schema#",
     "title": "reference schema (using `anyOf` instead of `oneOf` below b/c current reference schemas overlap)",
     "anyOf": [

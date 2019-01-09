@@ -1,4 +1,5 @@
 {
+    "schemaId": "material-properties-primary-pressure",
     "$schema": "http://json-schema.org/draft-04/schema#",
     "title": "pressure",
     "description": "average pressure in unit cell",

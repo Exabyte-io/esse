@@ -1,24 +1,24 @@
 {
-    "name": "band_gaps", 
+    "name": "band_gaps",
     "values": [
         {
             "kpointConduction": [
-                0, 
-                0, 
+                0,
+                0,
                 0
-            ], 
+            ],
             "kpointValence": [
-                0, 
-                0, 
+                0,
+                0,
                 0
-            ], 
-            "type": "direct", 
-            "units": "rydberg", 
+            ],
+            "type": "direct",
+            "units": "rydberg",
             "value": 0.0947
-        }, 
+        },
         {
-            "type": "indirect", 
-            "units": "rydberg", 
+            "type": "indirect",
+            "units": "rydberg",
             "value": 0.0
         }
     ]

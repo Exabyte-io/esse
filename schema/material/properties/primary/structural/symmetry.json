@@ -1,9 +1,10 @@
 {
+    "schemaId": "material-properties-primary-structural-symmetry",
     "$schema": "http://json-schema.org/draft-04/schema#",
     "title": "symmetry schema",
     "properties": {
         "spaceGroupSymbol": {
-            "description": "space group symbol in Hermann–Mauguin notation",
+            "description": "space group symbol in Hermann\u2013Mauguin notation",
             "type": "string"
         },
         "tolerance": {

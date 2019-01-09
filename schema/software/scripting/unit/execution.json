@@ -1,3 +1,4 @@
 {
+    "schemaId": "software-scripting-unit-execution",
     "$ref": "file:../../modeling/unit/execution.json"
 }

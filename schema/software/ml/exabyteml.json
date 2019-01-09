@@ -1,4 +1,5 @@
 {
+    "schemaId": "software-ml-exabyteml",
     "$schema": "http://json-schema.org/draft-04/schema#",
     "title": "exabyte machine learning engine schema",
     "type": "object",

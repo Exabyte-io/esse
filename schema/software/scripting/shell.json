@@ -1,4 +1,5 @@
 {
+    "schemaId": "software-scripting-shell",
     "$schema": "http://json-schema.org/draft-04/schema#",
     "title": "Shell Scripting Language Schema",
     "type": "object",
