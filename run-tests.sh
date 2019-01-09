@@ -18,6 +18,7 @@ npm install
 npm test
 
 if [ $? -ne 0 ]; then
+    echo "NPM TESTS FAILED!"
     exit 1
 fi
 
@@ -25,5 +26,6 @@ fi
 python tests/validate.py
 
 if [ $? -ne 0 ]; then
+    echo "PYTHON TESTS FAILED!"
     exit 1
 fi
