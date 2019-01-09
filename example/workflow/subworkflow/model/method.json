@@ -1,11 +1,11 @@
 {
     "data": {
         "dataset": {
-            "...": "include(../../../methods/pseudopotential/dataset.json)"
+            "...": "include(../../../methods_directory/pseudopotential/dataset.json)"
         }
     },
     "precision": {
-        "...": "include(../../../methods/pseudopotential/precision.json)"
+        "...": "include(../../../methods_directory/pseudopotential/precision.json)"
     },
     "subtype": "us",
     "type": "pseudopotential"

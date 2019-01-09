@@ -1,0 +1,10 @@
+{
+    "schemaId": "methods-directory-regression-precision",
+    "$schema": "http://json-schema.org/draft-04/schema#",
+    "title": "regression precision",
+    "oneOf": [
+        {
+            "$ref": "linear/precision_per_property.json"
+        }
+    ]
+}
