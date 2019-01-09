@@ -2,6 +2,11 @@
     "schemaId": "methods-directory-regression",
     "$schema": "http://json-schema.org/draft-04/schema#",
     "title": "linear methods schema",
+    "allOf": [
+        {
+            "$ref": "../method.json"
+        }
+    ],
     "properties": {
         "type": {
             "enum": [
@@ -55,8 +60,6 @@
         }
     },
     "required": [
-        "type",
-        "subtype",
         "precision",
         "data"
     ]

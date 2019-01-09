@@ -1,5 +1,5 @@
 {
-    "schemaId": "workflow-subworkflow-model-method",
+    "schemaId": "method",
     "$schema": "http://json-schema.org/draft-04/schema#",
     "title": "method schema (base)",
     "properties": {
@@ -10,9 +10,6 @@
         "subtype": {
             "description": "general subtype of this method, eg. `ultra-soft`",
             "type": "string"
-        },
-        "precision": {
-            "$ref": "method/precision.json"
         },
         "data": {
             "description": "additional data specific to method, eg. array of pseudopotentials",

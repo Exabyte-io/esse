@@ -4,7 +4,7 @@
         "...": "include(../software/application.json)"
     },
     "model": {
-        "...": "include(subworkflow/model.json)"
+        "...": "include(../models_directory/dft.json)"
     },
     "name": "Band Structure",
     "properties": [

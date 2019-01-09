@@ -1,5 +1,5 @@
 {
-    "schemaId": "workflow-subworkflow-model",
+    "schemaId": "model",
     "$schema": "http://json-schema.org/draft-04/schema#",
     "title": "model schema (base)",
     "properties": {
@@ -12,17 +12,7 @@
             "type": "string"
         },
         "method": {
-            "$ref": "model/method.json"
-        },
-        "accuracy": {
-            "$ref": "model/accuracy.json"
-        },
-        "references": {
-            "type": "array",
-            "items": {
-                "description": "literature reference, webpage etc.",
-                "type": "string"
-            }
+            "$ref": "method.json"
         }
     },
     "required": [

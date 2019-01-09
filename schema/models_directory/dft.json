@@ -3,6 +3,11 @@
     "$schema": "http://json-schema.org/draft-04/schema#",
     "title": "density function theory schema",
     "description": "density function theory schema (deprecated - to be replaced with manifest)",
+    "allOf": [
+        {
+            "$ref": "../model.json"
+        }
+    ],
     "properties": {
         "type": {
             "enum": [
@@ -20,33 +25,13 @@
         "functional": {
             "oneOf": [
                 {
-                    "$ref": "#/definitions/functionals/lda"
+                    "$ref": "dft/functionals.json#/lda"
                 },
                 {
-                    "$ref": "#/definitions/functionals/gga"
+                    "$ref": "dft/functionals.json#/gga"
                 },
                 {
-                    "type": "object",
-                    "properties": {
-                        "slug": {
-                            "type": "string",
-                            "enum": [
-                                "ldau",
-                                "bp",
-                                "lyp",
-                                "b3lyp",
-                                "pbesol",
-                                "hse",
-                                "am05",
-                                "rtpss",
-                                "tpss",
-                                "m06l",
-                                "mbj",
-                                "vdwd3",
-                                "fci"
-                            ]
-                        }
-                    }
+                    "$ref": "dft/functionals.json#/other"
                 }
             ]
         },
@@ -73,36 +58,6 @@
                         "enum": [
                             "soc",
                             "magn"
-                        ]
-                    }
-                }
-            }
-        }
-    },
-    "definitions": {
-        "functionals": {
-            "lda": {
-                "type": "object",
-                "properties": {
-                    "slug": {
-                        "type": "string",
-                        "enum": [
-                            "pz",
-                            "pw",
-                            "vwn"
-                        ]
-                    }
-                }
-            },
-            "gga": {
-                "type": "object",
-                "properties": {
-                    "slug": {
-                        "type": "string",
-                        "enum": [
-                            "pbe",
-                            "pw91",
-                            "rpbe"
                         ]
                     }
                 }
