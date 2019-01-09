@@ -1,0 +1,22 @@
+{
+    "schemaId": "material-properties-primary-structural-volume",
+    "$schema": "http://json-schema.org/draft-04/schema#",
+    "title": "volume schema",
+    "allOf": [
+        {
+            "$ref": "../../../primitive/math/scalar.json"
+        }
+    ],
+    "properties": {
+        "name": {
+            "enum": [
+                "volume"
+            ]
+        },
+        "units": {
+            "enum": [
+                "angstrom^3"
+            ]
+        }
+    }
+}

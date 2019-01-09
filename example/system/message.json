@@ -9,6 +9,6 @@
         "version": "0.2.0"
     },
     "payload": {
-        "...": "include(../material/properties/primary/total_energy.json)"
+        "...": "include(../properties_directory/primary/total_energy.json)"
     }
 }

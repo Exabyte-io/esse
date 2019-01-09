@@ -1,0 +1,17 @@
+{
+    "schemaId": "material-properties-primary-fermi-energy",
+    "$schema": "http://json-schema.org/draft-04/schema#",
+    "title": "fermi energy schema",
+    "allOf": [
+        {
+            "$ref": "../../primitive/property/energy.json"
+        }
+    ],
+    "properties": {
+        "name": {
+            "enum": [
+                "fermi_energy"
+            ]
+        }
+    }
+}

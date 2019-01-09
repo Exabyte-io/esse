@@ -1,0 +1,18 @@
+{
+    "schemaId": "material-properties-elemental-electronegativity",
+    "$schema": "http://json-schema.org/draft-04/schema#",
+    "title": "electronegativity",
+    "description": "electronegativity for the element (Pauling scale)",
+    "allOf": [
+        {
+            "$ref": "../../primitive/math/scalar.json"
+        }
+    ],
+    "properties": {
+        "name": {
+            "enum": [
+                "electronegativity"
+            ]
+        }
+    }
+}
