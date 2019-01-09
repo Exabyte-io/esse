@@ -1,7 +1,7 @@
 convergence_ionic:
   defaults:
     units: eV
-  path: science/models/dft/convergence/ionic.json
+  path: models/dft/convergence/ionic.json
 
 pressure:
   characteristic: true
@@ -36,7 +36,7 @@ fermi_energy:
 convergence_electronic:
   defaults:
     units: eV
-  path: science/models/dft/convergence/electronic.json
+  path: models/dft/convergence/electronic.json
 
 stress_tensor:
   defaults:
