@@ -25,13 +25,13 @@
         "functional": {
             "oneOf": [
                 {
-                    "$ref": "dft/functionals.json#/lda"
+                    "$ref": "functionals.json#/lda"
                 },
                 {
-                    "$ref": "dft/functionals.json#/gga"
+                    "$ref": "functionals.json#/gga"
                 },
                 {
-                    "$ref": "dft/functionals.json#/other"
+                    "$ref": "functionals.json#/other"
                 }
             ]
         },
