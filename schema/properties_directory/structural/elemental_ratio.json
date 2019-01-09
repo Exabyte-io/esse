@@ -5,7 +5,7 @@
     "description": "ration of this element in the compound",
     "allOf": [
         {
-            "$ref": "../../../primitive/math/scalar.json"
+            "$ref": "../../primitive/math/scalar.json"
         }
     ],
     "properties": {

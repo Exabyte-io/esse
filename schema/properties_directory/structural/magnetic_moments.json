@@ -10,10 +10,10 @@
             ]
         },
         "values": {
-            "$ref": "../../../primitive/property/atomic_vectors.json"
+            "$ref": "../../primitive/property/atomic_vectors.json"
         },
         "units": {
-            "$ref": "../../../definitions/units.json#/magnetic"
+            "$ref": "../../definitions/units.json#/magnetic"
         }
     }
 }

@@ -1,21 +1,21 @@
 {
-    "schemaId": "material-properties-primary-structural-density",
+    "schemaId": "material-properties-primary-structural-volume",
     "$schema": "http://json-schema.org/draft-04/schema#",
-    "title": "density schema",
+    "title": "volume schema",
     "allOf": [
         {
-            "$ref": "../../../primitive/math/scalar.json"
+            "$ref": "../../primitive/math/scalar.json"
         }
     ],
     "properties": {
         "name": {
             "enum": [
-                "density"
+                "volume"
             ]
         },
         "units": {
             "enum": [
-                "g/cm^3"
+                "angstrom^3"
             ]
         }
     }
