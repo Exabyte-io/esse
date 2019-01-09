@@ -1,15 +1,18 @@
 import Ajv from "ajv";
+import file from "file";
+import path from "path";
+import deref from "json-schema-deref-sync";
 
+import {JSONInclude} from "./json_include/index";
 import {EXAMPLES_DIR, SCHEMAS_DIR} from "./settings";
-import {JSONSchemaResolver} from "./resolver/resolver";
 
 
 export class ESSE {
 
     constructor() {
-        const jsonResolver = new JSONSchemaResolver();
-        this.schemas = jsonResolver.resolveDir(SCHEMAS_DIR);
-        this.examples = jsonResolver.resolveDir(EXAMPLES_DIR);
+        this.jsonResolver = new JSONInclude();
+        this.schemas = this.parseIncludeReferenceStatementsByDir(SCHEMAS_DIR);
+        this.examples = this.parseIncludeReferenceStatementsByDir(EXAMPLES_DIR);
     }
 
     getSchemaById(schemaId) {
@@ -26,5 +29,35 @@ export class ESSE {
     validate(example, schema, printErrors = false) {
         const ajv = new Ajv({allErrors: true});
         return ajv.validate(schema, example);
+    }
+
+    /**
+     * Resolves `include` and `$ref` statements.
+     * @param filePath {String} file to parse.
+     */
+    parseIncludeReferenceStatements(filePath) {
+        const parsed = this.jsonResolver.parseIncludeStatements(filePath);
+        const dirPath = path.dirname(filePath);
+        let dereferenced = deref(parsed, {baseFolder: dirPath});
+        // handle circular references and use non-dereferenced source
+        if ((dereferenced instanceof Error) && (dereferenced.message === "Circular self reference")) {
+            dereferenced = parsed;
+        }
+        return dereferenced;
+    }
+
+    /**
+     * Resolves `include` and `$ref` statements for all the JSON files inside a given directory.
+     * @param dirPath {String} directory to parse.
+     */
+    parseIncludeReferenceStatementsByDir(dirPath) {
+        const data = [];
+        file.walkSync(dirPath, (dirPath_, dirs_, files_) => {
+            files_.forEach(file_ => {
+                const filePath = path.join(dirPath_, file_);
+                data.push(this.parseIncludeReferenceStatements(filePath));
+            });
+        });
+        return data;
     }
 }
