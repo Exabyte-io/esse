@@ -1,5 +1,4 @@
 import Ajv from "ajv";
-import prettyjson from "prettyjson";
 
 import {EXAMPLES_DIR, SCHEMAS_DIR} from "./settings";
 import {JSONSchemaResolver} from "./resolver/resolver";
@@ -26,8 +25,6 @@ export class ESSE {
      */
     validate(example, schema, printErrors = false) {
         const ajv = new Ajv({allErrors: true});
-        const valid = ajv.validate(schema, example);
-        if (!valid && printErrors) console.log(prettyjson.render(ajv.errors));
-        return valid;
+        return ajv.validate(schema, example);
     }
 }
