@@ -4,7 +4,7 @@
     "title": "filter-based feature selection unit schema",
     "allOf": [
         {
-            "$ref": "file:../../../../../workflow/unit/processing.json"
+            "$ref": "../../../../../workflow/unit/processing.json"
         }
     ],
     "type": "object",

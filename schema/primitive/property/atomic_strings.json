@@ -4,7 +4,7 @@
     "title": "atomic vectors schema",
     "allOf": [
         {
-            "$ref": "file:../math/_array_of_ids.json"
+            "$ref": "../math/_array_of_ids.json"
         }
     ],
     "items": {

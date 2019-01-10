@@ -5,7 +5,7 @@
     "type": "object",
     "allOf": [
         {
-            "$ref": "file:../../../primitive/math/2d_plot.json"
+            "$ref": "../../../primitive/math/2d_plot.json"
         }
     ],
     "properties": {
@@ -17,7 +17,7 @@
                     ]
                 },
                 "units": {
-                    "$ref": "file:../../../units.json#/energy"
+                    "$ref": "../../../units.json#/energy"
                 }
             }
         },
@@ -29,7 +29,7 @@
                     ]
                 },
                 "units": {
-                    "$ref": "file:../../../units.json#/electronicDOS"
+                    "$ref": "../../../units.json#/electronicDOS"
                 }
             }
         },

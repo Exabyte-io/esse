@@ -16,12 +16,12 @@
             ]
         },
         "precision": {
-            "$ref": "file:pseudopotential/precision.json"
+            "$ref": "pseudopotential/precision.json"
         },
         "data": {
             "properties": {
                 "dateSet": {
-                    "$ref": "file:pseudopotential/dataset.json"
+                    "$ref": "pseudopotential/dataset.json"
                 }
             }
         }

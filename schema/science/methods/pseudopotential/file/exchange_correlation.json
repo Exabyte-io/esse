@@ -14,10 +14,10 @@
         "functional": {
             "oneOf": [
                 {
-                    "$ref": "file:../../../models/dft.json#/definitions/functionals/lda/properties/slug"
+                    "$ref": "../../../models/dft.json#/definitions/functionals/lda/properties/slug"
                 },
                 {
-                    "$ref": "file:../../../models/dft.json#/definitions/functionals/gga/properties/slug"
+                    "$ref": "../../../models/dft.json#/definitions/functionals/gga/properties/slug"
                 }
             ]
         }

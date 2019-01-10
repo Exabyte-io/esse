@@ -4,7 +4,7 @@
     "title": "Material entity reference schema",
     "allOf": [
         {
-            "$ref": "file:entity_reference.json"
+            "$ref": "entity_reference.json"
         }
     ],
     "properties": {

@@ -13,13 +13,13 @@
             "items": {
                 "anyOf": [
                     {
-                        "$ref": "file:material/properties/elemental/atomic_radius.json"
+                        "$ref": "material/properties/elemental/atomic_radius.json"
                     },
                     {
-                        "$ref": "file:material/properties/elemental/electronegativity.json"
+                        "$ref": "material/properties/elemental/electronegativity.json"
                     },
                     {
-                        "$ref": "file:material/properties/elemental/ionization_potential.json"
+                        "$ref": "material/properties/elemental/ionization_potential.json"
                     }
                 ]
             }

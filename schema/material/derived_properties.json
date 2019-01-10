@@ -6,19 +6,19 @@
     "items": {
         "anyOf": [
             {
-                "$ref": "file:properties/primary/structural/volume.json"
+                "$ref": "properties/primary/structural/volume.json"
             },
             {
-                "$ref": "file:properties/primary/structural/density.json"
+                "$ref": "properties/primary/structural/density.json"
             },
             {
-                "$ref": "file:properties/primary/structural/symmetry.json"
+                "$ref": "properties/primary/structural/symmetry.json"
             },
             {
-                "$ref": "file:properties/primary/structural/elemental_ratio.json"
+                "$ref": "properties/primary/structural/elemental_ratio.json"
             },
             {
-                "$ref": "file:properties/primary/structural/p-norm.json"
+                "$ref": "properties/primary/structural/p-norm.json"
             }
         ]
     }

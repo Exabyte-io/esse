@@ -14,7 +14,7 @@ with open(os.path.join(ESSE_ROOT_DIR, "manifest", "properties.yaml")) as f:
 
 class ESSE(object):
     """
-    Example and Schema Sources for Exabyte class.
+    Exabyte Source of Schemas and Examples class.
     """
 
     def get_schema(self, schemaId):

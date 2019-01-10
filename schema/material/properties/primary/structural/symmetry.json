@@ -11,7 +11,7 @@
             "description": "tolerance used for symmetry calculation",
             "allOf": [
                 {
-                    "$ref": "file:../../../../primitive/math/scalar.json"
+                    "$ref": "../../../../primitive/math/scalar.json"
                 }
             ],
             "properties": {

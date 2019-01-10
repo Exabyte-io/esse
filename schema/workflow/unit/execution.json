@@ -5,10 +5,10 @@
     "type": "object",
     "allOf": [
         {
-            "$ref": "file:../unit.json"
+            "$ref": "../unit.json"
         },
         {
-            "$ref": "file:../../software/mixins/runtime_items.json"
+            "$ref": "../../software/mixins/runtime_items.json"
         }
     ],
     "properties": {
@@ -19,19 +19,19 @@
         },
         "application": {
             "description": "Contains information about the simulation engine/application.",
-            "$ref": "file:../../software/application.json"
+            "$ref": "../../software/application.json"
         },
         "executable": {
             "description": "Contains information about the simulation engine/application executable.",
-            "$ref": "file:../../software/executable.json"
+            "$ref": "../../software/executable.json"
         },
         "flavor": {
             "description": "Contains information about the simulation engine/application flavor.",
-            "$ref": "file:../../software/flavor.json"
+            "$ref": "../../software/flavor.json"
         },
         "compute": {
             "description": "Unit's specific computational parameters. Overrides computeArgs object inside the Job entity.",
-            "$ref": "file:../../job/compute.json"
+            "$ref": "../../job/compute.json"
         },
         "input": {
             "description": "unit input (type to be specified by the application's execution unit)"

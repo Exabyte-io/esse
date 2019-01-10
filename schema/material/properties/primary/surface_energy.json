@@ -4,7 +4,7 @@
     "title": "surface energy schema",
     "allOf": [
         {
-            "$ref": "file:../../../primitive/property/surface_energy.json"
+            "$ref": "../../../primitive/property/surface_energy.json"
         }
     ],
     "properties": {

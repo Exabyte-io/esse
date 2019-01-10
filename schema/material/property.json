@@ -5,7 +5,7 @@
     "allOf": [
         {
             "description": "entity schema",
-            "$ref": "file:../system/entity.json"
+            "$ref": "../system/entity.json"
         }
     ],
     "properties": {
@@ -26,7 +26,7 @@
             "type": "object"
         },
         "source": {
-            "$ref": "file:../primitive/reference.json"
+            "$ref": "../primitive/reference.json"
         }
     },
     "required": [

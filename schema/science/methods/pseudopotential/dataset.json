@@ -15,7 +15,7 @@
             "type": "array"
         },
         "exchangeCorrelation": {
-            "$ref": "file:file/exchange_correlation.json"
+            "$ref": "file/exchange_correlation.json"
         },
         "format": {
             "description": "type of pseudopotantial format",
@@ -55,7 +55,7 @@
             "description": "pseudopotentials used inside this set",
             "type": "array",
             "items": {
-                "$ref": "file:file.json"
+                "$ref": "file.json"
             }
         }
     },

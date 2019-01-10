@@ -4,7 +4,7 @@
     "title": "energy schema",
     "allOf": [
         {
-            "$ref": "file:../math/scalar.json"
+            "$ref": "../math/scalar.json"
         }
     ],
     "properties": {
@@ -12,7 +12,7 @@
             "type": "string"
         },
         "units": {
-            "$ref": "file:../../units.json#/energy"
+            "$ref": "../../units.json#/energy"
         }
     },
     "required": [

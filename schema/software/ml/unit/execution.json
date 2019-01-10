@@ -2,16 +2,16 @@
     "schemaId": "software-ml-unit-execution",
     "oneOf": [
         {
-            "$ref": "file:execution/evaluate/cross-validate.json"
+            "$ref": "execution/evaluate/cross-validate.json"
         },
         {
-            "$ref": "file:execution/train.json"
+            "$ref": "execution/train.json"
         },
         {
-            "$ref": "file:execution/score.json"
+            "$ref": "execution/score.json"
         },
         {
-            "$ref": "file:execution/initialize.json"
+            "$ref": "execution/initialize.json"
         }
     ]
 }

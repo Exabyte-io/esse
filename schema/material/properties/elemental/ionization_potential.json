@@ -5,7 +5,7 @@
     "description": "ionization potential for the element",
     "allOf": [
         {
-            "$ref": "file:../../../primitive/math/scalar.json"
+            "$ref": "../../../primitive/math/scalar.json"
         }
     ],
     "properties": {
@@ -15,7 +15,7 @@
             ]
         },
         "units": {
-            "$ref": "file:../../../units.json#/energy"
+            "$ref": "../../../units.json#/energy"
         }
     }
 }

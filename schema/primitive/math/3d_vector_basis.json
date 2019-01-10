@@ -6,15 +6,15 @@
     "properties": {
         "a": {
             "description": "first vector",
-            "$ref": "file:vector.json"
+            "$ref": "vector.json"
         },
         "b": {
             "description": "second vector",
-            "$ref": "file:vector.json"
+            "$ref": "vector.json"
         },
         "c": {
             "description": "third vector",
-            "$ref": "file:vector.json"
+            "$ref": "vector.json"
         }
     },
     "required": [

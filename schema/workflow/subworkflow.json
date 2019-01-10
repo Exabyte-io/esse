@@ -14,11 +14,11 @@
         },
         "model": {
             "description": "Model used inside the subworkflow",
-            "$ref": "file:subworkflow/model.json"
+            "$ref": "subworkflow/model.json"
         },
         "application": {
             "description": "information about the simulation engine/application.",
-            "$ref": "file:../software/application.json"
+            "$ref": "../software/application.json"
         },
         "properties": {
             "description": "Array of characteristic properties calculated by this subworkflow",
@@ -32,12 +32,12 @@
             "description": "Contains the Units of the subworkflow",
             "type": "array",
             "items": {
-                "$ref": "file:unit.json"
+                "$ref": "unit.json"
             }
         },
         "compute": {
             "description": "compute parameters",
-            "$ref": "file:../job/compute.json"
+            "$ref": "../job/compute.json"
         },
         "isDraft": {
             "description": "Defines whether to store the results/properties extracted in this unit to properties collection",

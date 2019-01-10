@@ -9,7 +9,7 @@
             "type": "array"
         },
         "yDataSeries": {
-            "$ref": "file:1d_data_series.json"
+            "$ref": "1d_data_series.json"
         }
     },
     "required": [

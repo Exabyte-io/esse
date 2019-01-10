@@ -5,7 +5,7 @@
     "type": "object",
     "allOf": [
         {
-            "$ref": "file:./mixins/runtime_items.json"
+            "$ref": "./mixins/runtime_items.json"
         }
     ],
     "properties": {

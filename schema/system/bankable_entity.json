@@ -5,11 +5,11 @@
     "allOf": [
         {
             "description": "entity schema",
-            "$ref": "file:entity.json"
+            "$ref": "entity.json"
         },
         {
             "description": "bankable schema",
-            "$ref": "file:bankable.json"
+            "$ref": "bankable.json"
         }
     ]
 }

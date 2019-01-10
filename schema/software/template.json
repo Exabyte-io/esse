@@ -5,7 +5,7 @@
     "type": "object",
     "allOf": [
         {
-            "$ref": "file:./modeling/unit/_inputItem.json"
+            "$ref": "./modeling/unit/_inputItem.json"
         }
     ],
     "properties": {
@@ -22,7 +22,7 @@
             "type": "array",
             "items": {
                 "description": "render context provider names",
-                "$ref": "file:./mixins/_runtime_item_name_object.json"
+                "$ref": "./mixins/_runtime_item_name_object.json"
             }
         }
     },

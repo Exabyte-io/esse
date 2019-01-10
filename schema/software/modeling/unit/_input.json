@@ -10,10 +10,10 @@
             "items": {
                 "oneOf": [
                     {
-                        "$ref": "file:./_inputItem.json"
+                        "$ref": "./_inputItem.json"
                     },
                     {
-                        "$ref": "file:./_inputItemId.json"
+                        "$ref": "./_inputItemId.json"
                     }
                 ]
             }

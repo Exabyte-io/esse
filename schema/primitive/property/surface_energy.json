@@ -4,7 +4,7 @@
     "title": "surface energy schema",
     "allOf": [
         {
-            "$ref": "file:../math/scalar.json"
+            "$ref": "../math/scalar.json"
         }
     ],
     "properties": {
@@ -12,7 +12,7 @@
             "type": "string"
         },
         "units": {
-            "$ref": "file:../../units.json#/surface_energy"
+            "$ref": "../../units.json#/surface_energy"
         }
     },
     "required": [

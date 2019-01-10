@@ -4,7 +4,7 @@
     "title": "volume schema",
     "allOf": [
         {
-            "$ref": "file:../../../../primitive/math/scalar.json"
+            "$ref": "../../../../primitive/math/scalar.json"
         }
     ],
     "properties": {

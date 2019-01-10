@@ -4,7 +4,7 @@
     "title": "total energy schema",
     "allOf": [
         {
-            "$ref": "file:../../../primitive/property/energy.json"
+            "$ref": "../../../primitive/property/energy.json"
         }
     ],
     "properties": {
