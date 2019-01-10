@@ -1,12 +1,12 @@
 convergence_ionic:
   defaults:
     units: eV
-  path: workflow/convergence/ionic.json
+  path: properties_directory/workflow/convergence/ionic.json
 
 convergence_electronic:
   defaults:
     units: eV
-  path: workflow/convergence/electronic.json
+  path: properties_directory/workflow/convergence/electronic.json
 
 # SCALAR
 pressure:
