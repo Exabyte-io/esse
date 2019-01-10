@@ -4,7 +4,7 @@
     "title": "phonon band structure schema",
     "allOf": [
         {
-            "$ref": "../../primitive/math/2d_plot.json"
+            "$ref": "../../abstract/2d_plot.json"
         }
     ],
     "properties": {

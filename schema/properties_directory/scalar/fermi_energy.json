@@ -4,7 +4,7 @@
     "title": "fermi energy schema",
     "allOf": [
         {
-            "$ref": "../../primitive/property/energy.json"
+            "$ref": "../../reusable/energy.json"
         }
     ],
     "properties": {

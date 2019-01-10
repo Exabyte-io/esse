@@ -10,7 +10,7 @@
             ]
         },
         "values": {
-            "$ref": "../../../primitive/property/atomic_strings.json"
+            "$ref": "../../../reusable/atomic_strings.json"
         }
     }
 }

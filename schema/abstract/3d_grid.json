@@ -1,0 +1,17 @@
+{
+    "schemaId": "abstract-3d-grid",
+    "$schema": "http://json-schema.org/draft-04/schema#",
+    "title": "3 dimensional grid schema",
+    "properties": {
+        "dimensions": {
+            "$ref": "../primitive/array_of_3_number_elements.json"
+        },
+        "shifts": {
+            "$ref": "../primitive/array_of_3_number_elements.json"
+        }
+    },
+    "required": [
+        "dimensions",
+        "shifts"
+    ]
+}
