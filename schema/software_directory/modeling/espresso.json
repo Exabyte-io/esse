@@ -1,0 +1,26 @@
+{
+    "schemaId": "software-directory-modeling-espresso",
+    "$schema": "http://json-schema.org/draft-04/schema#",
+    "title": "espresso app schema",
+    "type": "object",
+    "properties": {
+        "name": {
+            "enum": [
+                "espresso"
+            ]
+        },
+        "summary": {
+            "enum": [
+                "Quantum Espresso"
+            ]
+        },
+        "version": {
+            "enum": [
+                "5.1.1",
+                "5.2.1",
+                "5.4.0",
+                "6.0.0"
+            ]
+        }
+    }
+}
