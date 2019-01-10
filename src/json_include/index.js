@@ -2,7 +2,7 @@ import path from "path";
 import fs from "fs-extra";
 
 import {safeParseJSON, isInstanceOf} from "./utils";
-import {INCLUDE_KEY, INCLUDE_VALUE_PATTERN, OBJECT_ONLY} from "./settings";
+import {INCLUDE_KEY, INCLUDE_VALUE_REGEX, OBJECT_ONLY} from "./settings";
 
 
 export class JSONInclude {
@@ -12,8 +12,8 @@ export class JSONInclude {
     }
 
     _getIncludeFileName(value) {
-        if ((isInstanceOf(value, "String")) && (value.search(INCLUDE_VALUE_PATTERN) !== -1)) {
-            return value.match(INCLUDE_VALUE_PATTERN)[1]
+        if ((isInstanceOf(value, "String")) && (value.search(INCLUDE_VALUE_REGEX) !== -1)) {
+            return value.match(INCLUDE_VALUE_REGEX)[1]
         }
     }
 
