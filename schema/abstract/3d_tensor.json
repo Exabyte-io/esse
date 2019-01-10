@@ -4,7 +4,7 @@
     "title": "3 dimensional tensor schema",
     "type": "array",
     "items": {
-        "$ref": "../primitive/array_of_3_number_elements.json"
+        "$ref": "../primitive/array_of_3_numbers.json"
     },
     "minItems": 3,
     "maxItems": 3

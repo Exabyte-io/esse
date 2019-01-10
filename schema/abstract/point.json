@@ -2,5 +2,5 @@
     "schemaId": "abstract-point",
     "$schema": "http://json-schema.org/draft-04/schema#",
     "title": "point schema",
-    "$ref": "../primitive/array_of_3_number_elements.json"
+    "$ref": "../primitive/array_of_3_numbers.json"
 }

@@ -4,10 +4,10 @@
     "title": "3 dimensional grid schema",
     "properties": {
         "dimensions": {
-            "$ref": "../primitive/array_of_3_number_elements.json"
+            "$ref": "../primitive/array_of_3_numbers.json"
         },
         "shifts": {
-            "$ref": "../primitive/array_of_3_number_elements.json"
+            "$ref": "../primitive/array_of_3_numbers.json"
         }
     },
     "required": [
