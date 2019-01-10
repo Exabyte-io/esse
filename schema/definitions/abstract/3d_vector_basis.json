@@ -6,15 +6,15 @@
     "properties": {
         "a": {
             "description": "first vector",
-            "$ref": "../definitions/primitive/array_of_3_numbers.json"
+            "$ref": "../primitive/array_of_3_numbers.json"
         },
         "b": {
             "description": "second vector",
-            "$ref": "../definitions/primitive/array_of_3_numbers.json"
+            "$ref": "../primitive/array_of_3_numbers.json"
         },
         "c": {
             "description": "third vector",
-            "$ref": "../definitions/primitive/array_of_3_numbers.json"
+            "$ref": "../primitive/array_of_3_numbers.json"
         }
     },
     "required": [

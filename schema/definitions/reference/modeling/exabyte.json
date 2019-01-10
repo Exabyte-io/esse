@@ -19,7 +19,7 @@
         },
         "owner": {
             "description": "owner entity reference",
-            "$ref": "../../system/entity_reference.json"
+            "$ref": "../../../system/entity_reference.json"
         }
     },
     "required": [
