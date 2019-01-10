@@ -4,17 +4,17 @@
     "title": "band gap schema",
     "allOf": [
         {
-            "$ref": "../primitive/scalar.json"
+            "$ref": "../definitions/primitive/scalar.json"
         }
     ],
     "properties": {
         "kpointConduction": {
             "description": "kpoint inside conduction band in crystal coordinates",
-            "$ref": "../abstract/point.json"
+            "$ref": "../definitions/abstract/point.json"
         },
         "kpointValence": {
             "description": "kpoint inside valence band in crystal coordinates",
-            "$ref": "../abstract/point.json"
+            "$ref": "../definitions/abstract/point.json"
         },
         "type": {
             "type": "string",

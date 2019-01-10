@@ -11,7 +11,7 @@
             "description": "tolerance used for symmetry calculation",
             "allOf": [
                 {
-                    "$ref": "../../primitive/scalar.json"
+                    "$ref": "../../definitions/primitive/scalar.json"
                 }
             ],
             "properties": {

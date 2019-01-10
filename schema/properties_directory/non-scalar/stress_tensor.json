@@ -4,7 +4,7 @@
     "title": "stress tensor schema",
     "properties": {
         "value": {
-            "$ref": "../../abstract/3d_tensor.json"
+            "$ref": "../../definitions/abstract/3d_tensor.json"
         },
         "name": {
             "enum": [
