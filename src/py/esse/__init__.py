@@ -1,15 +1,9 @@
 import os
-import yaml
 import json
 import jsonschema
 import json_include
 
-ESSE_ROOT_DIR = os.path.dirname(__file__)
-SCHEMA_DR = os.path.join(ESSE_ROOT_DIR, "schema")
-EXAMPLE_DR = os.path.join(ESSE_ROOT_DIR, "example")
-
-with open(os.path.join(ESSE_ROOT_DIR, "manifest", "properties.yaml")) as f:
-    PROPERTIES_MANIFEST = yaml.load(f.read())
+from settings import SCHEMA_DR, EXAMPLE_DR, PROPERTIES_MANIFEST
 
 
 class ESSE(object):

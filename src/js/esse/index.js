@@ -3,7 +3,7 @@ import file from "file";
 import path from "path";
 import deref from "json-schema-deref-sync";
 
-import {JSONInclude} from "./json_include/index";
+import {JSONInclude} from "../json_include/index";
 import {EXAMPLES_DIR, SCHEMAS_DIR} from "./settings";
 
 
