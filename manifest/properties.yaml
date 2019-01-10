@@ -10,7 +10,6 @@ convergence_electronic:
 
 # SCALAR
 pressure:
-  characteristic: true
   defaults:
     units: kbar
   path: properties_directory/scalar/pressure.json
@@ -68,7 +67,6 @@ total_energy_contributions:
   examplePath: example/properties_directory/non-scalar/total_energy_contributions.json
 
 band_gaps:
-  characteristic: true
   types:
     - direct
     - indirect
