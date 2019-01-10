@@ -11,6 +11,10 @@ export class JSONInclude {
         this.JSON_INCLUDE_CACHE = {};
     }
 
+    /**
+     * Extracts file name(path) from the include statement.
+     * @param value {String} string to extract the file name from.
+     */
     _getIncludeFileName(value) {
         if ((isInstanceOf(value, "String")) && (value.search(INCLUDE_VALUE_REGEX) !== -1)) {
             return value.match(INCLUDE_VALUE_REGEX)[1]
