@@ -11,12 +11,12 @@
             "description": "general subtype of this method, eg. `ultra-soft`",
             "type": "string"
         },
-        "data": {
-            "description": "additional data specific to method, eg. array of pseudopotentials",
-            "type": "object"
-        },
         "precision": {
             "description": "Object showing the actual possible precision based on a theory and exact method of implementation",
+            "type": "object"
+        },
+        "data": {
+            "description": "additional data specific to method, eg. array of pseudopotentials",
             "type": "object"
         }
     },
