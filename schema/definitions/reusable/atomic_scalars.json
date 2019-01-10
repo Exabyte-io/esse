@@ -4,13 +4,13 @@
     "title": "atomic vectors schema",
     "allOf": [
         {
-            "$ref": "../primitive/array_of_ids.json"
+            "$ref": "../definitions/primitive/array_of_ids.json"
         }
     ],
     "items": {
         "properties": {
             "value": {
-                "$ref": "../primitive/scalar.json"
+                "$ref": "../definitions/primitive/scalar.json"
             }
         }
     }

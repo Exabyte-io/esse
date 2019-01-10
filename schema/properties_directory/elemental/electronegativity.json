@@ -5,7 +5,7 @@
     "description": "electronegativity for the element (Pauling scale)",
     "allOf": [
         {
-            "$ref": "../../primitive/scalar.json"
+            "$ref": "../../definitions/primitive/scalar.json"
         }
     ],
     "properties": {
