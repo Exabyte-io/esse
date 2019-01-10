@@ -22,7 +22,7 @@ setup(
     author='Exabyte Inc.',
     author_email='info@exabyte.io',
     packages=['esse'],
-    package_dir={'esse': 'src/py/esse'},
+    package_dir={'': 'src/py'},
     package_data={'esse': [f.replace(DIR, "data") for f in EXTRA_FILES]},
     install_requires=[
         "pyyaml==3.12",
