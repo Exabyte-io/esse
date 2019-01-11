@@ -1,61 +1,72 @@
-# exabyte-esse
+# Exabyte Source of Schemas and Examples (ESSE)
 
-Exabyte Source of Schemas and Examples.
-Contains schemas and examples for materials and simulations related data in JSON representation. 
-Can be used as a node or python module on server-side.
+ESSE contains schemas and examples for materials and simulations related data in JSON representation. 
 
 ## Installation
 
-Python:
+ESSE can be used as a Node or Python package on the server side.
+Pleas note that schemas and examples are not available on the client.
+
+### Python
+
+ESSE can be install as a Python package either via PyPi or the repository as below.
+
+#### PyPi
 
 ```bash
-cd <this repo dir>
-virtualenv .venv && source .venv/bin/activate
-pip install -r requirements.txt
+pip install esse
 ```
 
-To ensure latest functionality, run `pip install --upgrade https://github.com/timurbazhirov/json_include/archive/master.zip`.
+#### Repository
 
-Node:
 ```bash
-npm install
+virtualenv .venv
+source .venv/bin/activate
+pip install -e PATH_TO_ESSE_REPOSITIRY
 ```
+
+### Node
+
+ESSE can be install as a Node package either via NPM or the repository as below.
+
+#### NPM
+
+```bash
+npm install exabyte-esse
+```
+
+#### Repository
+
+Add `"exabyte-esse": "file:PATH_TO_ESSE_REPOSITIRY"` to `package.json`.
 
 ## Usage
 
-To produce json files with no inclusion statements (python):
+ESSE contains separate but equivalent interfaces for Python and Node.
+The package provides `ESSE` class that can be initialized and used as below.
 
-```bash
-python compile.py
+### Python
+
+```python
+from esse import ESSE
+
+es = ESSE()
+schema = es.get_schema_by_id("material")
 ```
 
-`-m` flag will minify json files.
+### Node
 
-To produce json array with all dereferenced schemas (javascript):
+```javascript
+import {ESSE} from "exabyte-esse";
 
-```bash
-npm install
-npm run-script run
+const es = new ESSE();
+const schema = es.getSchemaById("material");
 ```
-
-compiled schemas and examples can be found inside `lib` directory.
 
 ## Tests
 
-Run from root directory of this repository:
+Run the following command from the root directory of this repository to run the tests.
+The script will run both Node and Python tests in which examples are validated against their schemas.
 
 ```bash
-npm test
+sh run-tests.sh
 ```
-
-## Debugging
-
-To view all compiled schemas:
-
-```bash
-PRINT_SCHEMAS=1 ./node_modules/babel-cli/bin/babel-node.js src/index.js
-```
-
-## Notes
-
-- Do not use circular references in the schemas but instead leave the type as object and add explanation to description.
