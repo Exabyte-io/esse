@@ -69,7 +69,7 @@ ESSE contains 3 main directories, [schema](schema), [example](example) and [src]
 ### Schema
 
 The schema directory contains the schemas specifying the rules to structure materials-related data.
-In order to apply object-oriented design principals, a set of basic schemas are defined to facilitate the schema modularity.
+In order to apply object-oriented design principals, a set of core schemas, outlined below are defined to facilitate the schema modularity.
 
 #### Primitive
 
@@ -83,6 +83,10 @@ Primitives are solely defined by the default primitives and can not be re-constr
 #### Reusable
 
 [Reusable](schema/core/reusable) directory contains the schemas that are widely used in other schemas to avoid duplication, constructed from the abstract and primitive schemas.
+
+#### Reference
+
+[Reference](schema/core/reference) directory contains the schemas defining the rules to structure the references.
 
 ### Example
 
