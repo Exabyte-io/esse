@@ -4,7 +4,7 @@
     "title": "lattice explicit unit",
     "allOf": [
         {
-            "$ref": "../../../primitive/math/3d_vector_basis.json"
+            "$ref": "../../../definitions/abstract/3d_vector_basis.json"
         }
     ],
     "properties": {

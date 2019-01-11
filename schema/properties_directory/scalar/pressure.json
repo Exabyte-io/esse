@@ -5,7 +5,7 @@
     "description": "average pressure in unit cell",
     "allOf": [
         {
-            "$ref": "../../primitive/math/scalar.json"
+            "$ref": "../../definitions/primitive/scalar.json"
         }
     ],
     "properties": {

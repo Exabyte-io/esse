@@ -1,0 +1,17 @@
+{
+    "schemaId": "reusable-atomic-vectors",
+    "$schema": "http://json-schema.org/draft-04/schema#",
+    "title": "atomic vectors schema",
+    "allOf": [
+        {
+            "$ref": "../definitions/primitive/array_of_ids.json"
+        }
+    ],
+    "items": {
+        "properties": {
+            "value": {
+                "$ref": "../definitions/abstract/vector.json"
+            }
+        }
+    }
+}

@@ -4,7 +4,7 @@
     "title": "zero point energy schema",
     "allOf": [
         {
-            "$ref": "../../primitive/property/energy.json"
+            "$ref": "../../definitions/reusable/energy.json"
         }
     ],
     "properties": {
