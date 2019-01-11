@@ -1,10 +1,44 @@
 import os
 import json
+import json_include
 
 from slugify import slugify
 from collections import OrderedDict
 
-from esse import SCHEMA_DR, EXAMPLE_DR
+from esse.settings import SCHEMAS_DIR, EXAMPLES_DIR
+
+
+def parseIncludeReferenceStatements(file_path):
+    """
+    Resolves `include` and `$ref` statements.
+
+    Args:
+        file_path (str): file to parse.
+
+    Returns:
+         dict|list
+    """
+    dirName = os.path.dirname(file_path)
+    baseName = os.path.basename(file_path)
+    return json.loads(json_include.build_json(dirName, baseName))
+
+
+def parseIncludeReferenceStatementsByDir(dir_path):
+    """
+    Resolves `include` and `$ref` statements for all the JSON files inside a given directory.
+
+    Args:
+        dir_path (str): directory to parse.
+
+    Returns:
+         dict|list
+    """
+    data = []
+    for root, dirs, files in os.walk(dir_path):
+        for file_ in files:
+            file_path = os.path.join(root, file_)
+            data.append(parseIncludeReferenceStatements(file_path))
+    return data
 
 
 def read_json_file(path_):
@@ -40,7 +74,7 @@ def dump_examples():
         - fix space and indentation
         - sort keys
     """
-    for root, dirs, files in os.walk(EXAMPLE_DR):
+    for root, dirs, files in os.walk(EXAMPLES_DIR):
         for file_ in files:
             path_ = os.path.join(root, file_)
             content = read_json_file(path_)
@@ -53,7 +87,7 @@ def dump_schemas():
         - fix space and indentation
         - preserve keys order
     """
-    for root, dirs, files in os.walk(SCHEMA_DR):
+    for root, dirs, files in os.walk(SCHEMAS_DIR):
         for file_ in files:
             set_schema_id(os.path.join(root, file_))
 
@@ -68,7 +102,7 @@ def set_schema_id(path_):
     content = read_json_file(path_)
     if not content.get("$schema"): return  # do not add ID to non-schema files
     if content.get("schemaId"): del content["schemaId"]
-    schema_id = slugify(path_.replace("{}/".format(SCHEMA_DR), '').replace(".json", ""))
+    schema_id = slugify(path_.replace("{}/".format(SCHEMAS_DIR), '').replace(".json", ""))
     content = OrderedDict(list(OrderedDict({"schemaId": schema_id}).items()) + list(content.items()))
     dump_json_file(path_, content, False)
 

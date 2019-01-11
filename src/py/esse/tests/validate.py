@@ -3,6 +3,7 @@ import unittest
 
 from esse import ESSE
 from esse.settings import SCHEMAS_DIR, EXAMPLES_DIR
+from esse.utils import parseIncludeReferenceStatements
 
 esse = ESSE()
 
@@ -15,8 +16,8 @@ class TestCase(unittest.TestCase):
         self.schema_path = self.example_path.replace(EXAMPLES_DIR, SCHEMAS_DIR)
 
     def runTest(self):
-        schema = esse.parseIncludeReferenceStatements(self.schema_path)
-        example = esse.parseIncludeReferenceStatements(self.example_path)
+        schema = parseIncludeReferenceStatements(self.schema_path)
+        example = parseIncludeReferenceStatements(self.example_path)
         esse.validate(example, schema)
 
 

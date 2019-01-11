@@ -1,9 +1,10 @@
-import os
-import json
 import jsonschema
-import json_include
 
+from esse.utils import parseIncludeReferenceStatementsByDir
 from settings import SCHEMAS_DIR, EXAMPLES_DIR, PROPERTIES_MANIFEST
+
+SCHEMAS = parseIncludeReferenceStatementsByDir(SCHEMAS_DIR)
+EXAMPLES = parseIncludeReferenceStatementsByDir(EXAMPLES_DIR)
 
 
 class ESSE(object):
@@ -12,11 +13,11 @@ class ESSE(object):
     """
 
     def __init__(self):
-        self.schemas = self.parseIncludeReferenceStatementsByDir(SCHEMAS_DIR)
-        self.examples = self.parseIncludeReferenceStatementsByDir(EXAMPLES_DIR)
+        self.schemas = SCHEMAS
+        self.examples = EXAMPLES
 
     def get_schema_by_id(self, schemaId):
-        return next((s for s in self.schemas if s["schemaId"] == schemaId), None)
+        return next((s for s in SCHEMAS if s["schemaId"] == schemaId), None)
 
     def validate(self, example, schema):
         """
@@ -30,37 +31,6 @@ class ESSE(object):
             jsonschema.exceptions.ValidationError
         """
         jsonschema.validate(example, schema)
-
-    def parseIncludeReferenceStatements(self, file_path):
-        """
-        Resolves `include` and `$ref` statements.
-
-        Args:
-            file_path (str): file to parse.
-
-        Returns:
-             dict|list
-        """
-        dirName = os.path.dirname(file_path)
-        baseName = os.path.basename(file_path)
-        return json.loads(json_include.build_json(dirName, baseName))
-
-    def parseIncludeReferenceStatementsByDir(self, dir_path):
-        """
-        Resolves `include` and `$ref` statements for all the JSON files inside a given directory.
-
-        Args:
-            dir_path (str): directory to parse.
-
-        Returns:
-             dict|list
-        """
-        data = []
-        for root, dirs, files in os.walk(dir_path):
-            for file_ in files:
-                file_path = os.path.join(root, file_)
-                data.append(self.parseIncludeReferenceStatements(file_path))
-        return data
 
     def get_property_manifest(self, property_):
         """
