@@ -1,5 +1,5 @@
 {
-    "schemaId": "abstract-2d-data",
+    "schemaId": "definitions-abstract-2d-data",
     "$schema": "http://json-schema.org/draft-04/schema#",
     "title": "2 dimension data schema",
     "type": "object",

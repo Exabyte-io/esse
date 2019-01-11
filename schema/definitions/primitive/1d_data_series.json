@@ -1,5 +1,5 @@
 {
-    "schemaId": "primitive-1d-data-series",
+    "schemaId": "definitions-primitive-1d-data-series",
     "$schema": "http://json-schema.org/draft-04/schema#",
     "title": "1 dimension data series schema",
     "type": "array",

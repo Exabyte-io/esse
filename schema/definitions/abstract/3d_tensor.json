@@ -1,5 +1,5 @@
 {
-    "schemaId": "abstract-3d-tensor",
+    "schemaId": "definitions-abstract-3d-tensor",
     "$schema": "http://json-schema.org/draft-04/schema#",
     "title": "3 dimensional tensor schema",
     "type": "array",

@@ -1,5 +1,5 @@
 {
-    "schemaId": "reusable-band-gap",
+    "schemaId": "definitions-reusable-band-gap",
     "$schema": "http://json-schema.org/draft-04/schema#",
     "title": "band gap schema",
     "allOf": [

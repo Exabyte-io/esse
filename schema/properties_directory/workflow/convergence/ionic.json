@@ -1,5 +1,5 @@
 {
-    "schemaId": "workflow-convergence-ionic",
+    "schemaId": "properties-directory-workflow-convergence-ionic",
     "$schema": "http://json-schema.org/draft-04/schema#",
     "title": "ionic convergence schema",
     "properties": {
