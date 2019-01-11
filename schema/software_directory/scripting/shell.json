@@ -1,0 +1,52 @@
+{
+    "schemaId": "software-directory-scripting-shell",
+    "$schema": "http://json-schema.org/draft-04/schema#",
+    "title": "Shell Scripting Language Schema",
+    "type": "object",
+    "allOf": [
+        {
+            "$ref": "../../software/application.json"
+        }
+    ],
+    "properties": {
+        "name": {
+            "enum": [
+                "shell"
+            ]
+        },
+        "flavor": {
+            "enum": [
+                "sh",
+                "bash",
+                "zsh",
+                "csh"
+            ]
+        },
+        "summary": {
+            "enum": [
+                "Shell Script"
+            ]
+        },
+        "version": {
+            "enum": [
+                "4.2.46"
+            ]
+        },
+        "exec": {
+            "enum": [
+                "sh",
+                "bash",
+                "zsh",
+                "csh"
+            ]
+        },
+        "arguments": {
+            "description": "Optional arguments passed to the Shell script",
+            "type": "string"
+        },
+        "environment": {
+            "description": "Optional environment variables exported before running the Shell script",
+            "type": "object"
+        }
+    }
+}

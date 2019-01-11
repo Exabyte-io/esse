@@ -1,24 +1,24 @@
 {
-    "schemaId": "material-derived-properties",
+    "schemaId": "properties-directory-derived-properties",
     "$schema": "http://json-schema.org/draft-04/schema#",
     "title": "derived properties schema",
     "type": "array",
     "items": {
         "anyOf": [
             {
-                "$ref": "primary/structural/volume.json"
+                "$ref": "structural/volume.json"
             },
             {
-                "$ref": "primary/structural/density.json"
+                "$ref": "structural/density.json"
             },
             {
-                "$ref": "primary/structural/symmetry.json"
+                "$ref": "structural/symmetry.json"
             },
             {
-                "$ref": "primary/structural/elemental_ratio.json"
+                "$ref": "structural/elemental_ratio.json"
             },
             {
-                "$ref": "primary/structural/p-norm.json"
+                "$ref": "structural/p-norm.json"
             }
         ]
     }
