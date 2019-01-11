@@ -1,5 +1,5 @@
 {
-    "schemaId": "material-property",
+    "schemaId": "property",
     "$schema": "http://json-schema.org/draft-04/schema#",
     "title": "property schema",
     "allOf": [
@@ -26,7 +26,7 @@
             "type": "object"
         },
         "source": {
-            "$ref": "primitive/reference.json"
+            "$ref": "definitions/reference.json"
         }
     },
     "required": [

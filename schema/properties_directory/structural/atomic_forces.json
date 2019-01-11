@@ -1,5 +1,5 @@
 {
-    "schemaId": "material-properties-primary-structural-atomic-forces",
+    "schemaId": "properties-directory-structural-atomic-forces",
     "$schema": "http://json-schema.org/draft-04/schema#",
     "title": "atomic forces",
     "description": "coordinates of atoms by ids, vector, unitless",
@@ -10,7 +10,7 @@
             ]
         },
         "values": {
-            "$ref": "../../primitive/property/atomic_vectors.json"
+            "$ref": "../../definitions/reusable/atomic_vectors.json"
         },
         "units": {
             "$ref": "../../definitions/units.json#/force"
