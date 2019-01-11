@@ -90,7 +90,7 @@ This directory contains the examples formed according to the schemas and impleme
 
 ### Src
 
-The src directory contains Python and Node interfaces implementing the functionality to access and validate schemas and examples.
+This directory contains Python and Node interfaces implementing the functionality to access and validate schemas and examples.
 
 ## Tests
 
