@@ -23,10 +23,9 @@ export class ESSE {
      * Validates a given example against the schema.
      * @param example {Object|Array} example to validate.
      * @param schema {Object} schema to validate the example with.
-     * @param printErrors {boolean} whether to print errors.
      * @returns {boolean} whether example is valid.
      */
-    validate(example, schema, printErrors = false) {
+    validate(example, schema) {
         const ajv = new Ajv({allErrors: true});
         return ajv.validate(schema, example);
     }

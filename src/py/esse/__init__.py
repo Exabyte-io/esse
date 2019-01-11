@@ -3,7 +3,7 @@ import json
 import jsonschema
 import json_include
 
-from settings import SCHEMA_DR, EXAMPLE_DR, PROPERTIES_MANIFEST
+from settings import SCHEMAS_DR, EXAMPLES_DIR, PROPERTIES_MANIFEST
 
 
 class ESSE(object):
@@ -11,49 +11,60 @@ class ESSE(object):
     Exabyte Source of Schemas and Examples class.
     """
 
-    def get_schema(self, schemaId):
-        return self._get_json(self._get_schema_path(schemaId))
+    def __init__(self):
+        self.schemas = self.parseIncludeReferenceStatementsByDir(SCHEMAS_DR)
+        self.examples = self.parseIncludeReferenceStatementsByDir(EXAMPLES_DIR)
 
-    def validate(self, instance, schema):
+    def get_schema_by_id(self, schemaId):
+        return next((s for s in self.schemas if s["schemaId"] == schemaId), None)
+
+    def validate(self, example, schema):
         """
-        Validates a given data against the schema.
+        Validates a given example against the schema.
 
         Args:
-            instance (dict): instance to validate.
-            schema (dict): schema to validate istance against.
+            example (dict|list): example to validate.
+            schema (dict): schema to validate the example with.
 
         Raises:
             jsonschema.exceptions.ValidationError
         """
-        jsonschema.validate(instance, schema)
+        jsonschema.validate(example, schema)
 
-    def _get_json(self, path):
+    def parseIncludeReferenceStatements(self, file_path):
         """
-        Returns a json with inclusion references resolved.
+        Resolves `include` and `$ref` statements.
 
         Args:
-            path (str): path to the json file.
+            file_path (str): file to parse.
 
         Returns:
-             dict
+             dict|list
         """
-        dirName = os.path.dirname(path)
-        baseName = os.path.basename(path)
+        dirName = os.path.dirname(file_path)
+        baseName = os.path.basename(file_path)
         return json.loads(json_include.build_json(dirName, baseName))
 
-    def _get_schema_path(self, schemaId):
-        path = PROPERTIES_MANIFEST.get(schemaId, {}).get("path")
-        return os.path.join(SCHEMA_DR, path) if path else self._find_file(schemaId, SCHEMA_DR)
-
-    def _find_file(self, name, path):
-        for root, dirs, files in os.walk(path, followlinks=True):
-            for file_ in files:
-                if name in file_:
-                    return os.path.join(root, file_)
-
-    def get_property_default_values(self, property_):
+    def parseIncludeReferenceStatementsByDir(self, dir_path):
         """
-        Returns default values for a given property.
+        Resolves `include` and `$ref` statements for all the JSON files inside a given directory.
+
+        Args:
+            dir_path (str): directory to parse.
+
+        Returns:
+             dict|list
+        """
+        data = []
+        for root, dirs, files in os.walk(dir_path, followlinks=True):
+            for file_ in files:
+                file_path = os.path.join(root, file_)
+                data.append(self.parseIncludeReferenceStatements(file_path))
+        return data
+
+    def get_property_manifest(self, property_):
+        """
+        Returns the manifest for a given property.
 
         Args:
             property_ (str): property name.
