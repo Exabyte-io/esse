@@ -70,3 +70,10 @@ The script will run both Node and Python tests in which examples are validated a
 ```bash
 sh run-tests.sh
 ```
+
+## Contribution
+
+This is an open-source repository and we welcome contributions for other test cases.
+We suggest forking this repository and introducing the adjustments there.
+The changes in the fork can further be considered for merging into this repository as it is commonly used on Github.
+This process is explained in more details [here](https://gist.github.com/Chaser324/ce0505fbed06b947d962).
