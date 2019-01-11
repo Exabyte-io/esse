@@ -62,6 +62,12 @@ const es = new ESSE();
 const schema = es.getSchemaById("material");
 ```
 
+## Structure
+
+ESSE contains 3 main parts implemented in [schema](schema), [example](example) and [src](src) directories.
+The schema directory contains the schemas that for each one there is an example located in example directory under the same path as the schema.
+The src directory contains the interfaces for Python and Node to work with schemas and examples.
+
 ## Tests
 
 Run the following command from the root directory of this repository to run the tests.
