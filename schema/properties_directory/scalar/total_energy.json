@@ -1,10 +1,10 @@
 {
-    "schemaId": "material-properties-primary-total-energy",
+    "schemaId": "properties-directory-scalar-total-energy",
     "$schema": "http://json-schema.org/draft-04/schema#",
     "title": "total energy schema",
     "allOf": [
         {
-            "$ref": "../../primitive/property/energy.json"
+            "$ref": "../../definitions/reusable/energy.json"
         }
     ],
     "properties": {

@@ -1,10 +1,10 @@
 {
-    "schemaId": "material-properties-primary-structural-volume",
+    "schemaId": "properties-directory-structural-volume",
     "$schema": "http://json-schema.org/draft-04/schema#",
     "title": "volume schema",
     "allOf": [
         {
-            "$ref": "../../primitive/math/scalar.json"
+            "$ref": "../../definitions/primitive/scalar.json"
         }
     ],
     "properties": {

@@ -1,11 +1,11 @@
 {
-    "schemaId": "material-properties-primary-density-of-states",
+    "schemaId": "properties-directory-non-scalar-density-of-states",
     "$schema": "http://json-schema.org/draft-04/schema#",
     "title": "density of states schema",
     "type": "object",
     "allOf": [
         {
-            "$ref": "../../primitive/math/2d_plot.json"
+            "$ref": "../../definitions/abstract/2d_plot.json"
         }
     ],
     "properties": {

@@ -1,11 +1,11 @@
 {
-    "schemaId": "material-properties-primary-phonon-dos",
+    "schemaId": "properties-directory-non-scalar-phonon-dos",
     "$schema": "http://json-schema.org/draft-04/schema#",
     "title": "Phonon density of states schema",
     "type": "object",
     "allOf": [
         {
-            "$ref": "../../primitive/math/2d_plot.json"
+            "$ref": "../../definitions/abstract/2d_plot.json"
         }
     ],
     "properties": {

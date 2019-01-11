@@ -1,5 +1,5 @@
 {
-    "schemaId": "material-properties-primary-band-gaps",
+    "schemaId": "properties-directory-non-scalar-band-gaps",
     "$schema": "http://json-schema.org/draft-04/schema#",
     "title": "band gaps schema",
     "description": "contains band gap values",
@@ -12,7 +12,7 @@
         "values": {
             "type": "array",
             "items": {
-                "$ref": "../../primitive/property/band_gap.json"
+                "$ref": "../../definitions/reusable/band_gap.json"
             }
         },
         "eigenvalues": {
@@ -20,7 +20,7 @@
             "items": {
                 "properties": {
                     "kpoint": {
-                        "$ref": "../../primitive/math/point.json"
+                        "$ref": "../../definitions/abstract/point.json"
                     },
                     "weight": {
                         "type": "number"

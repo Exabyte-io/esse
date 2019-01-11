@@ -1,0 +1,40 @@
+{
+    "schemaId": "software-directory-modeling-vasp",
+    "$schema": "http://json-schema.org/draft-04/schema#",
+    "title": "vienna ab-inito simulation package",
+    "type": "object",
+    "allOf": [
+        {
+            "$ref": "../../software/application.json"
+        }
+    ],
+    "properties": {
+        "name": {
+            "enum": [
+                "vasp"
+            ]
+        },
+        "summary": {
+            "enum": [
+                "vienna ab-initio simulation package"
+            ]
+        },
+        "flavor": {
+            "enum": [
+                "vasp",
+                "vasp_nscf",
+                "vasp_bands"
+            ]
+        },
+        "version": {
+            "enum": [
+                "5.3.5"
+            ]
+        },
+        "exec": {
+            "enum": [
+                "vasp"
+            ]
+        }
+    }
+}

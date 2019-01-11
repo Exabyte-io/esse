@@ -1,10 +1,10 @@
 {
-    "schemaId": "material-properties-primary-stress-tensor",
+    "schemaId": "properties-directory-non-scalar-stress-tensor",
     "$schema": "http://json-schema.org/draft-04/schema#",
     "title": "stress tensor schema",
     "properties": {
         "value": {
-            "$ref": "../../primitive/math/3d_tensor.json"
+            "$ref": "../../definitions/abstract/3d_tensor.json"
         },
         "name": {
             "enum": [

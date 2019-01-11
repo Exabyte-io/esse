@@ -1,5 +1,5 @@
 {
-    "schemaId": "material-properties-primary-structural-symmetry",
+    "schemaId": "properties-directory-structural-symmetry",
     "$schema": "http://json-schema.org/draft-04/schema#",
     "title": "symmetry schema",
     "properties": {
@@ -11,7 +11,7 @@
             "description": "tolerance used for symmetry calculation",
             "allOf": [
                 {
-                    "$ref": "../../primitive/math/scalar.json"
+                    "$ref": "../../definitions/primitive/scalar.json"
                 }
             ],
             "properties": {

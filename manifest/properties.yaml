@@ -1,44 +1,43 @@
 convergence_ionic:
   defaults:
     units: eV
-  path: properties_directory/workflow/convergence/ionic.json
+  schemaId: properties-directory-workflow-convergence-ionic
 
 convergence_electronic:
   defaults:
     units: eV
-  path: properties_directory/workflow/convergence/electronic.json
+  schemaId: properties-directory-workflow-convergence-electronic
 
 # SCALAR
 pressure:
-  characteristic: true
   defaults:
     units: kbar
-  path: properties_directory/scalar/pressure.json
+  schemaId: properties-directory-scalar-pressure
 
 total_energy:
   defaults:
     units: eV
-  path: properties_directory/scalar/total_energy.json
+  schemaId: properties-directory-scalar-total-energy
 
 surface_energy:
   defaults:
     units: eV/A^2
-  path: properties_directory/scalar/surface_energy.json
+  schemaId: properties-directory-scalar-surface-energy
 
 fermi_energy:
   defaults:
     units: eV
-  path: properties_directory/scalar/fermi_energy.json
+  schemaId: properties-directory-scalar-fermi-energy
 
 total_force:
   defaults:
     units: eV/angstrom
-  path: properties_directory/scalar/total_force.json
+  schemaId: properties-directory-scalar-total-force
 
 zero_point_energy:
   defaults:
     units: eV
-  path: properties_directory/scalar/zero_point_energy.json
+  schemaId: properties-directory-scalar-zero-point-energy
 
 # NON-SCALAR
 phonon_dos:
@@ -49,7 +48,7 @@ phonon_dos:
     yAxis:
       label: Phonon DOS
       units: states/cm-1
-  path: properties_directory/non-scalar/phonon_dos.json
+  schemaId: properties-directory-non-scalar-phonon-dos
 
 phonon_dispersions:
   defaults:
@@ -59,27 +58,25 @@ phonon_dispersions:
     yAxis:
       label: frequency
       units: cm-1
-  path: properties_directory/non-scalar/phonon_dispersions.json
+  schemaId: properties-directory-non-scalar-phonon-dispersions
 
 total_energy_contributions:
   defaults:
     units: eV
-  path: properties_directory/non-scalar/total_energy_contributions.json
-  examplePath: example/properties_directory/non-scalar/total_energy_contributions.json
+  schemaId: properties-directory-non-scalar-total-energy-contributions
 
 band_gaps:
-  characteristic: true
   types:
     - direct
     - indirect
   defaults:
     units: eV
-  path: properties_directory/non-scalar/band_gaps.json
+  schemaId: properties-directory-non-scalar-band-gaps
 
 stress_tensor:
   defaults:
     units: kbar
-  path: properties_directory/non-scalar/stress_tensor.json
+  schemaId: properties-directory-non-scalar-stress-tensor
 
 band_structure:
   defaults:
@@ -89,7 +86,7 @@ band_structure:
     yAxis:
       label: energy
       units: eV
-  path: properties_directory/non-scalar/band_structure.json
+  schemaId: properties-directory-non-scalar-band-structure
 
 density_of_states:
   defaults:
@@ -99,46 +96,46 @@ density_of_states:
     yAxis:
       label: density of states
       units: states/unitcell
-  path: properties_directory/non-scalar/density_of_states.json
+  schemaId: properties-directory-non-scalar-density-of-states
 
 # STRUCTURAL
 basis:
   defaults:
     units: angstrom
-  path: properties_directory/structural/basis.json
+  schemaId: properties-directory-structural-basis
 
 lattice:
   defaults:
     units: angstrom
-  path: properties_directory/structural/lattice.json
+  schemaId: properties-directory-structural-lattice
 
 atomic_forces:
   defaults:
     units: eV/angstrom
-  path: properties_directory/structural/atomic_forces.json
+  schemaId: properties-directory-structural-atomic-forces
 
 p-norm:
-  path: properties_directory/structural/p-norm.json
+  schemaId: properties-directory-structural-p-norm
 
 volume:
   defaults:
     units: angstrom^3
-  path: properties_directory/structural/volume.json
+  schemaId: properties-directory-structural-volume
 
 symmetry:
   defaults:
     units: angstrom
-  path: properties_directory/structural/symmetry.json
+  schemaId: properties-directory-structural-symmetry
 
 elemental_ratio:
-  path: properties_directory/structural/elemental_ratio.json
+  schemaId: properties-directory-structural-elemental-ratio
 
 density:
   defaults:
     units: g/cm^3
-  path: properties_directory/structural/density.json
+  schemaId: properties-directory-structural-density
 
 magnetic_moments:
   defaults:
     units: uB
-  path: properties_directory/structural/magnetic_moments.json
+  schemaId: properties-directory-structural-magnetic-moments
