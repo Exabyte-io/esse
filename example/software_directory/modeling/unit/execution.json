@@ -1,0 +1,16 @@
+{
+    "application": {
+        "...": "include(../espresso.json)"
+    },
+    "flowchartId": "modeling",
+    "head": true,
+    "input": [
+        {
+            "content": "K_POINTS automatic\n2 2 2 0 0 0",
+            "name": "pw_scf.in"
+        }
+    ],
+    "name": "modeling",
+    "status": "idle",
+    "type": "execution"
+}

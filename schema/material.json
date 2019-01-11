@@ -19,15 +19,15 @@
         },
         "basis": {
             "description": "object containing an array of elements and coordinates in the supercell",
-            "$ref": "material/properties/primary/structural/basis.json"
+            "$ref": "properties_directory/structural/basis.json"
         },
         "lattice": {
             "description": "object defining the lattice cell size and shape",
-            "$ref": "material/properties/primary/structural/lattice.json"
+            "$ref": "properties_directory/structural/lattice.json"
         },
         "derivedProperties": {
             "description": "object defining the lattice cell size and shape",
-            "$ref": "material/derived_properties.json"
+            "$ref": "properties_directory/derived_properties.json"
         },
         "external": {
             "description": "information about external sources of this material",

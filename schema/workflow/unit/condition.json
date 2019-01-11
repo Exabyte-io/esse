@@ -18,7 +18,7 @@
             "description": "Input information for condition.",
             "type": "array",
             "items": {
-                "$ref": "_input.json"
+                "$ref": "input/_inputItemScope.json"
             }
         },
         "statement": {

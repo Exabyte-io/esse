@@ -1,0 +1,23 @@
+{
+    "schemaId": "model",
+    "$schema": "http://json-schema.org/draft-04/schema#",
+    "title": "model schema (base)",
+    "properties": {
+        "type": {
+            "description": "general type of the model, eg. `dft`",
+            "type": "string"
+        },
+        "subtype": {
+            "description": "general subtype of the model, eg. `lda`",
+            "type": "string"
+        },
+        "method": {
+            "$ref": "method.json"
+        }
+    },
+    "required": [
+        "type",
+        "subtype",
+        "method"
+    ]
+}
