@@ -1,6 +1,6 @@
 # Exabyte Source of Schemas and Examples (ESSE)
 
-ESSE contains schemas and examples for materials and simulations related data in JSON representation. 
+ESSE contains schemas and examples for materials and simulations related data in JSON representation outlined in [this manuscript]().
 
 ## Installation
 
