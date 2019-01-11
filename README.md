@@ -68,6 +68,10 @@ ESSE contains 3 main parts implemented in [schema](schema), [example](example) a
 The schema directory contains the schemas that for each one there is an example located in example directory under the same path as the schema.
 The src directory contains the interfaces for Python and Node to work with schemas and examples.
 
+### Primitive
+### Abstract
+### Reusable
+
 ## Tests
 
 Run the following command from the root directory of this repository to run the tests.
@@ -83,3 +87,9 @@ This is an open-source repository and we welcome contributions for other test ca
 We suggest forking this repository and introducing the adjustments there.
 The changes in the fork can further be considered for merging into this repository as it is commonly used on Github.
 This process is explained in more details [here](https://gist.github.com/Chaser324/ce0505fbed06b947d962).
+
+## Best Practices
+
+- Use unique IDs for schemas. IDs are used to uniquely identify the schemas. One can run `sh refactor.sh` to automatically set the IDs.
+
+- Do not use circular references in the schemas but instead leave the type as object and add explanation to description.
