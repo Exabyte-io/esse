@@ -2,7 +2,7 @@ import os
 import yaml
 
 DIR = os.path.dirname(__file__)
-SCHEMAS_DR = os.path.join(DIR, "data/schema")
+SCHEMAS_DIR = os.path.join(DIR, "data/schema")
 EXAMPLES_DIR = os.path.join(DIR, "data/example")
 MANIFEST_DR = os.path.join(DIR, "data/manifest")
 

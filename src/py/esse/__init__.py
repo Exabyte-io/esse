@@ -3,7 +3,7 @@ import json
 import jsonschema
 import json_include
 
-from settings import SCHEMAS_DR, EXAMPLES_DIR, PROPERTIES_MANIFEST
+from settings import SCHEMAS_DIR, EXAMPLES_DIR, PROPERTIES_MANIFEST
 
 
 class ESSE(object):
@@ -12,7 +12,7 @@ class ESSE(object):
     """
 
     def __init__(self):
-        self.schemas = self.parseIncludeReferenceStatementsByDir(SCHEMAS_DR)
+        self.schemas = self.parseIncludeReferenceStatementsByDir(SCHEMAS_DIR)
         self.examples = self.parseIncludeReferenceStatementsByDir(EXAMPLES_DIR)
 
     def get_schema_by_id(self, schemaId):
@@ -56,7 +56,7 @@ class ESSE(object):
              dict|list
         """
         data = []
-        for root, dirs, files in os.walk(dir_path, followlinks=True):
+        for root, dirs, files in os.walk(dir_path):
             for file_ in files:
                 file_path = os.path.join(root, file_)
                 data.append(self.parseIncludeReferenceStatements(file_path))

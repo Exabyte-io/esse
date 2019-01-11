@@ -4,7 +4,7 @@
     "description": "Exabyte Source of Schemas and Examples",
     "scripts": {
         "postinstall": "mkdir -p lib; babel-compile -p es2015 src/js:lib/js",
-        "test": "mocha $NODE_DEBUG_OPTION  --bail --require babel-register src/js/tests/*.js"
+        "test": "mocha $NODE_DEBUG_OPTION  --bail --require babel-register src/js/esse/tests/*.js"
     },
     "repository": {
         "type": "git",

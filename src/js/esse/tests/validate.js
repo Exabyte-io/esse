@@ -2,8 +2,8 @@ import file from "file";
 import path from "path";
 import chai from "chai";
 
-import {ESSE} from "../esse/index";
-import {EXAMPLES_DIR, SCHEMAS_DIR} from "../esse/settings";
+import {ESSE} from "../index";
+import {EXAMPLES_DIR, SCHEMAS_DIR} from "../settings";
 
 const esse = new ESSE();
 
