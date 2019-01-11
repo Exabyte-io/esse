@@ -1,0 +1,31 @@
+{
+    "schemaId": "properties-directory-workflow-convergence-electronic",
+    "$schema": "http://json-schema.org/draft-04/schema#",
+    "title": "electronic self consistency convergence schema",
+    "properties": {
+        "name": {
+            "enum": [
+                "convergence_electronic"
+            ]
+        },
+        "units": {
+            "enum": [
+                "eV",
+                "rydberg",
+                "hartree"
+            ]
+        },
+        "data": {
+            "type": "array",
+            "items": {
+                "type": "array",
+                "items": {
+                    "type": "number"
+                }
+            }
+        }
+    },
+    "required": [
+        "data"
+    ]
+}

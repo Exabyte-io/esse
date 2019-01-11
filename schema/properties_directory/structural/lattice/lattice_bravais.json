@@ -4,7 +4,7 @@
     "title": "lattice implicit schema",
     "allOf": [
         {
-            "$ref": "../../../primitive/3d_lattice.json"
+            "$ref": "../../../definitions/primitive/3d_lattice.json"
         }
     ],
     "properties": {

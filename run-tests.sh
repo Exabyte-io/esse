@@ -27,10 +27,10 @@ if [ ! -d ${DIR}/.virtualenv ]; then
 fi
 source ${DIR}/.virtualenv/bin/activate
 pip -q install -r ${DIR}/requirements.txt
-export PYTHONPATH=${DIR}:${PYTHONPATH}
+export PYTHONPATH=${DIR}/src/py:${PYTHONPATH}
 
 # python tests
-python tests/validate.py
+python ${DIR}/src/py/esse/tests/validate.py
 
 if [ $? -ne 0 ]; then
     echo "PYTHON TESTS FAILED!"
