@@ -72,4 +72,4 @@ class ESSE(object):
         Returns:
              dict
         """
-        return PROPERTIES_MANIFEST.get(property_, {}).get("defaults", {})
+        return PROPERTIES_MANIFEST.get(property_, {})
