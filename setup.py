@@ -27,6 +27,7 @@ setup(
     install_requires=[
         "pyyaml==3.12",
         "jsonschema==2.6.0",
+        "python-slugify==2.0.1",
         "exabyte_json_include==0.1.1"
     ],
     classifiers=[
