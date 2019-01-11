@@ -1,0 +1,24 @@
+{
+    "schemaId": "methods-directory-local-orbital",
+    "$schema": "http://json-schema.org/draft-04/schema#",
+    "title": "local atomic orbitals method schema",
+    "allOf": [
+        {
+            "$ref": "../method.json"
+        }
+    ],
+    "properties": {
+        "type": {
+            "enum": [
+                "local-orbital"
+            ]
+        },
+        "subtype": {
+            "enum": [
+                "gto",
+                "sto",
+                "cgto"
+            ]
+        }
+    }
+}

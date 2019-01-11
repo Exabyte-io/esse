@@ -14,7 +14,17 @@
         },
         "model": {
             "description": "Model used inside the subworkflow",
-            "$ref": "subworkflow/model.json"
+            "oneOf": [
+                {
+                    "$ref": "../models_directory/dft.json"
+                },
+                {
+                    "$ref": "../models_directory/ml.json"
+                },
+                {
+                    "$ref": "../models_directory/unknown.json"
+                }
+            ]
         },
         "application": {
             "description": "information about the simulation engine/application.",

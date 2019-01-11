@@ -1,0 +1,20 @@
+{
+    "schemaId": "workflow-unit-input-inputitem",
+    "$schema": "http://json-schema.org/draft-04/schema#",
+    "title": "execution unit input item schema for physics-based simulation engines",
+    "type": "object",
+    "properties": {
+        "name": {
+            "description": "Input file name. e.g. pw_scf.in",
+            "type": "string"
+        },
+        "content": {
+            "description": "Content of the input file. e.g. &CONTROL    calculation='scf' ...",
+            "type": "string"
+        }
+    },
+    "required": [
+        "name",
+        "content"
+    ]
+}

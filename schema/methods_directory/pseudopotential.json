@@ -1,0 +1,34 @@
+{
+    "schemaId": "methods-directory-pseudopotential",
+    "$schema": "http://json-schema.org/draft-04/schema#",
+    "title": "pseudopotential method schema",
+    "allOf": [
+        {
+            "$ref": "../method.json"
+        }
+    ],
+    "properties": {
+        "type": {
+            "enum": [
+                "pseudopotential"
+            ]
+        },
+        "subtype": {
+            "enum": [
+                "us",
+                "nc",
+                "paw"
+            ]
+        },
+        "precision": {
+            "$ref": "pseudopotential/precision.json"
+        },
+        "data": {
+            "properties": {
+                "dateSet": {
+                    "$ref": "pseudopotential/dataset.json"
+                }
+            }
+        }
+    }
+}

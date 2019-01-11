@@ -1,0 +1,28 @@
+{
+    "schemaId": "properties-directory-structural-lattice",
+    "$schema": "http://json-schema.org/draft-04/schema#",
+    "title": "lattice schema",
+    "type": "object",
+    "oneOf": [
+        {
+            "properties": {
+                "vectors": {
+                    "$ref": "lattice/lattice_vectors.json"
+                }
+            },
+            "required": [
+                "vectors"
+            ]
+        },
+        {
+            "$ref": "lattice/lattice_bravais.json"
+        }
+    ],
+    "properties": {
+        "name": {
+            "enum": [
+                "lattice"
+            ]
+        }
+    }
+}

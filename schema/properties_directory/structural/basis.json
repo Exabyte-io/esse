@@ -1,0 +1,18 @@
+{
+    "schemaId": "properties-directory-structural-basis",
+    "$schema": "http://json-schema.org/draft-04/schema#",
+    "title": "basis schema",
+    "type": "object",
+    "properties": {
+        "elements": {
+            "$ref": "basis/atomic_elements.json"
+        },
+        "coordinates": {
+            "$ref": "basis/atomic_coordinates.json"
+        }
+    },
+    "required": [
+        "elements",
+        "coordinates"
+    ]
+}

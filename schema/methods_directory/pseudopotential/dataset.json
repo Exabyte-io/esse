@@ -1,0 +1,71 @@
+{
+    "schemaId": "methods-directory-pseudopotential-dataset",
+    "$schema": "http://json-schema.org/draft-04/schema#",
+    "title": "pseudopotential dataset schema",
+    "properties": {
+        "apps": {
+            "description": "simulation engines that can use this pseudopotential set items",
+            "type": "array"
+        },
+        "elements": {
+            "description": "chemical elements for which files are present in the set",
+            "items": {
+                "type": "string"
+            },
+            "type": "array"
+        },
+        "exchangeCorrelation": {
+            "$ref": "file/exchange_correlation.json"
+        },
+        "format": {
+            "description": "type of pseudopotantial format",
+            "enum": [
+                "upf",
+                "vasp"
+            ],
+            "type": "string"
+        },
+        "name": {
+            "type": "string"
+        },
+        "source": {
+            "description": "explains the source of where this came from",
+            "enum": [
+                "quantum espresso database",
+                "gbrv",
+                "vasp database",
+                "other"
+            ],
+            "type": "string"
+        },
+        "type": {
+            "description": "type of pseudization",
+            "enum": [
+                "paw",
+                "us",
+                "nc"
+            ],
+            "type": "string"
+        },
+        "version": {
+            "description": "explains the version of where this came from",
+            "type": "string"
+        },
+        "files": {
+            "description": "pseudopotentials used inside this set",
+            "type": "array",
+            "items": {
+                "$ref": "file.json"
+            }
+        }
+    },
+    "required": [
+        "apps",
+        "elements",
+        "exchangeCorrelation",
+        "format",
+        "name",
+        "type",
+        "files"
+    ]
+}
