@@ -92,4 +92,4 @@ This process is explained in more details [here](https://gist.github.com/Chaser3
 
 - Use unique IDs for schemas. One can run `sh refactor.sh` to automatically set the IDs and reformat examples.
 
-- Do not use circular references in the schemas but instead leave the type as object and add explanation to description.
+- Do not use circular references in the schemas, instead leave the type as object and add explanation to description.
