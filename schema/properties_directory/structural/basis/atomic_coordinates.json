@@ -10,7 +10,7 @@
             ]
         },
         "values": {
-            "$ref": "../../../definitions/reusable/atomic_vectors.json"
+            "$ref": "../../../core/reusable/atomic_vectors.json"
         },
         "units": {
             "$ref": "../../../definitions/units.json#/length"

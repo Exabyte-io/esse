@@ -1,0 +1,14 @@
+{
+    "schemaId": "core-primitive-scalar",
+    "$schema": "http://json-schema.org/draft-04/schema#",
+    "title": "scalar schema",
+    "type": "object",
+    "properties": {
+        "value": {
+            "type": "number"
+        }
+    },
+    "required": [
+        "value"
+    ]
+}

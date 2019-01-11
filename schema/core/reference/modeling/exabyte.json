@@ -1,0 +1,30 @@
+{
+    "schemaId": "core-reference-modeling-exabyte",
+    "$schema": "http://json-schema.org/draft-04/schema#",
+    "title": "info for characteristic obtained by exabyte calculation",
+    "properties": {
+        "type": {
+            "enum": [
+                "exabyte"
+            ]
+        },
+        "title": {
+            "description": "Human-readable title of the job",
+            "type": "string",
+            "maxLength": 300
+        },
+        "_id": {
+            "description": "job identifier",
+            "type": "string"
+        },
+        "owner": {
+            "description": "owner entity reference",
+            "$ref": "../../../system/entity_reference.json"
+        }
+    },
+    "required": [
+        "title",
+        "_id",
+        "owner"
+    ]
+}

@@ -12,7 +12,7 @@
         "values": {
             "type": "array",
             "items": {
-                "$ref": "../../definitions/reusable/band_gap.json"
+                "$ref": "../../core/reusable/band_gap.json"
             }
         },
         "eigenvalues": {
@@ -20,7 +20,7 @@
             "items": {
                 "properties": {
                     "kpoint": {
-                        "$ref": "../../definitions/abstract/point.json"
+                        "$ref": "../../core/abstract/point.json"
                     },
                     "weight": {
                         "type": "number"

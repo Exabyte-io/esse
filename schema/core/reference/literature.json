@@ -1,0 +1,82 @@
+{
+    "schemaId": "core-reference-literature",
+    "$schema": "http://json-schema.org/draft-04/schema#",
+    "title": "literature reference schema",
+    "properties": {
+        "type": {
+            "enum": [
+                "literature"
+            ]
+        },
+        "doi": {
+            "type": "string",
+            "description": "Digital Object Identifier of the reference."
+        },
+        "isbn": {
+            "type": "string",
+            "description": "International Standard Book Number of the reference."
+        },
+        "issn": {
+            "type": "string",
+            "description": "International Standard Serial Number of the reference."
+        },
+        "url": {
+            "type": "string",
+            "description": "Internet address of the reference."
+        },
+        "title": {
+            "type": "string",
+            "description": "Title of the work."
+        },
+        "publisher": {
+            "type": "string",
+            "description": "Publisher of the work."
+        },
+        "journal": {
+            "type": "string",
+            "description": "Journal in which the work appeared."
+        },
+        "volume": {
+            "type": "string",
+            "description": "Volume of the series in which the work appeared."
+        },
+        "year": {
+            "type": "string",
+            "description": "Year in which the reference was published."
+        },
+        "issue": {
+            "type": "string",
+            "description": "Issue of the collection in which the work appeared."
+        },
+        "pages": {
+            "type": "object",
+            "description": "Start and end pages of the work.",
+            "allOf": [
+                {
+                    "$ref": "literature/pages.json"
+                }
+            ]
+        },
+        "authors": {
+            "type": "array",
+            "description": "List of authors of the work.",
+            "items": {
+                "$ref": "literature/name.json"
+            }
+        },
+        "editors": {
+            "type": "array",
+            "description": "List of editors of the work.",
+            "items": {
+                "$ref": "literature/name.json"
+            }
+        },
+        "reference": {
+            "type": "array",
+            "items": {
+                "type": "object"
+            },
+            "description": "References cited by the work. Reference objects can nest as deeply as needed. This is useful, for example, when tracking the history of a value referenced in a scholarly article; the top level reference would contain information about where the data was accessed while the nested reference would contain information about where it was originally published."
+        }
+    }
+}

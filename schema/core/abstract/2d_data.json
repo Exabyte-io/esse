@@ -1,0 +1,19 @@
+{
+    "schemaId": "core-abstract-2d-data",
+    "$schema": "http://json-schema.org/draft-04/schema#",
+    "title": "2 dimension data schema",
+    "type": "object",
+    "properties": {
+        "xDataArray": {
+            "description": "array containing values of x Axis",
+            "type": "array"
+        },
+        "yDataSeries": {
+            "$ref": "../primitive/1d_data_series.json"
+        }
+    },
+    "required": [
+        "xDataArray",
+        "yDataSeries"
+    ]
+}

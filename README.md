@@ -73,16 +73,16 @@ In order to apply object-oriented design principals, a set of basic schemas are 
 
 #### Primitive
 
-[Primitive](schema/definitions/primitive) directory contains a set of custom primitives that extends default standard primitive types allowed by schema, such as String and Number.
+[Primitive](schema/core/primitive) directory contains a set of custom primitives that extends default standard primitive types allowed by schema, such as String and Number.
 Primitives are solely defined by the default primitives and can not be re-constructed from each other.
 
 #### Abstract
 
-[Abstract](schema/definitions/abstract) directory contains unit-less schemas that are constructed from default and custom primitives.
+[Abstract](schema/core/abstract) directory contains unit-less schemas that are constructed from default and custom primitives.
 
 #### Reusable
 
-[Reusable](schema/definitions/reusable) directory contains the schemas that are widely used in other schemas to avoid duplication, constructed from the abstract and primitive schemas.
+[Reusable](schema/core/reusable) directory contains the schemas that are widely used in other schemas to avoid duplication, constructed from the abstract and primitive schemas.
 
 ### Example
 

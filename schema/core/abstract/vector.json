@@ -1,0 +1,6 @@
+{
+    "schemaId": "core-abstract-vector",
+    "$schema": "http://json-schema.org/draft-04/schema#",
+    "title": "vector schema",
+    "$ref": "../primitive/array_of_3_numbers.json"
+}
