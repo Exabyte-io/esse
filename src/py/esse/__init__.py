@@ -17,7 +17,7 @@ class ESSE(object):
         self.examples = EXAMPLES
 
     def get_schema_by_id(self, schemaId):
-        return next((s for s in SCHEMAS if s["schemaId"] == schemaId), None)
+        return next((s for s in SCHEMAS if s.get("schemaId") == schemaId), None)
 
     def validate(self, example, schema):
         """
