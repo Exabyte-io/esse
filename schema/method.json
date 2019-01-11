@@ -12,7 +12,7 @@
             "type": "string"
         },
         "precision": {
-            "description": "Object showing the actual possible precision based on a theory and exact method of implementation",
+            "description": "Object showing the actual possible precision based on theory and implementation",
             "type": "object"
         },
         "data": {
