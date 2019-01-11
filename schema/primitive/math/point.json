@@ -1,6 +1,0 @@
-{
-    "schemaId": "primitive-math-point",
-    "$schema": "http://json-schema.org/draft-04/schema#",
-    "title": "point schema",
-    "$ref": "vector.json"
-}

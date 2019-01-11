@@ -18,7 +18,7 @@
             "description": "Input information for assignment. if omitted, means that it is an initialization unit, otherwise it is an assignment.",
             "type": "array",
             "items": {
-                "$ref": "_input.json"
+                "$ref": "input/_inputItemScope.json"
             }
         },
         "operand": {
