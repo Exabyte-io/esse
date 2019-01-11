@@ -1,11 +1,11 @@
 {
-    "schemaId": "material-properties-primary-structural-p-norm",
+    "schemaId": "properties-directory-structural-p-norm",
     "$schema": "http://json-schema.org/draft-04/schema#",
     "title": "p_norm",
     "description": "https://en.wikipedia.org/wiki/Norm_(mathematics)#p-norm",
     "allOf": [
         {
-            "$ref": "../../primitive/math/scalar.json"
+            "$ref": "../../definitions/primitive/scalar.json"
         }
     ],
     "properties": {

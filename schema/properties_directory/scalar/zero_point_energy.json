@@ -1,10 +1,10 @@
 {
-    "schemaId": "material-properties-primary-zero-point-energy",
+    "schemaId": "properties-directory-scalar-zero-point-energy",
     "$schema": "http://json-schema.org/draft-04/schema#",
     "title": "zero point energy schema",
     "allOf": [
         {
-            "$ref": "../../primitive/property/energy.json"
+            "$ref": "../../definitions/reusable/energy.json"
         }
     ],
     "properties": {

@@ -1,10 +1,10 @@
 {
-    "schemaId": "material-properties-primary-structural-density",
+    "schemaId": "properties-directory-structural-density",
     "$schema": "http://json-schema.org/draft-04/schema#",
     "title": "density schema",
     "allOf": [
         {
-            "$ref": "../../primitive/math/scalar.json"
+            "$ref": "../../definitions/primitive/scalar.json"
         }
     ],
     "properties": {

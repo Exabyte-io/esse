@@ -1,10 +1,10 @@
 {
-    "schemaId": "material-properties-primary-total-force",
+    "schemaId": "properties-directory-scalar-total-force",
     "$schema": "http://json-schema.org/draft-04/schema#",
     "title": "total forces schema",
     "allOf": [
         {
-            "$ref": "../../primitive/math/scalar.json"
+            "$ref": "../../definitions/primitive/scalar.json"
         }
     ],
     "properties": {

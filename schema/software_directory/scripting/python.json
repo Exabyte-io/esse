@@ -1,0 +1,52 @@
+{
+    "schemaId": "software-directory-scripting-python",
+    "$schema": "http://json-schema.org/draft-04/schema#",
+    "title": "Python Programing Language Schema",
+    "type": "object",
+    "allOf": [
+        {
+            "$ref": "../../software/application.json"
+        }
+    ],
+    "properties": {
+        "name": {
+            "enum": [
+                "python"
+            ]
+        },
+        "flavor": {
+            "enum": [
+                "python2",
+                "python3"
+            ]
+        },
+        "summary": {
+            "enum": [
+                "Python Script"
+            ]
+        },
+        "version": {
+            "enum": [
+                "2.7.5",
+                "3.6.1"
+            ]
+        },
+        "exec": {
+            "enum": [
+                "python"
+            ]
+        },
+        "arguments": {
+            "description": "Optional arguments passed to the Python script",
+            "type": "string"
+        },
+        "environment": {
+            "description": "Optional environment variables exported before running the Python script",
+            "type": "object"
+        },
+        "dependencies": {
+            "description": "Optional Python dependencies, e.g. amqp==1.4.6",
+            "type": "array"
+        }
+    }
+}

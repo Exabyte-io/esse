@@ -3,14 +3,14 @@
     "version": "0.1.0",
     "description": "Exabyte Source of Schemas and Examples",
     "scripts": {
-        "postinstall": "babel-compile -p es2015 src:lib",
-        "test": "mocha $NODE_DEBUG_OPTION  --bail --require babel-register ./tests/**/*.js"
+        "postinstall": "mkdir -p lib; babel-compile -p es2015 src/js:lib/js",
+        "test": "mocha $NODE_DEBUG_OPTION  --bail --require babel-register src/js/esse/tests/*.js"
     },
     "repository": {
         "type": "git",
         "url": "https://github.com/Exabyte-io/exabyte-esse.git"
     },
-    "main": "lib/index.js",
+    "main": "lib/js/esse/index.js",
     "author": "Exabyte Inc.",
     "bugs": {
         "url": "https://github.com/Exabyte-io/exabyte-esse/issues"

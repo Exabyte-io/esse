@@ -17,6 +17,6 @@
     "schemaVersion": "0.2.0",
     "slug": "pressure",
     "source": {
-        "...": "include(primitive/reference.json)"
+        "...": "include(definitions/reference.json)"
     }
 }
