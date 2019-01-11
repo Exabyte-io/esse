@@ -64,13 +64,33 @@ const schema = es.getSchemaById("material");
 
 ## Structure
 
-ESSE contains 3 main parts implemented in [schema](schema), [example](example) and [src](src) directories.
-The schema directory contains the schemas that for each one there is an example located in example directory under the same path as the schema.
-The src directory contains the interfaces for Python and Node to work with schemas and examples.
+ESSE contains 3 main directories, [schema](schema), [example](example) and [src](src) outlined below.
 
-### Primitive
-### Abstract
-### Reusable
+### Schema
+
+The schema directory contains the schemas specifying the rules to structure materials-related data.
+In order to apply object-oriented design principals, a set of basic schemas are defined to facilitate the schema modularity.
+
+#### Primitive
+
+[Primitive](schema/definitions/primitive) directory contains a set of custom primitives that extends default standard primitive types allowed by schema, such as String and Number.
+Primitives are solely defined by the default primitives and can not be re-constructed from each other.
+
+#### Abstract
+
+[Abstract](schema/definitions/abstract) directory contains unit-less schemas that are constructed from default and custom primitives.
+
+#### Reusable
+
+[Reusable](schema/definitions/reusable) directory contains the schemas that are widely used in other schemas to avoid duplication, constructed from the abstract and primitive schemas.
+
+### Example
+
+This directory contains the examples formed according to the schemas and implements the same directory structure as the schema directory.
+
+### Src
+
+The src directory contains Python and Node interfaces implementing the functionality to access and validate schemas and examples.
 
 ## Tests
 
