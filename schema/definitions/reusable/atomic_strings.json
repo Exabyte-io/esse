@@ -1,10 +1,10 @@
 {
-    "schemaId": "reusable-atomic-strings",
+    "schemaId": "definitions-reusable-atomic-strings",
     "$schema": "http://json-schema.org/draft-04/schema#",
     "title": "atomic vectors schema",
     "allOf": [
         {
-            "$ref": "../definitions/primitive/array_of_ids.json"
+            "$ref": "../primitive/array_of_ids.json"
         }
     ],
     "items": {

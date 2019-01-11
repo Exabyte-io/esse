@@ -1,6 +1,6 @@
 {
-    "schemaId": "abstract-point",
+    "schemaId": "definitions-abstract-point",
     "$schema": "http://json-schema.org/draft-04/schema#",
     "title": "point schema",
-    "$ref": "../definitions/primitive/array_of_3_numbers.json"
+    "$ref": "../primitive/array_of_3_numbers.json"
 }

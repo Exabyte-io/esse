@@ -1,5 +1,5 @@
 {
-    "schemaId": "reference-literature",
+    "schemaId": "definitions-reference-literature",
     "$schema": "http://json-schema.org/draft-04/schema#",
     "title": "literature reference schema",
     "properties": {

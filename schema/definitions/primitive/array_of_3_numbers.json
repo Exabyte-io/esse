@@ -1,5 +1,5 @@
 {
-    "schemaId": "primitive-array-of-3-number-elements",
+    "schemaId": "definitions-primitive-array-of-3-numbers",
     "$schema": "http://json-schema.org/draft-04/schema#",
     "title": "array of 3 number elements schema",
     "type": "array",

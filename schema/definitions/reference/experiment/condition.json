@@ -1,5 +1,5 @@
 {
-    "schemaId": "reference-experiment-condition",
+    "schemaId": "definitions-reference-experiment-condition",
     "$schema": "http://json-schema.org/draft-04/schema#",
     "title": "condition schema",
     "properties": {

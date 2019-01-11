@@ -1,10 +1,10 @@
 {
-    "schemaId": "reusable-energy",
+    "schemaId": "definitions-reusable-energy",
     "$schema": "http://json-schema.org/draft-04/schema#",
     "title": "energy schema",
     "allOf": [
         {
-            "$ref": "../definitions/primitive/scalar.json"
+            "$ref": "../primitive/scalar.json"
         }
     ],
     "properties": {
@@ -14,10 +14,10 @@
         "units": {
             "anyOf": [
                 {
-                    "$ref": "../definitions/units.json#/energy"
+                    "$ref": "../units.json#/energy"
                 },
                 {
-                    "$ref": "../definitions/units.json#/surface_energy"
+                    "$ref": "../units.json#/surface_energy"
                 }
             ]
         }

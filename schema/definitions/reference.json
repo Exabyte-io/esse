@@ -1,16 +1,16 @@
 {
-    "schemaId": "reference",
+    "schemaId": "definitions-reference",
     "$schema": "http://json-schema.org/draft-04/schema#",
     "title": "reference schema (using `anyOf` instead of `oneOf` below b/c current reference schemas overlap)",
     "anyOf": [
         {
-            "$ref": "definitions/reference/modeling.json"
+            "$ref": "reference/modeling.json"
         },
         {
-            "$ref": "definitions/reference/experiment.json"
+            "$ref": "reference/experiment.json"
         },
         {
-            "$ref": "definitions/reference/literature.json"
+            "$ref": "reference/literature.json"
         }
     ]
 }

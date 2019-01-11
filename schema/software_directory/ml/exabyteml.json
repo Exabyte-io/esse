@@ -1,0 +1,23 @@
+{
+    "schemaId": "software-directory-ml-exabyteml",
+    "$schema": "http://json-schema.org/draft-04/schema#",
+    "title": "exabyte machine learning engine schema",
+    "type": "object",
+    "properties": {
+        "name": {
+            "enum": [
+                "exabyteml"
+            ]
+        },
+        "summary": {
+            "enum": [
+                "exabyte machine learning engine"
+            ]
+        },
+        "version": {
+            "enum": [
+                "0.2.0"
+            ]
+        }
+    }
+}
