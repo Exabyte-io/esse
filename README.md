@@ -109,8 +109,7 @@ sh run-tests.sh
 
 We welcome contributions for other test cases.
 We suggest forking this repository and introducing the adjustments there.
-The changes in the fork can further be considered for merging into this repository as it is commonly used on Github.
-This process is explained in more details [#links](2).
+The changes in the fork can further be considered for merging into this repository as it is commonly used on Github [#links](2).
 
 ## Best Practices
 
@@ -120,6 +119,6 @@ This process is explained in more details [#links](2).
 
 ## Links
 
-1: [Data convention for digital materials science, manuscript](https://www.overleaf.com/project/5c240af344c4383e719ff286)
+1: [Data Convention for Digital Materials Science](https://www.overleaf.com/project/5c240af344c4383e719ff286)
 
-2: [Github Forking](https://gist.github.com/Chaser324/ce0505fbed06b947d962)
+2: [GitHub Standard Fork & Pull Request Workflow](https://gist.github.com/Chaser324/ce0505fbed06b947d962)
