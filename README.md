@@ -4,7 +4,7 @@ Exabyte Source of Schemas and Examples (ESSE) contains data formats and associat
 
 ## Installation
 
-ESSE can be used as a Node or Python package on the server side.
+ESSE can be used as a Node.js or Python package on the server side.
 Please note that schemas and examples are not available on the client.
 
 ### Python
@@ -94,12 +94,12 @@ This directory contains the examples formed according to the schemas and impleme
 
 ### Src
 
-This directory contains Python and Node interfaces implementing the functionality to access and validate schemas and examples.
+This directory contains Python and Javascript interfaces implementing the functionality to access and validate schemas and examples.
 
 ## Tests
 
 Execute the following command from the root directory of this repository to run the tests.
-The script will run both Node and Python tests in which examples are validated against their schemas.
+The script will run both Javascript and Python tests in which examples are validated against their schemas.
 
 ```bash
 sh run-tests.sh
