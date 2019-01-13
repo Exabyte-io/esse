@@ -4,7 +4,7 @@ Exabyte Source of Schemas and Examples (ESSE) contains data formats and associat
 
 ## Installation
 
-ESSE can be used as a Node or Python package on the server side.
+ESSE can be used as a Node.js or Python package on the server side.
 Please note that schemas and examples are not available on the client.
 
 ### Python
@@ -94,12 +94,12 @@ This directory contains the examples formed according to the schemas and impleme
 
 ### Src
 
-This directory contains Python and Node interfaces implementing the functionality to access and validate schemas and examples.
+This directory contains Python and Javascript interfaces implementing the functionality to access and validate schemas and examples.
 
 ## Tests
 
 Execute the following command from the root directory of this repository to run the tests.
-The script will run both Node and Python tests in which examples are validated against their schemas.
+The script will run both Javascript and Python tests in which examples are validated against their schemas.
 
 ```bash
 sh run-tests.sh
@@ -109,8 +109,7 @@ sh run-tests.sh
 
 We welcome contributions for other test cases.
 We suggest forking this repository and introducing the adjustments there.
-The changes in the fork can further be considered for merging into this repository as it is commonly used on Github.
-This process is explained in more details [#links](2).
+The changes in the fork can further be considered for merging into this repository as it is commonly used on Github [#links](2).
 
 ## Best Practices
 
@@ -120,6 +119,6 @@ This process is explained in more details [#links](2).
 
 ## Links
 
-1: [Data convention for digital materials science, manuscript](https://www.overleaf.com/project/5c240af344c4383e719ff286)
+1: [Data Convention for Digital Materials Science](https://www.overleaf.com/project/5c240af344c4383e719ff286)
 
-2: [Github Forking](https://gist.github.com/Chaser324/ce0505fbed06b947d962)
+2: [GitHub Standard Fork & Pull Request Workflow](https://gist.github.com/Chaser324/ce0505fbed06b947d962)
