@@ -4,8 +4,7 @@ Exabyte Source of Schemas and Examples (ESSE) contains data formats and associat
 
 ## Installation
 
-ESSE can be used as a Node.js or Python package on the server side.
-Please note that schemas and examples are not available on the client.
+ESSE can be used as a Node.js or Python package on the server side. Please note that schemas and examples are unavailable on the client side (JS).
 
 ### Python
 
@@ -22,12 +21,12 @@ pip install esse
 ```bash
 virtualenv .venv
 source .venv/bin/activate
-pip install -e PATH_TO_ESSE_REPOSITIRY
+pip install -e PATH_TO_ESSE_REPOSITORY
 ```
 
 ### Node
 
-ESSE can be install as a Node.js package either via NPM or the repository as below.
+ESSE can be installed as a Node.js package either via NPM or the repository as below.
 
 #### NPM
 
@@ -37,7 +36,7 @@ npm install exabyte-esse
 
 #### Repository
 
-Add `"exabyte-esse": "file:PATH_TO_ESSE_REPOSITIRY"` to `package.json`.
+Add `"exabyte-esse": "file:PATH_TO_ESSE_REPOSITORY"` to `package.json`.
 
 ## Usage
 
@@ -68,8 +67,7 @@ ESSE contains 3 main directories, [schema](schema), [example](example) and [src]
 
 ### Schema
 
-The schema directory contains the schemas specifying the rules to structure materials-related data.
-In order to apply object-oriented design principals, a set of core schemas, outlined below are defined to facilitate the schema modularity.
+The schema directory contains the schemas specifying the rules to structure data. A set of core schemas, outlined below, are defined to facilitate the schema modularity.
 
 #### Primitive
 
@@ -86,20 +84,19 @@ Primitives are solely defined by the default primitives and can not be re-constr
 
 #### Reference
 
-[Reference](schema/core/reference) directory contains the schemas defining the rules to structure the references.
+[Reference](schema/core/reference) directory contains the schemas defining the rules to structure the references to data sources.
 
 ### Example
 
 This directory contains the examples formed according to the schemas and implements the same directory structure as the schema directory.
 
-### Src
+### src
 
 This directory contains Python and Javascript interfaces implementing the functionality to access and validate schemas and examples.
 
 ## Tests
 
-Execute the following command from the root directory of this repository to run the tests.
-The script will run both Javascript and Python tests in which examples are validated against their schemas.
+Execute the following command from the root directory of this repository to run the tests. The script will run both Javascript and Python tests in which examples are validated against the corresponding schemas.
 
 ```bash
 sh run-tests.sh
@@ -107,9 +104,7 @@ sh run-tests.sh
 
 ## Contribution
 
-We welcome contributions for other test cases.
-We suggest forking this repository and introducing the adjustments there.
-The changes in the fork can further be considered for merging into this repository as it is commonly used on Github [#links](2).
+We welcome feedback and contributions for other not-yet covered cases. We suggest forking this repository and introducing the adjustments there, the changes in the fork can further be considered for merging into this repository as it is commonly done on Github [#links](2).
 
 ## Best Practices
 
