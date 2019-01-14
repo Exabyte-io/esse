@@ -4,7 +4,7 @@
     "title": "surface energy schema",
     "allOf": [
         {
-            "$ref": "../../definitions/reusable/energy.json"
+            "$ref": "../../core/reusable/energy.json"
         }
     ],
     "properties": {

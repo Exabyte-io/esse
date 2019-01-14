@@ -1,0 +1,58 @@
+{
+    "schemaId": "core-reference-experiment",
+    "$schema": "http://json-schema.org/draft-04/schema#",
+    "title": "info for characteristic obtained by experiment",
+    "properties": {
+        "type": {
+            "enum": [
+                "experiment"
+            ]
+        },
+        "authors": {
+            "description": "experiment authors",
+            "type": "array",
+            "items": {
+                "$ref": "literature/name.json"
+            }
+        },
+        "title": {
+            "type": "string",
+            "description": "experiment title"
+        },
+        "method": {
+            "type": "string",
+            "description": "method used in experiment"
+        },
+        "conditions": {
+            "type": "array",
+            "items": {
+                "$ref": "experiment/condition.json"
+            }
+        },
+        "location": {
+            "$ref": "experiment/location.json"
+        },
+        "timestamp": {
+            "description": "epoch time.",
+            "type": "number"
+        },
+        "note": {
+            "description": "Note about experiment",
+            "type": "string"
+        },
+        "references": {
+            "type": "array",
+            "description": "references to literature articles",
+            "items": {
+                "$ref": "literature.json"
+            }
+        }
+    },
+    "required": [
+        "conditions",
+        "authors",
+        "title",
+        "method",
+        "timestamp"
+    ]
+}

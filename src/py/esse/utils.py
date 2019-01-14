@@ -68,9 +68,9 @@ def dump_json_file(path_, content, sort_keys=True):
         f.write("".join((json.dumps(content, separators=(',', ': '), indent=4, sort_keys=sort_keys), "\n")))
 
 
-def dump_examples():
+def refactor_examples():
     """
-    Dumps examples:
+    Refactors examples:
         - fix space and indentation
         - sort keys
     """
@@ -81,9 +81,9 @@ def dump_examples():
             dump_json_file(path_, content, True)
 
 
-def dump_schemas():
+def refactor_schemas():
     """
-    Dumps schemas:
+    Refactors schemas:
         - fix space and indentation
         - preserve keys order
     """
@@ -105,8 +105,3 @@ def set_schema_id(path_):
     schema_id = slugify(path_.replace("{}/".format(SCHEMAS_DIR), '').replace(".json", ""))
     content = OrderedDict(list(OrderedDict({"schemaId": schema_id}).items()) + list(content.items()))
     dump_json_file(path_, content, False)
-
-
-if __name__ == "__main__":
-    dump_schemas()
-    dump_examples()

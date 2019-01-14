@@ -1,0 +1,11 @@
+{
+    "schemaId": "core-abstract-3d-tensor",
+    "$schema": "http://json-schema.org/draft-04/schema#",
+    "title": "3 dimensional tensor schema",
+    "type": "array",
+    "items": {
+        "$ref": "../primitive/array_of_3_numbers.json"
+    },
+    "minItems": 3,
+    "maxItems": 3
+}

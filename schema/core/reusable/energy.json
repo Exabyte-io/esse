@@ -1,0 +1,29 @@
+{
+    "schemaId": "core-reusable-energy",
+    "$schema": "http://json-schema.org/draft-04/schema#",
+    "title": "energy schema",
+    "allOf": [
+        {
+            "$ref": "../primitive/scalar.json"
+        }
+    ],
+    "properties": {
+        "name": {
+            "type": "string"
+        },
+        "units": {
+            "anyOf": [
+                {
+                    "$ref": "../../definitions/units.json#/energy"
+                },
+                {
+                    "$ref": "../../definitions/units.json#/surface_energy"
+                }
+            ]
+        }
+    },
+    "required": [
+        "name",
+        "units"
+    ]
+}
