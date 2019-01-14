@@ -4,7 +4,7 @@
     "title": "band structure schema",
     "allOf": [
         {
-            "$ref": "../../definitions/abstract/2d_plot.json"
+            "$ref": "../../core/abstract/2d_plot.json"
         }
     ],
     "properties": {

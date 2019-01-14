@@ -1,0 +1,29 @@
+{
+    "schemaId": "core-abstract-2d-plot",
+    "$schema": "http://json-schema.org/draft-04/schema#",
+    "title": "2 dimension plot schema",
+    "allOf": [
+        {
+            "$ref": "2d_data.json"
+        }
+    ],
+    "properties": {
+        "xAxis": {
+            "description": "x Axis object",
+            "$ref": "../primitive/axis.json"
+        },
+        "yAxis": {
+            "description": "y Axis object",
+            "$ref": "../primitive/axis.json"
+        },
+        "legend": {
+            "description": "Legend of y Axis data series",
+            "minItems": 1,
+            "type": "array"
+        }
+    },
+    "required": [
+        "xAxis",
+        "yAxis"
+    ]
+}

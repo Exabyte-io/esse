@@ -1,0 +1,17 @@
+{
+    "schemaId": "core-reusable-atomic-scalars",
+    "$schema": "http://json-schema.org/draft-04/schema#",
+    "title": "atomic vectors schema",
+    "allOf": [
+        {
+            "$ref": "../primitive/array_of_ids.json"
+        }
+    ],
+    "items": {
+        "properties": {
+            "value": {
+                "$ref": "../primitive/scalar.json"
+            }
+        }
+    }
+}

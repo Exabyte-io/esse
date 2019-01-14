@@ -4,7 +4,7 @@
     "title": "density schema",
     "allOf": [
         {
-            "$ref": "../../definitions/primitive/scalar.json"
+            "$ref": "../../core/primitive/scalar.json"
         }
     ],
     "properties": {

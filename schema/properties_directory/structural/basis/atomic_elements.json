@@ -10,7 +10,7 @@
             ]
         },
         "values": {
-            "$ref": "../../../definitions/reusable/atomic_strings.json"
+            "$ref": "../../../core/reusable/atomic_strings.json"
         }
     }
 }
