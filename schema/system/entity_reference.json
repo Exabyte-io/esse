@@ -1,0 +1,23 @@
+{
+    "schemaId": "system-entity-reference",
+    "$schema": "http://json-schema.org/draft-04/schema#",
+    "title": "entity reference schema",
+    "properties": {
+        "_id": {
+            "description": "entity identity",
+            "type": "string"
+        },
+        "cls": {
+            "description": "entity class",
+            "type": "string"
+        },
+        "slug": {
+            "description": "entity slug",
+            "type": "string"
+        }
+    },
+    "required": [
+        "_id",
+        "cls"
+    ]
+}

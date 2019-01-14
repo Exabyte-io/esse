@@ -1,26 +1,26 @@
 {
-    "queue": "OF",
-    "nodes": 1,
-    "ppn": 1,
-    "timeLimit": "00:05:00",
-    "notify": "abe",
-    "email": "demo@exabyte.io",
-    "maxCPU": 36,
     "arguments": {
-        "npools": 1,
         "nband": 1,
+        "npools": 1,
         "ntg": 1
     },
     "cluster": {
         "fqdn": "master-1-staging.exabyte.io",
         "jid": "1234.master-1-staging.exabyte.io"
     },
+    "email": "demo@exabyte.io",
     "errors": [
         {
             "domain": "rupy",
-            "reason": "FileNotFound",
-            "message": "File Not Found: /home/demo/data/project1/job-123/job-config.json"
+            "message": "File Not Found: /home/demo/data/project1/job-123/job-config.json",
+            "reason": "FileNotFound"
         }
     ],
-    "excludeFilesPattern": "^.*.txt$"
+    "excludeFilesPattern": "^.*.txt$",
+    "maxCPU": 36,
+    "nodes": 1,
+    "notify": "abe",
+    "ppn": 1,
+    "queue": "OF",
+    "timeLimit": "00:05:00"
 }

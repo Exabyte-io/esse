@@ -1,0 +1,19 @@
+{
+    "schemaId": "system-material",
+    "$schema": "http://json-schema.org/draft-04/schema#",
+    "title": "Material entity reference schema",
+    "allOf": [
+        {
+            "$ref": "entity_reference.json"
+        }
+    ],
+    "properties": {
+        "cls": {
+            "description": "Material class",
+            "type": "string",
+            "enum": [
+                "Material"
+            ]
+        }
+    }
+}

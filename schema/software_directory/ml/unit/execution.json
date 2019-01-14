@@ -1,0 +1,17 @@
+{
+    "schemaId": "software-ml-unit-execution",
+    "oneOf": [
+        {
+            "$ref": "execution/evaluate/cross-validate.json"
+        },
+        {
+            "$ref": "execution/train.json"
+        },
+        {
+            "$ref": "execution/score.json"
+        },
+        {
+            "$ref": "execution/initialize.json"
+        }
+    ]
+}

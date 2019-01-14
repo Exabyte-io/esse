@@ -1,0 +1,22 @@
+{
+    "schemaId": "methods-directory-unknown",
+    "$schema": "http://json-schema.org/draft-04/schema#",
+    "title": "unknown methods schema",
+    "allOf": [
+        {
+            "$ref": "../method.json"
+        }
+    ],
+    "properties": {
+        "type": {
+            "enum": [
+                "unknown"
+            ]
+        },
+        "subtype": {
+            "enum": [
+                "unknown"
+            ]
+        }
+    }
+}

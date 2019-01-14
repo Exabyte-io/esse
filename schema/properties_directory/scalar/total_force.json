@@ -1,0 +1,20 @@
+{
+    "schemaId": "properties-directory-scalar-total-force",
+    "$schema": "http://json-schema.org/draft-04/schema#",
+    "title": "total forces schema",
+    "allOf": [
+        {
+            "$ref": "../../core/primitive/scalar.json"
+        }
+    ],
+    "properties": {
+        "name": {
+            "enum": [
+                "total_force"
+            ]
+        },
+        "units": {
+            "$ref": "../../definitions/units.json#/force"
+        }
+    }
+}

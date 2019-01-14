@@ -1,0 +1,23 @@
+{
+    "apps": [
+        "espresso"
+    ],
+    "elements": [
+        "Si",
+        "Ge",
+        "As"
+    ],
+    "exchangeCorrelation": {
+        "...": "include(file/exchange_correlation.json)"
+    },
+    "files": [
+        {
+            "...": "include(file.json)"
+        }
+    ],
+    "format": "upf",
+    "name": "my set",
+    "source": "gbrv",
+    "type": "us",
+    "version": "1.5"
+}

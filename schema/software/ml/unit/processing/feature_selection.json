@@ -1,7 +1,0 @@
-{
-    "oneOf": [
-        {
-            "$ref": "file:feature_selection/filter_based.json"
-        }
-    ]
-}

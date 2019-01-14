@@ -1,7 +1,0 @@
-{
-    "oneOf": [
-        {
-            "$ref": "file:data_transformation/scale_and_reduce.json"
-        }
-    ]
-}

@@ -1,0 +1,21 @@
+{
+    "schemaId": "properties-directory-elemental-ionization-potential",
+    "$schema": "http://json-schema.org/draft-04/schema#",
+    "title": "ionization potential",
+    "description": "ionization potential for the element",
+    "allOf": [
+        {
+            "$ref": "../../core/primitive/scalar.json"
+        }
+    ],
+    "properties": {
+        "name": {
+            "enum": [
+                "ionization_potential"
+            ]
+        },
+        "units": {
+            "$ref": "../../definitions/units.json#/energy"
+        }
+    }
+}

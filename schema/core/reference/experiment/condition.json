@@ -1,0 +1,29 @@
+{
+    "schemaId": "core-reference-experiment-condition",
+    "$schema": "http://json-schema.org/draft-04/schema#",
+    "title": "condition schema",
+    "properties": {
+        "units": {
+            "description": "condition unit",
+            "type": "string"
+        },
+        "scalar": {
+            "description": "array of condition values",
+            "type": "array",
+            "items": {
+                "properties": {
+                    "value": {
+                        "type": "string"
+                    }
+                }
+            }
+        },
+        "name": {
+            "description": "human-readable name of the condition",
+            "type": "string"
+        }
+    },
+    "required": [
+        "name"
+    ]
+}

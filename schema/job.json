@@ -1,26 +1,20 @@
 {
+    "schemaId": "job",
     "$schema": "http://json-schema.org/draft-04/schema#",
     "title": "job schema",
+    "allOf": [
+        {
+            "description": "entity schema",
+            "$ref": "system/entity.json"
+        }
+    ],
     "properties": {
-        "_id": {
-            "description": "job identifier",
-            "type": "string"
-        },
-        "mode": {
-            "description": "job execution mode.",
-            "type": "string",
-            "default": "normal",
-            "enum": [
-                "normal",
-                "parse-only"
-            ]
-        },
-        "cliId": {
-            "description": "Identity used to track jobs originated from command-line (CLI).",
+        "rmsId": {
+            "description": "Identity used to track jobs originated from command-line",
             "type": "string"
         },
         "status": {
-            "description": "job identifier.",
+            "description": "job status",
             "enum": [
                 "pre-submission",
                 "submitted",
@@ -33,94 +27,39 @@
                 "timeout"
             ]
         },
-        "createdAt": {
-            "description": "job's creation time",
-            "type": "string"
-        },
         "startTime": {
             "description": "Approximate start time of the job. e.g. within 10 min",
             "type": "string"
         },
-        "removedAt": {
-            "description": "Timestamp of the moment when job was removed",
-            "type": "string"
-        },
-        "removed": {
-            "description": "Identifies that job was removed",
-            "type": "boolean"
-        },
-        "name": {
-            "description": "Human-readable name of the job",
-            "type": "string",
-            "maxLength": 300
-        },
-        "slug": {
-            "description": "Slugified name of the job",
-            "type": "string"
-        },
         "workDir": {
-            "description": "The path to the working directory of this job, when the job originates from CLI.",
+            "description": "The path to the working directory of this job, when the job originates from command-line",
             "type": "string"
         },
         "compute": {
             "description": "Job's compute parameters",
-            "$ref": "file:job/compute.json"
+            "$ref": "job/compute.json"
         },
         "workflow": {
             "description": "Arch-workflow for the job",
-            "$ref": "file:workflow.json"
+            "$ref": "workflow.json"
         },
         "_project": {
-            "description": "Subset of the full information about the project that this job belongs to. Included for quick access in search.",
-            "$ref": "file:job/_project.json"
+            "description": "Subset of the full information about the project that this job belongs to.",
+            "$ref": "system/entity_reference.json"
         },
         "_material": {
             "description": "Subset of the full information about the materials used inside this job.",
-            "$ref": "file:job/_material.json"
-        },
-        "schemaVersion": {
-            "description": "Job's schema version. Used to distinct between different schemas.",
-            "type": "string"
-        },
-        "owner": {
-            "description": "Summary about user/company who owns this job.",
-            "$ref": "file:security/owner.json"
-        },
-        "creator": {
-            "description": "User that created this job. Always a user. Different from job owner. Owner could be user or organization.",
-            "$ref": "file:security/creator.json"
+            "$ref": "system/entity_reference.json"
         },
         "parent": {
-            "description": "Parent job for the job. Only a job from the same project can be assigned as a parent one.",
-            "type": "object",
-            "properties": {
-                "_id": {
-                    "description": "Parent job identifier.",
-                    "type": "string"
-                },
-                "name": {
-                    "description": "Parent job title.",
-                    "type": "string",
-                    "maxLength": 300
-                }
-            },
-            "required": [
-                "_id",
-                "name"
-            ]
+            "description": "Subset of the full information about the parent job for the job. Only a job from the same project can be assigned as a parent one.",
+            "$ref": "system/entity_reference.json"
         }
     },
     "required": [
-        "_id",
         "status",
-        "createdAt",
-        "name",
-        "slug",
-        "schemaVersion",
         "compute",
         "workflow",
-        "_project",
-        "creator",
-        "owner"
+        "_project"
     ]
 }

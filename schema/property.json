@@ -1,0 +1,38 @@
+{
+    "schemaId": "property",
+    "$schema": "http://json-schema.org/draft-04/schema#",
+    "title": "property schema",
+    "allOf": [
+        {
+            "description": "entity schema",
+            "$ref": "system/entity.json"
+        }
+    ],
+    "properties": {
+        "exabyteId": {
+            "description": "identity of the corresponding material inside exabyte materials bank",
+            "type": "string"
+        },
+        "slug": {
+            "description": "property slug, e.g. total_energy",
+            "type": "string"
+        },
+        "group": {
+            "description": "property group, e.g. qe:dft:gga:pbe",
+            "type": "string"
+        },
+        "data": {
+            "description": "container of the information, specific to each property",
+            "type": "object"
+        },
+        "source": {
+            "$ref": "core/reference.json"
+        }
+    },
+    "required": [
+        "data",
+        "slug",
+        "group",
+        "source"
+    ]
+}

@@ -1,0 +1,51 @@
+{
+    "schemaId": "system-entity",
+    "$schema": "http://json-schema.org/draft-04/schema#",
+    "title": "entity schema",
+    "allOf": [
+        {
+            "description": "entity timestampable schema",
+            "$ref": "timestampable.json"
+        },
+        {
+            "description": "entity removable schema",
+            "$ref": "soft_removable.json"
+        },
+        {
+            "description": "entity name schema",
+            "$ref": "name.json"
+        },
+        {
+            "description": "entity tags schema",
+            "$ref": "tags.json"
+        }
+    ],
+    "properties": {
+        "_id": {
+            "description": "entity identity",
+            "type": "string"
+        },
+        "schemaVersion": {
+            "description": "entity's schema version. Used to distinct between different schemas.",
+            "type": "string"
+        },
+        "description": {
+            "description": "entity description",
+            "type": "string"
+        },
+        "owner": {
+            "description": "Subset of the full information about the account who owns the entity.",
+            "$ref": "entity_reference.json"
+        },
+        "creator": {
+            "description": "Subset of the full information about the user who created the entity.",
+            "$ref": "entity_reference.json"
+        }
+    },
+    "required": [
+        "_id",
+        "schemaVersion",
+        "owner",
+        "creator"
+    ]
+}

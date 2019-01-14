@@ -1,0 +1,26 @@
+{
+    "schemaId": "system-file-source",
+    "$schema": "http://json-schema.org/draft-04/schema#",
+    "title": "file source schema",
+    "description": "file source with the information inside",
+    "type": "object",
+    "properties": {
+        "extension": {
+            "description": "file extension",
+            "type": "string"
+        },
+        "name": {
+            "description": "file name without extension",
+            "type": "string"
+        },
+        "text": {
+            "description": "file content as raw text",
+            "type": "string"
+        }
+    },
+    "required": [
+        "extension",
+        "name",
+        "text"
+    ]
+}

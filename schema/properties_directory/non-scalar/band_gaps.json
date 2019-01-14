@@ -1,0 +1,51 @@
+{
+    "schemaId": "properties-directory-non-scalar-band-gaps",
+    "$schema": "http://json-schema.org/draft-04/schema#",
+    "title": "band gaps schema",
+    "description": "contains band gap values",
+    "properties": {
+        "name": {
+            "enum": [
+                "band_gaps"
+            ]
+        },
+        "values": {
+            "type": "array",
+            "items": {
+                "$ref": "../../core/reusable/band_gap.json"
+            }
+        },
+        "eigenvalues": {
+            "type": "array",
+            "items": {
+                "properties": {
+                    "kpoint": {
+                        "$ref": "../../core/abstract/point.json"
+                    },
+                    "weight": {
+                        "type": "number"
+                    },
+                    "eigenvalues": {
+                        "type": "array",
+                        "items": {
+                            "properties": {
+                                "spin": {
+                                    "type": "number"
+                                },
+                                "energies": {
+                                    "type": "array"
+                                },
+                                "occupations": {
+                                    "type": "array"
+                                }
+                            }
+                        }
+                    }
+                }
+            }
+        }
+    },
+    "required": [
+        "name"
+    ]
+}

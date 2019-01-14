@@ -1,0 +1,34 @@
+{
+    "schemaId": "methods-directory-pseudopotential-precision",
+    "$schema": "http://json-schema.org/draft-04/schema#",
+    "title": "precision schema for pseudopotential dft",
+    "properties": {
+        "ecutwfc": {
+            "description": "wavefunction cutoff energy in eV",
+            "type": "number"
+        },
+        "ecutrho": {
+            "description": "charge density cutoff energy in eV",
+            "type": "number"
+        },
+        "kgrid": {
+            "description": "information about kpoints grid",
+            "allOf": [
+                {
+                    "$ref": "../../core/abstract/3d_grid.json"
+                }
+            ],
+            "properties": {
+                "ibz": {
+                    "description": "number of k-points inside irreducible wedge of the Brillouin zone",
+                    "type": "integer"
+                }
+            }
+        }
+    },
+    "required": [
+        "ecutwfc",
+        "ecutrho",
+        "kgrid"
+    ]
+}

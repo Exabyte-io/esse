@@ -1,0 +1,8 @@
+{
+    "authors": [
+        {
+            "...": "include(literature/name.json)"
+        }
+    ],
+    "doi": "10.1000/xyz123"
+}

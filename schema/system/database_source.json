@@ -1,0 +1,25 @@
+{
+    "schemaId": "system-database-source",
+    "$schema": "http://json-schema.org/draft-04/schema#",
+    "title": "database source schema",
+    "description": "information about a database source",
+    "type": "object",
+    "properties": {
+        "_id": {
+            "description": "ID string for the materials uploaded from a third party source inside the third party source.",
+            "type": "string"
+        },
+        "name": {
+            "description": "Third party source name.",
+            "type": "string"
+        },
+        "origin": {
+            "description": "A flag that is true when material is initially imported from a third party * (as opposed to being independently designed from scratch).",
+            "type": "string"
+        }
+    },
+    "required": [
+        "_id",
+        "name"
+    ]
+}

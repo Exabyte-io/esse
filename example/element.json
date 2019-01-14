@@ -1,14 +1,14 @@
 {
-    "symbol": "Si",
     "properties": [
         {
-            "...": "include(material/properties/elemental/atomic_radius.json)"
+            "...": "include(properties_directory/elemental/atomic_radius.json)"
         },
         {
-            "...": "include(material/properties/elemental/electronegativity.json)"
+            "...": "include(properties_directory/elemental/electronegativity.json)"
         },
         {
-            "...": "include(material/properties/elemental/ionization_potential.json)"
+            "...": "include(properties_directory/elemental/ionization_potential.json)"
         }
-    ]
+    ],
+    "symbol": "Si"
 }

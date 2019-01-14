@@ -1,0 +1,19 @@
+{
+    "schemaId": "system-parent-job",
+    "$schema": "http://json-schema.org/draft-04/schema#",
+    "title": "Parent job entity reference schema",
+    "allOf": [
+        {
+            "$ref": "entity_reference.json"
+        }
+    ],
+    "properties": {
+        "cls": {
+            "description": "Job class",
+            "type": "string",
+            "enum": [
+                "Job"
+            ]
+        }
+    }
+}

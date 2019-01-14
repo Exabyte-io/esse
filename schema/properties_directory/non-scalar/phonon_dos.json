@@ -1,0 +1,42 @@
+{
+    "schemaId": "properties-directory-non-scalar-phonon-dos",
+    "$schema": "http://json-schema.org/draft-04/schema#",
+    "title": "Phonon density of states schema",
+    "type": "object",
+    "allOf": [
+        {
+            "$ref": "../../core/abstract/2d_plot.json"
+        }
+    ],
+    "properties": {
+        "xAxis": {
+            "properties": {
+                "label": {
+                    "enum": [
+                        "frequency"
+                    ]
+                },
+                "units": {
+                    "$ref": "../../definitions/units.json#/frequency"
+                }
+            }
+        },
+        "yAxis": {
+            "properties": {
+                "label": {
+                    "enum": [
+                        "Phonon DOS"
+                    ]
+                },
+                "units": {
+                    "$ref": "../../definitions/units.json#/phononDOS"
+                }
+            }
+        },
+        "name": {
+            "enum": [
+                "phonon_dos"
+            ]
+        }
+    }
+}

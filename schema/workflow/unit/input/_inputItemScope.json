@@ -1,0 +1,20 @@
+{
+    "schemaId": "workflow-unit-input-inputitemscope",
+    "$schema": "http://json-schema.org/draft-04/schema#",
+    "title": "workflow unit input schema",
+    "type": "object",
+    "properties": {
+        "scope": {
+            "description": "Scope of the variable. e.g. 'global' or 'flowchart_id_2'",
+            "type": "string"
+        },
+        "name": {
+            "description": "Name of the input data. e.g. total_energy",
+            "type": "string"
+        }
+    },
+    "required": [
+        "scope",
+        "name"
+    ]
+}

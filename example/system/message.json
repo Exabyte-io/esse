@@ -1,0 +1,14 @@
+{
+    "header": {
+        "entity": {
+            "_id": "FPjAaKfuYAL7tiHbm",
+            "flowchartId": "pw_scf",
+            "name": "unit"
+        },
+        "timestamp": 1234923492.12,
+        "version": "0.2.0"
+    },
+    "payload": {
+        "...": "include(../properties_directory/scalar/total_energy.json)"
+    }
+}

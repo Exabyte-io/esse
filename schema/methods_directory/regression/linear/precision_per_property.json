@@ -1,0 +1,18 @@
+{
+    "schemaId": "methods-directory-regression-linear-precision-per-property",
+    "$schema": "http://json-schema.org/draft-04/schema#",
+    "title": "precision schema for regression",
+    "properties": {
+        "trainingError": {
+            "description": "training error of the estimator",
+            "type": "number"
+        },
+        "score": {
+            "description": "prediction score of the estimator. Eg: r2_score",
+            "type": "number"
+        }
+    },
+    "required": [
+        "trainingError"
+    ]
+}

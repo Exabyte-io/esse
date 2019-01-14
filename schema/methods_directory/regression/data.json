@@ -1,0 +1,10 @@
+{
+    "schemaId": "methods-directory-regression-data",
+    "$schema": "http://json-schema.org/draft-04/schema#",
+    "title": "regression data",
+    "oneOf": [
+        {
+            "$ref": "linear/data_per_property.json"
+        }
+    ]
+}

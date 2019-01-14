@@ -1,0 +1,12 @@
+{
+    "schemaId": "system-defaultable",
+    "$schema": "http://json-schema.org/draft-04/schema#",
+    "title": "defaultable entity schema",
+    "properties": {
+        "isDefault": {
+            "description": "Identifies that entity is defaultable",
+            "type": "boolean",
+            "default": false
+        }
+    }
+}

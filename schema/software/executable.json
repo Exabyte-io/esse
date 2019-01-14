@@ -1,10 +1,11 @@
 {
+    "schemaId": "software-executable",
     "$schema": "http://json-schema.org/draft-04/schema#",
     "title": "executable schema",
     "type": "object",
     "allOf": [
         {
-            "$ref": "file:./mixins/runtime_items.json"
+            "$ref": "../workflow/unit/runtime/runtime_items.json"
         }
     ],
     "properties": {

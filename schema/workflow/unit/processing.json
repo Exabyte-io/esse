@@ -1,10 +1,11 @@
 {
+    "schemaId": "workflow-unit-processing",
     "$schema": "http://json-schema.org/draft-04/schema#",
     "title": "processing unit schema",
     "type": "object",
     "allOf": [
         {
-            "$ref": "file:../unit.json"
+            "$ref": "../unit.json"
         }
     ],
     "properties": {

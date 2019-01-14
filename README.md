@@ -1,56 +1,119 @@
-# exabyte-esse
+# ESSE
 
-Exabyte Source of Schemas and Examples. Contains schemas and examples for materials and simulations related data in JSON representation. Can be used as a node
-or python module on server-side.
+Exabyte Source of Schemas and Examples (ESSE) contains data formats and associated examples specifically designed for digital materials science [1](#links).
 
 ## Installation
 
-Python:
+ESSE can be used as a Node.js or Python package on the server side. Please note that schemas and examples are unavailable on the client side (JS).
+
+### Python
+
+ESSE can be install as a Python package either via PyPi or the repository as below.
+
+#### PyPi
 
 ```bash
-cd <this repo dir>
-virtualenv .venv && source .venv/bin/activate
-pip install -r requirements.txt
+pip install esse
 ```
 
-To ensure latest functionality, run `pip install --upgrade https://github.com/timurbazhirov/json_include/archive/master.zip`.
+#### Repository
 
-Node:
 ```bash
-npm install
+virtualenv .venv
+source .venv/bin/activate
+pip install -e PATH_TO_ESSE_REPOSITORY
 ```
+
+### Node
+
+ESSE can be installed as a Node.js package either via NPM or the repository as below.
+
+#### NPM
+
+```bash
+npm install exabyte-esse
+```
+
+#### Repository
+
+Add `"exabyte-esse": "file:PATH_TO_ESSE_REPOSITORY"` to `package.json`.
 
 ## Usage
 
-To produce json files with no inclusion statements (python):
+ESSE contains separate but equivalent interfaces for Python and Javascript.
+The package provides `ESSE` class that can be initialized and used as below.
 
-```bash
-python compile.py
+### Python
+
+```python
+from esse import ESSE
+
+es = ESSE()
+schema = es.get_schema_by_id("material")
 ```
 
-`-m` flag will minify json files.
+### Node
 
-To produce json array with all dereferenced schemas (javascript):
+```javascript
+import {ESSE} from "exabyte-esse";
 
-```bash
-npm install
-npm run-script run
+const es = new ESSE();
+const schema = es.getSchemaById("material");
 ```
 
-compiled schemas and examples can be found inside `lib` directory.
+## Structure
 
-# Tests
+ESSE contains 3 main directories, [schema](schema), [example](example) and [src](src) outlined below.
 
-Run from root directory of this repository:
+### Schema
+
+The schema directory contains the schemas specifying the rules to structure data. A set of core schemas, outlined below, are defined to facilitate the schema modularity.
+
+#### Primitive
+
+[Primitive](schema/core/primitive) directory contains a set of custom primitives that extends default standard primitive types allowed by schema, such as String and Number.
+Primitives are solely defined by the default primitives and can not be re-constructed from each other.
+
+#### Abstract
+
+[Abstract](schema/core/abstract) directory contains unit-less schemas that are constructed from default and custom primitives.
+
+#### Reusable
+
+[Reusable](schema/core/reusable) directory contains the schemas that are widely used in other schemas to avoid duplication, constructed from the abstract and primitive schemas.
+
+#### Reference
+
+[Reference](schema/core/reference) directory contains the schemas defining the rules to structure the references to data sources.
+
+### Example
+
+This directory contains the examples formed according to the schemas and implements the same directory structure as the schema directory.
+
+### src
+
+This directory contains Python and Javascript interfaces implementing the functionality to access and validate schemas and examples.
+
+## Tests
+
+Execute the following command from the root directory of this repository to run the tests. The script will run both Javascript and Python tests in which examples are validated against the corresponding schemas.
 
 ```bash
-npm test
+sh run-tests.sh
 ```
 
-# Debugging
+## Contribution
 
-To view all compiled schemas:
+We welcome feedback and contributions for other not-yet covered cases. We suggest forking this repository and introducing the adjustments there, the changes in the fork can further be considered for merging into this repository as it is commonly done on Github [#links](2).
 
-```bash
-PRINT_SCHEMAS=1 ./node_modules/babel-cli/bin/babel-node.js src/index.js
-```
+## Best Practices
+
+- Use unique IDs for schemas. One can run `sh refactor.sh` to automatically set the IDs and reformat examples.
+
+- Do not use circular references in the schemas, instead leave the type as object and add explanation to description.
+
+## Links
+
+1: [Data Convention for Digital Materials Science](https://www.overleaf.com/project/5c240af344c4383e719ff286)
+
+2: [GitHub Standard Fork & Pull Request Workflow](https://gist.github.com/Chaser324/ce0505fbed06b947d962)

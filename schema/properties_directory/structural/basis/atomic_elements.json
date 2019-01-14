@@ -1,0 +1,16 @@
+{
+    "schemaId": "properties-directory-structural-basis-atomic-elements",
+    "$schema": "http://json-schema.org/draft-04/schema#",
+    "title": "atomic elements",
+    "description": "elements of atoms by ids, string, unitless",
+    "properties": {
+        "name": {
+            "enum": [
+                "atomic_elements"
+            ]
+        },
+        "values": {
+            "$ref": "../../../core/reusable/atomic_strings.json"
+        }
+    }
+}

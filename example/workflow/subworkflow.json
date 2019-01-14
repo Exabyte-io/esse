@@ -1,18 +1,18 @@
 {
     "_id": "LCthJ6E2QabYCZqf4",
+    "application": {
+        "...": "include(../software/application.json)"
+    },
+    "model": {
+        "...": "include(../models_directory/dft.json)"
+    },
+    "name": "Band Structure",
+    "properties": [
+        "band_structure"
+    ],
     "units": [
         {
             "...": "include(unit.json)"
         }
-    ],
-    "properties": [
-        "band_structure"
-    ],
-    "model": {
-        "...": "include(subworkflow/model.json)"
-    },
-    "application": {
-        "...": "include(../software/application.json)"
-    },
-    "name": "Bandstructure"
+    ]
 }

@@ -1,0 +1,211 @@
+{
+    "schemaId": "properties-directory-non-scalar-total-energy-contributions",
+    "$schema": "http://json-schema.org/draft-04/schema#",
+    "title": "total energy contributions schema",
+    "type": "object",
+    "properties": {
+        "temperatureEntropy": {
+            "description": "product of temperature and configurational entropy",
+            "allOf": [
+                {
+                    "$ref": "../../core/primitive/scalar.json"
+                }
+            ],
+            "properties": {
+                "name": {
+                    "enum": [
+                        "temperature_entropy"
+                    ]
+                }
+            }
+        },
+        "harrisFoulkes": {
+            "description": "non self-consitent energy based on an input charge density",
+            "allOf": [
+                {
+                    "$ref": "../../core/primitive/scalar.json"
+                }
+            ],
+            "properties": {
+                "name": {
+                    "enum": [
+                        "harris_foulkes"
+                    ]
+                }
+            }
+        },
+        "oneElectron": {
+            "description": "kinetic + pseudopotential energy",
+            "allOf": [
+                {
+                    "$ref": "../../core/primitive/scalar.json"
+                }
+            ],
+            "properties": {
+                "name": {
+                    "enum": [
+                        "one_electron"
+                    ]
+                }
+            }
+        },
+        "hartree": {
+            "description": "energy due to coulomb potential",
+            "allOf": [
+                {
+                    "$ref": "../../core/primitive/scalar.json"
+                }
+            ],
+            "properties": {
+                "name": {
+                    "enum": [
+                        "hartree"
+                    ]
+                }
+            }
+        },
+        "exchange": {
+            "description": "exchange energy",
+            "allOf": [
+                {
+                    "$ref": "../../core/primitive/scalar.json"
+                }
+            ],
+            "properties": {
+                "name": {
+                    "enum": [
+                        "exchange"
+                    ]
+                }
+            }
+        },
+        "exchangeCorrelation": {
+            "description": "exchange and correlation energy per particle",
+            "allOf": [
+                {
+                    "$ref": "../../core/primitive/scalar.json"
+                }
+            ],
+            "properties": {
+                "name": {
+                    "enum": [
+                        "exchange_correlation"
+                    ]
+                }
+            }
+        },
+        "ewald": {
+            "description": "summation of interaction energies at long length scales due to coloumbic interactions",
+            "allOf": [
+                {
+                    "$ref": "../../core/primitive/scalar.json"
+                }
+            ],
+            "properties": {
+                "name": {
+                    "enum": [
+                        "ewald"
+                    ]
+                }
+            }
+        },
+        "alphaZ": {
+            "description": "divergent electrostatic ion interaction in compensating electron gas",
+            "allOf": [
+                {
+                    "$ref": "../../core/primitive/scalar.json"
+                }
+            ],
+            "properties": {
+                "name": {
+                    "enum": [
+                        "alphaZ"
+                    ]
+                }
+            }
+        },
+        "atomicEnergy": {
+            "description": "kinetic energy of wavefunctions in the atomic limit",
+            "allOf": [
+                {
+                    "$ref": "../../core/primitive/scalar.json"
+                }
+            ],
+            "properties": {
+                "name": {
+                    "enum": [
+                        "atomic_energy"
+                    ]
+                }
+            }
+        },
+        "eigenvalues": {
+            "description": "sum of one electron energies of kinetic, electrostatic, and exchange correlation",
+            "allOf": [
+                {
+                    "$ref": "../../core/primitive/scalar.json"
+                }
+            ],
+            "properties": {
+                "name": {
+                    "enum": [
+                        "eigenvalues"
+                    ]
+                }
+            }
+        },
+        "PAWDoubleCounting2": {
+            "description": "double counting correction 2",
+            "allOf": [
+                {
+                    "$ref": "../../core/primitive/scalar.json"
+                }
+            ],
+            "properties": {
+                "name": {
+                    "enum": [
+                        "PAW_double-counting_correction_2"
+                    ]
+                }
+            }
+        },
+        "PAWDoubleCounting3": {
+            "description": "double counting correction 3",
+            "allOf": [
+                {
+                    "$ref": "../../core/primitive/scalar.json"
+                }
+            ],
+            "properties": {
+                "name": {
+                    "enum": [
+                        "PAW_double-counting_correction_3"
+                    ]
+                }
+            }
+        },
+        "hartreeFock": {
+            "description": "hartree-fock contribution",
+            "allOf": [
+                {
+                    "$ref": "../../core/primitive/scalar.json"
+                }
+            ],
+            "properties": {
+                "name": {
+                    "enum": [
+                        "hartree_fock"
+                    ]
+                }
+            }
+        },
+        "name": {
+            "enum": [
+                "total_energy_contributions"
+            ]
+        },
+        "units": {
+            "$ref": "../../definitions/units.json#/energy"
+        }
+    }
+}

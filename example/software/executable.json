@@ -1,15 +1,17 @@
 {
-    "name": "pw.x",
-    "applicationId": ["eaJepm4AWfqpaCw59"],
     "advancedComputeOptions": true,
+    "applicationId": [
+        "eaJepm4AWfqpaCw59"
+    ],
     "isDefault": true,
-    "preProcessors": [],
-    "postProcessors": [],
     "monitors": [
         {
             "name": "standard_output"
         }
     ],
+    "name": "pw.x",
+    "postProcessors": [],
+    "preProcessors": [],
     "results": [
         {
             "name": "atomic_forces"

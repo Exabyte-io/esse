@@ -1,0 +1,25 @@
+{
+    "apps": [
+        "vasp"
+    ],
+    "electronicConfiguration": "s2p2",
+    "element": "Si",
+    "energyCutoff": {
+        "...": "include(file/energy_cutoff.json)"
+    },
+    "exchangeCorrelation": {
+        "...": "include(file/exchange_correlation.json)"
+    },
+    "generationDate": "05Jan2001",
+    "mass": 28.085,
+    "name": "pseudopotential file",
+    "path": "/export/share/pseudo/ag/gga/pbe/gbrv/1.4/us/ag_pbe_gbrv_1.4.upf",
+    "radii": {
+        "...": "include(file/radii.json)"
+    },
+    "source": "vasp",
+    "textHeading": "PAW_PBE Si 05Jan2001\n   4.00000000000000\nparameters from PSCTR are:\n   VRHFIN =Si: s2p2\n   LEXCH  = PE\n   EATOM  =   103.0669 eV,    7.5752 Ry\n \n   TITEL  = PAW_PBE Si 05Jan2001\n   LULTRA =        F    use ultrasoft PP ?\n   IUNSCR =        1    unscreen: 0-lin 1-nonlin 2-no\n   RPACOR =    1.500    partial core radius\n   POMASS =   28.085; ZVAL   =    4.000    mass and valenz\n   RCORE  =    1.900    outmost cutoff radius\n   RWIGS  =    2.480; RWIGS  =    1.312    wigner-seitz radius (au A)\n   ENMAX  =  245.345; ENMIN  =  184.009 eV\n   ICORE  =        2    local potential\n   LCOR   =        T    correct aug charges\n   LPAW   =        T    paw PP\n   EAUG   =  322.069\n   DEXC   =    0.000\n   RMAX   =    1.950    core radius for proj-oper\n   RAUG   =    1.300    factor for augmentation sphere\n   RDEP   =    1.993    radius for radial grids\n   RDEPT  =    1.837    core radius for aug-charge\n \n   Atomic configuration\n    6 entries     n  l   j            E        occ.\n     1  0  0.50     -1785.8828   2.0000\n     2  0  0.50      -139.4969   2.0000\n     2  1  1.50       -95.5546   6.0000\n     3  0  0.50       -10.8127   2.0000\n     3  1  0.50        -4.0811   2.0000\n     3  2  1.50        -4.0817   0.0000\n   Description\n     l       E           TYP  RCUT    TYP  RCUT\n     0    -10.8127223     23  1.900\n     0     -7.6451159     23  1.900\n     1     -4.0811372     23  1.900\n     1      2.4879257     23  1.900\n     2     -4.0817478      7  1.900\n   Error from kinetic energy argument (eV)\n",
+    "title": "Si paw pbe vasp 5.2",
+    "type": "paw",
+    "valenceElectrons": 4
+}

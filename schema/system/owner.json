@@ -1,0 +1,19 @@
+{
+    "schemaId": "system-owner",
+    "$schema": "http://json-schema.org/draft-04/schema#",
+    "title": "Entity owner reference schema",
+    "allOf": [
+        {
+            "$ref": "entity_reference.json"
+        }
+    ],
+    "properties": {
+        "cls": {
+            "description": "Entity owner class",
+            "type": "string",
+            "enum": [
+                "Account"
+            ]
+        }
+    }
+}

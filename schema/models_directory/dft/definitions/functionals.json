@@ -1,0 +1,51 @@
+{
+    "lda": {
+        "type": "object",
+        "properties": {
+            "slug": {
+                "type": "string",
+                "enum": [
+                    "pz",
+                    "pw",
+                    "vwn"
+                ]
+            }
+        }
+    },
+    "gga": {
+        "type": "object",
+        "properties": {
+            "slug": {
+                "type": "string",
+                "enum": [
+                    "pbe",
+                    "pw91",
+                    "rpbe"
+                ]
+            }
+        }
+    },
+    "other": {
+        "type": "object",
+        "properties": {
+            "slug": {
+                "type": "string",
+                "enum": [
+                    "ldau",
+                    "bp",
+                    "lyp",
+                    "b3lyp",
+                    "pbesol",
+                    "hse",
+                    "am05",
+                    "rtpss",
+                    "tpss",
+                    "m06l",
+                    "mbj",
+                    "vdwd3",
+                    "fci"
+                ]
+            }
+        }
+    }
+}

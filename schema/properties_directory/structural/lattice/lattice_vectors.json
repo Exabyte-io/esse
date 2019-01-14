@@ -1,0 +1,20 @@
+{
+    "schemaId": "properties-directory-structural-lattice-lattice-vectors",
+    "$schema": "http://json-schema.org/draft-04/schema#",
+    "title": "lattice explicit unit",
+    "allOf": [
+        {
+            "$ref": "../../../core/abstract/3d_vector_basis.json"
+        }
+    ],
+    "properties": {
+        "alat": {
+            "description": "lattice parameter for fractional coordinates",
+            "type": "number",
+            "default": 1.0
+        },
+        "units": {
+            "$ref": "../../../definitions/units.json#/length"
+        }
+    }
+}

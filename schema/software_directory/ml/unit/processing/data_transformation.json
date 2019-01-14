@@ -1,0 +1,8 @@
+{
+    "schemaId": "software-ml-unit-processing-data-transformation",
+    "oneOf": [
+        {
+            "$ref": "data_transformation/scale_and_reduce.json"
+        }
+    ]
+}

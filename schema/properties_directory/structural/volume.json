@@ -1,0 +1,22 @@
+{
+    "schemaId": "properties-directory-structural-volume",
+    "$schema": "http://json-schema.org/draft-04/schema#",
+    "title": "volume schema",
+    "allOf": [
+        {
+            "$ref": "../../core/primitive/scalar.json"
+        }
+    ],
+    "properties": {
+        "name": {
+            "enum": [
+                "volume"
+            ]
+        },
+        "units": {
+            "enum": [
+                "angstrom^3"
+            ]
+        }
+    }
+}

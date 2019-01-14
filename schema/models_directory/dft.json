@@ -1,0 +1,67 @@
+{
+    "schemaId": "models-directory-dft",
+    "$schema": "http://json-schema.org/draft-04/schema#",
+    "title": "density function theory schema",
+    "description": "density function theory schema (deprecated - to be replaced with manifest)",
+    "allOf": [
+        {
+            "$ref": "../model.json"
+        }
+    ],
+    "properties": {
+        "type": {
+            "enum": [
+                "dft"
+            ]
+        },
+        "subtype": {
+            "enum": [
+                "gga",
+                "lda",
+                "mgga",
+                "ldau"
+            ]
+        },
+        "functional": {
+            "oneOf": [
+                {
+                    "$ref": "dft/definitions/functionals.json#/lda"
+                },
+                {
+                    "$ref": "dft/definitions/functionals.json#/gga"
+                },
+                {
+                    "$ref": "dft/definitions/functionals.json#/other"
+                }
+            ]
+        },
+        "refiners": {
+            "type": "array",
+            "items": {
+                "type": "object",
+                "properties": {
+                    "slug": {
+                        "enum": [
+                            "hse",
+                            "g0w0"
+                        ]
+                    }
+                }
+            }
+        },
+        "modifiers": {
+            "type": "array",
+            "items": {
+                "type": "object",
+                "properties": {
+                    "slug": {
+                        "enum": [
+                            "soc",
+                            "magn"
+                        ]
+                    }
+                }
+            }
+        }
+    }
+}

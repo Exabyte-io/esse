@@ -1,0 +1,25 @@
+{
+    "schemaId": "methods-directory-pseudopotential-file-exchange-correlation",
+    "$schema": "http://json-schema.org/draft-04/schema#",
+    "title": "exchange correlation schema",
+    "type": "object",
+    "description": "details on the type of formalism used",
+    "properties": {
+        "approximation": {
+            "enum": [
+                "lda",
+                "gga"
+            ]
+        },
+        "functional": {
+            "oneOf": [
+                {
+                    "$ref": "../../../models_directory/dft/definitions/functionals.json#/lda/properties/slug"
+                },
+                {
+                    "$ref": "../../../models_directory/dft/definitions/functionals.json#/gga/properties/slug"
+                }
+            ]
+        }
+    }
+}

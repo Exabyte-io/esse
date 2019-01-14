@@ -1,0 +1,19 @@
+{
+    "schemaId": "system-creator",
+    "$schema": "http://json-schema.org/draft-04/schema#",
+    "title": "Creator entity reference schema",
+    "allOf": [
+        {
+            "$ref": "entity_reference.json"
+        }
+    ],
+    "properties": {
+        "cls": {
+            "description": "Creator class",
+            "type": "string",
+            "enum": [
+                "User"
+            ]
+        }
+    }
+}

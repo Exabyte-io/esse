@@ -1,0 +1,15 @@
+{
+    "schemaId": "system-name",
+    "$schema": "http://json-schema.org/draft-04/schema#",
+    "title": "timestampable entity schema",
+    "properties": {
+        "name": {
+            "description": "entity name",
+            "type": "string"
+        },
+        "slug": {
+            "description": "entity slug",
+            "type": "string"
+        }
+    }
+}

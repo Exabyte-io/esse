@@ -1,0 +1,17 @@
+{
+    "schemaId": "properties-directory-scalar-surface-energy",
+    "$schema": "http://json-schema.org/draft-04/schema#",
+    "title": "surface energy schema",
+    "allOf": [
+        {
+            "$ref": "../../core/reusable/energy.json"
+        }
+    ],
+    "properties": {
+        "name": {
+            "enum": [
+                "surface_energy"
+            ]
+        }
+    }
+}

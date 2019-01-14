@@ -1,0 +1,18 @@
+{
+    "schemaId": "core-primitive-axis",
+    "$schema": "http://json-schema.org/draft-04/schema#",
+    "title": "axis schema",
+    "properties": {
+        "label": {
+            "description": "label of an axis object",
+            "type": "string"
+        },
+        "units": {
+            "description": "units for an axis",
+            "type": "string"
+        }
+    },
+    "required": [
+        "label"
+    ]
+}

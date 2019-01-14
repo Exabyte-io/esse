@@ -1,0 +1,7 @@
+{
+    "method": {
+        "...": "include(../methods_directory/regression.json)"
+    },
+    "subtype": "re",
+    "type": "ml"
+}
