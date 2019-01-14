@@ -42,7 +42,7 @@ zero_point_energy:
 reaction_energy_barrier:
   defaults:
     units: eV
-  path: material/properties/primary/reaction_energy_barrier.json
+  schemaId: properties-directory-scalar-reaction-energy-barrier
 
 # NON-SCALAR
 phonon_dos:
@@ -111,7 +111,7 @@ reaction_energy_profile:
     yAxis:
       label: energy
       units: eV
-  path: material/properties/primary/reaction_energy_profile.json
+  schemaId: properties-directory-non-scalar-reaction-energy-profile
 
 # STRUCTURAL
 basis:
