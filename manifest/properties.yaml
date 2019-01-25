@@ -129,6 +129,9 @@ atomic_forces:
     units: eV/angstrom
   schemaId: properties-directory-structural-atomic-forces
 
+atomic_constraints:
+  schemaId: properties-directory-structural-basis-atomic-constraints
+
 p-norm:
   schemaId: properties-directory-structural-p-norm
 

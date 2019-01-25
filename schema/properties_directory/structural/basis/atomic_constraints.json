@@ -1,0 +1,16 @@
+{
+    "schemaId": "properties-directory-structural-basis-atomic-constraints",
+    "$schema": "http://json-schema.org/draft-04/schema#",
+    "title": "atomic constraints",
+    "description": "atomic constraints schema",
+    "properties": {
+        "name": {
+            "enum": [
+                "atomic_constraints"
+            ]
+        },
+        "values": {
+            "$ref": "../../../core/reusable/atomic_vectors.json"
+        }
+    }
+}
