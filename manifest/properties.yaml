@@ -157,3 +157,6 @@ magnetic_moments:
   defaults:
     units: uB
   schemaId: properties-directory-structural-magnetic-moments
+
+material:
+  schemaId: material
