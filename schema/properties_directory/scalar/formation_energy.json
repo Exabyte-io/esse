@@ -1,0 +1,17 @@
+{
+    "schemaId": "properties-directory-scalar-formation-energy",
+    "$schema": "http://json-schema.org/draft-04/schema#",
+    "title": "formation energy schema",
+    "allOf": [
+        {
+            "$ref": "../../core/reusable/energy.json"
+        }
+    ],
+    "properties": {
+        "name": {
+            "enum": [
+                "formation_energy"
+            ]
+        }
+    }
+}

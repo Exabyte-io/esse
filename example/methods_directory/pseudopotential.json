@@ -1,0 +1,12 @@
+{
+    "data": {
+        "pseudo": [
+            {
+                "...": "include(pseudopotential/dataset.json)"
+            }
+        ],
+        "searchText": ""
+    },
+    "subtype": "us",
+    "type": "pseudopotential"
+}

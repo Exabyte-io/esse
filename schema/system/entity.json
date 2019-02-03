@@ -1,22 +1,23 @@
 {
+    "schemaId": "system-entity",
     "$schema": "http://json-schema.org/draft-04/schema#",
     "title": "entity schema",
     "allOf": [
         {
             "description": "entity timestampable schema",
-            "$ref": "file:timestampable.json"
+            "$ref": "timestampable.json"
         },
         {
             "description": "entity removable schema",
-            "$ref": "file:soft_removable.json"
+            "$ref": "soft_removable.json"
         },
         {
             "description": "entity name schema",
-            "$ref": "file:name.json"
+            "$ref": "name.json"
         },
         {
             "description": "entity tags schema",
-            "$ref": "file:tags.json"
+            "$ref": "tags.json"
         }
     ],
     "properties": {
@@ -34,11 +35,11 @@
         },
         "owner": {
             "description": "Subset of the full information about the account who owns the entity.",
-            "$ref": "file:entity_reference.json"
+            "$ref": "entity_reference.json"
         },
         "creator": {
             "description": "Subset of the full information about the user who created the entity.",
-            "$ref": "file:entity_reference.json"
+            "$ref": "entity_reference.json"
         }
     },
     "required": [

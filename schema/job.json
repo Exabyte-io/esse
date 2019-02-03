@@ -1,10 +1,11 @@
 {
+    "schemaId": "job",
     "$schema": "http://json-schema.org/draft-04/schema#",
     "title": "job schema",
     "allOf": [
         {
             "description": "entity schema",
-            "$ref": "file:system/entity.json"
+            "$ref": "system/entity.json"
         }
     ],
     "properties": {
@@ -36,23 +37,23 @@
         },
         "compute": {
             "description": "Job's compute parameters",
-            "$ref": "file:job/compute.json"
+            "$ref": "job/compute.json"
         },
         "workflow": {
             "description": "Arch-workflow for the job",
-            "$ref": "file:workflow.json"
+            "$ref": "workflow.json"
         },
         "_project": {
             "description": "Subset of the full information about the project that this job belongs to.",
-            "$ref": "file:system/entity_reference.json"
+            "$ref": "system/entity_reference.json"
         },
         "_material": {
             "description": "Subset of the full information about the materials used inside this job.",
-            "$ref": "file:system/entity_reference.json"
+            "$ref": "system/entity_reference.json"
         },
         "parent": {
             "description": "Subset of the full information about the parent job for the job. Only a job from the same project can be assigned as a parent one.",
-            "$ref": "file:system/entity_reference.json"
+            "$ref": "system/entity_reference.json"
         }
     },
     "required": [

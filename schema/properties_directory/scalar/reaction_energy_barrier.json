@@ -1,0 +1,17 @@
+{
+    "schemaId": "properties-directory-scalar-reaction-energy-barrier",
+    "$schema": "http://json-schema.org/draft-04/schema#",
+    "title": "reaction energy barrier schema",
+    "allOf": [
+        {
+            "$ref": "../../core/reusable/energy.json"
+        }
+    ],
+    "properties": {
+        "name": {
+            "enum": [
+                "reaction_energy_barrier"
+            ]
+        }
+    }
+}

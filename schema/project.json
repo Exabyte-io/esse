@@ -1,0 +1,31 @@
+{
+    "schemaId": "project",
+    "$schema": "http://json-schema.org/draft-04/schema#",
+    "title": "project schema",
+    "type": "object",
+    "allOf": [
+        {
+            "description": "defaultable entity schema",
+            "$ref": "system/defaultable.json"
+        }
+    ],
+    "properties": {
+        "gid": {
+            "description": "project GID",
+            "type": "number"
+        },
+        "chargeRate": {
+            "description": "project charge rate",
+            "type": "object",
+            "properties": {
+                "rate": {
+                    "type": "number"
+                }
+            }
+        }
+    },
+    "required": [
+        "gid",
+        "chargeRate"
+    ]
+}

@@ -1,0 +1,27 @@
+{
+    "schemaId": "methods-directory-pseudopotential-file-energy-cutoff",
+    "$schema": "http://json-schema.org/draft-04/schema#",
+    "title": "energy cutoff schema",
+    "type": "object",
+    "properties": {
+        "energyCutoff": {
+            "type": "object",
+            "description": "highest energy of plane waves included in calculation",
+            "properties": {
+                "max": {
+                    "type": "number"
+                },
+                "min": {
+                    "type": "number"
+                },
+                "units": {
+                    "enum": [
+                        "eV",
+                        "rydberg",
+                        "hartree"
+                    ]
+                }
+            }
+        }
+    }
+}

@@ -1,4 +1,5 @@
 {
+    "schemaId": "element",
     "$schema": "http://json-schema.org/draft-04/schema#",
     "title": "element schema",
     "properties": {
@@ -12,13 +13,13 @@
             "items": {
                 "anyOf": [
                     {
-                        "$ref": "file:material/properties/elemental/atomic_radius.json"
+                        "$ref": "properties_directory/elemental/atomic_radius.json"
                     },
                     {
-                        "$ref": "file:material/properties/elemental/electronegativity.json"
+                        "$ref": "properties_directory/elemental/electronegativity.json"
                     },
                     {
-                        "$ref": "file:material/properties/elemental/ionization_potential.json"
+                        "$ref": "properties_directory/elemental/ionization_potential.json"
                     }
                 ]
             }

@@ -1,18 +1,16 @@
 {
-    "flowchartId": "reduce", 
-    "head": true, 
-    "name": "reduce", 
-    "reduce": {
-        "input": [
-            {
-                "arguments": [
-                    "band_gaps"
-                ], 
-                "operation": "aggregate"
-            }
-        ], 
-        "mapFlowchartId": "1"
-    }, 
-    "status": "idle", 
+    "flowchartId": "reduce",
+    "head": true,
+    "input": [
+        {
+            "arguments": [
+                "band_gaps"
+            ],
+            "operation": "aggregate"
+        }
+    ],
+    "mapFlowchartId": "1",
+    "name": "reduce",
+    "status": "idle",
     "type": "reduce"
 }

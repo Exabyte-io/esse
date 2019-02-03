@@ -1,0 +1,116 @@
+{
+    "schemaId": "methods-directory-pseudopotential-file",
+    "$schema": "http://json-schema.org/draft-04/schema#",
+    "title": "pseudopotential file schema",
+    "properties": {
+        "element": {
+            "type": "string",
+            "description": "chemical element"
+        },
+        "textHeading": {
+            "type": "string",
+            "description": "text of pseudopotential file header"
+        },
+        "type": {
+            "type": "string",
+            "description": "type of pseudization",
+            "enum": [
+                "paw",
+                "us",
+                "nc"
+            ]
+        },
+        "title": {
+            "type": "string"
+        },
+        "generationDate": {
+            "type": "string"
+        },
+        "source": {
+            "type": "string",
+            "description": "explains where this came from"
+        },
+        "version": {
+            "type": "string",
+            "description": "explains the version of where this came from"
+        },
+        "valenceElectrons": {
+            "type": "integer"
+        },
+        "coreStates": {
+            "type": "string",
+            "enum": [
+                "all",
+                "none",
+                "partial"
+            ]
+        },
+        "energyCutoff": {
+            "$ref": "file/energy_cutoff.json"
+        },
+        "electronicConfiguration": {
+            "type": "string"
+        },
+        "exchangeCorrelation": {
+            "$ref": "file/exchange_correlation.json"
+        },
+        "mass": {
+            "type": "number",
+            "description": "atomic mass in amu"
+        },
+        "radii": {
+            "$ref": "file/radii.json"
+        },
+        "screening": {
+            "type": "string",
+            "enum": [
+                "linear",
+                "non_linear",
+                "none"
+            ]
+        },
+        "properties": {
+            "type": "array",
+            "description": "array of characteristic properties"
+        },
+        "path": {
+            "type": "string",
+            "description": "location of the pseudopotential file on filesystem"
+        },
+        "apps": {
+            "type": "array",
+            "description": "simulation engines that can use this pseudopotential"
+        },
+        "storage": {
+            "type": "object",
+            "properties": {
+                "url": {
+                    "type": "string",
+                    "description": "pseudopotential file path on a cloud storage"
+                },
+                "container": {
+                    "type": "string",
+                    "description": "container name where pseudo file is uploaded"
+                },
+                "provider": {
+                    "type": "string",
+                    "description": "cloud storage provider where pseudo file is stored",
+                    "enum": [
+                        "ec2",
+                        "softlayer",
+                        "azure",
+                        "rackspace"
+                    ]
+                }
+            }
+        }
+    },
+    "required": [
+        "element",
+        "type",
+        "exchangeCorrelation",
+        "source",
+        "path",
+        "apps"
+    ]
+}

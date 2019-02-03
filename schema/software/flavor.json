@@ -1,10 +1,11 @@
 {
+    "schemaId": "software-flavor",
     "$schema": "http://json-schema.org/draft-04/schema#",
     "title": "flavor schema",
     "type": "object",
     "allOf": [
         {
-            "$ref": "file:./mixins/runtime_items.json"
+            "$ref": "../workflow/unit/runtime/runtime_items.json"
         }
     ],
     "properties": {
@@ -20,7 +21,7 @@
             "title": "execution unit input schema",
             "type": "array",
             "items": {
-                "$ref": "file:./modeling/unit/_inputItemId.json"
+                "$ref": "../workflow/unit/input/_inputItemId.json"
             }
         }
     },

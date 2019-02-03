@@ -1,15 +1,16 @@
 {
+    "schemaId": "workflow",
     "$schema": "http://json-schema.org/draft-04/schema#",
     "title": "workflow schema",
     "type": "object",
     "allOf": [
         {
             "description": "bankable entity schema",
-            "$ref": "file:system/bankable_entity.json"
+            "$ref": "system/bankable_entity.json"
         },
         {
             "description": "defaultable entity schema",
-            "$ref": "file:system/defaultable.json"
+            "$ref": "system/defaultable.json"
         }
     ],
     "properties": {
@@ -27,7 +28,7 @@
             "items": {
                 "anyOf": [
                     {
-                        "$ref": "file:workflow/subworkflow.json"
+                        "$ref": "workflow/subworkflow.json"
                     }
                 ]
             }
@@ -36,7 +37,7 @@
             "description": "Contains the Units of the Workflow",
             "type": "array",
             "items": {
-                "$ref": "file:workflow/unit.json"
+                "$ref": "workflow/unit.json"
             }
         },
         "workflows": {

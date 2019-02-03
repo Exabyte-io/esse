@@ -1,0 +1,7 @@
+{
+    "cutoff": 1.9,
+    "name": "radii",
+    "partialCore": 1.5,
+    "units": "angstrom",
+    "wignerSeitz": 1.312
+}

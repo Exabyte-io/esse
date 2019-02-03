@@ -1,0 +1,19 @@
+{
+    "schemaId": "properties-directory-structural-atomic-forces",
+    "$schema": "http://json-schema.org/draft-04/schema#",
+    "title": "atomic forces",
+    "description": "coordinates of atoms by ids, vector, unitless",
+    "properties": {
+        "name": {
+            "enum": [
+                "atomic_forces"
+            ]
+        },
+        "values": {
+            "$ref": "../../core/reusable/atomic_vectors.json"
+        },
+        "units": {
+            "$ref": "../../definitions/units.json#/force"
+        }
+    }
+}

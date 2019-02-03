@@ -1,0 +1,70 @@
+{
+    "schemaId": "properties-directory-non-scalar-density-of-states",
+    "$schema": "http://json-schema.org/draft-04/schema#",
+    "title": "density of states schema",
+    "type": "object",
+    "allOf": [
+        {
+            "$ref": "../../core/abstract/2d_plot.json"
+        }
+    ],
+    "properties": {
+        "xAxis": {
+            "properties": {
+                "label": {
+                    "enum": [
+                        "energy"
+                    ]
+                },
+                "units": {
+                    "$ref": "../../definitions/units.json#/energy"
+                }
+            }
+        },
+        "yAxis": {
+            "properties": {
+                "label": {
+                    "enum": [
+                        "density of states"
+                    ]
+                },
+                "units": {
+                    "$ref": "../../definitions/units.json#/electronicDOS"
+                }
+            }
+        },
+        "name": {
+            "enum": [
+                "density_of_states"
+            ]
+        },
+        "legend": {
+            "items": {
+                "type": "object",
+                "properties": {
+                    "element": {
+                        "description": "chemical element",
+                        "type": "string"
+                    },
+                    "index": {
+                        "description": "index inside sub-array of atoms of the same element type",
+                        "type": "integer"
+                    },
+                    "electronicState": {
+                        "description": "electronic character and shell of PDOS, such as `1s` or `s`, or `total`",
+                        "type": "string",
+                        "pattern": "^([1-5]{1})?(s|p|d|f|g).*$"
+                    },
+                    "spin": {
+                        "description": "spin of the electronic state",
+                        "type": "number",
+                        "enum": [
+                            0.5,
+                            -0.5
+                        ]
+                    }
+                }
+            }
+        }
+    }
+}

@@ -1,9 +1,10 @@
 {
+    "schemaId": "system-creator",
     "$schema": "http://json-schema.org/draft-04/schema#",
     "title": "Creator entity reference schema",
     "allOf": [
         {
-            "$ref": "file:entity_reference.json"
+            "$ref": "entity_reference.json"
         }
     ],
     "properties": {

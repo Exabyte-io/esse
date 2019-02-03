@@ -1,0 +1,13 @@
+{
+    "schemaId": "software-directory-ml-unit-execution-score",
+    "$schema": "http://json-schema.org/draft-04/schema#",
+    "title": "train score schema",
+    "allOf": [
+        {
+            "$ref": "../../../../workflow/unit/execution.json"
+        }
+    ],
+    "properties": {
+        "input": {}
+    }
+}

@@ -1,0 +1,21 @@
+{
+    "schemaId": "properties-directory-elemental-atomic-radius",
+    "$schema": "http://json-schema.org/draft-04/schema#",
+    "title": "atomic radius",
+    "description": "atomic radius",
+    "allOf": [
+        {
+            "$ref": "../../core/primitive/scalar.json"
+        }
+    ],
+    "properties": {
+        "name": {
+            "enum": [
+                "atomic_radius"
+            ]
+        },
+        "units": {
+            "$ref": "../../definitions/units.json#/length"
+        }
+    }
+}

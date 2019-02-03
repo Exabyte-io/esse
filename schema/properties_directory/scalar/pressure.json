@@ -1,0 +1,21 @@
+{
+    "schemaId": "properties-directory-scalar-pressure",
+    "$schema": "http://json-schema.org/draft-04/schema#",
+    "title": "pressure",
+    "description": "average pressure in unit cell",
+    "allOf": [
+        {
+            "$ref": "../../core/primitive/scalar.json"
+        }
+    ],
+    "properties": {
+        "name": {
+            "enum": [
+                "pressure"
+            ]
+        },
+        "units": {
+            "$ref": "../../definitions/units.json#/pressure"
+        }
+    }
+}

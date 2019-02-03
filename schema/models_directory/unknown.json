@@ -1,0 +1,26 @@
+{
+    "schemaId": "models-directory-unknown",
+    "$schema": "http://json-schema.org/draft-04/schema#",
+    "title": "unknown model schema",
+    "description": "schema for cases when model is unknown",
+    "allOf": [
+        {
+            "$ref": "../model.json"
+        }
+    ],
+    "properties": {
+        "type": {
+            "enum": [
+                "unknown"
+            ]
+        },
+        "subtype": {
+            "enum": [
+                "unknown"
+            ]
+        },
+        "method": {
+            "$ref": "../methods_directory/unknown.json"
+        }
+    }
+}

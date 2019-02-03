@@ -1,0 +1,38 @@
+{
+    "schemaId": "properties-directory-non-scalar-reaction-energy-profile",
+    "$schema": "http://json-schema.org/draft-04/schema#",
+    "title": "reaction energy profile schema",
+    "allOf": [
+        {
+            "$ref": "../../core/abstract/2d_plot.json"
+        }
+    ],
+    "properties": {
+        "xAxis": {
+            "properties": {
+                "label": {
+                    "enum": [
+                        "reaction coordinate"
+                    ]
+                }
+            }
+        },
+        "yAxis": {
+            "properties": {
+                "label": {
+                    "enum": [
+                        "energy"
+                    ]
+                },
+                "units": {
+                    "$ref": "../../definitions/units.json#/energy"
+                }
+            }
+        },
+        "name": {
+            "enum": [
+                "reaction_energy_profile"
+            ]
+        }
+    }
+}

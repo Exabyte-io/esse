@@ -1,10 +1,11 @@
 {
+    "schemaId": "workflow-unit-io",
     "$schema": "http://json-schema.org/draft-04/schema#",
     "title": "data IO unit schema",
     "type": "object",
     "allOf": [
         {
-            "$ref": "file:../unit.json"
+            "$ref": "../unit.json"
         }
     ],
     "properties": {
@@ -31,10 +32,10 @@
             "items": {
                 "anyOf": [
                     {
-                        "$ref": "file:io/api.json"
+                        "$ref": "io/api.json"
                     },
                     {
-                        "$ref": "file:io/db.json"
+                        "$ref": "io/db.json"
                     }
                 ]
             }

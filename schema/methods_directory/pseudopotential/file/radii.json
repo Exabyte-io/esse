@@ -1,0 +1,25 @@
+{
+    "schemaId": "methods-directory-pseudopotential-file-radii",
+    "$schema": "http://json-schema.org/draft-04/schema#",
+    "title": "radii schema",
+    "type": "object",
+    "description": "cutoff and atomic radii of the elemental pseudopotential",
+    "properties": {
+        "wignerSeitz": {
+            "type": "number"
+        },
+        "partialCore": {
+            "type": "number"
+        },
+        "cutoff": {
+            "type": "number"
+        },
+        "units": {
+            "enum": [
+                "angstrom",
+                "bohr",
+                "nm"
+            ]
+        }
+    }
+}

@@ -1,0 +1,22 @@
+{
+    "schemaId": "properties-directory-structural-density",
+    "$schema": "http://json-schema.org/draft-04/schema#",
+    "title": "density schema",
+    "allOf": [
+        {
+            "$ref": "../../core/primitive/scalar.json"
+        }
+    ],
+    "properties": {
+        "name": {
+            "enum": [
+                "density"
+            ]
+        },
+        "units": {
+            "enum": [
+                "g/cm^3"
+            ]
+        }
+    }
+}

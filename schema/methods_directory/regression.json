@@ -1,0 +1,66 @@
+{
+    "schemaId": "methods-directory-regression",
+    "$schema": "http://json-schema.org/draft-04/schema#",
+    "title": "linear methods schema",
+    "allOf": [
+        {
+            "$ref": "../method.json"
+        }
+    ],
+    "properties": {
+        "type": {
+            "enum": [
+                "linear"
+            ]
+        },
+        "subtype": {
+            "enum": [
+                "least_squares",
+                "ridge"
+            ]
+        },
+        "precision": {
+            "perProperty": {
+                "items": {
+                    "type": "object",
+                    "properties": {
+                        "name": {
+                            "description": "property name in 'flattened' format",
+                            "type": "string"
+                        }
+                    },
+                    "allOf": [
+                        {
+                            "$ref": "regression/precision.json"
+                        }
+                    ]
+                }
+            }
+        },
+        "data": {
+            "perProperty": {
+                "items": {
+                    "type": "object",
+                    "properties": {
+                        "name": {
+                            "description": "property name in 'flattened' format",
+                            "type": "string"
+                        }
+                    },
+                    "allOf": [
+                        {
+                            "$ref": "regression/data.json"
+                        }
+                    ]
+                }
+            },
+            "dataSet": {
+                "$ref": "regression/dataset.json"
+            }
+        }
+    },
+    "required": [
+        "precision",
+        "data"
+    ]
+}
