@@ -10,13 +10,13 @@ def get_files_by_path(path):
     return files
 
 
-DIR = os.path.dirname(__file__)
+DIR = os.path.abspath(os.path.dirname(__file__))
 EXTRA_FILES = get_files_by_path(os.path.join(DIR, "example"))
 EXTRA_FILES.extend(get_files_by_path(os.path.join(DIR, "schema")))
 
 setup(
     name='esse',
-    version='1.0.0',
+    version='1.0.1',
     description='Exabyte Source of Schemas and Examples',
     url='https://github.com/Exabyte-io/exabyte-esse',
     author='Exabyte Inc.',
