@@ -114,6 +114,6 @@ This repository is an [open-source](LICENSE.md) work-in-progress and we welcome 
 
 ## Links
 
-1: [Data Convention for Digital Materials Science](https://www.overleaf.com/project/5c240af344c4383e719ff286)
+1: [Data-centric online ecosystem for digital materials science](https://arxiv.org/pdf/1902.10838.pdf)
 
 2: [GitHub Standard Fork & Pull Request Workflow](https://gist.github.com/Chaser324/ce0505fbed06b947d962)
