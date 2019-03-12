@@ -16,7 +16,7 @@ EXTRA_FILES.extend(get_files_by_path(os.path.join(DIR, "schema")))
 
 setup(
     name='esse',
-    version='0.1.0',
+    version='1.0.0',
     description='Exabyte Source of Schemas and Examples',
     url='https://github.com/Exabyte-io/exabyte-esse',
     author='Exabyte Inc.',
@@ -34,6 +34,7 @@ setup(
         'Programming Language :: Python',
         'Development Status :: 3 - Alpha',
         'Intended Audience :: Developers',
-        'Topic :: Software Development'
+        'Topic :: Software Development',
+        'License :: OSI Approved :: Apache Software License'
     ]
 )

@@ -31,12 +31,12 @@ ESSE can be installed as a Node.js package either via NPM or the repository as b
 #### NPM
 
 ```bash
-npm install exabyte-esse
+npm install esse-js
 ```
 
 #### Repository
 
-Add `"exabyte-esse": "file:PATH_TO_ESSE_REPOSITORY"` to `package.json`.
+Add `"esse-js": "file:PATH_TO_ESSE_REPOSITORY"` to `package.json`.
 
 ## Usage
 
@@ -55,7 +55,7 @@ schema = es.get_schema_by_id("material")
 ### Node
 
 ```javascript
-import {ESSE} from "exabyte-esse";
+import {ESSE} from "esse-js";
 
 const es = new ESSE();
 const schema = es.getSchemaById("material");
@@ -104,7 +104,7 @@ sh run-tests.sh
 
 ## Contribution
 
-We welcome feedback and contributions for other not-yet covered cases. We suggest forking this repository and introducing the adjustments there, the changes in the fork can further be considered for merging into this repository as it is commonly done on Github [#links](2).
+This repository is an [open-source](LICENSE.md) work-in-progress and we welcome contributions. We suggest forking this repository and introducing the adjustments there, the changes in the fork can further be considered for merging into this repository as it is commonly done on Github [#links](2).
 
 ## Best Practices
 

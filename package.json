@@ -1,9 +1,9 @@
 {
-    "name": "exabyte-esse",
-    "version": "0.1.0",
+    "name": "esse-js",
+    "version": "1.0.0",
     "description": "Exabyte Source of Schemas and Examples",
     "scripts": {
-        "postinstall": "mkdir -p lib; babel-compile -p es2015 src/js:lib/js",
+        "transpile": "mkdir -p lib; babel-compile -p es2015 src/js:lib/js",
         "test": "mocha $NODE_DEBUG_OPTION  --bail --require babel-register src/js/esse/tests/*.js"
     },
     "repository": {
@@ -12,17 +12,17 @@
     },
     "main": "lib/js/esse/index.js",
     "author": "Exabyte Inc.",
+    "email": "info@exabyte.io",
     "bugs": {
         "url": "https://github.com/Exabyte-io/exabyte-esse/issues"
     },
     "homepage": "https://github.com/Exabyte-io/exabyte-esse",
     "devDependencies": {
-        "babel-core": "^6.25.0",
-        "babel-preset-env": "^1.6.0",
         "chai": "^3.5.0",
         "mocha": "^2.5.3",
         "prettyjson": "^1.1.3"
     },
+    "license": "Apache-2.0",
     "dependencies": {
         "ajv": "^4.1.7",
         "babel-cli": "^6.24.1",
