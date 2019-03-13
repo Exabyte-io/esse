@@ -31,7 +31,7 @@ ESSE can be installed as a Node.js package either via NPM or the repository as b
 #### NPM
 
 ```bash
-npm install esse-js
+npm install @exabyte-io/esse.js
 ```
 
 #### Repository
