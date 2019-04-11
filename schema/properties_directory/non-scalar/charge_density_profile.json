@@ -1,0 +1,38 @@
+{
+    "schemaId": "properties-directory-non-scalar-charge-density-profile",
+    "$schema": "http://json-schema.org/draft-04/schema#",
+    "title": "charge density profile schema",
+    "allOf": [
+        {
+            "$ref": "../../core/abstract/2d_plot.json"
+        }
+    ],
+    "properties": {
+        "xAxis": {
+            "properties": {
+                "label": {
+                    "enum": [
+                        "z coordinate"
+                    ]
+                }
+            }
+        },
+        "yAxis": {
+            "properties": {
+                "label": {
+                    "enum": [
+                        "charge density"
+                    ]
+                },
+                "units": {
+                    "$ref": "../../definitions/units.json#/chargeDensity"
+                }
+            }
+        },
+        "name": {
+            "enum": [
+                "charge_density_profile"
+            ]
+        }
+    }
+}

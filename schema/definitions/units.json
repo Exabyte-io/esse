@@ -85,5 +85,10 @@
         "enum": [
             "uB"
         ]
+    },
+    "chargeDensity": {
+        "enum": [
+            "e/A"
+        ]
     }
 }

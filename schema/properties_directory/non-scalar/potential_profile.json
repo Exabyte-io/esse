@@ -1,0 +1,38 @@
+{
+    "schemaId": "properties-directory-non-scalar-potential-profile",
+    "$schema": "http://json-schema.org/draft-04/schema#",
+    "title": "potential profile schema",
+    "allOf": [
+        {
+            "$ref": "../../core/abstract/2d_plot.json"
+        }
+    ],
+    "properties": {
+        "xAxis": {
+            "properties": {
+                "label": {
+                    "enum": [
+                        "z coordinate"
+                    ]
+                }
+            }
+        },
+        "yAxis": {
+            "properties": {
+                "label": {
+                    "enum": [
+                        "energy"
+                    ]
+                },
+                "units": {
+                    "$ref": "../../definitions/units.json#/energy"
+                }
+            }
+        },
+        "name": {
+            "enum": [
+                "potential_profile"
+            ]
+        }
+    }
+}

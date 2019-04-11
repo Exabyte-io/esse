@@ -1,6 +1,6 @@
 {
     "name": "@exabyte-io/esse.js",
-    "version": "1.0.3",
+    "version": "2.0.0",
     "description": "Exabyte Source of Schemas and Examples",
     "scripts": {
         "transpile": "mkdir -p lib; babel-compile -p es2015 src/js:lib/js",
