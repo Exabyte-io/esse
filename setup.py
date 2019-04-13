@@ -29,7 +29,7 @@ setup(
         "pyyaml==4.2b1",
         "jsonschema==2.6.0",
         "python-slugify==2.0.1",
-        "exabyte_json_include==0.1.1"
+        "exabyte_json_include==2.0.0"
     ],
     classifiers=[
         'Programming Language :: Python',
