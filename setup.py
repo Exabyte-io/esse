@@ -17,7 +17,7 @@ EXTRA_FILES.extend(get_files_by_path(os.path.join(DIR, "manifest")))
 
 setup(
     name='esse',
-    version='1.0.2',
+    version='2.0.0',
     description='Exabyte Source of Schemas and Examples',
     url='https://github.com/Exabyte-io/exabyte-esse',
     author='Exabyte Inc.',
@@ -26,10 +26,10 @@ setup(
     package_dir={'': 'src/py'},
     package_data={'esse': [f.replace(DIR, "data") for f in EXTRA_FILES]},
     install_requires=[
-        "pyyaml==3.12",
+        "pyyaml==4.2b1",
         "jsonschema==2.6.0",
         "python-slugify==2.0.1",
-        "exabyte_json_include==0.1.1"
+        "exabyte_json_include==2.0.0"
     ],
     classifiers=[
         'Programming Language :: Python',

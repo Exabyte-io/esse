@@ -113,6 +113,24 @@ reaction_energy_profile:
       units: eV
   schemaId: properties-directory-non-scalar-reaction-energy-profile
 
+potential_profile:
+  defaults:
+    xAxis:
+      label: z coordinate
+    yAxis:
+      label: energy
+      units: eV
+  schemaId: properties-directory-non-scalar-potential-profile
+
+charge_density_profile:
+  defaults:
+    xAxis:
+      label: z coordinate
+    yAxis:
+      label: charge density
+      units: e/A
+  schemaId: properties-directory-non-scalar-charge-density-profile
+
 # STRUCTURAL
 basis:
   defaults:
