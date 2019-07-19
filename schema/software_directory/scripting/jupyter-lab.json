@@ -1,0 +1,38 @@
+{
+    "schemaId": "software-directory-scripting-jupyter-lab",
+    "$schema": "http://json-schema.org/draft-04/schema#",
+    "title": "Jupyter Lab Application Schema",
+    "type": "object",
+    "allOf": [
+        {
+            "$ref": "../../software/application.json"
+        }
+    ],
+    "properties": {
+        "name": {
+            "enum": [
+                "jupyterLab"
+            ]
+        },
+        "flavor": {
+            "enum": [
+                "notebook"
+            ]
+        },
+        "summary": {
+            "enum": [
+                "Jupyter Lab"
+            ]
+        },
+        "version": {
+            "enum": [
+                "0.33.12"
+            ]
+        },
+        "exec": {
+            "enum": [
+                "jupyter"
+            ]
+        }
+    }
+}
