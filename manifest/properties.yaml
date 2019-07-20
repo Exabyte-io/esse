@@ -2,47 +2,56 @@ convergence_ionic:
   defaults:
     units: eV
   schemaId: properties-directory-workflow-convergence-ionic
+  isMonitor: true
 
 convergence_electronic:
   defaults:
     units: eV
   schemaId: properties-directory-workflow-convergence-electronic
+  isMonitor: true
 
 # SCALAR
 pressure:
   defaults:
     units: kbar
   schemaId: properties-directory-scalar-pressure
+  isResult: true
 
 total_energy:
   defaults:
     units: eV
   schemaId: properties-directory-scalar-total-energy
+  isResult: true
 
 surface_energy:
   defaults:
     units: eV/A^2
   schemaId: properties-directory-scalar-surface-energy
+  isResult: true
 
 fermi_energy:
   defaults:
     units: eV
   schemaId: properties-directory-scalar-fermi-energy
+  isResult: true
 
 total_force:
   defaults:
     units: eV/angstrom
   schemaId: properties-directory-scalar-total-force
+  isResult: true
 
 zero_point_energy:
   defaults:
     units: eV
   schemaId: properties-directory-scalar-zero-point-energy
+  isResult: true
 
 reaction_energy_barrier:
   defaults:
     units: eV
   schemaId: properties-directory-scalar-reaction-energy-barrier
+  isResult: true
 
 # NON-SCALAR
 phonon_dos:
@@ -54,6 +63,7 @@ phonon_dos:
       label: Phonon DOS
       units: states/cm-1
   schemaId: properties-directory-non-scalar-phonon-dos
+  isResult: true
 
 phonon_dispersions:
   defaults:
@@ -64,11 +74,13 @@ phonon_dispersions:
       label: frequency
       units: cm-1
   schemaId: properties-directory-non-scalar-phonon-dispersions
+  isResult: true
 
 total_energy_contributions:
   defaults:
     units: eV
   schemaId: properties-directory-non-scalar-total-energy-contributions
+  isResult: true
 
 band_gaps:
   types:
@@ -77,11 +89,13 @@ band_gaps:
   defaults:
     units: eV
   schemaId: properties-directory-non-scalar-band-gaps
+  isResult: true
 
 stress_tensor:
   defaults:
     units: kbar
   schemaId: properties-directory-non-scalar-stress-tensor
+  isResult: true
 
 band_structure:
   defaults:
@@ -93,6 +107,7 @@ band_structure:
       units: eV
 
   schemaId: properties-directory-non-scalar-band-structure
+  isResult: true
 
 density_of_states:
   defaults:
@@ -103,6 +118,7 @@ density_of_states:
       label: density of states
       units: states/unitcell
   schemaId: properties-directory-non-scalar-density-of-states
+  isResult: true
 
 reaction_energy_profile:
   defaults:
@@ -112,6 +128,7 @@ reaction_energy_profile:
       label: energy
       units: eV
   schemaId: properties-directory-non-scalar-reaction-energy-profile
+  isResult: true
 
 potential_profile:
   defaults:
@@ -121,6 +138,7 @@ potential_profile:
       label: energy
       units: eV
   schemaId: properties-directory-non-scalar-potential-profile
+  isResult: true
 
 charge_density_profile:
   defaults:
@@ -130,6 +148,7 @@ charge_density_profile:
       label: charge density
       units: e/A
   schemaId: properties-directory-non-scalar-charge-density-profile
+  isResult: true
 
 # STRUCTURAL
 basis:
@@ -146,6 +165,7 @@ atomic_forces:
   defaults:
     units: eV/angstrom
   schemaId: properties-directory-structural-atomic-forces
+  isResult: true
 
 atomic_constraints:
   schemaId: properties-directory-structural-basis-atomic-constraints
@@ -175,6 +195,7 @@ magnetic_moments:
   defaults:
     units: uB
   schemaId: properties-directory-structural-magnetic-moments
+  isResult: true
 
 material:
   schemaId: material

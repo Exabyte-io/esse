@@ -17,7 +17,7 @@ EXTRA_FILES.extend(get_files_by_path(os.path.join(DIR, "manifest")))
 
 setup(
     name='esse',
-    version='2.1.0',
+    version='2.2.0',
     description='Exabyte Source of Schemas and Examples',
     url='https://github.com/Exabyte-io/exabyte-esse',
     author='Exabyte Inc.',
