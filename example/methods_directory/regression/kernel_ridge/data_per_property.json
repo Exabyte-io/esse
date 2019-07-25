@@ -1,0 +1,33 @@
+{
+    "dualCoefficients": [
+        [
+            1.5405595337211027
+        ],
+        [
+            1.5875260161810345
+        ]
+    ],
+    "name": "band_gaps:direct",
+    "perFeature": [
+        {
+            "importance": 1,
+            "name": "volume"
+        },
+        {
+            "importance": 1,
+            "name": "density"
+        }
+    ],
+    "score": -7.38732352742297,
+    "trainingError": 2.4467812644952973,
+    "xFit": [
+        [
+            0.0,
+            1.0
+        ],
+        [
+            0.0,
+            -1.0
+        ]
+    ]
+}
