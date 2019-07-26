@@ -1,5 +1,5 @@
 {
-    "schemaId": "methods-directory-regression-linear-data-per-property",
+    "schemaId": "methods-directory-regression-kernel-ridge-data-per-property",
     "$schema": "http://json-schema.org/draft-04/schema#",
     "title": "linear regression parameters schema",
     "properties": {
@@ -17,15 +17,16 @@
             "items": {
                 "type": "object",
                 "properties": {
-                    "name": {
-                        "description": "feature name in 'flattened' format",
-                        "type": "string"
-                    },
                     "importance": {
                         "description": "pvalue: https://en.wikipedia.org/wiki/P-value",
                         "type": "number"
                     }
                 },
+                "allOf": [
+                    {
+                        "$ref": "../data_per_feature.json"
+                    }
+                ],
                 "required": [
                     "name"
                 ]

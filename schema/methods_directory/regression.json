@@ -20,6 +20,24 @@
                 "ridge"
             ]
         },
+        "precision": {
+            "perProperty": {
+                "items": {
+                    "type": "object",
+                    "properties": {
+                        "name": {
+                            "description": "property name in 'flattened' format",
+                            "type": "string"
+                        }
+                    },
+                    "allOf": [
+                        {
+                            "$ref": "regression/precision.json"
+                        }
+                    ]
+                }
+            }
+        },
         "data": {
             "perProperty": {
                 "items": {
@@ -33,9 +51,6 @@
                     "allOf": [
                         {
                             "$ref": "regression/data.json"
-                        },
-                        {
-                            "$ref": "regression/precision.json"
                         }
                     ]
                 }

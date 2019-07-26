@@ -13,21 +13,17 @@
             "items": {
                 "type": "object",
                 "properties": {
-                    "name": {
-                        "description": "feature name in 'flattened' format",
-                        "type": "string"
-                    },
                     "coefficient": {
                         "description": "coefficient in linear regression",
                         "type": "number"
-                    },
-                    "importance": {
-                        "description": "pvalue: https://en.wikipedia.org/wiki/P-value",
-                        "type": "number"
                     }
                 },
+                "allOf": [
+                    {
+                        "$ref": "../data_per_feature.json"
+                    }
+                ],
                 "required": [
-                    "name",
                     "coefficient"
                 ]
             }

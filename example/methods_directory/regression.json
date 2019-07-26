@@ -15,9 +15,9 @@
         },
         "perProperty": [
             {
+                "...": "include(regression/precision.json)",
                 "intercept": 0.363,
                 "name": "band_gaps:direct",
-                "...": "include(regression/precision.json)",
                 "perFeature": [
                     {
                         "coefficient": 0.015,
@@ -32,9 +32,9 @@
                 ]
             },
             {
+                "...": "include(regression/precision.json)",
                 "intercept": 0.364,
                 "name": "band_gaps:indirect",
-                "...": "include(regression/precision.json)",
                 "perFeature": [
                     {
                         "coefficient": 0.016,

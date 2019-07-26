@@ -10,16 +10,12 @@
     "name": "band_gaps:direct",
     "perFeature": [
         {
-            "importance": 1,
-            "name": "volume"
+            "...": "include(../data_per_feature.json)"
         },
         {
-            "importance": 1,
-            "name": "density"
+            "...": "include(../data_per_feature.json)"
         }
     ],
-    "score": -7.38732352742297,
-    "trainingError": 2.4467812644952973,
     "xFit": [
         [
             0.0,
