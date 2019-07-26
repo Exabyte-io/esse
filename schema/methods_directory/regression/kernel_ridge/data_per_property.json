@@ -16,12 +16,6 @@
             "description": "per-feature (property used for training the ML method/model) parameters",
             "items": {
                 "type": "object",
-                "properties": {
-                    "importance": {
-                        "description": "pvalue: https://en.wikipedia.org/wiki/P-value",
-                        "type": "number"
-                    }
-                },
                 "allOf": [
                     {
                         "$ref": "../data_per_feature.json"
