@@ -50,6 +50,11 @@
             }
         ]
     },
+    "precision": {
+        "perProperty": {
+            "...": "include(regression/precision.json)"
+        }
+    },
     "subtype": "least_squares",
     "type": "linear"
 }
