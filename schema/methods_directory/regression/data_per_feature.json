@@ -1,0 +1,18 @@
+{
+    "schemaId": "methods-directory-regression-data-per-feature",
+    "$schema": "http://json-schema.org/draft-04/schema#",
+    "title": "feature parameters schema",
+    "properties": {
+        "name": {
+            "description": "feature name",
+            "type": "string"
+        },
+        "importance": {
+            "description": "pvalue: https://en.wikipedia.org/wiki/P-value",
+            "type": "number"
+        }
+    },
+    "required": [
+        "name"
+    ]
+}

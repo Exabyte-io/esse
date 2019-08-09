@@ -1,0 +1,29 @@
+{
+    "dualCoefficients": [
+        [
+            1.5405595337211027
+        ],
+        [
+            1.5875260161810345
+        ]
+    ],
+    "name": "band_gaps:direct",
+    "perFeature": [
+        {
+            "...": "include(../data_per_feature.json)"
+        },
+        {
+            "...": "include(../data_per_feature.json)"
+        }
+    ],
+    "xFit": [
+        [
+            0.0,
+            1.0
+        ],
+        [
+            0.0,
+            -1.0
+        ]
+    ]
+}

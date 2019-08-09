@@ -4,7 +4,7 @@
     "title": "regression precision",
     "oneOf": [
         {
-            "$ref": "linear/precision_per_property.json"
+            "$ref": "./precision_per_property.json"
         }
     ]
 }

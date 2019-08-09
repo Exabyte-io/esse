@@ -5,6 +5,9 @@
     "oneOf": [
         {
             "$ref": "linear/data_per_property.json"
+        },
+        {
+            "$ref": "kernel_ridge/data_per_property.json"
         }
     ]
 }
