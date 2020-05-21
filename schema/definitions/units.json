@@ -91,7 +91,7 @@
             "e/A"
         ]
     },
-    "vibrational": {
+    "spectralIntensity": {
         "enum":[
             "(debye/angstrom)^2",
             "km/mol",

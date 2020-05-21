@@ -32,7 +32,7 @@
                     ]
                 },
                 "units": {
-                    "$ref": "../../definitions/units.json#/vibrational"
+                    "$ref": "../../definitions/units.json#/spectralIntensity"
                 }
             }
         },
