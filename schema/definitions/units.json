@@ -93,7 +93,7 @@
     },
     "vibrational": {
         "enum":[
-            "(debye/angs)^2",
+            "(debye/angstrom)^2",
             "km/mol",
             "m/mol",
             "a.u."
