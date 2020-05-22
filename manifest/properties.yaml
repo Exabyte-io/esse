@@ -53,6 +53,18 @@ reaction_energy_barrier:
   schemaId: properties-directory-scalar-reaction-energy-barrier
   isResult: true
 
+electron_affinity:
+  defaults:
+    units: eV
+  schemaId: properties-directory-scalar-electron-affinity
+  isResult: true
+
+ionization_potential:
+  defaults:
+    units: eV
+  schemaId: properties-directory-scalar-ionization-potential
+  isResult: true
+
 # NON-SCALAR
 phonon_dos:
   defaults:
@@ -148,6 +160,17 @@ charge_density_profile:
       label: charge density
       units: e/A
   schemaId: properties-directory-non-scalar-charge-density-profile
+  isResult: true
+
+vibrational_spectrum:
+  defaults:
+    xAxis:
+      label: wavenumber
+      units: cm-1
+    yAxis:
+      label: Absorption coefficient
+      units: km/mol
+  schemaId: properties-directory-non-scalar-vibrational-spectrum
   isResult: true
 
 # STRUCTURAL
