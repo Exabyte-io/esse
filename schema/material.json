@@ -29,6 +29,10 @@
             "description": "object defining the lattice cell size and shape",
             "$ref": "properties_directory/derived_properties.json"
         },
+        "molecularProperties": {
+            "description": "object defining necessary information regarding the molecular picture",
+            "$ref": "properties_directory/molecular_properties.json"
+        },
         "external": {
             "description": "information about external sources of this material",
             "type": "array",
@@ -47,6 +51,10 @@
         "icsdId": {
             "description": "Corresponding ICSD id of the material",
             "type": "integer"
+        },
+        "isMolecule": {
+            "description": "Whether to work with molecular picture",
+            "type": "boolean"
         }
     },
     "required": [

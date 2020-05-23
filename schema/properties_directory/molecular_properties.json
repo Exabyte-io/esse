@@ -1,0 +1,19 @@
+{
+    "schemaId": "properties-directory-molecular-properties",
+    "$schema": "http://json-schema.org/draft-04/schema#",
+    "title": "molecular properties schema",
+    "type": "object",
+    "properties": {
+        "charge": {
+            "description": "total charge of the molecular system",
+            "type": "integer"
+        },
+        "multiplicity": {
+            "description": "calculated as 2S+1, with S is the total spin angular momentum",
+            "type": "integer"
+        },
+        "covalentBonds": {
+            "$ref": "structural/covalent_bonds.json"
+        }
+    }
+}
