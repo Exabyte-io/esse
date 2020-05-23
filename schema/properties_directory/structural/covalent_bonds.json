@@ -1,0 +1,49 @@
+{
+    "schemaId": "properties-directory-structural-covalent-bonds",
+    "$schema": "http://json-schema.org/draft-04/schema#",
+    "title": "covalent bonds schema",
+    "type": "array",
+    "items": {
+        "type": "object",
+        "properties": {
+            "atomPair": {
+                "description": "the two atoms forming a covalent bond",
+                "allOf": [
+                    {
+                        "$ref": "../../core/reusable/atomic_strings.json"
+                    }
+                ],
+                "minItems": 2,
+                "maxItems": 2
+            },
+            "bondType": {
+                "type" : "string",
+                "enum": [
+                    "single",
+                    "double",
+                    "triple",
+                    "quadruple",
+                    "aromatic",
+                    "other"
+                ]
+            },
+            "bondLength" : {
+                "allOf": [
+                    {
+                        "$ref": "../../core/primitive/scalar.json"
+                    }
+                ],
+                "properties": {
+                    "units": {
+                        "enum": [
+                            "angstrom",
+                            "bohr",
+                            "pm"
+                        ]
+                    }
+                }
+            }
+        },
+        "uniqueItems": true
+    }
+}
