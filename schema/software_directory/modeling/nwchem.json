@@ -1,0 +1,33 @@
+{
+    "schemaId": "software-directory-modeling-nwchem",
+    "$schema": "http://json-schema.org/draft-04/schema#",
+    "title": "NWChem",
+    "type": "object",
+    "allOf": [
+        {
+            "$ref": "../../software/application.json"
+        }
+    ],
+    "properties": {
+        "name": {
+            "enum": [
+                "NWChem"
+            ]
+        },
+        "summary": {
+            "enum": [
+                "NWChem: a comprehensive and scalable open-source solution for large scale molecular simulations"
+            ]
+        },
+        "version": {
+            "enum": [
+                "6.6"
+            ]
+        },
+        "exec": {
+            "enum": [
+                "nwchem"
+            ]
+        }
+    }
+}

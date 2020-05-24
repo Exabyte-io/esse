@@ -1,0 +1,17 @@
+{
+    "schemaId": "properties-directory-scalar-electron-affinity",
+    "$schema": "http://json-schema.org/draft-04/schema#",
+    "title": "electron affinity schema",
+    "allOf": [
+        {
+            "$ref": "../../core/reusable/energy.json"
+        }
+    ],
+    "properties": {
+        "name": {
+            "enum": [
+                "electron_affinity"
+            ]
+        }
+    }
+}
