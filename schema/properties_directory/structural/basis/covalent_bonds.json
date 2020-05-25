@@ -7,10 +7,10 @@
         "type": "object",
         "properties": {
             "atomPair": {
-                "description": "the two atoms forming a covalent bond",
+                "description": "indices of the two atoms forming a covalent bond",
                 "allOf": [
                     {
-                        "$ref": "../../core/reusable/atomic_strings.json"
+                        "$ref": "../../../core/primitive/array_of_ids.json"
                     }
                 ],
                 "minItems": 2,
@@ -26,22 +26,6 @@
                     "aromatic",
                     "other"
                 ]
-            },
-            "bondLength" : {
-                "allOf": [
-                    {
-                        "$ref": "../../core/primitive/scalar.json"
-                    }
-                ],
-                "properties": {
-                    "units": {
-                        "enum": [
-                            "angstrom",
-                            "bohr",
-                            "pm"
-                        ]
-                    }
-                }
             }
         },
         "uniqueItems": true

@@ -1,0 +1,24 @@
+[
+    {
+        "atomPair": [
+            {
+                "id": 1
+            },
+            {
+                "id": 2
+            }
+        ],
+        "bondType": "single"
+    },
+    {
+        "atomPair": [
+            {
+                "id": 2
+            },
+            {
+                "id": 3
+            }
+        ],
+        "bondType": "single"
+    }
+]
