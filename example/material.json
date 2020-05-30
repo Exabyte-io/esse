@@ -66,45 +66,8 @@
             "value": 0.71
         }
     ],
-    "molecularProperties": {
-        "charge": 0,
-        "multiplicity": 1,
-        "covalentBonds": [
-            {
-                "atomPair": [
-                    {
-                        "id": 1,
-                        "value": "H"
-                    },
-                    {
-                        "id": 2,
-                        "value": "O"
-                    }
-                ],
-                "bondType": "single",
-                "bondLength": {
-                    "units": "angstrom",
-                    "value": 0.99
-                }
-            },
-            {
-                "atomPair": [
-                    {
-                        "id": 2,
-                        "value": "O"
-                    },
-                    {
-                        "id": 3,
-                        "value": "H"
-                    }
-                ],
-                "bondType": "single",
-                "bondLength": {
-                    "units": "angstrom",
-                    "value": 0.99
-                }
-            }
-        ]
+    "electronicConfiguration": {
+        "...": "include(properties_directory/electronic_configuration.json)"
     },
     "exabyteId": "RKiswuxHKkF3uvLyA",
     "formula": "Si",

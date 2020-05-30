@@ -1,7 +1,7 @@
 {
-    "schemaId": "properties-directory-molecular-properties",
+    "schemaId": "properties-directory-electronic-configuration",
     "$schema": "http://json-schema.org/draft-04/schema#",
-    "title": "molecular properties schema",
+    "title": "electronic configuration schema",
     "type": "object",
     "properties": {
         "charge": {
@@ -11,9 +11,6 @@
         "multiplicity": {
             "description": "calculated as 2S+1, with S is the total spin angular momentum",
             "type": "integer"
-        },
-        "covalentBonds": {
-            "$ref": "structural/covalent_bonds.json"
         }
     }
 }
