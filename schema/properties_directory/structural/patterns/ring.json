@@ -1,0 +1,17 @@
+{
+    "schemaId": "properties-directory-structural-pattern-ring",
+    "$schema": "http://json-schema.org/draft-04/schema#",
+    "title": "ring pattern schema",
+    "type": "object",
+    "properties": {
+        "name": {
+            "enum": ["ring"]
+        },
+        "atoms": {
+            "$ref": "../../../core/primitive/array_of_ids.json"
+        },
+        "isAromatic": {
+            "type": "boolean"
+        }
+    }
+}

@@ -1,0 +1,14 @@
+{
+    "schemaId": "properties-directory-structural-pattern-special-bond",
+    "$schema": "http://json-schema.org/draft-04/schema#",
+    "title": "special bond pattern schema",
+    "type": "object",
+    "properties": {
+        "name": {
+            "enum": ["special_bond"]
+        },
+        "atoms": {
+            "$ref": "../../../core/primitive/array_of_ids.json"
+        }
+    }
+}
