@@ -11,7 +11,7 @@
             "$ref": "basis/atomic_coordinates.json"
         },
         "bonds": {
-            "$ref": "basis/covalent_bonds.json"
+            "$ref": "basis/bonds.json"
         }
     },
     "required": [

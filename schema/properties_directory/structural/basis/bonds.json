@@ -1,13 +1,13 @@
 {
-    "schemaId": "properties-directory-structural-covalent-bonds",
+    "schemaId": "properties-directory-structural-basis-connectivity",
     "$schema": "http://json-schema.org/draft-04/schema#",
-    "title": "covalent bonds schema",
+    "title": "connectivity schema",
     "type": "array",
     "items": {
         "type": "object",
         "properties": {
             "atomPair": {
-                "description": "indices of the two atoms forming a covalent bond",
+                "description": "indices of the two connected atoms",
                 "allOf": [
                     {
                         "$ref": "../../../core/primitive/array_of_ids.json"
@@ -24,6 +24,8 @@
                     "triple",
                     "quadruple",
                     "aromatic",
+                    "tautomeric",
+                    "dative",
                     "other"
                 ]
             }
