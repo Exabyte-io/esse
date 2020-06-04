@@ -5,7 +5,9 @@
     "type": "object",
     "properties": {
         "name": {
-            "enum": ["ring"]
+            "enum": [
+                "ring"
+            ]
         },
         "atoms": {
             "$ref": "../../../core/primitive/array_of_ids.json"

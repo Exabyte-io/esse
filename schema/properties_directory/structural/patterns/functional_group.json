@@ -5,7 +5,9 @@
     "type": "object",
     "properties": {
         "name": {
-            "enum": ["functional_group"]
+            "enum": [
+                "functional_group"
+            ]
         },
         "atoms": {
             "allOf": [
@@ -16,14 +18,14 @@
             "items": {
                 "properties": {
                     "isConnector": {
-                        "description": "whether atom connects to atoms outside of functional group",
+                        "description": "whether atom connects to atoms outside of functional group.",
                         "type": "boolean"
                     }
                 }
             }
         },
         "SMARTS": {
-            "description": "SMARTS string for classification of FG; ",
+            "description": "SMARTS string for classification of FG; https://en.wikipedia.org/wiki/SMILES_arbitrary_target_specification",
             "type": "string"
         }
     }

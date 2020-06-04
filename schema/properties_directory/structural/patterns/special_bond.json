@@ -5,7 +5,9 @@
     "type": "object",
     "properties": {
         "name": {
-            "enum": ["special_bond"]
+            "enum": [
+                "special_bond"
+            ]
         },
         "atoms": {
             "$ref": "../../../core/primitive/array_of_ids.json"
