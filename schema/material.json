@@ -29,10 +29,6 @@
             "description": "object defining the lattice cell size and shape",
             "$ref": "properties_directory/derived_properties.json"
         },
-        "electronicConfiguration": {
-            "description": "object defining the number of alpha and beta electrons (via charge and multiplicity)",
-            "$ref": "properties_directory/electronic_configuration.json"
-        },
         "external": {
             "description": "information about external sources of this material",
             "type": "array",
