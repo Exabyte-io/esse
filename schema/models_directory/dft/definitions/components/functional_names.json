@@ -1,0 +1,53 @@
+{
+    "schemaId": "models-directory-dft-definitions-lda",
+    "$schema": "http://json-schema.org/draft-04/schema#",
+    "title": "functional names",
+    "type": "object",
+    "properties": {
+        "lda": {
+            "enum": [
+                "S",
+                "VWN1",
+                "VWN2",
+                "VWN3",
+                "VWN4",
+                "VWN5",
+                "PW92",
+                "PZ81"
+            ]
+        },
+        "gga": {
+            "enum": [
+                "PBE",
+                "B88",
+                "revPBE",
+                "PW86",
+                "PW91",
+                "LYP",
+                "P86"
+            ]
+        },
+        "metaGga": {
+            "enum": [
+                "TPSS",
+                "revTPSS",
+                "SCAN",
+                "B95",
+                "TM"
+            ]
+        },
+        "dispersion": {
+            "enum": [
+                "D2",
+                "D3",
+                "VV10",
+                "rVV10"
+            ]
+        },
+        "exactExchange": {
+            "enum": [
+                "exactExchange"
+            ]
+        }
+    }
+}

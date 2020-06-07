@@ -1,0 +1,23 @@
+{
+    "schemaId": "models-directory-dft-definitions-lda",
+    "$schema": "http://json-schema.org/draft-04/schema#",
+    "title": "dispersion correction schema",
+    "type": "object",
+    "properties": {
+        "name": {
+            "$ref": "functional_names.json#/properties/dispersion"
+        },
+        "type": {
+            "enum": [
+                "dispersion"
+            ]
+        },
+        "fraction": {
+            "type": "number"
+        }
+    },
+    "required": [
+        "name",
+        "type"
+    ]
+}
