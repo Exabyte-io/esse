@@ -1,0 +1,30 @@
+{
+    "schemaId": "models-directory-dft-definitions-custom-functional",
+    "$schema": "http://json-schema.org/draft-04/schema#",
+    "title": "custom functional schema",
+    "type": "object",
+    "properties": {
+        "approximation": {
+            "enum": [
+                "LDA",
+                "GGA",
+                "meta-GGA",
+                "hybrid",
+                "double hybrid"
+            ]
+        },
+        "name": {
+            "type": "string"
+        },
+        "components": {
+            "type": "array",
+            "items": {
+                "$ref": "components/local_functional.json"
+            }
+        },
+        "dispersion_correction": {
+            "$ref": "components/dispersion_correction.json"
+        }
+    }
+
+}

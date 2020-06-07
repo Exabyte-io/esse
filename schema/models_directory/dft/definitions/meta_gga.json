@@ -1,0 +1,28 @@
+{
+    "schemaId": "models-directory-dft-definitions-meta-gga",
+    "$schema": "http://json-schema.org/draft-04/schema#",
+    "title": "meta-General Gradient Approximation (GGA) schema",
+    "type": "object",
+    "properties": {
+        "approximation": {
+            "enum": [
+                "meta-GGA"
+            ]
+        },
+        "name": {
+            "enum": [
+                "TPSS",
+                "SCAN"
+            ]
+        },
+        "components": {
+            "type": "array",
+            "items": {
+                "$ref": "components/local_functional.json"
+            }
+        },
+        "dispersion_correction": {
+            "$ref": "components/dispersion_correction.json"
+        }
+    }
+}

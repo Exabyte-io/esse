@@ -1,0 +1,28 @@
+{
+    "schemaId": "models-directory-dft-definitions-lda",
+    "$schema": "http://json-schema.org/draft-04/schema#",
+    "title": "Local Density Approximation (LDA) schema",
+    "type": "object",
+    "properties": {
+        "approximation": {
+            "enum": [
+                "LDA"
+            ]
+        },
+        "name": {
+            "enum": [
+                "SVWN1",
+                "SVWN5"
+            ]
+        },
+        "components": {
+            "type": "array",
+            "items": {
+                "$ref": "components/local_functional.json"
+            }
+        },
+        "dispersion_correction": {
+            "$ref": "components/dispersion_correction.json"
+        }
+    }
+}
