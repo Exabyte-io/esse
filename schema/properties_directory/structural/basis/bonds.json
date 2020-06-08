@@ -1,7 +1,7 @@
 {
-    "schemaId": "properties-directory-structural-basis-connectivity",
+    "schemaId": "properties-directory-structural-basis-bonds",
     "$schema": "http://json-schema.org/draft-04/schema#",
-    "title": "connectivity schema",
+    "title": "bonds schema",
     "type": "array",
     "items": {
         "type": "object",
@@ -29,7 +29,7 @@
                     "other"
                 ]
             }
-        },
-        "uniqueItems": true
-    }
+        }
+    },
+    "uniqueItems": true
 }
