@@ -7,9 +7,11 @@
             "...": "include(basis/atomic_elements.json)"
         }
     ],
-    "bonds": {
+    "bonds": [
+        {
             "...": "include(basis/bonds.json)"
-    },
+        }
+    ],
     "name": "basis",
     "units": "crystal"
 }

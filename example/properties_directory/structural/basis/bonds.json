@@ -13,12 +13,12 @@
     {
         "atomPair": [
             {
-                "id": 2
+                "id": 3
             },
             {
-                "id": 3
+                "id": 4
             }
         ],
-        "bondType": "single"
+        "bondType": "double"
     }
 ]
