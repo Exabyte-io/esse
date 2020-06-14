@@ -66,13 +66,11 @@
             "value": 0.71
         }
     ],
-    "electronicConfiguration": {
-        "...": "include(properties_directory/electronic_configuration.json)"
-    },
     "exabyteId": "RKiswuxHKkF3uvLyA",
     "formula": "Si",
     "hash": "4ac3fa057e3530628eb1295c77110eaa",
     "isDefault": false,
+    "isNonPeriodic": false,
     "lattice": {
         "a": 5.0,
         "alpha": 90.0,
