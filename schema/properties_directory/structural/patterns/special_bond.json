@@ -3,6 +3,7 @@
     "$schema": "http://json-schema.org/draft-04/schema#",
     "title": "special bond pattern schema",
     "type": "object",
+    "description": "Any bonding interaction that cannot be described by simple 2-atom picture, e.g. 3-center-2-electron bond in diborane",
     "properties": {
         "name": {
             "enum": [
