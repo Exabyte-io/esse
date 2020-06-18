@@ -47,6 +47,10 @@
         "icsdId": {
             "description": "Corresponding ICSD id of the material",
             "type": "integer"
+        },
+        "isNonPeriodic": {
+            "description": "Whether to work in the finite molecular picture (usually with atomic orbital basis)",
+            "type": "boolean"
         }
     },
     "required": [

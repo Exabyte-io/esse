@@ -10,7 +10,7 @@ check_args () {
                 shift
             ;;
             *)
-                echo "sh run-tests.sh [--disable-npm-install]"
+                echo "bash run-tests.sh [--disable-npm-install]"
                 exit 1
             ;;
         esac
@@ -23,7 +23,7 @@ SOURCE="${BASH_SOURCE[0]}"
 DIR="$( cd -P "$( dirname "$SOURCE" )" && pwd )"
 
 if [ ! -d ${DIR}/.virtualenv ]; then
-    virtualenv ${DIR}/.virtualenv
+    virtualenv -p python2.7 ${DIR}/.virtualenv
 fi
 source ${DIR}/.virtualenv/bin/activate
 pip -q install -r ${DIR}/requirements.txt

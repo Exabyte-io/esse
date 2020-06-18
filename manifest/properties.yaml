@@ -220,5 +220,10 @@ magnetic_moments:
   schemaId: properties-directory-structural-magnetic-moments
   isResult: true
 
+covalent_bonds:
+  defaults:
+    units: angstrom
+  schemaId: properties-directory-structural-covalent-bonds
+
 material:
   schemaId: material

@@ -9,6 +9,9 @@
         },
         "coordinates": {
             "$ref": "basis/atomic_coordinates.json"
+        },
+        "bonds": {
+            "$ref": "basis/bonds.json"
         }
     },
     "required": [
