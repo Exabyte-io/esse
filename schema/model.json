@@ -3,6 +3,18 @@
     "$schema": "http://json-schema.org/draft-04/schema#",
     "title": "model schema (base)",
     "properties": {
+        "tier1": {
+            "description": "top-level category, e.g. `physics-based`",
+            "type": "string"
+        },
+        "tier2": {
+            "description": "second level category, e.g. `quantum mechanical`",
+            "type": "string"
+        },
+        "tier3": {
+            "description": "third level category, e.g. `ab initio`",
+            "type": "string"
+        },
         "type": {
             "description": "general type of the model, eg. `dft`",
             "type": "string"
