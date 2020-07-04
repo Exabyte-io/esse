@@ -1,0 +1,10 @@
+{
+    "schemaId": "models-directory-configuration-interaction",
+    "$schema": "http://json-schema.org/draft-04/schema#",
+    "title": "model tags schema",
+    "description": "descriptive (searchable) attributes of model",
+    "type": "object",
+    "properties": {
+
+    }
+}

@@ -1,0 +1,46 @@
+{
+    "schemaId": "models-directory-configuration-interaction",
+    "$schema": "http://json-schema.org/draft-04/schema#",
+    "title": "configuration interaction schema",
+    "description": "configuration interaction wavefunction model",
+    "allOf": [
+        {
+            "$ref": "../model.json"
+        },
+        {
+            "$ref": "augmentations.json#/properties/general"
+        },
+        {
+            "$ref": "tags.json"
+        }
+    ],
+    "properties": {
+        "type": {
+            "enum": [
+                "ci"
+            ]
+        },
+        "subtype":{
+            "enum": [
+                "cis",
+                "cisd",
+                "cisdt"
+            ]
+        },
+        "modifications": {
+            "enum": [
+                {
+                    "allOf": [
+                        {
+                            "$ref": "modifications.json#/properties/general"
+                        },
+                        {
+                            "$ref": "modifications.json#/properties/wavefunction"
+                        }
+                    ]
+                },
+                "multi-reference"
+            ]
+        }
+    }
+}
