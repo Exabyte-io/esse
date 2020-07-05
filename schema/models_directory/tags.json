@@ -5,6 +5,10 @@
     "description": "descriptive (searchable) attributes of model",
     "type": "object",
     "properties": {
-
+        "general": {
+            "enum": [
+                "user-adjustable"
+            ]
+        }
     }
 }
