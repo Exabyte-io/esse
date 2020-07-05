@@ -1,0 +1,15 @@
+{
+    "tier1": "physics-based",
+    "tier2": "quantum-mechanical",
+    "tier3": "ab initio",
+    "type": "configuration interaction",
+    "subtype": "cisd",
+    "modification": "multi-reference",
+    "augmentation": null,
+    "tags": [
+        "wavefunction",
+        "scaling 6",
+        "excited states",
+        "user-adjustable"
+    ]
+}
