@@ -10,52 +10,64 @@
     ],
     "properties": {
         "type": {
-            "enum": [
-                "ci"
-            ]
+            "properties": {
+                "name" : {
+                    "type": "string"
+                },
+                "slug": {
+                    "enum": [
+                        "ci"
+                    ],
+                    "type": "string"
+                }
+            }
         },
         "subtype":{
-            "enum": [
-                "cis",
-                "cisd",
-                "cis(d)",
-                "cisdt"
-            ]
-        },
-        "modifications": {
-            "enum": [
-                {
-                    "allOf": [
-                        {
-                            "$ref": "modifications.json#/properties/general"
-                        },
-                        {
-                            "$ref": "modifications.json#/properties/wavefunction"
-                        }
-                    ]
+            "properties": {
+               "name" : {
+                   "description": "human-readable name",
+                    "type": "string"
                 },
-                "multi-reference"
-            ]
+                "slug": {
+                    "enum": [
+                        "cis",
+                        "cisd",
+                        "cis(d)",
+                        "cisdt",
+                        "mr-cis",
+                        "mr-cisd",
+                        "mr-cis(d)",
+                        "mr-cisdt"
+                    ]
+                }
+            }
         },
-        "augmentations": {
-            "enum": [
+        "modifier": {
+            "allOf": [
                 {
-                    "anyOf": [
-                        {
-                            "$ref": "augmentations.json#/properties/general"
-                        }
+                    "$ref": "modifier.json#/properties/general"
+                },
+                {
+                    "$ref": "modifier.json#/properties/wavefunction"
+                },
+                {
+                    "enum": [
+                        "multi-reference"
                     ]
                 }
             ]
         },
-        "tags": {
-            "enum": [
+        "augmentations": {
+            "anyOf": [
                 {
-                    "allOf": [
-                        {
-                            "$ref": "tags.json#/properties/general"
-                        }
-                    ]
+                    "$ref": "augmentations.json#/properties/general"
+                }
+            ]
+        },
+        "tags": {
+            "allOf": [
+                {
+                    "$ref": "tags.json#/properties/general"
                 }
             ]
         }

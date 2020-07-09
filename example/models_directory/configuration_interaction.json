@@ -1,11 +1,24 @@
 {
     "tier1": "physics-based",
-    "tier2": "quantum-mechanical",
-    "tier3": "ab initio",
-    "type": "configuration interaction",
-    "subtype": "cisd",
-    "modification": "multi-reference",
-    "augmentation": null,
+    "tier2": {
+        "name": "quantum-mechanical",
+        "slug": "quantummechanical"
+    },
+    "tier3": {
+        "name": "ab initio",
+        "slug": "abinitio"
+    },
+    "type": {
+        "name": "configuration interaction",
+        "slug": "ci"
+    },
+    "subtype": {
+        "name": "MR-CISD",
+        "slug": "mrcisd"
+    },
+    "modifier": [
+        "multi-reference"
+    ],
     "tags": [
         "wavefunction",
         "scaling 6",
