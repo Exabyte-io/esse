@@ -1,0 +1,30 @@
+{
+    "schemaId": "models-directory-dft-definitions-lda",
+    "$schema": "http://json-schema.org/draft-04/schema#",
+    "title": "second order Moller-Plesset (MP2) correlation correction schema",
+    "type": "object",
+    "properties": {
+        "name": {
+            "enum": [
+                "mp2-correction"
+            ]
+        },
+        "type": {
+            "enum": [
+                "correlation"
+            ]
+        },
+        "sameSpinFraction": {
+            "description": "amount of same spin MP2 correlation component",
+            "type": "number"
+        },
+        "oppositeSpinFraction": {
+            "description": "amount of opposite spin MP2 correlation component",
+            "type": "number"
+        }
+    },
+    "required": [
+        "name",
+        "type"
+    ]
+}

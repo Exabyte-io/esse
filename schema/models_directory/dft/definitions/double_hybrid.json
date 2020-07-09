@@ -1,0 +1,43 @@
+{
+    "schemaId": "models-directory-dft-definitions-double-hybrid",
+    "$schema": "http://json-schema.org/draft-04/schema#",
+    "title": "Double hybrid GGA schema",
+    "type": "object",
+    "properties": {
+        "approximation": {
+            "enum": [
+                "double hybrid"
+            ]
+        },
+        "name": {
+            "enum": [
+                "XYG3",
+                "B2PLYP"
+            ]
+        },
+        "components": {
+            "type": "array",
+            "items": {
+                "allOf": [
+                    {
+                        "$ref": "components/local_functional.json"
+                    },
+                    {
+                        "$ref": "components/pt2_correlation.json"
+                    }
+                ],
+                "oneOf": [
+                    {
+                        "$ref": "components/exact_exchange.json"
+                    },
+                    {
+                        "$ref": "components/range_separated_x.json"
+                    }
+                ]
+            }
+        },
+        "dispersion_correction": {
+            "$ref": "components/dispersion_correction.json"
+        }
+    }
+}

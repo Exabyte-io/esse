@@ -1,0 +1,37 @@
+{
+    "schemaId": "models-directory-dft-definitions-lda",
+    "$schema": "http://json-schema.org/draft-04/schema#",
+    "title": "local functional component schema",
+    "type": "object",
+    "properties": {
+        "name": {
+            "oneOf": [
+                {
+                    "$ref": "functional_names.json#/properties/lda"
+                },
+                {
+                    "$ref": "functional_names.json#/properties/gga"
+                },
+                {
+                    "$ref": "functional_names.json#/properties/metaGga"
+                }
+            ]
+        },
+        "type": {
+            "enum": [
+                "exchange",
+                "correlation",
+                "exchange-correlation",
+                "dispersion",
+                "kinetic"
+            ]
+        },
+        "fraction": {
+            "type": "number"
+        }
+    },
+    "required": [
+        "name",
+        "type"
+    ]
+}

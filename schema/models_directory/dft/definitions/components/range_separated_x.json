@@ -1,0 +1,68 @@
+{
+    "schemaId": "models-directory-dft-definitions-lda",
+    "$schema": "http://json-schema.org/draft-04/schema#",
+    "title": "range-separated exchange schema",
+    "type": "object",
+    "properties": {
+        "name": {
+            "enum": [
+                "range-separated"
+            ]
+        },
+        "type": {
+            "enum": [
+                "exchange"
+            ]
+        },
+        "switchingFrom": {
+            "description": "component which dominates at short range",
+            "oneOf": [
+                {
+                  "$ref": "functional_names.json#/properties/lda"
+                },
+                {
+                    "$ref": "functional_names.json#/properties/gga"
+                },
+                {
+                    "$ref": "functional_names.json#/properties/metaGga"
+                },
+                {
+                    "$ref": "functional_names.json#/properties/exactExchange"
+                }
+            ]
+        },
+        "switchingTo": {
+            "description": "component which dominates at long range",
+            "oneOf": [
+                {
+                  "$ref": "functional_names.json#/properties/lda"
+                },
+                {
+                    "$ref": "functional_names.json#/properties/gga"
+                },
+                {
+                    "$ref": "functional_names.json#/properties/metaGga"
+                },
+                {
+                    "$ref": "functional_names.json#/properties/exactExchange"
+                }
+            ]
+        },
+        "shortRangeFraction": {
+            "description": "fraction of [switchingTo] at short range, usually denoted as alpha",
+            "type": "number"
+        },
+        "longRangeFraction": {
+            "description": "fraction of [switchingTo] at long range, equal to alpha + beta",
+            "type": "number"
+        },
+        "attenuation": {
+            "description": "attenuation parameter, usually denoted as omega or mu",
+            "type": "number"
+        }
+    },
+    "required": [
+        "name",
+        "type"
+    ]
+}
