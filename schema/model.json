@@ -5,31 +5,36 @@
     "properties": {
         "tier1": {
             "description": "top-level category, e.g. `physics-based`",
-            "type": "string"
+            "$ref": "core/primitive/sluggified_entry.json"
         },
         "tier2": {
             "description": "second level category, e.g. `quantum mechanical`",
-            "type": "string"
+            "$ref": "core/primitive/sluggified_entry.json"
         },
         "tier3": {
             "description": "third level category, e.g. `ab initio`",
-            "type": "string"
+            "$ref": "core/primitive/sluggified_entry.json"
         },
         "type": {
             "description": "general type of the model, eg. `dft`",
-            "type": "string"
+            "$ref": "core/primitive/sluggified_entry.json"
         },
         "subtype": {
             "description": "general subtype of the model, eg. `lda`",
-            "type": "string"
+            "$ref": "core/primitive/sluggified_entry.json"
         },
         "method": {
             "$ref": "method.json"
+        },
+        "reference": {
+            "$ref": "core/reference/literature.json"
         }
     },
     "required": [
+        "tier1",
+        "tier2",
+        "tier3",
         "type",
-        "subtype",
         "method"
     ]
 }
