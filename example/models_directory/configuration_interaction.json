@@ -2,11 +2,11 @@
     "tier1": "physics-based",
     "tier2": {
         "name": "quantum-mechanical",
-        "slug": "quantummechanical"
+        "slug": "qm"
     },
     "tier3": {
         "name": "ab initio",
-        "slug": "abinitio"
+        "slug": "abini"
     },
     "type": {
         "name": "configuration interaction",
@@ -21,8 +21,8 @@
     ],
     "tags": [
         "wavefunction",
-        "scaling 6",
-        "excited states",
+        "scaling-degree:6",
+        "excited-states",
         "user-adjustable"
     ]
 }
