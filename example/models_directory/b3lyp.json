@@ -1,0 +1,29 @@
+{
+    "tier1": {
+        "name": "Physics-based",
+        "slug": "pb"
+    },
+    "tier2": {
+        "name": "Quantum Mechanical",
+        "slug": "qm"
+    },
+    "tier3": {
+        "name": "Density Functional Theory",
+        "slug": "dft"
+    },
+    "type": {
+        "name": "Kohn-Sham DFT",
+        "slug": "ksdft"
+    },
+    "subtype": {
+        "name": "B3LYP",
+        "slug": "b3lyp"
+    },
+    "tags": [
+        "rung 4",
+        "global hybrid functional",
+        "scaling 3",
+        "excited states",
+        "user-adjustable"
+    ]
+}

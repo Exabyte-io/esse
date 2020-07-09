@@ -1,0 +1,63 @@
+{
+    "schemaId": "models-directory-b3lyp",
+    "$schema": "http://json-schema.org/draft-04/schema#",
+    "title": "B3LYP functional schema",
+    "description": "B3LYP - global hybrid density functional approximation",
+    "allOf": [
+        {
+            "$ref": "../model.json"
+        }
+    ],
+    "properties": {
+        "type": {
+            "properties": {
+                "name" : {
+                    "type": "string"
+                },
+                "slug": {
+                    "enum": [
+                        "ksdft"
+                    ],
+                    "type": "string"
+                }
+            }
+        },
+        "subtype":{
+            "properties": {
+               "name" : {
+                   "description": "human-readable name",
+                    "type": "string"
+                },
+                "slug": {
+                    "enum": [
+                        "b3lyp"
+                    ]
+                }
+            }
+        },
+        "modifier": {
+            "allOf": [
+                {
+                    "$ref": "modifier.json#/properties/general"
+                },
+                {
+                    "$ref": "modifier.json#/properties/densityFunctionalTheory"
+                }
+            ]
+        },
+        "augmentations": {
+            "anyOf": [
+                {
+                    "$ref": "augmentations.json#/properties/general"
+                }
+            ]
+        },
+        "tags": {
+            "allOf": [
+                {
+                    "$ref": "tags.json#/properties/general"
+                }
+            ]
+        }
+    }
+}
