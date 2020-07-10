@@ -1,20 +1,34 @@
 {
+    "tier1": {
+        "name": "Physics-based",
+        "slug": "pb"
+    },
+    "tier2": {
+        "name": "Quantum Mechanical",
+        "slug": "qm"
+    },
+    "tier3": {
+        "name": "Density Functional Theory",
+        "slug": "dft"
+    },
+    "type": {
+        "name": "Kohn-Sham DFT",
+        "slug": "ksdft"
+    },
+    "subtype": {
+        "name": "Hybrid Functional",
+        "slug": "hybrid"
+    },
+    "tags": [
+        "rung:4",
+        "scaling-degree:3",
+        "excited-states",
+        "user-adjustable"
+    ],
     "functional": {
-        "slug": "pbe"
+        "...": "include(dft_directory/definitions/hybrid.json)"
     },
     "method": {
         "...": "include(../methods_directory/pseudopotential.json)"
-    },
-    "modifiers": [
-        {
-            "slug": "soc"
-        }
-    ],
-    "refiners": [
-        {
-            "slug": "hse"
-        }
-    ],
-    "subtype": "gga",
-    "type": "dft"
+    }
 }
