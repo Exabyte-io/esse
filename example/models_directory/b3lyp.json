@@ -16,14 +16,44 @@
         "slug": "ksdft"
     },
     "subtype": {
-        "name": "B3LYP",
-        "slug": "b3lyp"
+        "name": "Hybrid Functional",
+        "slug": "hybrid"
     },
     "tags": [
-        "rung 4",
-        "global hybrid functional",
-        "scaling 3",
-        "excited states",
+        "rung:4",
+        "scaling-degree:3",
+        "excited-states",
         "user-adjustable"
-    ]
+    ],
+    "functional": {
+        "approximation": "hybrid",
+        "name": "B3LYP",
+        "components": [
+            {
+                "name": "S",
+                "type": "exchange",
+                "fraction": 0.08
+            },
+            {
+                "name": "exactExchange",
+                "type": "exchange",
+                "fraction": 0.20
+            },
+            {
+                "name": "B88",
+                "type": "exchange",
+                "fraction": 0.72
+            },
+            {
+                "name": "VWN1",
+                "type": "correlation",
+                "fraction": 0.19
+            },
+            {
+                "name": "LYP",
+                "type": "correlation",
+                "fraction": 0.81
+            }
+        ]
+    }
 }
