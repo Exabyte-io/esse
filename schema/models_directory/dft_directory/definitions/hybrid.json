@@ -20,13 +20,19 @@
         "components": {
             "type": "array",
             "items": {
-                "$ref": "components/local_functional.json",
-                "oneOf": [
+                "anyOf": [
                     {
-                        "$ref": "components/exact_exchange.json"
+                        "$ref": "components/local_functional.json"
                     },
                     {
-                        "$ref": "components/range_separated_x.json"
+                        "oneOf": [
+                            {
+                                "$ref": "components/exact_exchange.json"
+                            },
+                            {
+                                "$ref": "components/range_separated_x.json"
+                            }
+                        ]
                     }
                 ]
             }

@@ -18,20 +18,22 @@
         "components": {
             "type": "array",
             "items": {
-                "allOf": [
+                "anyOf": [
                     {
                         "$ref": "components/local_functional.json"
                     },
                     {
                         "$ref": "components/pt2_correlation.json"
-                    }
-                ],
-                "oneOf": [
-                    {
-                        "$ref": "components/exact_exchange.json"
                     },
                     {
-                        "$ref": "components/range_separated_x.json"
+                        "oneOf": [
+                            {
+                                "$ref": "components/exact_exchange.json"
+                            },
+                            {
+                                "$ref": "components/range_separated_x.json"
+                            }
+                        ]
                     }
                 ]
             }
