@@ -1,0 +1,31 @@
+{
+    "approximation": "hybrid",
+    "name": "custom (based on B3LYP)",
+    "components": [
+        {
+            "name": "S",
+            "type": "exchange",
+            "fraction": 0.08
+        },
+        {
+            "name": "exactExchange",
+            "type": "exchange",
+            "fraction": 0.42
+        },
+        {
+            "name": "B88",
+            "type": "exchange",
+            "fraction": 0.50
+        },
+        {
+            "name": "VWN1",
+            "type": "correlation",
+            "fraction": 0.19
+        },
+        {
+            "name": "LYP",
+            "type": "correlation",
+            "fraction": 0.81
+        }
+    ]
+}

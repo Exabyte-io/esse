@@ -1,0 +1,26 @@
+{
+    "approximation": "double hybrid",
+    "name": "B2PLYP",
+    "components": [
+        {
+            "name": "B88",
+            "type": "exchange",
+            "fraction": 0.47
+        },
+        {
+            "name": "exactExchange",
+            "type": "exchange",
+            "fraction": 0.53
+        },
+        {
+            "name": "mp2-correction",
+            "type": "correlation",
+            "fraction": 0.27
+        },
+        {
+            "name": "LYP",
+            "type": "correlation",
+            "fraction": 0.73
+        }
+    ]
+}

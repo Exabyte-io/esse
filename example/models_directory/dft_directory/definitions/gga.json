@@ -1,0 +1,16 @@
+{
+    "approximation": "GGA",
+    "name": "PBE",
+    "components": [
+        {
+            "name": "PBE",
+            "type": "exchange",
+            "fraction": 1.0
+        },
+        {
+            "name": "PBE",
+            "type": "correlation",
+            "fraction": 1.0
+        }
+    ]
+}

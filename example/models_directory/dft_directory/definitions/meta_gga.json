@@ -1,0 +1,16 @@
+{
+    "approximation": "meta-GGA",
+    "name": "SCAN",
+    "components": [
+        {
+            "name": "SCAN",
+            "type": "exchange",
+            "fraction": 1.0
+        },
+        {
+            "name": "SCAN",
+            "type": "correlation",
+            "fraction": 1.0
+        }
+    ]
+}

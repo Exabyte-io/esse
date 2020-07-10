@@ -1,0 +1,16 @@
+{
+    "approximation": "LDA",
+    "name": "SVWN5",
+    "components": [
+        {
+            "name": "S",
+            "type": "exchange",
+            "fraction": 1.0
+        },
+        {
+            "name": "VWN5",
+            "type": "correlation",
+            "fraction": 1.0
+        }
+    ]
+}
