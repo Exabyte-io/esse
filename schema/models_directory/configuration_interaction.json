@@ -45,10 +45,10 @@
         "modifier": {
             "allOf": [
                 {
-                    "$ref": "modifier.json#/properties/general"
+                    "$ref": "modifiers.json#/properties/general"
                 },
                 {
-                    "$ref": "modifier.json#/properties/wavefunction"
+                    "$ref": "modifiers.json#/properties/wavefunction"
                 },
                 {
                     "enum": [
