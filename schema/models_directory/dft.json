@@ -2,7 +2,7 @@
     "schemaId": "models-directory-dft",
     "$schema": "http://json-schema.org/draft-04/schema#",
     "title": "density function theory schema",
-    "description": "density function theory schema (deprecated - to be replaced with manifest)",
+    "description": "density function theory schema (using SCI-474)",
     "allOf": [
         {
             "$ref": "../model.json"
@@ -10,58 +10,83 @@
     ],
     "properties": {
         "type": {
-            "enum": [
-                "dft"
-            ]
+            "properties": {
+                "name" : {
+                    "type": "string"
+                },
+                "slug": {
+                    "enum": [
+                        "ksdft"
+                    ],
+                    "type": "string"
+                }
+            }
         },
         "subtype": {
-            "enum": [
-                "gga",
-                "lda",
-                "mgga",
-                "ldau"
-            ]
+            "name": {
+                "enum": [
+                    "Local Density Approximation",
+                    "Generalized Gradient Approximation",
+                    "meta-GGA",
+                    "Hybrid Functional",
+                    "Double Hybrid Functional"
+                ]
+            },
+            "slug": {
+                "enum": [
+                    "lda",
+                    "gga",
+                    "mgga",
+                    "hybrid",
+                    "dh"
+                ]
+            }
         },
         "functional": {
             "oneOf": [
                 {
-                    "$ref": "dft/definitions/functionals.json#/lda"
+                    "$ref": "dft/definitions/lda.json"
                 },
                 {
-                    "$ref": "dft/definitions/functionals.json#/gga"
+                    "$ref": "dft/definitions/gga.json"
                 },
                 {
-                    "$ref": "dft/definitions/functionals.json#/other"
+                    "$ref": "dft/definitions/meta_gga.json"
+                },
+                {
+                    "$ref": "dft/definitions/hybrid.json"
+                },
+                {
+                    "$ref": "dft/definitions/double_hybrid.json"
+                },
+                {
+                    "$ref": "dft/definitions/custom_functional.json"
                 }
             ]
         },
-        "refiners": {
-            "type": "array",
-            "items": {
-                "type": "object",
-                "properties": {
-                    "slug": {
-                        "enum": [
-                            "hse",
-                            "g0w0"
-                        ]
-                    }
-                }
-            }
-        },
         "modifiers": {
-            "type": "array",
-            "items": {
-                "type": "object",
-                "properties": {
-                    "slug": {
-                        "enum": [
-                            "soc",
-                            "magn"
-                        ]
-                    }
+            "allOf": [
+                {
+                    "$ref": "modifiers.json#/properties/general"
+                },
+                {
+                    "$ref": "modifiers.json#/properties/densityFunctionalTheory"
                 }
-            }
+            ]
+        },
+        "augmentations": {
+            "anyOf": [
+                {
+                    "$ref": "augmentations.json#/properties/general"
+                }
+            ]
+        },
+        "tags": {
+            "allOf": [
+                {
+                    "$ref": "tags.json#/properties/general"
+                }
+            ]
         }
     }
 }
