@@ -43,7 +43,7 @@
             }
         },
         "modifier": {
-            "allOf": [
+            "anyOf": [
                 {
                     "$ref": "modifiers.json#/properties/general"
                 },
@@ -65,7 +65,7 @@
             ]
         },
         "tags": {
-            "allOf": [
+            "anyOf": [
                 {
                     "$ref": "tags.json#/properties/general"
                 }

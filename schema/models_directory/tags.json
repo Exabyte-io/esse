@@ -6,9 +6,17 @@
     "type": "object",
     "properties": {
         "general": {
-            "enum": [
-                "user-adjustable"
-            ]
+            "type": "array",
+            "items": {
+                "type": "string",
+                "enum": [
+                    "user-adjustable",
+                    "scaling-degree:6",
+                    "scaling-degree:3",
+                    "rung:4",
+                    "excited-states"
+                ]
+            }
         }
     }
 }

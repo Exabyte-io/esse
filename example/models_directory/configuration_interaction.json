@@ -1,12 +1,15 @@
 {
-    "tier1": "physics-based",
+    "tier1": {
+        "name": "physics-based",
+        "slug": "pb"
+    },
     "tier2": {
         "name": "quantum-mechanical",
-        "slug": "quantummechanical"
+        "slug": "qm"
     },
     "tier3": {
         "name": "ab initio",
-        "slug": "abinitio"
+        "slug": "abini"
     },
     "type": {
         "name": "configuration interaction",
@@ -14,15 +17,17 @@
     },
     "subtype": {
         "name": "MR-CISD",
-        "slug": "mrcisd"
+        "slug": "mr-cisd"
     },
     "modifier": [
         "multi-reference"
     ],
     "tags": [
-        "wavefunction",
-        "scaling 6",
-        "excited states",
+        "scaling-degree:6",
+        "excited-states",
         "user-adjustable"
-    ]
+    ],
+    "method": {
+        "...": "include(../methods_directory/pseudopotential.json)"
+    }
 }

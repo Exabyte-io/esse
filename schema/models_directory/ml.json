@@ -9,15 +9,31 @@
         }
     ],
     "properties": {
-        "type": {
-            "enum": [
-                "ml"
-            ]
+        "tier3": {
+            "properties": {
+                "name" : {
+                    "type": "string"
+                },
+                "slug": {
+                    "enum": [
+                        "ml"
+                    ],
+                    "type": "string"
+                }
+            }
         },
-        "subtype": {
-            "enum": [
-                "re"
-            ]
+        "type": {
+            "properties": {
+                "name" : {
+                    "type": "string"
+                },
+                "slug": {
+                    "enum": [
+                        "re"
+                    ],
+                    "type": "string"
+                }
+            }
         },
         "method": {
             "oneOf": [
