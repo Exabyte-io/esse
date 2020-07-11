@@ -1,0 +1,13 @@
+{
+    "allOf": [
+        {
+            "$ref": "../model/modifiers.json"
+        }
+    ],
+    "description": "Modifiers generic to all model types.",
+    "items": {
+        "enum": [
+            "external-field"
+        ]
+    }
+}

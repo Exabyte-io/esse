@@ -1,0 +1,11 @@
+{
+    "allOf": [
+        {
+            "$ref": "../model/augmentations.json"
+        }
+    ],
+    "description": "Augmentations generic to all model types. There are none.",
+    "items": {
+        "enum": []
+    }
+}

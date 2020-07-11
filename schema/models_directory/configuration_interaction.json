@@ -42,34 +42,14 @@
                 }
             }
         },
-        "modifier": {
-            "allOf": [
-                {
-                    "$ref": "modifier.json#/properties/general"
-                },
-                {
-                    "$ref": "modifier.json#/properties/wavefunction"
-                },
-                {
-                    "enum": [
-                        "multi-reference"
-                    ]
-                }
-            ]
-        },
         "augmentations": {
-            "anyOf": [
-                {
-                    "$ref": "augmentations.json#/properties/general"
-                }
-            ]
+            "$ref": "configuration_interaction/augmentations.json"
+        },
+        "modifiers": {
+            "$ref": "configuration_interaction/modifiers.json"
         },
         "tags": {
-            "allOf": [
-                {
-                    "$ref": "tags.json#/properties/general"
-                }
-            ]
+            "$ref": "configuration_interaction/tags.json"
         }
     }
 }
