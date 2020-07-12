@@ -1,30 +1,25 @@
 {
     "schemaId": "models-directory-dft-definitions-gga",
     "$schema": "http://json-schema.org/draft-04/schema#",
-    "title": "General Gradient Approximation (GGA) schema",
+    "title": "functional schema",
     "type": "object",
     "properties": {
         "approximation": {
-            "enum": [
-                "GGA"
-            ]
+            "description": "Approximation category, e.g. 'hybrid'.",
+            "type": "string"
         },
         "name": {
-            "enum": [
-                "PBE",
-                "revPBE",
-                "BLYP",
-                "BP86"
-            ]
+            "description": "Name of functional used in calculation, e.g. BLYP",
+            "type": "string"
         },
         "components": {
             "type": "array",
             "items": {
-                "$ref": "components/local_functional.json"
+                "$ref": "functional/components.json"
             }
         },
         "dispersion_correction": {
-            "$ref": "components/dispersion_correction.json"
+            "$ref": "functional/components/dispersion_correction.json"
         }
     }
 }

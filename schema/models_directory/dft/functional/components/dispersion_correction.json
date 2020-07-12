@@ -2,7 +2,11 @@
     "schemaId": "models-directory-dft-definitions-components-dispersion-correction",
     "$schema": "http://json-schema.org/draft-04/schema#",
     "title": "dispersion correction schema",
-    "type": "object",
+    "allOf": [
+        {
+            "$ref": "../components.json"
+        }
+    ],
     "properties": {
         "name": {
             "$ref": "functional_names.json#/properties/dispersion"
@@ -11,13 +15,6 @@
             "enum": [
                 "dispersion"
             ]
-        },
-        "fraction": {
-            "type": "number"
         }
-    },
-    "required": [
-        "name",
-        "type"
-    ]
+    }
 }

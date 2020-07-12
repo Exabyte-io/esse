@@ -2,7 +2,11 @@
     "schemaId": "models-directory-dft-definitions-components-exact-exchange",
     "$schema": "http://json-schema.org/draft-04/schema#",
     "title": "exact exchange component schema",
-    "type": "object",
+    "allOf": [
+        {
+            "$ref": "../components.json"
+        }
+    ],
     "properties": {
         "name": {
             "$ref": "functional_names.json#/properties/exactExchange"
@@ -11,13 +15,6 @@
             "enum": [
                 "exchange"
             ]
-        },
-        "fraction": {
-            "type": "number"
         }
-    },
-    "required": [
-        "name",
-        "type"
-    ]
+    }
 }

@@ -45,27 +45,27 @@
         "functional": {
             "oneOf": [
                 {
-                    "$ref": "dft_directory/definitions/lda.json"
+                    "$ref": "dft/lda.json"
                 },
                 {
-                    "$ref": "dft_directory/definitions/gga.json"
+                    "$ref": "dft/gga.json"
                 },
                 {
-                    "$ref": "dft_directory/definitions/meta_gga.json"
+                    "$ref": "dft/meta_gga.json"
                 },
                 {
-                    "$ref": "dft_directory/definitions/hybrid.json"
+                    "$ref": "dft/hybrid.json"
                 },
                 {
-                    "$ref": "dft_directory/definitions/double_hybrid.json"
+                    "$ref": "dft/double_hybrid.json"
                 },
                 {
-                    "$ref": "dft_directory/definitions/custom_functional.json"
+                    "$ref": "dft/custom_functional.json"
                 }
             ]
         },
         "modifiers": {
-            "$ref": "dft_directory/modifiers.json"
+            "$ref": "dft/modifiers.json"
         }
     }
 }

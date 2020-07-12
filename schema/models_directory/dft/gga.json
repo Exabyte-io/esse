@@ -1,0 +1,26 @@
+{
+    "schemaId": "models-directory-dft-definitions-gga",
+    "$schema": "http://json-schema.org/draft-04/schema#",
+    "title": "General Gradient Approximation (GGA) schema",
+    "allOf": [
+        {
+            "$ref": "functional.json"
+        }
+    ],
+    "properties": {
+        "approximation": {
+            "enum": [
+                "GGA"
+            ]
+        },
+        "name": {
+            "$ref": "functional/definitions.json#/gga"
+        },
+        "components": {
+            "type": "array",
+            "items": {
+                "$ref": "functional/components/local_functional.json"
+            }
+        }
+    }
+}

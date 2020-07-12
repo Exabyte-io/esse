@@ -2,7 +2,11 @@
     "schemaId": "models-directory-dft-definitions-hybrid",
     "$schema": "http://json-schema.org/draft-04/schema#",
     "title": "Hybrid GGA schema",
-    "type": "object",
+    "allOf": [
+        {
+            "$ref": "functional.json"
+        }
+    ],
     "properties": {
         "approximation": {
             "enum": [
@@ -10,35 +14,27 @@
             ]
         },
         "name": {
-            "enum": [
-                "PBE0",
-                "revPBE0",
-                "B3LYP",
-                "CAM-B3LYP"
-            ]
+            "$ref": "functional/definitions.json#/hybrid"
         },
         "components": {
             "type": "array",
             "items": {
                 "anyOf": [
                     {
-                        "$ref": "components/local_functional.json"
+                        "$ref": "functional/components/local_functional.json"
                     },
                     {
                         "oneOf": [
                             {
-                                "$ref": "components/exact_exchange.json"
+                                "$ref": "functional/components/exact_exchange.json"
                             },
                             {
-                                "$ref": "components/range_separated_x.json"
+                                "$ref": "functional/components/range_separated_x.json"
                             }
                         ]
                     }
                 ]
             }
-        },
-        "dispersion_correction": {
-            "$ref": "components/dispersion_correction.json"
         }
     }
 }

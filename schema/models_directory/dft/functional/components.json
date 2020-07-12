@@ -1,0 +1,24 @@
+{
+    "schemaId": "models-directory-dft-definitions-gga",
+    "$schema": "http://json-schema.org/draft-04/schema#",
+    "title": "functional component schema",
+    "type": "object",
+    "properties": {
+        "name": {
+            "description": "Component name, e.g. exactExchange",
+            "type": "string"
+        },
+        "type": {
+            "description": "type of functional, e.g. exchange functional",
+            "type": "string"
+        },
+        "fraction": {
+            "description": "Contribution of component to final functional object",
+            "type": "number"
+        }
+    },
+    "required": [
+        "name",
+        "type"
+    ]
+}

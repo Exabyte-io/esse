@@ -2,7 +2,11 @@
     "schemaId": "models-directory-dft-definitions-meta-gga",
     "$schema": "http://json-schema.org/draft-04/schema#",
     "title": "meta-General Gradient Approximation (GGA) schema",
-    "type": "object",
+    "allOf": [
+        {
+            "$ref": "functional.json"
+        }
+    ],
     "properties": {
         "approximation": {
             "enum": [
@@ -10,19 +14,13 @@
             ]
         },
         "name": {
-            "enum": [
-                "TPSS",
-                "SCAN"
-            ]
+            "$ref": "functional/definitions.json#/mgga"
         },
         "components": {
             "type": "array",
             "items": {
-                "$ref": "components/local_functional.json"
+                "$ref": "functional/components/local_functional.json"
             }
-        },
-        "dispersion_correction": {
-            "$ref": "components/dispersion_correction.json"
         }
     }
 }

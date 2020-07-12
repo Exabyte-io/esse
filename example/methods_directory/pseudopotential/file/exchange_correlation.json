@@ -1,4 +1,4 @@
 {
     "approximation": "gga",
-    "functional": "pbe"
+    "functional": "PBE"
 }

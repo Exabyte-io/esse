@@ -26,7 +26,7 @@
         "user-adjustable"
     ],
     "functional": {
-        "...": "include(dft_directory/definitions/hybrid.json)"
+        "...": "include(dft/hybrid.json)"
     },
     "method": {
         "...": "include(../methods_directory/pseudopotential.json)"

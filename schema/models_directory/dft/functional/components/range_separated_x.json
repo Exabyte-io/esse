@@ -2,7 +2,11 @@
     "schemaId": "models-directory-dft-definitions-components-range-separated-x",
     "$schema": "http://json-schema.org/draft-04/schema#",
     "title": "range-separated exchange schema",
-    "type": "object",
+    "allOf": [
+        {
+            "$ref": "../components.json"
+        }
+    ],
     "properties": {
         "name": {
             "enum": [
@@ -60,9 +64,5 @@
             "description": "attenuation parameter, usually denoted as omega or mu",
             "type": "number"
         }
-    },
-    "required": [
-        "name",
-        "type"
-    ]
+    }
 }

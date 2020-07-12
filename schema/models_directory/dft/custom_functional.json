@@ -40,26 +40,26 @@
             "items": {
                 "anyOf": [
                     {
-                        "$ref": "components/local_functional.json"
+                        "$ref": "functional/components/local_functional.json"
                     },
                     {
                         "oneOf": [
                             {
-                                "$ref": "components/exact_exchange.json"
+                                "$ref": "functional/components/exact_exchange.json"
                             },
                             {
-                                "$ref": "components/range_separated_x.json"
+                                "$ref": "functional/components/range_separated_x.json"
                             }
                         ]
                     },
                     {
-                        "$ref": "components/pt2_correlation.json"
+                        "$ref": "functional/components/pt2_correlation.json"
                     }
                 ]
             }
         },
         "dispersion_correction": {
-            "$ref": "components/dispersion_correction.json"
+            "$ref": "functional/components/dispersion_correction.json"
         }
     }
 
