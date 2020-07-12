@@ -9,19 +9,6 @@
         }
     ],
     "properties": {
-        "tier3": {
-            "properties": {
-                "name" : {
-                    "type": "string"
-                },
-                "slug": {
-                    "enum": [
-                        "ml"
-                    ],
-                    "type": "string"
-                }
-            }
-        },
         "type": {
             "properties": {
                 "name" : {

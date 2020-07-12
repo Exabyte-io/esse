@@ -34,42 +34,22 @@
                         "cisd",
                         "cis(d)",
                         "cisdt",
-                        "mr-cis",
-                        "mr-cisd",
-                        "mr-cis(d)",
-                        "mr-cisdt"
+                        "mrcis",
+                        "mrcisd",
+                        "mrcis(d)",
+                        "mrcisdt"
                     ]
                 }
             }
         },
-        "modifier": {
-            "anyOf": [
-                {
-                    "$ref": "modifiers.json#/properties/general"
-                },
-                {
-                    "$ref": "modifiers.json#/properties/wavefunction"
-                },
-                {
-                    "enum": [
-                        "multi-reference"
-                    ]
-                }
-            ]
-        },
         "augmentations": {
-            "anyOf": [
-                {
-                    "$ref": "augmentations.json#/properties/general"
-                }
-            ]
+            "$ref": "configuration_interaction/augmentations.json"
+        },
+        "modifiers": {
+            "$ref": "configuration_interaction/modifiers.json"
         },
         "tags": {
-            "anyOf": [
-                {
-                    "$ref": "tags.json#/properties/general"
-                }
-            ]
+            "$ref": "configuration_interaction/tags.json"
         }
     }
 }

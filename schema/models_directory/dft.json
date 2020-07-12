@@ -65,28 +65,7 @@
             ]
         },
         "modifiers": {
-            "allOf": [
-                {
-                    "$ref": "modifiers.json#/properties/general"
-                },
-                {
-                    "$ref": "modifiers.json#/properties/densityFunctionalTheory"
-                }
-            ]
-        },
-        "augmentations": {
-            "anyOf": [
-                {
-                    "$ref": "augmentations.json#/properties/general"
-                }
-            ]
-        },
-        "tags": {
-            "allOf": [
-                {
-                    "$ref": "tags.json#/properties/general"
-                }
-            ]
+            "$ref": "dft/modifiers.json"
         }
     }
 }

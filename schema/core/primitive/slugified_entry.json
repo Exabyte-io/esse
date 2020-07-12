@@ -1,7 +1,7 @@
 {
-    "schemaId": "core-primitive-sluggified-entry",
+    "schemaId": "core-primitive-slugified-entry",
     "$schema": "http://json-schema.org/draft-04/schema#",
-    "title": "sluggified entry",
+    "title": "slugified entry",
     "description": "container for machine- and human-readable identifier",
     "type": "object",
     "properties": {

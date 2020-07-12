@@ -1,0 +1,13 @@
+{
+    "allOf": [
+        {
+            "$ref": "../../model/modifiers.json"
+        }
+    ],
+    "description": "Modifiers specific to this model type only.",
+    "items": {
+        "enum": [
+            "ci-specific-modifier"
+        ]
+    }
+}

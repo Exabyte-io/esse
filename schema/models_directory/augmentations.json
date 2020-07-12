@@ -1,18 +1,11 @@
 {
-    "schemaId": "models-directory-augmentations",
-    "$schema": "http://json-schema.org/draft-04/schema#",
-    "title": "model augmentation schema",
-    "description": "An addition to a model, which does not change the underlying physical principles of the model.",
-    "type": "object",
-    "properties": {
-        "general": {
-            "type": "array",
-            "items": {
-                "type": "string",
-                "enum": [
-                    "localization"
-                ]
-            }
+    "allOf": [
+        {
+            "$ref": "../model/augmentations.json"
         }
+    ],
+    "description": "Augmentations generic to all model types. There are none.",
+    "items": {
+        "enum": []
     }
 }

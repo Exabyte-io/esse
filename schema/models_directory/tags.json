@@ -1,22 +1,13 @@
 {
-    "schemaId": "models-directory-configuration-interaction",
-    "$schema": "http://json-schema.org/draft-04/schema#",
-    "title": "model tags schema",
-    "description": "descriptive (searchable) attributes of model",
-    "type": "object",
-    "properties": {
-        "general": {
-            "type": "array",
-            "items": {
-                "type": "string",
-                "enum": [
-                    "user-adjustable",
-                    "scaling-degree:6",
-                    "scaling-degree:3",
-                    "rung:4",
-                    "excited-states"
-                ]
-            }
+    "allOf": [
+        {
+            "$ref": "../model/modifiers.json"
         }
+    ],
+    "description": "Tags applicable to all model types.",
+    "items": {
+        "enum": [
+            "user-adjustable"
+        ]
     }
 }
