@@ -28,6 +28,15 @@
         },
         "reference": {
             "$ref": "core/reference/literature.json"
+        },
+        "augmentations": {
+            "$ref": "model/augmentations.json"
+        },
+        "modifiers": {
+            "$ref": "model/modifiers.json"
+        },
+        "tags": {
+            "$ref": "model/tags.json"
         }
     },
     "required": [

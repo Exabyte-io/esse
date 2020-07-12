@@ -4,10 +4,10 @@
             "$ref": "../model/modifiers.json"
         }
     ],
-    "description": "Tags applicable to all model types.",
+    "description": "Tags specific to this model type only.",
     "items": {
         "enum": [
-            "user-adjustable"
+            "??"
         ]
     }
 }
