@@ -1,0 +1,15 @@
+{
+    "tags": {
+        "enum": [
+            "user-adjustable"
+        ]
+    },
+    "augmentations": {
+        "enum": []
+    },
+    "modifiers": {
+        "enum":[
+            "external-field"
+        ]
+    }
+}

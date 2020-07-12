@@ -1,0 +1,15 @@
+{
+    "tags": {
+        "enum": [
+            "excited-states",
+            "wavefunction",
+            "scaling-degree:6"
+        ]
+    },
+    "augmentations": {
+        "enum": []
+    },
+    "modifiers": {
+        "enum":[]
+    }
+}

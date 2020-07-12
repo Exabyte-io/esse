@@ -65,7 +65,7 @@
             ]
         },
         "modifiers": {
-            "$ref": "dft/modifiers.json"
+            "$ref": "dft_directory/modifiers.json"
         }
     }
 }

@@ -1,0 +1,13 @@
+{
+    "allOf": [
+        {
+            "$ref": "../../model/augmentations.json"
+        }
+    ],
+    "description": "Augmentations specific to DFT model type only.",
+    "items": {
+        "enum": [
+            "specific-augmentation-example"
+        ]
+    }
+}

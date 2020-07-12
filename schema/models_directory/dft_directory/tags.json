@@ -1,0 +1,14 @@
+{
+    "allOf": [
+        {
+            "$ref": "../../model/tags.json"
+        }
+    ],
+    "description": "Tags specific to this model type only.",
+    "items": {
+        "enum": [
+            "excited-states",
+            "scaling-degree:3"
+        ]
+    }
+}

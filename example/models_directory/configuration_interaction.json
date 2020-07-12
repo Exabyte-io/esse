@@ -17,7 +17,7 @@
     },
     "subtype": {
         "name": "MR-CISD",
-        "slug": "mr-cisd"
+        "slug": "mrcisd"
     },
     "modifier": [
         "multi-reference"

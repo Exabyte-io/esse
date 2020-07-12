@@ -6,11 +6,13 @@
     ],
     "description": "Tags specific to this model type only.",
     "items": {
-        "enum": [
-            "excited-states",
-            "wavefunction",
-            "scaling-degree:6",
-            "user-adjustable"
+        "anyOf": [
+            {
+                "$ref": "../../model/definitions.json#/tags"
+            },
+            {
+                "$ref": "definitions.json#/tags"
+            }
         ]
     }
 }
