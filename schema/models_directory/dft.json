@@ -10,17 +10,33 @@
     ],
     "properties": {
         "type": {
-            "enum": [
-                "dft"
-            ]
+            "properties": {
+                "name": {
+                    "type": "string"
+                },
+                "slug": {
+                    "type": "string",
+                    "enum": [
+                        "dft"
+                    ]
+                }
+            }
         },
         "subtype": {
-            "enum": [
-                "gga",
-                "lda",
-                "mgga",
-                "ldau"
-            ]
+            "properties": {
+                "name": {
+                    "type": "string"
+                },
+                "slug": {
+                    "type": "string",
+                    "enum": [
+                        "gga",
+                        "lda",
+                        "mgga",
+                        "ldau"
+                    ]
+                }
+            }
         },
         "functional": {
             "oneOf": [
@@ -50,18 +66,7 @@
             }
         },
         "modifiers": {
-            "type": "array",
-            "items": {
-                "type": "object",
-                "properties": {
-                    "slug": {
-                        "enum": [
-                            "soc",
-                            "magn"
-                        ]
-                    }
-                }
-            }
+            "$ref": "dft/modifiers.json"
         }
     }
 }

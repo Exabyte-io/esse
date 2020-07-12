@@ -1,5 +1,8 @@
 {
-    "tier1": "physics-based",
+    "tier1": {
+        "name": "physics-based",
+        "slug": "pb"
+    },
     "tier2": {
         "name": "quantum-mechanical",
         "slug": "qm"
@@ -24,5 +27,8 @@
         "scaling-degree:6",
         "excited-states",
         "user-adjustable"
-    ]
+    ],
+    "method": {
+        "...": "include(../method.json)"
+    }
 }

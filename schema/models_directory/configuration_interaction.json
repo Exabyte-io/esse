@@ -34,10 +34,10 @@
                         "cisd",
                         "cis(d)",
                         "cisdt",
-                        "mr-cis",
-                        "mr-cisd",
-                        "mr-cis(d)",
-                        "mr-cisdt"
+                        "mrcis",
+                        "mrcisd",
+                        "mrcis(d)",
+                        "mrcisdt"
                     ]
                 }
             }

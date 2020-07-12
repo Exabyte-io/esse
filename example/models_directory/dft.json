@@ -6,15 +6,31 @@
         "...": "include(../methods_directory/pseudopotential.json)"
     },
     "modifiers": [
-        {
-            "slug": "soc"
-        }
+        "soc"
     ],
     "refiners": [
         {
             "slug": "hse"
         }
     ],
-    "subtype": "gga",
-    "type": "dft"
+    "tier1": {
+        "name": "physics-based",
+        "slug": "pb"
+    },
+    "tier2": {
+        "name": "ab initio",
+        "slug": "abini"
+    },
+    "tier3": {
+        "name": "Kohn-Sham DFT",
+        "slug": "ksdft"
+    },
+    "type": {
+        "name": "dft",
+        "slug": "dft"
+    },
+    "subtype": {
+        "name": "gga",
+        "slug": "gga"
+    }
 }

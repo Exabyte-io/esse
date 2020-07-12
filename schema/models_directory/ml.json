@@ -10,14 +10,17 @@
     ],
     "properties": {
         "type": {
-            "enum": [
-                "ml"
-            ]
-        },
-        "subtype": {
-            "enum": [
-                "re"
-            ]
+            "properties": {
+                "name" : {
+                    "type": "string"
+                },
+                "slug": {
+                    "enum": [
+                        "re"
+                    ],
+                    "type": "string"
+                }
+            }
         },
         "method": {
             "oneOf": [
