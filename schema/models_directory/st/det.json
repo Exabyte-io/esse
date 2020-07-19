@@ -7,18 +7,12 @@
     ],
     "properties": {
         "tier2": {
-            "properties": {
-                "name": {
-                    "enum": [
-                        "deterministic"
-                    ]
-                },
-                "slug": {
-                    "enum": [
-                        "det"
-                    ]
+            "enum": [
+                {
+                    "name": "deterministic",
+                    "slug": "det"
                 }
-            }
+            ]
         }
     }
 }

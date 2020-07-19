@@ -7,18 +7,12 @@
     ],
     "properties": {
         "tier2": {
-            "properties": {
-                "name": {
-                    "enum": [
-                        "quantum-mechanical"
-                    ]
-                },
-                "slug": {
-                    "enum": [
-                        "qm"
-                    ]
+            "enum": [
+                {
+                    "name": "quantum-mechanical",
+                    "slug": "qm"
                 }
-            }
+            ]
         }
     }
 }

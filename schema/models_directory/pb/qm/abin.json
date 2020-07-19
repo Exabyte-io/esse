@@ -7,18 +7,12 @@
     ],
     "properties": {
         "tier3": {
-            "properties": {
-                "name": {
-                    "enum": [
-                        "ab initio"
-                    ]
-                },
-                "slug": {
-                    "enum": [
-                        "abin"
-                    ]
+            "enum": [
+                {
+                    "name": "ab-initio",
+                    "slug": "abin"
                 }
-            }
+            ]
         }
     }
 }
