@@ -10,18 +10,12 @@
     ],
     "properties": {
         "type": {
-            "properties": {
-                "name" : {
-                    "enum": [
-                        "configuration interaction"
-                    ]
-                },
-                "slug": {
-                    "enum": [
-                        "ci"
-                    ]
+            "enum": [
+                {
+                    "name": "configuration interaction",
+                    "slug": "ci"
                 }
-            }
+            ]
         },
         "subtype":{
             "enum": [

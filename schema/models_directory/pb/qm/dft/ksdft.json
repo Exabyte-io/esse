@@ -9,34 +9,36 @@
     ],
     "properties": {
         "type": {
-            "properties": {
-                "name": {
-                    "enum": [
-                        "Kohn-Sham DFT"
-                    ]
-                },
-                "slug": {
-                    "enum": [
-                        "ksdft"
-                    ]
+            "enum": [
+                {
+                    "name": "Kohn-Sham DFT",
+                    "slug": "ksdft"
                 }
-            }
+            ]
         },
         "subtype": {
-            "properties": {
-                "name": {
-                    "type": "string"
+            "enum": [
+                {
+                    "name": "Local Density Approximation",
+                    "slug": "lda"
                 },
-                "slug": {
-                    "enum": [
-                        "lda",
-                        "gga",
-                        "mgga",
-                        "hybrid",
-                        "dhybrid"
-                    ]
+                {
+                    "name": "Generalized Gradient Approximation",
+                    "slug": "gga"
+                },
+                {
+                    "name": "meta-GGA",
+                    "slug": "mgga"
+                },
+                {
+                    "name": "Hybrid GGA",
+                    "slug": "hybrid"
+                },
+                {
+                    "name": "Double hybrid GGA",
+                    "slug": "dhybrid"
                 }
-            }
+            ]
         },
         "functional": {
             "oneOf": [
