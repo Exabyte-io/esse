@@ -12,6 +12,7 @@
                 "$ref": "definitions.json#/modifiers"
             },
             {
+                "description": "Universal of modifiers",
                 "$ref": "../../../../definitions.json#/modifiers"
             }
         ]

@@ -9,9 +9,11 @@
     "items": {
         "anyOf": [
             {
+                "description": "CI modifiers",
                 "$ref": "definitions.json#/modifiers"
             },
             {
+                "description": "ab initio modifiers",
                 "$ref": "../definitions.json#/modifiers"
             }
         ]

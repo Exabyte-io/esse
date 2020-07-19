@@ -16,7 +16,7 @@
         "slug": "ksdft"
     },
     "subtype": {
-        "name": "gga",
+        "name": "Generalized Gradient Approximation",
         "slug": "gga"
     },
     "functional": "pbe",

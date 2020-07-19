@@ -12,6 +12,11 @@
                 "$ref": "definitions.json#/tags"
             },
             {
+                "description": "QM definitions",
+                "$ref": "../../definitions.json#/scaling/6"
+            },
+            {
+                "description": "Universal definitions",
                 "$ref": "../../../../definitions.json#/tags"
             }
         ]
