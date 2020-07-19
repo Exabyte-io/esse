@@ -1,0 +1,73 @@
+{
+    "schemaId": "models-directory-pb-qm-dft-ksdft",
+    "$schema": "http://json-schema.org/draft-04/schema#",
+    "title": "Kohn-Sham density function theory schema",
+    "allOf": [
+        {
+            "$ref": "../dft.json"
+        }
+    ],
+    "properties": {
+        "type": {
+            "properties": {
+                "name": {
+                    "enum": [
+                        "Kohn-Sham DFT"
+                    ]
+                },
+                "slug": {
+                    "enum": [
+                        "ksdft"
+                    ]
+                }
+            }
+        },
+        "subtype": {
+            "properties": {
+                "name": {
+                    "type": "string"
+                },
+                "slug": {
+                    "enum": [
+                        "lda",
+                        "gga",
+                        "mgga",
+                        "hybrid",
+                        "dhybrid"
+                    ]
+                }
+            }
+        },
+        "functional": {
+            "oneOf": [
+                {
+                    "$ref": "functionals.json#/lda"
+                },
+                {
+                    "$ref": "functionals.json#/gga"
+                },
+                {
+                    "$ref": "functionals.json#/mgga"
+                },
+                {
+                    "$ref": "functionals.json#/hybrid"
+                },
+                {
+                    "$ref": "functionals.json#/doubleHybrid"
+                },
+                {
+                    "$ref": "functionals.json#/custom"
+                }
+            ]
+        },
+        "augmentations": {
+            "$ref": "ksdft/augmentations.json"
+        },
+        "modifiers": {
+            "$ref": "ksdft/modifiers.json"
+        },
+        "tags": {
+            "$ref": "ksdft/tags.json"
+        }
+    }
+}

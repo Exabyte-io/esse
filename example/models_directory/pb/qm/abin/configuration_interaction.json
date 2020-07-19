@@ -9,7 +9,7 @@
     },
     "tier3": {
         "name": "ab initio",
-        "slug": "abini"
+        "slug": "abin"
     },
     "type": {
         "name": "configuration interaction",
@@ -23,12 +23,11 @@
         "multi-reference"
     ],
     "tags": [
-        "wavefunction",
         "scaling-degree:6",
         "excited-states",
         "user-adjustable"
     ],
     "method": {
-        "...": "include(../method.json)"
+        "...": "include(../../../../method.json)"
     }
 }

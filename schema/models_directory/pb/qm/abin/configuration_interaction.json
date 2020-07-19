@@ -1,46 +1,47 @@
 {
-    "schemaId": "models-directory-configuration-interaction",
+    "schemaId": "models-directory-pb-qm-abin-configuration-interaction",
     "$schema": "http://json-schema.org/draft-04/schema#",
     "title": "configuration interaction schema",
     "description": "configuration interaction wavefunction model",
     "allOf": [
         {
-            "$ref": "../model.json"
+            "$ref": "../../../../model.json"
         }
     ],
     "properties": {
         "type": {
             "properties": {
                 "name" : {
-                    "type": "string"
+                    "enum": [
+                        "configuration interaction"
+                    ]
                 },
                 "slug": {
                     "enum": [
                         "ci"
-                    ],
-                    "type": "string"
+                    ]
                 }
             }
         },
         "subtype":{
-            "properties": {
-               "name" : {
-                   "description": "human-readable name",
-                    "type": "string"
+            "enum": [
+                {
+                    "name": "CIS",
+                    "slug": "cis"
                 },
-                "slug": {
-                    "enum": [
-                        "cis",
-                        "cisd",
-                        "cis(d)",
-                        "cisdt",
-                        "mrcis",
-                        "mrcisd",
-                        "mrcis(d)",
-                        "mrcisdt"
-                    ]
+                {
+                    "name": "CISD",
+                    "slug": "cisd"
+                },
+                {
+                    "name": "MR-CIS",
+                    "slug": "mrcis"
+                },
+                {
+                    "name": "MR-CISD",
+                    "slug": "mrcisd"
                 }
-            }
+            ]
         },
         "augmentations": {
             "$ref": "configuration_interaction/augmentations.json"
