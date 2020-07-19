@@ -1,5 +1,5 @@
 {
-    "description": "Top-level (tier1) attributes which pertain to most models",
+    "description": "Top-level (tier1) attributes applicable to most models",
     "tags": {
         "enum": [
             "user-adjustable"
