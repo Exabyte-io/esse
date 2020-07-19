@@ -1,14 +1,6 @@
 {
-    "tags": {
-        "enum": [
-            "ci-tag-placeholder"
-        ]
-    },
-    "augmentations": {
-        "enum": [
-            "ci-aug-placeholder"
-        ]
-    },
+    "tags": {},
+    "augmentations": {},
     "modifiers": {
         "enum":[
             "multi-reference"

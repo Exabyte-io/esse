@@ -1,18 +1,5 @@
 {
-    "$schema": "http://json-schema.org/draft-04/schema#",
-    "tags": {
-        "enum": [
-            "semp-tag-placeholder"
-        ]
-    },
-    "augmentations": {
-        "enum": [
-            "semp-aug-placeholder"
-        ]
-    },
-    "modifiers": {
-        "enum":[
-            "semp-mod-placeholder"
-        ]
-    }
+    "tags": {},
+    "augmentations": {},
+    "modifiers": {}
 }

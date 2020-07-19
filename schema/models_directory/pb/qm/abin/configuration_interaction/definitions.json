@@ -1,19 +1,9 @@
 {
-    "$schema": "http://json-schema.org/draft-04/schema#",
     "tags": {
         "enum": [
-            "excited-states",
-            "scaling-degree:6"
+            "excited-states"
         ]
     },
-    "augmentations": {
-        "enum": [
-            "ci-aug-placeholder"
-        ]
-    },
-    "modifiers": {
-        "enum":[
-            "ci-mod-placeholder"
-        ]
-    }
+    "augmentations": {},
+    "modifiers": {}
 }
