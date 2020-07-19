@@ -1,0 +1,36 @@
+{
+    "schemaId": "models-directory-st-det-ml",
+    "$schema": "http://json-schema.org/draft-04/schema#",
+    "title": "machine learning model schema",
+    "description": "machine learning model type/subtype schema",
+    "allOf": [
+        {
+            "$ref": "../../../model.json"
+        }
+    ],
+    "properties": {
+        "tier3": {
+            "enum": [
+                {
+                    "name": "machine learning",
+                    "slug": "ml"
+                }
+            ]
+        },
+        "type": {
+            "enum": [
+                {
+                    "name": "regression",
+                    "slug": "re"
+                }
+            ]
+        },
+        "method": {
+            "oneOf": [
+                {
+                    "$ref": "../../../methods_directory/regression.json"
+                }
+            ]
+        }
+    }
+}

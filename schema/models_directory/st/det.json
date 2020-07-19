@@ -1,0 +1,24 @@
+{
+    "$schema": "http://json-schema.org/draft-04/schema#",
+    "allOf": [
+        {
+            "$ref": "../st.json"
+        }
+    ],
+    "properties": {
+        "tier2": {
+            "properties": {
+                "name": {
+                    "enum": [
+                        "deterministic"
+                    ]
+                },
+                "slug": {
+                    "enum": [
+                        "det"
+                    ]
+                }
+            }
+        }
+    }
+}
