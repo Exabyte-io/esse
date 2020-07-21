@@ -1,0 +1,16 @@
+{
+    "description": "Universal attributes applicable to most models",
+    "tags": {
+        "enum": [
+            "user-adjustable"
+        ]
+    },
+    "augmentations": {
+        "enum": []
+    },
+    "modifiers": {
+        "enum":[
+            "external-field"
+        ]
+    }
+}

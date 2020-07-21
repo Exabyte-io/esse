@@ -1,0 +1,18 @@
+{
+    "$schema": "http://json-schema.org/draft-04/schema#",
+    "allOf": [
+        {
+            "$ref": "../model.json"
+        }
+    ],
+    "properties": {
+        "tier1": {
+            "enum": [
+                {
+                    "name": "statistical",
+                    "slug": "st"
+                }
+            ]
+        }
+    }
+}
