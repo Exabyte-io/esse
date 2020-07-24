@@ -1,0 +1,165 @@
+# Local Density Approximation
+LDA :
+  exchange:
+    - name: Slater
+      abbr: S
+    - name: Short-range version of Slater-Dirac exchange
+      abbr: SR_LSDA
+  correlation:
+    - name: Perdew-Wang 1992
+      abbr: PW92
+    - name: Perdew-Wang 1992 with RPA values
+      abbr: PW92RPA
+    - name: Short-range version of PW92
+      abbr: srPW92
+    - name: Perdew-Zunger 1981
+      abbr: PZ81
+    - name: 'Vosko-Wilk-Nusair #1'
+      abbr: VWN1
+    - name: 'Vosko-Wilk-Nusair #1 with RPA values'
+      abbr: VWN1RPA
+    - name: 'Vosko-Wilk-Nusair #2'
+      abbr: VWN2
+    - name: 'Vosko-Wilk-Nusair #3'
+      abbr: VWN3
+    - name: 'Vosko-Wilk-Nusair #4'
+      abbr: VWN4
+    - name: 'Vosko-Wilk-Nusair #5'
+      abbr: VWN5
+    - name: Short-range version of VWN
+      abbr: srVWN
+    - name: Liu-Parr
+      abbr: Liu-Parr
+    - name: Proynov-Kong 2009
+      abbr: PK09
+    - name: Wigner
+      abbr: Wigner
+GGA:
+  exchange:
+    - name: Perdew-Burke-Ernzerhof
+      abbr: PBE
+    - name: Zhang-Yang modification of PBE
+      abbr: revPBE
+    - name: Short-range version of PBE by Hirao
+      abbr: muPBE
+    - name: Short-range version of PBE by Goll
+      abbr: srPBE
+    - name: Henderson model for PBE short-range exchange hole
+      abbr: wPBE
+    - name: PBE modified for solids
+      abbr: PBEsol
+    - name: Modification of PBE by Hammer, Hansen, Norskov
+      abbr: RPBE
+    - name: Becke 1988
+      abbr: B88
+    - name: Short-range version of B88
+      abbr: muB88
+    - name: Re-fit version of B88
+      abbr: optB88
+    - name: Armiento-Kümmel 2013
+      abbr: AK13
+    - name: Becke 1986
+      abbr: B86
+    - name: modified gradient correction Becke 1986
+      abbr: mB86
+    - name: Perdew-Wang 1986
+      abbr: PW86
+    - name: revised version of PW86
+      abbr: rPW86
+    - name: Perdew-Wang 1991
+      abbr: PW91
+    - name: modified version of PW91 by Adamo, Barone
+      abbr: mPW91
+    - name: Gill 1996
+      abbr: G96
+    - name: Handy, Cohen
+      abbr: OPTX
+    - name: Second order GGA by Truhlar, Zhao
+      abbr: SOGGA
+  correlation:
+    - name: Perdew-Burke-Ernzerhof
+      abbr: PBE
+    - name: Short-range version of PBE by Goll
+      abbr: srPBE
+    - name: PBE modified for solids
+      abbr: PBEsol
+    - name: PBE modified by Della Salla
+      abbr: PBEloc
+    - name: Slight modification of PBE
+      abbr: [regTPSS, vPBEc]
+    - name: Lee-Yang-Parr
+      abbr: LYP
+    - name: Perdew-Wang 1986 based on PZ81
+      abbr: P86
+    - name: Perdew-Wang based on VWN5
+      abbr: P86VWN5
+    - name: Perdew-Wang 1991
+      abbr: PW91
+  exchange-correlation:
+    - name: 9-parameter D2 dispersion corrected functional by Grimme
+      abbr: B97-D
+    - name: D3(0) corrected version of B97-D
+      abbr: B97-D3(0)
+    - name: 21-parameter non-separable GGA by Truhlar
+      abbr: GAM
+    - name: 21-parameter non-separable GGA by Peverati, Truhlar
+      abbr: N12
+    - name: 20-parameter functional by Peverati, Zhao, Truhlar
+      abbr: SOGGA11
+    # more to add here
+    # TODO: verify:
+    # BEEF-vdW, BOP, EDF1, EDF2, HCTH93, HCTH120, HCTH147, HCTH407, HLE16, KT1, KT2, KT3
+    # how to deal with VV10 non-local correlation?
+    #
+meta-GGA:
+  exchange:
+    - name: Tao, Perdew, Staroverov, Scuseria
+      abbr: TPSS
+    - name: revised version of TPSS
+      abbr: revTPSS
+    - name: One-parameter version of TPSS
+      abbr: modTPSS
+    - name: Five-parameter version of TPSS by Grimme
+      abbr: oTPSS
+    - name: regularized version of TPSS
+      abbr: regTPSS
+    - name: Modification of TPSS for use with TPSSloc by Della Salla
+      abbr: BLOC
+    - name: Exchange functional based on finite uniform electron gas by Loos
+      abbr: PBE-GX
+    - name: Perdew, Kurt, Zupan, Blaha
+      abbr: PKZB
+    - name: Strongly constrained and Appropriately Normed
+      abbr: SCAN
+    - name: Tao, Mo
+      abbr: TM
+  correlation:
+    - name: Tao, Perdew, Staroverov, Scuseria
+      abbr: TPSS
+    - name: revised version of TPSS
+      abbr: revTPSS
+    - name: Modification of TPSS based on PBEloc
+      abbr: TPSSloc
+    - name: Two-parameter version of TPSS by Grimme
+      abbr: oTPSS
+    - name: Becke 1995
+      abbr: B95
+    - name: Proynov-Kong 2006
+      abbr: PK06
+    - name: Perdew, Kurt, Zupan, Blaha
+      abbr: PKZB
+    - name: Strongly constrained and Appropriately Normed
+      abbr: SCAN
+    - name: Tao, Mo
+      abbr: TM
+  exchange-correlation:
+    - name: 12-parameter combinatorially-optimized, VV10 dispersion corrected functional by Head-Gordon, Mardirossian
+      abbr: B97M-V
+    - name: rVV10 corrected version of B97M-V
+      abbr: B97M-rV
+    - name: 34-parameter functional by Truhlar, Zhao
+      abbr: M06-L
+    - name: 31-parameter functional
+      abbr: revM06-L
+    # TODO: verify other examples of non-separable meta-GGA exchange-correlation functionals
+# TODO: add hybrid functionals and double-hybrid functionals
