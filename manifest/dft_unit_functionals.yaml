@@ -1,5 +1,6 @@
 # Local Density Approximation
-LDA :
+# TODO: add DOI
+LDA:
   exchange:
     - name: Slater
       abbr: S
@@ -14,17 +15,17 @@ LDA :
       abbr: srPW92
     - name: Perdew-Zunger 1981
       abbr: PZ81
-    - name: 'Vosko-Wilk-Nusair #1'
+    - name: Vosko-Wilk-Nusair \#1
       abbr: VWN1
-    - name: 'Vosko-Wilk-Nusair #1 with RPA values'
+    - name: Vosko-Wilk-Nusair \#1 with RPA values
       abbr: VWN1RPA
-    - name: 'Vosko-Wilk-Nusair #2'
+    - name: Vosko-Wilk-Nusair \#2
       abbr: VWN2
-    - name: 'Vosko-Wilk-Nusair #3'
+    - name: Vosko-Wilk-Nusair \#3
       abbr: VWN3
-    - name: 'Vosko-Wilk-Nusair #4'
+    - name: Vosko-Wilk-Nusair \#4
       abbr: VWN4
-    - name: 'Vosko-Wilk-Nusair #5'
+    - name: Vosko-Wilk-Nusair \#5
       abbr: VWN5
     - name: Short-range version of VWN
       abbr: srVWN
@@ -163,3 +164,5 @@ meta-GGA:
       abbr: revM06-L
     # TODO: verify other examples of non-separable meta-GGA exchange-correlation functionals
 # TODO: add hybrid functionals and double-hybrid functionals
+
+# TODO: add field: Range of application or notes (what property/material is it good for?)

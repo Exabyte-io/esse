@@ -1,0 +1,13 @@
+{
+    "schemaId": "models-directory-dft-definitions-components-local-functional-gga",
+    "$schema": "http://json-schema.org/draft-04/schema#",
+    "title": "local functional component schema",
+    "allOf": [
+        {
+            "$ref": "local_functional.json"
+        },
+        {
+            "$ref": "../../dft_unit_functionals.json#/gga"
+        }
+    ]
+}

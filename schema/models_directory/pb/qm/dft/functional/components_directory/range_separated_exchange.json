@@ -1,0 +1,42 @@
+{
+    "schemaId": "models-directory-dft-definitions-components-range-separated-x",
+    "$schema": "http://json-schema.org/draft-04/schema#",
+    "title": "range-separated exchange schema",
+    "allOf": [
+        {
+            "$ref": "../component.json"
+        }
+    ],
+    "properties": {
+        "name": {
+            "enum": [
+                "range-separated"
+            ]
+        },
+        "type": {
+            "enum": [
+                "exchange"
+            ]
+        },
+        "switchingFrom": {
+            "description": "component which dominates at short range",
+            "type": "string"
+        },
+        "switchingTo": {
+            "description": "component which dominates at long range",
+            "type": "string"
+        },
+        "shortRangeFraction": {
+            "description": "fraction of [switchingTo] at short range, usually denoted as alpha",
+            "type": "number"
+        },
+        "longRangeFraction": {
+            "description": "fraction of [switchingTo] at long range, equal to alpha + beta",
+            "type": "number"
+        },
+        "attenuation": {
+            "description": "attenuation parameter, usually denoted as omega or mu",
+            "type": "number"
+        }
+    }
+}

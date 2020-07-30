@@ -13,6 +13,9 @@
                     "slug": "dft"
                 }
             ]
+        },
+        "functional": {
+            "$ref": "dft/functional.json"
         }
     }
 }

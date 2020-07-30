@@ -1,0 +1,13 @@
+{
+    "schemaId": "models-directory-dft-definitions-components-dispersion-correction",
+    "$schema": "http://json-schema.org/draft-04/schema#",
+    "title": "dispersion correction schema",
+    "allOf": [
+        {
+            "$ref": "../component.json"
+        },
+        {
+            "$ref": "../../dft_unit_functionals.json#/dispersion"
+        }
+    ]
+}

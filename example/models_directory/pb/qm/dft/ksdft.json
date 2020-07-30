@@ -19,7 +19,9 @@
         "name": "Generalized Gradient Approximation",
         "slug": "gga"
     },
-    "functional": "pbe",
+    "functional": {
+        "...": "include(functional.json)"
+    },
     "method": {
         "...": "include(../../../../methods_directory/pseudopotential.json)"
     },
