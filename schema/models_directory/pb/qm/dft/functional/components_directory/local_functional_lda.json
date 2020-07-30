@@ -5,9 +5,7 @@
     "allOf": [
         {
             "$ref": "local_functional.json"
-        }
-    ],
-    "oneOf": [
+        },
         {
             "$ref": "../../dft_unit_functionals.json#/lda"
         }
