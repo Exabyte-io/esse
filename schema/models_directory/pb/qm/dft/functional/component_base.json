@@ -4,13 +4,16 @@
     "title": "functional component schema",
     "allOf": [
         {
-            "$ref": "component_base.json"
+            "$ref": "../../../../../core/primitive/slugified_entry.json"
         }
     ],
     "properties": {
-        "fraction": {
-            "description": "Contribution of component to final functional object",
-            "type": "number"
+        "type": {
+            "description": "type of functional, e.g. exchange functional",
+            "type": "string"
         }
-    }
+    },
+    "required": [
+        "type"
+    ]
 }

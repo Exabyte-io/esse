@@ -1,44 +1,16 @@
 {
     "$schema": "http://json-schema.org/draft-04/schema#",
     "lda": {
-        "oneOf": [
+        "enum": [
             {
-                "properties": {
-                    "name": {
-                        "enum": [
-                            "Slater"
-                        ]
-                    },
-                    "slug": {
-                        "enum": [
-                            "slater"
-                        ]
-                    },
-                    "type": {
-                        "enum": [
-                            "exchange"
-                        ]
-                    }
-                }
+                "name": "Slater",
+                "slug": "slater",
+                "type": "exchange"
             },
             {
-                "properties": {
-                    "name": {
-                        "enum": [
-                            "Perdew-Wang 1992"
-                        ]
-                    },
-                    "slug": {
-                        "enum": [
-                            "pw92"
-                        ]
-                    },
-                    "type": {
-                        "enum": [
-                            "correlation"
-                        ]
-                    }
-                }
+                "name": "Perdew-Wang 1992",
+                "slug": "pw92",
+                "type": "correlation"
             }
         ]
     },

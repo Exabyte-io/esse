@@ -4,7 +4,7 @@
     "title": "local functional component schema",
     "allOf": [
         {
-            "$ref": "../component.json"
+            "$ref": "../component_base.json"
         }
     ],
     "properties": {
