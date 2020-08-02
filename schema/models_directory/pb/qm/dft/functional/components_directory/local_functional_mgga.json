@@ -7,7 +7,7 @@
             "$ref": "local_functional.json"
         },
         {
-            "$ref": "../../dft_unit_functionals.json#/gga"
+            "$ref": "../../dft_unit_functionals.json#/mgga"
         }
     ]
 }
