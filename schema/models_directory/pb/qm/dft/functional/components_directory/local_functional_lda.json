@@ -7,11 +7,7 @@
             "$ref": "local_functional.json"
         },
         {
-            "oneOf": [
-                {
-                    "$ref": "../../dft_unit_functionals.json#/lda"
-                }
-            ]
+            "$ref": "../../dft_unit_functionals.json#/lda"
         }
     ]
 }

@@ -1,0 +1,71 @@
+{
+    "description": "Used to generate dft_unit_functionals.json",
+    "lda": [
+        {
+            "name": "Slater",
+            "slug": "slater",
+            "type": "exchange"
+        },
+        {
+            "name": "Perdew-Wang 1992",
+            "slug": "pw92",
+            "type": "correlation"
+        },
+        {
+            "name": "VWN1RPA",
+            "slug": "vwn1rpa",
+            "type": "correlation"
+        },
+        {
+            "name": "VWN5",
+            "slug": "vwn5",
+            "type": "correlation"
+        }
+    ],
+    "gga": [
+        {
+            "name": "PBE",
+            "slug": "pbe-x",
+            "type": "exchange"
+        },
+        {
+            "name": "Becke 1988",
+            "slug": "b88",
+            "type": "exchange"
+        },
+        {
+            "name": "Becke 1997",
+            "slug": "b97",
+            "type": "exchange"
+        },
+        {
+            "name": "PBE",
+            "slug": "pbe-c",
+            "type": "correlation"
+        },
+        {
+            "name": "LYP",
+            "slug": "lyp",
+            "type": "correlation"
+        }
+    ],
+    "mgga": [
+        {
+            "name": "TPSS",
+            "slug": "tpss-x",
+            "type": "exchange"
+        },
+        {
+            "name": "TPSS",
+            "slug": "tpss-c",
+            "type": "correlation"
+        }
+    ],
+    "dispersion": [
+        {
+            "name": "VV10",
+            "slug": "vv10",
+            "type": "dispersion"
+        }
+    ]
+}

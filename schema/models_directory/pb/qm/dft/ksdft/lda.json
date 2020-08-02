@@ -1,7 +1,7 @@
 {
     "schemaId": "models-directory-pb-qm-dft-ksdft-lda",
     "$schema": "http://json-schema.org/draft-04/schema#",
-    "title": "exchange-correlation functional base schema",
+    "title": "Local Density Approximation model schema",
     "allOf": [
         {
             "$ref": "../ksdft.json"

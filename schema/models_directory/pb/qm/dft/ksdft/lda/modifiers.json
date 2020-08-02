@@ -5,7 +5,7 @@
             "$ref": "../../../../../../model/modifiers.json"
         }
     ],
-    "description": "Modifiers specific to this model type only.",
+    "description": "Modifiers specific to LDA functionals only.",
     "items": {
         "anyOf": [
             {

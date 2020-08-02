@@ -90,6 +90,8 @@ Primitives are solely defined by the default primitives and can not be re-constr
 
 This directory contains the examples formed according to the schemas and implements the same directory structure as the schema directory.
 
+Note: A list of DFT unit functionals (`dft_unit_functionals.json`) is generated during the Python test from the corresponding prototype file (`dft_unit_functionals_proto.json`).
+
 ### src
 
 This directory contains Python and Javascript interfaces implementing the functionality to access and validate schemas and examples.
