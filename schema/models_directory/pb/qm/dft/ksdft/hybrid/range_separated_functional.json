@@ -1,7 +1,7 @@
 {
-    "schemaId": "models-directory-pb-qm-dft-ksdft-..",
+    "schemaId": "models-directory-pb-qm-dft-ksdft-hybrid-rs-functional",
     "$schema": "http://json-schema.org/draft-04/schema#",
-    "title": "exchange-correlation functional base schema",
+    "title": "range-separated hybrid exchange-correlation functional base schema",
     "allOf": [
         {
             "$ref": "functional.json"

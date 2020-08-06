@@ -1,4 +1,5 @@
 {
+    "$comment": "TODO: replace by XC functional look-up table",
     "description": "Names of final functional objects, i.e. the ones used in calculations",
     "lda": {
         "enum": [
