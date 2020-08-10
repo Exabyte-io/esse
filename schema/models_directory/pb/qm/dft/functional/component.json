@@ -1,0 +1,23 @@
+{
+    "schemaId": "models-directory-pb-qm-dft-functional-component",
+    "$schema": "http://json-schema.org/draft-04/schema#",
+    "title": "functional component schema",
+    "allOf": [
+        {
+            "$ref": "../../../../../core/primitive/slugified_entry.json"
+        }
+    ],
+    "properties": {
+        "type": {
+            "description": "type of functional, e.g. exchange functional",
+            "type": "string"
+        },
+        "fraction": {
+            "description": "Contribution of component to final functional object",
+            "type": "number"
+        }
+    },
+    "required": [
+        "type"
+    ]
+}

@@ -12,14 +12,7 @@
             ]
         },
         "functional": {
-            "oneOf": [
-                {
-                    "$ref": "../../../models_directory/pb/qm/dft/functionals.json#/lda"
-                },
-                {
-                    "$ref": "../../../models_directory/pb/qm/dft/functionals.json#/gga"
-                }
-            ]
+            "type": "string"
         }
     }
 }

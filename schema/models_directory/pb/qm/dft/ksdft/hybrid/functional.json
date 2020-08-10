@@ -1,0 +1,25 @@
+{
+    "schemaId": "models-directory-pb-qm-df-ksdft-hybrid-functional",
+    "$schema": "http://json-schema.org/draft-04/schema#",
+    "title": "Hybrid functional schema",
+    "allOf": [
+        {
+            "$ref": "../../functional.json"
+        }
+    ],
+    "properties": {
+        "components": {
+            "type": "array",
+            "items": {
+                "oneOf": [
+                    {
+                        "$ref": "../../functional/components_directory/exact_exchange.json"
+                    },
+                    {
+                        "$ref": "../../functional/local_functional_components.json"
+                    }
+                ]
+            }
+        }
+    }
+}

@@ -1,0 +1,38 @@
+{
+    "$comment": "TODO: replace by XC functional look-up table",
+    "description": "Names of final functional objects, i.e. the ones used in calculations",
+    "lda": {
+        "enum": [
+            "SVWN1",
+            "SVWN5"
+        ]
+    },
+    "gga": {
+        "enum": [
+            "PBE",
+            "revPBE",
+            "BLYP",
+            "BP86"
+        ]
+    },
+    "mgga": {
+        "enum": [
+            "TPSS",
+            "SCAN"
+        ]
+    },
+    "hybrid": {
+        "enum": [
+            "PBE0",
+            "revPBE0",
+            "B3LYP",
+            "CAM-B3LYP"
+        ]
+    },
+    "doubleHybrid": {
+        "enum": [
+            "XYG3",
+            "B2PLYP"
+        ]
+    }
+}

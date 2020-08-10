@@ -16,14 +16,14 @@
         "slug": "ksdft"
     },
     "subtype": {
-        "name": "Generalized Gradient Approximation",
-        "slug": "gga"
+        "name": "Local Density Approximation",
+        "slug": "lda"
     },
     "functional": {
-        "...": "include(functional.json)"
+        "...": "include(lda/functional.json)"
     },
     "method": {
-        "...": "include(../../../../methods_directory/pseudopotential.json)"
+        "...": "include(../../../../../methods_directory/pseudopotential.json)"
     },
     "modifiers": [
         "soc"

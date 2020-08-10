@@ -16,52 +16,6 @@
                 }
             ]
         },
-        "subtype": {
-            "enum": [
-                {
-                    "name": "Local Density Approximation",
-                    "slug": "lda"
-                },
-                {
-                    "name": "Generalized Gradient Approximation",
-                    "slug": "gga"
-                },
-                {
-                    "name": "meta-GGA",
-                    "slug": "mgga"
-                },
-                {
-                    "name": "Hybrid GGA",
-                    "slug": "hybrid"
-                },
-                {
-                    "name": "Double hybrid GGA",
-                    "slug": "dhybrid"
-                }
-            ]
-        },
-        "functional": {
-            "oneOf": [
-                {
-                    "$ref": "functionals.json#/lda"
-                },
-                {
-                    "$ref": "functionals.json#/gga"
-                },
-                {
-                    "$ref": "functionals.json#/mgga"
-                },
-                {
-                    "$ref": "functionals.json#/hybrid"
-                },
-                {
-                    "$ref": "functionals.json#/doubleHybrid"
-                },
-                {
-                    "$ref": "functionals.json#/custom"
-                }
-            ]
-        },
         "augmentations": {
             "$ref": "ksdft/augmentations.json"
         },
