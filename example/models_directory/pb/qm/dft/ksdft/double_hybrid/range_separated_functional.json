@@ -19,14 +19,14 @@
         },
         {
             "name": "Becke 1997",
-            "slug": "b97",
+            "slug": "b97-x",
             "type": "exchange",
             "range": "short-range",
             "fraction": 0.3212
         },
         {
             "name": "Becke 1997",
-            "slug": "b97",
+            "slug": "b97-x",
             "type": "exchange",
             "range": "long-range",
             "fraction": 0.0
