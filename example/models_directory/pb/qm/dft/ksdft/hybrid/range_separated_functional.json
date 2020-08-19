@@ -7,28 +7,28 @@
             "name": "exact Exchange",
             "slug": "exact-exchange",
             "type": "exchange",
-            "subtype": "short-range",
+            "range": "short-range",
             "fraction": 0.19
         },
         {
             "name": "exact Exchange",
             "slug": "exact-exchange",
             "type": "exchange",
-            "subtype": "long-range",
+            "range": "long-range",
             "fraction": 0.65
         },
         {
             "name": "Becke 1988",
             "slug": "b88",
             "type": "exchange",
-            "subtype": "short-range",
+            "range": "short-range",
             "fraction": 0.81
         },
         {
             "name": "Becke 1988",
             "slug": "b88",
             "type": "exchange",
-            "subtype": "long-range",
+            "range": "long-range",
             "fraction": 0.35
         },
         {

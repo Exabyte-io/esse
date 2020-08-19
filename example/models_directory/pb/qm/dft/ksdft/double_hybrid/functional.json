@@ -16,7 +16,7 @@
         },
         {
             "name": "mp2-correction",
-            "slug": "mp2-c",
+            "slug": "mp2",
             "type": "correlation",
             "subtype": "all-spin",
             "fraction": 0.27
