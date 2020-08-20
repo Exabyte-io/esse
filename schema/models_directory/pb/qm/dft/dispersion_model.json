@@ -1,0 +1,22 @@
+{
+    "schemaId": "models-directory-pb-qm-dft-dispersion-model",
+    "$schema": "http://json-schema.org/draft-04/schema#",
+    "title": "Different approaches to recover long-range dispersion in DFT",
+    "properties": {
+        "type": {
+            "description": "Category dispersion model belongs to, e.g. 'empirical dispersion correction'",
+            "type": "string"
+        },
+        "name": {
+            "description": "Name of realization of dispersion model, e.g. DFT-D2",
+            "type": "string"
+        },
+        "slug": {
+            "description": "Slug for realization of dispersion model, e.g. dft-d2",
+            "type": "string"
+        }
+    },
+    "required": [
+        "type"
+    ]
+}

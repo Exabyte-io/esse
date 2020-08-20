@@ -1,0 +1,13 @@
+{
+    "schemaId": "models-directory-pb-qm-dft-dispersion-models-directory-non-local-correlation",
+    "$schema": "http://json-schema.org/draft-04/schema#",
+    "title": "Non-local correlation density functionals",
+    "allOf": [
+        {
+            "$ref": "../dispersion_model.json"
+        },
+        {
+            "$ref": "../dft_unit_functionals.json#/nonLocalCorrelation"
+        }
+    ]
+}

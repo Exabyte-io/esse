@@ -1,0 +1,117 @@
+{
+    "schemaId": "models-directory-pb-qm-dft-dispersion-models-directory-empirical",
+    "$schema": "http://json-schema.org/draft-04/schema#",
+    "title": "Empirical Dispersion Correction",
+    "allOf": [
+        {
+            "$ref": "../dispersion_model.json"
+        }
+    ],
+    "properties": {
+        "type": {
+            "enum": [
+                "empirical"
+            ]
+        }
+    },
+    "oneOf": [
+        {
+            "properties": {
+                "name": {
+                    "enum": [
+                        "DFT-D2"
+                    ]
+                },
+                "slug": {
+                    "enum": [
+                        "dft-d2"
+                    ]
+                }
+            }
+        },
+        {
+            "properties": {
+                "name": {
+                    "enum": [
+                        "DFT-CHG"
+                    ]
+                },
+                "slug": {
+                    "enum": [
+                        "dft-chg"
+                    ]
+                }
+            }
+        },
+        {
+            "properties": {
+                "name": {
+                    "enum": [
+                        "DFT-D3(0)"
+                    ]
+                },
+                "slug": {
+                    "enum": [
+                        "dft-d3-0"
+                    ]
+                }
+            }
+        },
+        {
+            "properties": {
+                "name": {
+                    "enum": [
+                        "DFT-D3(BJ)"
+                    ]
+                },
+                "slug": {
+                    "enum": [
+                        "dft-d3-bj"
+                    ]
+                }
+            }
+        },
+        {
+            "properties": {
+                "name": {
+                    "enum": [
+                        "DFT-D3(CSO)"
+                    ]
+                },
+                "slug": {
+                    "enum": [
+                        "dft-d3-cso"
+                    ]
+                }
+            }
+        },
+        {
+            "properties": {
+                "name": {
+                    "enum": [
+                        "DFT-D3M(BJ)"
+                    ]
+                },
+                "slug": {
+                    "enum": [
+                        "dft-d3-mbj"
+                    ]
+                }
+            }
+        },
+        {
+            "properties": {
+                "name": {
+                    "enum": [
+                        "DFT-D3(op)"
+                    ]
+                },
+                "slug": {
+                    "enum": [
+                        "dft-d3-op"
+                    ]
+                }
+            }
+        }
+    ]
+}

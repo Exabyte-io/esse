@@ -335,5 +335,17 @@
             "slug": "tm-c",
             "type": "correlation"
         }
+    ],
+    "nonLocalCorrelation": [
+        {
+            "name": "VV10",
+            "slug": "vv10",
+            "type": "non-local correlation"
+        },
+        {
+            "name": "rVV10",
+            "slug": "rvv10",
+            "type": "non-local correlation"
+        }
     ]
 }

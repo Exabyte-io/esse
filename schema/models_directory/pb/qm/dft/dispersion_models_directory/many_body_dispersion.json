@@ -1,0 +1,27 @@
+{
+    "schemaId": "models-directory-pb-qm-dft-dispersion-models-directory-many-body-dispersion",
+    "$schema": "http://json-schema.org/draft-04/schema#",
+    "title": "Many-Body Dispersion approach (MBD)",
+    "allOf": [
+        {
+            "$ref": "../dispersion_model.json"
+        }
+    ],
+    "properties": {
+        "type": {
+            "enum": [
+                "many-body dispersion"
+            ]
+        },
+        "name": {
+            "enum": [
+                "MBD@rsSCS"
+            ]
+        },
+        "slug": {
+            "enum": [
+                "mbd-rsscs"
+            ]
+        }
+    }
+}

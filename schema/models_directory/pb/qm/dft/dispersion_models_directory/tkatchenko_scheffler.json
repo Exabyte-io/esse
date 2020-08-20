@@ -1,0 +1,27 @@
+{
+    "schemaId": "models-directory-pb-qm-dft-dispersion-models-directory-tkatchenko-scheffler",
+    "$schema": "http://json-schema.org/draft-04/schema#",
+    "title": "Tkatchenko-Scheffler van der Waals approach",
+    "allOf": [
+        {
+            "$ref": "../dispersion_model.json"
+        }
+    ],
+    "properties": {
+        "type": {
+            "enum": [
+                "Tkatchenko-Scheffler"
+            ]
+        },
+        "name": {
+            "enum": [
+                "TS-vdW"
+            ]
+        },
+        "slug": {
+            "enum": [
+                "ts-vdw"
+            ]
+        }
+    }
+}
