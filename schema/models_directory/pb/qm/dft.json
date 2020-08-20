@@ -16,6 +16,25 @@
         },
         "functional": {
             "$ref": "dft/functional.json"
+        },
+        "dispersionModel": {
+            "oneOf": [
+                {
+                    "$ref": "dft/dispersion_models_directory/empirical.json"
+                },
+                {
+                    "$ref": "dft/dispersion_models_directory/non_local_correlation.json"
+                },
+                {
+                    "$ref": "dft/dispersion_models_directory/exchange_dipole.json"
+                },
+                {
+                    "$ref": "dft/dispersion_models_directory/tkatchenko_scheffler.json"
+                },
+                {
+                    "$ref": "dft/dispersion_models_directory/many_body_dispersion.json"
+                }
+            ]
         }
     }
 }
