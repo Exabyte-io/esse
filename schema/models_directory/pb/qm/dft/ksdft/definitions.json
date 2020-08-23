@@ -1,5 +1,9 @@
 {
     "tags": {},
     "augmentations": {},
-    "modifiers": {}
+    "modifiers": {
+        "enum": [
+            "dispersion-corrected"
+        ]
+    }
 }

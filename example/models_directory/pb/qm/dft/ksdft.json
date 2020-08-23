@@ -29,7 +29,8 @@
         "...": "include(../../../../methods_directory/pseudopotential.json)"
     },
     "modifiers": [
-        "soc"
+        "soc",
+        "dispersion-corrected"
     ],
     "tags": [
         "user-adjustable",

@@ -12,7 +12,11 @@
                 "$ref": "definitions.json#/modifiers"
             },
             {
-                "description": "Universal of modifiers",
+                "description": "Universal PB modifiers",
+                "$ref": "../../definitions.json#/modifiers"
+            },
+            {
+                "description": "Universal QM modifiers",
                 "$ref": "../../../../definitions.json#/modifiers"
             }
         ]
