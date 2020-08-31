@@ -7,40 +7,40 @@
             "name": "exact Exchange",
             "slug": "exact-exchange",
             "type": "exchange",
-            "subtype": "short-range",
+            "range": "short-range",
             "fraction": 0.6788
         },
         {
             "name": "exact Exchange",
             "slug": "exact-exchange",
             "type": "exchange",
-            "subtype": "long-range",
+            "range": "long-range",
             "fraction": 1.0
         },
         {
             "name": "Becke 1997",
-            "slug": "b97",
+            "slug": "b97-x",
             "type": "exchange",
-            "subtype": "short-range",
+            "range": "short-range",
             "fraction": 0.3212
         },
         {
             "name": "Becke 1997",
-            "slug": "b97",
+            "slug": "b97-x",
             "type": "exchange",
-            "subtype": "long-range",
+            "range": "long-range",
             "fraction": 0.0
         },
         {
             "name": "mp2-correction",
-            "slug": "mp2-c",
+            "slug": "mp2",
             "type": "correlation",
             "subtype": "same-spin",
             "fraction": 0.5816
         },
         {
             "name": "mp2-correction",
-            "slug": "mp2-c",
+            "slug": "mp2",
             "type": "correlation",
             "subtype": "opposite-spin",
             "fraction": 0.4780
