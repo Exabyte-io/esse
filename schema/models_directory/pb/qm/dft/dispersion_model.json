@@ -1,0 +1,32 @@
+{
+    "schemaId": "models-directory-pb-qm-dft-dispersion-model",
+    "$schema": "http://json-schema.org/draft-04/schema#",
+    "title": "generalized DFT dispersion model",
+    "properties": {
+        "modelType": {
+            "description": "Specifies the theoretical approach",
+            "enum": [
+                "ab initio",
+                "empirical"
+            ]
+        },
+        "usage": {
+            "description": "Specifies where dispersion model is applied",
+            "enum": [
+                "intra-scf",
+                "post-scf"
+            ]
+        },
+        "type": {
+            "$ref": "../../../../core/primitive/slugified_entry.json"
+        },
+        "subtype": {
+            "$ref": "../../../../core/primitive/slugified_entry.json"
+        }
+    },
+    "required": [
+        "modelType",
+        "usage",
+        "type"
+    ]
+}

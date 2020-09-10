@@ -16,6 +16,9 @@
         },
         "functional": {
             "$ref": "dft/functional.json"
+        },
+        "dispersionModel": {
+            "$ref": "dft/dispersion_model.json"
         }
     }
 }
