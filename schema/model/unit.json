@@ -1,0 +1,28 @@
+{
+    "schemaId": "model-unit",
+    "$schema": "http://json-schema.org/draft-04/schema#",
+    "title": "unit model schema",
+    "type": "object",
+    "properties": {
+        "head": {
+            "description": "Whether this unit is the first one in the model sequence.",
+            "type": "boolean"
+        },
+        "modelId": {
+            "description": "Identity of the unit model. Used to trace the sequence of models.",
+            "type": "string"
+        },
+        "previous": {
+            "description": "Next unit's modelId. If empty, the current unit is the head.",
+            "type": "string"
+        },
+        "next": {
+            "description": "Next unit's modelId. If empty, the current unit is the last.",
+            "type": "string"
+        }
+    },
+    "required": [
+        "type",
+        "modelId"
+    ]
+}
