@@ -4,6 +4,41 @@
     "title": "unit model schema",
     "type": "object",
     "properties": {
+        "tier1": {
+            "description": "top-level category, e.g. `physics-based`",
+            "$ref": "../core/primitive/slugified_entry_or_slug.json"
+        },
+        "tier2": {
+            "description": "second level category, e.g. `quantum mechanical`",
+            "$ref": "../core/primitive/slugified_entry_or_slug.json"
+        },
+        "tier3": {
+            "description": "third level category, e.g. `ab initio`",
+            "$ref": "../core/primitive/slugified_entry_or_slug.json"
+        },
+        "type": {
+            "description": "general type of the model, eg. `dft`",
+            "$ref": "../core/primitive/slugified_entry_or_slug.json"
+        },
+        "subtype": {
+            "description": "general subtype of the model, eg. `lda`",
+            "$ref": "../core/primitive/slugified_entry_or_slug.json"
+        },
+        "method": {
+            "$ref": "../method.json"
+        },
+        "reference": {
+            "$ref": "../core/reference/literature.json"
+        },
+        "augmentations": {
+            "$ref": "augmentations.json"
+        },
+        "modifiers": {
+            "$ref": "modifiers.json"
+        },
+        "tags": {
+            "$ref": "tags.json"
+        },
         "head": {
             "description": "Whether this unit is the first one in the model sequence.",
             "type": "boolean"
@@ -13,7 +48,7 @@
             "type": "string"
         },
         "previous": {
-            "description": "Next unit's modelId. If empty, the current unit is the head.",
+            "description": "Previous unit's modelId. If empty, the current unit is the head.",
             "type": "string"
         },
         "next": {
@@ -22,7 +57,11 @@
         }
     },
     "required": [
+        "tier1",
+        "tier2",
+        "tier3",
         "type",
+        "method",
         "modelId"
     ]
 }
