@@ -1,5 +1,5 @@
 import os
-from setuptools import setup
+from setuptools import find_packages, setup
 
 
 def get_files_by_path(path):
@@ -10,6 +10,9 @@ def get_files_by_path(path):
     return files
 
 
+with open('./README.md', 'r') as f:
+    long_description = f.read()
+
 DIR = os.path.abspath(os.path.dirname(__file__))
 EXTRA_FILES = get_files_by_path(os.path.join(DIR, "example"))
 EXTRA_FILES.extend(get_files_by_path(os.path.join(DIR, "schema")))
@@ -19,10 +22,12 @@ setup(
     name='esse',
     version='2.3.0',
     description='Exabyte Source of Schemas and Examples',
+    long_description=long_description,
+    long_description_content_type='text/markdown',
     url='https://github.com/Exabyte-io/exabyte-esse',
     author='Exabyte Inc.',
     author_email='info@exabyte.io',
-    packages=['esse'],
+    packages=find_packages(),
     package_dir={'': 'src/py'},
     package_data={'esse': [f.replace(DIR, "data") for f in EXTRA_FILES]},
     install_requires=[
