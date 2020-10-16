@@ -1,0 +1,22 @@
+{
+    "schemaId": "models-directory-pb-qm-dft-dispersion-models-directory-generalized-intra-empirical",
+    "$schema": "http://json-schema.org/draft-04/schema#",
+    "title": "empirical dispersion model applied during SCF",
+    "allOf": [
+        {
+            "$ref": "../../dispersion_model.json"
+        }
+    ],
+    "properties": {
+        "modelType": {
+            "enum": [
+                "empirical"
+            ]
+        },
+        "usage": {
+            "enum": [
+                "intra-scf"
+            ]
+        }
+    }
+}

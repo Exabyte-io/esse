@@ -1,0 +1,12 @@
+{
+    "modelType": "ab initio",
+    "usage": "post-scf",
+    "type": {
+        "name": "Many-body dispersion correction",
+        "slug": "many-body-disp"
+    },
+    "subtype": {
+        "name": "MBD@rsSCS (range-separated self-consistent screening)",
+        "slug": "mbd-rsscs"
+    }
+}
