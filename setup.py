@@ -36,7 +36,7 @@ setup(
         "python-slugify==2.0.1",
         "exabyte_json_include==2.0.0"
     ],
-    python_requires='>=2.7,<3',
+    python_requires=">=3.6",
     classifiers=[
         'Programming Language :: Python',
         'Programming Language :: Python :: 2 :: Only',
