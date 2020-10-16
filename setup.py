@@ -27,7 +27,7 @@ setup(
     url='https://github.com/Exabyte-io/exabyte-esse',
     author='Exabyte Inc.',
     author_email='info@exabyte.io',
-    packages=find_packages(),
+    packages=find_packages(exclude=['src/py/tests*']),
     package_dir={'': 'src/py'},
     package_data={'esse': [f.replace(DIR, "data") for f in EXTRA_FILES]},
     install_requires=[
