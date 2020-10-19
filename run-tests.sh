@@ -34,7 +34,7 @@ virtualenv --python ${PYTHON_BIN} ${THIS_DIR}/venv
 source ${THIS_DIR}/venv/bin/activate
 trap "deactivate" EXIT
 if [ -f ${THIS_DIR}/requirements-dev.txt ]; then
-    pip install -r ${THIS_DIR}/requirements-dev.txt
+    pip install -r ${THIS_DIR}/requirements-dev.txt --no-deps
 fi
 
 # python tests
