@@ -25,4 +25,4 @@ jobs:
 
     - name: Test with pytest
       run: |
-        python ${THIS_DIR}/src/py/esse/tests/validate.py
+        python src/py/esse/tests/validate.py
