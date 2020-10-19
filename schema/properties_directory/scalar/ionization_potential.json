@@ -1,0 +1,17 @@
+{
+    "schemaId": "properties-directory-scalar-ionization-potential",
+    "$schema": "http://json-schema.org/draft-04/schema#",
+    "title": "ionization potential schema",
+    "allOf": [
+        {
+            "$ref": "../../core/reusable/energy.json"
+        }
+    ],
+    "properties": {
+        "name": {
+            "enum": [
+                "ionization_potential"
+            ]
+        }
+    }
+}

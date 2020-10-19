@@ -1,0 +1,45 @@
+{
+    "schemaId": "properties-directory-non-scalar-vibrational-spectrum",
+    "$schema": "http://json-schema.org/draft-04/schema#",
+    "title": "Vibrational spectrum schema",
+    "type": "object",
+    "allOf": [
+        {
+            "$ref": "../../core/abstract/2d_plot.json"
+        }
+    ],
+    "properties": {
+        "xAxis": {
+            "properties": {
+                "label": {
+                    "enum": [
+                        "frequency",
+                        "wavenumber"
+                    ]
+                },
+                "units": {
+                    "$ref": "../../definitions/units.json#/frequency"
+                }
+            }
+        },
+        "yAxis": {
+            "properties": {
+                "label": {
+                    "enum": [
+                        "Intensity",
+                        "Absorbance",
+                        "Absorption coefficient"
+                    ]
+                },
+                "units": {
+                    "$ref": "../../definitions/units.json#/spectralIntensity"
+                }
+            }
+        },
+        "name": {
+            "enum": [
+                "vibrational_spectrum"
+            ]
+        }
+    }
+}

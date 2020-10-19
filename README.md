@@ -19,7 +19,7 @@ pip install esse
 #### Repository
 
 ```bash
-virtualenv .venv
+virtualenv -p python2.7 .venv
 source .venv/bin/activate
 pip install -e PATH_TO_ESSE_REPOSITORY
 ```
@@ -99,8 +99,9 @@ This directory contains Python and Javascript interfaces implementing the functi
 Execute the following command from the root directory of this repository to run the tests. The script will run both Javascript and Python tests in which examples are validated against the corresponding schemas.
 
 ```bash
-sh run-tests.sh
+bash run-tests.sh
 ```
+The script has been tested with node.js v12.16.3 and v8.17.0 as well as python version 2.7.
 
 ## Contribution
 
@@ -117,3 +118,4 @@ This repository is an [open-source](LICENSE.md) work-in-progress and we welcome 
 1: [Data-centric online ecosystem for digital materials science](https://arxiv.org/pdf/1902.10838.pdf)
 
 2: [GitHub Standard Fork & Pull Request Workflow](https://gist.github.com/Chaser324/ce0505fbed06b947d962)
+
