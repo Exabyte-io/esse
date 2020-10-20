@@ -1,13 +1,11 @@
 #!/usr/bin/env bash
 
-SOURCE="${BASH_SOURCE[0]}"
-DIR="$( cd -P "$( dirname "$SOURCE" )" && pwd )"
+THIS_DIR="$(cd "$(dirname "${BASH_SOURCE[0]}")" > /dev/null 2>&1 && pwd)"
 
-if [ ! -d ${DIR}/.virtualenv ]; then
-    virtualenv ${DIR}/.virtualenv
+if [ ! -d ${THIS_DIR}/venv ]; then
+    virtualenv ${THIS_DIR}/venv
 fi
-source ${DIR}/.virtualenv/bin/activate
-pip -q install -r ${DIR}/requirements.txt
-export PYTHONPATH=${DIR}/src/py:${PYTHONPATH}
+source ${THIS_DIR}/venv/bin/activate
+pip install -r ${THIS_DIR}/requirements-dev.txt --no-deps
 
 python -c 'from esse.utils import *; refactor_examples(); refactor_schemas()'
