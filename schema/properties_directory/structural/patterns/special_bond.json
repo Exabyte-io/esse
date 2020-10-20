@@ -1,0 +1,29 @@
+{
+    "schemaId": "properties-directory-structural-patterns-special-bond",
+    "$schema": "http://json-schema.org/draft-04/schema#",
+    "title": "special bond pattern schema",
+    "type": "object",
+    "description": "Any bonding interaction that cannot be described by simple 2-atom picture, e.g. 3-center-2-electron bond in diborane",
+    "properties": {
+        "name": {
+            "enum": [
+                "special_bond"
+            ]
+        },
+        "atoms": {
+            "allOf": [
+                {
+                    "$ref": "../../../core/primitive/array_of_ids.json"
+                }
+            ],
+            "items": {
+                "properties": {
+                    "isConnector": {
+                        "description": "whether atom connects to atoms outside of functional group.",
+                        "type": "boolean"
+                    }
+                }
+            }
+        }
+    }
+}

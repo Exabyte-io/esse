@@ -90,5 +90,13 @@
         "enum": [
             "e/A"
         ]
+    },
+    "spectralIntensity": {
+        "enum":[
+            "(debye/angstrom)^2",
+            "km/mol",
+            "m/mol",
+            "a.u."
+        ]
     }
 }

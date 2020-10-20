@@ -1,0 +1,31 @@
+{
+    "schemaId": "properties-directory-structural-patterns-ring",
+    "$schema": "http://json-schema.org/draft-04/schema#",
+    "title": "ring pattern schema",
+    "type": "object",
+    "properties": {
+        "name": {
+            "enum": [
+                "ring"
+            ]
+        },
+        "atoms": {
+            "allOf": [
+                {
+                    "$ref": "../../../core/primitive/array_of_ids.json"
+                }
+            ],
+            "items": {
+                "properties": {
+                    "isConnector": {
+                        "description": "whether atom connects to atoms outside of functional group.",
+                        "type": "boolean"
+                    }
+                }
+            }
+        },
+        "isAromatic": {
+            "type": "boolean"
+        }
+    }
+}

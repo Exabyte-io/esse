@@ -1,0 +1,19 @@
+{
+    "schemaId": "properties-directory-structural-molecular-pattern",
+    "$schema": "http://json-schema.org/draft-04/schema#",
+    "title": "molecular pattern schema",
+    "type": "array",
+    "items": {
+        "anyOf": [
+            {
+                "$ref": "patterns/functional_group.json"
+            },
+            {
+                "$ref": "patterns/ring.json"
+            },
+            {
+                "$ref": "patterns/special_bond.json"
+            }
+        ]
+    }
+}
