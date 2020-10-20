@@ -1,5 +1,6 @@
-pyyaml==4.2b1
+exabyte-json-include==2020.10.19
 jsonschema==2.6.0
 python-slugify==2.0.1
-exabyte_json_include==2020.10.19
+PyYAML==4.2b1
+Unidecode==1.1.1
 -e .
