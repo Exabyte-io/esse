@@ -1,6 +1,6 @@
 {
     "name": "@exabyte-io/esse.js",
-    "version": "2.3.0",
+    "version": "2020.10.19",
     "description": "Exabyte Source of Schemas and Examples",
     "scripts": {
         "prepublishOnly": "rm -rf lib; npm run transpile",
