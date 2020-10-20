@@ -8,9 +8,9 @@ ESSE can be used as a Node.js or Python package on the server side. Please note 
 
 ### Python
 
-ESSE can be install as a Python package either via PyPi or the repository as below.
+ESSE is compatible with Python 2.7 up until version 2.3.0, and Python 3.6+ afterward.  It can be installed as a Python package either via PyPI or the repository as below.
 
-#### PyPi
+#### PyPI
 
 ```bash
 pip install esse
@@ -19,7 +19,7 @@ pip install esse
 #### Repository
 
 ```bash
-virtualenv -p python2.7 .venv
+virtualenv .venv
 source .venv/bin/activate
 pip install -e PATH_TO_ESSE_REPOSITORY
 ```
@@ -101,7 +101,7 @@ Execute the following command from the root directory of this repository to run 
 ```bash
 bash run-tests.sh
 ```
-The script has been tested with node.js v12.16.3 and v8.17.0 as well as python version 2.7.
+The script has been tested with node.js v12.16.3 and v8.17.0 as well as Python version 2.7 (up to version 2.3.0) and 3.6+ (for version 2020.10.19 and later).
 
 ## Contribution
 

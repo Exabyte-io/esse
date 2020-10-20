@@ -17,7 +17,7 @@
                 "maxItems": 2
             },
             "bondType": {
-                "type" : "string",
+                "type": "string",
                 "enum": [
                     "single",
                     "double",

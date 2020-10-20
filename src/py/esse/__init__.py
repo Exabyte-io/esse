@@ -1,7 +1,7 @@
 import jsonschema
 
 from esse.utils import parseIncludeReferenceStatementsByDir
-from settings import SCHEMAS_DIR, EXAMPLES_DIR, PROPERTIES_MANIFEST
+from esse.settings import SCHEMAS_DIR, EXAMPLES_DIR, PROPERTIES_MANIFEST
 
 SCHEMAS = parseIncludeReferenceStatementsByDir(SCHEMAS_DIR)
 EXAMPLES = parseIncludeReferenceStatementsByDir(EXAMPLES_DIR)
