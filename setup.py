@@ -34,7 +34,7 @@ setup(
         "pyyaml==4.2b1",
         "jsonschema==2.6.0",
         "python-slugify==2.0.1",
-        "exabyte_json_include==2.0.0"
+        "exabyte_json_include>=2020.10.19"
     ],
     python_requires=">=3.6",
     classifiers=[
