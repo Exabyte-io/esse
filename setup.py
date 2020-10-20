@@ -39,7 +39,6 @@ setup(
     python_requires=">=3.6",
     classifiers=[
         'Programming Language :: Python',
-        'Programming Language :: Python :: 2 :: Only',
         'Development Status :: 3 - Alpha',
         'Intended Audience :: Developers',
         'Topic :: Software Development',
