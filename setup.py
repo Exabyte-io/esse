@@ -31,7 +31,7 @@ setup(
     package_dir={'': 'src/py'},
     package_data={'esse': [f.replace(DIR, "data") for f in EXTRA_FILES]},
     install_requires=[
-        "pyyaml==4.2b1",
+        "pyyaml>=5.3,<6",
         "jsonschema==2.6.0",
         "python-slugify==2.0.1",
         "exabyte_json_include>=2020.10.19"
