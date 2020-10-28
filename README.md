@@ -1,3 +1,7 @@
+[![PyPI version](https://badge.fury.io/py/esse.svg)](https://badge.fury.io/py/esse)
+[![npm version](https://badge.fury.io/js/%40exabyte-io%2Fesse.js.svg)](https://badge.fury.io/js/%40exabyte-io%2Fesse.js)
+[![License: Apache](https://img.shields.io/badge/License-Apache-blue.svg)](https://www.apache.org/licenses/LICENSE-2.0)
+
 # ESSE
 
 Exabyte Source of Schemas and Examples (ESSE) contains data formats and associated examples specifically designed for digital materials science [1](#links).
