@@ -1,4 +1,4 @@
-{
+
     "schemaId": "models-directory-dft",
     "$schema": "http://json-schema.org/draft-04/schema#",
     "title": "density function theory schema",
