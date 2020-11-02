@@ -1,0 +1,5 @@
+{
+    "type": "basis-set",
+    "subtype": "pople",
+    "basis": "6-31G"
+}

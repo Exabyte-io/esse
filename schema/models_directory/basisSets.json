@@ -1,0 +1,34 @@
+
+    "schemaId": "models-directory-basis-sets",
+    "$schema": "http://json-schema.org/draft-04/schema#",
+    "title": "basis set schema",
+    "description": "basis set schema generally for use in non-periodic calculations",
+    "allOf": [
+        {
+            "$ref": "../model.json"
+        }
+    ],
+    "properties": {
+        "description": "general type of basis set to use for calculation"
+        "type": {
+            "enum": [
+                "basis-set"
+            ]
+        },
+        "subtype": {
+            "pople",
+            "dunning"
+        },
+        "basis": {
+            "oneOf": [
+                {
+                    "$ref": "basisSets/definitions/basisSets.json#pople"
+                },
+                {
+                    "$ref": "basisSets/definitions/basisSets.json#dunning"
+                }
+            ]
+        }
+    }
+}
+

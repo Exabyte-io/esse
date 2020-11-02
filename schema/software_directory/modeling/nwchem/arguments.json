@@ -1,0 +1,41 @@
+{
+    "schemaId": "software-directory-modeling-nwchem-arguments",
+    "$schema": "http://json-schema.org/draft-04/schema#",
+    "title": "nwchem arguments schema"
+    "type": "object",
+    "properties": {
+        "energy_convergence": {
+            "description": "SCF energy convergence control for DFT calculations. NWChem default is 1e-7",
+            "type": {
+                "enum": [
+                    "1e-7",
+                    "1e-6",
+                    "1e-8"
+                ]
+            }
+        },
+        "grid_size": {
+            "description": "Size of the grid used for grid-based numerical integration steps used to evaluate exchange-correlation energy when using DFT methods. Default in NWChem is medium",
+            "type": {
+                "enum": [
+                    "xcoarse",
+                    "coarse",
+                    "medium",
+                    "fine",
+                    "xfine",
+                    "huge"
+                 ]
+             }
+         },
+         "tolerance": {
+             "description": "DFT integral evaluation tolerance level",
+             "type": {
+                 "enum": [
+                     "tight"
+                 ],
+              }
+          }
+      }
+}    
+        
+                    
