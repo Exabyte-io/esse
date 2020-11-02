@@ -1,4 +1,4 @@
-{
+
     "schemaId": "properties-directory-structural-basis-atomic-coordinates",
     "$schema": "http://json-schema.org/draft-04/schema#",
     "title": "atomic coordinates",

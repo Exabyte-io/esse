@@ -23,7 +23,7 @@ pip install esse
 #### Repository
 
 ```bash
-virtualenv .venv
+virtualenv -p python2.7 .venv
 source .venv/bin/activate
 pip install -e PATH_TO_ESSE_REPOSITORY
 ```
