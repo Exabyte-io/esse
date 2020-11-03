@@ -1,5 +1,5 @@
 {
-    "name": "total_dft_energy",
-    "units": "hartrees",
-    "value": "-76.408706959622"
+    "name": "zero_point_energy",
+    "units": "eV",
+    "value": -0.0634
 }
