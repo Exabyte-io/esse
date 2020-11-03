@@ -1,7 +1,7 @@
 {
     "schemaId": "software-directory-modeling-nwchem-arguments",
     "$schema": "http://json-schema.org/draft-04/schema#",
-    "title": "nwchem arguments schema"
+    "title": "nwchem arguments schema",
     "type": "object",
     "properties": {
         "energy_convergence": {
