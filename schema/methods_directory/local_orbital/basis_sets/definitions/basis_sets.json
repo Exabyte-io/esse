@@ -1,0 +1,30 @@
+{
+    "pople": {
+        "type": "object",
+        "properties": {
+            "slug": {
+                "type": "string",
+                "enum": [
+                    "3-21G",
+                    "3-211",
+                    "6-31G",
+                    "6-311G",
+                ]
+            }
+        }
+    },
+    "dunning": {
+        "type": "object",
+        "properties": {
+            "slug": {
+                "type": "string",
+                "enum": [
+                    "cc-pvdz",
+                    "cc-pvtz",
+                    "cc-pvqz",
+                    "cc-pv5z"
+                ]
+            }
+        }
+    }
+}
