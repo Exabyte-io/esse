@@ -13,7 +13,7 @@
         },
         "grid_size_nwchem": {
             "description": "grid size based on energy convergence",
-            "type" {
+            "type": {
                 "object": [
                     {
                         "10e-5": "coarse",
