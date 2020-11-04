@@ -1,7 +1,4 @@
 {
-    "properties": "local-orbital",
-    "subtype": "gto",
-    "basis_set": {
-        "...": "include(local_orbital/basis_sets.json)"
-    },
+    "type": "local-orbital",
+    "subtype": "gto"
 }

@@ -15,9 +15,7 @@
             ]
         },
         "summary": {
-            "enum": [
-                "NWChem: a comprehensive and scalable open-source solution for large scale molecular simulations"
-            ]
+            "string": "NWChem: a comprehensive and scalable open-source solution for large scale molecular simulations"
         },
         "version": {
             "enum": [

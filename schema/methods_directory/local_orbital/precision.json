@@ -10,20 +10,6 @@
         "grid_size": {
             "description": "size of grid used for grid-based numerical integration steps used to evaluate exchange-correlation energy when using DFT methods",
             "type": "string"
-        },
-        "grid_size_nwchem": {
-            "description": "grid size based on energy convergence",
-            "type": {
-                "object": [
-                    {
-                        "10e-5": "coarse",
-                        "10e-6": "medium",
-                        "10e-7": "fine", 
-                        "10e-8": "xfine",
-                        "10e-10": "huge"
-                    }
-                ]
-            }
         }
     }
 }

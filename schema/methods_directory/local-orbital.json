@@ -19,9 +19,6 @@
                 "sto",
                 "cgto"
             ]
-        },
-        "basis_set": {
-            "$ref": "local_orbital/basis_sets.json"
-        },
+        }
     }
 }

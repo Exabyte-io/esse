@@ -1,9 +1,0 @@
-{
-    "properties": "basis-sets",
-    "subtype": "pople",
-    "basis_type": {
-        "...": "include(basis_sets/definitions/basis_sets.json#/pople)"
-    },
-    "polarization": "none",
-    "diffuse": "all_atoms"
-}
