@@ -1,0 +1,5 @@
+{
+    "energy_convergence": "1e-7",
+    "grid_size": "coarse",
+    "grid_size_nwchem": "10e-7"
+}
