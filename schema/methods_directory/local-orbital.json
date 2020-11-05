@@ -19,6 +19,20 @@
                 "dunning"
             ]
         },
+        "polarization": {
+            "enum": [
+                "none",
+                "heavy_atoms",
+                "all_atoms"
+             ]
+        },
+        "diffuse": {
+            "enum": [
+                "none",
+                "heavy_atoms",
+                "all_atoms"
+             ]
+         },
         "basis": {
             "oneOf": [
                 {
