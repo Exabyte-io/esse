@@ -15,9 +15,21 @@
         },
         "subtype": {
             "enum": [
-                "gto",
-                "sto",
-                "cgto"
+                "pople",
+                "dunning"
+            ]
+        },
+        "basis": {
+            "oneOf": [
+                {
+                    "$ref": "local_orbital/definitions/basis_sets.json#/pople"
+                }, 
+                {
+                    "$ref": "local_orbital/definitions/basis_sets.json#/dunning"
+                } ,
+                {
+                    "$ref": "local_orbital/definitions/basis_sets.json#/other"
+                } 
             ]
         }
     }

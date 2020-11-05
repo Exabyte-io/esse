@@ -1,4 +1,7 @@
 {
     "type": "local-orbital",
-    "subtype": "gto"
+    "subtype": "pople",
+    "basis": {
+        "slug": "3-21G"
+    }
 }
