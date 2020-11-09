@@ -3,11 +3,11 @@
     "$schema": "http://json-schema.org/draft-04/schema#",
     "title": "precision schema for local-orbital dft",
     "properties": {
-        "energy_convergence": {
+        "energyConvergence": {
             "description": "SCF convergence control for DFT calculations (i.e. 1e-7)",
             "type": "string"
         },
-        "grid_size": {
+        "gridSize": {
             "description": "size of grid used for grid-based numerical integration steps used to evaluate exchange-correlation energy when using DFT methods",
             "type": "string"
         }

@@ -20,8 +20,8 @@ def parseIncludeReferenceStatements(file_path):
     """
     dirName = os.path.dirname(file_path)
     baseName = os.path.basename(file_path)
-    print("dirName: {}".format(dirName))
-    print("baseName: {}".format(baseName))
+    print(dirName)
+    print(baseName)
     return json.loads(json_include.build_json(dirName, baseName))
 
 
@@ -38,10 +38,8 @@ def parseIncludeReferenceStatementsByDir(dir_path):
     data = []
     for root, dirs, files in os.walk(dir_path):
         for file_ in files:
-            if not file_.startswith('.'):
-                file_path = os.path.join(root, file_)
-                data.append(parseIncludeReferenceStatements(file_path))
-    print(data)
+            file_path = os.path.join(root, file_)
+            data.append(parseIncludeReferenceStatements(file_path))
     return data
 
 

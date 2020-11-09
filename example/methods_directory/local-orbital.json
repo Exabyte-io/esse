@@ -1,9 +1,7 @@
 {
     "type": "local-orbital",
     "subtype": "pople",
-    "polarization": "heavy_atoms",
-    "diffuse": "none",
-    "basis": {
+    "basisSet": {
         "slug": "3-21G"
     }
 }

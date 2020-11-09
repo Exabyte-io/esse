@@ -19,32 +19,20 @@
                 "dunning"
             ]
         },
-        "polarization": {
-            "enum": [
-                "none",
-                "heavy_atoms",
-                "all_atoms"
-             ]
-        },
-        "diffuse": {
-            "enum": [
-                "none",
-                "heavy_atoms",
-                "all_atoms"
-             ]
-         },
-        "basis": {
-            "oneOf": [
-                {
-                    "$ref": "local_orbital/definitions/basis_sets.json#/pople"
-                }, 
-                {
-                    "$ref": "local_orbital/definitions/basis_sets.json#/dunning"
-                } ,
-                {
-                    "$ref": "local_orbital/definitions/basis_sets.json#/other"
-                } 
-            ]
+        "basisSet": {
+            "slug": {
+                "oneOf": [
+                    {
+                        "$ref": "local_orbital/definitions/basis_sets.json#/pople"
+                    }, 
+                    {
+                        "$ref": "local_orbital/definitions/basis_sets.json#/dunning"
+                    },
+                    {
+                        "$ref": "local_orbital/definitions/basis_sets.json#/other"
+                    }    
+                ]
+            }
         }
     }
-}
+}  
