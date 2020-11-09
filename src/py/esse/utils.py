@@ -20,8 +20,6 @@ def parseIncludeReferenceStatements(file_path):
     """
     dirName = os.path.dirname(file_path)
     baseName = os.path.basename(file_path)
-    print(dirName)
-    print(baseName)
     return json.loads(json_include.build_json(dirName, baseName))
 
 
