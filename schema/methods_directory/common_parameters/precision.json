@@ -1,7 +1,7 @@
 {
     "schemaId": "methods-directory-local-orbital-precision",
     "$schema": "http://json-schema.org/draft-04/schema#",
-    "title": "precision schema for local-orbital dft",
+    "title": "precision schema for dft based methods",
     "properties": {
         "energyConvergence": {
             "description": "SCF convergence control for DFT calculations (i.e. 1e-7)",
