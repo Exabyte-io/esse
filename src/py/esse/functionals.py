@@ -36,11 +36,10 @@ def generate_dft_unit_functionals():
     to read and prone to errors. Thus, it is generated automatically from
     a prototype file that is easier to maintain.
     """
-    print(PROTOTYPE_FILENAME)
     proto = read_json_file(PROTOTYPE_FILENAME)
     del proto["description"]
     output = {}
-    for rung, configs in proto.iteritems():
+    for rung, configs in proto.items():
         o = {"oneOf": []}
         for config in configs:
             o["oneOf"].append(json.loads(SCHEMA_WITH_PROPERTIES_TEMPLATE.substitute(config)))
