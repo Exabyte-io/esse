@@ -1,0 +1,12 @@
+{
+    "modelType": "empirical",
+    "usage": "post-scf",
+    "type": {
+        "name": "Empirical dispersion DFT-D",
+        "slug": "empirical-dft-d"
+    },
+    "subtype": {
+        "name": "DFT-D3(BJ)",
+        "slug": "dft-d3-bj"
+    }
+}

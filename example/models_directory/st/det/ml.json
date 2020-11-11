@@ -1,0 +1,21 @@
+{
+    "method": {
+        "...": "include(../../../methods_directory/regression.json)"
+    },
+    "tier1": {
+        "name": "statistical",
+        "slug": "st"
+    },
+    "tier2": {
+        "name": "deterministic",
+        "slug": "det"
+    },
+    "tier3": {
+        "name": "machine learning",
+        "slug": "ml"
+    },
+    "type": {
+        "name": "regression",
+        "slug": "re"
+    }
+}

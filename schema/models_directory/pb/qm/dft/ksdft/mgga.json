@@ -1,0 +1,30 @@
+{
+    "schemaId": "models-directory-pb-qm-dft-ksdft-mgga",
+    "$schema": "http://json-schema.org/draft-04/schema#",
+    "title": "Meta Generalized Gradient Approximation model schema",
+    "allOf": [
+        {
+            "$ref": "../ksdft.json"
+        }
+    ],
+    "subtype": {
+        "enum": [
+            {
+                "name": "Meta Generalized Gradient Approximation",
+                "slug": "mgga"
+            }
+        ]
+    },
+    "functional": {
+        "$ref": "mgga/functional.json"
+    },
+    "augmentations": {
+        "$ref": "mgga/augmentations.json"
+    },
+    "modifiers": {
+        "$ref": "mgga/modifiers.json"
+    },
+    "tags": {
+        "$ref": "mgga/tags.json"
+    }
+}

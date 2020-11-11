@@ -1,0 +1,32 @@
+{
+    "schemaId": "models-directory-pb-qm-dft-dispersion-models-directory-nlc",
+    "$schema": "http://json-schema.org/draft-04/schema#",
+    "title": "Non-local correlation density functional",
+    "allOf": [
+        {
+            "$ref": "generalized/intra_abin.json"
+        }
+    ],
+    "properties": {
+        "type": {
+            "enum": [
+                {
+                    "name": "Non-Local Correlation (NLC) Functionals",
+                    "slug": "nlc"
+                }
+            ]
+        },
+        "subtype": {
+            "enum": [
+                {
+                    "name": "VV10",
+                    "slug": "vv10"
+                },
+                {
+                    "name": "rVV10",
+                    "slug": "rvv10"
+                }
+            ]
+        }
+    }
+}

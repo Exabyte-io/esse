@@ -1,0 +1,47 @@
+{
+    "schemaId": "models-directory-pb-qm-dft-ksdft-hybrid-rs-functional",
+    "$schema": "http://json-schema.org/draft-04/schema#",
+    "title": "range-separated hybrid exchange-correlation functional base schema",
+    "allOf": [
+        {
+            "$ref": "functional.json"
+        }
+    ],
+    "properties": {
+        "attenuation": {
+            "description": "attenuation parameter, usually denoted as omega or mu",
+            "type": "number"
+        },
+        "components": {
+            "type": "array",
+            "items": {
+                "anyOf": [
+                    {
+                        "allOf": [
+                            {
+                                "$ref": "../../functional/components_directory/range_separated_exchange.json"
+                            },
+                            {
+                                "$ref": "../../functional/local_functional_components.json"
+                            }
+                        ]
+                    },
+                    {
+                        "allOf": [
+                            {
+                                "$ref": "../../functional/components_directory/range_separated_exchange.json"
+                            },
+                            {
+                                "$ref": "../../functional/components_directory/exact_exchange.json"
+                            }
+                        ]
+                    },
+                    {
+                        "description": "Local functional (for correlation)",
+                        "$ref": "../../functional/local_functional_components.json"
+                    }
+                ]
+            }
+        }
+    }
+}

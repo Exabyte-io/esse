@@ -1,0 +1,18 @@
+{
+    "name": "SVWN5",
+    "slug": "svwn5",
+    "components": [
+        {
+            "name": "Slater",
+            "slug": "slater",
+            "type": "exchange",
+            "fraction": 1.0
+        },
+        {
+            "name": "VWN5",
+            "slug": "vwn5",
+            "type": "correlation",
+            "fraction": 1.0
+        }
+    ]
+}

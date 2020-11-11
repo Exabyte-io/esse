@@ -1,0 +1,32 @@
+{
+    "schemaId": "models-directory-pb-qm-dft-dispersion-models-directory-xdm",
+    "$schema": "http://json-schema.org/draft-04/schema#",
+    "title": "Exchange dipole dispersion model",
+    "allOf": [
+        {
+            "$ref": "generalized/post_empirical.json"
+        }
+    ],
+    "properties": {
+        "type": {
+            "enum": [
+                {
+                    "name": "Exchange-Dipole Model (XDM)",
+                    "slug": "exchange-dipole-model"
+                }
+            ]
+        },
+        "subtype": {
+            "enum": [
+                {
+                    "name": "XDM6",
+                    "slug": "xdm6"
+                },
+                {
+                    "name": "XDM10",
+                    "slug": "xdm10"
+                }
+            ]
+        }
+    }
+}

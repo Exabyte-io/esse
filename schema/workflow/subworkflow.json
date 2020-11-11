@@ -16,10 +16,10 @@
             "description": "Model used inside the subworkflow",
             "oneOf": [
                 {
-                    "$ref": "../models_directory/dft.json"
+                    "$ref": "../models_directory/pb/qm/dft/ksdft.json"
                 },
                 {
-                    "$ref": "../models_directory/ml.json"
+                    "$ref": "../models_directory/st/det/ml.json"
                 },
                 {
                     "$ref": "../models_directory/unknown.json"

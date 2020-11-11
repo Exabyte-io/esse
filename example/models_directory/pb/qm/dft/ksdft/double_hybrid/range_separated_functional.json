@@ -1,0 +1,49 @@
+{
+    "name": "wB97X-2(LP)",
+    "slug": "wb97x2lp",
+    "attenuation": 0.3,
+    "components": [
+        {
+            "name": "exact Exchange",
+            "slug": "exact-exchange",
+            "type": "exchange",
+            "range": "short-range",
+            "fraction": 0.6788
+        },
+        {
+            "name": "exact Exchange",
+            "slug": "exact-exchange",
+            "type": "exchange",
+            "range": "long-range",
+            "fraction": 1.0
+        },
+        {
+            "name": "Becke 1997",
+            "slug": "b97-x",
+            "type": "exchange",
+            "range": "short-range",
+            "fraction": 0.3212
+        },
+        {
+            "name": "Becke 1997",
+            "slug": "b97-x",
+            "type": "exchange",
+            "range": "long-range",
+            "fraction": 0.0
+        },
+        {
+            "name": "mp2-correction",
+            "slug": "mp2",
+            "type": "correlation",
+            "subtype": "same-spin",
+            "fraction": 0.5816
+        },
+        {
+            "name": "mp2-correction",
+            "slug": "mp2",
+            "type": "correlation",
+            "subtype": "opposite-spin",
+            "fraction": 0.4780
+        }
+    ]
+}

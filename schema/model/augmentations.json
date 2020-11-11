@@ -1,0 +1,11 @@
+{
+    "schemaId": "model-augmentations",
+    "$schema": "http://json-schema.org/draft-04/schema#",
+    "title": "model augmentation schema",
+    "description": "Descriptive properties of a model, that do not change the underlying physical principles of the model. Example: localization for local-orbital DFT.",
+    "allOf": [
+        {
+            "$ref": "../core/primitive/array_of_strings.json"
+        }
+    ]
+}

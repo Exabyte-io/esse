@@ -1,0 +1,35 @@
+{
+    "schemaId": "models-directory-pb-qm-dft-functional-components-directory-mp2-correlation",
+    "$schema": "http://json-schema.org/draft-04/schema#",
+    "title": "second order Moller-Plesset (MP2) correlation correction schema",
+    "allOf": [
+        {
+            "$ref": "../component.json"
+        }
+    ],
+    "properties": {
+        "name": {
+            "enum": [
+                "mp2-correction"
+            ]
+        },
+        "slug": {
+            "enum": [
+                "mp2"
+            ]
+        },
+        "type": {
+            "enum": [
+                "correlation"
+            ]
+        },
+        "subtype": {
+            "description": "Indicates whether the entire MP2 correlation energy is used or one of its spin components",
+            "enum": [
+                "all-spin",
+                "same-spin",
+                "opposite-spin"
+            ]
+        }
+    }
+}
