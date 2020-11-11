@@ -36,6 +36,7 @@ def generate_dft_unit_functionals():
     to read and prone to errors. Thus, it is generated automatically from
     a prototype file that is easier to maintain.
     """
+    print(PROTOTYPE_FILENAME)
     proto = read_json_file(PROTOTYPE_FILENAME)
     del proto["description"]
     output = {}
