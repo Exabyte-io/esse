@@ -1,5 +1,5 @@
 import os
-from setuptools import setup
+from setuptools import find_packages, setup
 
 
 def get_files_by_path(path):
@@ -10,6 +10,9 @@ def get_files_by_path(path):
     return files
 
 
+with open('./README.md', 'r') as f:
+    long_description = f.read()
+
 DIR = os.path.abspath(os.path.dirname(__file__))
 EXTRA_FILES = get_files_by_path(os.path.join(DIR, "example"))
 EXTRA_FILES.extend(get_files_by_path(os.path.join(DIR, "schema")))
@@ -17,20 +20,23 @@ EXTRA_FILES.extend(get_files_by_path(os.path.join(DIR, "manifest")))
 
 setup(
     name='esse',
-    version='2.3.0',
+    version='2020.10.19.3',
     description='Exabyte Source of Schemas and Examples',
+    long_description=long_description,
+    long_description_content_type='text/markdown',
     url='https://github.com/Exabyte-io/exabyte-esse',
     author='Exabyte Inc.',
     author_email='info@exabyte.io',
-    packages=['esse'],
+    packages=find_packages(where='src/py', exclude=['src/py/tests*']),
     package_dir={'': 'src/py'},
     package_data={'esse': [f.replace(DIR, "data") for f in EXTRA_FILES]},
     install_requires=[
-        "pyyaml==4.2b1",
+        "pyyaml>=4.2b1,<6",
         "jsonschema==2.6.0",
         "python-slugify==2.0.1",
-        "exabyte_json_include==2.0.0"
+        "exabyte_json_include>=2020.10.19"
     ],
+    python_requires=">=3.6",
     classifiers=[
         'Programming Language :: Python',
         'Development Status :: 3 - Alpha',

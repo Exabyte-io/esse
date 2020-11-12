@@ -1,6 +1,6 @@
 [
     {
-        "name": "functional_group",
+        "SMARTS": "[O&D1]-C(=O)[#6X3]",
         "atoms": [
             {
                 "id": 1,
@@ -19,10 +19,9 @@
                 "isConnector": true
             }
         ],
-        "SMARTS": "[O&D1]-C(=O)[#6X3]"
+        "name": "functional_group"
     },
     {
-        "name": "special_bond",
         "atoms": [
             {
                 "id": 1,
@@ -36,10 +35,10 @@
                 "id": 3,
                 "isConnector": true
             }
-        ]
+        ],
+        "name": "special_bond"
     },
     {
-        "name": "ring",
         "atoms": [
             {
                 "id": 1,
@@ -66,6 +65,7 @@
                 "isConnector": true
             }
         ],
-        "isAromatic": true
+        "isAromatic": true,
+        "name": "ring"
     }
 ]

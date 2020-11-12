@@ -1,6 +1,6 @@
 {
     "name": "@exabyte-io/esse.js",
-    "version": "2.3.0",
+    "version": "2020.10.19.2",
     "description": "Exabyte Source of Schemas and Examples",
     "scripts": {
         "prepublishOnly": "rm -rf lib; npm run transpile",
@@ -38,5 +38,9 @@
         "lodash": "^4.17.4",
         "path": "^0.12.7",
         "yamljs": "^0.3.0"
+    },
+    "engines": {
+        "node": "~8.11.4",
+        "npm": "~6.4.1"
     }
 }

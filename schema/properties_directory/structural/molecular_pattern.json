@@ -12,7 +12,7 @@
                 "$ref": "patterns/ring.json"
             },
             {
-                "$ref":  "patterns/special_bond.json"
+                "$ref": "patterns/special_bond.json"
             }
         ]
     }
