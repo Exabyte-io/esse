@@ -28,6 +28,7 @@ SCHEMA_WITH_PROPERTIES_TEMPLATE = Template("""{
 }
 }""")
 
+
 def generate_dft_unit_functionals():
     """
     Generate list of functionals suitable for validation by 'oneOf'.
@@ -39,7 +40,7 @@ def generate_dft_unit_functionals():
     proto = read_json_file(PROTOTYPE_FILENAME)
     del proto["description"]
     output = {}
-    for rung, configs in proto.iteritems():
+    for rung, configs in proto.items():
         o = {"oneOf": []}
         for config in configs:
             o["oneOf"].append(json.loads(SCHEMA_WITH_PROPERTIES_TEMPLATE.substitute(config)))
