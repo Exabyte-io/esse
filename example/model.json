@@ -1,3 +1,27 @@
 {
-    "...": "include(models_directory/pb/qm/abin/configuration_interaction.json)"
+    "unitModels": [
+        {
+            "...": "include(models_directory/pb/qm/abin/configuration_interaction.json)"
+        },
+        {
+            "...": "include(models_directory/pb/qm/dft/ksdft.json)"
+        }
+    ],
+    "units": [
+        {
+            "name": "Configuration Interaction",
+            "slug": "pb-qm-abin-ci",
+            "head": true,
+            "flowchartId": "abc123",
+            "next": "def456"
+        },
+        {
+            "name": "Density Functional Theory",
+            "slug": "pb-qm-dft-ksdft",
+            "head": false,
+            "flowchartId": "def456"
+        }
+    ]
 }
+
+

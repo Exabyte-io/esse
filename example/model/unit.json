@@ -1,0 +1,7 @@
+{
+    "name": "Density Functional Theory",
+    "slug": "pb-qm-dft-ksdft",
+    "head": true,
+    "flowchartId": "abc123",
+    "next": "def456"
+}
