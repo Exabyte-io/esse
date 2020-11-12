@@ -3,15 +3,33 @@
     "$schema": "http://json-schema.org/draft-04/schema#",
     "title": "model schema (base)",
     "properties": {
+        "unitModels": {
+            "description": "Holds data of unit models, e.g. tier1, tier2, etc.",
+            "type": "array",
+            "items": {
+                "$ref": "model/data.json"
+            }
+        },
         "units": {
-            "description": "Contains the Units of the Model",
+            "description": "Model graph. Only contains minimal information on unit models.",
             "type": "array",
             "items": {
                 "$ref": "model/unit.json"
             }
+        },
+        "method": {
+            "$ref": "method.json"
+        },
+        "references": {
+            "description": "Literature references corresponding to the model.",
+            "type": "array",
+            "items": {
+                "$ref": "core/reference/literature.json"
+            }
         }
     },
     "required": [
-        "units"
+        "units",
+        "unitModels"
     ]
 }
