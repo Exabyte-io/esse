@@ -17,9 +17,6 @@
                 "$ref": "model/unit.json"
             }
         },
-        "method": {
-            "$ref": "method.json"
-        },
         "references": {
             "description": "Literature references corresponding to the model.",
             "type": "array",
