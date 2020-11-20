@@ -39,4 +39,3 @@ lib/
 *.py[cod]
 
 dist/
-/schema/models_directory/pb/qm/dft/dft_unit_functionals.json
