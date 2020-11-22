@@ -44,5 +44,5 @@ def generate_dft_unit_functionals():
         for config in configs:
             o["oneOf"].append(json.loads(SCHEMA_WITH_PROPERTIES_TEMPLATE.substitute(config)))
         output[rung] = o
-
+   
     dump_json_file(UNIT_FILENAME, output)
