@@ -1,4 +1,4 @@
-iport file from "file";
+import file from "file";
 import path from "path";
 import chai from "chai";
 
