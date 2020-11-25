@@ -20,7 +20,7 @@ EXTRA_FILES.extend(get_files_by_path(os.path.join(DIR, "manifest")))
 
 setup(
     name='esse',
-    version='2020.10.19.2',
+    version='2020.10.19.3',
     description='Exabyte Source of Schemas and Examples',
     long_description=long_description,
     long_description_content_type='text/markdown',
@@ -31,7 +31,7 @@ setup(
     package_dir={'': 'src/py'},
     package_data={'esse': [f.replace(DIR, "data") for f in EXTRA_FILES]},
     install_requires=[
-        "pyyaml==4.2b1",
+        "pyyaml>=4.2b1,<6",
         "jsonschema==2.6.0",
         "python-slugify==2.0.1",
         "exabyte_json_include>=2020.10.19"
