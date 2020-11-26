@@ -6,6 +6,6 @@ export function isInstanceOf(object, type) {
  * Makes sure that text representing arrays is parsed into Arrays.
  */
 export function safeParseJSON(string) {
-    let obj = JSON.parse(JSON.stringify(string));
+    let obj = JSON.parse(string);
     return string[0] === "[" ? Object.keys(obj).map(key => obj[key]) : obj;
 }
