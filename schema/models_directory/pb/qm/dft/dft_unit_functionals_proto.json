@@ -1,0 +1,351 @@
+{
+    "description": "Used to generate dft_unit_functionals.json",
+    "lda": [
+        {
+            "name": "Slater",
+            "slug": "slater",
+            "type": "exchange"
+        },
+        {
+            "name": "Perdew-Zunger 1981",
+            "slug": "pz81",
+            "type": "correlation"
+        },
+        {
+            "name": "Perdew-Wang 1992",
+            "slug": "pw92",
+            "type": "correlation"
+        },
+        {
+            "name": "PW92RPA",
+            "slug": "pw92rpa",
+            "type": "correlation"
+        },
+        {
+            "name": "VWN1RPA",
+            "slug": "vwn1rpa",
+            "type": "correlation"
+        },
+        {
+            "name": "VWN1",
+            "slug": "vwn1",
+            "type": "correlation"
+        },
+        {
+            "name": "VWN2",
+            "slug": "vwn2",
+            "type": "correlation"
+        },
+        {
+            "name": "VWN3",
+            "slug": "vwn3",
+            "type": "correlation"
+        },
+        {
+            "name": "VWN4",
+            "slug": "vwn4",
+            "type": "correlation"
+        },
+        {
+            "name": "VWN5",
+            "slug": "vwn5",
+            "type": "correlation"
+        },
+        {
+            "name": "Liu-Parr",
+            "slug": "liu-parr",
+            "type": "correlation"
+        },
+        {
+            "name": "Proynov-Kong 2009",
+            "slug": "pk09",
+            "type": "correlation"
+        },
+        {
+            "name": "Wigner",
+            "slug": "wigner",
+            "type": "correlation"
+        }
+    ],
+    "gga": [
+        {
+            "name": "PBE",
+            "slug": "pbe-x",
+            "type": "exchange"
+        },
+        {
+            "name": "srPBE",
+            "slug": "srpbe-x",
+            "type": "exchange"
+        },
+        {
+            "name": "revPBE",
+            "slug": "revpbe-x",
+            "type": "exchange"
+        },
+        {
+            "name": "muPBE",
+            "slug": "mupbe-x",
+            "type": "exchange"
+        },
+        {
+            "name": "wPBE",
+            "slug": "wpbe-x",
+            "type": "exchange"
+        },
+        {
+            "name": "PBEsol",
+            "slug": "pbesol-x",
+            "type": "exchange"
+        },
+        {
+            "name": "RPBE",
+            "slug": "rpbe-x",
+            "type": "exchange"
+        },
+        {
+            "name": "Becke 1986",
+            "slug": "b86",
+            "type": "exchange"
+        },
+        {
+            "name": "modified B86",
+            "slug": "mb86",
+            "type": "exchange"
+        },
+        {
+            "name": "Becke 1988",
+            "slug": "b88",
+            "type": "exchange"
+        },
+        {
+            "name": "srB88",
+            "slug": "mub88",
+            "type": "exchange"
+        },
+        {
+            "name": "B88 re-fit",
+            "slug": "optb88",
+            "type": "exchange"
+        },
+        {
+            "name": "AK13",
+            "slug": "ak13",
+            "type": "exchange"
+        },
+        {
+            "name": "Perdew-Wang 1986",
+            "slug": "pw86",
+            "type": "exchange"
+        },
+        {
+            "name": "revised PW86",
+            "slug": "rpw86",
+            "type": "exchange"
+        },
+        {
+            "name": "Perdew-Wang 1991",
+            "slug": "pw91-x",
+            "type": "exchange"
+        },
+        {
+            "name": "modified PW91",
+            "slug": "mpw91",
+            "type": "exchange"
+        },
+        {
+            "name": "Gill 1996",
+            "slug": "g96",
+            "type": "exchange"
+        },
+        {
+            "name": "Handy-Cohen",
+            "slug": "optx",
+            "type": "exchange"
+        },
+        {
+            "name": "second order GGA",
+            "slug": "sogga",
+            "type": "exchange"
+        },
+        {
+            "name": "Becke 1997",
+            "slug": "b97-x",
+            "type": "exchange"
+        },
+        {
+            "name": "short range Becke 1997",
+            "slug": "srb97",
+            "type": "exchange"
+        },
+        {
+            "name": "PBE",
+            "slug": "pbe-c",
+            "type": "correlation"
+        },
+        {
+            "name": "srPBE",
+            "slug": "srpbe-c",
+            "type": "correlation"
+        },
+        {
+            "name": "PBEsol",
+            "slug": "pbesol-c",
+            "type": "correlation"
+        },
+        {
+            "name": "modified PBE",
+            "slug": "pbeloc",
+            "type": "correlation"
+        },
+        {
+            "name": "one-parameter progressive PBE",
+            "slug": "pbeop-c",
+            "type": "correlation"
+        },
+        {
+            "name": "one-parameter progressive B88",
+            "slug": "bop-c",
+            "type": "correlation"
+        },
+        {
+            "name": "vPBEc or regTPSS",
+            "slug": "vpbec",
+            "type": "correlation"
+        },
+        {
+            "name": "LYP",
+            "slug": "lyp",
+            "type": "correlation"
+        },
+        {
+            "name": "Perdew-Wang 1986",
+            "slug": "p86",
+            "type": "correlation"
+        },
+        {
+            "name": "P86 from VWN5",
+            "slug": "p86vwn5",
+            "type": "correlation"
+        },
+        {
+            "name": "Perdew-Wang 1991",
+            "slug": "pw91-c",
+            "type": "correlation"
+        },
+        {
+            "name": "Becke 1997",
+            "slug": "b97-c",
+            "type": "correlation"
+        }
+    ],
+    "mgga": [
+        {
+            "name": "TPSS",
+            "slug": "tpss-x",
+            "type": "exchange"
+        },
+        {
+            "name": "revised TPSS",
+            "slug": "revtpss-x",
+            "type": "exchange"
+        },
+        {
+            "name": "one-parameter TPSS",
+            "slug": "modtpss",
+            "type": "exchange"
+        },
+        {
+            "name": "oTPSS",
+            "slug": "otpss-x",
+            "type": "exchange"
+        },
+        {
+            "name": "regularized TPSS",
+            "slug": "regtpss",
+            "type": "exchange"
+        },
+        {
+            "name": "BLOC",
+            "slug": "bloc",
+            "type": "exchange"
+        },
+        {
+            "name": "PBE-GX",
+            "slug": "pbegx",
+            "type": "exchange"
+        },
+        {
+            "name": "Perdew-Kurt-Zupan-Blaha",
+            "slug": "pkzb-x",
+            "type": "exchange"
+        },
+        {
+            "name": "SCAN",
+            "slug": "scan-x",
+            "type": "exchange"
+        },
+        {
+            "name": "Tao-Mo",
+            "slug": "tm-x",
+            "type": "exchange"
+        },
+        {
+            "name": "TPSS",
+            "slug": "tpss-c",
+            "type": "correlation"
+        },
+        {
+            "name": "revTPSS",
+            "slug": "revtpss-c",
+            "type": "correlation"
+        },
+        {
+            "name": "TPSSloc",
+            "slug": "tpssloc",
+            "type": "correlation"
+        },
+        {
+            "name": "oTPSS",
+            "slug": "otpss-c",
+            "type": "correlation"
+        },
+        {
+            "name": "Becke 1995",
+            "slug": "B95",
+            "type": "correlation"
+        },
+        {
+            "name": "Proynov-Kong 2006",
+            "slug": "pk06",
+            "type": "correlation"
+        },
+        {
+            "name": "Perdew-Kurt-Zupan-Blaha",
+            "slug": "pkzb-c",
+            "type": "correlation"
+        },
+        {
+            "name": "SCAN",
+            "slug": "scan-c",
+            "type": "correlation"
+        },
+        {
+            "name": "Tao-Mo",
+            "slug": "tm-c",
+            "type": "correlation"
+        }
+    ],
+    "nonLocalCorrelation": [
+        {
+            "name": "VV10",
+            "slug": "vv10",
+            "type": "non-local correlation"
+        },
+        {
+            "name": "rVV10",
+            "slug": "rvv10",
+            "type": "non-local correlation"
+        }
+    ]
+}

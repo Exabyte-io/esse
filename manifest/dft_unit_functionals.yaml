@@ -1,0 +1,252 @@
+#
+# This file contains a list of 'unit functionals',
+# i.e. non-separable building blocks of DFT functionals
+#
+# ---------------------------
+# Local Density Approximation
+# ---------------------------
+LDA:
+  exchange:
+    - name: Slater
+      abbr: S
+      doi: 10.1017/S0305004100016108
+    - name: Short-range version of Slater-Dirac exchange
+      abbr: SR_LSDA
+      doi: 10.1080/00268979609484488
+  correlation:
+    - name: Perdew-Wang 1992
+      abbr: PW92
+      doi: 10.1103/PhysRevB.45.13244
+    - name: Perdew-Wang 1992 with RPA values
+      abbr: PW92RPA
+      doi: 10.1103/PhysRevB.45.13244
+    - name: Short-range version of PW92
+      abbr: srPW92
+      doi: 10.1103/PhysRevB.73.155111
+    - name: Perdew-Zunger 1981
+      abbr: PZ81
+      doi: 10.1103/PhysRevB.23.5048
+    - name: Vosko-Wilk-Nusair \#1
+      abbr: VWN1
+      doi: 10.1139/p80-159
+    - name: Vosko-Wilk-Nusair \#1 with RPA values
+      abbr: VWN1RPA
+      doi: 10.1139/p80-159
+    - name: Vosko-Wilk-Nusair \#2
+      abbr: VWN2
+      doi: 10.1139/p80-159
+    - name: Vosko-Wilk-Nusair \#3
+      abbr: VWN3
+      doi: 10.1139/p80-159
+    - name: Vosko-Wilk-Nusair \#4
+      abbr: VWN4
+      doi: 10.1139/p80-159
+    - name: Vosko-Wilk-Nusair \#5
+      abbr: VWN5
+      doi: 10.1139/p80-159
+    - name: Short-range version of VWN
+      abbr: srVWN
+      doi: 10.1002/qua.20259
+    - name: Liu-Parr
+      abbr: Liu-Parr
+      doi: 10.1016/S0166-1280(99)00410-8
+    - name: Proynov-Kong 2009
+      abbr: PK09
+      doi: 10.1103/PhysRevA.79.014103
+    - name: Wigner
+      abbr: Wigner
+      doi:
+        - 10.1039/FT9959104337
+        - 10.1039/tf9383400678
+# ----------------------------------
+# Generalized Gradient Approximation
+# ----------------------------------
+GGA:
+  exchange:
+    - name: Perdew-Burke-Ernzerhof
+      abbr: PBE
+      doi: 10.1103/PhysRevLett.77.3865
+    - name: Zhang-Yang modification of PBE
+      abbr: revPBE
+      doi: 10.1103/PhysRevLett.80.890
+    - name: Short-range version of PBE by Hirao
+      abbr: muPBE
+      doi: 10.1063/1.1383587
+    - name: Short-range version of PBE by Goll
+      abbr: srPBE
+      doi:
+      - 10.1039/B509242F
+      - 10.1016/j.chemphys.2006.05.020
+    - name: Henderson model for PBE short-range exchange hole
+      abbr: wPBE
+      doi: 10.1063/1.2921797
+    - name: PBE modified for solids
+      abbr: PBEsol
+      doi: 10.1103/PhysRevLett.100.136406
+    - name: Modification of PBE by Hammer, Hansen, Norskov
+      abbr: RPBE
+      doi: 10.1103/PhysRevB.59.7413
+    - name: Becke 1988
+      abbr: B88
+      doi: 10.1103/PhysRevA.38.3098
+    - name: Short-range version of B88
+      abbr: muB88
+      doi: 10.1063/1.1383587
+    - name: Re-fit version of B88
+      abbr: optB88
+      doi: 10.1088/09538984/22/2/022201
+    - name: Armiento-Kümmel 2013
+      abbr: AK13
+      doi: 10.1103/PhysRevLett.111.036402
+    - name: Becke 1986
+      abbr: B86
+      doi: 10.1063/1.450025
+    - name: modified gradient correction Becke 1986
+      abbr: mB86
+      doi: 10.1063/1.451353
+    - name: Perdew-Wang 1986
+      abbr: PW86
+      doi: 10.1103/PhysRevB.33.8800
+    - name: revised version of PW86
+      abbr: rPW86
+      doi: 10.1021/ct900365q
+    - name: Perdew-Wang 1991
+      abbr: PW91
+      doi: 10.1103/PhysRevB.46.6671
+    - name: modified version of PW91 by Adamo, Barone
+      abbr: mPW91
+      doi: 10.1063/1.475428
+    - name: Gill 1996
+      abbr: G96
+      doi: 10.1080/002689796173813
+    - name: Handy, Cohen
+      abbr: OPTX
+      doi: 10.1080/00268970010018431
+    - name: Second order GGA by Truhlar, Zhao
+      abbr: SOGGA
+      doi: 10.1063/1.2912068
+  correlation:
+    - name: Perdew-Burke-Ernzerhof
+      abbr: PBE
+      doi: 10.1103/PhysRevLett.77.3865
+    - name: Short-range version of PBE by Goll
+      abbr: srPBE
+      doi:
+        - 10.1039/B509242F
+        - 10.1016/j.chemphys.2006.05.020
+    - name: PBE modified for solids
+      abbr: PBEsol
+      doi: 10.1103/PhysRevLett.100.136406
+    - name: PBE modified by Della Salla
+      abbr: PBEloc
+      doi: 10.1103/PhysRevB.86.035130
+    - name: Slight modification of PBE
+      abbr: [regTPSS, vPBEc]
+      doi: 10.1021/ct300269u
+    - name: one-parameter progressive PBE
+      abbr: PBEOP
+      doi: 10.1063/1.479012
+    - name: Lee-Yang-Parr
+      abbr: LYP
+      doi: 10.1103/PhysRevB.37.785
+    - name: Perdew-Wang 1986 based on PZ81
+      abbr: P86
+      doi: 10.1103/PhysRevB.33.8822
+    - name: Perdew-Wang based on VWN5
+      abbr: P86VWN5
+      doi: 10.1103/PhysRevB.33.8822
+    - name: Perdew-Wang 1991
+      abbr: PW91
+      doi: 10.1103/PhysRevB.46.6671
+  exchange-correlation:
+    - name: 9-parameter D2 dispersion corrected functional by Grimme
+      abbr: B97-D
+    - name: D3(0) corrected version of B97-D
+      abbr: B97-D3(0)
+    - name: 21-parameter non-separable GGA by Truhlar
+      abbr: GAM
+    - name: 21-parameter non-separable GGA by Peverati, Truhlar
+      abbr: N12
+    - name: 20-parameter functional by Peverati, Zhao, Truhlar
+      abbr: SOGGA11
+    # more to add here
+    # TODO: verify:
+    # BEEF-vdW, BOP, EDF1, EDF2, HCTH93, HCTH120, HCTH147, HCTH407, HLE16, KT1, KT2, KT3
+    # how to deal with VV10 non-local correlation?
+    #
+# ---------------------------------------
+# meta Generalized Gradient Approximation
+# ---------------------------------------
+meta-GGA:
+  exchange:
+    - name: Tao, Perdew, Staroverov, Scuseria
+      abbr: TPSS
+      doi: 10.1103/PhysRevLett.91.146401
+    - name: revised version of TPSS
+      abbr: revTPSS
+      doi: 10.1103/PhysRevLett.103.026403
+    - name: One-parameter version of TPSS
+      abbr: modTPSS
+      doi: 10.1103/PhysRevA.76.042506
+    - name: Five-parameter version of TPSS by Grimme
+      abbr: oTPSS
+      doi: 10.1021/ct900489g
+    - name: regularized version of TPSS
+      abbr: regTPSS
+      doi: 10.1021/ct300269u
+    - name: Modification of TPSS for use with TPSSloc by Della Salla
+      abbr: BLOC
+      doi: 10.1021/ct400148r
+    - name: Exchange functional based on finite uniform electron gas by Loos
+      abbr: PBE-GX
+      doi: 10.1063/1.4978409
+    - name: Perdew, Kurt, Zupan, Blaha
+      abbr: PKZB
+      doi: 10.1103/PhysRevLett.82.2544
+    - name: Strongly constrained and Appropriately Normed
+      abbr: SCAN
+      doi: 10.1103/PhysRevLett.115.036402
+    - name: Tao, Mo
+      abbr: TM
+      doi: 10.1103/PhysRevLett.117.073001
+  correlation:
+    - name: Tao, Perdew, Staroverov, Scuseria
+      abbr: TPSS
+      doi: 10.1103/PhysRevLett.91.146401
+    - name: revised version of TPSS
+      abbr: revTPSS
+      doi: 10.1103/PhysRevLett.103.026403
+    - name: Modification of TPSS based on PBEloc
+      abbr: TPSSloc
+      doi: 10.1103/PhysRevB.86.035130
+    - name: Two-parameter version of TPSS by Grimme
+      abbr: oTPSS
+      doi: 10.1021/ct900489g
+    - name: Becke 1995
+      abbr: B95
+      doi: 10.1063/1.470829
+    - name: Proynov-Kong 2006
+      abbr: PK06
+      doi: 10.1021/ct600372t
+    - name: Perdew, Kurt, Zupan, Blaha
+      abbr: PKZB
+      doi: 10.1103/PhysRevLett.82.2544
+    - name: Strongly constrained and Appropriately Normed
+      abbr: SCAN
+      doi: 10.1103/PhysRevLett.115.036402
+    - name: Tao, Mo
+      abbr: TM
+      doi: 10.1103/PhysRevLett.117.073001
+  exchange-correlation:
+    - name: 12-parameter combinatorially-optimized, VV10 dispersion corrected functional by Head-Gordon, Mardirossian
+      abbr: B97M-V
+    - name: rVV10 corrected version of B97M-V
+      abbr: B97M-rV
+    - name: 34-parameter functional by Truhlar, Zhao
+      abbr: M06-L
+    - name: 31-parameter functional
+      abbr: revM06-L
+    # TODO: verify other examples of non-separable meta-GGA exchange-correlation functionals
+# TODO: add hybrid functionals and double-hybrid functionals
+
+# TODO: add field: Range of application or notes (what property/material is it good for?)

@@ -1,0 +1,15 @@
+{
+    "schemaId": "models-directory-pb-qm-dft-functional-local-functional-components",
+    "$schema": "http://json-schema.org/draft-04/schema#",
+    "anyOf": [
+        {
+            "$ref": "components_directory/local_functional_lda.json"
+        },
+        {
+            "$ref": "components_directory/local_functional_gga.json"
+        },
+        {
+            "$ref": "components_directory/local_functional_mgga.json"
+        }
+    ]
+}

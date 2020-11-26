@@ -1,0 +1,21 @@
+{
+    "$schema": "http://json-schema.org/draft-04/schema#",
+    "allOf": [
+        {
+            "$ref": "../../../../../model/modifiers.json"
+        }
+    ],
+    "description": "Modifiers specific to this model type only.",
+    "items": {
+        "anyOf": [
+            {
+                "description": "CI modifiers",
+                "$ref": "definitions.json#/modifiers"
+            },
+            {
+                "description": "ab initio modifiers",
+                "$ref": "../definitions.json#/modifiers"
+            }
+        ]
+    }
+}

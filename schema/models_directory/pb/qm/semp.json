@@ -1,0 +1,53 @@
+{
+    "schemaId": "models-directory-pb-qm-semp",
+    "$schema": "http://json-schema.org/draft-04/schema#",
+    "title": "Semi-empirical model schema",
+    "allOf": [
+        {
+            "$ref": "../qm.json"
+        }
+    ],
+    "properties": {
+        "tier3": {
+            "enum": [
+                {
+                    "name": "semi-empirical",
+                    "slug": "semp"
+                }
+            ]
+        },
+        "type": {
+            "enum": [
+                {
+                    "name": "extended hueckel theory",
+                    "slug": "eht"
+                },
+                {
+                    "name": "parametric method 7",
+                    "slug": "pm7"
+                },
+                {
+                    "name": "first order tight-binding dft",
+                    "slug": "dftb1"
+                },
+                {
+                    "name": "second order tight-binding dft",
+                    "slug": "dftb2"
+                },
+                {
+                    "name": "third order tight-binding dft",
+                    "slug": "dftb3"
+                }
+            ]
+        },
+        "augmentations": {
+            "$ref": "semp/augmentations.json"
+        },
+        "modifiers": {
+            "$ref": "semp/modifiers.json"
+        },
+        "tags": {
+            "$ref": "semp/tags.json"
+        }
+    }
+}

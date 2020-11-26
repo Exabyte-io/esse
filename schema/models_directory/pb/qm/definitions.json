@@ -1,0 +1,46 @@
+{
+    "scaling": {
+        "description": "Scaling degree w.r.t. system size. Used for tags",
+        "1": {
+            "enum":[
+                "scaling-degree:1"
+            ]
+        },
+        "2": {
+            "enum":[
+                "scaling-degree:2"
+            ]
+        },
+        "3": {
+            "enum":[
+                "scaling-degree:3"
+            ]
+        },
+        "4": {
+            "enum":[
+                "scaling-degree:4"
+            ]
+        },
+        "5": {
+            "enum":[
+                "scaling-degree:5"
+            ]
+        },
+        "6": {
+            "enum":[
+                "scaling-degree:6"
+            ]
+        }
+    },
+    "tags": {
+        "enum": [
+            "excited-states"
+        ]
+    },
+    "augmentations": {},
+    "modifiers": {
+        "enum": [
+            "soc"
+        ]
+    }
+}
