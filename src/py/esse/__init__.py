@@ -1,8 +1,8 @@
 import jsonschema
 
 from esse.utils import parseIncludeReferenceStatementsByDir
-from esse.functionals import generate_dft_unit_functionals
 from esse.settings import SCHEMAS_DIR, EXAMPLES_DIR, PROPERTIES_MANIFEST
+from esse.functionals import generate_dft_unit_functionals
 
 generate_dft_unit_functionals()
 SCHEMAS = parseIncludeReferenceStatementsByDir(SCHEMAS_DIR)
