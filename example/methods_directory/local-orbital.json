@@ -1,0 +1,7 @@
+{
+    "type": "local-orbital",
+    "subtype": "pople",
+    "basisSet": {
+        "slug": "3-21G"
+    }
+}
