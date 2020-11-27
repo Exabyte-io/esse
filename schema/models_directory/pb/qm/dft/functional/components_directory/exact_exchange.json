@@ -1,0 +1,27 @@
+{
+    "schemaId": "models-directory-pb-qm-dft-functional-components-directory-exact-exchange",
+    "$schema": "http://json-schema.org/draft-04/schema#",
+    "title": "exact exchange component schema",
+    "allOf": [
+        {
+            "$ref": "../component.json"
+        }
+    ],
+    "properties": {
+        "name": {
+            "enum": [
+                "exact Exchange"
+            ]
+        },
+        "slug": {
+            "enum": [
+                "exact-exchange"
+            ]
+        },
+        "type": {
+            "enum": [
+                "exchange"
+            ]
+        }
+    }
+}

@@ -1,0 +1,50 @@
+{
+    "schemaId": "models-directory-pb-qm-abin-configuration-interaction",
+    "$schema": "http://json-schema.org/draft-04/schema#",
+    "title": "configuration interaction schema",
+    "description": "configuration interaction wavefunction model",
+    "allOf": [
+        {
+            "$ref": "../../../../model.json"
+        }
+    ],
+    "properties": {
+        "type": {
+            "enum": [
+                {
+                    "name": "configuration interaction",
+                    "slug": "ci"
+                }
+            ]
+        },
+        "subtype":{
+            "enum": [
+                {
+                    "name": "CIS",
+                    "slug": "cis"
+                },
+                {
+                    "name": "CISD",
+                    "slug": "cisd"
+                },
+                {
+                    "name": "MR-CIS",
+                    "slug": "mrcis"
+                },
+                {
+                    "name": "MR-CISD",
+                    "slug": "mrcisd"
+                }
+            ]
+        },
+        "augmentations": {
+            "$ref": "configuration_interaction/augmentations.json"
+        },
+        "modifiers": {
+            "$ref": "configuration_interaction/modifiers.json"
+        },
+        "tags": {
+            "$ref": "configuration_interaction/tags.json"
+        }
+    }
+}

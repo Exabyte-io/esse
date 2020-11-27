@@ -1,0 +1,33 @@
+{
+    "tier1": {
+        "name": "physics-based",
+        "slug": "pb"
+    },
+    "tier2": {
+        "name": "quantum-mechanical",
+        "slug": "qm"
+    },
+    "tier3": {
+        "name": "ab initio",
+        "slug": "abin"
+    },
+    "type": {
+        "name": "configuration interaction",
+        "slug": "ci"
+    },
+    "subtype": {
+        "name": "MR-CISD",
+        "slug": "mrcisd"
+    },
+    "modifier": [
+        "multi-reference"
+    ],
+    "tags": [
+        "scaling-degree:6",
+        "excited-states",
+        "user-adjustable"
+    ],
+    "method": {
+        "...": "include(../../../../method.json)"
+    }
+}

@@ -1,0 +1,21 @@
+{
+    "tier1": {
+        "name": "physics-based",
+        "slug": "pb"
+    },
+    "tier2": {
+        "name": "quantum-mechanical",
+        "slug": "qm"
+    },
+    "tier3": {
+        "name": "semi-empirical",
+        "slug": "semp"
+    },
+    "type": {
+        "name": "parametric method 7",
+        "slug": "pm7"
+    },
+    "method": {
+        "...": "include(../../../method.json)"
+    }
+}

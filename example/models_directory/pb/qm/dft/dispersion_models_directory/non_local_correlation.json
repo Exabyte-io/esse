@@ -1,0 +1,12 @@
+{
+    "modelType": "ab initio",
+    "usage": "intra-scf",
+    "type": {
+        "name": "Non-Local Correlation (NLC) Functionals",
+        "slug": "nlc"
+    },
+    "subtype": {
+        "name": "rVV10",
+        "slug": "rvv10"
+    }
+}

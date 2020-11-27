@@ -1,0 +1,38 @@
+{
+    "tier1": {
+        "name": "physics-based",
+        "slug": "pb"
+    },
+    "tier2": {
+        "name": "quantum-mechanical",
+        "slug": "qm"
+    },
+    "tier3": {
+        "name": "density functional theory",
+        "slug": "dft"
+    },
+    "type": {
+        "name": "Kohn-Sham DFT",
+        "slug": "ksdft"
+    },
+    "subtype": {
+        "name": "Generalized Gradient Approximation",
+        "slug": "gga"
+    },
+    "functional": {
+        "...": "include(functional.json)"
+    },
+    "dispersionModel": {
+        "...": "include(dispersion_models_directory/dft_d.json)"
+    },
+    "method": {
+        "...": "include(../../../../methods_directory/pseudopotential.json)"
+    },
+    "modifiers": [
+        "soc"
+    ],
+    "tags": [
+        "user-adjustable",
+        "scaling-degree:3"
+    ]
+}

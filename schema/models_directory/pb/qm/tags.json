@@ -1,0 +1,16 @@
+{
+    "$schema": "http://json-schema.org/draft-04/schema#",
+    "allOf": [
+        {
+            "$ref": "../../../model/tags.json"
+        }
+    ],
+    "description": "Tags specific to quantum-mechanical type only.",
+    "items": {
+        "anyOf": [
+            {
+                "$ref": "definitions.json#/tags"
+            }
+        ]
+    }
+}

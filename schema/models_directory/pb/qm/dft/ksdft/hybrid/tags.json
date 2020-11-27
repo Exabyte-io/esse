@@ -1,0 +1,24 @@
+{
+    "$schema": "http://json-schema.org/draft-04/schema#",
+    "allOf": [
+        {
+            "$ref": "../../../../../../model/tags.json"
+        }
+    ],
+    "description": "Tags specific to hybrid functionals only.",
+    "items": {
+        "anyOf": [
+            {
+                "$ref": "definitions.json#/tags"
+            },
+            {
+                "description": "QM definitions",
+                "$ref": "../../../definitions.json#/scaling/3"
+            },
+            {
+                "description": "Universal definitions",
+                "$ref": "../../../../../definitions.json#/tags"
+            }
+        ]
+    }
+}

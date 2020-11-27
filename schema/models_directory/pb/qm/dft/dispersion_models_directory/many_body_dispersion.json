@@ -1,0 +1,28 @@
+{
+    "schemaId": "models-directory-pb-qm-dft-dispersion-models-directory-mbd",
+    "$schema": "http://json-schema.org/draft-04/schema#",
+    "title": "Many-Body Dispersion Schema",
+    "allOf": [
+        {
+            "$ref": "generalized/post_abin.json"
+        }
+    ],
+    "properties": {
+        "type": {
+            "enum": [
+                {
+                    "name": "Many-body dispersion correction",
+                    "slug": "many-body-disp"
+                }
+            ]
+        },
+        "subtype": {
+            "enum": [
+                {
+                    "name": "MBD@rsSCS (range-separated self-consistent screening)",
+                    "slug": "mbd-rsscs"
+                }
+            ]
+        }
+    }
+}

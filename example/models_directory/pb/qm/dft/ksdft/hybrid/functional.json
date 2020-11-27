@@ -1,0 +1,36 @@
+{
+    "name": "B3LYP",
+    "slug": "b3lyp",
+    "components": [
+        {
+            "name": "exact Exchange",
+            "slug": "exact-exchange",
+            "type": "exchange",
+            "fraction": 0.2
+        },
+        {
+            "name": "Slater",
+            "slug": "slater",
+            "type": "exchange",
+            "fraction": 0.08
+        },
+        {
+            "name": "Becke 1988",
+            "slug": "b88",
+            "type": "exchange",
+            "fraction": 0.72
+        },
+        {
+            "name": "VWN1RPA",
+            "slug": "vwn1rpa",
+            "type": "correlation",
+            "fraction": 0.19
+        },
+        {
+            "name": "LYP",
+            "slug": "lyp",
+            "type": "correlation",
+            "fraction": 0.81
+        }
+    ]
+}

@@ -1,0 +1,23 @@
+{
+    "schemaId": "models-directory-pb-qm-dft-functional-components-directory-range-separated-exchange",
+    "$schema": "http://json-schema.org/draft-04/schema#",
+    "title": "range-separated exchange schema",
+    "allOf": [
+        {
+            "$ref": "../component.json"
+        }
+    ],
+    "properties": {
+        "type": {
+            "enum": [
+                "exchange"
+            ]
+        },
+        "range": {
+            "enum": [
+                "short-range",
+                "long-range"
+            ]
+        }
+    }
+}

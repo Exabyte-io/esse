@@ -1,0 +1,18 @@
+{
+    "schemaId": "models-directory-pb-qm-df-ksdft-gga-functional",
+    "$schema": "http://json-schema.org/draft-04/schema#",
+    "title": "GGA functional key schema",
+    "allOf": [
+        {
+            "$ref": "../../functional.json"
+        }
+    ],
+    "properties": {
+        "components": {
+            "type": "array",
+            "items": {
+                "$ref": "../../functional/components_directory/local_functional_gga.json"
+            }
+        }
+    }
+}

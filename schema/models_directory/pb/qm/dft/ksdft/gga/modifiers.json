@@ -1,0 +1,20 @@
+{
+    "$schema": "http://json-schema.org/draft-04/schema#",
+    "allOf": [
+        {
+            "$ref": "../../../../../../model/modifiers.json"
+        }
+    ],
+    "description": "Modifiers specific to GGA functionals only.",
+    "items": {
+        "anyOf": [
+            {
+                "$ref": "definitions.json#/modifiers"
+            },
+            {
+                "description": "Universal of modifiers",
+                "$ref": "../../../../../definitions.json#/modifiers"
+            }
+        ]
+    }
+}
