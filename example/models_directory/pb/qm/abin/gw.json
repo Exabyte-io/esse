@@ -12,19 +12,16 @@
         "slug": "abin"
     },
     "type": {
-        "name": "configuration interaction",
-        "slug": "ci"
+        "name": "GW Approximation",
+        "slug": "gw"
     },
     "subtype": {
-        "name": "MR-CISD",
-        "slug": "mrcisd"
+        "name": "G0W0",
+        "slug": "g0w0"
     },
-    "modifier": [
-        "multi-reference"
-    ],
     "tags": [
-        "scaling-degree:6",
-        "excited-states",
+        "greens-function",
+        "many-body-perturbation-theory",
         "user-adjustable"
     ],
     "method": {

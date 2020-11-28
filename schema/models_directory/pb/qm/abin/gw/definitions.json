@@ -1,5 +1,10 @@
 {
-    "tags": {},
+    "tags": {
+        "enum": [
+            "greens-function",
+            "many-body-perturbation-theory"
+        ]
+    },
     "augmentations": {},
     "modifiers": {}
 }
