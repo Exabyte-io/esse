@@ -1,5 +1,7 @@
 {
+    "schemaId": "models-directory-pb-qm-dft",
     "$schema": "http://json-schema.org/draft-04/schema#",
+    "title": "density functional theory schema",
     "allOf": [
         {
             "$ref": "../qm.json"
