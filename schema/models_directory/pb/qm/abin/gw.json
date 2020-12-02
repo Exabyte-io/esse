@@ -17,6 +17,7 @@
             ]
         },
         "subtype": {
+            "description": "Abbreviations taken from Golze, Dvorak, Rinke, Frontiers in Chemistry, (2019) 7:377. https://doi.org/10.3389/fchem.2019.00377",
             "enum": [
                 {
                     "name": "G0W0",

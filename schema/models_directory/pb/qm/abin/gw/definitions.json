@@ -2,7 +2,8 @@
     "tags": {
         "enum": [
             "greens-function",
-            "many-body-perturbation-theory"
+            "many-body-perturbation-theory",
+            "refiner"
         ]
     },
     "augmentations": {},
