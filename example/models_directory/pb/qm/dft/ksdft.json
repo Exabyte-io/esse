@@ -22,6 +22,9 @@
     "functional": {
         "...": "include(functional.json)"
     },
+    "dispersionModel": {
+        "...": "include(dispersion_models_directory/dft_d.json)"
+    },
     "method": {
         "...": "include(../../../../methods_directory/pseudopotential.json)"
     },

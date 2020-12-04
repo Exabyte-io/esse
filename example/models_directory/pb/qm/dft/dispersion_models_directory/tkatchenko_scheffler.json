@@ -1,0 +1,8 @@
+{
+    "modelType": "empirical",
+    "usage": "post-scf",
+    "type": {
+        "name": "Tkatchenko-Scheffler van der Waals Model (TS-vdW)",
+        "slug": "ts-vdw"
+    }
+}

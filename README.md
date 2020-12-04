@@ -1,3 +1,7 @@
+[![PyPI version](https://badge.fury.io/py/esse.svg)](https://badge.fury.io/py/esse)
+[![npm version](https://badge.fury.io/js/%40exabyte-io%2Fesse.js.svg)](https://badge.fury.io/js/%40exabyte-io%2Fesse.js)
+[![License: Apache](https://img.shields.io/badge/License-Apache-blue.svg)](https://www.apache.org/licenses/LICENSE-2.0)
+
 # ESSE
 
 Exabyte Source of Schemas and Examples (ESSE) contains data formats and associated examples specifically designed for digital materials science [1](#links).
@@ -8,9 +12,9 @@ ESSE can be used as a Node.js or Python package on the server side. Please note 
 
 ### Python
 
-ESSE can be install as a Python package either via PyPi or the repository as below.
+ESSE is compatible with Python 2.7 up until version 2.3.0, and Python 3.6+ afterward.  It can be installed as a Python package either via PyPI or the repository as below.
 
-#### PyPi
+#### PyPI
 
 ```bash
 pip install esse
@@ -19,7 +23,7 @@ pip install esse
 #### Repository
 
 ```bash
-virtualenv -p python2.7 .venv
+virtualenv .venv
 source .venv/bin/activate
 pip install -e PATH_TO_ESSE_REPOSITORY
 ```
@@ -96,6 +100,12 @@ Note: A list of DFT unit functionals (`dft_unit_functionals.json`) is generated 
 
 This directory contains Python and Javascript interfaces implementing the functionality to access and validate schemas and examples.
 
+### A word on functionals
+The list of DFT unit functionals (`dft_unit_functionals.json`) is currently tracked via [git LFS](https://git-lfs.github.com).
+If one wishes to add a new unit functional to that list, please
+- edit the [prototype file](schema/models_directory/pb/qm/dft/dft_unit_functionals_proto.json) and
+- generate a new list of unit functional by running python tests, for example (via `generate_dft_unit_functionals()` from the [esse.functionals](src/py/esse/functionals.py) python module).
+
 ## Tests
 
 Execute the following command from the root directory of this repository to run the tests. The script will run both Javascript and Python tests in which examples are validated against the corresponding schemas.
@@ -103,7 +113,7 @@ Execute the following command from the root directory of this repository to run 
 ```bash
 bash run-tests.sh
 ```
-The script has been tested with node.js v12.16.3 and v8.17.0 as well as python version 2.7.
+The script has been tested with node.js v12.16.3 and v8.17.0 as well as Python version 2.7 (up to version 2.3.0) and 3.6+ (for version 2020.10.19 and later).
 
 ## Contribution
 
