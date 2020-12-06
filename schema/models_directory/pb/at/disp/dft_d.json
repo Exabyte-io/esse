@@ -2,6 +2,7 @@
     "schemaId": "models-directory-at-disp-dft-d",
     "$schema": "http://json-schema.org/draft-04/schema#",
     "title": "Grimme-type empirical dispersion model for DFT (DFT-D)",
+    "description": "Abbreviations taken from manifest/dft_dispersion.yaml",
     "allOf": [
         {
             "$ref": "../disp.json"
