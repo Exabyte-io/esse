@@ -20,7 +20,7 @@ EXTRA_FILES.extend(get_files_by_path(os.path.join(DIR, "manifest")))
 
 setup(
     name='esse',
-    version='2020.10.19.4',
+    version='2020.12.14',
     description='Exabyte Source of Schemas and Examples',
     long_description=long_description,
     long_description_content_type='text/markdown',
