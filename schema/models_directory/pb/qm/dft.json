@@ -1,0 +1,24 @@
+{
+    "$schema": "http://json-schema.org/draft-04/schema#",
+    "allOf": [
+        {
+            "$ref": "../qm.json"
+        }
+    ],
+    "properties": {
+        "tier3": {
+            "enum": [
+                {
+                    "name": "density functional theory",
+                    "slug": "dft"
+                }
+            ]
+        },
+        "functional": {
+            "$ref": "dft/functional.json"
+        },
+        "dispersionModel": {
+            "$ref": "dft/dispersion_model.json"
+        }
+    }
+}

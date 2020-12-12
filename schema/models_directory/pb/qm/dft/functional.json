@@ -1,0 +1,18 @@
+{
+    "schemaId": "models-directory-pb-qm-dft-functional-base",
+    "$schema": "http://json-schema.org/draft-04/schema#",
+    "title": "exchange-correlation functional base schema",
+    "allOf": [
+        {
+            "$ref": "../../../../core/primitive/slugified_entry.json"
+        }
+    ],
+    "properties": {
+        "components": {
+            "type": "array",
+            "items": {
+                "$ref": "functional/component.json"
+            }
+        }
+    }
+}

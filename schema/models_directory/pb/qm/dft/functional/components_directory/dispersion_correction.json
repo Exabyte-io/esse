@@ -1,0 +1,13 @@
+{
+    "schemaId": "models-directory-pb-qm-dft-functional-components-directory-dispersion-correction",
+    "$schema": "http://json-schema.org/draft-04/schema#",
+    "title": "dispersion correction schema (may be deprecated in favor of generalized dispersion model)",
+    "allOf": [
+        {
+            "$ref": "../component.json"
+        },
+        {
+            "$ref": "../../dft_unit_functionals.json#/nonLocalCorrelation"
+        }
+    ]
+}

@@ -1,0 +1,20 @@
+{
+    "schemaId": "models-directory-pb-qm-dft-functional-components-directory-local-functional",
+    "$schema": "http://json-schema.org/draft-04/schema#",
+    "title": "local functional component schema",
+    "allOf": [
+        {
+            "$ref": "../component.json"
+        }
+    ],
+    "properties": {
+        "type": {
+            "enum": [
+                "exchange",
+                "correlation",
+                "exchange-correlation",
+                "kinetic"
+            ]
+        }
+    }
+}

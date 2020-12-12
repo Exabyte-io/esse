@@ -1,0 +1,30 @@
+{
+    "schemaId": "models-directory-pb-qm-dft-ksdft-gga",
+    "$schema": "http://json-schema.org/draft-04/schema#",
+    "title": "Generalized Gradient Approximation model schema",
+    "allOf": [
+        {
+            "$ref": "../ksdft.json"
+        }
+    ],
+    "subtype": {
+        "enum": [
+            {
+                "name": "Generalized Gradient Approximation",
+                "slug": "gga"
+            }
+        ]
+    },
+    "functional": {
+        "$ref": "gga/functional.json"
+    },
+    "augmentations": {
+        "$ref": "gga/augmentations.json"
+    },
+    "modifiers": {
+        "$ref": "gga/modifiers.json"
+    },
+    "tags": {
+        "$ref": "gga/tags.json"
+    }
+}

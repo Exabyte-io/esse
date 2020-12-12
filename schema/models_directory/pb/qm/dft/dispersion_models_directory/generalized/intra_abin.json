@@ -1,0 +1,22 @@
+{
+    "schemaId": "models-directory-pb-qm-dft-dispersion-models-directory-generalized-intra-abin",
+    "$schema": "http://json-schema.org/draft-04/schema#",
+    "title": "ab initio dispersion model applied during SCF",
+    "allOf": [
+        {
+            "$ref": "../../dispersion_model.json"
+        }
+    ],
+    "properties": {
+        "modelType": {
+            "enum": [
+                "ab initio"
+            ]
+        },
+        "usage": {
+            "enum": [
+                "intra-scf"
+            ]
+        }
+    }
+}

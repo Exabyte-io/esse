@@ -1,0 +1,31 @@
+{
+    "name": "B2PLYP",
+    "slug": "b2plyp",
+    "components": [
+        {
+            "name": "exact Exchange",
+            "slug": "exact-exchange",
+            "type": "exchange",
+            "fraction": 0.53
+        },
+        {
+            "name": "Becke 1988",
+            "slug": "b88",
+            "type": "exchange",
+            "fraction": 0.47
+        },
+        {
+            "name": "mp2-correction",
+            "slug": "mp2",
+            "type": "correlation",
+            "subtype": "all-spin",
+            "fraction": 0.27
+        },
+        {
+            "name": "LYP",
+            "slug": "lyp",
+            "type": "correlation",
+            "fraction": 0.73
+        }
+    ]
+}

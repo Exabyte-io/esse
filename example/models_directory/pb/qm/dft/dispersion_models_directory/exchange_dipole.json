@@ -1,0 +1,12 @@
+{
+    "modelType": "empirical",
+    "usage": "post-scf",
+    "type": {
+        "name": "Exchange-Dipole Model (XDM)",
+        "slug": "exchange-dipole-model"
+    },
+    "subtype": {
+        "name": "XDM10",
+        "slug": "xdm10"
+    }
+}
