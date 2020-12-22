@@ -1,5 +1,5 @@
 {
-    "schemaId": "models-directory-at-disp-xdm",
+    "schemaId": "models-directory-qm-disp-xdm",
     "$schema": "http://json-schema.org/draft-04/schema#",
     "title": "Exchange-Dipole Model (XDM)",
     "description": "See work by Becke and Johnson (doi: 10.1063/1.1884601)",

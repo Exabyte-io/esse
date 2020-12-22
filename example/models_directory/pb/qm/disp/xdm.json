@@ -4,11 +4,11 @@
         "slug": "pb"
     },
     "tier2": {
-        "name": "atomistic",
-        "slug": "at"
+        "name": "quantum-mechanical",
+        "slug": "qm"
     },
     "tier3": {
-        "name": "atomistic dispersion model",
+        "name": "quantum-mechanical dispersion model",
         "slug": "disp"
     },
     "type": {
