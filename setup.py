@@ -1,5 +1,6 @@
 import os
 from setuptools import find_packages, setup
+import versioneer
 
 
 def get_files_by_path(path):
@@ -20,7 +21,8 @@ EXTRA_FILES.extend(get_files_by_path(os.path.join(DIR, "manifest")))
 
 setup(
     name='esse',
-    version='2020.12.14',
+    version=versioneer.get_version(),
+    cmdclass=versioneer.get_cmdclass(),
     description='Exabyte Source of Schemas and Examples',
     long_description=long_description,
     long_description_content_type='text/markdown',
