@@ -11,7 +11,7 @@
     "properties": {
         "name": {
             "enum": [
-                "nwchem"
+                "NWChem"
             ]
         },
         "summary": {
