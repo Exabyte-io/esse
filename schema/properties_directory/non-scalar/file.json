@@ -25,7 +25,7 @@
                     "type": "string"
                 },
                 "PROVIDER": {
-                    "description": "Proivder of the computational reosurces",
+                    "description": "Provider of the computational resources",
                     "type": "string"
                 }
             },
