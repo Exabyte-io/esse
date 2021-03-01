@@ -1,29 +1,29 @@
 {
-  "schemaId": "workflow-unit-download-from-urls",
-  "$schema": "http://json-schema.org/draft-04/schema#",
-  "title": "download-from-urls io schema",
-  "type": "object",
-  "allof": [
-    {
-      "$ref": "../../unit.json"
-    }
-  ],
-  "properties": {
-    "url": {
-      "description": "url of the file to download",
-      "type": "string"
+    "schemaId": "workflow-unit-download-from-urls",
+    "$schema": "http://json-schema.org/draft-04/schema#",
+    "title": "download-from-urls io schema",
+    "type": "object",
+    "allof": [
+        {
+            "$ref": "../../unit.json"
+        }
+    ],
+    "properties": {
+        "url": {
+            "description": "url of the file to download",
+            "type": "string"
+        },
+        "filename": {
+            "description": "name given to the file when it is downloaded",
+            "type": "string"
+        },
+        "overwrite": {
+            "description": "if a file with the same filename already exists, whether to overwrite the old file",
+            "type": "boolean"
+        }
     },
-    "filename": {
-      "description": "name given to the file when it is downloaded",
-      "type": "string"
-    },
-    "overwrite": {
-      "description": "if a file with the same filename already exists, whether to overwrite the old file",
-      "type": "boolean"
-    }
-  },
-  "required": [
-    "url",
-    "filename"
-  ]
+    "required": [
+        "url",
+        "filename"
+    ]
 }
