@@ -27,12 +27,25 @@
                 "PROVIDER": {
                     "description": "Provider of the computational resources",
                     "type": "string"
+                },
+                "REGION": {
+                    "description": "Region of the cloud provider's server",
+                    "type": "string"
+                },
+                "SIZE": {
+                    "description": "Size of the file in bytes",
+                    "type": "integer"
+                },
+                "TIMESTAMP": {
+                    "description": "Unix timestamp showing when the file was last modified",
+                    "type": "string"
                 }
             },
             "required": [
                 "CONTAINER",
                 "NAME",
-                "PROVIDER"
+                "PROVIDER",
+                "REGION"
             ]
         }
     },

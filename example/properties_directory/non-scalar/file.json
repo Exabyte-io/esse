@@ -1,9 +1,12 @@
 {
-    "name": "my_picture.png",
-    "type": "image",
+    "name": "my_json.json",
+    "type": "text",
     "objectData": {
-        "CONTAINER": "container-that-ran-the-job-cluster-####",
-        "NAME": "/path/where/the/job/put/this/file.png",
-        "PROVIDER": "compute-provider"
+        "CONTAINER": "production-20160630-cluster-001",
+        "NAME": "/cluster-001-home/jrd101/data/jrd101-default/kernel-train-Cxmkj97aXKZeaRZov/Cxmkj97aXKZeaRZov.json",
+        "PROVIDER": "aws",
+        "REGION": "us-east-1",
+        "SIZE": 6582,
+        "TIMESTAMP": "1614217411"
     }
 }
