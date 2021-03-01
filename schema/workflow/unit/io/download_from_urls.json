@@ -3,6 +3,11 @@
   "$schema": "http://json-schema.org/draft-04/schema#",
   "title": "download-from-urls io schema",
   "type": "object",
+  "allof": [
+    {
+      "$ref": "../../unit.json"
+    }
+  ],
   "properties": {
     "url": {
       "description": "url of the file to download",
