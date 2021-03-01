@@ -10,7 +10,10 @@
         "type": {
             "description": "type of the file",
             "type": "string",
-            "enum": ["image", "text"]
+            "enum": [
+                "image",
+                "text"
+            ]
         },
         "objectData": {
             "description": "information describing the file and where it was run",
