@@ -3,7 +3,7 @@
     "type": "image",
     "objectData": {
         "CONTAINER": "container-that-ran-the-job-cluster-####",
-        "NAME": "/path/where/the/job/put/this/file.foo",
+        "NAME": "/path/where/the/job/put/this/file.png",
         "PROVIDER": "compute-provider"
     }
 }
