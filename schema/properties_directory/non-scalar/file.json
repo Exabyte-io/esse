@@ -1,0 +1,44 @@
+{
+    "schemaId": "properties-directory-file",
+    "$schema": "http://json-schema.org/draft-04/schema#",
+    "title": "file property schema",
+    "properties": {
+        "name": {
+            "description": "name of the file",
+            "type": "string"
+        },
+        "type": {
+            "description": "type of the file",
+            "type": "string",
+            "enum": ["image", "text"]
+        },
+        "objectData": {
+            "description": "information describing the file and where it was run",
+            "type": "object",
+            "properties": {
+                "CONTAINER": {
+                    "description": "Container that ran the job resulting in the file",
+                    "type": "string"
+                },
+                "NAME": {
+                    "description": "Path to where the job put the file",
+                    "type": "string"
+                },
+                "PROVIDER": {
+                    "description": "Proivder of the computational reosurces",
+                    "type": "string"
+                }
+            },
+            "required": [
+                "CONTAINER",
+                "NAME",
+                "PROVIDER"
+            ]
+        }
+    },
+    "required": [
+        "name",
+        "type",
+        "objectData"
+    ]
+}

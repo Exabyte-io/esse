@@ -1,0 +1,9 @@
+{
+    "name": "my_picture.png",
+    "type": "image",
+    "objectData": {
+        "CONTAINER": "container-that-ran-the-job-cluster-####",
+        "NAME": "/path/where/the/job/put/this/file.foo",
+        "PROVIDER": "compute-provider"
+    }
+}
