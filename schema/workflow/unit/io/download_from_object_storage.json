@@ -1,7 +1,7 @@
 {
-    "schemaId": "workflow-unit-download-from-urls",
+    "schemaId": "workflow-unit-download-from-object-storage",
     "$schema": "http://json-schema.org/draft-04/schema#",
-    "title": "download-from-urls io schema",
+    "title": "download-from-object-storage io schema",
     "type": "object",
     "allof": [
         {
