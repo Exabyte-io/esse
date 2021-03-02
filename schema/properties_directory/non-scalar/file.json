@@ -16,40 +16,7 @@
             ]
         },
         "objectData": {
-            "description": "information describing the file and where it was run",
-            "type": "object",
-            "properties": {
-                "CONTAINER": {
-                    "description": "Container that ran the job resulting in the file",
-                    "type": "string"
-                },
-                "NAME": {
-                    "description": "Path to where the job put the file",
-                    "type": "string"
-                },
-                "PROVIDER": {
-                    "description": "Provider of the computational resources",
-                    "type": "string"
-                },
-                "REGION": {
-                    "description": "Region of the cloud provider's server",
-                    "type": "string"
-                },
-                "SIZE": {
-                    "description": "Size of the file in bytes",
-                    "type": "integer"
-                },
-                "TIMESTAMP": {
-                    "description": "Unix timestamp showing when the file was last modified",
-                    "type": "string"
-                }
-            },
-            "required": [
-                "CONTAINER",
-                "NAME",
-                "PROVIDER",
-                "REGION"
-            ]
+            "$ref": "../../core/reusable/object_storage_container_data.json"
         }
     },
     "required": [
