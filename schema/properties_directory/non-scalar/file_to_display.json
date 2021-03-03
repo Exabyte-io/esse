@@ -8,6 +8,11 @@
         }
     ],
     "properties": {
+        "name": {
+            "enum": [
+                "file_to_display"
+            ]
+        },
         "objectData": {
             "$ref": "../../core/reusable/object_storage_container_data.json"
         }
