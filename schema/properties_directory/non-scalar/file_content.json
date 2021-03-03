@@ -13,6 +13,14 @@
                 "file_content"
             ]
         },
+        "filetype": {
+            "description": "What kind of file this is, e.g. image / text",
+            "type": "string",
+            "enum": [
+                "image",
+                "text"
+            ]
+        },
         "objectData": {
             "$ref": "../../core/reusable/object_storage_container_data.json"
         }
