@@ -3,9 +3,5 @@
     "overwrite": true,
     "objectData": {
         "...": "include(../../../core/reusable/object_storage_container_data.json)"
-    },
-    "flowchartId": "download-files",
-    "head": true,
-    "name": "download_files",
-    "type": "io"
+    }
 }

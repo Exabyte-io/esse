@@ -5,9 +5,6 @@
     "type": "object",
     "allof": [
         {
-            "$ref": "../../unit.json"
-        },
-        {
             "$ref": "../../../core/reusable/file_metadata.json"
         }
     ],
