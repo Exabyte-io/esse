@@ -1,0 +1,18 @@
+{
+    "schemaId": "properties-directory-file-to-display",
+    "$schema": "http://json-schema.org/draft-04/schema#",
+    "title": "file_to_display",
+    "allof": [
+        {
+            "$ref": "../../core/reusable/file_metadata.json"
+        }
+    ],
+    "properties": {
+        "objectData": {
+            "$ref": "../../core/reusable/object_storage_container_data.json"
+        }
+    },
+    "required": [
+        "objectData"
+    ]
+}
