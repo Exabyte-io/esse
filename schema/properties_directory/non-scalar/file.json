@@ -1,0 +1,27 @@
+{
+    "schemaId": "properties-directory-file",
+    "$schema": "http://json-schema.org/draft-04/schema#",
+    "title": "file property schema",
+    "properties": {
+        "name": {
+            "description": "name of the file",
+            "type": "string"
+        },
+        "type": {
+            "description": "type of the file",
+            "type": "string",
+            "enum": [
+                "image",
+                "text"
+            ]
+        },
+        "objectData": {
+            "$ref": "../../core/reusable/object_storage_container_data.json"
+        }
+    },
+    "required": [
+        "name",
+        "type",
+        "objectData"
+    ]
+}
