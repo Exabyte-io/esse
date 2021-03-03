@@ -2,13 +2,10 @@
     "filename": "index.html",
     "overwrite": true,
     "objectData": {
-        "CONTAINER": "example-cluster-001",
-        "NAME": "/path/to/the/index.html",
-        "PROVIDER": "some-cloud-compute-provider",
-        "REGION": "us-west-1"
+        "...": "include(../../../core/reusable/object_storage_container_data.json)"
     },
     "flowchartId": "download-files",
     "head": true,
     "name": "download_files",
-    "type": "download_from_urls"
+    "type": "io"
 }
