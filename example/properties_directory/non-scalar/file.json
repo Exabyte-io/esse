@@ -1,6 +1,6 @@
 {
-    "name": "my_json.json",
-    "type": "text",
+    "basename": "my_json.json",
+    "filetype": "text",
     "objectData": {
         "...": "include(../../core/reusable/object_storage_container_data.json)"
     }

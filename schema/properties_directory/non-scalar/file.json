@@ -1,27 +1,18 @@
 {
-    "schemaId": "properties-directory-file",
+    "schemaId": "properties-directory-file-to-display",
     "$schema": "http://json-schema.org/draft-04/schema#",
-    "title": "file property schema",
+    "title": "file_to_display",
+    "allof": [
+        {
+            "$ref": "../../core/reusable/file_metadata.json"
+        }
+    ],
     "properties": {
-        "name": {
-            "description": "name of the file",
-            "type": "string"
-        },
-        "type": {
-            "description": "type of the file",
-            "type": "string",
-            "enum": [
-                "image",
-                "text"
-            ]
-        },
         "objectData": {
             "$ref": "../../core/reusable/object_storage_container_data.json"
         }
     },
     "required": [
-        "name",
-        "type",
         "objectData"
     ]
 }
