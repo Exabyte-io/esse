@@ -9,8 +9,13 @@
         }
     ],
     "properties": {
-        "filename": {
-            "description": "name given to the file when it is downloaded",
+        "pathname": {
+            "description": "Name of the directory to contain the file when it is downloaded. If empty, the current directory is used",
+            "type": "string",
+            "default": ""
+        },
+        "basename": {
+            "description": "Basename the file should have when it is downloaded",
             "type": "string"
         },
         "objectData": {
@@ -23,7 +28,7 @@
         }
     },
     "required": [
-        "filename",
-        "objectData"
+        "objectData",
+        "basename"
     ]
 }
