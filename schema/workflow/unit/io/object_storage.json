@@ -6,12 +6,17 @@
     "allof": [
         {
             "$ref": "../../unit.json"
-        },
-        {
-            "$ref": "../../../core/reusable/file_metadata.json"
         }
     ],
     "properties": {
+        "pathname": {
+            "description": "Name of the directory to contain the file when it is downloaded. If empty, the current directory is used",
+            "type": "string"
+        },
+        "basename": {
+            "description": "Basename the file should have when it is downloaded",
+            "type": "string"
+        },
         "objectData": {
             "$ref": "../../../core/reusable/object_storage_container_data.json"
         },
