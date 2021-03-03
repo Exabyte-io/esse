@@ -24,7 +24,8 @@
         "source": {
             "enum": [
                 "api",
-                "db"
+                "db",
+                "object-storage"
             ]
         },
         "input": {
@@ -36,6 +37,9 @@
                     },
                     {
                         "$ref": "io/db.json"
+                    },
+                    {
+                        "$ref": "io/object_storage.json"
                     }
                 ]
             }
