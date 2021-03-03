@@ -11,8 +11,7 @@
     "properties": {
         "pathname": {
             "description": "Name of the directory to contain the file when it is downloaded. If empty, the current directory is used",
-            "type": "string",
-            "default": ""
+            "type": "string"
         },
         "basename": {
             "description": "Basename the file should have when it is downloaded",
