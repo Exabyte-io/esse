@@ -8,7 +8,7 @@
             "type": "string"
         },
         "NAME": {
-            "description": "Path to where the job put the file",
+            "description": "Name of the file inside the object storage bucket",
             "type": "string"
         },
         "PROVIDER": {
