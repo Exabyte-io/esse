@@ -1,5 +1,5 @@
 {
-    "name": "file_to_display",
+    "name": "file_content",
     "basename": "my_json.json",
     "filetype": "text",
     "objectData": {

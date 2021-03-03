@@ -1,7 +1,7 @@
 {
-    "schemaId": "properties-directory-file-to-display",
+    "schemaId": "properties-directory-file-content",
     "$schema": "http://json-schema.org/draft-04/schema#",
-    "title": "file_to_display",
+    "title": "file_content",
     "allof": [
         {
             "$ref": "../../core/reusable/file_metadata.json"
@@ -10,7 +10,7 @@
     "properties": {
         "name": {
             "enum": [
-                "file_to_display"
+                "file_content"
             ]
         },
         "objectData": {
