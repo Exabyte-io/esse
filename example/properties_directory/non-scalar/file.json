@@ -2,6 +2,6 @@
     "name": "my_json.json",
     "type": "text",
     "objectData": {
-        "...": "../../core/reusable/object_storage_container_data.json"
+        "...": "include(../../core/reusable/object_storage_container_data.json)"
     }
 }
