@@ -4,7 +4,7 @@
     "title": "Object Storage Container Data",
     "properties": {
         "CONTAINER": {
-            "description": "Container that ran the job resulting in the file",
+            "description": "Object storage container for the file",
             "type": "string"
         },
         "NAME": {
@@ -12,11 +12,11 @@
             "type": "string"
         },
         "PROVIDER": {
-            "description": "Provider of the computational resources",
+            "description": "Object storage provider",
             "type": "string"
         },
         "REGION": {
-            "description": "Region of the cloud provider's server",
+            "description": "Region for the object container specified in Container",
             "type": "string"
         },
         "SIZE": {
