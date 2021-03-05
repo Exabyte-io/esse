@@ -4,7 +4,7 @@
     "title": "file_metadata",
     "properties": {
         "pathname": {
-            "description": "Path to the directory that contains the file",
+            "description": "Relative path to the directory that contains the file.",
             "type": "string"
         },
         "basename": {
