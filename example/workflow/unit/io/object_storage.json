@@ -1,0 +1,7 @@
+{
+    "basename": "index.html",
+    "overwrite": true,
+    "objectData": {
+        "...": "include(../../../core/reusable/object_storage_container_data.json)"
+    }
+}

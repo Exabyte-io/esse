@@ -1,0 +1,25 @@
+{
+    "schemaId": "workflow-unit-io-object-storage",
+    "$schema": "http://json-schema.org/draft-04/schema#",
+    "title": "object_storage io schema",
+    "type": "object",
+    "allof": [
+        {
+            "$ref": "../../../core/reusable/file_metadata.json"
+        }
+    ],
+    "properties": {
+        "objectData": {
+            "$ref": "../../../core/reusable/object_storage_container_data.json"
+        },
+        "overwrite": {
+            "description": "if a file with the same filename already exists, whether to overwrite the old file",
+            "type": "boolean",
+            "default": false
+        }
+    },
+    "required": [
+        "objectData",
+        "basename"
+    ]
+}
