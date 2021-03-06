@@ -1,0 +1,19 @@
+{
+    "schemaId": "reusable-file-metadata",
+    "$schema": "http://json-schema.org/draft-04/schema#",
+    "title": "file_metadata",
+    "properties": {
+        "pathname": {
+            "description": "Relative path to the directory that contains the file.",
+            "type": "string"
+        },
+        "basename": {
+            "description": "Basename of the file",
+            "type": "string"
+        },
+        "filetype": {
+            "description": "What kind of file this is, e.g. image / text",
+            "type": "string"
+        }
+    }
+}
