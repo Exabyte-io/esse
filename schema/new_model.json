@@ -1,0 +1,49 @@
+{
+    "schemaId": "model",
+    "$schema": "http://json-schema.org/draft-04/schema#",
+    "title": "model schema (base)",
+    "properties": {
+        "tier1": {
+            "description": "top-level category, e.g. `physics-based`",
+            "$ref": "core/primitive/slugified_entry_or_slug.json"
+        },
+        "tier2": {
+            "description": "second level category, e.g. `quantum mechanical`",
+            "$ref": "core/primitive/slugified_entry_or_slug.json"
+        },
+        "tier3": {
+            "description": "third level category, e.g. `ab initio`",
+            "$ref": "core/primitive/slugified_entry_or_slug.json"
+        },
+        "type": {
+            "description": "general type of the model, eg. `dft`",
+            "$ref": "core/primitive/slugified_entry_or_slug.json"
+        },
+        "subtype": {
+            "description": "general subtype of the model, eg. `lda`",
+            "$ref": "core/primitive/slugified_entry_or_slug.json"
+        },
+        "method": {
+            "$ref": "method.json"
+        },
+        "reference": {
+            "$ref": "core/reference/literature.json"
+        },
+        "augmentations": {
+            "$ref": "model/augmentations.json"
+        },
+        "modifiers": {
+            "$ref": "model/modifiers.json"
+        },
+        "tags": {
+            "$ref": "model/tags.json"
+        }
+    },
+    "required": [
+        "tier1",
+        "tier2",
+        "tier3",
+        "type",
+        "method"
+    ]
+}
