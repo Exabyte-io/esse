@@ -173,6 +173,10 @@ vibrational_spectrum:
   schemaId: properties-directory-non-scalar-vibrational-spectrum
   isResult: true
 
+file_content:
+  schemaId: properties-directory-file-content
+  isResult: true
+
 # STRUCTURAL
 basis:
   defaults:
