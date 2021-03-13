@@ -34,6 +34,10 @@
         "next": {
             "description": "Next unit's flowchartId. If empty, the current unit is the last.",
             "type": "string"
+        },
+        "enableRender": {
+            "description": "Whether Rupy should attempt to use Jinja templating to add context variables into the unit",
+            "type": "boolean"
         }
     },
     "required": [

@@ -1,0 +1,32 @@
+{
+    "schemaId": "properties-directory-file-content",
+    "$schema": "http://json-schema.org/draft-04/schema#",
+    "title": "file_content",
+    "allof": [
+        {
+            "$ref": "../../core/reusable/file_metadata.json"
+        }
+    ],
+    "properties": {
+        "name": {
+            "enum": [
+                "file_content"
+            ]
+        },
+        "filetype": {
+            "description": "What kind of file this is, e.g. image / text",
+            "type": "string",
+            "enum": [
+                "image",
+                "text"
+            ]
+        },
+        "objectData": {
+            "$ref": "../../core/reusable/object_storage_container_data.json"
+        }
+    },
+    "required": [
+        "name",
+        "objectData"
+    ]
+}

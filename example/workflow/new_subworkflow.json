@@ -4,7 +4,7 @@
         "...": "include(../software/application.json)"
     },
     "model": {
-        "...": "include(../model.json)"
+        "...": "include(../models_directory/pb/qm/dft/ksdft.json)"
     },
     "name": "Band Structure",
     "properties": [
