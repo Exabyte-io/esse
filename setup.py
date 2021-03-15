@@ -36,6 +36,11 @@ setup(
         "python-slugify==2.0.1",
         "exabyte_json_include>=2020.10.19"
     ],
+    entry_points={
+        'console_scripts': [
+            'generate_dft_unit_functionals=esse.functionals:generate_dft_unit_functionals'
+        ],
+    },
     python_requires=">=3.6",
     classifiers=[
         'Programming Language :: Python',
