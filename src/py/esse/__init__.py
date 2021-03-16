@@ -2,9 +2,13 @@ import jsonschema
 
 from esse.utils import parseIncludeReferenceStatementsByDir
 from esse.settings import SCHEMAS_DIR, EXAMPLES_DIR, PROPERTIES_MANIFEST
-from esse.functionals import generate_dft_unit_functionals
+# from esse.functionals import generate_dft_unit_functionals
 
-generate_dft_unit_functionals()
+## Note: We're disabling this for now to avoid a bug discovered in deployment - files are not necessarily writeable
+## in the installed context, if the calling code is executed with a different user than the one that owns the install
+## directory.  The function can be run manually with the `generate_dft_unit_functionals` command line script generated
+## in setup.py when esse is installed.
+# generate_dft_unit_functionals()
 SCHEMAS = parseIncludeReferenceStatementsByDir(SCHEMAS_DIR)
 EXAMPLES = parseIncludeReferenceStatementsByDir(EXAMPLES_DIR)
 

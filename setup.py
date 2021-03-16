@@ -20,7 +20,7 @@ EXTRA_FILES.extend(get_files_by_path(os.path.join(DIR, "manifest")))
 
 setup(
     name='esse',
-    version='2020.12.14',
+    version='2021.03.15.2',
     description='Exabyte Source of Schemas and Examples',
     long_description=long_description,
     long_description_content_type='text/markdown',
@@ -36,6 +36,11 @@ setup(
         "python-slugify==2.0.1",
         "exabyte_json_include>=2020.10.19"
     ],
+    entry_points={
+        'console_scripts': [
+            'generate_dft_unit_functionals=esse.functionals:generate_dft_unit_functionals'
+        ],
+    },
     python_requires=">=3.6",
     classifiers=[
         'Programming Language :: Python',
