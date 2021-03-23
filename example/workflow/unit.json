@@ -4,5 +4,5 @@
     "name": "pw_scf",
     "status": "idle",
     "type": "execution",
-    "tags": ["example_tag"]
+    "tags": ["test-tags"]
 }

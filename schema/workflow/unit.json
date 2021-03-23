@@ -40,11 +40,7 @@
             "type": "boolean"
         },
         "tags": {
-            "description": "Custom descriptions to give to the workflow unit",
-            "type": "array",
-            "items": {
-                "type": "string"
-            }
+            "$ref": "../system/tags.json"
         }
     },
     "required": [
