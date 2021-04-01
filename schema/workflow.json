@@ -22,7 +22,7 @@
                 "type": "string"
             }
         },
-        "usesDatasetTab": {
+        "isUsingDataset": {
             "description": "Whether to use the dataset tab in the job designer. Mutually exclusive with using the materials tab.",
             "type": "boolean"
         },
