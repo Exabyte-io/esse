@@ -54,6 +54,10 @@
         "parent": {
             "description": "Subset of the full information about the parent job for the job. Only a job from the same project can be assigned as a parent one.",
             "$ref": "system/entity_reference.json"
+        },
+        "jobContextVars": {
+            "description": "Context variables that the job will have access to at runtime",
+            "type": "object"
         }
     },
     "required": [
