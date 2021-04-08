@@ -3,5 +3,6 @@
     "head": true,
     "name": "pw_scf",
     "status": "idle",
-    "type": "execution"
+    "type": "execution",
+    "tags": ["test-tags"]
 }
