@@ -26,10 +26,10 @@
     "license": "Apache-2.0",
     "dependencies": {
         "ajv": "^4.1.7",
-        "@babel/cli": "^7.0.0",
-        "@babel/core": "^7.0.0",
+        "@babel/cli": "^7.1.0",
+        "@babel/core": "^7.1.0",
         "@babel/register": "^7.0.0",
-        "@babel/preset-env": "7.0.0",
+        "@babel/preset-env": "7.1.0",
         "file": "^0.2.2",
         "json-schema-deref-sync": "^0.14.0",
         "lodash": "^4.17.4",
