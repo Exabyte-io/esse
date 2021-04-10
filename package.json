@@ -19,9 +19,9 @@
     },
     "homepage": "https://github.com/Exabyte-io/exabyte-esse",
     "devDependencies": {
-        "chai": "^3.5.0",
-        "mocha": "^2.5.3",
-        "prettyjson": "^1.1.3"
+        "chai": "^4.3.4",
+        "mocha": "^8.3.2",
+        "prettyjson": "^1.2.1"
     },
     "license": "Apache-2.0",
     "dependencies": {
@@ -29,18 +29,17 @@
         "babel-cli": "^6.24.1",
         "babel-compile": "^2.0.0",
         "babel-core": "^6.10.4",
-        "babel-preset-env": "^1.6.0",
+        "babel-preset-env": "^1.7.0",
         "babel-preset-es2015": "^6.24.1",
         "babel-preset-node6": "^11.0.0",
         "file": "^0.2.2",
-        "fs-extra": "^4.0.0",
-        "json-schema-deref-sync": "0.3.3",
+        "json-schema-deref-sync": "^0.14.0",
         "lodash": "^4.17.4",
         "path": "^0.12.7",
         "yamljs": "^0.3.0"
     },
     "engines": {
-        "node": "~8.11.4",
-        "npm": "~6.4.1"
+        "node": ">=0.12",
+        "npm": ">=6.14.10"
     }
 }

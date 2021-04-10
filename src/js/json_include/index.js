@@ -1,5 +1,5 @@
 import path from "path";
-import fs from "fs-extra";
+import fs from "fs";
 
 import {safeParseJSON, isInstanceOf} from "./utils";
 import {INCLUDE_KEY, INCLUDE_VALUE_REGEX, OBJECT_ONLY} from "./settings";
