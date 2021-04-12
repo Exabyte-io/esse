@@ -22,6 +22,10 @@
                 "type": "string"
             }
         },
+        "isUsingDataset": {
+            "description": "Whether to use the dataset tab in the job designer. Mutually exclusive with using the materials tab.",
+            "type": "boolean"
+        },
         "subworkflows": {
             "description": "Array of subworkflows. Subworkflow can be an instance of workflow to allow for nesting",
             "type": "array",
