@@ -20,7 +20,10 @@ EXTRA_FILES.extend(get_files_by_path(os.path.join(DIR, "manifest")))
 
 setup(
     name='esse',
-    version='2021.04.12.1',
+    setup_requires=['setuptools_scm'],
+    use_scm_version={
+        'version_scheme': 'post-release',
+    },
     description='Exabyte Source of Schemas and Examples',
     long_description=long_description,
     long_description_content_type='text/markdown',
@@ -36,6 +39,11 @@ setup(
         "python-slugify==2.0.1",
         "exabyte_json_include>=2020.10.19"
     ],
+    extras_require={
+        "test": [
+            "coverage[toml]>=5.3",
+        ]
+    },
     entry_points={
         'console_scripts': [
             'generate_dft_unit_functionals=esse.functionals:generate_dft_unit_functionals'
