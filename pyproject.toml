@@ -6,4 +6,4 @@ build-backend = "setuptools.build_meta:__legacy__"
 
 [tool.coverage.run]
 source = ['src/py']
-omit = ['env*/*', 'venv*/*', 'src/py/tests/*']
+omit = ['env*/*', 'venv*/*', 'src/py/esse/tests/*']
