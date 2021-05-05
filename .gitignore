@@ -1,3 +1,11 @@
+*.pyc
+.idea
+Vagrantfile
+htmlcov_*
+coverage_*.xml
+venv*/
+.coverage
+
 *.gem
 *.rbc
 .bundle
