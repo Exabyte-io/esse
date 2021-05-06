@@ -1,5 +1,5 @@
 coverage==5.5
-exabyte-json-include==2020.10.19
+exabyte-json-include==2021.05.06
 jsonschema==2.6.0
 python-slugify==2.0.1
 PyYAML==5.3.1
