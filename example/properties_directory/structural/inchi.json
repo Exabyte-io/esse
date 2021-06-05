@@ -1,0 +1,5 @@
+{
+    "name": "inchi",
+    "molecule": "H2O",
+    "inchi": "1S/H2O.2H2/h1H2;2*1H"
+}

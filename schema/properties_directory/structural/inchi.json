@@ -1,0 +1,21 @@
+{
+    "schemaId": "properties-directory-structural-inchi",
+    "$schema": "http://json-schema.org/draft-04/schema#",
+    "title": "InChI representation schema",
+    "type": "object",
+    "properties": {
+        "name": {
+            "enum": [
+                "inchi"
+            ]
+        },
+        "molecule": {
+            "description": "Chemical Formula",
+            "type": "string"
+        },
+        "inchi": {
+            "description": "InChI representation in humnan readable form for a molecule; https://en.wikipedia.org/wiki/International_Chemical_Identifier",
+            "type": "string"
+        }
+    }
+}
