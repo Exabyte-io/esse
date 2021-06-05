@@ -19,6 +19,9 @@
             },
             {
                 "$ref": "structural/p-norm.json"
+            },
+            {
+                "$ref": "structural/inchi.json"
             }
         ]
     }
