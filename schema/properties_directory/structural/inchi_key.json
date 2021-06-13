@@ -2,7 +2,6 @@
     "schemaId": "properties-directory-structural-inchi_key",
     "$schema": "http://json-schema.org/draft-04/schema#",
     "title": "InChI representation schema",
-    "type": "object",
     "properties": {
         "name": {
             "enum": [

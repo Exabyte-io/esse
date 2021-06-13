@@ -1,5 +1,5 @@
 {
     "name": "inchi",
-    "molecule": "H2O",
-    "inchi": "1S/H2O.2H2/h1H2;2*1H"
+    "molecule": "Si3",
+    "inchi": "1S/Si3/c1-3-2"
 }
