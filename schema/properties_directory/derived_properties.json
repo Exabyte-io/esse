@@ -22,6 +22,9 @@
             },
             {
                 "$ref": "structural/inchi.json"
+            },
+            {
+                "$ref": "structural/inchi_key.json"
             }
         ]
     }
