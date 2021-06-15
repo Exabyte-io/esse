@@ -67,12 +67,10 @@
         },
         {
             "name": "inchi",
-            "molecule": "Si3",
             "inchi": "1S/Si3/c1-3-2"
         },
         {
             "name": "inchi_key",
-            "molecule": "Si3",
             "inchi_key": "YBILFZWSTSXODU-UHFFFAOYSA-N"
         }
     ],
