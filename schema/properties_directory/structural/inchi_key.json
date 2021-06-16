@@ -2,15 +2,17 @@
     "schemaId": "properties-directory-structural-inchi_key",
     "$schema": "http://json-schema.org/draft-04/schema#",
     "title": "InChI representation schema",
+    "allOf": [
+        {
+        "$ref": "../../core/primitive/string.json"
+        }
+    ],
     "properties": {
         "name": {
             "enum": [
-                "inchi_key"
+                "inchi"
             ]
-        },
-        "value": {
-            "description": "InChI Key representation is InChI representation converted to a computer readable hash.; https://en.wikipedia.org/wiki/International_Chemical_Identifier",
-            "type": "string"
         }
     }
 }
+
