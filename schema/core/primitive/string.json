@@ -2,7 +2,6 @@
     "schemaId": "core-primitive-string",
     "$schema": "http://json-schema.org/draft-04/schema#",
     "title": "string",
-    "description": "string, e.g. InChI strings",
     "type": "object",
     "properties": {
         "value": {

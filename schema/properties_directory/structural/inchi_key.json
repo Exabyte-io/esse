@@ -4,13 +4,13 @@
     "title": "InChI representation schema",
     "allOf": [
         {
-        "$ref": "../../core/primitive/string.json"
+            "$ref": "../../core/primitive/string.json"
         }
     ],
     "properties": {
         "name": {
             "enum": [
-                "inchi"
+                "inchi_key"
             ]
         }
     }
