@@ -67,11 +67,11 @@
         },
         {
             "name": "inchi",
-            "value": "Not Available"
+            "value": null
         },
         {
             "name": "inchi_key",
-            "value": "Not Available"
+            "value": null
         }
     ],
     "exabyteId": "RKiswuxHKkF3uvLyA",
