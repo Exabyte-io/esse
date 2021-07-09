@@ -1,0 +1,17 @@
+{
+    "schemaId": "properties-directory-structural-inchi",
+    "$schema": "http://json-schema.org/draft-04/schema#",
+    "title": "InChI representation schema",
+    "allOf": [
+        {
+            "$ref": "../../core/primitive/string.json"
+        }
+    ],
+    "properties": {
+        "name": {
+            "enum": [
+                "inchi"
+            ]
+        }
+    }
+}

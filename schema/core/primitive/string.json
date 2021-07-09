@@ -1,0 +1,14 @@
+{
+    "schemaId": "core-primitive-string",
+    "$schema": "http://json-schema.org/draft-04/schema#",
+    "title": "string",
+    "type": "object",
+    "properties": {
+        "value": {
+            "type": "string"
+        }
+    },
+    "required": [
+        "value"
+    ]
+}

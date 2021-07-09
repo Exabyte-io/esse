@@ -229,5 +229,11 @@ covalent_bonds:
     units: angstrom
   schemaId: properties-directory-structural-covalent-bonds
 
+inchi:
+  schemaId: properties-directory-structural-inchi
+
+inchi_key:
+  schemaId: properties-directory-structural-inchi_key
+
 material:
   schemaId: material

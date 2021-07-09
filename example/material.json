@@ -64,6 +64,14 @@
             "element": "Si",
             "name": "elemental_ratio",
             "value": 0.71
+        },
+        {
+            "name": "inchi",
+            "value": ""
+        },
+        {
+            "name": "inchi_key",
+            "value": ""
         }
     ],
     "exabyteId": "RKiswuxHKkF3uvLyA",
