@@ -1,0 +1,15 @@
+{
+    "name": "molecule-max-radii",
+    "atom-pair": [
+        {
+            "id": 1
+        },
+        {
+            "id": 2
+        }
+    ],
+    "distance": {
+        "value": 1.005,
+        "units": "angstrom"
+    }
+}

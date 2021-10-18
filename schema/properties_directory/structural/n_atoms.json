@@ -1,0 +1,17 @@
+{
+    "schemaId": "properties-directory-structural-n-atoms",
+    "$schema": "http://json-schema.org/draft-04/schema#",
+    "title": "n-atoms schema",
+    "allOf": [
+        {
+            "$ref": "../../core/primitive/scalar.json"
+        }
+    ],
+    "properties": {
+        "name": {
+            "enum": [
+                "n-atoms"
+            ]
+        }
+    }
+}

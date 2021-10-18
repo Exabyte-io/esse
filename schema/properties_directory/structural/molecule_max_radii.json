@@ -1,0 +1,35 @@
+{
+    "schemaId": "properties-directory-structural-molecule-max-radii",
+    "$schema": "http://json-schema.org/draft-04/schema#",
+    "title": "molecule-max-radii schema",
+    "properties": {
+        "name": {
+            "enum": [
+                "molecule-max-radii"
+            ]
+        },
+        "atom-pair": {
+            "description": "Pair of atoms whose distance is greatest in a molecule",
+            "allOf": [
+                {
+                    "$ref": "../../core/primitive/array_of_ids.json"
+                }
+            ]
+        },
+        "distance": {
+            "description": "distance between the atoms listed in `atom-pair` defining the max radii of a molecule.",
+            "allOf": [
+                {
+                    "$ref": "../../core/primitive/scalar.json"
+                }
+            ],
+            "properties": {
+                "units": {
+                    "enum": [
+                        "angstrom"
+                    ]
+                }
+            }
+        }
+    }
+}
