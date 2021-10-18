@@ -25,6 +25,15 @@
             },
             {
                 "$ref": "structural/inchi_key.json"
+            },
+            {
+                "$ref": "structural/n_atoms.json"
+            },
+            {
+                "$ref": "structural/molecule_max_radii.json"
+            },
+            {
+                "$ref": "structural/basis.json"
             }
         ]
     }
