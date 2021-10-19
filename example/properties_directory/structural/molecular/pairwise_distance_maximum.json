@@ -1,5 +1,5 @@
 {
-    "name": "molecule-max-radii",
+    "name": "pairwise-distance-maximum",
     "atom-pair": [
         {
             "id": 1

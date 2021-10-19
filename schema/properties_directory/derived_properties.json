@@ -30,10 +30,7 @@
                 "$ref": "structural/n_atoms.json"
             },
             {
-                "$ref": "structural/molecule_max_radii.json"
-            },
-            {
-                "$ref": "structural/basis.json"
+                "$ref": "structural/molecular/pairwise_distance_maximum.json"
             }
         ]
     }

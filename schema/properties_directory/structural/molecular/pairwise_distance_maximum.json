@@ -1,26 +1,26 @@
 {
-    "schemaId": "properties-directory-structural-molecule-max-radii",
+    "schemaId": "properties-directory-structural-molecular-pairwise-distance-maximum",
     "$schema": "http://json-schema.org/draft-04/schema#",
-    "title": "molecule-max-radii schema",
+    "title": "pairise-distance-maximum  schema",
     "properties": {
         "name": {
             "enum": [
-                "molecule-max-radii"
+                "pairwise-distance-maximum"
             ]
         },
         "atom-pair": {
             "description": "Pair of atoms whose distance is greatest in a molecule",
             "allOf": [
                 {
-                    "$ref": "../../core/primitive/array_of_ids.json"
+                    "$ref": "../../../core/primitive/array_of_ids.json"
                 }
             ]
         },
         "distance": {
-            "description": "distance between the atoms listed in `atom-pair` defining the max radii of a molecule.",
+            "description": "distance between the the pair of atoms listed in `atom-pair` defining the max radii of a molecule.",
             "allOf": [
                 {
-                    "$ref": "../../core/primitive/scalar.json"
+                    "$ref": "../../../core/primitive/scalar.json"
                 }
             ],
             "properties": {
