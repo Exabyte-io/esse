@@ -25,9 +25,6 @@
             },
             {
                 "$ref": "structural/inchi_key.json"
-            },
-            {
-                "$ref": "structural/molecular/pairwise_distance_maximum.json"
             }
         ]
     }
