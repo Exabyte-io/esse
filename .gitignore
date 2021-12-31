@@ -1,3 +1,4 @@
+**/_version.py
 *.pyc
 .idea
 Vagrantfile

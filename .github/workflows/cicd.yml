@@ -1,4 +1,5 @@
-name: CICD
+name: Continuous Testing and Publish
+description: Runs tests on every branch and publishes to NPM + PyPI from 'dev'
 
 on: [push]
 
@@ -109,3 +110,4 @@ jobs:
           python-version: 3.x
           pypi-username: ${{ secrets.PYPI_USERNAME }}
           pypi-password: ${{ secrets.PYPI_PASSWORD }}
+          publish-tag: 'false'
