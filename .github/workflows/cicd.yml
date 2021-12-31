@@ -1,5 +1,4 @@
-name: Continuous Testing and Publish
-description: Runs tests on every branch and publishes to NPM + PyPI from 'dev'
+name: Continuous Testing and Publication from 'dev'
 
 on: [push]
 
