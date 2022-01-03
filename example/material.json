@@ -72,6 +72,10 @@
         {
             "name": "inchi_key",
             "value": ""
+        },
+        {
+            "name": "molecular_weight",
+            "value": 0
         }
     ],
     "exabyteId": "RKiswuxHKkF3uvLyA",

@@ -25,6 +25,9 @@
             },
             {
                 "$ref": "structural/inchi_key.json"
+            },
+            {
+                "$ref": "structural/molecular_weight.json"
             }
         ]
     }
