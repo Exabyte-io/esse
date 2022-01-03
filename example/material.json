@@ -75,7 +75,8 @@
         },
         {
             "name": "molecular_weight",
-            "value": 0
+            "value": 0,
+            "units":"g/mol"
         }
     ],
     "exabyteId": "RKiswuxHKkF3uvLyA",

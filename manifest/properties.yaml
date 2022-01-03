@@ -235,5 +235,8 @@ inchi:
 inchi_key:
   schemaId: properties-directory-structural-inchi_key
 
+molecular_weight:
+  schemaId: properties-directory-structural-molecular-weight
+
 material:
   schemaId: material

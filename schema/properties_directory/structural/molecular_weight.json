@@ -1,0 +1,23 @@
+{
+    "schemaId": "properties-directory-structural-molecular-weight",
+    "$schema": "http://json-schema.org/draft-04/schema#",
+    "title": "molecular-weight schema",
+    "allOf": [
+        {
+            "$ref": "../../core/primitive/scalar.json"
+        }
+    ],
+    "properties": {
+        "name": {
+            "enum": [
+                "molecular_weight"
+            ]
+        },
+        "units": {
+            "enum": [
+                "g/mol"
+            ]
+        }
+    }
+}
+
