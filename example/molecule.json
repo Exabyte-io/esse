@@ -52,6 +52,7 @@
         {
             "name": "symmetry",
             "pointGroupSymbol": "C2v",
+            "spaceGroupSymbol": "Pmm2",
             "tolerance": {
                 "units": "angstrom",
                 "value": 0.3

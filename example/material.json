@@ -49,6 +49,7 @@
         },
         {
             "name": "symmetry",
+            "pointGroupSymmetry": "D*h",
             "spaceGroupSymbol": "Fd-3m",
             "tolerance": {
                 "units": "angstrom",
