@@ -1,0 +1,113 @@
+{
+    "_id": "LCthJ6E2QabYCZqf3",
+    "basis": {
+        "coordinates": [
+            {
+                "id": 1,
+                "value": [
+                    2.500000,
+                    2.500000,
+                    2.833300
+                ]
+            },
+            {
+                "id": 2,
+                "value": [
+                    2.500000,
+                    1.250000,
+                    2.333300
+                ]
+            },
+            {
+                "id": 3,
+                "value": [
+                    2.500000,
+                    3.750000,
+                    2.333300
+                ]
+            }
+        ],
+        "elements": [
+            {
+                "id": 1,
+                "value": "S"
+            },
+            {
+                "id": 2,
+                "value": "H"
+            },
+            {
+                "id": 3,
+                "value": "H"
+            }
+        ],
+        "name": "basis",
+        "units": "cartesian"
+    },
+    "createdAt": "2016-04-03T05:25:37.430Z",
+    "creator": {
+        "...": "include(system/creator.json)"
+    },
+    "derivedProperties": [
+        {
+            "name": "symmetry",
+            "pointGroupSymbol": "C2v",
+            "tolerance": {
+                "units": "angstrom",
+                "value": 0.3
+            }
+        },
+        {
+            "degree": 10,
+            "name": "p-norm",
+            "value": 0.6667
+        },
+        {
+            "element": "S",
+            "name": "elemental_ratio",
+            "value": 0.333333
+        },
+        {
+            "element": "H",
+            "name": "elemental_ratio",
+            "value": 0.666667
+        },
+        {
+            "name": "inchi",
+            "value": "1S/H2S/h1H2"
+        },
+        {
+            "name": "inchi_key",
+            "value": "RWSOTUBLDIXVET-UHFFFAOYSA-N"
+        },
+        {
+            "name": "molecular_weight",
+            "value": 33.988,
+            "units":"g/mol"
+        }
+    ],
+    "exabyteId": "RKiswuxHKkF3uvLyA",
+    "formula": "H2S",
+    "hash": "2ac7003120b82283f6199386d3ec2a3f",
+    "isDefault": false,
+    "isNonPeriodic": true,
+    "lattice": {
+        "a": 5.0,
+        "alpha": 90.0,
+        "b": 5.0,
+        "beta": 90.0,
+        "c": 5.0,
+        "gamma": 90.0,
+        "name": "lattice",
+        "type": "CUB"
+    },
+    "name": "H2S-Non-Periodic",
+    "owner": {
+        "...": "include(system/owner.json)"
+    },
+    "scaledHash": "659b47a160a06035fd8276ddcedbfac4",
+    "schemaVersion": "0.2.0",
+    "slug": "hydrogen-sulfide",
+    "unitCellFormula": "H2S",
+    "updatedAt": "2016-04-04T17:58:42.867Z"
+}
