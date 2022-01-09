@@ -105,6 +105,7 @@ jobs:
         uses: ./actions/py/publish
         with:
           python-version: 3.x
+          github-token: ${{ secrets.BOT_GITHUB_TOKEN }}
           pypi-username: ${{ secrets.PYPI_USERNAME }}
           pypi-password: ${{ secrets.PYPI_PASSWORD }}
           publish-tag: 'false'
