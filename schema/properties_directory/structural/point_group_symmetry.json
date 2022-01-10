@@ -1,0 +1,30 @@
+{
+    "schemaId": "properties-directory-structural-point-group-symmetry",
+    "$schema": "http://json-schema.org/draft-04/schema#",
+    "title": "point group symmetry schema",
+    "allOf": [
+        {
+            "$ref": "../../core/primitive/string.json"
+        }
+    ],
+    "properties": {
+        "name": {
+            "enum": [
+                "point_group_symmetry"
+            ]
+        },
+        "units": {
+            "enum": [
+                "angstrom"
+            ]
+        },
+        "tolerance": {
+            "description": "tolerance used for symmetry calculation",
+            "allOf": [
+                {
+                    "$ref": "../../core/primitive/scalar.json"
+                }
+            ]
+        }
+    }
+}

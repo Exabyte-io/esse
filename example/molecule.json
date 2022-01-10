@@ -50,13 +50,20 @@
     },
     "derivedProperties": [
         {
-            "name": "symmetry",
-            "pointGroupSymbol": "C2v",
-            "spaceGroupSymbol": "Pmm2",
+            "name": "point_group_symmetry",
+            "pointGroupSymmetry": "C2v",
             "tolerance": {
-                "units": "angstrom",
                 "value": 0.3
-            }
+            },
+            "units": "angstrom"
+        },
+        {
+            "name": "space_group_symmetry",
+            "pointGroupSymmetry": "Pmm2",
+            "tolerance": {
+                "value": 0.3
+            },
+            "units": "angstrom"
         },
         {
             "degree": 10,

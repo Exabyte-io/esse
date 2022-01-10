@@ -205,10 +205,15 @@ volume:
     units: angstrom^3
   schemaId: properties-directory-structural-volume
 
-symmetry:
+point_group_symmetry:
   defaults:
     units: angstrom
-  schemaId: properties-directory-structural-symmetry
+  schemaId: properties-directory-structural-point-group-symmetry
+
+space_group_symmetry:
+  defaults:
+    units: angstrom
+  schemaId: properties-directory-structural-space-group-symmetry
 
 elemental_ratio:
   schemaId: properties-directory-structural-elemental-ratio

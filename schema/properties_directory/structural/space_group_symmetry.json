@@ -1,0 +1,30 @@
+{
+    "schemaId": "properties-directory-structural-space-group-symmetry",
+    "$schema": "http://json-schema.org/draft-04/schema#",
+    "title": "space group symmetry schema",
+    "allOf": [
+        {
+            "$ref": "../../core/primitive/string.json"
+        }
+    ],
+    "properties": {
+        "name": {
+            "enum": [
+                "space_group_symmetry"
+            ]
+        },
+        "units": {
+            "enum": [
+                "angstrom"
+            ]
+        },
+        "tolerance": {
+            "description": "tolerance used for symmetry calculation",
+            "allOf": [
+                {
+                    "$ref": "../../core/primitive/scalar.json"
+                }
+            ]
+        }
+    }
+}
