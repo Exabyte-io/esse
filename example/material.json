@@ -64,6 +64,14 @@
             "units": "angstrom"
         },
         {
+            "name": "symmetry",
+            "spaceGroupSymbol": "Fd-3m",
+            "tolerance": {
+                "units": "angstrom",
+                "value": 0.3
+            }
+        },
+        {
             "degree": 10,
             "name": "p-norm",
             "value": 0.71

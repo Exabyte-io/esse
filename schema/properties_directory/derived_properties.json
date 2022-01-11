@@ -18,6 +18,9 @@
                 "ref": "structural/space_group_symmetry.json"
             },
             {
+                "ref": "structural/symmetry.json"
+            },
+            {
                 "$ref": "structural/elemental_ratio.json"
             },
             {
