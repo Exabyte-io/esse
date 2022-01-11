@@ -1,0 +1,35 @@
+{
+    "schemaId": "properties-directory-structural-symmetry",
+    "$schema": "http://json-schema.org/draft-04/schema#",
+    "title": "symmetry schema",
+    "properties": {
+        "pointGroupSymbol": {
+            "description": "point group symbol in Schoenflies notation",
+            "type": "string"
+        },
+        "spaceGroupSymbol": {
+            "description": "space group symbol in Hermann\u2013Mauguin notation",
+            "type": "string"
+        },
+        "tolerance": {
+            "description": "tolerance used for symmetry calculation",
+            "allOf": [
+                {
+                    "$ref": "../../core/primitive/scalar.json"
+                }
+            ],
+            "properties": {
+                "units": {
+                    "enum": [
+                        "angstrom"
+                    ]
+                }
+            }
+        },
+        "name": {
+            "enum": [
+                "symmetry"
+            ]
+        }
+    }
+}
