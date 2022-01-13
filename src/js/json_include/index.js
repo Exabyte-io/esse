@@ -37,8 +37,8 @@ export class JSONInclude {
                         this.JSON_INCLUDE_CACHE[includeName] =
                             this.parseIncludeStatements(filePath);
                     }
-                    Object.keys(this.JSON_INCLUDE_CACHE).forEach((attr) => {
-                        obj[attr] = this.JSON_INCLUDE_SCHEMA[includeName][attr];
+                    Object.keys(this.JSON_INCLUDE_CACHE[includeName]).forEach((attr) => {
+                        obj[attr] = this.JSON_INCLUDE_CACHE[includeName][attr];
                     });
                 }
             }

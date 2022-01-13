@@ -52,11 +52,10 @@
         "file": "^0.2.2",
         "json-schema-deref-sync": "0.14.0",
         "lodash": "4.17.21",
-        "path": "^0.12.7",
         "yamljs": "^0.3.0"
     },
     "engines": {
-        "node": ">=8.0.0",
+        "node": ">=12.0.0",
         "npm": "~6.4.1"
     },
     "lint-staged": {
