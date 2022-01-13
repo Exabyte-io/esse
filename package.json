@@ -5,7 +5,11 @@
     "scripts": {
         "prepublishOnly": "rm -rf lib; npm run transpile",
         "transpile": "mkdir -p lib; babel src/js --out-dir lib/js",
-        "test": "nyc --reporter=text mocha --bail --require @babel/register src/js/esse/tests"
+        "test": "nyc --reporter=text mocha --bail --require @babel/register src/js/esse/tests",
+        "lint": "eslint src/js && prettier --write src/js",
+        "lint:fix": "eslint --fix --cache src/js && prettier --write src/js",
+        "prettier": "prettier --check src/js",
+        "prepare": "husky install"
     },
     "repository": {
         "type": "git",
@@ -27,7 +31,20 @@
         "@babel/core": "7.16.0",
         "@babel/register": "7.16.0",
         "@babel/preset-env": "7.16.4",
-        "@babel/eslint-parser": "7.16.3"
+        "@babel/eslint-parser": "7.16.3",
+        "eslint": "^7.32.0",
+        "eslint-config-airbnb": "^19.0.2",
+        "eslint-config-prettier": "^8.3.0",
+        "eslint-plugin-prettier": "^4.0.0",
+        "eslint-plugin-import": "^2.25.3",
+        "eslint-plugin-jsdoc": "^37.1.0",
+        "eslint-plugin-simple-import-sort": "^7.0.0",
+        "eslint-plugin-jsx-a11y": "^6.5.1",
+        "eslint-plugin-react": "^7.27.1",
+        "eslint-plugin-react-hooks": "^4.3.0",
+        "husky": "^7.0.4",
+        "lint-staged": "^12.1.2",
+        "prettier": "^2.5.1"
     },
     "license": "Apache-2.0",
     "dependencies": {
@@ -41,5 +58,9 @@
     "engines": {
         "node": ">=8.0.0",
         "npm": "~6.4.1"
+    },
+    "lint-staged": {
+        "*.js": "eslint --cache --fix",
+        "*.{js,css}": "prettier --write"
     }
 }
