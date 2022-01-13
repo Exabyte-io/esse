@@ -1,21 +1,19 @@
 import Ajv from "ajv";
 
-import {EXAMPLES_DIR, SCHEMAS_DIR} from "./settings";
-import {parseIncludeReferenceStatementsByDir} from "./utils";
+import { EXAMPLES_DIR, SCHEMAS_DIR } from "./settings";
+import { parseIncludeReferenceStatementsByDir } from "./utils";
 
 const SCHEMAS = parseIncludeReferenceStatementsByDir(SCHEMAS_DIR);
 const EXAMPLES = parseIncludeReferenceStatementsByDir(EXAMPLES_DIR);
 
-
 export class ESSE {
-
     constructor() {
         this.schemas = SCHEMAS;
         this.examples = EXAMPLES;
     }
 
     getSchemaById(schemaId) {
-        return this.schemas.find(schema => schema.schemaId === schemaId)
+        return this.schemas.find((schema) => schema.schemaId === schemaId);
     }
 
     /**
@@ -25,9 +23,7 @@ export class ESSE {
      * @returns {boolean} whether example is valid.
      */
     validate(example, schema) {
-        const ajv = new Ajv({allErrors: true});
+        const ajv = new Ajv({ allErrors: true });
         return ajv.validate(schema, example);
     }
-
-
 }
