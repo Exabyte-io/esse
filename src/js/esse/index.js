@@ -22,8 +22,8 @@ export class ESSE {
      * @param schema {Object} schema to validate the example with.
      * @returns {boolean} whether example is valid.
      */
-    validate(example, schema) {
+    validate = (example, schema) => {
         const ajv = new Ajv({ allErrors: true });
         return ajv.validate(schema, example);
-    }
+    };
 }

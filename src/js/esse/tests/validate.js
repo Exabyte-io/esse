@@ -1,4 +1,5 @@
-import chai from "chai";
+// eslint-disable-next-line import/no-extraneous-dependencies
+import { expect } from "chai";
 import file from "file";
 import path from "path";
 
@@ -17,7 +18,8 @@ describe("validate all examples", () => {
                 const example = parseIncludeReferenceStatements(examplePath);
                 const schema = parseIncludeReferenceStatements(schemaPath);
                 const valid = esse.validate(example, schema);
-                chai.expect(valid).to.be.ok;
+                // eslint-disable-next-line no-unused-expressions
+                expect(valid).to.be.ok;
             });
         });
     });
