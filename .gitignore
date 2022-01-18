@@ -50,3 +50,5 @@ lib/
 dist/
 
 .npmignore
+.nyc_output
+.eslintcache
