@@ -1,7 +1,7 @@
 {
-    "schemaId": "properties-directory-structural-space-group-symmetry",
+    "schemaId": "properties-directory-structural-symmetry-symbol-space-group",
     "$schema": "http://json-schema.org/draft-04/schema#",
-    "title": "space group symmetry schema",
+    "title": "symmetry symbol space group schema",
     "allOf": [
         {
             "$ref": "../../core/primitive/string.json"
@@ -10,7 +10,7 @@
     "properties": {
         "name": {
             "enum": [
-                "space_group_symmetry"
+                "symmetry_symbol_space_group"
             ]
         },
         "units": {

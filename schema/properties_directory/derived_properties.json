@@ -12,10 +12,10 @@
                 "$ref": "structural/density.json"
             },
             {
-                "$ref": "structural/point_group_symmetry.json"
+                "$ref": "structural/symmetry_symbol_point_group.json"
             },
             {
-                "ref": "structural/space_group_symmetry.json"
+                "ref": "structural/symmetry_symbol_space_group.json"
             },
             {
                 "$ref": "structural/elemental_ratio.json"

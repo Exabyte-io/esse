@@ -1,8 +1,0 @@
-{
-    "name": "point_group_symmetry",
-    "value": "C2v",
-    "tolerance": {
-        "value": 0.3
-    },
-    "units": "angstrom"
-}

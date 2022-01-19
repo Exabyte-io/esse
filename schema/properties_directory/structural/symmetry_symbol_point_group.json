@@ -1,7 +1,7 @@
 {
-    "schemaId": "properties-directory-structural-point-group-symmetry",
+    "schemaId": "properties-directory-structural-symmetry-symbol-point-group",
     "$schema": "http://json-schema.org/draft-04/schema#",
-    "title": "point group symmetry schema",
+    "title": "symmetry symbol point group schema",
     "allOf": [
         {
             "$ref": "../../core/primitive/string.json"
@@ -10,12 +10,7 @@
     "properties": {
         "name": {
             "enum": [
-                "point_group_symmetry"
-            ]
-        },
-        "units": {
-            "enum": [
-                "angstrom"
+                "symmetry_symbol_point_group"
             ]
         },
         "tolerance": {
@@ -24,7 +19,14 @@
                 {
                     "$ref": "../../core/primitive/scalar.json"
                 }
-            ]
+            ],
+            "properties": {
+                "units": {
+                    "enum": [
+                        "angstrom"
+                    ]
+                }
+            }
         }
     }
 }
