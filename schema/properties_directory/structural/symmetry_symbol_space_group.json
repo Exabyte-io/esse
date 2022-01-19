@@ -13,18 +13,20 @@
                 "symmetry_symbol_space_group"
             ]
         },
-        "units": {
-            "enum": [
-                "angstrom"
-            ]
-        },
         "tolerance": {
             "description": "tolerance used for symmetry calculation",
             "allOf": [
                 {
                     "$ref": "../../core/primitive/scalar.json"
                 }
-            ]
+            ],
+            "properties": {
+                "units": {
+                    "enum": [
+                        "angstrom"
+                    ]
+                }
+            }
         }
     }
 }
