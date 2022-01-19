@@ -1,0 +1,5 @@
+src/py/
+setup.py
+pyproject.toml
+requirements-dev.txt
+/manifest/
