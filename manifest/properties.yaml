@@ -213,7 +213,7 @@ symmetry_symbol_point_group:
 symmetry_symbol_space_group:
   defaults:
     units: angstrom
-  schemaId: properties-directory-structural-symmetry_symbol_space-group
+  schemaId: properties-directory-structural-symmetry-symbol-space-group
 
 elemental_ratio:
   schemaId: properties-directory-structural-elemental-ratio
