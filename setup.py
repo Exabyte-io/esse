@@ -1,5 +1,10 @@
 import os
 from setuptools import find_packages, setup
+import subprocess as sp
+
+
+BASE_DIR = os.path.abspath(os.path.dirname(__file__))
+sp.check_call(['python', os.path.join(BASE_DIR, 'functionals.py')])
 
 
 def get_files_by_path(path):
