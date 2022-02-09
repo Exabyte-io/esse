@@ -5,32 +5,44 @@
             {
                 "id": 1,
                 "value": [
-                    0.0,
-                    0.0,
-                    0.0
+                    2.500000,
+                    2.500000,
+                    2.833300
                 ]
             },
             {
                 "id": 2,
                 "value": [
-                    0.25,
-                    0.25,
-                    0.25
+                    2.500000,
+                    1.250000,
+                    2.333300
+                ]
+            },
+            {
+                "id": 3,
+                "value": [
+                    2.500000,
+                    3.750000,
+                    2.333300
                 ]
             }
         ],
         "elements": [
             {
                 "id": 1,
-                "value": "Si"
+                "value": "S"
             },
             {
                 "id": 2,
-                "value": "Si"
+                "value": "H"
+            },
+            {
+                "id": 3,
+                "value": "H"
             }
         ],
         "name": "basis",
-        "units": "crystal"
+        "units": "cartesian"
     },
     "createdAt": "2016-04-03T05:25:37.430Z",
     "creator": {
@@ -38,18 +50,8 @@
     },
     "derivedProperties": [
         {
-            "name": "volume",
-            "units": "angstrom^3",
-            "value": 131.1
-        },
-        {
-            "name": "density",
-            "units": "g/cm^3",
-            "value": 2.33
-        },
-        {
             "name": "symmetry_symbol_point_group",
-            "pointGroupSymmetry": "D*h",
+            "pointGroupSymmetry": "C2v",
             "tolerance": {
                 "value": 0.3,
                 "units": "angstrom"
@@ -57,7 +59,7 @@
         },
         {
             "name": "symmetry_symbol_space_group",
-            "pointGroupSymmetry": "Fd-3m",
+            "pointGroupSymmetry": "Pmm2",
             "tolerance": {
                 "value": 0.3,
                 "units": "angstrom"
@@ -66,19 +68,37 @@
         {
             "degree": 10,
             "name": "p-norm",
-            "value": 0.71
+            "value": 0.6667
         },
         {
-            "element": "Si",
+            "element": "S",
             "name": "elemental_ratio",
-            "value": 1.0
+            "value": 0.333333
+        },
+        {
+            "element": "H",
+            "name": "elemental_ratio",
+            "value": 0.666667
+        },
+        {
+            "name": "inchi",
+            "value": "1S/H2S/h1H2"
+        },
+        {
+            "name": "inchi_key",
+            "value": "RWSOTUBLDIXVET-UHFFFAOYSA-N"
+        },
+        {
+            "name": "molecular_weight",
+            "value": 33.988,
+            "units":"g/mol"
         }
     ],
     "exabyteId": "RKiswuxHKkF3uvLyA",
-    "formula": "Si",
-    "hash": "4ac3fa057e3530628eb1295c77110eaa",
+    "formula": "H2S",
+    "hash": "2ac7003120b82283f6199386d3ec2a3f",
     "isDefault": false,
-    "isNonPeriodic": false,
+    "isNonPeriodic": true,
     "lattice": {
         "a": 5.0,
         "alpha": 90.0,
@@ -89,13 +109,13 @@
         "name": "lattice",
         "type": "CUB"
     },
-    "name": "Silicon FCC",
+    "name": "H2S-Non-Periodic",
     "owner": {
         "...": "include(system/owner.json)"
     },
-    "scaledHash": "5bd4eb168e3530628eb1295d88221cbb",
+    "scaledHash": "659b47a160a06035fd8276ddcedbfac4",
     "schemaVersion": "0.2.0",
-    "slug": "silicon-fcc",
-    "unitCellFormula": "Si2",
+    "slug": "hydrogen-sulfide",
+    "unitCellFormula": "H2S",
     "updatedAt": "2016-04-04T17:58:42.867Z"
 }
