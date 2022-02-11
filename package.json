@@ -4,8 +4,13 @@
     "description": "Exabyte Source of Schemas and Examples",
     "scripts": {
         "prepublishOnly": "rm -rf lib; npm run transpile",
-        "transpile": "mkdir -p lib; babel-compile -p es2015 src/js:lib/js",
-        "test": "mocha $NODE_DEBUG_OPTION  --bail --require babel-register src/js/esse/tests/*.js"
+        "transpile": "mkdir -p lib; babel src/js --out-dir lib/js",
+        "test": "nyc --reporter=text mocha --bail --require @babel/register src/js/esse/tests",
+        "lint": "eslint src/js && prettier --write src/js",
+        "lint:fix": "eslint --fix --cache src/js && prettier --write src/js",
+        "prettier": "prettier --check src/js",
+        "postinstall": "npm run transpile",
+        "prepare": "husky install || exit 0"
     },
     "repository": {
         "type": "git",
@@ -19,28 +24,43 @@
     },
     "homepage": "https://github.com/Exabyte-io/exabyte-esse",
     "devDependencies": {
-        "chai": "^3.5.0",
-        "mocha": "^2.5.3",
+        "chai": "4.3.4",
+        "eslint": "^7.32.0",
+        "eslint-config-airbnb": "^19.0.2",
+        "eslint-config-prettier": "^8.3.0",
+        "eslint-plugin-import": "^2.25.3",
+        "eslint-plugin-jsdoc": "^37.1.0",
+        "eslint-plugin-jsx-a11y": "^6.5.1",
+        "eslint-plugin-prettier": "^4.0.0",
+        "eslint-plugin-react": "^7.27.1",
+        "eslint-plugin-react-hooks": "^4.3.0",
+        "eslint-plugin-simple-import-sort": "^7.0.0",
+        "husky": "^7.0.4",
+        "lint-staged": "^12.1.2",
+        "mocha": "^9.2.0",
+        "nyc": "15.1.0",
+        "prettier": "^2.5.1",
         "prettyjson": "^1.1.3"
     },
     "license": "Apache-2.0",
     "dependencies": {
         "ajv": "^4.1.7",
-        "babel-cli": "^6.24.1",
-        "babel-compile": "^2.0.0",
-        "babel-core": "^6.10.4",
-        "babel-preset-env": "^1.6.0",
-        "babel-preset-es2015": "^6.24.1",
-        "babel-preset-node6": "^11.0.0",
+        "@babel/cli": "7.16.0",
+        "@babel/core": "7.16.0",
+        "@babel/register": "7.16.0",
+        "@babel/preset-env": "7.16.4",
+        "@babel/eslint-parser": "7.16.3",
         "file": "^0.2.2",
-        "fs-extra": "^4.0.0",
-        "json-schema-deref-sync": "0.3.3",
-        "lodash": "^4.17.4",
-        "path": "^0.12.7",
+        "json-schema-deref-sync": "0.14.0",
+        "lodash": "4.17.21",
         "yamljs": "^0.3.0"
     },
     "engines": {
-        "node": "~8.11.4",
+        "node": ">=12.0.0",
         "npm": "~6.4.1"
+    },
+    "lint-staged": {
+        "*.js": "eslint --cache --fix",
+        "*.{js,css}": "prettier --write"
     }
 }
