@@ -1,15 +1,17 @@
 {
-    "schemaId": "properties-directory-structural-symmetry",
+    "schemaId": "properties-directory-structural-symmetry-symbol-space-group",
     "$schema": "http://json-schema.org/draft-04/schema#",
-    "title": "symmetry schema",
+    "title": "symmetry symbol space group schema",
+    "allOf": [
+        {
+            "$ref": "../../core/primitive/string.json"
+        }
+    ],
     "properties": {
-        "pointGroupSymbol": {
-            "description": "point group symbol in Schoenflies notation",
-            "type": "string"
-        },
-        "spaceGroupSymbol": {
-            "description": "space group symbol in Hermann\u2013Mauguin notation",
-            "type": "string"
+        "name": {
+            "enum": [
+                "symmetry_symbol_space_group"
+            ]
         },
         "tolerance": {
             "description": "tolerance used for symmetry calculation",
@@ -25,11 +27,6 @@
                     ]
                 }
             }
-        },
-        "name": {
-            "enum": [
-                "symmetry"
-            ]
         }
     }
 }
