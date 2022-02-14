@@ -3,6 +3,7 @@
     "version": "2022.1.9-2",
     "description": "Exabyte Source of Schemas and Examples",
     "scripts": {
+        "preinstall": "python functionals.py",
         "prepublishOnly": "rm -rf lib; npm run transpile",
         "transpile": "mkdir -p lib; babel src/js --out-dir lib/js",
         "test": "nyc --reporter=text mocha --bail --require @babel/register src/js/esse/tests",
