@@ -56,7 +56,6 @@
     },
     "required": [
         "basis",
-        "lattice",
-        "isNonPeriodic"
+        "lattice"
     ]
 }
