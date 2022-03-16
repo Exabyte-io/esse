@@ -1,0 +1,42 @@
+{
+    "schemaId": "method-integration-brillouin-tetrahedron",
+    "$schema": "http://json-schema.org/draft-04/schema#",
+    "title": "Tetrahedron Brillouin-Zone integration schema",
+    "properties": {
+        "type": {
+            "enum": [
+                {
+                    "name": "Tetrahedron integration method",
+                    "slug": "tetrah"
+                }
+            ]
+        },
+        "subtype": {
+            "enum": [
+                {
+                    "name": "Linear tetrahedron method",
+                    "slug": "lin"
+                },
+                {
+                    "name": "Bloechl correction",
+                    "slug": "bloechl"
+                },
+                {
+                    "name": "Improved tetrahedron method (Kawamura)",
+                    "slug": "kawamura"
+                }
+            ]
+        },
+        "parameters": {
+            "properties": {
+                "kgrid": {
+                    "oneOf": [
+                        {
+                            "$ref": "./kgrid/automatic.json"
+                        }
+                    ]
+                }
+            }
+        }
+    }
+}

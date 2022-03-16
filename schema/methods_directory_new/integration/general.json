@@ -1,0 +1,19 @@
+{
+    "$schema": "http://json-schema.org/draft-04/schema#",
+    "description": "General methods for solving integrals",
+    "allOf": [
+        {
+            "$ref": "../integration.json"
+        }
+    ],
+    "properties": {
+        "tier2": {
+            "enum": [
+                {
+                    "name": "General integration methods",
+                    "slug": "general"
+                }
+            ]
+        }
+    }
+}

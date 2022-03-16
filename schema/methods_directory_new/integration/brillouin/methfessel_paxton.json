@@ -1,0 +1,43 @@
+{
+    "schemaId": "method-integration-brillouin-mp",
+    "$schema": "http://json-schema.org/draft-04/schema#",
+    "title": "Methfessel-Paxton Brillouin-Zone integration schema",
+    "properties": {
+        "type": {
+            "enum": [
+                {
+                    "name": "broadening method",
+                    "slug": "br"
+                }
+            ]
+        },
+        "subtype": {
+            "enum": [
+                {
+                    "name": "Methfessel-Paxton method",
+                    "slug": "mp"
+                }
+            ]
+        },
+        "parameters": {
+            "properties": {
+                "kgrid": {
+                    "oneOf": [
+                        {
+                            "$ref": "./kgrid/automatic.json"
+                        }
+                    ]
+                },
+                "gaussianSpread": {
+                    "description": "broadening width W",
+                    "$ref": "../../../core/reusable/energy.json"
+                },
+                "approximantOrder": {
+                    "description": "order N of Approximant D_N(x), also length of sum to approximate Dirac function",
+                    "type": "integer",
+                    "minimum": 0
+                }
+            }
+        }
+    }
+}

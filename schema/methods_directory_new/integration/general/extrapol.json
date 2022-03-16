@@ -1,0 +1,23 @@
+{
+    "schemaId": "method-integration-general-extrapol",
+    "$schema": "http://json-schema.org/draft-04/schema#",
+    "title": "Integration by extrapolation schema",
+    "properties": {
+        "type": {
+            "enum": [
+                {
+                    "name": "Extrapolation-based integration method",
+                    "slug": "extrapol"
+                }
+            ]
+        },
+        "subtype": {
+            "enum": [
+                {
+                    "name": "Euler-Maclaurin",
+                    "slug": "euler-maclaurin"
+                }
+            ]
+        }
+    }
+}

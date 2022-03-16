@@ -1,0 +1,21 @@
+{
+    "schemaId": "method-integration-brillouin-kgrid-automatic",
+    "$schema": "http://json-schema.org/draft-04/schema#",
+    "title": "automatic k-grid schema",
+    "allOf": [
+        {
+           "$ref": "../kgrid.json"
+        },
+        {
+            "$ref": "../../../../core/abstract/3d_grid.json"
+        }
+    ],
+    "properties": {
+        "mode": {
+            "description": "automatic generation of k-grid",
+            "enum": [
+                "automatic"
+            ]
+        }
+    }
+}

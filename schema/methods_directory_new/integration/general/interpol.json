@@ -1,0 +1,31 @@
+{
+    "schemaId": "method-integration-general-interpol",
+    "$schema": "http://json-schema.org/draft-04/schema#",
+    "title": "Interpolatory integration schema",
+    "properties": {
+        "type": {
+            "enum": [
+                {
+                    "name": "Interpolatory integration method",
+                    "slug": "interpol"
+                }
+            ]
+        },
+        "subtype": {
+            "enum": [
+                {
+                    "name": "Newton-Cotes",
+                    "slug": "newton-cotes"
+                },
+                {
+                    "name": "Fejér",
+                    "slug": "fejer"
+                },
+                {
+                    "name": "Clenshaw-Curtis",
+                    "slug": "clenshaw-curtis"
+                }
+            ]
+        }
+    }
+}

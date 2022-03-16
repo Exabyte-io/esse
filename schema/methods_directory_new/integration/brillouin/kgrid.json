@@ -1,0 +1,36 @@
+{
+    "schemaId": "method-integration-brillouin-kgrid",
+    "$schema": "http://json-schema.org/draft-04/schema#",
+    "title": "k-Grid schema",
+    "properties": {
+        "mode": {
+            "description": "how k-grid is generated/provided",
+            "type": "string"
+        },
+        "coordinateType": {
+            "description": "Type of coordinate system",
+            "type": "string",
+            "enum": [
+                    "cartesian",
+                    "crystal"
+            ]
+        },
+        "coordinateFactor": {
+            "description": "prefactor of k in given coordinate system, e.g. 2*pi/a",
+            "type": "string",
+            "enum": [
+                "none",
+                "2pi/a"
+            ]
+        },
+        "ibz": {
+            "description": "number of k-points inside irreducible wedge of the Brillouin zone",
+            "type": "integer"
+        }
+    },
+    "required": [
+        "mode",
+        "coordinateType",
+        "coordinateFactor"
+    ]
+}

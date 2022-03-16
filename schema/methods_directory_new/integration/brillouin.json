@@ -1,0 +1,19 @@
+{
+    "$schema": "http://json-schema.org/draft-04/schema#",
+    "description": "All methods for solving integrals over the Brillouin-zone",
+    "allOf": [
+        {
+            "$ref": "../integration.json"
+        }
+    ],
+    "properties": {
+        "tier2": {
+            "enum": [
+                {
+                    "name": "Brillouin-zone integration methods",
+                    "slug": "brillouin"
+                }
+            ]
+        }
+    }
+}
