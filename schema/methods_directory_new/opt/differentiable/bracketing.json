@@ -1,0 +1,21 @@
+{
+    "schemaId": "method-opt-differentiable-bracketing",
+    "$schema": "http://json-schema.org/draft-04/schema#",
+    "title": "Bracketing optimization algorithms schema",
+    "description": "Intended for optimization problems with one input variable where the optima is known to exist in a specific range",
+    "allOf": [
+        {
+            "$ref": "../differentiable.json"
+        }
+    ],
+    "properties": {
+        "tier3": {
+            "enum": [
+                {
+                    "name": "bracketing optimization algorithm",
+                    "slug": "bracketing"
+                }
+            ]
+        }
+    }
+}

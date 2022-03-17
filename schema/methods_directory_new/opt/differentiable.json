@@ -1,0 +1,19 @@
+{
+    "$schema": "http://json-schema.org/draft-04/schema#",
+    "description": "All optimization algorithms that use derivative information",
+    "allOf": [
+        {
+            "$ref": "../opt.json"
+        }
+    ],
+    "properties": {
+        "tier2": {
+            "enum": [
+                {
+                    "name": "Optimization algorithms for differentiable functions",
+                    "slug": "differentiable"
+                }
+            ]
+        }
+    }
+}

@@ -1,0 +1,29 @@
+{
+    "$schema": "http://json-schema.org/draft-04/schema#",
+    "description": "Intended for optimization problems with one input variable where the optima is known to exist in a specific range",
+    "allOf": [
+        {
+            "$ref": "../differentiable.json"
+        }
+    ],
+    "properties": {
+        "tier3": {
+            "enum": [
+                {
+                    "name": "first order optimization algorithm",
+                    "slug": "order1"
+                }
+            ]
+        }
+    },
+    "definitions": {
+        "gtol": {
+            "description": "gradient norm tolerance",
+            "allOf": [
+                {
+                    "$ref": "../../../core/reusable/param_number.json"
+                }
+            ]
+        }
+    }
+}

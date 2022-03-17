@@ -11,6 +11,10 @@
             "description": "second level category, e.g. `quantum mechanical`",
             "$ref": "../core/primitive/slugified_entry_or_slug.json"
         },
+        "tier3": {
+            "description": "second level category, e.g. `quantum mechanical`",
+            "$ref": "../core/primitive/slugified_entry_or_slug.json"
+        },
         "type": {
             "description": "general type of the model, eg. `dft`",
             "$ref": "../core/primitive/slugified_entry_or_slug.json"
@@ -35,6 +39,7 @@
     "required": [
         "tier1",
         "tier2",
+        "tier3",
         "type",
         "subtype",
         "parameters"

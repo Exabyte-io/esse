@@ -1,0 +1,42 @@
+{
+    "schemaId": "method-opt-differentiable-order1-grad",
+    "$schema": "http://json-schema.org/draft-04/schema#",
+    "title": "Gradient Descent Method Schema",
+    "allOf": [
+        {
+            "$ref": "../order1.json"
+        }
+    ],
+    "properties": {
+        "type": {
+            "enum": [
+                {
+                    "name": "Gradient descent method",
+                    "slug": "grad"
+                }
+            ]
+        },
+        "parameters": {
+            "properties": {
+                "stepSize": {
+                    "$ref": "../../../opt.json#/definitions/stepSize"
+                },
+                "maxIter": {
+                    "$ref": "../../../opt.json#/definitions/maxIter"
+                },
+                "thresh": {
+                    "$ref": "../../../opt.json#/definitions/thresh"
+                },
+                "gtol": {
+                    "$ref": "../order1.json#/definitions/gtol"
+                }
+            },
+            "required": [
+                "stepSize",
+                "maxIter",
+                "thresh",
+                "gtol"
+            ]
+        }
+    }
+}

@@ -1,0 +1,45 @@
+{
+    "$schema": "http://json-schema.org/draft-04/schema#",
+    "description": "All optimization algorithms",
+    "allOf": [
+        {
+            "$ref": "./method_unit_base.json"
+        }
+    ],
+    "properties": {
+        "tier1": {
+            "enum": [
+                {
+                    "name": "Optimization algorithms",
+                    "slug": "opt"
+                }
+            ]
+        }
+    },
+    "definitions": {
+        "stepSize": {
+            "description": "Step size scaling the gradient, in ML also called learning rate",
+            "allOf": [
+                {
+                    "$ref": "../core/reusable/param_number.json"
+                }
+            ]
+        },
+        "maxIter": {
+            "description": "Maximum number of iterations",
+            "allOf": [
+                {
+                    "$ref": "../core/reusable/param_int.json"
+                }
+            ]
+        },
+        "thresh": {
+            "description": "Convergence threshold or tolerance",
+            "allOf": [
+                {
+                    "$ref": "../core/reusable/param_number.json"
+                }
+            ]
+        }
+    }
+}
