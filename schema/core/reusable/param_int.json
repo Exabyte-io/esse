@@ -1,0 +1,24 @@
+{
+    "schemaId": "core-reusable-param-int",
+    "$schema": "http://json-schema.org/draft-04/schema#",
+    "title": "integer parameter schema",
+    "properties": {
+        "value": {
+            "description": "Value of parameters",
+            "type": "integer"
+        },
+        "units": {
+            "description": "Unit of parameter",
+            "type": "string"
+        },
+        "precision": {
+            "description": "Whether parameter affects precision",
+            "type": "boolean"
+        }
+    },
+    "required": [
+        "value",
+        "units",
+        "precision"
+    ]
+}
