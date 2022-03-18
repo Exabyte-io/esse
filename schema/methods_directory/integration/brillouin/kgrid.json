@@ -29,8 +29,6 @@
         }
     },
     "required": [
-        "mode",
-        "coordinateType",
-        "coordinateFactor"
+        "mode"
     ]
 }
