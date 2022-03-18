@@ -1,0 +1,27 @@
+{
+    "tier1": {
+        "name": "Integration methods",
+        "slug": "integration"
+    },
+    "tier2": {
+        "name": "Brillouin-zone integration methods",
+        "slug": "brillouin"
+    },
+    "type": {
+        "name": "Tetrahedron integration method",
+        "slug": "tetrah"
+    },
+    "subtype": {
+        "name": "Bloechl correction",
+        "slug": "bloechl"
+    },
+    "parameters": {
+        "kgrid": {
+            "mode": "automatic",
+            "dimensions": [3, 3, 3],
+            "shifts": [0, 0, 0]
+        }
+    },
+    "data": {},
+    "precision": {}
+}

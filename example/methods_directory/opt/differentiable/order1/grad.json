@@ -1,0 +1,51 @@
+{
+    "tier1": {
+        "name": "Optimization algorithms",
+        "slug": "opt"
+    },
+    "tier2": {
+        "name": "Optimization algorithms for differentiable functions",
+        "slug": "differentiable"
+    },
+    "tier3": {
+        "name": "first order optimization algorithm",
+        "slug": "order1"
+    },
+    "type": {
+        "name": "Gradient descent method",
+        "slug": "grad"
+    },
+    "parameters": {
+        "optType": {
+            "value": "min",
+            "unit": "",
+            "precision": false
+        },
+        "stepSize": {
+            "value": 0.01,
+            "unit": "",
+            "precision": false
+        },
+        "maxIter": {
+            "value": 150,
+            "unit": "",
+            "precision": false
+        },
+        "thresh": {
+            "value": 1E-5,
+            "unit": "eV",
+            "precision": true
+        },
+        "gtol": {
+            "value": 1E-3,
+            "unit": "",
+            "precision": true
+        }
+    },
+    "precision": {
+
+    },
+    "data": {
+
+    }
+}
