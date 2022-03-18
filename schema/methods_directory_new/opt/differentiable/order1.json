@@ -1,6 +1,6 @@
 {
     "$schema": "http://json-schema.org/draft-04/schema#",
-    "description": "Intended for optimization problems with one input variable where the optima is known to exist in a specific range",
+    "description": "Intended for optimization problems which use gradient information",
     "allOf": [
         {
             "$ref": "../differentiable.json"
