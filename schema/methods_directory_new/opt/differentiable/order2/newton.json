@@ -1,0 +1,49 @@
+{
+    "schemaId": "method-opt-differentiable-order2-newton",
+    "$schema": "http://json-schema.org/draft-04/schema#",
+    "title": "Newton Method Schema",
+    "allOf": [
+        {
+            "$ref": "../order2.json"
+        }
+    ],
+    "properties": {
+        "type": {
+            "enum": [
+                {
+                    "name": "Newton method",
+                    "slug": "newton"
+                }
+            ]
+        },
+        "parameters": {
+            "properties": {
+                "optType": {
+                    "$ref": "../../../opt.json#/definitions/optType"
+                },
+                "stepSize": {
+                    "$ref": "../../../opt.json#/definitions/stepSize"
+                },
+                "maxIter": {
+                    "$ref": "../../../opt.json#/definitions/maxIter"
+                },
+                "thresh": {
+                    "$ref": "../../../opt.json#/definitions/thresh"
+                },
+                "gtol": {
+                    "$ref": "../order2.json#/definitions/gtol"
+                },
+                "hessType": {
+                    "$ref": "../order2.json#/definitions/hessType"
+                }
+            },
+            "required": [
+                "stepSize",
+                "maxIter",
+                "thresh",
+                "gtol",
+                "hessType"
+            ]
+        }
+    }
+}

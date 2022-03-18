@@ -40,6 +40,24 @@
                     "$ref": "../core/reusable/param_number.json"
                 }
             ]
+        },
+        "optType": {
+            "description": "Type of optimization (minimization, maximization, saddle point, constrained opt)",
+            "allOf": [
+                {
+                    "$ref": "../core/reusable/param_string.json"
+                }
+            ],
+            "properties": {
+                "value": {
+                    "enum": [
+                        "min",
+                        "max",
+                        "saddle",
+                        "constr"
+                    ]
+                }
+            }
         }
     }
 }

@@ -1,0 +1,45 @@
+{
+    "$schema": "http://json-schema.org/draft-04/schema#",
+    "description": "Intended for optimization problems which use gradient and Hessian information",
+    "allOf": [
+        {
+            "$ref": "../differentiable.json"
+        }
+    ],
+    "properties": {
+        "tier3": {
+            "enum": [
+                {
+                    "name": "second order optimization algorithm",
+                    "slug": "order2"
+                }
+            ]
+        }
+    },
+    "definitions": {
+        "gtol": {
+            "description": "gradient norm tolerance",
+            "allOf": [
+                {
+                    "$ref": "../../../core/reusable/param_number.json"
+                }
+            ]
+        },
+        "hessType": {
+            "description": "Defines how Hessian is calculated",
+            "allOf": [
+                {
+                    "$ref": "../../../core/reusable/param_string.json"
+                }
+            ],
+            "properties": {
+                "value": {
+                    "enum": [
+                        "analytic",
+                        "finite-diff"
+                    ]
+                }
+            }
+        }
+    }
+}
