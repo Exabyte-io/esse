@@ -16,7 +16,7 @@
         "slug": "grad"
     },
     "parameters": {
-        "optType": {
+        "optimizationType": {
             "value": "min",
             "unit": "",
             "precision": false

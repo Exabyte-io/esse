@@ -18,8 +18,8 @@
         },
         "parameters": {
             "properties": {
-                "optType": {
-                    "$ref": "../../../opt.json#/definitions/optType"
+                "optimizationType": {
+                    "$ref": "../../../opt.json#/definitions/optimizationType"
                 },
                 "stepSize": {
                     "$ref": "../../../opt.json#/definitions/stepSize"

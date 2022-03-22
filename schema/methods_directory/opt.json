@@ -41,7 +41,7 @@
                 }
             ]
         },
-        "optType": {
+        "optimizationType": {
             "description": "Type of optimization (minimization, maximization, saddle point, constrained opt)",
             "allOf": [
                 {
