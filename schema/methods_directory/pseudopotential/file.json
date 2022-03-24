@@ -97,9 +97,7 @@
                     "description": "cloud storage provider where pseudo file is stored",
                     "enum": [
                         "ec2",
-                        "softlayer",
-                        "azure",
-                        "rackspace"
+                        "azure"
                     ]
                 }
             }
