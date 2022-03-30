@@ -1,0 +1,60 @@
+{
+    "tier1": {
+        "name": "Discretization",
+        "slug": "discretization"
+    },
+    "tier2": {
+        "name": "Mesh Generation",
+        "slug": "meshing"
+    },
+    "tier3": {
+        "name": "Structured Mesh",
+        "slug": "structured"
+    },
+    "type": {
+        "name": "Regular Cartesian grid",
+        "slug": "cartesian"
+    },
+    "subtype": {
+        "name": "Three-dimensional",
+        "slug": "3d"
+    },
+    "parameters": {
+        "spacing.x": {
+            "value": 0.1,
+            "unit": "Angstrom",
+            "precision": true
+        },
+        "spacing.y": {
+            "value": 0.2,
+            "unit": "Angstrom",
+            "precision": true
+        },
+        "spacing.z": {
+            "value": 0.3,
+            "unit": "Angstrom",
+            "precision": true
+        },
+        "nPoints.x": {
+            "value": 50,
+            "unit": "",
+            "precision": true
+        },
+        "nPoints.y": {
+            "value": 50,
+            "unit": "",
+            "precision": true
+        },
+        "nPoints.z": {
+            "value": 50,
+            "unit": "",
+            "precision": true
+        }
+    },
+    "precision": {
+
+    },
+    "data": {
+
+    }
+}

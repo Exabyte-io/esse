@@ -1,0 +1,19 @@
+{
+    "$schema": "http://json-schema.org/draft-04/schema#",
+    "description": "Unstructured mesh, i.e. irregular connectivity of grid points",
+    "allOf": [
+        {
+            "$ref": "../meshing.json"
+        }
+    ],
+    "properties": {
+        "tier3": {
+            "enum": [
+                {
+                    "name": "Untructured Mesh",
+                    "slug": "unstructured"
+                }
+            ]
+        }
+    }
+}

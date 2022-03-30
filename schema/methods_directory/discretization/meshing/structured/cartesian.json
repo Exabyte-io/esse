@@ -1,0 +1,98 @@
+{
+    "schemaId": "method-discretization-meshing-structured-cartesian",
+    "$schema": "http://json-schema.org/draft-04/schema#",
+    "title": "Regular Cartesian Grid Schema",
+    "allOf": [
+        {
+            "$ref": "../structured.json"
+        }
+    ],
+    "properties": {
+        "type": {
+            "enum": [
+                {
+                    "name": "Regular Cartesian grid",
+                    "slug": "cartesian"
+                }
+            ]
+        }
+    },
+    "oneOf": [
+        {
+            "properties": {
+                "subtype": {
+                    "enum": [
+                        {
+                            "name": "Two-dimensional",
+                            "slug": "2d"
+                        }
+                    ]
+                },
+                "parameters": {
+                    "properties": {
+                        "spacing.x": {
+                            "$ref": "../structured.json/#/definitions/spacing"
+                        },
+                        "spacing.y": {
+                            "$ref": "../structured.json/#/definitions/spacing"
+                        },
+                        "nPoints.x": {
+                            "$ref": "../structured.json/#/definitions/nPoints"
+                        },
+                        "nPoints.y": {
+                            "$ref": "../structured.json/#/definitions/nPoints"
+                        }
+                    },
+                    "required": [
+                        "spacing.x",
+                        "spacing.y",
+                        "nPoints.x",
+                        "nPoints.y"
+                    ]
+                }
+            }
+        },
+        {
+            "properties": {
+                "subtype": {
+                    "enum": [
+                        {
+                            "name": "Three-dimensional",
+                            "slug": "3d"
+                        }
+                    ]
+                },
+                "parameters": {
+                    "properties": {
+                        "spacing.x": {
+                            "$ref": "../structured.json/#/definitions/spacing"
+                        },
+                        "spacing.y": {
+                            "$ref": "../structured.json/#/definitions/spacing"
+                        },
+                        "spacing.z": {
+                            "$ref": "../structured.json/#/definitions/spacing"
+                        },
+                        "nPoints.x": {
+                            "$ref": "../structured.json/#/definitions/nPoints"
+                        },
+                        "nPoints.y": {
+                            "$ref": "../structured.json/#/definitions/nPoints"
+                        },
+                        "nPoints.z": {
+                            "$ref": "../structured.json/#/definitions/nPoints"
+                        }
+                    },
+                    "required": [
+                        "spacing.x",
+                        "spacing.y",
+                        "spacing.z",
+                        "nPoints.x",
+                        "nPoints.y",
+                        "nPoints.z"
+                    ]
+                }
+            }
+        }
+    ]
+}

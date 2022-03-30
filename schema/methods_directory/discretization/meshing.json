@@ -1,0 +1,19 @@
+{
+    "$schema": "http://json-schema.org/draft-04/schema#",
+    "description": "All methods regarding grid or mesh generation",
+    "allOf": [
+        {
+            "$ref": "../discretization.json"
+        }
+    ],
+    "properties": {
+        "tier2": {
+            "enum": [
+                {
+                    "name": "Mesh Generation",
+                    "slug": "meshing"
+                }
+            ]
+        }
+    }
+}

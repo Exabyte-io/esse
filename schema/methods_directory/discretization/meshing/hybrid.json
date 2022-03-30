@@ -1,0 +1,19 @@
+{
+    "$schema": "http://json-schema.org/draft-04/schema#",
+    "description": "Hybrid mesh, i.e. a mixture of structured and unstructured meshes",
+    "allOf": [
+        {
+            "$ref": "../meshing.json"
+        }
+    ],
+    "properties": {
+        "tier3": {
+            "enum": [
+                {
+                    "name": "Hybrid Mesh",
+                    "slug": "hybrid"
+                }
+            ]
+        }
+    }
+}

@@ -1,0 +1,37 @@
+{
+    "$schema": "http://json-schema.org/draft-04/schema#",
+    "description": "Structured mesh, whereby neighborhood relationships are defined by storage arrangement",
+    "allOf": [
+        {
+            "$ref": "../meshing.json"
+        }
+    ],
+    "properties": {
+        "tier3": {
+            "enum": [
+                {
+                    "name": "Structured Mesh",
+                    "slug": "structured"
+                }
+            ]
+        }
+    },
+    "definitions": {
+        "spacing": {
+            "description": "grid unit vector in x-, y-, or z-direction",
+            "allOf": [
+                {
+                    "$ref": "../../../core/reusable/param_number.json"
+                }
+            ]
+        },
+        "nPoints": {
+            "description": "number of grid points in in x-, y-, or z-direction",
+            "allOf": [
+                {
+                    "$ref": "../../../core/reusable/param_int.json"
+                }
+            ]
+        }
+    }
+}

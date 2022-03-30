@@ -1,0 +1,19 @@
+{
+    "$schema": "http://json-schema.org/draft-04/schema#",
+    "description": "Approximation of continuous problems by discrete problems whose solutions are known",
+    "allOf": [
+        {
+            "$ref": "./method_unit_base.json"
+        }
+    ],
+    "properties": {
+        "tier1": {
+            "enum": [
+                {
+                    "name": "Discretization",
+                    "slug": "discretization"
+                }
+            ]
+        }
+    }
+}
