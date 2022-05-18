@@ -1,0 +1,49 @@
+{
+    "schemaId": "method-derived-qm-planewave",
+    "$schema": "http://json-schema.org/draft-04/schema#",
+    "description": "Approximating the electronic wave function with a plane wave basis",
+    "allOf": [
+        {
+            "$ref": "../../mathematical/function_approx/basis_expansion.json"
+        }
+    ],
+    "properties": {
+        "type": {
+            "enum": [
+                {
+                    "name": "Plane Wave Expansion",
+                    "slug": "expan-pw"
+                }
+            ]
+        },
+        "parameters": {
+            "type": "object",
+            "properties": {
+                "cutoffKineticWfn": {
+                    "description": "Kinetic energy cutoff (wavefunction)",
+                    "$ref": "../../../core/reusable/param_number.json"
+                },
+                "cutoffKineticRho": {
+                    "description": "Kinetic energy cutoff (density)",
+                    "$ref": "../../../core/reusable/param_number.json"
+                }
+            }
+        },
+        "metaParams": {
+            "type": "object",
+            "properties": {
+                "targetFunction": {
+                    "enum": [
+                        "electronic-wavefunction"
+                    ]
+                },
+                "basisFunctionType": {
+                    "enum": [
+                        "fourier-series",
+                        "bloch-function"
+                    ]
+                }
+            }
+        }
+    }
+}

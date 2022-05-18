@@ -1,0 +1,27 @@
+{
+    "methodCategorySlug": "func-approx/basis-exp/none",
+    "modelCategorySlugs": [
+        "pb/qm/*",
+        "pb/at/*"
+    ],
+    "type": {
+        "name": "Plane Wave Expansion",
+        "slug": "expan-pw"
+    },
+    "parameters": {
+        "cutoffs.wavefunction": {
+            "value": 85,
+            "units": "eV",
+            "precision": true
+        },
+        "cutoffs.density": {
+            "value": 320,
+            "units": "eV",
+            "precision": true
+        }
+    },
+    "metaParams": {
+        "targetFunction": "electronic-wavefunction",
+        "basisFunctionType": "bloch-function"
+    }
+}
