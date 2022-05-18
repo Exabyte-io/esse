@@ -1,0 +1,53 @@
+{
+    "schemaId": "method",
+    "$schema": "http://json-schema.org/draft-04/schema#",
+    "title": "compound method schema",
+    "properties": {
+        "slug": {
+            "description": "Machine-readable slug for compound method",
+            "type": "string"
+        },
+        "methodUnits": {
+            "description": "Graph of unit methods (nodes)",
+            "type": "array",
+            "items": {
+                "type": "object",
+                "properties": {
+                    "name": {
+                        "description": "Human-readable name of node",
+                        "type": "string"
+                    },
+                    "flowchartId": {
+                        "description": "Flowchart ID of method node",
+                        "type": "string"
+                    },
+                    "next": {
+                        "description": "Flowchart ID of next node",
+                        "type": "string"
+                    },
+                    "head": {
+                        "description": "Whether node is head node or not",
+                        "type": "boolean"
+                    },
+                    "groupName": {
+                        "description": "Name of group of unit methods",
+                        "type": "string"
+                    },
+                    "groupId": {
+                        "description": "ID of group the method unit belongs to",
+                        "type": "string"
+                    }
+                },
+                "required": [
+                    "name",
+                    "flowchartId",
+                    "next"
+                ]
+            }
+        }
+    },
+    "required": [
+        "slug",
+        "methodUnits"
+    ]
+}

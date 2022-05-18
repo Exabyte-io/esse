@@ -1,0 +1,52 @@
+{
+    "schemaId": "method-unit-base",
+    "$schema": "http://json-schema.org/draft-04/schema#",
+    "title": "unit method schema (base)",
+    "properties": {
+        "methodCategorySlug": {
+            "description": "Slugified method categorization string, e.g. func_approx/interpol/ipol_lin",
+            "type": "string"
+        },
+        "modelCategorySlugs": {
+            "description": "Slugified model categorization string, e.g. pb/qm/dft",
+            "type": "array",
+            "items": {
+                "type": "string"
+            }
+        },
+        "type": {
+            "description": "General type of the method",
+            "$ref": "../core/primitive/slugified_entry_or_slug.json"
+        },
+        "subtype": {
+            "description": "General subtype of the method (if applicable)",
+            "$ref": "../core/primitive/slugified_entry_or_slug.json"
+        },
+        "parameters": {
+            "description": "Keyworded collection of method parameters (numerically relevant)",
+            "type": "object"
+        },
+        "precision": {
+            "description": "Object showing the actual possible precision based on theory and implementation",
+            "type": "object"
+        },
+        "data": {
+            "description": "Additional numerically relevant data specific to method, eg. array of pseudopotentials",
+            "type": "object"
+        },
+        "metaParams": {
+            "description": "Parameters for further specification of the method (numerically not relevant)"
+        },
+        "tags": {
+            "description": "Pre-defined or user-defined tags",
+            "type": "array",
+            "items": {
+                "type": "string"
+            }
+        }
+    },
+    "required": [
+        "methodCategorySlug",
+        "type"
+    ]
+}
