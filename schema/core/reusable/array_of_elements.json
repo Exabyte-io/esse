@@ -1,0 +1,9 @@
+{
+    "schemaId": "core-reusable-elements-array",
+    "$schema": "http://json-schema.org/draft-04/schema#",
+    "title": "array of elements schema",
+    "type": "array",
+    "items": {
+        "$ref": "../../definitions/science.json#/elements"
+    }
+}

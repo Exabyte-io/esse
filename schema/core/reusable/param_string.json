@@ -1,0 +1,23 @@
+{
+    "schemaId": "core-reusable-param-number",
+    "$schema": "http://json-schema.org/draft-04/schema#",
+    "title": "number parameter schema",
+    "properties": {
+        "value": {
+            "description": "Parameter value as string",
+            "type": "string"
+        },
+        "units": {
+            "description": "Unit of parameter",
+            "type": "string"
+        },
+        "precision": {
+            "description": "Whether parameter affects precision",
+            "type": "boolean"
+        }
+    },
+    "required": [
+        "value",
+        "precision"
+    ]
+}
