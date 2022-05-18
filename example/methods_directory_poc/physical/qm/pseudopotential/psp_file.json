@@ -1,0 +1,75 @@
+{
+    "element": "Ag",
+    "type": "us",
+    "format": "upf",
+    "origin": {
+        "slug": "gbrv",
+        "version": "1.4",
+        "reference": {
+            "...": "include(../../../../core/reference/literature.json)"
+        },
+        "comment": "Brief description.",
+        "generationDetails": {
+            "date": "2001-01-05",
+            "application": {
+                "...": "include(../../../../software/application.json)"
+            },
+            "author": {
+                "first": "John",
+                "last": "Doe"
+            }
+        }
+    },
+    "storage": {
+        "type": "file-storage",
+        "path": "/ag/gga/pbe/gbrv/1.4/us/ag_pbe_gbrv_1.4.upf",
+        "root": "/export/share/pseudo"
+    },
+    "cutoffs": {
+        "wavefunction": {
+            "maximum": {
+                "value": 50,
+                "units": "eV"
+            },
+            "minimum": {
+                "value": 50,
+                "units": "eV"
+            },
+            "suggested": {
+                "value": 50,
+                "units": "eV"
+            }
+        },
+        "density": {
+            "maximum": {
+                "value": 50,
+                "units": "eV"
+            },
+            "minimum": {
+                "value": 50,
+                "units": "eV"
+            },
+            "suggested": {
+                "value": 50,
+                "units": "eV"
+            }
+        }
+    },
+    "radii": {
+        "wignerSeitz": {
+            "value": 2.5,
+            "units": "bohr"
+        },
+        "partialCore": {
+            "value": 1.5,
+            "units": "bohr"
+        },
+        "cutoff": {
+            "value": 1.9,
+            "units": "bohr"
+        }
+    },
+    "zValence": 19,
+    "modelReference": "pb/qm/dft/ks-dft/gga#hse06?alphac=0.1",
+    "relativity": "none"
+}

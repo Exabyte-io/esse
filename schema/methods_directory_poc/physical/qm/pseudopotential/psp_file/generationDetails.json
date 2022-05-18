@@ -1,0 +1,15 @@
+{
+    "$schema": "http://json-schema.org/draft-04/schema#",
+    "description": "Pseudopotential generation details schema",
+    "properties": {
+        "date": {
+            "type": "string"
+        },
+        "application": {
+            "$ref": "../../../../../software/application.json"
+        },
+        "author": {
+            "$ref": "../../../../../core/reference/literature/name.json"
+        }
+    }
+}

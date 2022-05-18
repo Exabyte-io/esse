@@ -1,0 +1,12 @@
+{
+    "$schema": "http://json-schema.org/draft-04/schema#",
+    "description": "Schema for kinetic energy cutoffs",
+    "properties": {
+        "wavefunction": {
+            "$ref": "energy_cutoff.json"
+        },
+        "density": {
+            "$ref": "energy_cutoff.json"
+        }
+    }
+}

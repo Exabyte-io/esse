@@ -1,0 +1,19 @@
+{
+    "methodCategorySlug": "none",
+    "modelCategorySlugs": [
+        "pb/qm/*"
+    ],
+    "type": {
+        "name": "Pseudopotential Approximation",
+        "slug": "psp"
+    },
+    "subtype": {
+        "name": "Ultra-soft",
+        "slug": "us"
+    },
+    "data": {
+        "pseudoSet": {
+            "...": "include(pseudopotential/psp_set.json)"
+        }
+    }
+}
