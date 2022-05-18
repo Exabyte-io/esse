@@ -1,0 +1,27 @@
+{
+    "$schema": "http://json-schema.org/draft-04/schema#",
+    "description": "Methods related to function approximation and approximation theory",
+    "allOf": [
+        {
+            "$ref": "../method_unit_base.json"
+        }
+    ],
+    "properties": {
+        "metaParams": {
+            "type": "object",
+            "properties": {
+                "targetFunction": {
+                    "description": "Name or class of function to be approximated",
+                    "type": "string"
+                }
+            }
+        }
+    },
+    "definitions": {
+        "slug": {
+            "enum": [
+                "func-approx"
+            ]
+        }
+    }
+}

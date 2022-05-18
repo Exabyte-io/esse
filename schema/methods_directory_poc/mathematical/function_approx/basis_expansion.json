@@ -1,0 +1,32 @@
+{
+    "schemaId": "method-base-basis-exp",
+    "$schema": "http://json-schema.org/draft-04/schema#",
+    "description": "Methods related to approximating functions in terms of basis functions",
+    "allOf": [
+        {
+            "$ref": "../function_approx.json"
+        }
+    ],
+    "properties": {
+        "metaParams": {
+            "type": "object",
+            "properties": {
+                "targetFunction": {
+                    "description": "Name or class of function to be approximated",
+                    "type": "string"
+                },
+                "basisFunctionType": {
+                    "description": "Name or class of basis functions",
+                    "type": "string"
+                }
+            }
+        }
+    },
+    "definitions": {
+        "slug": {
+            "enum": [
+                "basis-exp"
+            ]
+        }
+    }
+}
