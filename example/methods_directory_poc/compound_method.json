@@ -15,7 +15,6 @@
             "name": "Ultrasoft Pseudopotential",
             "type": "psp:us",
             "flowchartId": "um00002",
-            "next": null,
             "head": false,
             "groupName": "PW-PSP",
             "groupId": "gm00001"
