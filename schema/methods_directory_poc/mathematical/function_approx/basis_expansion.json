@@ -11,10 +11,6 @@
         "metaParams": {
             "type": "object",
             "properties": {
-                "targetFunction": {
-                    "description": "Name or class of function to be approximated",
-                    "type": "string"
-                },
                 "basisFunctionType": {
                     "description": "Name or class of basis functions",
                     "type": "string"

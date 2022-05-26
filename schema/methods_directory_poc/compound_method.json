@@ -3,8 +3,12 @@
     "$schema": "http://json-schema.org/draft-04/schema#",
     "title": "compound method schema",
     "properties": {
-        "slug": {
-            "description": "Machine-readable slug for compound method",
+        "name": {
+            "description": "Human-readable name for compound method",
+            "type": "string"
+        },
+        "methodId": {
+            "description": "Unique identifier for compound method",
             "type": "string"
         },
         "methodUnits": {
@@ -15,6 +19,10 @@
                 "properties": {
                     "name": {
                         "description": "Human-readable name of node",
+                        "type": "string"
+                    },
+                    "type": {
+                        "description": "Identifier slugs for method type and subtype (type:subtype)",
                         "type": "string"
                     },
                     "flowchartId": {
@@ -30,11 +38,11 @@
                         "type": "boolean"
                     },
                     "groupName": {
-                        "description": "Name of group of unit methods",
+                        "description": "Human-readable name of group of unit methods",
                         "type": "string"
                     },
                     "groupId": {
-                        "description": "ID of group the method unit belongs to",
+                        "description": "Unique identifier of group the method unit belongs to",
                         "type": "string"
                     }
                 },
@@ -47,7 +55,8 @@
         }
     },
     "required": [
-        "slug",
+        "name",
+        "methodId",
         "methodUnits"
     ]
 }

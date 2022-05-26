@@ -35,7 +35,8 @@
             "type": "object"
         },
         "metaParams": {
-            "description": "Parameters for further specification of the method (numerically not relevant)"
+            "description": "Parameters for further specification of the method (numerically not relevant)",
+            "type": "object"
         },
         "tags": {
             "description": "Pre-defined or user-defined tags",
