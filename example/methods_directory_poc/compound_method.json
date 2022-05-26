@@ -1,0 +1,24 @@
+{
+    "name": "Plane wave pseudopotential method",
+    "methodId": "abcd1234",
+    "methodUnits": [
+        {
+            "name": "Plane wave",
+            "type": "expan-pw",
+            "flowchartId": "um00001",
+            "next": "um00002",
+            "head": true,
+            "groupName": "PW-PSP",
+            "groupId": "gm00001"
+        },
+        {
+            "name": "Ultrasoft Pseudopotential",
+            "type": "psp:us",
+            "flowchartId": "um00002",
+            "next": null,
+            "head": false,
+            "groupName": "PW-PSP",
+            "groupId": "gm00001"
+        }
+    ]
+}
