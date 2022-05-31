@@ -26,7 +26,7 @@
         "...": "include(dispersion_models_directory/dft_d.json)"
     },
     "method": {
-        "...": "include(../../../../methods_directory/pseudopotential.json)"
+        "...": "include(../../../../method.json)"
     },
     "modifiers": [
         "soc"

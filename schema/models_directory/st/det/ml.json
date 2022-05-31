@@ -26,11 +26,7 @@
             ]
         },
         "method": {
-            "oneOf": [
-                {
-                    "$ref": "../../../methods_directory/regression.json"
-                }
-            ]
+            "type": "object"
         }
     }
 }

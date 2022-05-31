@@ -20,7 +20,7 @@
             ]
         },
         "method": {
-            "$ref": "../methods_directory/unknown.json"
+            "type": "object"
         }
     }
 }

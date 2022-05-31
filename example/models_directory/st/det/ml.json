@@ -1,6 +1,6 @@
 {
     "method": {
-        "...": "include(../../../methods_directory/regression.json)"
+        "...": "include(../../../method.json)"
     },
     "tier1": {
         "name": "statistical",
