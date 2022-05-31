@@ -1,0 +1,5 @@
+{
+    "type": "file-storage",
+    "path": "/usr/bin/python",
+    "root": "/"
+}

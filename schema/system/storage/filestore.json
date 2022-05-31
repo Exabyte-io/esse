@@ -1,0 +1,21 @@
+{
+    "schemaId": "system-storage-filestore",
+    "$schema": "http://json-schema.org/draft-04/schema#",
+    "title": "File storage schema",
+    "properties": {
+        "type": {
+            "description": "Storage type",
+            "enum": [
+                "file-storage"
+            ]
+        },
+        "path": {
+            "description": "File path on a filesystem",
+            "type": "string"
+        },
+        "root": {
+            "description": "root folder for path, e.g. /export/share",
+            "type": "string"
+        }
+    }
+}
