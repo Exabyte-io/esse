@@ -1,0 +1,20 @@
+{
+    "type": "us",
+    "elements": [
+        "Ag",
+        "Cl"
+    ],
+    "modelReference": "pb/qm/dft/ks-dft/gga#pbe",
+    "format": "upf",
+    "name": "my set",
+    "source": "gbrv",
+    "version": "1.5",
+    "files": [
+        {
+            "...": "include(./file.json)"
+        },
+        {
+            "...": "include(./file.json)"
+        }
+    ]
+}

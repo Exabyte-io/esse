@@ -1,0 +1,48 @@
+{
+    "schemaId": "method-physical-psp",
+    "$schema": "http://json-schema.org/draft-04/schema#",
+    "description": "Core-valence separation by means of pseudopotentials (effective potential)",
+    "allOf": [
+        {
+            "$ref": "../method_unit_base.json"
+        }
+    ],
+    "properties": {
+        "type": {
+            "enum": [
+                {
+                    "name": "Pseudopotential Approximation",
+                    "slug": "psp"
+                }
+            ]
+        },
+        "subtype": {
+            "enum": [
+                {
+                    "name": "Ultra-soft",
+                    "slug": "us"
+                },
+                {
+                    "name": "Norm-conserving",
+                    "slug": "nc"
+                },
+                {
+                    "name": "Coulomb potential",
+                    "slug": "coulomb"
+                },
+                {
+                    "name": "Projector-augmented wave set",
+                    "slug": "paw"
+                }
+            ]
+        },
+        "data": {
+            "type": "object",
+            "properties": {
+                "pseudoSet": {
+                    "$ref": "psp/set.json"
+                }
+            }
+        }
+    }
+}

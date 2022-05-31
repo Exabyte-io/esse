@@ -1,0 +1,19 @@
+{
+    "schemaId": "method-physical-psp-file-energy-cutoff",
+    "$schema": "http://json-schema.org/draft-04/schema#",
+    "description": "Schema for kinetic energy cutoffs",
+    "properties": {
+        "minimum": {
+            "$ref": "../../../../core/reusable/energy.json"
+        },
+        "maximum": {
+            "$ref": "../../../../core/reusable/energy.json"
+        },
+        "suggested": {
+            "$ref": "../../../../core/reusable/energy.json"
+        }
+    },
+    "required": [
+        "suggested"
+    ]
+}

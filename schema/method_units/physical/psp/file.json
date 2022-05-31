@@ -1,0 +1,58 @@
+{
+    "schemaId": "method-physical-psp-file",
+    "$schema": "http://json-schema.org/draft-04/schema#",
+    "description": "Schema for pseudopotential files",
+    "properties": {
+        "element": {
+            "type": "string",
+            "minLength": 1,
+            "maxLength": 2
+        },
+        "type": {
+            "description": "Type of pseudopotential",
+            "enum": [
+                "us",
+                "nc",
+                "paw",
+                "coulomb"
+            ]
+        },
+        "format": {
+            "description": "Serialization format for pseudopotential",
+            "enum": [
+                "upf",
+                "vasp"
+            ]
+        },
+        "origin": {
+            "$ref": "file/origin.json"
+        },
+        "storage": {
+            "$ref": "../../../system/storage.json"
+        },
+        "cutoffs": {
+            "$ref": "file/cutoffs.json"
+        },
+        "radii": {
+            "description": "Radius cutoffs",
+            "$ref": "file/radii.json"
+        },
+        "zValence": {
+            "description": "Valence charge, i.e. number of valence electrons",
+            "type": "integer"
+        },
+        "modelReference": {
+            "description": "Unique identifier of the model used to generate the PP set",
+            "type": "string"
+        },
+        "relativity": {
+            "description": "Level of relativistic effects included in the pseudopotential",
+            "enum": [
+                "none",
+                "1c-scalar",
+                "2c-quasi",
+                "4c-full"
+            ]
+        }
+    }
+}

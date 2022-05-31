@@ -1,0 +1,45 @@
+{
+    "schemaId": "method-physical-psp-file-origin",
+    "$schema": "http://json-schema.org/draft-04/schema#",
+    "description": "Pseudopotential origin schema",
+    "properties": {
+        "slug": {
+            "description": "Slugified name of source",
+            "$ref": "#/definitions/ppSources"
+        },
+        "version": {
+            "description": "Version of source",
+            "type": "string"
+        },
+        "reference": {
+            "description": "Literature reference",
+            "$ref": "../../../../core/reference.json"
+        },
+        "comment": {
+            "description": "Brief description or other text annotation",
+            "type": "string",
+            "maxLength": 140
+        },
+        "generationDetails": {
+            "$ref": "generationDetails.json"
+        }
+    },
+    "definitions": {
+        "ppSources": {
+            "description": "",
+            "enum": [
+                "quantum espresso database",
+                "gbrv",
+                "vasp database",
+                "sssp",
+                "pslibrary",
+                "pseudo-dojo",
+                "sg15",
+                "campos",
+                "abinit",
+                "fpmd",
+                "other"
+            ]
+        }
+    }
+}
