@@ -1,0 +1,9 @@
+{
+    "flowchartId": "n00001",
+    "head": true,
+    "next": "n00002",
+    "name": "New node",
+    "slug": "slug-for-new-node",
+    "groupName": "First group",
+    "groupId": "g00001"
+}

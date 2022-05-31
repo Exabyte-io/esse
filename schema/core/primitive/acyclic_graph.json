@@ -1,0 +1,21 @@
+{
+    "schemaId": "core-primitive-acyclic-graph",
+    "$schema": "http://json-schema.org/draft-04/schema#",
+    "title": "graph schema",
+    "type": "array",
+    "items": {
+        "type": "object",
+        "anyOf": [
+            {
+                "$ref": "acyclic_graph/base_node.json"
+            },
+            {
+                "$ref": "acyclic_graph/named_node.json"
+            },
+            {
+                "$ref": "acyclic_graph/named_node_in_group.json"
+            }
+        ],
+        "uniqueItems": true
+    }
+}

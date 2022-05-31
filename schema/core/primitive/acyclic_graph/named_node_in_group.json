@@ -1,0 +1,28 @@
+{
+    "schemaId": "core-primitive-graph-nodes-named-group",
+    "$schema": "http://json-schema.org/draft-04/schema#",
+    "title": "Named node in group schema",
+    "type": "object",
+    "allOf": [
+        {
+            "$ref": "named_node.json"
+        },
+        {
+            "$ref": "#/definitions/group-info"
+        }
+    ],
+    "definitions": {
+        "group-info": {
+            "properties": {
+                "groupName": {
+                    "description": "Human-readable name of group of node",
+                    "type": "string"
+                },
+                "groupId": {
+                    "description": "Unique identifier of group node belongs to",
+                    "type": "string"
+                }
+            }
+        }
+    }
+}

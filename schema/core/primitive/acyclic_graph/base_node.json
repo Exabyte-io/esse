@@ -1,0 +1,42 @@
+{
+    "schemaId": "core-primitive-graph-base-node",
+    "$schema": "http://json-schema.org/draft-04/schema#",
+    "title": "basic node schema (directed acyclic graph)",
+    "type": "object",
+    "properties": {
+        "flowchartId": {
+            "description": "Unique flowchart ID of node",
+            "type": "string"
+        },
+        "next": {
+            "description": "Flowchart ID of next node",
+            "type": "string"
+        },
+        "head": {
+            "description": "Whether node is head node or not",
+            "type": "boolean"
+        }
+    },
+    "required": [
+        "flowchartId"
+    ],
+    "definitions": {
+        "string-or-array-of-strings": {
+            "oneOf": [
+                {
+                    "type": "string"
+                },
+                {
+                    "$ref": "../array_of_strings.json"
+                }
+            ]
+        },
+        "flowchart-id": {
+            "properties": {
+                "flowchartId": {
+                    "type": "string"
+                }
+            }
+        }
+    }
+}
