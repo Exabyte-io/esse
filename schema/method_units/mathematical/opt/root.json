@@ -1,0 +1,20 @@
+{
+    "schemaId": "method-unit-opt-root",
+    "$schema": "http://json-schema.org/draft-04/schema#",
+    "description": "Root finding methods",
+    "allOf": [
+        {
+            "$ref": "../opt.json"
+        }
+    ],
+    "properties": {
+        "tier2": {
+            "enum": [
+                {
+                    "name": "Root Finding",
+                    "slug": "root"
+                }
+            ]
+        }
+    }
+}

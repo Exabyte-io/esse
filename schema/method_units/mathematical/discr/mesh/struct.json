@@ -1,0 +1,20 @@
+{
+    "schemaId": "method-unit-discr-mesh-struct",
+    "$schema": "http://json-schema.org/draft-04/schema#",
+    "description": "Structured meshing methods",
+    "allOf": [
+        {
+            "$ref": "../mesh.json"
+        }
+    ],
+    "properties": {
+        "tier3": {
+            "enum": [
+                {
+                    "name": "Structured Mesh",
+                    "slug": "struct"
+                }
+            ]
+        }
+    }
+}

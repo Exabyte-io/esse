@@ -1,0 +1,20 @@
+{
+    "schemaId": "method-unit-linalg-dcomp",
+    "$schema": "http://json-schema.org/draft-04/schema#",
+    "description": "Integration methods",
+    "allOf": [
+        {
+            "$ref": "../linalg.json"
+        }
+    ],
+    "properties": {
+        "tier2": {
+            "enum": [
+                {
+                    "name": "Decomposition",
+                    "slug": "dcomp"
+                }
+            ]
+        }
+    }
+}

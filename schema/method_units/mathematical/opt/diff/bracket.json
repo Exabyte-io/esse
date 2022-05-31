@@ -1,0 +1,20 @@
+{
+    "schemaId": "method-unit-opt-diff-bracket",
+    "$schema": "http://json-schema.org/draft-04/schema#",
+    "description": "Bracket algorithms for the optimixation of differentiable functions",
+    "allOf": [
+        {
+            "$ref": "../diff.json"
+        }
+    ],
+    "properties": {
+        "tier3": {
+            "enum": [
+                {
+                    "name": "Bracketing Algorithm",
+                    "slug": "bracket"
+                }
+            ]
+        }
+    }
+}

@@ -1,0 +1,28 @@
+{
+    "schemaId": "method-unit-fapprx-basisexp",
+    "$schema": "http://json-schema.org/draft-04/schema#",
+    "description": "Basis expansion methods",
+    "allOf": [
+        {
+            "$ref": "../fapprx.json"
+        }
+    ],
+    "properties": {
+        "tier2": {
+            "enum": [
+                {
+                    "name": "Basis Expansion",
+                    "slug": "basisexp"
+                }
+            ]
+        },
+        "tier3": {
+            "enum": [
+                {
+                    "name": "None",
+                    "slug": "none"
+                }
+            ]
+        }
+    }
+}

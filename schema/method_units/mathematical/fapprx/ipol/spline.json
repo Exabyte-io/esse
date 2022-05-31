@@ -1,0 +1,20 @@
+{
+    "schemaId": "method-unit-fapprx-ipol-spline",
+    "$schema": "http://json-schema.org/draft-04/schema#",
+    "description": "Spline interpolation methods",
+    "allOf": [
+        {
+            "$ref": "../ipol.json"
+        }
+    ],
+    "properties": {
+        "tier3": {
+            "enum": [
+                {
+                    "name": "Spline Interpolation",
+                    "slug": "spline"
+                }
+            ]
+        }
+    }
+}

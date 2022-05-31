@@ -1,0 +1,20 @@
+{
+    "schemaId": "method-unit-discr",
+    "$schema": "http://json-schema.org/draft-04/schema#",
+    "description": "Discretization methods",
+    "allOf": [
+        {
+            "$ref": "../method_unit_base.json"
+        }
+    ],
+    "properties": {
+        "tier1": {
+            "enum": [
+                {
+                    "name": "Discretization",
+                    "slug": "discr"
+                }
+            ]
+        }
+    }
+}

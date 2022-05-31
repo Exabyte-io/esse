@@ -1,0 +1,20 @@
+{
+    "schemaId": "method-unit-diff",
+    "$schema": "http://json-schema.org/draft-04/schema#",
+    "description": "Numerical differentiation methods",
+    "allOf": [
+        {
+            "$ref": "../method_unit_base.json"
+        }
+    ],
+    "properties": {
+        "tier1": {
+            "enum": [
+                {
+                    "name": "Differentiation",
+                    "slug": "diff"
+                }
+            ]
+        }
+    }
+}

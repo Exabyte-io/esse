@@ -1,0 +1,20 @@
+{
+    "schemaId": "method-unit-intgr-numquad-gauss",
+    "$schema": "http://json-schema.org/draft-04/schema#",
+    "description": "Gaussian quadrature rules",
+    "allOf": [
+        {
+            "$ref": "../numquad.json"
+        }
+    ],
+    "properties": {
+        "tier3": {
+            "enum": [
+                {
+                    "name": "Gaussian Quadrature",
+                    "slug": "gauss"
+                }
+            ]
+        }
+    }
+}
