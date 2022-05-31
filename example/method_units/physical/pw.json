@@ -1,0 +1,34 @@
+{
+    "tier1": {
+        "name": "Function Approximation",
+        "slug": "fapprx"
+    },
+    "tier2": {
+        "name": "Basis Expansion",
+        "slug": "basisexp"
+    },
+    "tier3": {
+        "name": "None",
+        "slug": "none"
+    },
+    "type": {
+        "name": "Plane Wave Expansion",
+        "slug": "pw"
+    },
+    "parameters": {
+        "cutoffs.wavefunction": {
+            "value": 85,
+            "units": "eV",
+            "precision": true
+        },
+        "cutoffs.density": {
+            "value": 320,
+            "units": "eV",
+            "precision": true
+        }
+    },
+    "metaData": {
+        "targetFunction": "electronic-wavefunction",
+        "basisFunctionType": "bloch-function"
+    }
+}
