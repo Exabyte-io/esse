@@ -1,6 +1,7 @@
 {
     "method": {
-        "...": "include(../../../method.json)"
+        "...": "include(../../../method.json)",
+        "@todo": "regression temporarily deactivated"
     },
     "tier1": {
         "name": "statistical",

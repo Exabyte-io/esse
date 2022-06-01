@@ -26,6 +26,7 @@
             ]
         },
         "method": {
+            "description": "@todo: temporarily deactivated",
             "type": "object"
         }
     }

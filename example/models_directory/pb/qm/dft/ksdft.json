@@ -26,7 +26,8 @@
         "...": "include(dispersion_models_directory/dft_d.json)"
     },
     "method": {
-        "...": "include(../../../../method.json)"
+        "...": "include(../../../../method.json)",
+        "@todo": "temporarily deactivated"
     },
     "modifiers": [
         "soc"

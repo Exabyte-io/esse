@@ -23,7 +23,8 @@
         "...": "include(lda/functional.json)"
     },
     "method": {
-        "...": "include(../../../../../method.json)"
+        "...": "include(../../../../../method.json)",
+        "@todo": "temporarily deactivated"
     },
     "modifiers": [
         "soc"
