@@ -23,7 +23,7 @@
             "description": "Additional numerically relevant data specific to method, eg. array of pseudopotentials",
             "type": "object"
         },
-        "metaData": {
+        "metadata": {
             "description": "Further specification and description of the method (numerically not relevant)",
             "type": "object"
         },
