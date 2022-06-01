@@ -23,6 +23,29 @@
                     "slug": "none"
                 }
             ]
+        },
+        "metadata": {
+            "$ref": "#/definitions/metadata"
+        }
+    },
+    "definitions": {
+        "metadata": {
+            "allOf": [
+                {
+                    "$ref": "../fapprx.json#/definitions/metadata-target-function"
+                },
+                {
+                    "properties": {
+                        "basisFunctionType": {
+                            "description": "Name or class of basis functions",
+                            "type": "string"
+                        }
+                    },
+                    "required": [
+                        "basisFunctionType"
+                    ]
+                }
+            ]
         }
     }
 }

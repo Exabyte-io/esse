@@ -15,6 +15,22 @@
                     "slug": "fapprx"
                 }
             ]
+        },
+        "metadata": {
+            "$ref": "#/definitions/metadata-target-function"
+        }
+    },
+    "definitions": {
+        "metadata-target-function": {
+            "properties": {
+                "targetFunction": {
+                    "description": "Name or class of function to be approximated",
+                    "type": "string"
+                }
+            },
+            "required": [
+                "targetFunction"
+            ]
         }
     }
 }
