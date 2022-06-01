@@ -1,4 +1,7 @@
 {
+    "methodCategoryPaths": [
+        "linalg/lintra"
+    ],
     "type": {
         "name": "Pseudopotential Approximation",
         "slug": "psp"

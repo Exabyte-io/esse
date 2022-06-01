@@ -4,10 +4,22 @@
     "description": "Approximating the electronic wave function with a plane wave basis",
     "allOf": [
         {
-            "$ref": "../mathematical/fapprx/basisexp.json"
+            "$ref": "../method_unit_base.json"
         }
     ],
     "properties": {
+        "methodCategoryPaths": {
+            "type": "array",
+            "items": {
+                "anyOf": [
+                    {
+                        "enum": [
+                            "fapprx/basisexp"
+                        ]
+                    }
+                ]
+            }
+        },
         "type": {
             "enum": [
                 {
@@ -29,8 +41,12 @@
                 }
             }
         },
-        "metaData": {
-            "type": "object",
+        "metadata": {
+            "allOf": [
+                {
+                    "$ref": "../mathematical/fapprx/basisexp.json#/definitions/metadata"
+                }
+            ],
             "properties": {
                 "targetFunction": {
                     "enum": [

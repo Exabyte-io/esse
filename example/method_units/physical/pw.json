@@ -1,16 +1,7 @@
 {
-    "tier1": {
-        "name": "Function Approximation",
-        "slug": "fapprx"
-    },
-    "tier2": {
-        "name": "Basis Expansion",
-        "slug": "basisexp"
-    },
-    "tier3": {
-        "name": "None",
-        "slug": "none"
-    },
+    "methodCategoryPaths": [
+        "fapprx/basisexp"
+    ],
     "type": {
         "name": "Plane Wave Expansion",
         "slug": "pw"

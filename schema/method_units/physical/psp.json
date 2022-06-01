@@ -8,6 +8,18 @@
         }
     ],
     "properties": {
+        "methodCategoryPaths": {
+            "type": "array",
+            "items": {
+                "anyOf": [
+                    {
+                        "enum": [
+                            "linalg/lintra"
+                        ]
+                    }
+                ]
+            }
+        },
         "type": {
             "enum": [
                 {
