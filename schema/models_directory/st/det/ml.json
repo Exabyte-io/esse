@@ -26,11 +26,8 @@
             ]
         },
         "method": {
-            "oneOf": [
-                {
-                    "$ref": "../../../methods_directory/regression.json"
-                }
-            ]
+            "description": "@todo: temporarily deactivated",
+            "type": "object"
         }
     }
 }

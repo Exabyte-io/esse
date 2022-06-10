@@ -1,0 +1,20 @@
+{
+    "schemaId": "method-unit-linalg",
+    "$schema": "http://json-schema.org/draft-04/schema#",
+    "description": "Linear Algebra methods",
+    "allOf": [
+        {
+            "$ref": "../method_unit_base.json"
+        }
+    ],
+    "properties": {
+        "tier1": {
+            "enum": [
+                {
+                    "name": "Linear Algebra",
+                    "slug": "linalg"
+                }
+            ]
+        }
+    }
+}

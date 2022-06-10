@@ -23,7 +23,8 @@
         "...": "include(lda/functional.json)"
     },
     "method": {
-        "...": "include(../../../../../methods_directory/pseudopotential.json)"
+        "...": "include(../../../../../method.json)",
+        "@todo": "temporarily deactivated"
     },
     "modifiers": [
         "soc"

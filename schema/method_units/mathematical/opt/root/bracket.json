@@ -1,0 +1,20 @@
+{
+    "schemaId": "method-unit-opt-root-bracket",
+    "$schema": "http://json-schema.org/draft-04/schema#",
+    "description": "Bracketing method for finding roots",
+    "allOf": [
+        {
+            "$ref": "../root.json"
+        }
+    ],
+    "properties": {
+        "tier3": {
+            "enum": [
+                {
+                    "name": "Bracketing Algorithm",
+                    "slug": "bracket"
+                }
+            ]
+        }
+    }
+}

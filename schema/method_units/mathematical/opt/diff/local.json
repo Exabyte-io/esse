@@ -1,0 +1,20 @@
+{
+    "schemaId": "method-unit-opt-diff-local",
+    "$schema": "http://json-schema.org/draft-04/schema#",
+    "description": "Local descent methods for the optimization of differentiable functions",
+    "allOf": [
+        {
+            "$ref": "../diff.json"
+        }
+    ],
+    "properties": {
+        "tier3": {
+            "enum": [
+                {
+                    "name": "Local Descent",
+                    "slug": "local"
+                }
+            ]
+        }
+    }
+}

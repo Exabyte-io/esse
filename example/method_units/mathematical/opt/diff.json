@@ -1,0 +1,11 @@
+{
+    "tier1": {
+        "name": "Optimization",
+        "slug": "opt"
+    },
+    "tier2": {
+        "name": "Differentiable Functions",
+        "slug": "diff"
+    },
+    "type": "none"
+}

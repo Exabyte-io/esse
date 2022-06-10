@@ -20,7 +20,8 @@
             ]
         },
         "method": {
-            "$ref": "../methods_directory/unknown.json"
+            "description": "@todo: temporarily deactivated",
+            "type": "object"
         }
     }
 }

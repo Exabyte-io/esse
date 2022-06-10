@@ -1,9 +1,7 @@
 {
     "data": {
-        "dataset": {
-            "...": "include(methods_directory/pseudopotential/dataset.json)"
-        }
+        "@todo": "temporarily deactivated"
     },
-    "subtype": "us",
-    "type": "pseudopotential"
+    "subtype": "unknown",
+    "type": "unknown"
 }
