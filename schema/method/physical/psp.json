@@ -4,7 +4,7 @@
     "description": "Core-valence separation by means of pseudopotentials (effective potential)",
     "allOf": [
         {
-            "$ref": "../method_unit_base.json"
+            "$ref": "../unit_base_physical.json"
         }
     ],
     "properties": {

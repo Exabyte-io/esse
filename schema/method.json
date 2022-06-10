@@ -16,7 +16,7 @@
             "items": {
                 "allOf": [
                     {
-                        "$ref": "method_units/method_unit_base.json"
+                        "$ref": "method/unit_graph.json"
                     },
                     {
                         "$ref": "core/primitive/acyclic_graph/base_node.json#/definitions/flowchart-id"

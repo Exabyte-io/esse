@@ -1,18 +1,18 @@
 {
-    "schemaId": "method-unit-linalg",
+    "schemaId": "method-unit-diff",
     "$schema": "http://json-schema.org/draft-04/schema#",
-    "description": "Linear Algebra methods",
+    "description": "Numerical differentiation methods",
     "allOf": [
         {
-            "$ref": "../method_unit_base.json"
+            "$ref": "../unit_base_mathematical.json"
         }
     ],
     "properties": {
         "tier1": {
             "enum": [
                 {
-                    "name": "Linear Algebra",
-                    "slug": "linalg"
+                    "name": "Differentiation",
+                    "slug": "diff"
                 }
             ]
         }

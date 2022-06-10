@@ -1,0 +1,19 @@
+{
+    "schemaId": "method-unit-base",
+    "$schema": "http://json-schema.org/draft-04/schema#",
+    "title": "method graph unit schema, to be used inside (compound) method",
+    "allOf": [
+        {
+            "$ref": "unit_base.json"
+        }
+    ],
+    "properties": {
+        "methodCategoryPath": {
+            "description": "unique identifier of the corresponding unit method in the category tree, e.g. `physical/psp`, `mathematical/linalg/lintra`",
+            "type": "string"
+        }
+    },
+    "required": [
+        "methodCategoryPath"
+    ]
+}

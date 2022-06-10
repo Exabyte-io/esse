@@ -4,7 +4,7 @@
     "description": "Approximating the electronic wave function with a plane wave basis",
     "allOf": [
         {
-            "$ref": "../method_unit_base.json"
+            "$ref": "../unit_base_physical.json"
         }
     ],
     "properties": {

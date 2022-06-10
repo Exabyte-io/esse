@@ -1,18 +1,18 @@
 {
-    "schemaId": "method-unit-intgr",
+    "schemaId": "method-unit-discr",
     "$schema": "http://json-schema.org/draft-04/schema#",
-    "description": "Integration methods",
+    "description": "Discretization methods",
     "allOf": [
         {
-            "$ref": "../method_unit_base.json"
+            "$ref": "../unit_base_mathematical.json"
         }
     ],
     "properties": {
         "tier1": {
             "enum": [
                 {
-                    "name": "Integration",
-                    "slug": "intgr"
+                    "name": "Discretization",
+                    "slug": "discr"
                 }
             ]
         }

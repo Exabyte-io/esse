@@ -3,7 +3,7 @@
     "methodGraph": [
         {
             "name": "Plane wave",
-            "slug": "/phys/qm/expan-pw",
+            "slug": "plane-wave",
             "flowchartId": "um00001",
             "head": true,
             "groupName": "PW-PSP",
@@ -13,10 +13,7 @@
     "units": [
         {
             "flowchartId": "um00001",
-            "type": {
-                "name": "Plane Wave Expansion",
-                "slug": "pw"
-            },
+            "methodCategoryPath": "/phys/qm/expan-pw",
             "parameters": {
                 "cutoffs.wavefunction": {
                     "value": 85,
@@ -28,10 +25,6 @@
                     "units": "eV",
                     "precision": true
                 }
-            },
-            "metaData": {
-                "targetFunction": "electronic-wavefunction",
-                "basisFunctionType": "bloch-function"
             }
         }
     ]

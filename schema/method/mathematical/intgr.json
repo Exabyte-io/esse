@@ -1,18 +1,18 @@
 {
-    "schemaId": "method-unit-diff",
+    "schemaId": "method-unit-intgr",
     "$schema": "http://json-schema.org/draft-04/schema#",
-    "description": "Numerical differentiation methods",
+    "description": "Integration methods",
     "allOf": [
         {
-            "$ref": "../method_unit_base.json"
+            "$ref": "../unit_base_mathematical.json"
         }
     ],
     "properties": {
         "tier1": {
             "enum": [
                 {
-                    "name": "Differentiation",
-                    "slug": "diff"
+                    "name": "Integration",
+                    "slug": "intgr"
                 }
             ]
         }

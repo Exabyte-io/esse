@@ -1,0 +1,43 @@
+{
+    "schemaId": "method-unit-base-physical",
+    "$schema": "http://json-schema.org/draft-04/schema#",
+    "title": "unit method schema (base)",
+    "allOf": [
+        {
+            "$ref": "unit_base.json"
+        }
+    ],
+    "properties": {
+        "type": {
+            "description": "general type of the model, eg. `dft`",
+            "$ref": "../core/primitive/slugified_entry_or_slug.json"
+        },
+        "subtype": {
+            "description": "general subtype of the model, eg. `lda`",
+            "$ref": "../core/primitive/slugified_entry_or_slug.json"
+        },
+        "mathematicalMethodsCategoryPaths": {
+            "type": "array",
+            "items": {
+                "items": {
+                    "type": [
+                        "string"
+                    ]
+                }
+            }
+        },
+        "modelCategoryPaths": {
+            "type": "array",
+            "items": {
+                "items": {
+                    "type": [
+                        "string"
+                    ]
+                }
+            }
+        }
+    },
+    "required": [
+        "type"
+    ]
+}

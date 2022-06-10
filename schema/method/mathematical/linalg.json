@@ -1,18 +1,18 @@
 {
-    "schemaId": "method-unit-discr",
+    "schemaId": "method-unit-linalg",
     "$schema": "http://json-schema.org/draft-04/schema#",
-    "description": "Discretization methods",
+    "description": "Linear Algebra methods",
     "allOf": [
         {
-            "$ref": "../method_unit_base.json"
+            "$ref": "../unit_base_mathematical.json"
         }
     ],
     "properties": {
         "tier1": {
             "enum": [
                 {
-                    "name": "Discretization",
-                    "slug": "discr"
+                    "name": "Linear Algebra",
+                    "slug": "linalg"
                 }
             ]
         }

@@ -3,14 +3,6 @@
     "$schema": "http://json-schema.org/draft-04/schema#",
     "title": "unit method schema (base)",
     "properties": {
-        "type": {
-            "description": "General type of the method",
-            "$ref": "../core/primitive/slugified_entry_or_slug.json"
-        },
-        "subtype": {
-            "description": "General subtype of the method (if applicable)",
-            "$ref": "../core/primitive/slugified_entry_or_slug.json"
-        },
         "parameters": {
             "description": "Keyworded collection of method parameters (numerically relevant)",
             "type": "object"
@@ -34,8 +26,5 @@
                 "type": "string"
             }
         }
-    },
-    "required": [
-        "type"
-    ]
+    }
 }
