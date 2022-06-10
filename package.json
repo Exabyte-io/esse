@@ -4,7 +4,7 @@
     "description": "Exabyte Source of Schemas and Examples",
     "scripts": {
         "prepublishOnly": "rm -rf lib; npm run transpile",
-        "transpile": "mkdir -p lib; babel src/js --out-dir lib/js",
+        "transpile": "mkdir -p lib; babel src/js --out-dir lib/js; node build_schemas.js",
         "test": "nyc --reporter=text mocha --bail --require @babel/register src/js/esse/tests",
         "lint": "eslint src/js && prettier --write src/js",
         "lint:fix": "eslint --fix --cache src/js && prettier --write src/js",
