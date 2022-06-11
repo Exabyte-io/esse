@@ -1,0 +1,9 @@
+{
+    "schemaId": "core-primitive-array-of-paths",
+    "$schema": "http://json-schema.org/draft-04/schema#",
+    "title": "array of paths schema",
+    "type": "array",
+    "items": {
+        "$ref": "path.json"
+    }
+}
