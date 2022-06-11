@@ -8,7 +8,18 @@
             "$ref": "base_node.json"
         },
         {
-            "$ref": "../slugified_entry.json"
+            "$ref": "#/definitions/name-attribute"
         }
-    ]
+    ],
+    "definitions": {
+        "name-attribute": {
+            "properties": {
+                "name": {
+                    "type": "string",
+                    "minLength": 1,
+                    "maxLength": 512
+                }
+            }
+        }
+    }
 }

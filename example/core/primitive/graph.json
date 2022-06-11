@@ -1,7 +1,6 @@
 [
     {
-        "name": "Node 1",
-        "slug": "falcon",
+        "name": "Falcon",
         "flowchartId": "n000001",
         "next": "n000002",
         "head": true,
@@ -9,15 +8,13 @@
         "groupId": "g000001"
     },
     {
-        "name": "Node 2",
-        "slug": "owl",
+        "name": "Owl",
         "flowchartId": "n000002",
         "groupName": "Birds",
         "groupId": "g000001"
     },
     {
-        "name": "Node 3",
-        "slug": "lion",
+        "name": "Lion",
         "flowchartId": "n000001"
     }
 ]
