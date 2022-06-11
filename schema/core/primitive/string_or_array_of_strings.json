@@ -1,0 +1,13 @@
+{
+    "schemaId": "core-primitive-string-or-array-of-strings",
+    "$schema": "http://json-schema.org/draft-04/schema#",
+    "title": "string or array of strings",
+    "oneOf": [
+        {
+            "type": "string"
+        },
+        {
+            "$ref": "array_of_strings.json"
+        }
+    ]
+}
