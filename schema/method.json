@@ -9,7 +9,7 @@
         },
         "methodGraph": {
             "description": "Graph of unit methods (nodes)",
-            "$ref": "core/primitive/acyclic_graph.json"
+            "$ref": "core/primitive/graph.json"
         },
         "units": {
             "type": "array",
@@ -19,7 +19,7 @@
                         "$ref": "method_units/method_unit_base.json"
                     },
                     {
-                        "$ref": "core/primitive/acyclic_graph/base_node.json#/definitions/flowchart-id"
+                        "$ref": "core/primitive/graph/base_node.json#/definitions/flowchart-id"
                     }
                 ]
             }

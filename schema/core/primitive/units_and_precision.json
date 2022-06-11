@@ -1,0 +1,66 @@
+{
+    "schemaId": "core-primitive-units-and-precision",
+    "$schema": "http://json-schema.org/draft-04/schema#",
+    "title": "units and precision schema",
+    "properties": {
+        "units": {
+            "description": "Unit of a quantity or parameter",
+            "type": "string",
+            "$ref": "#/definitions/all-units"
+
+        },
+        "precision": {
+            "description": "Whether the quantity/parameter affects precision",
+            "type": "boolean",
+            "default": false
+        }
+    },
+    "definitions": {
+        "all-units": {
+            "anyOf": [
+                {
+                    "$ref": "../../definitions/units.json#/length"
+                },
+                {
+                    "$ref": "../../definitions/units.json#/energy"
+                },
+                {
+                    "$ref": "../../definitions/units.json#/surface_energy"
+                },
+                {
+                    "$ref": "../../definitions/units.json#/force"
+                },
+                {
+                    "$ref": "../../definitions/units.json#/volume"
+                },
+                {
+                    "$ref": "../../definitions/units.json#/numberDensity"
+                },
+                {
+                    "$ref": "../../definitions/units.json#/density"
+                },
+                {
+                    "$ref": "../../definitions/units.json#/frequency"
+                },
+                {
+                    "$ref": "../../definitions/units.json#/pressure"
+                },
+                {
+                    "$ref": "../../definitions/units.json#/phononDOS"
+                },
+                {
+                    "$ref": "../../definitions/units.json#/electronicDOS"
+                },
+                {
+                    "$ref": "../../definitions/units.json#/magnetic"
+                },
+                {
+                    "$ref": "../../definitions/units.json#/chargeDensity"
+                },
+                {
+                    "$ref": "../../definitions/units.json#/spectralIntensity"
+                }
+            ]
+        }
+    }
+}
