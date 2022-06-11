@@ -1,6 +1,0 @@
-{
-    "type": "object-storage",
-    "url": "https://example.com",
-    "container": "test",
-    "provider": "ec2"
-}
