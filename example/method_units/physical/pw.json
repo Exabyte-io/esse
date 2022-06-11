@@ -1,6 +1,9 @@
 {
-    "methodCategoryPaths": [
+    "mathematicalMethodsCategoryPaths": [
         "fapprx/basisexp"
+    ],
+    "modelCategoryPaths": [
+        "pb/qm/*"
     ],
     "type": {
         "name": "Plane Wave Expansion",
@@ -17,9 +20,5 @@
             "units": "eV",
             "precision": true
         }
-    },
-    "metaData": {
-        "targetFunction": "electronic-wavefunction",
-        "basisFunctionType": "bloch-function"
     }
 }

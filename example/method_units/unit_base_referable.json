@@ -1,0 +1,26 @@
+{
+    "flowchartId": "98n2HJ0T0tjeFz",
+    "methodPath": "mathematical/intgr/numquad/gauss/gl",
+    "parameters": {
+        "nPoints": {
+            "value": 2,
+            "precision": true
+        },
+        "orderPolynomial": {
+            "value": 3
+        }
+    },
+    "data": {
+        "weights": [
+            1.0, 1.0
+        ],
+        "points.x": [
+            -0.57735,
+            0.57735
+        ]
+    },
+    "tags": [
+        "taken from Wikipedia",
+        "user-projectX"
+    ]
+}

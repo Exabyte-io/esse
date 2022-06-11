@@ -1,6 +1,9 @@
 {
-    "methodCategoryPaths": [
+    "mathematicalMethodsCategoryPaths": [
         "linalg/lintra"
+    ],
+    "modelCategoryPaths": [
+        "pb/qm/*"
     ],
     "type": {
         "name": "Pseudopotential Approximation",

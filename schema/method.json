@@ -14,14 +14,7 @@
         "units": {
             "type": "array",
             "items": {
-                "allOf": [
-                    {
-                        "$ref": "method_units/method_unit_base.json"
-                    },
-                    {
-                        "$ref": "core/primitive/graph/base_node.json#/definitions/flowchart-id"
-                    }
-                ]
+                "$ref": "method_units/unit_base_referable.json"
             }
         }
     },

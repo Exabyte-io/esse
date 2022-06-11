@@ -4,17 +4,29 @@
     "description": "Core-valence separation by means of pseudopotentials (effective potential)",
     "allOf": [
         {
-            "$ref": "../method_unit_base.json"
+            "$ref": "../unit_base.json"
         }
     ],
     "properties": {
-        "methodCategoryPaths": {
+        "mathematicalMethodsCategoryPaths": {
             "type": "array",
             "items": {
                 "anyOf": [
                     {
                         "enum": [
                             "linalg/lintra"
+                        ]
+                    }
+                ]
+            }
+        },
+        "modelCategoryPaths": {
+            "type": "array",
+            "items": {
+                "anyOf": [
+                    {
+                        "enum": [
+                            "pb/qm/*"
                         ]
                     }
                 ]
