@@ -64,7 +64,7 @@
             "type": "object",
             "properties": {
                 "pseudoSet": {
-                    "$ref": "psp/set.json"
+                    "description": "placeholder for schema for set of pseudopotentials"
                 }
             }
         }

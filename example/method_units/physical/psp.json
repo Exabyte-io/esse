@@ -15,7 +15,7 @@
     },
     "data": {
         "pseudoSet": {
-            "...": "include(psp/set.json)"
+            "@todo": "this is a placeholder for the pseudopotential set"
         }
     }
 }
