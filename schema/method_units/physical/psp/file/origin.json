@@ -28,9 +28,9 @@
         "ppSources": {
             "description": "",
             "enum": [
-                "quantum espresso database",
+                "espresso",
                 "gbrv",
-                "vasp database",
+                "vasp",
                 "sssp",
                 "pslibrary",
                 "pseudo-dojo",
