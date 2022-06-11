@@ -45,11 +45,11 @@
             "properties": {
                 "cutoffs.wavefunction": {
                     "description": "Kinetic energy cutoff (wavefunction)",
-                    "$ref": "../../core/reusable/parameters/param_number.json"
+                    "$ref": "../../core/reusable/parameters/number.json"
                 },
                 "cutoffs.density": {
                     "description": "Kinetic energy cutoff (density)",
-                    "$ref": "../../core/reusable/parameters/param_number.json"
+                    "$ref": "../../core/reusable/parameters/number.json"
                 }
             }
         }

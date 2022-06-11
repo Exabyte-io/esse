@@ -5,13 +5,13 @@
     "type": "object",
     "properties": {
         "groupName": {
-            "description": "Human-readable name of group of node",
+            "description": "Human-readable name of group of nodes",
             "type": "string",
             "minLength": 1,
             "maxLength": 512
         },
         "groupId": {
-            "description": "Unique identifier of group node belongs to",
+            "description": "Unique identifier of the group a node belongs to",
             "type": "string",
             "minLength": 1,
             "maxLength": 512
