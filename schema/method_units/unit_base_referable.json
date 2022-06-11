@@ -8,25 +8,16 @@
             "$ref": "unit_base.json"
         },
         {
-            "$ref": "#/definitions/method-path"
-        },
-        {
             "$ref": "../core/primitive/graph/base_node.json#/definitions/flowchart-id"
         }
     ],
-    "definitions": {
-        "method-path": {
-            "properties": {
-                "methodPath": {
-                    "description": "Method categorization path containing tiers and type/subtype",
-                    "type": "string",
-                    "minLength": 1,
-                    "maxLength": 512
-                }
-            },
-            "required": [
-                "methodPath"
-            ]
+    "properties": {
+        "methodPath": {
+            "description": "Method categorization path containing tiers and type/subtype",
+            "$ref": "../core/primitive/path.json"
         }
-    }
+    },
+    "required": [
+        "methodPath"
+    ]
 }

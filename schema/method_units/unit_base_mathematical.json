@@ -5,30 +5,23 @@
     "allOf": [
         {
             "$ref": "unit_base.json"
-        },
-        {
-            "$ref": "#/definitions/category-tiers"
         }
     ],
-    "definitions": {
-        "category-tiers": {
-            "properties": {
-                "tier1": {
-                    "description": "top-level category, e.g. `physics-based`",
-                    "$ref": "../core/primitive/slugified_entry_or_slug.json"
-                },
-                "tier2": {
-                    "description": "second level category, e.g. `quantum mechanical`",
-                    "$ref": "../core/primitive/slugified_entry_or_slug.json"
-                },
-                "tier3": {
-                    "description": "third level category, e.g. `ab initio`",
-                    "$ref": "../core/primitive/slugified_entry_or_slug.json"
-                }
-            },
-            "required": [
-                "tier1"
-            ]
+    "properties": {
+        "tier1": {
+            "description": "top-level category, e.g. `physics-based`",
+            "$ref": "../core/primitive/slugified_entry_or_slug.json"
+        },
+        "tier2": {
+            "description": "second level category, e.g. `quantum mechanical`",
+            "$ref": "../core/primitive/slugified_entry_or_slug.json"
+        },
+        "tier3": {
+            "description": "third level category, e.g. `ab initio`",
+            "$ref": "../core/primitive/slugified_entry_or_slug.json"
         }
-    }
+    },
+    "required": [
+        "tier1"
+    ]
 }

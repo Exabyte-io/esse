@@ -6,20 +6,13 @@
     "allOf": [
         {
             "$ref": "base_node.json"
-        },
-        {
-            "$ref": "#/definitions/name-attribute"
         }
     ],
-    "definitions": {
-        "name-attribute": {
-            "properties": {
-                "name": {
-                    "type": "string",
-                    "minLength": 1,
-                    "maxLength": 512
-                }
-            }
+    "properties": {
+        "name": {
+            "type": "string",
+            "minLength": 1,
+            "maxLength": 512
         }
     }
 }

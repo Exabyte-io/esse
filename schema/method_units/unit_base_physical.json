@@ -5,37 +5,16 @@
     "allOf": [
         {
             "$ref": "unit_base.json"
-        },
-        {
-            "$ref": "#/definitions/relations-to-models-and-mathematical-methods"
         }
     ],
-    "definitions": {
-        "relations-to-models-and-mathematical-methods": {
-            "properties": {
-                "mathematicalMethodsCategoryPaths": {
-                    "description": "Tracks from which mathematical unit methods this physical method derives",
-                    "type": "array",
-                    "items": {
-                        "items": {
-                            "type": [
-                                "string"
-                            ]
-                        }
-                    }
-                },
-                "modelCategoryPaths": {
-                    "description": "Tracks which models are compatible with this physical unit method",
-                    "type": "array",
-                    "items": {
-                        "items": {
-                            "type": [
-                                "string"
-                            ]
-                        }
-                    }
-                }
-            }
+    "properties": {
+        "mathematicalMethodsCategoryPaths": {
+            "description": "Tracks from which mathematical unit methods this physical method derives",
+            "$ref": "../core/primitive/array_of_paths.json"
+        },
+        "modelCategoryPaths": {
+            "description": "Tracks which models are compatible with this physical unit method",
+            "$ref": "../core/primitive/array_of_paths.json"
         }
     }
 }
