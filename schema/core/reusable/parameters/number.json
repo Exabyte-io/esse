@@ -1,5 +1,5 @@
 {
-    "schemaId": "core-reusable-param-number",
+    "schemaId": "core-reusable-parameters-number",
     "$schema": "http://json-schema.org/draft-04/schema#",
     "title": "number parameter schema",
     "allOf": [
