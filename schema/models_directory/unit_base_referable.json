@@ -1,0 +1,23 @@
+{
+    "schemaId": "models-directory-unit-base-referable",
+    "$schema": "http://json-schema.org/draft-04/schema#",
+    "title": "referable unit model schema (base)",
+    "description": "Used for database storage",
+    "allOf": [
+        {
+            "$ref": "unit_base.json"
+        },
+        {
+            "$ref": "../core/primitive/graph/base_node.json#/definitions/flowchart-id"
+        }
+    ],
+    "properties": {
+        "modelPath": {
+            "description": "Model categorization path containing tiers and type/subtype",
+            "$ref": "../core/primitive/path.json"
+        }
+    },
+    "required": [
+        "modelPath"
+    ]
+}
