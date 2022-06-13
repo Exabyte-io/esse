@@ -1,7 +1,45 @@
 {
-    "method": {
-        "...": "include(method.json)"
-    },
-    "subtype": "gga",
-    "type": "dft"
+    "name": "KS-DFT",
+    "modelGraph": [
+        {
+            "name": "Kohn-Sham Density Functional Theory",
+            "flowchartId": "u123fndff333",
+            "head": true,
+            "workflowUnitId": "badd104b2e31300c61eb194d"
+        }
+    ],
+    "units": [
+        {
+            "flowchartId": "u123fndff333",
+            "modelPath": "pb/qm/dft/ksdft/gga",
+            "subtype": {
+                "name": "Generalized Gradient Approximation",
+                "slug": "gga"
+            },
+            "functional": {
+                "name": "Perdew-Burke-Ernzerhof",
+                "slug": "pbe",
+                "components": [
+                    {
+                        "name": "PBE",
+                        "slug": "pbe-c",
+                        "type": "correlation",
+                        "fraction": 1.0
+                    },
+                    {
+                        "name": "PBE",
+                        "slug": "pbe-x",
+                        "type": "exchange",
+                        "fraction": 1.0
+                    }
+                ]
+            },
+            "tags": [
+                "scaling-degree:3"
+            ],
+            "method": {
+                "...": "include(method.json)"
+            }
+        }
+    ]
 }

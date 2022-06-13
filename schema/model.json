@@ -3,21 +3,29 @@
     "$schema": "http://json-schema.org/draft-04/schema#",
     "title": "model schema (base)",
     "properties": {
-        "type": {
-            "description": "general type of the model, eg. `dft`",
+        "name": {
+            "description": "Human-readable name for compound method",
             "type": "string"
         },
-        "subtype": {
-            "description": "general subtype of the model, eg. `lda`",
-            "type": "string"
+        "modelGraph": {
+            "description": "Graph of unit models (nodes)",
+            "$ref": "core/primitive/graph.json"
+        },
+        "units": {
+            "description": "List of unit models (containing model data)",
+            "type": "array",
+            "items": {
+                "$ref": "models_directory/unit_base_referable.json"
+            }
         },
         "method": {
+            "description": "Additional method object to catch global method information and parameters",
             "$ref": "method.json"
         }
     },
     "required": [
-        "type",
-        "subtype",
-        "method"
+        "name",
+        "modelGraph",
+        "units"
     ]
 }
