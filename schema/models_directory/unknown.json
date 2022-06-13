@@ -5,7 +5,7 @@
     "description": "schema for cases when model is unknown",
     "allOf": [
         {
-            "$ref": "../model.json"
+            "$ref": "unit_base.json"
         }
     ],
     "properties": {
