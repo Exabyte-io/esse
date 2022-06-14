@@ -1,0 +1,20 @@
+[
+    {
+        "name": "Falcon",
+        "flowchartId": "n000001",
+        "next": "n000002",
+        "head": true,
+        "groupName": "Birds",
+        "groupId": "g000001"
+    },
+    {
+        "name": "Owl",
+        "flowchartId": "n000002",
+        "groupName": "Birds",
+        "groupId": "g000001"
+    },
+    {
+        "name": "Lion",
+        "flowchartId": "n000001"
+    }
+]

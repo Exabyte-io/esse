@@ -1,0 +1,16 @@
+{
+    "$schema": "http://json-schema.org/draft-04/schema#",
+    "description": "Length schema",
+    "properties": {
+        "value": {
+            "type": "number"
+        },
+        "units": {
+            "$ref": "../../definitions/units.json#/length"
+        }
+    },
+    "required": [
+        "value",
+        "units"
+    ]
+}

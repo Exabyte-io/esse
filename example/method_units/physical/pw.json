@@ -1,0 +1,24 @@
+{
+    "mathematicalMethodsCategoryPaths": [
+        "fapprx/basisexp"
+    ],
+    "modelCategoryPaths": [
+        "pb/qm/*"
+    ],
+    "type": {
+        "name": "Plane Wave Expansion",
+        "slug": "pw"
+    },
+    "parameters": {
+        "cutoffs.wavefunction": {
+            "value": 85,
+            "units": "eV",
+            "precision": true
+        },
+        "cutoffs.density": {
+            "value": 320,
+            "units": "eV",
+            "precision": true
+        }
+    }
+}

@@ -1,0 +1,19 @@
+{
+    "schemaId": "core-reusable-parameters-int",
+    "$schema": "http://json-schema.org/draft-04/schema#",
+    "title": "integer parameter schema",
+    "allOf": [
+        {
+            "$ref": "../../primitive/units_and_precision.json"
+        }
+    ],
+    "properties": {
+        "value": {
+            "description": "Value of parameters",
+            "type": "integer"
+        }
+    },
+    "required": [
+        "value"
+    ]
+}

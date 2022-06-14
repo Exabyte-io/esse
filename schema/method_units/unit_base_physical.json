@@ -1,0 +1,20 @@
+{
+    "schemaId": "method-unit-base-physical",
+    "$schema": "http://json-schema.org/draft-04/schema#",
+    "title": "physical unit method schema (base)",
+    "allOf": [
+        {
+            "$ref": "unit_base.json"
+        }
+    ],
+    "properties": {
+        "mathematicalMethodsCategoryPaths": {
+            "description": "Tracks from which mathematical unit methods this physical method derives",
+            "$ref": "../core/primitive/array_of_paths.json"
+        },
+        "modelCategoryPaths": {
+            "description": "Tracks which models are compatible with this physical unit method",
+            "$ref": "../core/primitive/array_of_paths.json"
+        }
+    }
+}

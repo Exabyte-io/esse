@@ -1,0 +1,7 @@
+{
+    "schemaId": "core-primitive-path",
+    "$schema": "http://json-schema.org/draft-04/schema#",
+    "title": "path schema",
+    "description": "Intended for path strings, e.g. '/pb/qm/dft'. Will be expanded with newer schema version",
+    "type": "string"
+}

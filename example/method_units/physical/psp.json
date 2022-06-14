@@ -1,0 +1,21 @@
+{
+    "mathematicalMethodsCategoryPaths": [
+        "linalg/lintra"
+    ],
+    "modelCategoryPaths": [
+        "pb/qm/*"
+    ],
+    "type": {
+        "name": "Pseudopotential Approximation",
+        "slug": "psp"
+    },
+    "subtype": {
+        "name": "Ultra-soft",
+        "slug": "us"
+    },
+    "data": {
+        "pseudoSet": {
+            "@todo": "this is a placeholder for the pseudopotential set"
+        }
+    }
+}

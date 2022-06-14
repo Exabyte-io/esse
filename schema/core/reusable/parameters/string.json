@@ -1,0 +1,19 @@
+{
+    "schemaId": "core-reusable-parameters-number",
+    "$schema": "http://json-schema.org/draft-04/schema#",
+    "title": "number parameter schema",
+    "allOf": [
+        {
+            "$ref": "../../primitive/units_and_precision.json"
+        }
+    ],
+    "properties": {
+        "value": {
+            "description": "Parameter value as string",
+            "type": "string"
+        }
+    },
+    "required": [
+        "value"
+    ]
+}

@@ -1,7 +1,30 @@
 {
-    "data": {
-        "@todo": "temporarily deactivated"
-    },
-    "subtype": "unknown",
-    "type": "unknown"
+    "name": "Plane wave pseudopotential method",
+    "methodGraph": [
+        {
+            "name": "Plane wave",
+            "flowchartId": "um00001",
+            "head": true,
+            "groupName": "PW-PSP",
+            "groupId": "gm00001"
+        }
+    ],
+    "units": [
+        {
+            "flowchartId": "um00001",
+            "methodPath": "physical/pw",
+            "parameters": {
+                "cutoffs.wavefunction": {
+                    "value": 85,
+                    "units": "eV",
+                    "precision": true
+                },
+                "cutoffs.density": {
+                    "value": 320,
+                    "units": "eV",
+                    "precision": true
+                }
+            }
+        }
+    ]
 }

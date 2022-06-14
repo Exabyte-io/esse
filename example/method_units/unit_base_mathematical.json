@@ -1,0 +1,40 @@
+{
+    "tier1": {
+        "name": "Integration",
+        "slug": "intgr"
+    },
+    "tier2": {
+        "name": "Numerical Quadrature",
+        "slug": "numquad"
+    },
+    "tier3": {
+        "name": "Gaussian Quadrature",
+        "slug": "gauss"
+    },
+    "type": {
+        "name": "Gauss-Legendre",
+        "slug": "gl"
+    },
+    "parameters": {
+        "nPoints": {
+            "value": 2,
+            "precision": true
+        },
+        "orderPolynomial": {
+            "value": 3
+        }
+    },
+    "data": {
+        "weights": [
+            1
+        ],
+        "points.x": [
+            -0.57735,
+            0.57735
+        ]
+    },
+    "tags": [
+        "taken from Wikipedia",
+        "user-projectX"
+    ]
+}
