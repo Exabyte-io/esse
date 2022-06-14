@@ -205,10 +205,15 @@ volume:
     units: angstrom^3
   schemaId: properties-directory-structural-volume
 
-symmetry:
+symmetry_symbol_point_group:
   defaults:
     units: angstrom
-  schemaId: properties-directory-structural-symmetry
+  schemaId: properties-directory-structural-symmetry-symbol-point-group
+
+symmetry_symbol_space_group:
+  defaults:
+    units: angstrom
+  schemaId: properties-directory-structural-symmetry-symbol-space-group
 
 elemental_ratio:
   schemaId: properties-directory-structural-elemental-ratio
@@ -235,5 +240,11 @@ inchi:
 inchi_key:
   schemaId: properties-directory-structural-inchi_key
 
+molecular_weight:
+  schemaId: properties-directory-structural-molecular-weight
+
 material:
   schemaId: material
+
+molecule:
+  schemaId: molecule

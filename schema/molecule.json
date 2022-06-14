@@ -1,0 +1,11 @@
+{
+    "schemaId": "molecule",
+    "$schema": "http://json-schema.org/draft-04/schema#",
+    "title": "molecule schema",
+    "allOf": [
+        {
+            "description": "material schema",
+            "$ref": "material.json"
+        }
+    ]
+}
