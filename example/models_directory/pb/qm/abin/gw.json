@@ -1,0 +1,30 @@
+{
+    "tier1": {
+        "name": "physics-based",
+        "slug": "pb"
+    },
+    "tier2": {
+        "name": "quantum-mechanical",
+        "slug": "qm"
+    },
+    "tier3": {
+        "name": "ab-initio",
+        "slug": "abin"
+    },
+    "type": {
+        "name": "GW Approximation",
+        "slug": "gw"
+    },
+    "subtype": {
+        "name": "G0W0",
+        "slug": "g0w0"
+    },
+    "tags": [
+        "greens-function",
+        "many-body-perturbation-theory",
+        "user-adjustable"
+    ],
+    "method": {
+        "...": "include(../../../../method.json)"
+    }
+}

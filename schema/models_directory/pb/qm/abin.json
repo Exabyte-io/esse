@@ -1,5 +1,7 @@
 {
+    "schemaId": "models-directory-pb-qm-abin",
     "$schema": "http://json-schema.org/draft-04/schema#",
+    "title": "ab initio schema",
     "allOf": [
         {
             "$ref": "../qm.json"
