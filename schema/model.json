@@ -2,11 +2,12 @@
     "schemaId": "model",
     "$schema": "http://json-schema.org/draft-04/schema#",
     "title": "model schema (base)",
+    "allOf": [
+        {
+            "$ref": "./core/primitive/slugified_entry.json"
+        }
+    ],
     "properties": {
-        "name": {
-            "description": "Human-readable name for compound method",
-            "type": "string"
-        },
         "modelGraph": {
             "description": "Graph of unit models (nodes)",
             "$ref": "core/primitive/graph.json"

@@ -2,11 +2,12 @@
     "schemaId": "method",
     "$schema": "http://json-schema.org/draft-04/schema#",
     "title": "method schema (base)",
+    "allOf": [
+        {
+            "$ref": "./core/primitive/slugified_entry.json"
+        }
+    ],
     "properties": {
-        "name": {
-            "description": "Human-readable name for compound method",
-            "type": "string"
-        },
         "methodGraph": {
             "description": "Graph of unit methods (nodes)",
             "$ref": "core/primitive/graph.json"

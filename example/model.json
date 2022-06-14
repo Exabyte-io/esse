@@ -1,5 +1,6 @@
 {
     "name": "KS-DFT",
+    "slug": "ks_dft",
     "modelGraph": [
         {
             "name": "Kohn-Sham Density Functional Theory",
