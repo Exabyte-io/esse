@@ -1,0 +1,23 @@
+{
+    "schemaId": "core-primitive-categorization",
+    "$schema": "http://json-schema.org/draft-04/schema#",
+    "title": "categorization tiers schema",
+    "type": "object",
+    "properties": {
+        "tier1": {
+            "description": "top-level category",
+            "$ref": "slugified_entry_or_slug.json"
+        },
+        "tier2": {
+            "description": "second level category",
+            "$ref": "slugified_entry_or_slug.json"
+        },
+        "tier3": {
+            "description": "third level category,",
+            "$ref": "slugified_entry_or_slug.json"
+        }
+    },
+    "required": [
+        "tier1"
+    ]
+}
