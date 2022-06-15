@@ -1,0 +1,39 @@
+{
+    "tier1": {
+        "name": "Linear Algebra",
+        "slug": "linalg"
+    },
+    "tier2": {
+        "name": "Diagonalization",
+        "slug": "diag"
+    },
+    "tier3": {
+        "name": "None",
+        "slug": "none"
+    },
+    "type": {
+        "name": "Davidson diagonalization",
+        "slug": "davidson"
+    },
+    "parameters": {
+        "nEigval": {
+            "value": 4,
+            "precision": false
+        },
+        "nGuess": {
+            "value": 10,
+            "precision": true
+        },
+        "maxiter": {
+            "value": 100,
+            "precision": false
+        },
+        "convergence": {
+            "value": 1e-6,
+            "precision": true
+        }
+    },
+    "tags": [
+        "user-projectX"
+    ]
+}
