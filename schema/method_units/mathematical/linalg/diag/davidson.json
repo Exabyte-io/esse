@@ -1,0 +1,40 @@
+{
+    "schemaId": "method-unit-linalg-diag-davidson",
+    "$schema": "http://json-schema.org/draft-04/schema#",
+    "description": "Davidson diagonalization method",
+    "allOf": [
+        {
+            "$ref": "../diag.json"
+        }
+    ],
+    "properties": {
+        "type": {
+            "enum": [
+                {
+                    "name": "Davidson diagonalization",
+                    "slug": "davidson"
+                }
+            ]
+        },
+        "parameters": {
+            "properties": {
+                "nEigval": {
+                    "description": "Number of eigenvalues to solve",
+                    "$ref": "../../../../core/reusable/parameters/int.json"
+                },
+                "nGuess": {
+                    "description": "Number of initial guess vectors",
+                    "$ref": "../../../../core/reusable/parameters/int.json"
+                },
+                "maxiter": {
+                    "description": "Maximum number of iterations of the Davidson procedure",
+                    "$ref": "../../../../core/reusable/parameters/int.json"
+                },
+                "convergence": {
+                    "description": "Convergence criterion of the Davidson procedure",
+                    "$ref": "../../../../core/reusable/parameters/number.json"
+                }
+            }
+        }
+    }
+}
