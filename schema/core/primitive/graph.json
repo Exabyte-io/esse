@@ -14,6 +14,9 @@
             },
             {
                 "$ref": "graph/named_node_in_group.json"
+            },
+            {
+                "$ref": "graph/typed_node.json"
             }
         ],
         "uniqueItems": true
