@@ -56,8 +56,7 @@
                 }
             },
             "required": [
-                "fqdn",
-                "jid"
+                "fqdn"
             ]
         },
         "errors": {
