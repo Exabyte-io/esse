@@ -2,6 +2,11 @@
     "schemaId": "method",
     "$schema": "http://json-schema.org/draft-04/schema#",
     "title": "method schema (base)",
+    "allOf": [
+        {
+            "$ref": "./core/primitive/graph/base_node.json#/definitions/flowchart-id"
+        }
+    ],
     "properties": {
         "name": {
             "description": "Human-readable name for compound method",
@@ -12,13 +17,22 @@
             "$ref": "core/primitive/graph.json"
         },
         "units": {
+            "description": "A list of unit methods (containing the method data)",
             "type": "array",
             "items": {
                 "$ref": "method_units/unit_base_referable.json"
             }
+        },
+        "embeddedMethods": {
+            "description": "A list of other methods contained within this method",
+            "type": "array",
+            "items": {
+                "type": "object"
+            }
         }
     },
     "required": [
+        "flowchartId",
         "name",
         "methodGraph",
         "units"
