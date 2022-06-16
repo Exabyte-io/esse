@@ -1,0 +1,32 @@
+{
+    "schemaId": "method-unit-opt-diff-ordern-cg",
+    "$schema": "http://json-schema.org/draft-04/schema#",
+    "description": "conjugate gradient method schema",
+    "allOf": [
+        {
+            "$ref": "../ordern.json"
+        }
+    ],
+    "properties": {
+        "type": {
+            "enum": [
+                {
+                    "name": "Conjugate Gradient",
+                    "slug": "cg"
+                }
+            ]
+        },
+        "parameters": {
+            "properties": {
+                "maxiter": {
+                    "description": "Maximum number of iterations",
+                    "$ref": "../../../../../core/reusable/parameters/int.json"
+                },
+                "convergence": {
+                    "description": "Convergence criterion",
+                    "$ref": "../../../../../core/reusable/parameters/number.json"
+                }
+            }
+        }
+    }
+}
