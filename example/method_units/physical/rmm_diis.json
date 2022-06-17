@@ -1,0 +1,28 @@
+{
+    "mathematicalMethodsCategoryPaths": [
+        "opt/diff/order1/sd",
+        "linalg/ortho/gs"
+    ],
+    "modelCategoryPaths": [
+        "pb/qm/*"
+    ],
+    "type": {
+        "name": "RMM-DIIS eigensolver",
+        "slug": "rmm-diis"
+    },
+    "parameters": {
+        "blockSize": {
+            "value": 4
+        },
+        "diis.maxSteps": {
+            "value": 6
+        },
+        "orthonorm.ndim": {
+            "value": 16
+        },
+        "convergence": {
+            "value": 1e-3,
+            "precision": true
+        }
+    }
+}
