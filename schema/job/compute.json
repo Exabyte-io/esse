@@ -16,15 +16,21 @@
         },
         "nodes": {
             "description": "number of nodes used for the job inside the RMS.",
-            "type": "integer"
+            "type": "integer",
+            "validateNodes": {},
+            "errorMessage": "Max node count for selected queue exceeded"
         },
         "ppn": {
             "description": "number of CPUs used for the job inside the RMS.",
-            "type": "integer"
+            "type": "integer",
+            "validatePpn": {},
+            "errorMessage": "Max count exceeded"
         },
         "timeLimit": {
             "description": "Wallclock time limit for computing a job. Clock format: 'hh:mm:ss'",
-            "type": "string"
+            "type": "string",
+            "validateTimeLimit": {},
+            "errorMessage": "Time, 00:00:00 - 99:59:59"
         },
         "notify": {
             "description": "Email notification for the job: n - never, a - job aborted, b - job begins, e - job ends. Last three could be combined.",
