@@ -8,51 +8,7 @@
     "name": "KS-DFT/B3LYP-D3(BJ)",
     "functional": {
         "name": "B3LYP-D3(BJ)",
-        "slug": "b3lyp-d3(bj)",
-        "components": [
-            {
-                "name": "Slater",
-                "slug": "slater",
-                "type": "exchange",
-                "fraction": 0.08
-            },
-            {
-                "name": "exact Exchange",
-                "slug": "exact-exchange",
-                "type": "exchange",
-                "fraction": 0.2
-            },
-            {
-                "name": "Becke 1988",
-                "slug": "b88",
-                "type": "exchange",
-                "fraction": 0.72
-            },
-            {
-                "name": "VWN1RPA",
-                "slug": "vwn1rpa",
-                "type": "correlation",
-                "fraction": 0.19
-            },
-            {
-                "name": "LYP",
-                "slug": "lyp",
-                "type": "correlation",
-                "fraction": 0.81
-            }
-        ]
-    },
-    "dispersionModel": {
-        "modelType": "empirical",
-        "usage": "post-scf",
-        "type": {
-            "name": "Empirical dispersion DFT-D",
-            "slug": "empirical-dft-d"
-        },
-        "subtype": {
-            "name": "DFT-D3(BJ)",
-            "slug": "dft-d3-bj"
-        }
+        "slug": "b3lyp-d3(bj)"
     },
     "tags": [
         "scaling-degree:3"
