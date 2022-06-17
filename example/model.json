@@ -19,21 +19,7 @@
             },
             "functional": {
                 "name": "Perdew-Burke-Ernzerhof",
-                "slug": "pbe",
-                "components": [
-                    {
-                        "name": "PBE",
-                        "slug": "pbe-c",
-                        "type": "correlation",
-                        "fraction": 1.0
-                    },
-                    {
-                        "name": "PBE",
-                        "slug": "pbe-x",
-                        "type": "exchange",
-                        "fraction": 1.0
-                    }
-                ]
+                "slug": "pbe"
             },
             "tags": [
                 "scaling-degree:3"
