@@ -32,6 +32,13 @@
             "validateTimeLimit": {},
             "errorMessage": "Time, 00:00:00 - 99:59:59"
         },
+        "timeLimitType": {
+            "description": "Convention to use when reasoning about time limits",
+            "type": "string",
+            "enum": [
+                "single",
+                "compound"
+            ],
         "notify": {
             "description": "Email notification for the job: n - never, a - job aborted, b - job begins, e - job ends. Last three could be combined.",
             "type": "string"
