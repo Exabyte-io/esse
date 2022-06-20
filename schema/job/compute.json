@@ -38,7 +38,8 @@
             "enum": [
                 "single",
                 "compound"
-            ],
+            ]
+        },
         "notify": {
             "description": "Email notification for the job: n - never, a - job aborted, b - job begins, e - job ends. Last three could be combined.",
             "type": "string"
