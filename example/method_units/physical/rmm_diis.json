@@ -14,13 +14,13 @@
         "blockSize": {
             "value": 4
         },
-        "diis.maximumSteps": {
+        "diis.maximumNumberOfSteps": {
             "value": 6
         },
-        "orthonormalization.nDimensions": {
+        "orthonormalization.numberOfDimensions": {
             "value": 16
         },
-        "convergence": {
+        "convergenceThreshold": {
             "value": 1e-3,
             "precision": true
         }
