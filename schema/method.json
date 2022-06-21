@@ -12,7 +12,7 @@
             "description": "Human-readable name for compound method",
             "type": "string"
         },
-        "methodGraph": {
+        "graph": {
             "description": "Graph of unit methods (nodes)",
             "$ref": "core/primitive/graph.json"
         },
@@ -23,7 +23,7 @@
                 "$ref": "method_units/unit_base_referable.json"
             }
         },
-        "embeddedMethods": {
+        "methods": {
             "description": "A list of other methods contained within this method",
             "type": "array",
             "items": {
@@ -34,7 +34,7 @@
     "required": [
         "flowchartId",
         "name",
-        "methodGraph",
+        "graph",
         "units"
     ]
 }
