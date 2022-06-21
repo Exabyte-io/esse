@@ -2,6 +2,7 @@
     "schemaId": "job-compute",
     "$schema": "http://json-schema.org/draft-04/schema#",
     "title": "compute arguments schema",
+    "description": "Custom keywords prefixed with validate correspond to custom validation methods implemented downstream",
     "properties": {
         "queue": {
             "description": "Name of the submission queue inside the Resource Management System (RMS). D: debug, OR: on-demand reuglar, SR: saving reuglar, OF: on-demand fast, SF: saving fast",
@@ -17,20 +18,17 @@
         "nodes": {
             "description": "number of nodes used for the job inside the RMS.",
             "type": "integer",
-            "validateNodes": {},
-            "errorMessage": "Max node count for selected queue exceeded"
+            "validateNodes": {}
         },
         "ppn": {
             "description": "number of CPUs used for the job inside the RMS.",
             "type": "integer",
-            "validatePpn": {},
-            "errorMessage": "Max count exceeded"
+            "validatePpn": {}
         },
         "timeLimit": {
             "description": "Wallclock time limit for computing a job. Clock format: 'hh:mm:ss'",
             "type": "string",
-            "validateTimeLimit": {},
-            "errorMessage": "Time, 00:00:00 - 99:59:59"
+            "validateTimeLimit": {}
         },
         "timeLimitType": {
             "description": "Convention to use when reasoning about time limits",
