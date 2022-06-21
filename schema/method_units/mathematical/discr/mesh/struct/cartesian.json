@@ -1,0 +1,64 @@
+{
+    "schemaId": "method-unit-discr-mesh-struct-cartesian",
+    "$schema": "http://json-schema.org/draft-04/schema#",
+    "title": "Cartesian grid schema",
+    "allOf": [
+        {
+            "$ref": "../struct.json"
+        }
+    ],
+    "properties": {
+        "type": {
+            "enum": [
+                {
+                    "name": "Cartesian Grid",
+                    "slug": "cartesian"
+                }
+            ]
+        },
+        "parameters": {
+            "properties": {
+                "nDim": {
+                    "description": "Dimensionality of the grid",
+                    "$ref": "../../../../../core/reusable/parameters/int.json"
+                },
+                "spacing.x": {
+                    "description": "Grid spacing in x-direction",
+                    "$ref": "../../../../../core/reusable/parameters/number.json"
+                },
+                "spacing.y": {
+                    "description": "Grid spacing in y-direction",
+                    "$ref": "../../../../../core/reusable/parameters/number.json"
+                },
+                "spacing.z": {
+                    "description": "Grid spacing in z-direction",
+                    "$ref": "../../../../../core/reusable/parameters/number.json"
+                },
+                "nPoints.x": {
+                    "description": "Number of points in x-direction",
+                    "$ref": "../../../../../core/reusable/parameters/int.json"
+                },
+                "nPoints.y": {
+                    "description": "Number of points in y-direction",
+                    "$ref": "../../../../../core/reusable/parameters/int.json"
+                },
+                "nPoints.z": {
+                    "description": "Number of points in z-direction",
+                    "$ref": "../../../../../core/reusable/parameters/int.json"
+                },
+                "offset.x": {
+                    "description": "Origin offset in x-direction",
+                    "$ref": "../../../../../core/reusable/parameters/number.json"
+                },
+                "offset.y": {
+                    "description": "Origin offset in y-direction",
+                    "$ref": "../../../../../core/reusable/parameters/number.json"
+                },
+                "offset.z": {
+                    "description": "Origin offset in z-direction",
+                    "$ref": "../../../../../core/reusable/parameters/number.json"
+                }
+            }
+        }
+    }
+}
