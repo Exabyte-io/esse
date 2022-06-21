@@ -1,13 +1,18 @@
 {
     "name": "Plane wave pseudopotential method",
-    "flowchartId": "0000000",
+    "flowchartId": "none",
     "graph": [
         {
             "name": "Plane wave",
+            "type": "unit-method",
             "flowchartId": "um00001",
-            "head": true,
-            "groupName": "PW-PSP",
-            "groupId": "gm00001"
+            "next": "um00002",
+            "head": true
+        },
+        {
+            "name": "Pseudopotential",
+            "type": "unit-method",
+            "flowchartId": "um00002"
         }
     ],
     "units": [
@@ -24,6 +29,19 @@
                     "value": 320,
                     "units": "eV",
                     "precision": true
+                }
+            }
+        },
+        {
+            "flowchartId": "um00002",
+            "methodPath": "physical/psp/us",
+            "subtype": {
+                "name": "Ultra-soft",
+                "slug": "us"
+            },
+            "data": {
+                "pseudoSet": {
+                    "@todo": "placeholder for pseudopotential set"
                 }
             }
         }

@@ -1,0 +1,64 @@
+{
+    "name": "Conjugate gradient diagonalization method",
+    "flowchartId": "none",
+    "graph": [
+        {
+            "name": "Conjugate Gradient Method",
+            "type": "unit-method",
+            "flowchartId": "um00001",
+            "next": "um00002",
+            "head": true
+        },
+        {
+            "name": "Davidson diagonalization",
+            "type": "unit-method",
+            "flowchartId": "um00002"
+        }
+    ],
+    "units": [
+        {
+            "flowchartId": "um00001",
+            "methodPath": "mathematical/opt/diff/ordern/cg",
+            "tier1": {
+                "name": "Optimization",
+                "slug": "opt"
+            },
+            "parameters": {
+                "maximumNumberOfIterations": {
+                    "value": 50,
+                    "precision": false
+                },
+                "convergenceThreshold": {
+                    "value": 1e-8,
+                    "precision": true
+                }
+            }
+        },
+        {
+            "flowchartId": "um00002",
+            "methodPath": "mathematical/linalg/diag/davidson",
+            "tier1": {
+                "name": "Linear Algebra",
+                "slug": "linalg"
+            },
+            "parameters": {
+                "numberOfEigenvalues": {
+                    "value": 7,
+                    "precision": false
+                },
+                "numberOfGuessVectors": {
+                    "value": 10,
+                    "precision": false
+                },
+                "maximumNumberOfIterations": {
+                    "value": 50,
+                    "precision": false
+                },
+                "convergenceThreshold": {
+                    "value": 1e-8,
+                    "precision": true
+                }
+            }
+        }
+    ]
+}

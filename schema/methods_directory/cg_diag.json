@@ -1,0 +1,29 @@
+{
+    "schemaId": "methods-directory-cg-diag",
+    "$schema": "http://json-schema.org/draft-04/schema#",
+    "title": "conjugate gradient diagonalization method schema",
+    "allOf": [
+        {
+            "$ref": "../method.json"
+        }
+    ],
+    "properties": {
+        "units": {
+            "type": "array",
+            "items": {
+                "anyOf": [
+                    {
+                        "$ref": "../method_units/mathematical/opt/diff/ordern/cg.json"
+                    },
+                    {
+                        "oneOf": [
+                            {
+                                "$ref": "../method_units/mathematical/linalg/diag/davidson.json"
+                            }
+                        ]
+                    }
+                ]
+            }
+        }
+    }
+}
