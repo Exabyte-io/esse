@@ -16,7 +16,7 @@
                 "$ref": "graph/named_node_in_group.json"
             },
             {
-                "$ref": "graph/typed_node.json"
+                "$ref": "graph/node_with_type.json"
             }
         ],
         "uniqueItems": true
