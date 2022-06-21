@@ -1,0 +1,47 @@
+{
+    "tier1": {
+        "name": "Discretization",
+        "slug": "discr"
+    },
+    "tier2": {
+        "name": "Meshing",
+        "slug": "mesh"
+    },
+    "tier3": {
+        "name": "Structured Mesh",
+        "slug": "struct"
+    },
+    "type": {
+        "name": "Cartesian Grid",
+        "slug": "cartesian"
+    },
+    "parameters": {
+        "nDim": {
+            "value": 3
+        },
+        "spacing.x": {
+            "value": 1.0,
+            "units": "angstrom"
+        },
+        "spacing.y": {
+            "value": 1.0,
+            "units": "angstrom"
+        },
+        "spacing.z": {
+            "value": 2.0,
+            "units": "angstrom"
+        },
+        "offset.x": {
+            "value": -0.5,
+            "units": "angstrom"
+        },
+        "offset.y": {
+            "value": -0.5,
+            "units": "angstrom"
+        },
+        "offset.z": {
+            "value": -1.0,
+            "units": "angstrom"
+        }
+    }
+}
