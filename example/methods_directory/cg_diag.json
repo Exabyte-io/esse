@@ -23,6 +23,10 @@
                 "name": "Optimization",
                 "slug": "opt"
             },
+            "type": {
+                "name": "Conjugate Gradient",
+                "slug": "cg"
+            },
             "parameters": {
                 "maximumNumberOfIterations": {
                     "value": 50,
@@ -40,6 +44,10 @@
             "tier1": {
                 "name": "Linear Algebra",
                 "slug": "linalg"
+            },
+            "type": {
+                "name": "Davidson diagonalization",
+                "slug": "davidson"
             },
             "parameters": {
                 "numberOfEigenvalues": {
