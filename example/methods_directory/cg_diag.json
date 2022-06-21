@@ -24,11 +24,11 @@
                 "slug": "opt"
             },
             "parameters": {
-                "maxiter": {
+                "maximumNumberOfIterations": {
                     "value": 50,
                     "precision": false
                 },
-                "convergence": {
+                "convergenceThreshold": {
                     "value": 1e-8,
                     "precision": true
                 }
