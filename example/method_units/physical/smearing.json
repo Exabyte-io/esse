@@ -1,0 +1,27 @@
+{
+    "mathematicalMethodsCategoryPaths": [
+        "none"
+    ],
+    "modelCategoryPaths": [
+        "pb/qm/*"
+    ],
+    "type": {
+        "name": "Occupation number smearing",
+        "slug": "smearing"
+    },
+    "subtype": {
+        "name": "Methfessel-Paxton smearing",
+        "slug": "methfessel-paxton"
+    },
+    "parameters": {
+        "smearingWidth": {
+            "value": 0.2,
+            "units": "eV",
+            "precision": true
+        },
+        "MethfesselPaxton.order": {
+            "value": 2,
+            "precision": true
+        }
+    }
+}
