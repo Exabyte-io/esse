@@ -1,7 +1,7 @@
 {
     "name": "Conjugate gradient diagonalization method",
     "flowchartId": "none",
-    "methodGraph": [
+    "graph": [
         {
             "name": "Conjugate Gradient Method",
             "type": "unit-method",
@@ -42,19 +42,19 @@
                 "slug": "linalg"
             },
             "parameters": {
-                "nEigval": {
+                "numberOfEigenvalues": {
                     "value": 7,
                     "precision": false
                 },
-                "nGuess": {
+                "numberOfGuessVectors": {
                     "value": 10,
                     "precision": false
                 },
-                "maxiter": {
+                "maximumNumberOfIterations": {
                     "value": 50,
                     "precision": false
                 },
-                "convergence": {
+                "convergenceThreshold": {
                     "value": 1e-8,
                     "precision": true
                 }
