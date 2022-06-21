@@ -14,10 +14,10 @@
         "blockSize": {
             "value": 4
         },
-        "diis.maxSteps": {
+        "diis.maximumSteps": {
             "value": 6
         },
-        "orthonorm.ndim": {
+        "orthonormalization.nDimensions": {
             "value": 16
         },
         "convergence": {

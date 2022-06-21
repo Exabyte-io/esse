@@ -2,7 +2,7 @@
     "schemaId": "method-derived-qm-rmm-diis",
     "$schema": "http://json-schema.org/draft-04/schema#",
     "title": "Residual minimization method using direct inversion of the iterative subspace (RMM-DIIS) schema",
-    "description": "",
+    "description": "Relevant publications: 10.1016/0009-2614(80)80396-4, 10.1088/0305-4470/18/9/018",
     "allOf": [
         {
             "$ref": "../unit_base_physical.json"
@@ -53,11 +53,11 @@
                     "description": "Number of eigenvalues to be solved simultaneously (blocked mode)",
                     "$ref": "../../core/reusable/parameters/int.json"
                 },
-                "diis.maxSteps": {
+                "diis.maximumSteps": {
                     "description": "Maximum number of iterative steps",
                     "$ref": "../../core/reusable/parameters/int.json"
                 },
-                "orthonorm.ndim": {
+                "orthonormalization.nDimensions": {
                     "description": "Dimension of Orthonormalization procedure (usually Gram-Schmidt)",
                     "$ref": "../../core/reusable/parameters/int.json"
                 },
