@@ -1,0 +1,26 @@
+{
+    "schemaId": "methods-directory-pw-psp",
+    "$schema": "http://json-schema.org/draft-04/schema#",
+    "title": "planewave-pseudopotential method schema",
+    "allOf": [
+        {
+            "$ref": "../method.json"
+        }
+    ],
+    "properties": {
+        "units": {
+            "type": "array",
+            "items": {
+                "anyOf": [
+                    {
+                        "$ref": "../method_units/physical/pw.json"
+                    },
+                    {
+                        "$ref": "../method_units/physical/psp.json"
+                    }
+                ]
+            },
+            "uniqueItems": true
+        }
+    }
+}
