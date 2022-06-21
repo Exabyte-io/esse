@@ -1,5 +1,5 @@
 {
-    "schemaId": "method-unit-base-referable",
+    "schemaId": "method_units/unit_base_referable",
     "$schema": "http://json-schema.org/draft-04/schema#",
     "title": "mathematical unit method schema (base)",
     "description": "Used for database storage",

@@ -1,5 +1,5 @@
 {
-    "schemaId": "models-directory-pb-qm-df-ksdft-mgga-functional",
+    "schemaId": "models_directory/pb/qm/dft/ksdft/mgga/functional",
     "$schema": "http://json-schema.org/draft-04/schema#",
     "title": "Meta-GGA functional key schema",
     "allOf": [

@@ -1,5 +1,5 @@
 {
-    "schemaId": "models-directory-pb-qm-dft-functional-components-directory-range-separated-exchange",
+    "schemaId": "models_directory/pb/qm/dft/functional/components_directory/range_separated_exchange",
     "$schema": "http://json-schema.org/draft-04/schema#",
     "title": "range-separated exchange schema",
     "allOf": [

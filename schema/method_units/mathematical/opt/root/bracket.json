@@ -1,5 +1,5 @@
 {
-    "schemaId": "method-unit-opt-root-bracket",
+    "schemaId": "method_units/mathematical/opt/root/bracket",
     "$schema": "http://json-schema.org/draft-04/schema#",
     "description": "Bracketing method for finding roots",
     "allOf": [

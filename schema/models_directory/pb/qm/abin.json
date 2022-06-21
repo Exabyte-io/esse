@@ -1,5 +1,5 @@
 {
-    "schemaId": "abin",
+    "schemaId": "models_directory/pb/qm/abin",
     "$schema": "http://json-schema.org/draft-04/schema#",
     "allOf": [
         {

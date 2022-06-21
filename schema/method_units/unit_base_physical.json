@@ -1,5 +1,5 @@
 {
-    "schemaId": "method-unit-base-physical",
+    "schemaId": "method_units/unit_base_physical",
     "$schema": "http://json-schema.org/draft-04/schema#",
     "title": "physical unit method schema (base)",
     "allOf": [

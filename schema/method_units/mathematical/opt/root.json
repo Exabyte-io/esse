@@ -1,5 +1,5 @@
 {
-    "schemaId": "method-unit-opt-root",
+    "schemaId": "method_units/mathematical/opt/root",
     "$schema": "http://json-schema.org/draft-04/schema#",
     "description": "Root finding methods",
     "allOf": [

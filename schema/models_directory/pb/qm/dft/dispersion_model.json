@@ -1,5 +1,5 @@
 {
-    "schemaId": "models-directory-pb-qm-dft-dispersion-model",
+    "schemaId": "models_directory/pb/qm/dft/dispersion_model",
     "$schema": "http://json-schema.org/draft-04/schema#",
     "title": "generalized DFT dispersion model",
     "properties": {

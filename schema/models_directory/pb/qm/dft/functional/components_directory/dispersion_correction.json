@@ -1,5 +1,5 @@
 {
-    "schemaId": "models-directory-pb-qm-dft-functional-components-directory-dispersion-correction",
+    "schemaId": "models_directory/pb/qm/dft/functional/components_directory/dispersion_correction",
     "$schema": "http://json-schema.org/draft-04/schema#",
     "title": "dispersion correction schema (may be deprecated in favor of generalized dispersion model)",
     "allOf": [

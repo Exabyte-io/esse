@@ -1,5 +1,5 @@
 {
-    "schemaId": "models-directory-pb-qm-dft-dispersion-models-directory-ts-vdw",
+    "schemaId": "models_directory/pb/qm/dft/dispersion_models_directory/tkatchenko_scheffler",
     "$schema": "http://json-schema.org/draft-04/schema#",
     "title": "Tkatchenko-Scheffler van der Waals approach",
     "allOf": [

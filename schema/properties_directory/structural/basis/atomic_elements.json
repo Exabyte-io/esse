@@ -1,5 +1,5 @@
 {
-    "schemaId": "properties-directory-structural-basis-atomic-elements",
+    "schemaId": "properties_directory/structural/basis/atomic_elements",
     "$schema": "http://json-schema.org/draft-04/schema#",
     "title": "atomic elements",
     "description": "elements of atoms by ids, string, unitless",

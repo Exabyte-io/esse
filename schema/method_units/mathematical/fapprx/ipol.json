@@ -1,5 +1,5 @@
 {
-    "schemaId": "method-unit-fapprx-ipol",
+    "schemaId": "method_units/mathematical/fapprx/ipol",
     "$schema": "http://json-schema.org/draft-04/schema#",
     "description": "Interpolation methods",
     "allOf": [

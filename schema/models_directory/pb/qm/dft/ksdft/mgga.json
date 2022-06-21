@@ -1,5 +1,5 @@
 {
-    "schemaId": "models-directory-pb-qm-dft-ksdft-mgga",
+    "schemaId": "models_directory/pb/qm/dft/ksdft/mgga",
     "$schema": "http://json-schema.org/draft-04/schema#",
     "title": "Meta Generalized Gradient Approximation model schema",
     "allOf": [

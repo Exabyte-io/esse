@@ -1,5 +1,5 @@
 {
-    "schemaId": "dft",
+    "schemaId": "models_directory/pb/qm/dft",
     "$schema": "http://json-schema.org/draft-04/schema#",
     "allOf": [
         {

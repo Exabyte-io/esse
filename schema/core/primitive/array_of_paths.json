@@ -1,5 +1,5 @@
 {
-    "schemaId": "core-primitive-array-of-paths",
+    "schemaId": "core/primitive/array_of_paths",
     "$schema": "http://json-schema.org/draft-04/schema#",
     "title": "array of paths schema",
     "type": "array",

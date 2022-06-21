@@ -1,5 +1,5 @@
 {
-    "schemaId": "pb",
+    "schemaId": "models_directory/pb",
     "$schema": "http://json-schema.org/draft-04/schema#",
     "allOf": [
         {

@@ -1,5 +1,5 @@
 {
-    "schemaId": "core-primitive-graph-named-node",
+    "schemaId": "core/primitive/graph/named_node",
     "$schema": "http://json-schema.org/draft-04/schema#",
     "title": "Named node schema",
     "type": "object",

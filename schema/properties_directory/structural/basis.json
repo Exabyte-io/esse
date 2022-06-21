@@ -1,5 +1,5 @@
 {
-    "schemaId": "properties-directory-structural-basis",
+    "schemaId": "properties_directory/structural/basis",
     "$schema": "http://json-schema.org/draft-04/schema#",
     "title": "basis schema",
     "type": "object",

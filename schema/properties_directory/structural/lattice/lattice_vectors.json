@@ -1,5 +1,5 @@
 {
-    "schemaId": "properties-directory-structural-lattice-lattice-vectors",
+    "schemaId": "properties_directory/structural/lattice/lattice_vectors",
     "$schema": "http://json-schema.org/draft-04/schema#",
     "title": "lattice explicit unit",
     "allOf": [

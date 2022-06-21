@@ -1,5 +1,5 @@
 {
-    "schemaId": "core-primitive-graph",
+    "schemaId": "core/primitive/graph",
     "$schema": "http://json-schema.org/draft-04/schema#",
     "title": "directed acyclic graph schema",
     "type": "array",

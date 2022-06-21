@@ -1,5 +1,5 @@
 {
-    "schemaId": "core-reusable-parameters-int",
+    "schemaId": "core/reusable/parameters/int",
     "$schema": "http://json-schema.org/draft-04/schema#",
     "title": "integer parameter schema",
     "allOf": [

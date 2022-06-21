@@ -1,5 +1,5 @@
 {
-    "schemaId": "method-derived-qm-planewave",
+    "schemaId": "method_units/physical/pw",
     "$schema": "http://json-schema.org/draft-04/schema#",
     "description": "Approximating the electronic wave function with a plane wave basis",
     "allOf": [

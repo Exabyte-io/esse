@@ -1,5 +1,5 @@
 {
-    "schemaId": "method-unit-discr",
+    "schemaId": "method_units/mathematical/discr",
     "$schema": "http://json-schema.org/draft-04/schema#",
     "description": "Discretization methods",
     "allOf": [

@@ -1,5 +1,5 @@
 {
-    "schemaId": "core-primitive-string-or-array-of-strings",
+    "schemaId": "core/primitive/string_or_array_of_strings",
     "$schema": "http://json-schema.org/draft-04/schema#",
     "title": "string or array of strings",
     "oneOf": [

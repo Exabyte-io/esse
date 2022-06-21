@@ -1,5 +1,5 @@
 {
-    "schemaId": "properties-directory-structural-patterns-special-bond",
+    "schemaId": "properties_directory/structural/patterns/special_bond",
     "$schema": "http://json-schema.org/draft-04/schema#",
     "title": "special bond pattern schema",
     "type": "object",
