@@ -18,19 +18,19 @@
         },
         "parameters": {
             "properties": {
-                "nEigval": {
+                "numberOfEigenvalues": {
                     "description": "Number of eigenvalues to solve",
                     "$ref": "../../../../core/reusable/parameters/int.json"
                 },
-                "nGuess": {
+                "numberOfGuessVectors": {
                     "description": "Number of initial guess vectors",
                     "$ref": "../../../../core/reusable/parameters/int.json"
                 },
-                "maxiter": {
+                "maximumNumberOfIterations": {
                     "description": "Maximum number of iterations of the Davidson procedure",
                     "$ref": "../../../../core/reusable/parameters/int.json"
                 },
-                "convergence": {
+                "convergenceThreshold": {
                     "description": "Convergence criterion of the Davidson procedure",
                     "$ref": "../../../../core/reusable/parameters/number.json"
                 }
