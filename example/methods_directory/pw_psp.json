@@ -1,7 +1,7 @@
 {
     "name": "Plane wave pseudopotential method",
     "flowchartId": "none",
-    "methodGraph": [
+    "graph": [
         {
             "name": "Plane wave",
             "type": "unit-method",
