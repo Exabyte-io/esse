@@ -18,9 +18,6 @@
             "type": "boolean"
         }
     },
-    "required": [
-        "flowchartId"
-    ],
     "definitions": {
         "flowchart-id": {
             "properties": {
@@ -28,7 +25,10 @@
                     "description": "Unique flowchart ID of node",
                     "type": "string"
                 }
-            }
+            },
+            "required": [
+                "flowchartId"
+            ]
         }
     }
 }

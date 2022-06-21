@@ -1,7 +1,7 @@
 {
-    "schemaId": "method-unit-base-mathematical",
+    "schemaId": "models-directory-unit-base-categorized",
     "$schema": "http://json-schema.org/draft-04/schema#",
-    "title": "mathematical unit method schema (base)",
+    "title": "categorized unit model schema (base)",
     "allOf": [
         {
             "$ref": "unit_base.json"
@@ -11,6 +11,7 @@
         }
     ],
     "required": [
+        "tier1",
         "type"
     ]
 }
