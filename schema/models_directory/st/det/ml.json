@@ -5,7 +5,7 @@
     "description": "machine learning model type/subtype schema",
     "allOf": [
         {
-            "$ref": "../../../new_model.json"
+            "$ref": "../det.json"
         }
     ],
     "properties": {
@@ -27,7 +27,7 @@
         },
         "method": {
             "description": "@todo: temporarily deactivated",
-            "type": "object"
+            "$ref": "../../../method.json"
         }
     }
 }

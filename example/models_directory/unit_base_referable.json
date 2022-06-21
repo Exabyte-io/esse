@@ -1,0 +1,19 @@
+{
+    "flowchartId": "u123fndff333",
+    "modelPath": "pb/qm/dft/ksdft/hybrid",
+    "subtype": {
+        "name": "Hybrid functional",
+        "slug": "hybrid"
+    },
+    "name": "KS-DFT/B3LYP-D3(BJ)",
+    "functional": {
+        "name": "B3LYP-D3(BJ)",
+        "slug": "b3lyp-d3(bj)"
+    },
+    "tags": [
+        "scaling-degree:3"
+    ],
+    "method": {
+        "...": "include(../method.json)"
+    }
+}
