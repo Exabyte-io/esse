@@ -16,19 +16,19 @@
         "slug": "davidson"
     },
     "parameters": {
-        "nEigval": {
+        "numberOfEigenvalues": {
             "value": 4,
             "precision": false
         },
-        "nGuess": {
+        "numberOfGuessVectors": {
             "value": 10,
             "precision": true
         },
-        "maxiter": {
+        "maximumNumberOfIterations": {
             "value": 100,
             "precision": false
         },
-        "convergence": {
+        "convergenceThreshold": {
             "value": 1e-6,
             "precision": true
         }
