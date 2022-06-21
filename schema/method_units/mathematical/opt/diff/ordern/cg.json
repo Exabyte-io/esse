@@ -18,11 +18,11 @@
         },
         "parameters": {
             "properties": {
-                "maxiter": {
+                "maximumNumberOfIterations": {
                     "description": "Maximum number of iterations",
                     "$ref": "../../../../../core/reusable/parameters/int.json"
                 },
-                "convergence": {
+                "convergenceThreshold": {
                     "description": "Convergence criterion",
                     "$ref": "../../../../../core/reusable/parameters/number.json"
                 }
