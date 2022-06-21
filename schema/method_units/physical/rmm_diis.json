@@ -53,15 +53,15 @@
                     "description": "Number of eigenvalues to be solved simultaneously (blocked mode)",
                     "$ref": "../../core/reusable/parameters/int.json"
                 },
-                "diis.maximumSteps": {
+                "diis.maximumNumberOfSteps": {
                     "description": "Maximum number of iterative steps",
                     "$ref": "../../core/reusable/parameters/int.json"
                 },
-                "orthonormalization.nDimensions": {
+                "orthonormalization.numberOfDimensions": {
                     "description": "Dimension of Orthonormalization procedure (usually Gram-Schmidt)",
                     "$ref": "../../core/reusable/parameters/int.json"
                 },
-                "convergence": {
+                "convergenceThreshold": {
                     "description": "Convergence criterion",
                     "$ref": "../../core/reusable/parameters/number.json"
                 }
