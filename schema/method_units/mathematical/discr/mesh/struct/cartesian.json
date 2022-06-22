@@ -18,7 +18,7 @@
         },
         "parameters": {
             "properties": {
-                "nDim": {
+                "numberOfDimensions": {
                     "description": "Dimensionality of the grid",
                     "$ref": "../../../../../core/reusable/parameters/int.json"
                 },

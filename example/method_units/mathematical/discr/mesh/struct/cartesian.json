@@ -16,7 +16,7 @@
         "slug": "cartesian"
     },
     "parameters": {
-        "nDim": {
+        "numberOfDimensions": {
             "value": 3
         },
         "spacing.x": {
