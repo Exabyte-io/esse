@@ -1,0 +1,58 @@
+{
+    "name": "Brillouin Zone Integration Method",
+    "flowchartId": "none",
+    "graph": [
+        {
+            "name": "Fourier Transform",
+            "type": "unit-method",
+            "flowchartId": "um00001",
+            "next": "um00002",
+            "head": true
+        },
+        {
+            "name": "Linear Tetrahedron Method",
+            "type": "method",
+            "flowchartId": "um00002",
+            "next": "um00003"
+        },
+        {
+            "name": "Occupation Smearing",
+            "type": "unit-method",
+            "flowchartId": "um00003"
+        }
+    ],
+    "units": [
+        {
+            "flowchartId": "um00001",
+            "methodPath": "mathematical/intgr/transf/fourier",
+            "tier1": {
+                "name": "Integration",
+                "slug": "intgr"
+            },
+            "type": {
+                "name": "Fourier Transformation",
+                "slug": "fourier-transf"
+            }
+        },
+        {
+            "flowchartId": "um00003",
+            "methodPath": "physical/smearing/gaussian",
+            "type": {
+                "name": "Occupation number smearing",
+                "slug": "smearing"
+            },
+            "parameters": {
+                "smearingWidth": {
+                    "value": 0.005,
+                    "units": "eV",
+                    "precision": true
+                }
+            }
+        }
+    ],
+    "methods": [
+        {
+            "...": "include(lin_tetrahedron.json)"
+        }
+    ]
+}
