@@ -1,0 +1,85 @@
+{
+    "name": "Linear Tetrahedron Method",
+    "flowchartId": "none",
+    "graph": [
+        {
+            "name": "Cartesian Grid",
+            "type": "unit-method",
+            "flowchartId": "um00001",
+            "next": "um00002",
+            "head": true
+        },
+        {
+            "name": "Tetrahedron Integral",
+            "type": "unit-method",
+            "flowchartId": "um00002",
+            "next": "um00003"
+        },
+        {
+            "name": "Linear Interpolation",
+            "type": "unit-method",
+            "flowchartId": "um00003"
+        }
+    ],
+    "units": [
+        {
+            "flowchartId": "um00001",
+            "methodPath": "mathematical/discr/mesh/struct/cartesian",
+            "tier1": {
+                "name": "Discretization",
+                "slug": "discr"
+            },
+            "type": {
+                "name": "Cartesian Grid",
+                "slug": "cartesian"
+            },
+            "parameters": {
+                "numberOfDimensions": {
+                    "value": 3
+                },
+                "offset.x": {
+                    "value": 0.0
+                },
+                "offset.y": {
+                    "value": 0.0
+                },
+                "offset.z": {
+                    "value": 0.0
+                },
+                "nPoints.x": {
+                    "value": 4
+                },
+                "nPoints.y": {
+                    "value": 4
+                },
+                "nPoints.z": {
+                    "value": 4
+                }
+            }
+        },
+        {
+            "flowchartId": "um00002",
+            "methodPath": "mathematical/fapprx/ipol/lin",
+            "tier1": {
+                "name": "Function Approximation",
+                "slug": "fapprx"
+            },
+            "type": {
+                "name": "None",
+                "slug": "none"
+            }
+        },
+        {
+            "flowchartId": "um00003",
+            "methodPath": "mathematical/intgr/numquad/analytic/volume/tetrahedron",
+            "tier1": {
+                "name": "Integration",
+                "slug": "intgr"
+            },
+            "type": {
+                "name": "Volume Integral",
+                "slug": "volume"
+            }
+        }
+    ]
+}
