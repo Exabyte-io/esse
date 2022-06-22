@@ -1,0 +1,20 @@
+{
+    "schemaId": "method-unit-intgr-transf-fourier",
+    "$schema": "http://json-schema.org/draft-04/schema#",
+    "description": "Fourier transform methods",
+    "allOf": [
+        {
+            "$ref": "../transf.json"
+        }
+    ],
+    "properties": {
+        "type": {
+            "enum": [
+                {
+                    "name": "Fourier Transformation",
+                    "slug": "fourier-transf"
+                }
+            ]
+        }
+    }
+}
