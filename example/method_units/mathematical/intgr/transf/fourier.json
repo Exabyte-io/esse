@@ -1,0 +1,18 @@
+{
+    "tier1": {
+        "name": "Integration",
+        "slug": "intgr"
+    },
+    "tier2": {
+        "name": "Integral Transformation",
+        "slug": "transf"
+    },
+    "tier3": {
+        "name": "None",
+        "slug": "none"
+    },
+    "type": {
+        "name": "Fourier Transformation",
+        "slug": "fourier-transf"
+    }
+}
