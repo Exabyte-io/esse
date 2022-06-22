@@ -2,6 +2,7 @@
     "schemaId": "job-compute",
     "$schema": "http://json-schema.org/draft-04/schema#",
     "title": "compute arguments schema",
+    "description": "Custom keywords prefixed with validate correspond to custom validation methods implemented downstream",
     "properties": {
         "queue": {
             "description": "Name of the submission queue inside the Resource Management System (RMS). D: debug, OR: on-demand reuglar, SR: saving reuglar, OF: on-demand fast, SF: saving fast",
@@ -16,15 +17,26 @@
         },
         "nodes": {
             "description": "number of nodes used for the job inside the RMS.",
-            "type": "integer"
+            "type": "integer",
+            "validateNodes": {}
         },
         "ppn": {
             "description": "number of CPUs used for the job inside the RMS.",
-            "type": "integer"
+            "type": "integer",
+            "validatePpn": {}
         },
         "timeLimit": {
             "description": "Wallclock time limit for computing a job. Clock format: 'hh:mm:ss'",
-            "type": "string"
+            "type": "string",
+            "validateTimeLimit": {}
+        },
+        "timeLimitType": {
+            "description": "Convention to use when reasoning about time limits",
+            "type": "string",
+            "enum": [
+                "single",
+                "compound"
+            ]
         },
         "notify": {
             "description": "Email notification for the job: n - never, a - job aborted, b - job begins, e - job ends. Last three could be combined.",
@@ -56,8 +68,7 @@
                 }
             },
             "required": [
-                "fqdn",
-                "jid"
+                "fqdn"
             ]
         },
         "errors": {
