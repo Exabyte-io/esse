@@ -8,7 +8,7 @@ import json
 from pathlib import Path
 
 
-ESSE_SCHEMA_DIR = "schema"
+ESSE_SCHEMA_DIR = "../schema"
 
 
 def has_schema_id(filepath: Path, identifier="schemaId") -> bool:
