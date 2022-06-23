@@ -11,7 +11,7 @@
         "units": {
             "type": "array",
             "items": {
-                "anyOf": [
+                "oneOf": [
                     {
                         "$ref": "../method_units/physical/pw.json"
                     },
