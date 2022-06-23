@@ -1,4 +1,8 @@
 #!/usr/bin/env python
+"""
+Notes: This script is intended to manipulate schema IDs (and possibly other schema properties in the future)
+       in a programmatic and controlled way.
+"""
 
 import json
 from pathlib import Path
