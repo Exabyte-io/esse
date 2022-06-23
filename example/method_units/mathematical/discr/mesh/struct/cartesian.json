@@ -20,28 +20,22 @@
             "value": 3
         },
         "spacing.x": {
-            "value": 1.0,
-            "units": "angstrom"
+            "value": 1.0
         },
         "spacing.y": {
-            "value": 1.0,
-            "units": "angstrom"
+            "value": 1.0
         },
         "spacing.z": {
-            "value": 2.0,
-            "units": "angstrom"
+            "value": 2.0
         },
         "offset.x": {
-            "value": -0.5,
-            "units": "angstrom"
+            "value": -0.5
         },
         "offset.y": {
-            "value": -0.5,
-            "units": "angstrom"
+            "value": -0.5
         },
         "offset.z": {
-            "value": -1.0,
-            "units": "angstrom"
+            "value": -1.0
         }
     }
 }
