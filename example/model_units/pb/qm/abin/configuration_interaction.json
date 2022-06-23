@@ -19,13 +19,11 @@
         "name": "MR-CISD",
         "slug": "mrcisd"
     },
-    "modifier": [
-        "multi-reference"
-    ],
     "tags": [
         "scaling-degree:6",
         "excited-states",
-        "user-adjustable"
+        "user-adjustable",
+        "multi-reference"
     ],
     "method": {
         "...": "include(../../../../method.json)"

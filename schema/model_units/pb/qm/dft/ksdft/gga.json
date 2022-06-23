@@ -18,12 +18,6 @@
     "functional": {
         "$ref": "gga/functional.json"
     },
-    "augmentations": {
-        "$ref": "gga/augmentations.json"
-    },
-    "modifiers": {
-        "$ref": "gga/modifiers.json"
-    },
     "tags": {
         "$ref": "gga/tags.json"
     }

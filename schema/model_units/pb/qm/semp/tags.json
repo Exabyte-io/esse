@@ -9,7 +9,8 @@
     "items": {
         "anyOf": [
             {
-                "$ref": "definitions.json#/tags"
+                "description": "Universal definitions: externalField",
+                "$ref": "../../../definitions.json#/externalField"
             }
         ]
     }

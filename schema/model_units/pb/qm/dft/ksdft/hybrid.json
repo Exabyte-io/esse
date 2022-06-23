@@ -25,12 +25,6 @@
             }
         ]
     },
-    "augmentations": {
-        "$ref": "hybrid/augmentations.json"
-    },
-    "modifiers": {
-        "$ref": "hybrid/modifiers.json"
-    },
     "tags": {
         "$ref": "hybrid/tags.json"
     }

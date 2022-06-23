@@ -12,18 +12,15 @@
             "$ref": "../core/primitive/slugified_entry_or_slug.json"
         },
         "method": {
+            "description": "Method associated with unit model",
             "$ref": "../method.json"
         },
         "reference": {
+            "description": "Literature reference",
             "$ref": "../core/reference/literature.json"
         },
-        "augmentations": {
-            "$ref": "../model/augmentations.json"
-        },
-        "modifiers": {
-            "$ref": "../model/modifiers.json"
-        },
         "tags": {
+            "description": "Descriptive (searchable) attributes of model, generic. Example: user-adjustable.",
             "$ref": "../model/tags.json"
         }
     },
