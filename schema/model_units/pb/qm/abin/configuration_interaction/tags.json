@@ -9,12 +9,16 @@
     "items": {
         "anyOf": [
             {
+                "description": "Abin definitions: multireference",
+                "$ref": "../definitions.json#/multiReference"
+            },
+            {
                 "description": "QM definitions: scaling",
                 "$ref": "../../definitions.json#/scaling/6"
             },
             {
-                "description": "Abin definitions: multireference",
-                "$ref": "../definitions.json#/multiReference"
+                "description": "QM definitions: excited states",
+                "$ref": "../../definitions.json#/excitedStates"
             },
             {
                 "description": "Universal definitions: user-adjustable",

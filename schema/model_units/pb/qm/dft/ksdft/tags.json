@@ -9,6 +9,10 @@
     "items": {
         "anyOf": [
             {
+                "description": "QM definitions: spin-orbit coupling",
+                "$ref": "../../definitions.json#/spinOrbitCoupling"
+            },
+            {
                 "description": "QM definitions: scaling",
                 "$ref": "../../definitions.json#/scaling/3"
             },
