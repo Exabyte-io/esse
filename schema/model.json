@@ -8,7 +8,7 @@
         }
     ],
     "properties": {
-        "modelGraph": {
+        "graph": {
             "description": "Graph of unit models (nodes)",
             "$ref": "core/primitive/graph.json"
         },
@@ -16,7 +16,7 @@
             "description": "List of unit models (containing model data)",
             "type": "array",
             "items": {
-                "$ref": "models_directory/unit_base_referable.json"
+                "$ref": "model_units/unit_base_referable.json"
             }
         },
         "method": {
@@ -26,7 +26,7 @@
     },
     "required": [
         "name",
-        "modelGraph",
+        "graph",
         "units"
     ]
 }

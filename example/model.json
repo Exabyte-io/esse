@@ -1,7 +1,7 @@
 {
     "name": "KS-DFT",
     "slug": "ks_dft",
-    "modelGraph": [
+    "graph": [
         {
             "name": "Kohn-Sham Density Functional Theory",
             "flowchartId": "u123fndff333",
