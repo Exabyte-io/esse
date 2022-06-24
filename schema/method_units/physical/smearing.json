@@ -1,0 +1,78 @@
+{
+    "schemaId": "method-units-physical-smearing",
+    "$schema": "http://json-schema.org/draft-04/schema#",
+    "title": "Smearing methods schema for partial occupancies (Brillouin zone integration for metals)",
+    "description": "Approximating Heaviside step function with smooth function",
+    "allOf": [
+        {
+            "$ref": "../unit_base_physical.json"
+        }
+    ],
+    "properties": {
+        "mathematicalMethodsCategoryPaths": {
+            "type": "array",
+            "items": {
+                "anyOf": [
+                    {
+                        "enum": [
+                            "none"
+                        ]
+                    }
+                ]
+            }
+        },
+        "modelCategoryPaths": {
+            "type": "array",
+            "items": {
+                "anyOf": [
+                    {
+                        "enum": [
+                            "pb/qm/*"
+                        ]
+                    }
+                ]
+            }
+        },
+        "type": {
+            "enum": [
+                {
+                    "name": "Occupation number smearing",
+                    "slug": "smearing"
+                }
+            ]
+        },
+        "subtype": {
+            "enum": [
+                {
+                    "name": "Gaussian smearing",
+                    "slug": "gaussian"
+                },
+                {
+                    "name": "Fermi-Dirac smearing",
+                    "slug": "fermi-dirac"
+                },
+                {
+                    "name": "Marzari-Vanderbilt smearing",
+                    "slug": "marzari-vanderbilt"
+                },
+                {
+                    "name": "Methfessel-Paxton smearing",
+                    "slug": "methfessel-paxton"
+                }
+            ]
+        },
+        "parameters": {
+            "type": "object",
+            "properties": {
+                "smearingWidth": {
+                    "description": "Smearing parameter",
+                    "$ref": "../../core/reusable/parameters/number.json"
+                },
+                "MethfesselPaxton.order": {
+                    "description": "Order of Hermite polynomial",
+                    "$ref": "../../core/reusable/parameters/int.json"
+                }
+            }
+        }
+    }
+}

@@ -1,0 +1,28 @@
+{
+    "schemaId": "methods-directory-lin-tetrahedron",
+    "$schema": "http://json-schema.org/draft-04/schema#",
+    "title": "Linear tetrahedron method schema",
+    "allOf": [
+        {
+            "$ref": "../method.json"
+        }
+    ],
+    "properties": {
+        "units": {
+            "type": "array",
+            "items": {
+                "oneOf": [
+                    {
+                        "$ref": "../method_units/mathematical/discr/mesh/struct/cartesian.json"
+                    },
+                    {
+                        "$ref": "../method_units/mathematical/fapprx/ipol/lin.json"
+                    },
+                    {
+                        "$ref": "../method_units/mathematical/intgr/numquad/analytic/volume.json"
+                    }
+                ]
+            }
+        }
+    }
+}

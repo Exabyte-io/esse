@@ -19,6 +19,10 @@
         {
             "flowchartId": "um00001",
             "methodPath": "physical/pw",
+            "type": {
+                "name": "Plane Wave Expansion",
+                "slug": "pw"
+            },
             "parameters": {
                 "cutoffs.wavefunction": {
                     "value": 85,
@@ -35,9 +39,9 @@
         {
             "flowchartId": "um00002",
             "methodPath": "physical/psp/us",
-            "subtype": {
-                "name": "Ultra-soft",
-                "slug": "us"
+            "type": {
+                "name": "Pseudopotential Approximation",
+                "slug": "psp"
             },
             "data": {
                 "pseudoSet": {
