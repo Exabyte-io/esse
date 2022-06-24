@@ -1,5 +1,5 @@
 {
-    "schemaId": "models-directory-pb-qm-df-ksdft-lda-functional",
+    "schemaId": "model_units/pb/qm/dft/ksdft/lda/functional",
     "$schema": "http://json-schema.org/draft-04/schema#",
     "title": "LDA functional schema",
     "allOf": [

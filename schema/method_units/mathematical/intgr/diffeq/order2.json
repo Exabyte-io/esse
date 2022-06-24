@@ -1,5 +1,5 @@
 {
-    "schemaId": "method-unit-intgr-diffeq-order2",
+    "schemaId": "method_units/mathematical/intgr/diffeq/order2",
     "$schema": "http://json-schema.org/draft-04/schema#",
     "description": "Methods for the numerical integration of differential equations",
     "allOf": [

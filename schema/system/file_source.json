@@ -1,5 +1,5 @@
 {
-    "schemaId": "system-file-source",
+    "schemaId": "system/file_source",
     "$schema": "http://json-schema.org/draft-04/schema#",
     "title": "file source schema",
     "description": "file source with the information inside",

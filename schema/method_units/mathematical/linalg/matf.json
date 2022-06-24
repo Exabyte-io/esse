@@ -1,5 +1,5 @@
 {
-    "schemaId": "method-unit-linalg-matf",
+    "schemaId": "method_units/mathematical/linalg/matf",
     "$schema": "http://json-schema.org/draft-04/schema#",
     "description": "Matrix function methods",
     "allOf": [

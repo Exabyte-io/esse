@@ -1,5 +1,5 @@
 {
-    "schemaId": "models-directory-unit-base-categorized",
+    "schemaId": "model_units/unit_base_categorized",
     "$schema": "http://json-schema.org/draft-04/schema#",
     "title": "categorized unit model schema (base)",
     "allOf": [

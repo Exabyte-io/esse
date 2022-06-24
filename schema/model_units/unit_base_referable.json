@@ -1,5 +1,5 @@
 {
-    "schemaId": "models-directory-unit-base-referable",
+    "schemaId": "model_units/unit_base_referable",
     "$schema": "http://json-schema.org/draft-04/schema#",
     "title": "referable unit model schema (base)",
     "description": "Used for database storage",

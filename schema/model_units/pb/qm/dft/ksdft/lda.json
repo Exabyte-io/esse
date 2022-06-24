@@ -1,5 +1,5 @@
 {
-    "schemaId": "models-directory-pb-qm-dft-ksdft-lda",
+    "schemaId": "model_units/pb/qm/dft/ksdft/lda",
     "$schema": "http://json-schema.org/draft-04/schema#",
     "title": "Local Density Approximation model schema",
     "allOf": [

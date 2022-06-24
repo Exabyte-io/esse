@@ -1,5 +1,5 @@
 {
-    "schemaId": "properties-directory-structural-volume",
+    "schemaId": "properties_directory/structural/volume",
     "$schema": "http://json-schema.org/draft-04/schema#",
     "title": "volume schema",
     "allOf": [

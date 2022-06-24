@@ -1,5 +1,5 @@
 {
-    "schemaId": "software-directory-modeling-espresso",
+    "schemaId": "software_directory/modeling/espresso",
     "$schema": "http://json-schema.org/draft-04/schema#",
     "title": "espresso app schema",
     "type": "object",

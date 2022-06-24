@@ -1,5 +1,5 @@
 {
-    "schemaId": "core-primitive-units-and-precision",
+    "schemaId": "core/primitive/units_and_precision",
     "$schema": "http://json-schema.org/draft-04/schema#",
     "title": "units and precision schema",
     "properties": {
@@ -7,7 +7,6 @@
             "description": "Unit of a quantity or parameter",
             "type": "string",
             "$ref": "#/definitions/all-units"
-
         },
         "precision": {
             "description": "Whether the quantity/parameter affects precision",

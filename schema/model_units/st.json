@@ -1,5 +1,5 @@
 {
-    "schemaId": "st",
+    "schemaId": "model_units/st",
     "$schema": "http://json-schema.org/draft-04/schema#",
     "allOf": [
         {

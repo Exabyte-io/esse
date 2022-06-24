@@ -1,5 +1,5 @@
 {
-    "schemaId": "method-unit-fapprx-ipol-spline",
+    "schemaId": "method_units/mathematical/fapprx/ipol/spline",
     "$schema": "http://json-schema.org/draft-04/schema#",
     "description": "Spline interpolation methods",
     "allOf": [

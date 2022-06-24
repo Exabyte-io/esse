@@ -1,5 +1,5 @@
 {
-    "schemaId": "core-abstract-3d-grid",
+    "schemaId": "core/abstract/3d_grid",
     "$schema": "http://json-schema.org/draft-04/schema#",
     "title": "3 dimensional grid schema",
     "properties": {

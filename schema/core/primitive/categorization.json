@@ -1,5 +1,5 @@
 {
-    "schemaId": "core-primitive-categorization",
+    "schemaId": "core/primitive/categorization",
     "$schema": "http://json-schema.org/draft-04/schema#",
     "title": "categorization tiers schema",
     "type": "object",

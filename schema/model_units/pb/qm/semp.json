@@ -1,5 +1,5 @@
 {
-    "schemaId": "models-directory-pb-qm-semp",
+    "schemaId": "model_units/pb/qm/semp",
     "$schema": "http://json-schema.org/draft-04/schema#",
     "title": "Semi-empirical model schema",
     "allOf": [
