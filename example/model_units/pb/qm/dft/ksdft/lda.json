@@ -26,11 +26,9 @@
         "...": "include(../../../../../method.json)",
         "@todo": "temporarily deactivated"
     },
-    "modifiers": [
-        "soc"
-    ],
     "tags": [
         "user-adjustable",
-        "scaling-degree:3"
+        "scaling-degree:3",
+        "soc"
     ]
 }

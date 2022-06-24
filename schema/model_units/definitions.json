@@ -1,14 +1,11 @@
 {
     "description": "Universal attributes applicable to most models",
-    "tags": {
+    "userAdjustable": {
         "enum": [
             "user-adjustable"
         ]
     },
-    "augmentations": {
-        "enum": []
-    },
-    "modifiers": {
+    "externalField": {
         "enum":[
             "external-field"
         ]

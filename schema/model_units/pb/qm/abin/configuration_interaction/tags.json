@@ -9,15 +9,16 @@
     "items": {
         "anyOf": [
             {
-                "$ref": "definitions.json#/tags"
-            },
-            {
-                "description": "QM definitions",
+                "description": "QM definitions: scaling",
                 "$ref": "../../definitions.json#/scaling/6"
             },
             {
-                "description": "Universal definitions",
-                "$ref": "../../../../definitions.json#/tags"
+                "description": "Abin definitions: multireference",
+                "$ref": "../definitions.json#/multiReference"
+            },
+            {
+                "description": "Universal definitions: user-adjustable",
+                "$ref": "../../../../definitions.json#/userAdjustable"
             }
         ]
     }

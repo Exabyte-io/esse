@@ -9,15 +9,12 @@
     "items": {
         "anyOf": [
             {
-                "$ref": "definitions.json#/tags"
-            },
-            {
-                "description": "QM definitions",
+                "description": "QM definitions: scaling",
                 "$ref": "../../../definitions.json#/scaling/3"
             },
             {
-                "description": "Universal definitions",
-                "$ref": "../../../../../definitions.json#/tags"
+                "description": "Universal definitions: user-adjustable",
+                "$ref": "../../../../../definitions.json#/userAdjustable"
             }
         ]
     }

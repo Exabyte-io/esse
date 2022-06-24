@@ -9,7 +9,10 @@
     "items": {
         "anyOf": [
             {
-                "$ref": "definitions.json#/tags"
+                "$ref": "definitions.json#/excitedStates"
+            },
+            {
+                "$ref": "definitions.json#/spinOrbitCoupling"
             }
         ]
     }

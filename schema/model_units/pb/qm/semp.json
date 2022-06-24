@@ -40,12 +40,6 @@
                 }
             ]
         },
-        "augmentations": {
-            "$ref": "semp/augmentations.json"
-        },
-        "modifiers": {
-            "$ref": "semp/modifiers.json"
-        },
         "tags": {
             "$ref": "semp/tags.json"
         }
