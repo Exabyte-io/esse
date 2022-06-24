@@ -1,0 +1,30 @@
+{
+    "schemaId": "models-directory-unit-base",
+    "$schema": "http://json-schema.org/draft-04/schema#",
+    "title": "unit model schema (base)",
+    "properties": {
+        "type": {
+            "description": "general type of the model, eg. `dft`",
+            "$ref": "../core/primitive/slugified_entry_or_slug.json"
+        },
+        "subtype": {
+            "description": "general subtype of the model, eg. `lda`",
+            "$ref": "../core/primitive/slugified_entry_or_slug.json"
+        },
+        "method": {
+            "description": "Method associated with unit model",
+            "$ref": "../method.json"
+        },
+        "reference": {
+            "description": "Literature reference",
+            "$ref": "../core/reference/literature.json"
+        },
+        "tags": {
+            "description": "Descriptive (searchable) attributes of model, generic. Example: user-adjustable.",
+            "$ref": "../model/tags.json"
+        }
+    },
+    "required": [
+        "method"
+    ]
+}

@@ -1,0 +1,1310 @@
+{
+    "gga": {
+        "oneOf": [
+            {
+                "properties": {
+                    "name": {
+                        "enum": [
+                            "PBE"
+                        ]
+                    },
+                    "slug": {
+                        "enum": [
+                            "pbe-x"
+                        ]
+                    },
+                    "type": {
+                        "enum": [
+                            "exchange"
+                        ]
+                    }
+                }
+            },
+            {
+                "properties": {
+                    "name": {
+                        "enum": [
+                            "srPBE"
+                        ]
+                    },
+                    "slug": {
+                        "enum": [
+                            "srpbe-x"
+                        ]
+                    },
+                    "type": {
+                        "enum": [
+                            "exchange"
+                        ]
+                    }
+                }
+            },
+            {
+                "properties": {
+                    "name": {
+                        "enum": [
+                            "revPBE"
+                        ]
+                    },
+                    "slug": {
+                        "enum": [
+                            "revpbe-x"
+                        ]
+                    },
+                    "type": {
+                        "enum": [
+                            "exchange"
+                        ]
+                    }
+                }
+            },
+            {
+                "properties": {
+                    "name": {
+                        "enum": [
+                            "muPBE"
+                        ]
+                    },
+                    "slug": {
+                        "enum": [
+                            "mupbe-x"
+                        ]
+                    },
+                    "type": {
+                        "enum": [
+                            "exchange"
+                        ]
+                    }
+                }
+            },
+            {
+                "properties": {
+                    "name": {
+                        "enum": [
+                            "wPBE"
+                        ]
+                    },
+                    "slug": {
+                        "enum": [
+                            "wpbe-x"
+                        ]
+                    },
+                    "type": {
+                        "enum": [
+                            "exchange"
+                        ]
+                    }
+                }
+            },
+            {
+                "properties": {
+                    "name": {
+                        "enum": [
+                            "PBEsol"
+                        ]
+                    },
+                    "slug": {
+                        "enum": [
+                            "pbesol-x"
+                        ]
+                    },
+                    "type": {
+                        "enum": [
+                            "exchange"
+                        ]
+                    }
+                }
+            },
+            {
+                "properties": {
+                    "name": {
+                        "enum": [
+                            "RPBE"
+                        ]
+                    },
+                    "slug": {
+                        "enum": [
+                            "rpbe-x"
+                        ]
+                    },
+                    "type": {
+                        "enum": [
+                            "exchange"
+                        ]
+                    }
+                }
+            },
+            {
+                "properties": {
+                    "name": {
+                        "enum": [
+                            "Becke 1986"
+                        ]
+                    },
+                    "slug": {
+                        "enum": [
+                            "b86"
+                        ]
+                    },
+                    "type": {
+                        "enum": [
+                            "exchange"
+                        ]
+                    }
+                }
+            },
+            {
+                "properties": {
+                    "name": {
+                        "enum": [
+                            "modified B86"
+                        ]
+                    },
+                    "slug": {
+                        "enum": [
+                            "mb86"
+                        ]
+                    },
+                    "type": {
+                        "enum": [
+                            "exchange"
+                        ]
+                    }
+                }
+            },
+            {
+                "properties": {
+                    "name": {
+                        "enum": [
+                            "Becke 1988"
+                        ]
+                    },
+                    "slug": {
+                        "enum": [
+                            "b88"
+                        ]
+                    },
+                    "type": {
+                        "enum": [
+                            "exchange"
+                        ]
+                    }
+                }
+            },
+            {
+                "properties": {
+                    "name": {
+                        "enum": [
+                            "srB88"
+                        ]
+                    },
+                    "slug": {
+                        "enum": [
+                            "mub88"
+                        ]
+                    },
+                    "type": {
+                        "enum": [
+                            "exchange"
+                        ]
+                    }
+                }
+            },
+            {
+                "properties": {
+                    "name": {
+                        "enum": [
+                            "B88 re-fit"
+                        ]
+                    },
+                    "slug": {
+                        "enum": [
+                            "optb88"
+                        ]
+                    },
+                    "type": {
+                        "enum": [
+                            "exchange"
+                        ]
+                    }
+                }
+            },
+            {
+                "properties": {
+                    "name": {
+                        "enum": [
+                            "AK13"
+                        ]
+                    },
+                    "slug": {
+                        "enum": [
+                            "ak13"
+                        ]
+                    },
+                    "type": {
+                        "enum": [
+                            "exchange"
+                        ]
+                    }
+                }
+            },
+            {
+                "properties": {
+                    "name": {
+                        "enum": [
+                            "Perdew-Wang 1986"
+                        ]
+                    },
+                    "slug": {
+                        "enum": [
+                            "pw86"
+                        ]
+                    },
+                    "type": {
+                        "enum": [
+                            "exchange"
+                        ]
+                    }
+                }
+            },
+            {
+                "properties": {
+                    "name": {
+                        "enum": [
+                            "revised PW86"
+                        ]
+                    },
+                    "slug": {
+                        "enum": [
+                            "rpw86"
+                        ]
+                    },
+                    "type": {
+                        "enum": [
+                            "exchange"
+                        ]
+                    }
+                }
+            },
+            {
+                "properties": {
+                    "name": {
+                        "enum": [
+                            "Perdew-Wang 1991"
+                        ]
+                    },
+                    "slug": {
+                        "enum": [
+                            "pw91-x"
+                        ]
+                    },
+                    "type": {
+                        "enum": [
+                            "exchange"
+                        ]
+                    }
+                }
+            },
+            {
+                "properties": {
+                    "name": {
+                        "enum": [
+                            "modified PW91"
+                        ]
+                    },
+                    "slug": {
+                        "enum": [
+                            "mpw91"
+                        ]
+                    },
+                    "type": {
+                        "enum": [
+                            "exchange"
+                        ]
+                    }
+                }
+            },
+            {
+                "properties": {
+                    "name": {
+                        "enum": [
+                            "Gill 1996"
+                        ]
+                    },
+                    "slug": {
+                        "enum": [
+                            "g96"
+                        ]
+                    },
+                    "type": {
+                        "enum": [
+                            "exchange"
+                        ]
+                    }
+                }
+            },
+            {
+                "properties": {
+                    "name": {
+                        "enum": [
+                            "Handy-Cohen"
+                        ]
+                    },
+                    "slug": {
+                        "enum": [
+                            "optx"
+                        ]
+                    },
+                    "type": {
+                        "enum": [
+                            "exchange"
+                        ]
+                    }
+                }
+            },
+            {
+                "properties": {
+                    "name": {
+                        "enum": [
+                            "second order GGA"
+                        ]
+                    },
+                    "slug": {
+                        "enum": [
+                            "sogga"
+                        ]
+                    },
+                    "type": {
+                        "enum": [
+                            "exchange"
+                        ]
+                    }
+                }
+            },
+            {
+                "properties": {
+                    "name": {
+                        "enum": [
+                            "Becke 1997"
+                        ]
+                    },
+                    "slug": {
+                        "enum": [
+                            "b97-x"
+                        ]
+                    },
+                    "type": {
+                        "enum": [
+                            "exchange"
+                        ]
+                    }
+                }
+            },
+            {
+                "properties": {
+                    "name": {
+                        "enum": [
+                            "short range Becke 1997"
+                        ]
+                    },
+                    "slug": {
+                        "enum": [
+                            "srb97"
+                        ]
+                    },
+                    "type": {
+                        "enum": [
+                            "exchange"
+                        ]
+                    }
+                }
+            },
+            {
+                "properties": {
+                    "name": {
+                        "enum": [
+                            "PBE"
+                        ]
+                    },
+                    "slug": {
+                        "enum": [
+                            "pbe-c"
+                        ]
+                    },
+                    "type": {
+                        "enum": [
+                            "correlation"
+                        ]
+                    }
+                }
+            },
+            {
+                "properties": {
+                    "name": {
+                        "enum": [
+                            "srPBE"
+                        ]
+                    },
+                    "slug": {
+                        "enum": [
+                            "srpbe-c"
+                        ]
+                    },
+                    "type": {
+                        "enum": [
+                            "correlation"
+                        ]
+                    }
+                }
+            },
+            {
+                "properties": {
+                    "name": {
+                        "enum": [
+                            "PBEsol"
+                        ]
+                    },
+                    "slug": {
+                        "enum": [
+                            "pbesol-c"
+                        ]
+                    },
+                    "type": {
+                        "enum": [
+                            "correlation"
+                        ]
+                    }
+                }
+            },
+            {
+                "properties": {
+                    "name": {
+                        "enum": [
+                            "modified PBE"
+                        ]
+                    },
+                    "slug": {
+                        "enum": [
+                            "pbeloc"
+                        ]
+                    },
+                    "type": {
+                        "enum": [
+                            "correlation"
+                        ]
+                    }
+                }
+            },
+            {
+                "properties": {
+                    "name": {
+                        "enum": [
+                            "one-parameter progressive PBE"
+                        ]
+                    },
+                    "slug": {
+                        "enum": [
+                            "pbeop-c"
+                        ]
+                    },
+                    "type": {
+                        "enum": [
+                            "correlation"
+                        ]
+                    }
+                }
+            },
+            {
+                "properties": {
+                    "name": {
+                        "enum": [
+                            "one-parameter progressive B88"
+                        ]
+                    },
+                    "slug": {
+                        "enum": [
+                            "bop-c"
+                        ]
+                    },
+                    "type": {
+                        "enum": [
+                            "correlation"
+                        ]
+                    }
+                }
+            },
+            {
+                "properties": {
+                    "name": {
+                        "enum": [
+                            "vPBEc or regTPSS"
+                        ]
+                    },
+                    "slug": {
+                        "enum": [
+                            "vpbec"
+                        ]
+                    },
+                    "type": {
+                        "enum": [
+                            "correlation"
+                        ]
+                    }
+                }
+            },
+            {
+                "properties": {
+                    "name": {
+                        "enum": [
+                            "LYP"
+                        ]
+                    },
+                    "slug": {
+                        "enum": [
+                            "lyp"
+                        ]
+                    },
+                    "type": {
+                        "enum": [
+                            "correlation"
+                        ]
+                    }
+                }
+            },
+            {
+                "properties": {
+                    "name": {
+                        "enum": [
+                            "Perdew-Wang 1986"
+                        ]
+                    },
+                    "slug": {
+                        "enum": [
+                            "p86"
+                        ]
+                    },
+                    "type": {
+                        "enum": [
+                            "correlation"
+                        ]
+                    }
+                }
+            },
+            {
+                "properties": {
+                    "name": {
+                        "enum": [
+                            "P86 from VWN5"
+                        ]
+                    },
+                    "slug": {
+                        "enum": [
+                            "p86vwn5"
+                        ]
+                    },
+                    "type": {
+                        "enum": [
+                            "correlation"
+                        ]
+                    }
+                }
+            },
+            {
+                "properties": {
+                    "name": {
+                        "enum": [
+                            "Perdew-Wang 1991"
+                        ]
+                    },
+                    "slug": {
+                        "enum": [
+                            "pw91-c"
+                        ]
+                    },
+                    "type": {
+                        "enum": [
+                            "correlation"
+                        ]
+                    }
+                }
+            },
+            {
+                "properties": {
+                    "name": {
+                        "enum": [
+                            "Becke 1997"
+                        ]
+                    },
+                    "slug": {
+                        "enum": [
+                            "b97-c"
+                        ]
+                    },
+                    "type": {
+                        "enum": [
+                            "correlation"
+                        ]
+                    }
+                }
+            }
+        ]
+    },
+    "lda": {
+        "oneOf": [
+            {
+                "properties": {
+                    "name": {
+                        "enum": [
+                            "Slater"
+                        ]
+                    },
+                    "slug": {
+                        "enum": [
+                            "slater"
+                        ]
+                    },
+                    "type": {
+                        "enum": [
+                            "exchange"
+                        ]
+                    }
+                }
+            },
+            {
+                "properties": {
+                    "name": {
+                        "enum": [
+                            "Perdew-Zunger 1981"
+                        ]
+                    },
+                    "slug": {
+                        "enum": [
+                            "pz81"
+                        ]
+                    },
+                    "type": {
+                        "enum": [
+                            "correlation"
+                        ]
+                    }
+                }
+            },
+            {
+                "properties": {
+                    "name": {
+                        "enum": [
+                            "Perdew-Wang 1992"
+                        ]
+                    },
+                    "slug": {
+                        "enum": [
+                            "pw92"
+                        ]
+                    },
+                    "type": {
+                        "enum": [
+                            "correlation"
+                        ]
+                    }
+                }
+            },
+            {
+                "properties": {
+                    "name": {
+                        "enum": [
+                            "PW92RPA"
+                        ]
+                    },
+                    "slug": {
+                        "enum": [
+                            "pw92rpa"
+                        ]
+                    },
+                    "type": {
+                        "enum": [
+                            "correlation"
+                        ]
+                    }
+                }
+            },
+            {
+                "properties": {
+                    "name": {
+                        "enum": [
+                            "VWN1RPA"
+                        ]
+                    },
+                    "slug": {
+                        "enum": [
+                            "vwn1rpa"
+                        ]
+                    },
+                    "type": {
+                        "enum": [
+                            "correlation"
+                        ]
+                    }
+                }
+            },
+            {
+                "properties": {
+                    "name": {
+                        "enum": [
+                            "VWN1"
+                        ]
+                    },
+                    "slug": {
+                        "enum": [
+                            "vwn1"
+                        ]
+                    },
+                    "type": {
+                        "enum": [
+                            "correlation"
+                        ]
+                    }
+                }
+            },
+            {
+                "properties": {
+                    "name": {
+                        "enum": [
+                            "VWN2"
+                        ]
+                    },
+                    "slug": {
+                        "enum": [
+                            "vwn2"
+                        ]
+                    },
+                    "type": {
+                        "enum": [
+                            "correlation"
+                        ]
+                    }
+                }
+            },
+            {
+                "properties": {
+                    "name": {
+                        "enum": [
+                            "VWN3"
+                        ]
+                    },
+                    "slug": {
+                        "enum": [
+                            "vwn3"
+                        ]
+                    },
+                    "type": {
+                        "enum": [
+                            "correlation"
+                        ]
+                    }
+                }
+            },
+            {
+                "properties": {
+                    "name": {
+                        "enum": [
+                            "VWN4"
+                        ]
+                    },
+                    "slug": {
+                        "enum": [
+                            "vwn4"
+                        ]
+                    },
+                    "type": {
+                        "enum": [
+                            "correlation"
+                        ]
+                    }
+                }
+            },
+            {
+                "properties": {
+                    "name": {
+                        "enum": [
+                            "VWN5"
+                        ]
+                    },
+                    "slug": {
+                        "enum": [
+                            "vwn5"
+                        ]
+                    },
+                    "type": {
+                        "enum": [
+                            "correlation"
+                        ]
+                    }
+                }
+            },
+            {
+                "properties": {
+                    "name": {
+                        "enum": [
+                            "Liu-Parr"
+                        ]
+                    },
+                    "slug": {
+                        "enum": [
+                            "liu-parr"
+                        ]
+                    },
+                    "type": {
+                        "enum": [
+                            "correlation"
+                        ]
+                    }
+                }
+            },
+            {
+                "properties": {
+                    "name": {
+                        "enum": [
+                            "Proynov-Kong 2009"
+                        ]
+                    },
+                    "slug": {
+                        "enum": [
+                            "pk09"
+                        ]
+                    },
+                    "type": {
+                        "enum": [
+                            "correlation"
+                        ]
+                    }
+                }
+            },
+            {
+                "properties": {
+                    "name": {
+                        "enum": [
+                            "Wigner"
+                        ]
+                    },
+                    "slug": {
+                        "enum": [
+                            "wigner"
+                        ]
+                    },
+                    "type": {
+                        "enum": [
+                            "correlation"
+                        ]
+                    }
+                }
+            }
+        ]
+    },
+    "mgga": {
+        "oneOf": [
+            {
+                "properties": {
+                    "name": {
+                        "enum": [
+                            "TPSS"
+                        ]
+                    },
+                    "slug": {
+                        "enum": [
+                            "tpss-x"
+                        ]
+                    },
+                    "type": {
+                        "enum": [
+                            "exchange"
+                        ]
+                    }
+                }
+            },
+            {
+                "properties": {
+                    "name": {
+                        "enum": [
+                            "revised TPSS"
+                        ]
+                    },
+                    "slug": {
+                        "enum": [
+                            "revtpss-x"
+                        ]
+                    },
+                    "type": {
+                        "enum": [
+                            "exchange"
+                        ]
+                    }
+                }
+            },
+            {
+                "properties": {
+                    "name": {
+                        "enum": [
+                            "one-parameter TPSS"
+                        ]
+                    },
+                    "slug": {
+                        "enum": [
+                            "modtpss"
+                        ]
+                    },
+                    "type": {
+                        "enum": [
+                            "exchange"
+                        ]
+                    }
+                }
+            },
+            {
+                "properties": {
+                    "name": {
+                        "enum": [
+                            "oTPSS"
+                        ]
+                    },
+                    "slug": {
+                        "enum": [
+                            "otpss-x"
+                        ]
+                    },
+                    "type": {
+                        "enum": [
+                            "exchange"
+                        ]
+                    }
+                }
+            },
+            {
+                "properties": {
+                    "name": {
+                        "enum": [
+                            "regularized TPSS"
+                        ]
+                    },
+                    "slug": {
+                        "enum": [
+                            "regtpss"
+                        ]
+                    },
+                    "type": {
+                        "enum": [
+                            "exchange"
+                        ]
+                    }
+                }
+            },
+            {
+                "properties": {
+                    "name": {
+                        "enum": [
+                            "BLOC"
+                        ]
+                    },
+                    "slug": {
+                        "enum": [
+                            "bloc"
+                        ]
+                    },
+                    "type": {
+                        "enum": [
+                            "exchange"
+                        ]
+                    }
+                }
+            },
+            {
+                "properties": {
+                    "name": {
+                        "enum": [
+                            "PBE-GX"
+                        ]
+                    },
+                    "slug": {
+                        "enum": [
+                            "pbegx"
+                        ]
+                    },
+                    "type": {
+                        "enum": [
+                            "exchange"
+                        ]
+                    }
+                }
+            },
+            {
+                "properties": {
+                    "name": {
+                        "enum": [
+                            "Perdew-Kurt-Zupan-Blaha"
+                        ]
+                    },
+                    "slug": {
+                        "enum": [
+                            "pkzb-x"
+                        ]
+                    },
+                    "type": {
+                        "enum": [
+                            "exchange"
+                        ]
+                    }
+                }
+            },
+            {
+                "properties": {
+                    "name": {
+                        "enum": [
+                            "SCAN"
+                        ]
+                    },
+                    "slug": {
+                        "enum": [
+                            "scan-x"
+                        ]
+                    },
+                    "type": {
+                        "enum": [
+                            "exchange"
+                        ]
+                    }
+                }
+            },
+            {
+                "properties": {
+                    "name": {
+                        "enum": [
+                            "Tao-Mo"
+                        ]
+                    },
+                    "slug": {
+                        "enum": [
+                            "tm-x"
+                        ]
+                    },
+                    "type": {
+                        "enum": [
+                            "exchange"
+                        ]
+                    }
+                }
+            },
+            {
+                "properties": {
+                    "name": {
+                        "enum": [
+                            "TPSS"
+                        ]
+                    },
+                    "slug": {
+                        "enum": [
+                            "tpss-c"
+                        ]
+                    },
+                    "type": {
+                        "enum": [
+                            "correlation"
+                        ]
+                    }
+                }
+            },
+            {
+                "properties": {
+                    "name": {
+                        "enum": [
+                            "revTPSS"
+                        ]
+                    },
+                    "slug": {
+                        "enum": [
+                            "revtpss-c"
+                        ]
+                    },
+                    "type": {
+                        "enum": [
+                            "correlation"
+                        ]
+                    }
+                }
+            },
+            {
+                "properties": {
+                    "name": {
+                        "enum": [
+                            "TPSSloc"
+                        ]
+                    },
+                    "slug": {
+                        "enum": [
+                            "tpssloc"
+                        ]
+                    },
+                    "type": {
+                        "enum": [
+                            "correlation"
+                        ]
+                    }
+                }
+            },
+            {
+                "properties": {
+                    "name": {
+                        "enum": [
+                            "oTPSS"
+                        ]
+                    },
+                    "slug": {
+                        "enum": [
+                            "otpss-c"
+                        ]
+                    },
+                    "type": {
+                        "enum": [
+                            "correlation"
+                        ]
+                    }
+                }
+            },
+            {
+                "properties": {
+                    "name": {
+                        "enum": [
+                            "Becke 1995"
+                        ]
+                    },
+                    "slug": {
+                        "enum": [
+                            "B95"
+                        ]
+                    },
+                    "type": {
+                        "enum": [
+                            "correlation"
+                        ]
+                    }
+                }
+            },
+            {
+                "properties": {
+                    "name": {
+                        "enum": [
+                            "Proynov-Kong 2006"
+                        ]
+                    },
+                    "slug": {
+                        "enum": [
+                            "pk06"
+                        ]
+                    },
+                    "type": {
+                        "enum": [
+                            "correlation"
+                        ]
+                    }
+                }
+            },
+            {
+                "properties": {
+                    "name": {
+                        "enum": [
+                            "Perdew-Kurt-Zupan-Blaha"
+                        ]
+                    },
+                    "slug": {
+                        "enum": [
+                            "pkzb-c"
+                        ]
+                    },
+                    "type": {
+                        "enum": [
+                            "correlation"
+                        ]
+                    }
+                }
+            },
+            {
+                "properties": {
+                    "name": {
+                        "enum": [
+                            "SCAN"
+                        ]
+                    },
+                    "slug": {
+                        "enum": [
+                            "scan-c"
+                        ]
+                    },
+                    "type": {
+                        "enum": [
+                            "correlation"
+                        ]
+                    }
+                }
+            },
+            {
+                "properties": {
+                    "name": {
+                        "enum": [
+                            "Tao-Mo"
+                        ]
+                    },
+                    "slug": {
+                        "enum": [
+                            "tm-c"
+                        ]
+                    },
+                    "type": {
+                        "enum": [
+                            "correlation"
+                        ]
+                    }
+                }
+            }
+        ]
+    },
+    "nonLocalCorrelation": {
+        "oneOf": [
+            {
+                "properties": {
+                    "name": {
+                        "enum": [
+                            "VV10"
+                        ]
+                    },
+                    "slug": {
+                        "enum": [
+                            "vv10"
+                        ]
+                    },
+                    "type": {
+                        "enum": [
+                            "non-local correlation"
+                        ]
+                    }
+                }
+            },
+            {
+                "properties": {
+                    "name": {
+                        "enum": [
+                            "rVV10"
+                        ]
+                    },
+                    "slug": {
+                        "enum": [
+                            "rvv10"
+                        ]
+                    },
+                    "type": {
+                        "enum": [
+                            "non-local correlation"
+                        ]
+                    }
+                }
+            }
+        ]
+    }
+}

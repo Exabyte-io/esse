@@ -1,0 +1,23 @@
+{
+    "schemaId": "models-directory-pb-qm-dft-ksdft",
+    "$schema": "http://json-schema.org/draft-04/schema#",
+    "title": "Kohn-Sham density function theory schema",
+    "allOf": [
+        {
+            "$ref": "../dft.json"
+        }
+    ],
+    "properties": {
+        "type": {
+            "enum": [
+                {
+                    "name": "Kohn-Sham DFT",
+                    "slug": "ksdft"
+                }
+            ]
+        },
+        "tags": {
+            "$ref": "ksdft/tags.json"
+        }
+    }
+}

@@ -1,0 +1,21 @@
+{
+    "$schema": "http://json-schema.org/draft-04/schema#",
+    "allOf": [
+        {
+            "$ref": "../../../../../model/tags.json"
+        }
+    ],
+    "description": "Tags specific to DFT model type only.",
+    "items": {
+        "anyOf": [
+            {
+                "description": "QM definitions: scaling",
+                "$ref": "../../definitions.json#/scaling/3"
+            },
+            {
+                "description": "Universal definitions: user-adjustable",
+                "$ref": "../../../../definitions.json#/userAdjustable"
+            }
+        ]
+    }
+}

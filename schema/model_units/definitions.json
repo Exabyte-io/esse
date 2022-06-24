@@ -1,0 +1,13 @@
+{
+    "description": "Universal attributes applicable to most models",
+    "userAdjustable": {
+        "enum": [
+            "user-adjustable"
+        ]
+    },
+    "externalField": {
+        "enum":[
+            "external-field"
+        ]
+    }
+}
