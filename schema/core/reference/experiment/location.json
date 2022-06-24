@@ -1,5 +1,5 @@
 {
-    "schemaId": "core-reference-experiment-location",
+    "schemaId": "core/reference/experiment/location",
     "$schema": "http://json-schema.org/draft-04/schema#",
     "title": "location schema",
     "properties": {

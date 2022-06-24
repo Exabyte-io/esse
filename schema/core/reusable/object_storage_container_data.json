@@ -1,5 +1,5 @@
 {
-    "schemaId": "object-storage-container-data",
+    "schemaId": "core/reusable/object_storage_container_data",
     "$schema": "http://json-schema.org/draft-04/schema#",
     "title": "Object Storage Container Data",
     "properties": {

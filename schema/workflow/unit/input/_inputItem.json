@@ -1,5 +1,5 @@
 {
-    "schemaId": "workflow-unit-input-inputitem",
+    "schemaId": "workflow/unit/input/_inputItem",
     "$schema": "http://json-schema.org/draft-04/schema#",
     "title": "execution unit input item schema for physics-based simulation engines",
     "type": "object",

@@ -1,5 +1,5 @@
 {
-    "schemaId": "models-directory-unknown",
+    "schemaId": "model_units/unknown",
     "$schema": "http://json-schema.org/draft-04/schema#",
     "title": "unknown model schema",
     "description": "schema for cases when model is unknown",

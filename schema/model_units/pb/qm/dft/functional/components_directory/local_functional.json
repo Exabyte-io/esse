@@ -1,5 +1,5 @@
 {
-    "schemaId": "models-directory-pb-qm-dft-functional-components-directory-local-functional",
+    "schemaId": "model_units/pb/qm/dft/functional/components_directory/local_functional",
     "$schema": "http://json-schema.org/draft-04/schema#",
     "title": "local functional component schema",
     "allOf": [

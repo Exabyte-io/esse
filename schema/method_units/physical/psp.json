@@ -1,5 +1,5 @@
 {
-    "schemaId": "method-physical-psp",
+    "schemaId": "method_units/physical/psp",
     "$schema": "http://json-schema.org/draft-04/schema#",
     "description": "Core-valence separation by means of pseudopotentials (effective potential)",
     "allOf": [

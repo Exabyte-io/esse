@@ -1,5 +1,5 @@
 {
-    "schemaId": "method-unit-base-mathematical",
+    "schemaId": "method_units/unit_base_mathematical",
     "$schema": "http://json-schema.org/draft-04/schema#",
     "title": "mathematical unit method schema (base)",
     "allOf": [

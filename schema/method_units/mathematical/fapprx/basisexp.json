@@ -1,5 +1,5 @@
 {
-    "schemaId": "method-unit-fapprx-basisexp",
+    "schemaId": "method_units/mathematical/fapprx/basisexp",
     "$schema": "http://json-schema.org/draft-04/schema#",
     "description": "Basis expansion methods",
     "allOf": [

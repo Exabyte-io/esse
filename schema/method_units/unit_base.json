@@ -1,5 +1,5 @@
 {
-    "schemaId": "method-unit-base",
+    "schemaId": "method_units/unit_base",
     "$schema": "http://json-schema.org/draft-04/schema#",
     "title": "unit method schema (base)",
     "properties": {

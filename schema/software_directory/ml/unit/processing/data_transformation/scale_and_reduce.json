@@ -1,5 +1,5 @@
 {
-    "schemaId": "software-directory-ml-unit-processing-data-transformation-scale-and-reduce",
+    "schemaId": "software_directory/ml/unit/processing/data_transformation/scale_and_reduce",
     "$schema": "http://json-schema.org/draft-04/schema#",
     "title": "scale and reduce unit schema",
     "allOf": [

@@ -1,5 +1,5 @@
 {
-    "schemaId": "method-derived-qm-rmm-diis",
+    "schemaId": "method_units/physical/rmm_diis",
     "$schema": "http://json-schema.org/draft-04/schema#",
     "title": "Residual minimization method using direct inversion of the iterative subspace (RMM-DIIS) schema",
     "description": "Relevant publications: 10.1016/0009-2614(80)80396-4, 10.1088/0305-4470/18/9/018",

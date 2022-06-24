@@ -1,5 +1,5 @@
 {
-    "schemaId": "properties-directory-file-content",
+    "schemaId": "properties_directory/non-scalar/file_content",
     "$schema": "http://json-schema.org/draft-04/schema#",
     "title": "file_content",
     "allof": [

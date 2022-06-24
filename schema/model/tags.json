@@ -1,5 +1,5 @@
 {
-    "schemaId": "model-tags",
+    "schemaId": "model/tags",
     "$schema": "http://json-schema.org/draft-04/schema#",
     "title": "model tags schema",
     "description": "Descriptive (searchable) attributes of model, generic. Example: user-adjustable.",

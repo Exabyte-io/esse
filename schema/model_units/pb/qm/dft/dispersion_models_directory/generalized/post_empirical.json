@@ -1,5 +1,5 @@
 {
-    "schemaId": "models-directory-pb-qm-dft-dispersion-models-directory-generalized-post-empirical",
+    "schemaId": "model_units/pb/qm/dft/dispersion_models_directory/generalized/post_empirical",
     "$schema": "http://json-schema.org/draft-04/schema#",
     "title": "empirical dispersion model applied post-SCF",
     "allOf": [

@@ -1,5 +1,5 @@
 {
-    "schemaId": "methods-directory-pw-psp",
+    "schemaId": "methods_directory/pw_psp",
     "$schema": "http://json-schema.org/draft-04/schema#",
     "title": "planewave-pseudopotential method schema",
     "allOf": [

@@ -1,5 +1,5 @@
 {
-    "schemaId": "length",
+    "schemaId": "core/reusable/length",
     "$schema": "http://json-schema.org/draft-04/schema#",
     "description": "Length schema",
     "properties": {

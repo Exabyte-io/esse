@@ -1,5 +1,5 @@
 {
-    "schemaId": "methods-directory-cg-diag",
+    "schemaId": "methods_directory/cg_diag",
     "$schema": "http://json-schema.org/draft-04/schema#",
     "title": "conjugate gradient diagonalization method schema",
     "allOf": [

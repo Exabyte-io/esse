@@ -1,5 +1,5 @@
 {
-    "schemaId": "system-tags",
+    "schemaId": "system/tags",
     "$schema": "http://json-schema.org/draft-04/schema#",
     "title": "entity tags schema",
     "properties": {

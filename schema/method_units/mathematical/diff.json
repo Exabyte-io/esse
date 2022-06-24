@@ -1,5 +1,5 @@
 {
-    "schemaId": "method-unit-diff",
+    "schemaId": "method_units/mathematical/diff",
     "$schema": "http://json-schema.org/draft-04/schema#",
     "description": "Numerical differentiation methods",
     "allOf": [

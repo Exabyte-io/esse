@@ -1,5 +1,5 @@
 {
-    "schemaId": "properties-directory-scalar-total-force",
+    "schemaId": "properties_directory/scalar/total_force",
     "$schema": "http://json-schema.org/draft-04/schema#",
     "title": "total forces schema",
     "allOf": [

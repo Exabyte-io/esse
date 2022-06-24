@@ -1,5 +1,5 @@
 {
-    "schemaId": "properties-directory-scalar-surface-energy",
+    "schemaId": "properties_directory/scalar/surface_energy",
     "$schema": "http://json-schema.org/draft-04/schema#",
     "title": "surface energy schema",
     "allOf": [

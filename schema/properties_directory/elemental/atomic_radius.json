@@ -1,5 +1,5 @@
 {
-    "schemaId": "properties-directory-elemental-atomic-radius",
+    "schemaId": "properties_directory/elemental/atomic_radius",
     "$schema": "http://json-schema.org/draft-04/schema#",
     "title": "atomic radius",
     "description": "atomic radius",

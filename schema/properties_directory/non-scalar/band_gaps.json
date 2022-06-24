@@ -1,5 +1,5 @@
 {
-    "schemaId": "properties-directory-non-scalar-band-gaps",
+    "schemaId": "properties_directory/non-scalar/band_gaps",
     "$schema": "http://json-schema.org/draft-04/schema#",
     "title": "band gaps schema",
     "description": "contains band gap values",

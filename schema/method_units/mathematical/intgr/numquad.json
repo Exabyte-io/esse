@@ -1,5 +1,5 @@
 {
-    "schemaId": "method-unit-intgr-numquad",
+    "schemaId": "method_units/mathematical/intgr/numquad",
     "$schema": "http://json-schema.org/draft-04/schema#",
     "description": "Methods for the numerical quadrature",
     "allOf": [

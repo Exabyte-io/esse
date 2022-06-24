@@ -1,5 +1,5 @@
 {
-    "schemaId": "core-primitive-graph-base-node",
+    "schemaId": "core/primitive/graph/base_node",
     "$schema": "http://json-schema.org/draft-04/schema#",
     "title": "basic node schema (directed acyclic graph)",
     "type": "object",
