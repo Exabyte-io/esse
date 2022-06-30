@@ -1,6 +1,15 @@
 {
+    "_id": "K3McGkqXh28HJ775m",
     "name": "exabyteml",
     "shortName": "ml",
     "summary": "exabyte machine learning engine",
-    "version": "0.2.0"
+    "version": "0.2.0",
+    "isDefault": true,
+    "owner": {
+        "...": "include(../../system/owner.json)"
+    },
+    "schemaVersion": "0.2.0",
+    "creator": {
+        "...": "include(../../system/creator.json)"
+    }
 }

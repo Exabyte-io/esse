@@ -1,6 +1,15 @@
 {
+    "_id": "K3McGkqXh28HJ775m",
     "name": "NWChem",
     "summary": "NWChem: a comprehensive and scalable open-source solution for large scale molecular simulations",
     "version": "6.6",
-    "exec": "nwchem"
+    "exec": "nwchem",
+    "isDefault": true,
+    "owner": {
+        "...": "include(../../system/owner.json)"
+    },
+    "schemaVersion": "0.2.0",
+    "creator": {
+        "...": "include(../../system/creator.json)"
+    }
 } 

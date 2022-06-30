@@ -1,6 +1,15 @@
 {
+    "_id": "K3McGkqXh28HJ775m",
     "name": "vasp",
     "shortName": "vasp",
     "summary": "vienna ab-initio simulation package",
-    "version": "5.3.5"
+    "version": "5.3.5",
+    "isDefault": true,
+    "owner": {
+        "...": "include(../../system/owner.json)"
+    },
+    "schemaVersion": "0.2.0",
+    "creator": {
+        "...": "include(../../system/creator.json)"
+    }
 }

@@ -3,6 +3,16 @@
     "$schema": "http://json-schema.org/draft-04/schema#",
     "title": "application schema (base)",
     "type": "object",
+    "allOf": [
+        {
+            "description": "entity schema",
+            "$ref": "../system/defaultable.json"
+        },
+        {
+            "description": "entity schema",
+            "$ref": "../system/entity.json"
+        }
+    ],
     "properties": {
         "name": {
             "description": "The name of the application. e.g. espresso",

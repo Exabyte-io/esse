@@ -1,8 +1,17 @@
 {
+    "_id": "K3McGkqXh28HJ775m",
     "exec": "jupyter",
     "flavor": "notebook",
     "name": "jupyterLab",
     "shortName": "jl",
     "summary": "Jupyter Lab",
-    "version": "0.33.12"
+    "version": "0.33.12",
+    "isDefault": true,
+    "owner": {
+        "...": "include(../../system/owner.json)"
+    },
+    "schemaVersion": "0.2.0",
+    "creator": {
+        "...": "include(../../system/creator.json)"
+    }
 }

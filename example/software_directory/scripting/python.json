@@ -1,8 +1,17 @@
 {
+    "_id": "K3McGkqXh28HJ775m",
     "exec": "python",
     "flavor": "python2",
     "name": "python",
     "shortName": "py",
     "summary": "Python Script",
-    "version": "2.7.5"
+    "version": "2.7.5",
+    "isDefault": true,
+    "owner": {
+        "...": "include(../../system/owner.json)"
+    },
+    "schemaVersion": "0.2.0",
+    "creator": {
+        "...": "include(../../system/creator.json)"
+    }
 }
