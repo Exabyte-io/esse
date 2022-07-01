@@ -17,5 +17,12 @@
     "schemaVersion": "0.2.0",
     "slug": "exadmin-default",
     "tags": [],
-    "updatedAt": "2019-01-04T00:12:37.316Z"
+    "updatedAt": "2019-01-04T00:12:37.316Z",
+    "clusterBasedChargeRates": [
+        {
+            "timestamp": 233455,
+            "rate": 10,
+            "hostname": "hostame.com"
+        }
+    ]
 }

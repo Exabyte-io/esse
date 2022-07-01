@@ -7,6 +7,10 @@
         {
             "description": "defaultable entity schema",
             "$ref": "system/defaultable.json"
+        },
+        {
+            "description": "defaultable entity schema",
+            "$ref": "system/status.json"
         }
     ],
     "properties": {
@@ -14,14 +18,26 @@
             "description": "project GID",
             "type": "number"
         },
-        "chargeRate": {
-            "description": "project charge rate",
-            "type": "object",
-            "properties": {
-                "rate": {
-                    "type": "number"
-                }
+        "clusterBasedChargeRates": {
+            "type": "array",
+            "items": {
+                "type": "object",
+                "properties": {
+                    "timestamp": {
+                        "type": "number"
+                    },
+                    "rate": {
+                        "type": "number"
+                    },
+                    "hostname": {
+                        "type": "string"
+                    }
+                },
+                "required": ["timestamp", "rate", "hostname"]
             }
+        },
+        "isExternal": {
+            "type": "boolean"
         }
     },
     "required": [
