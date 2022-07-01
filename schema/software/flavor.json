@@ -6,6 +6,14 @@
     "allOf": [
         {
             "$ref": "../workflow/unit/runtime/runtime_items.json"
+        },
+        {
+            "description": "entity schema",
+            "$ref": "../system/defaultable.json"
+        },
+        {
+            "description": "entity schema",
+            "$ref": "../system/entity.json"
         }
     ],
     "properties": {

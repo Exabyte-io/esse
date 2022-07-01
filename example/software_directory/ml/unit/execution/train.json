@@ -3,8 +3,17 @@
         "...": "include(../../exabyteml.json)"
     },
     "flavor": {
+        "_id": "K3McGkqXh28HJ775m",
         "executableId": "4987JFJ3kKbwvFSG7",
-        "name": "train"
+        "name": "train",
+        "isDefault": true,
+        "owner": {
+            "...": "include(../../../../system/owner.json)"
+        },
+        "schemaVersion": "0.2.0",
+        "creator": {
+            "...": "include(../../../../system/creator.json)"
+        }
     },
     "flowchartId": "train",
     "head": true,
