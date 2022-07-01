@@ -31,6 +31,9 @@
             "items": {
                 "$ref": "../workflow/unit/input/_inputItemId.json"
             }
+        },
+        "isMultiMaterial": {
+            "type": "boolean"
         }
     },
     "required": [
