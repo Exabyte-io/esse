@@ -44,8 +44,6 @@
     },
     "required": [
         "_id",
-        "schemaVersion",
-        "owner",
-        "creator"
+        "schemaVersion"
     ]
 }
