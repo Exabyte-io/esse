@@ -11,6 +11,10 @@
         {
             "description": "defaultable entity schema",
             "$ref": "system/status.json"
+        },
+        {
+            "description": "defaultable entity schema",
+            "$ref": "system/entity.json"
         }
     ],
     "properties": {
