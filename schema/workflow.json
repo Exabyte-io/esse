@@ -24,7 +24,7 @@
         },
         "compute": {
             "description": "compute parameters",
-            "$ref": "workflow/compute.json"
+            "$ref": "job/compute.json"
         },
         "isMultiMaterial": {
             "type": "boolean"
