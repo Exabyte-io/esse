@@ -14,6 +14,24 @@
         }
     ],
     "properties": {
+        "_id": {
+            "description": "workflow identity",
+            "type": "string"
+        },
+        "name": {
+            "description": "workflow name",
+            "type": "string"
+        },
+        "compute": {
+            "description": "compute parameters",
+            "$ref": "workflow/compute.json"
+        },
+        "isMultiMaterial": {
+            "type": "boolean"
+        },
+        "systemName": {
+            "type": "string"
+        },
         "properties": {
             "description": "Array of characteristic properties calculated by this workflow (TODO: add enums)",
             "type": "array",
@@ -49,6 +67,24 @@
             "type": "array",
             "items": {
                 "type": "object"
+            }
+        },
+        "isOutdated" : {
+            "type": "boolean"
+        },
+        "history": {
+            "type": "array",
+            "items": {
+                "type": "object",
+                "properties": {
+                    "id": {
+                        "type": "string"
+                    },
+                    "revision": {
+                        "type": "number"
+                    }
+                },
+                "required": ["id", "revision"]
             }
         }
     },
