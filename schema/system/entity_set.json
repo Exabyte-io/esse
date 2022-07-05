@@ -1,0 +1,36 @@
+{
+    "schemaId": "system-entity-set",
+    "$schema": "http://json-schema.org/draft-04/schema#",
+    "title": "entity set schema",
+    "properties": {
+        "isEntitySet": {
+            "type": "boolean"
+        },
+        "entitySetType": {
+            "type": "string"
+        },
+        "entitySetSubType": {
+            "type": "string"
+        },
+        "inSet": {
+            "type": "array",
+            "items": {
+                "type": "object",
+                "allOf": [
+                    {
+                        "$ref": "entity_reference.json"
+                    }
+                ],
+                "properties": {
+                    "type": {
+                        "type": "string"
+                    },
+                    "index": {
+                        "type": "string"
+                    }
+                }
+            },
+            "default": []
+        }
+    }
+}

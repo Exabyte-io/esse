@@ -4,6 +4,10 @@
     "title": "entity schema",
     "allOf": [
         {
+            "description": "entity tags schema",
+            "$ref": "entity_set.json"
+        },
+        {
             "description": "entity timestampable schema",
             "$ref": "timestampable.json"
         },
@@ -33,6 +37,10 @@
             "description": "entity description",
             "type": "string"
         },
+        "descriptionObject": {
+            "description": "entity description",
+            "type": "object"
+        },
         "owner": {
             "description": "Subset of the full information about the account who owns the entity.",
             "$ref": "entity_reference.json"
@@ -40,6 +48,12 @@
         "creator": {
             "description": "Subset of the full information about the user who created the entity.",
             "$ref": "entity_reference.json"
+        },
+        "metadata": {
+            "type": "object"
+        },
+        "sharedCount" : {
+            "type": "number"
         }
     }
 }
