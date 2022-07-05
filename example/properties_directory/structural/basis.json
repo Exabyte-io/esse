@@ -1,13 +1,16 @@
 {
-    "bonds": [
+    "coordinates": [
         {
-            "...": "include(basis/bonds.json)"
+            "...": "include(basis/atomic_coordinates.json)"
+        },
+        {
+            "...": "include(basis/atomic_coordinates.json)"
         }
     ],
-    "coordinates": {
-        "...": "include(basis/atomic_coordinates.json)"
-    },
     "elements": [
+        {
+            "...": "include(basis/atomic_elements.json)"
+        },
         {
             "...": "include(basis/atomic_elements.json)"
         }

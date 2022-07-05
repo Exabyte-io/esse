@@ -5,14 +5,19 @@
     "type": "object",
     "properties": {
         "name": {
-            "type": "string",
-            "default": "basis"
+            "type": "string"
         },
         "elements": {
-            "$ref": "basis/atomic_elements.json"
+            "type":"array",
+            "items": {
+                "$ref": "basis/atomic_elements.json"
+            }
         },
         "coordinates": {
-            "$ref": "basis/atomic_coordinates.json"
+            "type":"array",
+            "items": {
+                "$ref": "basis/atomic_coordinates.json"
+            }
         },
         "units": {
             "$ref": "../../definitions/units.json#/coordinates"
