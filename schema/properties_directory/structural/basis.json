@@ -4,18 +4,25 @@
     "title": "basis schema",
     "type": "object",
     "properties": {
+        "name": {
+            "type": "string",
+            "default": "basis"
+        },
         "elements": {
             "$ref": "basis/atomic_elements.json"
         },
         "coordinates": {
             "$ref": "basis/atomic_coordinates.json"
         },
-        "bonds": {
-            "$ref": "basis/bonds.json"
+        "units": {
+            "description": "Units of atoms' coordinates. TODO: add enum from code.js ATOMIC_COORD_UNITS constant",
+            "type": "string",
+            "default": "crystal"
         }
     },
     "required": [
         "elements",
-        "coordinates"
+        "coordinates",
+        "units"
     ]
 }
