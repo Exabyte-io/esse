@@ -3,6 +3,11 @@
     "$schema": "http://json-schema.org/draft-04/schema#",
     "title": "workflow unit schema",
     "type": "object",
+    "allOf": [
+        {
+            "$ref": "../system/tags.json"
+        }
+    ],
     "properties": {
         "type": {
             "description": "type of the unit",
@@ -38,9 +43,6 @@
         "enableRender": {
             "description": "Whether Rupy should attempt to use Jinja templating to add context variables into the unit",
             "type": "boolean"
-        },
-        "tags": {
-            "$ref": "../system/tags.json"
         }
     },
     "required": [
