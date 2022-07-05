@@ -15,9 +15,7 @@
             "$ref": "basis/atomic_coordinates.json"
         },
         "units": {
-            "description": "Units of atoms' coordinates. TODO: add enum from code.js ATOMIC_COORD_UNITS constant",
-            "type": "string",
-            "default": "crystal"
+            "$ref": "../../definitions/units.json#/coordinates"
         }
     },
     "required": [

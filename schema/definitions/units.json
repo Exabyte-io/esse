@@ -98,5 +98,12 @@
             "m/mol",
             "a.u."
         ]
+    },
+    "coordinates": {
+        "enum": [
+            "crystal",
+            "cartesian"
+        ],
+        "default": "crystal"
     }
 }
