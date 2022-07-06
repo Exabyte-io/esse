@@ -1,0 +1,14 @@
+{
+    "schemaId": "system-bank",
+    "$schema": "http://json-schema.org/draft-04/schema#",
+    "title": "bankable schema",
+    "properties": {
+        "hash": {
+            "description": "Hash string which is calculated based on the meaningful fields of the entity. Used to identify equal entities.",
+            "type": "string"
+        }
+    },
+    "required": [
+        "hash"
+    ]
+}

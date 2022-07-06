@@ -1,0 +1,15 @@
+{
+    "schemaId": "system-bank-entity",
+    "$schema": "http://json-schema.org/draft-04/schema#",
+    "title": "bankable entity schema",
+    "allOf": [
+        {
+            "description": "entity schema",
+            "$ref": "entity.json"
+        },
+        {
+            "description": "bankable schema",
+            "$ref": "bank.json"
+        }
+    ]
+}

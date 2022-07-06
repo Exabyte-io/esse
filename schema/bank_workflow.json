@@ -5,8 +5,16 @@
     "type": "object",
     "allOf": [
         {
-            "description": "workflow schema",
-            "$ref": "workflow.json"
+            "description": "bank entity schema",
+            "$ref": "system/bank_entity.json"
+        },
+        {
+            "description": "defaultable entity schema",
+            "$ref": "system/defaultable.json"
+        },
+        {
+            "description": "base workflow properties schema",
+            "$ref": "workflow/properties.json"
         }
     ],
     "properties": {
