@@ -14,7 +14,7 @@
         },
         "compute": {
             "description": "compute parameters",
-            "$ref": "job/compute.json"
+            "$ref": "../job/compute.json"
         },
         "isMultiMaterial": {
             "type": "boolean"
