@@ -5,8 +5,8 @@
     "type": "object",
     "allOf": [
         {
-            "description": "entity schema",
-            "$ref": "system/entity.json"
+            "description": "workflow schema",
+            "$ref": "workflow.json"
         }
     ],
     "properties": {
