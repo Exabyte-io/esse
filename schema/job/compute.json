@@ -66,10 +66,7 @@
                     "description": "Job's identity in RMS. e.g. 1234.master-1-staging.exabyte.io",
                     "type": "string"
                 }
-            },
-            "required": [
-                "fqdn"
-            ]
+            }
         },
         "errors": {
             "description": "Computation error. Optional. Appears only if something happens on jobs execution.",
