@@ -1,0 +1,6 @@
+{
+    "...": "include(workflow.json)",
+    "creatorAccount": {
+        "...": "include(system/owner.json)"
+    }
+}

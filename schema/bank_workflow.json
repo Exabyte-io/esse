@@ -1,0 +1,17 @@
+{
+    "schemaId": "bank-workflow",
+    "$schema": "http://json-schema.org/draft-04/schema#",
+    "title": "bank workflow schema",
+    "type": "object",
+    "allOf": [
+        {
+            "description": "entity schema",
+            "$ref": "system/entity.json"
+        }
+    ],
+    "properties": {
+        "creatorAccount": {
+            "$ref": "system/entity_reference.json"
+        }
+    }
+}

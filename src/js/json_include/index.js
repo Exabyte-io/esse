@@ -26,11 +26,18 @@ export class JSONInclude {
      */
     _walkObjectToInclude(obj, dirpath) {
         if (isInstanceOf(obj, "Object")) {
-            let isIncludeExp = false;
+            Object.keys(obj).forEach((key) => {
+                if (
+                    key !== INCLUDE_KEY &&
+                    (isInstanceOf(obj[key], "Object") || isInstanceOf(obj[key], "Array"))
+                ) {
+                    this._walkObjectToInclude(obj[key], dirpath);
+                }
+            });
             if (INCLUDE_KEY in obj) {
                 const includeName = this._getIncludeFileName(obj[INCLUDE_KEY]);
                 if (includeName) {
-                    isIncludeExp = true;
+                    // isIncludeExp = true;
                     delete obj[INCLUDE_KEY];
                     if (!(includeName in this.JSON_INCLUDE_CACHE)) {
                         const filePath = path.join(dirpath, includeName);
@@ -42,12 +49,6 @@ export class JSONInclude {
                     });
                 }
             }
-            if (isIncludeExp) return;
-            Object.keys(obj).forEach((key) => {
-                if (isInstanceOf(obj[key], "Object") || isInstanceOf(obj[key], "Array")) {
-                    this._walkObjectToInclude(obj[key], dirpath);
-                }
-            });
         } else if (isInstanceOf(obj, "Array")) {
             for (let i = 0; i < obj.length; i++) {
                 if (isInstanceOf(obj[i], "Object") || isInstanceOf(obj[i], "Array")) {
