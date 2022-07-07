@@ -1,0 +1,26 @@
+{
+    "schemaId": "entity-set",
+    "$schema": "http://json-schema.org/draft-04/schema#",
+    "title": "entity set schema",
+    "allOf": [
+        {
+            "$ref": "system/entity_set.json"
+        },
+        {
+            "$ref": "system/name.json"
+        },
+        {
+            "$ref": "system/tags.json"
+        }
+    ],
+    "properties": {
+        "owner": {
+            "description": "Subset of the full information about the account who owns the entity.",
+            "$ref": "system/entity_reference.json"
+        },
+        "creator": {
+            "description": "Subset of the full information about the user who created the entity.",
+            "$ref": "system/entity_reference.json"
+        }
+    }
+}
