@@ -9,6 +9,14 @@
             "$ref": "system/bank_entity.json"
         },
         {
+            "description": "bankable entity schema",
+            "$ref": "system/bankable_entity.json"
+        },
+        {
+            "description": "entity schema",
+            "$ref": "system/defaultable.json"
+        },
+        {
             "description": "entity schema",
             "$ref": "properties_directory/material.json"
         }
