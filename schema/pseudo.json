@@ -1,0 +1,80 @@
+{
+    "schemaId": "pseudo",
+    "$schema": "http://json-schema.org/draft-04/schema#",
+    "title": "pseudo schema",
+    "allOf": [
+        {
+            "description": "entity schema",
+            "$ref": "system/entity.json"
+        }
+    ],
+    "properties": {
+        "type": {
+            "type": "string"
+        },
+        "source": {
+            "type": "string"
+        },
+        "version": {
+            "type": "string"
+        },
+        "textHeading": {
+            "type": "string"
+        },
+        "path": {
+            "type": "string"
+        },
+        "filename": {
+            "type": "string"
+        },
+        "apps": {
+            "type": "array",
+            "items": {
+                "type": "string"
+            }
+        },
+        "element": {
+            "type": "string"
+        },
+        "exchangeCorrelation": {
+            "type": "object",
+            "properties": {
+                "functional": {
+                    "type": "string"
+                },
+                "approximation": {
+                    "type": "string"
+                }
+            },
+            "required": ["functional", "approximation"]
+        },
+        "timestamp": {
+            "type": "number"
+        },
+        "hash": {
+            "type": "string"
+        },
+        "characteristics": {
+            "type": "array",
+            "items": {
+                "type": "object"
+            }
+        },
+        "storage": {
+            "type": "object",
+            "properties": {
+                "container": {
+                    "type": "string"
+                },
+                "provider": {
+                    "type": "string"
+                },
+                "url": {
+                    "type": "string"
+                }
+            },
+            "required": ["container", "provider"]
+        }
+    },
+    "required": ["type", "source", "apps", "element", "exchangeCorrelation"]
+}

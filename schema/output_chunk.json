@@ -1,5 +1,5 @@
 {
-    "schemaId": "output-chunk-schema",
+    "schemaId": "output-chunk",
     "$schema": "http://json-schema.org/draft-04/schema#",
     "title": "output chunk schema",
     "properties": {
