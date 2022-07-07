@@ -10,6 +10,10 @@
         },
         {
             "description": "entity schema",
+            "$ref": "system/entity.json"
+        },
+        {
+            "description": "entity schema",
             "$ref": "system/defaultable.json"
         },
         {
