@@ -24,6 +24,7 @@
     },
     "required": [
         "filename",
-        "text"
+        "text",
+        "hash"
     ]
 }
