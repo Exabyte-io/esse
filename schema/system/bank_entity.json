@@ -4,12 +4,45 @@
     "title": "bankable entity schema",
     "allOf": [
         {
-            "description": "entity schema",
-            "$ref": "entity.json"
+            "description": "entity tags schema",
+            "$ref": "entity_base.json"
+        },
+        {
+            "description": "entity name schema",
+            "$ref": "name.json"
+        },
+        {
+            "description": "entity timestampable schema",
+            "$ref": "timestampable.json"
+        },
+        {
+            "description": "entity removable schema",
+            "$ref": "soft_removable.json"
         },
         {
             "description": "bankable schema",
             "$ref": "bank.json"
         }
-    ]
+    ],
+    "properties": {
+        "_id": {
+            "description": "entity identity",
+            "type": "string"
+        },
+        "schemaVersion": {
+            "description": "entity's schema version. Used to distinct between different schemas.",
+            "type": "string"
+        },
+        "description": {
+            "description": "entity description",
+            "type": "string"
+        },
+        "descriptionObject": {
+            "description": "entity description",
+            "type": "object"
+        },
+        "creatorAccount": {
+            "$ref": "entity_reference.json"
+        }
+    }
 }

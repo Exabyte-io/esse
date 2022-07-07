@@ -16,10 +16,5 @@
             "description": "base workflow properties schema",
             "$ref": "workflow/properties.json"
         }
-    ],
-    "properties": {
-        "creatorAccount": {
-            "$ref": "system/entity_reference.json"
-        }
-    }
+    ]
 }

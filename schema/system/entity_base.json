@@ -1,0 +1,23 @@
+{
+    "schemaId": "system-entity-base",
+    "$schema": "http://json-schema.org/draft-04/schema#",
+    "title": "base entity schema",
+    "properties": {
+        "_id": {
+            "description": "entity identity",
+            "type": "string"
+        },
+        "schemaVersion": {
+            "description": "entity's schema version. Used to distinct between different schemas.",
+            "type": "string"
+        },
+        "description": {
+            "description": "entity description",
+            "type": "string"
+        },
+        "descriptionObject": {
+            "description": "entity description",
+            "type": "object"
+        }
+    }
+}

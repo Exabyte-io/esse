@@ -5,6 +5,10 @@
     "allOf": [
         {
             "description": "entity tags schema",
+            "$ref": "entity_base.json"
+        },
+        {
+            "description": "entity tags schema",
             "$ref": "entity_set.json"
         },
         {
@@ -25,22 +29,6 @@
         }
     ],
     "properties": {
-        "_id": {
-            "description": "entity identity",
-            "type": "string"
-        },
-        "schemaVersion": {
-            "description": "entity's schema version. Used to distinct between different schemas.",
-            "type": "string"
-        },
-        "description": {
-            "description": "entity description",
-            "type": "string"
-        },
-        "descriptionObject": {
-            "description": "entity description",
-            "type": "object"
-        },
         "owner": {
             "description": "Subset of the full information about the account who owns the entity.",
             "$ref": "entity_reference.json"
