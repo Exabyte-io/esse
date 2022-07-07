@@ -1,0 +1,23 @@
+{
+    "schemaId": "output-chunk-schema",
+    "$schema": "http://json-schema.org/draft-04/schema#",
+    "title": "output chunk schema",
+    "properties": {
+        "chunk": {
+            "type": "string"
+        },
+        "jobId": {
+            "type": "string"
+        },
+        "unitFlowchartId": {
+            "type": "string"
+        },
+        "order": {
+            "type": "number"
+        },
+        "repetition": {
+            "type": "string"
+        }
+    },
+    "required": ["chunk", "jobId", "unitFlowchartId", "order"]
+}
