@@ -1,0 +1,21 @@
+{
+    "schemaId": "bank-material",
+    "$schema": "http://json-schema.org/draft-04/schema#",
+    "title": "bank workflow schema",
+    "type": "object",
+    "allOf": [
+        {
+            "description": "bank entity schema",
+            "$ref": "system/bank_entity.json"
+        },
+        {
+            "description": "entity schema",
+            "$ref": "properties_directory/material.json"
+        }
+    ],
+    "properties": {
+        "conventional": {
+            "type": "object"
+        }
+    }
+}

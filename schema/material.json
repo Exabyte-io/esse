@@ -10,29 +10,13 @@
         {
             "description": "entity schema",
             "$ref": "system/defaultable.json"
+        },
+        {
+            "description": "entity schema",
+            "$ref": "properties_directory/material.json"
         }
     ],
     "properties": {
-        "formula": {
-            "description": "reduced chemical formula",
-            "type": "string"
-        },
-        "unitCellFormula": {
-            "description": "chemical formula based on the number of atoms of each element in the supercell",
-            "type": "string"
-        },
-        "basis": {
-            "description": "object containing an array of elements and coordinates in the supercell",
-            "$ref": "properties_directory/structural/basis.json"
-        },
-        "lattice": {
-            "description": "object defining the lattice cell size and shape",
-            "$ref": "properties_directory/structural/lattice.json"
-        },
-        "derivedProperties": {
-            "description": "object defining the lattice cell size and shape",
-            "$ref": "properties_directory/derived_properties.json"
-        },
         "external": {
             "description": "information about external sources of this material",
             "type": "array",
@@ -40,25 +24,9 @@
                 "$ref": "system/database_source.json"
             }
         },
-        "fileSource": {
+        "src": {
             "description": "File information if material was exported from POSCAR, XYZ or UPF file.",
             "$ref": "system/file_source.json"
-        },
-        "scaledHash": {
-            "description": "Hash string for a scaled structure with lattice vector a set to 1 (eg. for materials under pressure).",
-            "type": "string"
-        },
-        "icsdId": {
-            "description": "Corresponding ICSD id of the material",
-            "type": "integer"
-        },
-        "isNonPeriodic": {
-            "description": "Whether to work in the finite molecular picture (usually with atomic orbital basis)",
-            "type": "boolean"
         }
-    },
-    "required": [
-        "basis",
-        "lattice"
-    ]
+    }
 }
