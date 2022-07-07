@@ -1,0 +1,45 @@
+{
+    "schemaId": "task",
+    "$schema": "http://json-schema.org/draft-04/schema#",
+    "title": "task schema",
+    "allOf": [
+        {
+            "description": "entity schema",
+            "$ref": "system/entity.json"
+        }
+    ],
+    "properties": {
+        "type": {
+            "type": "string",
+            "enum": ["externalJobUpload"]
+        },
+        "status": {
+            "type": "string",
+            "enum": ["active", "finished", "error"]
+        },
+        "error": {
+            "type": "object",
+            "properties": {
+                "domain": {
+                    "type": "string",
+                    "enum": [
+                        "rupy", "alfred", "celim", "webapp"
+                    ]
+                },
+                "reason": {
+                    "type": "string"
+                },
+                "message": {
+                    "type": "string"
+                },
+                "traceback": {
+                    "type": "string"
+                }
+            }
+        },
+        "config": {
+            "type": "object"
+        }
+    },
+    "required": ["type", "status", "config"]
+}
