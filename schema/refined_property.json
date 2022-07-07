@@ -1,0 +1,26 @@
+{
+    "schemaId": "refined_property",
+    "$schema": "http://json-schema.org/draft-04/schema#",
+    "title": "refined property schema",
+    "allOf": [
+        {
+            "description": "property schema",
+            "$ref": "property.json"
+        }
+    ],
+    "properties": {
+        "exabyteId": {
+            "description": "identity of the corresponding material inside exabyte materials bank",
+            "type": "array",
+            "items": {
+                "type": "string"
+            }
+        },
+        "precision": {
+            "type": "object"
+        }
+    },
+    "required": [
+        "exabyteId"
+    ]
+}

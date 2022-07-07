@@ -9,10 +9,6 @@
         }
     ],
     "properties": {
-        "exabyteId": {
-            "description": "identity of the corresponding material inside exabyte materials bank",
-            "type": "string"
-        },
         "slug": {
             "description": "property slug, e.g. total_energy",
             "type": "string"
