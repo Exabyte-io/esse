@@ -13,7 +13,7 @@
         },
         {
             "description": "entity schema",
-            "$ref": "properties_directory/material.json"
+            "$ref": "material/base.json"
         }
     ],
     "properties": {

@@ -14,7 +14,7 @@
         },
         {
             "description": "base workflow properties schema",
-            "$ref": "workflow/properties.json"
+            "$ref": "workflow/base.json"
         }
     ]
 }
