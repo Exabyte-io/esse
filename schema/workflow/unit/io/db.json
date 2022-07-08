@@ -8,7 +8,10 @@
             "properties": {
                 "ids": {
                     "description": "IDs of item to retrieve from db",
-                    "type": "array"
+                    "type": "array",
+                    "items": {
+                        "type": "string"
+                    }
                 }
             },
             "required": [
