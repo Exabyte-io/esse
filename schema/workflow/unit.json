@@ -6,9 +6,22 @@
     "allOf": [
         {
             "$ref": "../system/tags.json"
+        },
+        {
+            "$ref": "../system/status.json"
+        },
+        {
+            "$ref": "unit/runtime/runtime_items.json"
         }
     ],
     "properties": {
+        "_id": {
+            "type": "string"
+        },
+        "isDraft": {
+            "description": "defines whether to store the results/properties extracted in this unit to properties collection or not",
+            "type": "boolean"
+        },
         "type": {
             "description": "type of the unit",
             "type": "string"
@@ -43,6 +56,15 @@
         "enableRender": {
             "description": "Whether Rupy should attempt to use Jinja templating to add context variables into the unit",
             "type": "boolean"
+        },
+        "messages": {
+            "type": "array",
+            "items": {
+                "type": "string"
+            }
+        },
+        "context": {
+            "type": "object"
         }
     },
     "required": [
