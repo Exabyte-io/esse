@@ -41,11 +41,5 @@
             "description": "Subset of the full information about the user who created the entity.",
             "$ref": "entity_reference.json"
         }
-    },
-    "required": [
-        "_id",
-        "schemaVersion",
-        "owner",
-        "creator"
-    ]
+    }
 }
