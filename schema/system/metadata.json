@@ -1,0 +1,10 @@
+{
+    "schemaId": "extended_metadata",
+    "$schema": "http://json-schema.org/draft-04/schema#",
+    "title": "metadata schema",
+    "properties": {
+        "metadata": {
+            "type": "object"
+        }
+    }
+}
