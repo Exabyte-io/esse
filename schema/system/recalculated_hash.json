@@ -1,10 +1,10 @@
 {
-    "schemaId": "system-metadata",
+    "schemaId": "system-recalculated-hash",
     "$schema": "http://json-schema.org/draft-04/schema#",
     "title": "metadata schema",
     "properties": {
-        "metadata": {
-            "type": "object"
+        "recalculatedHash": {
+            "type": "boolean"
         }
     }
 }

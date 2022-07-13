@@ -5,10 +5,22 @@
     "type": "object",
     "properties": {
         "elements": {
-            "$ref": "basis/atomic_elements.json"
+            "type": "array",
+            "items": {
+                "$ref": "basis/atomic_elements.json"
+            }
         },
         "coordinates": {
-            "$ref": "basis/atomic_coordinates.json"
+            "type": "array",
+            "items": {
+                "$ref": "basis/atomic_coordinates.json"
+            }
+        },
+        "name": {
+            "type": "string"
+        },
+        "units": {
+            "type": "string"
         },
         "bonds": {
             "$ref": "basis/bonds.json"

@@ -4,16 +4,16 @@
     "title": "atomic coordinates",
     "description": "coordinates of atoms by ids, vector, unitless",
     "properties": {
-        "name": {
-            "enum": [
-                "atomic_coordinates"
-            ]
+        "id": {
+            "type": "number"
         },
-        "values": {
-            "$ref": "../../../core/reusable/atomic_vectors.json"
-        },
-        "units": {
-            "$ref": "../../../definitions/units.json#/length"
+        "value": {
+            "type": "array",
+            "items": {
+                "type": "number"
+            },
+            "minItems": 3,
+            "maxItems": 3
         }
     }
 }
