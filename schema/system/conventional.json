@@ -1,0 +1,10 @@
+{
+    "schemaId": "system-conventional",
+    "$schema": "http://json-schema.org/draft-04/schema#",
+    "title": "conventional schema",
+    "properties": {
+        "conventional": {
+            "type": "object"
+        }
+    }
+}
