@@ -1,0 +1,23 @@
+
+{
+    "schemaId": "system-history",
+    "$schema": "http://json-schema.org/draft-04/schema#",
+    "title": "history schema",
+    "properties": {
+        "history": {
+            "type": "array",
+            "items": {
+                "type": "object",
+                "properties": {
+                    "id": {
+                        "type": "string"
+                    },
+                    "revision": {
+                        "type": "number"
+                    }
+                },
+                "required": ["id", "revision"]
+            }
+        }
+    }
+}

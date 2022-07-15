@@ -3,15 +3,12 @@
     "$schema": "http://json-schema.org/draft-04/schema#",
     "title": "subworkflow schema",
     "type": "object",
+    "allOf": [
+        {
+            "$ref": "subworkflow_base.json"
+        }
+    ],
     "properties": {
-        "_id": {
-            "description": "subworkflow identity",
-            "type": "string"
-        },
-        "name": {
-            "description": "Human-readable name of the subworkflow. e.g. Total-energy",
-            "type": "string"
-        },
         "model": {
             "description": "Model used inside the subworkflow",
             "$ref": "../model.json"
@@ -20,25 +17,6 @@
             "description": "information about the simulation engine/application.",
             "$ref": "../software/application.json"
         },
-        "properties": {
-            "description": "Array of characteristic properties calculated by this subworkflow",
-            "type": "array",
-            "items": {
-                "description": "property names, eg. `band_gaps`, `band_structure`",
-                "type": "string"
-            }
-        },
-        "units": {
-            "description": "Contains the Units of the subworkflow",
-            "type": "array",
-            "items": {
-                "$ref": "unit.json"
-            }
-        },
-        "compute": {
-            "description": "compute parameters",
-            "$ref": "../job/compute.json"
-        },
         "isDraft": {
             "description": "Defines whether to store the results/properties extracted in this unit to properties collection",
             "type": "boolean",
@@ -46,11 +24,7 @@
         }
     },
     "required": [
-        "_id",
-        "name",
-        "units",
         "model",
-        "application",
-        "properties"
+        "application"
     ]
 }

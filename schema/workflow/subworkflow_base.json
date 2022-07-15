@@ -1,0 +1,48 @@
+{
+    "schemaId": "workflow-subworkflow-base",
+    "$schema": "http://json-schema.org/draft-04/schema#",
+    "title": "subworkflow schema",
+    "type": "object",
+    "properties": {
+        "_id": {
+            "description": "subworkflow identity",
+            "type": "string"
+        },
+        "name": {
+            "description": "Human-readable name of the subworkflow. e.g. Total-energy",
+            "type": "string"
+        },
+        "properties": {
+            "description": "Array of characteristic properties calculated by this subworkflow",
+            "type": "array",
+            "items": {
+                "description": "property names, eg. `band_gaps`, `band_structure`",
+                "oneOf": [
+                    {
+                        "type": "string"
+                    },
+                    {
+                        "type": "object"
+                    }
+                ]
+            }
+        },
+        "units": {
+            "description": "Contains the Units of the subworkflow",
+            "type": "array",
+            "items": {
+                "$ref": "unit.json"
+            }
+        },
+        "compute": {
+            "description": "compute parameters",
+            "$ref": "../job/compute.json"
+        }
+    },
+    "required": [
+        "_id",
+        "name",
+        "units",
+        "properties"
+    ]
+}

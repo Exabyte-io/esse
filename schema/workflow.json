@@ -19,7 +19,14 @@
             "type": "array",
             "items": {
                 "description": "property names, eg. `band_gaps`, `band_structure`",
-                "type": "string"
+                "oneOf": [
+                    {
+                        "type": "string"
+                    },
+                    {
+                        "type": "object"
+                    }
+                ]
             }
         },
         "isUsingDataset": {
