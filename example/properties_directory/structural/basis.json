@@ -6,12 +6,12 @@
     ],
     "coordinates": [
         {
-            "...": "include(basis/atomic_coordinates.json)"
+            "...": "include(basis/atomic_coordinate_value.json)"
         }
     ],
     "elements": [
         {
-            "...": "include(basis/atomic_elements.json)"
+            "...": "include(basis/atomic_element.json)"
         }
     ],
     "name": "basis",

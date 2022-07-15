@@ -14,12 +14,7 @@
             "items": {
                 "allOf": [
                     {
-                        "allOf": [
-                            {
-                                "$ref": "../system/entity_reference.json"
-                            }
-                           
-                        ]
+                        "$ref": "../system/entity_reference.json"
                     },
                     {
                         "type": "object",

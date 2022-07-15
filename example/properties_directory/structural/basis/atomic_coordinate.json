@@ -1,0 +1,8 @@
+{
+    "name": "atomic_coordinates",
+    "values" : [
+        {
+            "...": "include(atomic_coordinate_value.json)"
+        }
+    ]
+}

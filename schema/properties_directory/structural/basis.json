@@ -7,13 +7,13 @@
         "elements": {
             "type": "array",
             "items": {
-                "$ref": "basis/atomic_elements.json"
+                "$ref": "basis/atomic_element.json"
             }
         },
         "coordinates": {
             "type": "array",
             "items": {
-                "$ref": "basis/atomic_coordinates.json"
+                "$ref": "basis/atomic_coordinate_value.json"
             }
         },
         "name": {
