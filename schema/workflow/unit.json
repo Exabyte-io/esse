@@ -43,6 +43,7 @@
             "$ref": "../system/tags.json"
         }
     },
+    "additionalProperties": true,
     "required": [
         "type",
         "flowchartId"

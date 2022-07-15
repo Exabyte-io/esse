@@ -40,7 +40,6 @@
         }
     },
     "required": [
-        "_id",
         "name",
         "units",
         "properties"
