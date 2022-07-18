@@ -1,0 +1,13 @@
+{
+    "schemaId": "system-unit-extended",
+    "$schema": "http://json-schema.org/draft-04/schema#",
+    "title": "extended unit schema",
+    "properties": {
+        "_id": {
+            "type": "string"
+        },
+        "isDraft": {
+            "type": "boolean"
+        }
+    }
+}
