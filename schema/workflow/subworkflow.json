@@ -5,7 +5,7 @@
     "type": "object",
     "allOf": [
         {
-            "$ref": "subworkflow_base.json"
+            "$ref": "base_flowchart.json"
         }
     ],
     "properties": {
