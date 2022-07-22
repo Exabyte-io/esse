@@ -53,7 +53,11 @@
                             "description": "Sequence of values for the target Jinja variable. Optional if `scope` and `name` are given.",
                             "type": "array",
                             "items": {
-                                "type": "string"
+                                "oneOf": [
+                                    { "type": "string" },
+                                    { "type": "number" },
+                                    { "type": "object" }
+                                ]
                             }
                         }
                     },
