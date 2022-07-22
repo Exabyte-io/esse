@@ -48,7 +48,35 @@
             "description": "Contains the Units of the Workflow",
             "type": "array",
             "items": {
-                "$ref": "workflow/unit.json"
+                "oneOf": [
+                    {
+                        "$ref": "workflow/unit.json"
+                    },
+                    {
+                        "$ref": "workflow/unit/io.json"
+                    },
+                    {
+                        "$ref": "workflow/unit/map.json"
+                    },
+                    {
+                        "$ref": "workflow/unit/reduce.json"
+                    },
+                    {
+                        "$ref": "workflow/unit/condition.json"
+                    },
+                    {
+                        "$ref": "workflow/unit/assertion.json"
+                    },
+                    {
+                        "$ref": "workflow/unit/execution.json"
+                    },
+                    {
+                        "$ref": "workflow/unit/assignment.json"
+                    },
+                    {
+                        "$ref": "workflow/unit/processing.json"
+                    }
+                ]
             }
         },
         "workflows": {
