@@ -27,6 +27,10 @@
         "hasAdvancedComputeOptions": {
             "description": "Whether advanced compute options are present",
             "type": "boolean"
+        },
+        "isLicensed": {
+            "description": "Whether licensing is present",
+            "type": "boolean"
         }
     },
     "required": [
