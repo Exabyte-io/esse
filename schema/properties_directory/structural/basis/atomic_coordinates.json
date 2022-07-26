@@ -10,6 +10,9 @@
         },
         "values": {
             "$ref": "atomic_coordinate_value.json"
+        },
+        "units": {
+            "$ref": "../../../definitions/units.json#/length"
         }
     }
 }
