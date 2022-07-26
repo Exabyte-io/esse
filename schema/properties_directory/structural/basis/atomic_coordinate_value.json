@@ -8,7 +8,7 @@
             "type": "number"
         },
         "value": {
-            "$ref": "../../../core/primitive/array_of_3_numbers.json"
+            "$ref": "../../../core/abstract/vector.json"
         }
     }
 }
