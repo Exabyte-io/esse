@@ -1,7 +1,7 @@
 {
-    "schemaId": "system-conventional",
+    "schemaId": "material-conventional",
     "$schema": "http://json-schema.org/draft-04/schema#",
-    "title": "conventional schema",
+    "title": "material conventional schema",
     "properties": {
         "conventional": {
             "type": "object"
