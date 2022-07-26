@@ -4,15 +4,15 @@
 
 # ESSE
 
-Exabyte Source of Schemas and Examples (ESSE) contains data formats and associated examples specifically designed for digital materials science [1](#links).
+Essential Source of Schemas and Examples (ESSE) contains data formats and associated examples specifically designed for digital materials science (see refs. [1, 2](#links) below).
 
 ## Installation
 
-ESSE can be used as a Node.js or Python package on the server side. Please note that schemas and examples are unavailable on the client side (JS).
+ESSE can be used as a Node.js or Python package on the server side.
 
 ### Python
 
-ESSE is compatible with Python 2.7 up until version 2.3.0, and Python 3.6+ afterward.  It can be installed as a Python package either via PyPI or the repository as below.
+ESSE is compatible with Python 3.6+.  It can be installed as a Python package either via PyPI or the repository as below.
 
 #### PyPI
 
@@ -117,7 +117,7 @@ The script has been tested with node.js v12.16.3 and v8.17.0 as well as Python v
 
 ## Contribution
 
-This repository is an [open-source](LICENSE.md) work-in-progress and we welcome contributions. We suggest forking this repository and introducing the adjustments there, the changes in the fork can further be considered for merging into this repository as it is commonly done on Github [#links](2).
+This repository is an [open-source](LICENSE.md) work-in-progress and we welcome contributions. We suggest forking this repository and introducing the adjustments there, the changes in the fork can further be considered for merging into this repository as it is commonly done on Github (see [3](#links) below).
 
 ## Best Practices
 
@@ -129,5 +129,7 @@ This repository is an [open-source](LICENSE.md) work-in-progress and we welcome 
 
 1: [Data-centric online ecosystem for digital materials science](https://arxiv.org/pdf/1902.10838.pdf)
 
-2: [GitHub Standard Fork & Pull Request Workflow](https://gist.github.com/Chaser324/ce0505fbed06b947d962)
+2: [CateCom: A Practical Data-Centric Approach to Categorization of Computational Models](https://pubs.acs.org/doi/abs/10.1021/acs.jcim.2c00112)
+
+3: [GitHub Standard Fork & Pull Request Workflow](https://gist.github.com/Chaser324/ce0505fbed06b947d962)
 
