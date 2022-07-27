@@ -35,7 +35,7 @@
                     "type": "string"
                 },
                 "values": {
-                    "description": "Sequence of values for the target Jinja variable. Optional if `scope` and `name` are given.",
+                    "description": "Sequence of values for the target Jinja variable. Optional if `scope` and `name` are given. This can be used for map-reduce type parallel execution",
                     "type": "array",
                     "items": {
                         "oneOf": [

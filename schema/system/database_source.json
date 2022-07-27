@@ -6,7 +6,7 @@
     "type": "object",
     "properties": {
         "id": {
-            "description": "ID string for the materials uploaded from a third party source inside the third party source.",
+            "description": "ID string for the materials uploaded from a third party source inside the third party source. For materialsproject.org an example ID is mp-32",
             "type": "string"
         },
         "source": {
