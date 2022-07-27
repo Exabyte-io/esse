@@ -6,7 +6,7 @@
     ],
     "coordinates": [
         {
-            "...": "include(basis/atomic_coordinate_value.json)"
+            "...": "include(basis/atomic_coordinate.json)"
         }
     ],
     "elements": [

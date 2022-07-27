@@ -1,7 +1,7 @@
 {
     "schemaId": "system-scope",
     "$schema": "http://json-schema.org/draft-04/schema#",
-    "title": "extended scope schema",
+    "title": "scope schema",
     "properties": {
         "scope": {
             "type": "string"

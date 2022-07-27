@@ -13,7 +13,7 @@
         "coordinates": {
             "type": "array",
             "items": {
-                "$ref": "basis/atomic_coordinate_value.json"
+                "$ref": "basis/atomic_coordinate.json"
             }
         },
         "name": {
