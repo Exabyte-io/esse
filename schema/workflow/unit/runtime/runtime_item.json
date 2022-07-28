@@ -6,6 +6,9 @@
     "oneOf": [
         {
             "$ref": "./_runtime_item_name_object.json"
+        },
+        {
+            "$ref": "./_runtime_item_string.json"
         }
     ]
 }

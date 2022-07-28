@@ -1,0 +1,28 @@
+{
+    "schemaId": "workflow-unit-assertion",
+    "$schema": "http://json-schema.org/draft-04/schema#",
+    "title": "assignment unit schema",
+    "type": "object",
+    "allOf": [
+        {
+            "$ref": "../unit.json"
+        }
+    ],
+    "properties": {
+        "type": {
+            "enum": [
+                "assertion"
+            ]
+        },
+        "statement": {
+            "type": "string"
+        },
+        "errorMessage": {
+            "type": "string"
+        }
+    },
+    "required": [
+        "name",
+        "statement"
+    ]
+}

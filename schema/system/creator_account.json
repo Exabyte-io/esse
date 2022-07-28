@@ -1,0 +1,10 @@
+{
+    "schemaId": "system-creator-account",
+    "$schema": "http://json-schema.org/draft-04/schema#",
+    "title": "creator account schema",
+    "properties": {
+        "creatorAccount": {
+            "$ref": "entity_reference.json"
+        }
+    }
+}

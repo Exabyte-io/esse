@@ -1,0 +1,39 @@
+{
+    "schemaId": "system-job-extended",
+    "$schema": "http://json-schema.org/draft-04/schema#",
+    "title": "extended job schema",
+    "properties": {
+        "mode": {
+            "type": "string"
+        },
+        "isExternal": {
+            "type": "boolean"
+        },
+        "_materials": {
+            "type": "array",
+            "items": {
+                "allOf": [
+                    {
+                        "$ref": "entity_reference.json"
+                    }
+                ]
+            }
+        },
+        "_materialsSet": {
+            "allOf": [
+                {
+                    "$ref": "entity_reference.json"
+                }
+            ]
+        },
+        "purged": {
+            "type": "boolean"
+        },
+        "purgedAt": {
+            "type": "number"
+        },
+        "dataset": {
+            "type": "object"
+        }
+    }
+}
