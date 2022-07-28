@@ -52,3 +52,7 @@ dist/
 .npmignore
 .nyc_output
 .eslintcache
+
+.husky
+
+schemas.js
