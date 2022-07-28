@@ -6,4 +6,4 @@
  const fs = require("fs");
  const {ESSE} = require("./lib/js/esse");
  const {schemas} = new ESSE();
- fs.writeFileSync("./lib/js/esse/schemas.js", "module.exports = {schemas: " + JSON.stringify(schemas) + "}", "utf8");
+ fs.writeFileSync("./schemas.js", "module.exports = {schemas: " + JSON.stringify(schemas) + "}", "utf8");

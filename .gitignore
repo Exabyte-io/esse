@@ -54,3 +54,5 @@ dist/
 .eslintcache
 
 .husky
+
+schemas.js
