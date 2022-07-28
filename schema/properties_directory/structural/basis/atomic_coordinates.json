@@ -1,6 +1,5 @@
 {
     "schemaId": "properties-directory-structural-basis-atomic-coordinates",
-    "$schema": "http://json-schema.org/draft-04/schema#",
     "title": "atomic coordinates",
     "description": "coordinates of atoms by ids, vector, unitless",
     "properties": {
@@ -10,7 +9,10 @@
             ]
         },
         "values": {
-            "$ref": "../../../core/reusable/atomic_vectors.json"
+            "type": "array",
+            "items": {
+                "$ref": "atomic_coordinate.json"
+            }
         },
         "units": {
             "$ref": "../../../definitions/units.json#/length"

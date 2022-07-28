@@ -36,7 +36,7 @@
                 "$ref": "system/database_source.json"
             }
         },
-        "fileSource": {
+        "src": {
             "description": "File information if material was exported from POSCAR, XYZ or UPF file.",
             "$ref": "system/file_source.json"
         },

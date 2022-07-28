@@ -17,6 +17,14 @@
             "description": "_id of the executable this flavor belongs to",
             "type": "string"
         },
+        "executableName": {
+            "description": "name of the executable this flavor belongs to",
+            "type": "string"
+        },
+        "applicationName": {
+            "description": "name of the application this flavor belongs to",
+            "type": "string"
+        },
         "input": {
             "title": "execution unit input schema",
             "type": "array",

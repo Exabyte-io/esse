@@ -15,6 +15,7 @@
             ]
         },
         "value": {
+            "type": "number",
             "min": 0,
             "max": 1
         },
