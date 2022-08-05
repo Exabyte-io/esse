@@ -9,10 +9,7 @@
                 "vectors": {
                     "$ref": "lattice/lattice_vectors.json"
                 }
-            },
-            "required": [
-                "vectors"
-            ]
+            }
         },
         {
             "$ref": "lattice/lattice_bravais.json"
