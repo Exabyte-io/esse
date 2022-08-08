@@ -53,6 +53,7 @@
         "arguments": {
             "description": "Optional arguments specific to using application - VASP, Quantum Espresso, etc. Specified elsewhere",
             "type": "object",
+            "default": {},
             "$ref": "../software_directory/modeling/espresso/arguments.json"
         },
         "cluster": {
