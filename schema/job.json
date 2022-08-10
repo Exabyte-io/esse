@@ -17,10 +17,11 @@
             "description": "job status",
             "enum": [
                 "pre-submission",
+                "queued",
                 "submitted",
                 "active",
                 "finished",
-                "terminate_queued",
+                "terminate-queued",
                 "terminated",
                 "error",
                 "deleted",
