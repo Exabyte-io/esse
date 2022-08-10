@@ -98,13 +98,12 @@
                     "message": {
                         "description": "Human-readable error message. e.g. 'File Not Found: /home/demo/data/project1/job-123/job-config.json'",
                         "type": "string"
+                    },
+                    "traceback": {
+                        "description": "Full machine-readable error traceback. e.g. FileNotFound",
+                        "type": "string"
                     }
-                },
-                "required": [
-                    "domain",
-                    "reason",
-                    "message"
-                ]
+                }
             }
         },
         "excludeFilesPattern": {
