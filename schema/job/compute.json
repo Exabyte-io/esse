@@ -33,6 +33,7 @@
         "timeLimitType": {
             "description": "Convention to use when reasoning about time limits",
             "type": "string",
+            "default": "single",
             "enum": [
                 "single",
                 "compound"
