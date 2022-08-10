@@ -33,9 +33,9 @@
         "timeLimitType": {
             "description": "Convention to use when reasoning about time limits",
             "type": "string",
-            "default": "single",
+            "default": "per single attempt",
             "enum": [
-                "single",
+                "per single attempt",
                 "compound"
             ]
         },
