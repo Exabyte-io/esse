@@ -1,5 +1,5 @@
 {
-    "schemaId": "system-description-object",
+    "schemaId": "system/description/object",
     "$schema": "http://json-schema.org/draft-04/schema#",
     "title": "extended base entity schema",
     "properties": {

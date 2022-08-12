@@ -1,5 +1,5 @@
 {
-    "schemaId": "core-primitive-array-of-3-booleans",
+    "schemaId": "core/primitive/array/of/3/booleans",
     "$schema": "http://json-schema.org/draft-04/schema#",
     "title": "array of 3 boolean elements schema",
     "type": "array",

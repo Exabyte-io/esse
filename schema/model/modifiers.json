@@ -1,5 +1,5 @@
 {
-    "schemaId": "model-modifiers",
+    "schemaId": "model/modifiers",
     "$schema": "http://json-schema.org/draft-04/schema#",
     "title": "model modifications schema",
     "description": "Additions to a model, that expand upon the underlying physical principle without fundamentally changing the working equations (e.g. in a linear fashion). Examples: Hubbard U, external potential, explicit correlation",

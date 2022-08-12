@@ -1,5 +1,5 @@
 {
-    "schemaId": "properties-directory-scalar-reaction-energy-barrier",
+    "schemaId": "properties/directory/scalar/reaction/energy/barrier",
     "$schema": "http://json-schema.org/draft-04/schema#",
     "title": "reaction energy barrier schema",
     "allOf": [

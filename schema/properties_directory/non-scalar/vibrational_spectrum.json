@@ -1,5 +1,5 @@
 {
-    "schemaId": "properties-directory-non-scalar-vibrational-spectrum",
+    "schemaId": "properties/directory/non/scalar/vibrational/spectrum",
     "$schema": "http://json-schema.org/draft-04/schema#",
     "title": "Vibrational spectrum schema",
     "type": "object",

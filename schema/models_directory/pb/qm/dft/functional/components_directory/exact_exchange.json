@@ -1,5 +1,5 @@
 {
-    "schemaId": "models-directory-pb-qm-dft-functional-components-directory-exact-exchange",
+    "schemaId": "models/directory/pb/qm/dft/functional/components/directory/exact/exchange",
     "$schema": "http://json-schema.org/draft-04/schema#",
     "title": "exact exchange component schema",
     "allOf": [

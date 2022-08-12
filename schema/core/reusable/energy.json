@@ -1,5 +1,5 @@
 {
-    "schemaId": "core-reusable-energy",
+    "schemaId": "core/reusable/energy",
     "$schema": "http://json-schema.org/draft-04/schema#",
     "title": "energy schema",
     "allOf": [

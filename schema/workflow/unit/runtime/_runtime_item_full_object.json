@@ -1,5 +1,5 @@
 {
-    "schemaId": "workflow-unit-runtime-runtime-item-full-object",
+    "schemaId": "workflow/unit/runtime/runtime/item/full/object",
     "$schema": "http://json-schema.org/draft-04/schema#",
     "title": "result schema",
     "type": "object",

@@ -1,5 +1,5 @@
 {
-    "schemaId": "software-directory-modeling-nwchem",
+    "schemaId": "software/directory/modeling/nwchem",
     "$schema": "http://json-schema.org/draft-04/schema#",
     "title": "NWChem",
     "type": "object",

@@ -1,5 +1,5 @@
 {
-    "schemaId": "properties-directory-structural-symmetry",
+    "schemaId": "properties/directory/structural/symmetry",
     "$schema": "http://json-schema.org/draft-04/schema#",
     "title": "symmetry schema",
     "properties": {
@@ -8,7 +8,7 @@
             "type": "string"
         },
         "spaceGroupSymbol": {
-            "description": "space group symbol in Hermann\u2013Mauguin notation",
+            "description": "space group symbol in Hermann–Mauguin notation",
             "type": "string"
         },
         "tolerance": {

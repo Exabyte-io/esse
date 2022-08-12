@@ -1,5 +1,5 @@
 {
-    "schemaId": "system-entity",
+    "schemaId": "system/entity",
     "$schema": "http://json-schema.org/draft-04/schema#",
     "title": "entity schema",
     "allOf": [

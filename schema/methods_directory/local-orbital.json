@@ -1,5 +1,5 @@
 {
-    "schemaId": "methods-directory-local-orbital",
+    "schemaId": "methods/directory/local/orbital",
     "$schema": "http://json-schema.org/draft-04/schema#",
     "title": "local atomic orbitals method schema",
     "allOf": [
@@ -24,15 +24,15 @@
                 "oneOf": [
                     {
                         "$ref": "local_orbital/definitions/basis_sets.json#/pople"
-                    }, 
+                    },
                     {
                         "$ref": "local_orbital/definitions/basis_sets.json#/dunning"
                     },
                     {
                         "$ref": "local_orbital/definitions/basis_sets.json#/other"
-                    }    
+                    }
                 ]
             }
         }
     }
-}  
+}

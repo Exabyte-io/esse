@@ -1,5 +1,5 @@
 {
-    "schemaId": "properties-directory-structural-lattice-lattice-bravais",
+    "schemaId": "properties/directory/structural/lattice/lattice/bravais",
     "$schema": "http://json-schema.org/draft-04/schema#",
     "title": "lattice implicit schema",
     "allOf": [

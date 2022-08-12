@@ -1,5 +1,5 @@
 {
-    "schemaId": "models-directory-pb-qm-dft-dispersion-models-directory-nlc",
+    "schemaId": "models/directory/pb/qm/dft/dispersion/models/directory/nlc",
     "$schema": "http://json-schema.org/draft-04/schema#",
     "title": "Non-local correlation density functional",
     "allOf": [

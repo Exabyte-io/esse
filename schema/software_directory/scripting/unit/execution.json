@@ -1,5 +1,5 @@
 {
-    "schemaId": "software-directory-scripting-unit-execution",
+    "schemaId": "software/directory/scripting/unit/execution",
     "$schema": "http://json-schema.org/draft-04/schema#",
     "title": "execution unit schema for scripting-based applications",
     "type": "object",

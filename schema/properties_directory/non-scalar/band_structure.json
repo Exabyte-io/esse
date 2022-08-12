@@ -1,5 +1,5 @@
 {
-    "schemaId": "properties-directory-non-scalar-band-structure",
+    "schemaId": "properties/directory/non/scalar/band/structure",
     "$schema": "http://json-schema.org/draft-04/schema#",
     "title": "band structure schema",
     "allOf": [

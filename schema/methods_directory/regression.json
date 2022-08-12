@@ -1,5 +1,5 @@
 {
-    "schemaId": "methods-directory-regression",
+    "schemaId": "methods/directory/regression",
     "$schema": "http://json-schema.org/draft-04/schema#",
     "title": "linear methods schema",
     "allOf": [

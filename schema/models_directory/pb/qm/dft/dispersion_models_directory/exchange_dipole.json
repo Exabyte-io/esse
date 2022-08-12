@@ -1,5 +1,5 @@
 {
-    "schemaId": "models-directory-pb-qm-dft-dispersion-models-directory-xdm",
+    "schemaId": "models/directory/pb/qm/dft/dispersion/models/directory/xdm",
     "$schema": "http://json-schema.org/draft-04/schema#",
     "title": "Exchange dipole dispersion model",
     "allOf": [

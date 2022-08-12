@@ -1,5 +1,5 @@
 {
-    "schemaId": "properties-directory-workflow-convergence-electronic",
+    "schemaId": "properties/directory/workflow/convergence/electronic",
     "$schema": "http://json-schema.org/draft-04/schema#",
     "title": "electronic self consistency convergence schema",
     "properties": {
