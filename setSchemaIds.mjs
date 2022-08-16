@@ -3,6 +3,8 @@
 import fs from "fs/promises";
 import path from "path";
 
+const SCHEMA_DIR = "schema/";
+
 async function walkDir(dir, callback) {
     const subDirs = await fs.readdir(dir);
 
@@ -18,28 +20,15 @@ async function walkDir(dir, callback) {
     }
 }
 
-await walkDir("schema", async (filePath) => {
+await walkDir(SCHEMA_DIR, async (filePath) => {
     if (path.extname(filePath) !== ".json") {
         return;
     }
 
     const fileContents = await fs.readFile(filePath);
-    const { schemaId, ...schema } = JSON.parse(fileContents);
-
-    if (!schemaId) {
-        return;
-    }
-
-    const newSchemaId = schemaId.split("-").join("/");
-
-    const newContent = JSON.stringify(
-        {
-            schemaId: newSchemaId,
-            ...schema,
-        },
-        null,
-        "    ",
-    );
+    const { schemaId: oldSchemaId, ...schema } = JSON.parse(fileContents);
+    const schemaId = filePath.replace(SCHEMA_DIR, "").replace(".json", "").replace(/_/g, "-");
+    const newContent = JSON.stringify({ schemaId, ...schema }, null, "    ");
 
     await fs.writeFile(filePath, `${newContent}\n`);
 });

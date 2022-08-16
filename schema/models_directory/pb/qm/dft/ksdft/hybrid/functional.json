@@ -1,5 +1,5 @@
 {
-    "schemaId": "models/directory/pb/qm/df/ksdft/hybrid/functional",
+    "schemaId": "models-directory/pb/qm/dft/ksdft/hybrid/functional",
     "$schema": "http://json-schema.org/draft-04/schema#",
     "title": "Hybrid functional schema",
     "allOf": [

@@ -1,4 +1,5 @@
 {
+    "schemaId": "models-directory/pb/qm/dft/ksdft/lda/augmentations",
     "$schema": "http://json-schema.org/draft-04/schema#",
     "allOf": [
         {

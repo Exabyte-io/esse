@@ -1,5 +1,5 @@
 {
-    "schemaId": "core/primitive/3d/lattice",
+    "schemaId": "core/primitive/3d-lattice",
     "$schema": "http://json-schema.org/draft-04/schema#",
     "title": "3 dimensional lattice schema",
     "type": "object",

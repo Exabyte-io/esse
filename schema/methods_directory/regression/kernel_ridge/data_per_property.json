@@ -1,5 +1,5 @@
 {
-    "schemaId": "methods/directory/regression/kernel/ridge/data/per/property",
+    "schemaId": "methods-directory/regression/kernel-ridge/data-per-property",
     "$schema": "http://json-schema.org/draft-04/schema#",
     "title": "linear regression parameters schema",
     "properties": {

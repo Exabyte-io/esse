@@ -1,5 +1,5 @@
 {
-    "schemaId": "methods/directory/local/orbital",
+    "schemaId": "methods-directory/local-orbital",
     "$schema": "http://json-schema.org/draft-04/schema#",
     "title": "local atomic orbitals method schema",
     "allOf": [

@@ -1,5 +1,5 @@
 {
-    "schemaId": "properties/directory/structural/molecular/pattern",
+    "schemaId": "properties-directory/structural/molecular-pattern",
     "$schema": "http://json-schema.org/draft-04/schema#",
     "title": "molecular pattern schema",
     "type": "array",

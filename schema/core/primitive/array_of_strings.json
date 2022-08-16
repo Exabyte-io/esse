@@ -1,5 +1,5 @@
 {
-    "schemaId": "core/primitive/array/of/strings",
+    "schemaId": "core/primitive/array-of-strings",
     "$schema": "http://json-schema.org/draft-04/schema#",
     "title": "array of strings",
     "description": "array of strings, e.g. metadata tags",

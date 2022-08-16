@@ -1,5 +1,5 @@
 {
-    "schemaId": "properties/directory/structural/magnetic/moments",
+    "schemaId": "properties-directory/structural/magnetic-moments",
     "$schema": "http://json-schema.org/draft-04/schema#",
     "title": "magnetic moments",
     "description": "magnetization on each ion",

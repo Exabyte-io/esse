@@ -1,5 +1,5 @@
 {
-    "schemaId": "properties/directory/structural/basis/atomic/constraints",
+    "schemaId": "properties-directory/structural/basis/atomic-constraints",
     "$schema": "http://json-schema.org/draft-04/schema#",
     "title": "atomic constraints",
     "description": "atomic constraints schema",

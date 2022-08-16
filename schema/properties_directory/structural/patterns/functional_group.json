@@ -1,5 +1,5 @@
 {
-    "schemaId": "properties/directory/structural/patterns/functional/group",
+    "schemaId": "properties-directory/structural/patterns/functional-group",
     "$schema": "http://json-schema.org/draft-04/schema#",
     "title": "functional group pattern schema",
     "type": "object",

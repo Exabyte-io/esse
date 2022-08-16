@@ -1,5 +1,5 @@
 {
-    "schemaId": "properties/directory/structural/elemental/ratio",
+    "schemaId": "properties-directory/structural/elemental-ratio",
     "$schema": "http://json-schema.org/draft-04/schema#",
     "title": "elemental-ratio",
     "description": "ration of this element in the compound",

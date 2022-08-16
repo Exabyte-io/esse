@@ -1,5 +1,5 @@
 {
-    "schemaId": "reusable/file/metadata",
+    "schemaId": "core/reusable/file-metadata",
     "$schema": "http://json-schema.org/draft-04/schema#",
     "title": "file_metadata",
     "properties": {

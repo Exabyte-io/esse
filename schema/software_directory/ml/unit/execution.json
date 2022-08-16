@@ -1,5 +1,5 @@
 {
-    "schemaId": "software/ml/unit/execution",
+    "schemaId": "software-directory/ml/unit/execution",
     "oneOf": [
         {
             "$ref": "execution/evaluate/cross-validate.json"
