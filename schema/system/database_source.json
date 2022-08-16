@@ -15,7 +15,7 @@
         },
         "origin": {
             "description": "A flag that is true when material is initially imported from a third party * (as opposed to being independently designed from scratch).",
-            "type": "string"
+            "type": "boolean"
         },
         "data": {
             "description": "Original response from external source",
