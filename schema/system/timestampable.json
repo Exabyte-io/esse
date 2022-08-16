@@ -5,11 +5,13 @@
     "properties": {
         "createdAt": {
             "description": "entity creation time",
-            "type": "string"
+            "type": "string",
+            "format": "date-time"
         },
         "updatedAt": {
             "description": "entity last modification time",
-            "type": "string"
+            "type": "string",
+            "format": "date-time"
         }
     }
 }

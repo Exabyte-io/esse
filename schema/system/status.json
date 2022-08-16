@@ -21,7 +21,7 @@
                         "type": "number"
                     }
                 },
-                "required": ["trackedAt", "status", "repetition"]
+                "required": ["trackedAt", "status"]
             }
         }
     }

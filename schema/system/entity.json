@@ -18,15 +18,15 @@
         {
             "description": "entity tags schema",
             "$ref": "tags.json"
+        },
+        {
+            "description": "entity schema version",
+            "$ref": "schema_version.json"
         }
     ],
     "properties": {
         "_id": {
             "description": "entity identity",
-            "type": "string"
-        },
-        "schemaVersion": {
-            "description": "entity's schema version. Used to distinct between different schemas.",
             "type": "string"
         },
         "description": {

@@ -27,13 +27,6 @@
                 ]
             }
         },
-        "units": {
-            "description": "Contains the Units of the subworkflow",
-            "type": "array",
-            "items": {
-                "$ref": "unit.json"
-            }
-        },
         "compute": {
             "description": "compute parameters",
             "$ref": "../job/compute.json"
@@ -41,7 +34,6 @@
     },
     "required": [
         "name",
-        "units",
-        "properties"
+        "units"
     ]
 }

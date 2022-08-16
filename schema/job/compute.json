@@ -33,8 +33,9 @@
         "timeLimitType": {
             "description": "Convention to use when reasoning about time limits",
             "type": "string",
+            "default": "per single attempt",
             "enum": [
-                "single",
+                "per single attempt",
                 "compound"
             ]
         },
@@ -52,7 +53,13 @@
         },
         "arguments": {
             "description": "Optional arguments specific to using application - VASP, Quantum Espresso, etc. Specified elsewhere",
-            "type": "object"
+            "type": "object",
+            "default": {},
+            "oneOf": [
+                {
+                    "$ref": "../software_directory/modeling/espresso/arguments.json"
+                }
+            ]
         },
         "cluster": {
             "description": "Cluster where the job is executed. Optional on create. Required on job submission.",
@@ -91,13 +98,12 @@
                     "message": {
                         "description": "Human-readable error message. e.g. 'File Not Found: /home/demo/data/project1/job-123/job-config.json'",
                         "type": "string"
+                    },
+                    "traceback": {
+                        "description": "Full machine-readable error traceback. e.g. FileNotFound",
+                        "type": "string"
                     }
-                },
-                "required": [
-                    "domain",
-                    "reason",
-                    "message"
-                ]
+                }
             }
         },
         "excludeFilesPattern": {

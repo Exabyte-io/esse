@@ -1,4 +1,7 @@
 {
     "...": "include(lattice/lattice_bravais.json)",
-    "name": "lattice"
+    "name": "lattice",
+    "vectors": {
+        "...": "include(lattice/lattice_vectors.json)"
+    }
 }

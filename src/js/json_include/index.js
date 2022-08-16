@@ -26,11 +26,9 @@ export class JSONInclude {
      */
     _walkObjectToInclude(obj, dirpath) {
         if (isInstanceOf(obj, "Object")) {
-            let isIncludeExp = false;
             if (INCLUDE_KEY in obj) {
                 const includeName = this._getIncludeFileName(obj[INCLUDE_KEY]);
                 if (includeName) {
-                    isIncludeExp = true;
                     delete obj[INCLUDE_KEY];
                     if (!(includeName in this.JSON_INCLUDE_CACHE)) {
                         const filePath = path.join(dirpath, includeName);
@@ -42,7 +40,6 @@ export class JSONInclude {
                     });
                 }
             }
-            if (isIncludeExp) return;
             Object.keys(obj).forEach((key) => {
                 if (isInstanceOf(obj[key], "Object") || isInstanceOf(obj[key], "Array")) {
                     this._walkObjectToInclude(obj[key], dirpath);

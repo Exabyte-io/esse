@@ -3,16 +3,13 @@
     "$schema": "http://json-schema.org/draft-04/schema#",
     "title": "lattice schema",
     "type": "object",
-    "oneOf": [
+    "allOf": [
         {
             "properties": {
                 "vectors": {
                     "$ref": "lattice/lattice_vectors.json"
                 }
-            },
-            "required": [
-                "vectors"
-            ]
+            }
         },
         {
             "$ref": "lattice/lattice_bravais.json"
