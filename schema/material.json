@@ -31,10 +31,7 @@
         },
         "external": {
             "description": "information about external sources of this material",
-            "type": "array",
-            "items": {
-                "$ref": "system/database_source.json"
-            }
+            "$ref": "system/database_source.json"
         },
         "src": {
             "description": "File information if material was exported from POSCAR, XYZ or UPF file.",
