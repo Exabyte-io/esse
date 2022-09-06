@@ -1,5 +1,5 @@
 {
-    "schemaId": "properties-directory-non-scalar-reaction-energy-profile",
+    "schemaId": "properties-directory/non-scalar/reaction-energy-profile",
     "$schema": "http://json-schema.org/draft-04/schema#",
     "title": "reaction energy profile schema",
     "allOf": [

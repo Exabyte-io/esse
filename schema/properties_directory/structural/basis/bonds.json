@@ -1,5 +1,5 @@
 {
-    "schemaId": "properties-directory-structural-basis-bonds",
+    "schemaId": "properties-directory/structural/basis/bonds",
     "$schema": "http://json-schema.org/draft-04/schema#",
     "title": "bonds schema",
     "type": "array",

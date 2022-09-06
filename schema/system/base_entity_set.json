@@ -1,5 +1,5 @@
 {
-    "schemaId": "system-base-entity-set",
+    "schemaId": "system/base-entity-set",
     "$schema": "http://json-schema.org/draft-04/schema#",
     "title": "extended base entity set schema",
     "properties": {

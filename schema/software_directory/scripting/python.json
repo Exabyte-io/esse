@@ -1,5 +1,5 @@
 {
-    "schemaId": "software-directory-scripting-python",
+    "schemaId": "software-directory/scripting/python",
     "$schema": "http://json-schema.org/draft-04/schema#",
     "title": "Python Programing Language Schema",
     "type": "object",

@@ -1,5 +1,5 @@
 {
-    "schemaId": "material-conventional",
+    "schemaId": "material/conventional",
     "$schema": "http://json-schema.org/draft-04/schema#",
     "title": "material conventional schema",
     "properties": {

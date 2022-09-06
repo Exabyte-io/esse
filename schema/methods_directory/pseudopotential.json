@@ -1,5 +1,5 @@
 {
-    "schemaId": "methods-directory-pseudopotential",
+    "schemaId": "methods-directory/pseudopotential",
     "$schema": "http://json-schema.org/draft-04/schema#",
     "title": "pseudopotential method schema",
     "allOf": [

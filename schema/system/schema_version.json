@@ -1,5 +1,5 @@
 {
-    "schemaId": "system-schema-version",
+    "schemaId": "system/schema-version",
     "$schema": "http://json-schema.org/draft-04/schema#",
     "title": "schema version",
     "properties": {

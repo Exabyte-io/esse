@@ -1,5 +1,5 @@
 {
-    "schemaId": "methods-directory-regression-precision-per-property",
+    "schemaId": "methods-directory/regression/precision-per-property",
     "$schema": "http://json-schema.org/draft-04/schema#",
     "title": "precision schema for regression",
     "properties": {

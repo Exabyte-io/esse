@@ -1,5 +1,5 @@
 {
-    "schemaId": "software-directory-modeling-unit-execution",
+    "schemaId": "software-directory/modeling/unit/execution",
     "$schema": "http://json-schema.org/draft-04/schema#",
     "title": "execution unit schema for physics-based simulation engines (defined using espresso as example)",
     "type": "object",

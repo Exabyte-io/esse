@@ -1,6 +1,5 @@
-
 {
-    "schemaId": "system-history",
+    "schemaId": "system/history",
     "$schema": "http://json-schema.org/draft-04/schema#",
     "title": "history schema",
     "properties": {
@@ -16,7 +15,10 @@
                         "type": "number"
                     }
                 },
-                "required": ["id", "revision"]
+                "required": [
+                    "id",
+                    "revision"
+                ]
             }
         }
     }

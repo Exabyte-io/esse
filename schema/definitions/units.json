@@ -1,4 +1,5 @@
 {
+    "schemaId": "definitions/units",
     "length": {
         "enum": [
             "km",
@@ -92,7 +93,7 @@
         ]
     },
     "spectralIntensity": {
-        "enum":[
+        "enum": [
             "(debye/angstrom)^2",
             "km/mol",
             "m/mol",

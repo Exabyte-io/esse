@@ -1,5 +1,5 @@
 {
-    "schemaId": "properties-directory-structural-inchi_key",
+    "schemaId": "properties-directory/structural/inchi-key",
     "$schema": "http://json-schema.org/draft-04/schema#",
     "title": "InChI representation schema",
     "allOf": [
@@ -15,4 +15,3 @@
         }
     }
 }
-

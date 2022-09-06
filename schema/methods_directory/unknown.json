@@ -1,5 +1,5 @@
 {
-    "schemaId": "methods-directory-unknown",
+    "schemaId": "methods-directory/unknown",
     "$schema": "http://json-schema.org/draft-04/schema#",
     "title": "unknown methods schema",
     "allOf": [

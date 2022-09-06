@@ -1,5 +1,5 @@
 {
-    "schemaId": "properties-directory-non-scalar-density-of-states",
+    "schemaId": "properties-directory/non-scalar/density-of-states",
     "$schema": "http://json-schema.org/draft-04/schema#",
     "title": "density of states schema",
     "type": "object",

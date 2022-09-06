@@ -1,5 +1,5 @@
 {
-    "schemaId": "models-directory-pb-qm-dft-dispersion-models-directory-mbd",
+    "schemaId": "models-directory/pb/qm/dft/dispersion-models-directory/many-body-dispersion",
     "$schema": "http://json-schema.org/draft-04/schema#",
     "title": "Many-Body Dispersion Schema",
     "allOf": [

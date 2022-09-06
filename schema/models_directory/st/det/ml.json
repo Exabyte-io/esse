@@ -1,5 +1,5 @@
 {
-    "schemaId": "models-directory-st-det-ml",
+    "schemaId": "models-directory/st/det/ml",
     "$schema": "http://json-schema.org/draft-04/schema#",
     "title": "machine learning model schema",
     "description": "machine learning model type/subtype schema",

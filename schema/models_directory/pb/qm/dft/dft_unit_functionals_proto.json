@@ -1,4 +1,5 @@
 {
+    "schemaId": "models-directory/pb/qm/dft/dft-unit-functionals-proto",
     "description": "Used to generate dft_unit_functionals.json",
     "lda": [
         {

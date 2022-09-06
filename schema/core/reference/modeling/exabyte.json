@@ -1,5 +1,5 @@
 {
-    "schemaId": "core-reference-modeling-exabyte",
+    "schemaId": "core/reference/modeling/exabyte",
     "$schema": "http://json-schema.org/draft-04/schema#",
     "title": "info for characteristic obtained by exabyte calculation",
     "properties": {

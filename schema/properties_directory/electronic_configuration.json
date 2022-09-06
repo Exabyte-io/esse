@@ -1,5 +1,5 @@
 {
-    "schemaId": "properties-directory-electronic-configuration",
+    "schemaId": "properties-directory/electronic-configuration",
     "$schema": "http://json-schema.org/draft-04/schema#",
     "title": "electronic configuration schema",
     "type": "object",

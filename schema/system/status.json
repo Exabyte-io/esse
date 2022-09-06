@@ -1,5 +1,5 @@
 {
-    "schemaId": "system-status",
+    "schemaId": "system/status",
     "$schema": "http://json-schema.org/draft-04/schema#",
     "title": "status schema",
     "properties": {
@@ -21,7 +21,10 @@
                         "type": "number"
                     }
                 },
-                "required": ["trackedAt", "status"]
+                "required": [
+                    "trackedAt",
+                    "status"
+                ]
             }
         }
     }

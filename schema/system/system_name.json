@@ -1,5 +1,5 @@
 {
-    "schemaId": "system-system-name",
+    "schemaId": "system/system-name",
     "$schema": "http://json-schema.org/draft-04/schema#",
     "title": "system name schema",
     "properties": {

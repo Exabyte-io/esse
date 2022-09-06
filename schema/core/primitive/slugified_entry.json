@@ -1,5 +1,5 @@
 {
-    "schemaId": "core-primitive-slugified-entry",
+    "schemaId": "core/primitive/slugified-entry",
     "$schema": "http://json-schema.org/draft-04/schema#",
     "title": "slugified entry",
     "description": "container for machine- and human-readable identifier",

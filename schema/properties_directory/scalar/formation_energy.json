@@ -1,5 +1,5 @@
 {
-    "schemaId": "properties-directory-scalar-formation-energy",
+    "schemaId": "properties-directory/scalar/formation-energy",
     "$schema": "http://json-schema.org/draft-04/schema#",
     "title": "formation energy schema",
     "allOf": [

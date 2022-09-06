@@ -1,4 +1,5 @@
 {
+    "schemaId": "methods-directory/local-orbital/definitions/basis-sets",
     "pople": {
         "type": "object",
         "properties": {
