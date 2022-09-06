@@ -3,7 +3,7 @@
 import fs from "fs/promises";
 import path from "path";
 
-const SCHEMA_DIR = "schema/";
+const SCHEMA_DIR = "../../../schema/";
 
 async function walkDir(dir, callback) {
     const subDirs = await fs.readdir(dir);
