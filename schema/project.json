@@ -5,10 +5,6 @@
     "type": "object",
     "allOf": [
         {
-            "description": "entity schema",
-            "$ref": "system/entity.json"
-        },
-        {
             "description": "defaultable entity schema",
             "$ref": "system/defaultable.json"
         }
