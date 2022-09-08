@@ -5,6 +5,10 @@
     "type": "object",
     "allOf": [
         {
+            "description": "entity schema",
+            "$ref": "system/entity.json"
+        },
+        {
             "description": "defaultable entity schema",
             "$ref": "system/defaultable.json"
         }
@@ -14,18 +18,27 @@
             "description": "project GID",
             "type": "number"
         },
-        "chargeRate": {
-            "description": "project charge rate",
-            "type": "object",
-            "properties": {
-                "rate": {
-                    "type": "number"
+        "clusterBasedChargeRates": {
+            "description": "charge rates info for project",
+            "type": "array",
+            "items": {
+                "type": "object",
+                "properties": {
+                    "rate": {
+                        "type": "number"
+                    },
+                    "timestamp": {
+                        "type": "number"
+                    },
+                    "hostname": {
+                        "type": "string"
+                    }
                 }
             }
+        },
+        "isExternal": {
+            "type": "boolean",
+            "default": false
         }
-    },
-    "required": [
-        "gid",
-        "chargeRate"
-    ]
+    }
 }
