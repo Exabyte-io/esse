@@ -1,7 +1,7 @@
 {
-    "schemaId": "property",
+    "schemaId": "properties/raw-property",
     "$schema": "http://json-schema.org/draft-04/schema#",
-    "title": "property schema",
+    "title": "Schema of material's preliminary property.",
     "allOf": [
         {
             "description": "entity schema",
@@ -9,10 +9,6 @@
         }
     ],
     "properties": {
-        "exabyteId": {
-            "description": "identity of the corresponding material inside exabyte materials bank",
-            "type": "string"
-        },
         "slug": {
             "description": "property slug, e.g. total_energy",
             "type": "string"
@@ -26,13 +22,11 @@
             "type": "object"
         },
         "source": {
-            "$ref": "system/source.json"
+            "$ref": "source.json"
         }
     },
     "required": [
         "data",
-        "slug",
-        "group",
         "source"
     ]
 }

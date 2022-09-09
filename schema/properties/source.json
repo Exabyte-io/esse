@@ -1,5 +1,5 @@
 {
-    "schemaId": "system/source",
+    "schemaId": "properties/source",
     "$schema": "http://json-schema.org/draft-04/schema#",
     "title": "The source of a characteristic. This could be an article, a simulation on Exabyte, an external simulation, etc.",
     "type": "object",

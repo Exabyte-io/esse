@@ -1,0 +1,25 @@
+{
+    "schemaId": "properties/refined-property",
+    "$schema": "http://json-schema.org/draft-04/schema#",
+    "title": "Schema of material's characteristic.",
+    "allOf": [
+        {
+            "$ref": "system/raw_property.json"
+        }
+    ],
+    "properties": {
+        "exabyteId": {
+            "description": "Material bank item identity the characteristic obtained for.",
+            "type": "array",
+            "items": {
+                "type": "string"
+            }
+        },
+        "precision": {
+            "type": "object"
+        }
+    },
+    "required": [
+        "exabyteId"
+    ]
+}
