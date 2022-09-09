@@ -1,0 +1,33 @@
+{
+    "schemaId": "system/source",
+    "$schema": "http://json-schema.org/draft-04/schema#",
+    "title": "The source of a characteristic. This could be an article, a simulation on Exabyte, an external simulation, etc.",
+    "type": "object",
+    "properties": {
+        "type": {
+            "description": "Type of the material characteristic's source.",
+            "type": "string"
+        },
+        "url": {
+            "description": "Internet address of the reference.",
+            "type": "string"
+        },
+        "info": {
+            "type": "object",
+            "properties": {
+                "materialId": {
+                    "description": "Material's identity. Used for protoProperties.",
+                    "type": "string"
+                },
+                "jobId": {
+                    "description": "Job's identity",
+                    "type": "string"
+                },
+                "unitId": {
+                    "description": "Id of the unit that extracted the result",
+                    "type": "string"
+                }
+            }
+        }
+    }
+}
