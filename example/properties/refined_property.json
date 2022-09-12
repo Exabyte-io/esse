@@ -1,0 +1,8 @@
+{
+    "exabyteId": ["coXq5vJPaGHB2qhAv"],
+    "precision": {
+        "value" : 10,
+        "metric" : "KPPRA"
+    },
+    "...": "include(raw_property.json)"
+}
