@@ -5,7 +5,7 @@
     "allOf": [
         {
             "description": "entity schema",
-            "$ref": "system/entity.json"
+            "$ref": "../system/entity.json"
         }
     ],
     "properties": {

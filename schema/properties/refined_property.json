@@ -4,7 +4,7 @@
     "title": "Schema of material's characteristic.",
     "allOf": [
         {
-            "$ref": "system/raw_property.json"
+            "$ref": "raw_property.json"
         }
     ],
     "properties": {
