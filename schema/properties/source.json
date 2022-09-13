@@ -1,11 +1,11 @@
 {
     "schemaId": "properties/source",
     "$schema": "http://json-schema.org/draft-04/schema#",
-    "title": "The source of a characteristic. This could be an article, a simulation on Exabyte, an external simulation, etc.",
+    "title": "The source of a property. This could be an article, a simulation on Exabyte, an external simulation, etc.",
     "type": "object",
     "properties": {
         "type": {
-            "description": "Type of the material characteristic's source.",
+            "description": "Type of the material property's source.",
             "type": "string"
         },
         "url": {

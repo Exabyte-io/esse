@@ -1,7 +1,7 @@
 {
     "schemaId": "properties/best-property",
     "$schema": "http://json-schema.org/draft-04/schema#",
-    "title": "Schema of material's best properties.",
+    "title": "Schema of material's best properties",
     "allOf": [
         {
             "$ref": "refined_property.json"

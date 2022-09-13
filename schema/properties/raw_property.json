@@ -1,7 +1,7 @@
 {
     "schemaId": "properties/raw-property",
     "$schema": "http://json-schema.org/draft-04/schema#",
-    "title": "Schema of material's preliminary property.",
+    "title": "Schema of material's preliminary property",
     "allOf": [
         {
             "description": "entity schema",
