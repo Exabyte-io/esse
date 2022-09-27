@@ -5,8 +5,8 @@
     "type": "object",
     "allOf": [
         {
-            "description": "defaultable entity schema",
-            "$ref": "system/defaultable.json"
+            "description": "in-memory entity",
+            "$ref": "in_memory_entity/base.json"
         }
     ],
     "properties": {

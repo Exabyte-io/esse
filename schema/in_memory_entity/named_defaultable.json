@@ -1,0 +1,16 @@
+{
+    "schemaId": "in-memory-entity/named-defaultable",
+    "$schema": "http://json-schema.org/draft-04/schema#",
+    "title": "Named defaultable in-memory entity schema",
+    "allOf": [
+        {
+            "$ref": "base.json"
+        },
+        {
+            "$ref": "../system/name.json"
+        },
+        {
+            "$ref": "../system/defaultable.json"
+        }
+    ]
+}

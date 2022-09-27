@@ -4,8 +4,8 @@
     "title": "job schema",
     "allOf": [
         {
-            "description": "entity schema",
-            "$ref": "system/entity.json"
+            "description": "in-memory entity",
+            "$ref": "in_memory_entity/named_defaultable_has_metadata.json"
         }
     ],
     "properties": {
