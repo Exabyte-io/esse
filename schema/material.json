@@ -6,10 +6,6 @@
         {
             "description": "in-memory entity",
             "$ref": "in_memory_entity/named_defaultable_has_metadata.json"
-        },
-        {
-            "description": "bankable schema",
-            "$ref": "system/bankable.json"
         }
     ],
     "properties": {

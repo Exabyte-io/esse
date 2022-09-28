@@ -5,10 +5,16 @@
     "type": "object",
     "allOf": [
         {
-            "$ref": "../system/tags.json"
+            "$ref": "../in_memory_entity/named_defaultable_runtime_items.json"
         }
     ],
     "properties": {
+        "_id": {
+            "type": "string"
+        },
+        "isDraft": {
+            "type": "boolean"
+        },
         "type": {
             "description": "type of the unit",
             "type": "string"
