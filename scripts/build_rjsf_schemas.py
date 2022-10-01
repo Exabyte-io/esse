@@ -1,6 +1,8 @@
 import json
 from itertools import chain
 from typing import Tuple, Union, List
+from pathlib import Path
+from anytree import Node, RenderTree
 
 
 class LabeledNode:
@@ -84,12 +86,12 @@ def recursive_dependency(nodelist: List[LabeledNode]) -> dict:
 
 
 def build_case(parent_name: str,
-                  parent_value: str,
-                  child_name: str,
-                  child_values: list,
-                  dependencies: dict = None,
-                  extra_fields: dict = None
-                  ) -> dict:
+               parent_value: str,
+               child_name: str,
+               child_values: list,
+               dependencies: dict = None,
+               extra_fields: dict = None
+               ) -> dict:
     if extra_fields is None:
         extra_fields = {}
     if dependencies is None:
@@ -171,6 +173,38 @@ def recursive() -> None:
     schema = build_rjsf_schema(tree=root)
     print(json.dumps(schema, indent=2))
 
+
+def extract_slug_from_entry(schema, key) -> Union[str, None]:
+    if "enum" in schema[key]:
+        return schema[key]["enum"][0]["slug"]
+
+
+def resolve_schema_path(schema_dir: Path, ref: str) -> Path:
+    return (schema_dir / ref).resolve()
+
+
+def follow_all_of(store, schema_path: Path, max_depth=3) -> dict:
+    if max_depth == 0:
+        return store
+    current_schema_dir = schema_path.parent.resolve()
+    with open(schema_path) as f:
+        schema = json.load(f)
+
+    if "allOf" not in schema:
+        return store
+    n_refs = len(schema["allOf"])
+    if n_refs >= 1:
+        ref_paths = [resolve_schema_path(current_schema_dir, schema["allOf"][i]["$ref"]) for i in range(n_refs)]
+        store.update({schema_path.name: ref_paths})
+        for ref_path in ref_paths:
+            follow_all_of(store=store, schema_path=ref_path, max_depth=max_depth-1)
+    return store
+
+
+
+def test():
+    schema_file = Path("../schema/model_units/pb/qm/dft/ksdft/lda.json")
+    print(follow_all_of({}, schema_file))
 
 if __name__ == "__main__":
     recursive()
