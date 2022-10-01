@@ -10,6 +10,9 @@ class LabeledNode:
         self.nodes = []
         self.default = False
 
+    def __repr__(self):
+        return f"LabeledNode(label={self.label}, value={self.value}, default={self.default})"
+
     def add_node(self, lab_node: "LabeledNode") -> "LabeledNode":
         if isinstance(lab_node, LabeledNode) and self.has_correct_label(lab_node):
             self.nodes.append(lab_node)
@@ -148,13 +151,22 @@ def build_rjsf_schema(tree: LabeledNode) -> dict:
 
 def recursive() -> None:
     root = LabeledNode("root", "root")
-    dft = root.add_node(LabeledNode("DFT", "type").set_default(True))
-    lda = dft.add_node(LabeledNode("LDA", "subtype"))
-    gga = dft.add_node(LabeledNode("GGA", "subtype").set_default(True))
-    svwn = lda.add_node(LabeledNode("SVWN", "functional"))
-    pz = lda.add_node(LabeledNode("PZ", "functional"))
-    pbe = gga.add_node(LabeledNode("PBE", "functional").set_default(True))
-    pw91 = gga.add_node(LabeledNode("PW91", "functional"))
+    dft = root.add_node(LabeledNode("density functional theory", "type").set_default(True))
+    lda = dft.add_node(LabeledNode("local density approximation", "subtype"))
+    gga = dft.add_node(LabeledNode("generalized gradient approximation", "subtype").set_default(True))
+    other = dft.add_node(LabeledNode("other", "subtype"))
+
+    lda.add_node(LabeledNode("pz", "functional"))
+    lda.add_node(LabeledNode("pw", "functional"))
+    lda.add_node(LabeledNode("vwn", "functional"))
+    lda.add_node(LabeledNode("other", "functional"))
+
+    gga.add_node(LabeledNode("pbe", "functional").set_default(True))
+    gga.add_node(LabeledNode("pbesol", "functional"))
+    gga.add_node(LabeledNode("pw91", "functional"))
+    gga.add_node(LabeledNode("other", "functional"))
+
+    other.add_node(LabeledNode("other", "functional"))
 
     schema = build_rjsf_schema(tree=root)
     print(json.dumps(schema, indent=2))
