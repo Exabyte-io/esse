@@ -168,37 +168,52 @@ def recursive() -> None:
     print(json.dumps(schema, indent=2))
 
 
-def extract_slug_from_entry(schema, key) -> Union[str, None]:
-    if "enum" in schema[key]:
-        return schema[key]["enum"][0]["slug"]
+def extract_property(schema, key) -> dict:
+    if "enum" in schema["properties"][key]:
+        return {key: schema["properties"][key]["enum"][0]["slug"]}
+    else:
+        return {}
 
 
 def resolve_schema_path(schema_dir: Path, ref: str) -> Path:
     return (schema_dir / ref).resolve()
 
 
-def follow_all_of(store, schema_path: Path, max_depth=3) -> dict:
-    if max_depth == 0:
-        return store
-    current_schema_dir = schema_path.parent.resolve()
+def extract_references(schema_content, current_schema_dir) -> List[Path]:
+    if "allOf" not in schema_content:
+        return []
+
+    n_refs = len(schema_content["allOf"])
+    if n_refs > 0:
+        return [resolve_schema_path(current_schema_dir, schema_content["allOf"][i]["$ref"]) for i in range(n_refs)]
+
+
+def follow_all_of_node(current_node: Node, schema_path: Path, keys: List) -> Node:
+    if len(keys) == 0:
+        return current_node
+
     with open(schema_path) as f:
         schema = json.load(f)
 
-    if "allOf" not in schema:
-        return store
-    n_refs = len(schema["allOf"])
-    if n_refs >= 1:
-        ref_paths = [resolve_schema_path(current_schema_dir, schema["allOf"][i]["$ref"]) for i in range(n_refs)]
-        store.update({schema_path.name: ref_paths})
+    prop = extract_property(schema, key=keys.pop(0))
+    current_node.label = list(prop.keys())[0]
+    current_node.value = list(prop.values())[0]
+
+    print("current node:", current_node)
+
+    ref_paths = extract_references(schema, schema_path.parent.resolve())
+    if len(ref_paths) >= 1 and len(keys) > 0:
         for ref_path in ref_paths:
-            follow_all_of(store=store, schema_path=ref_path, max_depth=max_depth-1)
-    return store
+            next_node = Node(ref_path.stem, children=[current_node])
+            follow_all_of_node(current_node=next_node, schema_path=ref_path, keys=keys)
+    return current_node
 
 
-
-def test():
+def create_tree_from_leaf():
     schema_file = Path("../schema/model_units/pb/qm/dft/ksdft/lda.json")
-    print(follow_all_of({}, schema_file))
+    the_node = follow_all_of_node(Node("lda"), schema_path=schema_file, keys=["subtype", "type"])
+    print(RenderTree(the_node.root))
+
 
 if __name__ == "__main__":
     recursive()
