@@ -7,18 +7,20 @@
             "$ref": "../ksdft.json"
         }
     ],
-    "subtype": {
-        "enum": [
-            {
-                "name": "Meta Generalized Gradient Approximation",
-                "slug": "mgga"
-            }
-        ]
-    },
-    "functional": {
-        "$ref": "mgga/functional.json"
-    },
-    "tags": {
-        "$ref": "mgga/tags.json"
+    "properties": {
+        "subtype": {
+            "enum": [
+                {
+                    "name": "Meta Generalized Gradient Approximation",
+                    "slug": "mgga"
+                }
+            ]
+        },
+        "functional": {
+            "$ref": "mgga/functional.json"
+        },
+        "tags": {
+            "$ref": "mgga/tags.json"
+        }
     }
 }

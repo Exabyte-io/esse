@@ -7,18 +7,20 @@
             "$ref": "../ksdft.json"
         }
     ],
-    "subtype": {
-        "enum": [
-            {
-                "name": "Generalized Gradient Approximation",
-                "slug": "gga"
-            }
-        ]
-    },
-    "functional": {
-        "$ref": "gga/functional.json"
-    },
-    "tags": {
-        "$ref": "gga/tags.json"
+    "properties": {
+        "subtype": {
+            "enum": [
+                {
+                    "name": "Generalized Gradient Approximation",
+                    "slug": "gga"
+                }
+            ]
+        },
+        "functional": {
+            "$ref": "gga/functional.json"
+        },
+        "tags": {
+            "$ref": "gga/tags.json"
+        }
     }
 }
