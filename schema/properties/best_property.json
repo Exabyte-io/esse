@@ -1,0 +1,16 @@
+{
+    "schemaId": "properties/best-property",
+    "$schema": "http://json-schema.org/draft-04/schema#",
+    "title": "Schema of material's best properties",
+    "allOf": [
+        {
+            "$ref": "refined_property.json"
+        }
+    ],
+    "properties": {
+        "count": {
+            "description": "total number of properties among which this property is the best.",
+            "type": "number"
+        }
+    }
+}
