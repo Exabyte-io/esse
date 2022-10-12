@@ -1,10 +1,10 @@
 {
-    "schemaId": "properties/refined-property",
+    "schemaId": "properties/refined",
     "$schema": "http://json-schema.org/draft-04/schema#",
     "title": "Schema of material's property",
     "allOf": [
         {
-            "$ref": "raw_property.json"
+            "$ref": "raw.json"
         }
     ],
     "properties": {

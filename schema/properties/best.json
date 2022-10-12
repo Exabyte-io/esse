@@ -1,10 +1,10 @@
 {
-    "schemaId": "properties/best-property",
+    "schemaId": "properties/best",
     "$schema": "http://json-schema.org/draft-04/schema#",
     "title": "Schema of material's best properties",
     "allOf": [
         {
-            "$ref": "refined_property.json"
+            "$ref": "refined.json"
         }
     ],
     "properties": {
