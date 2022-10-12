@@ -7,31 +7,33 @@
             "$ref": "../ksdft.json"
         }
     ],
-    "subtype": {
-        "enum": [
-            {
-                "name": "Double hybrid functional",
-                "slug": "double-hybrid"
-            }
-        ]
-    },
-    "functional": {
-        "oneOf": [
-            {
-                "$ref": "double_hybrid/functional.json"
-            },
-            {
-                "$ref": "double_hybrid/range_separated_functional.json"
-            }
-        ]
-    },
-    "augmentations": {
-        "$ref": "double_hybrid/augmentations.json"
-    },
-    "modifiers": {
-        "$ref": "double_hybrid/modifiers.json"
-    },
-    "tags": {
-        "$ref": "double_hybrid/tags.json"
+    "properties": {
+        "subtype": {
+            "enum": [
+                {
+                    "name": "Double hybrid functional",
+                    "slug": "double-hybrid"
+                }
+            ]
+        },
+        "functional": {
+            "oneOf": [
+                {
+                    "$ref": "double_hybrid/functional.json"
+                },
+                {
+                    "$ref": "double_hybrid/range_separated_functional.json"
+                }
+            ]
+        },
+        "augmentations": {
+            "$ref": "double_hybrid/augmentations.json"
+        },
+        "modifiers": {
+            "$ref": "double_hybrid/modifiers.json"
+        },
+        "tags": {
+            "$ref": "double_hybrid/tags.json"
+        }
     }
 }
