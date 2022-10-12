@@ -4,5 +4,5 @@
         "value" : 10,
         "metric" : "KPPRA"
     },
-    "...": "include(raw_property.json)"
+    "...": "include(raw.json)"
 }
