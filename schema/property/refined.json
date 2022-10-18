@@ -1,5 +1,5 @@
 {
-    "schemaId": "properties/refined",
+    "schemaId": "property/refined",
     "$schema": "http://json-schema.org/draft-04/schema#",
     "title": "Schema of material's property",
     "allOf": [

@@ -1,5 +1,5 @@
 {
-    "schemaId": "properties/best",
+    "schemaId": "property/best",
     "$schema": "http://json-schema.org/draft-04/schema#",
     "title": "Schema of material's best properties",
     "allOf": [
