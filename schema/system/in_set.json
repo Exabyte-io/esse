@@ -1,20 +1,14 @@
 {
-    "schemaId": "system/base-entity-set",
+    "schemaId": "system/in-set",
     "$schema": "http://json-schema.org/draft-04/schema#",
-    "title": "extended base entity set schema",
+    "title": "System in-set schema",
     "properties": {
-        "isEntitySet": {
-            "type": "boolean"
-        },
-        "entitySetType": {
-            "type": "string"
-        },
         "inSet": {
             "type": "array",
             "items": {
                 "allOf": [
                     {
-                        "$ref": "../system/entity_reference.json"
+                        "$ref": "entity_reference.json"
                     },
                     {
                         "type": "object",

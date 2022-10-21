@@ -1,0 +1,24 @@
+{
+    "schemaId": "in-memory-entity/base",
+    "$schema": "http://json-schema.org/draft-04/schema#",
+    "title": "Base in-memory entity schema",
+    "allOf": [
+        {
+            "description": "entity schema version",
+            "$ref": "../system/schema_version.json"
+        }
+    ],
+    "properties": {
+        "_id": {
+            "description": "entity identity",
+            "type": "string"
+        },
+        "slug": {
+            "description": "entity slug",
+            "type": "string"
+        },
+        "systemName": {
+            "type": "string"
+        }
+    }
+}

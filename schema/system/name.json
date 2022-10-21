@@ -6,10 +6,6 @@
         "name": {
             "description": "entity name",
             "type": "string"
-        },
-        "slug": {
-            "description": "entity slug",
-            "type": "string"
         }
     }
 }

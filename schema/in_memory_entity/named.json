@@ -1,0 +1,13 @@
+{
+    "schemaId": "in-memory-entity/named",
+    "$schema": "http://json-schema.org/draft-04/schema#",
+    "title": "Named in-memory entity schema",
+    "allOf": [
+        {
+            "$ref": "base.json"
+        },
+        {
+            "$ref": "../system/name.json"
+        }
+    ]
+}
