@@ -16,6 +16,14 @@
             "description": "kpoint inside valence band in crystal coordinates",
             "$ref": "../abstract/point.json"
         },
+        "eigenvalueConduction": {
+            "description": "eigenvalue at k-point in conduction band",
+            "$ref": "../primitive/1d_data_series.json"
+        },
+        "eigenvalueValence": {
+            "description": "eigenvalue at k-point in valence band",
+            "$ref": "../primitive/1d_data_series.json"
+        },
         "type": {
             "type": "string",
             "enum": [
