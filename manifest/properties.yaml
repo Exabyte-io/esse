@@ -177,6 +177,9 @@ file_content:
   schemaId: properties-directory-file-content
   isResult: true
 
+averaged_electrostatic_potential:
+  schemaId: properties-directory-non-scalar-averaged-potential
+
 # STRUCTURAL
 basis:
   defaults:
