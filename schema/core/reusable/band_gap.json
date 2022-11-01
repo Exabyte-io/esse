@@ -18,11 +18,11 @@
         },
         "eigenvalueConduction": {
             "description": "eigenvalue at k-point in conduction band",
-            "$ref": "../primitive/array_of_numbers.json"
+            "type": "number"
         },
         "eigenvalueValence": {
             "description": "eigenvalue at k-point in valence band",
-            "$ref": "../primitive/array_of_numbers.json"
+            "type": "number"
         },
         "spin": {
             "type": "number"
