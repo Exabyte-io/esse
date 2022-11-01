@@ -65,6 +65,11 @@ ionization_potential:
   schemaId: properties-directory/scalar/ionization-potential
   isResult: true
 
+valence_band_offset:
+  defaults:
+    units: eV
+  schemaId: properties-directory/scalar/valence-band-offset
+
 # NON-SCALAR
 phonon_dos:
   defaults:
@@ -178,6 +183,8 @@ file_content:
   isResult: true
 
 averaged_electrostatic_potential:
+  defaults:
+    units: eV
   schemaId: properties-directory/non-scalar/averaged-potential
 
 # STRUCTURAL
