@@ -24,6 +24,9 @@
             "description": "eigenvalue at k-point in valence band",
             "$ref": "../primitive/array_of_numbers.json"
         },
+        "spin": {
+            "type": "number"
+        },
         "type": {
             "type": "string",
             "enum": [
