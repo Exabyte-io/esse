@@ -182,10 +182,16 @@ file_content:
   schemaId: properties-directory/non-scalar/file-content
   isResult: true
 
-averaged_electrostatic_potential:
+averaged_potential_profile:
   defaults:
-    units: eV
-  schemaId: properties-directory/non-scalar/averaged-potential
+    xAxis:
+      label: z coordinate
+      units: angstrom
+    yAxis:
+      label: energy
+      units: eV
+  schemaId: properties-directory/non-scalar/averaged-potential-profile
+  isResult: true
 
 # STRUCTURAL
 basis:
