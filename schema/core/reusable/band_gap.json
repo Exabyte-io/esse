@@ -16,6 +16,9 @@
             "description": "kpoint inside valence band in crystal coordinates",
             "$ref": "../abstract/point.json"
         },
+        "spin": {
+            "type": "number"
+        },
         "type": {
             "type": "string",
             "enum": [
