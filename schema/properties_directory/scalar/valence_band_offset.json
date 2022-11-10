@@ -1,0 +1,17 @@
+{
+    "schemaId": "properties-directory/scalar/valence-band-offset",
+    "$schema": "http://json-schema.org/draft-04/schema#",
+    "title": "valence band offset schema",
+    "allOf": [
+        {
+            "$ref": "../../core/reusable/energy.json"
+        }
+    ],
+    "properties": {
+        "name": {
+            "enum": [
+                "valence_band_offset"
+            ]
+        }
+    }
+}

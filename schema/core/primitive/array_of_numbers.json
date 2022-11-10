@@ -1,0 +1,9 @@
+{
+    "schemaId": "core/primitive/array-of-numbers",
+    "$schema": "http://json-schema.org/draft-04/schema#",
+    "title": "array of numbers",
+    "type": "array",
+    "items": {
+        "type": "number"
+    }
+}
