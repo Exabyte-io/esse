@@ -182,7 +182,7 @@ file_content:
   schemaId: properties-directory/non-scalar/file-content
   isResult: true
 
-averaged_potential_profile:
+average_potential_profile:
   defaults:
     xAxis:
       label: z coordinate
@@ -190,7 +190,7 @@ averaged_potential_profile:
     yAxis:
       label: energy
       units: eV
-  schemaId: properties-directory/non-scalar/averaged-potential-profile
+  schemaId: properties-directory/non-scalar/average-potential-profile
   isResult: true
 
 # STRUCTURAL
