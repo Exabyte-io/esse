@@ -8,11 +8,41 @@ concurrency:
 
 jobs:
 
+  run-js-tests:
+    runs-on: ubuntu-latest
+    strategy:
+      matrix:
+        node-version: [12.x, 14.x, 16.x]
+
+    steps:
+      - name: Checkout this repository
+        uses: actions/checkout@v2
+        with:
+          lfs: true
+
+      - name: Checkout actions repository
+        uses: actions/checkout@v2
+        with:
+          repository: Exabyte-io/actions
+          ref: 2022.11.21
+          token: ${{ secrets.BOT_GITHUB_TOKEN }}
+          path: actions
+
+      - name: Run JS validate
+        uses: ./actions/js/validate
+        with:
+          node-version: '14.x'
+      
+      - name: Run JS tests
+        uses: ./actions/js/test
+        with:
+          node-version: ${{ matrix.node-version }}
+
   run-py-tests:
     runs-on: ubuntu-latest
     strategy:
       matrix:
-        python-version: [3.7, 3.8]
+        python-version: [3.6, 3.7, 3.8]
 
     steps:
       - name: Checkout this repository
@@ -32,30 +62,6 @@ jobs:
         with:
           python-version: ${{ matrix.python-version }}
           test-script: src/py/esse/tests/validate.py
-
-  run-js-tests:
-    runs-on: ubuntu-latest
-    strategy:
-      matrix:
-        node-version: [12.x, 14.x, 16.x]
-
-    steps:
-      - name: Checkout this repository
-        uses: actions/checkout@v2
-        with:
-          lfs: true
-
-      - name: Checkout actions repository
-        uses: actions/checkout@v2
-        with:
-          repository: Exabyte-io/actions
-          token: ${{ secrets.BOT_GITHUB_TOKEN }}
-          path: actions
-
-      - name: Run JS tests
-        uses: ./actions/js/test
-        with:
-          node-version: ${{ matrix.node-version }}
 
   publish-js-package:
     needs: [run-py-tests, run-js-tests]
