@@ -24,6 +24,7 @@
     },
     "homepage": "https://github.com/Exabyte-io/exabyte-esse",
     "devDependencies": {
+        "@exabyte-io/eslint-config": "^2022.11.17-0",
         "chai": "4.3.4",
         "eslint": "^7.32.0",
         "eslint-config-airbnb": "^19.0.2",

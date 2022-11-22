@@ -9,7 +9,7 @@ concurrency:
 jobs:
 
   run-py-tests:
-    runs-on: ubuntu-latest
+    runs-on: ubuntu-20.04
     strategy:
       matrix:
         python-version: [3.6, 3.7, 3.8]
@@ -52,6 +52,11 @@ jobs:
           token: ${{ secrets.BOT_GITHUB_TOKEN }}
           path: actions
 
+      - name: Run JS validate
+        uses: ./actions/js/validate
+        with:
+          node-version: '14.x'
+      
       - name: Run JS tests
         uses: ./actions/js/test
         with:
