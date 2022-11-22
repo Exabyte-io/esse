@@ -2,7 +2,7 @@
     "schemaId": "properties-directory/non-scalar/file-content",
     "$schema": "http://json-schema.org/draft-04/schema#",
     "title": "file_content",
-    "allof": [
+    "allOf": [
         {
             "$ref": "../../core/reusable/file_metadata.json"
         }
