@@ -32,7 +32,7 @@
         "CONTAINER": "",
         "NAME": "",
         "PROVIDER": "",
-        "REGION": "",
+        "REGION": ""
     },
     "required": [
         "CONTAINER",
