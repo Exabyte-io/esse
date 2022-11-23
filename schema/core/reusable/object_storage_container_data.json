@@ -28,6 +28,12 @@
             "type": "string"
         }
     },
+    "default": {
+        "CONTAINER": "",
+        "NAME": "",
+        "PROVIDER": "",
+        "REGION": "",
+    },
     "required": [
         "CONTAINER",
         "NAME",
