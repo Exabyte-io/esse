@@ -3,6 +3,12 @@
     "$schema": "http://json-schema.org/draft-04/schema#",
     "title": "model schema (base)",
     "properties": {
+        "name": {
+            "type": "string"
+        },
+        "path": {
+            "type": "string"
+        },
         "categories": {
             "description": "Model categories",
             "$ref": "core/reusable/categories.json"

@@ -1,3 +1,11 @@
 {
-    "...": "include(models_directory/pb/qm/abin/configuration_interaction.json)"
+    "categories": {
+
+    },
+    "parameters": {
+
+    },
+    "method": {
+        "...": "include(method.json)"
+    }
 }
