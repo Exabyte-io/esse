@@ -1,0 +1,27 @@
+{
+    "lda": {
+        "enum": [
+            "pz"
+        ]
+    },
+    "gga": {
+        "enum": [
+            "pbe"
+        ]
+    },
+    "mgga": {
+        "enum": [
+            "scan"
+        ]
+    },
+    "hybrid": {
+        "enum": [
+            "hse06"
+        ]
+    },
+    "doubleHybrid": {
+        "enum": [
+            "b2plyp"
+        ]
+    }
+}

@@ -1,0 +1,16 @@
+{
+    "schemaId": "models-directory/pb/qm/dft/mixins/gga-functional",
+    "$schema": "http://json-schema.org/draft-04/schema#",
+    "type": "object",
+    "properties": {
+        "parameters": {
+            "type": "object",
+            "properties": {
+                "functional": {
+                    "type": "string",
+                    "$ref": "./enum_options.json#/gga"
+                }
+            }
+        }
+    }
+}
