@@ -24,14 +24,5 @@
                 "$ref": "double_hybrid/range_separated_functional.json"
             }
         ]
-    },
-    "augmentations": {
-        "$ref": "double_hybrid/augmentations.json"
-    },
-    "modifiers": {
-        "$ref": "double_hybrid/modifiers.json"
-    },
-    "tags": {
-        "$ref": "double_hybrid/tags.json"
     }
 }

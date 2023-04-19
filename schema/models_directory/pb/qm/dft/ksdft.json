@@ -15,15 +15,6 @@
                     "slug": "ksdft"
                 }
             ]
-        },
-        "augmentations": {
-            "$ref": "ksdft/augmentations.json"
-        },
-        "modifiers": {
-            "$ref": "ksdft/modifiers.json"
-        },
-        "tags": {
-            "$ref": "ksdft/tags.json"
         }
     }
 }

@@ -17,14 +17,5 @@
     },
     "functional": {
         "$ref": "lda/functional.json"
-    },
-    "augmentations": {
-        "$ref": "lda/augmentations.json"
-    },
-    "modifiers": {
-        "$ref": "lda/modifiers.json"
-    },
-    "tags": {
-        "$ref": "lda/tags.json"
     }
 }

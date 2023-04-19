@@ -36,15 +36,6 @@
                     "slug": "mrcisd"
                 }
             ]
-        },
-        "augmentations": {
-            "$ref": "configuration_interaction/augmentations.json"
-        },
-        "modifiers": {
-            "$ref": "configuration_interaction/modifiers.json"
-        },
-        "tags": {
-            "$ref": "configuration_interaction/tags.json"
         }
     }
 }

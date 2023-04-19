@@ -17,14 +17,5 @@
     },
     "functional": {
         "$ref": "mgga/functional.json"
-    },
-    "augmentations": {
-        "$ref": "mgga/augmentations.json"
-    },
-    "modifiers": {
-        "$ref": "mgga/modifiers.json"
-    },
-    "tags": {
-        "$ref": "mgga/tags.json"
     }
 }
