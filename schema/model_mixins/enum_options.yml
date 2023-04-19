@@ -8,3 +8,5 @@ dispersionCorrection: !enum
   - DFT-D3
   - XDM
   - TS
+hubbardType: !enum
+  - U

@@ -14,5 +14,10 @@
             "XDM",
             "TS"
         ]
+    },
+    "hubbardType": {
+        "enum": [
+            "U"
+        ]
     }
 }
