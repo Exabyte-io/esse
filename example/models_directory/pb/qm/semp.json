@@ -1,19 +1,20 @@
 {
-    "tier1": {
-        "name": "physics-based",
-        "slug": "pb"
+    "categories": {
+        "tier1": {
+            "name": "physics-based",
+            "slug": "pb"
+        },
+        "tier2": {
+            "name": "quantum-mechanical",
+            "slug": "qm"
+        },
+        "tier3": {
+            "name": "semi-empirical",
+            "slug": "semp"
+        }
     },
-    "tier2": {
-        "name": "quantum-mechanical",
-        "slug": "qm"
-    },
-    "tier3": {
-        "name": "semi-empirical",
-        "slug": "semp"
-    },
-    "type": {
-        "name": "parametric method 7",
-        "slug": "pm7"
+    "parameters": {
+
     },
     "method": {
         "...": "include(../../../method.json)"

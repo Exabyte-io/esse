@@ -7,13 +7,17 @@
         }
     ],
     "properties": {
-        "tier1": {
-            "enum": [
-                {
-                    "name": "statistical",
-                    "slug": "st"
+        "categories": {
+            "properties": {
+                "tier1": {
+                    "enum": [
+                        {
+                            "name": "statistical",
+                            "slug": "st"
+                        }
+                    ]
                 }
-            ]
+            }
         }
     }
 }

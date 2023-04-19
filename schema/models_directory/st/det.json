@@ -7,13 +7,17 @@
         }
     ],
     "properties": {
-        "tier2": {
-            "enum": [
-                {
-                    "name": "deterministic",
-                    "slug": "det"
+        "categories": {
+            "properties": {
+                "tier2": {
+                    "enum": [
+                        {
+                            "name": "deterministic",
+                            "slug": "det"
+                        }
+                    ]
                 }
-            ]
+            }
         }
     }
 }
