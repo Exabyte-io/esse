@@ -5,17 +5,28 @@
     "allOf": [
         {
             "$ref": "../ksdft.json"
+        },
+        {
+            "$ref": "../mixins/gga_functional.json"
         }
     ],
-    "subtype": {
-        "enum": [
-            {
-                "name": "Generalized Gradient Approximation",
-                "slug": "gga"
+    "anyOf": [
+        {
+            "$ref": "../../../../../model_mixins/hubbard.json"
+        }
+    ],
+    "properties": {
+        "categories": {
+            "properties": {
+                "subtype": {
+                    "enum": [
+                        {
+                            "name": "Generalized Gradient Approximation",
+                            "slug": "gga"
+                        }
+                    ]
+                }
             }
-        ]
-    },
-    "functional": {
-        "$ref": "gga/functional.json"
+        }
     }
 }

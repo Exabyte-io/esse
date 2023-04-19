@@ -1,5 +1,5 @@
 {
-    "name": "PZ+U (magnetism)",
+    "name": "HSE06 (SOC)",
     "categories": {
         "tier1": {
             "name": "physics-based",
@@ -18,14 +18,14 @@
             "slug": "ksdft"
         },
         "subtype": {
-            "name": "Local Density Approximation",
-            "slug": "lda"
+            "name": "Hybrid functional",
+            "slug": "hybrid"
         }
     },
     "parameters": {
-        "functional": "pz",
-        "spinPolarization": "collinear",
-        "hubbardType": "U"
+        "functional": "hse06",
+        "spinOrbitCoupling": true,
+        "spinPolarization": "non-collinear"
     },
     "method": {
         "...": "include(../../../../../methods_directory/pseudopotential.json)"

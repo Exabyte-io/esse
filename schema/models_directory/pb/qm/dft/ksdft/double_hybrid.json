@@ -5,24 +5,23 @@
     "allOf": [
         {
             "$ref": "../ksdft.json"
+        },
+        {
+            "$ref": "../mixins/double_hybrid_functional.json"
         }
     ],
-    "subtype": {
-        "enum": [
-            {
-                "name": "Double hybrid functional",
-                "slug": "double-hybrid"
+    "properties": {
+        "categories": {
+            "properties": {
+                "subtype": {
+                    "enum": [
+                        {
+                            "name": "Double hybrid functional",
+                            "slug": "double-hybrid"
+                        }
+                    ]
+                }
             }
-        ]
-    },
-    "functional": {
-        "oneOf": [
-            {
-                "$ref": "double_hybrid/functional.json"
-            },
-            {
-                "$ref": "double_hybrid/range_separated_functional.json"
-            }
-        ]
+        }
     }
 }

@@ -5,24 +5,23 @@
     "allOf": [
         {
             "$ref": "../ksdft.json"
+        },
+        {
+            "$ref": "../mixins/hybrid_functional.json"
         }
     ],
-    "subtype": {
-        "enum": [
-            {
-                "name": "Hybrid functional",
-                "slug": "hybrid"
+    "properties": {
+        "categories": {
+            "properties": {
+                "subtype": {
+                    "enum": [
+                        {
+                            "name": "Hybrid functional",
+                            "slug": "hybrid"
+                        }
+                    ]
+                }
             }
-        ]
-    },
-    "functional": {
-        "oneOf": [
-            {
-                "$ref": "hybrid/functional.json"
-            },
-            {
-                "$ref": "hybrid/range_separated_functional.json"
-            }
-        ]
+        }
     }
 }

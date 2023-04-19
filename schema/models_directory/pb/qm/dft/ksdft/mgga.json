@@ -5,17 +5,28 @@
     "allOf": [
         {
             "$ref": "../ksdft.json"
+        },
+        {
+            "$ref": "../mixins/mgga_functional.json"
         }
     ],
-    "subtype": {
-        "enum": [
-            {
-                "name": "Meta Generalized Gradient Approximation",
-                "slug": "mgga"
+    "anyOf": [
+        {
+            "$ref": "../../../../../model_mixins/hubbard.json"
+        }
+    ],
+    "properties": {
+        "categories": {
+            "properties": {
+                "subtype": {
+                    "enum": [
+                        {
+                            "name": "Meta Generalized Gradient Approximation",
+                            "slug": "mgga"
+                        }
+                    ]
+                }
             }
-        ]
-    },
-    "functional": {
-        "$ref": "mgga/functional.json"
+        }
     }
 }

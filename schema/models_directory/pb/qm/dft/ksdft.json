@@ -5,16 +5,31 @@
     "allOf": [
         {
             "$ref": "../dft.json"
+        },
+        {
+            "$ref": "../../../../model_mixins/spin_polarization.json"
+        }
+    ],
+    "anyOf": [
+        {
+            "$ref": "../../../../model_mixins/spin_orbit_coupling.json"
+        },
+        {
+            "$ref": "../../../../model_mixins/dispersion_correction.json"
         }
     ],
     "properties": {
-        "type": {
-            "enum": [
-                {
-                    "name": "Kohn-Sham DFT",
-                    "slug": "ksdft"
+        "categories": {
+            "properties": {
+                "type": {
+                    "enum": [
+                        {
+                            "name": "Kohn-Sham DFT",
+                            "slug": "ksdft"
+                        }
+                    ]
                 }
-            ]
+            }
         }
     }
 }

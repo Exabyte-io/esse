@@ -7,13 +7,17 @@
         }
     ],
     "properties": {
-        "tier1": {
-            "enum": [
-                {
-                    "name": "physics-based",
-                    "slug": "pb"
+        "categories": {
+            "properties": {
+                "tier1": {
+                    "enum": [
+                        {
+                            "name": "physics-based",
+                            "slug": "pb"
+                        }
+                    ]
                 }
-            ]
+            }
         }
     }
 }

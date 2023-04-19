@@ -5,17 +5,28 @@
     "allOf": [
         {
             "$ref": "../ksdft.json"
+        },
+        {
+            "$ref": "../mixins/lda_functional.json"
         }
     ],
-    "subtype": {
-        "enum": [
-            {
-                "name": "Local Density Approximation",
-                "slug": "lda"
+    "anyOf": [
+        {
+            "$ref": "../../../../../model_mixins/hubbard.json"
+        }
+    ],
+    "properties": {
+        "categories": {
+            "properties": {
+                "subtype": {
+                    "enum": [
+                        {
+                            "name": "Local Density Approximation",
+                            "slug": "lda"
+                        }
+                    ]
+                }
             }
-        ]
-    },
-    "functional": {
-        "$ref": "lda/functional.json"
+        }
     }
 }
