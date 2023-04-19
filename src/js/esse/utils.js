@@ -27,10 +27,12 @@ export function parseIncludeReferenceStatements(filePath) {
 export function parseIncludeReferenceStatementsByDir(dirPath) {
     const data = [];
     file.walkSync(dirPath, (dirPath_, dirs_, files_) => {
-        files_.forEach((file_) => {
-            const filePath = path.join(dirPath_, file_);
-            data.push(parseIncludeReferenceStatements(filePath));
-        });
+        files_
+            .filter((file_) => path.extname(file_) === ".json")
+            .forEach((file_) => {
+                const filePath = path.join(dirPath_, file_);
+                data.push(parseIncludeReferenceStatements(filePath));
+            });
     });
     return data;
 }
