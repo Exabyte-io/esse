@@ -1,0 +1,9 @@
+{
+    "spinPolarization": {
+        "enum": [
+            "none",
+            "collinear",
+            "non-collinear"
+        ]
+    }
+}
