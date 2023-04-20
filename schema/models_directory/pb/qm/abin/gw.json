@@ -1,0 +1,67 @@
+{
+    "schemaId": "models-directory/pb/qm/abin/gw",
+    "$schema": "http://json-schema.org/draft-04/schema#",
+    "title": "GW Approximation schema",
+    "allOf": [
+        {
+            "$ref": "../abin.json"
+        }
+    ],
+    "oneOf": [
+        {
+            "$ref": "../dft/mixins/lda_functional.json"
+        },
+        {
+            "$ref": "../dft/mixins/gga_functional.json"
+        },
+        {
+            "$ref": "../dft/mixins/mgga_functional.json"
+        }
+    ],
+    "anyOf": [
+        {
+            "$ref": "../../../../model_mixins/spin_polarization.json"
+        },
+        {
+            "$ref": "../../../../model_mixins/spin_orbit_coupling.json"
+        }
+    ],
+    "properties": {
+        "categories": {
+            "properties": {
+                "type": {
+                    "enum": [
+                        {
+                            "name": "GW Approximation",
+                            "slug": "gw"
+                        }
+                    ]
+                },
+                "subtype": {
+                    "enum": [
+                        {
+                            "name": "G0W0",
+                            "slug": "g0w0"
+                        },
+                        {
+                            "name": "eigenvalue self-consistent G (evGW0)",
+                            "slug": "evgw0"
+                        },
+                        {
+                            "name": "eigenvalue self-consistent GW (evGW)",
+                            "slug": "evgw"
+                        }
+                    ]
+                }
+            }
+        },
+        "parameters": {
+            "properties": {
+                "require": {
+                    "description": "Path to mean-field model",
+                    "$ref": "../../../../core/reusable/category_path.json"
+                }
+            }
+        }
+    }
+}
