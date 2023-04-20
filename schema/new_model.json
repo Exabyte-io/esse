@@ -7,7 +7,7 @@
             "type": "string"
         },
         "path": {
-            "type": "string"
+            "$ref": "core/reusable/category_path.json"
         },
         "categories": {
             "description": "Model categories",
