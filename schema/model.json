@@ -3,22 +3,33 @@
     "$schema": "http://json-schema.org/draft-04/schema#",
     "title": "model schema (base)",
     "properties": {
-        "type": {
-            "description": "general type of the model, eg. `dft`",
+        "name": {
             "type": "string"
         },
-        "subtype": {
-            "description": "general subtype of the model, eg. `lda`",
-            "type": "string"
+        "path": {
+            "$ref": "core/reusable/category_path.json"
+        },
+        "categories": {
+            "description": "Model categories",
+            "$ref": "core/reusable/categories.json"
+        },
+        "parameters": {
+            "type": "object",
+            "description": "Model parameters defined in-place or via model mixins"
         },
         "method": {
             "$ref": "method.json"
+        },
+        "reference": {
+            "$ref": "core/reference/literature.json"
+        },
+        "tags": {
+            "$ref": "core/primitive/array_of_strings.json"
         }
     },
-    "additionalProperties": true,
     "required": [
-        "type",
-        "subtype",
+        "categories",
+        "parameters",
         "method"
     ]
 }

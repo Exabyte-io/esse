@@ -9,15 +9,19 @@
         }
     ],
     "properties": {
-        "type": {
-            "enum": [
-                "unknown"
-            ]
-        },
-        "subtype": {
-            "enum": [
-                "unknown"
-            ]
+        "categories": {
+            "properties": {
+                "type": {
+                    "enum": [
+                        "unknown"
+                    ]
+                },
+                "subtype": {
+                    "enum": [
+                        "unknown"
+                    ]
+                }
+            }
         },
         "method": {
             "$ref": "../methods_directory/unknown.json"

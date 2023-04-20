@@ -1,7 +1,3 @@
 {
-    "method": {
-        "...": "include(method.json)"
-    },
-    "subtype": "gga",
-    "type": "dft"
+    "...": "include(models_directory/pb/qm/dft/ksdft/lda.json)"
 }
