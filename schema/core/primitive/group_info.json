@@ -1,7 +1,7 @@
 {
     "schemaId": "core/primitive/group_info",
     "$schema": "http://json-schema.org/draft-04/schema#",
-    "title": "array of 3 boolean elements schema",
+    "title": "Group info schema for nodes in a graph",
     "type": "object",
     "properties": {
         "groupName": {
