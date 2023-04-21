@@ -2,10 +2,15 @@
     "schemaId": "model",
     "$schema": "http://json-schema.org/draft-04/schema#",
     "title": "model schema (base)",
-    "properties": {
-        "name": {
-            "type": "string"
+    "allOf": [
+        {
+            "$ref": "system/name.json"
         },
+        {
+            "$ref": "system/tags.json"
+        }
+    ],
+    "properties": {
         "path": {
             "$ref": "core/reusable/category_path.json"
         },
@@ -22,9 +27,6 @@
         },
         "reference": {
             "$ref": "core/reference/literature.json"
-        },
-        "tags": {
-            "$ref": "core/primitive/array_of_strings.json"
         }
     },
     "required": [
