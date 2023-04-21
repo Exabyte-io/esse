@@ -1,0 +1,24 @@
+{
+    "schemaId": "core/primitive/graph",
+    "$schema": "http://json-schema.org/draft-04/schema#",
+    "title": "directed acyclic graph schema",
+    "type": "array",
+    "items": {
+        "type": "object",
+        "anyOf": [
+            {
+                "$ref": "graph/base_node.json"
+            },
+            {
+                "$ref": "graph/named_node.json"
+            },
+            {
+                "$ref": "graph/named_node_in_group.json"
+            },
+            {
+                "$ref": "graph/node_with_type.json"
+            }
+        ],
+        "uniqueItems": true
+    }
+}
