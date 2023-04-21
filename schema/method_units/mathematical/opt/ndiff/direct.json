@@ -1,0 +1,20 @@
+{
+    "schemaId": "method_units/mathematical/opt/ndiff/direct",
+    "$schema": "http://json-schema.org/draft-04/schema#",
+    "description": "Direct algorithms for the optimization of non-differentiable functions",
+    "allOf": [
+        {
+            "$ref": "../ndiff.json"
+        }
+    ],
+    "properties": {
+        "tier3": {
+            "enum": [
+                {
+                    "name": "Direct Algorithm",
+                    "slug": "direct"
+                }
+            ]
+        }
+    }
+}

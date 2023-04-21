@@ -1,0 +1,20 @@
+{
+    "schemaId": "method_units/mathematical/intgr/diffeq",
+    "$schema": "http://json-schema.org/draft-04/schema#",
+    "description": "Methods for the numerical integration of differential equations",
+    "allOf": [
+        {
+            "$ref": "../intgr.json"
+        }
+    ],
+    "properties": {
+        "tier2": {
+            "enum": [
+                {
+                    "name": "Numerical Integration of Differential Equations",
+                    "slug": "diffeq"
+                }
+            ]
+        }
+    }
+}

@@ -1,0 +1,20 @@
+{
+    "schemaId": "method_units/mathematical/fapprx",
+    "$schema": "http://json-schema.org/draft-04/schema#",
+    "description": "Unstructured meshing methods",
+    "allOf": [
+        {
+            "$ref": "../unit_base_mathematical.json"
+        }
+    ],
+    "properties": {
+        "tier1": {
+            "enum": [
+                {
+                    "name": "Function Approximation",
+                    "slug": "fapprx"
+                }
+            ]
+        }
+    }
+}

@@ -1,0 +1,20 @@
+{
+    "schemaId": "method_units/mathematical/opt/ndiff/pop",
+    "$schema": "http://json-schema.org/draft-04/schema#",
+    "description": "Population algorithms for the optmization of non-differentiable functions",
+    "allOf": [
+        {
+            "$ref": "../ndiff.json"
+        }
+    ],
+    "properties": {
+        "tier3": {
+            "enum": [
+                {
+                    "name": "Population Algorithm",
+                    "slug": "pop"
+                }
+            ]
+        }
+    }
+}

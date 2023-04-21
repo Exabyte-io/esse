@@ -1,0 +1,20 @@
+{
+    "schemaId": "method_units/mathematical/fapprx/ipol",
+    "$schema": "http://json-schema.org/draft-04/schema#",
+    "description": "Interpolation methods",
+    "allOf": [
+        {
+            "$ref": "../fapprx.json"
+        }
+    ],
+    "properties": {
+        "tier2": {
+            "enum": [
+                {
+                    "name": "Interpolation",
+                    "slug": "ipol"
+                }
+            ]
+        }
+    }
+}

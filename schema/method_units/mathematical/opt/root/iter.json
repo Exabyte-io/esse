@@ -1,0 +1,20 @@
+{
+    "schemaId": "method_units/mathematical/opt/root/iter",
+    "$schema": "http://json-schema.org/draft-04/schema#",
+    "description": "Iterative method for root finding",
+    "allOf": [
+        {
+            "$ref": "../root.json"
+        }
+    ],
+    "properties": {
+        "tier3": {
+            "enum": [
+                {
+                    "name": "Iterative",
+                    "slug": "iter"
+                }
+            ]
+        }
+    }
+}

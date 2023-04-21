@@ -1,0 +1,20 @@
+{
+    "schemaId": "method_units/mathematical/discr/mesh",
+    "$schema": "http://json-schema.org/draft-04/schema#",
+    "description": "Meshing methods",
+    "allOf": [
+        {
+            "$ref": "../discr.json"
+        }
+    ],
+    "properties": {
+        "tier2": {
+            "enum": [
+                {
+                    "name": "Meshing",
+                    "slug": "mesh"
+                }
+            ]
+        }
+    }
+}

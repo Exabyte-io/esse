@@ -1,0 +1,23 @@
+{
+    "schemaId": "method_units/unit_base_referable",
+    "$schema": "http://json-schema.org/draft-04/schema#",
+    "title": "mathematical unit method schema (base)",
+    "description": "Used for database storage",
+    "allOf": [
+        {
+            "$ref": "unit_base.json"
+        },
+        {
+            "$ref": "../core/primitive/graph/base_node.json#/definitions/flowchart-id"
+        }
+    ],
+    "properties": {
+        "methodPath": {
+            "description": "Method categorization path containing tiers and type/subtype",
+            "$ref": "../core/primitive/path.json"
+        }
+    },
+    "required": [
+        "methodPath"
+    ]
+}
