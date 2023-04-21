@@ -8,13 +8,17 @@
         }
     ],
     "properties": {
-        "tier3": {
-            "enum": [
-                {
-                    "name": "Bracketing Algorithm",
-                    "slug": "bracket"
+        "categories": {
+            "properties": {
+                "tier3": {
+                    "enum": [
+                        {
+                            "name": "Bracketing Algorithm",
+                            "slug": "bracket"
+                        }
+                    ]
                 }
-            ]
+            }
         }
     }
 }

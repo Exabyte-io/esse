@@ -8,13 +8,17 @@
         }
     ],
     "properties": {
-        "type": {
-            "enum": [
-                {
-                    "name": "Fourier Transformation",
-                    "slug": "fourier-transf"
+        "categories": {
+            "properties": {
+                "type": {
+                    "enum": [
+                        {
+                            "name": "Fourier Transformation",
+                            "slug": "fourier-transf"
+                        }
+                    ]
                 }
-            ]
+            }
         }
     }
 }

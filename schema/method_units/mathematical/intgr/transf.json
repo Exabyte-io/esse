@@ -8,21 +8,17 @@
         }
     ],
     "properties": {
-        "tier2": {
-            "enum": [
-                {
-                    "name": "Integral Transformation",
-                    "slug": "transf"
+        "categories": {
+            "properties": {
+                "tier2": {
+                    "enum": [
+                        {
+                            "name": "Integral Transformation",
+                            "slug": "transf"
+                        }
+                    ]
                 }
-            ]
-        },
-        "tier3": {
-            "enum": [
-                {
-                    "name": "None",
-                    "slug": "none"
-                }
-            ]
+            }
         }
     }
 }

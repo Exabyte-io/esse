@@ -8,13 +8,17 @@
         }
     ],
     "properties": {
-        "tier2": {
-            "enum": [
-                {
-                    "name": "Root Finding",
-                    "slug": "root"
+        "categories": {
+            "properties": {
+                "tier2": {
+                    "enum": [
+                        {
+                            "name": "Root Finding",
+                            "slug": "root"
+                        }
+                    ]
                 }
-            ]
+            }
         }
     }
 }

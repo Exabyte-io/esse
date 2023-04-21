@@ -8,13 +8,17 @@
         }
     ],
     "properties": {
-        "tier2": {
-            "enum": [
-                {
-                    "name": "Numerical Quadrature",
-                    "slug": "numquad"
+        "categories": {
+            "properties": {
+                "tier2": {
+                    "enum": [
+                        {
+                            "name": "Numerical Quadrature",
+                            "slug": "numquad"
+                        }
+                    ]
                 }
-            ]
+            }
         }
     }
 }

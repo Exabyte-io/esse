@@ -8,13 +8,17 @@
         }
     ],
     "properties": {
-        "tier2": {
-            "enum": [
-                {
-                    "name": "Decomposition",
-                    "slug": "dcomp"
+        "categories": {
+            "properties": {
+                "tier2": {
+                    "enum": [
+                        {
+                            "name": "Decomposition",
+                            "slug": "dcomp"
+                        }
+                    ]
                 }
-            ]
+            }
         }
     }
 }

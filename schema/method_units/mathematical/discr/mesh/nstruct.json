@@ -8,13 +8,17 @@
         }
     ],
     "properties": {
-        "tier3": {
-            "enum": [
-                {
-                    "name": "Unstructured Mesh",
-                    "slug": "nstruct"
+        "categories": {
+            "properties": {
+                "tier3": {
+                    "enum": [
+                        {
+                            "name": "Unstructured Mesh",
+                            "slug": "nstruct"
+                        }
+                    ]
                 }
-            ]
+            }
         }
     }
 }

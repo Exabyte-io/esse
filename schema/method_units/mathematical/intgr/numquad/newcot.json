@@ -8,13 +8,17 @@
         }
     ],
     "properties": {
-        "tier3": {
-            "enum": [
-                {
-                    "name": "Newton-Cotes Quadrature",
-                    "slug": "newcot"
+        "categories": {
+            "properties": {
+                "tier3": {
+                    "enum": [
+                        {
+                            "name": "Newton-Cotes Quadrature",
+                            "slug": "newcot"
+                        }
+                    ]
                 }
-            ]
+            }
         }
     }
 }

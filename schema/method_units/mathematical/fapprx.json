@@ -8,13 +8,17 @@
         }
     ],
     "properties": {
-        "tier1": {
-            "enum": [
-                {
-                    "name": "Function Approximation",
-                    "slug": "fapprx"
+        "categories": {
+            "properties": {
+                "tier1": {
+                    "enum": [
+                        {
+                            "name": "Function Approximation",
+                            "slug": "fapprx"
+                        }
+                    ]
                 }
-            ]
+            }
         }
     }
 }

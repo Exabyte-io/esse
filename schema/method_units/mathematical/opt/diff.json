@@ -8,13 +8,17 @@
         }
     ],
     "properties": {
-        "tier2": {
-            "enum": [
-                {
-                    "name": "Differentiable Functions",
-                    "slug": "diff"
+        "categories": {
+            "properties": {
+                "tier2": {
+                    "enum": [
+                        {
+                            "name": "Differentiable Functions",
+                            "slug": "diff"
+                        }
+                    ]
                 }
-            ]
+            }
         }
     }
 }

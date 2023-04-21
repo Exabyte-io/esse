@@ -8,21 +8,17 @@
         }
     ],
     "properties": {
-        "tier2": {
-            "enum": [
-                {
-                    "name": "Basis Expansion",
-                    "slug": "basisexp"
+        "categories": {
+            "properties": {
+                "tier2": {
+                    "enum": [
+                        {
+                            "name": "Basis Expansion",
+                            "slug": "basisexp"
+                        }
+                    ]
                 }
-            ]
-        },
-        "tier3": {
-            "enum": [
-                {
-                    "name": "None",
-                    "slug": "none"
-                }
-            ]
+            }
         }
     }
 }

@@ -8,13 +8,17 @@
         }
     ],
     "properties": {
-        "tier3": {
-            "enum": [
-                {
-                    "name": "Population Algorithm",
-                    "slug": "pop"
+        "categories": {
+            "properties": {
+                "tier3": {
+                    "enum": [
+                        {
+                            "name": "Population Algorithm",
+                            "slug": "pop"
+                        }
+                    ]
                 }
-            ]
+            }
         }
     }
 }

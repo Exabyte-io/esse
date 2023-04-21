@@ -8,13 +8,17 @@
         }
     ],
     "properties": {
-        "tier2": {
-            "enum": [
-                {
-                    "name": "Linear Transformation",
-                    "slug": "lintra"
+        "categories": {
+            "properties": {
+                "tier2": {
+                    "enum": [
+                        {
+                            "name": "Linear Transformation",
+                            "slug": "lintra"
+                        }
+                    ]
                 }
-            ]
+            }
         }
     }
 }

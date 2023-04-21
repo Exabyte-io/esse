@@ -8,21 +8,17 @@
         }
     ],
     "properties": {
-        "tier2": {
-            "enum": [
-                {
-                    "name": "Finite Differences",
-                    "slug": "fd"
+        "categories": {
+            "properties": {
+                "tier2": {
+                    "enum": [
+                        {
+                            "name": "Finite Differences",
+                            "slug": "fd"
+                        }
+                    ]
                 }
-            ]
-        },
-        "tier3": {
-            "enum": [
-                {
-                    "name": "None",
-                    "slug": "none"
-                }
-            ]
+            }
         }
     }
 }

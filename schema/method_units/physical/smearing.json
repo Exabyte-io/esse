@@ -9,68 +9,35 @@
         }
     ],
     "properties": {
-        "mathematicalMethodsCategoryPaths": {
-            "type": "array",
-            "items": {
-                "anyOf": [
-                    {
-                        "enum": [
-                            "none"
-                        ]
-                    }
-                ]
-            }
-        },
-        "modelCategoryPaths": {
-            "type": "array",
-            "items": {
-                "anyOf": [
-                    {
-                        "enum": [
-                            "pb/qm/*"
-                        ]
-                    }
-                ]
-            }
-        },
-        "type": {
-            "enum": [
-                {
-                    "name": "Occupation number smearing",
-                    "slug": "smearing"
-                }
-            ]
-        },
-        "subtype": {
-            "enum": [
-                {
-                    "name": "Gaussian smearing",
-                    "slug": "gaussian"
-                },
-                {
-                    "name": "Fermi-Dirac smearing",
-                    "slug": "fermi-dirac"
-                },
-                {
-                    "name": "Marzari-Vanderbilt smearing",
-                    "slug": "marzari-vanderbilt"
-                },
-                {
-                    "name": "Methfessel-Paxton smearing",
-                    "slug": "methfessel-paxton"
-                }
-            ]
-        },
-        "parameters": {
-            "type": "object",
+        "categories": {
             "properties": {
-                "smearingWidth": {
-                    "description": "Smearing parameter",
-                    "$ref": "../../core/reusable/parameters/number.json"
+                "type": {
+                    "enum": [
+                        {
+                            "name": "Occupation number smearing",
+                            "slug": "smearing"
+                        }
+                    ]
                 },
-                "MethfesselPaxton.order": {
-                    "description": "Order of Hermite polynomial",
-                    "$ref": "../../core/reusable/parameters/int.json"
+                "subtype": {
+                    "enum": [
+                        {
+                            "name": "Gaussian smearing",
+                            "slug": "gaussian"
+                        },
+                        {
+                            "name": "Fermi-Dirac smearing",
+                            "slug": "fermi-dirac"
+                        },
+                        {
+                            "name": "Marzari-Vanderbilt smearing",
+                            "slug": "marzari-vanderbilt"
+                        },
+                        {
+                            "name": "Methfessel-Paxton smearing",
+                            "slug": "methfessel-paxton"
+                        }
+                    ]
                 }
             }
         }

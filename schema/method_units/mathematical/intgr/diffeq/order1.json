@@ -8,13 +8,17 @@
         }
     ],
     "properties": {
-        "tier3": {
-            "enum": [
-                {
-                    "name": "First Order Integrator",
-                    "slug": "order1"
+        "categories": {
+            "properties": {
+                "tier3": {
+                    "enum": [
+                        {
+                            "name": "First Order Integrator",
+                            "slug": "order1"
+                        }
+                    ]
                 }
-            ]
+            }
         }
     }
 }

@@ -8,13 +8,17 @@
         }
     ],
     "properties": {
-        "tier3": {
-            "enum": [
-                {
-                    "name": "Gaussian Quadrature",
-                    "slug": "gauss"
+        "categories": {
+            "properties": {
+                "tier3": {
+                    "enum": [
+                        {
+                            "name": "Gaussian Quadrature",
+                            "slug": "gauss"
+                        }
+                    ]
                 }
-            ]
+            }
         }
     }
 }

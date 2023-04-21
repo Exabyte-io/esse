@@ -8,13 +8,17 @@
         }
     ],
     "properties": {
-        "tier1": {
-            "enum": [
-                {
-                    "name": "Differentiation",
-                    "slug": "diff"
+        "categories": {
+            "properties": {
+                "tier1": {
+                    "enum": [
+                        {
+                            "name": "Differentiation",
+                            "slug": "diff"
+                        }
+                    ]
                 }
-            ]
+            }
         }
     }
 }

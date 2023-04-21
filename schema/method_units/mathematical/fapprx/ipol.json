@@ -8,13 +8,17 @@
         }
     ],
     "properties": {
-        "tier2": {
-            "enum": [
-                {
-                    "name": "Interpolation",
-                    "slug": "ipol"
+        "categories": {
+            "properties": {
+                "tier2": {
+                    "enum": [
+                        {
+                            "name": "Interpolation",
+                            "slug": "ipol"
+                        }
+                    ]
                 }
-            ]
+            }
         }
     }
 }

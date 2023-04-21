@@ -8,13 +8,17 @@
         }
     ],
     "properties": {
-        "tier3": {
-            "enum": [
-                {
-                    "name": "Direct Algorithm",
-                    "slug": "direct"
+        "categories": {
+            "properties": {
+                "tier3": {
+                    "enum": [
+                        {
+                            "name": "Direct Algorithm",
+                            "slug": "direct"
+                        }
+                    ]
                 }
-            ]
+            }
         }
     }
 }

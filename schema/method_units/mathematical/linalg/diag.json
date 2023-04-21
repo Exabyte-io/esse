@@ -8,21 +8,17 @@
         }
     ],
     "properties": {
-        "tier2": {
-            "enum": [
-                {
-                    "name": "Diagonalization",
-                    "slug": "diag"
+        "categories": {
+            "properties": {
+                "tier2": {
+                    "enum": [
+                        {
+                            "name": "Diagonalization",
+                            "slug": "diag"
+                        }
+                    ]
                 }
-            ]
-        },
-        "tier3": {
-            "enum": [
-                {
-                    "name": "None",
-                    "slug": "none"
-                }
-            ]
+            }
         }
     }
 }

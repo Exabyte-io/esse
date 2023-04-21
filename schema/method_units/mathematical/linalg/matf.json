@@ -8,13 +8,17 @@
         }
     ],
     "properties": {
-        "tier2": {
-            "enum": [
-                {
-                    "name": "Matrix Function",
-                    "slug": "matf"
+        "categories": {
+            "properties": {
+                "tier2": {
+                    "enum": [
+                        {
+                            "name": "Matrix Function",
+                            "slug": "matf"
+                        }
+                    ]
                 }
-            ]
+            }
         }
     }
 }

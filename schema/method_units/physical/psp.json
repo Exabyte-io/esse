@@ -8,57 +8,37 @@
         }
     ],
     "properties": {
-        "mathematicalMethodsCategoryPaths": {
-            "type": "array",
-            "items": {
-                "anyOf": [
-                    {
-                        "enum": [
-                            "linalg/lintra"
-                        ]
-                    }
-                ]
-            }
-        },
-        "modelCategoryPaths": {
-            "type": "array",
-            "items": {
-                "anyOf": [
-                    {
-                        "enum": [
-                            "pb/qm/*"
-                        ]
-                    }
-                ]
-            }
-        },
-        "type": {
-            "enum": [
-                {
-                    "name": "Pseudopotential Approximation",
-                    "slug": "psp"
+        "categories": {
+            "properties": {
+                "type": {
+                    "enum": [
+                        {
+                            "name": "Pseudopotential Approximation",
+                            "slug": "psp"
+                        }
+                    ]
+                },
+                "subtype": {
+                    "enum": [
+                        {
+                            "name": "Ultra-soft",
+                            "slug": "us"
+                        },
+                        {
+                            "name": "Norm-conserving",
+                            "slug": "nc"
+                        },
+                        {
+                            "name": "Coulomb potential",
+                            "slug": "coulomb"
+                        },
+                        {
+                            "name": "Projector-augmented wave set",
+                            "slug": "paw"
+                        }
+                    ]
                 }
-            ]
-        },
-        "subtype": {
-            "enum": [
-                {
-                    "name": "Ultra-soft",
-                    "slug": "us"
-                },
-                {
-                    "name": "Norm-conserving",
-                    "slug": "nc"
-                },
-                {
-                    "name": "Coulomb potential",
-                    "slug": "coulomb"
-                },
-                {
-                    "name": "Projector-augmented wave set",
-                    "slug": "paw"
-                }
-            ]
+            }
         },
         "data": {
             "type": "object",

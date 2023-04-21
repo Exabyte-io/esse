@@ -8,13 +8,17 @@
         }
     ],
     "properties": {
-        "tier2": {
-            "enum": [
-                {
-                    "name": "Numerical Integration of Differential Equations",
-                    "slug": "diffeq"
+        "categories": {
+            "properties": {
+                "tier2": {
+                    "enum": [
+                        {
+                            "name": "Numerical Integration of Differential Equations",
+                            "slug": "diffeq"
+                        }
+                    ]
                 }
-            ]
+            }
         }
     }
 }

@@ -8,13 +8,17 @@
         }
     ],
     "properties": {
-        "tier2": {
-            "enum": [
-                {
-                    "name": "Non-differentiable Functions",
-                    "slug": "ndiff"
+        "categories": {
+            "properties": {
+                "tier2": {
+                    "enum": [
+                        {
+                            "name": "Non-differentiable Functions",
+                            "slug": "ndiff"
+                        }
+                    ]
                 }
-            ]
+            }
         }
     }
 }

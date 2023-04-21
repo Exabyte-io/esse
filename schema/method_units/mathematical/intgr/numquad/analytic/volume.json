@@ -8,49 +8,53 @@
         }
     ],
     "properties": {
-        "type": {
-            "enum": [
-                {
-                    "name": "Volume Integral",
-                    "slug": "volume"
+        "categories": {
+            "properties": {
+                "type": {
+                    "enum": [
+                        {
+                            "name": "Volume Integral",
+                            "slug": "volume"
+                        }
+                    ]
+                },
+                "subtype": {
+                    "enum": [
+                        {
+                            "name": "Sphere",
+                            "slug": "sphere"
+                        },
+                        {
+                            "name": "Cube",
+                            "slug": "cube"
+                        },
+                        {
+                            "name": "Rectangular Prism",
+                            "slug": "rect-prism"
+                        },
+                        {
+                            "name": "Triangular Prism",
+                            "slug": "tri-prism"
+                        },
+                        {
+                            "name": "Cylinder",
+                            "slug": "cylinder"
+                        },
+                        {
+                            "name": "Cone",
+                            "slug": "cone"
+                        },
+                        {
+                            "name": "Tetrahedron",
+                            "slug": "tetrahedron"
+                        },
+                        {
+                            "name": "Square Pyramid",
+                            "slug": "sq-pyr"
+                        }
+                    ]
                 }
-            ]
-        },
-        "subtype": {
-            "enum": [
-                {
-                    "name": "Sphere",
-                    "slug": "sphere"
-                },
-                {
-                    "name": "Cube",
-                    "slug": "cube"
-                },
-                {
-                    "name": "Rectangular Prism",
-                    "slug": "rect-prism"
-                },
-                {
-                    "name": "Triangular Prism",
-                    "slug": "tri-prism"
-                },
-                {
-                    "name": "Cylinder",
-                    "slug": "cylinder"
-                },
-                {
-                    "name": "Cone",
-                    "slug": "cone"
-                },
-                {
-                    "name": "Tetrahedron",
-                    "slug": "tetrahedron"
-                },
-                {
-                    "name": "Square Pyramid",
-                    "slug": "sq-pyr"
-                }
-            ]
+            }
         }
     }
 }

@@ -4,52 +4,19 @@
     "description": "Approximating the electronic wave function with a plane wave basis",
     "allOf": [
         {
-            "$ref": "../unit_base_physical.json"
+            "$ref": "../unit_base.json"
         }
     ],
     "properties": {
-        "mathematicalMethodsCategoryPaths": {
-            "type": "array",
-            "items": {
-                "anyOf": [
-                    {
-                        "enum": [
-                            "fapprx/basisexp"
-                        ]
-                    }
-                ]
-            }
-        },
-        "modelCategoryPaths": {
-            "type": "array",
-            "items": {
-                "anyOf": [
-                    {
-                        "enum": [
-                            "pb/qm/*"
-                        ]
-                    }
-                ]
-            }
-        },
-        "type": {
-            "enum": [
-                {
-                    "name": "Plane Wave Expansion",
-                    "slug": "pw"
-                }
-            ]
-        },
-        "parameters": {
-            "type": "object",
+        "categories": {
             "properties": {
-                "cutoffs.wavefunction": {
-                    "description": "Kinetic energy cutoff (wavefunction)",
-                    "$ref": "../../core/reusable/parameters/number.json"
-                },
-                "cutoffs.density": {
-                    "description": "Kinetic energy cutoff (density)",
-                    "$ref": "../../core/reusable/parameters/number.json"
+                "type": {
+                    "enum": [
+                        {
+                            "name": "Plane Wave Expansion",
+                            "slug": "pw"
+                        }
+                    ]
                 }
             }
         }

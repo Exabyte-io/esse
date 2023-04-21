@@ -8,23 +8,15 @@
         }
     ],
     "properties": {
-        "type": {
-            "enum": [
-                {
-                    "name": "Conjugate Gradient",
-                    "slug": "cg"
-                }
-            ]
-        },
-        "parameters": {
+        "categories": {
             "properties": {
-                "maximumNumberOfIterations": {
-                    "description": "Maximum number of iterations",
-                    "$ref": "../../../../../core/reusable/parameters/int.json"
-                },
-                "convergenceThreshold": {
-                    "description": "Convergence criterion",
-                    "$ref": "../../../../../core/reusable/parameters/number.json"
+                "type": {
+                    "enum": [
+                        {
+                            "name": "Conjugate Gradient",
+                            "slug": "cg"
+                        }
+                    ]
                 }
             }
         }

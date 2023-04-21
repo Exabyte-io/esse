@@ -8,13 +8,17 @@
         }
     ],
     "properties": {
-        "tier2": {
-            "enum": [
-                {
-                    "name": "Meshing",
-                    "slug": "mesh"
+        "categories": {
+            "properties": {
+                "tier2": {
+                    "enum": [
+                        {
+                            "name": "Meshing",
+                            "slug": "mesh"
+                        }
+                    ]
                 }
-            ]
+            }
         }
     }
 }

@@ -8,21 +8,17 @@
         }
     ],
     "properties": {
-        "tier3": {
-            "enum": [
-                {
-                    "name": "Linear Interpolation",
-                    "slug": "lin"
+        "categories": {
+            "properties": {
+                "tier3": {
+                    "enum": [
+                        {
+                            "name": "Linear Interpolation",
+                            "slug": "lin"
+                        }
+                    ]
                 }
-            ]
-        },
-        "type": {
-            "enum": [
-                {
-                    "name": "None",
-                    "slug": "none"
-                }
-            ]
+            }
         }
     }
 }

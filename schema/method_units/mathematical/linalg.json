@@ -4,17 +4,21 @@
     "description": "Linear Algebra methods",
     "allOf": [
         {
-            "$ref": "../unit_base_mathematical.json"
+            "$ref": "../unit_base.json"
         }
     ],
     "properties": {
-        "tier1": {
-            "enum": [
-                {
-                    "name": "Linear Algebra",
-                    "slug": "linalg"
+        "categories": {
+            "properties": {
+                "tier1": {
+                    "enum": [
+                        {
+                            "name": "Linear Algebra",
+                            "slug": "linalg"
+                        }
+                    ]
                 }
-            ]
+            }
         }
     }
 }

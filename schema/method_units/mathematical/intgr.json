@@ -8,13 +8,17 @@
         }
     ],
     "properties": {
-        "tier1": {
-            "enum": [
-                {
-                    "name": "Integration",
-                    "slug": "intgr"
+        "categories": {
+            "properties": {
+                "tier1": {
+                    "enum": [
+                        {
+                            "name": "Integration",
+                            "slug": "intgr"
+                        }
+                    ]
                 }
-            ]
+            }
         }
     }
 }

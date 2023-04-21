@@ -4,17 +4,21 @@
     "description": "Integration methods",
     "allOf": [
         {
-            "$ref": "../unit_base_mathematical.json"
+            "$ref": "../unit_base.json"
         }
     ],
     "properties": {
-        "tier1": {
-            "enum": [
-                {
-                    "name": "Optimization",
-                    "slug": "opt"
+        "categories": {
+            "properties": {
+                "tier1": {
+                    "enum": [
+                        {
+                            "name": "Optimization",
+                            "slug": "opt"
+                        }
+                    ]
                 }
-            ]
+            }
         }
     }
 }
