@@ -1,7 +1,7 @@
 {
-    "schemaId": "core/primitive/graph/base_node",
+    "schemaId": "core/primitive/linked_list/base_node",
     "$schema": "http://json-schema.org/draft-04/schema#",
-    "title": "basic node schema (directed acyclic graph)",
+    "title": "basic node schema (linked list)",
     "type": "object",
     "allOf": [
         {

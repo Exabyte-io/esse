@@ -1,22 +1,22 @@
 {
-    "schemaId": "core/primitive/graph",
+    "schemaId": "core/primitive/linked-list",
     "$schema": "http://json-schema.org/draft-04/schema#",
-    "title": "directed acyclic graph schema",
+    "title": "linked list schema",
     "type": "array",
     "items": {
         "type": "object",
         "anyOf": [
             {
-                "$ref": "graph/base_node.json"
+                "$ref": "linked_list/base_node.json"
             },
             {
-                "$ref": "graph/named_node.json"
+                "$ref": "linked_list/named_node.json"
             },
             {
-                "$ref": "graph/named_node_in_group.json"
+                "$ref": "linked_list/named_node_in_group.json"
             },
             {
-                "$ref": "graph/node_with_type.json"
+                "$ref": "linked_list/node_with_type.json"
             }
         ],
         "uniqueItems": true

@@ -1,5 +1,5 @@
 {
-    "schemaId": "core/primitive/graph/named_node_in_group",
+    "schemaId": "core/primitive/linked_list/named_node_in_group",
     "$schema": "http://json-schema.org/draft-04/schema#",
     "title": "Named node in group schema",
     "type": "object",
