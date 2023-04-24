@@ -28,6 +28,6 @@
         "spinPolarization": "non-collinear"
     },
     "method": {
-        "...": "include(../../../../../methods_directory/pseudopotential.json)"
+        "...": "include(../../../../../method.json)"
     }
 }

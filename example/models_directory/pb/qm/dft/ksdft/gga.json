@@ -28,6 +28,6 @@
         "dispersionCorrection": "DFT-D3"
     },
     "method": {
-        "...": "include(../../../../../methods_directory/pseudopotential.json)"
+        "...": "include(../../../../../method.json)"
     }
 }
