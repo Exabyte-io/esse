@@ -1,9 +1,51 @@
 {
-    "data": {
-        "dataset": {
-            "...": "include(methods_directory/pseudopotential/dataset.json)"
+    "name": "PW-NCPP (Davidson Diagonalization, Gaussian Smearing)",
+    "path": "/physical/qm/wf/pw:/physical/qm/wf/psp:/physical/qm/wf/smearing/gaussian:/mathematical/linalg/diag/davidson",
+    "units": [
+        {
+            "name": "Plane-wave",
+            "path": "physical/qm/wf/pw",
+            "categories": {
+                "tier1": "qm",
+                "tier2": "wf",
+                "type": "pw"
+            },
+            "flowchartId": "abcdef123456"
+        },
+        {
+            "name": "Norm-conserving PSP",
+            "path": "physical/qm/wf/psp/nc?functional=pbe",
+            "categories": {
+                "tier1": "qm",
+                "tier2": "wf",
+                "type": "psp",
+                "subtype": "nc"
+            },
+            "parameters": {
+                "functional": "pbe"
+            },
+            "flowchartId": "abcdef123457"
+        },
+        {
+            "name": "Gaussian Smearing method",
+            "path": "physical/qm/wf/smearing/gaussian",
+            "categories": {
+                "tier1": "qm",
+                "tier2": "wf",
+                "type": "smearing",
+                "subtype": "gaussian"
+            },
+            "flowchartId": "abcdef123458"
+        },
+        {
+            "name": "Davidson Diagonalization",
+            "path": "mathematical/linalg/diag/davidson",
+            "categories": {
+                "tier1": "linalg",
+                "tier2": "diag",
+                "type": "davidson"
+            },
+            "flowchartId": "abcdef123459"
         }
-    },
-    "subtype": "us",
-    "type": "pseudopotential"
+    ]
 }
