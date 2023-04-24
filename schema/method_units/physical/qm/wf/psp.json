@@ -1,0 +1,30 @@
+{
+    "schemaId": "method_units/physical/qm/wf/psp",
+    "$schema": "http://json-schema.org/draft-04/schema#",
+    "description": "Core-valence separation by means of pseudopotentials (effective potential)",
+    "allOf": [
+        {
+            "$ref": "../../../unit_base.json"
+        }
+    ],
+    "properties": {
+        "categories": {
+            "properties": {
+                "type": {
+                    "$ref": "./enum_options.json#/pseudization"
+                },
+                "subtype": {
+                    "$ref": "./enum_options.json#/pseudoSubtypes"
+                }
+            }
+        },
+        "data": {
+            "type": "object",
+            "properties": {
+                "pseudoSet": {
+                    "description": "placeholder for schema for set of pseudopotentials"
+                }
+            }
+        }
+    }
+}

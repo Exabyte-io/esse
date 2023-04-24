@@ -1,0 +1,30 @@
+{
+    "planewave": {
+        "enum": [
+            "pw"
+        ]
+    },
+    "atomicOrbital": {
+        "enum": [
+            "ao"
+        ]
+    },
+    "wavelet": {
+        "enum": [
+            "wvl"
+        ]
+    },
+    "pseudization": {
+        "enum": [
+            "psp"
+        ]
+    },
+    "pseudoSubtypes": {
+        "enum": [
+            "us",
+            "nc",
+            "paw",
+            "coulomb"
+        ]
+    }
+}

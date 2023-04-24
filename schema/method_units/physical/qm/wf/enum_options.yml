@@ -1,0 +1,18 @@
+# Wave function types
+planewave: !enum
+  - pw # plane waves
+atomicOrbital: !enum
+  - ao # atomic orbital basis
+wavelet: !enum
+  - wvl # wavelet series
+#
+# Wave function approximations
+pseudization: !enum
+  - psp # Pseudopotential Approximation
+#
+# Pseudopotential
+pseudoSubtypes: !enum
+  - us # ultra-soft
+  - nc # norm-conserving
+  - paw # projector augmented wave
+  - coulomb # Coulomb potential

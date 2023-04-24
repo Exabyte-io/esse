@@ -1,22 +1,17 @@
 {
-    "schemaId": "method_units/physical/pw",
+    "schemaId": "method_units/physical/qm/wf/pw",
     "$schema": "http://json-schema.org/draft-04/schema#",
     "description": "Approximating the electronic wave function with a plane wave basis",
     "allOf": [
         {
-            "$ref": "../unit_base.json"
+            "$ref": "../../../unit_base.json"
         }
     ],
     "properties": {
         "categories": {
             "properties": {
                 "type": {
-                    "enum": [
-                        {
-                            "name": "Plane Wave Expansion",
-                            "slug": "pw"
-                        }
-                    ]
+                    "$ref": "./enum_options.json#/planewave"
                 }
             }
         }
