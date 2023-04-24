@@ -1,0 +1,19 @@
+# Pople basis sets
+popleAoBasis: !enum
+  - 3-21G
+  - 6-31G
+  - 6-311G
+# Dunning's correlation-consistent basis sets
+dunningAoBasis: !enum
+  - cc-pvdz
+  - cc-pvtz
+  - cc-pvqz
+# Other basis sets
+otherAoBasis: !enum
+  - sto-3g
+  - sto-4g
+  - sto-6g
+  - def2-svp
+  - def2-tzvp
+  - def2-qzvp
+  - cbs-qb3

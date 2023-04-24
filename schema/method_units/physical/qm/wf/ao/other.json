@@ -1,0 +1,26 @@
+{
+    "schemaId": "method_units/physical/qm/wf/ao/other",
+    "$schema": "http://json-schema.org/draft-04/schema#",
+    "description": "Other (neither Pople nor Dunning) basis set unit method",
+    "allOf": [
+        {
+            "$ref": "../ao.json"
+        }
+    ],
+    "properties": {
+        "categories": {
+            "properties": {
+                "subtype": {
+                    "enum": [
+                        "other"
+                    ]
+                }
+            }
+        },
+        "parameters": {
+            "basisSlug": {
+                "$ref": "./enum_options.json#/otherAoBasis"
+            }
+        }
+    }
+}

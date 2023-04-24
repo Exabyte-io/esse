@@ -23,3 +23,9 @@ smearingSubtypes: !enum
   - marzari-vanderbilt
   - methfessel-paxton
   - fermi-dirac
+#
+# Atomic Orbital basis types
+aoTypes: !enum
+  - pople
+  - dunning
+  - other

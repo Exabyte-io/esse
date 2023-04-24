@@ -34,5 +34,12 @@
             "methfessel-paxton",
             "fermi-dirac"
         ]
+    },
+    "aoTypes": {
+        "enum": [
+            "pople",
+            "dunning",
+            "other"
+        ]
     }
 }

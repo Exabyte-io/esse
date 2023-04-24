@@ -1,0 +1,22 @@
+{
+    "schemaId": "method_units/physical/qm/wf/ao",
+    "$schema": "http://json-schema.org/draft-04/schema#",
+    "description": "Approximating the electronic wave function with a atomic orbital basis",
+    "allOf": [
+        {
+            "$ref": "../wf.json"
+        }
+    ],
+    "properties": {
+        "categories": {
+            "properties": {
+                "type": {
+                    "$ref": "./enum_options.json#/atomicOrbital"
+                },
+                "subtype": {
+                    "$ref": "./enum_options.json#/aoTypes"
+                }
+            }
+        }
+    }
+}

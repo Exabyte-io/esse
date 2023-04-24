@@ -1,0 +1,26 @@
+{
+    "schemaId": "method_units/physical/qm/wf/ao/pople",
+    "$schema": "http://json-schema.org/draft-04/schema#",
+    "description": "Dunning correlation-consistent basis set unit method",
+    "allOf": [
+        {
+            "$ref": "../ao.json"
+        }
+    ],
+    "properties": {
+        "categories": {
+            "properties": {
+                "subtype": {
+                    "enum": [
+                        "dunning"
+                    ]
+                }
+            }
+        },
+        "parameters": {
+            "basisSlug": {
+                "$ref": "./enum_options.json#/dunningAoBasis"
+            }
+        }
+    }
+}
