@@ -4,7 +4,7 @@
     "description": "Core-valence separation by means of pseudopotentials (effective potential)",
     "allOf": [
         {
-            "$ref": "../../../unit_base.json"
+            "$ref": "../wf.json"
         }
     ],
     "properties": {
@@ -21,8 +21,12 @@
         "data": {
             "type": "object",
             "properties": {
-                "pseudoSet": {
-                    "description": "placeholder for schema for set of pseudopotentials"
+                "pseudos": {
+                    "description": "pseudopotential files",
+                    "type": "array",
+                    "items": {
+                        "$ref": "./psp/file.json"
+                    }
                 }
             }
         }

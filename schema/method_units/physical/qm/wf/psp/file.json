@@ -1,0 +1,52 @@
+{
+    "schemaId": "method-units/physical/qm/wf/psp/file",
+    "$schema": "http://json-schema.org/draft-04/schema#",
+    "title": "pseudopotential file schema",
+    "properties": {
+        "element": {
+            "type": "string",
+            "description": "chemical element"
+        },
+        "textHeading": {
+            "type": "string",
+            "description": "text of pseudopotential file header"
+        },
+        "type": {
+            "type": "string",
+            "description": "type of pseudization",
+            "$ref": "../enum_options.json#/pseudoSubtypes"
+        },
+        "source": {
+            "type": "string",
+            "description": "explains where this came from"
+        },
+        "version": {
+            "type": "string",
+            "description": "explains the version of where this came from"
+        },
+        "exchangeCorrelation": {
+            "$ref": "../../../../../core/reusable/category_path.json",
+            "description": "DFT model path, e.g. '/pb/qm/dft/ksdft/gga?functional=pbe'"
+        },
+        "path": {
+            "type": "string",
+            "description": "location of the pseudopotential file on filesystem"
+        },
+        "apps": {
+            "type": "array",
+            "description": "simulation engines that can use this pseudopotential"
+        },
+        "filename": {
+            "type": "string",
+            "description": "filename of pseudopotential file on filesystem"
+        }
+    },
+    "required": [
+        "element",
+        "type",
+        "exchangeCorrelation",
+        "source",
+        "path",
+        "apps"
+    ]
+}
