@@ -26,5 +26,13 @@
             "paw",
             "coulomb"
         ]
+    },
+    "smearingSubtypes": {
+        "enum": [
+            "gaussian",
+            "marzari-vanderbilt",
+            "methfessel-paxton",
+            "fermi-dirac"
+        ]
     }
 }

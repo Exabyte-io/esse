@@ -16,3 +16,10 @@ pseudoSubtypes: !enum
   - nc # norm-conserving
   - paw # projector augmented wave
   - coulomb # Coulomb potential
+#
+# Occupation number smearing
+smearingSubtypes: !enum
+  - gaussian
+  - marzari-vanderbilt
+  - methfessel-paxton
+  - fermi-dirac
