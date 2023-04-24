@@ -8,7 +8,7 @@
             "$ref": "base_node.json"
         },
         {
-            "$ref": "../../../system/name.json",
+            "$ref": "../../../system/name.json"
         }
     ]
 }
