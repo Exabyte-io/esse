@@ -21,7 +21,7 @@
         "data": {
             "type": "object",
             "properties": {
-                "pseudos": {
+                "pseudo": {
                     "description": "pseudopotential files",
                     "type": "array",
                     "items": {
