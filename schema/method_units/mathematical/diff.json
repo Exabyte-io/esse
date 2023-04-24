@@ -4,7 +4,7 @@
     "description": "Numerical differentiation methods",
     "allOf": [
         {
-            "$ref": "../unit_base_mathematical.json"
+            "$ref": "../unit_base.json"
         }
     ],
     "properties": {
