@@ -20,9 +20,15 @@ pseudoSubtypes: !enum
 # Occupation number smearing
 smearingSubtypes: !enum
   - gaussian
-  - marzari-vanderbilt
-  - methfessel-paxton
-  - fermi-dirac
+  - marzari-vanderbilt # Marzari-Vanderbilt smearing, doi:10.1103/PhysRevLett.82.3296
+  - methfessel-paxton # Methfessel-Paxton smearing, doi:10.1103/PhysRevB.40.3616
+  - fermi-dirac # uses Fermi-Dirac distribution instead of Heaviside step function
+#
+# Tetrahedron methods
+tetrahedronSubtypes: !enum
+  - linear # original linear tetrahedron method
+  - optimized # Optimized tetrahedron method by Kawamura, doi:10.1103/PhysRevB.89.094515
+  - bloechl # Tetrahedron method with Bloechl correction, doi:10.1103/PhysRevB.49.16223
 #
 # Atomic Orbital basis types
 aoTypes: !enum
