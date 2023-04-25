@@ -1,5 +1,5 @@
 {
-    "schemaId": "method_units/mathematical/qm/wf",
+    "schemaId": "method_units/physical/qm/wf",
     "$schema": "http://json-schema.org/draft-04/schema#",
     "description": "Methods related to wave functions",
     "allOf": [
