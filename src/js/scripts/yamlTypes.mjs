@@ -3,21 +3,9 @@
 import fs from "fs/promises";
 import yaml from "js-yaml";
 import path from "path";
-
-const EnumType = new yaml.Type("!enum", {
-    kind: "sequence",
-    construct(data) {
-        return {
-            enum: data,
-        };
-    },
-    represent(object) {
-        return object.enum;
-    },
-});
+import lodash from "lodash";
 
 const SCHEMA_DIR = "../../../schema/";
-const yamlSchema = yaml.DEFAULT_SCHEMA.extend([EnumType]);
 
 async function walkDir(dir, callback) {
     const subDirs = await fs.readdir(dir);
@@ -35,14 +23,17 @@ async function walkDir(dir, callback) {
 }
 
 await walkDir(SCHEMA_DIR, async (filePath) => {
-    if (path.extname(filePath) !== ".yml") {
+    if (path.extname(filePath) !== ".yml" || path.extname(filePath) !== ".yaml") {
         return;
     }
 
     const outFilename = `${path.basename(filePath, ".yml")}.json`;
     const dirname = path.dirname(filePath);
+
     const fileContents = await fs.readFile(filePath);
-    const enumObj = yaml.load(fileContents, { schema: yamlSchema });
+    const obj = yaml.load(fileContents);
+    const enumObj = lodash.mapValues(obj, (value) => ({ enum: value }));
+
     await fs.writeFile(
         `${path.join(dirname, outFilename)}`,
         `${JSON.stringify(enumObj, null, 4)}\n`,

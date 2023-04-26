@@ -1,12 +1,12 @@
-spinPolarization: !enum
+spinPolarization:
   - none
   - collinear
   - non-collinear
-dispersionCorrection: !enum
+dispersionCorrection:
   - none
   - DFT-D2
   - DFT-D3
   - XDM
   - TS
-hubbardType: !enum
+hubbardType:
   - U
