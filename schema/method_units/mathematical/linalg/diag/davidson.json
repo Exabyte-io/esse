@@ -4,21 +4,12 @@
     "description": "Davidson diagonalization method",
     "allOf": [
         {
-            "$ref": "../diag.json"
+            "$ref": "../../../unit_base.json"
         }
     ],
     "properties": {
         "categories": {
-            "properties": {
-                "type": {
-                    "enum": [
-                        {
-                            "name": "Davidson diagonalization",
-                            "slug": "davidson"
-                        }
-                    ]
-                }
-            }
+            "$ref": "category_davidson.json"
         }
     }
 }

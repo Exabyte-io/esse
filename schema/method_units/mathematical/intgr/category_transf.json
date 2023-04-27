@@ -1,0 +1,20 @@
+{
+    "schemaId": "method-units/mathematical/intgr/category-transf",
+    "$schema": "http://json-schema.org/draft-04/schema#",
+    "description": "Integral transform methods",
+    "allOf": [
+        {
+            "$ref": "../category_intgr.json"
+        }
+    ],
+    "properties": {
+        "tier2": {
+            "enum": [
+                {
+                    "name": "Integral Transformation",
+                    "slug": "transf"
+                }
+            ]
+        }
+    }
+}

@@ -1,0 +1,20 @@
+{
+    "schemaId": "method-units/mathematical/intgr/numquad/category-newcot",
+    "$schema": "http://json-schema.org/draft-04/schema#",
+    "description": "Newton-Cotes quadrature rules",
+    "allOf": [
+        {
+            "$ref": "../category_numquad.json"
+        }
+    ],
+    "properties": {
+        "tier3": {
+            "enum": [
+                {
+                    "name": "Newton-Cotes Quadrature",
+                    "slug": "newcot"
+                }
+            ]
+        }
+    }
+}

@@ -1,0 +1,20 @@
+{
+    "schemaId": "method-units/mathematical/discr/mesh/category-hybrid",
+    "$schema": "http://json-schema.org/draft-04/schema#",
+    "description": "Hybrid meshing category schema",
+    "allOf": [
+        {
+            "$ref": "../category_mesh.json"
+        }
+    ],
+    "properties": {
+        "tier3": {
+            "enum": [
+                {
+                    "name": "Hybrid Mesh",
+                    "slug": "hybrid"
+                }
+            ]
+        }
+    }
+}

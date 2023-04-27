@@ -4,21 +4,12 @@
     "description": "conjugate gradient method schema",
     "allOf": [
         {
-            "$ref": "../ordern.json"
+            "$ref": "../../../../unit_base.json"
         }
     ],
     "properties": {
         "categories": {
-            "properties": {
-                "type": {
-                    "enum": [
-                        {
-                            "name": "Conjugate Gradient",
-                            "slug": "cg"
-                        }
-                    ]
-                }
-            }
+            "$ref": "category_cg.json"
         }
     }
 }

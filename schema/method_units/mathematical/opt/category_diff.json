@@ -1,0 +1,20 @@
+{
+    "schemaId": "method-units/mathematical/opt/category-diff",
+    "$schema": "http://json-schema.org/draft-04/schema#",
+    "description": "Optimization methods for differentiable functions category schema",
+    "allOf": [
+        {
+            "$ref": "../category_opt.json"
+        }
+    ],
+    "properties": {
+        "tier2": {
+            "enum": [
+                {
+                    "name": "Differentiable Functions",
+                    "slug": "diff"
+                }
+            ]
+        }
+    }
+}

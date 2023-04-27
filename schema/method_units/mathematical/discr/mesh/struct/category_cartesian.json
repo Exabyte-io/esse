@@ -1,0 +1,20 @@
+{
+    "schemaId": "method-units/mathematical/discr/mesh/struct/category-cartesian",
+    "$schema": "http://json-schema.org/draft-04/schema#",
+    "title": "Cartesian grid schema",
+    "allOf": [
+        {
+            "$ref": "../category_struct.json"
+        }
+    ],
+    "properties": {
+        "type": {
+            "enum": [
+                {
+                    "name": "Cartesian Grid",
+                    "slug": "cartesian"
+                }
+            ]
+        }
+    }
+}

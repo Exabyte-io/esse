@@ -1,0 +1,20 @@
+{
+    "schemaId": "method-units/mathematical/opt/diff/ordern/category-cg",
+    "$schema": "http://json-schema.org/draft-04/schema#",
+    "description": "conjugate gradient method schema",
+    "allOf": [
+        {
+            "$ref": "../category_ordern.json"
+        }
+    ],
+    "properties": {
+        "type": {
+            "enum": [
+                {
+                    "name": "Conjugate Gradient",
+                    "slug": "cg"
+                }
+            ]
+        }
+    }
+}

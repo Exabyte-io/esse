@@ -1,0 +1,22 @@
+{
+    "name": "Conjugate gradient method",
+    "path": "/opt/diff/ordern/cg",
+    "categories": {
+        "tier1": {
+            "name": "Optimization",
+            "slug": "opt"
+        },
+        "tier2": {
+            "name": "Differentiable Functions",
+            "slug": "diff"
+        },
+        "tier3": {
+            "name": "Mixed/Higher Order Algorithm",
+            "slug": "ordern"
+        },
+        "type": {
+            "name": "Conjugate Gradient",
+            "slug": "cg"
+        }
+    }
+}

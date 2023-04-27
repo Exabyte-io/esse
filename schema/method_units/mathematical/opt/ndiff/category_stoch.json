@@ -1,0 +1,20 @@
+{
+    "schemaId": "method-units/mathematical/opt/ndiff/category-stoch",
+    "$schema": "http://json-schema.org/draft-04/schema#",
+    "description": "Stochastic algorithms for the optmization of non-differentiable functions category schema",
+    "allOf": [
+        {
+            "$ref": "../category_ndiff.json"
+        }
+    ],
+    "properties": {
+        "tier3": {
+            "enum": [
+                {
+                    "name": "Stochastic Algorithm",
+                    "slug": "stoch"
+                }
+            ]
+        }
+    }
+}

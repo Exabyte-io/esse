@@ -1,0 +1,20 @@
+{
+    "schemaId": "method-units/mathematical/linalg/category-diag",
+    "$schema": "http://json-schema.org/draft-04/schema#",
+    "description": "Matrix diagonalization methods",
+    "allOf": [
+        {
+            "$ref": "../category_linalg.json"
+        }
+    ],
+    "properties": {
+        "tier2": {
+            "enum": [
+                {
+                    "name": "Diagonalization",
+                    "slug": "diag"
+                }
+            ]
+        }
+    }
+}
