@@ -1,5 +1,5 @@
 {
-    "schemaId": "method_units/mathematical/linalg",
+    "schemaId": "method-units/mathematical/linalg",
     "$schema": "http://json-schema.org/draft-04/schema#",
     "description": "Linear Algebra methods",
     "allOf": [

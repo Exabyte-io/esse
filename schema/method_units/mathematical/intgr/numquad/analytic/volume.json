@@ -1,5 +1,5 @@
 {
-    "schemaId": "method-unit-intgr-numquad-analytic-volume",
+    "schemaId": "method-units/mathematical/intgr/numquad/analytic/volume",
     "$schema": "http://json-schema.org/draft-04/schema#",
     "description": "Gaussian quadrature rules",
     "allOf": [

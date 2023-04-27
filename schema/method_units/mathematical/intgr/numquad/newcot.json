@@ -1,5 +1,5 @@
 {
-    "schemaId": "method_units/mathematical/intgr/numquad/newcot",
+    "schemaId": "method-units/mathematical/intgr/numquad/newcot",
     "$schema": "http://json-schema.org/draft-04/schema#",
     "description": "Newton-Cotes quadrature rules",
     "allOf": [

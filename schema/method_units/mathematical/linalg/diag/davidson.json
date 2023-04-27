@@ -1,5 +1,5 @@
 {
-    "schemaId": "method_units/mathematical/linalg/diag/davidson",
+    "schemaId": "method-units/mathematical/linalg/diag/davidson",
     "$schema": "http://json-schema.org/draft-04/schema#",
     "description": "Davidson diagonalization method",
     "allOf": [

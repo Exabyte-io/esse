@@ -1,5 +1,5 @@
 {
-    "schemaId": "method_units/mathematical/fapprx/ipol/poly",
+    "schemaId": "method-units/mathematical/fapprx/ipol/poly",
     "$schema": "http://json-schema.org/draft-04/schema#",
     "description": "Polynomial interpolation methods",
     "allOf": [

@@ -1,5 +1,5 @@
 {
-    "schemaId": "method_units/mathematical/opt/diff/bracket",
+    "schemaId": "method-units/mathematical/opt/diff/bracket",
     "$schema": "http://json-schema.org/draft-04/schema#",
     "description": "Bracket algorithms for the optimization of differentiable functions",
     "allOf": [

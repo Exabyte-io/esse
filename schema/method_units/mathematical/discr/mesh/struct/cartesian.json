@@ -1,5 +1,5 @@
 {
-    "schemaId": "method-unit-discr-mesh-struct-cartesian",
+    "schemaId": "method-units/mathematical/discr/mesh/struct/cartesian",
     "$schema": "http://json-schema.org/draft-04/schema#",
     "title": "Cartesian grid schema",
     "allOf": [

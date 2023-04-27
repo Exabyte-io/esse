@@ -1,5 +1,5 @@
 {
-    "schemaId": "method_units/mathematical/opt/diff/order1",
+    "schemaId": "method-units/mathematical/opt/diff/order1",
     "$schema": "http://json-schema.org/draft-04/schema#",
     "description": "First order algorithms for the optimization of differentiable functions",
     "allOf": [

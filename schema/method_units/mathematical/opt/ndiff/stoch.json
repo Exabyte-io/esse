@@ -1,5 +1,5 @@
 {
-    "schemaId": "method_units/mathematical/opt/ndiff/stoch",
+    "schemaId": "method-units/mathematical/opt/ndiff/stoch",
     "$schema": "http://json-schema.org/draft-04/schema#",
     "description": "Stochastic algorithms for the optmization of non-differentiable functions",
     "allOf": [
