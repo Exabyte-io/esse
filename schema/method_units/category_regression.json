@@ -1,0 +1,24 @@
+{
+    "schemaId": "methods-directory/regression",
+    "$schema": "http://json-schema.org/draft-04/schema#",
+    "title": "linear methods schema",
+    "allOf": [
+        {
+            "$ref": "../core/reusable/categories.json"
+        }
+    ],
+    "properties": {
+        "type": {
+            "enum": [
+                "linear",
+                "kernel_ridge"
+            ]
+        },
+        "subtype": {
+            "enum": [
+                "least_squares",
+                "ridge"
+            ]
+        }
+    }
+}
