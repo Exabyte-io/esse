@@ -1,10 +1,11 @@
-lda: !enum
+# Collection of DFT functional slugs sorted by DFT rung
+lda:
   - pz
-gga: !enum
+gga:
   - pbe
-mgga: !enum
+mgga:
   - scan
-hybrid: !enum
+hybrid:
   - hse06
-doubleHybrid: !enum
+doubleHybrid:
   - b2plyp

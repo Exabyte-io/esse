@@ -1,0 +1,14 @@
+{
+    "tier1": {
+        "name": "physics-based",
+        "slug": "pb"
+    },
+    "tier2": {
+        "name": "quantum-mechanical",
+        "slug": "qm"
+    },
+    "tier3": {
+        "name": "semi-empirical",
+        "slug": "semp"
+    }
+}

@@ -4,64 +4,47 @@
     "title": "GW Approximation schema",
     "allOf": [
         {
-            "$ref": "../abin.json"
-        }
-    ],
-    "oneOf": [
-        {
-            "$ref": "../dft/mixins/lda_functional.json"
-        },
-        {
-            "$ref": "../dft/mixins/gga_functional.json"
-        },
-        {
-            "$ref": "../dft/mixins/mgga_functional.json"
-        }
-    ],
-    "anyOf": [
-        {
-            "$ref": "../../../../model_mixins/spin_polarization.json"
-        },
-        {
-            "$ref": "../../../../model_mixins/spin_orbit_coupling.json"
+            "$ref": "../../../../model.json"
         }
     ],
     "properties": {
         "categories": {
-            "properties": {
-                "type": {
-                    "enum": [
+            "$ref": "category_gw.json"
+        },
+        "parameters": {
+            "allOf": [
+                {
+                    "properties": {
+                        "require": {
+                            "description": "Path to mean-field model",
+                            "$ref": "../../../../core/reusable/category_path.json"
+                        }
+                    }
+                },
+                {
+                    "oneOf": [
                         {
-                            "name": "GW Approximation",
-                            "slug": "gw"
+                            "$ref": "../dft/mixins/lda_functional.json"
+                        },
+                        {
+                            "$ref": "../dft/mixins/gga_functional.json"
+                        },
+                        {
+                            "$ref": "../dft/mixins/mgga_functional.json"
                         }
                     ]
                 },
-                "subtype": {
-                    "enum": [
+                {
+                    "anyOf": [
                         {
-                            "name": "G0W0",
-                            "slug": "g0w0"
+                            "$ref": "../../../../model_mixins/spin_polarization.json"
                         },
                         {
-                            "name": "eigenvalue self-consistent G (evGW0)",
-                            "slug": "evgw0"
-                        },
-                        {
-                            "name": "eigenvalue self-consistent GW (evGW)",
-                            "slug": "evgw"
+                            "$ref": "../../../../model_mixins/spin_orbit_coupling.json"
                         }
                     ]
                 }
-            }
-        },
-        "parameters": {
-            "properties": {
-                "require": {
-                    "description": "Path to mean-field model",
-                    "$ref": "../../../../core/reusable/category_path.json"
-                }
-            }
+            ]
         }
     }
 }

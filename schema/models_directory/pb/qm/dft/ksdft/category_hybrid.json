@@ -1,0 +1,20 @@
+{
+    "schemaId": "models-directory/pb/qm/dft/ksdft/category-hybrid",
+    "$schema": "http://json-schema.org/draft-04/schema#",
+    "title": "DFT hybrid functional category schema",
+    "allOf": [
+        {
+            "$ref": "../category_ksdft.json"
+        }
+    ],
+    "properties": {
+        "subtype": {
+            "enum": [
+                {
+                    "name": "Hybrid functional",
+                    "slug": "hybrid"
+                }
+            ]
+        }
+    }
+}

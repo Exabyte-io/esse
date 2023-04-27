@@ -1,6 +1,6 @@
 {
     "method": {
-        "...": "include(../../../method.json)"
+        "...": "include(../../../../method.json)"
     },
     "categories": {
         "tier1": {

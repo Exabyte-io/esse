@@ -4,24 +4,32 @@
     "title": "Hybrid functional model schema",
     "allOf": [
         {
-            "$ref": "../ksdft.json"
-        },
-        {
-            "$ref": "../mixins/double_hybrid_functional.json"
+            "$ref": "../../../../../model.json"
         }
     ],
     "properties": {
         "categories": {
-            "properties": {
-                "subtype": {
-                    "enum": [
+            "$ref": "category_double_hybrid.json"
+        },
+        "parameters": {
+            "allOf": [
+                {
+                    "$ref": "../mixins/double_hybrid_functional.json"
+                },
+                {
+                    "anyOf": [
                         {
-                            "name": "Double hybrid functional",
-                            "slug": "double-hybrid"
+                            "$ref": "../../../../../model_mixins/spin_orbit_coupling.json"
+                        },
+                        {
+                            "$ref": "../../../../../model_mixins/dispersion_correction.json"
+                        },
+                        {
+                            "$ref": "../../../../../model_mixins/spin_polarization.json"
                         }
                     ]
                 }
-            }
+            ]
         }
     }
 }
