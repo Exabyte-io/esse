@@ -10,7 +10,7 @@
     ],
     "properties": {
         "categories": {
-            "$ref": "./re.json"
+            "$ref": "category_re.json"
         }
     }
 }

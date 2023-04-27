@@ -1,5 +1,5 @@
 {
-    "schemaId": "models-directory/pb/qm/dft/ksdft/category-gga",
+    "schemaId": "models-directory/pb/qm/abin/category-gw",
     "$schema": "http://json-schema.org/draft-04/schema#",
     "title": "GW category schema",
     "allOf": [

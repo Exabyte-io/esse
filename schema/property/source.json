@@ -21,7 +21,6 @@
                     "$ref": "../core/reference/experiment.json"
                 }
             ]
-
         }
     }
 }
