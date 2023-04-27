@@ -3,14 +3,9 @@
     "$schema": "http://json-schema.org/draft-04/schema#",
     "type": "object",
     "properties": {
-        "parameters": {
-            "type": "object",
-            "properties": {
-                "spinPolarization": {
-                    "type": "string",
-                    "$ref": "./enum_options.json#/spinPolarization"
-                }
-            }
+        "spinPolarization": {
+            "type": "string",
+            "$ref": "./enum_options.json#/spinPolarization"
         }
     }
 }

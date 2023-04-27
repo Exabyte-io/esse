@@ -3,13 +3,8 @@
     "$schema": "http://json-schema.org/draft-04/schema#",
     "type": "object",
     "properties": {
-        "parameters": {
-            "type": "object",
-            "properties": {
-                "spinOrbitCoupling": {
-                    "type": "boolean"
-                }
-            }
+        "spinOrbitCoupling": {
+            "type": "boolean"
         }
     }
 }
