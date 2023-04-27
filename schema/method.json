@@ -17,7 +17,7 @@
         "units": {
             "type": "array",
             "items": {
-                "$ref": "method_units/unit_base_referable.json"
+                "$ref": "method_units/unit_base.json"
             }
         }
     },
