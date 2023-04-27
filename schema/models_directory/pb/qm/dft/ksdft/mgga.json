@@ -4,29 +4,35 @@
     "title": "Meta Generalized Gradient Approximation model schema",
     "allOf": [
         {
-            "$ref": "../ksdft.json"
-        },
-        {
-            "$ref": "../mixins/mgga_functional.json"
-        }
-    ],
-    "anyOf": [
-        {
-            "$ref": "../../../../../model_mixins/hubbard.json"
+            "$ref": "../../../../../model.json"
         }
     ],
     "properties": {
         "categories": {
-            "properties": {
-                "subtype": {
-                    "enum": [
+            "$ref": "category_mgga.json"
+        },
+        "parameters": {
+            "allOf": [
+                {
+                    "$ref": "../mixins/mgga_functional.json"
+                },
+                {
+                    "anyOf": [
                         {
-                            "name": "Meta Generalized Gradient Approximation",
-                            "slug": "mgga"
+                            "$ref": "../../../../../model_mixins/spin_orbit_coupling.json"
+                        },
+                        {
+                            "$ref": "../../../../../model_mixins/dispersion_correction.json"
+                        },
+                        {
+                            "$ref": "../../../../../model_mixins/spin_polarization.json"
+                        },
+                        {
+                            "$ref": "../../../../../model_mixins/hubbard.json"
                         }
                     ]
                 }
-            }
+            ]
         }
     }
 }
