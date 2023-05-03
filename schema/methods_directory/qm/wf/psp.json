@@ -1,5 +1,5 @@
 {
-    "schemaId": "method-units/physical/qm/wf/psp",
+    "schemaId": "methods-directory/qm/wf/psp",
     "$schema": "http://json-schema.org/draft-04/schema#",
     "title": "Pseudopotential unit method schema",
     "description": "Core-valence separation by means of pseudopotentials (effective potential)",

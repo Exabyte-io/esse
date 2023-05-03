@@ -1,5 +1,5 @@
 {
-    "schemaId": "method-units/mathematical/intgr/diffeq/category-order1",
+    "schemaId": "methods-category/intgr/diffeq/category-order1",
     "$schema": "http://json-schema.org/draft-04/schema#",
     "description": "Categories for the numerical integration of differential equations",
     "allOf": [

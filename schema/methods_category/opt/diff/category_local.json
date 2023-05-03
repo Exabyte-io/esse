@@ -1,5 +1,5 @@
 {
-    "schemaId": "method-units/mathematical/opt/diff/category-local",
+    "schemaId": "methods-category/opt/diff/category-local",
     "$schema": "http://json-schema.org/draft-04/schema#",
     "description": "Local descent methods for the optimization of differentiable functions",
     "allOf": [

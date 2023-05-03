@@ -1,5 +1,5 @@
 {
-    "schemaId": "method-units/mathematical/linalg/category-lintra",
+    "schemaId": "methods-category/linalg/category-lintra",
     "$schema": "http://json-schema.org/draft-04/schema#",
     "description": "Linear transformation methods",
     "allOf": [

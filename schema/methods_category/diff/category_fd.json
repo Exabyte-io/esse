@@ -1,5 +1,5 @@
 {
-    "schemaId": "method-units/mathematical/diff/category-fd",
+    "schemaId": "methods-category/diff/category-fd",
     "$schema": "http://json-schema.org/draft-04/schema#",
     "description": "Finite difference method category schema",
     "allOf": [

@@ -1,5 +1,5 @@
 {
-    "schemaId": "method-units/physical/qm/wf/psp/file",
+    "schemaId": "methods-directory/qm/wf/psp/file",
     "$schema": "http://json-schema.org/draft-04/schema#",
     "title": "pseudopotential file schema",
     "properties": {

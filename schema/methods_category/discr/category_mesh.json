@@ -1,5 +1,5 @@
 {
-    "schemaId": "method-units/mathematical/discr/category-mesh",
+    "schemaId": "methods-category/discr/category-mesh",
     "$schema": "http://json-schema.org/draft-04/schema#",
     "description": "Meshing method category schema",
     "allOf": [

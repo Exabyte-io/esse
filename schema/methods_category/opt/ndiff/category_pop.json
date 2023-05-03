@@ -1,5 +1,5 @@
 {
-    "schemaId": "method-units/mathematical/opt/ndiff/category-pop",
+    "schemaId": "methods-category/opt/ndiff/category-pop",
     "$schema": "http://json-schema.org/draft-04/schema#",
     "description": "Population algorithms for the optmization of non-differentiable functions category schema",
     "allOf": [

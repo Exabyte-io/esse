@@ -1,5 +1,5 @@
 {
-    "schemaId": "method-units/mathematical/opt/category-root",
+    "schemaId": "methods-category/opt/category-root",
     "$schema": "http://json-schema.org/draft-04/schema#",
     "description": "Root finding category schema",
     "allOf": [

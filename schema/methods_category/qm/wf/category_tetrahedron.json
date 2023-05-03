@@ -1,5 +1,5 @@
 {
-    "schemaId": "method-units/physical/qm/wf/category-tetrahedron",
+    "schemaId": "methods-category/qm/wf/category-tetrahedron",
     "$schema": "http://json-schema.org/draft-04/schema#",
     "description": "Tetrahedron method category schema ",
     "allOf": [

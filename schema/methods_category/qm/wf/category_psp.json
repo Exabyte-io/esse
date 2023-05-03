@@ -1,5 +1,5 @@
 {
-    "schemaId": "method-units/physical/qm/wf/category-psp",
+    "schemaId": "methods-category/qm/wf/category-psp",
     "$schema": "http://json-schema.org/draft-04/schema#",
     "description": "Pseudopotential category schema",
     "allOf": [

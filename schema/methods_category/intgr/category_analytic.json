@@ -1,5 +1,5 @@
 {
-    "schemaId": "method-units/mathematical/intgr/numquad/category-analytic",
+    "schemaId": "methods-category/intgr/category-analytic",
     "$schema": "http://json-schema.org/draft-04/schema#",
     "description": "Gaussian quadrature rules",
     "allOf": [

@@ -1,5 +1,5 @@
 {
-    "schemaId": "method-units/mathematical/category-diff",
+    "schemaId": "methods-category/category-diff",
     "$schema": "http://json-schema.org/draft-04/schema#",
     "description": "Numerical differentiation category schema",
     "allOf": [

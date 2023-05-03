@@ -1,5 +1,5 @@
 {
-    "schemaId": "method-units/mathematical/intgr/numquad/analytic/volume",
+    "schemaId": "methods-directory/intgr/analytic/volume",
     "$schema": "http://json-schema.org/draft-04/schema#",
     "description": "Analytic volume integral schema",
     "allOf": [

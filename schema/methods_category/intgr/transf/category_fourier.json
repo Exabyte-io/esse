@@ -1,5 +1,5 @@
 {
-    "schemaId": "method-units/mathematical/intgr/transf/category-fourier",
+    "schemaId": "methods-category/intgr/transf/category-fourier",
     "$schema": "http://json-schema.org/draft-04/schema#",
     "description": "Fourier transform methods",
     "allOf": [

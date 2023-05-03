@@ -1,5 +1,5 @@
 {
-    "schemaId": "method-units/physical/category-qm",
+    "schemaId": "methods-category/category-qm",
     "$schema": "http://json-schema.org/draft-04/schema#",
     "description": "Quantum-Mechanical method category schema",
     "allOf": [

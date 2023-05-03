@@ -1,5 +1,5 @@
 {
-    "schemaId": "method-units/mathematical/linalg/category-dcomp",
+    "schemaId": "methods-category/linalg/category-dcomp",
     "$schema": "http://json-schema.org/draft-04/schema#",
     "description": "Integration methods",
     "allOf": [
