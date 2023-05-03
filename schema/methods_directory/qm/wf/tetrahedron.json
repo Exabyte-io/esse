@@ -4,7 +4,7 @@
     "description": "Tetrahedron method (Brillouin zone integration) schema ",
     "allOf": [
         {
-            "$ref": "../../../method_units/unit_base.json"
+            "$ref": "../../../method/unit_base.json"
         }
     ],
     "properties": {
