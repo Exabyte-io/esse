@@ -4,7 +4,7 @@
     "title": "Local Density Approximation model schema",
     "allOf": [
         {
-            "$ref": "./model_without_method.json"
+            "$ref": "../model/model_without_method.json"
         }
     ],
     "properties": {
