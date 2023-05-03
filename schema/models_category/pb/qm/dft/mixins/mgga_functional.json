@@ -1,0 +1,11 @@
+{
+    "schemaId": "models-category/pb/qm/dft/mixins/mgga-functional",
+    "$schema": "http://json-schema.org/draft-04/schema#",
+    "type": "object",
+    "properties": {
+        "functional": {
+            "type": "string",
+            "$ref": "./enum_options.json#/mgga"
+        }
+    }
+}

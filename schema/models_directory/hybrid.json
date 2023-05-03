@@ -1,0 +1,38 @@
+{
+    "schemaId": "models-directory/hybrid",
+    "$schema": "http://json-schema.org/draft-04/schema#",
+    "title": "Hybrid functional model schema",
+    "allOf": [
+        {
+            "$ref": "./model_without_method.json"
+        }
+    ],
+    "properties": {
+        "categories": {
+            "$ref": "../models_category/pb/qm/dft/ksdft/category_hybrid.json"
+        },
+        "parameters": {
+            "allOf": [
+                {
+                    "$ref": "../models_category/pb/qm/dft/mixins/hybrid_functional.json"
+                },
+                {
+                    "anyOf": [
+                        {
+                            "$ref": "../model_mixins/spin_orbit_coupling.json"
+                        },
+                        {
+                            "$ref": "../model_mixins/dispersion_correction.json"
+                        },
+                        {
+                            "$ref": "../model_mixins/spin_polarization.json"
+                        },
+                        {
+                            "$ref": "../model_mixins/hubbard.json"
+                        }
+                    ]
+                }
+            ]
+        }
+    }
+}

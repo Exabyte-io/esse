@@ -1,0 +1,22 @@
+{
+        "tier1": {
+            "name": "physics-based",
+            "slug": "pb"
+        },
+        "tier2": {
+            "name": "quantum-mechanical",
+            "slug": "qm"
+        },
+        "tier3": {
+            "name": "ab-initio",
+            "slug": "abin"
+        },
+        "type": {
+            "name": "GW Approximation",
+            "slug": "gw"
+        },
+        "subtype": {
+            "name": "eigenvalue self-consistent GW (evGW)",
+            "slug": "evgw"
+        }
+    }

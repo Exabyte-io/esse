@@ -1,0 +1,30 @@
+{
+    "name": "G0W0@PBE (SOC)",
+    "categories": {
+        "tier1": {
+            "name": "physics-based",
+            "slug": "pb"
+        },
+        "tier2": {
+            "name": "quantum-mechanical",
+            "slug": "qm"
+        },
+        "tier3": {
+            "name": "ab-initio",
+            "slug": "abin"
+        },
+        "type": {
+            "name": "GW Approximation",
+            "slug": "gw"
+        },
+        "subtype": {
+            "name": "G0W0",
+            "slug": "g0w0"
+        }
+    },
+    "parameters": {
+        "functional": "pbe",
+        "require": "/pb/qm/dft/ksdft/gga",
+        "spinOrbitCoupling": true
+    }
+}

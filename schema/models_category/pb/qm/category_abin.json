@@ -1,0 +1,20 @@
+{
+    "schemaId": "models-category/pb/qm/category-abin",
+    "$schema": "http://json-schema.org/draft-04/schema#",
+    "title": "Ab initio category schema",
+    "allOf": [
+        {
+            "$ref": "../category_qm.json"
+        }
+    ],
+    "properties": {
+        "tier3": {
+            "enum": [
+                {
+                    "name": "ab-initio",
+                    "slug": "abin"
+                }
+            ]
+        }
+    }
+}

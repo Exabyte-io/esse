@@ -1,0 +1,20 @@
+{
+    "schemaId": "models-category/pb/qm/dft/ksdft/category-gga",
+    "$schema": "http://json-schema.org/draft-04/schema#",
+    "title": "DFT GGA functional category schema",
+    "allOf": [
+        {
+            "$ref": "../category_ksdft.json"
+        }
+    ],
+    "properties": {
+        "subtype": {
+            "enum": [
+                {
+                    "name": "Generalized Gradient Approximation",
+                    "slug": "gga"
+                }
+            ]
+        }
+    }
+}

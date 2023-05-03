@@ -1,5 +1,5 @@
 {
-    "name": "PZ+U (magnetism)",
+    "name": "PBE-D3 (SOC)",
     "categories": {
         "tier1": {
             "name": "physics-based",
@@ -18,16 +18,13 @@
             "slug": "ksdft"
         },
         "subtype": {
-            "name": "Local Density Approximation",
-            "slug": "lda"
+            "name": "Generalized Gradient Approximation",
+            "slug": "gga"
         }
     },
     "parameters": {
-        "functional": "pz",
-        "spinPolarization": "collinear",
-        "hubbardType": "U"
-    },
-    "method": {
-        "...": "include(./method.json)"
+        "functional": "pbe",
+        "spinOrbitCoupling": true,
+        "dispersionCorrection": "DFT-D3"
     }
 }

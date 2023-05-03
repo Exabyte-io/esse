@@ -1,0 +1,50 @@
+{
+    "schemaId": "models-directory/gw",
+    "$schema": "http://json-schema.org/draft-04/schema#",
+    "title": "GW Approximation schema",
+    "allOf": [
+        {
+            "$ref": "./model_without_method.json"
+        }
+    ],
+    "properties": {
+        "categories": {
+            "$ref": "../models_category/pb/qm/abin/category_gw.json"
+        },
+        "parameters": {
+            "allOf": [
+                {
+                    "properties": {
+                        "require": {
+                            "description": "Path to mean-field model",
+                            "$ref": "../core/reusable/category_path.json"
+                        }
+                    }
+                },
+                {
+                    "oneOf": [
+                        {
+                            "$ref": "../models_category/pb/qm/dft/mixins/lda_functional.json"
+                        },
+                        {
+                            "$ref": "../models_category/pb/qm/dft/mixins/gga_functional.json"
+                        },
+                        {
+                            "$ref": "../models_category/pb/qm/dft/mixins/mgga_functional.json"
+                        }
+                    ]
+                },
+                {
+                    "anyOf": [
+                        {
+                            "$ref": "../model_mixins/spin_polarization.json"
+                        },
+                        {
+                            "$ref": "../model_mixins/spin_orbit_coupling.json"
+                        }
+                    ]
+                }
+            ]
+        }
+    }
+}

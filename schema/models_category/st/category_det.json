@@ -1,0 +1,19 @@
+{
+    "schemaId": "models-category/st/category-det",
+    "$schema": "http://json-schema.org/draft-04/schema#",
+    "allOf": [
+        {
+            "$ref": "../category_st.json"
+        }
+    ],
+    "properties": {
+        "tier2": {
+            "enum": [
+                {
+                    "name": "deterministic",
+                    "slug": "det"
+                }
+            ]
+        }
+    }
+}
