@@ -19,13 +19,13 @@
                 {
                     "anyOf": [
                         {
-                            "$ref": "../model_mixins/spin_orbit_coupling.json"
+                            "$ref": "../model/mixins/spin_orbit_coupling.json"
                         },
                         {
-                            "$ref": "../model_mixins/dispersion_correction.json"
+                            "$ref": "../model/mixins/dispersion_correction.json"
                         },
                         {
-                            "$ref": "../model_mixins/spin_polarization.json"
+                            "$ref": "../model/mixins/spin_polarization.json"
                         }
                     ]
                 }

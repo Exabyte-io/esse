@@ -37,10 +37,10 @@
                 {
                     "anyOf": [
                         {
-                            "$ref": "../model_mixins/spin_polarization.json"
+                            "$ref": "../model/mixins/spin_polarization.json"
                         },
                         {
-                            "$ref": "../model_mixins/spin_orbit_coupling.json"
+                            "$ref": "../model/mixins/spin_orbit_coupling.json"
                         }
                     ]
                 }
