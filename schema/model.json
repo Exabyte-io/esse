@@ -2,34 +2,17 @@
     "schemaId": "model",
     "$schema": "http://json-schema.org/draft-04/schema#",
     "title": "model schema (base)",
+    "allOf": [
+        {
+            "$ref": "models_directory/model_without_method.json"
+        }
+    ],
     "properties": {
-        "name": {
-            "type": "string"
-        },
-        "path": {
-            "$ref": "core/reusable/category_path.json"
-        },
-        "categories": {
-            "description": "Model categories",
-            "$ref": "core/reusable/categories.json"
-        },
-        "parameters": {
-            "type": "object",
-            "description": "Model parameters defined in-place or via model mixins"
-        },
         "method": {
             "$ref": "method.json"
-        },
-        "reference": {
-            "$ref": "core/reference/literature.json"
-        },
-        "tags": {
-            "$ref": "core/primitive/array_of_strings.json"
         }
     },
     "required": [
-        "categories",
-        "parameters",
         "method"
     ]
 }
