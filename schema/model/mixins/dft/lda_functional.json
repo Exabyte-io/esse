@@ -1,5 +1,5 @@
 {
-    "schemaId": "models-category/pb/qm/dft/mixins/lda-functional",
+    "schemaId": "model/mixins/dft/lda-functional",
     "$schema": "http://json-schema.org/draft-04/schema#",
     "type": "object",
     "properties": {

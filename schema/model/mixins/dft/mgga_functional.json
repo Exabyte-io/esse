@@ -1,5 +1,5 @@
 {
-    "schemaId": "models-category/pb/qm/dft/mixins/mgga-functional",
+    "schemaId": "model/mixins/dft/mgga-functional",
     "$schema": "http://json-schema.org/draft-04/schema#",
     "type": "object",
     "properties": {

@@ -1,5 +1,5 @@
 {
-    "schemaId": "model-mixins/spin-polarization",
+    "schemaId": "model/mixins/spin-polarization",
     "$schema": "http://json-schema.org/draft-04/schema#",
     "type": "object",
     "properties": {

@@ -4,7 +4,7 @@
     "title": "model schema (base)",
     "allOf": [
         {
-            "$ref": "models_directory/model_without_method.json"
+            "$ref": "model/model_without_method.json"
         }
     ],
     "properties": {
