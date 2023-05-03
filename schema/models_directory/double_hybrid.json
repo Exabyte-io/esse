@@ -14,7 +14,7 @@
         "parameters": {
             "allOf": [
                 {
-                    "$ref": "../models_category/pb/qm/dft/mixins/double_hybrid_functional.json"
+                    "$ref": "../model/mixins/dft/double_hybrid_functional.json"
                 },
                 {
                     "anyOf": [

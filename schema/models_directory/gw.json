@@ -24,13 +24,13 @@
                 {
                     "oneOf": [
                         {
-                            "$ref": "../models_category/pb/qm/dft/mixins/lda_functional.json"
+                            "$ref": "../model/mixins/dft/lda_functional.json"
                         },
                         {
-                            "$ref": "../models_category/pb/qm/dft/mixins/gga_functional.json"
+                            "$ref": "../model/mixins/dft/gga_functional.json"
                         },
                         {
-                            "$ref": "../models_category/pb/qm/dft/mixins/mgga_functional.json"
+                            "$ref": "../model/mixins/dft/mgga_functional.json"
                         }
                     ]
                 },

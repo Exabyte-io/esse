@@ -14,7 +14,7 @@
         "parameters": {
             "allOf": [
                 {
-                    "$ref": "../models_category/pb/qm/dft/mixins/gga_functional.json"
+                    "$ref": "../model/mixins/dft/gga_functional.json"
                 },
                 {
                     "anyOf": [
