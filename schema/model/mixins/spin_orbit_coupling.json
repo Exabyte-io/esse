@@ -1,0 +1,10 @@
+{
+    "schemaId": "model/mixins/spin-orbit-coupling",
+    "$schema": "http://json-schema.org/draft-04/schema#",
+    "type": "object",
+    "properties": {
+        "spinOrbitCoupling": {
+            "type": "boolean"
+        }
+    }
+}

@@ -1,0 +1,20 @@
+{
+    "schemaId": "models-category/pb/qm/dft/ksdft/category-mgga",
+    "$schema": "http://json-schema.org/draft-04/schema#",
+    "title": "DFT meta-GGA functional category schema",
+    "allOf": [
+        {
+            "$ref": "../category_ksdft.json"
+        }
+    ],
+    "properties": {
+        "subtype": {
+            "enum": [
+                {
+                    "name": "Meta Generalized Gradient Approximation",
+                    "slug": "mgga"
+                }
+            ]
+        }
+    }
+}
