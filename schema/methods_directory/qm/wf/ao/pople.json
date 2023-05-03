@@ -1,0 +1,26 @@
+{
+    "schemaId": "method-units/physical/qm/wf/ao/pople",
+    "$schema": "http://json-schema.org/draft-04/schema#",
+    "description": "Pople basis set unit method",
+    "allOf": [
+        {
+            "$ref": "../../../../method_units/unit_base.json"
+        }
+    ],
+    "properties": {
+        "categories": {
+            "$ref": "../../../../methods_category/qm/wf/ao/category_pople.json"
+        },
+        "parameters": {
+            "allOf": [
+                {
+                    "properties": {
+                        "basisSlug": {
+                            "$ref": "./enum_options.json#/popleAoBasis"
+                        }
+                    }
+                }
+            ]
+        }
+    }
+}

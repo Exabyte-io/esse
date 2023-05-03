@@ -1,0 +1,15 @@
+{
+    "schemaId": "method-units/mathematical/intgr/numquad/analytic/volume",
+    "$schema": "http://json-schema.org/draft-04/schema#",
+    "description": "Analytic volume integral schema",
+    "allOf": [
+        {
+            "$ref": "../../../method_units/unit_base.json"
+        }
+    ],
+    "properties": {
+        "categories": {
+            "$ref": "../../../methods_category/intgr/analytic/category_volume.json"
+        }
+    }
+}

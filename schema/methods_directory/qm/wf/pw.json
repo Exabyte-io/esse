@@ -1,0 +1,16 @@
+{
+    "schemaId": "method-units/physical/qm/wf/pw",
+    "$schema": "http://json-schema.org/draft-04/schema#",
+    "title": "Plane wave method unit schema",
+    "description": "Approximating the electronic wave function with a plane wave basis",
+    "allOf": [
+        {
+            "$ref": "../../../method_units/unit_base.json"
+        }
+    ],
+    "properties": {
+        "categories": {
+            "$ref": "../../../methods_category/qm/wf/category_pw.json"
+        }
+    }
+}

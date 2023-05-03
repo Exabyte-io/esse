@@ -1,0 +1,26 @@
+{
+    "schemaId": "method-units/physical/qm/wf/ao/dunning",
+    "$schema": "http://json-schema.org/draft-04/schema#",
+    "description": "Dunning correlation-consistent basis set unit method",
+    "allOf": [
+        {
+            "$ref": "../../../../method_units/unit_base.json"
+        }
+    ],
+    "properties": {
+        "categories": {
+            "$ref": "../../../../methods_category/qm/wf/ao/category_dunning.json"
+        },
+        "parameters": {
+            "allOf": [
+                {
+                    "properties": {
+                        "basisSlug": {
+                            "$ref": "./enum_options.json#/dunningAoBasis"
+                        }
+                    }
+                }
+            ]
+        }
+    }
+}
