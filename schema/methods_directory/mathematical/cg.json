@@ -9,7 +9,7 @@
     ],
     "properties": {
         "categories": {
-            "$ref": "../../methods_category/opt/diff/ordern/category_cg.json"
+            "$ref": "../../methods_category/mathematical/opt/diff/ordern/category_cg.json"
         }
     }
 }

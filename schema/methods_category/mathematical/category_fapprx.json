@@ -4,7 +4,7 @@
     "description": "Unstructured meshing category schema",
     "allOf": [
         {
-            "$ref": "../core/reusable/categories.json"
+            "$ref": "../../core/reusable/categories.json"
         }
     ],
     "properties": {

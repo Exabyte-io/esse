@@ -9,7 +9,7 @@
     ],
     "properties": {
         "categories": {
-            "$ref": "../../methods_category/category_regression.json"
+            "$ref": "../../methods_category/mathematical/category_regression.json"
         },
         "precision": {
             "$ref": "regression/precision.json"

@@ -1,37 +1,37 @@
 # Wave function types
-planewave: !enum
+planewave:
   - pw # plane waves
-atomicOrbital: !enum
+atomicOrbital:
   - ao # atomic orbital basis
-wavelet: !enum
+wavelet:
   - wvl # wavelet series
 #
 # Wave function approximations
-pseudization: !enum
+pseudization:
   - psp # Pseudopotential Approximation
 #
 # Pseudopotential
-pseudoSubtypes: !enum
+pseudoSubtypes:
   - us # ultra-soft
   - nc # norm-conserving
   - paw # projector augmented wave
   - coulomb # Coulomb potential
 #
 # Occupation number smearing
-smearingSubtypes: !enum
+smearingSubtypes:
   - gaussian
   - marzari-vanderbilt # Marzari-Vanderbilt smearing, doi:10.1103/PhysRevLett.82.3296
   - methfessel-paxton # Methfessel-Paxton smearing, doi:10.1103/PhysRevB.40.3616
   - fermi-dirac # uses Fermi-Dirac distribution instead of Heaviside step function
 #
 # Tetrahedron methods
-tetrahedronSubtypes: !enum
+tetrahedronSubtypes:
   - linear # original linear tetrahedron method
   - optimized # Optimized tetrahedron method by Kawamura, doi:10.1103/PhysRevB.89.094515
   - bloechl # Tetrahedron method with Bloechl correction, doi:10.1103/PhysRevB.49.16223
 #
 # Atomic Orbital basis types
-aoTypes: !enum
+aoTypes:
   - pople
   - dunning
   - other

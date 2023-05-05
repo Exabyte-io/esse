@@ -14,7 +14,7 @@
         "type": {
             "type": "string",
             "description": "type of pseudization",
-            "$ref": "../../../methods_category/qm/wf/enum_options.json#/pseudoSubtypes"
+            "$ref": "../../../methods_category/physical/qm/wf/enum_options.json#/pseudoSubtypes"
         },
         "source": {
             "type": "string",

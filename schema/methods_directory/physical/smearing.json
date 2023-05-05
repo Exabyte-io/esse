@@ -10,7 +10,7 @@
     ],
     "properties": {
         "categories": {
-            "$ref": "../../methods_category/qm/wf/category_smearing.json"
+            "$ref": "../../methods_category/physical/qm/wf/category_smearing.json"
         }
     }
 }
