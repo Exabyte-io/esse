@@ -1,18 +1,18 @@
 {
-    "schemaId": "models-category/pb/qm/category-abin",
+    "schemaId": "models-category/pb/qm/semp",
     "$schema": "http://json-schema.org/draft-04/schema#",
-    "title": "Ab initio category schema",
+    "title": "Semi-empirical category schema",
     "allOf": [
         {
-            "$ref": "../category_qm.json"
+            "$ref": "../qm.json"
         }
     ],
     "properties": {
         "tier3": {
             "enum": [
                 {
-                    "name": "ab-initio",
-                    "slug": "abin"
+                    "name": "semi-empirical",
+                    "slug": "semp"
                 }
             ]
         }

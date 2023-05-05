@@ -1,10 +1,10 @@
 {
-    "schemaId": "models-category/pb/qm/dft/ksdft/category-lda",
+    "schemaId": "models-category/pb/qm/dft/ksdft/lda",
     "$schema": "http://json-schema.org/draft-04/schema#",
     "title": "DFT LDA functional category schema",
     "allOf": [
         {
-            "$ref": "../category_ksdft.json"
+            "$ref": "../ksdft.json"
         }
     ],
     "properties": {

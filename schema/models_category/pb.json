@@ -1,17 +1,17 @@
 {
-    "schemaId": "models-category/st/category-det",
+    "schemaId": "models-category/pb",
     "$schema": "http://json-schema.org/draft-04/schema#",
     "allOf": [
         {
-            "$ref": "../category_st.json"
+            "$ref": "../core/reusable/categories.json"
         }
     ],
     "properties": {
-        "tier2": {
+        "tier1": {
             "enum": [
                 {
-                    "name": "deterministic",
-                    "slug": "det"
+                    "name": "physics-based",
+                    "slug": "pb"
                 }
             ]
         }

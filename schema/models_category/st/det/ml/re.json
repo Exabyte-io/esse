@@ -1,18 +1,18 @@
 {
-    "schemaId": "models-category/pb/qm/dft/category-ksdft",
+    "schemaId": "models-category/st/det/ml/re",
     "$schema": "http://json-schema.org/draft-04/schema#",
-    "title": "Kohn-Sham DFT category schema",
+    "title": "regression category schema",
     "allOf": [
         {
-            "$ref": "../category_dft.json"
+            "$ref": "../ml.json"
         }
     ],
     "properties": {
         "type": {
             "enum": [
                 {
-                    "name": "Kohn-Sham DFT",
-                    "slug": "ksdft"
+                    "name": "regression",
+                    "slug": "re"
                 }
             ]
         }

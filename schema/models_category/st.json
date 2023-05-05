@@ -1,5 +1,5 @@
 {
-    "schemaId": "models-category/category-st",
+    "schemaId": "models-category/st",
     "$schema": "http://json-schema.org/draft-04/schema#",
     "allOf": [
         {

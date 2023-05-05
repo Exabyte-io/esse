@@ -1,10 +1,10 @@
 {
-    "schemaId": "models-category/st/det/category-ml",
+    "schemaId": "models-category/st/det/ml",
     "$schema": "http://json-schema.org/draft-04/schema#",
     "title": "machine learning model schema",
     "allOf": [
         {
-            "$ref": "../category_det.json"
+            "$ref": "../det.json"
         }
     ],
     "properties": {
