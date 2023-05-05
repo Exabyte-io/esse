@@ -4,7 +4,7 @@
     "title": "linear methods schema",
     "allOf": [
         {
-            "$ref": "../method/unit_base.json"
+            "$ref": "../method/unit_method.json"
         }
     ],
     "properties": {

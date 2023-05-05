@@ -4,7 +4,7 @@
     "description": "Dunning correlation-consistent basis set unit method",
     "allOf": [
         {
-            "$ref": "../../../../method/unit_base.json"
+            "$ref": "../../../../method/unit_method.json"
         }
     ],
     "properties": {
