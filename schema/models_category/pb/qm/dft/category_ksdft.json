@@ -9,12 +9,7 @@
     ],
     "properties": {
         "type": {
-            "enum": [
-                {
-                    "name": "Kohn-Sham DFT",
-                    "slug": "ksdft"
-                }
-            ]
+            "$ref": "enum_options.json#/kohnSham"
         }
     }
 }

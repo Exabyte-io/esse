@@ -9,28 +9,10 @@
     ],
     "properties": {
         "type": {
-            "enum": [
-                {
-                    "name": "GW Approximation",
-                    "slug": "gw"
-                }
-            ]
+            "$ref": "enum_options.json#/gwApproximation"
         },
         "subtype": {
-            "enum": [
-                {
-                    "name": "G0W0",
-                    "slug": "g0w0"
-                },
-                {
-                    "name": "eigenvalue self-consistent G (evGW0)",
-                    "slug": "evgw0"
-                },
-                {
-                    "name": "eigenvalue self-consistent GW (evGW)",
-                    "slug": "evgw"
-                }
-            ]
+            "$ref": "enum_options.json#/gwSubtypes"
         }
     }
 }

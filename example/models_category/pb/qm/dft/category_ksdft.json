@@ -1,18 +1,6 @@
 {
-    "tier1": {
-        "name": "physics-based",
-        "slug": "pb"
-    },
-    "tier2": {
-        "name": "quantum-mechanical",
-        "slug": "qm"
-    },
-    "tier3": {
-        "name": "density functional theory",
-        "slug": "dft"
-    },
-    "type": {
-        "name": "Kohn-Sham DFT",
-        "slug": "ksdft"
-    }
+    "tier1": "pb",
+    "tier2": "qm",
+    "tier3": "dft",
+    "type": "ksdft"
 }

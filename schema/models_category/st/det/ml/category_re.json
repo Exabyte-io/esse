@@ -1,7 +1,7 @@
 {
     "schemaId": "models-category/st/det/ml/category-re",
     "$schema": "http://json-schema.org/draft-04/schema#",
-    "title": "regression category schema",
+    "title": "regression model schema",
     "allOf": [
         {
             "$ref": "../category_ml.json"
@@ -9,12 +9,7 @@
     ],
     "properties": {
         "type": {
-            "enum": [
-                {
-                    "name": "regression",
-                    "slug": "re"
-                }
-            ]
+            "$ref": "enum_options.json#/regression"
         }
     }
 }
