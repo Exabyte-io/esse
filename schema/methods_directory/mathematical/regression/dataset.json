@@ -1,5 +1,5 @@
 {
-    "schemaId": "methods-directory/regression/dataset",
+    "schemaId": "methods-directory/mathematical/regression/dataset",
     "$schema": "http://json-schema.org/draft-04/schema#",
     "description": "dataset for ml",
     "type": "object",

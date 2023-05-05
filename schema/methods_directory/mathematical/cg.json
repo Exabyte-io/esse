@@ -1,5 +1,5 @@
 {
-    "schemaId": "methods-directory/opt/diff/ordern/cg",
+    "schemaId": "methods-directory/mathematical/cg",
     "$schema": "http://json-schema.org/draft-04/schema#",
     "description": "conjugate gradient method schema",
     "allOf": [

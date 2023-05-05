@@ -1,5 +1,5 @@
 {
-    "schemaId": "methods-category/opt/diff/category-order2",
+    "schemaId": "methods-category/mathematical/opt/diff/order2",
     "$schema": "http://json-schema.org/draft-04/schema#",
     "description": "Second order algorithms for the optimization of differentiable functions",
     "allOf": [

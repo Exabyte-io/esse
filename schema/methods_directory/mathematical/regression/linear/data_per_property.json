@@ -1,5 +1,5 @@
 {
-    "schemaId": "methods-directory/regression/linear/data-per-property",
+    "schemaId": "methods-directory/mathematical/regression/linear/data-per-property",
     "$schema": "http://json-schema.org/draft-04/schema#",
     "title": "linear regression parameters schema",
     "properties": {

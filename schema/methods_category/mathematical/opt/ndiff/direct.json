@@ -1,5 +1,5 @@
 {
-    "schemaId": "methods-category/opt/ndiff/category-direct",
+    "schemaId": "methods-category/mathematical/opt/ndiff/direct",
     "$schema": "http://json-schema.org/draft-04/schema#",
     "description": "Direct algorithms for the optimization of non-differentiable functions category schema",
     "allOf": [

@@ -1,5 +1,5 @@
 {
-    "schemaId": "methods-category/intgr/category-transf",
+    "schemaId": "methods-category/mathematical/intgr/transf",
     "$schema": "http://json-schema.org/draft-04/schema#",
     "description": "Integral transform methods",
     "allOf": [

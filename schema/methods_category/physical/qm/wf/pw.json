@@ -1,5 +1,5 @@
 {
-    "schemaId": "methods-category/qm/wf/category-pw",
+    "schemaId": "methods-category/physical/qm/wf/pw",
     "$schema": "http://json-schema.org/draft-04/schema#",
     "description": "Plane wave catgeory schema",
     "allOf": [

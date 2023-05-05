@@ -1,5 +1,5 @@
 {
-    "schemaId": "methods-directory/qm/wf/ao/dunning",
+    "schemaId": "methods-directory/physical/ao/dunning",
     "$schema": "http://json-schema.org/draft-04/schema#",
     "description": "Dunning correlation-consistent basis set unit method",
     "allOf": [

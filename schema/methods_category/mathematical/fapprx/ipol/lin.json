@@ -1,5 +1,5 @@
 {
-    "schemaId": "methods-category/fapprx/ipol/category-lin",
+    "schemaId": "methods-category/mathematical/fapprx/ipol/lin",
     "$schema": "http://json-schema.org/draft-04/schema#",
     "description": "Linear interpolation category schema",
     "allOf": [

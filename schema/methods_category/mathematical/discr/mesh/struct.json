@@ -1,5 +1,5 @@
 {
-    "schemaId": "methods-category/discr/mesh/category-struct",
+    "schemaId": "methods-category/mathematical/discr/mesh/struct",
     "$schema": "http://json-schema.org/draft-04/schema#",
     "description": "Structured meshing category schema",
     "allOf": [

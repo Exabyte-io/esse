@@ -1,5 +1,5 @@
 {
-    "schemaId": "methods-directory/regression/data",
+    "schemaId": "methods-directory/mathematical/regression/data",
     "$schema": "http://json-schema.org/draft-04/schema#",
     "title": "regression data",
     "type": "object",

@@ -1,5 +1,5 @@
 {
-    "schemaId": "methods-category/discr/mesh/category-nstruct",
+    "schemaId": "methods-category/mathematical/discr/mesh/nstruct",
     "$schema": "http://json-schema.org/draft-04/schema#",
     "description": "Unstructured meshing category schema",
     "allOf": [
