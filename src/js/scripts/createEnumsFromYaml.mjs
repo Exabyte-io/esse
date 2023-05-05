@@ -4,6 +4,12 @@ import yaml from "js-yaml";
 import path from "path";
 import lodash from "lodash";
 
+/**
+ *  We use YAML files to list enum options which need to be reused in other places.
+ *  The format also allows for additional context to the often shortened slugs, such as DOIs.
+ *  This script converts the enum lists to JSON files for $ref blocks inside schemas.
+ */
+
 const SCHEMA_DIR = "../../../schema/";
 
 function walkDir(dir, callback) {
