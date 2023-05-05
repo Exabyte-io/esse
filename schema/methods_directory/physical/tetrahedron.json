@@ -4,12 +4,12 @@
     "description": "Tetrahedron method (Brillouin zone integration) schema ",
     "allOf": [
         {
-            "$ref": "../../../method/unit_method.json"
+            "$ref": "../../method/unit_method.json"
         }
     ],
     "properties": {
         "categories": {
-            "$ref": "../../../methods_category/qm/wf/category_tetrahedron.json"
+            "$ref": "../../methods_category/qm/wf/category_tetrahedron.json"
         }
     }
 }

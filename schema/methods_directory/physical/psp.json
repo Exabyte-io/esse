@@ -5,12 +5,12 @@
     "description": "Core-valence separation by means of pseudopotentials (effective potential)",
     "allOf": [
         {
-            "$ref": "../../../method/unit_method.json"
+            "$ref": "../../method/unit_method.json"
         }
     ],
     "properties": {
         "categories": {
-            "$ref": "../../../methods_category/qm/wf/category_psp.json"
+            "$ref": "../../methods_category/qm/wf/category_psp.json"
         },
         "data": {
             "type": "object",

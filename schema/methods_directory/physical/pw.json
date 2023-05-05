@@ -5,12 +5,12 @@
     "description": "Approximating the electronic wave function with a plane wave basis",
     "allOf": [
         {
-                "$ref": "../../../method/unit_method.json"
+                "$ref": "../../method/unit_method.json"
         }
     ],
     "properties": {
         "categories": {
-            "$ref": "../../../methods_category/qm/wf/category_pw.json"
+            "$ref": "../../methods_category/qm/wf/category_pw.json"
         }
     }
 }

@@ -1,22 +1,22 @@
 {
-    "schemaId": "methods-directory/qm/wf/ao/pople",
+    "schemaId": "methods-directory/qm/wf/ao/dunning",
     "$schema": "http://json-schema.org/draft-04/schema#",
-    "description": "Pople basis set unit method",
+    "description": "Dunning correlation-consistent basis set unit method",
     "allOf": [
         {
-            "$ref": "../../../../method/unit_method.json"
+            "$ref": "../../../method/unit_method.json"
         }
     ],
     "properties": {
         "categories": {
-            "$ref": "../../../../methods_category/qm/wf/ao/category_pople.json"
+            "$ref": "../../../methods_category/qm/wf/ao/category_dunning.json"
         },
         "parameters": {
             "allOf": [
                 {
                     "properties": {
                         "basisSlug": {
-                            "$ref": "./enum_options.json#/popleAoBasis"
+                            "$ref": "./enum_options.json#/dunningAoBasis"
                         }
                     }
                 }

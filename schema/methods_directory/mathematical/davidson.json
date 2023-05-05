@@ -4,12 +4,12 @@
     "description": "Davidson diagonalization method",
     "allOf": [
         {
-            "$ref": "../../../method/unit_method.json"
+            "$ref": "../../method/unit_method.json"
         }
     ],
     "properties": {
         "categories": {
-            "$ref": "../../../methods_category/linalg/diag/category_davidson.json"
+            "$ref": "../../methods_category/linalg/diag/category_davidson.json"
         }
     }
 }

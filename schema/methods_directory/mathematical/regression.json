@@ -4,12 +4,12 @@
     "title": "linear methods schema",
     "allOf": [
         {
-            "$ref": "../method/unit_method.json"
+            "$ref": "../../method/unit_method.json"
         }
     ],
     "properties": {
         "categories": {
-            "$ref": "../methods_category/category_regression.json"
+            "$ref": "../../methods_category/category_regression.json"
         },
         "precision": {
             "$ref": "regression/precision.json"

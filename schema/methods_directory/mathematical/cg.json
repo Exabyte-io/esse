@@ -4,12 +4,12 @@
     "description": "conjugate gradient method schema",
     "allOf": [
         {
-            "$ref": "../../../../method/unit_method.json"
+            "$ref": "../../method/unit_method.json"
         }
     ],
     "properties": {
         "categories": {
-            "$ref": "../../../../methods_category/opt/diff/ordern/category_cg.json"
+            "$ref": "../../methods_category/opt/diff/ordern/category_cg.json"
         }
     }
 }

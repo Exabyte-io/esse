@@ -1,22 +1,22 @@
 {
-    "schemaId": "methods-directory/qm/wf/ao/other",
+    "schemaId": "methods-directory/qm/wf/ao/pople",
     "$schema": "http://json-schema.org/draft-04/schema#",
-    "description": "Other (neither Pople nor Dunning) basis set unit method",
+    "description": "Pople basis set unit method",
     "allOf": [
         {
-            "$ref": "../../../../method/unit_method.json"
+            "$ref": "../../../method/unit_method.json"
         }
     ],
     "properties": {
         "categories": {
-            "$ref": "../../../../methods_category/qm/wf/ao/category_other.json"
+            "$ref": "../../../methods_category/qm/wf/ao/category_pople.json"
         },
         "parameters": {
             "allOf": [
                 {
                     "properties": {
                         "basisSlug": {
-                            "$ref": "./enum_options.json#/otherAoBasis"
+                            "$ref": "./enum_options.json#/popleAoBasis"
                         }
                     }
                 }

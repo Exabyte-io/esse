@@ -1,22 +1,22 @@
 {
-    "schemaId": "methods-directory/qm/wf/ao/dunning",
+    "schemaId": "methods-directory/qm/wf/ao/other",
     "$schema": "http://json-schema.org/draft-04/schema#",
-    "description": "Dunning correlation-consistent basis set unit method",
+    "description": "Other (neither Pople nor Dunning) basis set unit method",
     "allOf": [
         {
-            "$ref": "../../../../method/unit_method.json"
+            "$ref": "../../../method/unit_method.json"
         }
     ],
     "properties": {
         "categories": {
-            "$ref": "../../../../methods_category/qm/wf/ao/category_dunning.json"
+            "$ref": "../../../methods_category/qm/wf/ao/category_other.json"
         },
         "parameters": {
             "allOf": [
                 {
                     "properties": {
                         "basisSlug": {
-                            "$ref": "./enum_options.json#/dunningAoBasis"
+                            "$ref": "./enum_options.json#/otherAoBasis"
                         }
                     }
                 }

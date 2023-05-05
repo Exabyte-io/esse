@@ -5,12 +5,12 @@
     "description": "Approximating Heaviside step function with smooth function",
     "allOf": [
         {
-            "$ref": "../../../method/unit_method.json"
+            "$ref": "../../method/unit_method.json"
         }
     ],
     "properties": {
         "categories": {
-            "$ref": "../../../methods_category/qm/wf/category_smearing.json"
+            "$ref": "../../methods_category/qm/wf/category_smearing.json"
         }
     }
 }
