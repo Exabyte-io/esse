@@ -1,0 +1,20 @@
+{
+    "schemaId": "methods-category/fapprx/category-basisexp",
+    "$schema": "http://json-schema.org/draft-04/schema#",
+    "description": "Basis expansion category schema",
+    "allOf": [
+        {
+            "$ref": "../fapprx.json"
+        }
+    ],
+    "properties": {
+        "tier2": {
+            "enum": [
+                {
+                    "name": "Basis Expansion",
+                    "slug": "basisexp"
+                }
+            ]
+        }
+    }
+}

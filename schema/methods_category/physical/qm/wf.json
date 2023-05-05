@@ -1,0 +1,18 @@
+{
+    "schemaId": "methods-category/qm/category-wf",
+    "$schema": "http://json-schema.org/draft-04/schema#",
+    "description": "Methods related to wave functions",
+    "allOf": [
+        {
+            "$ref": "../qm.json"
+        }
+    ],
+    "properties": {
+        "tier2": {
+            "description": "wave functions",
+            "enum": [
+                "wf"
+            ]
+        }
+    }
+}

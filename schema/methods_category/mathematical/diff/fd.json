@@ -1,0 +1,20 @@
+{
+    "schemaId": "methods-category/diff/category-fd",
+    "$schema": "http://json-schema.org/draft-04/schema#",
+    "description": "Finite difference method category schema",
+    "allOf": [
+        {
+            "$ref": "../diff.json"
+        }
+    ],
+    "properties": {
+        "tier2": {
+            "enum": [
+                {
+                    "name": "Finite Differences",
+                    "slug": "fd"
+                }
+            ]
+        }
+    }
+}

@@ -1,0 +1,21 @@
+{
+    "schemaId": "methods-category/qm/wf/category-tetrahedron",
+    "$schema": "http://json-schema.org/draft-04/schema#",
+    "description": "Tetrahedron method for Brillouin zone integration category schema ",
+    "allOf": [
+        {
+            "$ref": "../wf.json"
+        }
+    ],
+    "properties": {
+        "type": {
+            "description": "Tetrahedron method",
+            "enum": [
+                "tetrahedron"
+            ]
+        },
+        "subtype": {
+            "$ref": "./enum_options.json#/tetrahedronSubtypes"
+        }
+    }
+}

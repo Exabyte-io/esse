@@ -9,7 +9,7 @@
     ],
     "properties": {
         "categories": {
-            "$ref": "../../../methods_category/physical/qm/wf/ao/category_dunning.json"
+            "$ref": "../../../methods_category/physical/qm/wf/ao/dunning.json"
         },
         "parameters": {
             "allOf": [

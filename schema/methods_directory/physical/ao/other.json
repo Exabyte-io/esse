@@ -9,7 +9,7 @@
     ],
     "properties": {
         "categories": {
-            "$ref": "../../../methods_category/physical/qm/wf/ao/category_other.json"
+            "$ref": "../../../methods_category/physical/qm/wf/ao/other.json"
         },
         "parameters": {
             "allOf": [

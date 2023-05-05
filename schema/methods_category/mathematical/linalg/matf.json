@@ -1,0 +1,20 @@
+{
+    "schemaId": "methods-category/linalg/category-matf",
+    "$schema": "http://json-schema.org/draft-04/schema#",
+    "description": "Matrix function methods",
+    "allOf": [
+        {
+            "$ref": "../linalg.json"
+        }
+    ],
+    "properties": {
+        "tier2": {
+            "enum": [
+                {
+                    "name": "Matrix Function",
+                    "slug": "matf"
+                }
+            ]
+        }
+    }
+}

@@ -1,0 +1,20 @@
+{
+    "schemaId": "methods-category/fapprx/category-ipol",
+    "$schema": "http://json-schema.org/draft-04/schema#",
+    "description": "Interpolation category schema",
+    "allOf": [
+        {
+            "$ref": "../fapprx.json"
+        }
+    ],
+    "properties": {
+        "tier2": {
+            "enum": [
+                {
+                    "name": "Interpolation",
+                    "slug": "ipol"
+                }
+            ]
+        }
+    }
+}

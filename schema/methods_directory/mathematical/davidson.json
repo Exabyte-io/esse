@@ -9,7 +9,7 @@
     ],
     "properties": {
         "categories": {
-            "$ref": "../../methods_category/mathematical/linalg/diag/category_davidson.json"
+            "$ref": "../../methods_category/mathematical/linalg/diag/davidson.json"
         }
     }
 }

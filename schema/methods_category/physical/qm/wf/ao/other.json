@@ -1,0 +1,17 @@
+{
+    "schemaId": "methods-category/qm/wf/ao/category-other",
+    "$schema": "http://json-schema.org/draft-04/schema#",
+    "description": "Other (neither Pople nor Dunning) basis set category schema",
+    "allOf": [
+        {
+            "$ref": "../ao.json"
+        }
+    ],
+    "properties": {
+        "subtype": {
+            "enum": [
+                "other"
+            ]
+        }
+    }
+}

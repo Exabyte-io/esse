@@ -9,7 +9,7 @@
     ],
     "properties": {
         "categories": {
-            "$ref": "../../methods_category/physical/qm/wf/category_tetrahedron.json"
+            "$ref": "../../methods_category/physical/qm/wf/tetrahedron.json"
         }
     }
 }
