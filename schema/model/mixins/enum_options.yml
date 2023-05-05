@@ -1,0 +1,12 @@
+spinPolarization:
+  - none
+  - collinear
+  - non-collinear
+dispersionCorrection:
+  - none
+  - DFT-D2
+  - DFT-D3
+  - XDM
+  - TS
+hubbardType:
+  - U

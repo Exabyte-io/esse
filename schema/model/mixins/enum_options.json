@@ -1,0 +1,23 @@
+{
+    "spinPolarization": {
+        "enum": [
+            "none",
+            "collinear",
+            "non-collinear"
+        ]
+    },
+    "dispersionCorrection": {
+        "enum": [
+            "none",
+            "DFT-D2",
+            "DFT-D3",
+            "XDM",
+            "TS"
+        ]
+    },
+    "hubbardType": {
+        "enum": [
+            "U"
+        ]
+    }
+}
