@@ -1,0 +1,12 @@
+{
+    "firstOrder": {
+        "enum": [
+            "order1"
+        ]
+    },
+    "secondOrder": {
+        "enum": [
+            "order2"
+        ]
+    }
+}

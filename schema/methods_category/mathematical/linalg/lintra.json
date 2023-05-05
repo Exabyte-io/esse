@@ -9,12 +9,7 @@
     ],
     "properties": {
         "tier2": {
-            "enum": [
-                {
-                    "name": "Linear Transformation",
-                    "slug": "lintra"
-                }
-            ]
+            "$ref": "enum_options.json#/linearTransformation"
         }
     }
 }

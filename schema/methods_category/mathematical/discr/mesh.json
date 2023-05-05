@@ -9,12 +9,7 @@
     ],
     "properties": {
         "tier2": {
-            "enum": [
-                {
-                    "name": "Meshing",
-                    "slug": "mesh"
-                }
-            ]
+            "$ref": "enum_options.json#/meshing"
         }
     }
 }

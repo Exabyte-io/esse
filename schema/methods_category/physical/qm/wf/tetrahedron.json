@@ -9,10 +9,7 @@
     ],
     "properties": {
         "type": {
-            "description": "Tetrahedron method",
-            "enum": [
-                "tetrahedron"
-            ]
+            "$ref": "enum_options.json#/tetrahedron"
         },
         "subtype": {
             "$ref": "./enum_options.json#/tetrahedronSubtypes"

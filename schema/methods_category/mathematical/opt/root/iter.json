@@ -9,12 +9,7 @@
     ],
     "properties": {
         "tier3": {
-            "enum": [
-                {
-                    "name": "Iterative",
-                    "slug": "iter"
-                }
-            ]
+            "$ref": "enum_options.json#/iterative"
         }
     }
 }

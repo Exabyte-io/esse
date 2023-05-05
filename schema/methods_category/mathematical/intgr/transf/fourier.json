@@ -9,12 +9,7 @@
     ],
     "properties": {
         "type": {
-            "enum": [
-                {
-                    "name": "Fourier Transformation",
-                    "slug": "fourier-transf"
-                }
-            ]
+            "$ref": "enum_options.json#/fourierTransformation"
         }
     }
 }

@@ -9,12 +9,7 @@
     ],
     "properties": {
         "tier1": {
-            "enum": [
-                {
-                    "name": "Linear Algebra",
-                    "slug": "linalg"
-                }
-            ]
+            "$ref": "enum_options.json#/linearAlgebra"
         }
     }
 }

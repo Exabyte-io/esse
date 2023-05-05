@@ -1,7 +1,7 @@
 {
     "schemaId": "methods-category/mathematical/intgr/analytic",
     "$schema": "http://json-schema.org/draft-04/schema#",
-    "description": "Gaussian quadrature rules",
+    "description": "Analytic integral category schema",
     "allOf": [
         {
             "$ref": "../intgr.json"
@@ -9,12 +9,7 @@
     ],
     "properties": {
         "tier2": {
-            "enum": [
-                {
-                    "name": "Analytic Integral",
-                    "slug": "analytic"
-                }
-            ]
+            "$ref": "enum_options.json#/analytic"
         }
     }
 }

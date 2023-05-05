@@ -9,12 +9,7 @@
     ],
     "properties": {
         "tier2": {
-            "enum": [
-                {
-                    "name": "Basis Expansion",
-                    "slug": "basisexp"
-                }
-            ]
+            "$ref": "enum_options.json#/basisExpansion"
         }
     }
 }

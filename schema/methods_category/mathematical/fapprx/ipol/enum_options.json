@@ -1,0 +1,17 @@
+{
+    "linear": {
+        "enum": [
+            "lin"
+        ]
+    },
+    "polynomial": {
+        "enum": [
+            "poly"
+        ]
+    },
+    "spline": {
+        "enum": [
+            "spline"
+        ]
+    }
+}

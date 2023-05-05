@@ -1,0 +1,3 @@
+# --- Type enum slugs: mixed/higher-order algorithms for differentiable functions ---
+conjugateGradient:
+  - cg # conjugate-gradient method: https://en.wikipedia.org/wiki/Conjugate_gradient_method

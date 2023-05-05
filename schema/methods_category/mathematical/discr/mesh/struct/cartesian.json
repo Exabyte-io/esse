@@ -9,12 +9,7 @@
     ],
     "properties": {
         "type": {
-            "enum": [
-                {
-                    "name": "Cartesian Grid",
-                    "slug": "cartesian"
-                }
-            ]
+            "$ref": "enum_options.json#/cartesian"
         }
     }
 }

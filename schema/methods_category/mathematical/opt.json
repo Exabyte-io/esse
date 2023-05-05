@@ -9,12 +9,7 @@
     ],
     "properties": {
         "tier1": {
-            "enum": [
-                {
-                    "name": "Optimization",
-                    "slug": "opt"
-                }
-            ]
+            "$ref": "enum_options.json#/optimization"
         }
     }
 }

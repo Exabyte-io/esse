@@ -9,12 +9,7 @@
     ],
     "properties": {
         "tier3": {
-            "enum": [
-                {
-                    "name": "Population Algorithm",
-                    "slug": "pop"
-                }
-            ]
+            "$ref": "enum_options.json#/population"
         }
     }
 }

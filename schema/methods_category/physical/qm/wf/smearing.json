@@ -10,10 +10,7 @@
     ],
     "properties": {
         "type": {
-            "description": "Occupation number smearing",
-            "enum": [
-                "smearing"
-            ]
+            "$ref": "enum_options.json#/smearing"
         },
         "subtype": {
             "$ref": "./enum_options.json#/smearingSubtypes"

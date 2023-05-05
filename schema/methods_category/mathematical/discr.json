@@ -9,12 +9,7 @@
     ],
     "properties": {
         "tier1": {
-            "enum": [
-                {
-                    "name": "Discretization",
-                    "slug": "discr"
-                }
-            ]
+            "$ref": "enum_options.json#/discretization"
         }
     }
 }

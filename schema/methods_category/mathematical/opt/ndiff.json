@@ -9,12 +9,7 @@
     ],
     "properties": {
         "tier2": {
-            "enum": [
-                {
-                    "name": "Non-differentiable Functions",
-                    "slug": "ndiff"
-                }
-            ]
+            "$ref": "enum_options.json#/nonDifferentiable"
         }
     }
 }

@@ -1,0 +1,3 @@
+# --- Tier2 enum slugs: Differentiation ---
+finiteDifference:
+  - fd # Finite-difference methods, e.g. three-point central difference formula

@@ -9,12 +9,7 @@
     ],
     "properties": {
         "tier2": {
-            "enum": [
-                {
-                    "name": "Matrix Function",
-                    "slug": "matf"
-                }
-            ]
+            "$ref": "enum_options.json#/matrixFunction"
         }
     }
 }

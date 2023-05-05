@@ -1,0 +1,12 @@
+{
+    "iterative": {
+        "enum": [
+            "iterative"
+        ]
+    },
+    "bracketing": {
+        "enum": [
+            "bracket"
+        ]
+    }
+}

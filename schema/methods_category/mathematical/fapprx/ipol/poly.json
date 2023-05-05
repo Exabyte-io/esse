@@ -9,12 +9,7 @@
     ],
     "properties": {
         "tier3": {
-            "enum": [
-                {
-                    "name": "Polynomial Interpolation",
-                    "slug": "poly"
-                }
-            ]
+            "$ref": "enum_options.json#/polynomial"
         }
     }
 }

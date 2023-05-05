@@ -1,0 +1,22 @@
+# --- Tier 1 enum slugs ---
+differentiation:
+  - diff
+discretization:
+  - discr
+functionApproximation:
+  - fapprx
+integration:
+  - intgr
+linearAlgebra:
+  - linalg
+optimization:
+  - opt
+
+# --- ExabyteML regression types and subtypes ---
+# TODO: find suitable categories and adjust exabyteML
+regressionTypes:
+  - linear
+  - kernel_ridge
+regressionSubtypes:
+  - least_squares
+  - ridge

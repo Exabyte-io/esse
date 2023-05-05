@@ -9,12 +9,7 @@
     ],
     "properties": {
         "tier1": {
-            "enum": [
-                {
-                    "name": "Function Approximation",
-                    "slug": "fapprx"
-                }
-            ]
+            "$ref": "enum_options.json#/functionApproximation"
         }
     }
 }

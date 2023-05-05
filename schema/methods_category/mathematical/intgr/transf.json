@@ -9,12 +9,7 @@
     ],
     "properties": {
         "tier2": {
-            "enum": [
-                {
-                    "name": "Integral Transformation",
-                    "slug": "transf"
-                }
-            ]
+            "$ref": "enum_options.json#/transformation"
         }
     }
 }

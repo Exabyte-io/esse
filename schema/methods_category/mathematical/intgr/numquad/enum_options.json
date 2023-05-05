@@ -1,0 +1,12 @@
+{
+    "gaussQuadrature": {
+        "enum": [
+            "gauss"
+        ]
+    },
+    "newtonCotes": {
+        "enum": [
+            "newcot"
+        ]
+    }
+}

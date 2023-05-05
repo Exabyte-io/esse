@@ -9,12 +9,7 @@
     ],
     "properties": {
         "tier2": {
-            "enum": [
-                {
-                    "name": "Diagonalization",
-                    "slug": "diag"
-                }
-            ]
+            "$ref": "enum_options.json#/diagonalization"
         }
     }
 }

@@ -8,12 +8,8 @@
         }
     ],
     "properties": {
-        "categories": {
-            "properties": {
-                "type": {
-                    "$ref": "./enum_options.json#/planewave"
-                }
-            }
+        "type": {
+            "$ref": "./enum_options.json#/planewave"
         }
     }
 }

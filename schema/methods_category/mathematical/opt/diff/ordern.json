@@ -9,12 +9,7 @@
     ],
     "properties": {
         "tier3": {
-            "enum": [
-                {
-                    "name": "Mixed/Higher Order Algorithm",
-                    "slug": "ordern"
-                }
-            ]
+            "$ref": "enum_options.json#/nOrder"
         }
     }
 }
