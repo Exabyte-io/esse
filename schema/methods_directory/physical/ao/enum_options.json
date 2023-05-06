@@ -1,4 +1,5 @@
 {
+    "schemaId": "methods-directory/physical/ao/enum-options",
     "popleAoBasis": {
         "enum": [
             "3-21G",

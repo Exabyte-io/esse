@@ -1,4 +1,5 @@
 {
+    "schemaId": "model/mixins/enum-options",
     "spinPolarization": {
         "enum": [
             "none",
