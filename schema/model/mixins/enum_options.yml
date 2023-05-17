@@ -1,5 +1,4 @@
 spinPolarization:
-  - none
   - collinear
   - non-collinear
 dispersionCorrection:
