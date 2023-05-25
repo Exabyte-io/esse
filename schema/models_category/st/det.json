@@ -8,12 +8,7 @@
     ],
     "properties": {
         "tier2": {
-            "enum": [
-                {
-                    "name": "deterministic",
-                    "slug": "det"
-                }
-            ]
+            "$ref": "enum_options.json#/deterministic"
         }
     }
 }

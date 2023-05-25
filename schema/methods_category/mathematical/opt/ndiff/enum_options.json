@@ -1,0 +1,17 @@
+{
+    "direct": {
+        "enum": [
+            "direct"
+        ]
+    },
+    "population": {
+        "enum": [
+            "pop"
+        ]
+    },
+    "stochastic": {
+        "enum": [
+            "stoch"
+        ]
+    }
+}

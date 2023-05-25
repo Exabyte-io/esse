@@ -1,26 +1,11 @@
 {
     "name": "HSE06 (SOC)",
     "categories": {
-        "tier1": {
-            "name": "physics-based",
-            "slug": "pb"
-        },
-        "tier2": {
-            "name": "quantum-mechanical",
-            "slug": "qm"
-        },
-        "tier3": {
-            "name": "density functional theory",
-            "slug": "dft"
-        },
-        "type": {
-            "name": "Kohn-Sham DFT",
-            "slug": "ksdft"
-        },
-        "subtype": {
-            "name": "Hybrid functional",
-            "slug": "hybrid"
-        }
+        "tier1": "pb",
+        "tier2": "qm",
+        "tier3": "dft",
+        "type": "ksdft",
+        "subtype": "hybrid"
     },
     "parameters": {
         "functional": "hse06",

@@ -1,0 +1,17 @@
+{
+    "differentiable": {
+        "enum": [
+            "diff"
+        ]
+    },
+    "nonDifferentiable": {
+        "enum": [
+            "ndiff"
+        ]
+    },
+    "rootFinding": {
+        "enum": [
+            "root"
+        ]
+    }
+}

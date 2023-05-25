@@ -9,12 +9,7 @@
     ],
     "properties": {
         "subtype": {
-            "enum": [
-                {
-                    "name": "Generalized Gradient Approximation",
-                    "slug": "gga"
-                }
-            ]
+            "$ref": "enum_options.json#/generalizedGradientApproximation"
         }
     }
 }

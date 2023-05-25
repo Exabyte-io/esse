@@ -1,0 +1,7 @@
+{
+    "meshing": {
+        "enum": [
+            "mesh"
+        ]
+    }
+}

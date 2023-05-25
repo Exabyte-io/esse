@@ -9,12 +9,7 @@
     ],
     "properties": {
         "tier3": {
-            "enum": [
-                {
-                    "name": "Hybrid Mesh",
-                    "slug": "hybrid"
-                }
-            ]
+            "$ref": "enum_options.json#/hybridMesh"
         }
     }
 }

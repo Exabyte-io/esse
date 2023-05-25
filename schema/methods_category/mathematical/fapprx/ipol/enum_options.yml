@@ -1,0 +1,7 @@
+# --- Tier 3 enum slugs: Interpolation methods ---
+linear:
+  - lin # Linear interpolation methods
+polynomial:
+  - poly # Polynomial interpolation methods, e.g. Lagrange polynomials
+spline:
+  - spline # Spline interpolation, e.g. Cubic Hermite spline

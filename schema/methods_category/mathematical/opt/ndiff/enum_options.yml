@@ -1,0 +1,7 @@
+# --- Tier 3 enum slugs: non-differentiable functions ---
+direct:
+  - direct # Direct algorithms, e.g. Nelder-Mead Simplex
+population:
+  - pop # Population algorithms, e.g. Particle-Swarm Optimization
+stochastic:
+  - stoch # Stochastic algorithms, e.g. Simulated Annealing

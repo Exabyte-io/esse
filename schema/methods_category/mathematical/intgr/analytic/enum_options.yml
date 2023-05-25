@@ -1,0 +1,14 @@
+# --- Type enum slugs: Analytic integrals ---
+volume:
+  - volume
+
+# --- SubType enum slugs: Analytic volume integrals ---
+volumeSubtypes:
+  - sphere # Sphere
+  - cube # Cube
+  - rect-prism # Rectangular Prism
+  - tri-prism # Triangular Prism
+  - cylinder # Cylinder
+  - cone # Cone
+  - tetrahedron # Tetrahedron
+  - sq-pyr # Square Pyramid

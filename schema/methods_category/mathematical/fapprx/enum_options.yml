@@ -1,0 +1,5 @@
+# --- Tier 2 enum slugs: Function approximation ---
+basisExpansion:
+  - basisExp # basis expansion category
+interpolation:
+  - ipol # interpolation category

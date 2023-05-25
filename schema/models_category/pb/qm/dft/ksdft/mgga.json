@@ -9,12 +9,7 @@
     ],
     "properties": {
         "subtype": {
-            "enum": [
-                {
-                    "name": "Meta Generalized Gradient Approximation",
-                    "slug": "mgga"
-                }
-            ]
+            "$ref": "enum_options.json#/metaGGA"
         }
     }
 }

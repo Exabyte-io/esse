@@ -1,0 +1,19 @@
+{
+    "volume": {
+        "enum": [
+            "volume"
+        ]
+    },
+    "volumeSubtypes": {
+        "enum": [
+            "sphere",
+            "cube",
+            "rect-prism",
+            "tri-prism",
+            "cylinder",
+            "cone",
+            "tetrahedron",
+            "sq-pyr"
+        ]
+    }
+}

@@ -9,12 +9,7 @@
     ],
     "properties": {
         "tier2": {
-            "enum": [
-                {
-                    "name": "Interpolation",
-                    "slug": "ipol"
-                }
-            ]
+            "$ref": "enum_options.json#/interpolation"
         }
     }
 }

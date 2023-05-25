@@ -9,12 +9,7 @@
     ],
     "properties": {
         "tier3": {
-            "enum": [
-                {
-                    "name": "Local Descent",
-                    "slug": "local"
-                }
-            ]
+            "$ref": "enum_options.json#/localDescent"
         }
     }
 }

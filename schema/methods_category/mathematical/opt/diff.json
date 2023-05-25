@@ -9,12 +9,7 @@
     ],
     "properties": {
         "tier2": {
-            "enum": [
-                {
-                    "name": "Differentiable Functions",
-                    "slug": "diff"
-                }
-            ]
+            "$ref": "enum_options.json#/differentiable"
         }
     }
 }

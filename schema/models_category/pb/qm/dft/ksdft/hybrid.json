@@ -9,12 +9,7 @@
     ],
     "properties": {
         "subtype": {
-            "enum": [
-                {
-                    "name": "Hybrid functional",
-                    "slug": "hybrid"
-                }
-            ]
+            "$ref": "enum_options.json#/hybrid"
         }
     }
 }

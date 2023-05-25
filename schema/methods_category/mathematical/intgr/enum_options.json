@@ -1,0 +1,22 @@
+{
+    "analytic": {
+        "enum": [
+            "analytic"
+        ]
+    },
+    "differentialEquation": {
+        "enum": [
+            "diffeq"
+        ]
+    },
+    "numericalQuadrature": {
+        "enum": [
+            "numquad"
+        ]
+    },
+    "transformation": {
+        "enum": [
+            "transf"
+        ]
+    }
+}

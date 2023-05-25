@@ -9,16 +9,10 @@
     ],
     "properties": {
         "type": {
-            "enum": [
-                "linear",
-                "kernel_ridge"
-            ]
+            "$ref": "enum_options.json#/regressionTypes"
         },
         "subtype": {
-            "enum": [
-                "least_squares",
-                "ridge"
-            ]
+            "$ref": "enum_options.json#/regressionSubtypes"
         }
     }
 }

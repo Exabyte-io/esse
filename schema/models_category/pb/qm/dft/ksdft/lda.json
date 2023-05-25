@@ -9,12 +9,7 @@
     ],
     "properties": {
         "subtype": {
-            "enum": [
-                {
-                    "name": "Local Density Approximation",
-                    "slug": "lda"
-                }
-            ]
+            "$ref": "enum_options.json#/localDensityApproximation"
         }
     }
 }

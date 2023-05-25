@@ -1,0 +1,5 @@
+# --- Tier 3 enum slugs: Numerical Quadrature ---
+gaussQuadrature:
+  - gauss # Gauss quadrature rules, e.g. Gaussian quadrature, Lebedev quadrature
+newtonCotes:
+  - newcot # Newton-Cotes quadrature rules, e.g. Trapezoidal rule

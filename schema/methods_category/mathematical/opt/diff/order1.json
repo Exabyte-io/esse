@@ -9,12 +9,7 @@
     ],
     "properties": {
         "tier3": {
-            "enum": [
-                {
-                    "name": "First Order Algorithm",
-                    "slug": "order1"
-                }
-            ]
+            "$ref": "enum_options.json#/firstOrder"
         }
     }
 }

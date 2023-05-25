@@ -9,10 +9,7 @@
     ],
     "properties": {
         "tier1": {
-            "description": "quantum-mechanical",
-            "enum": [
-                "qm"
-            ]
+            "$ref": "enum_options.json#/quantumMechanical"
         }
     }
 }

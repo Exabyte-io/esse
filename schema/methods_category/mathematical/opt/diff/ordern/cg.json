@@ -9,12 +9,7 @@
     ],
     "properties": {
         "type": {
-            "enum": [
-                {
-                    "name": "Conjugate Gradient",
-                    "slug": "cg"
-                }
-            ]
+            "$ref": "enum_options.json#/conjugateGradient"
         }
     }
 }

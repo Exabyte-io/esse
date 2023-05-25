@@ -9,10 +9,7 @@
     ],
     "properties": {
         "tier2": {
-            "description": "wave functions",
-            "enum": [
-                "wf"
-            ]
+            "$ref": "enum_options.json#/wavefunction"
         }
     }
 }

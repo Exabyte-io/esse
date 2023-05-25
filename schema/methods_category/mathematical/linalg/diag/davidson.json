@@ -9,12 +9,7 @@
     ],
     "properties": {
         "type": {
-            "enum": [
-                {
-                    "name": "Davidson diagonalization",
-                    "slug": "davidson"
-                }
-            ]
+            "$ref": "enum_options.json#/davidson"
         }
     }
 }

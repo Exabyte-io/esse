@@ -8,12 +8,7 @@
     ],
     "properties": {
         "tier1": {
-            "enum": [
-                {
-                    "name": "physics-based",
-                    "slug": "pb"
-                }
-            ]
+            "$ref": "enum_options.json#/physicsBased"
         }
     }
 }

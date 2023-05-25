@@ -8,12 +8,7 @@
     ],
     "properties": {
         "tier1": {
-            "enum": [
-                {
-                    "name": "statistical",
-                    "slug": "st"
-                }
-            ]
+            "$ref": "enum_options.json#/statistical"
         }
     }
 }
