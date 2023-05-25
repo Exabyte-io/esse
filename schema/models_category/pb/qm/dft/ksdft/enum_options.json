@@ -1,0 +1,27 @@
+{
+    "localDensityApproximation": {
+        "enum": [
+            "lda"
+        ]
+    },
+    "generalizedGradientApproximation": {
+        "enum": [
+            "gga"
+        ]
+    },
+    "metaGGA": {
+        "enum": [
+            "mgga"
+        ]
+    },
+    "hybrid": {
+        "enum": [
+            "hybrid"
+        ]
+    },
+    "doubleHybrid": {
+        "enum": [
+            "double-hybrid"
+        ]
+    }
+}

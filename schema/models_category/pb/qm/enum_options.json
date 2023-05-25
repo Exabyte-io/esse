@@ -1,0 +1,17 @@
+{
+    "abInitio": {
+        "enum": [
+            "abin"
+        ]
+    },
+    "densityFunctional": {
+        "enum": [
+            "dft"
+        ]
+    },
+    "semiEmpirical": {
+        "enum": [
+            "semp"
+        ]
+    }
+}

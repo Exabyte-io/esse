@@ -1,0 +1,7 @@
+# --- Tier 3 enum slugs: Meshing ---
+hybridMesh:
+  - hybrid # Hybrid meshing category
+unstructuredMesh:
+  - nstruct # Unstructured meshing category
+structuredMesh:
+ - struct # Structured meshing category

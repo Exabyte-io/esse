@@ -1,0 +1,7 @@
+{
+    "finiteDifference": {
+        "enum": [
+            "fd"
+        ]
+    }
+}

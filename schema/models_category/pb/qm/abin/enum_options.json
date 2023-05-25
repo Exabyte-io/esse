@@ -1,0 +1,14 @@
+{
+    "gwApproximation": {
+        "enum": [
+            "gw"
+        ]
+    },
+    "gwSubtypes": {
+        "enum": [
+            "g0w0",
+            "evgw0",
+            "evgw"
+        ]
+    }
+}

@@ -1,0 +1,10 @@
+# --- Type enum slugs: Ab-initio models ---
+gwApproximation:
+  - gw # GW models, e.g. G0W0
+
+# --- Subtype enum slugs: GW models ---
+# see GW Compendium: https://doi.org/10.3389/fchem.2019.00377
+gwSubtypes:
+  - g0w0 # G0W0
+  - evgw0 # eigenvalue self-consistent G
+  - evgw # eigenvalue self-consistent GW

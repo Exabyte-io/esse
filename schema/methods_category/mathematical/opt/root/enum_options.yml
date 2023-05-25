@@ -1,0 +1,5 @@
+# --- Tier 3 enum slugs: root-finding ---
+iterative:
+  - iterative # Iterative method for root finding category
+bracketing:
+  - bracket # Bracketing method for finding roots category

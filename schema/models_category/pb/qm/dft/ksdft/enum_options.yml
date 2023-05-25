@@ -1,0 +1,11 @@
+# --- Subtype enum options: Kohn-Sham DFT ---
+localDensityApproximation:
+  - lda # LDA functional, e.g. PZ81, SVWN5
+generalizedGradientApproximation:
+  - gga # GGA functionals, e.g. PBE
+metaGGA:
+  - mgga # meta-GGA functionals, e.g. TPSS
+hybrid:
+  - hybrid # Hybrid functionals, e.g. B3LYP
+doubleHybrid:
+  - double-hybrid

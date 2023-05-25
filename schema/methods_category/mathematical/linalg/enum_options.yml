@@ -1,0 +1,9 @@
+# --- Tier 2 enum slugs: linear algebra methods ---
+decomposition:
+  - dcomp # Matrix decomposition category: https://docs.scipy.org/doc/scipy/tutorial/linalg.html#decompositions
+diagonalization:
+  - diag # matrix diagonalization category: https://en.wikipedia.org/wiki/Diagonalizable_matrix
+linearTransformation:
+  - lintra # linear transformation category: https://en.wikipedia.org/wiki/Linear_map
+matrixFunction:
+  - matf # Matrix functions category: https://docs.scipy.org/doc/scipy/tutorial/linalg.html#matrix-functions

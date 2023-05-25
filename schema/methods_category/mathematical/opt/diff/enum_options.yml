@@ -1,0 +1,11 @@
+# --- Tier 3 enum slugs: differentiable functions ---
+bracketing:
+  - bracket # Bracket algorithms, e.g. Fibonacci Search
+localDescent:
+  - local # Local descent methods, e.g. Line-Search
+firstOrder:
+  - order1 # First-order algorithms, e.g. Gradient Descent, Adam, ...
+secondOrder:
+  - order2 # Second-order algorithms, e.g. Newton's Method,
+nOrder:
+  - ordern # Mixed-order or higher-order algorithms, e.g. Conjugate-Gradient, Quasi-Newton Methods

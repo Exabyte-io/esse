@@ -1,27 +1,27 @@
 {
     "schemaId": "method",
     "$schema": "http://json-schema.org/draft-04/schema#",
-    "title": "method schema (base)",
+    "title": "method schema (container of unit methods)",
+    "allOf": [
+        {
+            "$ref": "system/name.json"
+        },
+        {
+            "$ref": "system/tags.json"
+        }
+    ],
     "properties": {
-        "type": {
-            "description": "general type of this method, eg. `pseudopotential`",
-            "type": "string"
+        "path": {
+            "$ref": "core/reusable/category_path.json"
         },
-        "subtype": {
-            "description": "general subtype of this method, eg. `ultra-soft`",
-            "type": "string"
-        },
-        "precision": {
-            "description": "Object showing the actual possible precision based on theory and implementation",
-            "type": "object"
-        },
-        "data": {
-            "description": "additional data specific to method, eg. array of pseudopotentials",
-            "type": "object"
+        "units": {
+            "type": "array",
+            "items": {
+                "$ref": "method/unit_method.json"
+            }
         }
     },
     "required": [
-        "type",
-        "subtype"
+        "units"
     ]
 }

@@ -1,0 +1,7 @@
+{
+    "conjugateGradient": {
+        "enum": [
+            "cg"
+        ]
+    }
+}

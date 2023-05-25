@@ -9,7 +9,7 @@
     ],
     "properties": {
         "categories": {
-            "$ref": "../models_category/pb/qm/abin/category_gw.json"
+            "$ref": "../models_category/pb/qm/abin/gw.json"
         },
         "parameters": {
             "allOf": [

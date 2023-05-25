@@ -1,0 +1,12 @@
+{
+    "physicsBased": {
+        "enum": [
+            "pb"
+        ]
+    },
+    "statistical": {
+        "enum": [
+            "st"
+        ]
+    }
+}

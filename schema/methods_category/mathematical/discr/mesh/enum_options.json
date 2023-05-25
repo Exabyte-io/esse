@@ -1,0 +1,17 @@
+{
+    "hybridMesh": {
+        "enum": [
+            "hybrid"
+        ]
+    },
+    "unstructuredMesh": {
+        "enum": [
+            "nstruct"
+        ]
+    },
+    "structuredMesh": {
+        "enum": [
+            "struct"
+        ]
+    }
+}

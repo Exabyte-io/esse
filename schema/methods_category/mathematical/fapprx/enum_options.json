@@ -1,0 +1,12 @@
+{
+    "basisExpansion": {
+        "enum": [
+            "basisExp"
+        ]
+    },
+    "interpolation": {
+        "enum": [
+            "ipol"
+        ]
+    }
+}

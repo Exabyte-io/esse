@@ -1,0 +1,7 @@
+{
+    "quantumMechanical": {
+        "enum": [
+            "qm"
+        ]
+    }
+}

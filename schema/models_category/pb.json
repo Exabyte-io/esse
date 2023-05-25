@@ -1,0 +1,14 @@
+{
+    "schemaId": "models-category/pb",
+    "$schema": "http://json-schema.org/draft-04/schema#",
+    "allOf": [
+        {
+            "$ref": "../core/reusable/categories.json"
+        }
+    ],
+    "properties": {
+        "tier1": {
+            "$ref": "enum_options.json#/physicsBased"
+        }
+    }
+}
