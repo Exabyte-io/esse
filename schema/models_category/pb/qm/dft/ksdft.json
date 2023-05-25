@@ -1,10 +1,10 @@
 {
-    "schemaId": "models-category/pb/qm/dft/category-ksdft",
+    "schemaId": "models-category/pb/qm/dft/ksdft",
     "$schema": "http://json-schema.org/draft-04/schema#",
     "title": "Kohn-Sham DFT category schema",
     "allOf": [
         {
-            "$ref": "../category_dft.json"
+            "$ref": "../dft.json"
         }
     ],
     "properties": {

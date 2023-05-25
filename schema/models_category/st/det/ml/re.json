@@ -1,10 +1,10 @@
 {
-    "schemaId": "models-category/st/det/ml/category-re",
+    "schemaId": "models-category/st/det/ml/re",
     "$schema": "http://json-schema.org/draft-04/schema#",
     "title": "regression model schema",
     "allOf": [
         {
-            "$ref": "../category_ml.json"
+            "$ref": "../ml.json"
         }
     ],
     "properties": {

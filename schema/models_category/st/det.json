@@ -1,9 +1,9 @@
 {
-    "schemaId": "models-category/st/category-det",
+    "schemaId": "models-category/st/det",
     "$schema": "http://json-schema.org/draft-04/schema#",
     "allOf": [
         {
-            "$ref": "../category_st.json"
+            "$ref": "../st.json"
         }
     ],
     "properties": {

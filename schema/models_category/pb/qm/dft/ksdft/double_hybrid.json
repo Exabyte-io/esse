@@ -1,10 +1,10 @@
 {
-    "schemaId": "models-category/pb/qm/dft/ksdft/category-double-hybrid",
+    "schemaId": "models-category/pb/qm/dft/ksdft/double-hybrid",
     "$schema": "http://json-schema.org/draft-04/schema#",
     "title": "DFT double hybrid functional category schema",
     "allOf": [
         {
-            "$ref": "../category_ksdft.json"
+            "$ref": "../ksdft.json"
         }
     ],
     "properties": {

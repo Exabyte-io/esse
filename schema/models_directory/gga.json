@@ -9,7 +9,7 @@
     ],
     "properties": {
         "categories": {
-            "$ref": "../models_category/pb/qm/dft/ksdft/category_gga.json"
+            "$ref": "../models_category/pb/qm/dft/ksdft/gga.json"
         },
         "parameters": {
             "allOf": [

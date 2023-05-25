@@ -10,7 +10,7 @@
     ],
     "properties": {
         "categories": {
-            "$ref": "../models_category/st/det/ml/category_re.json"
+            "$ref": "../models_category/st/det/ml/re.json"
         }
     }
 }

@@ -1,5 +1,5 @@
 {
-    "schemaId": "models-category/category-st",
+    "schemaId": "models-category/pb",
     "$schema": "http://json-schema.org/draft-04/schema#",
     "allOf": [
         {
@@ -8,7 +8,7 @@
     ],
     "properties": {
         "tier1": {
-            "$ref": "enum_options.json#/statistical"
+            "$ref": "enum_options.json#/physicsBased"
         }
     }
 }

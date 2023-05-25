@@ -9,7 +9,7 @@
     ],
     "properties": {
         "categories": {
-            "$ref": "../models_category/pb/qm/dft/ksdft/category_double_hybrid.json"
+            "$ref": "../models_category/pb/qm/dft/ksdft/double_hybrid.json"
         },
         "parameters": {
             "allOf": [
