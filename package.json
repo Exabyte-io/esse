@@ -25,11 +25,6 @@
     "homepage": "https://github.com/Exabyte-io/exabyte-esse",
     "devDependencies": {
         "lodash": "4.17.21",
-        "@babel/cli": "7.16.0",
-        "@babel/core": "7.16.0",
-        "@babel/register": "7.16.0",
-        "@babel/preset-env": "7.16.4",
-        "@babel/eslint-parser": "7.16.3",
         "@exabyte-io/eslint-config": "^2022.11.17-0",
         "chai": "4.3.4",
         "eslint": "^7.32.0",
@@ -52,17 +47,17 @@
     "license": "Apache-2.0",
     "dependencies": {
         "ajv": "^4.1.7",
+        "@babel/cli": "7.16.0",
+        "@babel/core": "7.16.0",
+        "@babel/register": "7.16.0",
+        "@babel/preset-env": "7.16.4",
+        "@babel/eslint-parser": "7.16.3",
         "file": "^0.2.2",
         "json-schema-deref-sync": "0.14.0",
         "yamljs": "^0.3.0"
     },
     "peerDependencies": {
-        "lodash": "*",
-        "@babel/cli": "*",
-        "@babel/core": "*",
-        "@babel/register": "*",
-        "@babel/preset-env": "*",
-        "@babel/eslint-parser": "*"
+        "lodash": "*"
     },
     "engines": {
         "node": ">=12.0.0",
