@@ -59,7 +59,7 @@
                 "compound"
             ]
         },
-        "isRerunnable": {
+        "isRestartable": {
             "description": "Job is allowed to restart on termination.",
             "type": "boolean",
             "default": true
