@@ -1,4 +1,5 @@
 {
+    "schemaId": "methods-category/mathematical/opt/ndiff/enum-options",
     "direct": {
         "enum": [
             "direct"

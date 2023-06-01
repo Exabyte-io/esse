@@ -1,4 +1,5 @@
 {
+    "schemaId": "methods-category/mathematical/fapprx/ipol/enum-options",
     "linear": {
         "enum": [
             "lin"

@@ -1,4 +1,5 @@
 {
+    "schemaId": "methods-category/mathematical/enum-options",
     "differentiation": {
         "enum": [
             "diff"

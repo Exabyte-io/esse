@@ -1,4 +1,5 @@
 {
+    "schemaId": "methods-category/mathematical/linalg/enum-options",
     "decomposition": {
         "enum": [
             "dcomp"

@@ -1,4 +1,5 @@
 {
+    "schemaId": "methods-category/mathematical/opt/root/enum-options",
     "iterative": {
         "enum": [
             "iterative"

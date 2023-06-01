@@ -1,4 +1,5 @@
 {
+    "schemaId": "methods-category/mathematical/opt/diff/enum-options",
     "bracketing": {
         "enum": [
             "bracket"

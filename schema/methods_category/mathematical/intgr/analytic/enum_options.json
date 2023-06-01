@@ -1,4 +1,5 @@
 {
+    "schemaId": "methods-category/mathematical/intgr/analytic/enum-options",
     "volume": {
         "enum": [
             "volume"
