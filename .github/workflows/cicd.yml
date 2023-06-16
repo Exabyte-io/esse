@@ -7,6 +7,30 @@ concurrency:
   cancel-in-progress: true
 
 jobs:
+    run-py-linter:
+    runs-on: ubuntu-20.04
+    strategy:
+      matrix:
+        python-version: [3.8.6]
+
+    steps:
+      - name: Checkout this repository
+        uses: actions/checkout@v3
+        with:
+          lfs: true
+
+      - name: Checkout actions repository
+        uses: actions/checkout@v3
+        with:
+          repository: Exabyte-io/actions
+          token: ${{ secrets.BOT_GITHUB_TOKEN }}
+          path: actions
+          ref: feat/SOF-6640
+
+      - name: Run ruff linter
+        uses: ./actions/py/lint
+        with:
+          python-version: ${{ matrix.python-version }}
 
   run-py-tests:
     runs-on: ubuntu-20.04
@@ -63,7 +87,7 @@ jobs:
           node-version: ${{ matrix.node-version }}
 
   publish-js-package:
-    needs: [run-py-tests, run-js-tests]
+    needs: [run-py-linter, run-py-tests, run-js-tests]
     runs-on: ubuntu-latest
     if: github.ref_name == 'dev'
 
