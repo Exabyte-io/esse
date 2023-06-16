@@ -2,6 +2,7 @@ import jsonschema
 
 from esse.utils import parseIncludeReferenceStatementsByDir
 from esse.settings import SCHEMAS_DIR, EXAMPLES_DIR, PROPERTIES_MANIFEST
+
 # from esse.functionals import generate_dft_unit_functionals
 
 ## Note: We're disabling this for now to avoid a bug discovered in deployment - files are not necessarily writeable

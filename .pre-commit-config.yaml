@@ -4,4 +4,3 @@ repos:
     hooks:
       - id: ruff
       - id: black
-      - id: pydocstyle

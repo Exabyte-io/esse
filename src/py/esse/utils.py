@@ -65,7 +65,7 @@ def dump_json_file(path_, content, sort_keys=True):
         sort_keys (bool): whether to sort keys. Defaults to True.
     """
     with open(path_, "w+") as f:
-        f.write("".join((json.dumps(content, separators=(',', ': '), indent=4, sort_keys=sort_keys), "\n")))
+        f.write("".join((json.dumps(content, separators=(",", ": "), indent=4, sort_keys=sort_keys), "\n")))
 
 
 def refactor_examples():
@@ -100,8 +100,10 @@ def set_schema_id(path_):
         path_ (str): path to JSON file.
     """
     content = read_json_file(path_)
-    if not content.get("$schema"): return  # do not add ID to non-schema files
-    if content.get("schemaId"): del content["schemaId"]
-    schema_id = slugify(path_.replace("{}/".format(SCHEMAS_DIR), '').replace(".json", ""))
+    if not content.get("$schema"):
+        return  # do not add ID to non-schema files
+    if content.get("schemaId"):
+        del content["schemaId"]
+    schema_id = slugify(path_.replace("{}/".format(SCHEMAS_DIR), "").replace(".json", ""))
     content = OrderedDict(list(OrderedDict({"schemaId": schema_id}).items()) + list(content.items()))
     dump_json_file(path_, content, False)
