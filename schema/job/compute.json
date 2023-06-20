@@ -59,6 +59,11 @@
                 "compound"
             ]
         },
+        "isRestartable": {
+            "description": "Job is allowed to restart on termination.",
+            "type": "boolean",
+            "default": true
+        },
         "notify": {
             "description": "Email notification for the job: n - never, a - job aborted, b - job begins, e - job ends. Last three could be combined.",
             "type": "string"
