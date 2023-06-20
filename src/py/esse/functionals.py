@@ -8,7 +8,8 @@ UNIT_FUNCTIONALS_PATH = os.path.join(DIR, "data/schema/models_directory/pb/qm/df
 PROTOTYPE_FILENAME = os.path.join(UNIT_FUNCTIONALS_PATH, "dft_unit_functionals_proto.json")
 UNIT_FILENAME = os.path.join(UNIT_FUNCTIONALS_PATH, "dft_unit_functionals.json")
 
-SCHEMA_WITH_PROPERTIES_TEMPLATE = Template("""{
+SCHEMA_WITH_PROPERTIES_TEMPLATE = Template(
+    """{
 "properties": {
     "name": {
         "enum": [
@@ -26,7 +27,9 @@ SCHEMA_WITH_PROPERTIES_TEMPLATE = Template("""{
         ]
     }
 }
-}""")
+}"""
+)
+
 
 def generate_dft_unit_functionals():
     """
