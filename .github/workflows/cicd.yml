@@ -25,7 +25,6 @@ jobs:
           repository: Exabyte-io/actions
           token: ${{ secrets.BOT_GITHUB_TOKEN }}
           path: actions
-          ref: feat/SOF-6640
 
       - name: Run ruff linter
         uses: ./actions/py/lint
