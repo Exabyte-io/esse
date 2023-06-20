@@ -9,7 +9,6 @@ esse = ESSE()
 
 
 class TestCase(unittest.TestCase):
-
     def __init__(self, example_path):
         super(TestCase, self).__init__(methodName="runTest")
         self.example_path = example_path
