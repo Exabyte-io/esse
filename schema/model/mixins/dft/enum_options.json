@@ -17,7 +17,8 @@
     },
     "hybrid": {
         "enum": [
-            "hse06"
+            "hse06",
+            "b3lyp"
         ]
     },
     "doubleHybrid": {

@@ -7,5 +7,6 @@ mgga:
   - scan
 hybrid:
   - hse06
+  - b3lyp
 doubleHybrid:
   - b2plyp
