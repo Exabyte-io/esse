@@ -21,9 +21,7 @@ EXTRA_FILES.extend(get_files_by_path(os.path.join(DIR, "manifest")))
 setup(
     name="esse",
     setup_requires=["setuptools_scm"],
-    use_scm_version={
-        "version_scheme": "post-release",
-    },
+    use_scm_version=True,
     description="Exabyte Source of Schemas and Examples",
     long_description=long_description,
     long_description_content_type="text/markdown",
