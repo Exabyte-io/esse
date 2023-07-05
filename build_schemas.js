@@ -7,7 +7,6 @@ const fs = require("fs");
 const { ESSE } = require("./lib/js/esse");
 
 const esse = new ESSE();
+const schema = esse.buildGlobalSchema();
 
-const definitions = esse.buildSchemaDefinitions();
-
-fs.writeFileSync("./schemas.js", "module.exports = " + JSON.stringify(definitions), "utf8");
+fs.writeFileSync("./schemas.js", "module.exports = " + JSON.stringify(schema), "utf8");
