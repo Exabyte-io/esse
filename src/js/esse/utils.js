@@ -52,3 +52,11 @@ export function mapObjectDeep(object, mapValue) {
 
     return Object.fromEntries(entries);
 }
+
+export function makeSchemaId(schemaId) {
+    return schemaId.replace(/\//g, "-");
+}
+
+export function makeSchemaRef(schemaId) {
+    return { $ref: `#/definitions/${makeSchemaId(schemaId)}` };
+}

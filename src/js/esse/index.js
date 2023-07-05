@@ -2,18 +2,15 @@ import Ajv from "ajv";
 import keyBy from "lodash/keyBy";
 
 import { EXAMPLES_DIR, SCHEMAS_DIR } from "./settings";
-import { mapObjectDeep, parseIncludeReferenceStatementsByDir } from "./utils";
+import {
+    makeSchemaId,
+    makeSchemaRef,
+    mapObjectDeep,
+    parseIncludeReferenceStatementsByDir,
+} from "./utils";
 
 const SCHEMAS = parseIncludeReferenceStatementsByDir(SCHEMAS_DIR);
 const EXAMPLES = parseIncludeReferenceStatementsByDir(EXAMPLES_DIR);
-
-function makeId(schemaId) {
-    return schemaId.replace(/\//g, "-");
-}
-
-function makeRef(schemaId) {
-    return { $ref: `#/definitions/${makeId(schemaId)}` };
-}
 
 export class ESSE {
     constructor() {
@@ -40,7 +37,7 @@ export class ESSE {
         const schemas = this.schemas.map((schema) => {
             return mapObjectDeep(schema, (value) => {
                 if (typeof value === "object" && value.schemaId) {
-                    return makeRef(value.schemaId);
+                    return makeSchemaRef(value.schemaId);
                 }
             });
         });
@@ -50,7 +47,7 @@ export class ESSE {
             title: "Global schema",
             // allOf: this.schemas.map(({ schemaId }) => makeRef(schemaId)),
             type: "object",
-            definitions: keyBy(schemas, ({ schemaId }) => makeId(schemaId)),
+            definitions: keyBy(schemas, ({ schemaId }) => makeSchemaId(schemaId)),
         };
     }
 }
