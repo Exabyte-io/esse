@@ -34,3 +34,21 @@ export function parseIncludeReferenceStatementsByDir(dirPath) {
     });
     return data;
 }
+
+export function mapObjectDeep(object, mapValue) {
+    if (typeof object !== "object") {
+        return object;
+    }
+
+    if (Array.isArray(object)) {
+        return object.map(
+            (innerValue) => mapValue(innerValue) || mapObjectDeep(innerValue, mapValue),
+        );
+    }
+
+    const entries = Object.entries(object).map(([key, value]) => {
+        return [key, mapValue(value) || mapObjectDeep(value, mapValue)];
+    });
+
+    return Object.fromEntries(entries);
+}
