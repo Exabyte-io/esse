@@ -55,7 +55,7 @@ export function mapObjectDeep(object, mapValue) {
 }
 
 export function makeFlatSchemaId(schemaId) {
-    return schemaId.replace(/\//g, "-");
+    return schemaId.replace(/[^a-zA-Z]/g, "-");
 }
 
 export function makeFlatSchemaRef(schemaId) {
