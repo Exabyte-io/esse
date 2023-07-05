@@ -48,7 +48,7 @@ export class ESSE {
         return {
             $schema: "http://json-schema.org/draft-04/schema#",
             title: "Global schema",
-            allOf: this.schemas.map(({ schemaId }) => makeRef(schemaId)),
+            // allOf: this.schemas.map(({ schemaId }) => makeRef(schemaId)),
             type: "object",
             definitions: keyBy(schemas, ({ schemaId }) => makeId(schemaId)),
         };
