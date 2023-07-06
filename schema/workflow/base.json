@@ -35,9 +35,5 @@
                 "type": "object"
             }
         }
-    },
-    "required": [
-        "units",
-        "subworkflows"
-    ]
+    }
 }
