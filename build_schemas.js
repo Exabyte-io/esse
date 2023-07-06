@@ -16,4 +16,4 @@ fs.writeFileSync(
     "utf8",
 );
 
-fs.writeFileSync("./schemas.js", "module.exports = " + JSON.stringify(schema), "utf8");
+fs.writeFileSync("./schema.js", "module.exports = " + JSON.stringify(schema), "utf8");
