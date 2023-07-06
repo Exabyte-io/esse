@@ -1,7 +1,8 @@
 import Ajv from "ajv";
 
+import { buildSchemaDefinitions } from "./schemaUtils";
 import { EXAMPLES_DIR, SCHEMAS_DIR } from "./settings";
-import { buildSchemaDefinitions, parseIncludeReferenceStatementsByDir } from "./utils";
+import { parseIncludeReferenceStatementsByDir } from "./utils";
 
 const SCHEMAS = parseIncludeReferenceStatementsByDir(SCHEMAS_DIR);
 const EXAMPLES = parseIncludeReferenceStatementsByDir(EXAMPLES_DIR);
