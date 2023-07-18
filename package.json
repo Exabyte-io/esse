@@ -65,6 +65,6 @@
     },
     "exports": {
         "schema": "./schema.js",
-        "schemaUtils": "./lib/js/esse/schemaUtils"
+        "schemaUtils": "./lib/js/esse/schemaUtils.js"
     }
 }
