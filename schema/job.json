@@ -59,6 +59,10 @@
         "runtimeContext": {
             "description": "Context variables that the job will have access to at runtime",
             "type": "object"
+        },
+        "contextTrack": {
+            "description": "history of the job's context on each update",
+            "type": "object"
         }
     },
     "required": [
