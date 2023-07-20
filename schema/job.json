@@ -62,7 +62,8 @@
         },
         "contextTrack": {
             "description": "history of the job's context on each update",
-            "type": "object"
+            "type": "array",
+            "items": { "type": "object"}
         }
     },
     "required": [
