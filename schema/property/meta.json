@@ -1,0 +1,10 @@
+{
+    "schemaId": "property/meta",
+    "$schema": "http://json-schema.org/draft-04/schema#",
+    "title": "Schema of material's meta properties",
+    "allOf": [
+        {
+            "$ref": "raw.json"
+        }
+    ]
+}
