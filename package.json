@@ -62,5 +62,9 @@
     "lint-staged": {
         "*.js": "eslint --cache --fix",
         "*.{js,css}": "prettier --write"
+    },
+    "exports": {
+        "./schema": "./schema.js",
+        "./lib/js/esse/schemaUtils": "./lib/js/esse/schemaUtils.js"
     }
 }

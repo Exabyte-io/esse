@@ -29,7 +29,10 @@ export function parseIncludeReferenceStatementsByDir(dirPath) {
     file.walkSync(dirPath, (dirPath_, dirs_, files_) => {
         files_.forEach((file_) => {
             const filePath = path.join(dirPath_, file_);
-            data.push(parseIncludeReferenceStatements(filePath));
+            if (filePath.endsWith(".json")) {
+                // ignore files like .DS_Store
+                data.push(parseIncludeReferenceStatements(filePath));
+            }
         });
     });
     return data;
