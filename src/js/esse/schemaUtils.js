@@ -18,12 +18,12 @@ export function mapObjectDeep(object, mapValue) {
     return Object.fromEntries(entries);
 }
 
-export function makeFlatSchemaId(schemaId) {
-    return schemaId.replace(/[^a-zA-Z]/g, "-");
+export function makeFlatSchemaKey(schemaId) {
+    return schemaId.replace(/[^a-zA-Z-]/g, ":");
 }
 
 export function makeFlatSchemaRef(schemaId) {
-    return { $ref: `#/definitions/${makeFlatSchemaId(schemaId)}` };
+    return { $ref: `#/definitions/${makeFlatSchemaKey(schemaId)}` };
 }
 
 export function buildSchemaDefinitions(originalSchemas) {
@@ -39,5 +39,5 @@ export function buildSchemaDefinitions(originalSchemas) {
         });
     });
 
-    return keyBy(schemas, ({ schemaId }) => makeFlatSchemaId(schemaId));
+    return keyBy(schemas, ({ schemaId }) => makeFlatSchemaKey(schemaId));
 }
