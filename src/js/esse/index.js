@@ -1,5 +1,6 @@
 import Ajv from "ajv";
 
+import { buildSchemaDefinitions } from "./schemaUtils";
 import { EXAMPLES_DIR, SCHEMAS_DIR } from "./settings";
 import { parseIncludeReferenceStatementsByDir } from "./utils";
 
@@ -26,4 +27,13 @@ export class ESSE {
         const ajv = new Ajv({ allErrors: true });
         return ajv.validate(schema, example);
     };
+
+    buildGlobalSchema() {
+        return {
+            $schema: "http://json-schema.org/draft-04/schema#",
+            title: "Global schema",
+            type: "object",
+            definitions: buildSchemaDefinitions(this.schemas),
+        };
+    }
 }

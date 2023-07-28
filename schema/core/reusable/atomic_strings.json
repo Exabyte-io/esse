@@ -1,7 +1,7 @@
 {
     "schemaId": "core/reusable/atomic-strings",
     "$schema": "http://json-schema.org/draft-04/schema#",
-    "title": "atomic vectors schema",
+    "title": "atomic strings vectors schema",
     "allOf": [
         {
             "$ref": "../primitive/array_of_ids.json"

@@ -1,7 +1,7 @@
 {
     "schemaId": "properties-directory/structural/inchi-key",
     "$schema": "http://json-schema.org/draft-04/schema#",
-    "title": "InChI representation schema",
+    "title": "InChI key representation schema",
     "allOf": [
         {
             "$ref": "../../core/primitive/string.json"
