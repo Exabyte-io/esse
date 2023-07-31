@@ -1,0 +1,8 @@
+coverage==5.5
+exabyte-json-include==2021.05.06
+jsonschema==2.6.0
+python-slugify==2.0.1
+PyYAML==5.4
+toml==0.10.2
+Unidecode==1.1.1
+-e .[test]
