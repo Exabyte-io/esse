@@ -1,7 +1,7 @@
 {
     "schemaId": "workflow/unit/assertion",
     "$schema": "http://json-schema.org/draft-04/schema#",
-    "title": "assignment unit schema",
+    "title": "assertion unit schema",
     "type": "object",
     "allOf": [
         {

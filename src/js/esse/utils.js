@@ -27,12 +27,13 @@ export function parseIncludeReferenceStatements(filePath) {
 export function parseIncludeReferenceStatementsByDir(dirPath) {
     const data = [];
     file.walkSync(dirPath, (dirPath_, dirs_, files_) => {
-        files_
-            .filter((file_) => path.extname(file_) === ".json")
-            .forEach((file_) => {
-                const filePath = path.join(dirPath_, file_);
+        files_.forEach((file_) => {
+            const filePath = path.join(dirPath_, file_);
+            if (filePath.endsWith(".json")) {
+                // ignore files like .DS_Store
                 data.push(parseIncludeReferenceStatements(filePath));
-            });
+            }
+        });
     });
     return data;
 }

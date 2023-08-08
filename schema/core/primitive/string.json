@@ -1,7 +1,7 @@
 {
     "schemaId": "core/primitive/string",
     "$schema": "http://json-schema.org/draft-04/schema#",
-    "title": "string",
+    "title": "PrimitiveString",
     "type": "object",
     "properties": {
         "value": {
