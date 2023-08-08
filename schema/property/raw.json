@@ -23,6 +23,17 @@
         },
         "source": {
             "$ref": "source.json"
+        },
+        "refinementTags": {
+            "description": "property refinement tags, marks property as refined or best (could be both)",
+            "type": "array",
+            "items": {
+                "type": "string",
+                "enum": [
+                    "refined",
+                    "best"
+                ]
+            }
         }
     },
     "required": [
