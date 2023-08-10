@@ -59,7 +59,17 @@
         "scopeTrack": {
             "description": "history of the workflow scope on each update",
             "type": "array",
-            "items": { "$ref": "../workflow/scope.json" }
+            "items": {
+                "type": "object",
+                "properties": {
+                    "repetition": {
+                        "type": "number"
+                    },
+                    "scope": {
+                        "$ref": "../workflow/scope.json"
+                    }
+                }
+            }
         }
     },
     "required": [
