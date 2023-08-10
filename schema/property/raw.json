@@ -24,8 +24,8 @@
         "source": {
             "$ref": "source.json"
         },
-        "refinementTags": {
-            "description": "property refinement tags, marks property as refined or best (could be both)",
+        "systemTags": {
+            "description": "property system tags, marks property system characteristics, values refined or best (could be both)",
             "type": "array",
             "items": {
                 "type": "string",
