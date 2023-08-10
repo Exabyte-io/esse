@@ -52,6 +52,9 @@
         },
         "context": {
             "type": "object"
+        },
+        "tags": {
+            "$ref": "../core/primitive/array-of-strings"
         }
     },
     "additionalProperties": true,
