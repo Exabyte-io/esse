@@ -56,10 +56,10 @@
             "description": "Context variables that the job will have access to at runtime",
             "type": "object"
         },
-        "contextTrack": {
-            "description": "history of the job's context on each update",
+        "scopeTrack": {
+            "description": "history of the workflow scope on each update",
             "type": "array",
-            "items": { "type": "object"}
+            "items": { "$ref": "../workflow/scope.json" }
         }
     },
     "required": [
