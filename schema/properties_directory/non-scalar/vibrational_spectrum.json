@@ -39,7 +39,8 @@
         "name": {
             "enum": [
                 "vibrational_spectrum"
-            ]
+            ],
+            "isGenerative": true
         }
     }
 }

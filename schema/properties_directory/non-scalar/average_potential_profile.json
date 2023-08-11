@@ -35,7 +35,8 @@
         "name": {
             "enum": [
                 "average_potential_profile"
-            ]
+            ],
+            "isGenerative": true
         }
     }
 }

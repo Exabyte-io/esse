@@ -12,7 +12,8 @@
         "name": {
             "enum": [
                 "ionization_potential"
-            ]
+            ],
+            "isGenerative": true
         },
         "units": {
             "$ref": "../../definitions/units.json#/energy"

@@ -6,7 +6,8 @@
         "name": {
             "enum": [
                 "convergence_electronic"
-            ]
+            ],
+            "isGenerative": true
         },
         "units": {
             "enum": [

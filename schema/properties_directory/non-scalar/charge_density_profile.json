@@ -32,7 +32,8 @@
         "name": {
             "enum": [
                 "charge_density_profile"
-            ]
+            ],
+            "isGenerative": true
         }
     }
 }

@@ -11,7 +11,8 @@
         "name": {
             "enum": [
                 "total_energy"
-            ]
+            ],
+            "isGenerative": true
         }
     }
 }

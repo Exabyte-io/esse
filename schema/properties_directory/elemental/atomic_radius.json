@@ -12,7 +12,8 @@
         "name": {
             "enum": [
                 "atomic_radius"
-            ]
+            ],
+            "isGenerative": true
         },
         "units": {
             "$ref": "../../definitions/units.json#/length"

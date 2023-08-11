@@ -9,7 +9,8 @@
         "name": {
             "enum": [
                 "stress_tensor"
-            ]
+            ],
+            "isGenerative": true
         },
         "units": {
             "$ref": "../../definitions/units.json#/pressure"

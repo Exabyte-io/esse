@@ -32,7 +32,8 @@
         "name": {
             "enum": [
                 "potential_profile"
-            ]
+            ],
+            "isGenerative": true
         }
     }
 }

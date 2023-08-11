@@ -6,7 +6,8 @@
         "name": {
             "enum": [
                 "convergence_ionic"
-            ]
+            ],
+            "isGenerative": true
         },
         "tolerance": {
             "description": "for ionic convergence tolerance shows force tolerance"

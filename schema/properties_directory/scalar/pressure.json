@@ -12,7 +12,8 @@
         "name": {
             "enum": [
                 "pressure"
-            ]
+            ],
+            "isGenerative": true
         },
         "units": {
             "$ref": "../../definitions/units.json#/pressure"

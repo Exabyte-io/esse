@@ -202,7 +202,8 @@
         "name": {
             "enum": [
                 "total_energy_contributions"
-            ]
+            ],
+            "isGenerative": true
         },
         "units": {
             "$ref": "../../definitions/units.json#/energy"

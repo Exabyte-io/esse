@@ -12,7 +12,8 @@
         "name": {
             "enum": [
                 "elemental_ratio"
-            ]
+            ],
+            "isGenerative": true
         },
         "value": {
             "type": "number",

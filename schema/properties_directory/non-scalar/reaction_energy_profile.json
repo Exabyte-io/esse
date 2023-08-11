@@ -32,7 +32,8 @@
         "name": {
             "enum": [
                 "reaction_energy_profile"
-            ]
+            ],
+            "isGenerative": true
         }
     }
 }

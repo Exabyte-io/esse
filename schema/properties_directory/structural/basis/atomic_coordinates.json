@@ -6,7 +6,8 @@
         "name": {
             "enum": [
                 "atomic_coordinates"
-            ]
+            ],
+            "isGenerative": true
         },
         "values": {
             "type": "array",
