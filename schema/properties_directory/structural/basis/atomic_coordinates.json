@@ -7,7 +7,7 @@
             "enum": [
                 "atomic_coordinates"
             ],
-            "isGenerative": true
+            "$comment": "isGenerative:true"
         },
         "values": {
             "type": "array",

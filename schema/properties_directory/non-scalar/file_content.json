@@ -12,7 +12,7 @@
             "enum": [
                 "file_content"
             ],
-            "isGenerative": true
+            "$comment": "isGenerative:true"
         },
         "filetype": {
             "description": "What kind of file this is, e.g. image / text",
@@ -22,7 +22,7 @@
                 "text",
                 "csv"
             ],
-            "isGenerative": true
+            "$comment": "isGenerative:true"
         },
         "objectData": {
             "$ref": "../../core/reusable/object_storage_container_data.json"

@@ -7,7 +7,7 @@
             "enum": [
                 "convergence_electronic"
             ],
-            "isGenerative": true
+            "$comment": "isGenerative:true"
         },
         "units": {
             "enum": [

@@ -12,7 +12,7 @@
             "enum": [
                 "ionization_potential"
             ],
-            "isGenerative": true
+            "$comment": "isGenerative:true"
         }
     }
 }

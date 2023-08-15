@@ -12,7 +12,7 @@
             "enum": [
                 "zero_point_energy"
             ],
-            "isGenerative": true
+            "$comment": "isGenerative:true"
         }
     }
 }

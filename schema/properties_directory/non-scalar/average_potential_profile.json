@@ -36,7 +36,7 @@
             "enum": [
                 "average_potential_profile"
             ],
-            "isGenerative": true
+            "$comment": "isGenerative:true"
         }
     }
 }

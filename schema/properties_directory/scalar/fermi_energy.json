@@ -12,7 +12,7 @@
             "enum": [
                 "fermi_energy"
             ],
-            "isGenerative": true
+            "$comment": "isGenerative:true"
         }
     }
 }

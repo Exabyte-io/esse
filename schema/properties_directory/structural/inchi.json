@@ -12,7 +12,7 @@
             "enum": [
                 "inchi"
             ],
-            "isGenerative": true
+            "$comment": "isGenerative:true"
         }
     }
 }

@@ -33,7 +33,7 @@
             "enum": [
                 "charge_density_profile"
             ],
-            "isGenerative": true
+            "$comment": "isGenerative:true"
         }
     }
 }

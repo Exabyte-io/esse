@@ -13,7 +13,7 @@
             "enum": [
                 "elemental_ratio"
             ],
-            "isGenerative": true
+            "$comment": "isGenerative:true"
         },
         "value": {
             "type": "number",

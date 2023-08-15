@@ -8,7 +8,7 @@
             "enum": [
                 "atomic_forces"
             ],
-            "isGenerative": true
+            "$comment": "isGenerative:true"
         },
         "values": {
             "$ref": "../../core/reusable/atomic_vectors.json"

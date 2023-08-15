@@ -30,7 +30,7 @@
             "enum": [
                 "symmetry"
             ],
-            "isGenerative": true
+            "$comment": "isGenerative:true"
         }
     }
 }

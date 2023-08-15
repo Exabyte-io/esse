@@ -8,7 +8,7 @@
             "enum": [
                 "functional_group"
             ],
-            "isGenerative": true
+            "$comment": "isGenerative:true"
         },
         "atoms": {
             "allOf": [

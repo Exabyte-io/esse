@@ -8,7 +8,7 @@
             "enum": [
                 "ring"
             ],
-            "isGenerative": true
+            "$comment": "isGenerative:true"
         },
         "atoms": {
             "allOf": [

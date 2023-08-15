@@ -12,7 +12,7 @@
             "enum": [
                 "electron_affinity"
             ],
-            "isGenerative": true
+            "$comment": "isGenerative:true"
         }
     }
 }

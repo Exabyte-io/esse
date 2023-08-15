@@ -12,7 +12,7 @@
             "enum": [
                 "reaction_energy_barrier"
             ],
-            "isGenerative": true
+            "$comment": "isGenerative:true"
         }
     }
 }

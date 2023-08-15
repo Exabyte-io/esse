@@ -12,7 +12,7 @@
             "enum": [
                 "inchi_key"
             ],
-            "isGenerative": true
+            "$comment": "isGenerative:true"
         }
     }
 }

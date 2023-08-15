@@ -20,7 +20,7 @@
             "enum": [
                 "lattice"
             ],
-            "isGenerative": true
+            "$comment": "isGenerative:true"
         }
     }
 }

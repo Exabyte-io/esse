@@ -36,7 +36,7 @@
             "enum": [
                 "band_structure"
             ],
-            "isGenerative": true
+            "$comment": "isGenerative:true"
         },
         "spin": {
             "description": "spin of each band",

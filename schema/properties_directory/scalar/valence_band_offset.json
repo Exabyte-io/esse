@@ -12,7 +12,7 @@
             "enum": [
                 "valence_band_offset"
             ],
-            "isGenerative": true
+            "$comment": "isGenerative:true"
         }
     }
 }
