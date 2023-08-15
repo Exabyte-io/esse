@@ -54,7 +54,7 @@
             "type": "object"
         },
         "tags": {
-            "$ref": "../core/primitive/array_of_strings.json"
+            "$ref": "../system/tags.json"
         }
     },
     "additionalProperties": true,
