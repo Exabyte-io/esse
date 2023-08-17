@@ -1,5 +1,5 @@
 {
-    "schemaId": "models-directory/definitions",
+    "$id": "models-directory/definitions",
     "description": "Universal attributes applicable to most models",
     "tags": {
         "enum": [

@@ -1,5 +1,5 @@
 {
-    "schemaId": "workflow",
+    "$id": "workflow",
     "$schema": "http://json-schema.org/draft-04/schema#",
     "title": "workflow schema",
     "type": "object",

@@ -1,5 +1,5 @@
 {
-    "schemaId": "system/timestampable",
+    "$id": "system/timestampable",
     "$schema": "http://json-schema.org/draft-04/schema#",
     "title": "timestampable entity schema",
     "properties": {

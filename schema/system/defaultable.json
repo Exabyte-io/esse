@@ -1,5 +1,5 @@
 {
-    "schemaId": "system/defaultable",
+    "$id": "system/defaultable",
     "$schema": "http://json-schema.org/draft-04/schema#",
     "title": "defaultable entity schema",
     "properties": {

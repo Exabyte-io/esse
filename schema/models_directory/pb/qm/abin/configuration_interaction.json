@@ -1,5 +1,5 @@
 {
-    "schemaId": "models-directory/pb/qm/abin/configuration-interaction",
+    "$id": "models-directory/pb/qm/abin/configuration-interaction",
     "$schema": "http://json-schema.org/draft-04/schema#",
     "title": "configuration interaction schema",
     "description": "configuration interaction wavefunction model",

@@ -1,5 +1,5 @@
 {
-    "schemaId": "system/database-source",
+    "$id": "system/database-source",
     "$schema": "http://json-schema.org/draft-04/schema#",
     "title": "database source schema",
     "description": "information about a database source",

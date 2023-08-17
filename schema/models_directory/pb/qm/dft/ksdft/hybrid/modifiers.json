@@ -1,5 +1,5 @@
 {
-    "schemaId": "models-directory/pb/qm/dft/ksdft/hybrid/modifiers",
+    "$id": "models-directory/pb/qm/dft/ksdft/hybrid/modifiers",
     "$schema": "http://json-schema.org/draft-04/schema#",
     "allOf": [
         {

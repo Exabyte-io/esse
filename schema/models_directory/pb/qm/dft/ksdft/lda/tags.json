@@ -1,5 +1,5 @@
 {
-    "schemaId": "models-directory/pb/qm/dft/ksdft/lda/tags",
+    "$id": "models-directory/pb/qm/dft/ksdft/lda/tags",
     "$schema": "http://json-schema.org/draft-04/schema#",
     "allOf": [
         {

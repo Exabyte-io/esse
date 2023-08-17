@@ -1,5 +1,5 @@
 {
-    "schemaId": "models-directory/pb/qm/dft/ksdft/hybrid/augmentations",
+    "$id": "models-directory/pb/qm/dft/ksdft/hybrid/augmentations",
     "$schema": "http://json-schema.org/draft-04/schema#",
     "allOf": [
         {

@@ -1,5 +1,5 @@
 {
-    "schemaId": "models-directory/pb/qm/dft/ksdft/gga/definitions",
+    "$id": "models-directory/pb/qm/dft/ksdft/gga/definitions",
     "tags": {},
     "augmentations": {},
     "modifiers": {}

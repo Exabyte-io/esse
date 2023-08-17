@@ -1,5 +1,5 @@
 {
-    "schemaId": "core/primitive/array-of-3-numbers",
+    "$id": "core/primitive/array-of-3-numbers",
     "$schema": "http://json-schema.org/draft-04/schema#",
     "title": "array of 3 number elements schema",
     "allOf": [

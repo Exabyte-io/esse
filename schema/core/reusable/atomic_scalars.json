@@ -1,5 +1,5 @@
 {
-    "schemaId": "core/reusable/atomic-scalars",
+    "$id": "core/reusable/atomic-scalars",
     "$schema": "http://json-schema.org/draft-04/schema#",
     "title": "atomic scalars vectors schema",
     "allOf": [

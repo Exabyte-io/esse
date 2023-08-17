@@ -1,5 +1,5 @@
 {
-    "schemaId": "properties-directory/structural/patterns/ring",
+    "$id": "properties-directory/structural/patterns/ring",
     "$schema": "http://json-schema.org/draft-04/schema#",
     "title": "ring pattern schema",
     "type": "object",

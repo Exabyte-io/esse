@@ -1,5 +1,5 @@
 {
-    "schemaId": "core/primitive/slugified-entry-or-slug",
+    "$id": "core/primitive/slugified-entry-or-slug",
     "$schema": "http://json-schema.org/draft-04/schema#",
     "title": "slugified entry or slug",
     "description": "contains either object with slugified entry or slug only as a string",

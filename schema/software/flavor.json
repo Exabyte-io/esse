@@ -1,5 +1,5 @@
 {
-    "schemaId": "software/flavor",
+    "$id": "software/flavor",
     "$schema": "http://json-schema.org/draft-04/schema#",
     "title": "flavor schema",
     "type": "object",

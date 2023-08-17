@@ -1,5 +1,5 @@
 {
-    "schemaId": "models-directory/pb/qm/dft/functional",
+    "$id": "models-directory/pb/qm/dft/functional",
     "$schema": "http://json-schema.org/draft-04/schema#",
     "title": "exchange-correlation functional base schema",
     "allOf": [

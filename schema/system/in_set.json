@@ -1,5 +1,5 @@
 {
-    "schemaId": "system/in-set",
+    "$id": "system/in-set",
     "$schema": "http://json-schema.org/draft-04/schema#",
     "title": "System in-set schema",
     "properties": {

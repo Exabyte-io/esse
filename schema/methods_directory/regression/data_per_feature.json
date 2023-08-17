@@ -1,5 +1,5 @@
 {
-    "schemaId": "methods-directory/regression/data-per-feature",
+    "$id": "methods-directory/regression/data-per-feature",
     "$schema": "http://json-schema.org/draft-04/schema#",
     "title": "feature parameters schema",
     "properties": {

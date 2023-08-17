@@ -1,5 +1,5 @@
 {
-    "schemaId": "models-directory/pb/qm/dft/ksdft/double-hybrid/range-separated-functional",
+    "$id": "models-directory/pb/qm/dft/ksdft/double-hybrid/range-separated-functional",
     "$schema": "http://json-schema.org/draft-04/schema#",
     "title": "range-separated double hybrid exchange-correlation functional base schema",
     "allOf": [

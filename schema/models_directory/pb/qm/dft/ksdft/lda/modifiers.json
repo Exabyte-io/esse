@@ -1,5 +1,5 @@
 {
-    "schemaId": "models-directory/pb/qm/dft/ksdft/lda/modifiers",
+    "$id": "models-directory/pb/qm/dft/ksdft/lda/modifiers",
     "$schema": "http://json-schema.org/draft-04/schema#",
     "allOf": [
         {

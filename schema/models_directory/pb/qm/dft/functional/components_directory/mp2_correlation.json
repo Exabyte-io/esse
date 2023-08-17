@@ -1,5 +1,5 @@
 {
-    "schemaId": "models-directory/pb/qm/dft/functional/components-directory/mp2-correlation",
+    "$id": "models-directory/pb/qm/dft/functional/components-directory/mp2-correlation",
     "$schema": "http://json-schema.org/draft-04/schema#",
     "title": "second order Moller-Plesset (MP2) correlation correction schema",
     "allOf": [

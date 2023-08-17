@@ -1,5 +1,5 @@
 {
-    "schemaId": "methods-directory/pseudopotential/file/radii",
+    "$id": "methods-directory/pseudopotential/file/radii",
     "$schema": "http://json-schema.org/draft-04/schema#",
     "title": "radii schema",
     "type": "object",

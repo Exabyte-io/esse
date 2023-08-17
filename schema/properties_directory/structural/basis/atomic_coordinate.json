@@ -1,5 +1,5 @@
 {
-    "schemaId": "properties-directory/structural/basis/atomic-coordinate",
+    "$id": "properties-directory/structural/basis/atomic-coordinate",
     "$schema": "http://json-schema.org/draft-04/schema#",
     "title": "atomic coordinate",
     "description": "coordinates of atoms by ids, vector, unitless",

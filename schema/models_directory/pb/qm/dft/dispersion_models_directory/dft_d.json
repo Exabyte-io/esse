@@ -1,5 +1,5 @@
 {
-    "schemaId": "models-directory/pb/qm/dft/dispersion-models-directory/dft-d",
+    "$id": "models-directory/pb/qm/dft/dispersion-models-directory/dft-d",
     "$schema": "http://json-schema.org/draft-04/schema#",
     "title": "Empirical DFT-D dispersion model",
     "allOf": [
