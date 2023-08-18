@@ -106,6 +106,11 @@ If one wishes to add a new unit functional to that list, please
 - edit the [prototype file](schema/models_directory/pb/qm/dft/dft_unit_functionals_proto.json) and
 - generate a new list of unit functional by running python tests, for example (via `generate_dft_unit_functionals()` from the [esse.functionals](src/py/esse/functionals.py) python module).
 
+### A word on properties
+A tag is included in the schema comments on the fields in [property schemas](schema/models_directory). `isGenerative:true` is used to demark fields which are used to generate user input schemas.
+- On simple properties requiring no additional information, only the `name` field is tagged, as in [`pressure`](schema/properties_directory/scalar/pressure.json).
+- On properties allowing more user customization, additional fields may be tagged, as in [`file_content`](schema/properties_directory/non-scalar/file_content.json)
+
 ## Tests
 
 Execute the following command from the root directory of this repository to run the tests. The script will run both Javascript and Python tests in which examples are validated against the corresponding schemas.
@@ -132,4 +137,3 @@ This repository is an [open-source](LICENSE.md) work-in-progress and we welcome 
 2: [CateCom: A Practical Data-Centric Approach to Categorization of Computational Models](https://pubs.acs.org/doi/abs/10.1021/acs.jcim.2c00112)
 
 3: [GitHub Standard Fork & Pull Request Workflow](https://gist.github.com/Chaser324/ce0505fbed06b947d962)
-
