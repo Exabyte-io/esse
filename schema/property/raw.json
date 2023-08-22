@@ -19,7 +19,14 @@
         },
         "data": {
             "description": "container of the information, specific to each property",
-            "type": "object"
+            "type": "object",
+            "properties": {
+                "repetition": {
+                    "description": "property repetition",
+                    "type": "number",
+                    "default": 0
+                }
+            }
         },
         "source": {
             "$ref": "source.json"
