@@ -11,8 +11,7 @@
         "name": {
             "enum": [
                 "total_force"
-            ],
-            "$comment": "isGenerative:true"
+            ]
         },
         "units": {
             "$ref": "../../definitions/units.json#/force"

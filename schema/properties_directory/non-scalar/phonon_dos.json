@@ -36,8 +36,7 @@
         "name": {
             "enum": [
                 "phonon_dos"
-            ],
-            "$comment": "isGenerative:true"
+            ]
         }
     }
 }

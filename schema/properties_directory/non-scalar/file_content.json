@@ -11,8 +11,7 @@
         "name": {
             "enum": [
                 "file_content"
-            ],
-            "$comment": "isGenerative:true"
+            ]
         },
         "filetype": {
             "description": "What kind of file this is, e.g. image / text",

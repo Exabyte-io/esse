@@ -12,8 +12,7 @@
         "name": {
             "enum": [
                 "p-norm"
-            ],
-            "$comment": "isGenerative:true"
+            ]
         },
         "degree": {
             "type": "integer",

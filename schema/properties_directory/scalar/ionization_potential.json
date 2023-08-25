@@ -11,8 +11,7 @@
         "name": {
             "enum": [
                 "ionization_potential"
-            ],
-            "$comment": "isGenerative:true"
+            ]
         }
     }
 }

@@ -11,8 +11,7 @@
         "name": {
             "enum": [
                 "total_energy"
-            ],
-            "$comment": "isGenerative:true"
+            ]
         }
     }
 }

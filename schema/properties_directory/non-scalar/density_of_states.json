@@ -36,8 +36,7 @@
         "name": {
             "enum": [
                 "density_of_states"
-            ],
-            "$comment": "isGenerative:true"
+            ]
         },
         "legend": {
             "items": {

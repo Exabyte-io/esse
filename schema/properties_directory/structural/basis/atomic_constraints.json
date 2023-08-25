@@ -7,8 +7,7 @@
         "name": {
             "enum": [
                 "atomic_constraints"
-            ],
-            "$comment": "isGenerative:true"
+            ]
         },
         "values": {
             "$ref": "../../../core/reusable/atomic_vectors.json"

@@ -11,8 +11,7 @@
         "name": {
             "enum": [
                 "fermi_energy"
-            ],
-            "$comment": "isGenerative:true"
+            ]
         }
     }
 }

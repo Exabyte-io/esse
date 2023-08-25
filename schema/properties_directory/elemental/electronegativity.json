@@ -12,8 +12,7 @@
         "name": {
             "enum": [
                 "electronegativity"
-            ],
-            "$comment": "isGenerative:true"
+            ]
         }
     }
 }

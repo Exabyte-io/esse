@@ -35,8 +35,7 @@
         "name": {
             "enum": [
                 "phonon_dispersions"
-            ],
-            "$comment": "isGenerative:true"
+            ]
         }
     }
 }

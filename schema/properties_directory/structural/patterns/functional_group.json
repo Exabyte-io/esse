@@ -7,8 +7,7 @@
         "name": {
             "enum": [
                 "functional_group"
-            ],
-            "$comment": "isGenerative:true"
+            ]
         },
         "atoms": {
             "allOf": [

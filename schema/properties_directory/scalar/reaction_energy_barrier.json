@@ -11,8 +11,7 @@
         "name": {
             "enum": [
                 "reaction_energy_barrier"
-            ],
-            "$comment": "isGenerative:true"
+            ]
         }
     }
 }

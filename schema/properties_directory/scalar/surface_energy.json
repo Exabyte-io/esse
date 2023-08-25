@@ -11,8 +11,7 @@
         "name": {
             "enum": [
                 "surface_energy"
-            ],
-            "$comment": "isGenerative:true"
+            ]
         }
     }
 }

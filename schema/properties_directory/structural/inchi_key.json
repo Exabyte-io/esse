@@ -11,8 +11,7 @@
         "name": {
             "enum": [
                 "inchi_key"
-            ],
-            "$comment": "isGenerative:true"
+            ]
         }
     }
 }

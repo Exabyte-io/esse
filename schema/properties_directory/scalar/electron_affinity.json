@@ -11,8 +11,7 @@
         "name": {
             "enum": [
                 "electron_affinity"
-            ],
-            "$comment": "isGenerative:true"
+            ]
         }
     }
 }

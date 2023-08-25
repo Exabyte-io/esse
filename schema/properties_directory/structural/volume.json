@@ -11,8 +11,7 @@
         "name": {
             "enum": [
                 "volume"
-            ],
-            "$comment": "isGenerative:true"
+            ]
         },
         "units": {
             "enum": [

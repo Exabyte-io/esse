@@ -8,8 +8,7 @@
         "name": {
             "enum": [
                 "special_bond"
-            ],
-            "$comment": "isGenerative:true"
+            ]
         },
         "atoms": {
             "allOf": [

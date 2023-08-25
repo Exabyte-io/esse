@@ -19,8 +19,7 @@
         "name": {
             "enum": [
                 "lattice"
-            ],
-            "$comment": "isGenerative:true"
+            ]
         }
     }
 }

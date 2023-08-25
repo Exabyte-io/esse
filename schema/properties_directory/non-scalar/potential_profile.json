@@ -32,8 +32,7 @@
         "name": {
             "enum": [
                 "potential_profile"
-            ],
-            "$comment": "isGenerative:true"
+            ]
         }
     }
 }

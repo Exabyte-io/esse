@@ -7,8 +7,7 @@
         "name": {
             "enum": [
                 "magnetic_moments"
-            ],
-            "$comment": "isGenerative:true"
+            ]
         },
         "values": {
             "$ref": "../../core/reusable/atomic_vectors.json"

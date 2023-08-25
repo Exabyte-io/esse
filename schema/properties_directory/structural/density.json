@@ -11,8 +11,7 @@
         "name": {
             "enum": [
                 "density"
-            ],
-            "$comment": "isGenerative:true"
+            ]
         },
         "units": {
             "enum": [

@@ -7,8 +7,7 @@
         "name": {
             "enum": [
                 "band_gaps"
-            ],
-            "$comment": "isGenerative:true"
+            ]
         },
         "values": {
             "type": "array",

@@ -11,8 +11,7 @@
         "name": {
             "enum": [
                 "formation_energy"
-            ],
-            "$comment": "isGenerative:true"
+            ]
         }
     }
 }
