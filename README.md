@@ -100,7 +100,11 @@ Note: A list of DFT unit functionals (`dft_unit_functionals.json`) is generated 
 
 This directory contains Python and Javascript interfaces implementing the functionality to access and validate schemas and examples.
 
-### A word on functionals
+### Generative vs Non-generative keys
+Generative keys are the fields which allow for user input prior to calculation of the final property values. A flag is included in the schema comments on the fields in [property schemas](schema/properties_directory): `isGenerative:true` marks which fields to use as subschemas in the generation of a user input schema.
+- On properties allowing user inputs, additional fields may be tagged, as in [the `file_content` property](schema/properties_directory/non-scalar/file_content.json)
+
+### Additional
 The list of DFT unit functionals (`dft_unit_functionals.json`) is currently tracked via [git LFS](https://git-lfs.github.com).
 If one wishes to add a new unit functional to that list, please
 - edit the [prototype file](schema/models_directory/pb/qm/dft/dft_unit_functionals_proto.json) and
@@ -132,4 +136,3 @@ This repository is an [open-source](LICENSE.md) work-in-progress and we welcome 
 2: [CateCom: A Practical Data-Centric Approach to Categorization of Computational Models](https://pubs.acs.org/doi/abs/10.1021/acs.jcim.2c00112)
 
 3: [GitHub Standard Fork & Pull Request Workflow](https://gist.github.com/Chaser324/ce0505fbed06b947d962)
-
