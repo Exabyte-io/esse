@@ -100,16 +100,15 @@ Note: A list of DFT unit functionals (`dft_unit_functionals.json`) is generated 
 
 This directory contains Python and Javascript interfaces implementing the functionality to access and validate schemas and examples.
 
-### A word on functionals
+### Generative vs Non-generative keys
+Generative keys are the fields which allow for user input prior to calculation of the final property values. A flag is included in the schema comments on the fields in [property schemas](schema/properties_directory): `isGenerative:true` marks which fields to use as subschemas in the generation of a user input schema.
+- On properties allowing user inputs, additional fields may be tagged, as in [the `file_content` property](schema/properties_directory/non-scalar/file_content.json)
+
+### Additional
 The list of DFT unit functionals (`dft_unit_functionals.json`) is currently tracked via [git LFS](https://git-lfs.github.com).
 If one wishes to add a new unit functional to that list, please
 - edit the [prototype file](schema/models_directory/pb/qm/dft/dft_unit_functionals_proto.json) and
 - generate a new list of unit functional by running python tests, for example (via `generate_dft_unit_functionals()` from the [esse.functionals](src/py/esse/functionals.py) python module).
-
-### A word on properties
-A tag is included in the schema comments on the fields in [property schemas](schema/models_directory). `isGenerative:true` is used to demark fields which are used to generate user input schemas.
-- On simple properties requiring no additional information, only the `name` field is tagged, as in [`pressure`](schema/properties_directory/scalar/pressure.json).
-- On properties allowing more user customization, additional fields may be tagged, as in [`file_content`](schema/properties_directory/non-scalar/file_content.json)
 
 ## Tests
 
