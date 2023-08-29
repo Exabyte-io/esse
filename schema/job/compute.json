@@ -70,7 +70,10 @@
         },
         "email": {
             "description": "Email address to notify about job execution.",
-            "type": "string"
+            "type": [
+                "string",
+                "null"
+            ]
         },
         "maxCPU": {
             "description": "Maximum CPU count per node. This parameter is used to let backend job submission infrastructure know that this job is to be charged for the maximum CPU per node instead of the actual ppn. For premium/fast queues where resources are provisioned on-demand and exclusively per user.",
