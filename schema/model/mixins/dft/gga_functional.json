@@ -1,6 +1,7 @@
 {
     "schemaId": "model/mixins/dft/gga-functional",
     "$schema": "http://json-schema.org/draft-04/schema#",
+    "title": "GGA functional mixin",
     "type": "object",
     "properties": {
         "functional": {
