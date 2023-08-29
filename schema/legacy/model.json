@@ -1,7 +1,7 @@
 {
     "schemaId": "legacy/model",
     "$schema": "http://json-schema.org/draft-04/schema#",
-    "title": "model schema (base)",
+    "title": "base model",
     "properties": {
         "type": {
             "description": "general type of the model, eg. `dft`",

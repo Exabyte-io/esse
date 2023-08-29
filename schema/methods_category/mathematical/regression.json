@@ -1,7 +1,7 @@
 {
     "schemaId": "methods-category/mathematical/regression",
     "$schema": "http://json-schema.org/draft-04/schema#",
-    "title": "linear methods schema",
+    "title": "linear methods category schema",
     "allOf": [
         {
             "$ref": "../../core/reusable/categories.json"

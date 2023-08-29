@@ -1,7 +1,7 @@
 {
     "schemaId": "model",
     "$schema": "http://json-schema.org/draft-04/schema#",
-    "title": "model schema (base)",
+    "title": "categorized base model",
     "allOf": [
         {
             "$ref": "model/model_without_method.json"
