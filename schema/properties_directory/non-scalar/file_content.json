@@ -20,7 +20,8 @@
                 "image",
                 "text",
                 "csv"
-            ]
+            ],
+            "$comment": "isGenerative:true"
         },
         "objectData": {
             "$ref": "../../core/reusable/object_storage_container_data.json"
