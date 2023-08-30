@@ -1,5 +1,5 @@
 {
-    "schemaId": "properties-directory/structural/symmetry",
+    "$id": "properties-directory/structural/symmetry",
     "$schema": "http://json-schema.org/draft-04/schema#",
     "title": "symmetry schema",
     "properties": {

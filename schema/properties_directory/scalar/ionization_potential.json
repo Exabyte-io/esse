@@ -1,5 +1,5 @@
 {
-    "schemaId": "properties-directory/scalar/ionization-potential",
+    "$id": "properties-directory/scalar/ionization-potential",
     "$schema": "http://json-schema.org/draft-04/schema#",
     "title": "ionization potential schema",
     "allOf": [

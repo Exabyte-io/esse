@@ -1,5 +1,5 @@
 {
-    "schemaId": "properties-directory/non-scalar/phonon-dispersions",
+    "$id": "properties-directory/non-scalar/phonon-dispersions",
     "$schema": "http://json-schema.org/draft-04/schema#",
     "title": "phonon band structure schema",
     "allOf": [

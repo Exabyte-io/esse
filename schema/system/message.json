@@ -1,5 +1,5 @@
 {
-    "schemaId": "system/message",
+    "$id": "system/message",
     "$schema": "http://json-schema.org/draft-04/schema#",
     "title": "message schema",
     "description": "communication message between Rupy and web application.",

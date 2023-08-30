@@ -1,5 +1,5 @@
 {
-    "schemaId": "core/reference/literature/pages",
+    "$id": "core/reference/literature/pages",
     "$schema": "http://json-schema.org/draft-04/schema#",
     "title": "pages schema",
     "type": "object",

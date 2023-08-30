@@ -1,5 +1,5 @@
 {
-    "schemaId": "system/creator-account",
+    "$id": "system/creator-account",
     "$schema": "http://json-schema.org/draft-04/schema#",
     "title": "creator account schema",
     "properties": {

@@ -1,5 +1,5 @@
 {
-    "schemaId": "methods-directory/mathematical/regression/per-feature-item",
+    "$id": "methods-directory/mathematical/regression/per-feature-item",
     "$schema": "http://json-schema.org/draft-04/schema#",
     "title": "per-feature (property used for training the ML method/model) parameters schema",
     "properties": {

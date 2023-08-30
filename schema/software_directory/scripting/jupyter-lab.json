@@ -1,5 +1,5 @@
 {
-    "schemaId": "software-directory/scripting/jupyter-lab",
+    "$id": "software-directory/scripting/jupyter-lab",
     "$schema": "http://json-schema.org/draft-04/schema#",
     "title": "Jupyter Lab Application Schema",
     "type": "object",

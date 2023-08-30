@@ -1,5 +1,5 @@
 {
-    "schemaId": "job/base",
+    "$id": "job/base",
     "$schema": "http://json-schema.org/draft-04/schema#",
     "title": "base job schema",
     "allOf": [

@@ -1,5 +1,5 @@
 {
-    "schemaId": "property/source",
+    "$id": "property/source",
     "$schema": "http://json-schema.org/draft-04/schema#",
     "title": "The source of a property. This could be an article, a simulation on Exabyte, an external simulation, etc.",
     "type": "object",

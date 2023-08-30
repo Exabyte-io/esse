@@ -1,5 +1,5 @@
 {
-    "schemaId": "core/reusable/atomic-strings",
+    "$id": "core/reusable/atomic-strings",
     "$schema": "http://json-schema.org/draft-04/schema#",
     "title": "atomic strings vectors schema",
     "allOf": [

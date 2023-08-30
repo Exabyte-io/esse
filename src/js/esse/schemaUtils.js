@@ -29,15 +29,15 @@ export function makeFlatSchemaRef(schemaId) {
 export function buildSchemaDefinitions(originalSchemas) {
     const schemas = originalSchemas.map((schema) => {
         return mapObjectDeep(schema, (value) => {
-            if (typeof value === "object" && value.schemaId) {
-                return makeFlatSchemaRef(value.schemaId);
+            if (typeof value === "object" && value.$id) {
+                return makeFlatSchemaRef(value.$id);
             }
             if (typeof value === "object" && value.$ref) {
-                // assume value.$ref is a schemaId
+                // assume value.$ref is a $id
                 return makeFlatSchemaRef(value.$ref);
             }
         });
     });
 
-    return keyBy(schemas, ({ schemaId }) => makeFlatSchemaKey(schemaId));
+    return keyBy(schemas, ({ $id }) => makeFlatSchemaKey($id));
 }

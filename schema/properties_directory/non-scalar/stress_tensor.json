@@ -1,5 +1,5 @@
 {
-    "schemaId": "properties-directory/non-scalar/stress-tensor",
+    "$id": "properties-directory/non-scalar/stress-tensor",
     "$schema": "http://json-schema.org/draft-04/schema#",
     "title": "stress tensor schema",
     "properties": {
