@@ -1,5 +1,5 @@
 {
-    "schemaId": "methods-category/mathematical/discr/mesh/hybrid",
+    "$id": "methods-category/mathematical/discr/mesh/hybrid",
     "$schema": "http://json-schema.org/draft-04/schema#",
     "description": "Hybrid meshing category schema",
     "allOf": [

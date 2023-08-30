@@ -1,5 +1,5 @@
 {
-    "schemaId": "methods-category/mathematical/intgr/analytic/volume",
+    "$id": "methods-category/mathematical/intgr/analytic/volume",
     "$schema": "http://json-schema.org/draft-04/schema#",
     "description": "analytic volume integral category schema",
     "allOf": [

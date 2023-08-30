@@ -1,5 +1,5 @@
 {
-    "schemaId": "methods-category/mathematical/fapprx/enum-options",
+    "$id": "methods-category/mathematical/fapprx/enum-options",
     "basisExpansion": {
         "enum": [
             "basisExp"

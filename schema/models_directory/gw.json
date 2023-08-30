@@ -1,5 +1,5 @@
 {
-    "schemaId": "models-directory/gw",
+    "$id": "models-directory/gw",
     "$schema": "http://json-schema.org/draft-04/schema#",
     "title": "GW Approximation schema",
     "allOf": [

@@ -1,5 +1,5 @@
 {
-    "schemaId": "methods-category/mathematical/discr/mesh/enum-options",
+    "$id": "methods-category/mathematical/discr/mesh/enum-options",
     "hybridMesh": {
         "enum": [
             "hybrid"

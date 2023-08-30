@@ -1,5 +1,5 @@
 {
-    "schemaId": "models-category/st/det",
+    "$id": "models-category/st/det",
     "$schema": "http://json-schema.org/draft-04/schema#",
     "title": "deterministic model category schema",
     "allOf": [

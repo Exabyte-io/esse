@@ -1,5 +1,5 @@
 {
-    "schemaId": "models-category/pb/qm/dft/ksdft/hybrid",
+    "$id": "models-category/pb/qm/dft/ksdft/hybrid",
     "$schema": "http://json-schema.org/draft-04/schema#",
     "title": "DFT hybrid functional category schema",
     "allOf": [

@@ -1,5 +1,5 @@
 {
-    "schemaId": "core/primitive/linked-list",
+    "$id": "core/primitive/linked-list",
     "$schema": "http://json-schema.org/draft-04/schema#",
     "title": "linked list schema",
     "type": "array",

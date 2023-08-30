@@ -1,5 +1,5 @@
 {
-    "schemaId": "methods-category/mathematical/opt/diff",
+    "$id": "methods-category/mathematical/opt/diff",
     "$schema": "http://json-schema.org/draft-04/schema#",
     "description": "Optimization methods for differentiable functions category schema",
     "allOf": [

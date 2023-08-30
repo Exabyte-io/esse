@@ -1,5 +1,5 @@
 {
-    "schemaId": "methods-category/physical/qm/wf/tetrahedron",
+    "$id": "methods-category/physical/qm/wf/tetrahedron",
     "$schema": "http://json-schema.org/draft-04/schema#",
     "description": "Tetrahedron method for Brillouin zone integration category schema ",
     "allOf": [

@@ -1,5 +1,5 @@
 {
-    "schemaId": "models-category/pb/qm/dft",
+    "$id": "models-category/pb/qm/dft",
     "$schema": "http://json-schema.org/draft-04/schema#",
     "title": "Density functional theory category schema",
     "allOf": [

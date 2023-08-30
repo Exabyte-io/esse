@@ -1,5 +1,5 @@
 {
-    "schemaId": "model/mixins/dft/enum-options",
+    "$id": "model/mixins/dft/enum-options",
     "lda": {
         "enum": [
             "pz"

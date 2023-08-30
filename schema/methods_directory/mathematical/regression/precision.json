@@ -1,5 +1,5 @@
 {
-    "schemaId": "methods-directory/mathematical/regression/precision",
+    "$id": "methods-directory/mathematical/regression/precision",
     "$schema": "http://json-schema.org/draft-04/schema#",
     "title": "regression precision",
     "type": "object",

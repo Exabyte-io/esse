@@ -1,5 +1,5 @@
 {
-    "schemaId": "models-category/pb/qm/dft/ksdft/gga",
+    "$id": "models-category/pb/qm/dft/ksdft/gga",
     "$schema": "http://json-schema.org/draft-04/schema#",
     "title": "DFT GGA functional category schema",
     "allOf": [

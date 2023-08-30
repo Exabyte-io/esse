@@ -1,5 +1,5 @@
 {
-    "schemaId": "methods-category/physical/qm/enum-options",
+    "$id": "methods-category/physical/qm/enum-options",
     "wavefunction": {
         "enum": [
             "wf"

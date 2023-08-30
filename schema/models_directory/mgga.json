@@ -1,5 +1,5 @@
 {
-    "schemaId": "models-directory/mgga",
+    "$id": "models-directory/mgga",
     "$schema": "http://json-schema.org/draft-04/schema#",
     "title": "Meta Generalized Gradient Approximation model schema",
     "allOf": [

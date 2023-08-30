@@ -1,5 +1,5 @@
 {
-    "schemaId": "models-directory/lda",
+    "$id": "models-directory/lda",
     "$schema": "http://json-schema.org/draft-04/schema#",
     "title": "Local Density Approximation model schema",
     "allOf": [

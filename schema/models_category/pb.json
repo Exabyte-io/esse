@@ -1,5 +1,5 @@
 {
-    "schemaId": "models-category/pb",
+    "$id": "models-category/pb",
     "$schema": "http://json-schema.org/draft-04/schema#",
     "title": "physics-based model category schema",
     "allOf": [

@@ -1,5 +1,5 @@
 {
-    "schemaId": "model/mixins/dispersion-correction",
+    "$id": "model/mixins/dispersion-correction",
     "$schema": "http://json-schema.org/draft-04/schema#",
     "title": "Dispersion correction mixin",
     "type": "object",

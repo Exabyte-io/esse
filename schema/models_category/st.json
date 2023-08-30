@@ -1,5 +1,5 @@
 {
-    "schemaId": "models-category/st",
+    "$id": "models-category/st",
     "$schema": "http://json-schema.org/draft-04/schema#",
     "title": "statistical model category schema",
     "allOf": [

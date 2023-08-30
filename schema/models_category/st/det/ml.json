@@ -1,5 +1,5 @@
 {
-    "schemaId": "models-category/st/det/ml",
+    "$id": "models-category/st/det/ml",
     "$schema": "http://json-schema.org/draft-04/schema#",
     "title": "machine learning model category schema",
     "allOf": [

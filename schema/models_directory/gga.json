@@ -1,5 +1,5 @@
 {
-    "schemaId": "models-directory/gga",
+    "$id": "models-directory/gga",
     "$schema": "http://json-schema.org/draft-04/schema#",
     "title": "Generalized Gradient Approximation model schema",
     "allOf": [

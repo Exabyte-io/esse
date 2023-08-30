@@ -1,5 +1,5 @@
 {
-    "schemaId": "models-category/pb/qm/abin/enum-options",
+    "$id": "models-category/pb/qm/abin/enum-options",
     "gwApproximation": {
         "enum": [
             "gw"

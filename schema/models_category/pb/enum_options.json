@@ -1,5 +1,5 @@
 {
-    "schemaId": "models-category/pb/enum-options",
+    "$id": "models-category/pb/enum-options",
     "quantumMechanical": {
         "enum": [
             "qm"

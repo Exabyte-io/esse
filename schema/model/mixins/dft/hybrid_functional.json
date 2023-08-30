@@ -1,5 +1,5 @@
 {
-    "schemaId": "model/mixins/dft/hybrid-functional",
+    "$id": "model/mixins/dft/hybrid-functional",
     "$schema": "http://json-schema.org/draft-04/schema#",
     "title": "Hybrid functional mixin",
     "type": "object",

@@ -1,5 +1,5 @@
 {
-    "schemaId": "methods-category/mathematical/intgr/enum-options",
+    "$id": "methods-category/mathematical/intgr/enum-options",
     "analytic": {
         "enum": [
             "analytic"

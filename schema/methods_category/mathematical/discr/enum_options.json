@@ -1,5 +1,5 @@
 {
-    "schemaId": "methods-category/mathematical/discr/enum-options",
+    "$id": "methods-category/mathematical/discr/enum-options",
     "meshing": {
         "enum": [
             "mesh"

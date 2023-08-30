@@ -1,5 +1,5 @@
 {
-    "schemaId": "model/mixins/hubbard",
+    "$id": "model/mixins/hubbard",
     "$schema": "http://json-schema.org/draft-04/schema#",
     "title": "Hubbard model mixin",
     "type": "object",

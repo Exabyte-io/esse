@@ -1,5 +1,5 @@
 {
-    "schemaId": "model/mixins/enum-options",
+    "$id": "model/mixins/enum-options",
     "spinPolarization": {
         "enum": [
             "collinear",

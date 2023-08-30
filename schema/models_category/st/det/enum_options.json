@@ -1,5 +1,5 @@
 {
-    "schemaId": "models-category/st/det/enum-options",
+    "$id": "models-category/st/det/enum-options",
     "machineLearning": {
         "enum": [
             "ml"

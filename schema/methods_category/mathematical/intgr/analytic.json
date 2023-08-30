@@ -1,5 +1,5 @@
 {
-    "schemaId": "methods-category/mathematical/intgr/analytic",
+    "$id": "methods-category/mathematical/intgr/analytic",
     "$schema": "http://json-schema.org/draft-04/schema#",
     "description": "Analytic integral category schema",
     "allOf": [

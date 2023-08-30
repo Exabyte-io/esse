@@ -1,5 +1,5 @@
 {
-    "schemaId": "methods-category/mathematical/diff/enum-options",
+    "$id": "methods-category/mathematical/diff/enum-options",
     "finiteDifference": {
         "enum": [
             "fd"

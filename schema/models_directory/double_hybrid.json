@@ -1,5 +1,5 @@
 {
-    "schemaId": "models-directory/double-hybrid",
+    "$id": "models-directory/double-hybrid",
     "$schema": "http://json-schema.org/draft-04/schema#",
     "title": "Double hybrid functional model schema",
     "allOf": [

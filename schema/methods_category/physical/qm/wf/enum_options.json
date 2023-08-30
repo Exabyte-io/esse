@@ -1,5 +1,5 @@
 {
-    "schemaId": "methods-category/physical/qm/wf/enum-options",
+    "$id": "methods-category/physical/qm/wf/enum-options",
     "planewave": {
         "enum": [
             "pw"

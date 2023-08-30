@@ -1,5 +1,5 @@
 {
-    "schemaId": "methods-category/physical/qm/wf/smearing",
+    "$id": "methods-category/physical/qm/wf/smearing",
     "$schema": "http://json-schema.org/draft-04/schema#",
     "title": "Smearing methods category schema",
     "description": "Approximating Heaviside step function with smooth function",

@@ -1,5 +1,5 @@
 {
-    "schemaId": "methods-category/physical/qm/wf/ao/dunning",
+    "$id": "methods-category/physical/qm/wf/ao/dunning",
     "$schema": "http://json-schema.org/draft-04/schema#",
     "description": "Dunning correlation-consistent basis set category schema",
     "allOf": [

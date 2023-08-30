@@ -1,5 +1,5 @@
 {
-    "schemaId": "model/mixins/dft/mgga-functional",
+    "$id": "model/mixins/dft/mgga-functional",
     "$schema": "http://json-schema.org/draft-04/schema#",
     "title": "Meta-GGA functional mixin",
     "type": "object",

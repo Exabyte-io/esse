@@ -1,5 +1,5 @@
 {
-    "schemaId": "methods-category/physical/qm/wf/ao",
+    "$id": "methods-category/physical/qm/wf/ao",
     "$schema": "http://json-schema.org/draft-04/schema#",
     "description": "Approximating the electronic wave function with a atomic orbital basis",
     "allOf": [

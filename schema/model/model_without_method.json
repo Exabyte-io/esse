@@ -1,5 +1,5 @@
 {
-    "schemaId": "model/model-without-method",
+    "$id": "model/model-without-method",
     "$schema": "http://json-schema.org/draft-04/schema#",
     "title": "model without method schema (base)",
     "allOf": [

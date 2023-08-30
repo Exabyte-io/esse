@@ -1,5 +1,5 @@
 {
-    "schemaId": "methods-directory/physical/ao/pople",
+    "$id": "methods-directory/physical/ao/pople",
     "$schema": "http://json-schema.org/draft-04/schema#",
     "description": "Pople basis set unit method",
     "allOf": [

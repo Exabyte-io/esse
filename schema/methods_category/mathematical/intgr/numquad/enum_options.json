@@ -1,5 +1,5 @@
 {
-    "schemaId": "methods-category/mathematical/intgr/numquad/enum-options",
+    "$id": "methods-category/mathematical/intgr/numquad/enum-options",
     "gaussQuadrature": {
         "enum": [
             "gauss"

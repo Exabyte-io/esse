@@ -1,5 +1,5 @@
 {
-    "schemaId": "models-category/pb/qm/enum-options",
+    "$id": "models-category/pb/qm/enum-options",
     "abInitio": {
         "enum": [
             "abin"
