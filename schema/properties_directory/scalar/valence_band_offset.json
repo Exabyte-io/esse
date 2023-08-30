@@ -1,5 +1,5 @@
 {
-    "schemaId": "properties-directory/scalar/valence-band-offset",
+    "$id": "properties-directory/scalar/valence-band-offset",
     "$schema": "http://json-schema.org/draft-04/schema#",
     "title": "valence band offset schema",
     "allOf": [

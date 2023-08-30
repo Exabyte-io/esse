@@ -1,5 +1,5 @@
 {
-    "schemaId": "workflow/new-subworkflow",
+    "$id": "workflow/new-subworkflow",
     "$schema": "http://json-schema.org/draft-04/schema#",
     "title": "NewSubworkflow",
     "type": "object",

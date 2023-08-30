@@ -1,5 +1,5 @@
 {
-    "schemaId": "in-memory-entity/named-defaultable",
+    "$id": "in-memory-entity/named-defaultable",
     "$schema": "http://json-schema.org/draft-04/schema#",
     "title": "Named defaultable in-memory entity schema",
     "allOf": [

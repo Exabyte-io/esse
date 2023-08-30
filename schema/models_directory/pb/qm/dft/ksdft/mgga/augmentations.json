@@ -1,5 +1,5 @@
 {
-    "schemaId": "models-directory/pb/qm/dft/ksdft/mgga/augmentations",
+    "$id": "models-directory/pb/qm/dft/ksdft/mgga/augmentations",
     "$schema": "http://json-schema.org/draft-04/schema#",
     "allOf": [
         {

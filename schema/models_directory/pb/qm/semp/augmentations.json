@@ -1,5 +1,5 @@
 {
-    "schemaId": "models-directory/pb/qm/semp/augmentations",
+    "$id": "models-directory/pb/qm/semp/augmentations",
     "$schema": "http://json-schema.org/draft-04/schema#",
     "allOf": [
         {

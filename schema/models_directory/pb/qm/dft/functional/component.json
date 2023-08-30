@@ -1,5 +1,5 @@
 {
-    "schemaId": "models-directory/pb/qm/dft/functional/component",
+    "$id": "models-directory/pb/qm/dft/functional/component",
     "$schema": "http://json-schema.org/draft-04/schema#",
     "title": "functional component schema",
     "allOf": [

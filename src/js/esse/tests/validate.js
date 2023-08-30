@@ -34,7 +34,7 @@ describe("validate all examples", () => {
 describe("schema titles must be unique or empty", () => {
     const repeatedSchemaTitles = Object.entries(groupBy(esse.schemas, "title"))
         .filter(([title, groupedValues]) => title !== "undefined" && groupedValues.length > 1)
-        .map(([title, groupedValues]) => [title, groupedValues.map(({ schemaId }) => schemaId)]);
+        .map(([title, groupedValues]) => [title, groupedValues.map(({ $id }) => $id)]);
 
     console.log(repeatedSchemaTitles);
 

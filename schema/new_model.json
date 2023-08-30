@@ -1,5 +1,5 @@
 {
-    "schemaId": "new-model",
+    "$id": "new-model",
     "$schema": "http://json-schema.org/draft-04/schema#",
     "title": "new model schema (base)",
     "properties": {

@@ -1,5 +1,5 @@
 {
-    "schemaId": "models-directory/pb/qm/dft/functional/components-directory/local-functional-lda",
+    "$id": "models-directory/pb/qm/dft/functional/components-directory/local-functional-lda",
     "$schema": "http://json-schema.org/draft-04/schema#",
     "title": "local functional lda component schema",
     "allOf": [

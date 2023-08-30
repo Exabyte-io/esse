@@ -1,5 +1,5 @@
 {
-    "schemaId": "system/is-multi-material",
+    "$id": "system/is-multi-material",
     "$schema": "http://json-schema.org/draft-04/schema#",
     "title": "is multi schema",
     "properties": {

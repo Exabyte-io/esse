@@ -1,5 +1,5 @@
 {
-    "schemaId": "models-directory/pb/qm/dft/functional/components-directory/local-functional",
+    "$id": "models-directory/pb/qm/dft/functional/components-directory/local-functional",
     "$schema": "http://json-schema.org/draft-04/schema#",
     "title": "LocalFunctional",
     "allOf": [

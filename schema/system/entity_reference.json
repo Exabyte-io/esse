@@ -1,5 +1,5 @@
 {
-    "schemaId": "system/entity-reference",
+    "$id": "system/entity-reference",
     "$schema": "http://json-schema.org/draft-04/schema#",
     "title": "entity reference schema",
     "properties": {

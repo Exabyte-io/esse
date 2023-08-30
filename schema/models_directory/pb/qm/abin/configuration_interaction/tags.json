@@ -1,5 +1,5 @@
 {
-    "schemaId": "models-directory/pb/qm/abin/configuration-interaction/tags",
+    "$id": "models-directory/pb/qm/abin/configuration-interaction/tags",
     "$schema": "http://json-schema.org/draft-04/schema#",
     "allOf": [
         {

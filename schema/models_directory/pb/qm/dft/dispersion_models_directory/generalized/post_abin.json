@@ -1,5 +1,5 @@
 {
-    "schemaId": "models-directory/pb/qm/dft/dispersion-models-directory/generalized/post-abin",
+    "$id": "models-directory/pb/qm/dft/dispersion-models-directory/generalized/post-abin",
     "$schema": "http://json-schema.org/draft-04/schema#",
     "title": "ab initio dispersion model applied post-SCF",
     "allOf": [

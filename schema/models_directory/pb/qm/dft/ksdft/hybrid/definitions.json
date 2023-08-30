@@ -1,5 +1,5 @@
 {
-    "schemaId": "models-directory/pb/qm/dft/ksdft/hybrid/definitions",
+    "$id": "models-directory/pb/qm/dft/ksdft/hybrid/definitions",
     "tags": {},
     "augmentations": {},
     "modifiers": {}

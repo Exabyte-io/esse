@@ -1,5 +1,5 @@
 {
-    "schemaId": "models-directory/pb/qm/abin/configuration-interaction/modifiers",
+    "$id": "models-directory/pb/qm/abin/configuration-interaction/modifiers",
     "$schema": "http://json-schema.org/draft-04/schema#",
     "allOf": [
         {

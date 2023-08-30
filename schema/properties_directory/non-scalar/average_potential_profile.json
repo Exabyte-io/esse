@@ -1,5 +1,5 @@
 {
-    "schemaId": "properties-directory/non-scalar/average-potential-profile",
+    "$id": "properties-directory/non-scalar/average-potential-profile",
     "$schema": "http://json-schema.org/draft-04/schema#",
     "title": "average potential profile schema",
     "allOf": [

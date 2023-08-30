@@ -1,5 +1,5 @@
 {
-    "schemaId": "models-directory/pb/qm/abin/definitions",
+    "$id": "models-directory/pb/qm/abin/definitions",
     "tags": {},
     "augmentations": {},
     "modifiers": {

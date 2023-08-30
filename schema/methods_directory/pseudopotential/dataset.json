@@ -1,5 +1,5 @@
 {
-    "schemaId": "methods-directory/pseudopotential/dataset",
+    "$id": "methods-directory/pseudopotential/dataset",
     "$schema": "http://json-schema.org/draft-04/schema#",
     "title": "pseudopotential dataset schema",
     "properties": {

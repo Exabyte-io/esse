@@ -1,5 +1,5 @@
 {
-    "schemaId": "properties-directory/structural/inchi",
+    "$id": "properties-directory/structural/inchi",
     "$schema": "http://json-schema.org/draft-04/schema#",
     "title": "InChI representation schema",
     "allOf": [

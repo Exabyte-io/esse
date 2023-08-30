@@ -1,5 +1,5 @@
 {
-    "schemaId": "project",
+    "$id": "project",
     "$schema": "http://json-schema.org/draft-04/schema#",
     "title": "project schema",
     "type": "object",

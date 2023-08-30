@@ -1,5 +1,5 @@
 {
-    "schemaId": "system/bankable",
+    "$id": "system/bankable",
     "$schema": "http://json-schema.org/draft-04/schema#",
     "title": "bankable schema",
     "properties": {

@@ -1,5 +1,5 @@
 {
-    "schemaId": "models-directory/pb/qm/dft/ksdft/hybrid/tags",
+    "$id": "models-directory/pb/qm/dft/ksdft/hybrid/tags",
     "$schema": "http://json-schema.org/draft-04/schema#",
     "allOf": [
         {

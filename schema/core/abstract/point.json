@@ -1,5 +1,5 @@
 {
-    "schemaId": "core/abstract/point",
+    "$id": "core/abstract/point",
     "$schema": "http://json-schema.org/draft-04/schema#",
     "title": "point schema",
     "allOf": [

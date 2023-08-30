@@ -1,5 +1,5 @@
 {
-    "schemaId": "properties-directory/scalar/zero-point-energy",
+    "$id": "properties-directory/scalar/zero-point-energy",
     "$schema": "http://json-schema.org/draft-04/schema#",
     "title": "zero point energy schema",
     "allOf": [

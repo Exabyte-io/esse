@@ -1,5 +1,5 @@
 {
-    "schemaId": "system/status",
+    "$id": "system/status",
     "$schema": "http://json-schema.org/draft-04/schema#",
     "title": "status schema",
     "properties": {

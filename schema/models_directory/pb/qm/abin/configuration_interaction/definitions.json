@@ -1,5 +1,5 @@
 {
-    "schemaId": "models-directory/pb/qm/abin/configuration-interaction/definitions",
+    "$id": "models-directory/pb/qm/abin/configuration-interaction/definitions",
     "tags": {
         "enum": [
             "excited-states"

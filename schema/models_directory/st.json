@@ -1,5 +1,5 @@
 {
-    "schemaId": "models-directory/st",
+    "$id": "models-directory/st",
     "$schema": "http://json-schema.org/draft-04/schema#",
     "allOf": [
         {

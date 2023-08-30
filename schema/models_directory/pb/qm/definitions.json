@@ -1,5 +1,5 @@
 {
-    "schemaId": "models-directory/pb/qm/definitions",
+    "$id": "models-directory/pb/qm/definitions",
     "scaling": {
         "1": {
             "enum": [

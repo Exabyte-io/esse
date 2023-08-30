@@ -1,5 +1,5 @@
 {
-    "schemaId": "system/job-extended",
+    "$id": "system/job-extended",
     "$schema": "http://json-schema.org/draft-04/schema#",
     "title": "extended job schema",
     "properties": {
