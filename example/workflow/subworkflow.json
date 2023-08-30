@@ -4,7 +4,7 @@
         "...": "include(../software/application.json)"
     },
     "model": {
-        "...": "include(../legacy/model.json)"
+        "...": "include(../model.json)"
     },
     "name": "Band Structure",
     "properties": [

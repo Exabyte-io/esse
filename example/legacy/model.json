@@ -1,7 +1,0 @@
-{
-    "method": {
-        "...": "include(./method.json)"
-    },
-    "subtype": "gga",
-    "type": "dft"
-}

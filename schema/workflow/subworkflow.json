@@ -18,7 +18,7 @@
         },
         "model": {
             "description": "Model used inside the subworkflow",
-            "$ref": "../legacy/model.json"
+            "$ref": "../model.json"
         },
         "application": {
             "description": "information about the simulation engine/application.",

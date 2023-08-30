@@ -1,18 +1,24 @@
 {
     "$id": "model",
     "$schema": "http://json-schema.org/draft-04/schema#",
-    "title": "categorized base model",
-    "allOf": [
-        {
-            "$ref": "model/model_without_method.json"
-        }
-    ],
+    "title": "base model",
     "properties": {
+        "type": {
+            "description": "general type of the model, eg. `dft`",
+            "type": "string"
+        },
+        "subtype": {
+            "description": "general subtype of the model, eg. `lda`",
+            "type": "string"
+        },
         "method": {
             "$ref": "method.json"
         }
     },
+    "additionalProperties": true,
     "required": [
+        "type",
+        "subtype",
         "method"
     ]
 }
