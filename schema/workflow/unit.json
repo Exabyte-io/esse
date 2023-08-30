@@ -6,6 +6,9 @@
     "allOf": [
         {
             "$ref": "../in_memory_entity/named_defaultable_runtime_items.json"
+        },
+        {
+            "$ref": "../system/tags.json"
         }
     ],
     "properties": {

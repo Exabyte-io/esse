@@ -9,7 +9,8 @@
         },
         "basename": {
             "description": "Basename of the file",
-            "type": "string"
+            "type": "string",
+            "$comment": "isGenerative:true"
         },
         "filetype": {
             "description": "What kind of file this is, e.g. image / text",
