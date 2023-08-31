@@ -1,0 +1,16 @@
+{
+    "$id": "models-directory/re",
+    "$schema": "http://json-schema.org/draft-04/schema#",
+    "title": "machine learning model schema",
+    "description": "machine learning model type/subtype schema",
+    "allOf": [
+        {
+            "$ref": "../model/model_without_method.json"
+        }
+    ],
+    "properties": {
+        "categories": {
+            "$ref": "../models_category/st/det/ml/re.json"
+        }
+    }
+}

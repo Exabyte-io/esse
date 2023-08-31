@@ -1,0 +1,22 @@
+{
+    "$id": "methods-directory/mathematical/regression/linear/data-per-property",
+    "$schema": "http://json-schema.org/draft-04/schema#",
+    "title": "linear regression parameters schema",
+    "properties": {
+        "intercept": {
+            "description": "intercept (shift) from the linear or non-linear fit of data points",
+            "type": "number"
+        },
+        "perFeature": {
+            "type": "array",
+            "description": "per-feature (property used for training the ML method/model) parameters",
+            "items": {
+                "$ref": "../per_feature_item.json"
+            }
+        }
+    },
+    "required": [
+        "intercept",
+        "perFeature"
+    ]
+}

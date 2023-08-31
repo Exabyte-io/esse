@@ -1,0 +1,15 @@
+{
+    "$id": "methods-directory/physical/tetrahedron",
+    "$schema": "http://json-schema.org/draft-04/schema#",
+    "description": "Tetrahedron method (Brillouin zone integration) schema ",
+    "allOf": [
+        {
+            "$ref": "../../method/unit_method.json"
+        }
+    ],
+    "properties": {
+        "categories": {
+            "$ref": "../../methods_category/physical/qm/wf/tetrahedron.json"
+        }
+    }
+}

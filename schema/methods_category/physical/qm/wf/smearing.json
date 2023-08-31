@@ -1,0 +1,19 @@
+{
+    "$id": "methods-category/physical/qm/wf/smearing",
+    "$schema": "http://json-schema.org/draft-04/schema#",
+    "title": "Smearing methods category schema",
+    "description": "Approximating Heaviside step function with smooth function",
+    "allOf": [
+        {
+            "$ref": "../wf.json"
+        }
+    ],
+    "properties": {
+        "type": {
+            "$ref": "enum_options.json#/smearing"
+        },
+        "subtype": {
+            "$ref": "./enum_options.json#/smearingSubtypes"
+        }
+    }
+}

@@ -1,0 +1,15 @@
+{
+    "$id": "models-category/pb/qm/semp",
+    "$schema": "http://json-schema.org/draft-04/schema#",
+    "title": "Semi-empirical category schema",
+    "allOf": [
+        {
+            "$ref": "../qm.json"
+        }
+    ],
+    "properties": {
+        "tier3": {
+            "$ref": "enum_options.json#/semiEmpirical"
+        }
+    }
+}

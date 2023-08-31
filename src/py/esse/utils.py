@@ -36,6 +36,8 @@ def parseIncludeReferenceStatementsByDir(dir_path):
     data = []
     for root, dirs, files in os.walk(dir_path):
         for file_ in files:
+            if os.path.splitext(file_)[1] != ".json":
+                continue
             file_path = os.path.join(root, file_)
             data.append(parseIncludeReferenceStatements(file_path))
     return data

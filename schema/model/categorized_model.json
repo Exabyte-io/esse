@@ -1,0 +1,18 @@
+{
+    "$id": "model/categorized-model",
+    "$schema": "http://json-schema.org/draft-04/schema#",
+    "title": "categorized base model",
+    "allOf": [
+        {
+            "$ref": "./model_without_method.json"
+        }
+    ],
+    "properties": {
+        "method": {
+            "$ref": "../method/categorized_method.json"
+        }
+    },
+    "required": [
+        "method"
+    ]
+}

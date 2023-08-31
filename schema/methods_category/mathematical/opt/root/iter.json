@@ -1,0 +1,15 @@
+{
+    "$id": "methods-category/mathematical/opt/root/iter",
+    "$schema": "http://json-schema.org/draft-04/schema#",
+    "description": "Iterative method for root finding category schema",
+    "allOf": [
+        {
+            "$ref": "../root.json"
+        }
+    ],
+    "properties": {
+        "tier3": {
+            "$ref": "enum_options.json#/iterative"
+        }
+    }
+}

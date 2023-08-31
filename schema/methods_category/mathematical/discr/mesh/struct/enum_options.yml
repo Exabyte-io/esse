@@ -1,0 +1,3 @@
+# --- Type enum slugs: Structured Mesh ---
+cartesian:
+  - cartesian # Cartesian grid

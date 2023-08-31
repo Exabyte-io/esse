@@ -1,0 +1,12 @@
+{
+    "$id": "model/mixins/dft/mgga-functional",
+    "$schema": "http://json-schema.org/draft-04/schema#",
+    "title": "Meta-GGA functional mixin",
+    "type": "object",
+    "properties": {
+        "functional": {
+            "type": "string",
+            "$ref": "./enum_options.json#/mgga"
+        }
+    }
+}

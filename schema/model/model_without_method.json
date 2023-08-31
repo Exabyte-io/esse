@@ -1,0 +1,33 @@
+{
+    "$id": "model/model-without-method",
+    "$schema": "http://json-schema.org/draft-04/schema#",
+    "title": "model without method schema (base)",
+    "allOf": [
+        {
+            "$ref": "../system/name.json"
+        },
+        {
+            "$ref": "../system/tags.json"
+        }
+    ],
+    "properties": {
+        "path": {
+            "$ref": "../core/reusable/category_path.json"
+        },
+        "categories": {
+            "description": "Model categories",
+            "$ref": "../core/reusable/categories.json"
+        },
+        "parameters": {
+            "type": "object",
+            "description": "Model parameters defined in-place or via model mixins"
+        },
+        "reference": {
+            "$ref": "../core/reference/literature.json"
+        }
+    },
+    "required": [
+        "categories",
+        "parameters"
+    ]
+}

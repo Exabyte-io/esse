@@ -94,8 +94,6 @@ Primitives are solely defined by the default primitives and can not be re-constr
 
 This directory contains the examples formed according to the schemas and implements the same directory structure as the schema directory.
 
-Note: A list of DFT unit functionals (`dft_unit_functionals.json`) is generated during the Python test from the corresponding prototype file (`dft_unit_functionals_proto.json`).
-
 ### src
 
 This directory contains Python and Javascript interfaces implementing the functionality to access and validate schemas and examples.
@@ -103,12 +101,6 @@ This directory contains Python and Javascript interfaces implementing the functi
 ### Generative vs Non-generative keys
 Generative keys are the fields which allow for user input prior to calculation of the final property values. A flag is included in the schema comments on the fields in [property schemas](schema/properties_directory): `isGenerative:true` marks which fields to use as subschemas in the generation of a user input schema.
 - On properties allowing user inputs, additional fields may be tagged, as in [the `file_content` property](schema/properties_directory/non-scalar/file_content.json)
-
-### Additional
-The list of DFT unit functionals (`dft_unit_functionals.json`) is currently tracked via [git LFS](https://git-lfs.github.com).
-If one wishes to add a new unit functional to that list, please
-- edit the [prototype file](schema/models_directory/pb/qm/dft/dft_unit_functionals_proto.json) and
-- generate a new list of unit functional by running python tests, for example (via `generate_dft_unit_functionals()` from the [esse.functionals](src/py/esse/functionals.py) python module).
 
 ## Tests
 

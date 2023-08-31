@@ -1,0 +1,3 @@
+# --- Tier 3 enum slugs: Deterministic models ---
+machineLearning:
+  - ml # Machine learning model category

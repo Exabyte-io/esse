@@ -1,0 +1,38 @@
+{
+    "$id": "method/unit-method",
+    "$schema": "http://json-schema.org/draft-04/schema#",
+    "title": "unit method schema (base)",
+    "allOf": [
+        {
+            "$ref": "../system/name.json"
+        },
+        {
+            "$ref": "../system/tags.json"
+        }
+    ],
+    "properties": {
+        "categories": {
+            "description": "Method categories",
+            "$ref": "../core/reusable/categories.json"
+        },
+        "path": {
+            "description": "URL-like method path, e.g. physical/pw",
+            "$ref": "../core/reusable/category_path.json"
+        },
+        "parameters": {
+            "description": "Instructive parameters defining the method",
+            "type": "object"
+        },
+        "precision": {
+            "description": "Object showing the actual possible precision based on theory and implementation",
+            "type": "object"
+        },
+        "data": {
+            "description": "Additional numerically relevant data specific to method, eg. array of pseudopotentials",
+            "type": "object"
+        }
+    },
+    "required": [
+        "categories"
+    ]
+}

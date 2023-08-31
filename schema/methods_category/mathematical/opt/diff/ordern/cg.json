@@ -1,0 +1,15 @@
+{
+    "$id": "methods-category/mathematical/opt/diff/ordern/cg",
+    "$schema": "http://json-schema.org/draft-04/schema#",
+    "description": "conjugate gradient method schema",
+    "allOf": [
+        {
+            "$ref": "../ordern.json"
+        }
+    ],
+    "properties": {
+        "type": {
+            "$ref": "enum_options.json#/conjugateGradient"
+        }
+    }
+}

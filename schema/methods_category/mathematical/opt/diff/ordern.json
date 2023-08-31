@@ -1,0 +1,15 @@
+{
+    "$id": "methods-category/mathematical/opt/diff/ordern",
+    "$schema": "http://json-schema.org/draft-04/schema#",
+    "description": "Mixed order and higher order algorithms for the optimization of differentiable functions",
+    "allOf": [
+        {
+            "$ref": "../diff.json"
+        }
+    ],
+    "properties": {
+        "tier3": {
+            "$ref": "enum_options.json#/nOrder"
+        }
+    }
+}

@@ -1,0 +1,27 @@
+{
+    "$id": "methods-directory/mathematical/regression/kernel-ridge/data-per-property",
+    "$schema": "http://json-schema.org/draft-04/schema#",
+    "title": "kernel-ridge regression parameters schema",
+    "properties": {
+        "xFit": {
+            "description": "training data",
+            "type": "array"
+        },
+        "dualCoefficients": {
+            "description": "dual coefficients",
+            "type": "array"
+        },
+        "perFeature": {
+            "type": "array",
+            "description": "per-feature (property used for training the ML method/model) parameters",
+            "items": {
+                "$ref": "../per_feature_item.json"
+            }
+        }
+    },
+    "required": [
+        "xFit",
+        "dualCoefficients",
+        "perFeature"
+    ]
+}

@@ -1,0 +1,18 @@
+{
+    "$id": "models-category/pb/qm/abin/gw",
+    "$schema": "http://json-schema.org/draft-04/schema#",
+    "title": "GW category schema",
+    "allOf": [
+        {
+            "$ref": "../abin.json"
+        }
+    ],
+    "properties": {
+        "type": {
+            "$ref": "enum_options.json#/gwApproximation"
+        },
+        "subtype": {
+            "$ref": "enum_options.json#/gwSubtypes"
+        }
+    }
+}

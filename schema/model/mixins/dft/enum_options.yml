@@ -1,0 +1,12 @@
+# Collection of DFT functional slugs sorted by DFT rung
+lda:
+  - pz
+gga:
+  - pbe
+mgga:
+  - scan
+hybrid:
+  - hse06
+  - b3lyp
+doubleHybrid:
+  - b2plyp

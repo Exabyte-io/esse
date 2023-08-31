@@ -1,0 +1,15 @@
+{
+    "$id": "models-category/pb/qm/dft/ksdft/mgga",
+    "$schema": "http://json-schema.org/draft-04/schema#",
+    "title": "DFT meta-GGA functional category schema",
+    "allOf": [
+        {
+            "$ref": "../ksdft.json"
+        }
+    ],
+    "properties": {
+        "subtype": {
+            "$ref": "enum_options.json#/metaGGA"
+        }
+    }
+}

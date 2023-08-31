@@ -1,0 +1,15 @@
+{
+    "$id": "methods-category/mathematical/opt/ndiff",
+    "$schema": "http://json-schema.org/draft-04/schema#",
+    "description": "Optimization methods for non-differentiable functions category schema",
+    "allOf": [
+        {
+            "$ref": "../opt.json"
+        }
+    ],
+    "properties": {
+        "tier2": {
+            "$ref": "enum_options.json#/nonDifferentiable"
+        }
+    }
+}

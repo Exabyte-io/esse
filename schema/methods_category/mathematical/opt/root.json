@@ -1,0 +1,15 @@
+{
+    "$id": "methods-category/mathematical/opt/root",
+    "$schema": "http://json-schema.org/draft-04/schema#",
+    "description": "Root finding category schema",
+    "allOf": [
+        {
+            "$ref": "../opt.json"
+        }
+    ],
+    "properties": {
+        "tier2": {
+            "$ref": "enum_options.json#/rootFinding"
+        }
+    }
+}

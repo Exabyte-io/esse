@@ -1,0 +1,38 @@
+{
+    "$id": "models-directory/mgga",
+    "$schema": "http://json-schema.org/draft-04/schema#",
+    "title": "Meta Generalized Gradient Approximation model schema",
+    "allOf": [
+        {
+            "$ref": "../model/model_without_method.json"
+        }
+    ],
+    "properties": {
+        "categories": {
+            "$ref": "../models_category/pb/qm/dft/ksdft/mgga.json"
+        },
+        "parameters": {
+            "allOf": [
+                {
+                    "$ref": "../model/mixins/dft/mgga_functional.json"
+                },
+                {
+                    "anyOf": [
+                        {
+                            "$ref": "../model/mixins/spin_orbit_coupling.json"
+                        },
+                        {
+                            "$ref": "../model/mixins/dispersion_correction.json"
+                        },
+                        {
+                            "$ref": "../model/mixins/spin_polarization.json"
+                        },
+                        {
+                            "$ref": "../model/mixins/hubbard.json"
+                        }
+                    ]
+                }
+            ]
+        }
+    }
+}

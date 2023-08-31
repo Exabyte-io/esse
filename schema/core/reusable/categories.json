@@ -1,0 +1,29 @@
+{
+    "$id": "core/reusable/categories",
+    "$schema": "http://json-schema.org/draft-04/schema#",
+    "title": "categories schema",
+    "description": "Used to categorize entities such as models and methods",
+    "type": "object",
+    "properties": {
+        "tier1": {
+            "description": "top-level category",
+            "$ref": "../primitive/slugified_entry_or_slug.json"
+        },
+        "tier2": {
+            "description": "second level category",
+            "$ref": "../primitive/slugified_entry_or_slug.json"
+        },
+        "tier3": {
+            "description": "third level category",
+            "$ref": "../primitive/slugified_entry_or_slug.json"
+        },
+        "type": {
+            "description": "general type of the entity",
+            "$ref": "../primitive/slugified_entry_or_slug.json"
+        },
+        "subtype": {
+            "description": "general subtype of the entity",
+            "$ref": "../primitive/slugified_entry_or_slug.json"
+        }
+    }
+}

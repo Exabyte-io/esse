@@ -1,0 +1,15 @@
+{
+    "$id": "models-category/st/det/ml/re",
+    "$schema": "http://json-schema.org/draft-04/schema#",
+    "title": "regression model category schema",
+    "allOf": [
+        {
+            "$ref": "../ml.json"
+        }
+    ],
+    "properties": {
+        "type": {
+            "$ref": "enum_options.json#/regression"
+        }
+    }
+}

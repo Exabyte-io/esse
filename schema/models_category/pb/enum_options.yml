@@ -1,0 +1,3 @@
+# --- Tier 2 enum slugs: Physics-based models ---
+quantumMechanical:
+  - qm # Quantum-mechanical models category
