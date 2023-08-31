@@ -1,0 +1,39 @@
+{
+  "$id": "system/consistency-checks",
+  "$schema": "http://json-schema.org/draft-04/schema#",
+  "title": "consistency checks schema",
+  "properties": {
+    "consistency_checks": {
+      "type": "array",
+      "items": {
+        "type": "object",
+        "properties": {
+          "name": {
+            "type": "string"
+          },
+          "description": {
+            "type": "string"
+          },
+          "severity": {
+            "enum": ["info", "warning", "error"]
+          },
+          "arguments": {
+            "type": "object"
+          },
+          "message": {
+            "type": "string"
+          },
+          "enabled": {
+            "type": "boolean"
+          }
+        },
+        "required": [
+          "name",
+          "severity",
+          "arguments",
+          "message"
+        ]
+      }
+    }
+  }
+}
