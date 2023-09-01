@@ -9,28 +9,36 @@
         "type": "object",
         "properties": {
           "name": {
-            "type": "string"
+            "type": "string",
+            "description": "Name of the consistency check which comes from an exported enum."
           },
           "description": {
-            "type": "string"
+            "type": "string",
+            "description": "Description of the consistency check provided for developers."
+          },
+          "keys": {
+            "type": "array",
+            "items": {}
+          },
+          "arguments": {
+            "type": "array",
+            "items": {
+              "type": "object"
+            },
+            "description": "Arguments provided by consistency check function for message construction, specific to each check."
           },
           "severity": {
             "enum": ["info", "warning", "error"]
           },
-          "arguments": {
-            "type": "object"
-          },
           "message": {
             "type": "string"
-          },
-          "enabled": {
-            "type": "boolean"
           }
         },
         "required": [
           "name",
-          "severity",
+          "keys",
           "arguments",
+          "severity",
           "message"
         ]
       }
