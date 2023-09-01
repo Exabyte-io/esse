@@ -33,7 +33,13 @@
                   "type": "string"
                 }
               }
-            }
+            },
+            "required": [
+              "key",
+              "checkName",
+              "severity",
+              "message"
+            ]
           }
         },
         "required": [
