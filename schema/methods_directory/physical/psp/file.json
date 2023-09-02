@@ -28,6 +28,12 @@
             "$ref": "../../../core/reusable/category_path.json",
             "description": "DFT model path, e.g. '/pb/qm/dft/ksdft/gga?functional=pbe'"
         },
+        "valenceConfiguration": {
+            "type": "array",
+            "items": {
+                "$ref": "../../../core/reusable/atomic_orbital.json"
+            }
+        },
         "path": {
             "type": "string",
             "description": "location of the pseudopotential file on filesystem"
