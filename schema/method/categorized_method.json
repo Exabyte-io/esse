@@ -1,7 +1,7 @@
 {
     "$id": "method/categorized-method",
     "$schema": "http://json-schema.org/draft-04/schema#",
-    "title": "categorized method schema",
+    "title": "categorized method",
     "allOf": [
         {
             "$ref": "../system/path_entity.json"
