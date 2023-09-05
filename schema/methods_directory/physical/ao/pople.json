@@ -14,13 +14,18 @@
         "parameters": {
             "allOf": [
                 {
-                    "properties": {
-                        "basisSlug": {
-                            "$ref": "./enum_options.json#/popleAoBasis"
-                        }
-                    }
+                    "$ref": "#/definitions/ao-basis-pople"
                 }
             ]
+        }
+    },
+    "definitions": {
+        "ao-basis-pople": {
+            "properties": {
+                "basisSlug": {
+                    "$ref": "./enum_options.json#/popleAoBasis"
+                }
+            }
         }
     }
 }

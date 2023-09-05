@@ -14,13 +14,18 @@
         "parameters": {
             "allOf": [
                 {
-                    "properties": {
-                        "basisSlug": {
-                            "$ref": "./enum_options.json#/otherAoBasis"
-                        }
-                    }
+                    "$ref": "#/definitions/ao-basis-other"
                 }
             ]
+        }
+    },
+    "definitions": {
+        "ao-basis-other": {
+            "properties": {
+                "basisSlug": {
+                    "$ref": "./enum_options.json#/otherAoBasis"
+                }
+            }
         }
     }
 }
