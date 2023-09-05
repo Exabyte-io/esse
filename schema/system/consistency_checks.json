@@ -1,13 +1,8 @@
 {
   "$id": "system/consistency-checks",
   "$schema": "http://json-schema.org/draft-04/schema#",
-  "title": "consistency checks schema",
-  "properties": {
-    "consistency_checks": {
-      "type": "array",
-      "items": {
-        "type": "object",
-        "properties": {
+  "title": "consistency checks",
+      "properties": {
           "keys": {
             "type": "array",
             "items": {
@@ -32,21 +27,18 @@
                 "message": {
                   "type": "string"
                 }
-              }
-            },
-            "required": [
-              "key",
-              "checkName",
-              "severity",
-              "message"
-            ]
+              },
+              "required": [
+                "key",
+                "checkName",
+                "severity",
+                "message"
+              ]
+            }
           }
         },
-        "required": [
-          "keys",
-          "messages"
-        ]
-      }
+      "required": [
+        "keys",
+        "messages"
+      ]
     }
-  }
-}
