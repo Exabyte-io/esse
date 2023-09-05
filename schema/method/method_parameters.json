@@ -1,0 +1,20 @@
+{
+    "$id": "method/method-parameters",
+    "$schema": "http://json-schema.org/draft-04/schema#",
+    "title": "MethodParameters",
+    "allOf": [
+        {
+            "oneOf": [
+                {
+                    "$ref": "../methods_directory/physical/ao/dunning.json#/definitions/ao-basis-dunning"
+                },
+                {
+                    "$ref": "../methods_directory/physical/ao/pople.json#/definitions/ao-basis-pople"
+                },
+                {
+                    "$ref": "../methods_directory/physical/ao/other.json#/definitions/ao-basis-other"
+                }
+            ]
+        }
+    ]
+}
