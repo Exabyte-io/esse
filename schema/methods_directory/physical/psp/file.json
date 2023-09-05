@@ -7,9 +7,9 @@
             "type": "string",
             "description": "chemical element"
         },
-        "textHeading": {
+        "hash": {
             "type": "string",
-            "description": "text of pseudopotential file header"
+            "description": "MD5 hash of the pseudopotential file"
         },
         "type": {
             "type": "string",
@@ -30,6 +30,7 @@
         },
         "valenceConfiguration": {
             "type": "array",
+            "description": "contains pseudo orbital information, including orbital names and occupations",
             "items": {
                 "$ref": "../../../core/reusable/atomic_orbital.json"
             }
@@ -45,6 +46,10 @@
         "filename": {
             "type": "string",
             "description": "filename of pseudopotential file on filesystem"
+        },
+        "name": {
+            "type": "string",
+            "description": "name of the data category: pseudopotential"
         }
     },
     "required": [
