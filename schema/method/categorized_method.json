@@ -4,16 +4,13 @@
     "title": "categorized method schema",
     "allOf": [
         {
-            "$ref": "../system/name.json"
+            "$ref": "../system/path_entity.json"
         },
         {
             "$ref": "../system/tags.json"
         }
     ],
     "properties": {
-        "path": {
-            "$ref": "../core/reusable/category_path.json"
-        },
         "units": {
             "type": "array",
             "items": {

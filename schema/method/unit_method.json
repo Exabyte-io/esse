@@ -4,7 +4,7 @@
     "title": "unit method schema (base)",
     "allOf": [
         {
-            "$ref": "../system/name.json"
+            "$ref": "../system/path_entity.json"
         },
         {
             "$ref": "../system/tags.json"
@@ -14,10 +14,6 @@
         "categories": {
             "description": "Method categories",
             "$ref": "../core/reusable/categories.json"
-        },
-        "path": {
-            "description": "URL-like method path, e.g. physical/pw",
-            "$ref": "../core/reusable/category_path.json"
         },
         "parameters": {
             "description": "Instructive parameters defining the method",
