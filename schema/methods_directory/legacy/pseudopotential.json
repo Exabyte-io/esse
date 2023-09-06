@@ -1,0 +1,24 @@
+{
+    "$id": "methods-directory/legacy/pseudopotential",
+    "$schema": "http://json-schema.org/draft-04/schema#",
+    "title": "pseudopotential legacy method",
+    "allOf": [
+        {
+            "$ref": "../../method.json"
+        }
+    ],
+    "properties": {
+        "type": {
+            "enum": [
+                "pseudopotential"
+            ]
+        },
+        "subtype": {
+            "enum": [
+                "paw",
+                "nc",
+                "us"
+            ]
+        }
+    }
+}
