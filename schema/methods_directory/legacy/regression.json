@@ -1,7 +1,7 @@
 {
     "$id": "methods-directory/legacy/regression",
     "$schema": "http://json-schema.org/draft-04/schema#",
-    "title": "regression legacy method",
+    "title": "legacy method regression",
     "allOf": [
         {
             "$ref": "../../method.json"
