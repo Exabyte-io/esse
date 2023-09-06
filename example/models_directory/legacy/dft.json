@@ -1,0 +1,8 @@
+{
+    "type": "dft",
+    "subtype": "gga",
+    "functional": "pbe",
+    "method": {
+        "...": "include(../../method.json)"
+    }
+}
