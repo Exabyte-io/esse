@@ -1,7 +1,7 @@
 {
     "$id": "models-directory/legacy/ml",
     "$schema": "http://json-schema.org/draft-04/schema#",
-    "title": "ml model legacy",
+    "title": "legacy model regression",
     "allOf": [
         {
             "$ref": "../../model.json"

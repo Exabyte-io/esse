@@ -1,7 +1,7 @@
 {
     "$id": "models-directory/double-hybrid",
     "$schema": "http://json-schema.org/draft-04/schema#",
-    "title": "Double hybrid functional model schema",
+    "title": "model double hybrid functional",
     "allOf": [
         {
             "$ref": "../model/model_without_method.json"

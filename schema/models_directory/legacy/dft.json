@@ -1,7 +1,7 @@
 {
     "$id": "models-directory/legacy/dft",
     "$schema": "http://json-schema.org/draft-04/schema#",
-    "title": "dft model legacy",
+    "title": "legacy model density functional theory",
     "allOf": [
         {
             "$ref": "../../model.json"

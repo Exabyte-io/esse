@@ -1,7 +1,7 @@
 {
     "$id": "models-directory/legacy/unknown",
     "$schema": "http://json-schema.org/draft-04/schema#",
-    "title": "unknown model legacy",
+    "title": "legacy model unknown",
     "allOf": [
         {
             "$ref": "../../model.json"

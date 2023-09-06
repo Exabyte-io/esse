@@ -1,7 +1,7 @@
 {
     "$id": "models-directory/mgga",
     "$schema": "http://json-schema.org/draft-04/schema#",
-    "title": "Meta Generalized Gradient Approximation model schema",
+    "title": "model meta generalized gradient approximation",
     "allOf": [
         {
             "$ref": "../model/model_without_method.json"

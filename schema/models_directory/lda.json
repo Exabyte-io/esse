@@ -1,7 +1,7 @@
 {
     "$id": "models-directory/lda",
     "$schema": "http://json-schema.org/draft-04/schema#",
-    "title": "Local Density Approximation model schema",
+    "title": "model local density approximation",
     "allOf": [
         {
             "$ref": "../model/model_without_method.json"

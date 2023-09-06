@@ -1,7 +1,7 @@
 {
     "$id": "models-directory/re",
     "$schema": "http://json-schema.org/draft-04/schema#",
-    "title": "machine learning model schema",
+    "title": "model regression",
     "description": "machine learning model type/subtype schema",
     "allOf": [
         {
