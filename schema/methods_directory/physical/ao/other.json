@@ -1,6 +1,7 @@
 {
     "$id": "methods-directory/physical/ao/other",
     "$schema": "http://json-schema.org/draft-04/schema#",
+    "title": "unit method ao other",
     "description": "Other (neither Pople nor Dunning) basis set unit method",
     "allOf": [
         {

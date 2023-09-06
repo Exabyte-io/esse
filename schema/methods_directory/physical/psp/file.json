@@ -1,7 +1,7 @@
 {
     "$id": "methods-directory/physical/psp/file",
     "$schema": "http://json-schema.org/draft-04/schema#",
-    "title": "pseudopotential file schema",
+    "title": "pseudopotential file",
     "properties": {
         "element": {
             "type": "string",

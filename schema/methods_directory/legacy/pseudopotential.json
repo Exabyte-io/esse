@@ -1,7 +1,7 @@
 {
     "$id": "methods-directory/legacy/pseudopotential",
     "$schema": "http://json-schema.org/draft-04/schema#",
-    "title": "pseudopotential legacy method",
+    "title": "legacy method pseudopotential",
     "allOf": [
         {
             "$ref": "../../method.json"

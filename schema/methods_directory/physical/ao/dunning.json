@@ -1,6 +1,7 @@
 {
     "$id": "methods-directory/physical/ao/dunning",
     "$schema": "http://json-schema.org/draft-04/schema#",
+    "title": "unit method ao dunning",
     "description": "Dunning correlation-consistent basis set unit method",
     "allOf": [
         {

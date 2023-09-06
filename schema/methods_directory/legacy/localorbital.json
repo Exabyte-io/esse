@@ -1,7 +1,7 @@
 {
     "$id": "methods-directory/legacy/localorbital",
     "$schema": "http://json-schema.org/draft-04/schema#",
-    "title": "localorbital legacy method",
+    "title": "legacy method localorbital",
     "allOf": [
         {
             "$ref": "../../method.json"

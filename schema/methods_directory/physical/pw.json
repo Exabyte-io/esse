@@ -1,7 +1,7 @@
 {
     "$id": "methods-directory/physical/pw",
     "$schema": "http://json-schema.org/draft-04/schema#",
-    "title": "Plane wave method unit schema",
+    "title": "unit method plane wave",
     "description": "Approximating the electronic wave function with a plane wave basis",
     "allOf": [
         {

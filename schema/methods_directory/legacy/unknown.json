@@ -1,7 +1,7 @@
 {
     "$id": "methods-directory/legacy/unknown",
     "$schema": "http://json-schema.org/draft-04/schema#",
-    "title": "unknown legacy method",
+    "title": "legacy method unknown",
     "allOf": [
         {
             "$ref": "../../method.json"

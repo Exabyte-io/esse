@@ -1,6 +1,7 @@
 {
     "$id": "methods-directory/mathematical/cg",
     "$schema": "http://json-schema.org/draft-04/schema#",
+    "title": "unit method conjugate gradient",
     "description": "conjugate gradient method schema",
     "allOf": [
         {
