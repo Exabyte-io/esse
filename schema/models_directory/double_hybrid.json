@@ -31,5 +31,9 @@
                 }
             ]
         }
-    }
+    },
+    "required": [
+        "categories",
+        "parameters"
+    ]
 }
