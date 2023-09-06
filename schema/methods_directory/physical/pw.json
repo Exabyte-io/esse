@@ -12,5 +12,6 @@
         "categories": {
             "$ref": "../../methods_category/physical/qm/wf/pw.json"
         }
-    }
+    },
+    "required": ["categories"]
 }

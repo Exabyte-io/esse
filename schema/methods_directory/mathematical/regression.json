@@ -19,6 +19,7 @@
         }
     },
     "required": [
+        "categories",
         "precision",
         "data"
     ]

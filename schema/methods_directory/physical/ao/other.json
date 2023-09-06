@@ -19,6 +19,7 @@
             ]
         }
     },
+    "required": ["categories"],
     "definitions": {
         "ao-basis-other": {
             "properties": {

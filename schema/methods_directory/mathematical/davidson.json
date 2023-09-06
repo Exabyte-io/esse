@@ -11,5 +11,6 @@
         "categories": {
             "$ref": "../../methods_category/mathematical/linalg/diag/davidson.json"
         }
-    }
+    },
+    "required": ["categories"]
 }

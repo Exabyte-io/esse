@@ -19,6 +19,7 @@
             ]
         }
     },
+    "required": ["categories"],
     "definitions": {
         "ao-basis-dunning": {
             "properties": {
