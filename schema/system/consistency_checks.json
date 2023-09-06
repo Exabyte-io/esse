@@ -19,6 +19,7 @@
                     },
                     "checkName": {
                         "enum": [
+                            "default",
                             "atomsTooClose"
                         ],
                         "description": "Name of the consistency check which is exported as an enum"
