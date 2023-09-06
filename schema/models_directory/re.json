@@ -11,6 +11,9 @@
     "properties": {
         "categories": {
             "$ref": "../models_category/st/det/ml/re.json"
+        },
+        "parameters": {
+            "type": "object"
         }
     },
     "required": [
