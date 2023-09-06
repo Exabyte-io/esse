@@ -12,5 +12,9 @@
         "categories": {
             "$ref": "../models_category/st/det/ml/re.json"
         }
-    }
+    },
+    "required": [
+        "categories",
+        "parameters"
+    ]
 }
