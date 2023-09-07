@@ -9,16 +9,16 @@
             "pattern": "^[1-7][sSpPdDfF]$"
         },
         "orbitalIndex": {
-            "type": "number",
+            "type": "integer",
             "minimum": 1
         },
         "principalNumber": {
-            "type": "number",
+            "type": "integer",
             "minimum": 1,
             "maximum": 7
         },
         "angularMomentum": {
-            "type": "number",
+            "type": "integer",
             "minimum": 0,
             "maximum": 3
         },
