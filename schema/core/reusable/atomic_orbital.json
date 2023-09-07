@@ -1,5 +1,5 @@
 {
-    "$id": "core/reusable/atomic_orbital.json",
+    "$id": "core/reusable/atomic-orbital",
     "$schema": "http://json-schema.org/draft-04/schema#",
     "title": "atomic orbital schema",
     "type": "object",
