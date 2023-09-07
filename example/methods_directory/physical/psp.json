@@ -17,7 +17,10 @@
                 "version": "5.2",
                 "path": "/export/share/pseudo/si/gga/pbe/vasp/5.2/paw/default/POTCAR",
                 "type": "paw",
-                "exchangeCorrelation": "/pb/qm/dft/ksdft/gga?functional=pbe",
+                "exchangeCorrelation": {
+                    "approximation": "gga",
+                    "functional": "pbe"
+                },
                 "filename": "POTCAR",
                 "schemaVersion": "0.2.0",
                 "name": "pseudopotential",

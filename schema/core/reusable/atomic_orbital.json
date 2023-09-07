@@ -24,6 +24,7 @@
         },
         "occupation": {
             "type": "number",
+            "description": "Shell occupation",
             "minimum": 0,
             "maximum": 14
         }

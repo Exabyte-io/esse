@@ -25,8 +25,21 @@
             "description": "explains the version of where this came from"
         },
         "exchangeCorrelation": {
-            "$ref": "../../../core/reusable/category_path.json",
-            "description": "DFT model path, e.g. '/pb/qm/dft/ksdft/gga?functional=pbe'"
+            "properties": {
+                "approximation": {
+                    "description": "DFT approximation",
+                    "type": "string"
+                },
+                "functional": {
+                    "description": "Exchange correlation functional",
+                    "type": "string"
+                },
+                "path": {
+                    "description": "DFT model path, e.g. '/pb/qm/dft/ksdft/gga?functional=pbe'",
+                    "$ref": "../../../core/reusable/category_path.json"
+                }
+            }
+
         },
         "valenceConfiguration": {
             "type": "array",
