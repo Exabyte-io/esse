@@ -1,0 +1,41 @@
+{
+    "$id": "properties-directory/non-scalar/dielectric-tensor",
+    "$schema": "http://json-schema.org/draft-04/schema#",
+    "title": "dielectric tensor property",
+    "properties": {
+        "name": {
+            "enum": [
+                "dielectric_tensor"
+            ]
+        },
+        "diagonalReal": {
+            "description": "Real parts of the dielectric tensor diagonal components",
+            "$ref": "#/definitions/dielectric-function"
+        },
+        "diagonalImaginary": {
+            "description": "Imaginary parts of the dielectric tensor diagonal components",
+            "$ref": "#/definitions/dielectric-function"
+        }
+    },
+    "definitions": {
+        "dielectric-function": {
+            "type": "object",
+            "properties": {
+                "frequencies": {
+                    "description": "Frequencies in eV",
+                    "type": "array",
+                    "items": {
+                        "type": "number"
+                    }
+                },
+                "dielectricComponents": {
+                    "description": "Dielectric components, e.g. espr_x, espr_y, espr_z",
+                    "type": "array",
+                    "items": {
+                        "$ref": "../../core/primitive/array_of_3_numbers.json"
+                    }
+                }
+            }
+        }
+    }
+}
