@@ -19,7 +19,8 @@
                 "type": "paw",
                 "exchangeCorrelation": {
                     "approximation": "gga",
-                    "functional": "pbe"
+                    "functional": "pbe",
+                    "path": "/pb/qm/dft/ksdft/gga?functional=pbe"
                 },
                 "filename": "POTCAR",
                 "schemaVersion": "0.2.0",
