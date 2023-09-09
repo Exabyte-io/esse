@@ -1,0 +1,23 @@
+{
+    "$id": "core/reusable/frequency-function-matrix",
+    "$schema": "http://json-schema.org/draft-04/schema#",
+    "title": "",
+    "description": "Schema for a function of frequency yielding a nx3 matrix",
+    "type": "object",
+    "properties": {
+        "frequencies": {
+            "description": "Frequencies",
+            "type": "array",
+            "items": {
+                "type": "number"
+            }
+        },
+        "components": {
+            "description": "Matrix with 3 columns, e.g. x, y, z",
+            "type": "array",
+            "items": {
+                "$ref": "../primitive/array_of_3_numbers.json"
+            }
+        }
+    }
+}
