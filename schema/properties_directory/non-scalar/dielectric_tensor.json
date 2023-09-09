@@ -10,32 +10,17 @@
         },
         "diagonalReal": {
             "description": "Real parts of the dielectric tensor diagonal components",
-            "$ref": "#/definitions/dielectric-function"
+            "$ref": "../../core/reusable/frequency_function_matrix.json"
         },
         "diagonalImaginary": {
             "description": "Imaginary parts of the dielectric tensor diagonal components",
-            "$ref": "#/definitions/dielectric-function"
+            "$ref": "../../core/reusable/frequency_function_matrix.json"
+        },
+        "spin": {
+            "type": "number"
         }
     },
-    "definitions": {
-        "dielectric-function": {
-            "type": "object",
-            "properties": {
-                "frequencies": {
-                    "description": "Frequencies in eV",
-                    "type": "array",
-                    "items": {
-                        "type": "number"
-                    }
-                },
-                "dielectricComponents": {
-                    "description": "Dielectric components, e.g. espr_x, espr_y, espr_z",
-                    "type": "array",
-                    "items": {
-                        "$ref": "../../core/primitive/array_of_3_numbers.json"
-                    }
-                }
-            }
-        }
-    }
+    "required": [
+        "name"
+    ]
 }
