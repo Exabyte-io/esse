@@ -25,7 +25,7 @@
                 "properties": {
                     "X": {
                         "type": "string",
-                        "description": "label of the atom as specified in ATOMIC_SPECIE"
+                        "description": "label of the atom as specified in ATOMIC_SPECIES"
                     },
                     "x": {
                         "type": "number",
@@ -40,24 +40,18 @@
                         "description": "atomic positions"
                     },
                     "if_pos(1)": {
-                        "type": "number",
+                        "$ref": "../../../../../../core/primitive/integer_one_or_zero.json",
                         "default": 1,
-                        "minimum": 0,
-                        "maximum": 1,
                         "description": "component i of the force for this atom is multiplied by if_pos(i), which must be either 0 or 1.  Used to keep selected atoms and/or selected components fixed in MD dynamics or structural optimization run."
                     },
                     "if_pos(2)": {
-                        "type": "number",
+                        "$ref": "../../../../../../core/primitive/integer_one_or_zero.json",
                         "default": 1,
-                        "minimum": 0,
-                        "maximum": 1,
                         "description": "component i of the force for this atom is multiplied by if_pos(i), which must be either 0 or 1.  Used to keep selected atoms and/or selected components fixed in MD dynamics or structural optimization run."
                     },
                     "if_pos(3)": {
-                        "type": "number",
+                        "$ref": "../../../../../../core/primitive/integer_one_or_zero.json",
                         "default": 1,
-                        "minimum": 0,
-                        "maximum": 1,
                         "description": "component i of the force for this atom is multiplied by if_pos(i), which must be either 0 or 1.  Used to keep selected atoms and/or selected components fixed in MD dynamics or structural optimization run."
                     }
                 },

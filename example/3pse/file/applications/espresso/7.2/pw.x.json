@@ -26,13 +26,13 @@
         ],
         "Hubbard_occ": [
             [
-                1.1,
-                0.00,
+                1,
+                1,
                 0.00
             ],
             [
-                0.02,
-                0.02,
+                1,
+                2,
                 0.02
             ]
         ]
@@ -49,12 +49,12 @@
     "ATOMIC_SPECIES": {
         "values": [
             {
-                "x": "Cs",
+                "X": "Cs",
                 "Mass_X": 132.90543,
                 "PseudoPot_X": "Cs.upf"
             },
             {
-                "x": "Cl",
+                "X": "Cl",
                 "Mass_X": 35.4527,
                 "PseudoPot_X": "Cl.upf"
             }

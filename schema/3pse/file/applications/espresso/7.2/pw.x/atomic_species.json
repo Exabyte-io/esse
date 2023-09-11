@@ -11,7 +11,7 @@
                 "type": "object",
                 "additionalProperties": false,
                 "properties": {
-                    "x": {
+                    "X": {
                         "type": "string",
                         "description": "label of the atom. Acceptable syntax: chemical symbol X (1 or 2 characters, case-insensitive) or chemical symbol plus a number or a letter, as in \"Xn\" (e.g. Fe1) or \"X_*\" or \"X-*\" (e.g. C1, C_h; max total length cannot exceed 3 characters)"
                     },

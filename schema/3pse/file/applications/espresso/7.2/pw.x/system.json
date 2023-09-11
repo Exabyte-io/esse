@@ -78,7 +78,9 @@
             "type": "array",
             "items": {
                 "type": "number",
-                "default": 0
+                "default": 0,
+                "minimum": -1,
+                "maximum": 1
             }
         },
         "ecutwfc": {
@@ -304,11 +306,20 @@
             "type": "array",
             "items": {
                 "type": "array",
-                "items": {
-                    "type": "number"
-                },
-                "maxItems": 3,
-                "minItems": 3
+                "items": [
+                    {
+                        "type": "integer",
+                        "minimum": 1
+                    },
+                    {
+                        "type": "integer",
+                        "minimum": 1,
+                        "maximum": 3
+                    },
+                    {
+                        "type": "number"
+                    }
+                ]
             }
         },
         "Hubbard_alpha": {
