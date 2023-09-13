@@ -1,5 +1,5 @@
 {
-    "schemaId": "in-memory-entity/named-defaultable-has-metadata",
+    "$id": "in-memory-entity/named-defaultable-has-metadata",
     "$schema": "http://json-schema.org/draft-04/schema#",
     "title": "Named defaultable has metadata in-memory entity schema",
     "allOf": [

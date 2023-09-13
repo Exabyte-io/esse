@@ -1,0 +1,18 @@
+{
+    "$id": "methods-category/mathematical/regression",
+    "$schema": "http://json-schema.org/draft-04/schema#",
+    "title": "linear methods category schema",
+    "allOf": [
+        {
+            "$ref": "../../core/reusable/categories.json"
+        }
+    ],
+    "properties": {
+        "type": {
+            "$ref": "enum_options.json#/regressionTypes"
+        },
+        "subtype": {
+            "$ref": "enum_options.json#/regressionSubtypes"
+        }
+    }
+}

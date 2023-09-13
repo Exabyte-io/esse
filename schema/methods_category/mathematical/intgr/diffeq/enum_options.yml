@@ -1,0 +1,5 @@
+# --- Tier 3 enum slugs: Numerical Integration of Differential Equations ---
+firstOrder:
+  - order1 # First-order integrator, e.g. Euler method, Runge-Kutta (RK1) method
+secondOrder:
+  - order2 # Second-order integrator, e.g. Verlet method, Runge-Kutta (RK2) method

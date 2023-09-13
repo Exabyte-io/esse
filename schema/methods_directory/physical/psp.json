@@ -1,0 +1,28 @@
+{
+    "$id": "methods-directory/physical/psp",
+    "$schema": "http://json-schema.org/draft-04/schema#",
+    "title": "Pseudopotential unit method schema",
+    "description": "Core-valence separation by means of pseudopotentials (effective potential)",
+    "allOf": [
+        {
+            "$ref": "../../method/unit_method.json"
+        }
+    ],
+    "properties": {
+        "categories": {
+            "$ref": "../../methods_category/physical/qm/wf/psp.json"
+        },
+        "data": {
+            "type": "object",
+            "properties": {
+                "pseudo": {
+                    "description": "pseudopotential files",
+                    "type": "array",
+                    "items": {
+                        "$ref": "./psp/file.json"
+                    }
+                }
+            }
+        }
+    }
+}

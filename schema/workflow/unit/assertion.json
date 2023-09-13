@@ -1,5 +1,5 @@
 {
-    "schemaId": "workflow/unit/assertion",
+    "$id": "workflow/unit/assertion",
     "$schema": "http://json-schema.org/draft-04/schema#",
     "title": "assertion unit schema",
     "type": "object",

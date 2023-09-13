@@ -1,0 +1,15 @@
+{
+    "$id": "models-category/st/det",
+    "$schema": "http://json-schema.org/draft-04/schema#",
+    "title": "deterministic model category schema",
+    "allOf": [
+        {
+            "$ref": "../st.json"
+        }
+    ],
+    "properties": {
+        "tier2": {
+            "$ref": "enum_options.json#/deterministic"
+        }
+    }
+}

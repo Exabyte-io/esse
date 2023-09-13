@@ -1,0 +1,24 @@
+{
+    "$id": "methods-directory/mathematical/regression/data",
+    "$schema": "http://json-schema.org/draft-04/schema#",
+    "title": "regression data",
+    "type": "object",
+    "properties": {
+        "perProperty": {
+            "type": "array",
+            "items": {
+                "oneOf": [
+                    {
+                        "$ref": "linear/data_per_property.json"
+                    },
+                    {
+                        "$ref": "kernel_ridge/data_per_property.json"
+                    }
+                ]
+            }
+        },
+        "dataSet": {
+            "$ref": "dataset.json"
+        }
+    }
+}

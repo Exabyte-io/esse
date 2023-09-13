@@ -1,5 +1,5 @@
 {
-    "schemaId": "properties-directory/non-scalar/charge-density-profile",
+    "$id": "properties-directory/non-scalar/charge-density-profile",
     "$schema": "http://json-schema.org/draft-04/schema#",
     "title": "charge density profile schema",
     "allOf": [

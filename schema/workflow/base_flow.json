@@ -1,5 +1,5 @@
 {
-    "schemaId": "workflow/base-flow",
+    "$id": "workflow/base-flow",
     "$schema": "http://json-schema.org/draft-04/schema#",
     "title": "BaseFlow",
     "type": "object",

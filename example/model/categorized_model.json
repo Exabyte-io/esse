@@ -1,0 +1,33 @@
+{
+    "name": "PZ+U (magnetism)",
+    "categories": {
+        "tier1": {
+            "name": "physics-based",
+            "slug": "pb"
+        },
+        "tier2": {
+            "name": "quantum-mechanical",
+            "slug": "qm"
+        },
+        "tier3": {
+            "name": "density functional theory",
+            "slug": "dft"
+        },
+        "type": {
+            "name": "Kohn-Sham DFT",
+            "slug": "ksdft"
+        },
+        "subtype": {
+            "name": "Local Density Approximation",
+            "slug": "lda"
+        }
+    },
+    "parameters": {
+        "functional": "pz",
+        "spinPolarization": "collinear",
+        "hubbardType": "U"
+    },
+    "method": {
+        "...": "include(../method/categorized_method.json)"
+    }
+}

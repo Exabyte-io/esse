@@ -1,0 +1,17 @@
+{
+    "$id": "methods-category/physical/qm/wf/ao/pople",
+    "$schema": "http://json-schema.org/draft-04/schema#",
+    "description": "Pople basis set category schema",
+    "allOf": [
+        {
+            "$ref": "../ao.json"
+        }
+    ],
+    "properties": {
+        "subtype": {
+            "enum": [
+                "pople"
+            ]
+        }
+    }
+}

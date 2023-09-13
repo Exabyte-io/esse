@@ -1,0 +1,3 @@
+# --- Type enum slugs: Diagonalization methods ---
+davidson:
+  - davidson # https://doi.org/10.1016/0021-9991(75)90065-0

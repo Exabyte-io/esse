@@ -1,0 +1,43 @@
+# --- Type enum slugs ---
+# Wave function types
+planewave:
+  - pw # plane waves
+atomicOrbital:
+  - ao # atomic orbital basis
+wavelet:
+  - wvl # wavelet series
+# Brillouin Zone integration
+smearing:
+  - smearing # Occupation number smearing
+tetrahedron:
+  - tetrahedron # Tetrahedron method
+
+# --- SubType enum slugs ---
+pseudization:
+  - psp # Pseudopotential Approximation
+#
+# Pseudopotential
+pseudoSubtypes:
+  - us # ultra-soft
+  - nc # norm-conserving
+  - paw # projector augmented wave
+  - coulomb # Coulomb potential
+#
+# Occupation number smearing (Brillouin zone integration)
+smearingSubtypes:
+  - gaussian
+  - marzari-vanderbilt # Marzari-Vanderbilt smearing, doi:10.1103/PhysRevLett.82.3296
+  - methfessel-paxton # Methfessel-Paxton smearing, doi:10.1103/PhysRevB.40.3616
+  - fermi-dirac # uses Fermi-Dirac distribution instead of Heaviside step function
+#
+# Tetrahedron methods (Brillouin zone integration)
+tetrahedronSubtypes:
+  - linear # original linear tetrahedron method
+  - optimized # Optimized tetrahedron method by Kawamura, doi:10.1103/PhysRevB.89.094515
+  - bloechl # Tetrahedron method with Bloechl correction, doi:10.1103/PhysRevB.49.16223
+#
+# Atomic Orbital basis types
+aoTypes:
+  - pople
+  - dunning
+  - other

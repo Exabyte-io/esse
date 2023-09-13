@@ -1,0 +1,15 @@
+{
+    "$id": "methods-category/physical/qm/wf/pw",
+    "$schema": "http://json-schema.org/draft-04/schema#",
+    "description": "Plane wave catgeory schema",
+    "allOf": [
+        {
+            "$ref": "../wf.json"
+        }
+    ],
+    "properties": {
+        "type": {
+            "$ref": "./enum_options.json#/planewave"
+        }
+    }
+}

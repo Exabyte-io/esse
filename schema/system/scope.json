@@ -1,5 +1,5 @@
 {
-    "schemaId": "system/scope",
+    "$id": "system/scope",
     "$schema": "http://json-schema.org/draft-04/schema#",
     "title": "scope schema",
     "properties": {

@@ -1,5 +1,5 @@
 {
-    "schemaId": "core/primitive/string",
+    "$id": "core/primitive/string",
     "$schema": "http://json-schema.org/draft-04/schema#",
     "title": "PrimitiveString",
     "type": "object",

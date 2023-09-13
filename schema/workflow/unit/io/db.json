@@ -1,5 +1,5 @@
 {
-    "schemaId": "workflow/unit/io/db",
+    "$id": "workflow/unit/io/db",
     "$schema": "http://json-schema.org/draft-04/schema#",
     "title": "data IO database input/output schema",
     "type": "object",

@@ -1,0 +1,15 @@
+{
+    "$id": "models-category/pb/qm",
+    "$schema": "http://json-schema.org/draft-04/schema#",
+    "title": "Quantum mechanical category schema",
+    "allOf": [
+        {
+            "$ref": "../pb.json"
+        }
+    ],
+    "properties": {
+        "tier2": {
+            "$ref": "enum_options.json#/quantumMechanical"
+        }
+    }
+}

@@ -1,0 +1,20 @@
+{
+    "$id": "workflow/scope",
+    "$schema": "http://json-schema.org/draft-04/schema#",
+    "title": "workflow scope schema",
+    "type": "object",
+    "properties": {
+        "global": {
+            "type": "object",
+            "additionalProperties": true
+        },
+        "local": {
+            "type": "object",
+            "additionalProperties": true
+        }
+    },
+    "required": [
+        "global",
+        "local"
+    ]
+}

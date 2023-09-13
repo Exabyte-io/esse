@@ -1,0 +1,15 @@
+{
+    "$id": "methods-category/mathematical/linalg/diag/davidson",
+    "$schema": "http://json-schema.org/draft-04/schema#",
+    "description": "Davidson diagonalization method",
+    "allOf": [
+        {
+            "$ref": "../diag.json"
+        }
+    ],
+    "properties": {
+        "type": {
+            "$ref": "enum_options.json#/davidson"
+        }
+    }
+}

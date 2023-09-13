@@ -14,7 +14,7 @@ export class ESSE {
     }
 
     getSchemaById(schemaId) {
-        return this.schemas.find((schema) => schema.schemaId === schemaId);
+        return this.schemas.find((schema) => schema.$id === schemaId);
     }
 
     /**
@@ -30,6 +30,7 @@ export class ESSE {
 
     buildGlobalSchema() {
         return {
+            $id: "esse-global-schema",
             $schema: "http://json-schema.org/draft-04/schema#",
             title: "Global schema",
             type: "object",

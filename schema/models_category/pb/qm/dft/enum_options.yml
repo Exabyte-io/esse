@@ -1,0 +1,3 @@
+# --- Type enum slugs: Density-functional Theory ---
+kohnSham:
+  - ksdft # Kohn-Sham DFT

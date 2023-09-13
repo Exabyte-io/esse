@@ -36,6 +36,8 @@ def parseIncludeReferenceStatementsByDir(dir_path):
     data = []
     for root, dirs, files in os.walk(dir_path):
         for file_ in files:
+            if os.path.splitext(file_)[1] != ".json":
+                continue
             file_path = os.path.join(root, file_)
             data.append(parseIncludeReferenceStatements(file_path))
     return data
@@ -102,8 +104,8 @@ def set_schema_id(path_):
     content = read_json_file(path_)
     if not content.get("$schema"):
         return  # do not add ID to non-schema files
-    if content.get("schemaId"):
-        del content["schemaId"]
+    if content.get("$id"):
+        del content["$id"]
     schema_id = slugify(path_.replace("{}/".format(SCHEMAS_DIR), "").replace(".json", ""))
     content = OrderedDict(list(OrderedDict({"schemaId": schema_id}).items()) + list(content.items()))
     dump_json_file(path_, content, False)

@@ -1,0 +1,25 @@
+{
+    "$id": "methods-directory/mathematical/regression",
+    "$schema": "http://json-schema.org/draft-04/schema#",
+    "title": "linear methods schema",
+    "allOf": [
+        {
+            "$ref": "../../method/unit_method.json"
+        }
+    ],
+    "properties": {
+        "categories": {
+            "$ref": "../../methods_category/mathematical/regression.json"
+        },
+        "precision": {
+            "$ref": "regression/precision.json"
+        },
+        "data": {
+            "$ref": "regression/data.json"
+        }
+    },
+    "required": [
+        "precision",
+        "data"
+    ]
+}

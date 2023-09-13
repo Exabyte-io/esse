@@ -42,9 +42,6 @@ setup(
             "coverage[toml]>=5.3",
         ]
     },
-    entry_points={
-        "console_scripts": ["generate_dft_unit_functionals=esse.functionals:generate_dft_unit_functionals"],
-    },
     python_requires=">=3.6",
     classifiers=[
         "Programming Language :: Python",

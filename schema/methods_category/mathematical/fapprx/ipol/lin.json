@@ -1,0 +1,15 @@
+{
+    "$id": "methods-category/mathematical/fapprx/ipol/lin",
+    "$schema": "http://json-schema.org/draft-04/schema#",
+    "description": "Linear interpolation category schema",
+    "allOf": [
+        {
+            "$ref": "../ipol.json"
+        }
+    ],
+    "properties": {
+        "tier3": {
+            "$ref": "enum_options.json#/linear"
+        }
+    }
+}

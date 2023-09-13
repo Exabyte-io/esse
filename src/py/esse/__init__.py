@@ -3,13 +3,6 @@ import jsonschema
 from esse.utils import parseIncludeReferenceStatementsByDir
 from esse.settings import SCHEMAS_DIR, EXAMPLES_DIR, PROPERTIES_MANIFEST
 
-# from esse.functionals import generate_dft_unit_functionals
-
-## Note: We're disabling this for now to avoid a bug discovered in deployment - files are not necessarily writeable
-## in the installed context, if the calling code is executed with a different user than the one that owns the install
-## directory.  The function can be run manually with the `generate_dft_unit_functionals` command line script generated
-## in setup.py when esse is installed.
-# generate_dft_unit_functionals()
 SCHEMAS = parseIncludeReferenceStatementsByDir(SCHEMAS_DIR)
 EXAMPLES = parseIncludeReferenceStatementsByDir(EXAMPLES_DIR)
 
@@ -24,7 +17,7 @@ class ESSE(object):
         self.examples = EXAMPLES
 
     def get_schema_by_id(self, schemaId):
-        return next((s for s in SCHEMAS if s.get("schemaId") == schemaId), None)
+        return next((s for s in SCHEMAS if s.get("$id") == schemaId), None)
 
     def validate(self, example, schema):
         """

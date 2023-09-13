@@ -1,0 +1,16 @@
+{
+    "$id": "methods-directory/physical/smearing",
+    "$schema": "http://json-schema.org/draft-04/schema#",
+    "title": "Smearing methods schema for partial occupancies (Brillouin zone integration for metals)",
+    "description": "Approximating Heaviside step function with smooth function",
+    "allOf": [
+        {
+            "$ref": "../../method/unit_method.json"
+        }
+    ],
+    "properties": {
+        "categories": {
+            "$ref": "../../methods_category/physical/qm/wf/smearing.json"
+        }
+    }
+}

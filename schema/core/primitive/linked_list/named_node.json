@@ -1,0 +1,14 @@
+{
+    "$id": "core/primitive/linked-list/named-node",
+    "$schema": "http://json-schema.org/draft-04/schema#",
+    "title": "Named node schema",
+    "type": "object",
+    "allOf": [
+        {
+            "$ref": "base_node.json"
+        },
+        {
+            "$ref": "../../../system/name.json"
+        }
+    ]
+}

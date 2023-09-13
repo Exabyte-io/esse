@@ -1,5 +1,5 @@
 {
-    "schemaId": "properties-directory/scalar/electron-affinity",
+    "$id": "properties-directory/scalar/electron-affinity",
     "$schema": "http://json-schema.org/draft-04/schema#",
     "title": "electron affinity schema",
     "allOf": [

@@ -1,11 +1,14 @@
 {
-    "schemaId": "workflow/unit",
+    "$id": "workflow/unit",
     "$schema": "http://json-schema.org/draft-04/schema#",
     "title": "workflow unit schema",
     "type": "object",
     "allOf": [
         {
             "$ref": "../in_memory_entity/named_defaultable_runtime_items.json"
+        },
+        {
+            "$ref": "../system/tags.json"
         }
     ],
     "properties": {

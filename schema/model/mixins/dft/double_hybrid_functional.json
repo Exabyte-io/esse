@@ -1,0 +1,12 @@
+{
+    "$id": "model/mixins/dft/double-hybrid-functional",
+    "$schema": "http://json-schema.org/draft-04/schema#",
+    "title": "Double hybrid functional mixin",
+    "type": "object",
+    "properties": {
+        "functional": {
+            "type": "string",
+            "$ref": "./enum_options.json#/doubleHybrid"
+        }
+    }
+}

@@ -1,5 +1,5 @@
 {
-    "schemaId": "workflow/unit/runtime/-runtime-item-string",
+    "$id": "workflow/unit/runtime/-runtime-item-string",
     "$schema": "http://json-schema.org/draft-04/schema#",
     "title": "RuntimeItemString",
     "description": "name of runtime item in shortened notation",

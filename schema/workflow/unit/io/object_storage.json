@@ -1,5 +1,5 @@
 {
-    "schemaId": "workflow/unit/io/object-storage",
+    "$id": "workflow/unit/io/object-storage",
     "$schema": "http://json-schema.org/draft-04/schema#",
     "title": "object_storage io schema",
     "type": "object",

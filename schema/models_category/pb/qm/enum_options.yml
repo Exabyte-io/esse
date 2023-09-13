@@ -1,0 +1,7 @@
+# --- Tier 3 enum slugs: Quantum-mechanical models ---
+abInitio:
+  - abin # Ab-initio models, e.g. Hartree-Fock, Configuration Interaction, etc.
+densityFunctional:
+  - dft # Density functional based models, e.g. Kohn-Sham DFT
+semiEmpirical:
+  - semp # Semi-empirical models, e.g. INDO, NDDO, AM1, PM3

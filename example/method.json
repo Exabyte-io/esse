@@ -1,8 +1,6 @@
 {
     "data": {
-        "dataset": {
-            "...": "include(methods_directory/pseudopotential/dataset.json)"
-        }
+        "pseudo": []
     },
     "subtype": "us",
     "type": "pseudopotential"

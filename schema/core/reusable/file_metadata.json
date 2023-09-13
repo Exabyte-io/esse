@@ -1,5 +1,5 @@
 {
-    "schemaId": "core/reusable/file-metadata",
+    "$id": "core/reusable/file-metadata",
     "$schema": "http://json-schema.org/draft-04/schema#",
     "title": "file_metadata",
     "properties": {
@@ -9,7 +9,8 @@
         },
         "basename": {
             "description": "Basename of the file",
-            "type": "string"
+            "type": "string",
+            "$comment": "isGenerative:true"
         },
         "filetype": {
             "description": "What kind of file this is, e.g. image / text",

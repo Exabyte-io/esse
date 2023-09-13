@@ -1,0 +1,34 @@
+{
+    "$id": "core/primitive/linked-list/base-node",
+    "$schema": "http://json-schema.org/draft-04/schema#",
+    "title": "basic node schema (linked list)",
+    "type": "object",
+    "allOf": [
+        {
+            "$ref": "#/definitions/flowchart-id"
+        }
+    ],
+    "properties": {
+        "next": {
+            "description": "Flowchart ID of next node",
+            "type": "string"
+        },
+        "head": {
+            "description": "Whether node is head node or not",
+            "type": "boolean"
+        }
+    },
+    "definitions": {
+        "flowchart-id": {
+            "properties": {
+                "flowchartId": {
+                    "description": "Unique flowchart ID of node",
+                    "type": "string"
+                }
+            },
+            "required": [
+                "flowchartId"
+            ]
+        }
+    }
+}

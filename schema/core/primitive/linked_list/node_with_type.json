@@ -1,0 +1,16 @@
+{
+    "$id": "core/primitive/linked-list/node-with-type",
+    "$schema": "http://json-schema.org/draft-04/schema#",
+    "title": "Typed node schema",
+    "type": "object",
+    "allOf": [
+        {
+            "$ref": "base_node.json"
+        }
+    ],
+    "properties": {
+        "type": {
+            "type": "string"
+        }
+    }
+}

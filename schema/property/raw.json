@@ -1,5 +1,5 @@
 {
-    "schemaId": "property/raw",
+    "$id": "property/raw",
     "$schema": "http://json-schema.org/draft-04/schema#",
     "title": "Schema of material's preliminary property",
     "allOf": [

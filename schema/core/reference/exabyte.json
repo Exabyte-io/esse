@@ -1,5 +1,5 @@
 {
-    "schemaId": "core/reference/exabyte",
+    "$id": "core/reference/exabyte",
     "$schema": "http://json-schema.org/draft-04/schema#",
     "type": "object",
     "properties": {

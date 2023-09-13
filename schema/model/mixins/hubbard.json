@@ -1,0 +1,12 @@
+{
+    "$id": "model/mixins/hubbard",
+    "$schema": "http://json-schema.org/draft-04/schema#",
+    "title": "Hubbard model mixin",
+    "type": "object",
+    "properties": {
+        "hubbardType": {
+            "type": "string",
+            "$ref": "./enum_options.json#/hubbardType"
+        }
+    }
+}

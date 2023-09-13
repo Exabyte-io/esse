@@ -1,0 +1,9 @@
+# --- Tier 2 enum slugs: Integration methods ---
+analytic:
+  - analytic # Analytic integral category
+differentialEquation:
+  - diffeq # Numerical integration of differential equations category
+numericalQuadrature:
+  - numquad # Numerical Quadrature category
+transformation:
+  - transf # Integral transformation category

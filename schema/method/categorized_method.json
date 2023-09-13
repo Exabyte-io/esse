@@ -1,0 +1,27 @@
+{
+    "$id": "method/categorized-method",
+    "$schema": "http://json-schema.org/draft-04/schema#",
+    "title": "categorized method schema",
+    "allOf": [
+        {
+            "$ref": "../system/name.json"
+        },
+        {
+            "$ref": "../system/tags.json"
+        }
+    ],
+    "properties": {
+        "path": {
+            "$ref": "../core/reusable/category_path.json"
+        },
+        "units": {
+            "type": "array",
+            "items": {
+                "$ref": "./unit_method.json"
+            }
+        }
+    },
+    "required": [
+        "units"
+    ]
+}

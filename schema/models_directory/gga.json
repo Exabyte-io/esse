@@ -1,0 +1,38 @@
+{
+    "$id": "models-directory/gga",
+    "$schema": "http://json-schema.org/draft-04/schema#",
+    "title": "Generalized Gradient Approximation model schema",
+    "allOf": [
+        {
+            "$ref": "../model/model_without_method.json"
+        }
+    ],
+    "properties": {
+        "categories": {
+            "$ref": "../models_category/pb/qm/dft/ksdft/gga.json"
+        },
+        "parameters": {
+            "allOf": [
+                {
+                    "$ref": "../model/mixins/dft/gga_functional.json"
+                },
+                {
+                    "anyOf": [
+                        {
+                            "$ref": "../model/mixins/spin_orbit_coupling.json"
+                        },
+                        {
+                            "$ref": "../model/mixins/dispersion_correction.json"
+                        },
+                        {
+                            "$ref": "../model/mixins/spin_polarization.json"
+                        },
+                        {
+                            "$ref": "../model/mixins/hubbard.json"
+                        }
+                    ]
+                }
+            ]
+        }
+    }
+}
