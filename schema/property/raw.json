@@ -44,8 +44,8 @@
             "items": {
                 "type": "string",
                 "enum": [
-                    "refined",
-                    "best"
+                    "isRefined",
+                    "isBest"
                 ]
             }
         }
