@@ -62,7 +62,8 @@
         },
         "name": {
             "type": "string",
-            "description": "name of the data category: pseudopotential"
+            "description": "name of the data category",
+            "enum": ["pseudopotential"]
         }
     },
     "required": [
