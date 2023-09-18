@@ -19,13 +19,6 @@
         },
         "systemName": {
             "type": "string"
-        },
-        "systemTags": {
-            "description": "entity system tags, marks property system characteristics",
-            "type": "array",
-            "items": {
-                "type": "string"
-            }
         }
     }
 }
