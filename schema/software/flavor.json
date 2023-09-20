@@ -42,7 +42,7 @@
         "parameters": {
             "type": "array",
             "items": {
-                "$ref": "../template_parameters.json",
+                "$ref": "./template_parameters.json",
                 "description": "template parameters associated with the flavor"
             }
         }
