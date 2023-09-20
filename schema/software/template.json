@@ -17,13 +17,6 @@
         },
         "executableName": {
             "type": "string"
-        },
-        "contextProviders": {
-            "type": "array",
-            "items": {
-                "description": "render context provider names",
-                "$ref": "../workflow/unit/runtime/_runtime_item_name_object.json"
-            }
         }
     },
     "required": [

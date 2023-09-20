@@ -31,6 +31,20 @@
             "items": {
                 "$ref": "../workflow/unit/input/_inputItemId.json"
             }
+        },
+        "contextProviders": {
+            "type": "array",
+            "items": {
+                "description": "render context provider names",
+                "$ref": "../workflow/unit/runtime/_runtime_item_name_object.json"
+            }
+        },
+        "parameters": {
+            "type": "array",
+            "items": {
+                "$ref": "../template_parameters.json",
+                "description": "template parameters associated with the flavor"
+            }
         }
     },
     "required": [
