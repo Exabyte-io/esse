@@ -39,7 +39,7 @@
                 "$ref": "../workflow/unit/runtime/_runtime_item_name_object.json"
             }
         },
-        "parameters": {
+        "templateParameters": {
             "type": "array",
             "items": {
                 "$ref": "./template_parameters.json",
