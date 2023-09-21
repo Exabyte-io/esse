@@ -46,6 +46,7 @@
         "input",
         "statement",
         "then",
-        "else"
+        "else",
+        "maxOccurrences"
     ]
 }
