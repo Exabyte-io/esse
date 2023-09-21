@@ -1,0 +1,51 @@
+{
+    "fixedContext": {
+        "control": {
+            "calculation": "scf",
+            "verbosity": "low",
+            "wf_collect": true,
+            "tstress": true,
+            "tprnfor": true
+        },
+        "system": {
+            "occupations": "smearing",
+            "degauss": 0.005
+        },
+        "electrons": {
+            "diagonalization": "david",
+            "diago_david_ndim": 4,
+            "diago_full_acc": true,
+            "mixing_beta": 0.3,
+            "startingwfc": "atomic+random"
+        }
+    },
+    "requiredKeys": [
+        "control.restart_mode",
+        "control.outdir",
+        "control.wfcdir",
+        "control.pseudo_dir",
+        "system.ibrav",
+        "system.nat",
+        "system.ntyp",
+        "system.ecutwfc",
+        "system.ecutrho",
+        "atomic_species.x",
+        "atomic_species.mass_x",
+        "atomic_species.pseudopot_x",
+        "atomic_positions.x",
+        "atomic_positions.pos_x",
+        "atomic_positions.pos_y",
+        "atomic_positions.pos_z",
+        "cell_parameters.v1",
+        "cell_parameters.v2",
+        "cell_parameters.v3",
+        "k_points.dimensions",
+        "k_points.shifts"
+    ],
+    "conflictingKeys": [
+        "system.vdw_corr",
+        "system.london_s6",
+        "system.london_c6",
+        "system.dftd3_version"
+    ]
+}

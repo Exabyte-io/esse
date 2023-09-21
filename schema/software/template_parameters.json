@@ -9,11 +9,17 @@
             "description": "fixed parameters for the template"
         },
         "requiredKeys": {
-            "type": "object",
+            "type": "array",
+            "items": {
+                "type": "string"
+            },
             "description": "keys required to run the flavor"
         },
         "conflictingKeys": {
-            "type": "object",
+            "type": "array",
+            "items": {
+                "type": "string"
+            },
             "description": "keys that interfere with the flavor and cannot be used"
 
         }
