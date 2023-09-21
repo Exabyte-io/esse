@@ -20,7 +20,6 @@
     },
     "required": [
         "fixedContext",
-        "requiredKeys",
-        "conflictingKeys"
+        "requiredKeys"
     ]
 }
