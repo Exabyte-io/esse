@@ -6,7 +6,7 @@
     "type": "object",
     "additionalProperties": false,
     "properties": {
-        "card": {
+        "card_option": {
             "type": "string",
             "enum": [
                 "alat",

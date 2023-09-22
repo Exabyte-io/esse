@@ -61,7 +61,7 @@
         ]
     },
     "CELL_PARAMETERS": {
-        "card": "angstrom",
+        "card_option": "angstrom",
         "values": {
             "v1": [
                 4.324582724,
@@ -81,7 +81,7 @@
         }
     },
     "K_POINTS": {
-        "card": "automatic",
+        "card_option": "automatic",
         "values": {
             "nk1": 2,
             "nk2": 2,
