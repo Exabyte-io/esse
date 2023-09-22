@@ -10,19 +10,37 @@
     "data": {
         "pseudo": [
             {
-                "_id": "56f26f3c9abea1134ba0c50e",
-                "textHeading": "VRHFIN =Si: s2p2\n   LEXCH  = PE\n   EATOM  =   103.0669 eV,    7.5752 Ry\n\n   TITEL  = PAW_PBE Si 05Jan2001\n   LULTRA =        F    use ultrasoft PP ?\n   IUNSCR =        1    unscreen: 0-lin 1-nonlin 2-no\n   RPACOR =    1.500    partial core radius\n   POMASS =   28.085; ZVAL   =    4.000    mass and valenz\n   RCORE  =    1.900    outmost cutoff radius\n   RWIGS  =    2.480; RWIGS  =    1.312    wigner-seitz radius (au A)\n   ENMAX  =  245.345; ENMIN  =  184.009 eV\n   ICORE  =        2    local potential\n   LCOR   =        T    correct aug charges\n   LPAW   =        T    paw PP\n   EAUG   =  322.069\n   DEXC   =    0.000\n   RMAX   =    1.950    core radius for proj-oper\n   RAUG   =    1.300    factor for augmentation sphere\n   RDEP   =    1.993    radius for radial grids\n   RDEPT  =    1.837    core radius for aug-charge\n \n   Atomic configuration\n    6 entries\n     n  l   j            E        occ.\n     1  0  0.50     -1785.8828   2.0000\n     2  0  0.50      -139.4969   2.0000\n     2  1  1.50       -95.5546   6.0000\n     3  0  0.50       -10.8127   2.0000\n     3  1  0.50        -4.0811   2.0000\n     3  2  1.50        -4.0817   0.0000\n   Description\n     l       E           TYP  RCUT    TYP  RCUT\n     0    -10.8127223     23  1.900\n     0     -7.6451159     23  1.900\n     1     -4.0811372     23  1.900\n     1      2.4879257     23  1.900\n     2     -4.0817478      7  1.900\n   Error from kinetic energy argument (eV)\n   NDATA  =      100\n   STEP   =   20.000   1.050\n  10.1      9.04      8.56      7.65      7.23      6.44      5.73      5.40\n  4.79      4.25      4.00      3.54      3.13      2.77      2.45      2.16\n  1.91      1.69      1.50      1.24      1.10     0.975     0.812     0.718\n 0.636     0.529     0.440     0.388     0.322     0.266     0.219     0.180\n 0.148     0.121     0.986E-01 0.804E-01 0.614E-01 0.504E-01 0.392E-01 0.328E-01\n 0.265E-01 0.220E-01 0.189E-01 0.166E-01 0.149E-01 0.135E-01 0.123E-01 0.109E-01\n 0.977E-02 0.840E-02 0.707E-02 0.605E-02 0.488E-02 0.387E-02 0.290E-02 0.229E-02\n 0.185E-02 0.152E-02 0.134E-02 0.125E-02 0.121E-02 0.117E-02 0.112E-02 0.102E-02\n 0.915E-03 0.776E-03 0.640E-03 0.524E-03 0.425E-03 0.369E-03 0.331E-03 0.310E-03\n 0.294E-03 0.273E-03 0.242E-03 0.210E-03 0.175E-03 0.146E-03 0.124E-03 0.113E-03\n 0.105E-03 0.973E-04 0.879E-04 0.755E-04 0.633E-04 0.539E-04 0.478E-04 0.438E-04\n 0.404E-04 0.362E-04 0.308E-04 0.264E-04 0.229E-04 0.209E-04 0.192E-04 0.170E-04\n 0.145E-04 0.126E-04 0.112E-04 0.103E-04",
-                "apps": [
-                    "vasp"
-                ],
+                "hash": "4e058592231fc4e091ac0c92d87797b0",
+                "apps": ["vasp"],
                 "element": "Si",
                 "source": "vasp",
                 "version": "5.2",
                 "path": "/export/share/pseudo/si/gga/pbe/vasp/5.2/paw/default/POTCAR",
                 "type": "paw",
-                "exchangeCorrelation": "/pb/qm/dft/ksdft/gga?functional=pbe",
+                "exchangeCorrelation": {
+                    "approximation": "gga",
+                    "functional": "pbe",
+                    "path": "/pb/qm/dft/ksdft/gga?functional=pbe"
+                },
                 "filename": "POTCAR",
                 "schemaVersion": "0.2.0",
+                "name": "pseudopotential",
+                "valenceConfiguration": [
+                    {
+                        "orbitalName": "3S",
+                        "orbitalIndex": 1,
+                        "principalNumber": 3,
+                        "angularMomentum": 0,
+                        "occupation": 2
+                    },
+                    {
+                        "orbitalName": "3P",
+                        "orbitalIndex": 2,
+                        "principalNumber": 3,
+                        "angularMomentum": 1,
+                        "occupation": 2
+                    }
+                ],
                 "inSet": [],
                 "tags": []
             }
