@@ -21,8 +21,8 @@
         "occupations": "smearing",
         "degauss": 0.005,
         "starting_magnetization": [
-            0.01,
-            0.02
+            [1, 0.01],
+            [2, 0.02]
         ],
         "Hubbard_occ": [
             [
