@@ -173,7 +173,7 @@
                                 "description": "https://www.quantum-espresso.org/Doc/INPUT_PW.html#idm1884",
                                 "additionalProperties": false,
                                 "properties": {
-                                    "V": {
+                                    "hubbard_param": {
                                         "type": "string",
                                         "enum": [
                                             "V"
@@ -204,7 +204,7 @@
                                         "type": "integer",
                                         "description": "index of the atom J"
                                     },
-                                    "v_val(I,J)": {
+                                    "hubbard_val": {
                                         "type": "number",
                                         "description": "value of the V parameter for the atom pair I,J (in eV)"
                                     }
