@@ -23,6 +23,31 @@
         },
         "source": {
             "$ref": "source.json"
+        },
+        "exabyteId": {
+            "description": "Id of the corresponding item in the entity bank that this property is obtained for",
+            "type": "array",
+            "items": {
+                "type": "string"
+            }
+        },
+        "precision": {
+            "type": "object"
+        },
+        "count": {
+            "description": "total number of properties among which this property is the best.",
+            "type": "number"
+        },
+        "systemTags": {
+            "description": "property system tags, marks property system characteristics, values refined or best (could be both)",
+            "type": "array",
+            "items": {
+                "type": "string",
+                "enum": [
+                    "isRefined",
+                    "isBest"
+                ]
+            }
         }
     },
     "required": [
