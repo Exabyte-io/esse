@@ -4,7 +4,7 @@
     "title": "Schema of material's meta properties",
     "allOf": [
         {
-            "$ref": "base.json"
+            "$ref": "raw.json"
         }
     ]
 }
