@@ -25,7 +25,13 @@ export class ESSE {
      */
     validate = (example, schema) => {
         const ajv = new Ajv({ allErrors: true });
-        return ajv.validate(schema, example);
+        const isValid = ajv.validate(schema, example);
+
+        if (!isValid) {
+            console.error(ajv.errors);
+        }
+
+        return isValid;
     };
 
     buildGlobalSchema() {

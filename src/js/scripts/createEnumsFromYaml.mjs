@@ -39,8 +39,5 @@ walkDir(SCHEMA_DIR, (filePath) => {
     const obj = yaml.load(fileContents);
     const enumObj = lodash.mapValues(obj, (value) => ({ enum: value }));
 
-    fs.writeFileSync(
-        `${path.join(dirname, outFilename)}`,
-        `${JSON.stringify(enumObj, null, 4)}\n`,
-    );
+    fs.writeFileSync(`${path.join(dirname, outFilename)}`, `${JSON.stringify(enumObj, null, 4)}\n`);
 });
