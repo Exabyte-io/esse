@@ -1,0 +1,31 @@
+{
+    "$id": "software/template_parameters.json",
+    "$schema": "http://json-schema.org/draft-04/schema#",
+    "title": "template parameters schema",
+    "type": "object",
+    "properties": {
+        "fixedContext": {
+            "type": "object",
+            "description": "fixed parameters for the template"
+        },
+        "requiredKeys": {
+            "type": "array",
+            "items": {
+                "type": "string"
+            },
+            "description": "keys required to run the flavor"
+        },
+        "conflictingKeys": {
+            "type": "array",
+            "items": {
+                "type": "string"
+            },
+            "description": "keys that interfere with the flavor and cannot be used"
+
+        }
+    },
+    "required": [
+        "fixedContext",
+        "requiredKeys"
+    ]
+}
