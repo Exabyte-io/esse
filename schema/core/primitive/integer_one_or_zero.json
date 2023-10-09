@@ -2,7 +2,7 @@
     "$id": "core/primitive/integer-one-or-zero",
     "$schema": "http://json-schema.org/draft-04/schema#",
     "title": "integer one or zero",
-    "type": "number",
+    "type": "integer",
     "minimum": 0,
     "maximum": 1
 }
