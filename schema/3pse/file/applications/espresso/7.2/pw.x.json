@@ -1,7 +1,7 @@
 {
     "$id": "3pse/file/applications/espresso/7.2/pw.x",
     "$schema": "http://json-schema.org/draft-04/schema#",
-    "title": "pwx main schema",
+    "title": "pwx schema",
     "additionalProperties": false,
     "properties": {
         "control": {
