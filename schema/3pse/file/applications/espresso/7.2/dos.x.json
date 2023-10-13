@@ -1,0 +1,52 @@
+{
+    "$id": "3pse/file/applications/espresso/7.2/dos.x",
+    "$schema": "http://json-schema.org/draft-04/schema#",
+    "title": "dosx schema",
+    "additionalProperties": false,
+    "description": "https://www.quantum-espresso.org/Doc/INPUT_DOS.html",
+    "properties": {
+        "dos": {
+            "type": "object",
+            "properties": {
+                "prefix": {
+                    "type": "string",
+                    "default": "pwscf"
+                },
+                "outdir": {
+                    "type": "string"
+                },
+                "bz_sum": {
+                    "type": "string",
+                    "enum": ["smearing", "tetrahedra", "tetrahedra_lin", "tetrahedra_opt"],
+                    "default": "smearing"
+                },
+                "ngauss": {
+                    "type": "integer",
+                    "enum": [0, 1, -1, -99]
+                },
+                "degauss": {
+                    "type": "number"
+                },
+                "Emin": {
+                    "type": "number"
+                },
+                "Emax": {
+                    "type": "number"
+                },
+                "DeltaE": {
+                    "type": "number"
+                },
+                "fildos": {
+                    "type": "string"
+                }
+            },
+            "required": [
+                "DeltaE"
+            ]
+        }
+
+    },
+    "required": [
+        "dos"
+    ]
+}

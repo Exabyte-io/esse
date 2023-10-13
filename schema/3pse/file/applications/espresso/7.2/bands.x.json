@@ -1,0 +1,86 @@
+{
+    "$id": "3pse/file/applications/espresso/7.2/bands.x",
+    "$schema": "http://json-schema.org/draft-04/schema#",
+    "title": "bandsx schema",
+    "additionalProperties": false,
+    "description": "https://www.quantum-espresso.org/Doc/INPUT_BANDS.html",
+    "properties": {
+        "prefix": {
+            "type": "string",
+            "default": "pwscf",
+            "description": "https://www.quantum-espresso.org/Doc/INPUT_BANDS.html#idm13"
+        },
+        "outdir": {
+            "type": "string",
+            "description": "https://www.quantum-espresso.org/Doc/INPUT_BANDS.html#idm16"
+        },
+        "filband": {
+            "type": "string",
+            "default": "bands.out",
+            "description": "https://www.quantum-espresso.org/Doc/INPUT_BANDS.html#idm19"
+        },
+        "spin_component": {
+            "type": "integer",
+            "minimum": 1,
+            "maximum": 2,
+            "description": "https://www.quantum-espresso.org/Doc/INPUT_BANDS.html#idm22"
+        },
+        "lsigma": {
+            "type": "array",
+            "items": {
+                "type": "boolean",
+                "minItems": 3
+            },
+            "description": "https://www.quantum-espresso.org/Doc/INPUT_BANDS.html#idm24"
+        },
+        "lp": {
+            "type": "boolean",
+            "default": false,
+            "description": "https://www.quantum-espresso.org/Doc/INPUT_BANDS.html#idm26"
+        },
+        "filp": {
+            "type": "string",
+            "default": "p_avg.dat",
+            "description": "https://www.quantum-espresso.org/Doc/INPUT_BANDS.html#idm30"
+        },
+        "lsym": {
+            "type": "boolean",
+            "default": true,
+            "description": "https://www.quantum-espresso.org/Doc/INPUT_BANDS.html#idm34"
+        },
+        "no_overlap": {
+            "type": "boolean",
+            "default": true,
+            "description": "https://www.quantum-espresso.org/Doc/INPUT_BANDS.html#idm37"
+        },
+        "plot_2d": {
+            "type": "boolean",
+            "default": false,
+            "description": "https://www.quantum-espresso.org/Doc/INPUT_BANDS.html#idm41"
+        },
+        "firstk": {
+            "type": "integer",
+            "minimum": 0,
+            "description": "https://www.quantum-espresso.org/Doc/INPUT_BANDS.html#idm46"
+        },
+        "lastk": {
+            "type": "integer",
+            "minimum": 0,
+            "description": "https://www.quantum-espresso.org/Doc/INPUT_BANDS.html#idm47"
+        }
+    },
+    "required": [
+        "prefix",
+        "outdir",
+        "filband",
+        "spin_component",
+        "lsigma",
+        "lp",
+        "filp",
+        "lsym",
+        "no_overlap",
+        "plot_2d",
+        "firstk",
+        "lastk"
+    ]
+}

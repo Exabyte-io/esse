@@ -1,0 +1,64 @@
+{
+    "$id": "3pse/file/applications/espresso/7.2/average.x",
+    "$schema": "http://json-schema.org/draft-04/schema#",
+    "title": "averagex schema",
+    "additionalProperties": false,
+    "description": "https://gitlab.com/QEF/q-e/blob/develop/PP/src/average.f90",
+    "properties": {
+        "nfile": {
+            "type": "integer",
+            "description": "the number of files containing the desired quantities"
+        },
+        "file_params": {
+            "type": "array",
+            "items": {
+                "$ref": "#/definitions/file_params"
+            },
+            "minItems": 1
+        }
+
+    },
+    "required": [
+        "nfile",
+        "file_params"
+    ],
+    "definitions": {
+        "file_params": {
+            "type": "object",
+            "properties": {
+                "filename": {
+                    "type": "string",
+                    "description": "the name of the n-th file"
+                },
+                "weight": {
+                    "type": "number",
+                    "minimum": 0.0,
+                    "description": "the weight w_n of the quantity read from n-th file"
+                },
+                "npt": {
+                    "type": "integer",
+                    "minimum": 0,
+                    "description": "the number of points for the final interpolation of the planar and macroscopic averages"
+                },
+                "idir": {
+                    "type": "integer",
+                    "minimum": 1,
+                    "maximum": 3,
+                    "description": "Planar average is done in the plane orthogonal to direction `idir`, as defined for the crystal cell"
+                },
+                "awin": {
+                    "type": "number",
+                    "minimum": 0.0,
+                    "description": "the size of the window for macroscopic average (a.u.)"
+                }
+            },
+            "required": [
+                "filename",
+                "weight",
+                "npt",
+                "idir",
+                "awin"
+            ]
+        }
+    }
+}
