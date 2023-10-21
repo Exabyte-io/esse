@@ -19,6 +19,13 @@
         },
         "systemName": {
             "type": "string"
+        },
+        "consistency_checks": {
+            "type": "array",
+            "items": {
+                "type": "object",
+                "$ref": "../system/consistency_check.json"
+            }
         }
     }
 }
