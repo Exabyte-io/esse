@@ -1,0 +1,37 @@
+{
+    "$id": "system/consistency-check",
+    "$schema": "http://json-schema.org/draft-04/schema#",
+    "title": "consistency check",
+    "consistency_check": {
+        "type": "object",
+        "properties": {
+            "key": {
+                "type": "string",
+                "description": "Key of the property of the entity on which the consistency check is performed, e.g. 'basis.coordinates.1'"
+            },
+            "name": {
+                "enum": [
+                    "default",
+                    "atomsTooClose"
+                ],
+                "description": "Name of the consistency check which is exported as an enum"
+            },
+            "severity": {
+                "enum": [
+                    "info",
+                    "warning",
+                    "error"
+                ]
+            },
+            "message": {
+                "type": "string"
+            }
+        },
+        "required": [
+            "key",
+            "name",
+            "severity",
+            "message"
+        ]
+    }
+}
