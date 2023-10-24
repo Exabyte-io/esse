@@ -1,0 +1,22 @@
+{
+    "$id": "models-directory/legacy/unknown",
+    "$schema": "http://json-schema.org/draft-04/schema#",
+    "title": "legacy model unknown",
+    "allOf": [
+        {
+            "$ref": "../../model.json"
+        }
+    ],
+    "properties": {
+        "type": {
+            "enum": [
+                "unknown"
+            ]
+        },
+        "subtype": {
+            "enum": [
+                "unknown"
+            ]
+        }
+    }
+}

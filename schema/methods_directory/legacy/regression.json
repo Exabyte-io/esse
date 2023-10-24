@@ -1,0 +1,34 @@
+{
+    "$id": "methods-directory/legacy/regression",
+    "$schema": "http://json-schema.org/draft-04/schema#",
+    "title": "legacy method regression",
+    "allOf": [
+        {
+            "$ref": "../../method.json"
+        }
+    ],
+    "properties": {
+        "type": {
+            "enum": [
+                "linear",
+                "kernel_ridge"
+            ]
+        },
+        "subtype": {
+            "enum": [
+                "least_squares",
+                "ridge"
+            ]
+        },
+        "precision": {
+            "$ref": "../mathematical/regression/precision.json"
+        },
+        "data": {
+            "$ref": "../mathematical/regression/data.json"
+        }
+    },
+    "required": [
+        "precision",
+        "data"
+    ]
+}

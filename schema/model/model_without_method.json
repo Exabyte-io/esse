@@ -4,16 +4,13 @@
     "title": "model without method schema (base)",
     "allOf": [
         {
-            "$ref": "../system/name.json"
+            "$ref": "../system/path_entity.json"
         },
         {
             "$ref": "../system/tags.json"
         }
     ],
     "properties": {
-        "path": {
-            "$ref": "../core/reusable/category_path.json"
-        },
         "categories": {
             "description": "Model categories",
             "$ref": "../core/reusable/categories.json"

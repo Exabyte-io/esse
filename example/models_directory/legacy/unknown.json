@@ -1,0 +1,7 @@
+{
+    "type": "unknown",
+    "subtype": "unknown",
+    "method": {
+        "...": "include(../../method.json)"
+    }
+}

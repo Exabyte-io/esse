@@ -1,6 +1,7 @@
 {
     "$id": "methods-directory/physical/ao/pople",
     "$schema": "http://json-schema.org/draft-04/schema#",
+    "title": "unit method ao pople",
     "description": "Pople basis set unit method",
     "allOf": [
         {
@@ -14,13 +15,19 @@
         "parameters": {
             "allOf": [
                 {
-                    "properties": {
-                        "basisSlug": {
-                            "$ref": "./enum_options.json#/popleAoBasis"
-                        }
-                    }
+                    "$ref": "#/definitions/ao-basis-pople"
                 }
             ]
+        }
+    },
+    "required": ["categories"],
+    "definitions": {
+        "ao-basis-pople": {
+            "properties": {
+                "basisSlug": {
+                    "$ref": "./enum_options.json#/popleAoBasis"
+                }
+            }
         }
     }
 }
