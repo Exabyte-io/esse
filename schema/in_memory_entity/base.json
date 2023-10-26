@@ -20,7 +20,7 @@
         "systemName": {
             "type": "string"
         },
-        "consistency_checks": {
+        "consistencyChecks": {
             "type": "array",
             "items": {
                 "$ref": "../system/consistency_check.json"
