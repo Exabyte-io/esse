@@ -1,6 +1,7 @@
 {
     "$id": "methods-directory/mathematical/davidson",
     "$schema": "http://json-schema.org/draft-04/schema#",
+    "title": "unit method davidson",
     "description": "Davidson diagonalization method",
     "allOf": [
         {
@@ -11,5 +12,6 @@
         "categories": {
             "$ref": "../../methods_category/mathematical/linalg/diag/davidson.json"
         }
-    }
+    },
+    "required": ["categories"]
 }

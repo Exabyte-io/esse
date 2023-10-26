@@ -1,0 +1,13 @@
+{
+    "$id": "system/path-entity",
+    "$schema": "http://json-schema.org/draft-04/schema#",
+    "title": "path entity schema",
+    "allOf": [
+        {
+            "$ref": "./name.json"
+        },
+        {
+            "$ref": "./path.json"
+        }
+    ]
+}

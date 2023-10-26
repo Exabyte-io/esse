@@ -1,0 +1,81 @@
+{
+    "$id": "models-directory/legacy/dft",
+    "$schema": "http://json-schema.org/draft-04/schema#",
+    "title": "legacy model density functional theory",
+    "allOf": [
+        {
+            "$ref": "../../model.json"
+        },
+        {
+            "oneOf": [
+                {
+                    "$ref": "#/definitions/lda"
+                },
+                {
+                    "$ref": "#/definitions/gga"
+                },
+                {
+                    "$ref": "#/definitions/hybrid"
+                }
+            ]
+        }
+    ],
+    "properties": {
+        "type": {
+            "enum": [
+                "dft"
+            ]
+        }
+    },
+    "definitions": {
+        "lda": {
+            "properties": {
+                "subtype": {
+                    "enum": [
+                        "lda"
+                    ]
+                },
+                "functional": {
+                    "enum": [
+                        "pz",
+                        "pw",
+                        "vwn",
+                        "other"
+                    ]
+                }
+            }
+        },
+        "gga": {
+            "properties": {
+                "subtype": {
+                    "enum": [
+                        "gga"
+                    ]
+                },
+                "functional": {
+                    "enum": [
+                        "pbe",
+                        "pbesol",
+                        "pw91",
+                        "other"
+                    ]
+                }
+            }
+        },
+        "hybrid": {
+            "properties": {
+                "subtype": {
+                    "enum": [
+                        "hybrid"
+                    ]
+                },
+                "functional": {
+                    "enum": [
+                        "b3lyp",
+                        "hse06"
+                    ]
+                }
+            }
+        }
+    }
+}

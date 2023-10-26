@@ -193,6 +193,10 @@ average_potential_profile:
   schemaId: properties-directory/non-scalar/average-potential-profile
   isResult: true
 
+dielectric_tensor:
+  schemaId: properties-directory/non-scalar/dielectric-tensor
+  isResult: true
+
 # STRUCTURAL
 basis:
   defaults:
