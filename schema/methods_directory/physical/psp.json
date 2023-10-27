@@ -3,14 +3,13 @@
     "$schema": "http://json-schema.org/draft-04/schema#",
     "title": "unit method pseudopotential",
     "description": "Core-valence separation by means of pseudopotentials (effective potential)",
-    "allOf": [
-        {
-            "$ref": "../../method/unit_method.json"
-        }
-    ],
     "properties": {
         "categories": {
             "$ref": "../../methods_category/physical/qm/wf/psp.json"
+        },
+        "slug": {
+            "type": "string",
+            "description": "pseudopotential"
         },
         "data": {
             "type": "object",
@@ -23,7 +22,20 @@
                     }
                 }
             }
+        },
+        "source": {
+            "type": "object",
+            "description": "explains where this came from",
+            "properties": {
+                "info": {
+                    "type": "object",
+                    "description": "currently an empty object"
+                },
+                "type": {
+                    "type": "string",
+                    "description": "e.g., exabyte, pslibrary etc."
+                }
+            }
         }
-    },
-    "required": ["categories"]
+    }
 }
