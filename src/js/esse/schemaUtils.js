@@ -12,7 +12,9 @@ export function mapObjectDeep(object, mapValue) {
     }
 
     const entries = Object.entries(object).map(([key, value]) => {
-        return [key, mapValue(value) || mapObjectDeep(value, mapValue)];
+        const res = mapValue(value);
+
+        return [key, res === undefined ? mapObjectDeep(value, mapValue) : res];
     });
 
     return Object.fromEntries(entries);
