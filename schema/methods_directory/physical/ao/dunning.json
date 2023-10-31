@@ -1,6 +1,7 @@
 {
     "$id": "methods-directory/physical/ao/dunning",
     "$schema": "http://json-schema.org/draft-04/schema#",
+    "title": "unit method ao dunning",
     "description": "Dunning correlation-consistent basis set unit method",
     "allOf": [
         {
@@ -14,13 +15,19 @@
         "parameters": {
             "allOf": [
                 {
-                    "properties": {
-                        "basisSlug": {
-                            "$ref": "./enum_options.json#/dunningAoBasis"
-                        }
-                    }
+                    "$ref": "#/definitions/ao-basis-dunning"
                 }
             ]
+        }
+    },
+    "required": ["categories"],
+    "definitions": {
+        "ao-basis-dunning": {
+            "properties": {
+                "basisSlug": {
+                    "$ref": "./enum_options.json#/dunningAoBasis"
+                }
+            }
         }
     }
 }

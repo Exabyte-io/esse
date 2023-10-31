@@ -1,0 +1,38 @@
+{
+    "$id": "model/model-parameters",
+    "$schema": "http://json-schema.org/draft-04/schema#",
+    "title": "ModelParameters",
+    "allOf": [
+        {
+            "$ref": "./mixins/hubbard.json"
+        },
+        {
+            "$ref": "./mixins/spin_polarization.json"
+        },
+        {
+            "$ref": "./mixins/spin_orbit_coupling.json"
+        },
+        {
+            "$ref": "./mixins/dispersion_correction.json"
+        },
+        {
+            "oneOf": [
+                {
+                    "$ref": "./mixins/dft/lda_functional.json"
+                },
+                {
+                    "$ref": "./mixins/dft/gga_functional.json"
+                },
+                {
+                    "$ref": "./mixins/dft/mgga_functional.json"
+                },
+                {
+                    "$ref": "./mixins/dft/hybrid_functional.json"
+                },
+                {
+                    "$ref": "./mixins/dft/double_hybrid_functional.json"
+                }
+            ]
+        }
+    ]
+}

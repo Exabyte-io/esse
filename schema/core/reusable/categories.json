@@ -1,7 +1,7 @@
 {
     "$id": "core/reusable/categories",
     "$schema": "http://json-schema.org/draft-04/schema#",
-    "title": "categories schema",
+    "title": "categories",
     "description": "Used to categorize entities such as models and methods",
     "type": "object",
     "properties": {
