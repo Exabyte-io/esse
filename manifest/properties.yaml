@@ -1,7 +1,7 @@
 convergence_ionic:
   defaults:
     units: eV
-  schemaId: properties-directory/workflow/convergence/ionic 
+  schemaId: properties-directory/workflow/convergence/ionic
   isMonitor: true
 
 convergence_electronic:
@@ -257,3 +257,9 @@ inchi_key:
 
 material:
   schemaId: material
+
+hubbard_parameters:
+  defaults:
+    units: eV
+  schemaId: properties-directory/non-scalar/hubbard-parameters
+  isResult: true

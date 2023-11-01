@@ -1,0 +1,16 @@
+{
+    "name": "hubbard_parameters",
+    "units": "eV",
+    "values": [
+        {
+            "atomicSpecies": "Co1",
+            "orbitalName": "3d",
+            "value": 6.7553
+        },
+        {
+            "atomicSpecies": "Co2",
+            "orbitalName": "3d",
+            "value": 6.7553
+        }
+    ]
+}
