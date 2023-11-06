@@ -10,19 +10,34 @@
         "units": {
             "enum": ["eV"]
         },
+        "headers": {
+            "type": "array",
+            "items": {
+                "type": "string"
+            }
+        },
+        "category": {
+            "enum": ["hubbard_u", "hubbard_v"]
+        },
         "values": {
             "type": "array",
             "items": {
-                "atomicSpecies": {
-                    "type": "string"
-                },
-                "orbitalName": {
-                    "type": "string",
-                    "pattern": "^[1-7][sSpPdDfF]$"
-                },
-                "value": {
-                    "type": "number",
-                    "description": "Hubbard U values in eV"
+                "type": "object",
+                "properties": {
+                    "siteNumber": {
+                        "type": "number"
+                    },
+                    "atomicSpecies": {
+                        "type": "string"
+                    },
+                    "orbitalName": {
+                        "type": "string",
+                        "pattern": "^[1-7][sSpPdDfF]$"
+                    },
+                    "value": {
+                        "type": "number",
+                        "description": "Hubbard U values in eV"
+                    }
                 }
             }
         }
