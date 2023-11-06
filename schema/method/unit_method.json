@@ -27,8 +27,5 @@
             "description": "Additional numerically relevant data specific to method, eg. array of pseudopotentials",
             "type": "object"
         }
-    },
-    "required": [
-        "categories"
-    ]
+    }
 }
