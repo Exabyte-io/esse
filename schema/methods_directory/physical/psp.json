@@ -19,11 +19,10 @@
         "data": {
             "type": "array",
             "items": {
-                "metaProperties": {
-                    "description": "Specific data based on pseudopotential file.",
-                    "$ref": "./psp/file.json"
-                }
+                "description": "Specific data based on pseudopotential file.",
+                "$ref": "./psp/file.json"
             }
         }
-    }
+    },
+    "required": ["categories"]
 }
