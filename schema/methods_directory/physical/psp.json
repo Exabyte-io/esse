@@ -17,28 +17,11 @@
             "description": "pseudopotential"
         },
         "data": {
-            "type": "object",
-            "properties": {
-                "pseudo": {
-                    "description": "pseudopotential files",
-                    "type": "array",
-                    "items": {
-                        "$ref": "./psp/file.json"
-                    }
-                }
-            }
-        },
-        "source": {
-            "type": "object",
-            "description": "explains where this came from",
-            "properties": {
-                "info": {
-                    "type": "object",
-                    "description": "currently an empty object"
-                },
-                "type": {
-                    "type": "string",
-                    "description": "e.g., exabyte, pslibrary etc."
+            "type": "array",
+            "items": {
+                "metaProperties": {
+                    "description": "Specific data based on pseudopotential file.",
+                    "$ref": "./psp/file.json"
                 }
             }
         }

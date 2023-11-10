@@ -22,10 +22,6 @@
         "precision": {
             "description": "Object showing the actual possible precision based on theory and implementation",
             "type": "object"
-        },
-        "data": {
-            "description": "Additional numerically relevant data specific to method, eg. array of pseudopotentials",
-            "type": "object"
         }
     }
 }
