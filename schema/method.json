@@ -1,7 +1,7 @@
 {
     "$id": "method",
     "$schema": "http://json-schema.org/draft-04/schema#",
-    "title": "method schema (base)",
+    "title": "base method",
     "properties": {
         "type": {
             "description": "general type of this method, eg. `pseudopotential`",

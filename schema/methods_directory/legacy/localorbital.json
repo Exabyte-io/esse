@@ -1,0 +1,22 @@
+{
+    "$id": "methods-directory/legacy/localorbital",
+    "$schema": "http://json-schema.org/draft-04/schema#",
+    "title": "legacy method localorbital",
+    "allOf": [
+        {
+            "$ref": "../../method.json"
+        }
+    ],
+    "properties": {
+        "type": {
+            "enum": [
+                "localorbital"
+            ]
+        },
+        "subtype": {
+            "enum": [
+                "pople"
+            ]
+        }
+    }
+}

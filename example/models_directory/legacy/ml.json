@@ -1,0 +1,7 @@
+{
+    "type": "ml",
+    "subtype": "re",
+    "method": {
+        "...": "include(../../method.json)"
+    }
+}
