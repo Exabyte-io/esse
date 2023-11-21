@@ -12,15 +12,20 @@
         "categories": {
             "$ref": "../../methods_category/physical/qm/wf/psp.json"
         },
-        "slug": {
-            "type": "string",
-            "description": "pseudopotential"
-        },
         "data": {
             "type": "array",
             "items": {
-                "description": "Specific data based on pseudopotential file.",
-                "$ref": "./psp/file.json"
+                "type": "object",
+                "properties": {
+                    "slug": {
+                        "description": "pseudopotential",
+                        "enum": ["pseudopotential"]
+                    },
+                    "data": {
+                        "description": "Specific data based on pseudopotential file.",
+                        "$ref": "./psp/file.json"
+                    }
+                }
             }
         }
     },
