@@ -15,17 +15,8 @@
         "data": {
             "type": "array",
             "items": {
-                "type": "object",
-                "properties": {
-                    "slug": {
-                        "description": "pseudopotential",
-                        "enum": ["pseudopotential"]
-                    },
-                    "data": {
-                        "description": "Specific data based on pseudopotential file.",
-                        "$ref": "./psp/file.json"
-                    }
-                }
+                "description": "Specific data based on pseudopotential file.",
+                "$ref": "./psp/file.json"
             }
         }
     },
