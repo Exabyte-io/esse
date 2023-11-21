@@ -1,0 +1,34 @@
+{
+    "$id": "core/reusable/atomic-data-per-orbital-pair",
+    "$schema": "http://json-schema.org/draft-04/schema#",
+    "title": "Atomic data per orbital pair",
+    "description": "Atomic properties per orbital pair e.g., Hubbard V parameters.",
+    "type": "object",
+    "properties": {
+        "id": {
+            "type": "number",
+            "description": "Site number or index in the lattice"
+        },
+        "id2": {
+            "type": "number",
+            "description": "Site number or index in the lattice of second site"
+        },
+        "siteName": {
+            "type": "string",
+            "description": "Example: Co1"
+        },
+        "siteName2": {
+            "type": "string",
+            "description": "Example: O"
+        },
+        "orbitalName": {
+            "type": "string",
+            "pattern": "^[1-7][sSpPdDfF]$"
+        },
+        "orbitalName2": {
+            "type": "string",
+            "pattern": "^[1-7][sSpPdDfF]$"
+        }
+    },
+    "additionalProperties": false
+}

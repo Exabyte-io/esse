@@ -1,20 +1,37 @@
 {
     "name": "hubbard_parameters",
     "units": "eV",
-    "category": "hubbard_u",
-    "headers": ["Site no.", "Atomic species", "Orbital/manifold", "U (eV)"],
     "values": [
         {
-            "siteNumber": 1,
-            "atomicSpecies": "Co1",
-            "orbitalName": "3d",
+            "category": "hubbard_u",
+            "headers": ["Site no.", "Atomic species", "Orbital/manifold", "U (eV)"],
+            "siteProperty": {
+                "id": 1,
+                "siteName": "Co1",
+                "orbitalName": "3d"
+            },
             "value": 6.7553
         },
         {
-            "siteNumber": 2,
-            "atomicSpecies": "Co2",
-            "orbitalName": "3d",
-            "value": 6.7553
+            "category": "hubbard_v",
+            "headers": [
+                "Site no. 1",
+                "Site no. 2",
+                "Atomic species1",
+                "Atomic species2",
+                "Orbital1",
+                "Orbital2",
+                "V (eV)"
+            ],
+            "siteProperty": {
+                "id": 1,
+                "id2": 2,
+                "siteName": "Co1",
+                "siteName2": "O",
+                "orbitalName": "3d",
+                "orbitalName2": "3p"
+            },
+            "value": 8.3245
         }
     ]
 }

@@ -1,0 +1,22 @@
+{
+    "$id": "core/reusable/atomic-data-per-orbital",
+    "$schema": "http://json-schema.org/draft-04/schema#",
+    "title": "Atomic data per orbital",
+    "description": "Atomic properties per orbital e.g., Hubbard U parameters.",
+    "type": "object",
+    "properties": {
+        "id": {
+            "type": "number",
+            "description": "Site number or index in the lattice"
+        },
+        "siteName": {
+            "type": "string",
+            "description": "Example: Co, Ni1, O"
+        },
+        "orbitalName": {
+            "type": "string",
+            "pattern": "^[1-7][sSpPdDfF]$"
+        }
+    },
+    "additionalProperties": false
+}
