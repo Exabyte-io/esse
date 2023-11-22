@@ -3,6 +3,7 @@ lda:
   - pz
 gga:
   - pbe
+  - pbesol
 mgga:
   - scan
 hybrid:
