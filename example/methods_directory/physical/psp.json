@@ -1,49 +1,16 @@
 {
-    "name": "PAW Pseudopotential method (VASP)",
+    "name": "PAW Pseudopotential method",
     "path": "/qm/wf/psp/paw",
+    "slug": "pseudopotential",
     "categories": {
         "tier1": "qm",
         "tier2": "wf",
         "type": "psp",
         "subtype": "paw"
     },
-    "data": {
-        "pseudo": [
-            {
-                "hash": "4e058592231fc4e091ac0c92d87797b0",
-                "apps": ["vasp"],
-                "element": "Si",
-                "source": "vasp",
-                "version": "5.2",
-                "path": "/export/share/pseudo/si/gga/pbe/vasp/5.2/paw/default/POTCAR",
-                "type": "paw",
-                "exchangeCorrelation": {
-                    "approximation": "gga",
-                    "functional": "pbe",
-                    "path": "/pb/qm/dft/ksdft/gga?functional=pbe"
-                },
-                "filename": "POTCAR",
-                "schemaVersion": "0.2.0",
-                "name": "pseudopotential",
-                "valenceConfiguration": [
-                    {
-                        "orbitalName": "3S",
-                        "orbitalIndex": 1,
-                        "principalNumber": 3,
-                        "angularMomentum": 0,
-                        "occupation": 2
-                    },
-                    {
-                        "orbitalName": "3P",
-                        "orbitalIndex": 2,
-                        "principalNumber": 3,
-                        "angularMomentum": 1,
-                        "occupation": 2
-                    }
-                ],
-                "inSet": [],
-                "tags": []
-            }
-        ]
-    }
+    "data": [
+        {
+            "...": "include(psp/file.json)"
+        }
+    ]
 }

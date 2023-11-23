@@ -69,6 +69,10 @@
                         slug: pbe
                         reference:
                           doi: https://doi.org/10.1103/PhysRevLett.77.3865
+                      - name: perdew-burke-ernzerhof-solid
+                        slug: pbesol
+                        reference:
+                          doi: https://doi.org/10.1103/PhysRevLett.100.136406
 #                  modifiers:
 #                    type: array
 #                    items:

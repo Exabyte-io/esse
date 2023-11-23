@@ -13,15 +13,10 @@
             "$ref": "../../methods_category/physical/qm/wf/psp.json"
         },
         "data": {
-            "type": "object",
-            "properties": {
-                "pseudo": {
-                    "description": "pseudopotential files",
-                    "type": "array",
-                    "items": {
-                        "$ref": "./psp/file.json"
-                    }
-                }
+            "type": "array",
+            "items": {
+                "description": "Specific data based on pseudopotential file.",
+                "$ref": "./psp/file.json"
             }
         }
     },
