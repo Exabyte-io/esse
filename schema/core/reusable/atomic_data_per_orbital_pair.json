@@ -28,7 +28,10 @@
         "orbitalName2": {
             "type": "string",
             "pattern": "^[1-7][sSpPdDfF]$"
+        },
+        "distance": {
+            "type": "number",
+            "description": "Distance between to sites in angstrom."
         }
-    },
-    "additionalProperties": false
+    }
 }

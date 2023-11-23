@@ -7,16 +7,16 @@
     "properties": {
         "id": {
             "type": "number",
-            "description": "Site number or index in the lattice"
+            "description": "Site number in the lattice"
         },
         "siteName": {
             "type": "string",
-            "description": "Example: Co, Ni1, O"
+            "description": "Atomic species name. Example: Co, Ni1, O"
         },
         "orbitalName": {
             "type": "string",
-            "pattern": "^[1-7][sSpPdDfF]$"
+            "pattern": "^[1-7][sSpPdDfF]$",
+            "description": "Atomic orbital or Hubbard manifold."
         }
-    },
-    "additionalProperties": false
+    }
 }
