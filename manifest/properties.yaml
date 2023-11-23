@@ -258,8 +258,14 @@ inchi_key:
 material:
   schemaId: material
 
-hubbard_parameters:
+hubbard_u:
   defaults:
     units: eV
-  schemaId: properties-directory/non-scalar/hubbard-parameters
+  schemaId: properties-directory/non-scalar/hubbard-u
+  isResult: true
+
+hubbard_v:
+  defaults:
+    units: eV
+  schemaId: properties-directory/non-scalar/hubbard-v
   isResult: true
