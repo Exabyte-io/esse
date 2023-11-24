@@ -1,0 +1,77 @@
+{
+    "$id": "methods-directory/physical/psp/file-data-item",
+    "$schema": "http://json-schema.org/draft-04/schema#",
+    "title": "File data item",
+    "properties": {
+        "element": {
+            "type": "string",
+            "description": "chemical element"
+        },
+        "hash": {
+            "type": "string",
+            "description": "MD5 hash of the pseudopotential file"
+        },
+        "type": {
+            "type": "string",
+            "description": "type of pseudization",
+            "$ref": "../../../methods_category/physical/qm/wf/enum_options.json#/pseudoSubtypes"
+        },
+        "source": {
+            "type": "string",
+            "description": "explains where this came from"
+        },
+        "version": {
+            "type": "string",
+            "description": "explains the version of where this came from"
+        },
+        "exchangeCorrelation": {
+            "type": "object",
+            "properties": {
+                "approximation": {
+                    "description": "DFT approximation",
+                    "type": "string"
+                },
+                "functional": {
+                    "description": "Exchange correlation functional",
+                    "type": "string"
+                },
+                "path": {
+                    "description": "DFT model path, e.g. '/pb/qm/dft/ksdft/gga?functional=pbe'",
+                    "$ref": "../../../core/reusable/category_path.json"
+                }
+            }
+        },
+        "valenceConfiguration": {
+            "type": "array",
+            "description": "contains pseudo orbital information, including orbital names and occupations",
+            "items": {
+                "$ref": "../../../core/reusable/atomic_orbital.json"
+            }
+        },
+        "path": {
+            "type": "string",
+            "description": "location of the pseudopotential file on filesystem"
+        },
+        "apps": {
+            "type": "array",
+            "description": "simulation engines that can use this pseudopotential"
+        },
+        "filename": {
+            "type": "string",
+            "description": "filename of pseudopotential file on filesystem"
+        },
+        "name": {
+            "type": "string",
+            "description": "name of the data category",
+            "enum": ["pseudopotential"]
+        }
+    },
+    "required": [
+        "element",
+        "type",
+        "exchangeCorrelation",
+        "source",
+        "path",
+        "apps"
+    ]
+}
