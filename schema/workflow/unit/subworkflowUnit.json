@@ -1,0 +1,21 @@
+{
+    "$id": "workflow/unit/subworkflow",
+    "$schema": "http://json-schema.org/draft-04/schema#",
+    "title": "subworkflow unit schema",
+    "type": "object",
+    "allOf": [
+        {
+            "$ref": "../unit.json"
+        }
+    ],
+    "properties": {
+        "type": {
+            "enum": [
+                "subworkflow"
+            ]
+        }
+    },
+    "required": [
+        "name"
+    ]
+}
