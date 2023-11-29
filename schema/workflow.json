@@ -26,7 +26,7 @@
             "items": {
                 "oneOf": [
                     {
-                        "$ref": "workflow/unit/subworkflowUnit.json"
+                        "$ref": "workflow/unit/subworkflow.json"
                     },
                     {
                         "$ref": "workflow/unit/io.json"
