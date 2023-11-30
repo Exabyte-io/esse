@@ -10,23 +10,7 @@
     "properties": {
         "type": {
             "description": "Bravais lattice type in short notation",
-            "type": "string",
-            "enum": [
-                "CUB",
-                "BCC",
-                "FCC",
-                "TET",
-                "MCL",
-                "ORC",
-                "ORCC",
-                "ORCF",
-                "ORCI",
-                "HEX",
-                "BCT",
-                "TRI",
-                "MCLC",
-                "RHL"
-            ]
+            "$ref": "type_enum.json"
         },
         "units": {
             "type": "object",
