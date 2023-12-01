@@ -35,8 +35,7 @@
         },
         "maxOccurrences": {
             "description": "Maximum occurrence of the condition, usable for loops.",
-            "type": "integer",
-            "default": 100
+            "type": "integer"
         },
         "throwException": {
             "description": "Throw exception on reaching to maximum occurence.",
