@@ -2,12 +2,10 @@
     "$id": "core/primitive/array-of-3-numbers",
     "$schema": "http://json-schema.org/draft-04/schema#",
     "title": "array of 3 number elements schema",
-    "allOf": [
-        {
-            "$ref": "array_of_numbers.json"
-        }
-    ],
     "type": "array",
+    "items": {
+        "type": "number"
+    },
     "minItems": 3,
     "maxItems": 3
 }
