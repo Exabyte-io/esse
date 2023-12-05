@@ -54,7 +54,10 @@
         },
         "apps": {
             "type": "array",
-            "description": "simulation engines that can use this pseudopotential"
+            "description": "simulation engines that can use this pseudopotential",
+            "items": {
+                "type": "string"
+            }
         },
         "filename": {
             "type": "string",
