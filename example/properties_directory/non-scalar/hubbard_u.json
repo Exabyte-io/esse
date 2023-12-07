@@ -4,13 +4,13 @@
     "values": [
         {
             "id": 1,
-            "siteName": "Co",
+            "atomicSpecies": "Co",
             "orbitalName": "3d",
             "value": 6.7553
         },
         {
             "id": 2,
-            "siteName": "O",
+            "atomicSpecies": "O",
             "orbitalName": "3p",
             "value": 2.2438
         }

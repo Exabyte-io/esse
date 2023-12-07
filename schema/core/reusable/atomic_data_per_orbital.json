@@ -9,7 +9,7 @@
             "type": "number",
             "description": "Site number in the lattice"
         },
-        "siteName": {
+        "atomicSpecies": {
             "type": "string",
             "description": "Atomic species name. Example: Co, Ni1, O"
         },
@@ -19,5 +19,5 @@
             "description": "Atomic orbital or Hubbard manifold."
         }
     },
-    "required": ["id", "siteName", "orbitalName"]
+    "required": ["id", "atomicSpecies", "orbitalName"]
 }

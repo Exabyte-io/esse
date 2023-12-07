@@ -13,11 +13,11 @@
             "type": "number",
             "description": "Site number or index in the lattice of second site"
         },
-        "siteName": {
+        "atomicSpecies": {
             "type": "string",
             "description": "Example: Co1"
         },
-        "siteName2": {
+        "atomicSpecies2": {
             "type": "string",
             "description": "Example: O"
         },
@@ -34,5 +34,5 @@
             "description": "Distance between two sites in angstrom."
         }
     },
-    "required": ["id", "id2", "siteName", "siteName2"]
+    "required": ["id", "id2", "atomicSpecies", "atomicSpecies2"]
 }
