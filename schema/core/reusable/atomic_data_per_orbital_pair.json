@@ -31,7 +31,8 @@
         },
         "distance": {
             "type": "number",
-            "description": "Distance between to sites in angstrom."
+            "description": "Distance between two sites in angstrom."
         }
-    }
+    },
+    "required": ["id", "id2", "siteName", "siteName2"]
 }
