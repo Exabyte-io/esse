@@ -54,7 +54,7 @@
         },
         "apps": {
             "type": "array",
-            "description": "simulation engines that can use this pseudopotential",
+            "description": "The names of the simulation engines that can use this pseudopotential, e.g. espresso",
             "items": {
                 "type": "string"
             }
