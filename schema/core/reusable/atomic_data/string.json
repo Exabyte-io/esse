@@ -1,0 +1,27 @@
+{
+    "$id": "core/reusable/atomic-data/string-data",
+    "$schema": "http://json-schema.org/draft-04/schema#",
+    "title": "Atomic data string properties",
+    "description": "String fields used in atomic data",
+    "type": "object",
+    "properties": {
+        "atomicSpecies": {
+            "type": "string",
+            "pattern": "^[a-zA-Z]{1,2}[\\d+]?$",
+            "description": "Example: Co1, Mn"
+        },
+        "atomicSpecies2": {
+            "type": "string",
+            "pattern": "^[a-zA-Z]{1,2}[\\d+]?$",
+            "description": "Example: Co2, O"
+        },
+        "orbitalName": {
+            "type": "string",
+            "pattern": "^[1-7][sSpPdDfF]$"
+        },
+        "orbitalName2": {
+            "type": "string",
+            "pattern": "^[1-7][sSpPdDfF]$"
+        }
+    }
+}

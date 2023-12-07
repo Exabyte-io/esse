@@ -1,0 +1,25 @@
+{
+    "$id": "core/reusable/atomic-data/numeric-data",
+    "$schema": "http://json-schema.org/draft-04/schema#",
+    "title": "Atomic data numeric properties",
+    "description": "Numeric fields used in atomic data",
+    "type": "object",
+    "properties": {
+        "id": {
+            "type": "integer",
+            "description": "Site number or index in the lattice"
+        },
+        "id2": {
+            "type": "integer",
+            "description": "Site number or index in the lattice of second site"
+        },
+        "distance": {
+            "type": "number",
+            "description": "Distance between two sites in angstrom."
+        },
+        "value": {
+            "type": "number",
+            "description": "Value related to a specific property, e.g., Hubbard U, V etc."
+        }
+    }
+}

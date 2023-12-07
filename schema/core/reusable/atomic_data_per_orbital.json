@@ -4,20 +4,13 @@
     "title": "Atomic data per orbital",
     "description": "Atomic properties per orbital e.g., Hubbard U parameters.",
     "type": "object",
-    "properties": {
-        "id": {
-            "type": "number",
-            "description": "Site number in the lattice"
+    "allOf": [
+        {
+            "$ref": "atomic_data/numeric.json"
         },
-        "atomicSpecies": {
-            "type": "string",
-            "description": "Atomic species name. Example: Co, Ni1, O"
-        },
-        "orbitalName": {
-            "type": "string",
-            "pattern": "^[1-7][sSpPdDfF]$",
-            "description": "Atomic orbital or Hubbard manifold."
+        {
+            "$ref": "atomic_data/string.json"
         }
-    },
-    "required": ["id", "atomicSpecies", "orbitalName"]
+    ],
+    "required": ["id", "atomicSpecies", "orbitalName", "value"]
 }

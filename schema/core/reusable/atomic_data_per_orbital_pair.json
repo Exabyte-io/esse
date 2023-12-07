@@ -4,35 +4,13 @@
     "title": "Atomic data per orbital pair",
     "description": "Atomic properties per orbital pair e.g., Hubbard V parameters.",
     "type": "object",
-    "properties": {
-        "id": {
-            "type": "number",
-            "description": "Site number or index in the lattice"
+    "allOf": [
+        {
+            "$ref": "atomic_data/numeric.json"
         },
-        "id2": {
-            "type": "number",
-            "description": "Site number or index in the lattice of second site"
-        },
-        "atomicSpecies": {
-            "type": "string",
-            "description": "Example: Co1"
-        },
-        "atomicSpecies2": {
-            "type": "string",
-            "description": "Example: O"
-        },
-        "orbitalName": {
-            "type": "string",
-            "pattern": "^[1-7][sSpPdDfF]$"
-        },
-        "orbitalName2": {
-            "type": "string",
-            "pattern": "^[1-7][sSpPdDfF]$"
-        },
-        "distance": {
-            "type": "number",
-            "description": "Distance between two sites in angstrom."
+        {
+            "$ref": "atomic_data/string.json"
         }
-    },
-    "required": ["id", "id2", "atomicSpecies", "atomicSpecies2"]
+    ],
+    "required": ["id", "id2", "atomicSpecies", "atomicSpecies2", "value"]
 }

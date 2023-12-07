@@ -18,13 +18,7 @@
                     {
                         "$ref": "../../core/reusable/atomic_data_per_orbital.json"
                     }
-                ],
-                "properties": {
-                    "value": {
-                        "type": "number",
-                        "description": "Hubbard U values in eV"
-                    }
-                }
+                ]
             }
         }
     },
