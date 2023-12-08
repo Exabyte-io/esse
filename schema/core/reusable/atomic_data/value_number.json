@@ -1,5 +1,5 @@
 {
-    "$id": "core/reusable/atomic-data/numeric-value",
+    "$id": "core/reusable/atomic-data/value-number",
     "$schema": "http://json-schema.org/draft-04/schema#",
     "title": "Atomic data numeric properties",
     "description": "Numeric value specific to atomic data",

@@ -19,7 +19,12 @@
                         "$ref": "../../core/reusable/atomic_data_per_orbital_numeric.json"
                     }
                 ],
-                "required": ["id", "atomicSpecies", "orbitalName", "value"]
+                "required": [
+                    "id",
+                    "atomicSpecies",
+                    "orbitalName",
+                    "value"
+                ]
             }
         }
     },

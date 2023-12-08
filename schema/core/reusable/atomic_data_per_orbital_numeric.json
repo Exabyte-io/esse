@@ -9,7 +9,7 @@
             "$ref": "atomic_data/per_orbital.json"
         },
         {
-            "$ref": "atomic_data/numeric_value.json"
+            "$ref": "atomic_data/value_number.json"
         }
     ]
 }
