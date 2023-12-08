@@ -16,9 +16,10 @@
                 "type": "object",
                 "allOf": [
                     {
-                        "$ref": "../../core/reusable/atomic_data_per_orbital_pair.json"
+                        "$ref": "../../core/reusable/atomic_data_per_orbital_pair_numeric.json"
                     }
-                ]
+                ],
+                "required": ["id", "id2", "atomicSpecies", "atomicSpecies2", "value"]
             }
         }
     },
