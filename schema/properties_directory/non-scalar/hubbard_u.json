@@ -1,0 +1,32 @@
+{
+    "$id": "properties-directory/non-scalar/hubbard-u",
+    "$schema": "http://json-schema.org/draft-04/schema#",
+    "title": "Hubbard U parameters",
+    "description": "Hubbard U value in eV",
+    "properties": {
+        "name": {
+            "enum": ["hubbard_u"]
+        },
+        "units": {
+            "enum": ["eV"]
+        },
+        "values": {
+            "type": "array",
+            "items": {
+                "type": "object",
+                "allOf": [
+                    {
+                        "$ref": "../../core/reusable/atomic_data_per_orbital_numeric.json"
+                    }
+                ],
+                "required": [
+                    "id",
+                    "atomicSpecies",
+                    "orbitalName",
+                    "value"
+                ]
+            }
+        }
+    },
+    "required": ["name"]
+}
