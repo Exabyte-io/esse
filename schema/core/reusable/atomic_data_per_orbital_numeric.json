@@ -1,0 +1,15 @@
+{
+    "$id": "core/reusable/atomic-data-per-orbital-numeric",
+    "$schema": "http://json-schema.org/draft-04/schema#",
+    "title": "Atomic data per orbital numeric",
+    "description": "Atomic properties per orbital pair with numeric value e.g., Hubbard V parameters.",
+    "type": "object",
+    "allOf":[
+        {
+            "$ref": "atomic_data/per_orbital.json"
+        },
+        {
+            "$ref": "atomic_data/value_number.json"
+        }
+    ]
+}
