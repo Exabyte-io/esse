@@ -1,11 +1,11 @@
 {
-    "$id": "properties-directory/non-scalar/hubbard-u",
+    "$id": "properties-directory/non-scalar/hubbard-v-nn",
     "$schema": "http://json-schema.org/draft-04/schema#",
-    "title": "Hubbard U parameters",
-    "description": "Hubbard U values in eV corresponding to atomic species, orbital and site number.",
+    "title": "Hubbard V parameters for nearest neighbors",
+    "description": "Hubbard V value in eV for nearest neighbors used in hp.x output parsing",
     "properties": {
         "name": {
-            "enum": ["hubbard_u"]
+            "enum": ["hubbard_v_nn"]
         },
         "units": {
             "enum": ["eV"]
@@ -16,13 +16,16 @@
                 "type": "object",
                 "allOf": [
                     {
-                        "$ref": "../../core/reusable/atomic_data_per_orbital_numeric.json"
+                        "$ref": "../../core/reusable/atomic_data_per_orbital_pair_numeric.json"
                     }
                 ],
                 "required": [
                     "id",
+                    "id2",
                     "atomicSpecies",
+                    "atomicSpecies2",
                     "orbitalName",
+                    "orbitalName2",
                     "value"
                 ]
             }

@@ -33,7 +33,7 @@
         },
         "distance": {
             "type": "number",
-            "description": "Distance between two sites in angstrom."
+            "description": "Distance between two sites in Bohr."
         }
     }
 }

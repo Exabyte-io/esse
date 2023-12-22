@@ -2,10 +2,10 @@
     "$id": "properties-directory/non-scalar/hubbard-v",
     "$schema": "http://json-schema.org/draft-04/schema#",
     "title": "Hubbard V parameters",
-    "description": "Hubbard V value in eV",
+    "description": "Hubbard V values corresponding to atomic pairs",
     "properties": {
         "name": {
-            "enum": ["hubbard_v", "hubbard_v_nn"]
+            "enum": ["hubbard_v"]
         },
         "units": {
             "enum": ["eV"]
@@ -24,6 +24,7 @@
                     "id2",
                     "atomicSpecies",
                     "atomicSpecies2",
+                    "distance",
                     "value"
                 ]
             }
