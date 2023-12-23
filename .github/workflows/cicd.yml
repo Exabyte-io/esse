@@ -35,7 +35,7 @@ jobs:
     runs-on: ubuntu-20.04
     strategy:
       matrix:
-        python-version: [3.6, 3.7, 3.8]
+        python-version: [3.8.6]
 
     steps:
       - name: Checkout this repository
@@ -60,7 +60,9 @@ jobs:
     runs-on: ubuntu-latest
     strategy:
       matrix:
-        node-version: [14.x, 16.x, 18.x]
+        node-version:
+          - 14.x
+          - 20.x
 
     steps:
       - name: Checkout this repository
@@ -106,7 +108,6 @@ jobs:
       - name: Publish JS release
         uses: ./actions/js/publish
         with:
-          node-version: 12.21.x
           npm-token: ${{ secrets.NPM_TOKEN }}
           github-token: ${{ secrets.BOT_GITHUB_TOKEN }}
 
