@@ -5,9 +5,9 @@ import file from "file";
 import groupBy from "lodash/groupBy";
 import path from "path";
 
-import { ESSE } from "../index";
-import { EXAMPLES_DIR, SCHEMAS_DIR } from "../settings";
-import { parseIncludeReferenceStatements } from "../utils";
+import { ESSE } from "../../src/js/esse";
+import { EXAMPLES_DIR, SCHEMAS_DIR } from "../../src/js/esse/settings";
+import { parseIncludeReferenceStatements } from "../../src/js/esse/utils";
 
 const esse = new ESSE();
 
