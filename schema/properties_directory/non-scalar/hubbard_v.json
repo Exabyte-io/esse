@@ -5,7 +5,7 @@
     "description": "Hubbard V values corresponding to atomic pairs",
     "properties": {
         "name": {
-            "enum": ["hubbard_v"]
+            "enum": ["hubbard_v", "hubbard_v_nn"]
         },
         "units": {
             "enum": ["eV"]
@@ -24,7 +24,6 @@
                     "id2",
                     "atomicSpecies",
                     "atomicSpecies2",
-                    "distance",
                     "value"
                 ]
             }

@@ -3,33 +3,9 @@
     "$schema": "http://json-schema.org/draft-04/schema#",
     "title": "Hubbard V parameters for nearest neighbors",
     "description": "Hubbard V value in eV for nearest neighbors used in hp.x output parsing",
-    "properties": {
-        "name": {
-            "enum": ["hubbard_v_nn"]
-        },
-        "units": {
-            "enum": ["eV"]
-        },
-        "values": {
-            "type": "array",
-            "items": {
-                "type": "object",
-                "allOf": [
-                    {
-                        "$ref": "../../core/reusable/atomic_data_per_orbital_pair_numeric.json"
-                    }
-                ],
-                "required": [
-                    "id",
-                    "id2",
-                    "atomicSpecies",
-                    "atomicSpecies2",
-                    "orbitalName",
-                    "orbitalName2",
-                    "value"
-                ]
-            }
+    "allOf": [
+        {
+            "$ref": "hubbard_v.json"
         }
-    },
-    "required": ["name"]
+    ]
 }
