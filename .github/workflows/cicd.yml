@@ -40,7 +40,8 @@ jobs:
           - 3.9.x
           - 3.10.x
           - 3.11.x
-          - 3.12.x
+          # Enable after: AttributeError: module 'pkgutil' has no attribute 'ImpImporter'. Did you mean: 'zipimporter'?
+          # - 3.12.x
 
     steps:
       - name: Checkout this repository
