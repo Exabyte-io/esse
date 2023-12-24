@@ -38,8 +38,9 @@ jobs:
         python-version:
           - 3.8.6
           - 3.9.x
-          - 3.10.x
-          - 3.11.x
+          # Enable after resolving Cython/PyYAML issue https://github.com/yaml/pyyaml/issues/724
+          # - 3.10.x
+          # - 3.11.x
           # Enable after: AttributeError: module 'pkgutil' has no attribute 'ImpImporter'. Did you mean: 'zipimporter'?
           # - 3.12.x
 
