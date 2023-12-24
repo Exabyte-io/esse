@@ -33,7 +33,11 @@ export function parseIncludeReferenceStatementsByDir(dirPath, wrapInDataAndPath=
             if (filePath.endsWith(".json")) {
                 const config = parseIncludeReferenceStatements(filePath);
                 if (wrapInDataAndPath) {
-                    const _path = path.dirname(filePath).replace(path.join(topDir, "example"), "");
+                    const _path = path.join(
+                        // remove leading slashes and "example" from path
+                        path.dirname(filePath).replace(path.join(topDir, "example"), "").replace(/^\/+/, ''),
+                        path.basename(filePath).replace(".json", "")
+                    );
                     data.push({ data: config, path: _path });
                 } else {
                     data.push(config);

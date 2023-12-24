@@ -42,7 +42,7 @@ wrappedExamples.forEach((example) => {
     fs.mkdirSync(path.dirname(full_path), {recursive: true})
     fs.writeFileSync(
         full_path,
-        JSON.stringify(example, null, 4),
+        JSON.stringify(example["data"], null, 4),
         "utf8",
     );
 })
