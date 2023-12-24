@@ -13,7 +13,6 @@ Usage (NOTE: "-e" in pip install is required for the file references to be resol
 After that, check for the files `src/py/mat3ra/esse/data/schemas.py` and `src/py/mat3ra/esse/data/examples.py`.
 """
 import os
-import json
 import yaml
 
 from mat3ra.esse.utils import parse_include_reference_statements_by_dir
@@ -28,13 +27,15 @@ with open(os.path.join(TOP_DIR, "manifest/properties.yaml")) as f:
     RESULTS = [k for k, v in PROPERTIES_MANIFEST.items() if v.get("isResult")]
 
 with open("src/py/mat3ra/esse/data/schemas.py", "w") as f:
-    f.write(f"import json\n" + f"SCHEMAS = json.loads(json.dumps({SCHEMAS}))")
+    f.write("import json\n" + f"SCHEMAS = json.loads(json.dumps({SCHEMAS}))")
 
 with open("src/py/mat3ra/esse/data/examples.py", "w") as f:
-    f.write(f"import json\n" + f"EXAMPLES = json.loads(json.dumps({EXAMPLES}))")
+    f.write("import json\n" + f"EXAMPLES = json.loads(json.dumps({EXAMPLES}))")
 
 with open("src/py/mat3ra/esse/data/properties.py", "w") as f:
-    content = (f"import json\n" +
-               f"PROPERTIES_MANIFEST = json.loads(json.dumps({PROPERTIES_MANIFEST}))\n" +
-               f"RESULTS = json.loads(json.dumps({RESULTS}))\n")
+    content = (
+        "import json\n"
+        + f"PROPERTIES_MANIFEST = json.loads(json.dumps({PROPERTIES_MANIFEST}))\n"
+        + f"RESULTS = json.loads(json.dumps({RESULTS}))\n"
+    )
     f.write(content)
