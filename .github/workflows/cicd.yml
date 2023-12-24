@@ -106,21 +106,7 @@ jobs:
           mkdir ./docs
           cp -r ./schema ./docs/
           cp -r ./example ./docs/
-          # https://stackoverflow.com/questions/3785055/how-can-i-create-a-simple-index-html-file-which-lists-all-files-directories
-          cd ./docs
-          find . -type d -print -exec sh -c 'tree "$0" \
-            -H "." \
-            -L 1 \
-            --noreport \
-            --dirsfirst \
-            --charset utf-8 \
-            -I "index.html" \
-            -T "Custom Title" \
-            --ignore-case \
-            --timefmt "%d-%b-%Y %H:%M" \
-            -s \
-            -D \
-            -o "$0/index.html"' {} \;
+          wget https://github.com/Exabyte-io/api-examples/
 
       - name: Deploy
         uses: peaceiris/actions-gh-pages@v3
