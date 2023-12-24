@@ -35,7 +35,12 @@ jobs:
     runs-on: ubuntu-20.04
     strategy:
       matrix:
-        python-version: [3.8.6]
+        python-version:
+          - 3.8.6
+          - 3.9.x
+          - 3.10.x
+          - 3.11.x
+          - 3.12.x
 
     steps:
       - name: Checkout this repository
