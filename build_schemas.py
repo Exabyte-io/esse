@@ -57,5 +57,5 @@ for example in EXAMPLES:
     full_path = os.path.join(TOP_DIR, "docs/py/example", id_as_path + ".json")
     Path(full_path).parent.mkdir(parents=True, exist_ok=True)
     with open(full_path, "w") as f:
-        f.write(json.dumps(schema, sort_keys=True, indent=4, separators=(",", ": ")))
+        f.write(json.dumps(example, sort_keys=True, indent=4, separators=(",", ": ")))
 
