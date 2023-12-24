@@ -24,14 +24,18 @@ export function parseIncludeReferenceStatements(filePath) {
  * Resolves `include` and `$ref` statements for all the JSON files inside a given directory.
  * @param dirPath {String} directory to parse.
  */
-export function parseIncludeReferenceStatementsByDir(dirPath) {
+export function parseIncludeReferenceStatementsByDir(dirPath, wrapInDataAndPath=false) {
     const data = [];
     file.walkSync(dirPath, (dirPath_, dirs_, files_) => {
         files_.forEach((file_) => {
             const filePath = path.join(dirPath_, file_);
             if (filePath.endsWith(".json")) {
-                // ignore files like .DS_Store
-                data.push(parseIncludeReferenceStatements(filePath));
+                const config = parseIncludeReferenceStatements(filePath);
+                if (wrapInDataAndPath) {
+                    data.push({ data: config, path: path.dirname(filePath) });
+                } else {
+                    data.push(config);
+                }
             }
         });
     });

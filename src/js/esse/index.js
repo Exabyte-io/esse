@@ -5,12 +5,13 @@ import { EXAMPLES_DIR, SCHEMAS_DIR } from "./settings";
 import { parseIncludeReferenceStatementsByDir } from "./utils";
 
 const SCHEMAS = parseIncludeReferenceStatementsByDir(SCHEMAS_DIR);
-const EXAMPLES = parseIncludeReferenceStatementsByDir(EXAMPLES_DIR);
+const EXAMPLES = parseIncludeReferenceStatementsByDir(EXAMPLES_DIR, true);
 
 export class ESSE {
     constructor() {
         this.schemas = SCHEMAS;
-        this.examples = EXAMPLES;
+        this.wrappedExamples = EXAMPLES;
+        this.examples = EXAMPLES.map((example) => example.data);
     }
 
     getSchemaById(schemaId) {
