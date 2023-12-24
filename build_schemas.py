@@ -28,10 +28,10 @@ with open(os.path.join(TOP_DIR, "manifest/properties.yaml")) as f:
     RESULTS = [k for k, v in PROPERTIES_MANIFEST.items() if v.get("isResult")]
 
 with open("src/py/mat3ra/esse/data/schemas.py", "w") as f:
-    f.write(f"import json; SCHEMAS = json.loads(json.dumps({SCHEMAS}))")
+    f.write(f"import json\n" + f"SCHEMAS = json.loads(json.dumps({SCHEMAS}))")
 
 with open("src/py/mat3ra/esse/data/examples.py", "w") as f:
-    f.write(f"import json; EXAMPLES = json.loads(json.dumps({EXAMPLES}))")
+    f.write(f"import json\n" + f"EXAMPLES = json.loads(json.dumps({EXAMPLES}))")
 
 with open("src/py/mat3ra/esse/data/properties.py", "w") as f:
     content = (f"import json\n" +
