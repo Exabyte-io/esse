@@ -4,3 +4,15 @@ repos:
     hooks:
       - id: ruff
       - id: black
+  - repo: local
+    hooks:
+      - id: generate-python-modules
+        name: Regenerate data modules classes from static assets
+        # yamllint disable rule:line-length
+        entry: |
+          bash -c 'if ! [ "$(git diff --cached --name-only | grep -e "example|schema")" ]; then echo "Skipping model generation because static files were not changed."; exit 0; fi'
+          bash -c 'python build_schemas.py'
+        # yamllint enable rule:line-length
+        language: system
+        pass_filenames: false
+        verbose: true
