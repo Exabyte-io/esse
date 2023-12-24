@@ -1,10 +1,8 @@
 import jsonschema
 
-from esse.utils import parseIncludeReferenceStatementsByDir
-from esse.settings import SCHEMAS_DIR, EXAMPLES_DIR, PROPERTIES_MANIFEST
-
-SCHEMAS = parseIncludeReferenceStatementsByDir(SCHEMAS_DIR)
-EXAMPLES = parseIncludeReferenceStatementsByDir(EXAMPLES_DIR)
+from .data.examples import EXAMPLES
+from .data.schemas import SCHEMAS
+from .data.properties import PROPERTIES_MANIFEST
 
 
 class ESSE(object):
@@ -12,12 +10,14 @@ class ESSE(object):
     Exabyte Source of Schemas and Examples class.
     """
 
-    def __init__(self):
-        self.schemas = SCHEMAS
-        self.examples = EXAMPLES
+    def __init__(self, schemas=SCHEMAS, examples=EXAMPLES):
+        self.schemas = schemas
+        self.wrapped_examples = examples
+        # Extract the data from the wrapped examples and omit the path.
+        self.examples = [e["data"] for e in examples]
 
-    def get_schema_by_id(self, schemaId):
-        return next((s for s in SCHEMAS if s.get("$id") == schemaId), None)
+    def get_schema_by_id(self, schema_id):
+        return next((s for s in SCHEMAS if s.get("$id") == schema_id), None)
 
     def validate(self, example, schema):
         """
