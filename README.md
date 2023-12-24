@@ -102,15 +102,6 @@ This directory contains Python and Javascript interfaces implementing the functi
 Generative keys are the fields which allow for user input prior to calculation of the final property values. A flag is included in the schema comments on the fields in [property schemas](schema/properties_directory): `isGenerative:true` marks which fields to use as subschemas in the generation of a user input schema.
 - On properties allowing user inputs, additional fields may be tagged, as in [the `file_content` property](schema/properties_directory/non-scalar/file_content.json)
 
-## Tests
-
-Execute the following command from the root directory of this repository to run the tests. The script will run both Javascript and Python tests in which examples are validated against the corresponding schemas.
-
-```bash
-bash run-tests.sh
-```
-The script has been tested with node.js v12.16.3 and v8.17.0 as well as Python version 2.7 (up to version 2.3.0) and 3.6+ (for version 2020.10.19 and later).
-
 ## Contribution
 
 This repository is an [open-source](LICENSE.md) work-in-progress and we welcome contributions. We suggest forking this repository and introducing the adjustments there, the changes in the fork can further be considered for merging into this repository as it is commonly done on Github (see [3](#links) below).
