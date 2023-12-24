@@ -28,7 +28,7 @@ schemas.forEach((schema) => {
         schema = mergeAllOf(schema, {resolvers: {defaultResolver: mergeAllOf.options.resolvers.title}});
     }
     id_as_path = schema["$id"].replace("-", "_");
-    full_path = `./docs/js/schema${id_as_path}.json`;
+    full_path = `./docs/js/schema/${id_as_path}.json`;
     fs.mkdirSync(path.dirname(full_path), {recursive: true})
     fs.writeFileSync(
         full_path,
@@ -38,7 +38,7 @@ schemas.forEach((schema) => {
 })
 wrappedExamples.forEach((example) => {
     id_as_path = example["path"].replace("-", "_");
-    full_path = `./docs/js/example${id_as_path}.json`;
+    full_path = `./docs/js/example/${id_as_path}.json`;
     fs.mkdirSync(path.dirname(full_path), {recursive: true})
     fs.writeFileSync(
         full_path,

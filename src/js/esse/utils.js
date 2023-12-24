@@ -26,13 +26,15 @@ export function parseIncludeReferenceStatements(filePath) {
  */
 export function parseIncludeReferenceStatementsByDir(dirPath, wrapInDataAndPath=false) {
     const data = [];
+    const topDir = path.resolve(__dirname, "../../../");
     file.walkSync(dirPath, (dirPath_, dirs_, files_) => {
         files_.forEach((file_) => {
             const filePath = path.join(dirPath_, file_);
             if (filePath.endsWith(".json")) {
                 const config = parseIncludeReferenceStatements(filePath);
                 if (wrapInDataAndPath) {
-                    data.push({ data: config, path: path.dirname(filePath) });
+                    const _path = path.dirname(filePath).replace(path.join(topDir, "example"), "");
+                    data.push({ data: config, path: _path });
                 } else {
                     data.push(config);
                 }
