@@ -3,7 +3,9 @@ repos:
     rev: 2023.6.13
     hooks:
       - id: ruff
+        exclude: ^src/py/mat3ra/esse/data
       - id: black
+        exclude: ^src/py/mat3ra/esse/data
   - repo: local
     hooks:
       - id: generate-python-modules
