@@ -104,13 +104,42 @@ Generative keys are the fields which allow for user input prior to calculation o
 
 ## Contribution
 
-This repository is an [open-source](LICENSE.md) work-in-progress and we welcome contributions. We suggest forking this repository and introducing the adjustments there, the changes in the fork can further be considered for merging into this repository as it is commonly done on Github (see [3](#links) below).
+This repository is an [open-source](LICENSE.md) work-in-progress and we welcome contributions. We suggest forking this repository and introducing the adjustments there, the changes in the fork can further be considered for merging into this repository as it is commonly done on GitHub (see [3](#links) below).
 
 ## Best Practices
 
 - Use unique IDs for schemas. One can run `sh refactor.sh` to automatically set the IDs and reformat examples.
 
 - Do not use circular references in the schemas, instead leave the type as object and add explanation to description.
+
+## Development
+
+### Python
+
+When developing in python the following should be taken into account:
+
+1. The modules containing the schemas and examples are generated using the [build-schemas.py](./build_schemas.py) script. There is a setup for it to be run automatically on every commit, but it is recommended to run it manually before committing to make sure that the changes are reflected in the modules. This can be done with `pre-commit run --all-files`. The pre-commit package can be installed with `pip install pre-commit`. To rebuild schemas manually, run (note `-e` in install):
+    ```bash
+    virtualenv .venv
+    source .venv/bin/activate
+    pip install -e ."[tests]"
+    python build_schemas.py
+    ```
+2. Tests can be run using the following commands:
+    ```bash
+    virtualenv .venv
+    source .venv/bin/activate
+    pip install ."[tests]"
+    python -m unittest discover --verbose --catch --start-directory tests/py/esse/   
+    ```
+
+### Javascript/Typescript
+
+See [package.json](package.json) for the list of available npm commands. The JS modules are generated using the [build_schema.js](./build_schema.js) script. There is a setup for it to be run automatically when the package is installed (see "transpile" directive). To rebuild schemas manually, run:
+```bash
+npm install
+npm run transpile
+```
 
 ## Links
 
