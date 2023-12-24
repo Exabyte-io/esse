@@ -269,3 +269,9 @@ hubbard_v:
     units: eV
   schemaId: properties-directory/non-scalar/hubbard-v
   isResult: true
+
+hubbard_v_nn:
+  defaults:
+    units: eV
+  schemaId: properties-directory/non-scalar/hubbard-v-nn
+  isResult: true
