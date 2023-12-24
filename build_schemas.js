@@ -24,7 +24,7 @@ if (process.env.BUILD_DOCS !== "true") {
     process.exit(0);
 }
 schemas.forEach((schema) => {
-    if (!process.env.SKIP_MERGE_ALLOF === "true") {
+    if (process.env.SKIP_MERGE_ALLOF !== "true") {
         schema = mergeAllOf(schema, {resolvers: {defaultResolver: mergeAllOf.options.resolvers.title}});
     }
     id_as_path = schema["$id"].replace("-", "_");
