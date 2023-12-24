@@ -68,7 +68,9 @@ extend-exclude = '''
 [tool.ruff]
 # Exclude a variety of commonly ignored directories.
 extend-exclude = [
-    "src/js"
+    "src/js",
+    "src/py/mat3ra/esse/data",
+    "tests/js"
 ]
 line-length = 120
 target-version = "py38"
