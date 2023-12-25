@@ -4,23 +4,28 @@
 
 # ESSE
 
-Essential Source of Schemas and Examples (ESSE) contains data formats and associated examples specifically designed for digital materials science (see refs. [1, 2](#links) below).
+Essential Source of Schemas and Examples (ESSE) contains data formats and examples for common entities used in digital materials science (see refs. [1, 2](#links) below).
 
-## Installation
+Although, the schemas are used to facilitate the operations of mat3ra.com, they are designed to be generic and can be used in other applications. The open-source packages developed by Mat3ra.com use the schemas available in this repository.
 
-ESSE can be used as a Node.js or Python package on the server side.
+The latest variants of schemas and examples are available at [schemas.mat3ra.com](http://schemas.mat3ra.com/).
 
-### Python
+ESSE has a dual-nature as both a Python and a Node.js package.
 
-ESSE is compatible with Python 3.6+.  It can be installed as a Python package either via PyPI or the repository as below.
 
-#### PyPI
+## 1. Installation
+
+### 1.1. Python
+
+ESSE is compatible with Python 3.8+.
+
+#### 1.1.1. PyPI
 
 ```bash
-pip install esse
+pip install mat3ra-esse
 ```
 
-#### Repository
+#### 1.1.2. Repository
 
 ```bash
 virtualenv .venv
@@ -28,93 +33,82 @@ source .venv/bin/activate
 pip install -e PATH_TO_ESSE_REPOSITORY
 ```
 
-### Node
+### 1.2. Node
 
-ESSE can be installed as a Node.js package either via NPM or the repository as below.
-
-#### NPM
+#### 1.2.1. NPM
 
 ```bash
 npm install @exabyte-io/esse.js
 ```
 
-#### Repository
 
-Add `"esse-js": "file:PATH_TO_ESSE_REPOSITORY"` to `package.json`.
-
-## Usage
+## 2. Usage
 
 ESSE contains separate but equivalent interfaces for Python and Javascript.
 The package provides `ESSE` class that can be initialized and used as below.
 
-### Python
+### 2.1. Usage in Python
 
 ```python
-from esse import ESSE
+from mat3ra.esse import ESSE
 
-es = ESSE()
-schema = es.get_schema_by_id("material")
+helper = ESSE()
+schema = helper.get_schema_by_id("material")
 ```
 
-### Node
+### 2.2. Usage in Node/JS/TS
 
 ```javascript
 import {ESSE} from "esse-js";
 
-const es = new ESSE();
-const schema = es.getSchemaById("material");
+const helper = new ESSE();
+const schema = helper.getSchemaById("material");
 ```
 
-## Structure
+
+## 3. Directory Structure
 
 ESSE contains 3 main directories, [schema](schema), [example](example) and [src](src) outlined below.
 
-### Schema
+### 3.1. Schema
 
 The schema directory contains the schemas specifying the rules to structure data. A set of core schemas, outlined below, are defined to facilitate the schema modularity.
 
-#### Primitive
-
-[Primitive](schema/core/primitive) directory contains a set of custom primitives that extends default standard primitive types allowed by schema, such as String and Number.
+- [Primitive](schema/core/primitive) directory contains a set of custom primitives that extends default standard primitive types allowed by schema, such as String and Number.
 Primitives are solely defined by the default primitives and can not be re-constructed from each other.
+- [Abstract](schema/core/abstract) directory contains unit-less schemas that are constructed from default and custom primitives.
+- [Reusable](schema/core/reusable) directory contains the schemas that are widely used in other schemas to avoid duplication, constructed from the abstract and primitive schemas.
+- [Reference](schema/core/reference) directory contains the schemas defining the rules to structure the references to data sources.
 
-#### Abstract
-
-[Abstract](schema/core/abstract) directory contains unit-less schemas that are constructed from default and custom primitives.
-
-#### Reusable
-
-[Reusable](schema/core/reusable) directory contains the schemas that are widely used in other schemas to avoid duplication, constructed from the abstract and primitive schemas.
-
-#### Reference
-
-[Reference](schema/core/reference) directory contains the schemas defining the rules to structure the references to data sources.
-
-### Example
+### 3.2. Example
 
 This directory contains the examples formed according to the schemas and implements the same directory structure as the schema directory.
 
-### src
+### 3.3. src
 
 This directory contains Python and Javascript interfaces implementing the functionality to access and validate schemas and examples.
 
-### Generative vs Non-generative keys
-Generative keys are the fields which allow for user input prior to calculation of the final property values. A flag is included in the schema comments on the fields in [property schemas](schema/properties_directory): `isGenerative:true` marks which fields to use as subschemas in the generation of a user input schema.
-- On properties allowing user inputs, additional fields may be tagged, as in [the `file_content` property](schema/properties_directory/non-scalar/file_content.json)
 
-## Contribution
+## 4. Conventions
 
-This repository is an [open-source](LICENSE.md) work-in-progress and we welcome contributions. We suggest forking this repository and introducing the adjustments there, the changes in the fork can further be considered for merging into this repository as it is commonly done on GitHub (see [3](#links) below).
+### 4.1. Generative vs Non-generative keys
+Generative keys are the fields which allow for user input prior to calculation of the final property values. A flag is included in the schema comments on the fields in [property schemas](schema/properties_directory): `isGenerative:true` marks which fields to use as subschemas in the generation of a user input schema. On properties allowing user inputs, additional fields may be tagged, as in [the `file_content` property](schema/properties_directory/non-scalar/file_content.json)
 
-## Best Practices
 
-- Use unique IDs for schemas. One can run `sh refactor.sh` to automatically set the IDs and reformat examples.
+## 5. Development
 
-- Do not use circular references in the schemas, instead leave the type as object and add explanation to description.
+The schemas and examples are stored as JSON assets. The JSON assets are used to generate JS/TS and PY modules that can be used to access the schemas and examples in the corresponding runtimes. The modules are generated using the [build_schemas.py](./build_schemas.py) and [build_schema.js](./build_schema.js) scripts. The JS modules are generated during the transpilation step of the npm. The PY modules are generated during the development and distributed within the pip package.
 
-## Development
+The following outlines the development process workflow:
 
-### Python
+0. Setup: clone the repository and install the dependencies for both JS and PY (as explained below).
+1. Edit code and commit changes.
+2. Pre commit is used to regenerate the modules.
+3. Push the changes to GitHub.
+4. GH workflow is used to generate the fully resolved file (without "$ref"s and "$allOf" etc.) and examples and publish them to [schemas.mat3ra.com](http://schemas.mat3ra.com/).
+5. Publish the new version of the package to PyPI and npm.
+
+### 5.1. Development in Python
 
 When developing in python the following should be taken into account:
 
@@ -133,7 +127,7 @@ When developing in python the following should be taken into account:
     python -m unittest discover --verbose --catch --start-directory tests/py/esse/   
     ```
 
-### Javascript/Typescript
+### 5.2. Development in Javascript/Typescript
 
 See [package.json](package.json) for the list of available npm commands. The JS modules are generated using the [build_schema.js](./build_schema.js) script. There is a setup for it to be run automatically when the package is installed (see "transpile" directive). To rebuild schemas manually, run:
 ```bash
@@ -141,10 +135,18 @@ npm install
 npm run transpile
 ```
 
-## Links
+### 5.3. General Dev Suggestions
+
+This repository is an [open-source](LICENSE.md) work-in-progress and we welcome contributions. We suggest forking this repository and introducing the adjustments there, the changes in the fork can further be considered for merging into this repository as it is commonly done on GitHub (see [3](#links) below).
+
+Other suggestions:
+
+- Use unique IDs for schemas
+- Do not use circular references in the schemas, instead leave the type as object and add explanation to description.
+
+
+## 6. Links
 
 1: [Data-centric online ecosystem for digital materials science](https://arxiv.org/pdf/1902.10838.pdf)
-
 2: [CateCom: A Practical Data-Centric Approach to Categorization of Computational Models](https://pubs.acs.org/doi/abs/10.1021/acs.jcim.2c00112)
-
 3: [GitHub Standard Fork & Pull Request Workflow](https://gist.github.com/Chaser324/ce0505fbed06b947d962)
