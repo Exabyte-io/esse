@@ -101,12 +101,17 @@ The schemas and examples are stored as JSON assets. The JSON assets are used to 
 
 The following outlines the development process workflow:
 
-0. Setup: clone the repository and install the dependencies for both JS and PY (as explained below).
-1. Edit code and commit changes.
-2. Pre commit is used to regenerate the modules.
-3. Push the changes to GitHub.
-4. GH workflow is used to generate the fully resolved file (without "$ref"s and "$allOf" etc.) and examples and publish them to [schemas.mat3ra.com](http://schemas.mat3ra.com/).
-5. Publish the new version of the package to PyPI and npm.
+1. Setup: clone the repository and install the dependencies for both JS and PY (as explained below).
+2. Edit code and commit changes.
+3. Pre commit is used to regenerate the modules.
+4. Push the changes to GitHub.
+5. GH workflow is used to generate the fully resolved file (without "$ref"s and "$allOf" etc.) and examples and publish them to [schemas.mat3ra.com](http://schemas.mat3ra.com/).
+6. Publish the new version of the package to PyPI and npm.
+
+The [pre-commit](.husky/pre-commit) is using both JS and PY runtime(s) to regenerate the schemas and examples. 
+
+[//]: # (TODO: consider reusing JS runtime and schemas build script for PY modules for consistency)
+NOTE: The PY and JS modules are built from the same JSON sources, but using different runtimes (scripts) and thus may still be different. Only for JS the fully resolved schemas (with merged "$allOf") are created. They are used for the docs website. 
 
 ### 5.1. Development in Python
 
