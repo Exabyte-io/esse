@@ -20,7 +20,7 @@ fs.writeFileSync(
 
 fs.writeFileSync("./schema.js", "module.exports = " + JSON.stringify(schema), "utf8");
 
-if (process.env.BUILD_FILES !== "true") {
+if (process.env.BUILD_ASSETS !== "true") {
     process.exit(0);
 }
 
