@@ -1,7 +1,7 @@
 {
-    "name": "@exabyte-io/esse.js",
+    "name": "@mat3ra/esse",
     "version": "0.0.0",
-    "description": "Exabyte Source of Schemas and Examples",
+    "description": "Mat3ra's Excellent Source of Schemas and Examples (ESSE) for Digital Materials R&D",
     "scripts": {
         "prepublishOnly": "rm -rf lib; npm run transpile",
         "transpile": "mkdir -p lib; babel src/js --out-dir lib/js; node build_schemas.js",
@@ -18,15 +18,15 @@
     },
     "repository": {
         "type": "git",
-        "url": "https://github.com/Exabyte-io/exabyte-esse.git"
+        "url": "https://github.com/Exabyte-io/esse.git"
     },
     "main": "lib/js/esse/index.js",
-    "author": "Exabyte Inc.",
-    "email": "info@exabyte.io",
+    "author": "Mat3ra.com",
+    "email": "info@mat3ra.com",
     "bugs": {
         "url": "https://github.com/Exabyte-io/exabyte-esse/issues"
     },
-    "homepage": "https://github.com/Exabyte-io/exabyte-esse",
+    "homepage": "https://github.com/Exabyte-io/esse",
     "devDependencies": {
         "@exabyte-io/eslint-config": "^2022.11.17-0",
         "chai": "4.3.4",
