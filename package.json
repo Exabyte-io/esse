@@ -5,6 +5,8 @@
     "scripts": {
         "prepublishOnly": "rm -rf lib; npm run transpile",
         "transpile": "mkdir -p lib; babel src/js --out-dir lib/js; node build_schemas.js",
+        "build:assets": "node build_schemas.js",
+        "build:assets-with-docs": "BUILD_DOCS=true node build_schemas.js",
         "test": "nyc --reporter=text mocha --bail --require @babel/register tests/js/",
         "lint": "eslint src/js && prettier --write src/js",
         "lint:fix": "eslint --fix --cache src/js && prettier --write src/js",
