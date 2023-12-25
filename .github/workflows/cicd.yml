@@ -119,7 +119,7 @@ jobs:
 
 
   publish-py-package:
-    needs: publish-js-package
+    needs: [run-py-linter, run-py-tests, run-js-tests]
     runs-on: ubuntu-latest
     if: github.ref_name == 'dev'
 
@@ -146,7 +146,7 @@ jobs:
           publish-tag: 'false'
 
   deploy-docs:
-    needs: publish-py-package
+    needs: [publish-py-package, publish-js-package]
     runs-on: ubuntu-latest
     strategy:
       matrix:
