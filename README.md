@@ -6,9 +6,9 @@
 
 Essential Source of Schemas and Examples (ESSE) contains data formats and examples for common entities used in digital materials science (see refs. [1, 2](#links) below).
 
-Although, the schemas are used to facilitate the operations of mat3ra.com, they are designed to be generic and can be used in other applications. The open-source packages developed by Mat3ra.com use the schemas available in this repository.
+Although, the schemas are used to facilitate the operations of [mat3ra.com](https://mat3ra.com), they are designed to be generic and can be used in other applications. The open-source packages developed by Mat3ra.com use the schemas available in this repository.
 
-The latest variants of schemas and examples are available at [schemas.mat3ra.com](http://schemas.mat3ra.com/).
+The latest variants of schemas and examples are available at [schemas.mat3ra.com](https://schemas.mat3ra.com/).
 
 ESSE has a dual-nature as both a Python and a Node.js package.
 
