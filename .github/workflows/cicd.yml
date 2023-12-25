@@ -115,7 +115,7 @@ jobs:
         run: |
           npm install
           echo "Building Schemas and Examples"
-          npm run build:assets-and-docs
+          npm run build:assets-with-docs
           echo "List build directory ./docs/js"
           ls -l docs/js
 
