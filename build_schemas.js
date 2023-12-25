@@ -30,13 +30,13 @@ schemas.forEach((s) => {
         s = mergeAllOf(s, { resolvers: { defaultResolver: mergeAllOf.options.resolvers.title } });
     }
     const id_as_path = s.$id.replace("-", "_");
-    const full_path = `${subfolder}/${id_as_path}.json`;
+    const full_path = `${subfolder}/schema/${id_as_path}.json`;
     fs.mkdirSync(path.dirname(full_path), { recursive: true });
     fs.writeFileSync(full_path, JSON.stringify(s, null, 4), "utf8");
 });
 wrappedExamples.forEach((e) => {
     const id_as_path = e.path.replace("-", "_");
-    const full_path = `${subfolder}/${id_as_path}.json`;
+    const full_path = `${subfolder}/example/${id_as_path}.json`;
     fs.mkdirSync(path.dirname(full_path), { recursive: true });
     fs.writeFileSync(full_path, JSON.stringify(e.data, null, 4), "utf8");
 });
