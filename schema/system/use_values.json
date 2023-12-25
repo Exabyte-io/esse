@@ -1,0 +1,10 @@
+{
+    "$id": "system/use-values",
+    "$schema": "http://json-schema.org/draft-04/schema#",
+    "title": "use values schema",
+    "properties": {
+        "useValues": {
+            "type": "boolean"
+        }
+    }
+}

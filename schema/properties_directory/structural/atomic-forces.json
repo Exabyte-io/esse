@@ -1,0 +1,69 @@
+{
+    "$id": "properties-directory/structural/atomic-forces",
+    "$schema": "http://json-schema.org/draft-04/schema#",
+    "title": "atomic forces",
+    "description": "coordinates of atoms by ids, vector, unitless",
+    "properties": {
+        "name": {
+            "enum": [
+                "atomic_forces"
+            ]
+        },
+        "values": {
+            "$id": "core/reusable/atomic-vectors",
+            "$schema": "http://json-schema.org/draft-04/schema#",
+            "title": "atomic vectors schema",
+            "description": "array of objects containing integer id each",
+            "type": "array",
+            "items": {
+                "type": "object",
+                "uniqueItems": true,
+                "properties": {
+                    "value": {
+                        "$id": "core/abstract/vector",
+                        "$schema": "http://json-schema.org/draft-04/schema#",
+                        "title": "vector schema",
+                        "oneOf": [
+                            {
+                                "$id": "core/primitive/array-of-3-numbers",
+                                "$schema": "http://json-schema.org/draft-04/schema#",
+                                "title": "array of 3 number elements schema",
+                                "type": "array",
+                                "items": {
+                                    "type": "number"
+                                },
+                                "minItems": 3,
+                                "maxItems": 3
+                            },
+                            {
+                                "$id": "core/primitive/array-of-3-booleans",
+                                "$schema": "http://json-schema.org/draft-04/schema#",
+                                "title": "array of 3 boolean elements schema",
+                                "type": "array",
+                                "items": {
+                                    "type": "boolean"
+                                },
+                                "minItems": 3,
+                                "maxItems": 3
+                            }
+                        ]
+                    },
+                    "id": {
+                        "description": "integer id of this entry",
+                        "type": "integer"
+                    }
+                }
+            }
+        },
+        "units": {
+            "enum": [
+                "eV/bohr",
+                "eV/angstrom",
+                "rydberg/a.u.",
+                "newton",
+                "kg*m/s^2",
+                "eV/a.u."
+            ]
+        }
+    }
+}

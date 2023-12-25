@@ -1,0 +1,36 @@
+{
+    "$id": "system/in-set",
+    "$schema": "http://json-schema.org/draft-04/schema#",
+    "title": "System in-set schema",
+    "properties": {
+        "inSet": {
+            "type": "array",
+            "items": {
+                "$id": "system/entity-reference",
+                "$schema": "http://json-schema.org/draft-04/schema#",
+                "title": "entity reference schema",
+                "type": "object",
+                "properties": {
+                    "_id": {
+                        "description": "entity identity",
+                        "type": "string"
+                    },
+                    "cls": {
+                        "description": "entity class",
+                        "type": "string"
+                    },
+                    "slug": {
+                        "description": "entity slug",
+                        "type": "string"
+                    },
+                    "type": {
+                        "type": "string"
+                    },
+                    "index": {
+                        "type": "number"
+                    }
+                }
+            }
+        }
+    }
+}

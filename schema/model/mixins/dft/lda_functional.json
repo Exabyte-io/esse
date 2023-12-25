@@ -1,0 +1,13 @@
+{
+    "$id": "model/mixins/dft/lda-functional",
+    "$schema": "http://json-schema.org/draft-04/schema#",
+    "title": "LDA functional mixin",
+    "type": "object",
+    "properties": {
+        "functional": {
+            "enum": [
+                "pz"
+            ]
+        }
+    }
+}

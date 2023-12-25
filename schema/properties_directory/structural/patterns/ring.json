@@ -1,0 +1,37 @@
+{
+    "$id": "properties-directory/structural/patterns/ring",
+    "$schema": "http://json-schema.org/draft-04/schema#",
+    "title": "ring pattern schema",
+    "type": "object",
+    "properties": {
+        "name": {
+            "enum": [
+                "ring"
+            ]
+        },
+        "atoms": {
+            "$id": "core/primitive/array-of-ids",
+            "$schema": "http://json-schema.org/draft-04/schema#",
+            "title": "atomic ids",
+            "description": "array of objects containing integer id each",
+            "type": "array",
+            "items": {
+                "type": "object",
+                "uniqueItems": true,
+                "properties": {
+                    "isConnector": {
+                        "description": "whether atom connects to atoms outside of functional group.",
+                        "type": "boolean"
+                    },
+                    "id": {
+                        "description": "integer id of this entry",
+                        "type": "integer"
+                    }
+                }
+            }
+        },
+        "isAromatic": {
+            "type": "boolean"
+        }
+    }
+}

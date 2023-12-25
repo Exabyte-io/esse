@@ -1,0 +1,14 @@
+{
+    "$id": "system/description",
+    "$schema": "http://json-schema.org/draft-04/schema#",
+    "title": "extended base entity schema",
+    "properties": {
+        "description": {
+            "description": "entity description",
+            "type": "string"
+        },
+        "descriptionObject": {
+            "type": "object"
+        }
+    }
+}

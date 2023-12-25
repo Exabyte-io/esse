@@ -1,0 +1,42 @@
+{
+    "$id": "properties-directory/scalar/valence-band-offset",
+    "$schema": "http://json-schema.org/draft-04/schema#",
+    "title": "valence band offset schema",
+    "required": [
+        "name",
+        "units",
+        "value"
+    ],
+    "type": "object",
+    "properties": {
+        "name": {
+            "enum": [
+                "valence_band_offset"
+            ],
+            "type": "string"
+        },
+        "units": {
+            "anyOf": [
+                {
+                    "enum": [
+                        "kJ/mol",
+                        "eV",
+                        "J/mol",
+                        "hartree",
+                        "cm-1",
+                        "rydberg",
+                        "eV/atom"
+                    ]
+                },
+                {
+                    "enum": [
+                        "eV/A^2"
+                    ]
+                }
+            ]
+        },
+        "value": {
+            "type": "number"
+        }
+    }
+}

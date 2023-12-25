@@ -1,0 +1,37 @@
+{
+    "$id": "system/timestampable",
+    "$schema": "http://json-schema.org/draft-04/schema#",
+    "title": "timestampable entity schema",
+    "properties": {
+        "createdAt": {
+            "description": "entity creation time",
+            "type": "string",
+            "format": "date-time"
+        },
+        "updatedAt": {
+            "description": "entity last modification time",
+            "type": "string",
+            "format": "date-time"
+        },
+        "createdBy": {
+            "oneOf": [
+                {
+                    "type": "string"
+                },
+                {
+                    "type": "number"
+                }
+            ]
+        },
+        "updatedBy": {
+            "oneOf": [
+                {
+                    "type": "string"
+                },
+                {
+                    "type": "number"
+                }
+            ]
+        }
+    }
+}

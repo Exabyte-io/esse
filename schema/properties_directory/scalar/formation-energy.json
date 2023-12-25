@@ -1,0 +1,42 @@
+{
+    "$id": "properties-directory/scalar/formation-energy",
+    "$schema": "http://json-schema.org/draft-04/schema#",
+    "title": "formation energy schema",
+    "required": [
+        "name",
+        "units",
+        "value"
+    ],
+    "type": "object",
+    "properties": {
+        "name": {
+            "enum": [
+                "formation_energy"
+            ],
+            "type": "string"
+        },
+        "units": {
+            "anyOf": [
+                {
+                    "enum": [
+                        "kJ/mol",
+                        "eV",
+                        "J/mol",
+                        "hartree",
+                        "cm-1",
+                        "rydberg",
+                        "eV/atom"
+                    ]
+                },
+                {
+                    "enum": [
+                        "eV/A^2"
+                    ]
+                }
+            ]
+        },
+        "value": {
+            "type": "number"
+        }
+    }
+}

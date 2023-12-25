@@ -1,0 +1,31 @@
+{
+    "$id": "core/reusable/atomic-scalars",
+    "$schema": "http://json-schema.org/draft-04/schema#",
+    "title": "atomic scalars vectors schema",
+    "description": "array of objects containing integer id each",
+    "type": "array",
+    "items": {
+        "type": "object",
+        "uniqueItems": true,
+        "properties": {
+            "value": {
+                "$id": "core/primitive/scalar",
+                "$schema": "http://json-schema.org/draft-04/schema#",
+                "title": "scalar schema",
+                "type": "object",
+                "required": [
+                    "value"
+                ],
+                "properties": {
+                    "value": {
+                        "type": "number"
+                    }
+                }
+            },
+            "id": {
+                "description": "integer id of this entry",
+                "type": "integer"
+            }
+        }
+    }
+}

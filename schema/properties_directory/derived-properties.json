@@ -1,0 +1,186 @@
+{
+    "$id": "properties-directory/derived-properties",
+    "$schema": "http://json-schema.org/draft-04/schema#",
+    "title": "derived properties schema",
+    "type": "array",
+    "items": {
+        "anyOf": [
+            {
+                "$id": "properties-directory/structural/volume",
+                "$schema": "http://json-schema.org/draft-04/schema#",
+                "title": "volume schema",
+                "type": "object",
+                "required": [
+                    "value"
+                ],
+                "properties": {
+                    "name": {
+                        "enum": [
+                            "volume"
+                        ]
+                    },
+                    "units": {
+                        "enum": [
+                            "angstrom^3"
+                        ]
+                    },
+                    "value": {
+                        "type": "number"
+                    }
+                }
+            },
+            {
+                "$id": "properties-directory/structural/density",
+                "$schema": "http://json-schema.org/draft-04/schema#",
+                "title": "density schema",
+                "type": "object",
+                "required": [
+                    "value"
+                ],
+                "properties": {
+                    "name": {
+                        "enum": [
+                            "density"
+                        ]
+                    },
+                    "units": {
+                        "enum": [
+                            "g/cm^3"
+                        ]
+                    },
+                    "value": {
+                        "type": "number"
+                    }
+                }
+            },
+            {
+                "$id": "properties-directory/structural/symmetry",
+                "$schema": "http://json-schema.org/draft-04/schema#",
+                "title": "symmetry schema",
+                "properties": {
+                    "pointGroupSymbol": {
+                        "description": "point group symbol in Schoenflies notation",
+                        "type": "string"
+                    },
+                    "spaceGroupSymbol": {
+                        "description": "space group symbol in Hermann–Mauguin notation",
+                        "type": "string"
+                    },
+                    "tolerance": {
+                        "description": "tolerance used for symmetry calculation",
+                        "$id": "core/primitive/scalar",
+                        "$schema": "http://json-schema.org/draft-04/schema#",
+                        "title": "scalar schema",
+                        "type": "object",
+                        "required": [
+                            "value"
+                        ],
+                        "properties": {
+                            "units": {
+                                "enum": [
+                                    "angstrom"
+                                ]
+                            },
+                            "value": {
+                                "type": "number"
+                            }
+                        }
+                    },
+                    "name": {
+                        "enum": [
+                            "symmetry"
+                        ]
+                    }
+                }
+            },
+            {
+                "$id": "properties-directory/structural/elemental-ratio",
+                "$schema": "http://json-schema.org/draft-04/schema#",
+                "title": "elemental-ratio",
+                "description": "ration of this element in the compound",
+                "type": "object",
+                "required": [
+                    "value"
+                ],
+                "properties": {
+                    "name": {
+                        "enum": [
+                            "elemental_ratio"
+                        ]
+                    },
+                    "value": {
+                        "type": "number",
+                        "min": 0,
+                        "max": 1
+                    },
+                    "element": {
+                        "type": "string",
+                        "description": "the element this ratio is for"
+                    }
+                }
+            },
+            {
+                "$id": "properties-directory/structural/p-norm",
+                "$schema": "http://json-schema.org/draft-04/schema#",
+                "title": "p_norm",
+                "description": "https://en.wikipedia.org/wiki/Norm_(mathematics)#p-norm",
+                "type": "object",
+                "required": [
+                    "value"
+                ],
+                "properties": {
+                    "name": {
+                        "enum": [
+                            "p-norm"
+                        ]
+                    },
+                    "degree": {
+                        "type": "integer",
+                        "description": "degree of the dimensionality of the norm"
+                    },
+                    "value": {
+                        "type": "number"
+                    }
+                }
+            },
+            {
+                "$id": "properties-directory/structural/inchi",
+                "$schema": "http://json-schema.org/draft-04/schema#",
+                "title": "InChI representation schema",
+                "type": "object",
+                "required": [
+                    "value"
+                ],
+                "properties": {
+                    "name": {
+                        "enum": [
+                            "inchi"
+                        ]
+                    },
+                    "value": {
+                        "type": "string"
+                    }
+                }
+            },
+            {
+                "$id": "properties-directory/structural/inchi-key",
+                "$schema": "http://json-schema.org/draft-04/schema#",
+                "title": "InChI key representation schema",
+                "type": "object",
+                "required": [
+                    "value"
+                ],
+                "properties": {
+                    "name": {
+                        "enum": [
+                            "inchi_key"
+                        ]
+                    },
+                    "value": {
+                        "type": "string"
+                    }
+                }
+            }
+        ]
+    }
+}

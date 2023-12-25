@@ -1,0 +1,73 @@
+{
+    "$id": "software-directory/scripting/shell",
+    "$schema": "http://json-schema.org/draft-04/schema#",
+    "title": "Shell Scripting Language Schema",
+    "type": "object",
+    "required": [
+        "name"
+    ],
+    "additionalProperties": true,
+    "properties": {
+        "name": {
+            "enum": [
+                "shell"
+            ],
+            "description": "The name of the application. e.g. espresso",
+            "type": "string"
+        },
+        "flavor": {
+            "enum": [
+                "sh",
+                "bash",
+                "zsh",
+                "csh"
+            ]
+        },
+        "summary": {
+            "enum": [
+                "Shell Script"
+            ],
+            "description": "Application's short description.",
+            "type": "string"
+        },
+        "version": {
+            "enum": [
+                "4.2.46"
+            ],
+            "description": "Application version. e.g. 5.3.5",
+            "type": "string"
+        },
+        "exec": {
+            "enum": [
+                "sh",
+                "bash",
+                "zsh",
+                "csh"
+            ]
+        },
+        "arguments": {
+            "description": "Optional arguments passed to the Shell script",
+            "type": "string"
+        },
+        "environment": {
+            "description": "Optional environment variables exported before running the Shell script",
+            "type": "object"
+        },
+        "shortName": {
+            "description": "The short name of the application. e.g. qe",
+            "type": "string"
+        },
+        "build": {
+            "description": "Application build. e.g. VTST",
+            "type": "string"
+        },
+        "hasAdvancedComputeOptions": {
+            "description": "Whether advanced compute options are present",
+            "type": "boolean"
+        },
+        "isLicensed": {
+            "description": "Whether licensing is present",
+            "type": "boolean"
+        }
+    }
+}

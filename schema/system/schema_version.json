@@ -1,0 +1,12 @@
+{
+    "$id": "system/schema-version",
+    "$schema": "http://json-schema.org/draft-04/schema#",
+    "title": "schema version",
+    "properties": {
+        "schemaVersion": {
+            "description": "entity's schema version. Used to distinct between different schemas.",
+            "type": "string",
+            "default": "2022.8.16"
+        }
+    }
+}

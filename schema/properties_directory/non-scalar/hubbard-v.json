@@ -1,0 +1,74 @@
+{
+    "$id": "properties-directory/non-scalar/hubbard-v",
+    "$schema": "http://json-schema.org/draft-04/schema#",
+    "title": "Hubbard V parameters",
+    "description": "Hubbard V value in eV",
+    "required": [
+        "name"
+    ],
+    "properties": {
+        "name": {
+            "enum": [
+                "hubbard_v"
+            ]
+        },
+        "units": {
+            "enum": [
+                "eV"
+            ]
+        },
+        "values": {
+            "type": "array",
+            "items": {
+                "type": "object",
+                "required": [
+                    "id",
+                    "id2",
+                    "atomicSpecies",
+                    "atomicSpecies2",
+                    "value"
+                ],
+                "$id": "core/reusable/atomic-data-per-orbital-pair-numeric",
+                "$schema": "http://json-schema.org/draft-04/schema#",
+                "title": "Atomic data per orbital pair numeric",
+                "description": "Atomic properties per orbital pair with numeric value e.g., Hubbard V parameters.",
+                "properties": {
+                    "id": {
+                        "type": "integer",
+                        "description": "Site number or index in the lattice"
+                    },
+                    "id2": {
+                        "type": "integer",
+                        "description": "Site number or index in the lattice of second site"
+                    },
+                    "atomicSpecies": {
+                        "type": "string",
+                        "pattern": "^[a-zA-Z]{1,2}[\\d+]?$",
+                        "description": "Example: Co1, Mn"
+                    },
+                    "atomicSpecies2": {
+                        "type": "string",
+                        "pattern": "^[a-zA-Z]{1,2}[\\d+]?$",
+                        "description": "Example: Co2, O"
+                    },
+                    "orbitalName": {
+                        "type": "string",
+                        "pattern": "^[1-7][sSpPdDfF]$"
+                    },
+                    "orbitalName2": {
+                        "type": "string",
+                        "pattern": "^[1-7][sSpPdDfF]$"
+                    },
+                    "distance": {
+                        "type": "number",
+                        "description": "Distance between two sites in angstrom."
+                    },
+                    "value": {
+                        "type": "number",
+                        "description": "Value related to a specific property, e.g., Hubbard U, V etc."
+                    }
+                }
+            }
+        }
+    }
+}

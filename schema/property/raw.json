@@ -1,0 +1,392 @@
+{
+    "$id": "property/raw",
+    "$schema": "http://json-schema.org/draft-04/schema#",
+    "title": "Schema of material's preliminary property",
+    "required": [
+        "data",
+        "source"
+    ],
+    "properties": {
+        "slug": {
+            "description": "property slug, e.g. total_energy",
+            "type": "string"
+        },
+        "group": {
+            "description": "property group, e.g. qe:dft:gga:pbe",
+            "type": "string"
+        },
+        "data": {
+            "description": "container of the information, specific to each property",
+            "type": "object"
+        },
+        "source": {
+            "$id": "property/source",
+            "$schema": "http://json-schema.org/draft-04/schema#",
+            "title": "The source of a property. This could be an article, a simulation on Exabyte, an external simulation, etc.",
+            "type": "object",
+            "properties": {
+                "type": {
+                    "description": "Type of the material property's source.",
+                    "type": "string"
+                },
+                "url": {
+                    "description": "Internet address of the reference.",
+                    "type": "string"
+                },
+                "info": {
+                    "oneOf": [
+                        {
+                            "$id": "core/reference/exabyte",
+                            "$schema": "http://json-schema.org/draft-04/schema#",
+                            "type": "object",
+                            "properties": {
+                                "materialId": {
+                                    "description": "Material's identity. Used for protoProperties.",
+                                    "type": "string"
+                                },
+                                "jobId": {
+                                    "description": "Job's identity",
+                                    "type": "string"
+                                },
+                                "unitId": {
+                                    "description": "Id of the unit that extracted the result",
+                                    "type": "string"
+                                }
+                            }
+                        },
+                        {
+                            "$id": "core/reference/experiment",
+                            "$schema": "http://json-schema.org/draft-04/schema#",
+                            "title": "info for characteristic obtained by experiment",
+                            "properties": {
+                                "type": {
+                                    "enum": [
+                                        "experiment"
+                                    ]
+                                },
+                                "authors": {
+                                    "description": "experiment authors",
+                                    "type": "array",
+                                    "items": {
+                                        "$id": "core/reference/literature/name",
+                                        "$schema": "http://json-schema.org/draft-04/schema#",
+                                        "title": "experiment author schema",
+                                        "type": "object",
+                                        "required": [
+                                            "first",
+                                            "last"
+                                        ],
+                                        "properties": {
+                                            "first": {
+                                                "type": "string"
+                                            },
+                                            "middle": {
+                                                "type": "string"
+                                            },
+                                            "last": {
+                                                "type": "string"
+                                            },
+                                            "affiliation": {
+                                                "type": "string"
+                                            }
+                                        }
+                                    }
+                                },
+                                "title": {
+                                    "type": "string",
+                                    "description": "experiment title"
+                                },
+                                "method": {
+                                    "type": "string",
+                                    "description": "method used in experiment"
+                                },
+                                "conditions": {
+                                    "type": "array",
+                                    "items": {
+                                        "$id": "core/reference/experiment/condition",
+                                        "$schema": "http://json-schema.org/draft-04/schema#",
+                                        "title": "condition schema",
+                                        "required": [
+                                            "name"
+                                        ],
+                                        "properties": {
+                                            "units": {
+                                                "description": "condition unit",
+                                                "type": "string"
+                                            },
+                                            "scalar": {
+                                                "description": "array of condition values",
+                                                "type": "array",
+                                                "items": {
+                                                    "properties": {
+                                                        "value": {
+                                                            "type": "string"
+                                                        }
+                                                    }
+                                                }
+                                            },
+                                            "name": {
+                                                "description": "human-readable name of the condition",
+                                                "type": "string"
+                                            }
+                                        }
+                                    }
+                                },
+                                "location": {
+                                    "$id": "core/reference/experiment/location",
+                                    "$schema": "http://json-schema.org/draft-04/schema#",
+                                    "title": "location schema",
+                                    "required": [
+                                        "latitude",
+                                        "longitude"
+                                    ],
+                                    "properties": {
+                                        "latitude": {
+                                            "description": "location latitude",
+                                            "type": "number"
+                                        },
+                                        "longitude": {
+                                            "description": "location longitude",
+                                            "type": "number"
+                                        }
+                                    }
+                                },
+                                "timestamp": {
+                                    "description": "epoch time.",
+                                    "type": "number"
+                                },
+                                "note": {
+                                    "description": "Note about experiment",
+                                    "type": "string"
+                                },
+                                "references": {
+                                    "type": "array",
+                                    "description": "references to literature articles",
+                                    "items": {
+                                        "$id": "core/reference/literature",
+                                        "$schema": "http://json-schema.org/draft-04/schema#",
+                                        "title": "literature reference schema",
+                                        "properties": {
+                                            "type": {
+                                                "enum": [
+                                                    "literature"
+                                                ]
+                                            },
+                                            "doi": {
+                                                "type": "string",
+                                                "description": "Digital Object Identifier of the reference."
+                                            },
+                                            "isbn": {
+                                                "type": "string",
+                                                "description": "International Standard Book Number of the reference."
+                                            },
+                                            "issn": {
+                                                "type": "string",
+                                                "description": "International Standard Serial Number of the reference."
+                                            },
+                                            "url": {
+                                                "type": "string",
+                                                "description": "Internet address of the reference."
+                                            },
+                                            "title": {
+                                                "type": "string",
+                                                "description": "Title of the work."
+                                            },
+                                            "publisher": {
+                                                "type": "string",
+                                                "description": "Publisher of the work."
+                                            },
+                                            "journal": {
+                                                "type": "string",
+                                                "description": "Journal in which the work appeared."
+                                            },
+                                            "volume": {
+                                                "type": "string",
+                                                "description": "Volume of the series in which the work appeared."
+                                            },
+                                            "year": {
+                                                "type": "string",
+                                                "description": "Year in which the reference was published."
+                                            },
+                                            "issue": {
+                                                "type": "string",
+                                                "description": "Issue of the collection in which the work appeared."
+                                            },
+                                            "pages": {
+                                                "type": "object",
+                                                "description": "Start and end pages of the work.",
+                                                "$id": "core/reference/literature/pages",
+                                                "$schema": "http://json-schema.org/draft-04/schema#",
+                                                "title": "pages schema",
+                                                "required": [
+                                                    "start"
+                                                ],
+                                                "properties": {
+                                                    "start": {
+                                                        "type": "string"
+                                                    },
+                                                    "end": {
+                                                        "type": "string"
+                                                    }
+                                                }
+                                            },
+                                            "authors": {
+                                                "type": "array",
+                                                "description": "List of authors of the work.",
+                                                "items": {
+                                                    "$id": "core/reference/literature/name",
+                                                    "$schema": "http://json-schema.org/draft-04/schema#",
+                                                    "title": "experiment author schema",
+                                                    "type": "object",
+                                                    "required": [
+                                                        "first",
+                                                        "last"
+                                                    ],
+                                                    "properties": {
+                                                        "first": {
+                                                            "type": "string"
+                                                        },
+                                                        "middle": {
+                                                            "type": "string"
+                                                        },
+                                                        "last": {
+                                                            "type": "string"
+                                                        },
+                                                        "affiliation": {
+                                                            "type": "string"
+                                                        }
+                                                    }
+                                                }
+                                            },
+                                            "editors": {
+                                                "type": "array",
+                                                "description": "List of editors of the work.",
+                                                "items": {
+                                                    "$id": "core/reference/literature/name",
+                                                    "$schema": "http://json-schema.org/draft-04/schema#",
+                                                    "title": "experiment author schema",
+                                                    "type": "object",
+                                                    "required": [
+                                                        "first",
+                                                        "last"
+                                                    ],
+                                                    "properties": {
+                                                        "first": {
+                                                            "type": "string"
+                                                        },
+                                                        "middle": {
+                                                            "type": "string"
+                                                        },
+                                                        "last": {
+                                                            "type": "string"
+                                                        },
+                                                        "affiliation": {
+                                                            "type": "string"
+                                                        }
+                                                    }
+                                                }
+                                            },
+                                            "reference": {
+                                                "type": "array",
+                                                "description": "References cited by the work. Reference objects can nest as deeply as needed. This is useful, for example, when tracking the history of a value referenced in a scholarly article; the top level reference would contain information about where the data was accessed while the nested reference would contain information about where it was originally published.",
+                                                "items": {
+                                                    "type": "object"
+                                                }
+                                            }
+                                        }
+                                    }
+                                }
+                            },
+                            "required": [
+                                "conditions",
+                                "authors",
+                                "title",
+                                "method",
+                                "timestamp"
+                            ]
+                        }
+                    ]
+                }
+            }
+        },
+        "exabyteId": {
+            "description": "Id of the corresponding item in the entity bank that this property is obtained for",
+            "type": "array",
+            "items": {
+                "type": "string"
+            }
+        },
+        "precision": {
+            "type": "object"
+        },
+        "count": {
+            "description": "total number of properties among which this property is the best.",
+            "type": "number"
+        },
+        "systemTags": {
+            "description": "property system tags, marks property system characteristics, values refined or best (could be both)",
+            "type": "array",
+            "items": {
+                "type": "string",
+                "enum": [
+                    "isRefined",
+                    "isBest"
+                ]
+            }
+        },
+        "_id": {
+            "description": "entity identity",
+            "type": "string"
+        },
+        "systemName": {
+            "type": "string"
+        },
+        "consistencyChecks": {
+            "type": "array",
+            "items": {
+                "$id": "system/consistency-check",
+                "$schema": "http://json-schema.org/draft-04/schema#",
+                "title": "consistency check",
+                "type": "object",
+                "description": "The output of consistency checks performed on data adhering to JSON schema, but inconsistent with scientific or logical rules, to show problems in UI.",
+                "required": [
+                    "key",
+                    "name",
+                    "severity",
+                    "message"
+                ],
+                "properties": {
+                    "key": {
+                        "type": "string",
+                        "description": "Key of the property of the entity on which the consistency check is performed in Mongo dot notation, e.g. 'basis.coordinates.1'"
+                    },
+                    "name": {
+                        "enum": [
+                            "default",
+                            "atomsTooClose",
+                            "atomsOverlap"
+                        ],
+                        "description": "Name of the consistency check that is performed, which is listed in an enum."
+                    },
+                    "severity": {
+                        "enum": [
+                            "info",
+                            "warning",
+                            "error"
+                        ],
+                        "description": "Severity level of the problem, which is used in UI to differentiate."
+                    },
+                    "message": {
+                        "type": "string",
+                        "description": "Message generated by the consistency check describing the problem."
+                    }
+                }
+            }
+        },
+        "schemaVersion": {
+            "description": "entity's schema version. Used to distinct between different schemas.",
+            "type": "string",
+            "default": "2022.8.16"
+        }
+    }
+}

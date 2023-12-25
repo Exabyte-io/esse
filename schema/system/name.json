@@ -1,0 +1,11 @@
+{
+    "$id": "system/name",
+    "$schema": "http://json-schema.org/draft-04/schema#",
+    "title": "name entity schema",
+    "properties": {
+        "name": {
+            "description": "entity name",
+            "type": "string"
+        }
+    }
+}
