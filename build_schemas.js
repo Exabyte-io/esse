@@ -20,29 +20,23 @@ fs.writeFileSync(
 
 fs.writeFileSync("./schema.js", "module.exports = " + JSON.stringify(schema), "utf8");
 
-if (process.env.BUILD_DOCS !== "true") {
+if (process.env.BUILD_FILES !== "true") {
     process.exit(0);
 }
-schemas.forEach((schema) => {
+
+const subfolder = process.env.BUILD_PATH || "./docs/js/";
+schemas.forEach((s) => {
     if (process.env.SKIP_MERGE_ALLOF !== "true") {
-        schema = mergeAllOf(schema, {resolvers: {defaultResolver: mergeAllOf.options.resolvers.title}});
+        s = mergeAllOf(s, { resolvers: { defaultResolver: mergeAllOf.options.resolvers.title } });
     }
-    id_as_path = schema["$id"].replace("-", "_");
-    full_path = `./docs/js/schema/${id_as_path}.json`;
-    fs.mkdirSync(path.dirname(full_path), {recursive: true})
-    fs.writeFileSync(
-        full_path,
-        JSON.stringify(schema, null, 4),
-        "utf8",
-    );
-})
-wrappedExamples.forEach((example) => {
-    id_as_path = example["path"].replace("-", "_");
-    full_path = `./docs/js/example/${id_as_path}.json`;
-    fs.mkdirSync(path.dirname(full_path), {recursive: true})
-    fs.writeFileSync(
-        full_path,
-        JSON.stringify(example["data"], null, 4),
-        "utf8",
-    );
-})
+    const id_as_path = s.$id.replace("-", "_");
+    const full_path = `${subfolder}/${id_as_path}.json`;
+    fs.mkdirSync(path.dirname(full_path), { recursive: true });
+    fs.writeFileSync(full_path, JSON.stringify(s, null, 4), "utf8");
+});
+wrappedExamples.forEach((e) => {
+    const id_as_path = e.path.replace("-", "_");
+    const full_path = `${subfolder}/${id_as_path}.json`;
+    fs.mkdirSync(path.dirname(full_path), { recursive: true });
+    fs.writeFileSync(full_path, JSON.stringify(e.data, null, 4), "utf8");
+});
