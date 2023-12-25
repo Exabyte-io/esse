@@ -1,0 +1,241 @@
+{
+    "$id": "methods-directory/physical/ao/dunning",
+    "$schema": "http://json-schema.org/draft-04/schema#",
+    "title": "unit method ao dunning",
+    "description": "Dunning correlation-consistent basis set unit method",
+    "required": [
+        "categories"
+    ],
+    "definitions": {
+        "ao-basis-dunning": {
+            "properties": {
+                "basisSlug": {
+                    "enum": [
+                        "cc-pvdz",
+                        "cc-pvtz",
+                        "cc-pvqz"
+                    ]
+                }
+            }
+        }
+    },
+    "type": "object",
+    "properties": {
+        "categories": {
+            "$id": "methods-category/physical/qm/wf/ao/dunning",
+            "$schema": "http://json-schema.org/draft-04/schema#",
+            "description": "Dunning correlation-consistent basis set category schema",
+            "title": "categories",
+            "type": "object",
+            "properties": {
+                "subtype": {
+                    "enum": [
+                        "dunning"
+                    ],
+                    "$id": "core/primitive/slugified-entry-or-slug",
+                    "$schema": "http://json-schema.org/draft-04/schema#",
+                    "title": "slugified entry or slug",
+                    "description": "contains either object with slugified entry or slug only as a string",
+                    "oneOf": [
+                        {
+                            "$id": "core/primitive/slugified-entry",
+                            "$schema": "http://json-schema.org/draft-04/schema#",
+                            "title": "slugified entry",
+                            "description": "container for machine- and human-readable identifier",
+                            "type": "object",
+                            "properties": {
+                                "name": {
+                                    "description": "descriptive human-readable name of entry",
+                                    "type": "string"
+                                },
+                                "slug": {
+                                    "description": "machine-readable identifier",
+                                    "type": "string"
+                                }
+                            },
+                            "required": [
+                                "name",
+                                "slug"
+                            ]
+                        },
+                        {
+                            "type": "string"
+                        }
+                    ]
+                },
+                "type": {
+                    "enum": [
+                        "ao"
+                    ],
+                    "$id": "core/primitive/slugified-entry-or-slug",
+                    "$schema": "http://json-schema.org/draft-04/schema#",
+                    "title": "slugified entry or slug",
+                    "description": "contains either object with slugified entry or slug only as a string",
+                    "oneOf": [
+                        {
+                            "$id": "core/primitive/slugified-entry",
+                            "$schema": "http://json-schema.org/draft-04/schema#",
+                            "title": "slugified entry",
+                            "description": "container for machine- and human-readable identifier",
+                            "type": "object",
+                            "properties": {
+                                "name": {
+                                    "description": "descriptive human-readable name of entry",
+                                    "type": "string"
+                                },
+                                "slug": {
+                                    "description": "machine-readable identifier",
+                                    "type": "string"
+                                }
+                            },
+                            "required": [
+                                "name",
+                                "slug"
+                            ]
+                        },
+                        {
+                            "type": "string"
+                        }
+                    ]
+                },
+                "tier2": {
+                    "enum": [
+                        "wf"
+                    ],
+                    "$id": "core/primitive/slugified-entry-or-slug",
+                    "$schema": "http://json-schema.org/draft-04/schema#",
+                    "title": "slugified entry or slug",
+                    "description": "contains either object with slugified entry or slug only as a string",
+                    "oneOf": [
+                        {
+                            "$id": "core/primitive/slugified-entry",
+                            "$schema": "http://json-schema.org/draft-04/schema#",
+                            "title": "slugified entry",
+                            "description": "container for machine- and human-readable identifier",
+                            "type": "object",
+                            "properties": {
+                                "name": {
+                                    "description": "descriptive human-readable name of entry",
+                                    "type": "string"
+                                },
+                                "slug": {
+                                    "description": "machine-readable identifier",
+                                    "type": "string"
+                                }
+                            },
+                            "required": [
+                                "name",
+                                "slug"
+                            ]
+                        },
+                        {
+                            "type": "string"
+                        }
+                    ]
+                },
+                "tier1": {
+                    "enum": [
+                        "qm"
+                    ],
+                    "$id": "core/primitive/slugified-entry-or-slug",
+                    "$schema": "http://json-schema.org/draft-04/schema#",
+                    "title": "slugified entry or slug",
+                    "description": "contains either object with slugified entry or slug only as a string",
+                    "oneOf": [
+                        {
+                            "$id": "core/primitive/slugified-entry",
+                            "$schema": "http://json-schema.org/draft-04/schema#",
+                            "title": "slugified entry",
+                            "description": "container for machine- and human-readable identifier",
+                            "type": "object",
+                            "properties": {
+                                "name": {
+                                    "description": "descriptive human-readable name of entry",
+                                    "type": "string"
+                                },
+                                "slug": {
+                                    "description": "machine-readable identifier",
+                                    "type": "string"
+                                }
+                            },
+                            "required": [
+                                "name",
+                                "slug"
+                            ]
+                        },
+                        {
+                            "type": "string"
+                        }
+                    ]
+                },
+                "tier3": {
+                    "$id": "core/primitive/slugified-entry-or-slug",
+                    "$schema": "http://json-schema.org/draft-04/schema#",
+                    "title": "slugified entry or slug",
+                    "description": "contains either object with slugified entry or slug only as a string",
+                    "oneOf": [
+                        {
+                            "$id": "core/primitive/slugified-entry",
+                            "$schema": "http://json-schema.org/draft-04/schema#",
+                            "title": "slugified entry",
+                            "description": "container for machine- and human-readable identifier",
+                            "type": "object",
+                            "properties": {
+                                "name": {
+                                    "description": "descriptive human-readable name of entry",
+                                    "type": "string"
+                                },
+                                "slug": {
+                                    "description": "machine-readable identifier",
+                                    "type": "string"
+                                }
+                            },
+                            "required": [
+                                "name",
+                                "slug"
+                            ]
+                        },
+                        {
+                            "type": "string"
+                        }
+                    ]
+                }
+            }
+        },
+        "parameters": {
+            "description": "Instructive parameters defining the method",
+            "type": "object",
+            "properties": {
+                "basisSlug": {
+                    "enum": [
+                        "cc-pvdz",
+                        "cc-pvtz",
+                        "cc-pvqz"
+                    ]
+                }
+            }
+        },
+        "precision": {
+            "description": "Object showing the actual possible precision based on theory and implementation",
+            "type": "object"
+        },
+        "name": {
+            "description": "entity name",
+            "type": "string"
+        },
+        "path": {
+            "$id": "core/reusable/category-path",
+            "$schema": "http://json-schema.org/draft-04/schema#",
+            "title": "category path schema",
+            "description": "TODO: Use regex once schema draft version has been updated",
+            "type": "string"
+        },
+        "tags": {
+            "description": "entity tags",
+            "type": "array",
+            "items": {
+                "type": "string"
+            }
+        }
+    }
+}

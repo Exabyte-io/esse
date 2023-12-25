@@ -1,0 +1,26 @@
+{
+    "$id": "properties-directory/scalar/pressure",
+    "$schema": "http://json-schema.org/draft-04/schema#",
+    "title": "pressure",
+    "description": "average pressure in unit cell",
+    "type": "object",
+    "required": [
+        "value"
+    ],
+    "properties": {
+        "name": {
+            "enum": [
+                "pressure"
+            ]
+        },
+        "units": {
+            "enum": [
+                "kbar",
+                "pa"
+            ]
+        },
+        "value": {
+            "type": "number"
+        }
+    }
+}

@@ -1,0 +1,47 @@
+{
+    "$id": "software/template",
+    "$schema": "http://json-schema.org/draft-04/schema#",
+    "title": "template schema",
+    "type": "object",
+    "required": [
+        "name",
+        "content"
+    ],
+    "properties": {
+        "applicationName": {
+            "type": "string"
+        },
+        "applicationVersion": {
+            "type": "string"
+        },
+        "executableName": {
+            "type": "string"
+        },
+        "contextProviders": {
+            "type": "array",
+            "items": {
+                "$id": "workflow/unit/runtime/-runtime-item-name-object",
+                "$schema": "http://json-schema.org/draft-04/schema#",
+                "title": "name result schema",
+                "type": "object",
+                "required": [
+                    "name"
+                ],
+                "properties": {
+                    "name": {
+                        "description": "The name of this item. e.g. scf_accuracy",
+                        "type": "string"
+                    }
+                }
+            }
+        },
+        "name": {
+            "description": "Input file name. e.g. pw_scf.in",
+            "type": "string"
+        },
+        "content": {
+            "description": "Content of the input file. e.g. &CONTROL    calculation='scf' ...",
+            "type": "string"
+        }
+    }
+}

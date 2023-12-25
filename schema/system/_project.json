@@ -1,0 +1,22 @@
+{
+    "$id": "system/-project",
+    "$schema": "http://json-schema.org/draft-04/schema#",
+    "title": "Project entity reference schema",
+    "properties": {
+        "cls": {
+            "description": "Project class",
+            "type": "string",
+            "enum": [
+                "Project"
+            ]
+        },
+        "_id": {
+            "description": "entity identity",
+            "type": "string"
+        },
+        "slug": {
+            "description": "entity slug",
+            "type": "string"
+        }
+    }
+}
