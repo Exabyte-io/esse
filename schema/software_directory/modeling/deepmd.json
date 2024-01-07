@@ -1,0 +1,34 @@
+{
+    "$id": "software-directory/modeling/deepmd",
+    "$schema": "http://json-schema.org/draft-04/schema#",
+    "title": "DeePMD app schema",
+    "type": "object",
+    "allOf": [
+        {
+            "$ref": "../../software/application.json"
+        }
+    ],
+    "properties": {
+        "name": {
+            "enum": [
+                "deepmd"
+            ]
+        },
+        "summary": {
+            "enum": [
+                "DeePMD is a deep learning package that is based on neural network fitted first-principles data for many-body potential energy representation and molecular dynamics"
+            ]
+        },
+        "version": {
+            "enum": [
+                "2.0.2"
+            ]
+        },
+        "exec": {
+            "enum": [
+                "dp_prepare",
+                "dp_train"
+            ]
+        }
+    }
+}
