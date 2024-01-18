@@ -1,29 +1,32 @@
 {
-    "name": "@exabyte-io/esse.js",
+    "name": "@mat3ra/esse",
     "version": "0.0.0",
-    "description": "Exabyte Source of Schemas and Examples",
+    "description": "Mat3ra's Excellent Source of Schemas and Examples (ESSE) for Digital Materials R&D",
     "scripts": {
         "prepublishOnly": "rm -rf lib; npm run transpile",
         "transpile": "mkdir -p lib; babel src/js --out-dir lib/js; node build_schemas.js",
-        "test": "nyc --reporter=text mocha --bail --require @babel/register src/js/esse/tests",
+        "transpile-and-build-assets": "mkdir -p lib; babel src/js --out-dir lib/js; BUILD_ASSETS=true BUILD_PATH='./lib/js' node build_schemas.js",
+        "build:assets": "node build_schemas.js",
+        "build:assets-with-docs": "BUILD_ASSETS=true node build_schemas.js",
+        "test": "nyc --reporter=text mocha --bail --require @babel/register tests/js/",
         "lint": "eslint src/js && prettier --write src/js",
         "lint:fix": "eslint --fix --cache src/js && prettier --write src/js",
         "prettier": "prettier --check src/js",
-        "postinstall": "npm run transpile",
+        "postinstall": "npm run transpile-and-build-assets",
         "prepare": "husky install || exit 0",
         "setSchemaIds": "cd src/js/scripts && node setSchemaIds.mjs"
     },
     "repository": {
         "type": "git",
-        "url": "https://github.com/Exabyte-io/exabyte-esse.git"
+        "url": "https://github.com/Exabyte-io/esse.git"
     },
     "main": "lib/js/esse/index.js",
-    "author": "Exabyte Inc.",
-    "email": "info@exabyte.io",
+    "author": "Mat3ra.com",
+    "email": "info@mat3ra.com",
     "bugs": {
         "url": "https://github.com/Exabyte-io/exabyte-esse/issues"
     },
-    "homepage": "https://github.com/Exabyte-io/exabyte-esse",
+    "homepage": "https://github.com/Exabyte-io/esse",
     "devDependencies": {
         "@exabyte-io/eslint-config": "^2022.11.17-0",
         "chai": "4.3.4",
@@ -46,16 +49,17 @@
     },
     "license": "Apache-2.0",
     "dependencies": {
-        "ajv": "^4.1.7",
         "@babel/cli": "7.16.0",
         "@babel/core": "7.16.0",
-        "@babel/register": "7.16.0",
-        "@babel/preset-env": "7.16.4",
         "@babel/eslint-parser": "7.16.3",
+        "@babel/preset-env": "7.16.4",
+        "@babel/register": "7.16.0",
+        "ajv": "^4.1.7",
         "file": "^0.2.2",
+        "js-yaml": "^4.1.0",
         "json-schema-deref-sync": "0.14.0",
-        "lodash": "4.17.21",
-        "js-yaml": "^4.1.0"
+        "json-schema-merge-allof": "^0.8.1",
+        "lodash": "4.17.21"
     },
     "engines": {
         "node": ">=12.0.0"

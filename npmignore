@@ -1,5 +1,6 @@
 src/py/
-setup.py
+tests/
 pyproject.toml
-requirements-dev.txt
 /manifest/
+.github
+.husky
