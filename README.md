@@ -1,10 +1,10 @@
 [![PyPI version](https://badge.fury.io/py/esse.svg)](https://badge.fury.io/py/esse)
-[![npm version](https://badge.fury.io/js/%40exabyte-io%2Fesse.js.svg)](https://badge.fury.io/js/%40exabyte-io%2Fesse.js)
+[![npm version](https://badge.fury.io/js/@mat3ra%2Fesse.svg)](https://badge.fury.io/js/@mat3ra%2Fesse)
 [![License: Apache](https://img.shields.io/badge/License-Apache-blue.svg)](https://www.apache.org/licenses/LICENSE-2.0)
 
 # ESSE
 
-Essential Source of Schemas and Examples (ESSE) contains data formats and examples for common entities used in digital materials science (see refs. [1, 2](#links) below).
+Essential Source of Schemas and Examples (ESSE) contains data formats and examples for common entities used in digital materials science (see refs. [^1], [^2] below).
 
 Although, the schemas are used to facilitate the operations of [mat3ra.com](https://mat3ra.com), they are designed to be generic and can be used in other applications. The open-source packages developed by Mat3ra.com use the schemas available in this repository.
 
@@ -38,7 +38,7 @@ pip install -e PATH_TO_ESSE_REPOSITORY
 #### 1.2.1. NPM
 
 ```bash
-npm install @exabyte-io/esse.js
+npm install @mat3ra/esse
 ```
 
 
@@ -59,7 +59,7 @@ schema = helper.get_schema_by_id("material")
 ### 2.2. Usage in Node/JS/TS
 
 ```javascript
-import {ESSE} from "esse-js";
+const { ESSE } = require("@mat3ra/esse/lib/js/esse");
 
 const helper = new ESSE();
 const schema = helper.getSchemaById("material");
@@ -108,10 +108,10 @@ The following outlines the development process workflow:
 5. GH workflow is used to generate the fully resolved file (without "$ref"s and "$allOf" etc.) and examples and publish them to [schemas.mat3ra.com](http://schemas.mat3ra.com/).
 6. Publish the new version of the package to PyPI and npm.
 
-The [pre-commit](.husky/pre-commit) is using both JS and PY runtime(s) to regenerate the schemas and examples. 
+The [pre-commit](.husky/pre-commit) is using both JS and PY runtime(s) to regenerate the schemas and examples.
 
 [//]: # (TODO: consider reusing JS runtime and schemas build script for PY modules for consistency)
-NOTE: The PY and JS modules are built from the same JSON sources, but using different runtimes (scripts) and thus may still be different. Only for JS the fully resolved schemas (with merged "$allOf") are created. They are used for the docs website. 
+NOTE: The PY and JS modules are built from the same JSON sources, but using different runtimes (scripts) and thus may still be different. Only for JS the fully resolved schemas (with merged "$allOf") are created. They are used for the docs website.
 
 ### 5.1. Development in Python
 
@@ -129,7 +129,7 @@ When developing in python the following should be taken into account:
     virtualenv .venv
     source .venv/bin/activate
     pip install ."[tests]"
-    python -m unittest discover --verbose --catch --start-directory tests/py/esse/   
+    python -m unittest discover --verbose --catch --start-directory tests/py/esse/
     ```
 
 ### 5.2. Development in Javascript/Typescript
@@ -142,7 +142,7 @@ npm run transpile
 
 ### 5.3. General Dev Suggestions
 
-This repository is an [open-source](LICENSE.md) work-in-progress and we welcome contributions. We suggest forking this repository and introducing the adjustments there, the changes in the fork can further be considered for merging into this repository as it is commonly done on GitHub (see [3](#links) below).
+This repository is an [open-source](LICENSE.md) work-in-progress and we welcome contributions. We suggest forking this repository and introducing the adjustments there, the changes in the fork can further be considered for merging into this repository as it is commonly done on GitHub (see [^3] below).
 
 Other suggestions:
 
@@ -152,6 +152,6 @@ Other suggestions:
 
 ## 6. Links
 
-1: [Data-centric online ecosystem for digital materials science](https://arxiv.org/pdf/1902.10838.pdf)
-2: [CateCom: A Practical Data-Centric Approach to Categorization of Computational Models](https://pubs.acs.org/doi/abs/10.1021/acs.jcim.2c00112)
-3: [GitHub Standard Fork & Pull Request Workflow](https://gist.github.com/Chaser324/ce0505fbed06b947d962)
+[^1]: [Data-centric online ecosystem for digital materials science](https://arxiv.org/pdf/1902.10838.pdf)
+[^2]: [CateCom: A Practical Data-Centric Approach to Categorization of Computational Models](https://pubs.acs.org/doi/abs/10.1021/acs.jcim.2c00112)
+[^3]: [GitHub Standard Fork & Pull Request Workflow](https://gist.github.com/Chaser324/ce0505fbed06b947d962)
