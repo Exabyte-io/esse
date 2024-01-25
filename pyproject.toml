@@ -51,6 +51,7 @@ build-backend = "setuptools.build_meta"
 
 [tool.setuptools_scm]
 git_describe_command = "git describe --tags --long"
+local_scheme = "no-local-version"
 
 [tool.setuptools.packages.find]
 where = ["src/py"]
