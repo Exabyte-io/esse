@@ -7,6 +7,7 @@
         "else",
         "flowchartId",
         "input",
+        "maxOccurrences",
         "statement",
         "then",
         "type"

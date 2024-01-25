@@ -19,10 +19,12 @@
             "type": "string"
         },
         "statement": {
-            "type": "string"
+            "type": "string",
+            "description": "The statement to be evaluated"
         },
         "errorMessage": {
-            "type": "string"
+            "type": "string",
+            "description": "The error message to be displayed if the assertion fails"
         },
         "_id": {
             "type": "string",

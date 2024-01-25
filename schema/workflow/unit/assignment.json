@@ -6,6 +6,7 @@
     "required": [
         "flowchartId",
         "name",
+        "operand",
         "type",
         "value"
     ],
