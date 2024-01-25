@@ -43,8 +43,8 @@ jobs:
           - 3.8.6
           - 3.9.x
           # Enable after resolving Cython/PyYAML issue https://github.com/yaml/pyyaml/issues/724
-          # - 3.10.x
-          # - 3.11.x
+          - 3.10.x
+          - 3.11.x
           # Enable after: AttributeError: module 'pkgutil' has no attribute 'ImpImporter'. Did you mean: 'zipimporter'?
           # - 3.12.x
 
@@ -145,7 +145,7 @@ jobs:
         with:
           python-version: 3.x
           github-token: ${{ secrets.BOT_GITHUB_TOKEN }}
-          pypi-api-token: ${{ secrets.PYPI_USERNAME }}
+          pypi-api-token: ${{ secrets.PYPI_API_TOKEN }}
           publish-tag: 'false'
 
   deploy-docs:
