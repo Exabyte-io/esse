@@ -1,12 +1,12 @@
-[![PyPI version](https://badge.fury.io/py/esse.svg)](https://badge.fury.io/py/esse)
+[![PyPI version](https://badge.fury.io/py/mat3ra-esse.svg)](https://badge.fury.io/py/mat3ra-esse)
 [![npm version](https://badge.fury.io/js/@mat3ra%2Fesse.svg)](https://badge.fury.io/js/@mat3ra%2Fesse)
 [![License: Apache](https://img.shields.io/badge/License-Apache-blue.svg)](https://www.apache.org/licenses/LICENSE-2.0)
 
 # ESSE
 
-Essential Source of Schemas and Examples (ESSE) contains data formats and examples for common entities used in digital materials science (see refs. [^1], [^2] below).
+Essential Source of Schemas and Examples (ESSE) contains data format definitions (schemas) and examples for common entities used in digital materials science (see refs. [^1], [^2] below).
 
-Although, the schemas are used to facilitate the operations of [mat3ra.com](https://mat3ra.com), they are designed to be generic and can be used in other applications. The open-source packages developed by Mat3ra.com use the schemas available in this repository.
+Although the schemas are used to facilitate the operations of [mat3ra.com](https://mat3ra.com), they are designed to be generic and can be used in other applications. The open-source packages developed by Mat3ra.com use the schemas available in this repository.
 
 The latest variants of schemas and examples are available at [schemas.mat3ra.com](https://schemas.mat3ra.com/).
 
