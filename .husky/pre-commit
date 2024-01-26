@@ -5,10 +5,8 @@ SRC_PATTERN="\.json$"
 if git diff --cached --name-only | grep --quiet -E "$SRC_PATTERN"
 then
   echo "JSON assets changed. Running build scripts."
-  echo "Re-building JS assets."
-  npm run build:assets
-  echo "Re-building Python assets: requires virtual environment and dependencies (pip install .'[tests]')."
-  python build_schemas.py
+  echo "Re-building JS and PY assets using JS script."
+  npm run build:js-and-python-modules
 fi
 
 npx lint-staged
