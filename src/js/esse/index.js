@@ -11,7 +11,9 @@ const EXAMPLES = parseIncludeReferenceStatementsByDir(EXAMPLES_DIR, true);
 const PROPERTIES_MANIFEST = yaml.load(
     fs.readFileSync(PROPERTIES_MANIFEST_PATH, { encoding: "utf-8" }),
 );
-const RESULTS = Object.entries(PROPERTIES_MANIFEST).filter((key, value) => value.isResult === true);
+const RESULTS = Object.entries(PROPERTIES_MANIFEST)
+    .map((k) => (k[1].isResult ? k[0] : null))
+    .filter((x) => x);
 
 export class ESSE {
     constructor(config = {}) {
