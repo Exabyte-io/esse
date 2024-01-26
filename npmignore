@@ -1,6 +1,5 @@
 src/py/
 tests/
 pyproject.toml
-/manifest/
 .github
 .husky
