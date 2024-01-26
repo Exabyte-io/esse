@@ -7,6 +7,7 @@
         "transpile": "mkdir -p lib; babel src/js --out-dir lib/js; node build_schemas.js",
         "transpile-and-build-assets": "mkdir -p lib; babel src/js --out-dir lib/js; BUILD_ASSETS=true BUILD_PATH='./lib/js' node build_schemas.js",
         "build:assets": "node build_schemas.js",
+        "build:js-and-python-modules": "BUILD_PYTHON_MODULES=true node build_schemas.js",
         "build:assets-with-docs": "BUILD_ASSETS=true node build_schemas.js",
         "test": "nyc --reporter=text mocha --bail --require @babel/register tests/js/",
         "lint": "eslint src/js && prettier --write src/js",
