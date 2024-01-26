@@ -11,7 +11,7 @@ const { ESSE } = require("./lib/js/esse");
 // JS Modules
 
 const esse = new ESSE();
-const { schemas, wrappedExamples, propertiesmanifest, results } = esse;
+const { schemas, wrappedExamples, propertiesManifest, results } = esse;
 const schema = esse.buildGlobalSchema();
 
 fs.writeFileSync(
@@ -26,23 +26,22 @@ if (process.env.BUILD_PYTHON_MODULES === "true") {
     // PY Modules
     fs.writeFileSync(
         "./src/py/mat3ra/esse/data/examples.py",
-        [
-            "import json",
-            `EXAMPLES = json.loads(json.dumps(${JSON.stringify(wrappedExamples)}))`,
-        ].join("\n"),
+        ["import json", `EXAMPLES = json.loads(r'''${JSON.stringify(wrappedExamples)}''')`].join(
+            "\n",
+        ),
         "utf8",
     );
     fs.writeFileSync(
         "./src/py/mat3ra/esse/data/schemas.py",
-        ["import json", `SCHEMAS = json.loads(json.dumps(${JSON.stringify(schemas)}))`].join("\n"),
+        ["import json", `SCHEMAS = json.loads(r'''${JSON.stringify(schemas)}''')`].join("\n"),
         "utf8",
     );
     fs.writeFileSync(
-        "./schemas.js",
+        "./src/py/mat3ra/esse/data/properties.py",
         [
             "import json",
-            `PROPERTIES_MANIFEST = json.loads(json.dumps(${JSON.stringify(propertiesmanifest)}))`,
-            `RESULTS = json.loads(json.dumps(${JSON.stringify(results)}))`,
+            `PROPERTIES_MANIFEST = json.loads(r'''${JSON.stringify(propertiesManifest)}''')`,
+            `RESULTS = json.loads(r'''${JSON.stringify(results)}''')`,
         ].join("\n"),
         "utf8",
     );
