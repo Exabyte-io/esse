@@ -1,7 +1,8 @@
 {
     "$id": "methods-category/mathematical/opt/ndiff/direct",
-    "$schema": "http://json-schema.org/draft-04/schema#",
+    "$schema": "http://json-schema.org/draft-07/schema#",
     "description": "Direct algorithms for the optimization of non-differentiable functions category schema",
+    "type": "object",
     "allOf": [
         {
             "$ref": "../ndiff.json"

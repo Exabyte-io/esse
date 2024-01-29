@@ -1,8 +1,9 @@
 {
     "$id": "properties-directory/non-scalar/band-gaps",
-    "$schema": "http://json-schema.org/draft-04/schema#",
+    "$schema": "http://json-schema.org/draft-07/schema#",
     "title": "band gaps schema",
     "description": "contains band gap values",
+    "type": "object",
     "properties": {
         "name": {
             "enum": [
@@ -18,6 +19,7 @@
         "eigenvalues": {
             "type": "array",
             "items": {
+                "type": "object",
                 "properties": {
                     "kpoint": {
                         "$ref": "../../core/abstract/point.json"
@@ -28,6 +30,7 @@
                     "eigenvalues": {
                         "type": "array",
                         "items": {
+                            "type": "object",
                             "properties": {
                                 "spin": {
                                     "type": "number"

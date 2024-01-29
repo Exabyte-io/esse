@@ -35,7 +35,7 @@ export class ESSE {
      * @returns {boolean} whether example is valid.
      */
     validate = (example, schema) => {
-        const ajv = new Ajv({ allErrors: true });
+        const ajv = new Ajv({ allErrors: true, allowUnionTypes: true });
         const isValid = ajv.validate(schema, example);
 
         if (!isValid) {
@@ -48,7 +48,7 @@ export class ESSE {
     buildGlobalSchema() {
         return {
             $id: "esse-global-schema",
-            $schema: "http://json-schema.org/draft-04/schema#",
+            $schema: "http://json-schema.org/draft-07/schema#",
             title: "Global schema",
             type: "object",
             definitions: buildSchemaDefinitions(this.schemas),

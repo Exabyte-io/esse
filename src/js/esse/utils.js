@@ -12,7 +12,7 @@ export function parseIncludeReferenceStatements(filePath) {
     const jsonResolver = new JSONInclude();
     const parsed = jsonResolver.parseIncludeStatements(filePath);
     const dirPath = path.dirname(filePath);
-    let dereferenced = deref(parsed, { baseFolder: dirPath });
+    let dereferenced = deref(parsed, { baseFolder: dirPath, removeIds: true });
     // handle circular references and use non-dereferenced source
     if (dereferenced instanceof Error && dereferenced.message === "Circular self reference") {
         dereferenced = parsed;

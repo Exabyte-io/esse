@@ -1,7 +1,8 @@
 {
     "$id": "properties-directory/non-scalar/file-content",
-    "$schema": "http://json-schema.org/draft-04/schema#",
+    "$schema": "http://json-schema.org/draft-07/schema#",
     "title": "file_content",
+    "type": "object",
     "allOf": [
         {
             "$ref": "../../core/reusable/file_metadata.json"

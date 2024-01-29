@@ -2,6 +2,7 @@
     "$id": "properties-directory/structural/basis/atomic-coordinates",
     "title": "atomic coordinates",
     "description": "coordinates of atoms by ids, vector, unitless",
+    "type": "object",
     "properties": {
         "name": {
             "enum": [

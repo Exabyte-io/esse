@@ -1,6 +1,6 @@
 {
     "$id": "core/primitive/slugified-entry",
-    "$schema": "http://json-schema.org/draft-04/schema#",
+    "$schema": "http://json-schema.org/draft-07/schema#",
     "title": "slugified entry",
     "description": "container for machine- and human-readable identifier",
     "type": "object",

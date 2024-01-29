@@ -1,7 +1,8 @@
 {
     "$id": "methods-category/mathematical/intgr/transf",
-    "$schema": "http://json-schema.org/draft-04/schema#",
+    "$schema": "http://json-schema.org/draft-07/schema#",
     "description": "Integral transform methods",
+    "type": "object",
     "allOf": [
         {
             "$ref": "../intgr.json"

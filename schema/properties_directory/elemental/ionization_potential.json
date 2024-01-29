@@ -1,8 +1,9 @@
 {
     "$id": "properties-directory/elemental/ionization-potential",
-    "$schema": "http://json-schema.org/draft-04/schema#",
+    "$schema": "http://json-schema.org/draft-07/schema#",
     "title": "ionization potential",
     "description": "ionization potential for the element",
+    "type": "object",
     "allOf": [
         {
             "$ref": "../../core/primitive/scalar.json"

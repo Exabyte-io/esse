@@ -1,7 +1,8 @@
 {
     "$id": "methods-directory/mathematical/regression/kernel-ridge/data-per-property",
-    "$schema": "http://json-schema.org/draft-04/schema#",
+    "$schema": "http://json-schema.org/draft-07/schema#",
     "title": "kernel-ridge regression parameters schema",
+    "type": "object",
     "properties": {
         "xFit": {
             "description": "training data",

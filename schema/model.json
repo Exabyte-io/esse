@@ -1,7 +1,8 @@
 {
     "$id": "model",
-    "$schema": "http://json-schema.org/draft-04/schema#",
+    "$schema": "http://json-schema.org/draft-07/schema#",
     "title": "base model",
+    "type": "object",
     "properties": {
         "type": {
             "description": "general type of the model, eg. `dft`",

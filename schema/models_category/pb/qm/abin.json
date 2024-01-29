@@ -1,7 +1,8 @@
 {
     "$id": "models-category/pb/qm/abin",
-    "$schema": "http://json-schema.org/draft-04/schema#",
+    "$schema": "http://json-schema.org/draft-07/schema#",
     "title": "Ab initio category schema",
+    "type": "object",
     "allOf": [
         {
             "$ref": "../qm.json"

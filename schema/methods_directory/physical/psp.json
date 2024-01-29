@@ -1,8 +1,9 @@
 {
     "$id": "methods-directory/physical/psp",
-    "$schema": "http://json-schema.org/draft-04/schema#",
+    "$schema": "http://json-schema.org/draft-07/schema#",
     "title": "unit method pseudopotential",
     "description": "Core-valence separation by means of pseudopotentials (effective potential)",
+    "type": "object",
     "allOf": [
         {
             "$ref": "../../method/unit_method.json"

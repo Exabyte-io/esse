@@ -1,7 +1,8 @@
 {
     "$id": "models-directory/gga",
-    "$schema": "http://json-schema.org/draft-04/schema#",
+    "$schema": "http://json-schema.org/draft-07/schema#",
     "title": "model generalized gradient approximation",
+    "type": "object",
     "allOf": [
         {
             "$ref": "../model/model_without_method.json"

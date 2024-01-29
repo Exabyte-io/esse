@@ -1,7 +1,8 @@
 {
     "$id": "methods-category/mathematical/opt/ndiff",
-    "$schema": "http://json-schema.org/draft-04/schema#",
+    "$schema": "http://json-schema.org/draft-07/schema#",
     "description": "Optimization methods for non-differentiable functions category schema",
+    "type": "object",
     "allOf": [
         {
             "$ref": "../opt.json"

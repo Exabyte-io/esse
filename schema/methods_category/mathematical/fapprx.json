@@ -1,7 +1,8 @@
 {
     "$id": "methods-category/mathematical/fapprx",
-    "$schema": "http://json-schema.org/draft-04/schema#",
+    "$schema": "http://json-schema.org/draft-07/schema#",
     "description": "Unstructured meshing category schema",
+    "type": "object",
     "allOf": [
         {
             "$ref": "../../core/reusable/categories.json"

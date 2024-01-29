@@ -1,6 +1,6 @@
 {
     "$id": "in-memory-entity/named-defaultable-runtime-items",
-    "$schema": "http://json-schema.org/draft-04/schema#",
+    "$schema": "http://json-schema.org/draft-07/schema#",
     "title": "Named defaultable runtime items in-memory entity schema",
     "allOf": [
         {

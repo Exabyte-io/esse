@@ -1,8 +1,9 @@
 {
     "$id": "properties-directory/non-scalar/hubbard-v-nn",
-    "$schema": "http://json-schema.org/draft-04/schema#",
+    "$schema": "http://json-schema.org/draft-07/schema#",
     "title": "Hubbard V parameters for nearest neighbors",
     "description": "Hubbard V value in eV for nearest neighbors used in hp.x output parsing",
+    "type": "object",
     "allOf": [
         {
             "$ref": "hubbard_v.json"

@@ -1,7 +1,8 @@
 {
     "$id": "methods-directory/mathematical/regression/linear/data-per-property",
-    "$schema": "http://json-schema.org/draft-04/schema#",
+    "$schema": "http://json-schema.org/draft-07/schema#",
     "title": "linear regression parameters schema",
+    "type": "object",
     "properties": {
         "intercept": {
             "description": "intercept (shift) from the linear or non-linear fit of data points",

@@ -1,11 +1,12 @@
 {
     "$id": "properties-directory/non-scalar/total-energy-contributions",
-    "$schema": "http://json-schema.org/draft-04/schema#",
+    "$schema": "http://json-schema.org/draft-07/schema#",
     "title": "total energy contributions schema",
     "type": "object",
     "properties": {
         "temperatureEntropy": {
             "description": "product of temperature and configurational entropy",
+            "type": "object",
             "allOf": [
                 {
                     "$ref": "../../core/primitive/scalar.json"
@@ -21,6 +22,7 @@
         },
         "harrisFoulkes": {
             "description": "non self-consitent energy based on an input charge density",
+            "type": "object",
             "allOf": [
                 {
                     "$ref": "../../core/primitive/scalar.json"
@@ -36,6 +38,7 @@
         },
         "oneElectron": {
             "description": "kinetic + pseudopotential energy",
+            "type": "object",
             "allOf": [
                 {
                     "$ref": "../../core/primitive/scalar.json"
@@ -51,6 +54,7 @@
         },
         "hartree": {
             "description": "energy due to coulomb potential",
+            "type": "object",
             "allOf": [
                 {
                     "$ref": "../../core/primitive/scalar.json"
@@ -66,6 +70,7 @@
         },
         "exchange": {
             "description": "exchange energy",
+            "type": "object",
             "allOf": [
                 {
                     "$ref": "../../core/primitive/scalar.json"
@@ -81,6 +86,7 @@
         },
         "exchangeCorrelation": {
             "description": "exchange and correlation energy per particle",
+            "type": "object",
             "allOf": [
                 {
                     "$ref": "../../core/primitive/scalar.json"
@@ -96,6 +102,7 @@
         },
         "ewald": {
             "description": "summation of interaction energies at long length scales due to coloumbic interactions",
+            "type": "object",
             "allOf": [
                 {
                     "$ref": "../../core/primitive/scalar.json"
@@ -111,6 +118,7 @@
         },
         "alphaZ": {
             "description": "divergent electrostatic ion interaction in compensating electron gas",
+            "type": "object",
             "allOf": [
                 {
                     "$ref": "../../core/primitive/scalar.json"
@@ -126,6 +134,7 @@
         },
         "atomicEnergy": {
             "description": "kinetic energy of wavefunctions in the atomic limit",
+            "type": "object",
             "allOf": [
                 {
                     "$ref": "../../core/primitive/scalar.json"
@@ -141,6 +150,7 @@
         },
         "eigenvalues": {
             "description": "sum of one electron energies of kinetic, electrostatic, and exchange correlation",
+            "type": "object",
             "allOf": [
                 {
                     "$ref": "../../core/primitive/scalar.json"
@@ -156,6 +166,7 @@
         },
         "PAWDoubleCounting2": {
             "description": "double counting correction 2",
+            "type": "object",
             "allOf": [
                 {
                     "$ref": "../../core/primitive/scalar.json"
@@ -171,6 +182,7 @@
         },
         "PAWDoubleCounting3": {
             "description": "double counting correction 3",
+            "type": "object",
             "allOf": [
                 {
                     "$ref": "../../core/primitive/scalar.json"
@@ -186,6 +198,7 @@
         },
         "hartreeFock": {
             "description": "hartree-fock contribution",
+            "type": "object",
             "allOf": [
                 {
                     "$ref": "../../core/primitive/scalar.json"

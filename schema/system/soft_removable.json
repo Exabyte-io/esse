@@ -1,7 +1,8 @@
 {
     "$id": "system/soft-removable",
-    "$schema": "http://json-schema.org/draft-04/schema#",
+    "$schema": "http://json-schema.org/draft-07/schema#",
     "title": "soft removable entity schema",
+    "type": "object",
     "properties": {
         "removedAt": {
             "description": "Timestamp of the moment when entity was removed",

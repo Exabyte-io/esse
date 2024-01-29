@@ -1,6 +1,6 @@
 {
     "$id": "system/database-source",
-    "$schema": "http://json-schema.org/draft-04/schema#",
+    "$schema": "http://json-schema.org/draft-07/schema#",
     "title": "database source schema",
     "description": "information about a database source",
     "type": "object",
@@ -14,9 +14,8 @@
             "type": "string"
         },
         "origin": {
-            "description": "A flag that is true when material is initially imported from a third party * (as opposed to being independently designed from scratch).",
-            "type": "boolean",
-            "comment": "Deprecated. To be removed."
+            "description": "Deprecated. To be removed. A flag that is true when material is initially imported from a third party * (as opposed to being independently designed from scratch).",
+            "type": "boolean"
         },
         "data": {
             "description": "Original response from external source.",
@@ -27,9 +26,8 @@
             "type": "string"
         },
         "url": {
-            "description": "The URL of the original record, e.g. https://next-gen.materialsproject.org/materials/mp-48",
-            "type": "string",
-            "comment": "ToDo: update to use URI type per https://json-schema.org/understanding-json-schema/reference/string#resource-identifiers"
+            "description": "The URL of the original record, e.g. https://next-gen.materialsproject.org/materials/mp-48; ToDo: update to use URI type per https://json-schema.org/understanding-json-schema/reference/string#resource-identifiers",
+            "type": "string"
         }
     },
     "required": [

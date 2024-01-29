@@ -1,6 +1,6 @@
 {
     "$id": "core/reference/literature/pages",
-    "$schema": "http://json-schema.org/draft-04/schema#",
+    "$schema": "http://json-schema.org/draft-07/schema#",
     "title": "pages schema",
     "type": "object",
     "properties": {

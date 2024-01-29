@@ -1,7 +1,8 @@
 {
     "$id": "methods-category/mathematical/opt/diff/bracket",
-    "$schema": "http://json-schema.org/draft-04/schema#",
+    "$schema": "http://json-schema.org/draft-07/schema#",
     "description": "Bracket algorithms for the optimization of differentiable functions",
+    "type": "object",
     "allOf": [
         {
             "$ref": "../diff.json"

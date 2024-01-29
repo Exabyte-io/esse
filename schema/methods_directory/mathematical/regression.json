@@ -1,7 +1,8 @@
 {
     "$id": "methods-directory/mathematical/regression",
-    "$schema": "http://json-schema.org/draft-04/schema#",
+    "$schema": "http://json-schema.org/draft-07/schema#",
     "title": "unit method regression",
+    "type": "object",
     "allOf": [
         {
             "$ref": "../../method/unit_method.json"

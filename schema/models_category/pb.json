@@ -1,7 +1,8 @@
 {
     "$id": "models-category/pb",
-    "$schema": "http://json-schema.org/draft-04/schema#",
+    "$schema": "http://json-schema.org/draft-07/schema#",
     "title": "physics-based model category schema",
+    "type": "object",
     "allOf": [
         {
             "$ref": "../core/reusable/categories.json"

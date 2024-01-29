@@ -1,6 +1,6 @@
 {
     "$id": "model/mixins/dft/double-hybrid-functional",
-    "$schema": "http://json-schema.org/draft-04/schema#",
+    "$schema": "http://json-schema.org/draft-07/schema#",
     "title": "Double hybrid functional mixin",
     "type": "object",
     "properties": {

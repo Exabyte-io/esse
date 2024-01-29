@@ -1,8 +1,9 @@
 {
     "$id": "3pse/file/applications/espresso/7.2/pw.x",
-    "$schema": "http://json-schema.org/draft-04/schema#",
+    "$schema": "http://json-schema.org/draft-07/schema#",
     "title": "pwx main schema",
     "additionalProperties": false,
+    "type": "object",
     "properties": {
         "&CONTROL": {
             "$ref": "./pw.x/control.json"
