@@ -3,6 +3,7 @@
     "$schema": "http://json-schema.org/draft-07/schema#",
     "description": "Categories for the numerical integration of differential equations",
     "type": "object",
+    "title": "Order1 schema",
     "allOf": [
         {
             "$ref": "../diffeq.json"

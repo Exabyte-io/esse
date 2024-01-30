@@ -1,7 +1,7 @@
 {
     "$id": "methods-category/mathematical/opt",
     "$schema": "http://json-schema.org/draft-07/schema#",
-    "description": "Integration category schema",
+    "title": "Mathematical opt schema",
     "type": "object",
     "allOf": [
         {

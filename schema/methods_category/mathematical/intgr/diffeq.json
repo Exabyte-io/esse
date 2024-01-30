@@ -1,7 +1,7 @@
 {
     "$id": "methods-category/mathematical/intgr/diffeq",
     "$schema": "http://json-schema.org/draft-07/schema#",
-    "description": "Methods for the numerical integration of differential equations",
+    "title": "Methods for the numerical integration of differential equations schema",
     "type": "object",
     "allOf": [
         {

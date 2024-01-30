@@ -1,7 +1,7 @@
 {
     "$id": "methods-category/physical/qm/wf",
     "$schema": "http://json-schema.org/draft-07/schema#",
-    "description": "Methods related to wave functions",
+    "title": "Methods related to wave functions schema",
     "type": "object",
     "allOf": [
         {

@@ -1,7 +1,7 @@
 {
     "$id": "methods-category/mathematical/fapprx/ipol/lin",
     "$schema": "http://json-schema.org/draft-07/schema#",
-    "description": "Linear interpolation category schema",
+    "title": "Linear interpolation category schema",
     "type": "object",
     "allOf": [
         {

@@ -1,7 +1,7 @@
 {
     "$id": "methods-category/mathematical/linalg/diag",
     "$schema": "http://json-schema.org/draft-07/schema#",
-    "description": "Matrix diagonalization methods",
+    "title": "Matrix diagonalization methods schema",
     "type": "object",
     "allOf": [
         {

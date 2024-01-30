@@ -1,7 +1,7 @@
 {
     "$id": "methods-category/mathematical/opt/diff/order1",
     "$schema": "http://json-schema.org/draft-07/schema#",
-    "description": "First order algorithms for the optimization of differentiable functions",
+    "title": "First order algorithms for the optimization of differentiable functions schema",
     "type": "object",
     "allOf": [
         {

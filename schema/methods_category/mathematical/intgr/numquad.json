@@ -1,7 +1,7 @@
 {
     "$id": "methods-category/mathematical/intgr/numquad",
     "$schema": "http://json-schema.org/draft-07/schema#",
-    "description": "Methods for the numerical quadrature",
+    "title": "Methods for the numerical quadrature schema",
     "type": "object",
     "allOf": [
         {

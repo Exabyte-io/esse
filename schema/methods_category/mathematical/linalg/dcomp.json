@@ -1,7 +1,7 @@
 {
     "$id": "methods-category/mathematical/linalg/dcomp",
     "$schema": "http://json-schema.org/draft-07/schema#",
-    "description": "Matrix decomposition methods",
+    "title": "Matrix decomposition methods schema",
     "type": "object",
     "allOf": [
         {

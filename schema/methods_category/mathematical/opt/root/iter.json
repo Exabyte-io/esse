@@ -1,7 +1,7 @@
 {
     "$id": "methods-category/mathematical/opt/root/iter",
     "$schema": "http://json-schema.org/draft-07/schema#",
-    "description": "Iterative method for root finding category schema",
+    "title": "Iterative method for root finding category schema",
     "type": "object",
     "allOf": [
         {

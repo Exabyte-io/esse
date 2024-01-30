@@ -1,7 +1,7 @@
 {
     "$id": "methods-category/mathematical/fapprx/basisexp",
     "$schema": "http://json-schema.org/draft-07/schema#",
-    "description": "Basis expansion category schema",
+    "title": "Basis expansion category schema",
     "type": "object",
     "allOf": [
         {

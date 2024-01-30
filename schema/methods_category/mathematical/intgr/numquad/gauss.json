@@ -1,7 +1,7 @@
 {
     "$id": "methods-category/mathematical/intgr/numquad/gauss",
     "$schema": "http://json-schema.org/draft-07/schema#",
-    "description": "Gaussian quadrature rules",
+    "title": "Gaussian quadrature rules schema",
     "type": "object",
     "allOf": [
         {

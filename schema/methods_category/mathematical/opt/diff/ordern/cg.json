@@ -1,7 +1,7 @@
 {
     "$id": "methods-category/mathematical/opt/diff/ordern/cg",
     "$schema": "http://json-schema.org/draft-07/schema#",
-    "description": "conjugate gradient method schema",
+    "title": "Conjugate gradient method schema",
     "type": "object",
     "allOf": [
         {

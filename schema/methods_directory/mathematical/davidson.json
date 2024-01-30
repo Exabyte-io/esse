@@ -1,7 +1,7 @@
 {
     "$id": "methods-directory/mathematical/davidson",
     "$schema": "http://json-schema.org/draft-07/schema#",
-    "title": "unit method davidson",
+    "title": "Unit method davidson schema",
     "description": "Davidson diagonalization method",
     "type": "object",
     "allOf": [
