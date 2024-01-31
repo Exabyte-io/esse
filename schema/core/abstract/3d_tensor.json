@@ -7,5 +7,6 @@
         "$ref": "../primitive/array_of_3_numbers.json"
     },
     "minItems": 3,
-    "maxItems": 3
+    "maxItems": 3,
+    "additionalProperties": false
 }

@@ -7,5 +7,6 @@
         "conventional": {
             "type": "object"
         }
-    }
+    },
+    "additionalProperties": false
 }

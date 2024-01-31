@@ -9,5 +9,6 @@
         {
             "$ref": "../system/name.json"
         }
-    ]
+    ],
+    "additionalProperties": false
 }

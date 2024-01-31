@@ -20,5 +20,6 @@
             }
         ],
         "uniqueItems": true
-    }
+    },
+    "additionalProperties": false
 }

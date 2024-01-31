@@ -36,5 +36,6 @@
     "required": [
         "input",
         "application"
-    ]
+    ],
+    "additionalProperties": false
 }

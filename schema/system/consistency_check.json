@@ -35,5 +35,6 @@
         "name",
         "severity",
         "message"
-    ]
+    ],
+    "additionalProperties": false
 }

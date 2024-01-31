@@ -12,5 +12,6 @@
             "description": "Identifies that entity was removed",
             "type": "boolean"
         }
-    }
+    },
+    "additionalProperties": false
 }

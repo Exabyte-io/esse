@@ -16,5 +16,6 @@
                 "Job"
             ]
         }
-    }
+    },
+    "additionalProperties": false
 }

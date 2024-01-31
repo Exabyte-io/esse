@@ -28,5 +28,6 @@
         "TRI_1a",
         "TRI_2a",
         "TRI_1b"
-    ]
+    ],
+    "additionalProperties": false
 }

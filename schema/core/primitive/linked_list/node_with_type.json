@@ -12,5 +12,6 @@
         "type": {
             "type": "string"
         }
-    }
+    },
+    "additionalProperties": false
 }

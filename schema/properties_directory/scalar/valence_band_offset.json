@@ -14,5 +14,6 @@
                 "valence_band_offset"
             ]
         }
-    }
+    },
+    "additionalProperties": false
 }

@@ -14,5 +14,6 @@
         "enum": [
             "root"
         ]
-    }
+    },
+    "additionalProperties": false
 }

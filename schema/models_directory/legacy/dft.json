@@ -44,7 +44,8 @@
                         "other"
                     ]
                 }
-            }
+            },
+            "additionalProperties": false
         },
         "gga": {
             "properties": {
@@ -61,7 +62,8 @@
                         "other"
                     ]
                 }
-            }
+            },
+            "additionalProperties": false
         },
         "hybrid": {
             "properties": {
@@ -76,7 +78,9 @@
                         "hse06"
                     ]
                 }
-            }
+            },
+            "additionalProperties": false
         }
-    }
+    },
+    "additionalProperties": false
 }

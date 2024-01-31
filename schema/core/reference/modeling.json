@@ -6,5 +6,6 @@
         {
             "$ref": "modeling/exabyte.json"
         }
-    ]
+    ],
+    "additionalProperties": false
 }

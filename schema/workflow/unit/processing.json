@@ -30,5 +30,6 @@
         "operation",
         "operationType",
         "inputData"
-    ]
+    ],
+    "additionalProperties": false
 }

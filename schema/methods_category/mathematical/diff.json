@@ -12,5 +12,6 @@
         "tier1": {
             "$ref": "enum_options.json#/differentiation"
         }
-    }
+    },
+    "additionalProperties": false
 }

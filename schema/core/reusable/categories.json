@@ -25,5 +25,6 @@
             "description": "general subtype of the entity",
             "$ref": "../primitive/slugified_entry_or_slug.json"
         }
-    }
+    },
+    "additionalProperties": false
 }

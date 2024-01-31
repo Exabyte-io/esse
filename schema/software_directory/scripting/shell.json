@@ -48,5 +48,6 @@
             "description": "Optional environment variables exported before running the Shell script",
             "type": "object"
         }
-    }
+    },
+    "additionalProperties": false
 }

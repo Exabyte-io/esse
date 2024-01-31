@@ -18,7 +18,8 @@
                         "temperature_entropy"
                     ]
                 }
-            }
+            },
+            "additionalProperties": false
         },
         "harrisFoulkes": {
             "description": "non self-consitent energy based on an input charge density",
@@ -34,7 +35,8 @@
                         "harris_foulkes"
                     ]
                 }
-            }
+            },
+            "additionalProperties": false
         },
         "oneElectron": {
             "description": "kinetic + pseudopotential energy",
@@ -50,7 +52,8 @@
                         "one_electron"
                     ]
                 }
-            }
+            },
+            "additionalProperties": false
         },
         "hartree": {
             "description": "energy due to coulomb potential",
@@ -66,7 +69,8 @@
                         "hartree"
                     ]
                 }
-            }
+            },
+            "additionalProperties": false
         },
         "exchange": {
             "description": "exchange energy",
@@ -82,7 +86,8 @@
                         "exchange"
                     ]
                 }
-            }
+            },
+            "additionalProperties": false
         },
         "exchangeCorrelation": {
             "description": "exchange and correlation energy per particle",
@@ -98,7 +103,8 @@
                         "exchange_correlation"
                     ]
                 }
-            }
+            },
+            "additionalProperties": false
         },
         "ewald": {
             "description": "summation of interaction energies at long length scales due to coloumbic interactions",
@@ -114,7 +120,8 @@
                         "ewald"
                     ]
                 }
-            }
+            },
+            "additionalProperties": false
         },
         "alphaZ": {
             "description": "divergent electrostatic ion interaction in compensating electron gas",
@@ -130,7 +137,8 @@
                         "alphaZ"
                     ]
                 }
-            }
+            },
+            "additionalProperties": false
         },
         "atomicEnergy": {
             "description": "kinetic energy of wavefunctions in the atomic limit",
@@ -146,7 +154,8 @@
                         "atomic_energy"
                     ]
                 }
-            }
+            },
+            "additionalProperties": false
         },
         "eigenvalues": {
             "description": "sum of one electron energies of kinetic, electrostatic, and exchange correlation",
@@ -162,7 +171,8 @@
                         "eigenvalues"
                     ]
                 }
-            }
+            },
+            "additionalProperties": false
         },
         "PAWDoubleCounting2": {
             "description": "double counting correction 2",
@@ -178,7 +188,8 @@
                         "PAW_double-counting_correction_2"
                     ]
                 }
-            }
+            },
+            "additionalProperties": false
         },
         "PAWDoubleCounting3": {
             "description": "double counting correction 3",
@@ -194,7 +205,8 @@
                         "PAW_double-counting_correction_3"
                     ]
                 }
-            }
+            },
+            "additionalProperties": false
         },
         "hartreeFock": {
             "description": "hartree-fock contribution",
@@ -210,7 +222,8 @@
                         "hartree_fock"
                     ]
                 }
-            }
+            },
+            "additionalProperties": false
         },
         "name": {
             "enum": [
@@ -220,5 +233,6 @@
         "units": {
             "$ref": "../../definitions/units.json#/energy"
         }
-    }
+    },
+    "additionalProperties": false
 }

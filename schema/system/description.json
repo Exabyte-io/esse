@@ -11,5 +11,6 @@
         "descriptionObject": {
             "type": "object"
         }
-    }
+    },
+    "additionalProperties": false
 }

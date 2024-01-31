@@ -17,5 +17,6 @@
     },
     "required": [
         "templateId"
-    ]
+    ],
+    "additionalProperties": false
 }

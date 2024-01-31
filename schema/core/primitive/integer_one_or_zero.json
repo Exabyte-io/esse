@@ -4,5 +4,6 @@
     "title": "integer one or zero",
     "type": "integer",
     "minimum": 0,
-    "maximum": 1
+    "maximum": 1,
+    "additionalProperties": false
 }

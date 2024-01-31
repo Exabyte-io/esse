@@ -34,5 +34,6 @@
         "NAME",
         "PROVIDER",
         "REGION"
-    ]
+    ],
+    "additionalProperties": false
 }

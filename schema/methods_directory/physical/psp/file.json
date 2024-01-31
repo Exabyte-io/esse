@@ -5,7 +5,9 @@
     "type": "object",
     "properties": {
         "slug": {
-            "enum": ["pseudopotential"]
+            "enum": [
+                "pseudopotential"
+            ]
         },
         "data": {
             "description": "Specific data based on pseudopotential file.",
@@ -21,7 +23,9 @@
                 "type": {
                     "type": "string"
                 }
-            }
+            },
+            "additionalProperties": false
         }
-    }
+    },
+    "additionalProperties": false
 }

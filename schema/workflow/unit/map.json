@@ -57,11 +57,13 @@
             },
             "required": [
                 "target"
-            ]
+            ],
+            "additionalProperties": false
         }
     },
     "required": [
         "input",
         "workflowId"
-    ]
+    ],
+    "additionalProperties": false
 }

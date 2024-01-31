@@ -39,12 +39,14 @@
                 "required": [
                     "operation",
                     "arguments"
-                ]
+                ],
+                "additionalProperties": false
             }
         }
     },
     "required": [
         "mapFlowchartId",
         "input"
-    ]
+    ],
+    "additionalProperties": false
 }

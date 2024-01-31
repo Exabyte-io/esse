@@ -24,5 +24,6 @@
             "description": "Object showing the actual possible precision based on theory and implementation",
             "type": "object"
         }
-    }
+    },
+    "additionalProperties": false
 }

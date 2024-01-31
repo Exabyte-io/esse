@@ -11,5 +11,6 @@
             "evgw0",
             "evgw"
         ]
-    }
+    },
+    "additionalProperties": false
 }

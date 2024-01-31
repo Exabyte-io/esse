@@ -14,5 +14,6 @@
                 "inchi_key"
             ]
         }
-    }
+    },
+    "additionalProperties": false
 }

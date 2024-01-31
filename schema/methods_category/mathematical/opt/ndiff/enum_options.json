@@ -14,5 +14,6 @@
         "enum": [
             "stoch"
         ]
-    }
+    },
+    "additionalProperties": false
 }

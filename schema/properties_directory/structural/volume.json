@@ -19,5 +19,6 @@
                 "angstrom^3"
             ]
         }
-    }
+    },
+    "additionalProperties": false
 }

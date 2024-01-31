@@ -15,5 +15,6 @@
         "subtype": {
             "$ref": "enum_options.json#/gwSubtypes"
         }
-    }
+    },
+    "additionalProperties": false
 }

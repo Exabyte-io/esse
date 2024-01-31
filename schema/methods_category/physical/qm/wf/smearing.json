@@ -16,5 +16,6 @@
         "subtype": {
             "$ref": "./enum_options.json#/smearingSubtypes"
         }
-    }
+    },
+    "additionalProperties": false
 }

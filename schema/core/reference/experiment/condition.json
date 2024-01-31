@@ -17,7 +17,8 @@
                     "value": {
                         "type": "string"
                     }
-                }
+                },
+                "additionalProperties": false
             }
         },
         "name": {
@@ -27,5 +28,6 @@
     },
     "required": [
         "name"
-    ]
+    ],
+    "additionalProperties": false
 }

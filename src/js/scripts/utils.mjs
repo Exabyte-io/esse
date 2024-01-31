@@ -22,3 +22,21 @@ export async function walkDir(dir, callback) {
         }
     }
 }
+
+export function patchSchema(object, patchObjectCallback) {
+    if (Array.isArray(object)) {
+        return object.map((item) => patchSchema(item, patchObjectCallback));
+    }
+
+    if (typeof object !== "object") {
+        return object;
+    }
+
+    const cleanObject = patchObjectCallback(object);
+
+    const entries = Object.entries(cleanObject).map(([key, value]) => {
+        return [key, patchSchema(value, patchObjectCallback)];
+    });
+
+    return Object.fromEntries(entries);
+}

@@ -39,7 +39,8 @@
                     "required": [
                         "_id",
                         "name"
-                    ]
+                    ],
+                    "additionalProperties": false
                 },
                 "version": {
                     "description": "Rupy-Webapp communication schema version.",
@@ -54,7 +55,8 @@
                 "entity",
                 "version",
                 "timestamp"
-            ]
+            ],
+            "additionalProperties": false
         },
         "payload": {
             "description": "Actual payload of the message.",
@@ -64,5 +66,6 @@
     "required": [
         "header",
         "payload"
-    ]
+    ],
+    "additionalProperties": false
 }

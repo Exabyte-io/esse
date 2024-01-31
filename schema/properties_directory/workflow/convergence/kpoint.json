@@ -36,7 +36,8 @@
                 "required": [
                     "value",
                     "grid"
-                ]
+                ],
+                "additionalProperties": false
             }
         }
     },
@@ -44,5 +45,6 @@
         "tolerance",
         "units",
         "data"
-    ]
+    ],
+    "additionalProperties": false
 }

@@ -9,5 +9,6 @@
         {
             "$ref": "../primitive/array_of_3_booleans.json"
         }
-    ]
+    ],
+    "additionalProperties": false
 }

@@ -19,5 +19,6 @@
     },
     "required": [
         "trainingError"
-    ]
+    ],
+    "additionalProperties": false
 }

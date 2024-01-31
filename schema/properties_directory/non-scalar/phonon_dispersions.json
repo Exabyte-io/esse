@@ -20,7 +20,8 @@
                 "units": {
                     "$ref": "../../definitions/units.json#/length"
                 }
-            }
+            },
+            "additionalProperties": false
         },
         "yAxis": {
             "type": "object",
@@ -33,12 +34,14 @@
                 "units": {
                     "$ref": "../../definitions/units.json#/frequency"
                 }
-            }
+            },
+            "additionalProperties": false
         },
         "name": {
             "enum": [
                 "phonon_dispersions"
             ]
         }
-    }
+    },
+    "additionalProperties": false
 }

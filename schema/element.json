@@ -24,6 +24,8 @@
                     }
                 ]
             }
-        }
-    }
+        },
+        "additionalProperties": false
+    },
+    "additionalProperties": false
 }

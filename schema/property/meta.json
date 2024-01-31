@@ -7,5 +7,6 @@
         {
             "$ref": "raw.json"
         }
-    ]
+    ],
+    "additionalProperties": false
 }

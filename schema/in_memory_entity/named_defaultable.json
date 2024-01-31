@@ -12,5 +12,6 @@
         {
             "$ref": "../system/defaultable.json"
         }
-    ]
+    ],
+    "additionalProperties": false
 }

@@ -7,5 +7,6 @@
         "useValues": {
             "type": "boolean"
         }
-    }
+    },
+    "additionalProperties": false
 }

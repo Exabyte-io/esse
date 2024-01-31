@@ -18,5 +18,6 @@
         "enum": [
             "u"
         ]
-    }
+    },
+    "additionalProperties": false
 }

@@ -17,5 +17,6 @@
     },
     "required": [
         "exabyteIds"
-    ]
+    ],
+    "additionalProperties": false
 }

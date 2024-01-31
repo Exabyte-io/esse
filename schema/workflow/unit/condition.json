@@ -48,5 +48,6 @@
         "then",
         "else",
         "maxOccurrences"
-    ]
+    ],
+    "additionalProperties": false
 }

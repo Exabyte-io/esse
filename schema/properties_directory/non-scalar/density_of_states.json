@@ -20,7 +20,8 @@
                 "units": {
                     "$ref": "../../definitions/units.json#/energy"
                 }
-            }
+            },
+            "additionalProperties": false
         },
         "yAxis": {
             "type": "object",
@@ -33,7 +34,8 @@
                 "units": {
                     "$ref": "../../definitions/units.json#/electronicDOS"
                 }
-            }
+            },
+            "additionalProperties": false
         },
         "name": {
             "enum": [
@@ -66,8 +68,10 @@
                             -0.5
                         ]
                     }
-                }
+                },
+                "additionalProperties": false
             }
         }
-    }
+    },
+    "additionalProperties": false
 }

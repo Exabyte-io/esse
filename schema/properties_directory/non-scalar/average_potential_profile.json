@@ -19,7 +19,8 @@
                 "units": {
                     "$ref": "../../definitions/units.json#/length"
                 }
-            }
+            },
+            "additionalProperties": false
         },
         "yAxis": {
             "properties": {
@@ -31,12 +32,14 @@
                 "units": {
                     "$ref": "../../definitions/units.json#/energy"
                 }
-            }
+            },
+            "additionalProperties": false
         },
         "name": {
             "enum": [
                 "average_potential_profile"
             ]
         }
-    }
+    },
+    "additionalProperties": false
 }

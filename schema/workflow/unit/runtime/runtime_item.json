@@ -9,5 +9,6 @@
         {
             "$ref": "./_runtime_item_string.json"
         }
-    ]
+    ],
+    "additionalProperties": false
 }

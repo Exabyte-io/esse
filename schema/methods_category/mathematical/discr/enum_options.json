@@ -4,5 +4,6 @@
         "enum": [
             "mesh"
         ]
-    }
+    },
+    "additionalProperties": false
 }

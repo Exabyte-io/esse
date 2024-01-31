@@ -19,5 +19,6 @@
             "type": "integer",
             "description": "degree of the dimensionality of the norm"
         }
-    }
+    },
+    "additionalProperties": false
 }

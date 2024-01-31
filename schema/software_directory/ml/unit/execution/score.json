@@ -10,5 +10,6 @@
     ],
     "properties": {
         "input": {}
-    }
+    },
+    "additionalProperties": false
 }

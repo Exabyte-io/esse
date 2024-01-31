@@ -19,5 +19,6 @@
                 "0.2.0"
             ]
         }
-    }
+    },
+    "additionalProperties": false
 }

@@ -14,5 +14,6 @@
                 "ionization_potential"
             ]
         }
-    }
+    },
+    "additionalProperties": false
 }

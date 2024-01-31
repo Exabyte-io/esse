@@ -15,5 +15,6 @@
             "description": "Id of the unit that extracted the result",
             "type": "string"
         }
-    }
+    },
+    "additionalProperties": false
 }

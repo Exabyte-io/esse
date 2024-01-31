@@ -9,5 +9,6 @@
         "enum": [
             "order2"
         ]
-    }
+    },
+    "additionalProperties": false
 }

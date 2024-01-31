@@ -13,5 +13,6 @@
         "tier3": {
             "$ref": "enum_options.json#/secondOrder"
         }
-    }
+    },
+    "additionalProperties": false
 }

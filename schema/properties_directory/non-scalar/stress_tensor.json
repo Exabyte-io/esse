@@ -15,5 +15,6 @@
         "units": {
             "$ref": "../../definitions/units.json#/pressure"
         }
-    }
+    },
+    "additionalProperties": false
 }

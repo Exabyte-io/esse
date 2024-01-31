@@ -14,5 +14,6 @@
                 "reaction_energy_barrier"
             ]
         }
-    }
+    },
+    "additionalProperties": false
 }

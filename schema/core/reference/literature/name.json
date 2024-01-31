@@ -20,5 +20,6 @@
     "required": [
         "first",
         "last"
-    ]
+    ],
+    "additionalProperties": false
 }

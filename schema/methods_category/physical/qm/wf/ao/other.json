@@ -14,5 +14,6 @@
                 "other"
             ]
         }
-    }
+    },
+    "additionalProperties": false
 }

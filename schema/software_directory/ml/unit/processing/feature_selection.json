@@ -4,5 +4,6 @@
         {
             "$ref": "feature_selection/filter_based.json"
         }
-    ]
+    ],
+    "additionalProperties": false
 }

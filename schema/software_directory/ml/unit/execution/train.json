@@ -33,7 +33,9 @@
             "required": [
                 "features",
                 "targets"
-            ]
+            ],
+            "additionalProperties": false
         }
-    }
+    },
+    "additionalProperties": false
 }

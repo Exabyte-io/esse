@@ -32,5 +32,6 @@
                 "$ref": "runtime_item.json"
             }
         }
-    }
+    },
+    "additionalProperties": false
 }

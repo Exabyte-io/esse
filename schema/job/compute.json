@@ -96,7 +96,8 @@
                     "description": "Job's identity in RMS. e.g. 1234.master-1-staging.exabyte.io",
                     "type": "string"
                 }
-            }
+            },
+            "additionalProperties": false
         },
         "errors": {
             "description": "Computation error. Optional. Appears only if something happens on jobs execution.",
@@ -126,7 +127,8 @@
                         "description": "Full machine-readable error traceback. e.g. FileNotFound",
                         "type": "string"
                     }
-                }
+                },
+                "additionalProperties": false
             }
         },
         "excludeFilesPattern": {
@@ -139,5 +141,6 @@
         "nodes",
         "ppn",
         "timeLimit"
-    ]
+    ],
+    "additionalProperties": false
 }

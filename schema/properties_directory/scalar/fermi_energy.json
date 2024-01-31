@@ -14,5 +14,6 @@
                 "fermi_energy"
             ]
         }
-    }
+    },
+    "additionalProperties": false
 }

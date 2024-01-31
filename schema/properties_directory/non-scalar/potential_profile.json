@@ -17,7 +17,8 @@
                         "z coordinate"
                     ]
                 }
-            }
+            },
+            "additionalProperties": false
         },
         "yAxis": {
             "type": "object",
@@ -30,12 +31,14 @@
                 "units": {
                     "$ref": "../../definitions/units.json#/energy"
                 }
-            }
+            },
+            "additionalProperties": false
         },
         "name": {
             "enum": [
                 "potential_profile"
             ]
         }
-    }
+    },
+    "additionalProperties": false
 }

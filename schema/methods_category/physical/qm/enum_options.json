@@ -4,5 +4,6 @@
         "enum": [
             "wf"
         ]
-    }
+    },
+    "additionalProperties": false
 }

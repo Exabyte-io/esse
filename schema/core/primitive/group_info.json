@@ -12,5 +12,6 @@
             "description": "Unique identifier of the group a node belongs to",
             "type": "string"
         }
-    }
+    },
+    "additionalProperties": false
 }

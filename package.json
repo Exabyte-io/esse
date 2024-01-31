@@ -15,7 +15,7 @@
         "prettier": "prettier --check src/js",
         "postinstall": "npm run transpile-and-build-assets",
         "prepare": "husky install || exit 0",
-        "setSchemaIds": "cd src/js/scripts && node setSchemaIds.mjs"
+        "patchSchemas": "cd src/js/scripts && node patchSchemas.mjs"
     },
     "repository": {
         "type": "git",

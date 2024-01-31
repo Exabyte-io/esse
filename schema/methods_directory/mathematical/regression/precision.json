@@ -10,5 +10,6 @@
                 "$ref": "precision_per_property.json"
             }
         }
-    }
+    },
+    "additionalProperties": false
 }

@@ -41,5 +41,6 @@
             "least_squares",
             "ridge"
         ]
-    }
+    },
+    "additionalProperties": false
 }

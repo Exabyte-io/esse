@@ -13,5 +13,6 @@
         {
             "$ref": "execution/initialize.json"
         }
-    ]
+    ],
+    "additionalProperties": false
 }

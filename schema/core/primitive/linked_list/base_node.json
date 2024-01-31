@@ -28,7 +28,9 @@
             },
             "required": [
                 "flowchartId"
-            ]
+            ],
+            "additionalProperties": false
         }
-    }
+    },
+    "additionalProperties": false
 }

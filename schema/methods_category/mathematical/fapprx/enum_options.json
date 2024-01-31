@@ -9,5 +9,6 @@
         "enum": [
             "ipol"
         ]
-    }
+    },
+    "additionalProperties": false
 }

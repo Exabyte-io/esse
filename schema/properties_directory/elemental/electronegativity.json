@@ -15,5 +15,6 @@
                 "electronegativity"
             ]
         }
-    }
+    },
+    "additionalProperties": false
 }

@@ -58,13 +58,16 @@
                         "required": [
                             "name",
                             "scale"
-                        ]
+                        ],
+                        "additionalProperties": false
                     }
                 }
             },
             "required": [
                 "scaler"
-            ]
+            ],
+            "additionalProperties": false
         }
-    }
+    },
+    "additionalProperties": false
 }

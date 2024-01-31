@@ -7,5 +7,6 @@
         "metadata": {
             "type": "object"
         }
-    }
+    },
+    "additionalProperties": false
 }

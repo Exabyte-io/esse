@@ -30,5 +30,6 @@
                 "nwchem"
             ]
         }
-    }
+    },
+    "additionalProperties": false
 }

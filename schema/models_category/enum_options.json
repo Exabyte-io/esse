@@ -9,5 +9,6 @@
         "enum": [
             "st"
         ]
-    }
+    },
+    "additionalProperties": false
 }

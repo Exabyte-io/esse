@@ -19,5 +19,6 @@
                 "re"
             ]
         }
-    }
+    },
+    "additionalProperties": false
 }

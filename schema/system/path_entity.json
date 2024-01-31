@@ -9,5 +9,6 @@
         {
             "$ref": "./path.json"
         }
-    ]
+    ],
+    "additionalProperties": false
 }

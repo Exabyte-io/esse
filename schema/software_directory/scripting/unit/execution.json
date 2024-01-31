@@ -10,5 +10,6 @@
         {
             "$ref": "../../../workflow/unit/input/_input.json"
         }
-    ]
+    ],
+    "additionalProperties": false
 }

@@ -26,5 +26,6 @@
     "required": [
         "name",
         "statement"
-    ]
+    ],
+    "additionalProperties": false
 }

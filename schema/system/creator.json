@@ -16,5 +16,6 @@
                 "User"
             ]
         }
-    }
+    },
+    "additionalProperties": false
 }

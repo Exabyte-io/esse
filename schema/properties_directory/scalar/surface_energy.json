@@ -14,5 +14,6 @@
                 "surface_energy"
             ]
         }
-    }
+    },
+    "additionalProperties": false
 }

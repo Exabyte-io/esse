@@ -20,5 +20,6 @@
         "dataSet": {
             "$ref": "dataset.json"
         }
-    }
+    },
+    "additionalProperties": false
 }

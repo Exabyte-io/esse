@@ -7,5 +7,6 @@
         "isOutdated": {
             "type": "boolean"
         }
-    }
+    },
+    "additionalProperties": false
 }

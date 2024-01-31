@@ -4,5 +4,6 @@
         {
             "$ref": "data_transformation/scale_and_reduce.json"
         }
-    ]
+    ],
+    "additionalProperties": false
 }

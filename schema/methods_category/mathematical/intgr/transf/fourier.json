@@ -13,5 +13,6 @@
         "type": {
             "$ref": "enum_options.json#/fourierTransformation"
         }
-    }
+    },
+    "additionalProperties": false
 }

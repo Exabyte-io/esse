@@ -15,5 +15,6 @@
     "required": [
         "xDataArray",
         "yDataSeries"
-    ]
+    ],
+    "additionalProperties": false
 }

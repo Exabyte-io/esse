@@ -4,5 +4,6 @@
         "enum": [
             "cartesian"
         ]
-    }
+    },
+    "additionalProperties": false
 }

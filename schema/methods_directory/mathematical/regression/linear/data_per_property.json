@@ -19,5 +19,6 @@
     "required": [
         "intercept",
         "perFeature"
-    ]
+    ],
+    "additionalProperties": false
 }

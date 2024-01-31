@@ -16,5 +16,6 @@
     "required": [
         "latitude",
         "longitude"
-    ]
+    ],
+    "additionalProperties": false
 }

@@ -14,5 +14,6 @@
                 "electron_affinity"
             ]
         }
-    }
+    },
+    "additionalProperties": false
 }

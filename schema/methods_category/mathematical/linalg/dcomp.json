@@ -12,5 +12,6 @@
         "tier2": {
             "$ref": "enum_options.json#/decomposition"
         }
-    }
+    },
+    "additionalProperties": false
 }

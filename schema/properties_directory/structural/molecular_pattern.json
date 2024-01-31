@@ -15,5 +15,6 @@
                 "$ref": "patterns/special_bond.json"
             }
         ]
-    }
+    },
+    "additionalProperties": false
 }

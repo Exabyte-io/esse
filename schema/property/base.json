@@ -54,5 +54,6 @@
     "required": [
         "data",
         "source"
-    ]
+    ],
+    "additionalProperties": false
 }

@@ -16,5 +16,6 @@
     "required": [
         "scope",
         "name"
-    ]
+    ],
+    "additionalProperties": false
 }

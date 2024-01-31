@@ -26,12 +26,14 @@
                         "angstrom"
                     ]
                 }
-            }
+            },
+            "additionalProperties": false
         },
         "name": {
             "enum": [
                 "symmetry"
             ]
         }
-    }
+    },
+    "additionalProperties": false
 }

@@ -27,5 +27,6 @@
     "required": [
         "categories",
         "parameters"
-    ]
+    ],
+    "additionalProperties": false
 }

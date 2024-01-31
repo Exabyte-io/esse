@@ -33,5 +33,6 @@
     "required": [
         "model",
         "application"
-    ]
+    ],
+    "additionalProperties": false
 }

@@ -14,5 +14,8 @@
             "$ref": "../../methods_category/mathematical/opt/diff/ordern/cg.json"
         }
     },
-    "required": ["categories"]
+    "required": [
+        "categories"
+    ],
+    "additionalProperties": false
 }

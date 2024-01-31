@@ -16,5 +16,6 @@
     "required": [
         "global",
         "local"
-    ]
+    ],
+    "additionalProperties": false
 }

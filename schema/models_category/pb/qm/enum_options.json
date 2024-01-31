@@ -14,5 +14,6 @@
         "enum": [
             "semp"
         ]
-    }
+    },
+    "additionalProperties": false
 }

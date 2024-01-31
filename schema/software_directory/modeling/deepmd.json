@@ -30,5 +30,6 @@
                 "dp_train"
             ]
         }
-    }
+    },
+    "additionalProperties": false
 }

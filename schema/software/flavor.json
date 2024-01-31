@@ -36,5 +36,6 @@
     "required": [
         "name",
         "executableId"
-    ]
+    ],
+    "additionalProperties": false
 }

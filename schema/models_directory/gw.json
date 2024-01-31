@@ -21,7 +21,8 @@
                             "description": "Path to mean-field model",
                             "$ref": "../core/reusable/category_path.json"
                         }
-                    }
+                    },
+                    "additionalProperties": false
                 },
                 {
                     "oneOf": [
@@ -52,5 +53,6 @@
     "required": [
         "categories",
         "parameters"
-    ]
+    ],
+    "additionalProperties": false
 }

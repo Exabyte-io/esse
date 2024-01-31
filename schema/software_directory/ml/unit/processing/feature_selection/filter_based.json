@@ -39,7 +39,9 @@
             "required": [
                 "nFeatures",
                 "algorithm"
-            ]
+            ],
+            "additionalProperties": false
         }
-    }
+    },
+    "additionalProperties": false
 }

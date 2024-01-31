@@ -7,5 +7,6 @@
         "sharedCount": {
             "type": "number"
         }
-    }
+    },
+    "additionalProperties": false
 }

@@ -15,5 +15,6 @@
         {
             "$ref": "../workflow/unit/runtime/runtime_items.json"
         }
-    ]
+    ],
+    "additionalProperties": false
 }

@@ -15,5 +15,6 @@
         {
             "$ref": "../system/metadata.json"
         }
-    ]
+    ],
+    "additionalProperties": false
 }

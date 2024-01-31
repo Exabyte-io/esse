@@ -7,5 +7,6 @@
         "path": {
             "$ref": "../core/reusable/category_path.json"
         }
-    }
+    },
+    "additionalProperties": false
 }

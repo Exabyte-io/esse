@@ -23,5 +23,6 @@
         "categories",
         "precision",
         "data"
-    ]
+    ],
+    "additionalProperties": false
 }

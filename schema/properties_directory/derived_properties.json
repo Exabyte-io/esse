@@ -27,5 +27,6 @@
                 "$ref": "structural/inchi_key.json"
             }
         ]
-    }
+    },
+    "additionalProperties": false
 }

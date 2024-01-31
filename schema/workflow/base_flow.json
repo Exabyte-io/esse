@@ -30,10 +30,12 @@
         "compute": {
             "description": "compute parameters",
             "$ref": "../job/compute.json"
-        }
+        },
+        "additionalProperties": false
     },
     "required": [
         "name",
         "units"
-    ]
+    ],
+    "additionalProperties": false
 }

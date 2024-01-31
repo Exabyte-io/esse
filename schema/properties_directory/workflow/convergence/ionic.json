@@ -50,13 +50,16 @@
                                     "type": "number"
                                 }
                             }
-                        }
+                        },
+                        "additionalProperties": false
                     }
-                }
+                },
+                "additionalProperties": false
             }
         }
     },
     "required": [
         "data"
-    ]
+    ],
+    "additionalProperties": false
 }

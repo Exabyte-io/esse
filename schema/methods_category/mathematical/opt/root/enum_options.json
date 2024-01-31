@@ -9,5 +9,6 @@
         "enum": [
             "bracket"
         ]
-    }
+    },
+    "additionalProperties": false
 }

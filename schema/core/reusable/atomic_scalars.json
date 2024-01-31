@@ -13,6 +13,8 @@
             "value": {
                 "$ref": "../primitive/scalar.json"
             }
-        }
-    }
+        },
+        "additionalProperties": false
+    },
+    "additionalProperties": false
 }

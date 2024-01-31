@@ -27,5 +27,6 @@
                 "$ref": "../system/consistency_check.json"
             }
         }
-    }
+    },
+    "additionalProperties": false
 }

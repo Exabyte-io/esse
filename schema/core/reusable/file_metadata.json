@@ -17,5 +17,6 @@
             "description": "What kind of file this is, e.g. image / text",
             "type": "string"
         }
-    }
+    },
+    "additionalProperties": false
 }

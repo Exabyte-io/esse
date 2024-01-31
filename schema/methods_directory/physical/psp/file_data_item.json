@@ -40,7 +40,8 @@
                     "description": "DFT model path, e.g. '/pb/qm/dft/ksdft/gga?functional=pbe'",
                     "$ref": "../../../core/reusable/category_path.json"
                 }
-            }
+            },
+            "additionalProperties": false
         },
         "valenceConfiguration": {
             "type": "array",
@@ -67,7 +68,9 @@
         "name": {
             "type": "string",
             "description": "name of the data category",
-            "enum": ["pseudopotential"]
+            "enum": [
+                "pseudopotential"
+            ]
         }
     },
     "required": [
@@ -77,5 +80,6 @@
         "source",
         "path",
         "apps"
-    ]
+    ],
+    "additionalProperties": false
 }

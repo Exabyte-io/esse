@@ -12,5 +12,6 @@
             "description": "calculated as 2S+1, with S is the total spin angular momentum",
             "type": "integer"
         }
-    }
+    },
+    "additionalProperties": false
 }

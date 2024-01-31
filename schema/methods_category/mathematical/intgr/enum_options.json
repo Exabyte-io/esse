@@ -19,5 +19,6 @@
         "enum": [
             "transf"
         ]
-    }
+    },
+    "additionalProperties": false
 }

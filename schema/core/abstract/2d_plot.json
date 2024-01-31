@@ -26,5 +26,6 @@
     "required": [
         "xAxis",
         "yAxis"
-    ]
+    ],
+    "additionalProperties": false
 }

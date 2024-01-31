@@ -15,7 +15,8 @@
                     "minItems": 6,
                     "maxItems": 6
                 }
-            }
+            },
+            "additionalProperties": false
         },
         {
             "properties": {
@@ -37,7 +38,8 @@
                 "cosBC": {
                     "type": "number"
                 }
-            }
+            },
+            "additionalProperties": false
         }
     ],
     "properties": {

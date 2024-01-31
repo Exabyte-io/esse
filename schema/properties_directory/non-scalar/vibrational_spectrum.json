@@ -21,7 +21,8 @@
                 "units": {
                     "$ref": "../../definitions/units.json#/frequency"
                 }
-            }
+            },
+            "additionalProperties": false
         },
         "yAxis": {
             "type": "object",
@@ -36,12 +37,14 @@
                 "units": {
                     "$ref": "../../definitions/units.json#/spectralIntensity"
                 }
-            }
+            },
+            "additionalProperties": false
         },
         "name": {
             "enum": [
                 "vibrational_spectrum"
             ]
         }
-    }
+    },
+    "additionalProperties": false
 }

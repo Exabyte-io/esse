@@ -21,7 +21,9 @@
             ]
         }
     },
-    "required": ["categories"],
+    "required": [
+        "categories"
+    ],
     "definitions": {
         "ao-basis-dunning": {
             "type": "object",
@@ -29,7 +31,9 @@
                 "basisSlug": {
                     "$ref": "./enum_options.json#/dunningAoBasis"
                 }
-            }
+            },
+            "additionalProperties": false
         }
-    }
+    },
+    "additionalProperties": false
 }

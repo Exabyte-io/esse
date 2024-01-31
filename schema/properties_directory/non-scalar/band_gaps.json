@@ -41,14 +41,17 @@
                                 "occupations": {
                                     "type": "array"
                                 }
-                            }
+                            },
+                            "additionalProperties": false
                         }
                     }
-                }
+                },
+                "additionalProperties": false
             }
         }
     },
     "required": [
         "name"
-    ]
+    ],
+    "additionalProperties": false
 }

@@ -6,5 +6,6 @@
         {
             "$ref": "../primitive/array_of_3_numbers.json"
         }
-    ]
+    ],
+    "additionalProperties": false
 }

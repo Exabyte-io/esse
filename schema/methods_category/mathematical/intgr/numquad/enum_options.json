@@ -9,5 +9,6 @@
         "enum": [
             "newcot"
         ]
-    }
+    },
+    "additionalProperties": false
 }

@@ -25,5 +25,6 @@
         "part",
         "frequencies",
         "components"
-    ]
+    ],
+    "additionalProperties": false
 }

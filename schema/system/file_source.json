@@ -26,5 +26,6 @@
         "filename",
         "text",
         "hash"
-    ]
+    ],
+    "additionalProperties": false
 }

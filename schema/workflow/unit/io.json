@@ -49,5 +49,6 @@
         "subtype",
         "source",
         "input"
-    ]
+    ],
+    "additionalProperties": false
 }

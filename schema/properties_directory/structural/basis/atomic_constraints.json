@@ -13,5 +13,6 @@
         "values": {
             "$ref": "../../../core/reusable/atomic_vectors.json"
         }
-    }
+    },
+    "additionalProperties": false
 }

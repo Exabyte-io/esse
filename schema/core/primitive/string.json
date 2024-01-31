@@ -10,5 +10,6 @@
     },
     "required": [
         "value"
-    ]
+    ],
+    "additionalProperties": false
 }

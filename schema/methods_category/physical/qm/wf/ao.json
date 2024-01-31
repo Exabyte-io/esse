@@ -15,5 +15,6 @@
         "subtype": {
             "$ref": "./enum_options.json#/aoTypes"
         }
-    }
+    },
+    "additionalProperties": false
 }

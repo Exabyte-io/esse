@@ -11,6 +11,8 @@
                 "description": "integer id of this entry",
                 "type": "integer"
             }
-        }
-    }
+        },
+        "additionalProperties": false
+    },
+    "additionalProperties": false
 }

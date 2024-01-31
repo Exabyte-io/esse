@@ -18,5 +18,6 @@
             "type": "string",
             "pattern": "^[1-7][sSpPdDfF]$"
         }
-    }
+    },
+    "additionalProperties": false
 }

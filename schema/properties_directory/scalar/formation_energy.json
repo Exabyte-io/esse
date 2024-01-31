@@ -14,5 +14,6 @@
                 "formation_energy"
             ]
         }
-    }
+    },
+    "additionalProperties": false
 }

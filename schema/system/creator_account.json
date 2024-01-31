@@ -7,5 +7,6 @@
         "creatorAccount": {
             "$ref": "entity_reference.json"
         }
-    }
+    },
+    "additionalProperties": false
 }

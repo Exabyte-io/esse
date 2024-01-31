@@ -24,5 +24,6 @@
             "def2-qzvp",
             "cbs-qb3"
         ]
-    }
+    },
+    "additionalProperties": false
 }

@@ -12,5 +12,6 @@
         "type": {
             "$ref": "enum_options.json#/conjugateGradient"
         }
-    }
+    },
+    "additionalProperties": false
 }

@@ -12,5 +12,6 @@
         {
             "$ref": "reference/literature.json"
         }
-    ]
+    ],
+    "additionalProperties": false
 }

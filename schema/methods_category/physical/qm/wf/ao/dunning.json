@@ -14,5 +14,6 @@
                 "dunning"
             ]
         }
-    }
+    },
+    "additionalProperties": false
 }

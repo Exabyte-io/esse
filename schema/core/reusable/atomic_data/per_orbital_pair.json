@@ -35,5 +35,6 @@
             "type": "number",
             "description": "Distance between two sites in Bohr."
         }
-    }
+    },
+    "additionalProperties": false
 }

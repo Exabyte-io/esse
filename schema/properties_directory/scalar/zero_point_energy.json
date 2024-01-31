@@ -14,5 +14,6 @@
                 "zero_point_energy"
             ]
         }
-    }
+    },
+    "additionalProperties": false
 }

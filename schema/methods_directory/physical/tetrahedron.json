@@ -13,5 +13,8 @@
             "$ref": "../../methods_category/physical/qm/wf/tetrahedron.json"
         }
     },
-    "required": ["categories"]
+    "required": [
+        "categories"
+    ],
+    "additionalProperties": false
 }

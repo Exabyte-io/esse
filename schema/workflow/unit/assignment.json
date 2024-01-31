@@ -34,5 +34,6 @@
         "name",
         "operand",
         "value"
-    ]
+    ],
+    "additionalProperties": false
 }

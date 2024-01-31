@@ -69,7 +69,8 @@
                     "scope": {
                         "$ref": "../workflow/scope.json"
                     }
-                }
+                },
+                "additionalProperties": false
             }
         }
     },
@@ -77,5 +78,6 @@
         "status",
         "compute",
         "_project"
-    ]
+    ],
+    "additionalProperties": false
 }

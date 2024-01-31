@@ -30,7 +30,9 @@
                     "other"
                 ]
             }
-        }
+        },
+        "additionalProperties": false
     },
-    "uniqueItems": true
+    "uniqueItems": true,
+    "additionalProperties": false
 }

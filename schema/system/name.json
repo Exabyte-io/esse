@@ -8,5 +8,6 @@
             "description": "entity name",
             "type": "string"
         }
-    }
+    },
+    "additionalProperties": false
 }

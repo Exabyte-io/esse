@@ -26,5 +26,6 @@
         "enum": [
             "b2plyp"
         ]
-    }
+    },
+    "additionalProperties": false
 }

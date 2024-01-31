@@ -20,5 +20,6 @@
     "required": [
         "endpoint",
         "endpoint_options"
-    ]
+    ],
+    "additionalProperties": false
 }

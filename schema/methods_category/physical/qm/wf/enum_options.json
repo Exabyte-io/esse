@@ -59,5 +59,6 @@
             "dunning",
             "other"
         ]
-    }
+    },
+    "additionalProperties": false
 }

@@ -8,5 +8,6 @@
         {
             "$ref": "hubbard_v.json"
         }
-    ]
+    ],
+    "additionalProperties": false
 }

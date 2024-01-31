@@ -19,5 +19,6 @@
                 "g/cm^3"
             ]
         }
-    }
+    },
+    "additionalProperties": false
 }

@@ -29,12 +29,14 @@
                     "hostname": {
                         "type": "string"
                     }
-                }
+                },
+                "additionalProperties": false
             }
         },
         "isExternal": {
             "type": "boolean",
             "default": false
         }
-    }
+    },
+    "additionalProperties": false
 }

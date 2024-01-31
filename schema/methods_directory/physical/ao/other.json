@@ -21,7 +21,9 @@
             ]
         }
     },
-    "required": ["categories"],
+    "required": [
+        "categories"
+    ],
     "definitions": {
         "ao-basis-other": {
             "type": "object",
@@ -29,7 +31,9 @@
                 "basisSlug": {
                     "$ref": "./enum_options.json#/otherAoBasis"
                 }
-            }
+            },
+            "additionalProperties": false
         }
-    }
+    },
+    "additionalProperties": false
 }

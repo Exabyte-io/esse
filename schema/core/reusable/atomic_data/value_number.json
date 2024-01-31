@@ -9,5 +9,6 @@
             "type": "number",
             "description": "Value related to a specific property, e.g., Hubbard U, V etc."
         }
-    }
+    },
+    "additionalProperties": false
 }

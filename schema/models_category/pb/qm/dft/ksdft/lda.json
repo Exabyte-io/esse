@@ -12,5 +12,6 @@
         "subtype": {
             "$ref": "enum_options.json#/localDensityApproximation"
         }
-    }
+    },
+    "additionalProperties": false
 }

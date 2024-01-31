@@ -27,5 +27,6 @@
         "title",
         "_id",
         "owner"
-    ]
+    ],
+    "additionalProperties": false
 }
