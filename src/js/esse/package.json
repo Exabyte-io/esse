@@ -14,7 +14,6 @@
         "type": "git",
         "url": "https://github.com/Exabyte-io/esse.git"
     },
-    "main": "lib/js/esse/index.js",
     "author": "Mat3ra.com",
     "email": "info@mat3ra.com",
     "bugs": {
@@ -71,9 +70,6 @@
         "*.{js,css}": "prettier --write"
     },
     "exports": {
-        "./schema": "./schema.js",
-        "./lib/js/esse": "./lib/js/esse/index.js",
-        "./lib/js/esse/schemaUtils": "./lib/js/esse/schemaUtils.js",
-        "./lib/js/schema/*": "./lib/js/schema/*"
+        "./schema/*": "./schema/*"
     }
 }
