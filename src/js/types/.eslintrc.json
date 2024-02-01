@@ -1,0 +1,20 @@
+{
+    "extends": ["@exabyte-io/eslint-config"],
+    "overrides": [
+        {
+            "files": [
+                "*.mjs",
+                "*.js"
+            ],
+            "settings": {
+                "import/resolver": {
+                    "node": {
+                        "paths": ["src", "./types.ts"]
+                    },
+                    "exports": {},
+                    "ignorePatterns": ["types.ts"]
+                }
+            }
+        }
+    ]
+}

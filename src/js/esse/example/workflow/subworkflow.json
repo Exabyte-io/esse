@@ -1,0 +1,37 @@
+{
+    "_id": "LCthJ6E2QabYCZqf4",
+    "application": {
+        "name": "espresso",
+        "shortName": "qe",
+        "summary": "Quantum Espresso",
+        "version": "5.1.1",
+        "hasAdvancedComputeOptions": true
+    },
+    "model": {
+        "method": {
+            "data": {
+                "pseudo": []
+            },
+            "subtype": "us",
+            "type": "pseudopotential"
+        },
+        "subtype": "gga",
+        "type": "dft"
+    },
+    "name": "Band Structure",
+    "properties": [
+        "band_structure"
+    ],
+    "units": [
+        {
+            "flowchartId": "pw-scf",
+            "head": true,
+            "name": "pw_scf",
+            "status": "idle",
+            "type": "execution",
+            "tags": [
+                "test-tags"
+            ]
+        }
+    ]
+}

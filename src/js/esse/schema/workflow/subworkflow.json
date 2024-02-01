@@ -1,0 +1,557 @@
+{
+    "$id": "workflow/subworkflow",
+    "$schema": "http://json-schema.org/draft-07/schema#",
+    "title": "Subworkflow",
+    "type": "object",
+    "required": [
+        "application",
+        "model",
+        "name",
+        "units"
+    ],
+    "properties": {
+        "units": {
+            "description": "Contains the Units of the subworkflow",
+            "type": "array",
+            "items": {
+                "$schema": "http://json-schema.org/draft-07/schema#",
+                "title": "workflow unit schema",
+                "type": "object",
+                "required": [
+                    "type",
+                    "flowchartId"
+                ],
+                "additionalProperties": true,
+                "properties": {
+                    "_id": {
+                        "type": "string",
+                        "description": "entity identity"
+                    },
+                    "isDraft": {
+                        "type": "boolean"
+                    },
+                    "type": {
+                        "description": "type of the unit",
+                        "type": "string"
+                    },
+                    "name": {
+                        "description": "name of the unit. e.g. pw_scf",
+                        "type": "string"
+                    },
+                    "status": {
+                        "description": "Status of the unit.",
+                        "type": "string",
+                        "enum": [
+                            "idle",
+                            "active",
+                            "warning",
+                            "error",
+                            "finished"
+                        ]
+                    },
+                    "head": {
+                        "description": "Whether this unit is the first one to be executed.",
+                        "type": "boolean"
+                    },
+                    "flowchartId": {
+                        "description": "Identity of the unit in the workflow. Used to trace the execution flow of the workflow.",
+                        "type": "string"
+                    },
+                    "next": {
+                        "description": "Next unit's flowchartId. If empty, the current unit is the last.",
+                        "type": "string"
+                    },
+                    "enableRender": {
+                        "description": "Whether Rupy should attempt to use Jinja templating to add context variables into the unit",
+                        "type": "boolean"
+                    },
+                    "context": {
+                        "type": "object"
+                    },
+                    "slug": {
+                        "description": "entity slug",
+                        "type": "string"
+                    },
+                    "systemName": {
+                        "type": "string"
+                    },
+                    "consistencyChecks": {
+                        "type": "array",
+                        "items": {
+                            "$schema": "http://json-schema.org/draft-07/schema#",
+                            "title": "consistency check",
+                            "type": "object",
+                            "description": "The output of consistency checks performed on data adhering to JSON schema, but inconsistent with scientific or logical rules, to show problems in UI.",
+                            "required": [
+                                "key",
+                                "name",
+                                "severity",
+                                "message"
+                            ],
+                            "properties": {
+                                "key": {
+                                    "type": "string",
+                                    "description": "Key of the property of the entity on which the consistency check is performed in Mongo dot notation, e.g. 'basis.coordinates.1'"
+                                },
+                                "name": {
+                                    "enum": [
+                                        "default",
+                                        "atomsTooClose",
+                                        "atomsOverlap"
+                                    ],
+                                    "description": "Name of the consistency check that is performed, which is listed in an enum."
+                                },
+                                "severity": {
+                                    "enum": [
+                                        "info",
+                                        "warning",
+                                        "error"
+                                    ],
+                                    "description": "Severity level of the problem, which is used in UI to differentiate."
+                                },
+                                "message": {
+                                    "type": "string",
+                                    "description": "Message generated by the consistency check describing the problem."
+                                }
+                            }
+                        }
+                    },
+                    "schemaVersion": {
+                        "description": "entity's schema version. Used to distinct between different schemas.",
+                        "type": "string",
+                        "default": "2022.8.16"
+                    },
+                    "isDefault": {
+                        "description": "Identifies that entity is defaultable",
+                        "type": "boolean",
+                        "default": false
+                    },
+                    "preProcessors": {
+                        "description": "names of the pre-processors for this calculation",
+                        "type": "array",
+                        "items": {
+                            "$schema": "http://json-schema.org/draft-07/schema#",
+                            "title": "runtime item schema",
+                            "oneOf": [
+                                {
+                                    "$schema": "http://json-schema.org/draft-07/schema#",
+                                    "title": "name result schema",
+                                    "type": "object",
+                                    "properties": {
+                                        "name": {
+                                            "description": "The name of this item. e.g. scf_accuracy",
+                                            "type": "string"
+                                        }
+                                    },
+                                    "required": [
+                                        "name"
+                                    ]
+                                },
+                                {
+                                    "$schema": "http://json-schema.org/draft-07/schema#",
+                                    "title": "RuntimeItemString",
+                                    "description": "name of runtime item in shortened notation",
+                                    "type": "string"
+                                }
+                            ]
+                        }
+                    },
+                    "postProcessors": {
+                        "description": "names of the post-processors for this calculation",
+                        "type": "array",
+                        "items": {
+                            "$schema": "http://json-schema.org/draft-07/schema#",
+                            "title": "runtime item schema",
+                            "oneOf": [
+                                {
+                                    "$schema": "http://json-schema.org/draft-07/schema#",
+                                    "title": "name result schema",
+                                    "type": "object",
+                                    "properties": {
+                                        "name": {
+                                            "description": "The name of this item. e.g. scf_accuracy",
+                                            "type": "string"
+                                        }
+                                    },
+                                    "required": [
+                                        "name"
+                                    ]
+                                },
+                                {
+                                    "$schema": "http://json-schema.org/draft-07/schema#",
+                                    "title": "RuntimeItemString",
+                                    "description": "name of runtime item in shortened notation",
+                                    "type": "string"
+                                }
+                            ]
+                        }
+                    },
+                    "monitors": {
+                        "description": "names of the monitors for this calculation",
+                        "type": "array",
+                        "items": {
+                            "$schema": "http://json-schema.org/draft-07/schema#",
+                            "title": "runtime item schema",
+                            "oneOf": [
+                                {
+                                    "$schema": "http://json-schema.org/draft-07/schema#",
+                                    "title": "name result schema",
+                                    "type": "object",
+                                    "properties": {
+                                        "name": {
+                                            "description": "The name of this item. e.g. scf_accuracy",
+                                            "type": "string"
+                                        }
+                                    },
+                                    "required": [
+                                        "name"
+                                    ]
+                                },
+                                {
+                                    "$schema": "http://json-schema.org/draft-07/schema#",
+                                    "title": "RuntimeItemString",
+                                    "description": "name of runtime item in shortened notation",
+                                    "type": "string"
+                                }
+                            ]
+                        }
+                    },
+                    "results": {
+                        "description": "names of the results for this calculation",
+                        "type": "array",
+                        "items": {
+                            "$schema": "http://json-schema.org/draft-07/schema#",
+                            "title": "runtime item schema",
+                            "oneOf": [
+                                {
+                                    "$schema": "http://json-schema.org/draft-07/schema#",
+                                    "title": "name result schema",
+                                    "type": "object",
+                                    "properties": {
+                                        "name": {
+                                            "description": "The name of this item. e.g. scf_accuracy",
+                                            "type": "string"
+                                        }
+                                    },
+                                    "required": [
+                                        "name"
+                                    ]
+                                },
+                                {
+                                    "$schema": "http://json-schema.org/draft-07/schema#",
+                                    "title": "RuntimeItemString",
+                                    "description": "name of runtime item in shortened notation",
+                                    "type": "string"
+                                }
+                            ]
+                        }
+                    },
+                    "tags": {
+                        "description": "entity tags",
+                        "type": "array",
+                        "items": {
+                            "type": "string"
+                        }
+                    }
+                }
+            }
+        },
+        "model": {
+            "$schema": "http://json-schema.org/draft-07/schema#",
+            "title": "base model",
+            "type": "object",
+            "required": [
+                "type",
+                "subtype",
+                "method"
+            ],
+            "additionalProperties": true,
+            "properties": {
+                "type": {
+                    "description": "general type of the model, eg. `dft`",
+                    "type": "string"
+                },
+                "subtype": {
+                    "description": "general subtype of the model, eg. `lda`",
+                    "type": "string"
+                },
+                "method": {
+                    "$schema": "http://json-schema.org/draft-07/schema#",
+                    "title": "base method",
+                    "type": "object",
+                    "required": [
+                        "type",
+                        "subtype"
+                    ],
+                    "properties": {
+                        "type": {
+                            "description": "general type of this method, eg. `pseudopotential`",
+                            "type": "string"
+                        },
+                        "subtype": {
+                            "description": "general subtype of this method, eg. `ultra-soft`",
+                            "type": "string"
+                        },
+                        "precision": {
+                            "description": "Object showing the actual possible precision based on theory and implementation",
+                            "type": "object"
+                        },
+                        "data": {
+                            "description": "additional data specific to method, eg. array of pseudopotentials",
+                            "type": "object"
+                        }
+                    }
+                }
+            }
+        },
+        "application": {
+            "$schema": "http://json-schema.org/draft-07/schema#",
+            "title": "application schema (base)",
+            "type": "object",
+            "required": [
+                "name"
+            ],
+            "additionalProperties": true,
+            "properties": {
+                "name": {
+                    "description": "The name of the application. e.g. espresso",
+                    "type": "string"
+                },
+                "shortName": {
+                    "description": "The short name of the application. e.g. qe",
+                    "type": "string"
+                },
+                "summary": {
+                    "description": "Application's short description.",
+                    "type": "string"
+                },
+                "version": {
+                    "description": "Application version. e.g. 5.3.5",
+                    "type": "string"
+                },
+                "build": {
+                    "description": "Application build. e.g. VTST",
+                    "type": "string"
+                },
+                "hasAdvancedComputeOptions": {
+                    "description": "Whether advanced compute options are present",
+                    "type": "boolean"
+                },
+                "isLicensed": {
+                    "description": "Whether licensing is present",
+                    "type": "boolean"
+                }
+            }
+        },
+        "isDraft": {
+            "description": "Defines whether to store the results/properties extracted in this unit to properties collection",
+            "type": "boolean",
+            "default": false
+        },
+        "_id": {
+            "description": "subworkflow identity",
+            "type": "string"
+        },
+        "name": {
+            "description": "Human-readable name of the subworkflow. e.g. Total-energy",
+            "type": "string"
+        },
+        "properties": {
+            "description": "Array of characteristic properties calculated by this subworkflow",
+            "type": "array",
+            "items": {
+                "description": "property names, eg. `band_gaps`, `band_structure`",
+                "oneOf": [
+                    {
+                        "type": "string"
+                    },
+                    {
+                        "type": "object"
+                    }
+                ]
+            }
+        },
+        "compute": {
+            "$schema": "http://json-schema.org/draft-07/schema#",
+            "title": "compute arguments schema",
+            "description": "Custom keywords prefixed with validate correspond to custom validation methods implemented downstream",
+            "type": "object",
+            "required": [
+                "queue",
+                "nodes",
+                "ppn",
+                "timeLimit"
+            ],
+            "properties": {
+                "queue": {
+                    "description": "Name of the submission queues: https://docs.mat3ra.com/infrastructure/resource/queues/. Below enums are for Azure, then AWS circa 2022-08, hence the duplication.",
+                    "type": "string",
+                    "enum": [
+                        "D",
+                        "OR",
+                        "OF",
+                        "OFplus",
+                        "SR",
+                        "SF",
+                        "SFplus",
+                        "GPOF",
+                        "GP2OF",
+                        "GP4OF",
+                        "GPSF",
+                        "GP2SF",
+                        "GP4SF",
+                        "OR4",
+                        "OR8",
+                        "OR16",
+                        "SR4",
+                        "SR8",
+                        "SR16",
+                        "GOF",
+                        "G4OF",
+                        "G8OF",
+                        "GSF",
+                        "G4SF",
+                        "G8SF"
+                    ]
+                },
+                "nodes": {
+                    "description": "number of nodes used for the job inside the RMS.",
+                    "type": "integer"
+                },
+                "ppn": {
+                    "description": "number of CPUs used for the job inside the RMS.",
+                    "type": "integer"
+                },
+                "timeLimit": {
+                    "description": "Wallclock time limit for computing a job. Clock format: 'hh:mm:ss'",
+                    "type": "string"
+                },
+                "timeLimitType": {
+                    "description": "Convention to use when reasoning about time limits",
+                    "type": "string",
+                    "default": "per single attempt",
+                    "enum": [
+                        "per single attempt",
+                        "compound"
+                    ]
+                },
+                "isRestartable": {
+                    "description": "Job is allowed to restart on termination.",
+                    "type": "boolean",
+                    "default": true
+                },
+                "notify": {
+                    "description": "Email notification for the job: n - never, a - job aborted, b - job begins, e - job ends. Last three could be combined.",
+                    "type": "string"
+                },
+                "email": {
+                    "description": "Email address to notify about job execution.",
+                    "type": "string"
+                },
+                "maxCPU": {
+                    "description": "Maximum CPU count per node. This parameter is used to let backend job submission infrastructure know that this job is to be charged for the maximum CPU per node instead of the actual ppn. For premium/fast queues where resources are provisioned on-demand and exclusively per user.",
+                    "type": "integer"
+                },
+                "arguments": {
+                    "description": "Optional arguments specific to using application - VASP, Quantum Espresso, etc. Specified elsewhere",
+                    "type": "object",
+                    "default": {},
+                    "oneOf": [
+                        {
+                            "$schema": "http://json-schema.org/draft-07/schema#",
+                            "title": "quantum espresso arguments schema",
+                            "type": "object",
+                            "properties": {
+                                "nimage": {
+                                    "description": "Processors can be divided into different `images`, each corresponding to a different self-consistent or linear-response calculation, loosely coupled to others.",
+                                    "type": "integer",
+                                    "default": 1,
+                                    "minimum": 1,
+                                    "maximum": 100
+                                },
+                                "npools": {
+                                    "description": "Each image can be subpartitioned into `pools`, each taking care of a group of k-points.",
+                                    "type": "integer",
+                                    "default": 1,
+                                    "minimum": 1,
+                                    "maximum": 100
+                                },
+                                "nband": {
+                                    "description": "Each pool is subpartitioned into `band groups`, each taking care of a group of Kohn-Sham orbitals (also called bands, or wavefunctions).",
+                                    "type": "integer",
+                                    "default": 1,
+                                    "minimum": 1,
+                                    "maximum": 100
+                                },
+                                "ntg": {
+                                    "description": "In order to allow good parallelization of the 3D FFT when the number of processors exceeds the number of FFT planes, FFTs on Kohn-Sham states are redistributed to `task` groups so that each group can process several wavefunctions at the same time.",
+                                    "type": "integer",
+                                    "default": 1,
+                                    "minimum": 1,
+                                    "maximum": 100
+                                },
+                                "ndiag": {
+                                    "description": "A further level of parallelization, independent on PW or k-point parallelization, is the parallelization of subspace diagonalization / iterative orthonormalization. Both operations required the diagonalization of arrays whose dimension is the number of Kohn-Sham states (or a small multiple of it). All such arrays are distributed block-like across the `linear-algebra group`, a subgroup of the pool of processors, organized in a square 2D grid. As a consequence the number of processors in the linear-algebra group is given by n2, where n is an integer; n2 must be smaller than the number of processors in the PW group. The diagonalization is then performed in parallel using standard linear algebra operations.",
+                                    "type": "integer",
+                                    "default": 1,
+                                    "minimum": 1,
+                                    "maximum": 100
+                                }
+                            },
+                            "additionalProperties": false
+                        }
+                    ]
+                },
+                "cluster": {
+                    "description": "Cluster where the job is executed. Optional on create. Required on job submission.",
+                    "type": "object",
+                    "properties": {
+                        "fqdn": {
+                            "description": "FQDN of the cluster. e.g. master-1-staging.exabyte.io",
+                            "type": "string"
+                        },
+                        "jid": {
+                            "description": "Job's identity in RMS. e.g. 1234.master-1-staging.exabyte.io",
+                            "type": "string"
+                        }
+                    }
+                },
+                "errors": {
+                    "description": "Computation error. Optional. Appears only if something happens on jobs execution.",
+                    "type": "array",
+                    "items": {
+                        "type": "object",
+                        "properties": {
+                            "domain": {
+                                "description": "Domain of the error appearance (internal).",
+                                "type": "string",
+                                "enum": [
+                                    "rupy",
+                                    "alfred",
+                                    "celim",
+                                    "webapp"
+                                ]
+                            },
+                            "reason": {
+                                "description": "Should be a short, unique, machine-readable error code string. e.g. FileNotFound",
+                                "type": "string"
+                            },
+                            "message": {
+                                "description": "Human-readable error message. e.g. 'File Not Found: /home/demo/data/project1/job-123/job-config.json'",
+                                "type": "string"
+                            },
+                            "traceback": {
+                                "description": "Full machine-readable error traceback. e.g. FileNotFound",
+                                "type": "string"
+                            }
+                        }
+                    }
+                },
+                "excludeFilesPattern": {
+                    "description": "A Python compatible regex to exclude files from upload. e.g. ^.*.txt& excludes all files with .txt suffix",
+                    "type": "string"
+                }
+            }
+        }
+    }
+}

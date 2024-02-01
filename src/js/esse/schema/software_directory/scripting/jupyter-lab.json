@@ -1,0 +1,59 @@
+{
+    "$id": "software-directory/scripting/jupyter-lab",
+    "$schema": "http://json-schema.org/draft-07/schema#",
+    "title": "Jupyter Lab Application Schema",
+    "type": "object",
+    "required": [
+        "name"
+    ],
+    "additionalProperties": true,
+    "properties": {
+        "name": {
+            "enum": [
+                "jupyterLab"
+            ],
+            "description": "The name of the application. e.g. espresso",
+            "type": "string"
+        },
+        "flavor": {
+            "enum": [
+                "notebook"
+            ]
+        },
+        "summary": {
+            "enum": [
+                "Jupyter Lab"
+            ],
+            "description": "Application's short description.",
+            "type": "string"
+        },
+        "version": {
+            "enum": [
+                "0.33.12"
+            ],
+            "description": "Application version. e.g. 5.3.5",
+            "type": "string"
+        },
+        "exec": {
+            "enum": [
+                "jupyter"
+            ]
+        },
+        "shortName": {
+            "description": "The short name of the application. e.g. qe",
+            "type": "string"
+        },
+        "build": {
+            "description": "Application build. e.g. VTST",
+            "type": "string"
+        },
+        "hasAdvancedComputeOptions": {
+            "description": "Whether advanced compute options are present",
+            "type": "boolean"
+        },
+        "isLicensed": {
+            "description": "Whether licensing is present",
+            "type": "boolean"
+        }
+    }
+}

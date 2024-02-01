@@ -6,10 +6,14 @@
     "type": "object",
     "properties": {
         "name": {
-            "enum": ["hubbard_u"]
+            "enum": [
+                "hubbard_u"
+            ]
         },
         "units": {
-            "enum": ["eV"]
+            "enum": [
+                "eV"
+            ]
         },
         "values": {
             "type": "array",
@@ -29,5 +33,7 @@
             }
         }
     },
-    "required": ["name"]
+    "required": [
+        "name"
+    ]
 }

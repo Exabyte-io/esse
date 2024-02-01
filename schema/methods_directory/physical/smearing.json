@@ -14,5 +14,7 @@
             "$ref": "../../methods_category/physical/qm/wf/smearing.json"
         }
     },
-    "required": ["categories"]
+    "required": [
+        "categories"
+    ]
 }

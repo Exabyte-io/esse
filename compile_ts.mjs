@@ -1,3 +1,3 @@
-import compileTS from "./src/js/scripts/compileTs.mjs";
+import compileTS from "./src/js/types/src/compileTs.mjs";
 
-compileTS("./lib/js/schema", `./lib/js/types.ts`);
+compileTS("./src/js/esse/schema", `./src/js/types/src/types.ts`);
