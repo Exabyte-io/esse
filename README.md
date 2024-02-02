@@ -150,7 +150,7 @@ Other suggestions:
 - Do not use circular references in the schemas, instead leave the type as object and add explanation to description.
 
 
-## 6. Links
+## Links
 
 [^1]: [Data-centric online ecosystem for digital materials science](https://arxiv.org/pdf/1902.10838.pdf)
 [^2]: [CateCom: A Practical Data-Centric Approach to Categorization of Computational Models](https://pubs.acs.org/doi/abs/10.1021/acs.jcim.2c00112)
