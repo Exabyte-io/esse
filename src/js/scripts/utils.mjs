@@ -1,7 +1,7 @@
 /* eslint-disable no-await-in-loop */
 /* eslint-disable no-restricted-syntax */
-import fsPromises from "fs/promises";
 import fs from "fs";
+import fsPromises from "fs/promises";
 import path from "path";
 
 /**

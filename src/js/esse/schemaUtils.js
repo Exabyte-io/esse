@@ -43,3 +43,37 @@ export function buildSchemaDefinitions(originalSchemas) {
 
     return keyBy(schemas, ({ $id }) => makeFlatSchemaKey($id));
 }
+
+export function walkSchema(object, callback) {
+    if (Array.isArray(object)) {
+        return object.map((item) => walkSchema(item, callback));
+    }
+
+    const cleanObject = callback(object);
+
+    if (typeof cleanObject !== "object") {
+        return cleanObject;
+    }
+
+    const entries = Object.entries(cleanObject).map(([key, value]) => {
+        return [key, walkSchema(value, callback)];
+    });
+
+    return Object.fromEntries(entries);
+}
+
+export function addAdditionalPropertiesToSchema(schema, additionalProperties = false) {
+    return walkSchema(schema, (object) => {
+        if (typeof object !== "object") {
+            return object;
+        }
+
+        if (object.type === "object" && object.properties && !("additionalProperties" in object)) {
+            return {
+                ...object,
+                additionalProperties,
+            };
+        }
+        return object;
+    });
+}
