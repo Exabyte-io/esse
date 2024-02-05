@@ -23,9 +23,7 @@ export function readSchemaFolderSync(folderPath: string) {
 }
 
 export class JSONSchemasInterface {
-    static _schema: SchemaObject | null = null;
-
-    static schemaFolder = path.resolve("node_modules/@mat3ra/esse/lib/js/schema");
+    static schemaFolder = "./lib/js/schema";
 
     static setSchemaFolder(schemaFolder: string) {
         if (this.schemaFolder !== schemaFolder) {

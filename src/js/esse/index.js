@@ -23,10 +23,6 @@ export class ESSE {
         this.results = config.results || RESULTS;
     }
 
-    getSchemaById(schemaId) {
-        return this.schemas.find((schema) => schema.$id === schemaId);
-    }
-
     /**
      * Validates a given example against the schema.
      * @param example {Object|Array} example to validate.
