@@ -86,10 +86,6 @@
         "*.{js,css}": "prettier --write"
     },
     "exports": {
-        "./schema": "./schema.js",
-        "./lib/js/esse": "./lib/js/esse/index.js",
-        "./lib/js/esse/schemaUtils": "./lib/js/esse/schemaUtils.js",
-        "./lib/js/schema/*": "./lib/js/schema/*",
-        "./lib/js/scripts/utils": "./lib/js/scripts/utils.js"
+        "./lib/js/*": "./lib/js/*"
     }
 }
