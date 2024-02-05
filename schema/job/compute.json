@@ -76,13 +76,7 @@
         },
         "arguments": {
             "description": "Optional arguments specific to using application - VASP, Quantum Espresso, etc. Specified elsewhere",
-            "type": "object",
-            "default": {},
-            "oneOf": [
-                {
-                    "$ref": "../software_directory/modeling/espresso/arguments.json"
-                }
-            ]
+            "$ref": "../software_directory/modeling/espresso/arguments.json"
         },
         "cluster": {
             "description": "Cluster where the job is executed. Optional on create. Required on job submission.",
