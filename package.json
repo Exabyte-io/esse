@@ -86,6 +86,11 @@
         "*.{js,css}": "prettier --write"
     },
     "exports": {
-        "./lib/js/**/*": "./lib/js/**/*"
+        "./lib/js/esse/*": "./lib/js/esse/*",
+        "./lib/js/json_include/*": "./lib/js/json_include/*",
+        "./lib/js/schema/*": "./lib/js/schema/*",
+        "./lib/js/example/*": "./lib/js/example/*",
+        "./lib/js/scripts/*": "./lib/js/scripts/*",
+        "./lib/js/types.ts": "./lib/js/scripts/types.ts"
     }
 }
