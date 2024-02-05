@@ -4,12 +4,7 @@ import fs from "fs";
 import fsPromises from "fs/promises";
 import path from "path";
 
-/**
- *
- * @param dir {String}
- * @param callback {() => void | Promise<void>}
- */
-export async function walkDir(dir, callback) {
+export async function walkDir(dir: string, callback: (itemPath: string) => void | Promise<void>) {
     const subDirs = await fsPromises.readdir(dir);
 
     for (const subDir of subDirs) {
@@ -24,12 +19,7 @@ export async function walkDir(dir, callback) {
     }
 }
 
-/**
- *
- * @param dir {String}
- * @param callback {() => void}
- */
-export function walkDirSync(dir, callback) {
+export function walkDirSync(dir: string, callback: (itemPath: string) => void) {
     const subDirs = fs.readdirSync(dir);
 
     for (const subDir of subDirs) {

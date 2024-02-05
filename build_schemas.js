@@ -12,15 +12,6 @@ const { ESSE } = require("./lib/js/esse");
 
 const esse = new ESSE();
 const { schemas, wrappedExamples, propertiesManifest, results } = esse;
-const schema = esse.buildGlobalSchema();
-
-fs.writeFileSync(
-    "./schemas.js",
-    "module.exports = {schemas: " + JSON.stringify(schemas) + "}",
-    "utf8",
-);
-
-fs.writeFileSync("./schema.js", "module.exports = " + JSON.stringify(schema), "utf8");
 
 if (process.env.BUILD_PYTHON_MODULES === "true") {
     // PY Modules
