@@ -86,6 +86,6 @@
         "*.{js,css}": "prettier --write"
     },
     "exports": {
-        "./lib/js/*": "./lib/js/*"
+        "./lib/js/**/*": "./lib/js/**/*"
     }
 }

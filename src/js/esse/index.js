@@ -2,7 +2,6 @@ import Ajv from "ajv";
 import fs from "fs";
 import yaml from "js-yaml";
 
-import { buildSchemaDefinitions } from "./schemaUtils";
 import { EXAMPLES_DIR, PROPERTIES_MANIFEST_PATH, SCHEMAS_DIR } from "./settings";
 import { parseIncludeReferenceStatementsByDir } from "./utils";
 
@@ -44,14 +43,4 @@ export class ESSE {
 
         return isValid;
     };
-
-    buildGlobalSchema() {
-        return {
-            $id: "esse-global-schema",
-            $schema: "http://json-schema.org/draft-07/schema#",
-            title: "Global schema",
-            type: "object",
-            definitions: buildSchemaDefinitions(this.schemas),
-        };
-    }
 }
