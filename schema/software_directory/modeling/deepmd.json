@@ -31,8 +31,9 @@
         },
         "exec": {
             "enum": [
-                "dp_prepare",
-                "dp_train"
+                "dp",
+                "lmp",
+                "python"
             ]
         },
         "shortName": {
