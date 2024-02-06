@@ -27,6 +27,9 @@
         },
         {
             "$ref": "./unit/processing.json"
+        },
+        {
+            "$ref": "./unit/subworkflow.json"
         }
     ],
     "discriminator": {
