@@ -30,7 +30,7 @@ export class ESSE {
      * @returns {boolean} whether example is valid.
      */
     validate = (example, schema) => {
-        const ajv = new Ajv({ allErrors: true, allowUnionTypes: true });
+        const ajv = new Ajv({ allErrors: true, allowUnionTypes: true, discriminator: true });
         const isValid = ajv.validate(schema, example);
 
         if (!isValid) {
