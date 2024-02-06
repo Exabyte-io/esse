@@ -1,6 +1,9 @@
+/* eslint-disable class-methods-use-this */
 import Ajv from "ajv";
 import fs from "fs";
 import yaml from "js-yaml";
+import mergeAllOf from "json-schema-merge-allof";
+import path from "path";
 
 import { EXAMPLES_DIR, PROPERTIES_MANIFEST_PATH, SCHEMAS_DIR } from "./settings";
 import { parseIncludeReferenceStatementsByDir } from "./utils";
@@ -39,4 +42,28 @@ export class ESSE {
 
         return isValid;
     };
+
+    writeResolvedSchemas(subfolder, skipMergeAllOff = false) {
+        this.schemas.forEach((s) => {
+            let mergedSchema = s;
+            if (!skipMergeAllOff) {
+                mergedSchema = mergeAllOf(s, {
+                    resolvers: { defaultResolver: mergeAllOf.options.resolvers.title },
+                });
+            }
+            const id_as_path = mergedSchema.$id.replace("-", "_");
+            const full_path = `${subfolder}/schema/${id_as_path}.json`;
+            fs.mkdirSync(path.dirname(full_path), { recursive: true });
+            fs.writeFileSync(full_path, JSON.stringify(mergedSchema, null, 4), "utf8");
+        });
+    }
+
+    writeResolvedExamples(subfolder) {
+        this.wrappedExamples.forEach((e) => {
+            const id_as_path = e.path.replace("-", "_");
+            const full_path = `${subfolder}/example/${id_as_path}.json`;
+            fs.mkdirSync(path.dirname(full_path), { recursive: true });
+            fs.writeFileSync(full_path, JSON.stringify(e.data, null, 4), "utf8");
+        });
+    }
 }
