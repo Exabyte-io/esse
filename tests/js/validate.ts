@@ -12,16 +12,14 @@ const examplesPath = path.resolve("./lib/js/example");
 const schemasPath = path.resolve("./lib/js/schema");
 
 describe("validate all examples", () => {
+    console.log("======");
     walkDirSync(examplesPath, (examplePath) => {
         if (examplePath.endsWith(".json")) {
             const schemaPath = examplePath.replace("/example/", "/schema/");
             const example = JSON.parse(fs.readFileSync(examplePath).toString());
             const schema = JSON.parse(fs.readFileSync(schemaPath).toString());
 
-            console.log({
-                example,
-                schema,
-            });
+            console.log(schemaPath);
 
             const result = JSONSchemasInterface.validate(example, schema);
 

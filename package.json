@@ -10,6 +10,7 @@
         "build:js-and-python-modules": "BUILD_PYTHON_MODULES=true node build_schemas.js",
         "build:assets-with-docs": "BUILD_ASSETS=true node build_schemas.js",
         "test": "npm run postinstall && nyc --reporter=text mocha --bail",
+        "test-only": "nyc --reporter=text mocha --bail",
         "lint": "eslint src/js && prettier --write src/js",
         "lint:fix": "eslint --fix --cache src/js && prettier --write src/js",
         "prettier": "prettier --check src/js",

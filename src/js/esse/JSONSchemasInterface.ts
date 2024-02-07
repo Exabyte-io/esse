@@ -20,7 +20,7 @@ const ajv = new Ajv({
      * @see https://ajv.js.org/guide/modifying-data.html#assigning-defaults
      */
     discriminator: true,
-    coerceTypes: true, // convert "true" => true for boolean or "4" => 4 for integer
+    // coerceTypes: true, // convert "true" => true for boolean or "4" => 4 for integer
 });
 
 export function readSchemaFolderSync(folderPath: string) {
@@ -104,12 +104,6 @@ export class JSONSchemasInterface {
 
     private static getAjvValidator(jsonSchema: SchemaObject) {
         const schemaKey = jsonSchema.$id as string;
-
-        if (!schemaKey) {
-            console.log({
-                jsonSchema,
-            });
-        }
 
         let validate = ajv.getSchema(schemaKey);
 

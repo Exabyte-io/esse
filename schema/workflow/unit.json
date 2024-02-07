@@ -5,7 +5,25 @@
     "type": "object",
     "oneOf": [
         {
-            "$ref": "./subworkflow/unit.json"
+            "$ref": "./unit/io.json"
+        },
+        {
+            "$ref": "./unit/reduce.json"
+        },
+        {
+            "$ref": "./unit/condition.json"
+        },
+        {
+            "$ref": "./unit/assertion.json"
+        },
+        {
+            "$ref": "./unit/execution.json"
+        },
+        {
+            "$ref": "./unit/assignment.json"
+        },
+        {
+            "$ref": "./unit/processing.json"
         },
         {
             "$ref": "./unit/map.json"
