@@ -503,6 +503,7 @@
         "vdw_corr": {
             "type": "string",
             "enum": [
+                "none",
                 "grimme-d2",
                 "Grimme-D2",
                 "DFT-D",

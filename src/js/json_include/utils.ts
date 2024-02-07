@@ -1,4 +1,8 @@
-export function isInstanceOf(object: object, type: string) {
+export function isInstanceOf(object: object, type: "Array"): object is object[];
+
+export function isInstanceOf(object: object, type: "Object"): object is object;
+
+export function isInstanceOf(object: object, type: string): boolean {
     return Object.prototype.toString.call(object).slice(8, -1) === type;
 }
 

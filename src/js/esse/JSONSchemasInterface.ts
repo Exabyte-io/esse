@@ -1,12 +1,27 @@
-import { SchemaObject } from "ajv";
+import Ajv, { SchemaObject } from "ajv";
 import fs from "fs";
 import path from "path";
 
 import { walkDirSync } from "../scripts/utils";
+import { addAdditionalPropertiesToSchema } from "./schemaUtils";
 
 type Query = { [key in keyof SchemaObject]: { $regex: string } };
 
-const schemasCache = new Map<string, SchemaObject>();
+export interface AnyObject {
+    [key: string]: unknown;
+}
+
+const ajv = new Ajv({
+    removeAdditional: true,
+    strict: false,
+    useDefaults: true,
+    /**
+     * discriminator fixes default values in oneOf
+     * @see https://ajv.js.org/guide/modifying-data.html#assigning-defaults
+     */
+    discriminator: true,
+    coerceTypes: true, // convert "true" => true for boolean or "4" => 4 for integer
+});
 
 export function readSchemaFolderSync(folderPath: string) {
     const schemas: SchemaObject[] = [];
@@ -25,6 +40,8 @@ export function readSchemaFolderSync(folderPath: string) {
 export class JSONSchemasInterface {
     static schemaFolder = "./lib/js/schema";
 
+    static schemasCache = new Map<string, SchemaObject>();
+
     static setSchemaFolder(schemaFolder: string) {
         if (this.schemaFolder !== schemaFolder) {
             this.schemaFolder = schemaFolder;
@@ -37,17 +54,17 @@ export class JSONSchemasInterface {
 
         schemas.forEach((schema) => {
             if (schema.$id) {
-                schemasCache.set(schema.$id, schema);
+                this.schemasCache.set(schema.$id, schema);
             }
         });
     }
 
     static schemaById(schemaId: string) {
-        if (schemasCache.size === 0) {
+        if (this.schemasCache.size === 0) {
             this.readSchemaFolder();
         }
 
-        return schemasCache.get(schemaId);
+        return this.schemasCache.get(schemaId);
     }
 
     /**
@@ -71,7 +88,7 @@ export class JSONSchemasInterface {
     static matchSchema(query: Query) {
         const searchFields = Object.keys(query) as Array<keyof typeof query>;
 
-        return Array.from(schemasCache.values()).find((schema) => {
+        return Array.from(this.schemasCache.values()).find((schema) => {
             return searchFields.every((field) => {
                 const queryField = query[field];
                 const schemaField = schema[field];
@@ -83,5 +100,44 @@ export class JSONSchemasInterface {
                 return new RegExp(queryField.$regex).test(schemaField);
             });
         });
+    }
+
+    private static getAjvValidator(jsonSchema: SchemaObject) {
+        const schemaKey = jsonSchema.$id as string;
+
+        if (!schemaKey) {
+            console.log({
+                jsonSchema,
+            });
+        }
+
+        let validate = ajv.getSchema(schemaKey);
+
+        if (!validate) {
+            ajv.addSchema(addAdditionalPropertiesToSchema(jsonSchema), schemaKey);
+            validate = ajv.getSchema(schemaKey);
+        }
+
+        if (!validate) {
+            throw new Error("JSONSchemasInterface AJV validator error");
+        }
+
+        return validate;
+    }
+
+    /**
+     * Validates a given example against the schema.
+     * @param example example to validate.
+     * @param schema schema to validate the example with.
+     * @returns whether example is valid.
+     */
+    static validate(data: AnyObject, jsonSchema: SchemaObject) {
+        const validator = this.getAjvValidator(jsonSchema);
+        const isValid = validator(data);
+
+        return {
+            isValid,
+            errors: validator.errors,
+        };
     }
 }

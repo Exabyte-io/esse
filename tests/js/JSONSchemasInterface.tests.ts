@@ -4,11 +4,11 @@ import path from "path";
 
 import { JSONSchemasInterface } from "../../src/js/esse/JSONSchemasInterface";
 
-function assertObject(prop) {
+function assertObject(prop: unknown) {
     expect(prop).to.be.an("object");
 }
 
-function assertArray(prop) {
+function assertArray(prop: unknown) {
     expect(prop).to.be.an("array");
 }
 
@@ -23,7 +23,9 @@ describe("JSONSchemasInterface", () => {
         expect(schema?.properties?.inSet).to.be.an("object");
 
         if (
+            // @ts-ignore
             assertObject(schema?.properties?.inSet) &&
+            // @ts-ignore
             assertObject(schema?.properties?.inSet?.items)
         ) {
             expect(schema?.properties?.inSet?.items?.$id).to.be.an("undefined");
@@ -33,7 +35,9 @@ describe("JSONSchemasInterface", () => {
         expect(schema?.properties?.valueMapFunction?.enum).to.be.an("array");
 
         if (
+            // @ts-ignore
             assertObject(schema?.properties?.valueMapFunction) &&
+            // @ts-ignore
             assertArray(schema?.properties?.valueMapFunction?.enum)
         ) {
             expect(schema?.properties?.valueMapFunction?.enum[0]).to.be.an("string");

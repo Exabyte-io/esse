@@ -13,7 +13,7 @@
             "description": "Contains the Units of the subworkflow",
             "type": "array",
             "items": {
-                "$ref": "unit/base.json"
+                "$ref": "./subworkflow/unit.json"
             }
         },
         "model": {

@@ -1,7 +1,17 @@
-// @ts-nocheck
 import { SchemaObject } from "ajv";
 
-export function mapObjectDeep(object: unknown, mapValue: (prop: unknown) => unknown): object {
+import { JSONSchema, JSONSchemaDefinition } from "./utils";
+
+export type MapSchema = (prop: JSONSchemaDefinition) => JSONSchemaDefinition | undefined;
+
+export function mapObjectDeep(object: JSONSchemaDefinition, mapValue: MapSchema): JSONSchema;
+
+export function mapObjectDeep(object: JSONSchemaDefinition[], mapValue: MapSchema): JSONSchema[];
+
+export function mapObjectDeep(
+    object: JSONSchemaDefinition | JSONSchemaDefinition[],
+    mapValue: MapSchema,
+): JSONSchemaDefinition | JSONSchemaDefinition[] {
     if (typeof object !== "object" || object === null) {
         return object;
     }
@@ -21,44 +31,21 @@ export function mapObjectDeep(object: unknown, mapValue: (prop: unknown) => unkn
     return Object.fromEntries(entries);
 }
 
-export function walkSchema(object: unknown, callback: (prop: unknown) => unknown): object {
-    if (Array.isArray(object)) {
-        return object.map((item) => walkSchema(item, callback));
-    }
+export function addAdditionalPropertiesToSchema(schema: JSONSchema, additionalProperties = false) {
+    return mapObjectDeep(schema, (object) => {
+        const schema = object as JSONSchema;
 
-    const cleanObject = callback(object);
-
-    if (typeof cleanObject !== "object" || cleanObject === null) {
-        return cleanObject;
-    }
-
-    const entries = Object.entries(cleanObject).map(([key, value]) => {
-        return [key, walkSchema(value, callback)];
-    });
-
-    return Object.fromEntries(entries);
-}
-
-export function addAdditionalPropertiesToSchema(
-    schema: SchemaObject,
-    additionalProperties = false,
-) {
-    // @ts-ignore
-    return walkSchema(schema, (object) => {
-        if (typeof object !== "object") {
-            return object;
-        }
-
-        const schema = object;
-
-        if (schema.type === "object" && schema.properties && !("additionalProperties" in schema)) {
+        if (
+            typeof object === "object" &&
+            schema?.type === "object" &&
+            schema?.properties &&
+            !("additionalProperties" in schema)
+        ) {
             return {
                 ...schema,
                 additionalProperties,
             };
         }
-
-        return object;
     });
 }
 
@@ -99,28 +86,15 @@ export function addAdditionalPropertiesToSchema(
  * }
  * @returns Clean schema
  */
-export function cleanSchema<T = unknown>(object: T, clean = true): T {
-    if (Array.isArray(object)) {
-        return object.map((item) => cleanSchema(item)) as T;
-    }
+export function cleanSchema(schema: JSONSchema) {
+    let firstRun = true;
 
-    if (typeof object !== "object" || object === null) {
-        return object;
-    }
-
-    let cleanObject;
-
-    if ((object as SchemaObject).title && clean) {
-        // eslint-disable-next-line @typescript-eslint/no-unused-vars
-        const { title, $schema, ...restObject } = object as SchemaObject;
-        cleanObject = restObject;
-    } else {
-        cleanObject = object;
-    }
-
-    const entries = Object.entries(cleanObject).map(([key, value]) => {
-        return [key, cleanSchema(value)];
+    return mapObjectDeep(schema, (object) => {
+        if (typeof object === "object" && object?.title && firstRun) {
+            firstRun = false;
+            // eslint-disable-next-line @typescript-eslint/no-unused-vars
+            const { title, $schema, ...restObject } = object as SchemaObject;
+            return restObject;
+        }
     });
-
-    return Object.fromEntries(entries);
 }
