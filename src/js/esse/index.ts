@@ -1,5 +1,4 @@
 /* eslint-disable class-methods-use-this */
-import Ajv from "ajv";
 import fs from "fs";
 import yaml from "js-yaml";
 import mergeAllOf from "json-schema-merge-allof";

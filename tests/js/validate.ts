@@ -12,14 +12,13 @@ const examplesPath = path.resolve("./lib/js/example");
 const schemasPath = path.resolve("./lib/js/schema");
 
 describe("validate all examples", () => {
-    console.log("======");
     walkDirSync(examplesPath, (examplePath) => {
         if (examplePath.endsWith(".json")) {
             const schemaPath = examplePath.replace("/example/", "/schema/");
             const example = JSON.parse(fs.readFileSync(examplePath).toString());
             const schema = JSON.parse(fs.readFileSync(schemaPath).toString());
 
-            console.log(schemaPath);
+            console.log(`Validating example: ${examplePath}`);
 
             const result = JSONSchemasInterface.validate(example, schema);
 
@@ -28,6 +27,7 @@ describe("validate all examples", () => {
                     examplePath,
                     schemaPath,
                     errors: JSON.stringify(result.errors),
+                    finalJSON: JSON.stringify(example),
                 });
             }
 
@@ -44,7 +44,9 @@ describe("schema titles must be unique or empty", () => {
         // @ts-ignore
         .map(([title, groupedValues]) => [title, groupedValues.map(({ $id }) => $id)]);
 
-    console.log(repeatedSchemaTitles);
+    if (repeatedSchemaTitles.length) {
+        console.log(repeatedSchemaTitles);
+    }
 
     expect(repeatedSchemaTitles).to.be.an("array").that.is.empty;
 });

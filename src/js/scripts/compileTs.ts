@@ -15,7 +15,7 @@ export default async function compileTS(schemaPath: string, savePath: string) {
         const data = await fs.promises.readFile(filePath, "utf8");
         const schema = cleanSchema(JSON.parse(data));
 
-        console.log(filePath);
+        console.log(`Compiling Typescript: ${filePath}`);
 
         const compiledSchema = await compile(schema as JSONSchema, schema.title || "", {
             unreachableDefinitions: true,

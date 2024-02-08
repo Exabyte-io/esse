@@ -13,14 +13,13 @@ export interface AnyObject {
 
 const ajv = new Ajv({
     removeAdditional: true,
-    strict: false,
+    strict: false, // TODO: adjust schemas and enable strict mode
     useDefaults: true,
     /**
      * discriminator fixes default values in oneOf
      * @see https://ajv.js.org/guide/modifying-data.html#assigning-defaults
      */
     discriminator: true,
-    // coerceTypes: true, // convert "true" => true for boolean or "4" => 4 for integer
 });
 
 export function readSchemaFolderSync(folderPath: string) {

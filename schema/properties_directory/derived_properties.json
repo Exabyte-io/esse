@@ -4,7 +4,7 @@
     "title": "derived properties schema",
     "type": "array",
     "items": {
-        "anyOf": [
+        "oneOf": [
             {
                 "$ref": "structural/volume.json"
             },
@@ -26,6 +26,12 @@
             {
                 "$ref": "structural/inchi_key.json"
             }
+        ],
+        "discriminator": {
+            "propertyName": "name"
+        },
+        "required": [
+            "name"
         ]
     }
 }
