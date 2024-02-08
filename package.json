@@ -95,6 +95,7 @@
         "./lib/js/schema/*": "./lib/js/schema/*",
         "./lib/js/example/*": "./lib/js/example/*",
         "./lib/js/scripts/*": "./lib/js/scripts/*.js",
+        "./lib/js/ajv/*": "./lib/js/ajv/*.js",
         "./lib/js/types.ts": "./lib/js/scripts/types.ts"
     }
 }
