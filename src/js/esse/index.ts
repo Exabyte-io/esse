@@ -7,27 +7,22 @@ import path from "path";
 import { EXAMPLES_DIR, PROPERTIES_MANIFEST_PATH, SCHEMAS_DIR } from "./settings";
 import { JSONSchema, JSONSchemaWithPath, parseIncludeReferenceStatementsByDir } from "./utils";
 
-const SCHEMAS = parseIncludeReferenceStatementsByDir(SCHEMAS_DIR);
-const EXAMPLES = parseIncludeReferenceStatementsByDir(EXAMPLES_DIR, true);
-const PROPERTIES_MANIFEST = yaml.load(
-    fs.readFileSync(PROPERTIES_MANIFEST_PATH, { encoding: "utf-8" }),
-) as object;
-const RESULTS = Object.entries(PROPERTIES_MANIFEST)
-    .map((k) => (k[1].isResult ? k[0] : null))
-    .filter((x) => x) as object;
-
 interface EsseConfig {
-    schemas: JSONSchema[];
-    examples: JSONSchema[];
-    wrappedExamples: JSONSchemaWithPath[];
-    propertiesManifest: object;
-    results: object;
+    schemasDir: string;
+    examplesDir?: string;
+    propertiesManifestDir?: string;
 }
+
+const DEFAULT_CONFIG = {
+    schemasDir: SCHEMAS_DIR,
+    examplesDir: EXAMPLES_DIR,
+    propertiesManifestDir: PROPERTIES_MANIFEST_PATH,
+};
 
 export class ESSE implements EsseConfig {
     readonly schemas: JSONSchema[];
 
-    readonly examples: JSONSchema[];
+    readonly examples?: JSONSchema[];
 
     readonly wrappedExamples: JSONSchemaWithPath[];
 
@@ -35,12 +30,32 @@ export class ESSE implements EsseConfig {
 
     readonly results: object;
 
-    constructor(config?: EsseConfig) {
-        this.schemas = config?.schemas || SCHEMAS;
-        this.wrappedExamples = config?.wrappedExamples || EXAMPLES;
+    readonly schemasDir: string;
+
+    readonly examplesDir?: string;
+
+    readonly propertiesManifestDir?: string;
+
+    constructor(config: EsseConfig = DEFAULT_CONFIG) {
+        this.schemasDir = config.schemasDir;
+        this.examplesDir = config.examplesDir;
+        this.propertiesManifestDir = config.propertiesManifestDir;
+
+        this.schemas = parseIncludeReferenceStatementsByDir(this.schemasDir);
+
+        this.wrappedExamples = this.examplesDir
+            ? parseIncludeReferenceStatementsByDir(this.examplesDir, true)
+            : [];
+
         this.examples = this.wrappedExamples.map((example) => example.data);
-        this.propertiesManifest = config?.propertiesManifest || PROPERTIES_MANIFEST;
-        this.results = config?.results || RESULTS;
+
+        this.propertiesManifest = this.propertiesManifestDir
+            ? (yaml.load(fs.readFileSync(this.propertiesManifestDir, "utf-8")) as object)
+            : {};
+
+        this.results = Object.entries(this.propertiesManifest)
+            .map((k) => (k[1].isResult ? k[0] : null))
+            .filter((x) => x) as object;
     }
 
     writeResolvedSchemas(subfolder: string, skipMergeAllOff = false) {
