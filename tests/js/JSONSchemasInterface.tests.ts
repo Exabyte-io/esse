@@ -1,4 +1,3 @@
-/* eslint-disable no-unused-expressions */
 import { assert, expect } from "chai";
 import path from "path";
 
