@@ -48,6 +48,8 @@ function cleanSchema(schema: JSONSchema): JSONSchema {
 
     return mapObjectDeep(schema, (object) => {
         if (typeof object === "object" && object?.title && !firstRun) {
+            firstRun = false;
+
             // eslint-disable-next-line @typescript-eslint/no-unused-vars
             const { title, $schema, ...restObject } = object as SchemaObject;
             return restObject;

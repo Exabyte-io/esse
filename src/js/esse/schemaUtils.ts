@@ -15,9 +15,7 @@ export function mapObjectDeep(
     }
 
     if (Array.isArray(object)) {
-        return object.map(
-            (innerValue) => mapValue(innerValue) || mapObjectDeep(innerValue, mapValue),
-        );
+        return object.map((innerValue) => mapObjectDeep(innerValue, mapValue));
     }
 
     const mappedObject = mapValue(object) || object;
