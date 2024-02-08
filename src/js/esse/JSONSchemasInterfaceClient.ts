@@ -19,33 +19,16 @@ export function readSchemaFolderSync(folderPath: string) {
     return schemas;
 }
 
-export class JSONSchemasInterface {
-    static schemaFolder = "./lib/js/schema";
-
+export default class JSONSchemasInterfaceClient {
     static schemasCache = new Map<string, SchemaObject>();
 
-    static setSchemaFolder(schemaFolder: string) {
-        if (this.schemaFolder !== schemaFolder) {
-            this.schemaFolder = schemaFolder;
-            this.readSchemaFolder();
+    static addSchemaObject(schema: SchemaObject) {
+        if (schema.$id) {
+            this.schemasCache.set(schema.$id, schema);
         }
-    }
-
-    static readSchemaFolder() {
-        const schemas = readSchemaFolderSync(this.schemaFolder);
-
-        schemas.forEach((schema) => {
-            if (schema.$id) {
-                this.schemasCache.set(schema.$id, schema);
-            }
-        });
     }
 
     static schemaById(schemaId: string) {
-        if (this.schemasCache.size === 0) {
-            this.readSchemaFolder();
-        }
-
         return this.schemasCache.get(schemaId);
     }
 

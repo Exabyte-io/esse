@@ -5,6 +5,7 @@ import fs from "fs";
 import groupBy from "lodash/groupBy";
 import path from "path";
 
+import * as ajv from "../../src/js/ajv/utils";
 import { JSONSchemasInterface } from "../../src/js/esse/JSONSchemasInterface";
 import { walkDirSync } from "../../src/js/scripts/utils";
 
@@ -20,7 +21,7 @@ describe("validate all examples", () => {
 
             console.log(`Validating example: ${examplePath}`);
 
-            const result = JSONSchemasInterface.validate(example, schema);
+            const result = ajv.validate(example, schema);
 
             if (!result.isValid) {
                 console.log({
