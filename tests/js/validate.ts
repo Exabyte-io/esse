@@ -47,5 +47,6 @@ describe("schema titles must be unique or empty", () => {
         console.log(repeatedSchemaTitles);
     }
 
+    // eslint-disable-next-line no-unused-expressions
     expect(repeatedSchemaTitles).to.be.an("array").that.is.empty;
 });
