@@ -1,4 +1,3 @@
-/* eslint-disable no-unused-expressions */
 import { expect } from "chai";
 import fs from "fs";
 import groupBy from "lodash/groupBy";
@@ -31,7 +30,7 @@ describe("validate all examples", () => {
                 });
             }
 
-            expect(result.isValid).to.be.true;
+            expect(result.isValid).to.be.equal(true);
         }
     });
 });
