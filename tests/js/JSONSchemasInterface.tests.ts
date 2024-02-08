@@ -22,29 +22,19 @@ describe("JSONSchemasInterface", () => {
         assert(schema?.$id, "system/in-set");
         expect(schema?.properties?.inSet).to.be.an("object");
 
-        if (
-            // @ts-ignore
-            assertObject(schema?.properties?.inSet) &&
-            // @ts-ignore
-            assertObject(schema?.properties?.inSet?.items)
-        ) {
-            expect(schema?.properties?.inSet?.items?.$id).to.be.an("undefined");
-            expect(schema?.properties?.inSet?.items?.allOf).to.be.an("array");
-        }
+        assertObject(schema?.properties?.inSet);
+        assertObject(schema?.properties?.inSet?.items);
+        expect(schema?.properties?.inSet?.items?.$id).to.be.an("undefined");
+        expect(schema?.properties?.inSet?.items?.allOf).to.be.an("array");
 
         expect(schema?.properties?.valueMapFunction?.enum).to.be.an("array");
 
-        if (
-            // @ts-ignore
-            assertObject(schema?.properties?.valueMapFunction) &&
-            // @ts-ignore
-            assertArray(schema?.properties?.valueMapFunction?.enum)
-        ) {
-            expect(schema?.properties?.valueMapFunction?.enum[0]).to.be.an("string");
-            expect(schema?.properties?.valueMapFunction?.enum[1]).to.be.an("string");
-            expect(schema?.properties?.valueMapFunction?.enum[2]).to.be.an("string");
-            expect(schema?.properties?.valueMapFunction?.enum[3]).to.be.an("string");
-            expect(schema?.properties?.valueMapFunction?.enum[4]).to.be.an("string");
-        }
+        assertObject(schema?.properties?.valueMapFunction);
+        assertArray(schema?.properties?.valueMapFunction?.enum);
+        expect(schema?.properties?.valueMapFunction?.enum[0]).to.be.an("string");
+        expect(schema?.properties?.valueMapFunction?.enum[1]).to.be.an("string");
+        expect(schema?.properties?.valueMapFunction?.enum[2]).to.be.an("string");
+        expect(schema?.properties?.valueMapFunction?.enum[3]).to.be.an("string");
+        expect(schema?.properties?.valueMapFunction?.enum[4]).to.be.an("string");
     });
 });
