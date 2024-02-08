@@ -4,6 +4,7 @@ import yaml from "js-yaml";
 import mergeAllOf from "json-schema-merge-allof";
 import path from "path";
 
+import { cleanSchema } from "./schemaUtils";
 import { EXAMPLES_DIR, PROPERTIES_MANIFEST_PATH, SCHEMAS_DIR } from "./settings";
 import { JSONSchema, JSONSchemaWithPath, parseIncludeReferenceStatementsByDir } from "./utils";
 
@@ -56,7 +57,7 @@ export class ESSE implements EsseConfig {
             const id_as_path = mergedSchema.$id?.replace(/-/g, "_");
             const full_path = `${schemasFolder}/${id_as_path}.json`;
             fs.mkdirSync(path.dirname(full_path), { recursive: true });
-            fs.writeFileSync(full_path, JSON.stringify(mergedSchema, null, 4), "utf8");
+            fs.writeFileSync(full_path, JSON.stringify(cleanSchema(mergedSchema), null, 4), "utf8");
         });
     }
 

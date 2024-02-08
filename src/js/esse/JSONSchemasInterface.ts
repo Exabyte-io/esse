@@ -107,7 +107,8 @@ export class JSONSchemasInterface {
         let validate = ajv.getSchema(schemaKey);
 
         if (!validate) {
-            ajv.addSchema(addAdditionalPropertiesToSchema(jsonSchema), schemaKey);
+            const patchedSchema = addAdditionalPropertiesToSchema(jsonSchema);
+            ajv.addSchema(patchedSchema, schemaKey);
             validate = ajv.getSchema(schemaKey);
         }
 

@@ -22,10 +22,10 @@ export function mapObjectDeep(
         );
     }
 
-    const entries = Object.entries(object).map(([key, value]) => {
-        const res = mapValue(value);
+    const mappedObject = mapValue(object) || object;
 
-        return [key, res === undefined ? mapObjectDeep(value, mapValue) : res];
+    const entries = Object.entries(mappedObject).map(([key, value]) => {
+        return [key, mapObjectDeep(value, mapValue)];
     });
 
     return Object.fromEntries(entries);
@@ -44,6 +44,7 @@ export function addAdditionalPropertiesToSchema(schema: JSONSchema, additionalPr
             return {
                 ...schema,
                 additionalProperties,
+                unevaluatedProperties: false,
             };
         }
     });
@@ -90,11 +91,12 @@ export function cleanSchema(schema: JSONSchema) {
     let firstRun = true;
 
     return mapObjectDeep(schema, (object) => {
-        if (typeof object === "object" && object?.title && firstRun) {
-            firstRun = false;
+        if (typeof object === "object" && object?.title && !firstRun) {
             // eslint-disable-next-line @typescript-eslint/no-unused-vars
             const { title, $schema, ...restObject } = object as SchemaObject;
             return restObject;
         }
+
+        firstRun = false;
     });
 }

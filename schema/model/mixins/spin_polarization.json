@@ -8,5 +8,6 @@
             "type": "string",
             "$ref": "./enum_options.json#/spinPolarization"
         }
-    }
+    },
+    "additionalProperties": true
 }

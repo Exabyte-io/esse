@@ -7,5 +7,6 @@
         "spinOrbitCoupling": {
             "type": "boolean"
         }
-    }
+    },
+    "additionalProperties": true
 }
