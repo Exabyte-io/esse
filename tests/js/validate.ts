@@ -1,5 +1,4 @@
 /* eslint-disable no-unused-expressions */
-// eslint-disable-next-line import/no-extraneous-dependencies
 import { expect } from "chai";
 import fs from "fs";
 import groupBy from "lodash/groupBy";
