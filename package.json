@@ -90,12 +90,13 @@
         "*.{js,css}": "prettier --write"
     },
     "exports": {
-        "./lib/js/esse/*": "./lib/js/esse/*.js",
-        "./lib/js/json_include/*": "./lib/js/json_include/*.js",
         "./lib/js/schema/*": "./lib/js/schema/*",
         "./lib/js/example/*": "./lib/js/example/*",
+        "./lib/js/utils/*": "./lib/js/utils/*.js",
+        "./lib/js/esse/*": "./lib/js/esse/*.js",
+        "./lib/js/json_include/*": "./lib/js/json_include/*.js",
         "./lib/js/scripts/*": "./lib/js/scripts/*.js",
-        "./lib/js/ajv/*": "./lib/js/ajv/*.js",
-        "./lib/js/types.ts": "./lib/js/scripts/types.ts"
+        "./lib/js/types.ts": "./lib/js/scripts/types.ts",
+        "./lib/js/schemas.json": "./lib/js/schemas.ts"
     }
 }
