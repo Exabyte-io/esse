@@ -20,7 +20,7 @@ export function readSchemaFolderSync(folderPath: string) {
 }
 
 export default class JSONSchemasInterfaceServer extends JSONSchemasInterface {
-    static schemaFolder = "./lib/js/schema";
+    static schemaFolder = path.resolve(__dirname, "./../schema");
 
     static setSchemaFolder(schemaFolder: string) {
         if (this.schemaFolder !== schemaFolder) {
