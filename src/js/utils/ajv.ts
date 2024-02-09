@@ -1,3 +1,4 @@
+import type {} from "ajv"; // @see https://github.com/microsoft/TypeScript/issues/47663
 import Ajv, { SchemaObject } from "ajv";
 
 import { mapObjectDeep } from "../esse/schemaUtils";
