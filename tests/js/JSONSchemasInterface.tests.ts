@@ -1,39 +1,37 @@
 import { assert, expect } from "chai";
 import path from "path";
 
-import { JSONSchemasInterface } from "../../src/js/esse/JSONSchemasInterface";
+import allSchemas from "../../lib/js/schemas.json";
+import JSONSchemasInterface from "../../src/js/esse/JSONSchemasInterfaceServer";
+import { JSONSchema } from "../../src/js/esse/utils";
 
-function assertObject(prop: unknown) {
-    expect(prop).to.be.an("object");
+function assertSystemInSetSchema(schema?: JSONSchema) {
+    const inSet = schema?.properties?.inSet as JSONSchema | undefined;
+    const inSetItems = inSet?.items as JSONSchema | undefined;
+
+    expect(schema).to.be.an("object");
+    assert(schema?.$id, "system/in-set");
+    expect(inSetItems?.properties?._id).to.be.an("object");
+    expect(inSetItems?.properties?.cls).to.be.an("object");
+    expect(inSetItems?.properties?.slug).to.be.an("object");
+    expect(inSetItems?.properties?.type).to.be.an("object");
+    expect(inSetItems?.properties?.index).to.be.an("object");
 }
 
-function assertArray(prop: unknown) {
-    expect(prop).to.be.an("array");
-}
-
-describe("JSONSchemasInterface", () => {
+describe("JSONSchemasInterfaceServer", () => {
     it("can find registered schemas; the schema is merged and clean", async () => {
         JSONSchemasInterface.setSchemaFolder(path.join(__dirname, "./fixtures/json"));
 
-        const schema = JSONSchemasInterface.schemaById("system/in-set");
+        const schema = JSONSchemasInterface.getSchemaById("system/in-set");
+        assertSystemInSetSchema(schema);
+    });
+});
 
-        expect(schema).to.be.an("object");
-        assert(schema?.$id, "system/in-set");
-        expect(schema?.properties?.inSet).to.be.an("object");
+describe("JSONSchemasInterface", () => {
+    it("can find registered schemas; the schema is merged and clean", async () => {
+        JSONSchemasInterface.setSchemas(allSchemas as JSONSchema[]);
 
-        assertObject(schema?.properties?.inSet);
-        assertObject(schema?.properties?.inSet?.items);
-        expect(schema?.properties?.inSet?.items?.$id).to.be.an("undefined");
-        expect(schema?.properties?.inSet?.items?.allOf).to.be.an("array");
-
-        expect(schema?.properties?.valueMapFunction?.enum).to.be.an("array");
-
-        assertObject(schema?.properties?.valueMapFunction);
-        assertArray(schema?.properties?.valueMapFunction?.enum);
-        expect(schema?.properties?.valueMapFunction?.enum[0]).to.be.an("string");
-        expect(schema?.properties?.valueMapFunction?.enum[1]).to.be.an("string");
-        expect(schema?.properties?.valueMapFunction?.enum[2]).to.be.an("string");
-        expect(schema?.properties?.valueMapFunction?.enum[3]).to.be.an("string");
-        expect(schema?.properties?.valueMapFunction?.enum[4]).to.be.an("string");
+        const schema = JSONSchemasInterface.getSchemaById("system/in-set");
+        assertSystemInSetSchema(schema);
     });
 });

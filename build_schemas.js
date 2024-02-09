@@ -4,12 +4,12 @@
  * downstream consumption to avoid FS calls in the browser.
  */
 const fs = require("fs");
-const { ESSE } = require("./lib/js/esse");
+const JSONSchemasGenerator = require("./lib/js/esse/JSONSchemasGenerator").default;
 
 // JS Modules
 
-const esse = new ESSE();
-const { schemas, wrappedExamples, propertiesManifest, results } = esse;
+const generator = new JSONSchemasGenerator();
+const { schemas, wrappedExamples, propertiesManifest, results } = generator;
 
 if (process.env.BUILD_PYTHON_MODULES === "true") {
     // PY Modules
@@ -43,5 +43,5 @@ if (process.env.BUILD_ASSETS !== "true") {
 const subfolder = process.env.BUILD_PATH || "./docs/js/";
 const skipMergeAllOff = process.env.SKIP_MERGE_ALLOF === "true";
 
-esse.writeResolvedSchemas(subfolder, skipMergeAllOff);
-esse.writeResolvedExamples(subfolder);
+generator.writeResolvedSchemas(subfolder, skipMergeAllOff);
+generator.writeResolvedExamples(subfolder);

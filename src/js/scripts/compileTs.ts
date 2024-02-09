@@ -4,7 +4,7 @@ import { compile } from "json-schema-to-typescript";
 
 import { mapObjectDeep } from "../esse/schemaUtils";
 import { JSONSchema } from "../esse/utils";
-import { walkDir } from "./utils";
+import { walkDir } from "../utils/filesystem";
 
 /**
  * By definition, the "compile" function will generate 2 schemas based on the following input:

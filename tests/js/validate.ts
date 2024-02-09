@@ -3,9 +3,9 @@ import fs from "fs";
 import groupBy from "lodash/groupBy";
 import path from "path";
 
-import * as ajv from "../../src/js/ajv/utils";
-import { JSONSchemasInterface } from "../../src/js/esse/JSONSchemasInterface";
-import { walkDirSync } from "../../src/js/scripts/utils";
+import JSONSchemasInterface from "../../src/js/esse/JSONSchemasInterfaceServer";
+import * as ajv from "../../src/js/utils/ajv";
+import { walkDirSync } from "../../src/js/utils/filesystem";
 
 const examplesPath = path.resolve("./lib/js/example");
 const schemasPath = path.resolve("./lib/js/schema");

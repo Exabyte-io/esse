@@ -21,7 +21,7 @@
             "description": "Original response from external source.",
             "type": "object"
         },
-        "doi":{
+        "doi": {
             "description": "Digital Object Identifier, e.g. 10.1088/0953-8984/25/10/105506",
             "type": "string"
         },

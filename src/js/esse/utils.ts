@@ -3,7 +3,7 @@ import deref from "json-schema-deref-sync";
 import path from "path";
 
 import { JSONInclude } from "../json_include";
-import { walkDirSync } from "../scripts/utils";
+import { walkDirSync } from "../utils/filesystem";
 
 export type JSONSchema = JSONSchema7;
 

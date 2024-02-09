@@ -3,7 +3,7 @@ import yaml from "js-yaml";
 import lodash from "lodash";
 import path from "path";
 
-import { walkDir } from "./utils";
+import { walkDir } from "../utils/filesystem";
 
 /**
  *  We use YAML files to list enum options which need to be reused in other places.

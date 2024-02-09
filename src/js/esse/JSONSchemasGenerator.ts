@@ -7,7 +7,7 @@ import path from "path";
 import { EXAMPLES_DIR, PROPERTIES_MANIFEST_PATH, SCHEMAS_DIR } from "./settings";
 import { JSONSchema, JSONSchemaWithPath, parseIncludeReferenceStatementsByDir } from "./utils";
 
-interface EsseConfig {
+interface JSONSchemasGeneratorConfig {
     schemasDir: string;
     examplesDir?: string;
     propertiesManifestDir?: string;
@@ -19,7 +19,7 @@ const DEFAULT_CONFIG = {
     propertiesManifestDir: PROPERTIES_MANIFEST_PATH,
 };
 
-export class ESSE implements EsseConfig {
+export default class JSONSchemasGenerator implements JSONSchemasGeneratorConfig {
     readonly schemas: JSONSchema[];
 
     readonly examples?: JSONSchema[];
@@ -36,7 +36,7 @@ export class ESSE implements EsseConfig {
 
     readonly propertiesManifestDir?: string;
 
-    constructor(config: EsseConfig = DEFAULT_CONFIG) {
+    constructor(config: JSONSchemasGeneratorConfig = DEFAULT_CONFIG) {
         this.schemasDir = config.schemasDir;
         this.examplesDir = config.examplesDir;
         this.propertiesManifestDir = config.propertiesManifestDir;
@@ -61,28 +61,35 @@ export class ESSE implements EsseConfig {
     writeResolvedSchemas(subfolder: string, skipMergeAllOff = false) {
         const schemasFolder = `${subfolder}/schema`;
         fs.rmSync(schemasFolder, { recursive: true, force: true });
-        this.schemas.forEach((s) => {
-            let mergedSchema = s;
-            if (!skipMergeAllOff) {
-                mergedSchema = mergeAllOf(s, {
-                    resolvers: { defaultResolver: mergeAllOf.options.resolvers.title },
-                });
-            }
-            const id_as_path = mergedSchema.$id?.replace(/-/g, "_");
-            const full_path = `${schemasFolder}/${id_as_path}.json`;
-            fs.mkdirSync(path.dirname(full_path), { recursive: true });
-            fs.writeFileSync(full_path, JSON.stringify(mergedSchema, null, 4), "utf8");
+
+        const mergeAllOfConfig = {
+            resolvers: { defaultResolver: mergeAllOf.options.resolvers.title },
+        };
+
+        const schemas = this.schemas.map((schema) => {
+            const mergedSchema = skipMergeAllOff ? schema : mergeAllOf(schema, mergeAllOfConfig);
+            const idAsPath = mergedSchema.$id?.replace(/-/g, "_");
+            const fullPath = `${schemasFolder}/${idAsPath}.json`;
+
+            console.log(`Resolving schema: ${fullPath}`);
+
+            fs.mkdirSync(path.dirname(fullPath), { recursive: true });
+            fs.writeFileSync(fullPath, JSON.stringify(mergedSchema, null, 4), "utf8");
+
+            return mergedSchema;
         });
+
+        fs.writeFileSync(`${subfolder}/schemas.json`, `${JSON.stringify(schemas)}`);
     }
 
     writeResolvedExamples(subfolder: string) {
         const examplesFolder = `${subfolder}/example`;
         fs.rmSync(`${examplesFolder}`, { recursive: true, force: true });
         this.wrappedExamples.forEach((e) => {
-            const id_as_path = e.path.replace(/-/g, "_");
-            const full_path = `${examplesFolder}/${id_as_path}.json`;
-            fs.mkdirSync(path.dirname(full_path), { recursive: true });
-            fs.writeFileSync(full_path, JSON.stringify(e.data, null, 4), "utf8");
+            const idAsPath = e.path.replace(/-/g, "_");
+            const fullPath = `${examplesFolder}/${idAsPath}.json`;
+            fs.mkdirSync(path.dirname(fullPath), { recursive: true });
+            fs.writeFileSync(fullPath, JSON.stringify(e.data, null, 4), "utf8");
         });
     }
 }

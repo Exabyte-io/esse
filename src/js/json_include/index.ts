@@ -1,8 +1,8 @@
 import fs from "fs";
 import path from "path";
 
+import { isInstanceOf, safeParseJSON } from "../utils/common";
 import { INCLUDE_KEY, INCLUDE_VALUE_REGEX, OBJECT_ONLY } from "./settings";
-import { isInstanceOf, safeParseJSON } from "./utils";
 
 interface AnyObject {
     [key: string]: AnyObject | AnyObject[];

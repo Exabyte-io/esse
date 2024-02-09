@@ -1,51 +1,21 @@
-import { SchemaObject } from "ajv";
-import fs from "fs";
-import path from "path";
+import { JSONSchema } from "./utils";
 
-import { walkDirSync } from "../scripts/utils";
-import { JSONInterfaceQuery } from "./types";
+export type JSONSchemasInterfaceQuery = { [key in keyof JSONSchema]: { $regex: string } };
 
-export function readSchemaFolderSync(folderPath: string) {
-    const schemas: SchemaObject[] = [];
+export default class JSONSchemasInterface {
+    static schemasCache = new Map<string, JSONSchema>();
 
-    walkDirSync(folderPath, (filePath: string) => {
-        if (path.extname(filePath) !== ".json") {
-            return;
-        }
-        const schema = JSON.parse(fs.readFileSync(filePath).toString());
-        schemas.push(schema);
-    });
+    static setSchemas(schema: JSONSchema[]) {
+        schema.forEach((schema) => this.addSchema(schema));
+    }
 
-    return schemas;
-}
-
-export class JSONSchemasInterface {
-    static schemaFolder = "./lib/js/schema";
-
-    static schemasCache = new Map<string, SchemaObject>();
-
-    static setSchemaFolder(schemaFolder: string) {
-        if (this.schemaFolder !== schemaFolder) {
-            this.schemaFolder = schemaFolder;
-            this.readSchemaFolder();
+    static addSchema(schema: JSONSchema) {
+        if (schema.$id) {
+            this.schemasCache.set(schema.$id, schema);
         }
     }
 
-    static readSchemaFolder() {
-        const schemas = readSchemaFolderSync(this.schemaFolder);
-
-        schemas.forEach((schema) => {
-            if (schema.$id) {
-                this.schemasCache.set(schema.$id, schema);
-            }
-        });
-    }
-
-    static schemaById(schemaId: string) {
-        if (this.schemasCache.size === 0) {
-            this.readSchemaFolder();
-        }
-
+    static getSchemaById(schemaId: string) {
         return this.schemasCache.get(schemaId);
     }
 
@@ -67,7 +37,7 @@ export class JSONSchemasInterface {
      *   }
      * })
      */
-    static matchSchema(query: JSONInterfaceQuery) {
+    static matchSchema(query: JSONSchemasInterfaceQuery) {
         const searchFields = Object.keys(query) as Array<keyof typeof query>;
 
         return Array.from(this.schemasCache.values()).find((schema) => {

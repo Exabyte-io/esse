@@ -21,7 +21,9 @@
             ]
         }
     },
-    "required": ["categories"],
+    "required": [
+        "categories"
+    ],
     "definitions": {
         "ao-basis-other": {
             "type": "object",

@@ -4,7 +4,7 @@
     "title": "Atomic data per orbital numeric",
     "description": "Atomic properties per orbital pair with numeric value e.g., Hubbard V parameters.",
     "type": "object",
-    "allOf":[
+    "allOf": [
         {
             "$ref": "atomic_data/per_orbital.json"
         },

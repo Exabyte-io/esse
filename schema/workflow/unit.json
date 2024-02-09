@@ -35,5 +35,7 @@
     "discriminator": {
         "propertyName": "type"
     },
-    "required": ["type"]
+    "required": [
+        "type"
+    ]
 }
