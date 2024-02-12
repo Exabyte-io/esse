@@ -14,5 +14,6 @@
             "description": "name of the resulting input file, if different than template name",
             "type": "string"
         }
-    }
+    },
+    "additionalProperties": false
 }

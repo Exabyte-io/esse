@@ -23,8 +23,7 @@ function addAdditionalPropertiesToSchema(schema: JSONSchema, additionalPropertie
     });
 }
 
-const ajv = new Ajv({
-    removeAdditional: true,
+const ajvConfig = {
     strict: false, // TODO: adjust schemas and enable strict mode
     useDefaults: true,
     /**
@@ -32,19 +31,25 @@ const ajv = new Ajv({
      * @see https://ajv.js.org/guide/modifying-data.html#assigning-defaults
      */
     discriminator: true,
-});
+};
+
+const ajvValidator = new Ajv({ ...ajvConfig });
+const ajvValidatorAndCleaner = new Ajv({ ...ajvConfig, removeAdditional: true });
 
 export interface AnyObject {
     [key: string]: unknown;
 }
 
-export function getValidator(jsonSchema: SchemaObject) {
+export function getValidator(jsonSchema: SchemaObject, clean = false) {
     const schemaKey = jsonSchema.$id as string;
+
+    const ajv = clean ? ajvValidatorAndCleaner : ajvValidator;
 
     let validate = ajv.getSchema(schemaKey);
 
     if (!validate) {
-        const patchedSchema = addAdditionalPropertiesToSchema(jsonSchema);
+        // properties that were not defined in schema will be ignored when clean = false
+        const patchedSchema = clean ? addAdditionalPropertiesToSchema(jsonSchema) : jsonSchema;
         ajv.addSchema(patchedSchema, schemaKey);
         validate = ajv.getSchema(schemaKey);
     }
@@ -64,6 +69,22 @@ export function getValidator(jsonSchema: SchemaObject) {
  */
 export function validate(data: AnyObject, jsonSchema: SchemaObject) {
     const validator = getValidator(jsonSchema);
+    const isValid = validator(data);
+
+    return {
+        isValid,
+        errors: validator.errors,
+    };
+}
+
+/**
+ * Validates and clean a given example against the schema
+ * @param example example to validate.
+ * @param schema schema to validate the example with.
+ * @returns whether example is valid.
+ */
+export function validateAndClean(data: AnyObject, jsonSchema: SchemaObject) {
+    const validator = getValidator(jsonSchema, true);
     const isValid = validator(data);
 
     return {
