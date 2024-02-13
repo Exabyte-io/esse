@@ -29,7 +29,14 @@
         },
         "compute": {
             "description": "compute parameters",
-            "$ref": "../job/compute.json"
+            "oneOf": [
+                {
+                    "$ref": "../job/compute.json"
+                },
+                {
+                    "type": "null"
+                }
+            ]
         }
     },
     "required": [
