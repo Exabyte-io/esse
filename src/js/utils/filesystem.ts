@@ -1,15 +1,14 @@
 /* eslint-disable no-await-in-loop */
 /* eslint-disable no-restricted-syntax */
 import fs from "fs";
-import fsPromises from "fs/promises";
 import path from "path";
 
 export async function walkDir(dir: string, callback: (itemPath: string) => void | Promise<void>) {
-    const subDirs = await fsPromises.readdir(dir);
+    const subDirs = await fs.promises.readdir(dir);
 
     for (const subDir of subDirs) {
         const itemPath = path.join(dir, subDir);
-        const stat = await fsPromises.stat(itemPath);
+        const stat = await fs.promises.stat(itemPath);
 
         if (stat.isDirectory()) {
             await walkDir(itemPath, callback);
