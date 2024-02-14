@@ -6,9 +6,6 @@
     "allOf": [
         {
             "$ref": "../../../workflow/unit/execution.json"
-        },
-        {
-            "$ref": "../../../workflow/unit/input/_input.json"
         }
     ]
 }

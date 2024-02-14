@@ -6,6 +6,9 @@
     "allOf": [
         {
             "$ref": "../in_memory_entity/named_defaultable_runtime_items.json"
+        },
+        {
+            "$ref": "../workflow/unit/input/_execution_input.json"
         }
     ],
     "properties": {
@@ -20,13 +23,6 @@
         "applicationName": {
             "description": "name of the application this flavor belongs to",
             "type": "string"
-        },
-        "input": {
-            "title": "execution unit input schema",
-            "type": "array",
-            "items": {
-                "$ref": "../workflow/unit/input/_inputItemId.json"
-            }
         }
     }
 }
