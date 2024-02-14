@@ -67,11 +67,10 @@ export default class JSONSchemasGenerator implements JSONSchemasGeneratorConfig 
         };
 
         const schemas = this.schemas.map((schema) => {
+            console.log(`Resolving schema: ${schema.$id}`);
             const mergedSchema = skipMergeAllOff ? schema : mergeAllOf(schema, mergeAllOfConfig);
             const idAsPath = mergedSchema.$id?.replace(/-/g, "_");
             const fullPath = `${schemasFolder}/${idAsPath}.json`;
-
-            console.log(`Resolving schema: ${fullPath}`);
 
             fs.mkdirSync(path.dirname(fullPath), { recursive: true });
             fs.writeFileSync(fullPath, JSON.stringify(mergedSchema, null, 4), "utf8");

@@ -6,6 +6,9 @@
     "allOf": [
         {
             "$ref": "../workflow/unit/input/_inputItem.json"
+        },
+        {
+            "$ref": "../in_memory_entity/named.json"
         }
     ],
     "properties": {
@@ -27,7 +30,6 @@
         }
     },
     "required": [
-        "name",
         "content"
     ]
 }
