@@ -9,6 +9,9 @@
         },
         {
             "$ref": "../../system/tags.json"
+        },
+        {
+            "$ref": "../../system/status.json"
         }
     ],
     "properties": {

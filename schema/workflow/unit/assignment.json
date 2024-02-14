@@ -6,6 +6,9 @@
     "allOf": [
         {
             "$ref": "./base.json"
+        },
+        {
+            "$ref": "./../../system/scope.json"
         }
     ],
     "properties": {
