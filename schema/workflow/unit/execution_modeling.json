@@ -1,0 +1,39 @@
+{
+    "$id": "workflow/unit/execution-modeling",
+    "$schema": "http://json-schema.org/draft-07/schema#",
+    "title": "execution unit schema (base)",
+    "type": "object",
+    "allOf": [
+        {
+            "$ref": "./base.json"
+        },
+        {
+            "$ref": "runtime/runtime_items.json"
+        }
+    ],
+    "properties": {
+        "subtype": {
+            "enum": [
+                "modeling"
+            ]
+        },
+        "application": {
+            "description": "Contains information about the simulation engine/application.",
+            "$ref": "../../software/application.json"
+        },
+        "executable": {
+            "description": "Contains information about the simulation engine/application executable.",
+            "$ref": "../../software/executable.json"
+        },
+        "flavor": {
+            "description": "Contains information about the simulation engine/application flavor.",
+            "$ref": "../../software/flavor.json"
+        },
+        "input": {
+            "$ref": "./input/_execution_input/_modeling_input.json"
+        }
+    },
+    "required": [
+        "application"
+    ]
+}
