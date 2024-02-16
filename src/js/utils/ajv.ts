@@ -35,16 +35,36 @@ const ajvConfig = {
 
 const ajvValidator = new Ajv({ ...ajvConfig });
 const ajvValidatorAndCleaner = new Ajv({ ...ajvConfig, removeAdditional: true });
+const ajvValidatorAndCleanerWithCoercingTypes = new Ajv({
+    ...ajvConfig,
+    removeAdditional: true,
+    coerceTypes: true,
+});
 
 export interface AnyObject {
     [key: string]: unknown;
 }
 
-export function getValidator(jsonSchema: SchemaObject, clean = false) {
+interface AjvInstanceOptions {
+    clean: boolean;
+    coerceTypes: boolean;
+}
+
+function getAjvInstance({ clean, coerceTypes }: AjvInstanceOptions) {
+    if (clean && coerceTypes) {
+        return ajvValidatorAndCleanerWithCoercingTypes;
+    }
+
+    if (clean) {
+        return ajvValidatorAndCleaner;
+    }
+
+    return ajvValidator;
+}
+
+export function getValidator(jsonSchema: SchemaObject, { clean, coerceTypes }: AjvInstanceOptions) {
     const schemaKey = jsonSchema.$id as string;
-
-    const ajv = clean ? ajvValidatorAndCleaner : ajvValidator;
-
+    const ajv = getAjvInstance({ clean, coerceTypes });
     let validate = ajv.getSchema(schemaKey);
 
     if (!validate) {
@@ -68,7 +88,7 @@ export function getValidator(jsonSchema: SchemaObject, clean = false) {
  * @returns whether example is valid.
  */
 export function validate(data: AnyObject, jsonSchema: SchemaObject) {
-    const validator = getValidator(jsonSchema);
+    const validator = getValidator(jsonSchema, { clean: false, coerceTypes: false });
     const isValid = validator(data);
 
     return {
@@ -83,8 +103,12 @@ export function validate(data: AnyObject, jsonSchema: SchemaObject) {
  * @param schema schema to validate the example with.
  * @returns whether example is valid.
  */
-export function validateAndClean(data: AnyObject, jsonSchema: SchemaObject) {
-    const validator = getValidator(jsonSchema, true);
+export function validateAndClean(
+    data: AnyObject,
+    jsonSchema: SchemaObject,
+    { coerceTypes = false },
+) {
+    const validator = getValidator(jsonSchema, { clean: true, coerceTypes });
     const isValid = validator(data);
 
     return {
