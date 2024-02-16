@@ -1,5 +1,6 @@
 import type {} from "ajv"; // @see https://github.com/microsoft/TypeScript/issues/47663
 import Ajv, { SchemaObject } from "ajv";
+import { AnyValidateFunction } from "ajv/dist/core";
 
 import { mapObjectDeep } from "../esse/schemaUtils";
 import { JSONSchema } from "../esse/utils";
@@ -62,7 +63,10 @@ function getAjvInstance({ clean, coerceTypes }: AjvInstanceOptions) {
     return ajvValidator;
 }
 
-export function getValidator(jsonSchema: SchemaObject, { clean, coerceTypes }: AjvInstanceOptions) {
+export function getValidator(
+    jsonSchema: SchemaObject,
+    { clean, coerceTypes }: AjvInstanceOptions,
+): AnyValidateFunction {
     const schemaKey = jsonSchema.$id as string;
     const ajv = getAjvInstance({ clean, coerceTypes });
     let validate = ajv.getSchema(schemaKey);
