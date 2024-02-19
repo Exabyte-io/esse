@@ -4,7 +4,7 @@
     "description": "Mat3ra's Excellent Source of Schemas and Examples (ESSE) for Digital Materials R&D",
     "scripts": {
         "prepublishOnly": "rm -rf lib; npm run transpile",
-        "transpile": "tsc; BUILD_ASSETS=true BUILD_PATH='./lib/js' node build_schemas.js",
+        "transpile": "tsc && BUILD_ASSETS=true BUILD_PATH='./lib/js' node build_schemas.js",
         "transpile-and-build-assets": "npm run transpile && ts-node compile_ts.ts",
         "build:assets": "node build_schemas.js",
         "build:js-and-python-modules": "BUILD_PYTHON_MODULES=true node build_schemas.js",
