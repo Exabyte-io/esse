@@ -1,7 +1,8 @@
 {
     "$id": "methods-category/mathematical/intgr/numquad/newcot",
-    "$schema": "http://json-schema.org/draft-04/schema#",
-    "description": "Newton-Cotes quadrature rules",
+    "$schema": "http://json-schema.org/draft-07/schema#",
+    "title": "Newton-Cotes quadrature rules schema",
+    "type": "object",
     "allOf": [
         {
             "$ref": "../numquad.json"

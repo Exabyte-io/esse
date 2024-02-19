@@ -1,7 +1,8 @@
 {
     "$id": "methods-category/mathematical/linalg/matf",
-    "$schema": "http://json-schema.org/draft-04/schema#",
-    "description": "Matrix function methods",
+    "$schema": "http://json-schema.org/draft-07/schema#",
+    "title": "Matrix function methods schema",
+    "type": "object",
     "allOf": [
         {
             "$ref": "../linalg.json"

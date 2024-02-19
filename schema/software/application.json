@@ -1,13 +1,14 @@
 {
     "$id": "software/application",
-    "$schema": "http://json-schema.org/draft-04/schema#",
+    "$schema": "http://json-schema.org/draft-07/schema#",
     "title": "application schema (base)",
     "type": "object",
+    "allOf": [
+        {
+            "$ref": "../in_memory_entity/named_defaultable.json"
+        }
+    ],
     "properties": {
-        "name": {
-            "description": "The name of the application. e.g. espresso",
-            "type": "string"
-        },
         "shortName": {
             "description": "The short name of the application. e.g. qe",
             "type": "string"
@@ -33,8 +34,5 @@
             "type": "boolean"
         }
     },
-    "additionalProperties": true,
-    "required": [
-        "name"
-    ]
+    "additionalProperties": true
 }

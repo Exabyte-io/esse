@@ -1,7 +1,8 @@
 {
     "$id": "system/in-set",
-    "$schema": "http://json-schema.org/draft-04/schema#",
+    "$schema": "http://json-schema.org/draft-07/schema#",
     "title": "System in-set schema",
+    "type": "object",
     "properties": {
         "inSet": {
             "type": "array",

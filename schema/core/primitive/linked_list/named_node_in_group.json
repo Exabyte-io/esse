@@ -1,6 +1,6 @@
 {
     "$id": "core/primitive/linked-list/named-node-in-group",
-    "$schema": "http://json-schema.org/draft-04/schema#",
+    "$schema": "http://json-schema.org/draft-07/schema#",
     "title": "Named node in group schema",
     "type": "object",
     "allOf": [

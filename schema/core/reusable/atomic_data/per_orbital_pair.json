@@ -1,6 +1,6 @@
 {
     "$id": "core/reusable/atomic-data/per-orbital-pair",
-    "$schema": "http://json-schema.org/draft-04/schema#",
+    "$schema": "http://json-schema.org/draft-07/schema#",
     "title": "Atomic data per orbital pair",
     "description": "Atomic properties per orbital pair e.g., Hubbard V parameters.",
     "type": "object",

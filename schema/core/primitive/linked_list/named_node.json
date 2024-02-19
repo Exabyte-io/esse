@@ -1,6 +1,6 @@
 {
     "$id": "core/primitive/linked-list/named-node",
-    "$schema": "http://json-schema.org/draft-04/schema#",
+    "$schema": "http://json-schema.org/draft-07/schema#",
     "title": "Named node schema",
     "type": "object",
     "allOf": [

@@ -1,7 +1,8 @@
 {
     "$id": "properties-directory/structural/lattice/lattice-bravais",
-    "$schema": "http://json-schema.org/draft-04/schema#",
+    "$schema": "http://json-schema.org/draft-07/schema#",
     "title": "lattice implicit schema",
+    "type": "object",
     "allOf": [
         {
             "$ref": "../../../core/primitive/3d_lattice.json"

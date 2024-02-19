@@ -1,6 +1,6 @@
 {
     "$id": "workflow",
-    "$schema": "http://json-schema.org/draft-04/schema#",
+    "$schema": "http://json-schema.org/draft-07/schema#",
     "title": "workflow schema",
     "type": "object",
     "allOf": [
@@ -24,35 +24,7 @@
             "description": "Contains the Units of the Workflow",
             "type": "array",
             "items": {
-                "oneOf": [
-                    {
-                        "$ref": "workflow/unit.json"
-                    },
-                    {
-                        "$ref": "workflow/unit/io.json"
-                    },
-                    {
-                        "$ref": "workflow/unit/map.json"
-                    },
-                    {
-                        "$ref": "workflow/unit/reduce.json"
-                    },
-                    {
-                        "$ref": "workflow/unit/condition.json"
-                    },
-                    {
-                        "$ref": "workflow/unit/assertion.json"
-                    },
-                    {
-                        "$ref": "workflow/unit/execution.json"
-                    },
-                    {
-                        "$ref": "workflow/unit/assignment.json"
-                    },
-                    {
-                        "$ref": "workflow/unit/processing.json"
-                    }
-                ]
+                "$ref": "workflow/unit.json"
             }
         }
     },

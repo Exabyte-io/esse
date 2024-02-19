@@ -1,7 +1,8 @@
 {
     "$id": "system/-parent-job",
-    "$schema": "http://json-schema.org/draft-04/schema#",
+    "$schema": "http://json-schema.org/draft-07/schema#",
     "title": "Parent job entity reference schema",
+    "type": "object",
     "allOf": [
         {
             "$ref": "entity_reference.json"

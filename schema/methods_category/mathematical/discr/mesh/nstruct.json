@@ -1,7 +1,8 @@
 {
     "$id": "methods-category/mathematical/discr/mesh/nstruct",
-    "$schema": "http://json-schema.org/draft-04/schema#",
-    "description": "Unstructured meshing category schema",
+    "$schema": "http://json-schema.org/draft-07/schema#",
+    "title": "Unstructured meshing category nstruct schema",
+    "type": "object",
     "allOf": [
         {
             "$ref": "../mesh.json"

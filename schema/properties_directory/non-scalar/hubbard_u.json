@@ -1,14 +1,19 @@
 {
     "$id": "properties-directory/non-scalar/hubbard-u",
-    "$schema": "http://json-schema.org/draft-04/schema#",
+    "$schema": "http://json-schema.org/draft-07/schema#",
     "title": "Hubbard U parameters",
     "description": "Hubbard U values in eV corresponding to atomic species, orbital and site number.",
+    "type": "object",
     "properties": {
         "name": {
-            "enum": ["hubbard_u"]
+            "enum": [
+                "hubbard_u"
+            ]
         },
         "units": {
-            "enum": ["eV"]
+            "enum": [
+                "eV"
+            ]
         },
         "values": {
             "type": "array",
@@ -28,5 +33,7 @@
             }
         }
     },
-    "required": ["name"]
+    "required": [
+        "name"
+    ]
 }

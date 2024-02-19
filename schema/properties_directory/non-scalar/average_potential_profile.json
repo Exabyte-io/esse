@@ -1,7 +1,8 @@
 {
     "$id": "properties-directory/non-scalar/average-potential-profile",
-    "$schema": "http://json-schema.org/draft-04/schema#",
+    "$schema": "http://json-schema.org/draft-07/schema#",
     "title": "average potential profile schema",
+    "type": "object",
     "allOf": [
         {
             "$ref": "../../core/abstract/2d_plot.json"

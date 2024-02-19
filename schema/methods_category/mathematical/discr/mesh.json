@@ -1,7 +1,8 @@
 {
     "$id": "methods-category/mathematical/discr/mesh",
-    "$schema": "http://json-schema.org/draft-04/schema#",
-    "description": "Meshing method category schema",
+    "$schema": "http://json-schema.org/draft-07/schema#",
+    "title": "Meshing method category schema",
+    "type": "object",
     "allOf": [
         {
             "$ref": "../discr.json"

@@ -1,8 +1,9 @@
 {
     "$id": "properties-directory/structural/magnetic-moments",
-    "$schema": "http://json-schema.org/draft-04/schema#",
+    "$schema": "http://json-schema.org/draft-07/schema#",
     "title": "magnetic moments",
     "description": "magnetization on each ion",
+    "type": "object",
     "properties": {
         "name": {
             "enum": [

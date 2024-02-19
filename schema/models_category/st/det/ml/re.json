@@ -1,7 +1,8 @@
 {
     "$id": "models-category/st/det/ml/re",
-    "$schema": "http://json-schema.org/draft-04/schema#",
+    "$schema": "http://json-schema.org/draft-07/schema#",
     "title": "regression model category schema",
+    "type": "object",
     "allOf": [
         {
             "$ref": "../ml.json"

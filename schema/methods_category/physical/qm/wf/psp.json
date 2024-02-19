@@ -1,7 +1,8 @@
 {
     "$id": "methods-category/physical/qm/wf/psp",
-    "$schema": "http://json-schema.org/draft-04/schema#",
-    "description": "Pseudopotential category schema",
+    "$schema": "http://json-schema.org/draft-07/schema#",
+    "title": "Pseudopotential category schema",
+    "type": "object",
     "allOf": [
         {
             "$ref": "../wf.json"

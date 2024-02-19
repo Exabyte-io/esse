@@ -1,11 +1,11 @@
 {
     "$id": "software/executable",
-    "$schema": "http://json-schema.org/draft-04/schema#",
+    "$schema": "http://json-schema.org/draft-07/schema#",
     "title": "executable schema",
     "type": "object",
     "allOf": [
         {
-            "$ref": "../workflow/unit/runtime/runtime_items.json"
+            "$ref": "../in_memory_entity/named_defaultable_runtime_items.json"
         }
     ],
     "properties": {
@@ -26,7 +26,6 @@
         }
     },
     "required": [
-        "name",
-        "applicationId"
+        "name"
     ]
 }

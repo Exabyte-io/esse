@@ -1,7 +1,8 @@
 {
     "$id": "methods-category/mathematical/opt",
-    "$schema": "http://json-schema.org/draft-04/schema#",
-    "description": "Integration category schema",
+    "$schema": "http://json-schema.org/draft-07/schema#",
+    "title": "Mathematical opt schema",
+    "type": "object",
     "allOf": [
         {
             "$ref": "../../core/reusable/categories.json"

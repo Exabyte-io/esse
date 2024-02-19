@@ -1,7 +1,8 @@
 {
     "$id": "models-category/st",
-    "$schema": "http://json-schema.org/draft-04/schema#",
+    "$schema": "http://json-schema.org/draft-07/schema#",
     "title": "statistical model category schema",
+    "type": "object",
     "allOf": [
         {
             "$ref": "../core/reusable/categories.json"

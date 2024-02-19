@@ -1,7 +1,8 @@
 {
     "$id": "methods-category/mathematical/discr/mesh/hybrid",
-    "$schema": "http://json-schema.org/draft-04/schema#",
-    "description": "Hybrid meshing category schema",
+    "$schema": "http://json-schema.org/draft-07/schema#",
+    "title": "Hybrid meshing category schema",
+    "type": "object",
     "allOf": [
         {
             "$ref": "../mesh.json"

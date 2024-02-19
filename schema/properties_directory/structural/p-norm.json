@@ -1,8 +1,9 @@
 {
     "$id": "properties-directory/structural/p-norm",
-    "$schema": "http://json-schema.org/draft-04/schema#",
+    "$schema": "http://json-schema.org/draft-07/schema#",
     "title": "p_norm",
     "description": "https://en.wikipedia.org/wiki/Norm_(mathematics)#p-norm",
+    "type": "object",
     "allOf": [
         {
             "$ref": "../../core/primitive/scalar.json"

@@ -1,11 +1,14 @@
 {
     "$id": "workflow/unit/assignment",
-    "$schema": "http://json-schema.org/draft-04/schema#",
+    "$schema": "http://json-schema.org/draft-07/schema#",
     "title": "assignment unit schema",
     "type": "object",
     "allOf": [
         {
-            "$ref": "../unit.json"
+            "$ref": "./base.json"
+        },
+        {
+            "$ref": "./../../system/scope.json"
         }
     ],
     "properties": {
@@ -27,7 +30,17 @@
         },
         "value": {
             "description": "Value of the variable. The value content could be a simple integer, string or a python expression. e.g. '0' (initialization), 'sin(x)+1' (expression)",
-            "type": "string"
+            "oneOf": [
+                {
+                    "type": "string"
+                },
+                {
+                    "type": "boolean"
+                },
+                {
+                    "type": "number"
+                }
+            ]
         }
     },
     "required": [

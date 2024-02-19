@@ -1,6 +1,6 @@
 {
     "$id": "workflow/subworkflow",
-    "$schema": "http://json-schema.org/draft-04/schema#",
+    "$schema": "http://json-schema.org/draft-07/schema#",
     "title": "Subworkflow",
     "type": "object",
     "allOf": [
@@ -13,7 +13,7 @@
             "description": "Contains the Units of the subworkflow",
             "type": "array",
             "items": {
-                "$ref": "unit.json"
+                "$ref": "./subworkflow/unit.json"
             }
         },
         "model": {

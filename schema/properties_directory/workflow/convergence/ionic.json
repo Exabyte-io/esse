@@ -1,7 +1,8 @@
 {
     "$id": "properties-directory/workflow/convergence/ionic",
-    "$schema": "http://json-schema.org/draft-04/schema#",
+    "$schema": "http://json-schema.org/draft-07/schema#",
     "title": "ionic convergence schema",
+    "type": "object",
     "properties": {
         "name": {
             "enum": [
@@ -18,6 +19,7 @@
             ]
         },
         "data": {
+            "type": "array",
             "description": "energetic and structural information",
             "items": {
                 "type": "object",

@@ -1,7 +1,8 @@
 {
     "$id": "properties-directory/non-scalar/phonon-dispersions",
-    "$schema": "http://json-schema.org/draft-04/schema#",
+    "$schema": "http://json-schema.org/draft-07/schema#",
     "title": "phonon band structure schema",
+    "type": "object",
     "allOf": [
         {
             "$ref": "../../core/abstract/2d_plot.json"
@@ -9,6 +10,7 @@
     ],
     "properties": {
         "xAxis": {
+            "type": "object",
             "properties": {
                 "label": {
                     "enum": [
@@ -21,6 +23,7 @@
             }
         },
         "yAxis": {
+            "type": "object",
             "properties": {
                 "label": {
                     "enum": [

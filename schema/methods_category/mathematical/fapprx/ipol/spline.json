@@ -1,7 +1,8 @@
 {
     "$id": "methods-category/mathematical/fapprx/ipol/spline",
-    "$schema": "http://json-schema.org/draft-04/schema#",
-    "description": "Spline interpolation category schema",
+    "$schema": "http://json-schema.org/draft-07/schema#",
+    "title": "Spline interpolation category schema",
+    "type": "object",
     "allOf": [
         {
             "$ref": "../ipol.json"

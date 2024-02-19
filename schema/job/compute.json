@@ -1,8 +1,9 @@
 {
     "$id": "job/compute",
-    "$schema": "http://json-schema.org/draft-04/schema#",
+    "$schema": "http://json-schema.org/draft-07/schema#",
     "title": "compute arguments schema",
     "description": "Custom keywords prefixed with validate correspond to custom validation methods implemented downstream",
+    "type": "object",
     "properties": {
         "queue": {
             "description": "Name of the submission queues: https://docs.mat3ra.com/infrastructure/resource/queues/. Below enums are for Azure, then AWS circa 2022-08, hence the duplication.",
@@ -37,18 +38,15 @@
         },
         "nodes": {
             "description": "number of nodes used for the job inside the RMS.",
-            "type": "integer",
-            "validateNodes": {}
+            "type": "integer"
         },
         "ppn": {
             "description": "number of CPUs used for the job inside the RMS.",
-            "type": "integer",
-            "validatePpn": {}
+            "type": "integer"
         },
         "timeLimit": {
             "description": "Wallclock time limit for computing a job. Clock format: 'hh:mm:ss'",
-            "type": "string",
-            "validateTimeLimit": {}
+            "type": "string"
         },
         "timeLimitType": {
             "description": "Convention to use when reasoning about time limits",
@@ -78,13 +76,7 @@
         },
         "arguments": {
             "description": "Optional arguments specific to using application - VASP, Quantum Espresso, etc. Specified elsewhere",
-            "type": "object",
-            "default": {},
-            "oneOf": [
-                {
-                    "$ref": "../software_directory/modeling/espresso/arguments.json"
-                }
-            ]
+            "$ref": "../software_directory/modeling/espresso/arguments.json"
         },
         "cluster": {
             "description": "Cluster where the job is executed. Optional on create. Required on job submission.",

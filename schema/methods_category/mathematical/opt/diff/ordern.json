@@ -1,7 +1,8 @@
 {
     "$id": "methods-category/mathematical/opt/diff/ordern",
-    "$schema": "http://json-schema.org/draft-04/schema#",
-    "description": "Mixed order and higher order algorithms for the optimization of differentiable functions",
+    "$schema": "http://json-schema.org/draft-07/schema#",
+    "title": "Mixed order and higher order algorithms for the optimization of differentiable functions schema",
+    "type": "object",
     "allOf": [
         {
             "$ref": "../diff.json"

@@ -1,11 +1,11 @@
 {
     "$id": "workflow/unit/execution",
-    "$schema": "http://json-schema.org/draft-04/schema#",
+    "$schema": "http://json-schema.org/draft-07/schema#",
     "title": "execution unit schema (base)",
     "type": "object",
     "allOf": [
         {
-            "$ref": "../unit.json"
+            "$ref": "./base.json"
         },
         {
             "$ref": "runtime/runtime_items.json"

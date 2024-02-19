@@ -1,31 +1,37 @@
 import fs from "fs";
 import path from "path";
 
+import { AnyObject } from "../esse/types";
+import { isInstanceOf, safeParseJSON } from "../utils/common";
 import { INCLUDE_KEY, INCLUDE_VALUE_REGEX, OBJECT_ONLY } from "./settings";
-import { isInstanceOf, safeParseJSON } from "./utils";
 
 export class JSONInclude {
-    constructor() {
-        this.JSON_INCLUDE_CACHE = {};
-    }
+    JSON_INCLUDE_CACHE: AnyObject = {};
 
     /**
      * Extracts file name(path) from the include statement.
-     * @param value {String} string to extract the file name from.
+     * @param value string to extract the file name from.
      */
-    _getIncludeFileName = (value) => {
-        if (isInstanceOf(value, "String") && value.search(INCLUDE_VALUE_REGEX) !== -1) {
-            return value.match(INCLUDE_VALUE_REGEX)[1];
+    _getIncludeFileName = (value: unknown) => {
+        if (typeof value === "string" && value.search(INCLUDE_VALUE_REGEX) !== -1) {
+            const matched = value.match(INCLUDE_VALUE_REGEX);
+            return matched && matched[1];
         }
     };
 
     /**
      * Walks a nested object to resolve include statements.
-     * @param obj {Object} Object to traverse.
-     * @param dirpath {String} directory from which `obj` is obtained. Include statements are relative to `obj` path.
+     * @param obj Object to traverse.
+     * @param dirpath directory from which `obj` is obtained. Include statements are relative to `obj` path.
      */
-    _walkObjectToInclude(obj, dirpath) {
-        if (isInstanceOf(obj, "Object")) {
+    _walkObjectToInclude(obj: AnyObject | AnyObject[], dirpath: string) {
+        if (isInstanceOf(obj, "Array")) {
+            for (let i = 0; i < obj.length; i++) {
+                if (isInstanceOf(obj[i], "Object") || isInstanceOf(obj[i], "Array")) {
+                    this._walkObjectToInclude(obj[i], dirpath);
+                }
+            }
+        } else if (isInstanceOf(obj, "Object")) {
             if (INCLUDE_KEY in obj) {
                 const includeName = this._getIncludeFileName(obj[INCLUDE_KEY]);
                 if (includeName) {
@@ -36,6 +42,7 @@ export class JSONInclude {
                             this.parseIncludeStatements(filePath);
                     }
                     Object.keys(this.JSON_INCLUDE_CACHE[includeName]).forEach((attr) => {
+                        // @ts-ignore
                         obj[attr] = this.JSON_INCLUDE_CACHE[includeName][attr];
                     });
                 }
@@ -45,21 +52,15 @@ export class JSONInclude {
                     this._walkObjectToInclude(obj[key], dirpath);
                 }
             });
-        } else if (isInstanceOf(obj, "Array")) {
-            for (let i = 0; i < obj.length; i++) {
-                if (isInstanceOf(obj[i], "Object") || isInstanceOf(obj[i], "Array")) {
-                    this._walkObjectToInclude(obj[i], dirpath);
-                }
-            }
         }
     }
 
     /**
      * Resolves `include` statements.
-     * @param filePath {String} file to parse.
+     * @param filePath file to parse.
      */
-    parseIncludeStatements(filePath) {
-        const data = safeParseJSON(fs.readFileSync(filePath, "utf8"));
+    parseIncludeStatements(filePath: string) {
+        const data: AnyObject[] = safeParseJSON(fs.readFileSync(filePath, "utf8"));
         if (OBJECT_ONLY && !isInstanceOf(data, "Object")) {
             throw new Error(
                 "The JSON file being included should always be a dict rather than a list",

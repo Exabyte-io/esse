@@ -1,7 +1,8 @@
 {
     "$id": "methods-category/physical/qm/wf/pw",
-    "$schema": "http://json-schema.org/draft-04/schema#",
-    "description": "Plane wave catgeory schema",
+    "$schema": "http://json-schema.org/draft-07/schema#",
+    "title": "Plane wave catgeory schema",
+    "type": "object",
     "allOf": [
         {
             "$ref": "../wf.json"

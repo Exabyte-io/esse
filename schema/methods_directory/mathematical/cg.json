@@ -1,8 +1,9 @@
 {
     "$id": "methods-directory/mathematical/cg",
-    "$schema": "http://json-schema.org/draft-04/schema#",
-    "title": "unit method conjugate gradient",
+    "$schema": "http://json-schema.org/draft-07/schema#",
+    "title": "Unit method conjugate gradient",
     "description": "conjugate gradient method schema",
+    "type": "object",
     "allOf": [
         {
             "$ref": "../../method/unit_method.json"
@@ -13,5 +14,7 @@
             "$ref": "../../methods_category/mathematical/opt/diff/ordern/cg.json"
         }
     },
-    "required": ["categories"]
+    "required": [
+        "categories"
+    ]
 }

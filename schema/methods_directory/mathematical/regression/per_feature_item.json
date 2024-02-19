@@ -1,7 +1,8 @@
 {
     "$id": "methods-directory/mathematical/regression/per-feature-item",
-    "$schema": "http://json-schema.org/draft-04/schema#",
+    "$schema": "http://json-schema.org/draft-07/schema#",
     "title": "per-feature (property used for training the ML method/model) parameters schema",
+    "type": "object",
     "properties": {
         "coefficient": {
             "description": "coefficient in linear regression",
