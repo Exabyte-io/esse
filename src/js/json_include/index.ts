@@ -1,12 +1,15 @@
 import fs from "fs";
 import path from "path";
 
-import { AnyObject } from "../esse/types";
 import { isInstanceOf, safeParseJSON } from "../utils/common";
 import { INCLUDE_KEY, INCLUDE_VALUE_REGEX, OBJECT_ONLY } from "./settings";
 
+export interface CacheObject {
+    [key: string]: CacheObject | CacheObject[];
+}
+
 export class JSONInclude {
-    JSON_INCLUDE_CACHE: AnyObject = {};
+    JSON_INCLUDE_CACHE: CacheObject = {};
 
     /**
      * Extracts file name(path) from the include statement.
@@ -24,7 +27,7 @@ export class JSONInclude {
      * @param obj Object to traverse.
      * @param dirpath directory from which `obj` is obtained. Include statements are relative to `obj` path.
      */
-    _walkObjectToInclude(obj: AnyObject | AnyObject[], dirpath: string) {
+    _walkObjectToInclude(obj: CacheObject | CacheObject[], dirpath: string) {
         if (isInstanceOf(obj, "Array")) {
             for (let i = 0; i < obj.length; i++) {
                 if (isInstanceOf(obj[i], "Object") || isInstanceOf(obj[i], "Array")) {
@@ -60,7 +63,7 @@ export class JSONInclude {
      * @param filePath file to parse.
      */
     parseIncludeStatements(filePath: string) {
-        const data: AnyObject[] = safeParseJSON(fs.readFileSync(filePath, "utf8"));
+        const data: CacheObject[] = safeParseJSON(fs.readFileSync(filePath, "utf8"));
         if (OBJECT_ONLY && !isInstanceOf(data, "Object")) {
             throw new Error(
                 "The JSON file being included should always be a dict rather than a list",
