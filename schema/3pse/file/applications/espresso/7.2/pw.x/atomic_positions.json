@@ -1,6 +1,6 @@
 {
     "$id": "3pse/file/applications/espresso/7.2/pw.x/atomic-positions",
-    "$schema": "http://json-schema.org/draft-04/schema#",
+    "$schema": "http://json-schema.org/draft-07/schema#",
     "title": "atomic positions schema",
     "description": "https://www.quantum-espresso.org/Doc/INPUT_PW.html#idm1493",
     "type": "object",
@@ -45,24 +45,21 @@
                         "description": "atomic positions"
                     },
                     "if_pos(1)": {
-                        "$id": "core/primitive/integer-one-or-zero",
-                        "$schema": "http://json-schema.org/draft-04/schema#",
+                        "$schema": "http://json-schema.org/draft-07/schema#",
                         "title": "integer one or zero",
                         "type": "integer",
                         "minimum": 0,
                         "maximum": 1
                     },
                     "if_pos(2)": {
-                        "$id": "core/primitive/integer-one-or-zero",
-                        "$schema": "http://json-schema.org/draft-04/schema#",
+                        "$schema": "http://json-schema.org/draft-07/schema#",
                         "title": "integer one or zero",
                         "type": "integer",
                         "minimum": 0,
                         "maximum": 1
                     },
                     "if_pos(3)": {
-                        "$id": "core/primitive/integer-one-or-zero",
-                        "$schema": "http://json-schema.org/draft-04/schema#",
+                        "$schema": "http://json-schema.org/draft-07/schema#",
                         "title": "integer one or zero",
                         "type": "integer",
                         "minimum": 0,

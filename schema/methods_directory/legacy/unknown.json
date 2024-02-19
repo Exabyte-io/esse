@@ -1,7 +1,8 @@
 {
     "$id": "methods-directory/legacy/unknown",
-    "$schema": "http://json-schema.org/draft-04/schema#",
+    "$schema": "http://json-schema.org/draft-07/schema#",
     "title": "legacy method unknown",
+    "type": "object",
     "required": [
         "type",
         "subtype"

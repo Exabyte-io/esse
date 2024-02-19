@@ -1,6 +1,6 @@
 {
     "$id": "workflow/unit/input/-input",
-    "$schema": "http://json-schema.org/draft-04/schema#",
+    "$schema": "http://json-schema.org/draft-07/schema#",
     "title": "execution unit input schema for physics-based simulation engines",
     "type": "object",
     "properties": {
@@ -10,8 +10,7 @@
             "items": {
                 "oneOf": [
                     {
-                        "$id": "workflow/unit/input/-inputItem",
-                        "$schema": "http://json-schema.org/draft-04/schema#",
+                        "$schema": "http://json-schema.org/draft-07/schema#",
                         "title": "execution unit input item schema for physics-based simulation engines",
                         "type": "object",
                         "properties": {
@@ -30,8 +29,7 @@
                         ]
                     },
                     {
-                        "$id": "workflow/unit/input/-inputItemId",
-                        "$schema": "http://json-schema.org/draft-04/schema#",
+                        "$schema": "http://json-schema.org/draft-07/schema#",
                         "title": "execution unit input id item schema for physics-based simulation engines",
                         "type": "object",
                         "properties": {
@@ -46,9 +44,7 @@
                                 "type": "string"
                             }
                         },
-                        "required": [
-                            "templateId"
-                        ]
+                        "additionalProperties": false
                     }
                 ]
             }

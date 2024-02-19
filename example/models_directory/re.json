@@ -1,4 +1,5 @@
 {
+    "name": "regression",
     "categories": {
         "tier1": "st",
         "tier2": "det",

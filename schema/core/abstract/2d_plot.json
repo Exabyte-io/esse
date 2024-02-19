@@ -1,19 +1,19 @@
 {
     "$id": "core/abstract/2d-plot",
-    "$schema": "http://json-schema.org/draft-04/schema#",
+    "$schema": "http://json-schema.org/draft-07/schema#",
     "title": "2 dimension plot schema",
+    "type": "object",
     "required": [
         "xAxis",
         "xDataArray",
         "yAxis",
         "yDataSeries"
     ],
-    "type": "object",
     "properties": {
         "xAxis": {
-            "$id": "core/primitive/axis",
-            "$schema": "http://json-schema.org/draft-04/schema#",
+            "$schema": "http://json-schema.org/draft-07/schema#",
             "title": "axis schema",
+            "type": "object",
             "required": [
                 "label"
             ],
@@ -29,9 +29,9 @@
             }
         },
         "yAxis": {
-            "$id": "core/primitive/axis",
-            "$schema": "http://json-schema.org/draft-04/schema#",
+            "$schema": "http://json-schema.org/draft-07/schema#",
             "title": "axis schema",
+            "type": "object",
             "required": [
                 "label"
             ],
@@ -56,8 +56,7 @@
             "type": "array"
         },
         "yDataSeries": {
-            "$id": "core/primitive/1d-data-series",
-            "$schema": "http://json-schema.org/draft-04/schema#",
+            "$schema": "http://json-schema.org/draft-07/schema#",
             "title": "1 dimension data series schema",
             "type": "array",
             "items": {

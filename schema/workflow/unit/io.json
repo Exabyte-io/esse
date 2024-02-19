@@ -1,6 +1,6 @@
 {
     "$id": "workflow/unit/io",
-    "$schema": "http://json-schema.org/draft-04/schema#",
+    "$schema": "http://json-schema.org/draft-07/schema#",
     "title": "data IO unit schema",
     "type": "object",
     "required": [
@@ -38,8 +38,7 @@
             "items": {
                 "anyOf": [
                     {
-                        "$id": "workflow/unit/io/api",
-                        "$schema": "http://json-schema.org/draft-04/schema#",
+                        "$schema": "http://json-schema.org/draft-07/schema#",
                         "title": "data IO rest API input schema",
                         "type": "object",
                         "properties": {
@@ -62,8 +61,7 @@
                         ]
                     },
                     {
-                        "$id": "workflow/unit/io/db",
-                        "$schema": "http://json-schema.org/draft-04/schema#",
+                        "$schema": "http://json-schema.org/draft-07/schema#",
                         "title": "data IO database input/output schema",
                         "type": "object",
                         "oneOf": [
@@ -101,37 +99,18 @@
                         ]
                     },
                     {
-                        "$id": "workflow/unit/io/object-storage",
-                        "$schema": "http://json-schema.org/draft-04/schema#",
+                        "$schema": "http://json-schema.org/draft-07/schema#",
                         "title": "object_storage io schema",
                         "type": "object",
-                        "allof": [
-                            {
-                                "$id": "core/reusable/file-metadata",
-                                "$schema": "http://json-schema.org/draft-04/schema#",
-                                "title": "file_metadata",
-                                "properties": {
-                                    "pathname": {
-                                        "description": "Relative path to the directory that contains the file.",
-                                        "type": "string"
-                                    },
-                                    "basename": {
-                                        "description": "Basename of the file",
-                                        "type": "string",
-                                        "$comment": "isGenerative:true"
-                                    },
-                                    "filetype": {
-                                        "description": "What kind of file this is, e.g. image / text",
-                                        "type": "string"
-                                    }
-                                }
-                            }
+                        "required": [
+                            "objectData",
+                            "basename"
                         ],
                         "properties": {
                             "objectData": {
-                                "$id": "core/reusable/object-storage-container-data",
-                                "$schema": "http://json-schema.org/draft-04/schema#",
+                                "$schema": "http://json-schema.org/draft-07/schema#",
                                 "title": "Object Storage Container Data",
+                                "type": "object",
                                 "required": [
                                     "CONTAINER",
                                     "NAME",
@@ -169,12 +148,21 @@
                                 "description": "if a file with the same filename already exists, whether to overwrite the old file",
                                 "type": "boolean",
                                 "default": false
+                            },
+                            "pathname": {
+                                "description": "Relative path to the directory that contains the file.",
+                                "type": "string"
+                            },
+                            "basename": {
+                                "description": "Basename of the file",
+                                "type": "string",
+                                "$comment": "isGenerative:true"
+                            },
+                            "filetype": {
+                                "description": "What kind of file this is, e.g. image / text",
+                                "type": "string"
                             }
-                        },
-                        "required": [
-                            "objectData",
-                            "basename"
-                        ]
+                        }
                     }
                 ]
             }
@@ -230,8 +218,7 @@
         "consistencyChecks": {
             "type": "array",
             "items": {
-                "$id": "system/consistency-check",
-                "$schema": "http://json-schema.org/draft-04/schema#",
+                "$schema": "http://json-schema.org/draft-07/schema#",
                 "title": "consistency check",
                 "type": "object",
                 "description": "The output of consistency checks performed on data adhering to JSON schema, but inconsistent with scientific or logical rules, to show problems in UI.",
@@ -283,13 +270,11 @@
             "description": "names of the pre-processors for this calculation",
             "type": "array",
             "items": {
-                "$id": "workflow/unit/runtime/runtime-item",
-                "$schema": "http://json-schema.org/draft-04/schema#",
+                "$schema": "http://json-schema.org/draft-07/schema#",
                 "title": "runtime item schema",
                 "oneOf": [
                     {
-                        "$id": "workflow/unit/runtime/-runtime-item-name-object",
-                        "$schema": "http://json-schema.org/draft-04/schema#",
+                        "$schema": "http://json-schema.org/draft-07/schema#",
                         "title": "name result schema",
                         "type": "object",
                         "properties": {
@@ -303,8 +288,7 @@
                         ]
                     },
                     {
-                        "$id": "workflow/unit/runtime/-runtime-item-string",
-                        "$schema": "http://json-schema.org/draft-04/schema#",
+                        "$schema": "http://json-schema.org/draft-07/schema#",
                         "title": "RuntimeItemString",
                         "description": "name of runtime item in shortened notation",
                         "type": "string"
@@ -316,13 +300,11 @@
             "description": "names of the post-processors for this calculation",
             "type": "array",
             "items": {
-                "$id": "workflow/unit/runtime/runtime-item",
-                "$schema": "http://json-schema.org/draft-04/schema#",
+                "$schema": "http://json-schema.org/draft-07/schema#",
                 "title": "runtime item schema",
                 "oneOf": [
                     {
-                        "$id": "workflow/unit/runtime/-runtime-item-name-object",
-                        "$schema": "http://json-schema.org/draft-04/schema#",
+                        "$schema": "http://json-schema.org/draft-07/schema#",
                         "title": "name result schema",
                         "type": "object",
                         "properties": {
@@ -336,8 +318,7 @@
                         ]
                     },
                     {
-                        "$id": "workflow/unit/runtime/-runtime-item-string",
-                        "$schema": "http://json-schema.org/draft-04/schema#",
+                        "$schema": "http://json-schema.org/draft-07/schema#",
                         "title": "RuntimeItemString",
                         "description": "name of runtime item in shortened notation",
                         "type": "string"
@@ -349,13 +330,11 @@
             "description": "names of the monitors for this calculation",
             "type": "array",
             "items": {
-                "$id": "workflow/unit/runtime/runtime-item",
-                "$schema": "http://json-schema.org/draft-04/schema#",
+                "$schema": "http://json-schema.org/draft-07/schema#",
                 "title": "runtime item schema",
                 "oneOf": [
                     {
-                        "$id": "workflow/unit/runtime/-runtime-item-name-object",
-                        "$schema": "http://json-schema.org/draft-04/schema#",
+                        "$schema": "http://json-schema.org/draft-07/schema#",
                         "title": "name result schema",
                         "type": "object",
                         "properties": {
@@ -369,8 +348,7 @@
                         ]
                     },
                     {
-                        "$id": "workflow/unit/runtime/-runtime-item-string",
-                        "$schema": "http://json-schema.org/draft-04/schema#",
+                        "$schema": "http://json-schema.org/draft-07/schema#",
                         "title": "RuntimeItemString",
                         "description": "name of runtime item in shortened notation",
                         "type": "string"
@@ -382,13 +360,11 @@
             "description": "names of the results for this calculation",
             "type": "array",
             "items": {
-                "$id": "workflow/unit/runtime/runtime-item",
-                "$schema": "http://json-schema.org/draft-04/schema#",
+                "$schema": "http://json-schema.org/draft-07/schema#",
                 "title": "runtime item schema",
                 "oneOf": [
                     {
-                        "$id": "workflow/unit/runtime/-runtime-item-name-object",
-                        "$schema": "http://json-schema.org/draft-04/schema#",
+                        "$schema": "http://json-schema.org/draft-07/schema#",
                         "title": "name result schema",
                         "type": "object",
                         "properties": {
@@ -402,8 +378,7 @@
                         ]
                     },
                     {
-                        "$id": "workflow/unit/runtime/-runtime-item-string",
-                        "$schema": "http://json-schema.org/draft-04/schema#",
+                        "$schema": "http://json-schema.org/draft-07/schema#",
                         "title": "RuntimeItemString",
                         "description": "name of runtime item in shortened notation",
                         "type": "string"
@@ -416,6 +391,27 @@
             "type": "array",
             "items": {
                 "type": "string"
+            }
+        },
+        "statusTrack": {
+            "type": "array",
+            "items": {
+                "type": "object",
+                "required": [
+                    "trackedAt",
+                    "status"
+                ],
+                "properties": {
+                    "trackedAt": {
+                        "type": "number"
+                    },
+                    "status": {
+                        "type": "string"
+                    },
+                    "repetition": {
+                        "type": "number"
+                    }
+                }
             }
         }
     }

@@ -1,6 +1,6 @@
 {
     "$id": "project",
-    "$schema": "http://json-schema.org/draft-04/schema#",
+    "$schema": "http://json-schema.org/draft-07/schema#",
     "title": "project schema",
     "type": "object",
     "properties": {
@@ -44,8 +44,7 @@
         "consistencyChecks": {
             "type": "array",
             "items": {
-                "$id": "system/consistency-check",
-                "$schema": "http://json-schema.org/draft-04/schema#",
+                "$schema": "http://json-schema.org/draft-07/schema#",
                 "title": "consistency check",
                 "type": "object",
                 "description": "The output of consistency checks performed on data adhering to JSON schema, but inconsistent with scientific or logical rules, to show problems in UI.",

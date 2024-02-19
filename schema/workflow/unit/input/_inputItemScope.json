@@ -1,6 +1,6 @@
 {
     "$id": "workflow/unit/input/-inputItemScope",
-    "$schema": "http://json-schema.org/draft-04/schema#",
+    "$schema": "http://json-schema.org/draft-07/schema#",
     "title": "workflow unit input schema",
     "type": "object",
     "required": [

@@ -1,32 +1,29 @@
 {
     "$id": "models-directory/mgga",
-    "$schema": "http://json-schema.org/draft-04/schema#",
+    "$schema": "http://json-schema.org/draft-07/schema#",
     "title": "model meta generalized gradient approximation",
+    "type": "object",
     "required": [
         "categories",
         "parameters"
     ],
-    "type": "object",
     "properties": {
         "categories": {
-            "$id": "models-category/pb/qm/dft/ksdft/mgga",
-            "$schema": "http://json-schema.org/draft-04/schema#",
+            "$schema": "http://json-schema.org/draft-07/schema#",
             "title": "DFT meta-GGA functional category schema",
-            "description": "Used to categorize entities such as models and methods",
             "type": "object",
+            "description": "Used to categorize entities such as models and methods",
             "properties": {
                 "subtype": {
                     "enum": [
                         "mgga"
                     ],
-                    "$id": "core/primitive/slugified-entry-or-slug",
-                    "$schema": "http://json-schema.org/draft-04/schema#",
+                    "$schema": "http://json-schema.org/draft-07/schema#",
                     "title": "slugified entry or slug",
                     "description": "contains either object with slugified entry or slug only as a string",
                     "oneOf": [
                         {
-                            "$id": "core/primitive/slugified-entry",
-                            "$schema": "http://json-schema.org/draft-04/schema#",
+                            "$schema": "http://json-schema.org/draft-07/schema#",
                             "title": "slugified entry",
                             "description": "container for machine- and human-readable identifier",
                             "type": "object",
@@ -54,14 +51,12 @@
                     "enum": [
                         "ksdft"
                     ],
-                    "$id": "core/primitive/slugified-entry-or-slug",
-                    "$schema": "http://json-schema.org/draft-04/schema#",
+                    "$schema": "http://json-schema.org/draft-07/schema#",
                     "title": "slugified entry or slug",
                     "description": "contains either object with slugified entry or slug only as a string",
                     "oneOf": [
                         {
-                            "$id": "core/primitive/slugified-entry",
-                            "$schema": "http://json-schema.org/draft-04/schema#",
+                            "$schema": "http://json-schema.org/draft-07/schema#",
                             "title": "slugified entry",
                             "description": "container for machine- and human-readable identifier",
                             "type": "object",
@@ -89,14 +84,12 @@
                     "enum": [
                         "dft"
                     ],
-                    "$id": "core/primitive/slugified-entry-or-slug",
-                    "$schema": "http://json-schema.org/draft-04/schema#",
+                    "$schema": "http://json-schema.org/draft-07/schema#",
                     "title": "slugified entry or slug",
                     "description": "contains either object with slugified entry or slug only as a string",
                     "oneOf": [
                         {
-                            "$id": "core/primitive/slugified-entry",
-                            "$schema": "http://json-schema.org/draft-04/schema#",
+                            "$schema": "http://json-schema.org/draft-07/schema#",
                             "title": "slugified entry",
                             "description": "container for machine- and human-readable identifier",
                             "type": "object",
@@ -124,14 +117,12 @@
                     "enum": [
                         "qm"
                     ],
-                    "$id": "core/primitive/slugified-entry-or-slug",
-                    "$schema": "http://json-schema.org/draft-04/schema#",
+                    "$schema": "http://json-schema.org/draft-07/schema#",
                     "title": "slugified entry or slug",
                     "description": "contains either object with slugified entry or slug only as a string",
                     "oneOf": [
                         {
-                            "$id": "core/primitive/slugified-entry",
-                            "$schema": "http://json-schema.org/draft-04/schema#",
+                            "$schema": "http://json-schema.org/draft-07/schema#",
                             "title": "slugified entry",
                             "description": "container for machine- and human-readable identifier",
                             "type": "object",
@@ -159,14 +150,12 @@
                     "enum": [
                         "pb"
                     ],
-                    "$id": "core/primitive/slugified-entry-or-slug",
-                    "$schema": "http://json-schema.org/draft-04/schema#",
+                    "$schema": "http://json-schema.org/draft-07/schema#",
                     "title": "slugified entry or slug",
                     "description": "contains either object with slugified entry or slug only as a string",
                     "oneOf": [
                         {
-                            "$id": "core/primitive/slugified-entry",
-                            "$schema": "http://json-schema.org/draft-04/schema#",
+                            "$schema": "http://json-schema.org/draft-07/schema#",
                             "title": "slugified entry",
                             "description": "container for machine- and human-readable identifier",
                             "type": "object",
@@ -193,25 +182,23 @@
             }
         },
         "parameters": {
-            "$id": "model/mixins/dft/mgga-functional",
-            "$schema": "http://json-schema.org/draft-04/schema#",
+            "$schema": "http://json-schema.org/draft-07/schema#",
             "title": "Meta-GGA functional mixin",
             "type": "object",
             "anyOf": [
                 {
-                    "$id": "model/mixins/spin-orbit-coupling",
-                    "$schema": "http://json-schema.org/draft-04/schema#",
+                    "$schema": "http://json-schema.org/draft-07/schema#",
                     "title": "Spin-orbit coupling mixin",
                     "type": "object",
                     "properties": {
                         "spinOrbitCoupling": {
                             "type": "boolean"
                         }
-                    }
+                    },
+                    "additionalProperties": true
                 },
                 {
-                    "$id": "model/mixins/dispersion-correction",
-                    "$schema": "http://json-schema.org/draft-04/schema#",
+                    "$schema": "http://json-schema.org/draft-07/schema#",
                     "title": "Dispersion correction mixin",
                     "type": "object",
                     "properties": {
@@ -226,8 +213,7 @@
                     }
                 },
                 {
-                    "$id": "model/mixins/spin-polarization",
-                    "$schema": "http://json-schema.org/draft-04/schema#",
+                    "$schema": "http://json-schema.org/draft-07/schema#",
                     "title": "Spin-polarization mixin",
                     "type": "object",
                     "properties": {
@@ -237,11 +223,11 @@
                                 "non-collinear"
                             ]
                         }
-                    }
+                    },
+                    "additionalProperties": true
                 },
                 {
-                    "$id": "model/mixins/hubbard",
-                    "$schema": "http://json-schema.org/draft-04/schema#",
+                    "$schema": "http://json-schema.org/draft-07/schema#",
                     "title": "Hubbard model mixin",
                     "type": "object",
                     "properties": {
@@ -254,6 +240,7 @@
                 }
             ],
             "description": "Model parameters defined in-place or via model mixins",
+            "additionalProperties": true,
             "properties": {
                 "functional": {
                     "enum": [
@@ -263,9 +250,9 @@
             }
         },
         "reference": {
-            "$id": "core/reference/literature",
-            "$schema": "http://json-schema.org/draft-04/schema#",
+            "$schema": "http://json-schema.org/draft-07/schema#",
             "title": "literature reference schema",
+            "type": "object",
             "properties": {
                 "type": {
                     "enum": [
@@ -315,8 +302,7 @@
                 "pages": {
                     "type": "object",
                     "description": "Start and end pages of the work.",
-                    "$id": "core/reference/literature/pages",
-                    "$schema": "http://json-schema.org/draft-04/schema#",
+                    "$schema": "http://json-schema.org/draft-07/schema#",
                     "title": "pages schema",
                     "required": [
                         "start"
@@ -334,8 +320,7 @@
                     "type": "array",
                     "description": "List of authors of the work.",
                     "items": {
-                        "$id": "core/reference/literature/name",
-                        "$schema": "http://json-schema.org/draft-04/schema#",
+                        "$schema": "http://json-schema.org/draft-07/schema#",
                         "title": "experiment author schema",
                         "type": "object",
                         "required": [
@@ -362,8 +347,7 @@
                     "type": "array",
                     "description": "List of editors of the work.",
                     "items": {
-                        "$id": "core/reference/literature/name",
-                        "$schema": "http://json-schema.org/draft-04/schema#",
+                        "$schema": "http://json-schema.org/draft-07/schema#",
                         "title": "experiment author schema",
                         "type": "object",
                         "required": [
@@ -400,8 +384,7 @@
             "type": "string"
         },
         "path": {
-            "$id": "core/reusable/category-path",
-            "$schema": "http://json-schema.org/draft-04/schema#",
+            "$schema": "http://json-schema.org/draft-07/schema#",
             "title": "category path schema",
             "description": "TODO: Use regex once schema draft version has been updated",
             "type": "string"

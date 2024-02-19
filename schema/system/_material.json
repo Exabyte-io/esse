@@ -1,7 +1,8 @@
 {
     "$id": "system/-material",
-    "$schema": "http://json-schema.org/draft-04/schema#",
+    "$schema": "http://json-schema.org/draft-07/schema#",
     "title": "Material entity reference schema",
+    "type": "object",
     "properties": {
         "cls": {
             "description": "Material class",

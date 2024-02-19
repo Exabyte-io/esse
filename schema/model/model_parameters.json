@@ -1,12 +1,11 @@
 {
     "$id": "model/model-parameters",
-    "$schema": "http://json-schema.org/draft-04/schema#",
+    "$schema": "http://json-schema.org/draft-07/schema#",
     "title": "ModelParameters",
     "type": "object",
     "oneOf": [
         {
-            "$id": "model/mixins/dft/lda-functional",
-            "$schema": "http://json-schema.org/draft-04/schema#",
+            "$schema": "http://json-schema.org/draft-07/schema#",
             "title": "LDA functional mixin",
             "type": "object",
             "properties": {
@@ -15,11 +14,11 @@
                         "pz"
                     ]
                 }
-            }
+            },
+            "additionalProperties": true
         },
         {
-            "$id": "model/mixins/dft/gga-functional",
-            "$schema": "http://json-schema.org/draft-04/schema#",
+            "$schema": "http://json-schema.org/draft-07/schema#",
             "title": "GGA functional mixin",
             "type": "object",
             "properties": {
@@ -29,11 +28,11 @@
                         "pbesol"
                     ]
                 }
-            }
+            },
+            "additionalProperties": true
         },
         {
-            "$id": "model/mixins/dft/mgga-functional",
-            "$schema": "http://json-schema.org/draft-04/schema#",
+            "$schema": "http://json-schema.org/draft-07/schema#",
             "title": "Meta-GGA functional mixin",
             "type": "object",
             "properties": {
@@ -42,11 +41,11 @@
                         "scan"
                     ]
                 }
-            }
+            },
+            "additionalProperties": true
         },
         {
-            "$id": "model/mixins/dft/hybrid-functional",
-            "$schema": "http://json-schema.org/draft-04/schema#",
+            "$schema": "http://json-schema.org/draft-07/schema#",
             "title": "Hybrid functional mixin",
             "type": "object",
             "properties": {
@@ -59,8 +58,7 @@
             }
         },
         {
-            "$id": "model/mixins/dft/double-hybrid-functional",
-            "$schema": "http://json-schema.org/draft-04/schema#",
+            "$schema": "http://json-schema.org/draft-07/schema#",
             "title": "Double hybrid functional mixin",
             "type": "object",
             "properties": {
@@ -72,6 +70,7 @@
             }
         }
     ],
+    "additionalProperties": true,
     "properties": {
         "hubbardType": {
             "enum": [

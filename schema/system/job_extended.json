@@ -1,7 +1,8 @@
 {
     "$id": "system/job-extended",
-    "$schema": "http://json-schema.org/draft-04/schema#",
+    "$schema": "http://json-schema.org/draft-07/schema#",
     "title": "extended job schema",
+    "type": "object",
     "properties": {
         "mode": {
             "type": "string"
@@ -12,9 +13,9 @@
         "_materials": {
             "type": "array",
             "items": {
-                "$id": "system/entity-reference",
-                "$schema": "http://json-schema.org/draft-04/schema#",
+                "$schema": "http://json-schema.org/draft-07/schema#",
                 "title": "entity reference schema",
+                "type": "object",
                 "properties": {
                     "_id": {
                         "description": "entity identity",
@@ -32,9 +33,9 @@
             }
         },
         "_materialsSet": {
-            "$id": "system/entity-reference",
-            "$schema": "http://json-schema.org/draft-04/schema#",
+            "$schema": "http://json-schema.org/draft-07/schema#",
             "title": "entity reference schema",
+            "type": "object",
             "properties": {
                 "_id": {
                     "description": "entity identity",

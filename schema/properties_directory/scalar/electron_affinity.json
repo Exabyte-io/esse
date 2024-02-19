@@ -1,0 +1,42 @@
+{
+    "$id": "properties-directory/scalar/electron-affinity",
+    "$schema": "http://json-schema.org/draft-07/schema#",
+    "title": "electron affinity schema",
+    "type": "object",
+    "required": [
+        "name",
+        "units",
+        "value"
+    ],
+    "properties": {
+        "name": {
+            "enum": [
+                "electron_affinity"
+            ],
+            "type": "string"
+        },
+        "units": {
+            "anyOf": [
+                {
+                    "enum": [
+                        "kJ/mol",
+                        "eV",
+                        "J/mol",
+                        "hartree",
+                        "cm-1",
+                        "rydberg",
+                        "eV/atom"
+                    ]
+                },
+                {
+                    "enum": [
+                        "eV/A^2"
+                    ]
+                }
+            ]
+        },
+        "value": {
+            "type": "number"
+        }
+    }
+}

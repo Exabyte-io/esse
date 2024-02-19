@@ -1,7 +1,8 @@
 {
     "$id": "methods-directory/physical/psp/file",
-    "$schema": "http://json-schema.org/draft-04/schema#",
+    "$schema": "http://json-schema.org/draft-07/schema#",
     "title": "Pseudopotential file",
+    "type": "object",
     "properties": {
         "slug": {
             "enum": [
@@ -9,9 +10,9 @@
             ]
         },
         "data": {
-            "$id": "methods-directory/physical/psp/file-data-item",
-            "$schema": "http://json-schema.org/draft-04/schema#",
+            "$schema": "http://json-schema.org/draft-07/schema#",
             "title": "File data item",
+            "type": "object",
             "required": [
                 "element",
                 "type",
@@ -57,8 +58,7 @@
                             "type": "string"
                         },
                         "path": {
-                            "$id": "core/reusable/category-path",
-                            "$schema": "http://json-schema.org/draft-04/schema#",
+                            "$schema": "http://json-schema.org/draft-07/schema#",
                             "title": "category path schema",
                             "description": "TODO: Use regex once schema draft version has been updated",
                             "type": "string"
@@ -69,8 +69,7 @@
                     "type": "array",
                     "description": "contains pseudo orbital information, including orbital names and occupations",
                     "items": {
-                        "$id": "core/reusable/atomic-orbital",
-                        "$schema": "http://json-schema.org/draft-04/schema#",
+                        "$schema": "http://json-schema.org/draft-07/schema#",
                         "title": "atomic orbital schema",
                         "type": "object",
                         "properties": {

@@ -1,6 +1,6 @@
 {
     "$id": "3pse/file/applications/espresso/7.2/pw.x/system",
-    "$schema": "http://json-schema.org/draft-04/schema#",
+    "$schema": "http://json-schema.org/draft-07/schema#",
     "title": "system schema",
     "type": "object",
     "anyOf": [
@@ -8,8 +8,8 @@
             "properties": {
                 "celldm": {
                     "type": "array",
-                    "minLength": 6,
-                    "maxLength": 6,
+                    "minItems": 6,
+                    "maxItems": 6,
                     "items": {
                         "type": "number"
                     }
@@ -312,6 +312,8 @@
             "type": "array",
             "items": {
                 "type": "array",
+                "minItems": 3,
+                "maxItems": 3,
                 "items": [
                     {
                         "type": "integer",
@@ -457,7 +459,7 @@
                 "2D"
             ],
             "default": "none",
-            "definition": "Used to perform calculation assuming the system to be isolated (a molecule or a cluster in a 3D supercell)"
+            "description": "Used to perform calculation assuming the system to be isolated (a molecule or a cluster in a 3D supercell)"
         },
         "esm_bc": {
             "type": "string",
@@ -468,7 +470,7 @@
                 "bc3"
             ],
             "default": "pbc",
-            "definition": "If assume_isolated = 'esm', determines the boundary conditions used for either side of the slab."
+            "description": "If assume_isolated = 'esm', determines the boundary conditions used for either side of the slab."
         },
         "esm_w": {
             "type": "number",
@@ -507,6 +509,7 @@
         "vdw_corr": {
             "type": "string",
             "enum": [
+                "none",
                 "grimme-d2",
                 "Grimme-D2",
                 "DFT-D",

@@ -1,22 +1,20 @@
 {
     "$id": "methods-category/mathematical/intgr/transf",
-    "$schema": "http://json-schema.org/draft-04/schema#",
+    "$schema": "http://json-schema.org/draft-07/schema#",
     "description": "Integral transform methods",
-    "title": "categories",
+    "title": "Integral transform methods schema",
     "type": "object",
     "properties": {
         "tier2": {
             "enum": [
                 "transf"
             ],
-            "$id": "core/primitive/slugified-entry-or-slug",
-            "$schema": "http://json-schema.org/draft-04/schema#",
+            "$schema": "http://json-schema.org/draft-07/schema#",
             "title": "slugified entry or slug",
             "description": "contains either object with slugified entry or slug only as a string",
             "oneOf": [
                 {
-                    "$id": "core/primitive/slugified-entry",
-                    "$schema": "http://json-schema.org/draft-04/schema#",
+                    "$schema": "http://json-schema.org/draft-07/schema#",
                     "title": "slugified entry",
                     "description": "container for machine- and human-readable identifier",
                     "type": "object",
@@ -44,14 +42,12 @@
             "enum": [
                 "intgr"
             ],
-            "$id": "core/primitive/slugified-entry-or-slug",
-            "$schema": "http://json-schema.org/draft-04/schema#",
+            "$schema": "http://json-schema.org/draft-07/schema#",
             "title": "slugified entry or slug",
             "description": "contains either object with slugified entry or slug only as a string",
             "oneOf": [
                 {
-                    "$id": "core/primitive/slugified-entry",
-                    "$schema": "http://json-schema.org/draft-04/schema#",
+                    "$schema": "http://json-schema.org/draft-07/schema#",
                     "title": "slugified entry",
                     "description": "container for machine- and human-readable identifier",
                     "type": "object",
@@ -76,14 +72,12 @@
             ]
         },
         "tier3": {
-            "$id": "core/primitive/slugified-entry-or-slug",
-            "$schema": "http://json-schema.org/draft-04/schema#",
+            "$schema": "http://json-schema.org/draft-07/schema#",
             "title": "slugified entry or slug",
             "description": "contains either object with slugified entry or slug only as a string",
             "oneOf": [
                 {
-                    "$id": "core/primitive/slugified-entry",
-                    "$schema": "http://json-schema.org/draft-04/schema#",
+                    "$schema": "http://json-schema.org/draft-07/schema#",
                     "title": "slugified entry",
                     "description": "container for machine- and human-readable identifier",
                     "type": "object",
@@ -108,14 +102,12 @@
             ]
         },
         "type": {
-            "$id": "core/primitive/slugified-entry-or-slug",
-            "$schema": "http://json-schema.org/draft-04/schema#",
+            "$schema": "http://json-schema.org/draft-07/schema#",
             "title": "slugified entry or slug",
             "description": "contains either object with slugified entry or slug only as a string",
             "oneOf": [
                 {
-                    "$id": "core/primitive/slugified-entry",
-                    "$schema": "http://json-schema.org/draft-04/schema#",
+                    "$schema": "http://json-schema.org/draft-07/schema#",
                     "title": "slugified entry",
                     "description": "container for machine- and human-readable identifier",
                     "type": "object",
@@ -140,14 +132,12 @@
             ]
         },
         "subtype": {
-            "$id": "core/primitive/slugified-entry-or-slug",
-            "$schema": "http://json-schema.org/draft-04/schema#",
+            "$schema": "http://json-schema.org/draft-07/schema#",
             "title": "slugified entry or slug",
             "description": "contains either object with slugified entry or slug only as a string",
             "oneOf": [
                 {
-                    "$id": "core/primitive/slugified-entry",
-                    "$schema": "http://json-schema.org/draft-04/schema#",
+                    "$schema": "http://json-schema.org/draft-07/schema#",
                     "title": "slugified entry",
                     "description": "container for machine- and human-readable identifier",
                     "type": "object",

@@ -1,12 +1,12 @@
 {
     "$id": "core/reference/modeling",
-    "$schema": "http://json-schema.org/draft-04/schema#",
+    "$schema": "http://json-schema.org/draft-07/schema#",
     "title": "info for property obtained by modeling, only supports exabyte-originated data atm, but easily extendable",
     "oneOf": [
         {
-            "$id": "core/reference/modeling/exabyte",
-            "$schema": "http://json-schema.org/draft-04/schema#",
+            "$schema": "http://json-schema.org/draft-07/schema#",
             "title": "info for characteristic obtained by exabyte calculation",
+            "type": "object",
             "properties": {
                 "type": {
                     "enum": [
@@ -23,9 +23,9 @@
                     "type": "string"
                 },
                 "owner": {
-                    "$id": "system/entity-reference",
-                    "$schema": "http://json-schema.org/draft-04/schema#",
+                    "$schema": "http://json-schema.org/draft-07/schema#",
                     "title": "entity reference schema",
+                    "type": "object",
                     "properties": {
                         "_id": {
                             "description": "entity identity",

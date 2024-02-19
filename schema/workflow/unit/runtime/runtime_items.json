@@ -1,6 +1,6 @@
 {
     "$id": "workflow/unit/runtime/runtime-items",
-    "$schema": "http://json-schema.org/draft-04/schema#",
+    "$schema": "http://json-schema.org/draft-07/schema#",
     "title": "runtime items schema (pre-/post-processors, monitors, results",
     "type": "object",
     "properties": {
@@ -8,13 +8,11 @@
             "description": "names of the pre-processors for this calculation",
             "type": "array",
             "items": {
-                "$id": "workflow/unit/runtime/runtime-item",
-                "$schema": "http://json-schema.org/draft-04/schema#",
+                "$schema": "http://json-schema.org/draft-07/schema#",
                 "title": "runtime item schema",
                 "oneOf": [
                     {
-                        "$id": "workflow/unit/runtime/-runtime-item-name-object",
-                        "$schema": "http://json-schema.org/draft-04/schema#",
+                        "$schema": "http://json-schema.org/draft-07/schema#",
                         "title": "name result schema",
                         "type": "object",
                         "properties": {
@@ -28,8 +26,7 @@
                         ]
                     },
                     {
-                        "$id": "workflow/unit/runtime/-runtime-item-string",
-                        "$schema": "http://json-schema.org/draft-04/schema#",
+                        "$schema": "http://json-schema.org/draft-07/schema#",
                         "title": "RuntimeItemString",
                         "description": "name of runtime item in shortened notation",
                         "type": "string"
@@ -41,13 +38,11 @@
             "description": "names of the post-processors for this calculation",
             "type": "array",
             "items": {
-                "$id": "workflow/unit/runtime/runtime-item",
-                "$schema": "http://json-schema.org/draft-04/schema#",
+                "$schema": "http://json-schema.org/draft-07/schema#",
                 "title": "runtime item schema",
                 "oneOf": [
                     {
-                        "$id": "workflow/unit/runtime/-runtime-item-name-object",
-                        "$schema": "http://json-schema.org/draft-04/schema#",
+                        "$schema": "http://json-schema.org/draft-07/schema#",
                         "title": "name result schema",
                         "type": "object",
                         "properties": {
@@ -61,8 +56,7 @@
                         ]
                     },
                     {
-                        "$id": "workflow/unit/runtime/-runtime-item-string",
-                        "$schema": "http://json-schema.org/draft-04/schema#",
+                        "$schema": "http://json-schema.org/draft-07/schema#",
                         "title": "RuntimeItemString",
                         "description": "name of runtime item in shortened notation",
                         "type": "string"
@@ -74,13 +68,11 @@
             "description": "names of the monitors for this calculation",
             "type": "array",
             "items": {
-                "$id": "workflow/unit/runtime/runtime-item",
-                "$schema": "http://json-schema.org/draft-04/schema#",
+                "$schema": "http://json-schema.org/draft-07/schema#",
                 "title": "runtime item schema",
                 "oneOf": [
                     {
-                        "$id": "workflow/unit/runtime/-runtime-item-name-object",
-                        "$schema": "http://json-schema.org/draft-04/schema#",
+                        "$schema": "http://json-schema.org/draft-07/schema#",
                         "title": "name result schema",
                         "type": "object",
                         "properties": {
@@ -94,8 +86,7 @@
                         ]
                     },
                     {
-                        "$id": "workflow/unit/runtime/-runtime-item-string",
-                        "$schema": "http://json-schema.org/draft-04/schema#",
+                        "$schema": "http://json-schema.org/draft-07/schema#",
                         "title": "RuntimeItemString",
                         "description": "name of runtime item in shortened notation",
                         "type": "string"
@@ -107,13 +98,11 @@
             "description": "names of the results for this calculation",
             "type": "array",
             "items": {
-                "$id": "workflow/unit/runtime/runtime-item",
-                "$schema": "http://json-schema.org/draft-04/schema#",
+                "$schema": "http://json-schema.org/draft-07/schema#",
                 "title": "runtime item schema",
                 "oneOf": [
                     {
-                        "$id": "workflow/unit/runtime/-runtime-item-name-object",
-                        "$schema": "http://json-schema.org/draft-04/schema#",
+                        "$schema": "http://json-schema.org/draft-07/schema#",
                         "title": "name result schema",
                         "type": "object",
                         "properties": {
@@ -127,8 +116,7 @@
                         ]
                     },
                     {
-                        "$id": "workflow/unit/runtime/-runtime-item-string",
-                        "$schema": "http://json-schema.org/draft-04/schema#",
+                        "$schema": "http://json-schema.org/draft-07/schema#",
                         "title": "RuntimeItemString",
                         "description": "name of runtime item in shortened notation",
                         "type": "string"

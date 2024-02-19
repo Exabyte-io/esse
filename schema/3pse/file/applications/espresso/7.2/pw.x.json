@@ -1,12 +1,12 @@
 {
     "$id": "3pse/file/applications/espresso/7.2/pw.x",
-    "$schema": "http://json-schema.org/draft-04/schema#",
+    "$schema": "http://json-schema.org/draft-07/schema#",
     "title": "pwx main schema",
+    "type": "object",
     "additionalProperties": false,
     "properties": {
         "&CONTROL": {
-            "$id": "3pse/file/applications/espresso/7.2/pw.x/control",
-            "$schema": "http://json-schema.org/draft-04/schema#",
+            "$schema": "http://json-schema.org/draft-07/schema#",
             "title": "control schema",
             "type": "object",
             "additionalProperties": false,
@@ -186,8 +186,7 @@
             }
         },
         "&SYSTEM": {
-            "$id": "3pse/file/applications/espresso/7.2/pw.x/system",
-            "$schema": "http://json-schema.org/draft-04/schema#",
+            "$schema": "http://json-schema.org/draft-07/schema#",
             "title": "system schema",
             "type": "object",
             "anyOf": [
@@ -195,8 +194,8 @@
                     "properties": {
                         "celldm": {
                             "type": "array",
-                            "minLength": 6,
-                            "maxLength": 6,
+                            "minItems": 6,
+                            "maxItems": 6,
                             "items": {
                                 "type": "number"
                             }
@@ -499,6 +498,8 @@
                     "type": "array",
                     "items": {
                         "type": "array",
+                        "minItems": 3,
+                        "maxItems": 3,
                         "items": [
                             {
                                 "type": "integer",
@@ -644,7 +645,7 @@
                         "2D"
                     ],
                     "default": "none",
-                    "definition": "Used to perform calculation assuming the system to be isolated (a molecule or a cluster in a 3D supercell)"
+                    "description": "Used to perform calculation assuming the system to be isolated (a molecule or a cluster in a 3D supercell)"
                 },
                 "esm_bc": {
                     "type": "string",
@@ -655,7 +656,7 @@
                         "bc3"
                     ],
                     "default": "pbc",
-                    "definition": "If assume_isolated = 'esm', determines the boundary conditions used for either side of the slab."
+                    "description": "If assume_isolated = 'esm', determines the boundary conditions used for either side of the slab."
                 },
                 "esm_w": {
                     "type": "number",
@@ -694,6 +695,7 @@
                 "vdw_corr": {
                     "type": "string",
                     "enum": [
+                        "none",
                         "grimme-d2",
                         "Grimme-D2",
                         "DFT-D",
@@ -835,8 +837,7 @@
             }
         },
         "&ELECTRONS": {
-            "$id": "3pse/file/applications/espresso/7.2/pw.x/electrons",
-            "$schema": "http://json-schema.org/draft-04/schema#",
+            "$schema": "http://json-schema.org/draft-07/schema#",
             "title": "electrons schema",
             "type": "object",
             "additionalProperties": false,
@@ -950,8 +951,7 @@
                     "description": "Amplitude of the finite electric field (in Ry a.u.; 1 a.u. = 36.3609*10^10 V/m). Used only if lelfield==.TRUE. and if k-points (K_POINTS card) are not automatic."
                 },
                 "efield_cart": {
-                    "$id": "core/primitive/array-of-3-numbers",
-                    "$schema": "http://json-schema.org/draft-04/schema#",
+                    "$schema": "http://json-schema.org/draft-07/schema#",
                     "title": "array of 3 number elements schema",
                     "type": "array",
                     "minItems": 3,
@@ -1001,8 +1001,7 @@
         "&IONS": {
             "oneOf": [
                 {
-                    "$id": "3pse/file/applications/espresso/7.2/pw.x/ions",
-                    "$schema": "http://json-schema.org/draft-04/schema#",
+                    "$schema": "http://json-schema.org/draft-07/schema#",
                     "title": "ions schema",
                     "type": "object",
                     "additionalProperties": false,
@@ -1224,8 +1223,7 @@
         "&CELL": {
             "oneOf": [
                 {
-                    "$id": "3pse/file/applications/espresso/7.2/pw.x/cell",
-                    "$schema": "http://json-schema.org/draft-04/schema#",
+                    "$schema": "http://json-schema.org/draft-07/schema#",
                     "title": "cell schema",
                     "type": "object",
                     "additionalProperties": false,
@@ -1318,8 +1316,7 @@
             ]
         },
         "ATOMIC_SPECIES": {
-            "$id": "3pse/file/applications/espresso/7.2/pw.x/atomic-species",
-            "$schema": "http://json-schema.org/draft-04/schema#",
+            "$schema": "http://json-schema.org/draft-07/schema#",
             "title": "atomic species schema",
             "type": "object",
             "additionalProperties": false,
@@ -1348,8 +1345,7 @@
             }
         },
         "ATOMIC_POSITIONS": {
-            "$id": "3pse/file/applications/espresso/7.2/pw.x/atomic-positions",
-            "$schema": "http://json-schema.org/draft-04/schema#",
+            "$schema": "http://json-schema.org/draft-07/schema#",
             "title": "atomic positions schema",
             "description": "https://www.quantum-espresso.org/Doc/INPUT_PW.html#idm1493",
             "type": "object",
@@ -1394,24 +1390,21 @@
                                 "description": "atomic positions"
                             },
                             "if_pos(1)": {
-                                "$id": "core/primitive/integer-one-or-zero",
-                                "$schema": "http://json-schema.org/draft-04/schema#",
+                                "$schema": "http://json-schema.org/draft-07/schema#",
                                 "title": "integer one or zero",
                                 "type": "integer",
                                 "minimum": 0,
                                 "maximum": 1
                             },
                             "if_pos(2)": {
-                                "$id": "core/primitive/integer-one-or-zero",
-                                "$schema": "http://json-schema.org/draft-04/schema#",
+                                "$schema": "http://json-schema.org/draft-07/schema#",
                                 "title": "integer one or zero",
                                 "type": "integer",
                                 "minimum": 0,
                                 "maximum": 1
                             },
                             "if_pos(3)": {
-                                "$id": "core/primitive/integer-one-or-zero",
-                                "$schema": "http://json-schema.org/draft-04/schema#",
+                                "$schema": "http://json-schema.org/draft-07/schema#",
                                 "title": "integer one or zero",
                                 "type": "integer",
                                 "minimum": 0,
@@ -1423,8 +1416,7 @@
             }
         },
         "K_POINTS": {
-            "$id": "3pse/file/applications/espresso/7.2/pw.x/k-points",
-            "$schema": "http://json-schema.org/draft-04/schema#",
+            "$schema": "http://json-schema.org/draft-07/schema#",
             "title": "k points schema",
             "type": "object",
             "additionalProperties": false,
@@ -1510,8 +1502,7 @@
             }
         },
         "CELL_PARAMETERS": {
-            "$id": "3pse/file/applications/espresso/7.2/pw.x/cell-parameters",
-            "$schema": "http://json-schema.org/draft-04/schema#",
+            "$schema": "http://json-schema.org/draft-07/schema#",
             "title": "cell parameters schema",
             "type": "object",
             "additionalProperties": false,
@@ -1530,8 +1521,7 @@
                     "additionalProperties": false,
                     "properties": {
                         "v1": {
-                            "$id": "core/primitive/array-of-3-numbers",
-                            "$schema": "http://json-schema.org/draft-04/schema#",
+                            "$schema": "http://json-schema.org/draft-07/schema#",
                             "title": "array of 3 number elements schema",
                             "type": "array",
                             "minItems": 3,
@@ -1541,8 +1531,7 @@
                             }
                         },
                         "v2": {
-                            "$id": "core/primitive/array-of-3-numbers",
-                            "$schema": "http://json-schema.org/draft-04/schema#",
+                            "$schema": "http://json-schema.org/draft-07/schema#",
                             "title": "array of 3 number elements schema",
                             "type": "array",
                             "minItems": 3,
@@ -1552,8 +1541,7 @@
                             }
                         },
                         "v3": {
-                            "$id": "core/primitive/array-of-3-numbers",
-                            "$schema": "http://json-schema.org/draft-04/schema#",
+                            "$schema": "http://json-schema.org/draft-07/schema#",
                             "title": "array of 3 number elements schema",
                             "type": "array",
                             "minItems": 3,
@@ -1567,8 +1555,7 @@
             }
         },
         "HUBBARD": {
-            "$id": "3pse/file/applications/espresso/7.2/pw.x/hubbard",
-            "$schema": "http://json-schema.org/draft-04/schema#",
+            "$schema": "http://json-schema.org/draft-07/schema#",
             "title": "hubbard schema",
             "type": "object",
             "additionalProperties": false,

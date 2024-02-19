@@ -1,0 +1,95 @@
+{
+    "$id": "properties-directory/non-scalar/phonon-dos",
+    "$schema": "http://json-schema.org/draft-07/schema#",
+    "title": "Phonon density of states schema",
+    "type": "object",
+    "required": [
+        "xAxis",
+        "xDataArray",
+        "yAxis",
+        "yDataSeries"
+    ],
+    "properties": {
+        "xAxis": {
+            "type": "object",
+            "$schema": "http://json-schema.org/draft-07/schema#",
+            "title": "axis schema",
+            "required": [
+                "label"
+            ],
+            "properties": {
+                "label": {
+                    "enum": [
+                        "frequency"
+                    ],
+                    "description": "label of an axis object",
+                    "type": "string"
+                },
+                "units": {
+                    "enum": [
+                        "cm-1",
+                        "THz",
+                        "meV"
+                    ],
+                    "description": "units for an axis",
+                    "type": "string"
+                }
+            }
+        },
+        "yAxis": {
+            "type": "object",
+            "$schema": "http://json-schema.org/draft-07/schema#",
+            "title": "axis schema",
+            "required": [
+                "label"
+            ],
+            "properties": {
+                "label": {
+                    "enum": [
+                        "Phonon DOS"
+                    ],
+                    "description": "label of an axis object",
+                    "type": "string"
+                },
+                "units": {
+                    "enum": [
+                        "states/cm-1",
+                        "states/THz",
+                        "states/meV"
+                    ],
+                    "description": "units for an axis",
+                    "type": "string"
+                }
+            }
+        },
+        "name": {
+            "enum": [
+                "phonon_dos"
+            ]
+        },
+        "legend": {
+            "description": "Legend of y Axis data series",
+            "minItems": 1,
+            "type": "array"
+        },
+        "xDataArray": {
+            "description": "array containing values of x Axis",
+            "type": "array"
+        },
+        "yDataSeries": {
+            "$schema": "http://json-schema.org/draft-07/schema#",
+            "title": "1 dimension data series schema",
+            "type": "array",
+            "items": {
+                "type": "array",
+                "minItems": 1,
+                "items": {
+                    "type": [
+                        "number",
+                        "string"
+                    ]
+                }
+            }
+        }
+    }
+}

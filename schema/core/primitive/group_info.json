@@ -1,6 +1,6 @@
 {
     "$id": "core/primitive/group-info",
-    "$schema": "http://json-schema.org/draft-04/schema#",
+    "$schema": "http://json-schema.org/draft-07/schema#",
     "title": "Group info schema for nodes in a graph",
     "type": "object",
     "properties": {

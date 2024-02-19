@@ -1,7 +1,8 @@
 {
     "$id": "system/-project",
-    "$schema": "http://json-schema.org/draft-04/schema#",
+    "$schema": "http://json-schema.org/draft-07/schema#",
     "title": "Project entity reference schema",
+    "type": "object",
     "properties": {
         "cls": {
             "description": "Project class",

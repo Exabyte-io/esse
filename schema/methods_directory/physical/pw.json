@@ -1,32 +1,29 @@
 {
     "$id": "methods-directory/physical/pw",
-    "$schema": "http://json-schema.org/draft-04/schema#",
+    "$schema": "http://json-schema.org/draft-07/schema#",
     "title": "unit method plane wave",
     "description": "Approximating the electronic wave function with a plane wave basis",
+    "type": "object",
     "required": [
         "categories"
     ],
-    "type": "object",
     "properties": {
         "categories": {
-            "$id": "methods-category/physical/qm/wf/pw",
-            "$schema": "http://json-schema.org/draft-04/schema#",
-            "description": "Plane wave catgeory schema",
-            "title": "categories",
+            "$schema": "http://json-schema.org/draft-07/schema#",
+            "title": "Plane wave catgeory schema",
             "type": "object",
+            "description": "Used to categorize entities such as models and methods",
             "properties": {
                 "type": {
                     "enum": [
                         "pw"
                     ],
-                    "$id": "core/primitive/slugified-entry-or-slug",
-                    "$schema": "http://json-schema.org/draft-04/schema#",
+                    "$schema": "http://json-schema.org/draft-07/schema#",
                     "title": "slugified entry or slug",
                     "description": "contains either object with slugified entry or slug only as a string",
                     "oneOf": [
                         {
-                            "$id": "core/primitive/slugified-entry",
-                            "$schema": "http://json-schema.org/draft-04/schema#",
+                            "$schema": "http://json-schema.org/draft-07/schema#",
                             "title": "slugified entry",
                             "description": "container for machine- and human-readable identifier",
                             "type": "object",
@@ -54,14 +51,12 @@
                     "enum": [
                         "wf"
                     ],
-                    "$id": "core/primitive/slugified-entry-or-slug",
-                    "$schema": "http://json-schema.org/draft-04/schema#",
+                    "$schema": "http://json-schema.org/draft-07/schema#",
                     "title": "slugified entry or slug",
                     "description": "contains either object with slugified entry or slug only as a string",
                     "oneOf": [
                         {
-                            "$id": "core/primitive/slugified-entry",
-                            "$schema": "http://json-schema.org/draft-04/schema#",
+                            "$schema": "http://json-schema.org/draft-07/schema#",
                             "title": "slugified entry",
                             "description": "container for machine- and human-readable identifier",
                             "type": "object",
@@ -89,14 +84,12 @@
                     "enum": [
                         "qm"
                     ],
-                    "$id": "core/primitive/slugified-entry-or-slug",
-                    "$schema": "http://json-schema.org/draft-04/schema#",
+                    "$schema": "http://json-schema.org/draft-07/schema#",
                     "title": "slugified entry or slug",
                     "description": "contains either object with slugified entry or slug only as a string",
                     "oneOf": [
                         {
-                            "$id": "core/primitive/slugified-entry",
-                            "$schema": "http://json-schema.org/draft-04/schema#",
+                            "$schema": "http://json-schema.org/draft-07/schema#",
                             "title": "slugified entry",
                             "description": "container for machine- and human-readable identifier",
                             "type": "object",
@@ -121,14 +114,12 @@
                     ]
                 },
                 "tier3": {
-                    "$id": "core/primitive/slugified-entry-or-slug",
-                    "$schema": "http://json-schema.org/draft-04/schema#",
+                    "$schema": "http://json-schema.org/draft-07/schema#",
                     "title": "slugified entry or slug",
                     "description": "contains either object with slugified entry or slug only as a string",
                     "oneOf": [
                         {
-                            "$id": "core/primitive/slugified-entry",
-                            "$schema": "http://json-schema.org/draft-04/schema#",
+                            "$schema": "http://json-schema.org/draft-07/schema#",
                             "title": "slugified entry",
                             "description": "container for machine- and human-readable identifier",
                             "type": "object",
@@ -153,14 +144,12 @@
                     ]
                 },
                 "subtype": {
-                    "$id": "core/primitive/slugified-entry-or-slug",
-                    "$schema": "http://json-schema.org/draft-04/schema#",
+                    "$schema": "http://json-schema.org/draft-07/schema#",
                     "title": "slugified entry or slug",
                     "description": "contains either object with slugified entry or slug only as a string",
                     "oneOf": [
                         {
-                            "$id": "core/primitive/slugified-entry",
-                            "$schema": "http://json-schema.org/draft-04/schema#",
+                            "$schema": "http://json-schema.org/draft-07/schema#",
                             "title": "slugified entry",
                             "description": "container for machine- and human-readable identifier",
                             "type": "object",
@@ -199,8 +188,7 @@
             "type": "string"
         },
         "path": {
-            "$id": "core/reusable/category-path",
-            "$schema": "http://json-schema.org/draft-04/schema#",
+            "$schema": "http://json-schema.org/draft-07/schema#",
             "title": "category path schema",
             "description": "TODO: Use regex once schema draft version has been updated",
             "type": "string"

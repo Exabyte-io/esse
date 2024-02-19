@@ -1,7 +1,8 @@
 {
     "$id": "methods-directory/legacy/pseudopotential",
-    "$schema": "http://json-schema.org/draft-04/schema#",
+    "$schema": "http://json-schema.org/draft-07/schema#",
     "title": "legacy method pseudopotential",
+    "type": "object",
     "required": [
         "type",
         "subtype"

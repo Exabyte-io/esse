@@ -1,7 +1,8 @@
 {
     "$id": "properties-directory/structural/symmetry",
-    "$schema": "http://json-schema.org/draft-04/schema#",
+    "$schema": "http://json-schema.org/draft-07/schema#",
     "title": "symmetry schema",
+    "type": "object",
     "properties": {
         "pointGroupSymbol": {
             "description": "point group symbol in Schoenflies notation",
@@ -12,11 +13,10 @@
             "type": "string"
         },
         "tolerance": {
-            "description": "tolerance used for symmetry calculation",
-            "$id": "core/primitive/scalar",
-            "$schema": "http://json-schema.org/draft-04/schema#",
-            "title": "scalar schema",
             "type": "object",
+            "description": "tolerance used for symmetry calculation",
+            "$schema": "http://json-schema.org/draft-07/schema#",
+            "title": "scalar schema",
             "required": [
                 "value"
             ],

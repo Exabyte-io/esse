@@ -1,7 +1,8 @@
 {
     "$id": "material",
-    "$schema": "http://json-schema.org/draft-04/schema#",
+    "$schema": "http://json-schema.org/draft-07/schema#",
     "title": "material schema",
+    "type": "object",
     "required": [
         "basis",
         "lattice"
@@ -16,8 +17,7 @@
             "type": "string"
         },
         "basis": {
-            "$id": "properties-directory/structural/basis",
-            "$schema": "http://json-schema.org/draft-04/schema#",
+            "$schema": "http://json-schema.org/draft-07/schema#",
             "title": "basis schema",
             "type": "object",
             "required": [
@@ -28,10 +28,10 @@
                 "elements": {
                     "type": "array",
                     "items": {
-                        "$id": "properties-directory/structural/basis/atomic-element",
-                        "$schema": "http://json-schema.org/draft-04/schema#",
+                        "$schema": "http://json-schema.org/draft-07/schema#",
                         "title": "atomic elements",
                         "description": "elements of atoms by ids, string, unitless",
+                        "type": "object",
                         "required": [
                             "id",
                             "value"
@@ -56,22 +56,20 @@
                 "coordinates": {
                     "type": "array",
                     "items": {
-                        "$id": "properties-directory/structural/basis/atomic-coordinate",
-                        "$schema": "http://json-schema.org/draft-04/schema#",
+                        "$schema": "http://json-schema.org/draft-07/schema#",
                         "title": "atomic coordinate",
                         "description": "coordinates of atoms by ids, vector, unitless",
+                        "type": "object",
                         "properties": {
                             "id": {
                                 "type": "number"
                             },
                             "value": {
-                                "$id": "core/abstract/vector",
-                                "$schema": "http://json-schema.org/draft-04/schema#",
+                                "$schema": "http://json-schema.org/draft-07/schema#",
                                 "title": "vector schema",
                                 "oneOf": [
                                     {
-                                        "$id": "core/primitive/array-of-3-numbers",
-                                        "$schema": "http://json-schema.org/draft-04/schema#",
+                                        "$schema": "http://json-schema.org/draft-07/schema#",
                                         "title": "array of 3 number elements schema",
                                         "type": "array",
                                         "items": {
@@ -81,8 +79,7 @@
                                         "maxItems": 3
                                     },
                                     {
-                                        "$id": "core/primitive/array-of-3-booleans",
-                                        "$schema": "http://json-schema.org/draft-04/schema#",
+                                        "$schema": "http://json-schema.org/draft-07/schema#",
                                         "title": "array of 3 boolean elements schema",
                                         "type": "array",
                                         "items": {
@@ -103,8 +100,7 @@
                     "type": "string"
                 },
                 "bonds": {
-                    "$id": "properties-directory/structural/basis/bonds",
-                    "$schema": "http://json-schema.org/draft-04/schema#",
+                    "$schema": "http://json-schema.org/draft-07/schema#",
                     "title": "bonds schema",
                     "type": "array",
                     "uniqueItems": true,
@@ -113,15 +109,13 @@
                         "properties": {
                             "atomPair": {
                                 "description": "indices of the two connected atoms",
+                                "type": "array",
                                 "minItems": 2,
                                 "maxItems": 2,
-                                "$id": "core/primitive/array-of-ids",
-                                "$schema": "http://json-schema.org/draft-04/schema#",
+                                "$schema": "http://json-schema.org/draft-07/schema#",
                                 "title": "atomic ids",
-                                "type": "array",
                                 "items": {
                                     "type": "object",
-                                    "uniqueItems": true,
                                     "properties": {
                                         "id": {
                                             "description": "integer id of this entry",
@@ -149,8 +143,7 @@
             }
         },
         "lattice": {
-            "$id": "properties-directory/structural/lattice",
-            "$schema": "http://json-schema.org/draft-04/schema#",
+            "$schema": "http://json-schema.org/draft-07/schema#",
             "title": "lattice schema",
             "type": "object",
             "required": [
@@ -169,8 +162,7 @@
                     ]
                 },
                 "vectors": {
-                    "$id": "properties-directory/structural/lattice/lattice-vectors",
-                    "$schema": "http://json-schema.org/draft-04/schema#",
+                    "$schema": "http://json-schema.org/draft-07/schema#",
                     "title": "lattice explicit unit",
                     "type": "object",
                     "required": [
@@ -200,8 +192,7 @@
                             ]
                         },
                         "a": {
-                            "$id": "core/primitive/array-of-3-numbers",
-                            "$schema": "http://json-schema.org/draft-04/schema#",
+                            "$schema": "http://json-schema.org/draft-07/schema#",
                             "title": "array of 3 number elements schema",
                             "type": "array",
                             "minItems": 3,
@@ -211,8 +202,7 @@
                             }
                         },
                         "b": {
-                            "$id": "core/primitive/array-of-3-numbers",
-                            "$schema": "http://json-schema.org/draft-04/schema#",
+                            "$schema": "http://json-schema.org/draft-07/schema#",
                             "title": "array of 3 number elements schema",
                             "type": "array",
                             "minItems": 3,
@@ -222,8 +212,7 @@
                             }
                         },
                         "c": {
-                            "$id": "core/primitive/array-of-3-numbers",
-                            "$schema": "http://json-schema.org/draft-04/schema#",
+                            "$schema": "http://json-schema.org/draft-07/schema#",
                             "title": "array of 3 number elements schema",
                             "type": "array",
                             "minItems": 3,
@@ -235,8 +224,7 @@
                     }
                 },
                 "type": {
-                    "$id": "properties-directory/structural/lattice/type-enum",
-                    "$schema": "http://json-schema.org/draft-04/schema#",
+                    "$schema": "http://json-schema.org/draft-07/schema#",
                     "title": "lattice type schema",
                     "type": "string",
                     "enum": [
@@ -302,15 +290,13 @@
             }
         },
         "derivedProperties": {
-            "$id": "properties-directory/derived-properties",
-            "$schema": "http://json-schema.org/draft-04/schema#",
+            "$schema": "http://json-schema.org/draft-07/schema#",
             "title": "derived properties schema",
             "type": "array",
             "items": {
-                "anyOf": [
+                "oneOf": [
                     {
-                        "$id": "properties-directory/structural/volume",
-                        "$schema": "http://json-schema.org/draft-04/schema#",
+                        "$schema": "http://json-schema.org/draft-07/schema#",
                         "title": "volume schema",
                         "type": "object",
                         "required": [
@@ -333,8 +319,7 @@
                         }
                     },
                     {
-                        "$id": "properties-directory/structural/density",
-                        "$schema": "http://json-schema.org/draft-04/schema#",
+                        "$schema": "http://json-schema.org/draft-07/schema#",
                         "title": "density schema",
                         "type": "object",
                         "required": [
@@ -357,9 +342,9 @@
                         }
                     },
                     {
-                        "$id": "properties-directory/structural/symmetry",
-                        "$schema": "http://json-schema.org/draft-04/schema#",
+                        "$schema": "http://json-schema.org/draft-07/schema#",
                         "title": "symmetry schema",
+                        "type": "object",
                         "properties": {
                             "pointGroupSymbol": {
                                 "description": "point group symbol in Schoenflies notation",
@@ -370,11 +355,10 @@
                                 "type": "string"
                             },
                             "tolerance": {
-                                "description": "tolerance used for symmetry calculation",
-                                "$id": "core/primitive/scalar",
-                                "$schema": "http://json-schema.org/draft-04/schema#",
-                                "title": "scalar schema",
                                 "type": "object",
+                                "description": "tolerance used for symmetry calculation",
+                                "$schema": "http://json-schema.org/draft-07/schema#",
+                                "title": "scalar schema",
                                 "required": [
                                     "value"
                                 ],
@@ -397,8 +381,7 @@
                         }
                     },
                     {
-                        "$id": "properties-directory/structural/elemental-ratio",
-                        "$schema": "http://json-schema.org/draft-04/schema#",
+                        "$schema": "http://json-schema.org/draft-07/schema#",
                         "title": "elemental-ratio",
                         "description": "ration of this element in the compound",
                         "type": "object",
@@ -413,8 +396,8 @@
                             },
                             "value": {
                                 "type": "number",
-                                "min": 0,
-                                "max": 1
+                                "minimum": 0,
+                                "maximum": 1
                             },
                             "element": {
                                 "type": "string",
@@ -423,8 +406,7 @@
                         }
                     },
                     {
-                        "$id": "properties-directory/structural/p-norm",
-                        "$schema": "http://json-schema.org/draft-04/schema#",
+                        "$schema": "http://json-schema.org/draft-07/schema#",
                         "title": "p_norm",
                         "description": "https://en.wikipedia.org/wiki/Norm_(mathematics)#p-norm",
                         "type": "object",
@@ -447,8 +429,7 @@
                         }
                     },
                     {
-                        "$id": "properties-directory/structural/inchi",
-                        "$schema": "http://json-schema.org/draft-04/schema#",
+                        "$schema": "http://json-schema.org/draft-07/schema#",
                         "title": "InChI representation schema",
                         "type": "object",
                         "required": [
@@ -466,8 +447,7 @@
                         }
                     },
                     {
-                        "$id": "properties-directory/structural/inchi-key",
-                        "$schema": "http://json-schema.org/draft-04/schema#",
+                        "$schema": "http://json-schema.org/draft-07/schema#",
                         "title": "InChI key representation schema",
                         "type": "object",
                         "required": [
@@ -484,12 +464,17 @@
                             }
                         }
                     }
+                ],
+                "discriminator": {
+                    "propertyName": "name"
+                },
+                "required": [
+                    "name"
                 ]
             }
         },
         "external": {
-            "$id": "system/database-source",
-            "$schema": "http://json-schema.org/draft-04/schema#",
+            "$schema": "http://json-schema.org/draft-07/schema#",
             "title": "database source schema",
             "description": "information about a database source",
             "type": "object",
@@ -508,9 +493,8 @@
                     "type": "string"
                 },
                 "origin": {
-                    "description": "A flag that is true when material is initially imported from a third party * (as opposed to being independently designed from scratch).",
-                    "type": "boolean",
-                    "comment": "Deprecated. To be removed."
+                    "description": "Deprecated. To be removed. A flag that is true when material is initially imported from a third party * (as opposed to being independently designed from scratch).",
+                    "type": "boolean"
                 },
                 "data": {
                     "description": "Original response from external source.",
@@ -521,15 +505,13 @@
                     "type": "string"
                 },
                 "url": {
-                    "description": "The URL of the original record, e.g. https://next-gen.materialsproject.org/materials/mp-48",
-                    "type": "string",
-                    "comment": "ToDo: update to use URI type per https://json-schema.org/understanding-json-schema/reference/string#resource-identifiers"
+                    "description": "The URL of the original record, e.g. https://next-gen.materialsproject.org/materials/mp-48; ToDo: update to use URI type per https://json-schema.org/understanding-json-schema/reference/string#resource-identifiers",
+                    "type": "string"
                 }
             }
         },
         "src": {
-            "$id": "system/file-source",
-            "$schema": "http://json-schema.org/draft-04/schema#",
+            "$schema": "http://json-schema.org/draft-07/schema#",
             "title": "file source schema",
             "description": "file source with the information inside",
             "type": "object",
@@ -583,8 +565,7 @@
         "consistencyChecks": {
             "type": "array",
             "items": {
-                "$id": "system/consistency-check",
-                "$schema": "http://json-schema.org/draft-04/schema#",
+                "$schema": "http://json-schema.org/draft-07/schema#",
                 "title": "consistency check",
                 "type": "object",
                 "description": "The output of consistency checks performed on data adhering to JSON schema, but inconsistent with scientific or logical rules, to show problems in UI.",

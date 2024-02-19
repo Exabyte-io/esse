@@ -1,7 +1,8 @@
 {
     "$id": "models-directory/legacy/ml",
-    "$schema": "http://json-schema.org/draft-04/schema#",
+    "$schema": "http://json-schema.org/draft-07/schema#",
     "title": "legacy model regression",
+    "type": "object",
     "required": [
         "type",
         "subtype",
@@ -24,9 +25,9 @@
             "type": "string"
         },
         "method": {
-            "$id": "method",
-            "$schema": "http://json-schema.org/draft-04/schema#",
+            "$schema": "http://json-schema.org/draft-07/schema#",
             "title": "base method",
+            "type": "object",
             "required": [
                 "type",
                 "subtype"

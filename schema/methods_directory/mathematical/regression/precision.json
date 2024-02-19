@@ -1,14 +1,13 @@
 {
     "$id": "methods-directory/mathematical/regression/precision",
-    "$schema": "http://json-schema.org/draft-04/schema#",
+    "$schema": "http://json-schema.org/draft-07/schema#",
     "title": "regression precision",
     "type": "object",
     "properties": {
         "perProperty": {
             "type": "array",
             "items": {
-                "$id": "methods-directory/mathematical/regression/precision-per-property",
-                "$schema": "http://json-schema.org/draft-04/schema#",
+                "$schema": "http://json-schema.org/draft-07/schema#",
                 "title": "regression precision per property schema",
                 "type": "object",
                 "required": [

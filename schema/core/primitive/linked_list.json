@@ -1,14 +1,13 @@
 {
     "$id": "core/primitive/linked-list",
-    "$schema": "http://json-schema.org/draft-04/schema#",
+    "$schema": "http://json-schema.org/draft-07/schema#",
     "title": "linked list schema",
     "type": "array",
     "items": {
         "type": "object",
         "anyOf": [
             {
-                "$id": "core/primitive/linked-list/base-node",
-                "$schema": "http://json-schema.org/draft-04/schema#",
+                "$schema": "http://json-schema.org/draft-07/schema#",
                 "title": "basic node schema (linked list)",
                 "type": "object",
                 "definitions": {
@@ -43,8 +42,7 @@
                 }
             },
             {
-                "$id": "core/primitive/linked-list/named-node",
-                "$schema": "http://json-schema.org/draft-04/schema#",
+                "$schema": "http://json-schema.org/draft-07/schema#",
                 "title": "Named node schema",
                 "type": "object",
                 "definitions": {
@@ -83,8 +81,7 @@
                 }
             },
             {
-                "$id": "core/primitive/linked-list/named-node-in-group",
-                "$schema": "http://json-schema.org/draft-04/schema#",
+                "$schema": "http://json-schema.org/draft-07/schema#",
                 "title": "Named node in group schema",
                 "type": "object",
                 "definitions": {
@@ -131,8 +128,7 @@
                 }
             },
             {
-                "$id": "core/primitive/linked-list/node-with-type",
-                "$schema": "http://json-schema.org/draft-04/schema#",
+                "$schema": "http://json-schema.org/draft-07/schema#",
                 "title": "Typed node schema",
                 "type": "object",
                 "definitions": {

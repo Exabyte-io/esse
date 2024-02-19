@@ -1,7 +1,8 @@
 {
     "$id": "property/base",
-    "$schema": "http://json-schema.org/draft-04/schema#",
+    "$schema": "http://json-schema.org/draft-07/schema#",
     "title": "Schema of base material's preliminary property",
+    "type": "object",
     "required": [
         "data",
         "source"
@@ -20,8 +21,7 @@
             "type": "object"
         },
         "source": {
-            "$id": "property/source",
-            "$schema": "http://json-schema.org/draft-04/schema#",
+            "$schema": "http://json-schema.org/draft-07/schema#",
             "title": "The source of a property. This could be an article, a simulation on Exabyte, an external simulation, etc.",
             "type": "object",
             "properties": {
@@ -36,8 +36,7 @@
                 "info": {
                     "oneOf": [
                         {
-                            "$id": "core/reference/exabyte",
-                            "$schema": "http://json-schema.org/draft-04/schema#",
+                            "$schema": "http://json-schema.org/draft-07/schema#",
                             "type": "object",
                             "properties": {
                                 "materialId": {
@@ -55,9 +54,9 @@
                             }
                         },
                         {
-                            "$id": "core/reference/experiment",
-                            "$schema": "http://json-schema.org/draft-04/schema#",
+                            "$schema": "http://json-schema.org/draft-07/schema#",
                             "title": "info for characteristic obtained by experiment",
+                            "type": "object",
                             "properties": {
                                 "type": {
                                     "enum": [
@@ -68,8 +67,7 @@
                                     "description": "experiment authors",
                                     "type": "array",
                                     "items": {
-                                        "$id": "core/reference/literature/name",
-                                        "$schema": "http://json-schema.org/draft-04/schema#",
+                                        "$schema": "http://json-schema.org/draft-07/schema#",
                                         "title": "experiment author schema",
                                         "type": "object",
                                         "required": [
@@ -103,9 +101,9 @@
                                 "conditions": {
                                     "type": "array",
                                     "items": {
-                                        "$id": "core/reference/experiment/condition",
-                                        "$schema": "http://json-schema.org/draft-04/schema#",
+                                        "$schema": "http://json-schema.org/draft-07/schema#",
                                         "title": "condition schema",
+                                        "type": "object",
                                         "required": [
                                             "name"
                                         ],
@@ -118,6 +116,7 @@
                                                 "description": "array of condition values",
                                                 "type": "array",
                                                 "items": {
+                                                    "type": "object",
                                                     "properties": {
                                                         "value": {
                                                             "type": "string"
@@ -133,9 +132,9 @@
                                     }
                                 },
                                 "location": {
-                                    "$id": "core/reference/experiment/location",
-                                    "$schema": "http://json-schema.org/draft-04/schema#",
+                                    "$schema": "http://json-schema.org/draft-07/schema#",
                                     "title": "location schema",
+                                    "type": "object",
                                     "required": [
                                         "latitude",
                                         "longitude"
@@ -163,9 +162,9 @@
                                     "type": "array",
                                     "description": "references to literature articles",
                                     "items": {
-                                        "$id": "core/reference/literature",
-                                        "$schema": "http://json-schema.org/draft-04/schema#",
+                                        "$schema": "http://json-schema.org/draft-07/schema#",
                                         "title": "literature reference schema",
+                                        "type": "object",
                                         "properties": {
                                             "type": {
                                                 "enum": [
@@ -215,8 +214,7 @@
                                             "pages": {
                                                 "type": "object",
                                                 "description": "Start and end pages of the work.",
-                                                "$id": "core/reference/literature/pages",
-                                                "$schema": "http://json-schema.org/draft-04/schema#",
+                                                "$schema": "http://json-schema.org/draft-07/schema#",
                                                 "title": "pages schema",
                                                 "required": [
                                                     "start"
@@ -234,8 +232,7 @@
                                                 "type": "array",
                                                 "description": "List of authors of the work.",
                                                 "items": {
-                                                    "$id": "core/reference/literature/name",
-                                                    "$schema": "http://json-schema.org/draft-04/schema#",
+                                                    "$schema": "http://json-schema.org/draft-07/schema#",
                                                     "title": "experiment author schema",
                                                     "type": "object",
                                                     "required": [
@@ -262,8 +259,7 @@
                                                 "type": "array",
                                                 "description": "List of editors of the work.",
                                                 "items": {
-                                                    "$id": "core/reference/literature/name",
-                                                    "$schema": "http://json-schema.org/draft-04/schema#",
+                                                    "$schema": "http://json-schema.org/draft-07/schema#",
                                                     "title": "experiment author schema",
                                                     "type": "object",
                                                     "required": [
@@ -344,8 +340,7 @@
         "consistencyChecks": {
             "type": "array",
             "items": {
-                "$id": "system/consistency-check",
-                "$schema": "http://json-schema.org/draft-04/schema#",
+                "$schema": "http://json-schema.org/draft-07/schema#",
                 "title": "consistency check",
                 "type": "object",
                 "description": "The output of consistency checks performed on data adhering to JSON schema, but inconsistent with scientific or logical rules, to show problems in UI.",

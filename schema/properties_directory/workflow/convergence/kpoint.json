@@ -1,7 +1,8 @@
 {
     "$id": "properties-directory/workflow/convergence/kpoint",
-    "$schema": "http://json-schema.org/draft-04/schema#",
+    "$schema": "http://json-schema.org/draft-07/schema#",
     "title": "convergence schema for converging a property wrt kpoints",
+    "type": "object",
     "required": [
         "tolerance",
         "units",
@@ -20,6 +21,7 @@
             "type": "string"
         },
         "data": {
+            "type": "array",
             "description": "kpoint grid and property information",
             "items": {
                 "type": "object",
