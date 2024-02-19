@@ -1,12 +1,9 @@
 import fs from "fs";
 import path from "path";
 
+import { AnyObject } from "../esse/types";
 import { isInstanceOf, safeParseJSON } from "../utils/common";
 import { INCLUDE_KEY, INCLUDE_VALUE_REGEX, OBJECT_ONLY } from "./settings";
-
-interface AnyObject {
-    [key: string]: AnyObject | AnyObject[];
-}
 
 export class JSONInclude {
     JSON_INCLUDE_CACHE: AnyObject = {};

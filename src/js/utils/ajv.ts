@@ -3,6 +3,7 @@ import Ajv, { SchemaObject } from "ajv";
 import { AnyValidateFunction } from "ajv/dist/core";
 
 import { mapObjectDeep } from "../esse/schemaUtils";
+import { AnyObject } from "../esse/types";
 import { JSONSchema } from "../esse/utils";
 
 function addAdditionalPropertiesToSchema(schema: JSONSchema, additionalProperties = false) {
@@ -41,10 +42,6 @@ const ajvValidatorAndCleanerWithCoercingTypes = new Ajv({
     removeAdditional: true,
     coerceTypes: true,
 });
-
-export interface AnyObject {
-    [key: string]: unknown;
-}
 
 interface AjvInstanceOptions {
     clean: boolean;
