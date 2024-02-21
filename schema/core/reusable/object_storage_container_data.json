@@ -30,9 +30,6 @@
         }
     },
     "required": [
-        "CONTAINER",
-        "NAME",
-        "PROVIDER",
-        "REGION"
+        "NAME"
     ]
 }
