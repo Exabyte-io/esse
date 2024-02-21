@@ -16,7 +16,8 @@
             },
             "required": [
                 "ids"
-            ]
+            ],
+            "additionalProperties": true
         },
         {
             "properties": {
@@ -33,7 +34,8 @@
             "required": [
                 "collection",
                 "draft"
-            ]
+            ],
+            "additionalProperties": true
         }
     ]
 }
