@@ -32,7 +32,7 @@
             "type": "array",
             "items": {
                 "anyOf": [
-                    { 
+                    {
                         "$ref": "io/api.json"
                     },
                     {
