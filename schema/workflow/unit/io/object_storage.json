@@ -19,8 +19,7 @@
         }
     },
     "required": [
-        "objectData",
-        "basename"
+        "objectData"
     ],
     "additionalProperties": true
 }
