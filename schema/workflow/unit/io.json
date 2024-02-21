@@ -34,14 +34,17 @@
                 "anyOf": [
                     {
                         "$ref": "io/api.json",
+                        "type": "object",
                         "additionalProperties": true
                     },
                     {
                         "$ref": "io/db.json",
+                        "type": "object",
                         "additionalProperties": true
                     },
                     {
                         "$ref": "io/object_storage.json",
+                        "type": "object",
                         "additionalProperties": true
                     }
                 ]
