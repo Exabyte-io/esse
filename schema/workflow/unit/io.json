@@ -33,13 +33,16 @@
             "items": {
                 "anyOf": [
                     {
-                        "$ref": "io/api.json"
+                        "$ref": "io/api.json",
+                        "additionalProperties": true
                     },
                     {
-                        "$ref": "io/db.json"
+                        "$ref": "io/db.json",
+                        "additionalProperties": true
                     },
                     {
-                        "$ref": "io/object_storage.json"
+                        "$ref": "io/object_storage.json",
+                        "additionalProperties": true
                     }
                 ]
             }
