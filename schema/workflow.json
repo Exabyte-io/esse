@@ -89,7 +89,8 @@
                                                         "required": [
                                                             "endpoint",
                                                             "endpoint_options"
-                                                        ]
+                                                        ],
+                                                        "additionalProperties": true
                                                     },
                                                     {
                                                         "$schema": "http://json-schema.org/draft-07/schema#",
@@ -108,7 +109,8 @@
                                                                 },
                                                                 "required": [
                                                                     "ids"
-                                                                ]
+                                                                ],
+                                                                "additionalProperties": true
                                                             },
                                                             {
                                                                 "properties": {
@@ -125,7 +127,8 @@
                                                                 "required": [
                                                                     "collection",
                                                                     "draft"
-                                                                ]
+                                                                ],
+                                                                "additionalProperties": true
                                                             }
                                                         ]
                                                     },
@@ -134,20 +137,14 @@
                                                         "title": "object_storage io schema",
                                                         "type": "object",
                                                         "required": [
-                                                            "objectData",
-                                                            "basename"
+                                                            "objectData"
                                                         ],
+                                                        "additionalProperties": true,
                                                         "properties": {
                                                             "objectData": {
                                                                 "$schema": "http://json-schema.org/draft-07/schema#",
                                                                 "title": "Object Storage Container Data",
                                                                 "type": "object",
-                                                                "required": [
-                                                                    "CONTAINER",
-                                                                    "NAME",
-                                                                    "PROVIDER",
-                                                                    "REGION"
-                                                                ],
                                                                 "properties": {
                                                                     "CONTAINER": {
                                                                         "description": "Object storage container for the file",
@@ -3165,7 +3162,8 @@
                                             "required": [
                                                 "endpoint",
                                                 "endpoint_options"
-                                            ]
+                                            ],
+                                            "additionalProperties": true
                                         },
                                         {
                                             "$schema": "http://json-schema.org/draft-07/schema#",
@@ -3184,7 +3182,8 @@
                                                     },
                                                     "required": [
                                                         "ids"
-                                                    ]
+                                                    ],
+                                                    "additionalProperties": true
                                                 },
                                                 {
                                                     "properties": {
@@ -3201,7 +3200,8 @@
                                                     "required": [
                                                         "collection",
                                                         "draft"
-                                                    ]
+                                                    ],
+                                                    "additionalProperties": true
                                                 }
                                             ]
                                         },
@@ -3210,20 +3210,14 @@
                                             "title": "object_storage io schema",
                                             "type": "object",
                                             "required": [
-                                                "objectData",
-                                                "basename"
+                                                "objectData"
                                             ],
+                                            "additionalProperties": true,
                                             "properties": {
                                                 "objectData": {
                                                     "$schema": "http://json-schema.org/draft-07/schema#",
                                                     "title": "Object Storage Container Data",
                                                     "type": "object",
-                                                    "required": [
-                                                        "CONTAINER",
-                                                        "NAME",
-                                                        "PROVIDER",
-                                                        "REGION"
-                                                    ],
                                                     "properties": {
                                                         "CONTAINER": {
                                                             "description": "Object storage container for the file",

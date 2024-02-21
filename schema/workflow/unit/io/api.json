@@ -7,6 +7,7 @@
         "endpoint",
         "endpoint_options"
     ],
+    "additionalProperties": true,
     "properties": {
         "endpoint": {
             "description": "rest API endpoint",

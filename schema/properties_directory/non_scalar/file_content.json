@@ -27,12 +27,6 @@
             "$schema": "http://json-schema.org/draft-07/schema#",
             "title": "Object Storage Container Data",
             "type": "object",
-            "required": [
-                "CONTAINER",
-                "NAME",
-                "PROVIDER",
-                "REGION"
-            ],
             "properties": {
                 "CONTAINER": {
                     "description": "Object storage container for the file",
