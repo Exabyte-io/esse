@@ -50,3 +50,24 @@ describe("schema titles must be unique or empty", () => {
     // eslint-disable-next-line no-unused-expressions
     expect(repeatedSchemaTitles).to.be.an("array").that.is.empty;
 });
+
+describe("default", () => {
+    JSONSchemasInterface.setSchemaFolder(schemasPath);
+    const schema = JSONSchemasInterface.getSchemaById("job/compute");
+    const example = JSON.parse(
+        fs.readFileSync(path.join(examplesPath, "job/compute.json")).toString(),
+    ) as object;
+    if (schema) {
+        // @ts-ignore
+        const { arguments: args, ...restExample } = example;
+        console.log({
+            restExample,
+            args,
+        });
+        ajv.validate(restExample, schema);
+        console.log({
+            restExample,
+            example,
+        });
+    }
+});

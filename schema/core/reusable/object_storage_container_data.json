@@ -28,11 +28,5 @@
             "description": "Unix timestamp showing when the file was last modified",
             "type": "string"
         }
-    },
-    "required": [
-        "CONTAINER",
-        "NAME",
-        "PROVIDER",
-        "REGION"
-    ]
+    }
 }
