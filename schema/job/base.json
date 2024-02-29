@@ -118,6 +118,8 @@
                     "type": "integer"
                 },
                 "arguments": {
+                    "description": "Optional arguments specific to using application - VASP, Quantum Espresso, etc. Specified elsewhere",
+                    "default": {},
                     "$schema": "http://json-schema.org/draft-07/schema#",
                     "title": "quantum espresso arguments schema",
                     "type": "object",
