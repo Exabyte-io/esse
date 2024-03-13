@@ -15,7 +15,26 @@
         },
         "payload": {
             "description": "The content of the message",
-            "type": "object"
+            "type": "object",
+            "properties": {
+                "data": {
+                    "description": "The data to be sent",
+                    "type": [
+                        "object",
+                        "string",
+                        "number",
+                        "boolean"
+                    ]
+                },
+                "requestData": {
+                    "description": "Flag to indicate if the message is a request for data",
+                    "type": "boolean"
+                },
+                "variableName": {
+                    "description": "The name of the variable for data to be stored in JupyterLite notebook",
+                    "type": "string"
+                }
+            }
         }
     },
     "required": [
