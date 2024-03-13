@@ -40,5 +40,8 @@
             "$ref": "basis/bonds.json"
         }
     },
-    "required": ["elements", "coordinates"]
+    "required": [
+        "elements",
+        "coordinates"
+    ]
 }
