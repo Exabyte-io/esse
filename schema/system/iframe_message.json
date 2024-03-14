@@ -17,6 +17,14 @@
             "description": "The content of the message.",
             "type": "object",
             "properties": {
+                "action" : {
+                    "description": "The action to be performed upon receiving the message.",
+                    "type": "string",
+                    "enum": [
+                        "set-data",
+                        "get-data"
+                    ]
+                },
                 "data": {
                     "description": "The data to be sent.",
                     "type": [
@@ -25,10 +33,6 @@
                         "number",
                         "boolean"
                     ]
-                },
-                "requestData": {
-                    "description": "Flag to indicate if the message is a request for data.",
-                    "type": "boolean"
                 },
                 "variableName": {
                     "description": "The name of the variable for data to be stored in.",
