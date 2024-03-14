@@ -1,12 +1,12 @@
 {
-    "$id": "system/jupyterlite_message",
+    "$id": "system/iframe_message",
     "$schema": "http://json-schema.org/draft-07/schema#",
-    "title": "jupyterlite message schema",
-    "description": "communication message between iframe holding JupyterLite instance and the parent window",
+    "title": "iframe message schema",
+    "description": "communication message between iframe and the parent window.",
     "type": "object",
     "properties": {
         "type": {
-            "description": "The type of the message",
+            "description": "The type of the message to distinguish the direction of the message.",
             "type": "string",
             "enum": [
                 "from-iframe-to-host",
@@ -14,11 +14,11 @@
             ]
         },
         "payload": {
-            "description": "The content of the message",
+            "description": "The content of the message.",
             "type": "object",
             "properties": {
                 "data": {
-                    "description": "The data to be sent",
+                    "description": "The data to be sent.",
                     "type": [
                         "object",
                         "string",
@@ -27,11 +27,11 @@
                     ]
                 },
                 "requestData": {
-                    "description": "Flag to indicate if the message is a request for data",
+                    "description": "Flag to indicate if the message is a request for data.",
                     "type": "boolean"
                 },
                 "variableName": {
-                    "description": "The name of the variable for data to be stored in JupyterLite notebook",
+                    "description": "The name of the variable for data to be stored in.",
                     "type": "string"
                 }
             }
