@@ -13,18 +13,18 @@
                 "from-host-to-iframe"
             ]
         },
+        "action" : {
+            "description": "The action to be performed upon receiving the message.",
+            "type": "string",
+            "enum": [
+                "set-data",
+                "get-data"
+            ]
+        },
         "payload": {
-            "description": "The content of the message.",
+            "description": "The content of the message with actual data.",
             "type": "object",
             "properties": {
-                "action" : {
-                    "description": "The action to be performed upon receiving the message.",
-                    "type": "string",
-                    "enum": [
-                        "set-data",
-                        "get-data"
-                    ]
-                },
                 "data": {
                     "description": "The data to be sent.",
                     "type": [
@@ -43,6 +43,7 @@
     },
     "required": [
         "type",
+        "action",
         "payload"
     ]
 }
