@@ -96,7 +96,7 @@
         "./lib/js/esse/*": "./lib/js/esse/*.js",
         "./lib/js/json_include/*": "./lib/js/json_include/*.js",
         "./lib/js/scripts/*": "./lib/js/scripts/*.js",
-        "./lib/js/types.ts": "./lib/js/scripts/types.ts",
+        "./lib/js/types.ts": "./lib/js/types.ts",
         "./lib/js/schemas.json": "./lib/js/schemas.ts"
     }
 }
