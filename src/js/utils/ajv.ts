@@ -1,4 +1,4 @@
-import type {} from "ajv"; // @see https://github.com/microsoft/TypeScript/issues/47663
+import type { FuncKeywordDefinition } from "ajv";
 import Ajv, { SchemaObject } from "ajv";
 import { AnyValidateFunction } from "ajv/dist/core";
 
@@ -25,6 +25,59 @@ function addAdditionalPropertiesToSchema(schema: JSONSchema, additionalPropertie
     });
 }
 
+function addTransformDateKeywordToSchema(schema: JSONSchema) {
+    return mapObjectDeep(schema, (object) => {
+        const localSchema = object as JSONSchema;
+
+        if (
+            typeof object === "object" &&
+            localSchema?.type === "string" &&
+            localSchema?.format === "date-time"
+        ) {
+            // eslint-disable-next-line @typescript-eslint/no-unused-vars
+            const { type, format, ...restSchema } = localSchema;
+            return {
+                ...restSchema,
+                transformDate: true,
+            };
+        }
+    });
+}
+
+/**
+ * This function defines custom transformDate AJV keyword
+ *
+ * Problem:
+ * There's no way to define dates except as a string with "date-time" or "date" format in JsonSchema:
+ * {
+ *    type: "string",
+ *    format: "date-time"
+ * }
+ * But we need the Date object to be stored in databases or to perform correct date comparison
+ *
+ * Solution:
+ * The keyword will convert string with "date-time" format to Date object
+ */
+function transformDateKeyword(): FuncKeywordDefinition {
+    return {
+        keyword: "transformDate",
+        schemaType: "boolean",
+        modifying: true,
+        validate(transformDate, date, _metadata, dataCxt) {
+            if (transformDate && dataCxt && typeof date === "string") {
+                const dateObject = new Date(date);
+                if (dateObject.toString() === "Invalid Date") {
+                    return false;
+                }
+
+                dataCxt.parentData[dataCxt.parentDataProperty] = dateObject;
+            }
+
+            return true;
+        },
+    };
+}
+
 const ajvConfig = {
     strict: false, // TODO: adjust schemas and enable strict mode
     useDefaults: true,
@@ -33,6 +86,7 @@ const ajvConfig = {
      * @see https://ajv.js.org/guide/modifying-data.html#assigning-defaults
      */
     discriminator: true,
+    keywords: [transformDateKeyword()],
 };
 
 const ajvValidator = new Ajv({ ...ajvConfig });
@@ -69,8 +123,11 @@ export function getValidator(
     let validate = ajv.getSchema(schemaKey);
 
     if (!validate) {
-        // properties that were not defined in schema will be ignored when clean = false
-        const patchedSchema = clean ? addAdditionalPropertiesToSchema(jsonSchema) : jsonSchema;
+        // replace "date-time" format with "transformDate" keyword
+        const patchedSchema = addTransformDateKeywordToSchema(
+            // properties that were not defined in schema will be ignored when clean = false
+            clean ? addAdditionalPropertiesToSchema(jsonSchema) : jsonSchema,
+        );
         ajv.addSchema(patchedSchema, schemaKey);
         validate = ajv.getSchema(schemaKey);
     }
