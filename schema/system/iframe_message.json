@@ -24,7 +24,7 @@
         },
         "payload": {
             "description": "The content of the message with actual data.",
-            "type": "object",
+            "type": "object"
         }
     },
     "required": [
