@@ -8,7 +8,7 @@
             "type": "from-iframe-to-host",
             "action": "set-data",
             "payload": {
-                "material": {"name": "material1", "lattice": "material", "basis": "data1"}
+                "material": {"name": "material1", "lattice": {}, "basis": {}}
             }
         },
         {
