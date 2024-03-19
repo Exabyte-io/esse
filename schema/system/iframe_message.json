@@ -3,29 +3,6 @@
     "$schema": "http://json-schema.org/draft-07/schema#",
     "title": "iframe message schema",
     "description": "communication message between iframe and the parent window.",
-    "examples": [
-        {
-            "type": "from-iframe-to-host",
-            "action": "set-data",
-            "payload": {
-                "material": {"name": "material1", "lattice": {}, "basis": {}}
-            }
-        },
-        {
-            "type": "from-host-to-iframe",
-            "action": "get-data",
-            "payload": {
-                "key": "value"
-            }
-        },
-        {
-            "type": "from-iframe-to-host",
-            "action": "info",
-            "payload": {
-                "status": "ready"
-            }
-        }
-    ],
     "type": "object",
     "properties": {
         "type": {
