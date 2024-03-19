@@ -15,24 +15,10 @@
             "format": "date-time"
         },
         "createdBy": {
-            "oneOf": [
-                {
-                    "type": "string"
-                },
-                {
-                    "type": "number"
-                }
-            ]
+            "type": "string"
         },
         "updatedBy": {
-            "oneOf": [
-                {
-                    "type": "string"
-                },
-                {
-                    "type": "number"
-                }
-            ]
+            "type": "string"
         }
     }
 }
