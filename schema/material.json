@@ -53,6 +53,20 @@
                         }
                     }
                 },
+                "labels": {
+                    "description": "Optional numeric label (e.g., 1, 2, as in Fe1, Fe2) to distinguish same atomic species to attach different spin magnetic moment.",
+                    "type": "array",
+                    "items": {
+                        "properties": {
+                            "id": {
+                                "type": "number"
+                            },
+                            "value": {
+                                "type": "number"
+                            }
+                        }
+                    }
+                },
                 "coordinates": {
                     "type": "array",
                     "items": {
