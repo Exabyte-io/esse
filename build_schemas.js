@@ -4,7 +4,7 @@
  * downstream consumption to avoid FS calls in the browser.
  */
 const fs = require("fs");
-const JSONSchemasGenerator = require("./lib/js/esse/JSONSchemasGenerator").default;
+const JSONSchemasGenerator = require("./dist/esse/JSONSchemasGenerator").default;
 
 // JS Modules
 
