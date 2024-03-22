@@ -7,7 +7,7 @@
     "properties": {
         "name": {
             "enum": [
-                "atomic_constraints"
+                "constraints"
             ]
         },
         "values": {
