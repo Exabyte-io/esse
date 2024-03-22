@@ -30,6 +30,12 @@
                 "$ref": "basis/atomic_coordinate.json"
             }
         },
+        "constraints": {
+            "type": "array",
+            "items": {
+                "$ref": "basis/atomic_constraints.json"
+            }
+        },
         "name": {
             "type": "string"
         },
