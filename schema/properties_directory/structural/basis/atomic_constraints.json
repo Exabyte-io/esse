@@ -5,10 +5,8 @@
     "description": "atomic constraints schema",
     "type": "object",
     "properties": {
-        "name": {
-            "enum": [
-                "constraints"
-            ]
+        "id": {
+            "type": "number"
         },
         "values": {
             "$ref": "../../../core/reusable/atomic_vectors.json"
