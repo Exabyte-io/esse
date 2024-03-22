@@ -1,3 +1,7 @@
 {
-    "extends": "@mat3ra/tsconfig/tsconfig.json"
+    "extends": "@mat3ra/tsconfig/tsconfig.json",
+    "compilerOptions": {
+        "outDir": "./dist/js",
+        "resolveJsonModule": true
+    }
 }

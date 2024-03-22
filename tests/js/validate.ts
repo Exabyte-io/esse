@@ -1,14 +1,14 @@
 import { expect } from "chai";
-import fs from "fs";
+import * as fs from "fs";
 import groupBy from "lodash/groupBy";
-import path from "path";
+import * as path from "path";
 
 import JSONSchemasInterface from "../../src/js/esse/JSONSchemasInterfaceServer";
 import * as ajv from "../../src/js/utils/ajv";
 import { walkDirSync } from "../../src/js/utils/filesystem";
 
-const examplesPath = path.resolve("./lib/js/example");
-const schemasPath = path.resolve("./lib/js/schema");
+const examplesPath = path.resolve("./dist/js/example");
+const schemasPath = path.resolve("./dist/js/schema");
 
 describe("validate all examples", () => {
     walkDirSync(examplesPath, (examplePath) => {
