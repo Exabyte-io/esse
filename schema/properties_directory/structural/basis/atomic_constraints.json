@@ -3,25 +3,14 @@
     "$schema": "http://json-schema.org/draft-07/schema#",
     "title": "atomic constraints",
     "description": "atomic constraints schema",
-    "type": "object",
-    "properties": {
-        "name": {
-            "enum": [
-                "atomic_constraints"
-            ]
-        },
-        "values": {
-            "type": "array",
-            "items": {
-                "type": "object",
-                "properties": {
-                    "id": {
-                        "type": "number"
-                    },
-                    "value": {
-                        "$ref": "../../../core/abstract/vector.json"
-                    }
-                }
+    "type": "array",
+    "items": {
+        "properties": {
+            "id": {
+                "type": "number"
+            },
+            "value": {
+                "$ref": "../../../core/abstract/vector.json"
             }
         }
     }
