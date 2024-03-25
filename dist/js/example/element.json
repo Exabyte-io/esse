@@ -1,0 +1,17 @@
+{
+    "properties": [
+        {
+            "name": "atomic_radius",
+            "value": 4
+        },
+        {
+            "name": "electronegativity",
+            "value": 1.1
+        },
+        {
+            "name": "ionization_potential",
+            "value": 7.7
+        }
+    ],
+    "symbol": "Si"
+}
