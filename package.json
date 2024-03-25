@@ -105,7 +105,7 @@
         "./dist/esse/*": "./dist/js/esse/*.js",
         "./dist/json_include/*": "./dist/js/json_include/*.js",
         "./dist/scripts/*": "./dist/js/scripts/*.js",
-        "./dist/types.ts": "./dist/js/types.ts",
+        "./dist/types": "./dist/js/types.ts",
         "./dist/schemas.json": "./dist/js/schemas.json"
     }
 }
