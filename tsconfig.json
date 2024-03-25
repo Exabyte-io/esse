@@ -2,6 +2,8 @@
     "extends": "@mat3ra/tsconfig/tsconfig.json",
     "compilerOptions": {
         "outDir": "./dist/js",
+        "baseUrl": "./",          // Base directory for the parent project
+        "rootDir": "./src/js",    // Root directory containing the sources
         "resolveJsonModule": true
     }
 }
