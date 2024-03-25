@@ -6,7 +6,11 @@ if git diff --cached --name-only | grep --quiet -E "$SRC_PATTERN"
 then
   echo "JSON assets changed. Running build scripts."
   echo "Re-building JS and PY assets using JS script."
-  npm run build:js-and-python-modules
+  npm run transpile-and-build-assets
 fi
 
-npx lint-staged
+npx lint-staged --allow-empty
+
+npm run lint:fix
+npm run transpile
+

@@ -47,7 +47,7 @@ lib/
 *.egg-info/
 *.py[cod]
 
-dist/
+# "dist" folder is not ignored on purpose to be able to install intermediate changes from github commits
 
 .npmignore
 .nyc_output

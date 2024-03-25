@@ -1,6 +1,6 @@
-import type {} from "ajv"; // @see https://github.com/microsoft/TypeScript/issues/47663
 import Ajv, { SchemaObject } from "ajv";
 import { AnyValidateFunction } from "ajv/dist/core";
+import addFormats from "ajv-formats";
 
 import { mapObjectDeep } from "../esse/schemaUtils";
 import { AnyObject } from "../esse/types";
@@ -42,6 +42,10 @@ const ajvValidatorAndCleanerWithCoercingTypes = new Ajv({
     removeAdditional: true,
     coerceTypes: true,
 });
+
+addFormats(ajvValidator);
+addFormats(ajvValidatorAndCleaner);
+addFormats(ajvValidatorAndCleanerWithCoercingTypes);
 
 interface AjvInstanceOptions {
     clean: boolean;
