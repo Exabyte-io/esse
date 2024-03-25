@@ -94,7 +94,7 @@
         "./lib/js/schema/*": "./dist/schema/*",
         "./lib/js/example/*": "./dist/example/*",
         "./lib/js/utils/*": "./dist/utils/*.js",
-        "./lib/js/esse/*": "./dist/esse/*.js",
+        "./lib/js/esse/*": "./dist/esse/*",
         "./lib/js/json_include/*": "./dist/json_include/*.js",
         "./lib/js/scripts/*": "./dist/scripts/*.js",
         "./lib/js/types.ts": "./dist/types.ts",
