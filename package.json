@@ -101,10 +101,10 @@
         "./lib/js/schemas.json": "./dist/js/schemas.json",
         "./dist/schema/*": "./dist/js/schema/*",
         "./dist/example/*": "./dist/js/example/*",
-        "./dist/utils/*": "./dist/js/utils/*.js",
-        "./dist/esse/*": "./dist/js/esse/*.js",
-        "./dist/json_include/*": "./dist/js/json_include/*.js",
-        "./dist/scripts/*": "./dist/js/scripts/*.js",
+        "./dist/utils/*": "./dist/js/utils/*",
+        "./dist/esse/*": "./dist/js/esse/*",
+        "./dist/json_include/*": "./dist/js/json_include/*",
+        "./dist/scripts/*": "./dist/js/scripts/*",
         "./dist/types.ts": "./dist/js/types.ts",
         "./dist/schemas.json": "./dist/js/schemas.ts"
     }
