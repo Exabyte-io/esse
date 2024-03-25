@@ -3,7 +3,6 @@
     "version": "0.0.0",
     "description": "Mat3ra's Excellent Source of Schemas and Examples (ESSE) for Digital Materials R&D",
     "scripts": {
-        "prepublishOnly": "rm -rf dist; npm run transpile",
         "transpile": "tsc -p tsconfig-transpile.json",
         "build-schemas": "BUILD_ASSETS=true BUILD_PYTHON_MODULES=true BUILD_PATH='./dist/js' ts-node build_schemas.ts",
         "compile-types": "ts-node compile_ts.ts",
