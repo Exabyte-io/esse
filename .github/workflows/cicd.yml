@@ -171,13 +171,16 @@ jobs:
         shell: bash -l {0}
         run: |
           npm install
-          echo "List build directory ./docs/js"
-          ls -l docs/js
+          cp -r dist/js/examples docs
+          cp -r dist/js/schema docs
+          cp dist/js/schemas.json docs/schemas.json
+          echo "List build directory ./docs"
+          ls -l docs
 
       - name: Generate Directory Listings
         uses: jayanta525/github-pages-directory-listing@v4.0.0
         with:
-          FOLDER: docs/js      #directory to generate index
+          FOLDER: docs     #directory to generate index
 
       - name: Deploy
         uses: peaceiris/actions-gh-pages@v3
@@ -187,4 +190,4 @@ jobs:
         # if: github.ref == 'refs/heads/main'
         with:
           github_token: ${{ secrets.GITHUB_TOKEN }}
-          publish_dir: ./docs/js
+          publish_dir: ./docs

@@ -5,6 +5,7 @@ var __importDefault = (this && this.__importDefault) || function (mod) {
 Object.defineProperty(exports, "__esModule", { value: true });
 exports.validateAndClean = exports.validate = exports.getValidator = void 0;
 const ajv_1 = __importDefault(require("ajv"));
+const ajv_formats_1 = __importDefault(require("ajv-formats"));
 const schemaUtils_1 = require("../esse/schemaUtils");
 function addAdditionalPropertiesToSchema(schema, additionalProperties = false) {
     return (0, schemaUtils_1.mapObjectDeep)(schema, (object) => {
@@ -37,6 +38,9 @@ const ajvValidatorAndCleanerWithCoercingTypes = new ajv_1.default({
     removeAdditional: true,
     coerceTypes: true,
 });
+(0, ajv_formats_1.default)(ajvValidator);
+(0, ajv_formats_1.default)(ajvValidatorAndCleaner);
+(0, ajv_formats_1.default)(ajvValidatorAndCleanerWithCoercingTypes);
 function getAjvInstance({ clean, coerceTypes }) {
     if (clean && coerceTypes) {
         return ajvValidatorAndCleanerWithCoercingTypes;
