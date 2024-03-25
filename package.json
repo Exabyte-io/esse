@@ -3,13 +3,13 @@
     "version": "0.0.0",
     "description": "Mat3ra's Excellent Source of Schemas and Examples (ESSE) for Digital Materials R&D",
     "scripts": {
-        "prepublishOnly": "rm -rf lib; npm run transpile",
-        "transpile": "tsc && BUILD_ASSETS=true BUILD_PATH='./lib/js' node build_schemas.js",
+        "prepublishOnly": "rm -rf dist; npm run transpile",
+        "transpile": "tsc && BUILD_ASSETS=true BUILD_PATH='./dist/js' node build_schemas.js",
         "transpile-and-build-assets": "npm run transpile && ts-node compile_ts.ts",
         "build:assets": "node build_schemas.js",
         "build:js-and-python-modules": "BUILD_PYTHON_MODULES=true node build_schemas.js",
         "build:assets-with-docs": "BUILD_ASSETS=true node build_schemas.js",
-        "test": "npm run set-schema-ids && npm run transpile-and-build-assets && nyc --reporter=text mocha --bail",
+        "test": "nyc --reporter=text mocha --recursive --bail tests/js",
         "test-only": "nyc --reporter=text mocha --bail",
         "lint": "eslint src/js && prettier --write src/js",
         "lint:fix": "eslint --fix --cache src/js && prettier --write src/js",
@@ -22,7 +22,7 @@
         "type": "git",
         "url": "https://github.com/Exabyte-io/esse.git"
     },
-    "main": "lib/js/esse/index.js",
+    "main": "dist/js/esse/index.js",
     "author": "Mat3ra.com",
     "email": "info@mat3ra.com",
     "bugs": {
@@ -31,6 +31,7 @@
     "homepage": "https://github.com/Exabyte-io/esse",
     "devDependencies": {
         "@exabyte-io/eslint-config": "^2023.8.29-1",
+        "@mat3ra/tsconfig": "^2024.3.21-5",
         "@typescript-eslint/eslint-plugin": "^5.9.1",
         "@typescript-eslint/parser": "^5.9.1",
         "chai": "4.3.4",
@@ -50,7 +51,7 @@
         "eslint-plugin-simple-import-sort": "^7.0.0",
         "husky": "^7.0.4",
         "lint-staged": "^12.1.2",
-        "mocha": "^9.2.0",
+        "mocha": "10.3.0",
         "nyc": "15.1.0",
         "prettier": "^2.5.1",
         "prettyjson": "^1.1.3",
@@ -60,7 +61,7 @@
     "license": "Apache-2.0",
     "dependencies": {
         "@babel/cli": "7.16.0",
-        "@babel/core": "7.16.0",
+        "@babel/core": "7.24.1",
         "@babel/eslint-parser": "7.16.3",
         "@babel/plugin-proposal-class-properties": "7.16.0",
         "@babel/preset-env": "7.16.4",
@@ -83,20 +84,28 @@
         "lodash": "4.17.21"
     },
     "engines": {
-        "node": ">=12.0.0"
+        "node": ">=14.0.0"
     },
     "lint-staged": {
         "*.js": "eslint --cache --fix",
         "*.{js,css}": "prettier --write"
     },
     "exports": {
-        "./lib/js/schema/*": "./lib/js/schema/*",
-        "./lib/js/example/*": "./lib/js/example/*",
-        "./lib/js/utils/*": "./lib/js/utils/*.js",
-        "./lib/js/esse/*": "./lib/js/esse/*.js",
-        "./lib/js/json_include/*": "./lib/js/json_include/*.js",
-        "./lib/js/scripts/*": "./lib/js/scripts/*.js",
-        "./lib/js/types.ts": "./lib/js/types.ts",
-        "./lib/js/schemas.json": "./lib/js/schemas.ts"
+        "./lib/js/schema/*": "./dist/schema/*",
+        "./lib/js/example/*": "./dist/example/*",
+        "./lib/js/utils/*": "./dist/utils/*.js",
+        "./lib/js/esse/*": "./dist/esse/*.js",
+        "./lib/js/json_include/*": "./dist/json_include/*.js",
+        "./lib/js/scripts/*": "./dist/scripts/*.js",
+        "./lib/js/types.ts": "./dist/types.ts",
+        "./lib/js/schemas.json": "./dist/schemas.ts",
+        "./dist/schema/*": "./dist/schema/*",
+        "./dist/example/*": "./dist/example/*",
+        "./dist/utils/*": "./dist/utils/*.js",
+        "./dist/esse/*": "./dist/esse/*.js",
+        "./dist/json_include/*": "./dist/json_include/*.js",
+        "./dist/scripts/*": "./dist/scripts/*.js",
+        "./dist/types.ts": "./dist/types.ts",
+        "./dist/schemas.json": "./dist/js/schemas.ts"
     }
 }

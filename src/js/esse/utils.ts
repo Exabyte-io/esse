@@ -1,4 +1,5 @@
 import { JSONSchema7, JSONSchema7Definition } from "json-schema";
+// @ts-ignore
 import deref from "json-schema-deref-sync";
 import path from "path";
 

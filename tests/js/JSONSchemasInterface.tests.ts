@@ -1,8 +1,8 @@
 import { assert, expect } from "chai";
-import path from "path";
+import * as path from "path";
 
-import JSONSchemasInterface from "../../lib/js/esse/JSONSchemasInterfaceServer";
-import allSchemas from "../../lib/js/schemas.json";
+import JSONSchemasInterface from "../../dist/js/esse/JSONSchemasInterfaceServer";
+import allSchemas from "../../dist/js/schemas.json";
 import { JSONSchema } from "../../src/js/esse/utils";
 
 function assertSystemInSetSchema(schema?: JSONSchema) {
@@ -19,7 +19,7 @@ function assertSystemInSetSchema(schema?: JSONSchema) {
 }
 
 describe("JSONSchemasInterfaceServer", () => {
-    it("can find schemas from esse lib folder; the schema is merged and clean", async () => {
+    it("can find schemas from esse dist folder; the schema is merged and clean", async () => {
         const schema = JSONSchemasInterface.getSchemaById("system/in-set");
         assertSystemInSetSchema(schema);
     });
