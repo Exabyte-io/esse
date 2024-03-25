@@ -5,5 +5,12 @@
         "baseUrl": "./",          // Base directory for the parent project
         "rootDir": "./src/js",    // Root directory containing the sources
         "resolveJsonModule": true
-    }
+    },
+    "include": [
+        "./src/js"
+    ],
+    "exclude": [
+        "./node_modules",
+        "./dist"
+    ],
 }
