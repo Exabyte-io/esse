@@ -1,9 +1,7 @@
 "use strict";
-var __importDefault =
-    (this && this.__importDefault) ||
-    function (mod) {
-        return mod && mod.__esModule ? mod : { default: mod };
-    };
+var __importDefault = (this && this.__importDefault) || function (mod) {
+    return (mod && mod.__esModule) ? mod : { "default": mod };
+};
 Object.defineProperty(exports, "__esModule", { value: true });
 const fs_1 = __importDefault(require("fs"));
 const js_yaml_1 = __importDefault(require("js-yaml"));
@@ -26,8 +24,5 @@ const SCHEMA_DIR = "../../../schema/";
     const fileContents = fs_1.default.readFileSync(filePath);
     const obj = js_yaml_1.default.load(fileContents.toString());
     const enumObj = lodash_1.default.mapValues(obj, (value) => ({ enum: value }));
-    fs_1.default.writeFileSync(
-        `${path_1.default.join(dirname, outFilename)}`,
-        `${JSON.stringify(enumObj, null, 4)}\n`,
-    );
+    fs_1.default.writeFileSync(`${path_1.default.join(dirname, outFilename)}`, `${JSON.stringify(enumObj, null, 4)}\n`);
 });

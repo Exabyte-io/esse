@@ -1,9 +1,7 @@
 "use strict";
-var __importDefault =
-    (this && this.__importDefault) ||
-    function (mod) {
-        return mod && mod.__esModule ? mod : { default: mod };
-    };
+var __importDefault = (this && this.__importDefault) || function (mod) {
+    return (mod && mod.__esModule) ? mod : { "default": mod };
+};
 Object.defineProperty(exports, "__esModule", { value: true });
 exports.validateAndClean = exports.validate = exports.getValidator = void 0;
 const ajv_1 = __importDefault(require("ajv"));
@@ -11,12 +9,10 @@ const schemaUtils_1 = require("../esse/schemaUtils");
 function addAdditionalPropertiesToSchema(schema, additionalProperties = false) {
     return (0, schemaUtils_1.mapObjectDeep)(schema, (object) => {
         const schema = object;
-        if (
-            typeof object === "object" &&
+        if (typeof object === "object" &&
             (schema === null || schema === void 0 ? void 0 : schema.type) === "object" &&
             (schema === null || schema === void 0 ? void 0 : schema.properties) &&
-            !("additionalProperties" in schema)
-        ) {
+            !("additionalProperties" in schema)) {
             return {
                 ...schema,
                 additionalProperties,

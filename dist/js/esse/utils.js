@@ -1,9 +1,7 @@
 "use strict";
-var __importDefault =
-    (this && this.__importDefault) ||
-    function (mod) {
-        return mod && mod.__esModule ? mod : { default: mod };
-    };
+var __importDefault = (this && this.__importDefault) || function (mod) {
+    return (mod && mod.__esModule) ? mod : { "default": mod };
+};
 Object.defineProperty(exports, "__esModule", { value: true });
 exports.parseIncludeReferenceStatementsByDir = exports.parseIncludeReferenceStatements = void 0;
 // @ts-ignore
@@ -19,10 +17,7 @@ function parseIncludeReferenceStatements(filePath) {
     const jsonResolver = new json_include_1.JSONInclude();
     const parsed = jsonResolver.parseIncludeStatements(filePath);
     const dirPath = path_1.default.dirname(filePath);
-    let dereferenced = (0, json_schema_deref_sync_1.default)(parsed, {
-        baseFolder: dirPath,
-        removeIds: true,
-    });
+    let dereferenced = (0, json_schema_deref_sync_1.default)(parsed, { baseFolder: dirPath, removeIds: true });
     // handle circular references and use non-dereferenced source
     if (dereferenced instanceof Error && dereferenced.message === "Circular self reference") {
         dereferenced = parsed;
@@ -43,15 +38,14 @@ function parseIncludeReferenceStatementsByDir(dirPath, wrapInDataAndPath = false
             const config = parseIncludeReferenceStatements(filePath);
             if (wrapInDataAndPath) {
                 const _path = path_1.default.join(
-                    // remove leading slashes and "example" from path
-                    path_1.default
-                        .dirname(filePath)
-                        .replace(path_1.default.join(topDir, "example"), "")
-                        .replace(/^\/+/, ""),
-                    path_1.default.basename(filePath).replace(".json", ""),
-                );
+                // remove leading slashes and "example" from path
+                path_1.default
+                    .dirname(filePath)
+                    .replace(path_1.default.join(topDir, "example"), "")
+                    .replace(/^\/+/, ""), path_1.default.basename(filePath).replace(".json", ""));
                 schemasWithPath.push({ data: config, path: _path });
-            } else {
+            }
+            else {
                 schemas.push(config);
             }
         }

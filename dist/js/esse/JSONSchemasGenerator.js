@@ -1,9 +1,7 @@
 "use strict";
-var __importDefault =
-    (this && this.__importDefault) ||
-    function (mod) {
-        return mod && mod.__esModule ? mod : { default: mod };
-    };
+var __importDefault = (this && this.__importDefault) || function (mod) {
+    return (mod && mod.__esModule) ? mod : { "default": mod };
+};
 Object.defineProperty(exports, "__esModule", { value: true });
 /* eslint-disable class-methods-use-this */
 const fs_1 = __importDefault(require("fs"));
@@ -38,18 +36,13 @@ class JSONSchemasGenerator {
         const schemasFolder = `${subfolder}/schema`;
         fs_1.default.rmSync(schemasFolder, { recursive: true, force: true });
         const mergeAllOfConfig = {
-            resolvers: {
-                defaultResolver: json_schema_merge_allof_1.default.options.resolvers.title,
-            },
+            resolvers: { defaultResolver: json_schema_merge_allof_1.default.options.resolvers.title },
         };
         const schemas = this.schemas.map((schema) => {
             var _a;
             console.log(`Resolving schema: ${schema.$id}`);
-            const mergedSchema = skipMergeAllOff
-                ? schema
-                : (0, json_schema_merge_allof_1.default)(schema, mergeAllOfConfig);
-            const idAsPath =
-                (_a = mergedSchema.$id) === null || _a === void 0 ? void 0 : _a.replace(/-/g, "_");
+            const mergedSchema = skipMergeAllOff ? schema : (0, json_schema_merge_allof_1.default)(schema, mergeAllOfConfig);
+            const idAsPath = (_a = mergedSchema.$id) === null || _a === void 0 ? void 0 : _a.replace(/-/g, "_");
             const fullPath = `${schemasFolder}/${idAsPath}.json`;
             fs_1.default.mkdirSync(path_1.default.dirname(fullPath), { recursive: true });
             fs_1.default.writeFileSync(fullPath, JSON.stringify(mergedSchema, null, 4), "utf8");

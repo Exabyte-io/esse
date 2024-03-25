@@ -1,9 +1,7 @@
 "use strict";
-var __importDefault =
-    (this && this.__importDefault) ||
-    function (mod) {
-        return mod && mod.__esModule ? mod : { default: mod };
-    };
+var __importDefault = (this && this.__importDefault) || function (mod) {
+    return (mod && mod.__esModule) ? mod : { "default": mod };
+};
 Object.defineProperty(exports, "__esModule", { value: true });
 exports.JSONInclude = void 0;
 const fs_1 = __importDefault(require("fs"));
@@ -32,14 +30,12 @@ class JSONInclude {
     _walkObjectToInclude(obj, dirpath) {
         if ((0, common_1.isInstanceOf)(obj, "Array")) {
             for (let i = 0; i < obj.length; i++) {
-                if (
-                    (0, common_1.isInstanceOf)(obj[i], "Object") ||
-                    (0, common_1.isInstanceOf)(obj[i], "Array")
-                ) {
+                if ((0, common_1.isInstanceOf)(obj[i], "Object") || (0, common_1.isInstanceOf)(obj[i], "Array")) {
                     this._walkObjectToInclude(obj[i], dirpath);
                 }
             }
-        } else if ((0, common_1.isInstanceOf)(obj, "Object")) {
+        }
+        else if ((0, common_1.isInstanceOf)(obj, "Object")) {
             if (settings_1.INCLUDE_KEY in obj) {
                 const includeName = this._getIncludeFileName(obj[settings_1.INCLUDE_KEY]);
                 if (includeName) {
@@ -56,10 +52,7 @@ class JSONInclude {
                 }
             }
             Object.keys(obj).forEach((key) => {
-                if (
-                    (0, common_1.isInstanceOf)(obj[key], "Object") ||
-                    (0, common_1.isInstanceOf)(obj[key], "Array")
-                ) {
+                if ((0, common_1.isInstanceOf)(obj[key], "Object") || (0, common_1.isInstanceOf)(obj[key], "Array")) {
                     this._walkObjectToInclude(obj[key], dirpath);
                 }
             });
@@ -72,9 +65,7 @@ class JSONInclude {
     parseIncludeStatements(filePath) {
         const data = (0, common_1.safeParseJSON)(fs_1.default.readFileSync(filePath, "utf8"));
         if (settings_1.OBJECT_ONLY && !(0, common_1.isInstanceOf)(data, "Object")) {
-            throw new Error(
-                "The JSON file being included should always be a dict rather than a list",
-            );
+            throw new Error("The JSON file being included should always be a dict rather than a list");
         }
         this._walkObjectToInclude(data, path_1.default.dirname(filePath));
         return data;
