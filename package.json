@@ -99,13 +99,13 @@
         "./lib/js/scripts/*": "./dist/js/scripts/*",
         "./lib/js/types.ts": "./dist/js/types.ts",
         "./lib/js/schemas.json": "./dist/js/schemas.json",
-        "./dist/schema/*": "./dist/schema/*",
-        "./dist/example/*": "./dist/example/*",
-        "./dist/utils/*": "./dist/utils/*.js",
-        "./dist/esse/*": "./dist/esse/*.js",
-        "./dist/json_include/*": "./dist/json_include/*.js",
-        "./dist/scripts/*": "./dist/scripts/*.js",
-        "./dist/types.ts": "./dist/types.ts",
+        "./dist/schema/*": "./dist/js/schema/*",
+        "./dist/example/*": "./dist/js/example/*",
+        "./dist/utils/*": "./dist/js/utils/*.js",
+        "./dist/esse/*": "./dist/js/esse/*.js",
+        "./dist/json_include/*": "./dist/js/json_include/*.js",
+        "./dist/scripts/*": "./dist/js/scripts/*.js",
+        "./dist/types.ts": "./dist/js/types.ts",
         "./dist/schemas.json": "./dist/js/schemas.ts"
     }
 }
