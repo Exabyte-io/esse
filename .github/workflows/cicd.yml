@@ -171,7 +171,8 @@ jobs:
         shell: bash -l {0}
         run: |
           npm install
-          cp -r dist/js/examples docs
+          rm -rf docs/README.md
+          cp -r dist/js/example docs
           cp -r dist/js/schema docs
           cp dist/js/schemas.json docs/schemas.json
           echo "List build directory ./docs"
