@@ -3,8 +3,9 @@
  * at build time and writes them out to a single schemas.js file for
  * downstream consumption to avoid FS calls in the browser.
  */
-const fs = require("fs");
-const JSONSchemasGenerator = require("./dist/js/esse/JSONSchemasGenerator").default;
+import * as fs from "fs";
+
+import JSONSchemasGenerator from "./src/js/esse/JSONSchemasGenerator";
 
 // JS Modules
 
