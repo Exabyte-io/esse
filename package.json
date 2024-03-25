@@ -106,6 +106,6 @@
         "./dist/json_include/*": "./dist/js/json_include/*",
         "./dist/scripts/*": "./dist/js/scripts/*",
         "./dist/types.ts": "./dist/js/types.ts",
-        "./dist/schemas.json": "./dist/js/schemas.ts"
+        "./dist/schemas.json": "./dist/js/schemas.json"
     }
 }
