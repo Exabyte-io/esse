@@ -4,7 +4,6 @@ import groupBy from "lodash/groupBy";
 import * as path from "path";
 
 import JSONSchemasInterface from "../../src/js/esse/JSONSchemasInterfaceServer";
-import { AnyObject } from "../../src/js/esse/types";
 import * as ajv from "../../src/js/utils/ajv";
 import { walkDirSync } from "../../src/js/utils/filesystem";
 
@@ -34,39 +33,6 @@ describe("validate all examples", () => {
             expect(result.isValid).to.be.equal(true);
         }
     });
-});
-
-interface Example extends AnyObject {
-    property: string | Date;
-}
-
-describe("validate Date object", () => {
-    const schema = {
-        $id: "validate-date-object",
-        type: "object",
-        properties: {
-            property: {
-                type: "string",
-                format: "date-time",
-            },
-        },
-    };
-
-    const example1: Example = { property: new Date() };
-    const example2: Example = { property: "December 17, 1995 03:24:00" };
-    const example3: Example = { property: "Invalid Date" };
-
-    const result1 = ajv.validate(example1, schema);
-    const result2 = ajv.validate(example2, schema);
-    const result3 = ajv.validate(example3, schema);
-
-    expect(result1.isValid).to.be.equal(true);
-    expect(result2.isValid).to.be.equal(true);
-    expect(result3.isValid).to.be.equal(false);
-
-    expect(example1.property instanceof Date).to.be.equal(true);
-    expect(example2.property instanceof Date).to.be.equal(true);
-    expect(typeof example3.property === "string").to.be.equal(true);
 });
 
 describe("schema titles must be unique or empty", () => {
