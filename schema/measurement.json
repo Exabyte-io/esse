@@ -2,7 +2,7 @@
     "$id": "measurement",
     "$schema": "http://json-schema.org/draft-07/schema#",
     "title": "measurement schema",
-    "description": "One procedure applied to one or more samples by an instrument, recorded once finished: the experimental analogue of a job.",
+    "description": "One procedure applied to one sample by an instrument, recorded once finished: the experimental analogue of a job.",
     "type": "object",
     "allOf": [
         {
@@ -10,8 +10,12 @@
         }
     ],
     "properties": {
-        "_samples": {
-            "description": "Samples the measurement was performed on",
+        "_sample": {
+            "description": "The sample the measurement was performed on",
+            "$ref": "system/entity_reference.json"
+        },
+        "_materials": {
+            "description": "Materials related to the sample, when known (e.g. matched candidates)",
             "type": "array",
             "items": {
                 "$ref": "system/entity_reference.json"
@@ -29,14 +33,10 @@
                     "$ref": "job/base.json#/properties/status"
                 }
             ]
-        },
-        "workDir": {
-            "description": "The path to the working directory of this measurement, where the instrument and the analysis wrote their files",
-            "type": "string"
         }
     },
     "required": [
-        "_samples",
+        "_sample",
         "workflow",
         "status"
     ]

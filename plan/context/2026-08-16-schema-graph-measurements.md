@@ -1,7 +1,7 @@
 # Schema graph measurements
 
 > **Type:** context — measurements backing the entity-map/docs plans; not a plan itself.
-> **Created:** 2026-08-16 · **Updated:** 2026-09-04
+> **Created:** 2026-08-16 · **Updated:** 2026-09-05
 > **Epic:** [SOF-8025](https://mat3ra.atlassian.net/browse/SOF-8025)
 > **Measured by:** `npm run lint-entity-graph` (`src/js/scripts/buildEntityGraph.ts`), the
 > production extractor built under [SOF-8026](https://mat3ra.atlassian.net/browse/SOF-8026).
@@ -20,6 +20,12 @@ edge became two *variant* edges). Previous totals: 564 schemas / 917 edges (372 
 The loop parameters reuse `combined_value` through `allOf` so their descriptions survive, and define their
 `{rising, falling}` pair once in their own `definitions` — the two refs to it raise the same-document count to 22.
 
+**Updated 2026-09-05 (SOF-8050 S5a).** `measurement`'s `_samples` (array, required) is replaced by `_sample`
+(required) and `_materials` (optional array) — a measurement is performed on one sample, mirroring `job/base.json`'s
+`_material`; `workDir` moves into `metadata.run_dir`. One *contains* edge (`_samples[]`) is removed and two are
+added (`_sample`, `_materials[]`), for a net +1 edge; schema and node counts are unchanged. Previous totals: 938
+edges (380 / 385 / 173).
+
 Method: every `schema/**/*.json` is parsed and each `$ref` classified by its innermost enclosing
 structural keyword — inside an `allOf` item → *extends*; under `properties.<name>` or `items` →
 *contains*; inside `oneOf`/`anyOf` → *variant*. Refs resolve as relative file paths after
@@ -31,9 +37,9 @@ stripping JSON-pointer fragments (`file.json#/pointer`).
 | --- | --- |
 | Schema files | 571 |
 | Example files | 213 (a schema has a mirror example in 213/571 = 37% of cases) |
-| Cross-schema reference edges | 938 |
+| Cross-schema reference edges | 939 |
 | — of kind *extends* (`allOf`) | 380 |
-| — of kind *contains* (`properties`/`items`) | 385 |
+| — of kind *contains* (`properties`/`items`) | 386 |
 | — of kind *variant* (`oneOf`/`anyOf`) | 173 |
 | Same-document refs (`#/…`), which are **not** edges | 22 |
 | Edges carrying a JSON-pointer fragment | 148 (e.g. `enum_options.json#/physicsBased`) |
@@ -93,7 +99,7 @@ application-parsing schemas.
 | `workflow/unit/context/_base` | 15 |
 | `core/primitive/array_of_3_numbers` | 14 |
 | `materials_category_components/entities/core/three-dimensional/crystal` | 14 |
-| `system/entity_reference` | 14 |
+| `system/entity_reference` | 15 |
 | `core/reusable/categories` | 12 |
 | `method/unit_method` | 11 |
 | `method` (root) | 10 |

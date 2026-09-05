@@ -1,18 +1,18 @@
 {
     "_id": "mSrUn20260901ALSc1",
-    "_samples": [
-        {
-            "_id": "aScN01448r0c00Xy1",
-            "cls": "Sample",
-            "slug": "pdac-com5-01448-r0c00"
-        },
-        {
-            "_id": "aScN01448r0c01Xy2",
-            "cls": "Sample",
-            "slug": "pdac-com5-01448-r0c01"
-        }
-    ],
+    "_sample": {
+        "_id": "aScN01448r0c00Xy1",
+        "cls": "Sample",
+        "slug": "pdac-com5-01448-r0c00"
+    },
     "metadata": {
+        "registration": {
+            "frame": "asylum-spm stage",
+            "units": "m",
+            "anchor": "100 um below the left bottom electrode",
+            "r0c00_stage_m": [ 0.021064,
+                0.020812999 ]
+        },
         "run": {
             "name": "20260901_171601_alscn_01448",
             "recipe_name": "alscn_01448",
@@ -20,13 +20,13 @@
             "started_ts": 1788297362.665033,
             "instrument_directory": "C:\\Users\\Asylum User\\Documents\\Asylum Research Data\\260831",
             "n_measurements": 704
-        }
+        },
+        "run_dir": "C:\\Users\\Asylum User\\Documents\\GitHub\\AFM_Combinatorial_Libraries\\runs\\20260901_171601_alscn_01448"
     },
     "name": "20260901_171601_alscn_01448",
     "schemaVersion": "0.2.0",
     "slug": "20260901-171601-alscn-01448",
     "status": "finished",
-    "workDir": "C:\\Users\\Asylum User\\Documents\\GitHub\\AFM_Combinatorial_Libraries\\runs\\20260901_171601_alscn_01448",
     "workflow": {
         "...": "include(workflow.json)"
     }
