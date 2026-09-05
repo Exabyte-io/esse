@@ -2411,18 +2411,15 @@ class Status53(Enum):
 
 
 class MeasurementSchema(BaseModel):
-    samples: List[EntityReferenceSchema] = Field(..., alias="_samples")
+    sample: EntityReferenceSchema = Field(..., alias="_sample", title="entity reference schema")
+    materials: Optional[List[EntityReferenceSchema]] = Field(None, alias="_materials")
     """
-    Samples the measurement was performed on
+    Materials related to the sample, when known (e.g. matched candidates)
     """
     workflow: WorkflowSchema = Field(..., title="workflow schema")
     status: Status53
     """
     Status of the measurement; finished when it reaches the platform
-    """
-    workDir: Optional[str] = None
-    """
-    The path to the working directory of this measurement, where the instrument and the analysis wrote their files
     """
     id: Optional[str] = Field(None, alias="_id")
     """
