@@ -360,7 +360,11 @@ body {
     z-index: 5;
 }
 #titlebar .app-name { color: var(--text-primary); font-weight: 600; }
-#surfaces { display: flex; gap: 14px; }
+/* Five items do not fit a phone: the nav shrinks and scrolls inside the bar rather than
+   being clipped or pushing the page sideways. */
+#surfaces { display: flex; gap: 14px; flex: 0 1 auto; min-width: 0; overflow-x: auto; scrollbar-width: none; }
+#surfaces::-webkit-scrollbar { display: none; }
+@media (max-width: 700px) { #surfaces { gap: 10px; } }
 #surfaces a { color: var(--text-muted); text-decoration: none; }
 #surfaces a:hover { color: var(--text-primary); }
 #surfaces a.current { color: var(--text-primary); border-bottom: 2px solid var(--accent); }

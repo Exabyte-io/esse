@@ -52,16 +52,31 @@ function showInEditor(path) {
     document.getElementById("welcome").style.display = "none";
     document.getElementById("monaco-editor").style.display = "block";
 
+    // Already showing: leave the viewport alone. Restoring here would discard where the
+    // reader currently is in favour of wherever they were when they last left the file.
+    if (shownPath === path) return;
+
     // Remember where the outgoing file was, so coming back lands where you left.
-    if (shownPath && shownPath !== path) {
-        viewStates.set(shownPath, monacoEditor.saveViewState());
-    }
+    if (shownPath) viewStates.set(shownPath, monacoEditor.saveViewState());
 
     monacoEditor.setModel(modelFor(path));
     const state = viewStates.get(path);
     if (state) monacoEditor.restoreViewState(state);
     else monacoEditor.revealLine(1);
     shownPath = path;
+}
+
+/**
+ * Puts text on screen without recording it as the file's content, for a load failure that
+ * should be retried on the next click rather than remembered.
+ */
+function showText(path, text) {
+    if (!monacoEditor) return;
+    document.getElementById("welcome").style.display = "none";
+    document.getElementById("monaco-editor").style.display = "block";
+    if (shownPath) viewStates.set(shownPath, monacoEditor.saveViewState());
+    monacoEditor.setModel(monaco.editor.createModel(text, "json"));
+    shownPath = null;
 }
 
 // ── State ─────────────────────────────────────────────────────────────────────
@@ -78,6 +93,8 @@ let currentQuery = "";
 const VIEWS = ["files", "categories", "directories"];
 let view = "files";
 let views = null; // views.json, fetched once on first use
+let viewsRequest = null; // the in-flight fetch, so concurrent switches share one download
+let viewsError = null; // set when views.json could not be loaded, cleared on a retry
 const expandedByView = { files: new Set(), categories: new Set(), directories: new Set() };
 const expandedSet = expandedByView.files; // the source tree's set, pre-expanded at startup
 
@@ -102,7 +119,10 @@ let shownPath = null; // the file whose model the editor currently holds
  * — and splitting one would invent a folder that is not there.
  */
 function entriesToTree(entries) {
-    const root = {};
+    // Null-prototype maps: folder names are keys, and these labels are now built from schema
+    // titles and facet values rather than repo directory names, so a segment of `constructor`
+    // or `__proto__` would otherwise read as an existing folder and swallow the subtree.
+    const root = Object.create(null);
     entries.forEach(({ segments, path: filePath }) => {
         let node = root;
         segments.forEach((part, index) => {
@@ -110,7 +130,7 @@ function entriesToTree(entries) {
                 if (!node.__files) node.__files = [];
                 node.__files.push({ name: part, path: filePath });
             } else {
-                if (!node[part]) node[part] = {};
+                if (!node[part]) node[part] = Object.create(null);
                 node = node[part];
             }
         });
@@ -209,13 +229,16 @@ function renderTree(container, node, depth, folderPath) {
 
 // ── Render flat search results ────────────────────────────────────────────────
 function renderSearch(container, matches, query) {
+    // Written before the early return: "No results found." beside a stale count from the
+    // previous query — or from another view — reads as a contradiction.
+    document.getElementById("status-count").textContent = `${matches.length} result${
+        matches.length !== 1 ? "s" : ""
+    }`;
+
     if (matches.length === 0) {
         container.innerHTML = '<div class="tree-msg">No results found.</div>';
         return;
     }
-    document.getElementById("status-count").textContent = `${matches.length} result${
-        matches.length !== 1 ? "s" : ""
-    }`;
 
     matches.forEach((entry) => {
         const { path } = entry;
@@ -274,6 +297,16 @@ function rebuildTree(query) {
     const container = document.getElementById("file-tree");
     container.innerHTML = "";
 
+    // A failed views.json must not read as "this view is empty" — that tells the reader the
+    // corpus has no categories. Mirrors the files.json failure message.
+    if (view !== "files" && !views && viewsError) {
+        container.innerHTML =
+            `<div class="tree-msg" style="color:#f88">Failed to load ${escHtml(view)}: ` +
+            `${escHtml(viewsError)}</div>`;
+        document.getElementById("status-count").textContent = "";
+        return;
+    }
+
     const entries = currentEntries();
 
     if (!query) {
@@ -284,23 +317,39 @@ function rebuildTree(query) {
         }`;
         renderTree(container, entriesToTree(entries), 0, "");
     } else {
-        // Matched against the whole displayed row, so searching a view finds the labels it
-        // shows — "physics-based" in Categories — not just file names.
+        // Two haystacks, because there are two ways people search here. The displayed row,
+        // so a view search finds the labels it shows ("physics-based"); and the file path,
+        // so a path pasted from the status bar or a $ref still matches ("apse/db"). Matching
+        // only the first silently broke every query containing a slash.
         const q = query.toLowerCase();
-        const matches = entries.filter((entry) =>
-            entry.segments.join(" / ").toLowerCase().includes(q),
+        const matches = entries.filter(
+            (entry) =>
+                entry.segments.join(" / ").toLowerCase().includes(q) ||
+                entry.path.toLowerCase().includes(q),
         );
         renderSearch(container, matches, query);
     }
 }
 
+/**
+ * Highlights every row that shows this file, and scrolls to the one nearest the viewport.
+ *
+ * A file can appear more than once: M-CODE files 32 recipes under two or three axes. Marking
+ * only the first row in document order left the row the reader had just clicked unhighlighted
+ * and scrolled the sidebar to a different copy.
+ */
 function focusSelectedFileInTree(path) {
     document.querySelectorAll(".t-item.selected").forEach((el) => el.classList.remove("selected"));
-    const el = document.querySelector(`.t-item.file[data-path="${CSS.escape(path)}"]`);
-    if (el) {
-        el.classList.add("selected");
-        el.scrollIntoView({ block: "nearest" });
-    }
+    const rows = [...document.querySelectorAll(`.t-item.file[data-path="${CSS.escape(path)}"]`)];
+    rows.forEach((el) => el.classList.add("selected"));
+    if (rows.length === 0) return;
+
+    const tree = document.getElementById("file-tree");
+    const middle = tree.scrollTop + tree.clientHeight / 2;
+    const nearest = rows.reduce((best, el) =>
+        Math.abs(el.offsetTop - middle) < Math.abs(best.offsetTop - middle) ? el : best,
+    );
+    nearest.scrollIntoView({ block: "nearest" });
 }
 
 // ── Views ─────────────────────────────────────────────────────────────────────
@@ -334,22 +383,35 @@ function markCurrentSurface() {
     });
 }
 
-/** Fetched once, and only when a view that needs it is first opened. */
+/**
+ * Fetched once, and only when a view that needs it is first opened.
+ *
+ * The in-flight promise is what is memoised, not the resolved value: switching views with the
+ * arrow keys calls this per keypress, and caching only the result let each one start its own
+ * download. A failure clears the memo so the next attempt retries, and is reported rather
+ * than swallowed — an empty tree says the corpus has no categories, which is a lie.
+ */
 function loadViews() {
     if (views) return Promise.resolve(views);
-    return fetch("views.json")
+    if (viewsRequest) return viewsRequest;
+
+    viewsError = null;
+    viewsRequest = fetch("views.json")
         .then((r) => {
             if (!r.ok) throw new Error("HTTP " + r.status);
             return r.json();
         })
         .then((data) => {
             views = data;
+            viewsRequest = null;
             return views;
         })
-        .catch(() => {
-            views = { categories: [], directories: [] };
-            return views;
+        .catch((err) => {
+            viewsRequest = null;
+            viewsError = err.message;
+            return null;
         });
+    return viewsRequest;
 }
 
 function setView(next, keepSelection) {
@@ -418,16 +480,31 @@ function tabLabel(path) {
 }
 
 /** Built as DOM rather than markup: paths go in unescaped and listeners attach directly. */
+/**
+ * Rebuilds the tab strip.
+ *
+ * Deliberately not `role="tab"`: that role makes its descendants presentational, which erases
+ * the close button from the accessibility tree, and it promises a tablist and a tabpanel that
+ * do not exist here. This is a list of open files, so it is marked up as one and the close
+ * button stays a real button.
+ */
 function renderTabs() {
     const bar = document.getElementById("tabbar");
+    // Rebuilding drops focus to <body>, which would make closing several tabs in a row
+    // impossible from the keyboard; remember where focus was and put it back afterwards.
+    const focused = document.activeElement;
+    const focusedPath = focused && focused.closest ? focused.closest(".tab")?.dataset.path : null;
+    const focusedClose = Boolean(focused && focused.classList?.contains("tab-close"));
+
     bar.innerHTML = "";
 
     openTabs.forEach((path) => {
         const tab = document.createElement("div");
         tab.className = path === selectedFile ? "tab active" : "tab";
         tab.title = path;
-        tab.setAttribute("role", "tab");
-        tab.setAttribute("aria-selected", String(path === selectedFile));
+        tab.dataset.path = path;
+        tab.setAttribute("role", "listitem");
+        if (path === selectedFile) tab.setAttribute("aria-current", "true");
         tab.tabIndex = 0;
 
         const icon = document.createElement("span");
@@ -449,6 +526,9 @@ function renderTabs() {
         tab.append(icon, label, close);
         tab.addEventListener("click", () => activateTab(path));
         tab.addEventListener("keydown", (event) => {
+            // Only when the tab itself has focus: the close button is a descendant, and
+            // cancelling its keydown here suppressed the activation that closes the tab.
+            if (event.target !== tab) return;
             if (event.key === "Enter" || event.key === " ") {
                 event.preventDefault();
                 activateTab(path);
@@ -465,6 +545,16 @@ function renderTabs() {
         bar.appendChild(tab);
     });
 
+    if (focusedPath) {
+        // The closed tab is gone, so fall to whichever tab took its place.
+        const index = Math.min(
+            openTabs.indexOf(focusedPath) === -1 ? 0 : openTabs.indexOf(focusedPath),
+            openTabs.length - 1,
+        );
+        const target = bar.children[index];
+        if (target) (focusedClose ? target.querySelector(".tab-close") : target).focus();
+    }
+
     const active = bar.querySelector(".tab.active");
     if (active) active.scrollIntoView({ block: "nearest", inline: "nearest" });
 }
@@ -472,6 +562,7 @@ function renderTabs() {
 function clearEditor() {
     selectedFile = null;
     shownPath = null;
+    pendingPath = null;
     if (monacoEditor) monacoEditor.setModel(null);
 
     document.getElementById("monaco-editor").style.display = "none";
@@ -493,6 +584,9 @@ function closeTab(path) {
     if (index === -1) return;
 
     openTabs.splice(index, 1);
+    // Monaco may still be loading with this path parked for replay; without this the
+    // callback would reopen the closed file as an empty editor and cache an empty model.
+    if (pendingPath === path) pendingPath = null;
     const model = models.get(path);
     if (model) model.dispose();
     models.delete(path);
@@ -567,14 +661,18 @@ function activateTab(path) {
             if (!r.ok) throw new Error("HTTP " + r.status);
             return r.json();
         })
-        .then((data) => JSON.stringify(data, null, 2))
-        .catch((err) => `// Error loading file\n// ${err.message}`)
-        .then((text) => {
-            fileContent.set(path, text);
+        .then((data) => {
+            fileContent.set(path, JSON.stringify(data, null, 2));
             // A slow response must not overwrite whatever tab is showing by now, and a
             // tab closed while in flight should not be resurrected.
             if (selectedFile === path) showInEditor(path);
             else if (!openTabs.includes(path)) fileContent.delete(path);
+        })
+        .catch((err) => {
+            // Shown, never cached. Caching the error would pin it to the path until the
+            // tab was closed, so a blip during load could not be recovered by re-clicking.
+            if (selectedFile !== path) return;
+            showText(path, `// Error loading file\n// ${err.message}`);
         });
 }
 

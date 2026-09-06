@@ -54,18 +54,30 @@ function shortTitle(node: EntityGraphNode): string {
         .trim();
 }
 
+/**
+ * The published file name, not the source one. They differ: a source basename may contain a
+ * dash, which round-trips to an underscore through `$id` (`p-norm.json` is published as
+ * `p_norm.json`). Labelling a row with the source name names a file the site does not serve
+ * and that searching for the published name cannot find.
+ */
 function fileName(node: EntityGraphNode): string {
-    return node.path.split("/").pop() as string;
+    return node.publishedPath.split("/").pop() as string;
 }
 
 function slugOf(node: EntityGraphNode): string {
     return node.id.split("/").pop() as string;
 }
 
-/** `pb · physics-based model`. Falls back to the slug when the title adds nothing. */
+/**
+ * `pb · physics-based model`. The title is dropped when it adds nothing — either because it
+ * is the slug, or because it merely ends with it, which would otherwise print the slug twice
+ * (`nstruct · Unstructured meshing category nstruct`).
+ */
 function vocabularyLabel(node: EntityGraphNode): string {
-    const title = shortTitle(node);
     const slug = slugOf(node);
+    const title = shortTitle(node)
+        .replace(new RegExp(`\\s*\\b${slug}$`, "i"), "")
+        .trim();
     return title && title.toLowerCase() !== slug.toLowerCase() ? `${slug} · ${title}` : slug;
 }
 
@@ -329,7 +341,6 @@ function disambiguateLeaves(entries: ExplorerViewEntry[]): ExplorerViewEntry[] {
 
             if (new Set(labelled).size === group.length) {
                 group.forEach((entry, index) => {
-                    // eslint-disable-next-line no-param-reassign
                     entry.segments = [...entry.segments.slice(0, -1), labelled[index]];
                 });
                 return;
@@ -387,6 +398,22 @@ export function lintExplorerViews(graph: EntityGraph, views: ExplorerViews): str
                 );
             }
 
+            // The label must name the file the row opens. Checked because it is the one
+            // thing here NOT derivable from the inputs: everything else in this function
+            // rebuilds `entry.path` from the same node fields that produced it, and so
+            // holds by construction. Reading the source path instead of the published one
+            // shipped four rows labelled `p-norm.json` that open `p_norm.json`.
+            const leaf = entry.segments[entry.segments.length - 1]
+                .replace(/ · example$/, "")
+                .split("/")
+                .pop();
+            if (leaf !== entry.path.split("/").pop()) {
+                failures.push(
+                    `L12 views.json ${name}: row "${entry.segments.join(" / ")}" is labelled ` +
+                        `"${leaf}" but opens ${entry.path}`,
+                );
+            }
+
             // Two rows reading the same in the same folder are indistinguishable to a
             // reader, whichever files they point at.
             const row = entry.segments.join(" / ");
@@ -409,15 +436,19 @@ export function lintExplorerViews(graph: EntityGraph, views: ExplorerViews): str
         return counts;
     };
 
+    // Every browsable category schema, not only the vocabulary pass: the recipe, entity and
+    // operation passes produce 145 of the 250 rows and were policed by nothing, so a schema
+    // one of them silently skipped would vanish from the tree with a green build. "At least
+    // once" rather than "exactly once" because M-CODE files a recipe under each axis it has.
     const categoryCounts = countBy(views.categories);
     graph.nodes
-        .filter((node) => node.facets?.role === "vocabulary")
+        .filter((node) => node.layer === "category" && !isEnumHolder(node))
         .forEach((node) => {
             const seen = categoryCounts.get(node.publishedPath) ?? 0;
-            if (seen !== 1) {
+            if (seen < 1) {
                 failures.push(
-                    `L12 views.json categories: vocabulary schema ${node.id} appears ${seen} ` +
-                        `time(s), expected exactly 1`,
+                    `L12 views.json categories: ${node.id} (role ` +
+                        `${node.facets?.role ?? "none"}) appears nowhere in the tree`,
                 );
             }
         });

@@ -218,7 +218,36 @@ describe("lintExplorerViews", () => {
         views.categories.splice(dropped, 1);
 
         expect(lintExplorerViews(graph, views).join("\n")).to.match(
-            /vocabulary schema models-category\/pb appears 0 time\(s\)/,
+            /models-category\/pb \(role vocabulary\) appears nowhere/,
+        );
+    });
+
+    /**
+     * The recipe, entity and operation passes produce 145 of the 250 category rows and were
+     * policed by nothing, so a schema one of them skipped vanished with a green build.
+     */
+    it("catches a recipe that no path in the view files", () => {
+        const views = buildExplorerViews(graph);
+        const slab = "schema/materials_category/pristine_structures/two_dimensional/slab.json";
+        views.categories = views.categories.filter((entry) => entry.path !== slab);
+
+        expect(lintExplorerViews(graph, views).join("\n")).to.match(
+            /\(role recipe\) appears nowhere/,
+        );
+    });
+
+    /**
+     * The check that is not derivable from the inputs. Every other assertion in the lint
+     * rebuilds `entry.path` from the same node fields that produced it, so it holds by
+     * construction; this one caught the four rows labelled with an unpublished file name.
+     */
+    it("catches a row labelled with a file it does not open", () => {
+        const views = buildExplorerViews(graph);
+        const [first] = views.directories;
+        first.segments = [...first.segments.slice(0, -1), "not-the-file.json"];
+
+        expect(lintExplorerViews(graph, views).join("\n")).to.match(
+            /is labelled "not-the-file.json" but opens/,
         );
     });
 

@@ -140,7 +140,10 @@ externally-consumed formats. Growth is reported by the lint as a warning.
 
 ## The surfaces
 
-**Schema explorer** — [the file browser](../index.html) over resolved schemas and examples.
+**Schema explorer** — [the browser](../index.html) over resolved schemas and examples. It
+arranges them three ways: by file, by [category](../index.html#/categories) — the CateCom
+ladders and M-CODE axes — and by [directory](../index.html#/directories), the catalogue grouped
+by its own facets.
 
 **Ontology map** — [the map](../map/index.html) of all schemas and their references, laid out by
 architectural layer.

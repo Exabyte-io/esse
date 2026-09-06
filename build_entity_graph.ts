@@ -3,7 +3,7 @@
  *
  * Usage:
  *   ts-node build_entity_graph.ts                      # lint only, no asset written
- *   ts-node build_entity_graph.ts --output ./site      # lint and write <output>/graph.json
+ *   ts-node build_entity_graph.ts --output ./site      # lint and write graph.json + views.json
  */
 import {
     buildEntityGraph,

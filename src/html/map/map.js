@@ -309,6 +309,8 @@ function showDetail(id) {
     ].join("");
 
     const example = exampleHref(node);
+    // Enum holders are plumbing; buildExplorerViews keeps them out of both views.
+    const browsable = node.facets && node.facets.role !== "enum-options";
 
     document.getElementById("detail-empty").hidden = true;
     const body = document.getElementById("detail-body");
@@ -334,10 +336,12 @@ function showDetail(id) {
         `<div class="detail-group"><h3>Open</h3><div class="detail-links">` +
         `<a href="../#${escHtml(node.publishedPath)}">In the schema explorer</a>` +
         // The map shows how a schema relates; the Explorer's views show where it is filed.
-        (node.layer === "category"
+        // Gated on being browsable, not just on the layer: the views exclude enum holders,
+        // so keying off `layer` alone offered 35 links into a tree that cannot contain them.
+        (browsable && node.layer === "category"
             ? `<a href="../#/categories/${escHtml(node.publishedPath)}">Browse in Categories</a>`
             : "") +
-        (node.layer === "directory"
+        (browsable && node.layer === "directory"
             ? `<a href="../#/directories/${escHtml(node.publishedPath)}">Browse in Directories</a>`
             : "") +
         `<a href="../${escHtml(node.publishedPath)}">Resolved JSON</a>` +

@@ -86,6 +86,7 @@ are stable, and change only additively:
 | `/#/categories[/<published path>]` | Explorer, Categories view — optionally opening one file |
 | `/#/directories[/<published path>]` | Explorer, Directories view — optionally opening one file |
 | `/graph.json` | the entity graph asset, described by `src/js/scripts/entity_graph.schema.json` |
+| `/views.json` | the Categories and Directories trees, checked by L12 |
 | `/docs/<slug>.html` | these pages |
 
 ## What the lint checks
