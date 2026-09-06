@@ -21,9 +21,10 @@
 </div>
 <div id="workspace">
     <aside id="docs-nav">
-        <div class="nav-title">Concepts</div>
-        <nav>
-            <a href="index.html">Documentation</a>
+        <div class="docs-nav-inner">
+            <div class="nav-title">Concepts</div>
+            <nav>
+                <a href="index.html">Documentation</a>
             <a href="why-esse-exists.html">Why ESSE exists</a>
             <a href="schema-layering.html">Schema layering</a>
             <a href="entity-anatomy.html" class="current">Entity anatomy</a>
@@ -34,7 +35,8 @@
             <a href="consuming-esse.html">Consuming ESSE</a>
             <a href="contributing-a-schema.html">Contributing a schema</a>
             <a href="glossary.html">Glossary</a>
-        </nav>
+            </nav>
+        </div>
     </aside>
     <main id="docs-content">
         <article>
@@ -42,7 +44,7 @@
 <p>Eleven schemas sit at the top level of <code>schema/</code>. They are the nouns of the domain — the things a
 user creates, names, owns and looks at — and everything else in the repository exists to define,
 categorize or support them.</p>
-<h2>Material</h2>
+<h2 id="material">Material</h2>
 <p>A material is a structure plus what is known about it. It is assembled entirely by composition:</p>
 <p><strong>Extends</strong> — <a href="../map/#/entity/in-memory-entity%2Fnamed-defaultable"><code>in-memory-entity/named-defaultable</code></a>, <a href="../map/#/entity/material%2Fmaterial-properties"><code>material/material-properties</code></a>, <a href="../map/#/entity/material%2Fmetadata"><code>material/metadata</code></a></p>
 <p><strong>Used by</strong> — <a href="../map/#/entity/material-enhanced"><code>material-enhanced</code></a>, <a href="../map/#/entity/material-hashed"><code>material-hashed</code></a>, <a href="../map/#/entity/materials-category-components%2Fentities%2Fcore%2Fthree-dimensional%2Fcrystal"><code>materials-category-components/entities/core/three-dimensional/crystal</code></a>, <a href="../map/#/entity/materials-category-components%2Foperations%2Fcore%2Fmodifications%2Fperturb"><code>materials-category-components/operations/core/modifications/perturb</code></a>, <a href="../map/#/entity/materials-category%2Fprocessed-structures%2Ftwo-dimensional%2Fpassivation%2Fconfiguration"><code>materials-category/processed-structures/two-dimensional/passivation/configuration</code></a></p>
@@ -53,7 +55,7 @@ object with defaults.</p>
 <p>Note that <code>material</code> itself declares no properties of its own. It is pure composition, which is
 the idiom you will see throughout: the root schema names the parts, and the parts hold the
 content.</p>
-<h3>The material variant family</h3>
+<h3 id="the-material-variant-family">The material variant family</h3>
 <p>Four material schemas exist, and the difference between them trips people up.</p>
 <div class="table-wrap"><table>
 <thead>
@@ -89,7 +91,7 @@ describe the same crystal with different atom ordering, origin or cell choice. H
 canonicalized form gives a stable identity for deduplication and lookup. Keeping that in a
 separate schema means consumers who do not need identity do not pay for it, and the hash algorithm
 can change without disturbing the base entity.</p>
-<h2>Model and method</h2>
+<h2 id="model-and-method">Model and method</h2>
 <p>The separation of <em>model</em> from <em>method</em> is one of the load-bearing ideas from the CateCom paper,
 and it is worth stating plainly:</p>
 <ul>
@@ -108,7 +110,7 @@ keeps them apart.</p>
 <p>Note also that neither refers to <em>software</em>. Which application computed it is a property of the
 job, not of the physics. <code>software/application</code> and the <code>software_directory</code> catalogue cover that
 separately.</p>
-<h2>Workflow, subworkflow and unit</h2>
+<h2 id="workflow-subworkflow-and-unit">Workflow, subworkflow and unit</h2>
 <p>A workflow is the executable decomposition of a calculation, and it nests three levels deep:</p>
 <ul>
 <li><strong><code>workflow</code></strong> — the top-level object a user runs.</li>
@@ -118,7 +120,7 @@ map, io, processing, and so on, each with its own schema under <code>workflow/un
 </ul>
 <p><code>workflow/unit/context/_base</code> is one of the most-referenced schemas in the corpus, because almost
 every unit type needs the context mechanism that carries values between steps.</p>
-<h2>Job</h2>
+<h2 id="job">Job</h2>
 <p>A job binds a workflow to everything needed to actually run it:</p>
 <p><strong>Extends</strong> — <a href="../map/#/entity/job%2Fbase"><code>job/base</code></a></p>
 <p><strong>Contains</strong> — <a href="../map/#/entity/workflow"><code>workflow</code></a> <code>workflow</code></p>
@@ -126,7 +128,7 @@ every unit type needs the context mechanism that carries values between steps.</
 <code>workflow</code>. Notice <code>_project</code> and <code>_material</code> on the base: these are <code>system/entity_reference</code>
 values — deliberately partial copies of another entity, not full embeddings — so a job record
 stays self-describing without duplicating whole materials into itself.</p>
-<h2>Property and the property holder</h2>
+<h2 id="property-and-the-property-holder">Property and the property holder</h2>
 <p>Properties are the results. Individual property schemas live in <code>properties_directory</code>, grouped by
 shape: <code>scalar</code> (total energy, pressure, band gap), <code>non-scalar</code> (band structure, density of
 states, charge density), <code>structural</code>, <code>elemental</code> and <code>workflow</code> (convergence monitors).</p>
@@ -138,7 +140,7 @@ with by far the largest fan-out.</p>
 <p><code>manifest/properties.yaml</code> is the registry that sits alongside: it maps a property name to its
 schema id, its default units, and flags for whether it is a computed <em>result</em> or a runtime
 <em>monitor</em>. The ontology map shows those flags as badges on property nodes.</p>
-<h2>How it fits together</h2>
+<h2 id="how-it-fits-together">How it fits together</h2>
 <p>Reading the composition from the bottom: a <strong>material</strong> is characterized by <strong>properties</strong>; those
 properties are produced by applying a <strong>model</strong> (realized by a <strong>method</strong>) through a
 <strong>workflow</strong> of <strong>units</strong>; that workflow is executed as a <strong>job</strong> against <strong>compute</strong> resources
@@ -146,7 +148,27 @@ using a <strong>software application</strong>; and the job belongs to a <strong>
 <p>Each arrow in that sentence is a <code>$ref</code> you can follow on the map.</p>
 
     </article>
+        <nav class="page-nav">
+        <a class="page-nav-prev" href="schema-layering.html"><span class="page-nav-label">Previous</span><span class="page-nav-title">Schema layering</span></a>
+        <a class="page-nav-next" href="categorization.html"><span class="page-nav-label">Next</span><span class="page-nav-title">Categorization</span></a>
+    </nav>
     </main>
+    <aside id="docs-toc">
+        <div class="nav-title">On this page</div>
+        <nav>
+            <a href="#material" class="toc-h2">Material</a>
+            <a href="#the-material-variant-family" class="toc-h3">The material variant family</a>
+            <a href="#model-and-method" class="toc-h2">Model and method</a>
+            <a href="#workflow-subworkflow-and-unit" class="toc-h2">Workflow, subworkflow and unit</a>
+            <a href="#job" class="toc-h2">Job</a>
+            <a href="#property-and-the-property-holder" class="toc-h2">Property and the property holder</a>
+            <a href="#how-it-fits-together" class="toc-h2">How it fits together</a>
+        </nav>
+    </aside>
+</div>
+<div id="statusbar">
+    <span id="status-page">The root entities, how they compose, and why there are four kinds of material.</span>
+    <span id="status-position">Page 4 of 11</span>
 </div>
 </body>
 </html>

@@ -21,9 +21,10 @@
 </div>
 <div id="workspace">
     <aside id="docs-nav">
-        <div class="nav-title">Concepts</div>
-        <nav>
-            <a href="index.html">Documentation</a>
+        <div class="docs-nav-inner">
+            <div class="nav-title">Concepts</div>
+            <nav>
+                <a href="index.html">Documentation</a>
             <a href="why-esse-exists.html" class="current">Why ESSE exists</a>
             <a href="schema-layering.html">Schema layering</a>
             <a href="entity-anatomy.html">Entity anatomy</a>
@@ -34,7 +35,8 @@
             <a href="consuming-esse.html">Consuming ESSE</a>
             <a href="contributing-a-schema.html">Contributing a schema</a>
             <a href="glossary.html">Glossary</a>
-        </nav>
+            </nav>
+        </div>
     </aside>
     <main id="docs-content">
         <article>
@@ -47,7 +49,7 @@ every boundary, and a great deal of glue code whose only job is to translate one
 another.</p>
 <p>ESSE is one answer to that. It defines the entities of the domain as data, in JSON Schema, once,
 and treats those definitions as the authoritative description that everything else derives from.</p>
-<h2>An ontology, written as JSON Schema</h2>
+<h2 id="an-ontology-written-as-json-schema">An ontology, written as JSON Schema</h2>
 <p>It is worth naming what this corpus actually is. An ontology, in the working sense, is a formal
 and explicit specification of a shared conceptualization: it fixes <em>what kinds of thing exist</em> in
 a domain and <em>how they relate</em>. ESSE does exactly that, and the relationships are not editorial —
@@ -95,7 +97,7 @@ is then trusted to conform to. The conceptual model and the wire format are the 
 or an agent navigating, this data does not have to infer the schema from examples: the entity
 types, their fields, their units and their relationships are all declared, checkable, and stable
 under a <code>$id</code>.</p>
-<h2>Schemas first, not code first</h2>
+<h2 id="schemas-first-not-code-first">Schemas first, not code first</h2>
 <p>The tempting alternative is to define entities in code — a <code>Material</code> class in Python, another in
 TypeScript — and let the serialization format fall out of whatever the classes happen to contain.
 That works until there is a second runtime, and then the two drift, because nothing forces them to
@@ -116,7 +118,7 @@ as a visible, reviewable change to a shared file, not as a silent divergence in 
 <p>The cost is real and worth naming: writing JSON Schema by hand is more tedious than writing a
 dataclass, and expressing some constraints in it is awkward. ESSE accepts that cost because the
 alternative — the drift — is worse and compounds.</p>
-<h2>What the three papers contribute</h2>
+<h2 id="what-the-three-papers-contribute">What the three papers contribute</h2>
 <p>Three publications underpin the design, and they answer different questions.</p>
 <p><strong><a href="https://arxiv.org/pdf/1902.10838.pdf">Data-centric online ecosystem for digital materials science</a></strong>
 sets out the entity model: what the nouns of the domain actually are, and how they connect. A
@@ -136,14 +138,14 @@ model is looked up; a structure is built. So a material category is a <em>recipe
 axes — structural complexity, dimensionality, and the operation that produces it — rather than a
 point on a tier ladder. Between them the two schemes&#39; vocabulary-and-catalogue schemas account for
 over half the corpus.</p>
-<h2>Generic by design</h2>
+<h2 id="generic-by-design">Generic by design</h2>
 <p>The schemas are used to run <a href="https://mat3ra.com">mat3ra.com</a>, but they are deliberately not
 platform-specific. Domain payloads — what a material <em>is</em>, what a band structure <em>contains</em> —
 carry no platform concepts. The platform&#39;s own concerns (ownership, sharing, soft deletion,
 timestamps) live in separate mixin schemas that are composed on top, as
 <a href="behavioural-mixins.html">Behavioural mixins</a> describes. A consumer who wants the domain formats
 without the platform machinery can take exactly the parts they need.</p>
-<h2>What is actually in here</h2>
+<h2 id="what-is-actually-in-here">What is actually in here</h2>
 <p>Three kinds of asset, described in <a href="the-pipeline.html">The pipeline</a>:</p>
 <ul>
 <li><strong>Schemas</strong> (<code>schema/</code>) — the rules. Every file declares a <code>$id</code> derived from its path.</li>
@@ -177,7 +179,25 @@ types.</li>
 folder of files, and they are what the <a href="../map/index.html">ontology map</a> draws.</p>
 
     </article>
+        <nav class="page-nav">
+        <a class="page-nav-prev" href="index.html"><span class="page-nav-label">Previous</span><span class="page-nav-title">Documentation</span></a>
+        <a class="page-nav-next" href="schema-layering.html"><span class="page-nav-label">Next</span><span class="page-nav-title">Schema layering</span></a>
+    </nav>
     </main>
+    <aside id="docs-toc">
+        <div class="nav-title">On this page</div>
+        <nav>
+            <a href="#an-ontology-written-as-json-schema" class="toc-h2">An ontology, written as JSON Schema</a>
+            <a href="#schemas-first-not-code-first" class="toc-h2">Schemas first, not code first</a>
+            <a href="#what-the-three-papers-contribute" class="toc-h2">What the three papers contribute</a>
+            <a href="#generic-by-design" class="toc-h2">Generic by design</a>
+            <a href="#what-is-actually-in-here" class="toc-h2">What is actually in here</a>
+        </nav>
+    </aside>
+</div>
+<div id="statusbar">
+    <span id="status-page">Schemas as the single source of truth shared by people, validators and code generators.</span>
+    <span id="status-position">Page 2 of 11</span>
 </div>
 </body>
 </html>

@@ -21,9 +21,10 @@
 </div>
 <div id="workspace">
     <aside id="docs-nav">
-        <div class="nav-title">Concepts</div>
-        <nav>
-            <a href="index.html">Documentation</a>
+        <div class="docs-nav-inner">
+            <div class="nav-title">Concepts</div>
+            <nav>
+                <a href="index.html">Documentation</a>
             <a href="why-esse-exists.html">Why ESSE exists</a>
             <a href="schema-layering.html">Schema layering</a>
             <a href="entity-anatomy.html">Entity anatomy</a>
@@ -34,7 +35,8 @@
             <a href="consuming-esse.html">Consuming ESSE</a>
             <a href="contributing-a-schema.html">Contributing a schema</a>
             <a href="glossary.html">Glossary</a>
-        </nav>
+            </nav>
+        </div>
     </aside>
     <main id="docs-content">
         <article>
@@ -79,7 +81,7 @@ corpus.</p>
 </tr>
 </tbody></table></div>
 <p>Entities carrying a tiered <code>categories</code> field: <a href="../map/#/entity/method%2Funit-method"><code>method/unit-method</code></a>, <a href="../map/#/entity/model%2Fmodel-without-method"><code>model/model-without-method</code></a>.</p>
-<h2>Scheme 1 — CateCom, for models and methods</h2>
+<h2 id="scheme-1-catecom-for-models-and-methods">Scheme 1 — CateCom, for models and methods</h2>
 <p>The tier approach comes from the
 <a href="https://pubs.acs.org/doi/abs/10.1021/acs.jcim.2c00112">CateCom paper</a>: categorize along a small
 number of ordered tiers, and keep the vocabulary separate from the instances.</p>
@@ -115,7 +117,7 @@ number of ordered tiers, and keep the vocabulary separate from the instances.</p
 <p>Each field is a <code>slugified_entry_or_slug</code> — either a bare slug string, or an object carrying the
 slug plus a human-readable name. That duality is deliberate: compact records stay compact, while
 records that need to render a label can carry one without a second lookup.</p>
-<h3>The vocabulary is a chain of narrowings</h3>
+<h3 id="the-vocabulary-is-a-chain-of-narrowings">The vocabulary is a chain of narrowings</h3>
 <p>A tier vocabulary is not one schema listing everything. It is a chain down the directory tree in
 which <strong>each schema <code>allOf</code>s its parent and narrows exactly one more field</strong> to an enumeration held
 in a sibling <code>enum_options.json</code>:</p>
@@ -158,12 +160,12 @@ in a sibling <code>enum_options.json</code>:</p>
 narrow exactly one field; the other seven pin <code>type</code> and <code>subtype</code> together as a leaf shortcut.</p>
 <p>The <code>$ref</code>-with-a-fragment into <code>enum_options.json</code> is how enumerations are shared without
 duplication — 144 references in the corpus carry a JSON pointer, and this is the dominant reason.</p>
-<h3>Where the tiers actually land</h3>
+<h3 id="where-the-tiers-actually-land">Where the tiers actually land</h3>
 <p>The vocabulary constrains; it does not enumerate instances. The tiers reach real data through just
 two entity components, listed in the table above: <code>model/model-without-method</code> and
 <code>method/unit-method</code> each carry a <code>categories</code> object. Everything else in the tier tree exists to
 say which combinations are legal.</p>
-<h2>Scheme 2 — M-CODE, for materials</h2>
+<h2 id="scheme-2-m-code-for-materials">Scheme 2 — M-CODE, for materials</h2>
 <p>Nothing under <code>materials_category/</code> extends <code>core/reusable/categories</code>. Materials are not placed on
 a tier ladder; a material category is <strong>a recipe</strong>. The scheme is
 <a href="https://arxiv.org/abs/2602.14384">M-CODE</a> — <em>Materials Categorization via Ontology, Dimensionality
@@ -219,7 +221,7 @@ new recipe rather than a new vocabulary.</p>
 <p>The trade-off is deliberate. Tiers are good for <em>retrieval</em> — filter on <code>tier2 = qm</code> and you get
 every quantum-mechanical model. Recipes are good for <em>construction</em> — the schema for a slab is
 also, quite literally, the instructions for building one.</p>
-<h2>Category versus directory</h2>
+<h2 id="category-versus-directory">Category versus directory</h2>
 <p>Underneath both schemes sits the distinction that names roughly half the directories in <code>schema/</code>:</p>
 <ul>
 <li><strong><code>*_category</code></strong> schemas define the <strong>vocabulary or the recipe</strong> — what is allowed, or what a
@@ -292,7 +294,7 @@ M-CODE axes and shows each catalogue entry at the coordinate it is filed under, 
 <a href="../index.html#/directories"><strong>Directories</strong></a> view, which lists every catalogue entry grouped by
 its own facet — properties by value shape, software by kind, models and methods by their ladder
 position. The file tree cannot show either: a ladder is a chain of <code>allOf</code>, not a path.</p>
-<h2>Worked example: finding an exchange-correlation functional</h2>
+<h2 id="worked-example-finding-an-exchange-correlation-functional">Worked example: finding an exchange-correlation functional</h2>
 <p>Suppose you want the PBE functional and you do not know where it lives.</p>
 <ol>
 <li><strong>Start at the tier vocabulary.</strong> A DFT functional is physics-based, so <code>tier1</code> is <code>pb</code>. The
@@ -309,7 +311,7 @@ itself is a <code>model/mixins/functional</code> concern composed into the model
 <p>The general shape of the answer: <strong>categories tell you the coordinates, directories hold the
 thing</strong>. If you are looking for &quot;what values are allowed&quot;, read a <code>*_category</code> schema. If you are
 looking for &quot;the actual entry for X&quot;, read a <code>*_directory</code> one.</p>
-<h2>The manifests</h2>
+<h2 id="the-manifests">The manifests</h2>
 <p><code>manifest/*.yaml</code> sits outside <code>schema/</code> because it is a registry rather than a format:</p>
 <ul>
 <li><strong><code>properties.yaml</code></strong> — every property, its <code>schemaId</code>, default units, and <code>isResult</code> /
@@ -321,7 +323,7 @@ equivalent registries for models and functionals.</li>
 <p>The manifests are joined to the schemas by <code>schemaId</code>, and that join is checked: a manifest entry
 naming a schema that does not exist fails the build. It used to be possible for the two to drift
 apart silently.</p>
-<h2>Why keep the tiers in the data?</h2>
+<h2 id="why-keep-the-tiers-in-the-data">Why keep the tiers in the data?</h2>
 <p>The tier vocabulary is mirrored in the directory tree, so it is fair to ask why the tiers are also
 carried as fields. Because the tree can express only one hierarchy, and it can express it only for
 schemas. The <code>categories</code> object travels with an <em>instance</em>: a stored model record can be filtered
@@ -337,7 +339,28 @@ the retrieval-versus-construction trade-off above. Encoding a recipe as five tie
 flatten out exactly the part that makes it useful.</p>
 
     </article>
+        <nav class="page-nav">
+        <a class="page-nav-prev" href="entity-anatomy.html"><span class="page-nav-label">Previous</span><span class="page-nav-title">Entity anatomy</span></a>
+        <a class="page-nav-next" href="behavioural-mixins.html"><span class="page-nav-label">Next</span><span class="page-nav-title">Behavioural mixins</span></a>
+    </nav>
     </main>
+    <aside id="docs-toc">
+        <div class="nav-title">On this page</div>
+        <nav>
+            <a href="#scheme-1-catecom-for-models-and-methods" class="toc-h2">Scheme 1 — CateCom, for models and methods</a>
+            <a href="#the-vocabulary-is-a-chain-of-narrowings" class="toc-h3">The vocabulary is a chain of narrowings</a>
+            <a href="#where-the-tiers-actually-land" class="toc-h3">Where the tiers actually land</a>
+            <a href="#scheme-2-m-code-for-materials" class="toc-h2">Scheme 2 — M-CODE, for materials</a>
+            <a href="#category-versus-directory" class="toc-h2">Category versus directory</a>
+            <a href="#worked-example-finding-an-exchange-correlation-functional" class="toc-h2">Worked example: finding an exchange-correlation functional</a>
+            <a href="#the-manifests" class="toc-h2">The manifests</a>
+            <a href="#why-keep-the-tiers-in-the-data" class="toc-h2">Why keep the tiers in the data?</a>
+        </nav>
+    </aside>
+</div>
+<div id="statusbar">
+    <span id="status-page">Two categorization schemes, each with its own paper — CateCom tiers for models and methods, M-CODE composition for materials — and the category-versus-directory split.</span>
+    <span id="status-position">Page 5 of 11</span>
 </div>
 </body>
 </html>

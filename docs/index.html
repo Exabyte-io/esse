@@ -21,9 +21,10 @@
 </div>
 <div id="workspace">
     <aside id="docs-nav">
-        <div class="nav-title">Concepts</div>
-        <nav>
-            <a href="index.html" class="current">Documentation</a>
+        <div class="docs-nav-inner">
+            <div class="nav-title">Concepts</div>
+            <nav>
+                <a href="index.html" class="current">Documentation</a>
             <a href="why-esse-exists.html">Why ESSE exists</a>
             <a href="schema-layering.html">Schema layering</a>
             <a href="entity-anatomy.html">Entity anatomy</a>
@@ -34,7 +35,8 @@
             <a href="consuming-esse.html">Consuming ESSE</a>
             <a href="contributing-a-schema.html">Contributing a schema</a>
             <a href="glossary.html">Glossary</a>
-        </nav>
+            </nav>
+        </div>
     </aside>
     <main id="docs-content">
         <article>
@@ -70,7 +72,7 @@ the schemas are shaped the way they are, which is the part neither of the other 
 <td>170</td>
 </tr>
 </tbody></table></div>
-<h2>Where to start</h2>
+<h2 id="where-to-start">Where to start</h2>
 <p>If you are new, read the first four pages in order — they are the argument, and the rest are
 reference:</p>
 <ol>
@@ -96,13 +98,28 @@ and what the two runtimes do and do not guarantee.</li>
 <li><strong><a href="contributing-a-schema.html">Contributing a schema</a></strong> — a worked example, end to end.</li>
 <li><strong><a href="glossary.html">Glossary</a></strong> — the vocabulary, in one place.</li>
 </ol>
-<h2>Conventions in these pages</h2>
+<h2 id="conventions-in-these-pages">Conventions in these pages</h2>
 <p>Every claim about the corpus — counts, relationships, coverage — is generated from the schema
 sources at build time rather than typed by hand, so these pages cannot quietly fall out of step
 with the schemas they describe. Schema names link to their place on the ontology map.</p>
 
     </article>
+        <nav class="page-nav">
+        <span class="page-nav-prev"></span>
+        <a class="page-nav-next" href="why-esse-exists.html"><span class="page-nav-label">Next</span><span class="page-nav-title">Why ESSE exists</span></a>
+    </nav>
     </main>
+    <aside id="docs-toc">
+        <div class="nav-title">On this page</div>
+        <nav>
+            <a href="#where-to-start" class="toc-h2">Where to start</a>
+            <a href="#conventions-in-these-pages" class="toc-h2">Conventions in these pages</a>
+        </nav>
+    </aside>
+</div>
+<div id="statusbar">
+    <span id="status-page">How ESSE is put together and why — the concepts behind the schemas.</span>
+    <span id="status-position">Page 1 of 11</span>
 </div>
 </body>
 </html>

@@ -21,9 +21,10 @@
 </div>
 <div id="workspace">
     <aside id="docs-nav">
-        <div class="nav-title">Concepts</div>
-        <nav>
-            <a href="index.html">Documentation</a>
+        <div class="docs-nav-inner">
+            <div class="nav-title">Concepts</div>
+            <nav>
+                <a href="index.html">Documentation</a>
             <a href="why-esse-exists.html">Why ESSE exists</a>
             <a href="schema-layering.html">Schema layering</a>
             <a href="entity-anatomy.html">Entity anatomy</a>
@@ -34,14 +35,15 @@
             <a href="consuming-esse.html">Consuming ESSE</a>
             <a href="contributing-a-schema.html" class="current">Contributing a schema</a>
             <a href="glossary.html">Glossary</a>
-        </nav>
+            </nav>
+        </div>
     </aside>
     <main id="docs-content">
         <article>
 <h1>Contributing a schema</h1>
 <p>A worked example: adding a new scalar property. Most contributions follow this shape, and the
 checks are the same whatever you are adding.</p>
-<h2>Setup, once</h2>
+<h2 id="setup-once">Setup, once</h2>
 <p>Both runtimes are needed, because the pre-commit hook regenerates assets with both:</p>
 <pre><code class="language-bash">git clone https://github.com/mat3ra/esse.git &amp;&amp; cd esse
 npm install
@@ -51,7 +53,7 @@ source .venv/bin/activate
 pip install -e &quot;.[all]&quot;
 </code></pre>
 <p>The hook requires <code>.venv</code> at the repository root specifically, and refuses to run without it.</p>
-<h2>1. Write the schema</h2>
+<h2 id="1-write-the-schema">1. Write the schema</h2>
 <p>Say we are adding a <em>cohesive energy</em> scalar property. Scalar properties live in
 <code>schema/properties_directory/scalar/</code>, and they compose an existing reusable rather than
 redefining what an energy is:</p>
@@ -83,7 +85,7 @@ not an energy, look for the reusable that fits before writing a new one.</li>
 <li>4-space indent, double quotes, trailing newline.</li>
 <li>No circular references.</li>
 </ul>
-<h2>2. Write the example</h2>
+<h2 id="2-write-the-example">2. Write the example</h2>
 <p>Examples mirror the schema tree exactly. <code>example/properties_directory/scalar/cohesive_energy.json</code>:</p>
 <pre><code class="language-json">{
     &quot;name&quot;: &quot;cohesive_energy&quot;,
@@ -93,7 +95,7 @@ not an energy, look for the reusable that fits before writing a new one.</li>
 </code></pre>
 <p>This is not optional decoration. Currently 209 of 564 schemas (37%) have a mirror example, and the coverage
 figure is reported by the lint precisely so it goes up rather than down.</p>
-<h2>3. Register it in the manifest</h2>
+<h2 id="3-register-it-in-the-manifest">3. Register it in the manifest</h2>
 <p>If the property is one the platform should know about, add it to <code>manifest/properties.yaml</code>:</p>
 <pre><code class="language-yaml">cohesive_energy:
   defaults:
@@ -104,7 +106,7 @@ figure is reported by the lint precisely so it goes up rather than down.</p>
 <p><code>isResult</code> marks a computed output; <code>isMonitor</code> marks something tracked during a run. The
 <code>schemaId</code> must resolve — the lint fails if it does not, which is a check that did not exist
 before and had been silently breakable.</p>
-<h2>4. Regenerate</h2>
+<h2 id="4-regenerate">4. Regenerate</h2>
 <pre><code class="language-bash">npm run set-schema-ids          # normalize $ids
 npm run transpile-and-build-assets
 </code></pre>
@@ -115,7 +117,7 @@ predictable.</p>
 <code>src/py/</code> come along, and <code>datamodel-codegen</code>&#39;s global class numbering may renumber classes in
 unrelated model files. That is normal, and <a href="the-pipeline.html">The pipeline</a> explains why.
 <code>dist/</code> itself is gitignored, so resolved assets do not appear in the diff.</p>
-<h2>5. Check it</h2>
+<h2 id="5-check-it">5. Check it</h2>
 <pre><code class="language-bash">npm run lint-entity-graph       # the schema lint, L1-L12
 npm test                        # includes the lint plus the JS test suite
 python -m unittest discover --verbose --catch --start-directory tests/py/esse/
@@ -152,11 +154,11 @@ contribution:</p>
 </tbody></table></div>
 <p>If you added a new top-level directory, L3 will fail by design: the layer taxonomy is total, and
 adding a directory is a decision someone should make deliberately rather than let default.</p>
-<h2>6. Update the counts</h2>
+<h2 id="6-update-the-counts">6. Update the counts</h2>
 <p><code>tests/js/entityGraph.tests.ts</code> pins the corpus baseline — node count, edge counts by kind, layer
 counts. Adding a schema changes them, which is intended: update the constants in the same commit,
 so the change to the corpus is visible in review rather than buried.</p>
-<h2>7. Open the pull request</h2>
+<h2 id="7-open-the-pull-request">7. Open the pull request</h2>
 <p>Fork, branch, and open a pull request against <code>dev</code>. Useful things to say in the description:</p>
 <ul>
 <li>What the entity is and where it fits in the layering.</li>
@@ -164,7 +166,7 @@ so the change to the corpus is visible in review rather than buried.</p>
 <li>Whether it is a breaking change. Moving or renaming an existing schema is breaking, because
 consumers reference schemas by <code>$id</code>.</li>
 </ul>
-<h2>Where things go</h2>
+<h2 id="where-things-go">Where things go</h2>
 <div class="table-wrap"><table>
 <thead>
 <tr>
@@ -209,7 +211,29 @@ consumers reference schemas by <code>$id</code>.</li>
 is the longer answer.</p>
 
     </article>
+        <nav class="page-nav">
+        <a class="page-nav-prev" href="consuming-esse.html"><span class="page-nav-label">Previous</span><span class="page-nav-title">Consuming ESSE</span></a>
+        <a class="page-nav-next" href="glossary.html"><span class="page-nav-label">Next</span><span class="page-nav-title">Glossary</span></a>
+    </nav>
     </main>
+    <aside id="docs-toc">
+        <div class="nav-title">On this page</div>
+        <nav>
+            <a href="#setup-once" class="toc-h2">Setup, once</a>
+            <a href="#1-write-the-schema" class="toc-h2">1. Write the schema</a>
+            <a href="#2-write-the-example" class="toc-h2">2. Write the example</a>
+            <a href="#3-register-it-in-the-manifest" class="toc-h2">3. Register it in the manifest</a>
+            <a href="#4-regenerate" class="toc-h2">4. Regenerate</a>
+            <a href="#5-check-it" class="toc-h2">5. Check it</a>
+            <a href="#6-update-the-counts" class="toc-h2">6. Update the counts</a>
+            <a href="#7-open-the-pull-request" class="toc-h2">7. Open the pull request</a>
+            <a href="#where-things-go" class="toc-h2">Where things go</a>
+        </nav>
+    </aside>
+</div>
+<div id="statusbar">
+    <span id="status-page">Adding a new scalar property, end to end — files, commands, checks and review.</span>
+    <span id="status-position">Page 10 of 11</span>
 </div>
 </body>
 </html>

@@ -21,9 +21,10 @@
 </div>
 <div id="workspace">
     <aside id="docs-nav">
-        <div class="nav-title">Concepts</div>
-        <nav>
-            <a href="index.html">Documentation</a>
+        <div class="docs-nav-inner">
+            <div class="nav-title">Concepts</div>
+            <nav>
+                <a href="index.html">Documentation</a>
             <a href="why-esse-exists.html">Why ESSE exists</a>
             <a href="schema-layering.html">Schema layering</a>
             <a href="entity-anatomy.html">Entity anatomy</a>
@@ -34,7 +35,8 @@
             <a href="consuming-esse.html" class="current">Consuming ESSE</a>
             <a href="contributing-a-schema.html">Contributing a schema</a>
             <a href="glossary.html">Glossary</a>
-        </nav>
+            </nav>
+        </div>
     </aside>
     <main id="docs-content">
         <article>
@@ -42,12 +44,12 @@
 <p>ESSE ships equivalent interfaces for both runtimes. Neither touches the filesystem at runtime —
 the schemas are baked into generated modules at build time — so both work in restricted
 environments and in the browser.</p>
-<h2>Installing</h2>
+<h2 id="installing">Installing</h2>
 <pre><code class="language-bash">pip install mat3ra-esse
 npm install @mat3ra/esse
 </code></pre>
-<h2>Python</h2>
-<h3>Looking up a schema</h3>
+<h2 id="python">Python</h2>
+<h3 id="looking-up-a-schema">Looking up a schema</h3>
 <pre><code class="language-python">from mat3ra.esse import ESSE
 
 helper = ESSE()
@@ -55,7 +57,7 @@ schema = helper.get_schema_by_id(&quot;material&quot;)
 </code></pre>
 <p>Schema ids are the dash-separated form described in <a href="conventions.html">Conventions</a> —
 <code>material</code>, <code>in-memory-entity/named-defaultable</code>, <code>properties-directory/scalar/total-energy</code>.</p>
-<h3>Validating and cleaning</h3>
+<h3 id="validating-and-cleaning">Validating and cleaning</h3>
 <p><code>validate_and_clean</code> validates a document and strips properties the schema does not declare. It
 mutates in place:</p>
 <pre><code class="language-python">from mat3ra.esse import validate_and_clean
@@ -71,7 +73,7 @@ print(data)  # {&quot;a&quot;: &quot;x&quot;, &quot;b&quot;: 1}
 </code></pre>
 <p>Null values are removed; empty strings are kept, because an empty string is a meaningful
 placeholder for an entity field that exists but is not yet filled in.</p>
-<h3>Generated pydantic models</h3>
+<h3 id="generated-pydantic-models">Generated pydantic models</h3>
 <p>Every schema has a corresponding pydantic v2 model under <code>mat3ra.esse.models</code>, which is usually
 the more ergonomic route — you get typing, coercion and IDE completion:</p>
 <pre><code class="language-python">from pydantic import ConfigDict
@@ -92,14 +94,14 @@ does exactly this in its <code>application.py</code>.</p>
 <p><strong>Depend on the named top-level model, not on generated inner class names.</strong> As
 <a href="the-pipeline.html">The pipeline</a> explains, <code>datamodel-codegen</code> numbers generated classes globally,
 so a name like <code>Units276</code> can change when an unrelated schema is added.</p>
-<h2>JavaScript and TypeScript</h2>
-<h3>Looking up a schema</h3>
+<h2 id="javascript-and-typescript">JavaScript and TypeScript</h2>
+<h3 id="looking-up-a-schema-1">Looking up a schema</h3>
 <pre><code class="language-javascript">const { ESSE } = require(&quot;@mat3ra/esse/lib/js/esse&quot;);
 
 const helper = new ESSE();
 const schema = helper.getSchemaById(&quot;material&quot;);
 </code></pre>
-<h3>Validating and cleaning</h3>
+<h3 id="validating-and-cleaning-1">Validating and cleaning</h3>
 <pre><code class="language-javascript">const { validateAndClean } = require(&quot;@mat3ra/esse/lib/js/esse&quot;);
 
 const data = { a: &quot;x&quot;, b: 1, c: &quot;drop&quot; };
@@ -110,7 +112,7 @@ const schema = {
 
 const result = validateAndClean(data, schema);
 </code></pre>
-<h3><code>JSONSchemasInterface</code></h3>
+<h3 id="jsonschemasinterface"><code>JSONSchemasInterface</code></h3>
 <p>The richer accessor, used across the <code>@mat3ra/*</code> packages:</p>
 <pre><code class="language-typescript">import JSONSchemasInterface from &quot;@mat3ra/esse/dist/js/esse/JSONSchemasInterface&quot;;
 
@@ -132,10 +134,10 @@ const patched = JSONSchemasInterface.getPatchedSchemaById(&quot;boundary-conditi
 overridden, which is how UI code specializes a shared schema for one context without mutating the
 registry everyone else reads.</p>
 <p><code>JSONSchemasInterfaceServer</code> is the Node-only variant that can also read schemas from a folder.</p>
-<h3>Generated types</h3>
+<h3 id="generated-types">Generated types</h3>
 <pre><code class="language-typescript">import type { MaterialSchema } from &quot;@mat3ra/esse/dist/js/types&quot;;
 </code></pre>
-<h2>Which to reach for</h2>
+<h2 id="which-to-reach-for">Which to reach for</h2>
 <div class="table-wrap"><table>
 <thead>
 <tr>
@@ -164,13 +166,38 @@ registry everyone else reads.</p>
 <td><code>graph.json</code>, or the <a href="../map/index.html">ontology map</a></td>
 </tr>
 </tbody></table></div>
-<h2>Downstream packages</h2>
+<h2 id="downstream-packages">Downstream packages</h2>
 <p>The <code>@mat3ra/*</code> ecosystem consumes ESSE throughout — <code>made</code> (materials), <code>mode</code> (models), <code>ade</code>
 (applications), <code>wode</code> (workflows), <code>jode</code> (jobs), <code>prode</code> (properties), <code>code</code> (shared entity
 machinery). They are worth reading as worked examples of entity classes built on these schemas.</p>
 
     </article>
+        <nav class="page-nav">
+        <a class="page-nav-prev" href="the-pipeline.html"><span class="page-nav-label">Previous</span><span class="page-nav-title">The pipeline</span></a>
+        <a class="page-nav-next" href="contributing-a-schema.html"><span class="page-nav-label">Next</span><span class="page-nav-title">Contributing a schema</span></a>
+    </nav>
     </main>
+    <aside id="docs-toc">
+        <div class="nav-title">On this page</div>
+        <nav>
+            <a href="#installing" class="toc-h2">Installing</a>
+            <a href="#python" class="toc-h2">Python</a>
+            <a href="#looking-up-a-schema" class="toc-h3">Looking up a schema</a>
+            <a href="#validating-and-cleaning" class="toc-h3">Validating and cleaning</a>
+            <a href="#generated-pydantic-models" class="toc-h3">Generated pydantic models</a>
+            <a href="#javascript-and-typescript" class="toc-h2">JavaScript and TypeScript</a>
+            <a href="#looking-up-a-schema-1" class="toc-h3">Looking up a schema</a>
+            <a href="#validating-and-cleaning-1" class="toc-h3">Validating and cleaning</a>
+            <a href="#jsonschemasinterface" class="toc-h3">JSONSchemasInterface</a>
+            <a href="#generated-types" class="toc-h3">Generated types</a>
+            <a href="#which-to-reach-for" class="toc-h2">Which to reach for</a>
+            <a href="#downstream-packages" class="toc-h2">Downstream packages</a>
+        </nav>
+    </aside>
+</div>
+<div id="statusbar">
+    <span id="status-page">Reading, validating and typing against the schemas from Python and JavaScript.</span>
+    <span id="status-position">Page 9 of 11</span>
 </div>
 </body>
 </html>

@@ -21,9 +21,10 @@
 </div>
 <div id="workspace">
     <aside id="docs-nav">
-        <div class="nav-title">Concepts</div>
-        <nav>
-            <a href="index.html">Documentation</a>
+        <div class="docs-nav-inner">
+            <div class="nav-title">Concepts</div>
+            <nav>
+                <a href="index.html">Documentation</a>
             <a href="why-esse-exists.html">Why ESSE exists</a>
             <a href="schema-layering.html">Schema layering</a>
             <a href="entity-anatomy.html">Entity anatomy</a>
@@ -34,14 +35,15 @@
             <a href="consuming-esse.html">Consuming ESSE</a>
             <a href="contributing-a-schema.html">Contributing a schema</a>
             <a href="glossary.html" class="current">Glossary</a>
-        </nav>
+            </nav>
+        </div>
     </aside>
     <main id="docs-content">
         <article>
 <h1>Glossary</h1>
 <p>Terms as this repository uses them. Where a term names a schema, the name links to its place on
 the <a href="../map/index.html">ontology map</a>.</p>
-<h2>The corpus</h2>
+<h2 id="the-corpus">The corpus</h2>
 <p><strong>Ontology</strong> — a formal, explicit specification of a shared conceptualization: what kinds of thing
 exist in a domain, and how they relate. ESSE is one, expressed as JSON Schema rather than OWL/RDF.
 The three relationship kinds are the familiar ontological ones — <code>extends</code> is subsumption (<em>is a</em>),
@@ -65,7 +67,7 @@ Consumers reference schemas by this, so moving a file is a breaking change.
 <a href="conventions.html">Conventions</a>.</p>
 <p><strong>Published path</strong> — where a schema&#39;s resolved copy lives on the site, derived from the <code>$id</code>.
 Not always the source path, because source directories may contain literal dashes.</p>
-<h2>The layering</h2>
+<h2 id="the-layering">The layering</h2>
 <p><strong>Layer</strong> — where a schema sits in the build-up: <code>primitive</code>, <code>abstract</code>, <code>reusable</code>, <code>reference</code>,
 <code>definition</code>, <code>in-memory-entity</code>, <code>system</code>, <code>entity</code>, <code>entity-component</code>, <code>category</code>, <code>directory</code>,
 <code>application-parsing</code>. Every schema has exactly one, and the classification is total — an
@@ -80,7 +82,7 @@ add record behaviour rather than payload. <a href="behavioural-mixins.html">Beha
 <p><strong>Entity reference</strong> — <a href="../map/#/entity/system%2Fentity-reference"><code>system/entity-reference</code></a>, a
 partial copy of another entity: enough to identify and display it without embedding the whole
 thing.</p>
-<h2>The entities</h2>
+<h2 id="the-entities">The entities</h2>
 <p><strong>Material</strong> — a structure plus what is known about it. Four variants exist: the canonical
 <code>material</code>, the content-addressed <code>material-hashed</code>, the enriched <code>material-enhanced</code>, and both
 combined. <a href="entity-anatomy.html">Entity anatomy</a>.</p>
@@ -96,7 +98,7 @@ is a union over every property type. The widest schema in the corpus and the sin
 <p><strong>Workflow / subworkflow / unit</strong> — the executable decomposition of a calculation, three levels
 deep. Units are typed: execution, assignment, condition, map, io, processing.</p>
 <p><strong>Job</strong> — a workflow bound to the compute, project and material it runs against.</p>
-<h2>Categorization</h2>
+<h2 id="categorization">Categorization</h2>
 <p><strong>Tier</strong> — one level of the CateCom categorization (<code>tier1</code>, <code>tier2</code>, <code>tier3</code>, plus <code>type</code> and
 <code>subtype</code>), defined by
 <a href="../map/#/entity/core%2Freusable%2Fcategories"><code>core/reusable/categories</code></a>. Categories are a path,
@@ -119,7 +121,7 @@ directory structure. A slab <em>is</em> a stack of atomic layers and vacuum.
 as default units and the <code>isResult</code> / <code>isMonitor</code> flags. The join is lint-checked.</p>
 <p><strong>Generative key</strong> — a field flagged <code>isGenerative: true</code>, marking user input supplied before a
 calculation rather than a computed result.</p>
-<h2>Tooling</h2>
+<h2 id="tooling">Tooling</h2>
 <p><strong>Entity graph</strong> — <code>graph.json</code>, the extracted reference graph: one node per schema, one edge per
 cross-schema <code>$ref</code>. Described by <code>src/js/scripts/entity_graph.schema.json</code>, which lives with the
 extractor rather than in <code>schema/</code>: it describes a build artifact, not an entity of digital
@@ -182,7 +184,7 @@ externally-consumed formats. Growth is reported by the lint as a warning.</p>
 <td>10</td>
 </tr>
 </tbody></table></div>
-<h2>The surfaces</h2>
+<h2 id="the-surfaces">The surfaces</h2>
 <p><strong>Schema explorer</strong> — <a href="../index.html">the browser</a> over resolved schemas and examples. It
 arranges them three ways: by file, by <a href="../index.html#/categories">category</a> — the CateCom
 ladders and M-CODE axes — and by <a href="../index.html#/directories">directory</a>, the catalogue grouped
@@ -192,7 +194,26 @@ architectural layer.</p>
 <p><strong>Concept documentation</strong> — these pages.</p>
 
     </article>
+        <nav class="page-nav">
+        <a class="page-nav-prev" href="contributing-a-schema.html"><span class="page-nav-label">Previous</span><span class="page-nav-title">Contributing a schema</span></a>
+        <span class="page-nav-next"></span>
+    </nav>
     </main>
+    <aside id="docs-toc">
+        <div class="nav-title">On this page</div>
+        <nav>
+            <a href="#the-corpus" class="toc-h2">The corpus</a>
+            <a href="#the-layering" class="toc-h2">The layering</a>
+            <a href="#the-entities" class="toc-h2">The entities</a>
+            <a href="#categorization" class="toc-h2">Categorization</a>
+            <a href="#tooling" class="toc-h2">Tooling</a>
+            <a href="#the-surfaces" class="toc-h2">The surfaces</a>
+        </nav>
+    </aside>
+</div>
+<div id="statusbar">
+    <span id="status-page">The vocabulary of the repository, with pointers to where each idea is explained.</span>
+    <span id="status-position">Page 11 of 11</span>
 </div>
 </body>
 </html>

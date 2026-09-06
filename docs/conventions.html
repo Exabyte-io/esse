@@ -21,9 +21,10 @@
 </div>
 <div id="workspace">
     <aside id="docs-nav">
-        <div class="nav-title">Concepts</div>
-        <nav>
-            <a href="index.html">Documentation</a>
+        <div class="docs-nav-inner">
+            <div class="nav-title">Concepts</div>
+            <nav>
+                <a href="index.html">Documentation</a>
             <a href="why-esse-exists.html">Why ESSE exists</a>
             <a href="schema-layering.html">Schema layering</a>
             <a href="entity-anatomy.html">Entity anatomy</a>
@@ -34,14 +35,15 @@
             <a href="consuming-esse.html">Consuming ESSE</a>
             <a href="contributing-a-schema.html">Contributing a schema</a>
             <a href="glossary.html">Glossary</a>
-        </nav>
+            </nav>
+        </div>
     </aside>
     <main id="docs-content">
         <article>
 <h1>Conventions</h1>
 <p>The rules that keep the schema corpus coherent. Most are enforced by the schema lint, which runs on
 every pull request; where that is so, it is noted.</p>
-<h2><code>$id</code> is the path</h2>
+<h2 id="id-is-the-path"><code>$id</code> is the path</h2>
 <p>Every schema declares an <code>$id</code> derived mechanically from its location under <code>schema/</code>: drop the
 <code>.json</code>, and replace underscores with dashes.</p>
 <pre><code>schema/in_memory_entity/named_defaultable.json   -&gt;   $id: in-memory-entity/named-defaultable
@@ -60,36 +62,36 @@ the <code>$id</code> with dashes turned <em>back</em> into underscores — which
 contains a literal dash. Going from <code>$id</code> to published path is a pure function; going back is
 not, and needs a lookup. Both paths are carried on every node in <code>graph.json</code> for this reason.</li>
 </ul>
-<h2>Draft-07, and no circular references</h2>
+<h2 id="draft-07-and-no-circular-references">Draft-07, and no circular references</h2>
 <p>All schemas declare <code>http://json-schema.org/draft-07/schema#</code>. Draft-07 is what the JavaScript and
 Python validators, the pydantic generator and the TypeScript generator all agree on.</p>
 <p><strong>Circular <code>$ref</code>s are forbidden.</strong> The README&#39;s guidance is to leave the type as <code>object</code> and
 explain the relationship in <code>description</code> instead. There are currently none, and the lint fails if
 one appears. The reason is practical: the build resolves and merges references, and a cycle either
 hangs it or forces a silent fallback to the unresolved form.</p>
-<h2><code>include()</code> statements</h2>
+<h2 id="include-statements"><code>include()</code> statements</h2>
 <p>Beyond standard <code>$ref</code>, ESSE supports an <code>include()</code> mechanism (implemented in
 <code>src/js/json_include</code>) that splices one document&#39;s keys into another at build time. It exists for
 cases where <code>$ref</code> cannot express the composition, and it is resolved before validation — no
 consumer of the published schemas ever sees an <code>include()</code>.</p>
 <p>Prefer <code>$ref</code>. It is standard, it is visible on the ontology map, and it survives into the resolved
 output as structure rather than as a copy.</p>
-<h2>Generative keys</h2>
+<h2 id="generative-keys">Generative keys</h2>
 <p>Some property schemas describe values a user supplies <em>before</em> a calculation rather than results
 that come out of one. Those fields are flagged in schema comments with <code>isGenerative: true</code>, which
 marks them for inclusion in generated user-input forms. <code>properties_directory/non-scalar/file_content</code>
 is the canonical example of a property carrying additional input-side tagging.</p>
-<h2>Formatting</h2>
+<h2 id="formatting">Formatting</h2>
 <p>Enforced by prettier and the shared pre-commit hooks:</p>
 <ul>
 <li><strong>4-space indentation</strong>, <strong>100-character</strong> print width</li>
 <li><strong>double quotes</strong> (it is JSON), <strong>trailing newline</strong>, <strong>bracket spacing</strong></li>
 </ul>
-<h2>The manifests</h2>
+<h2 id="the-manifests">The manifests</h2>
 <p><code>manifest/*.yaml</code> are registries keyed by name, joining to schemas by <code>schemaId</code>. A manifest entry
 naming a schema that does not exist now fails the lint; previously the two could drift apart
 unnoticed.</p>
-<h2>URLs that are contracts</h2>
+<h2 id="urls-that-are-contracts">URLs that are contracts</h2>
 <p>The published site&#39;s URLs are depended on by documentation, pull requests and the platform. These
 are stable, and change only additively:</p>
 <div class="table-wrap"><table>
@@ -136,7 +138,7 @@ are stable, and change only additively:</p>
 <td>these pages</td>
 </tr>
 </tbody></table></div>
-<h2>What the lint checks</h2>
+<h2 id="what-the-lint-checks">What the lint checks</h2>
 <p><code>npm run lint-entity-graph</code>, run on every pull request:</p>
 <div class="table-wrap"><table>
 <thead>
@@ -197,7 +199,7 @@ are stable, and change only additively:</p>
 <p>L3 is the one that will catch you when adding a new top-level directory: the layer taxonomy is
 total by design, so a path no rule covers is a failure rather than a silent fallback. Add a rule
 to <code>classifyLayer</code> in the same change.</p>
-<h2>General advice from the README</h2>
+<h2 id="general-advice-from-the-readme">General advice from the README</h2>
 <ul>
 <li>Use unique ids for schemas.</li>
 <li>Do not use circular references; leave the type as <code>object</code> and explain it in the description.</li>
@@ -206,7 +208,29 @@ welcome.</li>
 </ul>
 
     </article>
+        <nav class="page-nav">
+        <a class="page-nav-prev" href="behavioural-mixins.html"><span class="page-nav-label">Previous</span><span class="page-nav-title">Behavioural mixins</span></a>
+        <a class="page-nav-next" href="the-pipeline.html"><span class="page-nav-label">Next</span><span class="page-nav-title">The pipeline</span></a>
+    </nav>
     </main>
+    <aside id="docs-toc">
+        <div class="nav-title">On this page</div>
+        <nav>
+            <a href="#id-is-the-path" class="toc-h2">$id is the path</a>
+            <a href="#draft-07-and-no-circular-references" class="toc-h2">Draft-07, and no circular references</a>
+            <a href="#include-statements" class="toc-h2">include() statements</a>
+            <a href="#generative-keys" class="toc-h2">Generative keys</a>
+            <a href="#formatting" class="toc-h2">Formatting</a>
+            <a href="#the-manifests" class="toc-h2">The manifests</a>
+            <a href="#urls-that-are-contracts" class="toc-h2">URLs that are contracts</a>
+            <a href="#what-the-lint-checks" class="toc-h2">What the lint checks</a>
+            <a href="#general-advice-from-the-readme" class="toc-h2">General advice from the README</a>
+        </nav>
+    </aside>
+</div>
+<div id="statusbar">
+    <span id="status-page">Ids, includes, generative keys, formatting rules, and the URLs that are contracts.</span>
+    <span id="status-position">Page 7 of 11</span>
 </div>
 </body>
 </html>

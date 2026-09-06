@@ -21,9 +21,10 @@
 </div>
 <div id="workspace">
     <aside id="docs-nav">
-        <div class="nav-title">Concepts</div>
-        <nav>
-            <a href="index.html">Documentation</a>
+        <div class="docs-nav-inner">
+            <div class="nav-title">Concepts</div>
+            <nav>
+                <a href="index.html">Documentation</a>
             <a href="why-esse-exists.html">Why ESSE exists</a>
             <a href="schema-layering.html">Schema layering</a>
             <a href="entity-anatomy.html">Entity anatomy</a>
@@ -34,7 +35,8 @@
             <a href="consuming-esse.html">Consuming ESSE</a>
             <a href="contributing-a-schema.html">Contributing a schema</a>
             <a href="glossary.html">Glossary</a>
-        </nav>
+            </nav>
+        </div>
     </aside>
     <main id="docs-content">
         <article>
@@ -44,7 +46,7 @@ describe how an object behaves <em>as a record</em>: that it has a name, that it
 was created by someone at some time, that another record can point at it.</p>
 <p>They are composed into entities with <code>allOf</code>, which is JSON Schema&#39;s intersection: a document must
 satisfy every branch. Read an entity schema as <strong>base + mixins + payload</strong>.</p>
-<h2>Reading a composed schema</h2>
+<h2 id="reading-a-composed-schema">Reading a composed schema</h2>
 <p><code>material</code> is the clearest example. It declares no properties of its own; it is three <code>allOf</code>
 branches:</p>
 <pre><code class="language-json">{
@@ -60,7 +62,7 @@ branches:</p>
 <p>One branch is behaviour (it is a named object with defaults), two are payload (structure and
 metadata). Swap the behaviour branch and you have the same material with different platform
 semantics; drop it and you have the pure domain format.</p>
-<h2><code>in_memory_entity</code> — object identity and shape</h2>
+<h2 id="in-memory-entity-object-identity-and-shape"><code>in_memory_entity</code> — object identity and shape</h2>
 <p>The in-memory-entity layer is small and composes with itself, building up progressively:</p>
 <ul>
 <li><code>base</code> — the minimum: an object with an identifier.</li>
@@ -74,7 +76,7 @@ semantics; drop it and you have the pure domain format.</p>
 <p>The combinatorial naming is doing real work: rather than a deep inheritance chain, each
 combination that is actually used gets a name, and entities reference the one they need. It is
 composition, flattened.</p>
-<h2><code>system</code> — platform concerns</h2>
+<h2 id="system-platform-concerns"><code>system</code> — platform concerns</h2>
 <p>The <code>system</code> layer is larger and less regular, because platform concerns are. Some of the more
 widely used:</p>
 <ul>
@@ -90,7 +92,7 @@ belongs to without duplicating them. It is one of the most-referenced schemas in
 <li><strong><code>hashed</code></strong> — content hashing, used by the material hashed variants.</li>
 <li><strong><code>schema_version</code></strong> — which version of the format a record claims to follow.</li>
 </ul>
-<h2>Which mixins are actually used</h2>
+<h2 id="which-mixins-are-actually-used">Which mixins are actually used</h2>
 <p>Generated from the current schemas — the mixins with the most schemas extending them:</p>
 <div class="table-wrap"><table>
 <thead>
@@ -160,7 +162,7 @@ belongs to without duplicating them. It is one of the most-referenced schemas in
 <td>1</td>
 </tr>
 </tbody></table></div>
-<h2>Why keep them separate</h2>
+<h2 id="why-keep-them-separate">Why keep them separate</h2>
 <p><strong>The domain formats stay portable.</strong> A consumer who wants ESSE&#39;s description of a band structure
 does not want the platform&#39;s sharing model. Because platform behaviour is only ever added by
 composition, they can take the payload schemas and ignore the rest.</p>
@@ -169,7 +171,7 @@ that composes it, in one place, without editing a single domain schema.</p>
 <p><strong>It is legible.</strong> An entity&#39;s <code>allOf</code> list is a summary of what kind of object it is. Reading
 <code>job/base</code>&#39;s branches tells you it is a named, defaultable, metadata-carrying record with compute
 properties — before you read a single property.</p>
-<h2>A caution about <code>allOf</code></h2>
+<h2 id="a-caution-about-allof">A caution about <code>allOf</code></h2>
 <p><code>allOf</code> is an intersection, not an override. A branch cannot relax a constraint another branch
 imposes; both apply. This matters for two reasons:</p>
 <ul>
@@ -183,7 +185,26 @@ sources rather than the published output.</li>
 </ul>
 
     </article>
+        <nav class="page-nav">
+        <a class="page-nav-prev" href="categorization.html"><span class="page-nav-label">Previous</span><span class="page-nav-title">Categorization</span></a>
+        <a class="page-nav-next" href="conventions.html"><span class="page-nav-label">Next</span><span class="page-nav-title">Conventions</span></a>
+    </nav>
     </main>
+    <aside id="docs-toc">
+        <div class="nav-title">On this page</div>
+        <nav>
+            <a href="#reading-a-composed-schema" class="toc-h2">Reading a composed schema</a>
+            <a href="#in-memory-entity-object-identity-and-shape" class="toc-h2">in_memory_entity — object identity and shape</a>
+            <a href="#system-platform-concerns" class="toc-h2">system — platform concerns</a>
+            <a href="#which-mixins-are-actually-used" class="toc-h2">Which mixins are actually used</a>
+            <a href="#why-keep-them-separate" class="toc-h2">Why keep them separate</a>
+            <a href="#a-caution-about-allof" class="toc-h2">A caution about allOf</a>
+        </nav>
+    </aside>
+</div>
+<div id="statusbar">
+    <span id="status-page">How allOf stacks platform behaviour onto domain payloads, and why they are separate.</span>
+    <span id="status-position">Page 6 of 11</span>
 </div>
 </body>
 </html>
