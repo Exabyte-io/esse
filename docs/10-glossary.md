@@ -130,7 +130,7 @@ Twenty exist; they are not edges between schemas and are counted separately.
 **Isolated schema** — one with no incoming or outgoing references. Mostly leaf definitions and
 externally-consumed formats. Growth is reported by the lint as a warning.
 
-**Schema lint** — the L1–L11 rules run on every pull request. [Conventions](conventions.html).
+**Schema lint** — the L1–L12 rules run on every pull request. [Conventions](conventions.html).
 
 **Hub** — a heavily referenced schema. The map draws these larger; the top of the list is
 [`definitions/units`](../map/#/entity/definitions%2Funits) and
@@ -140,7 +140,10 @@ externally-consumed formats. Growth is reported by the lint as a warning.
 
 ## The surfaces
 
-**Schema explorer** — [the file browser](../index.html) over resolved schemas and examples.
+**Schema explorer** — [the browser](../index.html) over resolved schemas and examples. It
+arranges them three ways: by file, by [category](../index.html#/categories) — the CateCom
+ladders and M-CODE axes — and by [directory](../index.html#/directories), the catalogue grouped
+by its own facets.
 
 **Ontology map** — [the map](../map/index.html) of all schemas and their references, laid out by
 architectural layer.

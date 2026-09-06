@@ -26,14 +26,15 @@ schema/ + example/            JSON sources — the authority
         +--> datamodel-codegen  -> src/py/mat3ra/esse/models/**   pydantic v2 models
         +--> compile_ts.ts      -> TypeScript types
         +--> npm run build-entity-graph -> site/graph.json     (from sources, not dist)
+        |                               -> site/views.json     (the Explorer's category trees)
         |
         v
    npm + PyPI packages          and, on the CI deploy job, the site
 ```
 
 The site is assembled in a `site/` staging directory by the `deploy-docs` job — resolved schemas
-and examples, `schemas.json`, `graph.json`, these documentation pages, the schema explorer and the
-Ontology map — and published to GitHub Pages, which `schemas.mat3ra.com` fronts.
+and examples, `schemas.json`, `graph.json`, `views.json`, these documentation pages, the schema
+explorer and the Ontology map — and published to GitHub Pages, which `schemas.mat3ra.com` fronts.
 
 ## Resolution, and what it destroys
 

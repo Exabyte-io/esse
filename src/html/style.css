@@ -46,28 +46,39 @@ body {
     color: var(--text-primary);
     font-weight: 600;
 }
-/* The suffix completes the wordmark, so "AI4Materials" never reads as a
-   dangling fragment. Muted and lighter so the name still carries the emphasis;
-   dropped on narrow screens where the nav needs the room. */
-#titlebar .app-name-suffix {
-    color: var(--text-muted);
-    font-weight: 400;
+
+/* Five nav items leave the tagline no room to sit on one line; it is decoration, and the
+   navigation is not, so it goes first rather than wrapping the 34px bar into two. */
+#titlebar-tagline {
+    margin-left: auto;
+    white-space: nowrap;
 }
-@media (max-width: 700px) {
-    #titlebar .app-name-suffix {
+@media (max-width: 900px) {
+    #titlebar-tagline {
         display: none;
     }
 }
 
-#titlebar-tagline {
-    margin-left: auto;
-}
-
-/* Shared three-surface navigation: Docs / Explorer / Map */
 #surfaces {
     display: flex;
     gap: 14px;
     margin-left: 8px;
+    /* Five items do not fit a phone. Shrinking is permitted (min-width: 0 overrides the
+       automatic min-content floor) and the overflow scrolls inside the bar, so the nav is
+       always reachable instead of being clipped off the edge or pushing the page sideways.
+       There is spare room on a desktop, so nothing shrinks there. */
+    flex: 0 1 auto;
+    min-width: 0;
+    overflow-x: auto;
+    scrollbar-width: none;
+}
+#surfaces::-webkit-scrollbar {
+    display: none;
+}
+@media (max-width: 700px) {
+    #surfaces {
+        gap: 10px;
+    }
 }
 #surfaces a {
     color: var(--text-muted);
@@ -109,6 +120,40 @@ body {
     letter-spacing: 0.1em;
     color: var(--text-muted);
     flex-shrink: 0;
+}
+
+/* Files | Categories | Directories — the same schemas, three arrangements. */
+#view-switch {
+    display: flex;
+    margin: 0 8px 8px;
+    border: 1px solid var(--border);
+    border-radius: 3px;
+    overflow: hidden;
+    flex-shrink: 0;
+}
+#view-switch button {
+    flex: 1 1 0;
+    min-width: 0;
+    padding: 4px 2px;
+    border: none;
+    background: var(--bg-inactive);
+    color: var(--text-muted);
+    font-family: inherit;
+    font-size: 11px;
+    cursor: pointer;
+    white-space: nowrap;
+    overflow: hidden;
+    text-overflow: ellipsis;
+}
+#view-switch button + button {
+    border-left: 1px solid var(--border);
+}
+#view-switch button:hover {
+    color: var(--text-primary);
+}
+#view-switch button.active {
+    background: var(--accent);
+    color: #fff;
 }
 
 #search-wrap {
@@ -296,7 +341,6 @@ body {
     max-width: 220px;
     cursor: pointer;
     color: var(--text-muted);
-    max-width: 240px;
 }
 .tab:hover {
     background: var(--bg-hover);
@@ -357,8 +401,19 @@ body {
     color: var(--text-muted);
     display: flex;
     align-items: center;
-    overflow: hidden;
     gap: 2px;
+    /* A category coordinate is far longer than a file path and must not wrap out of the
+       22px row; the strip scrolls instead. */
+    overflow-x: auto;
+    overflow-y: hidden;
+    scrollbar-width: none;
+}
+#breadcrumb::-webkit-scrollbar {
+    height: 0;
+}
+#breadcrumb span {
+    white-space: nowrap;
+    flex-shrink: 0;
 }
 #view-on-map {
     font-size: 12px;
