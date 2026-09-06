@@ -294,7 +294,7 @@ function renderPage(page: DocsPage, pages: DocsPage[], html: string): string {
 </head>
 <body>
 <div id="titlebar">
-    <span class="app-name">AI4Materials<span class="app-name-suffix">: data standards</span></span>
+    <span class="app-name">AI4Materials</span>
     <nav id="surfaces">
         <a href="index.html" class="current">Docs</a>
         <a href="../index.html">Explorer</a>
@@ -302,7 +302,7 @@ function renderPage(page: DocsPage, pages: DocsPage[], html: string): string {
         <a href="../index.html#/directories">Directories</a>
         <a href="../map/index.html">Ontology</a>
     </nav>
-    <span id="titlebar-tagline">ESSE &middot; materials science ontology</span>
+    <span id="titlebar-tagline">ESSE &middot; materials science data standards and ontology</span>
 </div>
 <div id="workspace">
     <aside id="docs-nav">
@@ -360,15 +360,12 @@ body {
     z-index: 5;
 }
 #titlebar .app-name { color: var(--text-primary); font-weight: 600; }
-/* Completes the wordmark so the name never reads as a dangling fragment. */
-#titlebar .app-name-suffix { color: var(--text-muted); font-weight: 400; }
-@media (max-width: 700px) { #titlebar .app-name-suffix { display: none; } }
 #surfaces { display: flex; gap: 14px; }
 #surfaces a { color: var(--text-muted); text-decoration: none; }
 #surfaces a:hover { color: var(--text-primary); }
 #surfaces a.current { color: var(--text-primary); border-bottom: 2px solid var(--accent); }
-#titlebar-tagline { margin-left: auto; color: var(--text-muted); }
-@media (max-width: 640px) { #titlebar-tagline { display: none; } }
+#titlebar-tagline { margin-left: auto; color: var(--text-muted); white-space: nowrap; }
+@media (max-width: 900px) { #titlebar-tagline { display: none; } }
 #workspace { display: flex; flex: 1; align-items: flex-start; }
 #docs-nav {
     width: 250px;
