@@ -9,13 +9,15 @@
 </head>
 <body>
 <div id="titlebar">
-    <span class="app-name">AI4Materials<span class="app-name-suffix">: data standards</span></span>
+    <span class="app-name">AI4Materials</span>
     <nav id="surfaces">
         <a href="index.html" class="current">Docs</a>
         <a href="../index.html">Explorer</a>
+        <a href="../index.html#/categories">Categories</a>
+        <a href="../index.html#/directories">Directories</a>
         <a href="../map/index.html">Ontology</a>
     </nav>
-    <span id="titlebar-tagline">ESSE &middot; materials science ontology</span>
+    <span id="titlebar-tagline">ESSE &middot; materials science data standards and ontology</span>
 </div>
 <div id="workspace">
     <aside id="docs-nav">
@@ -105,10 +107,13 @@ Two different mechanisms share the name: <code>models_category</code> and <code>
 vocabulary</strong>, each schema narrowing one more field of <code>core/reusable/categories</code>;
 <code>materials_category</code> holds <strong>recipes</strong> that compose entities and operations from
 <code>materials_category_components</code> and use no tiers at all.</p>
-<p><strong>Composition (materials)</strong> — the materials categorization scheme: a structure class is defined as
-an operation (<code>stack</code>, <code>merge</code>, <code>strain</code>, …) applied to entities (<code>crystal</code>, <code>vacuum</code>, <code>atom</code>,
-<code>vacancy</code>, …), keyed by structure class and dimensionality. A slab <em>is</em> a stack of atomic layers
-and vacuum. <a href="categorization.html">Categorization</a>.</p>
+<p><strong>M-CODE</strong> — <em>Materials Categorization via Ontology, Dimensionality and Evolution</em>
+(<a href="https://arxiv.org/abs/2602.14384">arXiv:2602.14384</a>), the materials categorization scheme and the
+counterpart to CateCom. A structure class is defined as an operation (<code>stack</code>, <code>merge</code>, <code>strain</code>, …)
+applied to entities (<code>crystal</code>, <code>vacuum</code>, <code>atom</code>, <code>vacancy</code>, …), positioned on three axes —
+structural complexity, dimensionality, and the operation itself — which are the <code>materials_category</code>
+directory structure. A slab <em>is</em> a stack of atomic layers and vacuum.
+<a href="categorization.html">Categorization</a>.</p>
 <p><strong>Directory schema</strong> (<code>*_directory</code>) — the <strong>catalogue</strong>: the concrete entries.</p>
 <p><strong>Manifest</strong> — a YAML registry under <code>manifest/</code>, joining names to schema ids plus metadata such
 as default units and the <code>isResult</code> / <code>isMonitor</code> flags. The join is lint-checked.</p>
@@ -125,7 +130,7 @@ materials science, so it is not part of the corpus it measures.</p>
 Twenty exist; they are not edges between schemas and are counted separately.</p>
 <p><strong>Isolated schema</strong> — one with no incoming or outgoing references. Mostly leaf definitions and
 externally-consumed formats. Growth is reported by the lint as a warning.</p>
-<p><strong>Schema lint</strong> — the L1–L11 rules run on every pull request. <a href="conventions.html">Conventions</a>.</p>
+<p><strong>Schema lint</strong> — the L1–L12 rules run on every pull request. <a href="conventions.html">Conventions</a>.</p>
 <p><strong>Hub</strong> — a heavily referenced schema. The map draws these larger; the top of the list is
 <a href="../map/#/entity/definitions%2Funits"><code>definitions/units</code></a> and
 <a href="../map/#/entity/core%2Fprimitive%2Fscalar"><code>core/primitive/scalar</code></a>.</p>
@@ -178,7 +183,10 @@ externally-consumed formats. Growth is reported by the lint as a warning.</p>
 </tr>
 </tbody></table></div>
 <h2>The surfaces</h2>
-<p><strong>Schema explorer</strong> — <a href="../index.html">the file browser</a> over resolved schemas and examples.</p>
+<p><strong>Schema explorer</strong> — <a href="../index.html">the browser</a> over resolved schemas and examples. It
+arranges them three ways: by file, by <a href="../index.html#/categories">category</a> — the CateCom
+ladders and M-CODE axes — and by <a href="../index.html#/directories">directory</a>, the catalogue grouped
+by its own facets.</p>
 <p><strong>Ontology map</strong> — <a href="../map/index.html">the map</a> of all schemas and their references, laid out by
 architectural layer.</p>
 <p><strong>Concept documentation</strong> — these pages.</p>

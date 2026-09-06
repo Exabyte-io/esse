@@ -4,18 +4,20 @@
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Categorization — AI4Materials</title>
-    <meta name="description" content="Two different category mechanisms — tiers for models and methods, composition for materials — and the category-versus-directory split.">
+    <meta name="description" content="Two categorization schemes, each with its own paper — CateCom tiers for models and methods, M-CODE composition for materials — and the category-versus-directory split.">
     <link rel="stylesheet" href="docs.css">
 </head>
 <body>
 <div id="titlebar">
-    <span class="app-name">AI4Materials<span class="app-name-suffix">: data standards</span></span>
+    <span class="app-name">AI4Materials</span>
     <nav id="surfaces">
         <a href="index.html" class="current">Docs</a>
         <a href="../index.html">Explorer</a>
+        <a href="../index.html#/categories">Categories</a>
+        <a href="../index.html#/directories">Directories</a>
         <a href="../map/index.html">Ontology</a>
     </nav>
-    <span id="titlebar-tagline">ESSE &middot; materials science ontology</span>
+    <span id="titlebar-tagline">ESSE &middot; materials science data standards and ontology</span>
 </div>
 <div id="workspace">
     <aside id="docs-nav">
@@ -41,11 +43,12 @@
 way. A strict tree cannot hold them: an exchange-correlation functional is simultaneously &quot;a DFT
 thing&quot;, &quot;a GGA thing&quot; and &quot;a Perdew-Burke-Ernzerhof thing&quot;, and different users arrive from
 different directions. A flat list cannot hold them either.</p>
-<p>The first thing to know is that <strong><code>*_category</code> names two different mechanisms</strong>, not one. Models
-and methods are categorized by <em>tiers</em>: a small ordered vocabulary carried as data on the entity.
-Materials are categorized by <em>composition</em>: a structure class is defined as a recipe over building
-blocks. Reading a <code>materials_category/…</code> path expecting tiers is the single most likely way to
-misread the corpus.</p>
+<p>The first thing to know is that <strong><code>*_category</code> names two different schemes</strong>, not one, and that
+each is a published design rather than an accident of history. Models and methods follow
+<strong>CateCom</strong>: a small ordered vocabulary of <em>tiers</em>, carried as data on the entity. Materials follow
+<strong>M-CODE</strong>: a structure class defined as a recipe over building blocks, positioned on three axes.
+Reading a <code>materials_category/…</code> path expecting tiers is the single most likely way to misread the
+corpus.</p>
 <div class="table-wrap"><table>
 <thead>
 <tr>
@@ -67,7 +70,7 @@ misread the corpus.</p>
 <tr>
 <td><code>materials-category</code></td>
 <td>17</td>
-<td>none — compositional</td>
+<td>M-CODE — compositional</td>
 </tr>
 <tr>
 <td><code>materials-category-components</code></td>
@@ -76,7 +79,7 @@ misread the corpus.</p>
 </tr>
 </tbody></table></div>
 <p>Entities carrying a tiered <code>categories</code> field: <a href="../map/#/entity/method%2Funit-method"><code>method/unit-method</code></a>, <a href="../map/#/entity/model%2Fmodel-without-method"><code>model/model-without-method</code></a>.</p>
-<h2>Scheme 1 — tiers, for models and methods</h2>
+<h2>Scheme 1 — CateCom, for models and methods</h2>
 <p>The tier approach comes from the
 <a href="https://pubs.acs.org/doi/abs/10.1021/acs.jcim.2c00112">CateCom paper</a>: categorize along a small
 number of ordered tiers, and keep the vocabulary separate from the instances.</p>
@@ -160,17 +163,39 @@ duplication — 144 references in the corpus carry a JSON pointer, and this is t
 two entity components, listed in the table above: <code>model/model-without-method</code> and
 <code>method/unit-method</code> each carry a <code>categories</code> object. Everything else in the tier tree exists to
 say which combinations are legal.</p>
-<h2>Scheme 2 — composition, for materials</h2>
+<h2>Scheme 2 — M-CODE, for materials</h2>
 <p>Nothing under <code>materials_category/</code> extends <code>core/reusable/categories</code>. Materials are not placed on
-a tier ladder; a material category is <strong>a recipe</strong>. Three axes combine:</p>
-<ul>
-<li><strong>Structure class</strong> — <code>pristine_structures</code>, <code>defective_structures</code>, <code>compound_pristine_structures</code>,
-<code>processed_structures</code>. The first path segment.</li>
-<li><strong>Dimensionality</strong> — <code>zero-dimensional</code> through <code>three-dimensional</code>. The second path segment.</li>
-<li><strong>Components</strong> — from <code>materials_category_components/</code>: <em>entities</em> (<code>crystal</code>, <code>vacuum</code>, <code>atom</code>,
-<code>vacancy</code>, <code>void_region</code>, atomic layers…) and <em>operations</em> (<code>stack</code>, <code>merge</code>; <code>repeat</code>, <code>strain</code>,
-<code>perturb</code>).</li>
-</ul>
+a tier ladder; a material category is <strong>a recipe</strong>. The scheme is
+<a href="https://arxiv.org/abs/2602.14384">M-CODE</a> — <em>Materials Categorization via Ontology, Dimensionality
+and Evolution</em> (Biryukov, Choudhary, Bazhirov) — and its three axes are not merely <em>related</em> to the
+<code>materials_category</code> tree: they <strong>are</strong> its directory structure.</p>
+<div class="table-wrap"><table>
+<thead>
+<tr>
+<th>M-CODE axis</th>
+<th>Where it lives</th>
+<th>Values</th>
+</tr>
+</thead>
+<tbody><tr>
+<td>Structural complexity (ontology)</td>
+<td>first path segment</td>
+<td><code>pristine_structures</code>, <code>compound_pristine_structures</code>, <code>defective_structures</code>, <code>processed_structures</code></td>
+</tr>
+<tr>
+<td>Dimensionality</td>
+<td>second path segment</td>
+<td><code>zero-dimensional</code> through <code>three-dimensional</code></td>
+</tr>
+<tr>
+<td>Evolution</td>
+<td>the operation reached through <code>allOf</code></td>
+<td>combinations <code>stack</code>, <code>merge</code>; modifications <code>repeat</code>, <code>strain</code>, <code>perturb</code></td>
+</tr>
+</tbody></table></div>
+<p>The third axis draws on <code>materials_category_components/</code>, which holds both the <em>entities</em> the
+recipes are built from (<code>crystal</code>, <code>vacuum</code>, <code>atom</code>, <code>vacancy</code>, <code>void_region</code>, atomic layers…) and
+the <em>operations</em> that combine them. The component entities carry the dimensionality axis too.</p>
 <p>A category schema names an operation via <code>allOf</code> and lists its operands under <code>stack_components</code> or
 <code>merge_components</code>. <a href="../map/#/entity/materials-category%2Fpristine-structures%2Ftwo-dimensional%2Fslab"><code>materials-category/pristine-structures/two-dimensional/slab</code></a>
 reads, in full, as <em>a stack of [repeated unique atomic layers, vacuum]</em>:</p>
@@ -261,6 +286,12 @@ structure is made of. They constrain; they do not enumerate instances.</li>
 <td>4</td>
 </tr>
 </tbody></table></div>
+<p>Both are browsable. The schema explorer carries a
+<a href="../index.html#/categories"><strong>Categories</strong></a> view, which walks the CateCom ladders and the three
+M-CODE axes and shows each catalogue entry at the coordinate it is filed under, and a
+<a href="../index.html#/directories"><strong>Directories</strong></a> view, which lists every catalogue entry grouped by
+its own facet — properties by value shape, software by kind, models and methods by their ladder
+position. The file tree cannot show either: a ladder is a chain of <code>allOf</code>, not a path.</p>
 <h2>Worked example: finding an exchange-correlation functional</h2>
 <p>Suppose you want the PBE functional and you do not know where it lives.</p>
 <ol>
@@ -299,8 +330,11 @@ breaking every <code>$id</code> that points at it.</p>
 <p>Materials pay a different price for a different benefit. Their recipes are precise enough to build
 from, but there is no <code>categories</code> field on a material configuration to filter on, so retrieval
 across the materials space works by structure class and dimensionality — the path — rather than by
-query. Whether that asymmetry is deliberate or simply the older scheme not yet extended to
-materials is a question for the maintainers; the corpus as it stands does not answer it.</p>
+query.</p>
+<p>That asymmetry is deliberate. It is not the older scheme waiting to be extended to materials: the
+two schemes were designed separately, by different papers, for domains whose questions differ —
+the retrieval-versus-construction trade-off above. Encoding a recipe as five tier slugs would
+flatten out exactly the part that makes it useful.</p>
 
     </article>
     </main>

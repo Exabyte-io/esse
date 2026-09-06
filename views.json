@@ -1,0 +1,4640 @@
+{
+    "categories": [
+        {
+            "segments": [
+                "Materials · M-CODE",
+                "by dimensionality",
+                "one-dimensional",
+                "defective",
+                "configuration.json"
+            ],
+            "path": "schema/materials_category/defective_structures/one_dimensional/grain_boundary_linear/configuration.json"
+        },
+        {
+            "segments": [
+                "Materials · M-CODE",
+                "by dimensionality",
+                "one-dimensional",
+                "defective",
+                "configuration.json · example"
+            ],
+            "path": "example/materials_category/defective_structures/one_dimensional/grain_boundary_linear/configuration.json"
+        },
+        {
+            "segments": [
+                "Materials · M-CODE",
+                "by dimensionality",
+                "three-dimensional",
+                "defective",
+                "configuration.json"
+            ],
+            "path": "schema/materials_category/defective_structures/three_dimensional/solid_solution/configuration.json"
+        },
+        {
+            "segments": [
+                "Materials · M-CODE",
+                "by dimensionality",
+                "three-dimensional",
+                "pristine",
+                "ideal_crystal.json"
+            ],
+            "path": "schema/materials_category/pristine_structures/three_dimensional/ideal_crystal.json"
+        },
+        {
+            "segments": [
+                "Materials · M-CODE",
+                "by dimensionality",
+                "two-dimensional",
+                "compound-pristine",
+                "configuration.json"
+            ],
+            "path": "schema/materials_category/compound_pristine_structures/two_dimensional/interface/configuration.json"
+        },
+        {
+            "segments": [
+                "Materials · M-CODE",
+                "by dimensionality",
+                "two-dimensional",
+                "compound-pristine",
+                "configuration.json · example"
+            ],
+            "path": "example/materials_category/compound_pristine_structures/two_dimensional/interface/configuration.json"
+        },
+        {
+            "segments": [
+                "Materials · M-CODE",
+                "by dimensionality",
+                "two-dimensional",
+                "defective",
+                "adatom/configuration.json"
+            ],
+            "path": "schema/materials_category/defective_structures/two_dimensional/adatom/configuration.json"
+        },
+        {
+            "segments": [
+                "Materials · M-CODE",
+                "by dimensionality",
+                "two-dimensional",
+                "defective",
+                "adatom/configuration.json · example"
+            ],
+            "path": "example/materials_category/defective_structures/two_dimensional/adatom/configuration.json"
+        },
+        {
+            "segments": [
+                "Materials · M-CODE",
+                "by dimensionality",
+                "two-dimensional",
+                "defective",
+                "grain_boundary_planar/configuration.json"
+            ],
+            "path": "schema/materials_category/defective_structures/two_dimensional/grain_boundary_planar/configuration.json"
+        },
+        {
+            "segments": [
+                "Materials · M-CODE",
+                "by dimensionality",
+                "two-dimensional",
+                "defective",
+                "grain_boundary_planar/configuration.json · example"
+            ],
+            "path": "example/materials_category/defective_structures/two_dimensional/grain_boundary_planar/configuration.json"
+        },
+        {
+            "segments": [
+                "Materials · M-CODE",
+                "by dimensionality",
+                "two-dimensional",
+                "defective",
+                "island/configuration.json"
+            ],
+            "path": "schema/materials_category/defective_structures/two_dimensional/island/configuration.json"
+        },
+        {
+            "segments": [
+                "Materials · M-CODE",
+                "by dimensionality",
+                "two-dimensional",
+                "defective",
+                "island/configuration.json · example"
+            ],
+            "path": "example/materials_category/defective_structures/two_dimensional/island/configuration.json"
+        },
+        {
+            "segments": [
+                "Materials · M-CODE",
+                "by dimensionality",
+                "two-dimensional",
+                "defective",
+                "terrace/configuration.json"
+            ],
+            "path": "schema/materials_category/defective_structures/two_dimensional/terrace/configuration.json"
+        },
+        {
+            "segments": [
+                "Materials · M-CODE",
+                "by dimensionality",
+                "two-dimensional",
+                "defective",
+                "terrace/configuration.json · example"
+            ],
+            "path": "example/materials_category/defective_structures/two_dimensional/terrace/configuration.json"
+        },
+        {
+            "segments": [
+                "Materials · M-CODE",
+                "by dimensionality",
+                "two-dimensional",
+                "pristine",
+                "nanoribbon.json"
+            ],
+            "path": "schema/materials_category/pristine_structures/two_dimensional/nanoribbon.json"
+        },
+        {
+            "segments": [
+                "Materials · M-CODE",
+                "by dimensionality",
+                "two-dimensional",
+                "pristine",
+                "nanoribbon.json · example"
+            ],
+            "path": "example/materials_category/pristine_structures/two_dimensional/nanoribbon.json"
+        },
+        {
+            "segments": [
+                "Materials · M-CODE",
+                "by dimensionality",
+                "two-dimensional",
+                "pristine",
+                "nanotape.json"
+            ],
+            "path": "schema/materials_category/pristine_structures/two_dimensional/nanotape.json"
+        },
+        {
+            "segments": [
+                "Materials · M-CODE",
+                "by dimensionality",
+                "two-dimensional",
+                "pristine",
+                "nanotape.json · example"
+            ],
+            "path": "example/materials_category/pristine_structures/two_dimensional/nanotape.json"
+        },
+        {
+            "segments": [
+                "Materials · M-CODE",
+                "by dimensionality",
+                "two-dimensional",
+                "pristine",
+                "slab_strained_supercell.json"
+            ],
+            "path": "schema/materials_category/pristine_structures/two_dimensional/slab_strained_supercell.json"
+        },
+        {
+            "segments": [
+                "Materials · M-CODE",
+                "by dimensionality",
+                "two-dimensional",
+                "pristine",
+                "slab_strained_supercell.json · example"
+            ],
+            "path": "example/materials_category/pristine_structures/two_dimensional/slab_strained_supercell.json"
+        },
+        {
+            "segments": [
+                "Materials · M-CODE",
+                "by dimensionality",
+                "two-dimensional",
+                "pristine",
+                "slab.json"
+            ],
+            "path": "schema/materials_category/pristine_structures/two_dimensional/slab.json"
+        },
+        {
+            "segments": [
+                "Materials · M-CODE",
+                "by dimensionality",
+                "two-dimensional",
+                "pristine",
+                "slab.json · example"
+            ],
+            "path": "example/materials_category/pristine_structures/two_dimensional/slab.json"
+        },
+        {
+            "segments": [
+                "Materials · M-CODE",
+                "by dimensionality",
+                "two-dimensional",
+                "processed",
+                "configuration.json"
+            ],
+            "path": "schema/materials_category/processed_structures/two_dimensional/passivation/configuration.json"
+        },
+        {
+            "segments": [
+                "Materials · M-CODE",
+                "by dimensionality",
+                "two-dimensional",
+                "processed",
+                "configuration.json · example"
+            ],
+            "path": "example/materials_category/processed_structures/two_dimensional/passivation/configuration.json"
+        },
+        {
+            "segments": [
+                "Materials · M-CODE",
+                "by dimensionality",
+                "zero-dimensional",
+                "defective",
+                "base_configuration.json"
+            ],
+            "path": "schema/materials_category/defective_structures/zero_dimensional/point_defect/base_configuration.json"
+        },
+        {
+            "segments": [
+                "Materials · M-CODE",
+                "by dimensionality",
+                "zero-dimensional",
+                "defective",
+                "base_configuration.json · example"
+            ],
+            "path": "example/materials_category/defective_structures/zero_dimensional/point_defect/base_configuration.json"
+        },
+        {
+            "segments": [
+                "Materials · M-CODE",
+                "by dimensionality",
+                "zero-dimensional",
+                "defective",
+                "interstitial.json"
+            ],
+            "path": "schema/materials_category/defective_structures/zero_dimensional/point_defect/interstitial.json"
+        },
+        {
+            "segments": [
+                "Materials · M-CODE",
+                "by dimensionality",
+                "zero-dimensional",
+                "defective",
+                "interstitial.json · example"
+            ],
+            "path": "example/materials_category/defective_structures/zero_dimensional/point_defect/interstitial.json"
+        },
+        {
+            "segments": [
+                "Materials · M-CODE",
+                "by dimensionality",
+                "zero-dimensional",
+                "defective",
+                "substitutional.json"
+            ],
+            "path": "schema/materials_category/defective_structures/zero_dimensional/point_defect/substitutional.json"
+        },
+        {
+            "segments": [
+                "Materials · M-CODE",
+                "by dimensionality",
+                "zero-dimensional",
+                "defective",
+                "substitutional.json · example"
+            ],
+            "path": "example/materials_category/defective_structures/zero_dimensional/point_defect/substitutional.json"
+        },
+        {
+            "segments": [
+                "Materials · M-CODE",
+                "by dimensionality",
+                "zero-dimensional",
+                "defective",
+                "vacancy.json"
+            ],
+            "path": "schema/materials_category/defective_structures/zero_dimensional/point_defect/vacancy.json"
+        },
+        {
+            "segments": [
+                "Materials · M-CODE",
+                "by dimensionality",
+                "zero-dimensional",
+                "defective",
+                "vacancy.json · example"
+            ],
+            "path": "example/materials_category/defective_structures/zero_dimensional/point_defect/vacancy.json"
+        },
+        {
+            "segments": [
+                "Materials · M-CODE",
+                "by operation",
+                "merge",
+                "base_configuration.json"
+            ],
+            "path": "schema/materials_category/defective_structures/zero_dimensional/point_defect/base_configuration.json"
+        },
+        {
+            "segments": [
+                "Materials · M-CODE",
+                "by operation",
+                "merge",
+                "base_configuration.json · example"
+            ],
+            "path": "example/materials_category/defective_structures/zero_dimensional/point_defect/base_configuration.json"
+        },
+        {
+            "segments": [
+                "Materials · M-CODE",
+                "by operation",
+                "merge",
+                "interstitial.json"
+            ],
+            "path": "schema/materials_category/defective_structures/zero_dimensional/point_defect/interstitial.json"
+        },
+        {
+            "segments": [
+                "Materials · M-CODE",
+                "by operation",
+                "merge",
+                "interstitial.json · example"
+            ],
+            "path": "example/materials_category/defective_structures/zero_dimensional/point_defect/interstitial.json"
+        },
+        {
+            "segments": [
+                "Materials · M-CODE",
+                "by operation",
+                "merge",
+                "island/configuration.json"
+            ],
+            "path": "schema/materials_category/defective_structures/two_dimensional/island/configuration.json"
+        },
+        {
+            "segments": [
+                "Materials · M-CODE",
+                "by operation",
+                "merge",
+                "island/configuration.json · example"
+            ],
+            "path": "example/materials_category/defective_structures/two_dimensional/island/configuration.json"
+        },
+        {
+            "segments": [
+                "Materials · M-CODE",
+                "by operation",
+                "merge",
+                "passivation/configuration.json"
+            ],
+            "path": "schema/materials_category/processed_structures/two_dimensional/passivation/configuration.json"
+        },
+        {
+            "segments": [
+                "Materials · M-CODE",
+                "by operation",
+                "merge",
+                "passivation/configuration.json · example"
+            ],
+            "path": "example/materials_category/processed_structures/two_dimensional/passivation/configuration.json"
+        },
+        {
+            "segments": [
+                "Materials · M-CODE",
+                "by operation",
+                "merge",
+                "solid_solution/configuration.json"
+            ],
+            "path": "schema/materials_category/defective_structures/three_dimensional/solid_solution/configuration.json"
+        },
+        {
+            "segments": [
+                "Materials · M-CODE",
+                "by operation",
+                "merge",
+                "substitutional.json"
+            ],
+            "path": "schema/materials_category/defective_structures/zero_dimensional/point_defect/substitutional.json"
+        },
+        {
+            "segments": [
+                "Materials · M-CODE",
+                "by operation",
+                "merge",
+                "substitutional.json · example"
+            ],
+            "path": "example/materials_category/defective_structures/zero_dimensional/point_defect/substitutional.json"
+        },
+        {
+            "segments": [
+                "Materials · M-CODE",
+                "by operation",
+                "merge",
+                "terrace/configuration.json"
+            ],
+            "path": "schema/materials_category/defective_structures/two_dimensional/terrace/configuration.json"
+        },
+        {
+            "segments": [
+                "Materials · M-CODE",
+                "by operation",
+                "merge",
+                "terrace/configuration.json · example"
+            ],
+            "path": "example/materials_category/defective_structures/two_dimensional/terrace/configuration.json"
+        },
+        {
+            "segments": [
+                "Materials · M-CODE",
+                "by operation",
+                "merge",
+                "vacancy.json"
+            ],
+            "path": "schema/materials_category/defective_structures/zero_dimensional/point_defect/vacancy.json"
+        },
+        {
+            "segments": [
+                "Materials · M-CODE",
+                "by operation",
+                "merge",
+                "vacancy.json · example"
+            ],
+            "path": "example/materials_category/defective_structures/zero_dimensional/point_defect/vacancy.json"
+        },
+        {
+            "segments": [
+                "Materials · M-CODE",
+                "by operation",
+                "stack",
+                "adatom/configuration.json"
+            ],
+            "path": "schema/materials_category/defective_structures/two_dimensional/adatom/configuration.json"
+        },
+        {
+            "segments": [
+                "Materials · M-CODE",
+                "by operation",
+                "stack",
+                "adatom/configuration.json · example"
+            ],
+            "path": "example/materials_category/defective_structures/two_dimensional/adatom/configuration.json"
+        },
+        {
+            "segments": [
+                "Materials · M-CODE",
+                "by operation",
+                "stack",
+                "grain_boundary_linear/configuration.json"
+            ],
+            "path": "schema/materials_category/defective_structures/one_dimensional/grain_boundary_linear/configuration.json"
+        },
+        {
+            "segments": [
+                "Materials · M-CODE",
+                "by operation",
+                "stack",
+                "grain_boundary_linear/configuration.json · example"
+            ],
+            "path": "example/materials_category/defective_structures/one_dimensional/grain_boundary_linear/configuration.json"
+        },
+        {
+            "segments": [
+                "Materials · M-CODE",
+                "by operation",
+                "stack",
+                "grain_boundary_planar/configuration.json"
+            ],
+            "path": "schema/materials_category/defective_structures/two_dimensional/grain_boundary_planar/configuration.json"
+        },
+        {
+            "segments": [
+                "Materials · M-CODE",
+                "by operation",
+                "stack",
+                "grain_boundary_planar/configuration.json · example"
+            ],
+            "path": "example/materials_category/defective_structures/two_dimensional/grain_boundary_planar/configuration.json"
+        },
+        {
+            "segments": [
+                "Materials · M-CODE",
+                "by operation",
+                "stack",
+                "interface/configuration.json"
+            ],
+            "path": "schema/materials_category/compound_pristine_structures/two_dimensional/interface/configuration.json"
+        },
+        {
+            "segments": [
+                "Materials · M-CODE",
+                "by operation",
+                "stack",
+                "interface/configuration.json · example"
+            ],
+            "path": "example/materials_category/compound_pristine_structures/two_dimensional/interface/configuration.json"
+        },
+        {
+            "segments": [
+                "Materials · M-CODE",
+                "by operation",
+                "stack",
+                "nanoribbon.json"
+            ],
+            "path": "schema/materials_category/pristine_structures/two_dimensional/nanoribbon.json"
+        },
+        {
+            "segments": [
+                "Materials · M-CODE",
+                "by operation",
+                "stack",
+                "nanoribbon.json · example"
+            ],
+            "path": "example/materials_category/pristine_structures/two_dimensional/nanoribbon.json"
+        },
+        {
+            "segments": [
+                "Materials · M-CODE",
+                "by operation",
+                "stack",
+                "nanotape.json"
+            ],
+            "path": "schema/materials_category/pristine_structures/two_dimensional/nanotape.json"
+        },
+        {
+            "segments": [
+                "Materials · M-CODE",
+                "by operation",
+                "stack",
+                "nanotape.json · example"
+            ],
+            "path": "example/materials_category/pristine_structures/two_dimensional/nanotape.json"
+        },
+        {
+            "segments": [
+                "Materials · M-CODE",
+                "by operation",
+                "stack",
+                "slab_strained_supercell.json"
+            ],
+            "path": "schema/materials_category/pristine_structures/two_dimensional/slab_strained_supercell.json"
+        },
+        {
+            "segments": [
+                "Materials · M-CODE",
+                "by operation",
+                "stack",
+                "slab_strained_supercell.json · example"
+            ],
+            "path": "example/materials_category/pristine_structures/two_dimensional/slab_strained_supercell.json"
+        },
+        {
+            "segments": [
+                "Materials · M-CODE",
+                "by operation",
+                "stack",
+                "slab.json"
+            ],
+            "path": "schema/materials_category/pristine_structures/two_dimensional/slab.json"
+        },
+        {
+            "segments": [
+                "Materials · M-CODE",
+                "by operation",
+                "stack",
+                "slab.json · example"
+            ],
+            "path": "example/materials_category/pristine_structures/two_dimensional/slab.json"
+        },
+        {
+            "segments": [
+                "Materials · M-CODE",
+                "by structural class",
+                "compound-pristine",
+                "two-dimensional",
+                "configuration.json"
+            ],
+            "path": "schema/materials_category/compound_pristine_structures/two_dimensional/interface/configuration.json"
+        },
+        {
+            "segments": [
+                "Materials · M-CODE",
+                "by structural class",
+                "compound-pristine",
+                "two-dimensional",
+                "configuration.json · example"
+            ],
+            "path": "example/materials_category/compound_pristine_structures/two_dimensional/interface/configuration.json"
+        },
+        {
+            "segments": [
+                "Materials · M-CODE",
+                "by structural class",
+                "defective",
+                "one-dimensional",
+                "configuration.json"
+            ],
+            "path": "schema/materials_category/defective_structures/one_dimensional/grain_boundary_linear/configuration.json"
+        },
+        {
+            "segments": [
+                "Materials · M-CODE",
+                "by structural class",
+                "defective",
+                "one-dimensional",
+                "configuration.json · example"
+            ],
+            "path": "example/materials_category/defective_structures/one_dimensional/grain_boundary_linear/configuration.json"
+        },
+        {
+            "segments": [
+                "Materials · M-CODE",
+                "by structural class",
+                "defective",
+                "three-dimensional",
+                "configuration.json"
+            ],
+            "path": "schema/materials_category/defective_structures/three_dimensional/solid_solution/configuration.json"
+        },
+        {
+            "segments": [
+                "Materials · M-CODE",
+                "by structural class",
+                "defective",
+                "two-dimensional",
+                "adatom/configuration.json"
+            ],
+            "path": "schema/materials_category/defective_structures/two_dimensional/adatom/configuration.json"
+        },
+        {
+            "segments": [
+                "Materials · M-CODE",
+                "by structural class",
+                "defective",
+                "two-dimensional",
+                "adatom/configuration.json · example"
+            ],
+            "path": "example/materials_category/defective_structures/two_dimensional/adatom/configuration.json"
+        },
+        {
+            "segments": [
+                "Materials · M-CODE",
+                "by structural class",
+                "defective",
+                "two-dimensional",
+                "grain_boundary_planar/configuration.json"
+            ],
+            "path": "schema/materials_category/defective_structures/two_dimensional/grain_boundary_planar/configuration.json"
+        },
+        {
+            "segments": [
+                "Materials · M-CODE",
+                "by structural class",
+                "defective",
+                "two-dimensional",
+                "grain_boundary_planar/configuration.json · example"
+            ],
+            "path": "example/materials_category/defective_structures/two_dimensional/grain_boundary_planar/configuration.json"
+        },
+        {
+            "segments": [
+                "Materials · M-CODE",
+                "by structural class",
+                "defective",
+                "two-dimensional",
+                "island/configuration.json"
+            ],
+            "path": "schema/materials_category/defective_structures/two_dimensional/island/configuration.json"
+        },
+        {
+            "segments": [
+                "Materials · M-CODE",
+                "by structural class",
+                "defective",
+                "two-dimensional",
+                "island/configuration.json · example"
+            ],
+            "path": "example/materials_category/defective_structures/two_dimensional/island/configuration.json"
+        },
+        {
+            "segments": [
+                "Materials · M-CODE",
+                "by structural class",
+                "defective",
+                "two-dimensional",
+                "terrace/configuration.json"
+            ],
+            "path": "schema/materials_category/defective_structures/two_dimensional/terrace/configuration.json"
+        },
+        {
+            "segments": [
+                "Materials · M-CODE",
+                "by structural class",
+                "defective",
+                "two-dimensional",
+                "terrace/configuration.json · example"
+            ],
+            "path": "example/materials_category/defective_structures/two_dimensional/terrace/configuration.json"
+        },
+        {
+            "segments": [
+                "Materials · M-CODE",
+                "by structural class",
+                "defective",
+                "zero-dimensional",
+                "base_configuration.json"
+            ],
+            "path": "schema/materials_category/defective_structures/zero_dimensional/point_defect/base_configuration.json"
+        },
+        {
+            "segments": [
+                "Materials · M-CODE",
+                "by structural class",
+                "defective",
+                "zero-dimensional",
+                "base_configuration.json · example"
+            ],
+            "path": "example/materials_category/defective_structures/zero_dimensional/point_defect/base_configuration.json"
+        },
+        {
+            "segments": [
+                "Materials · M-CODE",
+                "by structural class",
+                "defective",
+                "zero-dimensional",
+                "interstitial.json"
+            ],
+            "path": "schema/materials_category/defective_structures/zero_dimensional/point_defect/interstitial.json"
+        },
+        {
+            "segments": [
+                "Materials · M-CODE",
+                "by structural class",
+                "defective",
+                "zero-dimensional",
+                "interstitial.json · example"
+            ],
+            "path": "example/materials_category/defective_structures/zero_dimensional/point_defect/interstitial.json"
+        },
+        {
+            "segments": [
+                "Materials · M-CODE",
+                "by structural class",
+                "defective",
+                "zero-dimensional",
+                "substitutional.json"
+            ],
+            "path": "schema/materials_category/defective_structures/zero_dimensional/point_defect/substitutional.json"
+        },
+        {
+            "segments": [
+                "Materials · M-CODE",
+                "by structural class",
+                "defective",
+                "zero-dimensional",
+                "substitutional.json · example"
+            ],
+            "path": "example/materials_category/defective_structures/zero_dimensional/point_defect/substitutional.json"
+        },
+        {
+            "segments": [
+                "Materials · M-CODE",
+                "by structural class",
+                "defective",
+                "zero-dimensional",
+                "vacancy.json"
+            ],
+            "path": "schema/materials_category/defective_structures/zero_dimensional/point_defect/vacancy.json"
+        },
+        {
+            "segments": [
+                "Materials · M-CODE",
+                "by structural class",
+                "defective",
+                "zero-dimensional",
+                "vacancy.json · example"
+            ],
+            "path": "example/materials_category/defective_structures/zero_dimensional/point_defect/vacancy.json"
+        },
+        {
+            "segments": [
+                "Materials · M-CODE",
+                "by structural class",
+                "pristine",
+                "three-dimensional",
+                "ideal_crystal.json"
+            ],
+            "path": "schema/materials_category/pristine_structures/three_dimensional/ideal_crystal.json"
+        },
+        {
+            "segments": [
+                "Materials · M-CODE",
+                "by structural class",
+                "pristine",
+                "two-dimensional",
+                "nanoribbon.json"
+            ],
+            "path": "schema/materials_category/pristine_structures/two_dimensional/nanoribbon.json"
+        },
+        {
+            "segments": [
+                "Materials · M-CODE",
+                "by structural class",
+                "pristine",
+                "two-dimensional",
+                "nanoribbon.json · example"
+            ],
+            "path": "example/materials_category/pristine_structures/two_dimensional/nanoribbon.json"
+        },
+        {
+            "segments": [
+                "Materials · M-CODE",
+                "by structural class",
+                "pristine",
+                "two-dimensional",
+                "nanotape.json"
+            ],
+            "path": "schema/materials_category/pristine_structures/two_dimensional/nanotape.json"
+        },
+        {
+            "segments": [
+                "Materials · M-CODE",
+                "by structural class",
+                "pristine",
+                "two-dimensional",
+                "nanotape.json · example"
+            ],
+            "path": "example/materials_category/pristine_structures/two_dimensional/nanotape.json"
+        },
+        {
+            "segments": [
+                "Materials · M-CODE",
+                "by structural class",
+                "pristine",
+                "two-dimensional",
+                "slab_strained_supercell.json"
+            ],
+            "path": "schema/materials_category/pristine_structures/two_dimensional/slab_strained_supercell.json"
+        },
+        {
+            "segments": [
+                "Materials · M-CODE",
+                "by structural class",
+                "pristine",
+                "two-dimensional",
+                "slab_strained_supercell.json · example"
+            ],
+            "path": "example/materials_category/pristine_structures/two_dimensional/slab_strained_supercell.json"
+        },
+        {
+            "segments": [
+                "Materials · M-CODE",
+                "by structural class",
+                "pristine",
+                "two-dimensional",
+                "slab.json"
+            ],
+            "path": "schema/materials_category/pristine_structures/two_dimensional/slab.json"
+        },
+        {
+            "segments": [
+                "Materials · M-CODE",
+                "by structural class",
+                "pristine",
+                "two-dimensional",
+                "slab.json · example"
+            ],
+            "path": "example/materials_category/pristine_structures/two_dimensional/slab.json"
+        },
+        {
+            "segments": [
+                "Materials · M-CODE",
+                "by structural class",
+                "processed",
+                "two-dimensional",
+                "configuration.json"
+            ],
+            "path": "schema/materials_category/processed_structures/two_dimensional/passivation/configuration.json"
+        },
+        {
+            "segments": [
+                "Materials · M-CODE",
+                "by structural class",
+                "processed",
+                "two-dimensional",
+                "configuration.json · example"
+            ],
+            "path": "example/materials_category/processed_structures/two_dimensional/passivation/configuration.json"
+        },
+        {
+            "segments": [
+                "Materials · M-CODE",
+                "components",
+                "entities",
+                "auxiliary",
+                "one-dimensional",
+                "miller_indices_2d.json"
+            ],
+            "path": "schema/materials_category_components/entities/auxiliary/one_dimensional/miller_indices_2d.json"
+        },
+        {
+            "segments": [
+                "Materials · M-CODE",
+                "components",
+                "entities",
+                "auxiliary",
+                "one-dimensional",
+                "miller_indices_2d.json · example"
+            ],
+            "path": "example/materials_category_components/entities/auxiliary/one_dimensional/miller_indices_2d.json"
+        },
+        {
+            "segments": [
+                "Materials · M-CODE",
+                "components",
+                "entities",
+                "auxiliary",
+                "three-dimensional",
+                "supercell_matrix_3d.json"
+            ],
+            "path": "schema/materials_category_components/entities/auxiliary/three_dimensional/supercell_matrix_3d.json"
+        },
+        {
+            "segments": [
+                "Materials · M-CODE",
+                "components",
+                "entities",
+                "auxiliary",
+                "three-dimensional",
+                "supercell_matrix_3d.json · example"
+            ],
+            "path": "example/materials_category_components/entities/auxiliary/three_dimensional/supercell_matrix_3d.json"
+        },
+        {
+            "segments": [
+                "Materials · M-CODE",
+                "components",
+                "entities",
+                "auxiliary",
+                "two-dimensional",
+                "miller_indices.json"
+            ],
+            "path": "schema/materials_category_components/entities/auxiliary/two_dimensional/miller_indices.json"
+        },
+        {
+            "segments": [
+                "Materials · M-CODE",
+                "components",
+                "entities",
+                "auxiliary",
+                "two-dimensional",
+                "miller_indices.json · example"
+            ],
+            "path": "example/materials_category_components/entities/auxiliary/two_dimensional/miller_indices.json"
+        },
+        {
+            "segments": [
+                "Materials · M-CODE",
+                "components",
+                "entities",
+                "auxiliary",
+                "two-dimensional",
+                "supercell_matrix_2d.json"
+            ],
+            "path": "schema/materials_category_components/entities/auxiliary/two_dimensional/supercell_matrix_2d.json"
+        },
+        {
+            "segments": [
+                "Materials · M-CODE",
+                "components",
+                "entities",
+                "auxiliary",
+                "two-dimensional",
+                "supercell_matrix_2d.json · example"
+            ],
+            "path": "example/materials_category_components/entities/auxiliary/two_dimensional/supercell_matrix_2d.json"
+        },
+        {
+            "segments": [
+                "Materials · M-CODE",
+                "components",
+                "entities",
+                "auxiliary",
+                "two-dimensional",
+                "termination.json"
+            ],
+            "path": "schema/materials_category_components/entities/auxiliary/two_dimensional/termination.json"
+        },
+        {
+            "segments": [
+                "Materials · M-CODE",
+                "components",
+                "entities",
+                "auxiliary",
+                "two-dimensional",
+                "termination.json · example"
+            ],
+            "path": "example/materials_category_components/entities/auxiliary/two_dimensional/termination.json"
+        },
+        {
+            "segments": [
+                "Materials · M-CODE",
+                "components",
+                "entities",
+                "auxiliary",
+                "zero-dimensional",
+                "crystal_site.json"
+            ],
+            "path": "schema/materials_category_components/entities/auxiliary/zero_dimensional/crystal_site.json"
+        },
+        {
+            "segments": [
+                "Materials · M-CODE",
+                "components",
+                "entities",
+                "auxiliary",
+                "zero-dimensional",
+                "crystal_site.json · example"
+            ],
+            "path": "example/materials_category_components/entities/auxiliary/zero_dimensional/crystal_site.json"
+        },
+        {
+            "segments": [
+                "Materials · M-CODE",
+                "components",
+                "entities",
+                "auxiliary",
+                "zero-dimensional",
+                "point_defect_site.json"
+            ],
+            "path": "schema/materials_category_components/entities/auxiliary/zero_dimensional/point_defect_site.json"
+        },
+        {
+            "segments": [
+                "Materials · M-CODE",
+                "components",
+                "entities",
+                "auxiliary",
+                "zero-dimensional",
+                "point_defect_site.json · example"
+            ],
+            "path": "example/materials_category_components/entities/auxiliary/zero_dimensional/point_defect_site.json"
+        },
+        {
+            "segments": [
+                "Materials · M-CODE",
+                "components",
+                "entities",
+                "auxiliary",
+                "zero-dimensional",
+                "void_region.json"
+            ],
+            "path": "schema/materials_category_components/entities/auxiliary/zero_dimensional/void_region.json"
+        },
+        {
+            "segments": [
+                "Materials · M-CODE",
+                "components",
+                "entities",
+                "core",
+                "three-dimensional",
+                "crystal.json"
+            ],
+            "path": "schema/materials_category_components/entities/core/three_dimensional/crystal.json"
+        },
+        {
+            "segments": [
+                "Materials · M-CODE",
+                "components",
+                "entities",
+                "core",
+                "three-dimensional",
+                "crystal.json · example"
+            ],
+            "path": "example/materials_category_components/entities/core/three_dimensional/crystal.json"
+        },
+        {
+            "segments": [
+                "Materials · M-CODE",
+                "components",
+                "entities",
+                "core",
+                "three-dimensional",
+                "void.json"
+            ],
+            "path": "schema/materials_category_components/entities/core/three_dimensional/void.json"
+        },
+        {
+            "segments": [
+                "Materials · M-CODE",
+                "components",
+                "entities",
+                "core",
+                "three-dimensional",
+                "void.json · example"
+            ],
+            "path": "example/materials_category_components/entities/core/three_dimensional/void.json"
+        },
+        {
+            "segments": [
+                "Materials · M-CODE",
+                "components",
+                "entities",
+                "core",
+                "two-dimensional",
+                "vacuum.json"
+            ],
+            "path": "schema/materials_category_components/entities/core/two_dimensional/vacuum.json"
+        },
+        {
+            "segments": [
+                "Materials · M-CODE",
+                "components",
+                "entities",
+                "core",
+                "two-dimensional",
+                "vacuum.json · example"
+            ],
+            "path": "example/materials_category_components/entities/core/two_dimensional/vacuum.json"
+        },
+        {
+            "segments": [
+                "Materials · M-CODE",
+                "components",
+                "entities",
+                "core",
+                "zero-dimensional",
+                "atom.json"
+            ],
+            "path": "schema/materials_category_components/entities/core/zero_dimensional/atom.json"
+        },
+        {
+            "segments": [
+                "Materials · M-CODE",
+                "components",
+                "entities",
+                "core",
+                "zero-dimensional",
+                "atom.json · example"
+            ],
+            "path": "example/materials_category_components/entities/core/zero_dimensional/atom.json"
+        },
+        {
+            "segments": [
+                "Materials · M-CODE",
+                "components",
+                "entities",
+                "core",
+                "zero-dimensional",
+                "vacancy.json"
+            ],
+            "path": "schema/materials_category_components/entities/core/zero_dimensional/vacancy.json"
+        },
+        {
+            "segments": [
+                "Materials · M-CODE",
+                "components",
+                "entities",
+                "reusable",
+                "one-dimensional",
+                "crystal_lattice_lines_unique_repeated.json"
+            ],
+            "path": "schema/materials_category_components/entities/reusable/one_dimensional/crystal_lattice_lines_unique_repeated.json"
+        },
+        {
+            "segments": [
+                "Materials · M-CODE",
+                "components",
+                "entities",
+                "reusable",
+                "one-dimensional",
+                "crystal_lattice_lines_unique_repeated.json · example"
+            ],
+            "path": "example/materials_category_components/entities/reusable/one_dimensional/crystal_lattice_lines_unique_repeated.json"
+        },
+        {
+            "segments": [
+                "Materials · M-CODE",
+                "components",
+                "entities",
+                "reusable",
+                "one-dimensional",
+                "crystal_lattice_lines.json"
+            ],
+            "path": "schema/materials_category_components/entities/reusable/one_dimensional/crystal_lattice_lines.json"
+        },
+        {
+            "segments": [
+                "Materials · M-CODE",
+                "components",
+                "entities",
+                "reusable",
+                "one-dimensional",
+                "crystal_lattice_lines.json · example"
+            ],
+            "path": "example/materials_category_components/entities/reusable/one_dimensional/crystal_lattice_lines.json"
+        },
+        {
+            "segments": [
+                "Materials · M-CODE",
+                "components",
+                "entities",
+                "reusable",
+                "three-dimensional",
+                "crystal_lattice_base.json"
+            ],
+            "path": "schema/materials_category_components/entities/reusable/three_dimensional/crystal_lattice_base.json"
+        },
+        {
+            "segments": [
+                "Materials · M-CODE",
+                "components",
+                "entities",
+                "reusable",
+                "three-dimensional",
+                "repetitions.json"
+            ],
+            "path": "schema/materials_category_components/entities/reusable/three_dimensional/repetitions.json"
+        },
+        {
+            "segments": [
+                "Materials · M-CODE",
+                "components",
+                "entities",
+                "reusable",
+                "three-dimensional",
+                "repetitions.json · example"
+            ],
+            "path": "example/materials_category_components/entities/reusable/three_dimensional/repetitions.json"
+        },
+        {
+            "segments": [
+                "Materials · M-CODE",
+                "components",
+                "entities",
+                "reusable",
+                "three-dimensional",
+                "strained_non_uniform.json"
+            ],
+            "path": "schema/materials_category_components/entities/reusable/three_dimensional/strained_non_uniform.json"
+        },
+        {
+            "segments": [
+                "Materials · M-CODE",
+                "components",
+                "entities",
+                "reusable",
+                "three-dimensional",
+                "strained_uniform.json"
+            ],
+            "path": "schema/materials_category_components/entities/reusable/three_dimensional/strained_uniform.json"
+        },
+        {
+            "segments": [
+                "Materials · M-CODE",
+                "components",
+                "entities",
+                "reusable",
+                "three-dimensional",
+                "supercell.json"
+            ],
+            "path": "schema/materials_category_components/entities/reusable/three_dimensional/supercell.json"
+        },
+        {
+            "segments": [
+                "Materials · M-CODE",
+                "components",
+                "entities",
+                "reusable",
+                "two-dimensional",
+                "atomic_layers_unique_repeated.json"
+            ],
+            "path": "schema/materials_category_components/entities/reusable/two_dimensional/atomic_layers_unique_repeated.json"
+        },
+        {
+            "segments": [
+                "Materials · M-CODE",
+                "components",
+                "entities",
+                "reusable",
+                "two-dimensional",
+                "atomic_layers_unique.json"
+            ],
+            "path": "schema/materials_category_components/entities/reusable/two_dimensional/atomic_layers_unique.json"
+        },
+        {
+            "segments": [
+                "Materials · M-CODE",
+                "components",
+                "entities",
+                "reusable",
+                "two-dimensional",
+                "atomic_layers.json"
+            ],
+            "path": "schema/materials_category_components/entities/reusable/two_dimensional/atomic_layers.json"
+        },
+        {
+            "segments": [
+                "Materials · M-CODE",
+                "components",
+                "entities",
+                "reusable",
+                "two-dimensional",
+                "crystal_lattice_planes.json"
+            ],
+            "path": "schema/materials_category_components/entities/reusable/two_dimensional/crystal_lattice_planes.json"
+        },
+        {
+            "segments": [
+                "Materials · M-CODE",
+                "components",
+                "entities",
+                "reusable",
+                "two-dimensional",
+                "slab_stack_configuration.json"
+            ],
+            "path": "schema/materials_category_components/entities/reusable/two_dimensional/slab_stack_configuration.json"
+        },
+        {
+            "segments": [
+                "Materials · M-CODE",
+                "components",
+                "entities",
+                "reusable",
+                "two-dimensional",
+                "slab_stack_configuration.json · example"
+            ],
+            "path": "example/materials_category_components/entities/reusable/two_dimensional/slab_stack_configuration.json"
+        },
+        {
+            "segments": [
+                "Materials · M-CODE",
+                "components",
+                "operations",
+                "combinations",
+                "merge.json"
+            ],
+            "path": "schema/materials_category_components/operations/core/combinations/merge.json"
+        },
+        {
+            "segments": [
+                "Materials · M-CODE",
+                "components",
+                "operations",
+                "combinations",
+                "merge.json · example"
+            ],
+            "path": "example/materials_category_components/operations/core/combinations/merge.json"
+        },
+        {
+            "segments": [
+                "Materials · M-CODE",
+                "components",
+                "operations",
+                "combinations",
+                "stack.json"
+            ],
+            "path": "schema/materials_category_components/operations/core/combinations/stack.json"
+        },
+        {
+            "segments": [
+                "Materials · M-CODE",
+                "components",
+                "operations",
+                "combinations",
+                "stack.json · example"
+            ],
+            "path": "example/materials_category_components/operations/core/combinations/stack.json"
+        },
+        {
+            "segments": [
+                "Materials · M-CODE",
+                "components",
+                "operations",
+                "modifications",
+                "perturb.json"
+            ],
+            "path": "schema/materials_category_components/operations/core/modifications/perturb.json"
+        },
+        {
+            "segments": [
+                "Materials · M-CODE",
+                "components",
+                "operations",
+                "modifications",
+                "perturb.json · example"
+            ],
+            "path": "example/materials_category_components/operations/core/modifications/perturb.json"
+        },
+        {
+            "segments": [
+                "Materials · M-CODE",
+                "components",
+                "operations",
+                "modifications",
+                "repeat.json"
+            ],
+            "path": "schema/materials_category_components/operations/core/modifications/repeat.json"
+        },
+        {
+            "segments": [
+                "Materials · M-CODE",
+                "components",
+                "operations",
+                "modifications",
+                "repeat.json · example"
+            ],
+            "path": "example/materials_category_components/operations/core/modifications/repeat.json"
+        },
+        {
+            "segments": [
+                "Materials · M-CODE",
+                "components",
+                "operations",
+                "modifications",
+                "strain.json"
+            ],
+            "path": "schema/materials_category_components/operations/core/modifications/strain.json"
+        },
+        {
+            "segments": [
+                "Materials · M-CODE",
+                "components",
+                "operations",
+                "modifications",
+                "strain.json · example"
+            ],
+            "path": "example/materials_category_components/operations/core/modifications/strain.json"
+        },
+        {
+            "segments": [
+                "Methods · CateCom",
+                "mathematical",
+                "diff · Numerical differentiation",
+                "diff.json"
+            ],
+            "path": "schema/methods_category/mathematical/diff.json"
+        },
+        {
+            "segments": [
+                "Methods · CateCom",
+                "mathematical",
+                "diff · Numerical differentiation",
+                "fd · Finite difference method",
+                "fd.json"
+            ],
+            "path": "schema/methods_category/mathematical/diff/fd.json"
+        },
+        {
+            "segments": [
+                "Methods · CateCom",
+                "mathematical",
+                "discr · Discretization",
+                "discr.json"
+            ],
+            "path": "schema/methods_category/mathematical/discr.json"
+        },
+        {
+            "segments": [
+                "Methods · CateCom",
+                "mathematical",
+                "discr · Discretization",
+                "mesh · Meshing method",
+                "hybrid · Hybrid meshing",
+                "hybrid.json"
+            ],
+            "path": "schema/methods_category/mathematical/discr/mesh/hybrid.json"
+        },
+        {
+            "segments": [
+                "Methods · CateCom",
+                "mathematical",
+                "discr · Discretization",
+                "mesh · Meshing method",
+                "mesh.json"
+            ],
+            "path": "schema/methods_category/mathematical/discr/mesh.json"
+        },
+        {
+            "segments": [
+                "Methods · CateCom",
+                "mathematical",
+                "discr · Discretization",
+                "mesh · Meshing method",
+                "nstruct · Unstructured meshing category",
+                "nstruct.json"
+            ],
+            "path": "schema/methods_category/mathematical/discr/mesh/nstruct.json"
+        },
+        {
+            "segments": [
+                "Methods · CateCom",
+                "mathematical",
+                "discr · Discretization",
+                "mesh · Meshing method",
+                "struct · Structured meshing",
+                "cartesian · Cartesian grid",
+                "cartesian.json"
+            ],
+            "path": "schema/methods_category/mathematical/discr/mesh/struct/cartesian.json"
+        },
+        {
+            "segments": [
+                "Methods · CateCom",
+                "mathematical",
+                "discr · Discretization",
+                "mesh · Meshing method",
+                "struct · Structured meshing",
+                "struct.json"
+            ],
+            "path": "schema/methods_category/mathematical/discr/mesh/struct.json"
+        },
+        {
+            "segments": [
+                "Methods · CateCom",
+                "mathematical",
+                "fapprx · Unstructured meshing category",
+                "basisexp · Basis expansion",
+                "basisexp.json"
+            ],
+            "path": "schema/methods_category/mathematical/fapprx/basisexp.json"
+        },
+        {
+            "segments": [
+                "Methods · CateCom",
+                "mathematical",
+                "fapprx · Unstructured meshing category",
+                "fapprx.json"
+            ],
+            "path": "schema/methods_category/mathematical/fapprx.json"
+        },
+        {
+            "segments": [
+                "Methods · CateCom",
+                "mathematical",
+                "fapprx · Unstructured meshing category",
+                "ipol · Interpolation",
+                "ipol.json"
+            ],
+            "path": "schema/methods_category/mathematical/fapprx/ipol.json"
+        },
+        {
+            "segments": [
+                "Methods · CateCom",
+                "mathematical",
+                "fapprx · Unstructured meshing category",
+                "ipol · Interpolation",
+                "lin · Linear interpolation",
+                "lin.json"
+            ],
+            "path": "schema/methods_category/mathematical/fapprx/ipol/lin.json"
+        },
+        {
+            "segments": [
+                "Methods · CateCom",
+                "mathematical",
+                "fapprx · Unstructured meshing category",
+                "ipol · Interpolation",
+                "poly · Polynomial interpolation",
+                "poly.json"
+            ],
+            "path": "schema/methods_category/mathematical/fapprx/ipol/poly.json"
+        },
+        {
+            "segments": [
+                "Methods · CateCom",
+                "mathematical",
+                "fapprx · Unstructured meshing category",
+                "ipol · Interpolation",
+                "spline · Spline interpolation",
+                "spline.json"
+            ],
+            "path": "schema/methods_category/mathematical/fapprx/ipol/spline.json"
+        },
+        {
+            "segments": [
+                "Methods · CateCom",
+                "mathematical",
+                "intgr · Integration",
+                "analytic · Analytic integral",
+                "analytic.json"
+            ],
+            "path": "schema/methods_category/mathematical/intgr/analytic.json"
+        },
+        {
+            "segments": [
+                "Methods · CateCom",
+                "mathematical",
+                "intgr · Integration",
+                "analytic · Analytic integral",
+                "volume · Analytic volume integral",
+                "volume.json"
+            ],
+            "path": "schema/methods_category/mathematical/intgr/analytic/volume.json"
+        },
+        {
+            "segments": [
+                "Methods · CateCom",
+                "mathematical",
+                "intgr · Integration",
+                "diffeq · Methods for the numerical integration of differential equations",
+                "diffeq.json"
+            ],
+            "path": "schema/methods_category/mathematical/intgr/diffeq.json"
+        },
+        {
+            "segments": [
+                "Methods · CateCom",
+                "mathematical",
+                "intgr · Integration",
+                "diffeq · Methods for the numerical integration of differential equations",
+                "order1",
+                "order1.json"
+            ],
+            "path": "schema/methods_category/mathematical/intgr/diffeq/order1.json"
+        },
+        {
+            "segments": [
+                "Methods · CateCom",
+                "mathematical",
+                "intgr · Integration",
+                "diffeq · Methods for the numerical integration of differential equations",
+                "order2",
+                "order2.json"
+            ],
+            "path": "schema/methods_category/mathematical/intgr/diffeq/order2.json"
+        },
+        {
+            "segments": [
+                "Methods · CateCom",
+                "mathematical",
+                "intgr · Integration",
+                "intgr.json"
+            ],
+            "path": "schema/methods_category/mathematical/intgr.json"
+        },
+        {
+            "segments": [
+                "Methods · CateCom",
+                "mathematical",
+                "intgr · Integration",
+                "numquad · Methods for the numerical quadrature",
+                "gauss · Gaussian quadrature rules",
+                "gauss.json"
+            ],
+            "path": "schema/methods_category/mathematical/intgr/numquad/gauss.json"
+        },
+        {
+            "segments": [
+                "Methods · CateCom",
+                "mathematical",
+                "intgr · Integration",
+                "numquad · Methods for the numerical quadrature",
+                "newcot · Newton-Cotes quadrature rules",
+                "newcot.json"
+            ],
+            "path": "schema/methods_category/mathematical/intgr/numquad/newcot.json"
+        },
+        {
+            "segments": [
+                "Methods · CateCom",
+                "mathematical",
+                "intgr · Integration",
+                "numquad · Methods for the numerical quadrature",
+                "numquad.json"
+            ],
+            "path": "schema/methods_category/mathematical/intgr/numquad.json"
+        },
+        {
+            "segments": [
+                "Methods · CateCom",
+                "mathematical",
+                "intgr · Integration",
+                "transf · Integral transform methods",
+                "fourier · Fourier transform methods",
+                "fourier.json"
+            ],
+            "path": "schema/methods_category/mathematical/intgr/transf/fourier.json"
+        },
+        {
+            "segments": [
+                "Methods · CateCom",
+                "mathematical",
+                "intgr · Integration",
+                "transf · Integral transform methods",
+                "transf.json"
+            ],
+            "path": "schema/methods_category/mathematical/intgr/transf.json"
+        },
+        {
+            "segments": [
+                "Methods · CateCom",
+                "mathematical",
+                "linalg · Linear Algebra",
+                "dcomp · Matrix decomposition methods",
+                "dcomp.json"
+            ],
+            "path": "schema/methods_category/mathematical/linalg/dcomp.json"
+        },
+        {
+            "segments": [
+                "Methods · CateCom",
+                "mathematical",
+                "linalg · Linear Algebra",
+                "diag · Matrix diagonalization methods",
+                "davidson · Davidson diagonalization method",
+                "davidson.json"
+            ],
+            "path": "schema/methods_category/mathematical/linalg/diag/davidson.json"
+        },
+        {
+            "segments": [
+                "Methods · CateCom",
+                "mathematical",
+                "linalg · Linear Algebra",
+                "diag · Matrix diagonalization methods",
+                "davidson · Davidson diagonalization method",
+                "methods_directory/davidson.json"
+            ],
+            "path": "schema/methods_directory/mathematical/davidson.json"
+        },
+        {
+            "segments": [
+                "Methods · CateCom",
+                "mathematical",
+                "linalg · Linear Algebra",
+                "diag · Matrix diagonalization methods",
+                "diag.json"
+            ],
+            "path": "schema/methods_category/mathematical/linalg/diag.json"
+        },
+        {
+            "segments": [
+                "Methods · CateCom",
+                "mathematical",
+                "linalg · Linear Algebra",
+                "linalg.json"
+            ],
+            "path": "schema/methods_category/mathematical/linalg.json"
+        },
+        {
+            "segments": [
+                "Methods · CateCom",
+                "mathematical",
+                "linalg · Linear Algebra",
+                "lintra · Linear transformation methods",
+                "lintra.json"
+            ],
+            "path": "schema/methods_category/mathematical/linalg/lintra.json"
+        },
+        {
+            "segments": [
+                "Methods · CateCom",
+                "mathematical",
+                "linalg · Linear Algebra",
+                "matf · Matrix function methods",
+                "matf.json"
+            ],
+            "path": "schema/methods_category/mathematical/linalg/matf.json"
+        },
+        {
+            "segments": [
+                "Methods · CateCom",
+                "mathematical",
+                "opt · Mathematical",
+                "diff · Optimization methods for differentiable functions",
+                "bracket · Bracket algorithms for the optimization of differentiable functions",
+                "bracket.json"
+            ],
+            "path": "schema/methods_category/mathematical/opt/diff/bracket.json"
+        },
+        {
+            "segments": [
+                "Methods · CateCom",
+                "mathematical",
+                "opt · Mathematical",
+                "diff · Optimization methods for differentiable functions",
+                "diff.json"
+            ],
+            "path": "schema/methods_category/mathematical/opt/diff.json"
+        },
+        {
+            "segments": [
+                "Methods · CateCom",
+                "mathematical",
+                "opt · Mathematical",
+                "diff · Optimization methods for differentiable functions",
+                "local · Local descent methods for the optimization of differentiable functions",
+                "local.json"
+            ],
+            "path": "schema/methods_category/mathematical/opt/diff/local.json"
+        },
+        {
+            "segments": [
+                "Methods · CateCom",
+                "mathematical",
+                "opt · Mathematical",
+                "diff · Optimization methods for differentiable functions",
+                "order1 · First order algorithms for the optimization of differentiable functions",
+                "order1.json"
+            ],
+            "path": "schema/methods_category/mathematical/opt/diff/order1.json"
+        },
+        {
+            "segments": [
+                "Methods · CateCom",
+                "mathematical",
+                "opt · Mathematical",
+                "diff · Optimization methods for differentiable functions",
+                "order2 · Second order algorithms for the optimization of differentiable functions",
+                "order2.json"
+            ],
+            "path": "schema/methods_category/mathematical/opt/diff/order2.json"
+        },
+        {
+            "segments": [
+                "Methods · CateCom",
+                "mathematical",
+                "opt · Mathematical",
+                "diff · Optimization methods for differentiable functions",
+                "ordern · Mixed order and higher order algorithms for the optimization of differentiable functions",
+                "cg · Conjugate gradient method",
+                "cg.json"
+            ],
+            "path": "schema/methods_category/mathematical/opt/diff/ordern/cg.json"
+        },
+        {
+            "segments": [
+                "Methods · CateCom",
+                "mathematical",
+                "opt · Mathematical",
+                "diff · Optimization methods for differentiable functions",
+                "ordern · Mixed order and higher order algorithms for the optimization of differentiable functions",
+                "cg · Conjugate gradient method",
+                "methods_directory/cg.json"
+            ],
+            "path": "schema/methods_directory/mathematical/cg.json"
+        },
+        {
+            "segments": [
+                "Methods · CateCom",
+                "mathematical",
+                "opt · Mathematical",
+                "diff · Optimization methods for differentiable functions",
+                "ordern · Mixed order and higher order algorithms for the optimization of differentiable functions",
+                "cg · Conjugate gradient method",
+                "methods_directory/cg.json · example"
+            ],
+            "path": "example/methods_directory/mathematical/cg.json"
+        },
+        {
+            "segments": [
+                "Methods · CateCom",
+                "mathematical",
+                "opt · Mathematical",
+                "diff · Optimization methods for differentiable functions",
+                "ordern · Mixed order and higher order algorithms for the optimization of differentiable functions",
+                "ordern.json"
+            ],
+            "path": "schema/methods_category/mathematical/opt/diff/ordern.json"
+        },
+        {
+            "segments": [
+                "Methods · CateCom",
+                "mathematical",
+                "opt · Mathematical",
+                "ndiff · Optimization methods for non-differentiable functions",
+                "direct · Direct algorithms for the optimization of non-differentiable functions",
+                "direct.json"
+            ],
+            "path": "schema/methods_category/mathematical/opt/ndiff/direct.json"
+        },
+        {
+            "segments": [
+                "Methods · CateCom",
+                "mathematical",
+                "opt · Mathematical",
+                "ndiff · Optimization methods for non-differentiable functions",
+                "ndiff.json"
+            ],
+            "path": "schema/methods_category/mathematical/opt/ndiff.json"
+        },
+        {
+            "segments": [
+                "Methods · CateCom",
+                "mathematical",
+                "opt · Mathematical",
+                "ndiff · Optimization methods for non-differentiable functions",
+                "pop · Population algorithms for the optmization of non-differentiable functions",
+                "pop.json"
+            ],
+            "path": "schema/methods_category/mathematical/opt/ndiff/pop.json"
+        },
+        {
+            "segments": [
+                "Methods · CateCom",
+                "mathematical",
+                "opt · Mathematical",
+                "ndiff · Optimization methods for non-differentiable functions",
+                "stoch · Stochastic algorithms for the optmization of non-differentiable functions",
+                "stoch.json"
+            ],
+            "path": "schema/methods_category/mathematical/opt/ndiff/stoch.json"
+        },
+        {
+            "segments": [
+                "Methods · CateCom",
+                "mathematical",
+                "opt · Mathematical",
+                "opt.json"
+            ],
+            "path": "schema/methods_category/mathematical/opt.json"
+        },
+        {
+            "segments": [
+                "Methods · CateCom",
+                "mathematical",
+                "opt · Mathematical",
+                "root · Root finding",
+                "bracket · Bracketing method for finding roots",
+                "bracket.json"
+            ],
+            "path": "schema/methods_category/mathematical/opt/root/bracket.json"
+        },
+        {
+            "segments": [
+                "Methods · CateCom",
+                "mathematical",
+                "opt · Mathematical",
+                "root · Root finding",
+                "iter · Iterative method for root finding",
+                "iter.json"
+            ],
+            "path": "schema/methods_category/mathematical/opt/root/iter.json"
+        },
+        {
+            "segments": [
+                "Methods · CateCom",
+                "mathematical",
+                "opt · Mathematical",
+                "root · Root finding",
+                "root.json"
+            ],
+            "path": "schema/methods_category/mathematical/opt/root.json"
+        },
+        {
+            "segments": [
+                "Methods · CateCom",
+                "mathematical",
+                "regression · linear methods",
+                "methods_directory/regression.json"
+            ],
+            "path": "schema/methods_directory/mathematical/regression.json"
+        },
+        {
+            "segments": [
+                "Methods · CateCom",
+                "mathematical",
+                "regression · linear methods",
+                "methods_directory/regression.json · example"
+            ],
+            "path": "example/methods_directory/mathematical/regression.json"
+        },
+        {
+            "segments": [
+                "Methods · CateCom",
+                "mathematical",
+                "regression · linear methods",
+                "regression.json"
+            ],
+            "path": "schema/methods_category/mathematical/regression.json"
+        },
+        {
+            "segments": [
+                "Methods · CateCom",
+                "physical",
+                "qm · Quantum-Mechanical method",
+                "qm.json"
+            ],
+            "path": "schema/methods_category/physical/qm.json"
+        },
+        {
+            "segments": [
+                "Methods · CateCom",
+                "physical",
+                "qm · Quantum-Mechanical method",
+                "wf · Methods related to wave functions",
+                "ao · Approximating the electronic wave function with a atomic orbital basis",
+                "ao.json"
+            ],
+            "path": "schema/methods_category/physical/qm/wf/ao.json"
+        },
+        {
+            "segments": [
+                "Methods · CateCom",
+                "physical",
+                "qm · Quantum-Mechanical method",
+                "wf · Methods related to wave functions",
+                "ao · Approximating the electronic wave function with a atomic orbital basis",
+                "dunning · Dunning correlation-consistent basis set",
+                "dunning.json"
+            ],
+            "path": "schema/methods_category/physical/qm/wf/ao/dunning.json"
+        },
+        {
+            "segments": [
+                "Methods · CateCom",
+                "physical",
+                "qm · Quantum-Mechanical method",
+                "wf · Methods related to wave functions",
+                "ao · Approximating the electronic wave function with a atomic orbital basis",
+                "dunning · Dunning correlation-consistent basis set",
+                "methods_directory/dunning.json"
+            ],
+            "path": "schema/methods_directory/physical/ao/dunning.json"
+        },
+        {
+            "segments": [
+                "Methods · CateCom",
+                "physical",
+                "qm · Quantum-Mechanical method",
+                "wf · Methods related to wave functions",
+                "ao · Approximating the electronic wave function with a atomic orbital basis",
+                "dunning · Dunning correlation-consistent basis set",
+                "methods_directory/dunning.json · example"
+            ],
+            "path": "example/methods_directory/physical/ao/dunning.json"
+        },
+        {
+            "segments": [
+                "Methods · CateCom",
+                "physical",
+                "qm · Quantum-Mechanical method",
+                "wf · Methods related to wave functions",
+                "ao · Approximating the electronic wave function with a atomic orbital basis",
+                "other · Other (neither Pople nor Dunning) basis set",
+                "methods_directory/other.json"
+            ],
+            "path": "schema/methods_directory/physical/ao/other.json"
+        },
+        {
+            "segments": [
+                "Methods · CateCom",
+                "physical",
+                "qm · Quantum-Mechanical method",
+                "wf · Methods related to wave functions",
+                "ao · Approximating the electronic wave function with a atomic orbital basis",
+                "other · Other (neither Pople nor Dunning) basis set",
+                "other.json"
+            ],
+            "path": "schema/methods_category/physical/qm/wf/ao/other.json"
+        },
+        {
+            "segments": [
+                "Methods · CateCom",
+                "physical",
+                "qm · Quantum-Mechanical method",
+                "wf · Methods related to wave functions",
+                "ao · Approximating the electronic wave function with a atomic orbital basis",
+                "pople · Pople basis set",
+                "methods_directory/pople.json"
+            ],
+            "path": "schema/methods_directory/physical/ao/pople.json"
+        },
+        {
+            "segments": [
+                "Methods · CateCom",
+                "physical",
+                "qm · Quantum-Mechanical method",
+                "wf · Methods related to wave functions",
+                "ao · Approximating the electronic wave function with a atomic orbital basis",
+                "pople · Pople basis set",
+                "pople.json"
+            ],
+            "path": "schema/methods_category/physical/qm/wf/ao/pople.json"
+        },
+        {
+            "segments": [
+                "Methods · CateCom",
+                "physical",
+                "qm · Quantum-Mechanical method",
+                "wf · Methods related to wave functions",
+                "psp · Pseudopotential",
+                "methods_directory/psp.json"
+            ],
+            "path": "schema/methods_directory/physical/psp.json"
+        },
+        {
+            "segments": [
+                "Methods · CateCom",
+                "physical",
+                "qm · Quantum-Mechanical method",
+                "wf · Methods related to wave functions",
+                "psp · Pseudopotential",
+                "methods_directory/psp.json · example"
+            ],
+            "path": "example/methods_directory/physical/psp.json"
+        },
+        {
+            "segments": [
+                "Methods · CateCom",
+                "physical",
+                "qm · Quantum-Mechanical method",
+                "wf · Methods related to wave functions",
+                "psp · Pseudopotential",
+                "psp.json"
+            ],
+            "path": "schema/methods_category/physical/qm/wf/psp.json"
+        },
+        {
+            "segments": [
+                "Methods · CateCom",
+                "physical",
+                "qm · Quantum-Mechanical method",
+                "wf · Methods related to wave functions",
+                "pw · Plane wave catgeory",
+                "methods_directory/pw.json"
+            ],
+            "path": "schema/methods_directory/physical/pw.json"
+        },
+        {
+            "segments": [
+                "Methods · CateCom",
+                "physical",
+                "qm · Quantum-Mechanical method",
+                "wf · Methods related to wave functions",
+                "pw · Plane wave catgeory",
+                "methods_directory/pw.json · example"
+            ],
+            "path": "example/methods_directory/physical/pw.json"
+        },
+        {
+            "segments": [
+                "Methods · CateCom",
+                "physical",
+                "qm · Quantum-Mechanical method",
+                "wf · Methods related to wave functions",
+                "pw · Plane wave catgeory",
+                "pw.json"
+            ],
+            "path": "schema/methods_category/physical/qm/wf/pw.json"
+        },
+        {
+            "segments": [
+                "Methods · CateCom",
+                "physical",
+                "qm · Quantum-Mechanical method",
+                "wf · Methods related to wave functions",
+                "smearing · Smearing methods",
+                "methods_directory/smearing.json"
+            ],
+            "path": "schema/methods_directory/physical/smearing.json"
+        },
+        {
+            "segments": [
+                "Methods · CateCom",
+                "physical",
+                "qm · Quantum-Mechanical method",
+                "wf · Methods related to wave functions",
+                "smearing · Smearing methods",
+                "methods_directory/smearing.json · example"
+            ],
+            "path": "example/methods_directory/physical/smearing.json"
+        },
+        {
+            "segments": [
+                "Methods · CateCom",
+                "physical",
+                "qm · Quantum-Mechanical method",
+                "wf · Methods related to wave functions",
+                "smearing · Smearing methods",
+                "smearing.json"
+            ],
+            "path": "schema/methods_category/physical/qm/wf/smearing.json"
+        },
+        {
+            "segments": [
+                "Methods · CateCom",
+                "physical",
+                "qm · Quantum-Mechanical method",
+                "wf · Methods related to wave functions",
+                "tetrahedron · Tetrahedron method for Brillouin zone integration",
+                "methods_directory/tetrahedron.json"
+            ],
+            "path": "schema/methods_directory/physical/tetrahedron.json"
+        },
+        {
+            "segments": [
+                "Methods · CateCom",
+                "physical",
+                "qm · Quantum-Mechanical method",
+                "wf · Methods related to wave functions",
+                "tetrahedron · Tetrahedron method for Brillouin zone integration",
+                "methods_directory/tetrahedron.json · example"
+            ],
+            "path": "example/methods_directory/physical/tetrahedron.json"
+        },
+        {
+            "segments": [
+                "Methods · CateCom",
+                "physical",
+                "qm · Quantum-Mechanical method",
+                "wf · Methods related to wave functions",
+                "tetrahedron · Tetrahedron method for Brillouin zone integration",
+                "tetrahedron.json"
+            ],
+            "path": "schema/methods_category/physical/qm/wf/tetrahedron.json"
+        },
+        {
+            "segments": [
+                "Methods · CateCom",
+                "physical",
+                "qm · Quantum-Mechanical method",
+                "wf · Methods related to wave functions",
+                "wf.json"
+            ],
+            "path": "schema/methods_category/physical/qm/wf.json"
+        },
+        {
+            "segments": [
+                "Models · CateCom",
+                "pb · physics-based model",
+                "pb.json"
+            ],
+            "path": "schema/models_category/pb.json"
+        },
+        {
+            "segments": [
+                "Models · CateCom",
+                "pb · physics-based model",
+                "qm · Quantum mechanical",
+                "abin · Ab initio",
+                "abin.json"
+            ],
+            "path": "schema/models_category/pb/qm/abin.json"
+        },
+        {
+            "segments": [
+                "Models · CateCom",
+                "pb · physics-based model",
+                "qm · Quantum mechanical",
+                "abin · Ab initio",
+                "gw",
+                "gw.json"
+            ],
+            "path": "schema/models_category/pb/qm/abin/gw.json"
+        },
+        {
+            "segments": [
+                "Models · CateCom",
+                "pb · physics-based model",
+                "qm · Quantum mechanical",
+                "abin · Ab initio",
+                "gw",
+                "gw.json · example"
+            ],
+            "path": "example/models_category/pb/qm/abin/gw.json"
+        },
+        {
+            "segments": [
+                "Models · CateCom",
+                "pb · physics-based model",
+                "qm · Quantum mechanical",
+                "abin · Ab initio",
+                "gw",
+                "models_directory/gw.json"
+            ],
+            "path": "schema/models_directory/gw.json"
+        },
+        {
+            "segments": [
+                "Models · CateCom",
+                "pb · physics-based model",
+                "qm · Quantum mechanical",
+                "abin · Ab initio",
+                "gw",
+                "models_directory/gw.json · example"
+            ],
+            "path": "example/models_directory/gw.json"
+        },
+        {
+            "segments": [
+                "Models · CateCom",
+                "pb · physics-based model",
+                "qm · Quantum mechanical",
+                "dft · Density functional theory",
+                "dft.json"
+            ],
+            "path": "schema/models_category/pb/qm/dft.json"
+        },
+        {
+            "segments": [
+                "Models · CateCom",
+                "pb · physics-based model",
+                "qm · Quantum mechanical",
+                "dft · Density functional theory",
+                "ksdft · Kohn-Sham DFT",
+                "double-hybrid · DFT double hybrid functional",
+                "double_hybrid.json"
+            ],
+            "path": "schema/models_category/pb/qm/dft/ksdft/double_hybrid.json"
+        },
+        {
+            "segments": [
+                "Models · CateCom",
+                "pb · physics-based model",
+                "qm · Quantum mechanical",
+                "dft · Density functional theory",
+                "ksdft · Kohn-Sham DFT",
+                "double-hybrid · DFT double hybrid functional",
+                "models_directory/double_hybrid.json"
+            ],
+            "path": "schema/models_directory/double_hybrid.json"
+        },
+        {
+            "segments": [
+                "Models · CateCom",
+                "pb · physics-based model",
+                "qm · Quantum mechanical",
+                "dft · Density functional theory",
+                "ksdft · Kohn-Sham DFT",
+                "gga · DFT GGA functional",
+                "gga.json"
+            ],
+            "path": "schema/models_category/pb/qm/dft/ksdft/gga.json"
+        },
+        {
+            "segments": [
+                "Models · CateCom",
+                "pb · physics-based model",
+                "qm · Quantum mechanical",
+                "dft · Density functional theory",
+                "ksdft · Kohn-Sham DFT",
+                "gga · DFT GGA functional",
+                "models_directory/gga.json"
+            ],
+            "path": "schema/models_directory/gga.json"
+        },
+        {
+            "segments": [
+                "Models · CateCom",
+                "pb · physics-based model",
+                "qm · Quantum mechanical",
+                "dft · Density functional theory",
+                "ksdft · Kohn-Sham DFT",
+                "gga · DFT GGA functional",
+                "models_directory/gga.json · example"
+            ],
+            "path": "example/models_directory/gga.json"
+        },
+        {
+            "segments": [
+                "Models · CateCom",
+                "pb · physics-based model",
+                "qm · Quantum mechanical",
+                "dft · Density functional theory",
+                "ksdft · Kohn-Sham DFT",
+                "hybrid · DFT hybrid functional",
+                "hybrid.json"
+            ],
+            "path": "schema/models_category/pb/qm/dft/ksdft/hybrid.json"
+        },
+        {
+            "segments": [
+                "Models · CateCom",
+                "pb · physics-based model",
+                "qm · Quantum mechanical",
+                "dft · Density functional theory",
+                "ksdft · Kohn-Sham DFT",
+                "hybrid · DFT hybrid functional",
+                "models_directory/hybrid.json"
+            ],
+            "path": "schema/models_directory/hybrid.json"
+        },
+        {
+            "segments": [
+                "Models · CateCom",
+                "pb · physics-based model",
+                "qm · Quantum mechanical",
+                "dft · Density functional theory",
+                "ksdft · Kohn-Sham DFT",
+                "hybrid · DFT hybrid functional",
+                "models_directory/hybrid.json · example"
+            ],
+            "path": "example/models_directory/hybrid.json"
+        },
+        {
+            "segments": [
+                "Models · CateCom",
+                "pb · physics-based model",
+                "qm · Quantum mechanical",
+                "dft · Density functional theory",
+                "ksdft · Kohn-Sham DFT",
+                "ksdft.json"
+            ],
+            "path": "schema/models_category/pb/qm/dft/ksdft.json"
+        },
+        {
+            "segments": [
+                "Models · CateCom",
+                "pb · physics-based model",
+                "qm · Quantum mechanical",
+                "dft · Density functional theory",
+                "ksdft · Kohn-Sham DFT",
+                "ksdft.json · example"
+            ],
+            "path": "example/models_category/pb/qm/dft/ksdft.json"
+        },
+        {
+            "segments": [
+                "Models · CateCom",
+                "pb · physics-based model",
+                "qm · Quantum mechanical",
+                "dft · Density functional theory",
+                "ksdft · Kohn-Sham DFT",
+                "lda · DFT LDA functional",
+                "lda.json"
+            ],
+            "path": "schema/models_category/pb/qm/dft/ksdft/lda.json"
+        },
+        {
+            "segments": [
+                "Models · CateCom",
+                "pb · physics-based model",
+                "qm · Quantum mechanical",
+                "dft · Density functional theory",
+                "ksdft · Kohn-Sham DFT",
+                "lda · DFT LDA functional",
+                "models_directory/lda.json"
+            ],
+            "path": "schema/models_directory/lda.json"
+        },
+        {
+            "segments": [
+                "Models · CateCom",
+                "pb · physics-based model",
+                "qm · Quantum mechanical",
+                "dft · Density functional theory",
+                "ksdft · Kohn-Sham DFT",
+                "lda · DFT LDA functional",
+                "models_directory/lda.json · example"
+            ],
+            "path": "example/models_directory/lda.json"
+        },
+        {
+            "segments": [
+                "Models · CateCom",
+                "pb · physics-based model",
+                "qm · Quantum mechanical",
+                "dft · Density functional theory",
+                "ksdft · Kohn-Sham DFT",
+                "mgga · DFT meta-GGA functional",
+                "mgga.json"
+            ],
+            "path": "schema/models_category/pb/qm/dft/ksdft/mgga.json"
+        },
+        {
+            "segments": [
+                "Models · CateCom",
+                "pb · physics-based model",
+                "qm · Quantum mechanical",
+                "dft · Density functional theory",
+                "ksdft · Kohn-Sham DFT",
+                "mgga · DFT meta-GGA functional",
+                "models_directory/mgga.json"
+            ],
+            "path": "schema/models_directory/mgga.json"
+        },
+        {
+            "segments": [
+                "Models · CateCom",
+                "pb · physics-based model",
+                "qm · Quantum mechanical",
+                "qm.json"
+            ],
+            "path": "schema/models_category/pb/qm.json"
+        },
+        {
+            "segments": [
+                "Models · CateCom",
+                "pb · physics-based model",
+                "qm · Quantum mechanical",
+                "semp · Semi-empirical",
+                "semp.json"
+            ],
+            "path": "schema/models_category/pb/qm/semp.json"
+        },
+        {
+            "segments": [
+                "Models · CateCom",
+                "pb · physics-based model",
+                "qm · Quantum mechanical",
+                "semp · Semi-empirical",
+                "semp.json · example"
+            ],
+            "path": "example/models_category/pb/qm/semp.json"
+        },
+        {
+            "segments": [
+                "Models · CateCom",
+                "st · statistical model",
+                "det · deterministic model",
+                "det.json"
+            ],
+            "path": "schema/models_category/st/det.json"
+        },
+        {
+            "segments": [
+                "Models · CateCom",
+                "st · statistical model",
+                "det · deterministic model",
+                "ml · machine learning model",
+                "ml.json"
+            ],
+            "path": "schema/models_category/st/det/ml.json"
+        },
+        {
+            "segments": [
+                "Models · CateCom",
+                "st · statistical model",
+                "det · deterministic model",
+                "ml · machine learning model",
+                "re · regression model",
+                "models_directory/re.json"
+            ],
+            "path": "schema/models_directory/re.json"
+        },
+        {
+            "segments": [
+                "Models · CateCom",
+                "st · statistical model",
+                "det · deterministic model",
+                "ml · machine learning model",
+                "re · regression model",
+                "models_directory/re.json · example"
+            ],
+            "path": "example/models_directory/re.json"
+        },
+        {
+            "segments": [
+                "Models · CateCom",
+                "st · statistical model",
+                "det · deterministic model",
+                "ml · machine learning model",
+                "re · regression model",
+                "re.json"
+            ],
+            "path": "schema/models_category/st/det/ml/re.json"
+        },
+        {
+            "segments": [
+                "Models · CateCom",
+                "st · statistical model",
+                "st.json"
+            ],
+            "path": "schema/models_category/st.json"
+        }
+    ],
+    "directories": [
+        {
+            "segments": [
+                "Context providers (21)",
+                "by-application",
+                "nwchem",
+                "nwchem_total_energy_context_provider.json"
+            ],
+            "path": "schema/context_providers_directory/by_application/nwchem_total_energy_context_provider.json"
+        },
+        {
+            "segments": [
+                "Context providers (21)",
+                "by-application",
+                "qe",
+                "qe_neb_context_provider.json"
+            ],
+            "path": "schema/context_providers_directory/by_application/qe_neb_context_provider.json"
+        },
+        {
+            "segments": [
+                "Context providers (21)",
+                "by-application",
+                "qe",
+                "qe_pwx_base_context_provider.json"
+            ],
+            "path": "schema/context_providers_directory/by_application/qe_pwx_base_context_provider.json"
+        },
+        {
+            "segments": [
+                "Context providers (21)",
+                "by-application",
+                "qe",
+                "qe_pwx_context_provider.json"
+            ],
+            "path": "schema/context_providers_directory/by_application/qe_pwx_context_provider.json"
+        },
+        {
+            "segments": [
+                "Context providers (21)",
+                "by-application",
+                "vasp",
+                "vasp_context_provider.json"
+            ],
+            "path": "schema/context_providers_directory/by_application/vasp_context_provider.json"
+        },
+        {
+            "segments": [
+                "Context providers (21)",
+                "by-application",
+                "vasp",
+                "vasp_neb_context_provider.json"
+            ],
+            "path": "schema/context_providers_directory/by_application/vasp_neb_context_provider.json"
+        },
+        {
+            "segments": [
+                "Context providers (21)",
+                "generic",
+                "boundary_conditions_data_provider.json"
+            ],
+            "path": "schema/context_providers_directory/boundary_conditions_data_provider.json"
+        },
+        {
+            "segments": [
+                "Context providers (21)",
+                "generic",
+                "collinear_magnetization_context_provider.json"
+            ],
+            "path": "schema/context_providers_directory/collinear_magnetization_context_provider.json"
+        },
+        {
+            "segments": [
+                "Context providers (21)",
+                "generic",
+                "hubbard_j_context_provider.json"
+            ],
+            "path": "schema/context_providers_directory/hubbard_j_context_provider.json"
+        },
+        {
+            "segments": [
+                "Context providers (21)",
+                "generic",
+                "hubbard_legacy_context_provider.json"
+            ],
+            "path": "schema/context_providers_directory/hubbard_legacy_context_provider.json"
+        },
+        {
+            "segments": [
+                "Context providers (21)",
+                "generic",
+                "hubbard_u_context_provider.json"
+            ],
+            "path": "schema/context_providers_directory/hubbard_u_context_provider.json"
+        },
+        {
+            "segments": [
+                "Context providers (21)",
+                "generic",
+                "hubbard_v_context_provider.json"
+            ],
+            "path": "schema/context_providers_directory/hubbard_v_context_provider.json"
+        },
+        {
+            "segments": [
+                "Context providers (21)",
+                "generic",
+                "ion_dynamics_context_provider.json"
+            ],
+            "path": "schema/context_providers_directory/ion_dynamics_context_provider.json"
+        },
+        {
+            "segments": [
+                "Context providers (21)",
+                "generic",
+                "ml_settings_context_provider.json"
+            ],
+            "path": "schema/context_providers_directory/ml_settings_context_provider.json"
+        },
+        {
+            "segments": [
+                "Context providers (21)",
+                "generic",
+                "ml_train_test_split_context_provider.json"
+            ],
+            "path": "schema/context_providers_directory/ml_train_test_split_context_provider.json"
+        },
+        {
+            "segments": [
+                "Context providers (21)",
+                "generic",
+                "neb_data_provider.json"
+            ],
+            "path": "schema/context_providers_directory/neb_data_provider.json"
+        },
+        {
+            "segments": [
+                "Context providers (21)",
+                "generic",
+                "non_collinear_magnetization_context_provider.json"
+            ],
+            "path": "schema/context_providers_directory/non_collinear_magnetization_context_provider.json"
+        },
+        {
+            "segments": [
+                "Context providers (21)",
+                "generic",
+                "planewave_cutoffs_context_provider.json"
+            ],
+            "path": "schema/context_providers_directory/planewave_cutoffs_context_provider.json"
+        },
+        {
+            "segments": [
+                "Context providers (21)",
+                "generic",
+                "points_grid_data_provider.json"
+            ],
+            "path": "schema/context_providers_directory/points_grid_data_provider.json"
+        },
+        {
+            "segments": [
+                "Context providers (21)",
+                "generic",
+                "points_path_data_provider_rendering.json"
+            ],
+            "path": "schema/context_providers_directory/points_path_data_provider_rendering.json"
+        },
+        {
+            "segments": [
+                "Context providers (21)",
+                "generic",
+                "points_path_data_provider.json"
+            ],
+            "path": "schema/context_providers_directory/points_path_data_provider.json"
+        },
+        {
+            "segments": [
+                "Methods (23)",
+                "legacy",
+                "localorbital.json"
+            ],
+            "path": "schema/methods_directory/legacy/localorbital.json"
+        },
+        {
+            "segments": [
+                "Methods (23)",
+                "legacy",
+                "localorbital.json · example"
+            ],
+            "path": "example/methods_directory/legacy/localorbital.json"
+        },
+        {
+            "segments": [
+                "Methods (23)",
+                "legacy",
+                "pseudopotential.json"
+            ],
+            "path": "schema/methods_directory/legacy/pseudopotential.json"
+        },
+        {
+            "segments": [
+                "Methods (23)",
+                "legacy",
+                "pseudopotential.json · example"
+            ],
+            "path": "example/methods_directory/legacy/pseudopotential.json"
+        },
+        {
+            "segments": [
+                "Methods (23)",
+                "legacy",
+                "regression.json"
+            ],
+            "path": "schema/methods_directory/legacy/regression.json"
+        },
+        {
+            "segments": [
+                "Methods (23)",
+                "legacy",
+                "regression.json · example"
+            ],
+            "path": "example/methods_directory/legacy/regression.json"
+        },
+        {
+            "segments": [
+                "Methods (23)",
+                "legacy",
+                "unknown.json"
+            ],
+            "path": "schema/methods_directory/legacy/unknown.json"
+        },
+        {
+            "segments": [
+                "Methods (23)",
+                "legacy",
+                "unknown.json · example"
+            ],
+            "path": "example/methods_directory/legacy/unknown.json"
+        },
+        {
+            "segments": [
+                "Methods (23)",
+                "mathematical",
+                "linalg",
+                "diag",
+                "davidson",
+                "davidson.json"
+            ],
+            "path": "schema/methods_directory/mathematical/davidson.json"
+        },
+        {
+            "segments": [
+                "Methods (23)",
+                "mathematical",
+                "opt",
+                "diff",
+                "ordern",
+                "cg",
+                "cg.json"
+            ],
+            "path": "schema/methods_directory/mathematical/cg.json"
+        },
+        {
+            "segments": [
+                "Methods (23)",
+                "mathematical",
+                "opt",
+                "diff",
+                "ordern",
+                "cg",
+                "cg.json · example"
+            ],
+            "path": "example/methods_directory/mathematical/cg.json"
+        },
+        {
+            "segments": [
+                "Methods (23)",
+                "mathematical",
+                "regression",
+                "regression.json"
+            ],
+            "path": "schema/methods_directory/mathematical/regression.json"
+        },
+        {
+            "segments": [
+                "Methods (23)",
+                "mathematical",
+                "regression",
+                "regression.json · example"
+            ],
+            "path": "example/methods_directory/mathematical/regression.json"
+        },
+        {
+            "segments": [
+                "Methods (23)",
+                "physical",
+                "qm",
+                "wf",
+                "ao",
+                "dunning",
+                "dunning.json"
+            ],
+            "path": "schema/methods_directory/physical/ao/dunning.json"
+        },
+        {
+            "segments": [
+                "Methods (23)",
+                "physical",
+                "qm",
+                "wf",
+                "ao",
+                "dunning",
+                "dunning.json · example"
+            ],
+            "path": "example/methods_directory/physical/ao/dunning.json"
+        },
+        {
+            "segments": [
+                "Methods (23)",
+                "physical",
+                "qm",
+                "wf",
+                "ao",
+                "other",
+                "other.json"
+            ],
+            "path": "schema/methods_directory/physical/ao/other.json"
+        },
+        {
+            "segments": [
+                "Methods (23)",
+                "physical",
+                "qm",
+                "wf",
+                "ao",
+                "pople",
+                "pople.json"
+            ],
+            "path": "schema/methods_directory/physical/ao/pople.json"
+        },
+        {
+            "segments": [
+                "Methods (23)",
+                "physical",
+                "qm",
+                "wf",
+                "psp",
+                "psp.json"
+            ],
+            "path": "schema/methods_directory/physical/psp.json"
+        },
+        {
+            "segments": [
+                "Methods (23)",
+                "physical",
+                "qm",
+                "wf",
+                "psp",
+                "psp.json · example"
+            ],
+            "path": "example/methods_directory/physical/psp.json"
+        },
+        {
+            "segments": [
+                "Methods (23)",
+                "physical",
+                "qm",
+                "wf",
+                "pw",
+                "pw.json"
+            ],
+            "path": "schema/methods_directory/physical/pw.json"
+        },
+        {
+            "segments": [
+                "Methods (23)",
+                "physical",
+                "qm",
+                "wf",
+                "pw",
+                "pw.json · example"
+            ],
+            "path": "example/methods_directory/physical/pw.json"
+        },
+        {
+            "segments": [
+                "Methods (23)",
+                "physical",
+                "qm",
+                "wf",
+                "smearing",
+                "smearing.json"
+            ],
+            "path": "schema/methods_directory/physical/smearing.json"
+        },
+        {
+            "segments": [
+                "Methods (23)",
+                "physical",
+                "qm",
+                "wf",
+                "smearing",
+                "smearing.json · example"
+            ],
+            "path": "example/methods_directory/physical/smearing.json"
+        },
+        {
+            "segments": [
+                "Methods (23)",
+                "physical",
+                "qm",
+                "wf",
+                "tetrahedron",
+                "tetrahedron.json"
+            ],
+            "path": "schema/methods_directory/physical/tetrahedron.json"
+        },
+        {
+            "segments": [
+                "Methods (23)",
+                "physical",
+                "qm",
+                "wf",
+                "tetrahedron",
+                "tetrahedron.json · example"
+            ],
+            "path": "example/methods_directory/physical/tetrahedron.json"
+        },
+        {
+            "segments": [
+                "Methods (23)",
+                "uncategorized",
+                "data.json"
+            ],
+            "path": "schema/methods_directory/mathematical/regression/data.json"
+        },
+        {
+            "segments": [
+                "Methods (23)",
+                "uncategorized",
+                "dataset.json"
+            ],
+            "path": "schema/methods_directory/mathematical/regression/dataset.json"
+        },
+        {
+            "segments": [
+                "Methods (23)",
+                "uncategorized",
+                "file_data_item.json"
+            ],
+            "path": "schema/methods_directory/physical/psp/file_data_item.json"
+        },
+        {
+            "segments": [
+                "Methods (23)",
+                "uncategorized",
+                "file.json"
+            ],
+            "path": "schema/methods_directory/physical/psp/file.json"
+        },
+        {
+            "segments": [
+                "Methods (23)",
+                "uncategorized",
+                "file.json · example"
+            ],
+            "path": "example/methods_directory/physical/psp/file.json"
+        },
+        {
+            "segments": [
+                "Methods (23)",
+                "uncategorized",
+                "kernel_ridge/data_per_property.json"
+            ],
+            "path": "schema/methods_directory/mathematical/regression/kernel_ridge/data_per_property.json"
+        },
+        {
+            "segments": [
+                "Methods (23)",
+                "uncategorized",
+                "linear/data_per_property.json"
+            ],
+            "path": "schema/methods_directory/mathematical/regression/linear/data_per_property.json"
+        },
+        {
+            "segments": [
+                "Methods (23)",
+                "uncategorized",
+                "per_feature_item.json"
+            ],
+            "path": "schema/methods_directory/mathematical/regression/per_feature_item.json"
+        },
+        {
+            "segments": [
+                "Methods (23)",
+                "uncategorized",
+                "precision_per_property.json"
+            ],
+            "path": "schema/methods_directory/mathematical/regression/precision_per_property.json"
+        },
+        {
+            "segments": [
+                "Methods (23)",
+                "uncategorized",
+                "precision.json"
+            ],
+            "path": "schema/methods_directory/mathematical/regression/precision.json"
+        },
+        {
+            "segments": [
+                "Models (14)",
+                "legacy",
+                "any.json"
+            ],
+            "path": "schema/models_directory/legacy/any.json"
+        },
+        {
+            "segments": [
+                "Models (14)",
+                "legacy",
+                "dft_gga.json"
+            ],
+            "path": "schema/models_directory/legacy/dft_gga.json"
+        },
+        {
+            "segments": [
+                "Models (14)",
+                "legacy",
+                "dft_hybrid.json"
+            ],
+            "path": "schema/models_directory/legacy/dft_hybrid.json"
+        },
+        {
+            "segments": [
+                "Models (14)",
+                "legacy",
+                "dft_lda.json"
+            ],
+            "path": "schema/models_directory/legacy/dft_lda.json"
+        },
+        {
+            "segments": [
+                "Models (14)",
+                "legacy",
+                "dft.json"
+            ],
+            "path": "schema/models_directory/legacy/dft.json"
+        },
+        {
+            "segments": [
+                "Models (14)",
+                "legacy",
+                "dft.json · example"
+            ],
+            "path": "example/models_directory/legacy/dft.json"
+        },
+        {
+            "segments": [
+                "Models (14)",
+                "legacy",
+                "ml.json"
+            ],
+            "path": "schema/models_directory/legacy/ml.json"
+        },
+        {
+            "segments": [
+                "Models (14)",
+                "legacy",
+                "ml.json · example"
+            ],
+            "path": "example/models_directory/legacy/ml.json"
+        },
+        {
+            "segments": [
+                "Models (14)",
+                "legacy",
+                "unknown.json"
+            ],
+            "path": "schema/models_directory/legacy/unknown.json"
+        },
+        {
+            "segments": [
+                "Models (14)",
+                "legacy",
+                "unknown.json · example"
+            ],
+            "path": "example/models_directory/legacy/unknown.json"
+        },
+        {
+            "segments": [
+                "Models (14)",
+                "pb",
+                "qm",
+                "abin",
+                "gw",
+                "gw.json"
+            ],
+            "path": "schema/models_directory/gw.json"
+        },
+        {
+            "segments": [
+                "Models (14)",
+                "pb",
+                "qm",
+                "abin",
+                "gw",
+                "gw.json · example"
+            ],
+            "path": "example/models_directory/gw.json"
+        },
+        {
+            "segments": [
+                "Models (14)",
+                "pb",
+                "qm",
+                "dft",
+                "ksdft",
+                "double-hybrid",
+                "double_hybrid.json"
+            ],
+            "path": "schema/models_directory/double_hybrid.json"
+        },
+        {
+            "segments": [
+                "Models (14)",
+                "pb",
+                "qm",
+                "dft",
+                "ksdft",
+                "gga",
+                "gga.json"
+            ],
+            "path": "schema/models_directory/gga.json"
+        },
+        {
+            "segments": [
+                "Models (14)",
+                "pb",
+                "qm",
+                "dft",
+                "ksdft",
+                "gga",
+                "gga.json · example"
+            ],
+            "path": "example/models_directory/gga.json"
+        },
+        {
+            "segments": [
+                "Models (14)",
+                "pb",
+                "qm",
+                "dft",
+                "ksdft",
+                "hybrid",
+                "hybrid.json"
+            ],
+            "path": "schema/models_directory/hybrid.json"
+        },
+        {
+            "segments": [
+                "Models (14)",
+                "pb",
+                "qm",
+                "dft",
+                "ksdft",
+                "hybrid",
+                "hybrid.json · example"
+            ],
+            "path": "example/models_directory/hybrid.json"
+        },
+        {
+            "segments": [
+                "Models (14)",
+                "pb",
+                "qm",
+                "dft",
+                "ksdft",
+                "lda",
+                "lda.json"
+            ],
+            "path": "schema/models_directory/lda.json"
+        },
+        {
+            "segments": [
+                "Models (14)",
+                "pb",
+                "qm",
+                "dft",
+                "ksdft",
+                "lda",
+                "lda.json · example"
+            ],
+            "path": "example/models_directory/lda.json"
+        },
+        {
+            "segments": [
+                "Models (14)",
+                "pb",
+                "qm",
+                "dft",
+                "ksdft",
+                "mgga",
+                "mgga.json"
+            ],
+            "path": "schema/models_directory/mgga.json"
+        },
+        {
+            "segments": [
+                "Models (14)",
+                "st",
+                "det",
+                "ml",
+                "re",
+                "re.json"
+            ],
+            "path": "schema/models_directory/re.json"
+        },
+        {
+            "segments": [
+                "Models (14)",
+                "st",
+                "det",
+                "ml",
+                "re",
+                "re.json · example"
+            ],
+            "path": "example/models_directory/re.json"
+        },
+        {
+            "segments": [
+                "Properties (84)",
+                "elemental",
+                "atomic_radius.json"
+            ],
+            "path": "schema/properties_directory/elemental/atomic_radius.json"
+        },
+        {
+            "segments": [
+                "Properties (84)",
+                "elemental",
+                "atomic_radius.json · example"
+            ],
+            "path": "example/properties_directory/elemental/atomic_radius.json"
+        },
+        {
+            "segments": [
+                "Properties (84)",
+                "elemental",
+                "electronegativity.json"
+            ],
+            "path": "schema/properties_directory/elemental/electronegativity.json"
+        },
+        {
+            "segments": [
+                "Properties (84)",
+                "elemental",
+                "electronegativity.json · example"
+            ],
+            "path": "example/properties_directory/elemental/electronegativity.json"
+        },
+        {
+            "segments": [
+                "Properties (84)",
+                "elemental",
+                "ionization_potential.json"
+            ],
+            "path": "schema/properties_directory/elemental/ionization_potential.json"
+        },
+        {
+            "segments": [
+                "Properties (84)",
+                "elemental",
+                "ionization_potential.json · example"
+            ],
+            "path": "example/properties_directory/elemental/ionization_potential.json"
+        },
+        {
+            "segments": [
+                "Properties (84)",
+                "non-scalar",
+                "average_potential_profile.json"
+            ],
+            "path": "schema/properties_directory/non_scalar/average_potential_profile.json"
+        },
+        {
+            "segments": [
+                "Properties (84)",
+                "non-scalar",
+                "band_gaps.json"
+            ],
+            "path": "schema/properties_directory/non_scalar/band_gaps.json"
+        },
+        {
+            "segments": [
+                "Properties (84)",
+                "non-scalar",
+                "band_gaps.json · example"
+            ],
+            "path": "example/properties_directory/non_scalar/band_gaps.json"
+        },
+        {
+            "segments": [
+                "Properties (84)",
+                "non-scalar",
+                "band_structure.json"
+            ],
+            "path": "schema/properties_directory/non_scalar/band_structure.json"
+        },
+        {
+            "segments": [
+                "Properties (84)",
+                "non-scalar",
+                "band_structure.json · example"
+            ],
+            "path": "example/properties_directory/non_scalar/band_structure.json"
+        },
+        {
+            "segments": [
+                "Properties (84)",
+                "non-scalar",
+                "charge_density_profile.json"
+            ],
+            "path": "schema/properties_directory/non_scalar/charge_density_profile.json"
+        },
+        {
+            "segments": [
+                "Properties (84)",
+                "non-scalar",
+                "charge_density_profile.json · example"
+            ],
+            "path": "example/properties_directory/non_scalar/charge_density_profile.json"
+        },
+        {
+            "segments": [
+                "Properties (84)",
+                "non-scalar",
+                "density_of_states.json"
+            ],
+            "path": "schema/properties_directory/non_scalar/density_of_states.json"
+        },
+        {
+            "segments": [
+                "Properties (84)",
+                "non-scalar",
+                "density_of_states.json · example"
+            ],
+            "path": "example/properties_directory/non_scalar/density_of_states.json"
+        },
+        {
+            "segments": [
+                "Properties (84)",
+                "non-scalar",
+                "dielectric_tensor.json"
+            ],
+            "path": "schema/properties_directory/non_scalar/dielectric_tensor.json"
+        },
+        {
+            "segments": [
+                "Properties (84)",
+                "non-scalar",
+                "dielectric_tensor.json · example"
+            ],
+            "path": "example/properties_directory/non_scalar/dielectric_tensor.json"
+        },
+        {
+            "segments": [
+                "Properties (84)",
+                "non-scalar",
+                "file_content.json"
+            ],
+            "path": "schema/properties_directory/non_scalar/file_content.json"
+        },
+        {
+            "segments": [
+                "Properties (84)",
+                "non-scalar",
+                "file_content.json · example"
+            ],
+            "path": "example/properties_directory/non_scalar/file_content.json"
+        },
+        {
+            "segments": [
+                "Properties (84)",
+                "non-scalar",
+                "final_structure.json"
+            ],
+            "path": "schema/properties_directory/non_scalar/final_structure.json"
+        },
+        {
+            "segments": [
+                "Properties (84)",
+                "non-scalar",
+                "formation_energy_contributions.json"
+            ],
+            "path": "schema/properties_directory/non_scalar/formation_energy_contributions.json"
+        },
+        {
+            "segments": [
+                "Properties (84)",
+                "non-scalar",
+                "formation_energy_contributions.json · example"
+            ],
+            "path": "example/properties_directory/non_scalar/formation_energy_contributions.json"
+        },
+        {
+            "segments": [
+                "Properties (84)",
+                "non-scalar",
+                "hubbard_u.json"
+            ],
+            "path": "schema/properties_directory/non_scalar/hubbard_u.json"
+        },
+        {
+            "segments": [
+                "Properties (84)",
+                "non-scalar",
+                "hubbard_u.json · example"
+            ],
+            "path": "example/properties_directory/non_scalar/hubbard_u.json"
+        },
+        {
+            "segments": [
+                "Properties (84)",
+                "non-scalar",
+                "hubbard_v_nn.json"
+            ],
+            "path": "schema/properties_directory/non_scalar/hubbard_v_nn.json"
+        },
+        {
+            "segments": [
+                "Properties (84)",
+                "non-scalar",
+                "hubbard_v_nn.json · example"
+            ],
+            "path": "example/properties_directory/non_scalar/hubbard_v_nn.json"
+        },
+        {
+            "segments": [
+                "Properties (84)",
+                "non-scalar",
+                "hubbard_v.json"
+            ],
+            "path": "schema/properties_directory/non_scalar/hubbard_v.json"
+        },
+        {
+            "segments": [
+                "Properties (84)",
+                "non-scalar",
+                "hubbard_v.json · example"
+            ],
+            "path": "example/properties_directory/non_scalar/hubbard_v.json"
+        },
+        {
+            "segments": [
+                "Properties (84)",
+                "non-scalar",
+                "is_relaxed.json"
+            ],
+            "path": "schema/properties_directory/non_scalar/is_relaxed.json"
+        },
+        {
+            "segments": [
+                "Properties (84)",
+                "non-scalar",
+                "phonon_dispersions.json"
+            ],
+            "path": "schema/properties_directory/non_scalar/phonon_dispersions.json"
+        },
+        {
+            "segments": [
+                "Properties (84)",
+                "non-scalar",
+                "phonon_dispersions.json · example"
+            ],
+            "path": "example/properties_directory/non_scalar/phonon_dispersions.json"
+        },
+        {
+            "segments": [
+                "Properties (84)",
+                "non-scalar",
+                "phonon_dos.json"
+            ],
+            "path": "schema/properties_directory/non_scalar/phonon_dos.json"
+        },
+        {
+            "segments": [
+                "Properties (84)",
+                "non-scalar",
+                "phonon_dos.json · example"
+            ],
+            "path": "example/properties_directory/non_scalar/phonon_dos.json"
+        },
+        {
+            "segments": [
+                "Properties (84)",
+                "non-scalar",
+                "potential_profile.json"
+            ],
+            "path": "schema/properties_directory/non_scalar/potential_profile.json"
+        },
+        {
+            "segments": [
+                "Properties (84)",
+                "non-scalar",
+                "potential_profile.json · example"
+            ],
+            "path": "example/properties_directory/non_scalar/potential_profile.json"
+        },
+        {
+            "segments": [
+                "Properties (84)",
+                "non-scalar",
+                "reaction_energy_profile.json"
+            ],
+            "path": "schema/properties_directory/non_scalar/reaction_energy_profile.json"
+        },
+        {
+            "segments": [
+                "Properties (84)",
+                "non-scalar",
+                "reaction_energy_profile.json · example"
+            ],
+            "path": "example/properties_directory/non_scalar/reaction_energy_profile.json"
+        },
+        {
+            "segments": [
+                "Properties (84)",
+                "non-scalar",
+                "stress_tensor.json"
+            ],
+            "path": "schema/properties_directory/non_scalar/stress_tensor.json"
+        },
+        {
+            "segments": [
+                "Properties (84)",
+                "non-scalar",
+                "stress_tensor.json · example"
+            ],
+            "path": "example/properties_directory/non_scalar/stress_tensor.json"
+        },
+        {
+            "segments": [
+                "Properties (84)",
+                "non-scalar",
+                "total_energy_contributions.json"
+            ],
+            "path": "schema/properties_directory/non_scalar/total_energy_contributions.json"
+        },
+        {
+            "segments": [
+                "Properties (84)",
+                "non-scalar",
+                "total_energy_contributions.json · example"
+            ],
+            "path": "example/properties_directory/non_scalar/total_energy_contributions.json"
+        },
+        {
+            "segments": [
+                "Properties (84)",
+                "non-scalar",
+                "vibrational_spectrum.json"
+            ],
+            "path": "schema/properties_directory/non_scalar/vibrational_spectrum.json"
+        },
+        {
+            "segments": [
+                "Properties (84)",
+                "non-scalar",
+                "vibrational_spectrum.json · example"
+            ],
+            "path": "example/properties_directory/non_scalar/vibrational_spectrum.json"
+        },
+        {
+            "segments": [
+                "Properties (84)",
+                "non-scalar",
+                "wavefunction_amplitude.json"
+            ],
+            "path": "schema/properties_directory/non_scalar/wavefunction_amplitude.json"
+        },
+        {
+            "segments": [
+                "Properties (84)",
+                "non-scalar",
+                "wavefunction_amplitude.json · example"
+            ],
+            "path": "example/properties_directory/non_scalar/wavefunction_amplitude.json"
+        },
+        {
+            "segments": [
+                "Properties (84)",
+                "non-scalar",
+                "workflow.json"
+            ],
+            "path": "schema/properties_directory/non_scalar/workflow.json"
+        },
+        {
+            "segments": [
+                "Properties (84)",
+                "scalar",
+                "defect_formation_energy.json"
+            ],
+            "path": "schema/properties_directory/scalar/defect_formation_energy.json"
+        },
+        {
+            "segments": [
+                "Properties (84)",
+                "scalar",
+                "defect_formation_energy.json · example"
+            ],
+            "path": "example/properties_directory/scalar/defect_formation_energy.json"
+        },
+        {
+            "segments": [
+                "Properties (84)",
+                "scalar",
+                "electron_affinity.json"
+            ],
+            "path": "schema/properties_directory/scalar/electron_affinity.json"
+        },
+        {
+            "segments": [
+                "Properties (84)",
+                "scalar",
+                "electron_affinity.json · example"
+            ],
+            "path": "example/properties_directory/scalar/electron_affinity.json"
+        },
+        {
+            "segments": [
+                "Properties (84)",
+                "scalar",
+                "fermi_energy.json"
+            ],
+            "path": "schema/properties_directory/scalar/fermi_energy.json"
+        },
+        {
+            "segments": [
+                "Properties (84)",
+                "scalar",
+                "fermi_energy.json · example"
+            ],
+            "path": "example/properties_directory/scalar/fermi_energy.json"
+        },
+        {
+            "segments": [
+                "Properties (84)",
+                "scalar",
+                "formation_energy.json"
+            ],
+            "path": "schema/properties_directory/scalar/formation_energy.json"
+        },
+        {
+            "segments": [
+                "Properties (84)",
+                "scalar",
+                "formation_energy.json · example"
+            ],
+            "path": "example/properties_directory/scalar/formation_energy.json"
+        },
+        {
+            "segments": [
+                "Properties (84)",
+                "scalar",
+                "homo_energy.json"
+            ],
+            "path": "schema/properties_directory/scalar/homo_energy.json"
+        },
+        {
+            "segments": [
+                "Properties (84)",
+                "scalar",
+                "interfacial_energy.json"
+            ],
+            "path": "schema/properties_directory/scalar/interfacial_energy.json"
+        },
+        {
+            "segments": [
+                "Properties (84)",
+                "scalar",
+                "interfacial_energy.json · example"
+            ],
+            "path": "example/properties_directory/scalar/interfacial_energy.json"
+        },
+        {
+            "segments": [
+                "Properties (84)",
+                "scalar",
+                "ionization_potential.json"
+            ],
+            "path": "schema/properties_directory/scalar/ionization_potential.json"
+        },
+        {
+            "segments": [
+                "Properties (84)",
+                "scalar",
+                "ionization_potential.json · example"
+            ],
+            "path": "example/properties_directory/scalar/ionization_potential.json"
+        },
+        {
+            "segments": [
+                "Properties (84)",
+                "scalar",
+                "lumo_energy.json"
+            ],
+            "path": "schema/properties_directory/scalar/lumo_energy.json"
+        },
+        {
+            "segments": [
+                "Properties (84)",
+                "scalar",
+                "pressure.json"
+            ],
+            "path": "schema/properties_directory/scalar/pressure.json"
+        },
+        {
+            "segments": [
+                "Properties (84)",
+                "scalar",
+                "pressure.json · example"
+            ],
+            "path": "example/properties_directory/scalar/pressure.json"
+        },
+        {
+            "segments": [
+                "Properties (84)",
+                "scalar",
+                "reaction_energy_barrier.json"
+            ],
+            "path": "schema/properties_directory/scalar/reaction_energy_barrier.json"
+        },
+        {
+            "segments": [
+                "Properties (84)",
+                "scalar",
+                "reaction_energy_barrier.json · example"
+            ],
+            "path": "example/properties_directory/scalar/reaction_energy_barrier.json"
+        },
+        {
+            "segments": [
+                "Properties (84)",
+                "scalar",
+                "surface_energy.json"
+            ],
+            "path": "schema/properties_directory/scalar/surface_energy.json"
+        },
+        {
+            "segments": [
+                "Properties (84)",
+                "scalar",
+                "surface_energy.json · example"
+            ],
+            "path": "example/properties_directory/scalar/surface_energy.json"
+        },
+        {
+            "segments": [
+                "Properties (84)",
+                "scalar",
+                "thermal_correction_to_energy.json"
+            ],
+            "path": "schema/properties_directory/scalar/thermal_correction_to_energy.json"
+        },
+        {
+            "segments": [
+                "Properties (84)",
+                "scalar",
+                "thermal_correction_to_energy.json · example"
+            ],
+            "path": "example/properties_directory/scalar/thermal_correction_to_energy.json"
+        },
+        {
+            "segments": [
+                "Properties (84)",
+                "scalar",
+                "thermal_correction_to_enthalpy.json"
+            ],
+            "path": "schema/properties_directory/scalar/thermal_correction_to_enthalpy.json"
+        },
+        {
+            "segments": [
+                "Properties (84)",
+                "scalar",
+                "thermal_correction_to_enthalpy.json · example"
+            ],
+            "path": "example/properties_directory/scalar/thermal_correction_to_enthalpy.json"
+        },
+        {
+            "segments": [
+                "Properties (84)",
+                "scalar",
+                "total_energy.json"
+            ],
+            "path": "schema/properties_directory/scalar/total_energy.json"
+        },
+        {
+            "segments": [
+                "Properties (84)",
+                "scalar",
+                "total_energy.json · example"
+            ],
+            "path": "example/properties_directory/scalar/total_energy.json"
+        },
+        {
+            "segments": [
+                "Properties (84)",
+                "scalar",
+                "total_force.json"
+            ],
+            "path": "schema/properties_directory/scalar/total_force.json"
+        },
+        {
+            "segments": [
+                "Properties (84)",
+                "scalar",
+                "total_force.json · example"
+            ],
+            "path": "example/properties_directory/scalar/total_force.json"
+        },
+        {
+            "segments": [
+                "Properties (84)",
+                "scalar",
+                "valence_band_offset.json"
+            ],
+            "path": "schema/properties_directory/scalar/valence_band_offset.json"
+        },
+        {
+            "segments": [
+                "Properties (84)",
+                "scalar",
+                "valence_band_offset.json · example"
+            ],
+            "path": "example/properties_directory/scalar/valence_band_offset.json"
+        },
+        {
+            "segments": [
+                "Properties (84)",
+                "scalar",
+                "zero_point_energy.json"
+            ],
+            "path": "schema/properties_directory/scalar/zero_point_energy.json"
+        },
+        {
+            "segments": [
+                "Properties (84)",
+                "scalar",
+                "zero_point_energy.json · example"
+            ],
+            "path": "example/properties_directory/scalar/zero_point_energy.json"
+        },
+        {
+            "segments": [
+                "Properties (84)",
+                "structural",
+                "angle_enum.json"
+            ],
+            "path": "schema/properties_directory/structural/lattice/units/angle_enum.json"
+        },
+        {
+            "segments": [
+                "Properties (84)",
+                "structural",
+                "atomic_constraint.json"
+            ],
+            "path": "schema/properties_directory/structural/basis/atomic_constraint.json"
+        },
+        {
+            "segments": [
+                "Properties (84)",
+                "structural",
+                "atomic_constraints_property.json"
+            ],
+            "path": "schema/properties_directory/structural/basis/atomic_constraints_property.json"
+        },
+        {
+            "segments": [
+                "Properties (84)",
+                "structural",
+                "atomic_constraints_property.json · example"
+            ],
+            "path": "example/properties_directory/structural/basis/atomic_constraints_property.json"
+        },
+        {
+            "segments": [
+                "Properties (84)",
+                "structural",
+                "atomic_constraints.json"
+            ],
+            "path": "schema/properties_directory/structural/basis/atomic_constraints.json"
+        },
+        {
+            "segments": [
+                "Properties (84)",
+                "structural",
+                "atomic_coordinate.json"
+            ],
+            "path": "schema/properties_directory/structural/basis/atomic_coordinate.json"
+        },
+        {
+            "segments": [
+                "Properties (84)",
+                "structural",
+                "atomic_coordinate.json · example"
+            ],
+            "path": "example/properties_directory/structural/basis/atomic_coordinate.json"
+        },
+        {
+            "segments": [
+                "Properties (84)",
+                "structural",
+                "atomic_coordinates.json"
+            ],
+            "path": "schema/properties_directory/structural/basis/atomic_coordinates.json"
+        },
+        {
+            "segments": [
+                "Properties (84)",
+                "structural",
+                "atomic_coordinates.json · example"
+            ],
+            "path": "example/properties_directory/structural/basis/atomic_coordinates.json"
+        },
+        {
+            "segments": [
+                "Properties (84)",
+                "structural",
+                "atomic_element.json"
+            ],
+            "path": "schema/properties_directory/structural/basis/atomic_element.json"
+        },
+        {
+            "segments": [
+                "Properties (84)",
+                "structural",
+                "atomic_element.json · example"
+            ],
+            "path": "example/properties_directory/structural/basis/atomic_element.json"
+        },
+        {
+            "segments": [
+                "Properties (84)",
+                "structural",
+                "atomic_elements.json"
+            ],
+            "path": "schema/properties_directory/structural/basis/atomic_elements.json"
+        },
+        {
+            "segments": [
+                "Properties (84)",
+                "structural",
+                "atomic_elements.json · example"
+            ],
+            "path": "example/properties_directory/structural/basis/atomic_elements.json"
+        },
+        {
+            "segments": [
+                "Properties (84)",
+                "structural",
+                "atomic_forces.json"
+            ],
+            "path": "schema/properties_directory/structural/atomic_forces.json"
+        },
+        {
+            "segments": [
+                "Properties (84)",
+                "structural",
+                "atomic_forces.json · example"
+            ],
+            "path": "example/properties_directory/structural/atomic_forces.json"
+        },
+        {
+            "segments": [
+                "Properties (84)",
+                "structural",
+                "atomic_label.json"
+            ],
+            "path": "schema/properties_directory/structural/basis/atomic_label.json"
+        },
+        {
+            "segments": [
+                "Properties (84)",
+                "structural",
+                "atomic_label.json · example"
+            ],
+            "path": "example/properties_directory/structural/basis/atomic_label.json"
+        },
+        {
+            "segments": [
+                "Properties (84)",
+                "structural",
+                "atomic_labels.json"
+            ],
+            "path": "schema/properties_directory/structural/basis/atomic_labels.json"
+        },
+        {
+            "segments": [
+                "Properties (84)",
+                "structural",
+                "atomic_labels.json · example"
+            ],
+            "path": "example/properties_directory/structural/basis/atomic_labels.json"
+        },
+        {
+            "segments": [
+                "Properties (84)",
+                "structural",
+                "basis_constrained.json"
+            ],
+            "path": "schema/properties_directory/structural/basis_constrained.json"
+        },
+        {
+            "segments": [
+                "Properties (84)",
+                "structural",
+                "basis.json"
+            ],
+            "path": "schema/properties_directory/structural/basis.json"
+        },
+        {
+            "segments": [
+                "Properties (84)",
+                "structural",
+                "basis.json · example"
+            ],
+            "path": "example/properties_directory/structural/basis.json"
+        },
+        {
+            "segments": [
+                "Properties (84)",
+                "structural",
+                "basis/units_enum.json"
+            ],
+            "path": "schema/properties_directory/structural/basis/units_enum.json"
+        },
+        {
+            "segments": [
+                "Properties (84)",
+                "structural",
+                "bonds.json"
+            ],
+            "path": "schema/properties_directory/structural/basis/bonds.json"
+        },
+        {
+            "segments": [
+                "Properties (84)",
+                "structural",
+                "bonds.json · example"
+            ],
+            "path": "example/properties_directory/structural/basis/bonds.json"
+        },
+        {
+            "segments": [
+                "Properties (84)",
+                "structural",
+                "boundary_conditions.json"
+            ],
+            "path": "schema/properties_directory/structural/basis/boundary_conditions.json"
+        },
+        {
+            "segments": [
+                "Properties (84)",
+                "structural",
+                "density.json"
+            ],
+            "path": "schema/properties_directory/structural/density.json"
+        },
+        {
+            "segments": [
+                "Properties (84)",
+                "structural",
+                "density.json · example"
+            ],
+            "path": "example/properties_directory/structural/density.json"
+        },
+        {
+            "segments": [
+                "Properties (84)",
+                "structural",
+                "elemental_ratio.json"
+            ],
+            "path": "schema/properties_directory/structural/elemental_ratio.json"
+        },
+        {
+            "segments": [
+                "Properties (84)",
+                "structural",
+                "elemental_ratio.json · example"
+            ],
+            "path": "example/properties_directory/structural/elemental_ratio.json"
+        },
+        {
+            "segments": [
+                "Properties (84)",
+                "structural",
+                "functional_group.json"
+            ],
+            "path": "schema/properties_directory/structural/patterns/functional_group.json"
+        },
+        {
+            "segments": [
+                "Properties (84)",
+                "structural",
+                "inchi_key.json"
+            ],
+            "path": "schema/properties_directory/structural/inchi_key.json"
+        },
+        {
+            "segments": [
+                "Properties (84)",
+                "structural",
+                "inchi_key.json · example"
+            ],
+            "path": "example/properties_directory/structural/inchi_key.json"
+        },
+        {
+            "segments": [
+                "Properties (84)",
+                "structural",
+                "inchi.json"
+            ],
+            "path": "schema/properties_directory/structural/inchi.json"
+        },
+        {
+            "segments": [
+                "Properties (84)",
+                "structural",
+                "inchi.json · example"
+            ],
+            "path": "example/properties_directory/structural/inchi.json"
+        },
+        {
+            "segments": [
+                "Properties (84)",
+                "structural",
+                "lattice.json"
+            ],
+            "path": "schema/properties_directory/structural/lattice.json"
+        },
+        {
+            "segments": [
+                "Properties (84)",
+                "structural",
+                "lattice.json · example"
+            ],
+            "path": "example/properties_directory/structural/lattice.json"
+        },
+        {
+            "segments": [
+                "Properties (84)",
+                "structural",
+                "length_enum.json"
+            ],
+            "path": "schema/properties_directory/structural/lattice/units/length_enum.json"
+        },
+        {
+            "segments": [
+                "Properties (84)",
+                "structural",
+                "magnetic_moments.json"
+            ],
+            "path": "schema/properties_directory/structural/magnetic_moments.json"
+        },
+        {
+            "segments": [
+                "Properties (84)",
+                "structural",
+                "magnetic_moments.json · example"
+            ],
+            "path": "example/properties_directory/structural/magnetic_moments.json"
+        },
+        {
+            "segments": [
+                "Properties (84)",
+                "structural",
+                "molecular_pattern.json"
+            ],
+            "path": "schema/properties_directory/structural/molecular_pattern.json"
+        },
+        {
+            "segments": [
+                "Properties (84)",
+                "structural",
+                "molecular_pattern.json · example"
+            ],
+            "path": "example/properties_directory/structural/molecular_pattern.json"
+        },
+        {
+            "segments": [
+                "Properties (84)",
+                "structural",
+                "p_norm.json"
+            ],
+            "path": "schema/properties_directory/structural/p_norm.json"
+        },
+        {
+            "segments": [
+                "Properties (84)",
+                "structural",
+                "p_norm.json · example"
+            ],
+            "path": "example/properties_directory/structural/p_norm.json"
+        },
+        {
+            "segments": [
+                "Properties (84)",
+                "structural",
+                "ring.json"
+            ],
+            "path": "schema/properties_directory/structural/patterns/ring.json"
+        },
+        {
+            "segments": [
+                "Properties (84)",
+                "structural",
+                "special_bond.json"
+            ],
+            "path": "schema/properties_directory/structural/patterns/special_bond.json"
+        },
+        {
+            "segments": [
+                "Properties (84)",
+                "structural",
+                "symmetry.json"
+            ],
+            "path": "schema/properties_directory/structural/symmetry.json"
+        },
+        {
+            "segments": [
+                "Properties (84)",
+                "structural",
+                "symmetry.json · example"
+            ],
+            "path": "example/properties_directory/structural/symmetry.json"
+        },
+        {
+            "segments": [
+                "Properties (84)",
+                "structural",
+                "type_enum.json"
+            ],
+            "path": "schema/properties_directory/structural/lattice/type_enum.json"
+        },
+        {
+            "segments": [
+                "Properties (84)",
+                "structural",
+                "type_extended_enum.json"
+            ],
+            "path": "schema/properties_directory/structural/lattice/type_extended_enum.json"
+        },
+        {
+            "segments": [
+                "Properties (84)",
+                "structural",
+                "units.json"
+            ],
+            "path": "schema/properties_directory/structural/lattice/units.json"
+        },
+        {
+            "segments": [
+                "Properties (84)",
+                "structural",
+                "vectors.json"
+            ],
+            "path": "schema/properties_directory/structural/lattice/vectors.json"
+        },
+        {
+            "segments": [
+                "Properties (84)",
+                "structural",
+                "vectors.json · example"
+            ],
+            "path": "example/properties_directory/structural/lattice/vectors.json"
+        },
+        {
+            "segments": [
+                "Properties (84)",
+                "structural",
+                "vectors/units_enum.json"
+            ],
+            "path": "schema/properties_directory/structural/lattice/vectors/units_enum.json"
+        },
+        {
+            "segments": [
+                "Properties (84)",
+                "structural",
+                "volume.json"
+            ],
+            "path": "schema/properties_directory/structural/volume.json"
+        },
+        {
+            "segments": [
+                "Properties (84)",
+                "structural",
+                "volume.json · example"
+            ],
+            "path": "example/properties_directory/structural/volume.json"
+        },
+        {
+            "segments": [
+                "Properties (84)",
+                "uncategorized",
+                "derived_properties.json"
+            ],
+            "path": "schema/properties_directory/derived_properties.json"
+        },
+        {
+            "segments": [
+                "Properties (84)",
+                "uncategorized",
+                "electronic_configuration.json"
+            ],
+            "path": "schema/properties_directory/electronic_configuration.json"
+        },
+        {
+            "segments": [
+                "Properties (84)",
+                "uncategorized",
+                "electronic_configuration.json · example"
+            ],
+            "path": "example/properties_directory/electronic_configuration.json"
+        },
+        {
+            "segments": [
+                "Properties (84)",
+                "uncategorized",
+                "hubbard_parameters.json"
+            ],
+            "path": "schema/properties_directory/reusable/hubbard_parameters.json"
+        },
+        {
+            "segments": [
+                "Properties (84)",
+                "uncategorized",
+                "jupyter_notebook_endpoint.json"
+            ],
+            "path": "schema/properties_directory/jupyter_notebook_endpoint.json"
+        },
+        {
+            "segments": [
+                "Properties (84)",
+                "workflow",
+                "electronic.json"
+            ],
+            "path": "schema/properties_directory/workflow/convergence/electronic.json"
+        },
+        {
+            "segments": [
+                "Properties (84)",
+                "workflow",
+                "electronic.json · example"
+            ],
+            "path": "example/properties_directory/workflow/convergence/electronic.json"
+        },
+        {
+            "segments": [
+                "Properties (84)",
+                "workflow",
+                "ionic.json"
+            ],
+            "path": "schema/properties_directory/workflow/convergence/ionic.json"
+        },
+        {
+            "segments": [
+                "Properties (84)",
+                "workflow",
+                "ionic.json · example"
+            ],
+            "path": "example/properties_directory/workflow/convergence/ionic.json"
+        },
+        {
+            "segments": [
+                "Properties (84)",
+                "workflow",
+                "kpoint.json"
+            ],
+            "path": "schema/properties_directory/workflow/convergence/kpoint.json"
+        },
+        {
+            "segments": [
+                "Properties (84)",
+                "workflow",
+                "kpoint.json · example"
+            ],
+            "path": "example/properties_directory/workflow/convergence/kpoint.json"
+        },
+        {
+            "segments": [
+                "Software (11)",
+                "modeling",
+                "arguments.json"
+            ],
+            "path": "schema/software_directory/modeling/espresso/arguments.json"
+        },
+        {
+            "segments": [
+                "Software (11)",
+                "modeling",
+                "arguments.json · example"
+            ],
+            "path": "example/software_directory/modeling/espresso/arguments.json"
+        },
+        {
+            "segments": [
+                "Software (11)",
+                "modeling",
+                "deepmd.json"
+            ],
+            "path": "schema/software_directory/modeling/deepmd.json"
+        },
+        {
+            "segments": [
+                "Software (11)",
+                "modeling",
+                "espresso.json"
+            ],
+            "path": "schema/software_directory/modeling/espresso.json"
+        },
+        {
+            "segments": [
+                "Software (11)",
+                "modeling",
+                "espresso.json · example"
+            ],
+            "path": "example/software_directory/modeling/espresso.json"
+        },
+        {
+            "segments": [
+                "Software (11)",
+                "modeling",
+                "execution.json"
+            ],
+            "path": "schema/software_directory/modeling/unit/execution.json"
+        },
+        {
+            "segments": [
+                "Software (11)",
+                "modeling",
+                "execution.json · example"
+            ],
+            "path": "example/software_directory/modeling/unit/execution.json"
+        },
+        {
+            "segments": [
+                "Software (11)",
+                "modeling",
+                "lammps.json"
+            ],
+            "path": "schema/software_directory/modeling/lammps.json"
+        },
+        {
+            "segments": [
+                "Software (11)",
+                "modeling",
+                "nwchem.json"
+            ],
+            "path": "schema/software_directory/modeling/nwchem.json"
+        },
+        {
+            "segments": [
+                "Software (11)",
+                "modeling",
+                "nwchem.json · example"
+            ],
+            "path": "example/software_directory/modeling/nwchem.json"
+        },
+        {
+            "segments": [
+                "Software (11)",
+                "modeling",
+                "vasp.json"
+            ],
+            "path": "schema/software_directory/modeling/vasp.json"
+        },
+        {
+            "segments": [
+                "Software (11)",
+                "modeling",
+                "vasp.json · example"
+            ],
+            "path": "example/software_directory/modeling/vasp.json"
+        },
+        {
+            "segments": [
+                "Software (11)",
+                "scripting",
+                "execution.json"
+            ],
+            "path": "schema/software_directory/scripting/unit/execution.json"
+        },
+        {
+            "segments": [
+                "Software (11)",
+                "scripting",
+                "execution.json · example"
+            ],
+            "path": "example/software_directory/scripting/unit/execution.json"
+        },
+        {
+            "segments": [
+                "Software (11)",
+                "scripting",
+                "jupyter_lab.json"
+            ],
+            "path": "schema/software_directory/scripting/jupyter_lab.json"
+        },
+        {
+            "segments": [
+                "Software (11)",
+                "scripting",
+                "jupyter_lab.json · example"
+            ],
+            "path": "example/software_directory/scripting/jupyter_lab.json"
+        },
+        {
+            "segments": [
+                "Software (11)",
+                "scripting",
+                "python.json"
+            ],
+            "path": "schema/software_directory/scripting/python.json"
+        },
+        {
+            "segments": [
+                "Software (11)",
+                "scripting",
+                "python.json · example"
+            ],
+            "path": "example/software_directory/scripting/python.json"
+        },
+        {
+            "segments": [
+                "Software (11)",
+                "scripting",
+                "shell.json"
+            ],
+            "path": "schema/software_directory/scripting/shell.json"
+        },
+        {
+            "segments": [
+                "Software (11)",
+                "scripting",
+                "shell.json · example"
+            ],
+            "path": "example/software_directory/scripting/shell.json"
+        }
+    ]
+}

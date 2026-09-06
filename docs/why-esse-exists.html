@@ -9,13 +9,15 @@
 </head>
 <body>
 <div id="titlebar">
-    <span class="app-name">AI4Materials<span class="app-name-suffix">: data standards</span></span>
+    <span class="app-name">AI4Materials</span>
     <nav id="surfaces">
         <a href="index.html" class="current">Docs</a>
         <a href="../index.html">Explorer</a>
+        <a href="../index.html#/categories">Categories</a>
+        <a href="../index.html#/directories">Directories</a>
         <a href="../map/index.html">Ontology</a>
     </nav>
-    <span id="titlebar-tagline">ESSE &middot; materials science ontology</span>
+    <span id="titlebar-tagline">ESSE &middot; materials science data standards and ontology</span>
 </div>
 <div id="workspace">
     <aside id="docs-nav">
@@ -114,8 +116,8 @@ as a visible, reviewable change to a shared file, not as a silent divergence in 
 <p>The cost is real and worth naming: writing JSON Schema by hand is more tedious than writing a
 dataclass, and expressing some constraints in it is awkward. ESSE accepts that cost because the
 alternative — the drift — is worse and compounds.</p>
-<h2>What the two papers contribute</h2>
-<p>Two publications underpin the design, and they answer different questions.</p>
+<h2>What the three papers contribute</h2>
+<p>Three publications underpin the design, and they answer different questions.</p>
 <p><strong><a href="https://arxiv.org/pdf/1902.10838.pdf">Data-centric online ecosystem for digital materials science</a></strong>
 sets out the entity model: what the nouns of the domain actually are, and how they connect. A
 <em>material</em> is characterized by <em>properties</em>; those properties are computed by applying a <em>model</em>
@@ -127,9 +129,13 @@ produced it — and that separating them is what makes results comparable across
 answers a different question: given that there are thousands of models and methods, how do you
 organize them so a person can find the right one and a machine can reason about it? The answer is
 a tiered categorization rather than a flat list or a rigid tree, described in
-<a href="categorization.html">Categorization</a>. Models and methods follow it directly. Materials take a
-different route in this repository — categories defined by composition rather than by tiers — and
-between them the vocabulary-and-catalogue schemas account for over half the corpus.</p>
+<a href="categorization.html">Categorization</a>. Models and methods follow it directly.</p>
+<p><strong><a href="https://arxiv.org/abs/2602.14384">M-CODE: Materials Categorization via Ontology, Dimensionality and Evolution</a></strong>
+asks the same question of materials and gets a different answer, because the need is different. A
+model is looked up; a structure is built. So a material category is a <em>recipe</em> positioned on three
+axes — structural complexity, dimensionality, and the operation that produces it — rather than a
+point on a tier ladder. Between them the two schemes&#39; vocabulary-and-catalogue schemas account for
+over half the corpus.</p>
 <h2>Generic by design</h2>
 <p>The schemas are used to run <a href="https://mat3ra.com">mat3ra.com</a>, but they are deliberately not
 platform-specific. Domain payloads — what a material <em>is</em>, what a band structure <em>contains</em> —

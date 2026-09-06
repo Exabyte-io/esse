@@ -9,13 +9,15 @@
 </head>
 <body>
 <div id="titlebar">
-    <span class="app-name">AI4Materials<span class="app-name-suffix">: data standards</span></span>
+    <span class="app-name">AI4Materials</span>
     <nav id="surfaces">
         <a href="index.html" class="current">Docs</a>
         <a href="../index.html">Explorer</a>
+        <a href="../index.html#/categories">Categories</a>
+        <a href="../index.html#/directories">Directories</a>
         <a href="../map/index.html">Ontology</a>
     </nav>
-    <span id="titlebar-tagline">ESSE &middot; materials science ontology</span>
+    <span id="titlebar-tagline">ESSE &middot; materials science data standards and ontology</span>
 </div>
 <div id="workspace">
     <aside id="docs-nav">
@@ -114,7 +116,7 @@ predictable.</p>
 unrelated model files. That is normal, and <a href="the-pipeline.html">The pipeline</a> explains why.
 <code>dist/</code> itself is gitignored, so resolved assets do not appear in the diff.</p>
 <h2>5. Check it</h2>
-<pre><code class="language-bash">npm run lint-entity-graph       # the schema lint, L1-L11
+<pre><code class="language-bash">npm run lint-entity-graph       # the schema lint, L1-L12
 npm test                        # includes the lint plus the JS test suite
 python -m unittest discover --verbose --catch --start-directory tests/py/esse/
 </code></pre>

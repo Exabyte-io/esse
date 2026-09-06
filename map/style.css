@@ -56,32 +56,48 @@ body {
     color: var(--text-primary);
     font-weight: 500;
 }
-/* The suffix completes the wordmark, so "AI4Materials" never reads as a
-   dangling fragment. Muted and lighter so the name still carries the emphasis;
-   dropped on narrow screens where the nav needs the room. */
-#titlebar .app-name-suffix {
-    color: var(--text-muted);
-    font-weight: 400;
+
+/* Five nav items leave the tagline no room to sit on one line; it is decoration, and the
+   navigation is not, so it goes first rather than wrapping the 34px bar into two. */
+#titlebar-tagline {
+    white-space: nowrap;
 }
-@media (max-width: 700px) {
-    #titlebar .app-name-suffix {
+@media (max-width: 900px) {
+    #titlebar-tagline {
         display: none;
     }
 }
 
-#titlebar-tagline {
-    margin-left: 6px;
-}
+/*
+ * The Explorer and the docs both end their title bar with this tagline, so the map does
+ * too; the live counts sit just inside it. Pushing the counts rather than the tagline
+ * keeps the counts right-aligned if the tagline is ever hidden on a narrow screen.
+ */
 #titlebar-counts {
     margin-left: auto;
     font-variant-numeric: tabular-nums;
 }
 
-/* Shared three-surface navigation: Docs / Explorer / Map */
 #surfaces {
     display: flex;
     gap: 14px;
     margin-left: 8px;
+    /* Five items do not fit a phone. Shrinking is permitted (min-width: 0 overrides the
+       automatic min-content floor) and the overflow scrolls inside the bar, so the nav is
+       always reachable instead of being clipped off the edge or pushing the page sideways.
+       There is spare room on a desktop, so nothing shrinks there. */
+    flex: 0 1 auto;
+    min-width: 0;
+    overflow-x: auto;
+    scrollbar-width: none;
+}
+#surfaces::-webkit-scrollbar {
+    display: none;
+}
+@media (max-width: 700px) {
+    #surfaces {
+        gap: 10px;
+    }
 }
 #surfaces a {
     color: var(--text-muted);

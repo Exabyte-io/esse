@@ -9,13 +9,15 @@
 </head>
 <body>
 <div id="titlebar">
-    <span class="app-name">AI4Materials<span class="app-name-suffix">: data standards</span></span>
+    <span class="app-name">AI4Materials</span>
     <nav id="surfaces">
         <a href="index.html" class="current">Docs</a>
         <a href="../index.html">Explorer</a>
+        <a href="../index.html#/categories">Categories</a>
+        <a href="../index.html#/directories">Directories</a>
         <a href="../map/index.html">Ontology</a>
     </nav>
-    <span id="titlebar-tagline">ESSE &middot; materials science ontology</span>
+    <span id="titlebar-tagline">ESSE &middot; materials science data standards and ontology</span>
 </div>
 <div id="workspace">
     <aside id="docs-nav">
@@ -54,13 +56,14 @@ sources. This page describes how, and what that dual nature does and does not gu
         +--&gt; datamodel-codegen  -&gt; src/py/mat3ra/esse/models/**   pydantic v2 models
         +--&gt; compile_ts.ts      -&gt; TypeScript types
         +--&gt; npm run build-entity-graph -&gt; site/graph.json     (from sources, not dist)
+        |                               -&gt; site/views.json     (the Explorer&#39;s category trees)
         |
         v
    npm + PyPI packages          and, on the CI deploy job, the site
 </code></pre>
 <p>The site is assembled in a <code>site/</code> staging directory by the <code>deploy-docs</code> job — resolved schemas
-and examples, <code>schemas.json</code>, <code>graph.json</code>, these documentation pages, the schema explorer and the
-Ontology map — and published to GitHub Pages, which <code>schemas.mat3ra.com</code> fronts.</p>
+and examples, <code>schemas.json</code>, <code>graph.json</code>, <code>views.json</code>, these documentation pages, the schema
+explorer and the Ontology map — and published to GitHub Pages, which <code>schemas.mat3ra.com</code> fronts.</p>
 <h2>Resolution, and what it destroys</h2>
 <p><code>build-schemas</code> does two things to every schema:</p>
 <ol>
