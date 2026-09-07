@@ -5,23 +5,36 @@
         "cls": "Sample",
         "slug": "pdac-com5-01448-r0c00"
     },
-    "metadata": {
+    "instrument": {
+        "name": "utk-asylum-cypher-1",
+        "description": {
+            "vendor": "Asylum Research",
+            "model": "Cypher",
+            "software": "afm-lib"
+        },
+        "session": {
+            "name": "20260901_171601_alscn_01448",
+            "started": "2026-09-01T17:16:02Z",
+            "directory": "C:\\Users\\Asylum User\\Documents\\Asylum Research Data\\260831"
+        },
+        "settings": {
+            "drive_amplitude_v": 1.0,
+            "bias_points": 64,
+            "loops_per_site": 8
+        },
         "registration": {
             "frame": "asylum-spm stage",
             "units": "m",
             "anchor": "100 um below the left bottom electrode",
-            "r0c00_stage_m": [ 0.021064,
-                0.020812999 ]
-        },
-        "run": {
-            "name": "20260901_171601_alscn_01448",
-            "recipe_name": "alscn_01448",
-            "context": "AlScN PDAC_COM5_01448 combinatorial library. starting point is 100 um below left bottom electrode",
-            "started_ts": 1788297362.665033,
-            "instrument_directory": "C:\\Users\\Asylum User\\Documents\\Asylum Research Data\\260831",
-            "n_measurements": 704
-        },
-        "run_dir": "C:\\Users\\Asylum User\\Documents\\GitHub\\AFM_Combinatorial_Libraries\\runs\\20260901_171601_alscn_01448"
+            "r0c00_stage_m": [
+                0.021064,
+                0.020812999
+            ]
+        }
+    },
+    "metadata": {
+        "run_dir": "C:\\Users\\Asylum User\\Documents\\GitHub\\AFM_Combinatorial_Libraries\\runs\\20260901_171601_alscn_01448",
+        "recordsCount": 8
     },
     "name": "20260901_171601_alscn_01448",
     "schemaVersion": "0.2.0",

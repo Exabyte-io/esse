@@ -15,7 +15,7 @@
             "type": "string"
         },
         "position": {
-            "description": "Planned position of the sample in the substrate frame",
+            "description": "Position of the sample in the substrate frame, when it is a site on a larger specimen",
             "type": "object",
             "properties": {
                 "coordinates": {
@@ -32,7 +32,6 @@
         }
     },
     "required": [
-        "label",
-        "position"
+        "label"
     ]
 }
