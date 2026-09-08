@@ -15,7 +15,7 @@
             "$ref": "system/entity_reference.json"
         },
         "workflow": {
-            "description": "The procedure: acquisition and analysis units, with the instrument as the application",
+            "description": "The procedure: acquisition and analysis units, with the technique (the control software) as the application; the machine is the instrument",
             "$ref": "workflow.json"
         },
         "instrument": {

@@ -4,6 +4,7 @@
 
 from __future__ import annotations
 
+from datetime import datetime
 from enum import Enum
 from typing import Any, Dict, List, Literal, Optional, Union
 
@@ -2397,6 +2398,44 @@ class WorkflowSchema(BaseModel):
     descriptionObject: Optional[Dict[str, Any]] = None
 
 
+class Session(BaseModel):
+    name: Optional[str] = None
+    started: Optional[datetime] = None
+    finished: Optional[datetime] = None
+    operator: Optional[str] = None
+    directory: Optional[str] = None
+    """
+    Where the instrument wrote its raw data
+    """
+
+
+class MeasurementInstrumentSchema(BaseModel):
+    name: str
+    """
+    Identity of the instrument, as a cluster's fqdn identifies a cluster
+    """
+    description: Optional[Dict[str, Any]] = None
+    """
+    Vendor, model, serial and whatever else describes the machine
+    """
+    session: Optional[Session] = None
+    """
+    The sitting during which the measurement was taken
+    """
+    settings: Optional[Dict[str, Any]] = None
+    """
+    Instrument parameters as set for this measurement
+    """
+    environment: Optional[Dict[str, Any]] = None
+    """
+    Conditions during the measurement: temperature, pressure, atmosphere
+    """
+    registration: Optional[Dict[str, Any]] = None
+    """
+    How the instrument frame maps onto the sample: frame, anchor, coordinates
+    """
+
+
 class Status53(Enum):
     pre_submission = "pre-submission"
     queued = "queued"
@@ -2412,11 +2451,11 @@ class Status53(Enum):
 
 class MeasurementSchema(BaseModel):
     sample: EntityReferenceSchema = Field(..., alias="_sample", title="entity reference schema")
-    materials: Optional[List[EntityReferenceSchema]] = Field(None, alias="_materials")
-    """
-    Materials related to the sample, when known (e.g. matched candidates)
-    """
     workflow: WorkflowSchema = Field(..., title="workflow schema")
+    instrument: MeasurementInstrumentSchema = Field(..., title="measurement instrument schema")
+    """
+    The machine a measurement was performed on and the sitting it belongs to: the experimental analogue of a job's compute. The technique is the workflow's application, not repeated here.
+    """
     status: Status53
     """
     Status of the measurement; finished when it reaches the platform

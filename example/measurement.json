@@ -15,7 +15,7 @@
         "session": {
             "name": "20260901_171601_alscn_01448",
             "started": "2026-09-01T17:16:02Z",
-            "directory": "C:\\Users\\Asylum User\\Documents\\Asylum Research Data\\260831"
+            "directory": "/data/afm/asylum/260831"
         },
         "settings": {
             "drive_amplitude_v": 1.0,
@@ -33,7 +33,7 @@
         }
     },
     "metadata": {
-        "run_dir": "C:\\Users\\Asylum User\\Documents\\GitHub\\AFM_Combinatorial_Libraries\\runs\\20260901_171601_alscn_01448",
+        "run_dir": "/data/afm/runs/20260901_171601_alscn_01448",
         "recordsCount": 8
     },
     "name": "20260901_171601_alscn_01448",

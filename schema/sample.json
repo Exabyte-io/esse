@@ -2,7 +2,7 @@
     "$id": "sample",
     "$schema": "http://json-schema.org/draft-07/schema#",
     "title": "sample schema",
-    "description": "A physical specimen at a fixed position on a substrate: the entity an experimental result is about. It has no crystal structure of its own; a material it is later matched to is referenced from its properties.",
+    "description": "A physical specimen, or a site on one, that an experimental result is about. It has no crystal structure of its own.",
     "type": "object",
     "allOf": [
         {

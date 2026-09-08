@@ -33,9 +33,9 @@ class SampleSchema(BaseModel):
     """
     Identity of the sample on its substrate, e.g. the grid label r0c00 of a contact pad
     """
-    position: Position
+    position: Optional[Position] = None
     """
-    Planned position of the sample in the substrate frame
+    Position of the sample in the substrate frame, when it is a site on a larger specimen
     """
     id: Optional[str] = Field(None, alias="_id")
     """

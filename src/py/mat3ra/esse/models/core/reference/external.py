@@ -9,7 +9,7 @@ from typing import Optional
 from pydantic import BaseModel
 
 
-class ESSE(BaseModel):
+class ExternalReferenceSchema(BaseModel):
     measurementId: str
     """
     Measurement's identity

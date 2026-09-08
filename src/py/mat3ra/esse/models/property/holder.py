@@ -4103,7 +4103,7 @@ class Info(BaseModel):
     """
 
 
-class Info1(BaseModel):
+class ExternalReferenceSchema(BaseModel):
     measurementId: str
     """
     Measurement's identity
@@ -4123,7 +4123,7 @@ class Source61(BaseModel):
     """
     Type of the material property's source.
     """
-    info: Union[Info, Info1]
+    info: Union[Info, ExternalReferenceSchema]
 
 
 class Precision(BaseModel):

@@ -262,7 +262,6 @@ hysteresis_loop:
     yAxis:
       label: response
       units: m
-
   schemaId: properties-directory/non-scalar/hysteresis-loop
   isResult: true
 
