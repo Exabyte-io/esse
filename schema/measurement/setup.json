@@ -1,8 +1,8 @@
 {
-    "$id": "measurement/instrument",
+    "$id": "measurement/setup",
     "$schema": "http://json-schema.org/draft-07/schema#",
-    "title": "measurement instrument schema",
-    "description": "The machine a measurement was performed on and the sitting it belongs to: the experimental analogue of a job's compute. The technique is the workflow's application, not repeated here.",
+    "title": "measurement setup schema",
+    "description": "The setup a measurement was performed with: the machine and the sitting — the experimental analogue of a job's compute. The technique is the workflow's application, not repeated here.",
     "type": "object",
     "properties": {
         "name": {

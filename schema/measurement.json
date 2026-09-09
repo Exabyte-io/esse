@@ -18,9 +18,9 @@
             "description": "The procedure: acquisition and analysis units, with the technique (the control software) as the application; the machine is the instrument",
             "$ref": "workflow.json"
         },
-        "instrument": {
-            "description": "The machine and sitting: the experimental analogue of a job's compute",
-            "$ref": "measurement/instrument.json"
+        "setup": {
+            "description": "The setup: machine and sitting, the experimental analogue of a job's compute",
+            "$ref": "measurement/setup.json"
         },
         "status": {
             "type": "string",
@@ -35,7 +35,7 @@
     "required": [
         "_sample",
         "workflow",
-        "instrument",
+        "setup",
         "status"
     ]
 }

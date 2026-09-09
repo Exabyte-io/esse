@@ -5,7 +5,7 @@
         "cls": "Sample",
         "slug": "pdac-com5-01448-r0c00"
     },
-    "instrument": {
+    "setup": {
         "name": "utk-asylum-cypher-1",
         "description": {
             "vendor": "Asylum Research",

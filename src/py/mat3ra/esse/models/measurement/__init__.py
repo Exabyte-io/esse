@@ -2409,7 +2409,7 @@ class Session(BaseModel):
     """
 
 
-class MeasurementInstrumentSchema(BaseModel):
+class MeasurementSetupSchema(BaseModel):
     name: str
     """
     Identity of the instrument, as a cluster's fqdn identifies a cluster
@@ -2452,9 +2452,9 @@ class Status53(Enum):
 class MeasurementSchema(BaseModel):
     sample: EntityReferenceSchema = Field(..., alias="_sample", title="entity reference schema")
     workflow: WorkflowSchema = Field(..., title="workflow schema")
-    instrument: MeasurementInstrumentSchema = Field(..., title="measurement instrument schema")
+    setup: MeasurementSetupSchema = Field(..., title="measurement setup schema")
     """
-    The machine a measurement was performed on and the sitting it belongs to: the experimental analogue of a job's compute. The technique is the workflow's application, not repeated here.
+    The setup a measurement was performed with: the machine and the sitting — the experimental analogue of a job's compute. The technique is the workflow's application, not repeated here.
     """
     status: Status53
     """
